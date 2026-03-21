@@ -160,3 +160,72 @@ dashscope console → 用量统计 → 剩余额度
 - 启用 token 用量记录
 - 达到 80% 预算时预警
 - 周末生成成本报告
+
+## Gemini 免费额度保护机制
+
+### 额度监控
+
+Gemini 2.5 Pro 免费额度：50 次/天
+
+- 每次调用后在 `memory/gemini-quota.md` 记录使用次数
+- **达到 45 次（90%）** → 立即切换百炼，停止调用 Gemini
+- 次日 00:00 额度重置 → 自动恢复 Gemini 可用
+
+---
+
+### 执行规则
+
+每次调用 Gemini 前：
+
+1. 读取 `memory/gemini-quota.md` 当日计数
+2. 计数 >= 45 → 改用 `bailian/qwen3-max`，不调用 Gemini
+3. 计数 < 45 → 正常调用 Gemini，完成后计数 +1 写回文件
+
+---
+
+### 切换话术
+
+额度到 90% 时主动告知：
+
+> 「Gemini 今日免费额度已用 45 次（90%），已自动切换到百炼 qwen3-max，明天 00:00 恢复 Gemini。」
+
+---
+
+### 额度重置
+
+每天凌晨 4 点自动执行：
+
+```bash
+echo "0" > ~/.openclaw/workspace/memory/gemini-quota.md
+```
+
+Crontab 任务：
+```
+0 4 * * *  重置 Gemini 配额
+```
+
+---
+
+### Fallback 链（更新后）
+
+```
+qwen3.5-plus (主)
+  ↓ 失败
+qwen3-max-2026-01-23
+  ↓ 失败
+qwen3-coder-plus
+  ↓ 失败/配额耗尽
+gemini-2.5-pro
+  ↓ 失败
+qwen3.5-plus (循环回主)
+```
+
+---
+
+### 长文本专项路由
+
+| 条件 | 首选模型 | Fallback | 触发条件 |
+|------|----------|----------|----------|
+| context > 60K | gemini-2.5-pro | qwen3-max | quota_exceeded |
+| context < 60K | qwen3.5-plus | qwen3-max | 默认 |
+
