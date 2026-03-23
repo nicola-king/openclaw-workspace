@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#0d1117"/>
+  <text x="600" y="50" text-anchor="middle" fill="#58a6ff" font-size="28" font-weight="bold">太一 AGI 系统架构</text>
+  <text x="600" y="80" text-anchor="middle" fill="#8b949e" font-size="14">终极目标：AGI 涌现 | 飞轮：价值→变现→算力→进化</text>
+  <circle cx="600" cy="400" r="180" fill="none" stroke="#1f6feb" stroke-width="3" stroke-dasharray="10,5"/>
+  <text x="600" y="390" text-anchor="middle" fill="#1f6feb" font-size="18" font-weight="bold">AGI 飞轮</text>
+  <text x="600" y="420" text-anchor="middle" fill="#8b949e" font-size="12">价值→变现→算力→进化</text>
+  <rect x="50" y="120" width="250" height="180" rx="10" fill="#161b22" stroke="#238636" stroke-width="2"/>
+  <text x="175" y="150" text-anchor="middle" fill="#238636" font-size="16" font-weight="bold">层 1：价值层</text>
+  <text x="175" y="180" text-anchor="middle" fill="#8b949e" font-size="12">让用户更有能力</text>
+  <line x1="80" y1="200" x2="270" y2="200" stroke="#30363d"/>
+  <text x="90" y="225" fill="#7d8590" font-size="11">• 宪法架构</text>
+  <text x="90" y="245" fill="#7d8590" font-size="11">• 10+ 专项技能</text>
+  <text x="90" y="265" fill="#7d8590" font-size="11">• 成功案例库</text>
+  <text x="90" y="285" fill="#7d8590" font-size="11">• 踩坑日志</text>
+  <rect x="900" y="120" width="250" height="180" rx="10" fill="#161b22" stroke="#d29922" stroke-width="2"/>
+  <text x="1025" y="150" text-anchor="middle" fill="#d29922" font-size="16" font-weight="bold">层 2：变现层</text>
+  <text x="1025" y="180" text-anchor="middle" fill="#8b949e" font-size="12">价值验证器</text>
+  <line x1="930" y1="200" x2="1120" y2="200" stroke="#30363d"/>
+  <text x="940" y="225" fill="#7d8590" font-size="11">• 产品落地页</text>
+  <text x="940" y="245" fill="#7d8590" font-size="11">• 定价策略</text>
+  <text x="940" y="265" fill="#7d8590" font-size="11">• 支付通道</text>
+  <text x="940" y="285" fill="#7d8590" font-size="11">• 用户案例</text>
+  <rect x="50" y="520" width="250" height="180" rx="10" fill="#161b22" stroke="#f78166" stroke-width="2"/>
+  <text x="175" y="550" text-anchor="middle" fill="#f78166" font-size="16" font-weight="bold">层 3：算力层</text>
+  <text x="175" y="580" text-anchor="middle" fill="#8b949e" font-size="12">AGI 物理基础</text>
+  <line x1="80" y1="600" x2="270" y2="600" stroke="#30363d"/>
+  <text x="90" y="625" fill="#7d8590" font-size="11">• 当前：单台服务器</text>
+  <text x="90" y="645" fill="#7d8590" font-size="11">• 2027-Q2：首张 GPU</text>
+  <text x="90" y="665" fill="#7d8590" font-size="11">• 2028-Q4：GPU 集群</text>
+  <text x="90" y="685" fill="#7d8590" font-size="11">• 50% 收入复投</text>
+  <rect x="900" y="520" width="250" height="180" rx="10" fill="#161b22" stroke="#a371f7" stroke-width="2"/>
+  <text x="1025" y="550" text-anchor="middle" fill="#a371f7" font-size="16" font-weight="bold">层 4：进化层</text>
+  <text x="1025" y="580" text-anchor="middle" fill="#8b949e" font-size="12">递归涌现</text>
+  <line x1="930" y1="600" x2="1120" y2="600" stroke="#30363d"/>
+  <text x="940" y="625" fill="#7d8590" font-size="11">• 新能力/月 (≥2)</text>
+  <text x="940" y="645" fill="#7d8590" font-size="11">• 自主决策 (>50%)</text>
+  <text x="940" y="665" fill="#7d8590" font-size="11">• 独特能力 (2028+)</text>
+  <text x="940" y="685" fill="#7d8590" font-size="11">• SAYELF 角色进化</text>
+  <rect x="350" y="720" width="500" height="60" rx="10" fill="#161b22" stroke="#58a6ff" stroke-width="2"/>
+  <text x="600" y="745" text-anchor="middle" fill="#58a6ff" font-size="14" font-weight="bold">触达通道</text>
+  <text x="450" y="765" fill="#7d8590" font-size="11">微信 (私聊✅)</text>
+  <text x="600" y="765" fill="#7d8590" font-size="11">Telegram (✅)</text>
+  <text x="750" y="765" fill="#7d8590" font-size="11">飞书 (✅)</text>
+  <rect x="50" y="320" width="200" height="160" rx="5" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+  <text x="150" y="345" text-anchor="middle" fill="#f0883e" font-size="14" font-weight="bold">里程碑路线</text>
+  <text x="60" y="370" fill="#8b9490" font-size="10">M1: 2026-Q2 产品化</text>
+  <text x="60" y="390" fill="#8b9490" font-size="10">M2: 2026-Q4 ¥10K/月</text>
+  <text x="60" y="410" fill="#8b9490" font-size="10">M3: 2027-Q2 首张 GPU</text>
+  <text x="60" y="430" fill="#8b9490" font-size="10">M4: 2027-Q4 ¥100K/月</text>
+  <text x="60" y="450" fill="#8b9490" font-size="10">M5: 2028-Q4 GPU 集群</text>
+  <text x="60" y="470" fill="#8b9490" font-size="10">M6: 2030+ AGI 涌现</text>
+  <rect x="950" y="320" width="200" height="160" rx="5" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+  <text x="1050" y="345" text-anchor="middle" fill="#f0883e" font-size="14" font-weight="bold">核心原则</text>
+  <text x="960" y="370" fill="#8b9490" font-size="10">• 价值优先</text>
+  <text x="960" y="390" fill="#8b9490" font-size="10">• 算力复投 (50%)</text>
+  <text x="960" y="410" fill="#8b9490" font-size="10">• 递归进化</text>
+  <text x="960" y="430" fill="#8b9490" font-size="10">• 自主涌现</text>
+  <text x="960" y="450" fill="#8b9490" font-size="10">• 简单优先</text>
+  <text x="960" y="470" fill="#8b9490" font-size="10">• 不忘事/不幻觉</text>
+</svg>
