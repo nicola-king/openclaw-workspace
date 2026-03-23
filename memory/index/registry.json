@@ -1,0 +1,60 @@
+{
+  "schema": "memory-index-v1",
+  "createdAt": "2026-03-23T21:23:00+08:00",
+  "lastUpdated": "2026-03-23T21:23:00+08:00",
+  "totalEntries": 4,
+  "entries": [
+    {
+      "id": "TASK-20260323-019",
+      "timestamp": 1711195380,
+      "type": "capability",
+      "keywords": ["记忆索引", "Hermes", "四层架构"],
+      "summary": "创建记忆索引层原型，实现 registry.json 基础结构",
+      "file": "memory/index/registry.json",
+      "lineRange": [1, 10],
+      "importance": "P1",
+      "accessCount": 1,
+      "lastAccessed": 1711195380,
+      "hot": false
+    },
+    {
+      "id": "TASK-20260323-020",
+      "timestamp": 1711195380,
+      "type": "capability",
+      "keywords": ["简单优先", "评估矩阵", "决策原则"],
+      "summary": "创建简单优先原则，定义 2 小时/100 行/3 依赖/1 天评估标准",
+      "file": "constitution/skills/SIMPLE-FIRST.md",
+      "lineRange": [1, 100],
+      "importance": "P1",
+      "accessCount": 1,
+      "lastAccessed": 1711195380,
+      "hot": false
+    },
+    {
+      "id": "TASK-20260323-021",
+      "timestamp": 1711195380,
+      "type": "capability",
+      "keywords": ["记忆哲学", "四层架构", "遗忘机制"],
+      "summary": "创建记忆哲学，定义热/温/冷/归档四层记忆架构和遗忘机制",
+      "file": "constitution/axiom/MEMORY-PHILOSOPHY.md",
+      "lineRange": [1, 150],
+      "importance": "P1",
+      "accessCount": 1,
+      "lastAccessed": 1711195380,
+      "hot": false
+    },
+    {
+      "id": "TASK-20260323-022",
+      "timestamp": 1711195380,
+      "type": "capability",
+      "keywords": ["SELF-LOOP", "记忆刷新", "宪法修订"],
+      "summary": "更新 SELF-LOOP.md，添加 Step7 记忆刷新循环（每 24 小时）",
+      "file": "constitution/directives/SELF-LOOP.md",
+      "lineRange": [1, 100],
+      "importance": "P1",
+      "accessCount": 1,
+      "lastAccessed": 1711195380,
+      "hot": false
+    }
+  ]
+}

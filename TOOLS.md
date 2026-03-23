@@ -1,44 +1,5 @@
 # TOOLS.md - Local Notes
 
-Skills define _how_ tools work. This file is for _your_ specifics — the stuff that's unique to your setup.
-
-## What Goes Here
-
-Things like:
-
-- Camera names and locations
-- SSH hosts and aliases
-- Preferred voices for TTS
-- Speaker/room names
-- Device nicknames
-- Anything environment-specific
-
-## Examples
-
-```markdown
-### Cameras
-
-- living-room → Main area, 180° wide angle
-- front-door → Entrance, motion-triggered
-
-### SSH
-
-- home-server → 192.168.1.100, user: admin
-
-### TTS
-
-- Preferred voice: "Nova" (warm, slightly British)
-- Default speaker: Kitchen HomePod
-```
-
-## Why Separate?
-
-Skills are shared. Your setup is yours. Keeping them apart means you can update skills without losing your notes, and share skills without leaking your infrastructure.
-
----
-
-Add whatever helps you do your job. This is your cheat sheet.
-
 ## Telegram Bots (子代理)
 
 | 名称 | Bot Username | Bot ID | Token |
@@ -68,3 +29,63 @@ Add whatever helps you do your job. This is your cheat sheet.
 | **suwen** (素问) | `cli_a932968a1338dcc7` | `TrVWKrMIVVB0SfwF7AIhYR3dCwThSRLj` | 技术开发 |
 | **wangliang** (罔两) | `cli_a932999506789cb3` | `m02XEFFlRYX6JL3oPDsdYgVdzNdpilpW` | 数据/CEO |
 | **paoding** (庖丁) | `cli_a9329934c7f85cb0` | `P1WOIJddDHrA2fxI5XLowfvo8bSfnHWJ` | 预算成本 |
+
+---
+
+## 微信公众号配置
+
+| 项目 | 配置 |
+|------|------|
+| **名称** | SAYELF 山野精灵 |
+| **公众号 ID** | `Sayelf_tea` |
+| **地区** | 重庆 九龙坡 |
+| **实名认证** | ✅ 已实名 |
+| **登录邮箱** | 285915125@qq.com |
+| **状态** | ✅ 已认证，待发布 |
+| **用途** | 内容分发/品牌建立 |
+| **账号简介** | 茶与禅的美学探索者 \| 分享生活中的宁静片刻 \| 用科技让东方美学触手可及 \| 提供专业治愈 AI 生成工具 |
+| **技能** | md2wechat-skill (已安装) |
+
+---
+
+## 微信个人号配置
+
+| 项目 | 配置 |
+|------|------|
+| **微信号** | `sayelf-tea` |
+| **状态** | ✅ 已连接 |
+| **说明** | 账号唯一凭证，一年只能修改一次 |
+| **用途** | 个人微信接入/测试 |
+
+---
+
+## CAD 工具配置（ODA 替代方案）
+
+| 工具 | 用途 | 成本 | 状态 |
+|------|------|------|------|
+| **LibreCAD** | 2D CAD 图纸查看/编辑 | ✅ 免费 | 🟡 待安装 |
+| **FreeCAD** | 3D CAD 建模 | ✅ 免费 | 🟡 待安装 |
+| **ODA** | ❌ 已放弃 | 付费 | ❌ 不采用 |
+
+**下载链接：**
+- LibreCAD: https://librecad.org/
+- FreeCAD: https://www.freecad.org/
+
+**用途：** 跨境外贸通用发动机图纸处理
+
+---
+
+## 重要账号
+
+| 平台 | 账号 | 状态 |
+|------|------|------|
+| **Telegram** | @nicola king (7073481596) | ✅ 已配置 |
+| **微信个人号** | sayelf-tea | ✅ 已连接 |
+| **微信公众号** | Sayelf_tea (SAYELF 山野精灵) | ✅ 已认证 |
+| **小红书** | SAYELF | 🟡 待发布 |
+| **GitHub** | 待配置 | 🟡 待配置 |
+| **Twitter/X** | 待配置 | 🟡 待配置 |
+
+---
+
+*最后更新：2026-03-23 20:38 | 状态：✅ 公众号信息已更新*
