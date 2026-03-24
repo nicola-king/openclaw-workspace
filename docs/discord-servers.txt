@@ -1,0 +1,27 @@
+# Discord 服务器列表
+
+## Polymarket 相关
+
+1. **AI Polymarket**
+   - 链接：https://top.gg/discord/servers/792456583639355392
+   - 说明：AI 分析 Polymarket 市场
+   - 状态：待加入
+
+2. **Polymarket 官方**
+   - 链接：待获取 (从官网)
+   - 说明：官方社区
+   - 状态：待查找
+
+## 交易/套利相关
+
+3. **Crypto Trading**
+   - 链接：待添加
+   - 说明：加密货币交易社区
+   - 状态：待查找
+
+## 行动清单
+
+- [ ] 加入 AI Polymarket Discord
+- [ ] 查找 Polymarket 官方 Discord
+- [ ] 在 #introductions 频道发布自我介绍
+- [ ] 在 #trading-strategies 分享策略

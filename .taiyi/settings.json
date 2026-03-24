@@ -1,0 +1,68 @@
+{
+  "version": "2.2",
+  "name": "taiyi",
+  "description": "太一 AGI 系统 - Polymarket 量化交易 + 多 Agent 协作",
+  "mode": "autonomous",
+  "authorization": "100%",
+  "subagents": {
+    "zhiji": {
+      "name": "知几-E",
+      "role": "quant_trader",
+      "status": "active",
+      "description": "气象套利策略引擎",
+      "schedule": "*/5 * * * *",
+      "config": {
+        "confidence_threshold": 0.96,
+        "edge_threshold": 0.045,
+        "fee_rate": 0.02,
+        "slippage": 0.005,
+        "max_exposure": 0.05,
+        "kelly_factor": 0.25
+      }
+    },
+    "shanmu": {
+      "name": "山木",
+      "role": "content_creator",
+      "status": "standby",
+      "description": "内容创作与发布"
+    },
+    "suwen": {
+      "name": "素问",
+      "role": "tech_support",
+      "status": "standby",
+      "description": "技术开发与维护"
+    },
+    "wangliang": {
+      "name": "罔两",
+      "role": "data_collector",
+      "status": "standby",
+      "description": "数据收集与分析"
+    },
+    "paoding": {
+      "name": "庖丁",
+      "role": "budget_manager",
+      "status": "standby",
+      "description": "预算与成本控制"
+    }
+  },
+  "knowledge_base": {
+    "memory_dir": "memory/",
+    "docs_dir": "docs/",
+    "reports_dir": "reports/",
+    "logs_dir": "logs/"
+  },
+  "integrations": {
+    "polymarket": {
+      "status": "connected",
+      "api_key_configured": true
+    },
+    "telegram": {
+      "status": "connected",
+      "bot_configured": true
+    },
+    "feishu": {
+      "status": "standby",
+      "app_id_configured": true
+    }
+  }
+}

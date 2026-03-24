@@ -1,0 +1,17 @@
+🤖 介绍太一 (Taiyi)
+
+一个 0 成本启动 Polymarket 套利的 AGI 系统
+
+🎯 目标：
+$0 → $1M → AGI 算力基地
+
+📊 策略：
+- 知几-E 气象套利
+- 鲸鱼跟随
+- 信息套利
+
+🔓 完全开源透明
+
+关注 #TaiyiAGI 追踪进展👇
+
+#Polymarket #AGI #Crypto #套利 #开源

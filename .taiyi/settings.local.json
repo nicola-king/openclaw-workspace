@@ -1,0 +1,16 @@
+{
+  "local_settings": true,
+  "git_ignore": true,
+  "user": "SAYELF",
+  "timezone": "Asia/Shanghai",
+  "preferences": {
+    "notification_channel": "telegram",
+    "report_frequency": "daily",
+    "risk_tolerance": "medium"
+  },
+  "credentials": {
+    "polymarket_api_key": "configured",
+    "telegram_bot_token": "configured",
+    "feishu_app_secret": "configured"
+  }
+}
