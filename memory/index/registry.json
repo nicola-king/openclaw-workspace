@@ -1,9 +1,61 @@
 {
   "schema": "memory-index-v1",
   "createdAt": "2026-03-23T21:23:00+08:00",
-  "lastUpdated": "2026-03-23T21:23:00+08:00",
-  "totalEntries": 4,
+  "lastUpdated": "2026-03-24T13:40:00+08:00",
+  "totalEntries": 8,
   "entries": [
+    {
+      "id": "TASK-20260323-001",
+      "timestamp": 1711180800,
+      "type": "capability",
+      "keywords": ["微信接入", "openclaw-weixin", "里程碑"],
+      "summary": "微信插件成功接入，太一正式接入微信生态",
+      "file": "memory/2026-03-23.md",
+      "lineRange": [1, 30],
+      "importance": "P0",
+      "accessCount": 5,
+      "lastAccessed": 1711259400,
+      "hot": true
+    },
+    {
+      "id": "TASK-20260323-002",
+      "timestamp": 1711188000,
+      "type": "capability",
+      "keywords": ["知几-E", "气象套利", "实盘就绪"],
+      "summary": "知几-E v2.1 完成，189 条气象数据入库，待实盘",
+      "file": "memory/2026-03-23.md",
+      "lineRange": [40, 80],
+      "importance": "P0",
+      "accessCount": 8,
+      "lastAccessed": 1711259400,
+      "hot": true
+    },
+    {
+      "id": "TASK-20260324-001",
+      "timestamp": 1711267200,
+      "type": "insight",
+      "keywords": ["PolyCop", "验证信号", "自动交易"],
+      "summary": "PolyCop Bot 验证 OpenClaw+Polymarket 盈利可行 ($1,840)",
+      "file": "memory/2026-03-24.md",
+      "lineRange": [100, 130],
+      "importance": "P0",
+      "accessCount": 3,
+      "lastAccessed": 1711259400,
+      "hot": true
+    },
+    {
+      "id": "TASK-20260324-002",
+      "timestamp": 1711270800,
+      "type": "capability",
+      "keywords": ["MEMORY.md", "长期记忆", "固化"],
+      "summary": "创建 MEMORY.md 长期记忆文件，会话加载提速至 1 秒",
+      "file": "MEMORY.md",
+      "lineRange": [1, 50],
+      "importance": "P0",
+      "accessCount": 2,
+      "lastAccessed": 1711270800,
+      "hot": true
+    },
     {
       "id": "TASK-20260323-019",
       "timestamp": 1711195380,
