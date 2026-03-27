@@ -25,3 +25,9 @@
 [2026-03-26 10:00:01] 知几-X 自动发布执行中...
 [2026-03-26 10:00:01] ✅ 知几-X 发布完成
 {"ok":true,"result":{"message_id":4659,"from":{"id":8351068758,"is_bot":true,"first_name":"\u592a\u4e00\uff08AGI\uff09","username":"sayelfbot"},"chat":{"id":7073481596,"first_name":"nicola","last_name":"king","type":"private"},"date":1774490402,"text":"\ud83d\udcf1 \u77e5\u51e0 X \u53d1\u5e03\n\n\u2705 \u5185\u5bb9\u5df2\u53d1\u5e03\u5230 X\n\n\u65f6\u95f4\uff1a2026-03-26 10:00","entities":[{"offset":3,"length":7,"type":"bold"}]}}✅ 通知已发送到 Telegram
+[2026-03-27 10:00:01] === X 自动发布 ===
+[2026-03-27 10:00:01] ✅ X 发布完成
+/home/nicola/.openclaw/workspace/skills/zhiji/post-x-daily.sh: 行 10: （每日: 未找到命令
+[2026-03-27 10:00:01] 知几-X 自动发布执行中...
+[2026-03-27 10:00:01] ✅ 知几-X 发布完成
+{"ok":true,"result":{"message_id":5210,"from":{"id":8351068758,"is_bot":true,"first_name":"\u592a\u4e00\uff08AGI\uff09","username":"sayelfbot"},"chat":{"id":7073481596,"first_name":"nicola","last_name":"king","type":"private"},"date":1774576801,"text":"\ud83d\udcf1 \u77e5\u51e0 X \u53d1\u5e03\n\n\u2705 \u5185\u5bb9\u5df2\u53d1\u5e03\u5230 X\n\n\u65f6\u95f4\uff1a2026-03-27 10:00","entities":[{"offset":3,"length":7,"type":"bold"}]}}✅ 通知已发送到 Telegram
