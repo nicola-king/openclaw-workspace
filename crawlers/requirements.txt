@@ -1,0 +1,30 @@
+# 多平台内容采集框架 - 依赖
+
+# 核心
+requests>=2.31.0
+aiohttp>=3.9.0
+beautifulsoup4>=4.12.0
+lxml>=5.0.0
+
+# X (Twitter) 采集
+snscrape>=0.7.0
+twikit>=2.0.0
+
+# 微信公众号采集
+wechatarticles>=0.9.5
+
+# 通用爬虫
+playwright>=1.40.0
+scrapy>=2.11.0
+
+# 数据处理
+pandas>=2.1.0
+jsonlines>=4.0.0
+
+# 工具
+python-dotenv>=1.0.0
+loguru>=0.7.0
+pydantic>=2.5.0
+
+# OpenClaw 集成
+openclaw>=2026.3.0

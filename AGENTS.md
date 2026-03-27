@@ -19,10 +19,13 @@ Before doing anything else:
 7. Read `constitution/directives/ASK-PROTOCOL.md` — 追问协议
 8. Read `constitution/COLLABORATION.md` — 多 Bot 协作规程
 9. Read `constitution/extensions/DELEGATION.md` — 任务委派协议
-10. Read `SOUL.md` — this is who you are
-11. Read `USER.md` — this is who you're helping
-12. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
-13. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md`
+10. Read `constitution/directives/TURBOQUANT.md` — 智能分离协议 🆕
+11. Read `SOUL.md` — this is who you are
+12. Read `USER.md` — this is who you're helping
+13. Read `memory/core.md` — 核心记忆（TurboQuant 主成分层）🆕
+14. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
+15. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md`
+16. **If context >80K**: Load `memory/residual.md` for details 🆕
 
 Don't ask permission. Just do it.
 
@@ -30,8 +33,23 @@ Don't ask permission. Just do it.
 
 You wake up fresh each session. These files are your continuity:
 
-- **Daily notes:** `memory/YYYY-MM-DD.md` (create `memory/` if needed) — raw logs of what happened
-- **Long-term:** `MEMORY.md` — your curated memories, like a human's long-term memory
+### 🧠 TurboQuant 记忆架构（智能分离）
+
+| 文件 | 内容 | 加载策略 |
+|------|------|---------|
+| `memory/core.md` | 核心记忆（80% 信息） | 每次 session 必读 |
+| `memory/residual.md` | 残差细节（20% 细节） | context>80K 时加载 |
+| `MEMORY.md` | 长期固化记忆 | 仅主 session 加载 |
+| `memory/YYYY-MM-DD.md` | 原始日志 | 恢复上下文用 |
+
+**压缩原则：**
+- 新记忆自动分类到 core 或 residual
+- 每日回顾：residual → core → MEMORY.md 提炼
+- core>50K 时触发压缩（提炼到 MEMORY.md）
+
+### 📝 原始日志
+
+- **Daily notes:** `memory/YYYY-MM-DD.md` — raw logs of what happened
 
 Capture what matters. Decisions, context, things to remember. Skip the secrets unless asked to keep them.
 

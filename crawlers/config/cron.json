@@ -1,0 +1,18 @@
+{
+  "jobs": [
+    {
+      "name": "crawler-daily",
+      "schedule": "0 9 * * *",
+      "command": "cd ~/.openclaw/workspace/crawlers && python3 openclaw_integration.py daily",
+      "description": "每日上午 9 点执行多平台采集",
+      "enabled": true
+    },
+    {
+      "name": "crawler-x-hourly",
+      "schedule": "0 * * * *",
+      "command": "cd ~/.openclaw/workspace/crawlers && python3 main.py --platform x",
+      "description": "每小时采集 X 平台（可选）",
+      "enabled": false
+    }
+  ]
+}

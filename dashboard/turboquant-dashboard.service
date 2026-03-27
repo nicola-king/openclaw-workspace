@@ -1,0 +1,16 @@
+[Unit]
+Description=TurboQuant Compression Monitor Dashboard
+After=network.target
+
+[Service]
+Type=simple
+User=nicola
+WorkingDirectory=/home/nicola/.openclaw/workspace/dashboard
+ExecStart=/usr/bin/python3 -m http.server 8888
+Restart=always
+RestartSec=10
+StandardOutput=append:/home/nicola/.openclaw/workspace/logs/dashboard-server.log
+StandardError=append:/home/nicola/.openclaw/workspace/logs/dashboard-server.log
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,149 @@
+[2026-03-26 08:00:01] === 罔两小红书监控 (feedgrab 增强版) ===
+[2026-03-26 08:00:01] === 罔两小红书监控 (feedgrab 增强版) ===
+[2026-03-26 08:00:01] 【搜索关键词】Polymarket 预测市场
+[2026-03-26 08:00:01] 【搜索关键词】Polymarket 预测市场
+[2026-03-26 08:00:01] ✅ Polymarket 预测市场 完成
+[2026-03-26 08:00:01] ✅ Polymarket 预测市场 完成
+[2026-03-26 08:00:01] 
+[2026-03-26 08:00:01] 
+[2026-03-26 08:00:01] 【搜索关键词】量化交易 策略
+[2026-03-26 08:00:01] 【搜索关键词】量化交易 策略
+[2026-03-26 08:00:01] ✅ 量化交易 策略 完成
+[2026-03-26 08:00:01] ✅ 量化交易 策略 完成
+[2026-03-26 08:00:01] 
+[2026-03-26 08:00:01] 
+[2026-03-26 08:00:01] 【搜索关键词】AI Agent 自动化
+[2026-03-26 08:00:01] 【搜索关键词】AI Agent 自动化
+[2026-03-26 08:00:01] ✅ AI Agent 自动化 完成
+[2026-03-26 08:00:01] ✅ AI Agent 自动化 完成
+[2026-03-26 08:00:01] 
+[2026-03-26 08:00:01] 
+[2026-03-26 08:00:01] 【搜索关键词】空投 羊毛
+[2026-03-26 08:00:01] 【搜索关键词】空投 羊毛
+[2026-03-26 08:00:01] ✅ 空投 羊毛 完成
+[2026-03-26 08:00:01] ✅ 空投 羊毛 完成
+[2026-03-26 08:00:01] 
+[2026-03-26 08:00:01] 
+[2026-03-26 08:00:01] === 监控完成 ===
+[2026-03-26 08:00:01] === 监控完成 ===
+[2026-03-26 08:00:01] 📄 报告已生成：/home/nicola/.openclaw/workspace/content/xiaohongshu-topics/monitor-20260326.md
+[2026-03-26 08:00:01] 📄 报告已生成：/home/nicola/.openclaw/workspace/content/xiaohongshu-topics/monitor-20260326.md
+[2026-03-26 12:00:01] === 罔两小红书监控 (feedgrab 增强版) ===
+[2026-03-26 12:00:01] === 罔两小红书监控 (feedgrab 增强版) ===
+[2026-03-26 12:00:01] 【搜索关键词】Polymarket 预测市场
+[2026-03-26 12:00:01] 【搜索关键词】Polymarket 预测市场
+[2026-03-26 12:00:01] ✅ Polymarket 预测市场 完成
+[2026-03-26 12:00:01] ✅ Polymarket 预测市场 完成
+[2026-03-26 12:00:01] 
+[2026-03-26 12:00:01] 
+[2026-03-26 12:00:01] 【搜索关键词】量化交易 策略
+[2026-03-26 12:00:01] 【搜索关键词】量化交易 策略
+[2026-03-26 12:00:01] ✅ 量化交易 策略 完成
+[2026-03-26 12:00:01] ✅ 量化交易 策略 完成
+[2026-03-26 12:00:01] 
+[2026-03-26 12:00:01] 
+[2026-03-26 12:00:01] 【搜索关键词】AI Agent 自动化
+[2026-03-26 12:00:01] 【搜索关键词】AI Agent 自动化
+[2026-03-26 12:00:01] ✅ AI Agent 自动化 完成
+[2026-03-26 12:00:01] ✅ AI Agent 自动化 完成
+[2026-03-26 12:00:01] 
+[2026-03-26 12:00:01] 
+[2026-03-26 12:00:01] 【搜索关键词】空投 羊毛
+[2026-03-26 12:00:01] 【搜索关键词】空投 羊毛
+[2026-03-26 12:00:01] ✅ 空投 羊毛 完成
+[2026-03-26 12:00:01] ✅ 空投 羊毛 完成
+[2026-03-26 12:00:01] 
+[2026-03-26 12:00:01] 
+[2026-03-26 12:00:01] === 监控完成 ===
+[2026-03-26 12:00:01] === 监控完成 ===
+[2026-03-26 12:00:01] 📄 报告已生成：/home/nicola/.openclaw/workspace/content/xiaohongshu-topics/monitor-20260326.md
+[2026-03-26 12:00:01] 📄 报告已生成：/home/nicola/.openclaw/workspace/content/xiaohongshu-topics/monitor-20260326.md
+{"ok":true,"result":{"message_id":4679,"from":{"id":8351068758,"is_bot":true,"first_name":"\u592a\u4e00\uff08AGI\uff09","username":"sayelfbot"},"chat":{"id":7073481596,"first_name":"nicola","last_name":"king","type":"private"},"date":1774497602,"text":"\ud83d\udcf1 \u5c0f\u7ea2\u4e66\u76d1\u63a7\u5b8c\u6210\n\n\u2705 4 \u4e2a\u5173\u952e\u8bcd\u76d1\u63a7\u5b8c\u6210\n\n\u65f6\u95f4\uff1a2026-03-26 12:00","entities":[{"offset":3,"length":7,"type":"bold"}]}}✅ 通知已发送到 Telegram
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+[2026-03-26 12:00:06] 🟡 Telegram 发送失败
+[2026-03-26 12:00:06] 🟡 Telegram 发送失败
+[2026-03-26 18:00:01] === 罔两小红书监控 (feedgrab 增强版) ===
+[2026-03-26 18:00:01] === 罔两小红书监控 (feedgrab 增强版) ===
+[2026-03-26 18:00:01] 【搜索关键词】Polymarket 预测市场
+[2026-03-26 18:00:01] 【搜索关键词】Polymarket 预测市场
+[2026-03-26 18:00:01] ✅ Polymarket 预测市场 完成
+[2026-03-26 18:00:01] ✅ Polymarket 预测市场 完成
+[2026-03-26 18:00:01] 
+[2026-03-26 18:00:01] 
+[2026-03-26 18:00:01] 【搜索关键词】量化交易 策略
+[2026-03-26 18:00:01] 【搜索关键词】量化交易 策略
+[2026-03-26 18:00:01] ✅ 量化交易 策略 完成
+[2026-03-26 18:00:01] ✅ 量化交易 策略 完成
+[2026-03-26 18:00:01] 
+[2026-03-26 18:00:01] 
+[2026-03-26 18:00:01] 【搜索关键词】AI Agent 自动化
+[2026-03-26 18:00:01] 【搜索关键词】AI Agent 自动化
+[2026-03-26 18:00:01] ✅ AI Agent 自动化 完成
+[2026-03-26 18:00:01] ✅ AI Agent 自动化 完成
+[2026-03-26 18:00:01] 
+[2026-03-26 18:00:01] 
+[2026-03-26 18:00:01] 【搜索关键词】空投 羊毛
+[2026-03-26 18:00:01] 【搜索关键词】空投 羊毛
+[2026-03-26 18:00:01] ✅ 空投 羊毛 完成
+[2026-03-26 18:00:01] ✅ 空投 羊毛 完成
+[2026-03-26 18:00:01] 
+[2026-03-26 18:00:01] 
+[2026-03-26 18:00:01] === 监控完成 ===
+[2026-03-26 18:00:01] === 监控完成 ===
+[2026-03-26 18:00:01] 📄 报告已生成：/home/nicola/.openclaw/workspace/content/xiaohongshu-topics/monitor-20260326.md
+[2026-03-26 18:00:01] 📄 报告已生成：/home/nicola/.openclaw/workspace/content/xiaohongshu-topics/monitor-20260326.md
+{"ok":true,"result":{"message_id":4851,"from":{"id":8351068758,"is_bot":true,"first_name":"\u592a\u4e00\uff08AGI\uff09","username":"sayelfbot"},"chat":{"id":7073481596,"first_name":"nicola","last_name":"king","type":"private"},"date":1774519202,"text":"\ud83d\udcf1 \u5c0f\u7ea2\u4e66\u76d1\u63a7\u5b8c\u6210\n\n\u2705 4 \u4e2a\u5173\u952e\u8bcd\u76d1\u63a7\u5b8c\u6210\n\n\u65f6\u95f4\uff1a2026-03-26 18:00","entities":[{"offset":3,"length":7,"type":"bold"}]}}✅ 通知已发送到 Telegram
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+[2026-03-26 18:00:09] 🟡 Telegram 发送失败
+[2026-03-26 18:00:09] 🟡 Telegram 发送失败
+[2026-03-27 08:00:02] === 罔两小红书监控 (feedgrab 增强版) ===
+[2026-03-27 08:00:02] === 罔两小红书监控 (feedgrab 增强版) ===
+[2026-03-27 08:00:02] 【搜索关键词】Polymarket 预测市场
+[2026-03-27 08:00:02] 【搜索关键词】Polymarket 预测市场
+[2026-03-27 08:00:02] ✅ Polymarket 预测市场 完成
+[2026-03-27 08:00:02] ✅ Polymarket 预测市场 完成
+[2026-03-27 08:00:02] 
+[2026-03-27 08:00:02] 
+[2026-03-27 08:00:02] 【搜索关键词】量化交易 策略
+[2026-03-27 08:00:02] 【搜索关键词】量化交易 策略
+[2026-03-27 08:00:02] ✅ 量化交易 策略 完成
+[2026-03-27 08:00:02] ✅ 量化交易 策略 完成
+[2026-03-27 08:00:02] 
+[2026-03-27 08:00:02] 
+[2026-03-27 08:00:02] 【搜索关键词】AI Agent 自动化
+[2026-03-27 08:00:02] 【搜索关键词】AI Agent 自动化
+[2026-03-27 08:00:02] ✅ AI Agent 自动化 完成
+[2026-03-27 08:00:02] ✅ AI Agent 自动化 完成
+[2026-03-27 08:00:02] 
+[2026-03-27 08:00:02] 
+[2026-03-27 08:00:02] 【搜索关键词】空投 羊毛
+[2026-03-27 08:00:02] 【搜索关键词】空投 羊毛
+[2026-03-27 08:00:02] ✅ 空投 羊毛 完成
+[2026-03-27 08:00:02] ✅ 空投 羊毛 完成
+[2026-03-27 08:00:02] 
+[2026-03-27 08:00:02] 
+[2026-03-27 08:00:02] === 监控完成 ===
+[2026-03-27 08:00:02] === 监控完成 ===
+[2026-03-27 08:00:02] 📄 报告已生成：/home/nicola/.openclaw/workspace/content/xiaohongshu-topics/monitor-20260327.md
+[2026-03-27 08:00:02] 📄 报告已生成：/home/nicola/.openclaw/workspace/content/xiaohongshu-topics/monitor-20260327.md
+{"ok":true,"result":{"message_id":5161,"from":{"id":8351068758,"is_bot":true,"first_name":"\u592a\u4e00\uff08AGI\uff09","username":"sayelfbot"},"chat":{"id":7073481596,"first_name":"nicola","last_name":"king","type":"private"},"date":1774569602,"text":"\ud83d\udcf1 \u5c0f\u7ea2\u4e66\u76d1\u63a7\u5b8c\u6210\n\n\u2705 4 \u4e2a\u5173\u952e\u8bcd\u76d1\u63a7\u5b8c\u6210\n\n\u65f6\u95f4\uff1a2026-03-27 08:00","entities":[{"offset":3,"length":7,"type":"bold"}]}}✅ 通知已发送到 Telegram
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+[2026-03-27 08:00:06] 🟡 Telegram 发送失败
+[2026-03-27 08:00:06] 🟡 Telegram 发送失败

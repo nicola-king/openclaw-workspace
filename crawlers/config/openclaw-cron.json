@@ -1,0 +1,11 @@
+{
+  "name": "crawler-daily",
+  "schedule": "0 9 * * *",
+  "command": "cd ~/.openclaw/workspace/crawlers && bash run.sh daily",
+  "description": "每日上午 9 点执行多平台内容采集",
+  "enabled": true,
+  "timeout": 1800,
+  "env": {
+    "PYTHONPATH": "/home/nicola/.openclaw/workspace/crawlers"
+  }
+}

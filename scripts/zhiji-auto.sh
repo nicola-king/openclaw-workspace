@@ -9,8 +9,8 @@ WORKSPACE="/home/nicola/.openclaw/workspace"
 LOG_FILE="$WORKSPACE/logs/zhiji-$(date +%Y%m%d).log"
 PROXY="http://127.0.0.1:7890"
 
-# 随机延迟 2-5 分钟（模拟人类行为，避免固定间隔）
-DELAY=$((120 + RANDOM % 180))
+# 随机延迟 0-30 秒（避免并发，快速响应）
+DELAY=$((RANDOM % 30))
 echo "[$(date)] 随机延迟 ${DELAY}秒..." >> $LOG_FILE
 sleep $DELAY
 

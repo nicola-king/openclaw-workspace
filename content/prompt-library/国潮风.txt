@@ -1,0 +1,14 @@
+# 国潮风 风格提示词模板
+
+## 核心提示词
+- 主体：{subject}
+- 风格：国潮风
+- 色调：{color_scheme}
+- 构图：{composition}
+- 光影：{lighting}
+
+## 质量词
+8k, ultra detailed, professional, masterpiece, best quality
+
+## 负面提示词
+low quality, worst quality, blurry, distorted, ugly

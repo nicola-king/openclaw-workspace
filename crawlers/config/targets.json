@@ -1,0 +1,42 @@
+{
+  "x": {
+    "enabled": true,
+    "accounts": [
+      "@OpenAI",
+      "@AnthropicAI",
+      "@googledeepmind"
+    ],
+    "keywords": [
+      "AGI",
+      "AI Agent",
+      "Taiyi"
+    ],
+    "hashtags": [
+      "#TaiyiAGI",
+      "#OpenClaw"
+    ],
+    "max_results": 50
+  },
+  "wechat": {
+    "enabled": false,
+    "note": "需要先配置 Cookie/Token，见 wechat_crawler.py --setup",
+    "accounts": [
+      "AI 科技评论",
+      "机器之心"
+    ],
+    "keywords": [
+      "大模型",
+      "Agent"
+    ],
+    "max_results": 20
+  },
+  "xiaohongshu": {
+    "enabled": false,
+    "note": "需要 MediaCrawler + Cookie 配置",
+    "keywords": [
+      "AI 工具",
+      "效率神器"
+    ],
+    "max_results": 30
+  }
+}

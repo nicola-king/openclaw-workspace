@@ -1,0 +1,2213 @@
+2026-03-26 20:56:02,800 - __main__ - INFO - 🚀 PolyAlert 监控服务启动
+2026-03-26 20:56:02,800 - __main__ - INFO - 监控市场数量：10
+2026-03-26 20:56:02,800 - __main__ - INFO - 轮询间隔：60秒
+2026-03-26 20:56:02,801 - __main__ - INFO - ✅ 数据库初始化完成
+2026-03-26 20:56:02,801 - __main__ - INFO - ==================================================
+2026-03-26 20:56:02,801 - __main__ - INFO - 开始轮询 - 2026-03-26 20:56:02.801401
+2026-03-26 20:56:02,801 - __main__ - INFO - 处理市场：bitcoin-price-2026
+2026-03-26 20:56:07,389 - __main__ - WARNING - 市场数据为空：bitcoin-price-2026
+2026-03-26 20:56:08,389 - __main__ - INFO - 处理市场：ethereum-price-2026
+2026-03-26 20:56:09,039 - __main__ - WARNING - 市场数据为空：ethereum-price-2026
+2026-03-26 20:56:10,040 - __main__ - INFO - 处理市场：trump-approval-rating
+2026-03-26 20:56:10,750 - __main__ - WARNING - 市场数据为空：trump-approval-rating
+2026-03-26 20:56:11,751 - __main__ - INFO - 处理市场：midterm-elections-2026
+2026-03-26 20:56:12,664 - __main__ - WARNING - 市场数据为空：midterm-elections-2026
+2026-03-26 20:56:13,664 - __main__ - INFO - 处理市场：super-bowl-2026
+2026-03-26 20:56:14,226 - __main__ - WARNING - 市场数据为空：super-bowl-2026
+2026-03-26 20:56:15,227 - __main__ - INFO - 处理市场：nba-championship-2026
+2026-03-26 20:56:16,008 - __main__ - WARNING - 市场数据为空：nba-championship-2026
+2026-03-26 20:56:17,009 - __main__ - INFO - 处理市场：hottest-year-2026
+2026-03-26 20:56:17,950 - __main__ - WARNING - 市场数据为空：hottest-year-2026
+2026-03-26 20:56:18,951 - __main__ - INFO - 处理市场：fed-rate-cut-2026
+2026-03-26 20:56:20,976 - __main__ - WARNING - 市场数据为空：fed-rate-cut-2026
+2026-03-26 20:56:21,977 - __main__ - INFO - 处理市场：oscars-best-picture-2026
+2026-03-26 20:56:22,956 - __main__ - WARNING - 市场数据为空：oscars-best-picture-2026
+2026-03-26 20:56:23,957 - __main__ - INFO - 处理市场：us-iran-conflict-2026
+2026-03-26 20:56:24,690 - __main__ - WARNING - 市场数据为空：us-iran-conflict-2026
+2026-03-26 20:56:25,691 - __main__ - INFO - 轮询完成 - 2026-03-26 20:56:25.690940
+2026-03-26 20:56:25,691 - __main__ - INFO - ==================================================
+2026-03-26 20:57:43,685 - __main__ - INFO - 🚀 PolyAlert 监控服务启动
+2026-03-26 20:57:43,685 - __main__ - INFO - 监控市场数量：10
+2026-03-26 20:57:43,685 - __main__ - INFO - 轮询间隔：60秒
+2026-03-26 20:57:43,686 - __main__ - INFO - ✅ 数据库初始化完成
+2026-03-26 20:57:43,686 - __main__ - INFO - ==================================================
+2026-03-26 20:57:43,686 - __main__ - INFO - 开始轮询 - 2026-03-26 20:57:43.686474
+2026-03-26 20:57:43,686 - __main__ - INFO - 处理市场：bitcoin-price-2026
+2026-03-26 20:57:44,022 - __main__ - WARNING - 市场数据为空：bitcoin-price-2026
+2026-03-26 20:57:45,023 - __main__ - INFO - 处理市场：ethereum-price-2026
+2026-03-26 20:57:45,433 - __main__ - WARNING - 市场数据为空：ethereum-price-2026
+2026-03-26 20:57:46,434 - __main__ - INFO - 处理市场：trump-approval-rating
+2026-03-26 20:57:47,134 - __main__ - WARNING - 市场数据为空：trump-approval-rating
+2026-03-26 20:57:48,135 - __main__ - INFO - 处理市场：midterm-elections-2026
+2026-03-26 20:57:49,150 - __main__ - WARNING - 市场数据为空：midterm-elections-2026
+2026-03-26 20:57:50,151 - __main__ - INFO - 处理市场：super-bowl-2026
+2026-03-26 20:57:50,786 - __main__ - WARNING - 市场数据为空：super-bowl-2026
+2026-03-26 20:57:51,787 - __main__ - INFO - 处理市场：nba-championship-2026
+2026-03-26 20:57:53,225 - __main__ - WARNING - 市场数据为空：nba-championship-2026
+2026-03-26 20:57:54,226 - __main__ - INFO - 处理市场：hottest-year-2026
+2026-03-26 20:57:54,852 - __main__ - WARNING - 市场数据为空：hottest-year-2026
+2026-03-26 20:57:55,853 - __main__ - INFO - 处理市场：fed-rate-cut-2026
+2026-03-26 20:57:56,189 - __main__ - WARNING - 市场数据为空：fed-rate-cut-2026
+2026-03-26 20:57:57,190 - __main__ - INFO - 处理市场：oscars-best-picture-2026
+2026-03-26 20:57:57,581 - __main__ - WARNING - 市场数据为空：oscars-best-picture-2026
+2026-03-26 20:57:58,582 - __main__ - INFO - 处理市场：us-iran-conflict-2026
+2026-03-26 20:57:59,199 - __main__ - WARNING - 市场数据为空：us-iran-conflict-2026
+2026-03-26 20:58:00,200 - __main__ - INFO - 轮询完成 - 2026-03-26 20:58:00.200092
+2026-03-26 20:58:00,200 - __main__ - INFO - ==================================================
+2026-03-26 20:59:00,200 - __main__ - INFO - ==================================================
+2026-03-26 20:59:00,201 - __main__ - INFO - 开始轮询 - 2026-03-26 20:59:00.201430
+2026-03-26 20:59:00,201 - __main__ - INFO - 处理市场：bitcoin-price-2026
+2026-03-26 20:59:00,478 - __main__ - WARNING - 市场数据为空：bitcoin-price-2026
+2026-03-26 20:59:01,479 - __main__ - INFO - 处理市场：ethereum-price-2026
+2026-03-26 20:59:01,851 - __main__ - WARNING - 市场数据为空：ethereum-price-2026
+2026-03-26 20:59:02,852 - __main__ - INFO - 处理市场：trump-approval-rating
+2026-03-26 20:59:03,145 - __main__ - WARNING - 市场数据为空：trump-approval-rating
+2026-03-26 20:59:04,146 - __main__ - INFO - 处理市场：midterm-elections-2026
+2026-03-26 20:59:04,413 - __main__ - WARNING - 市场数据为空：midterm-elections-2026
+2026-03-26 20:59:05,414 - __main__ - INFO - 处理市场：super-bowl-2026
+2026-03-26 20:59:05,795 - __main__ - WARNING - 市场数据为空：super-bowl-2026
+2026-03-26 20:59:06,796 - __main__ - INFO - 处理市场：nba-championship-2026
+2026-03-26 20:59:07,394 - __main__ - WARNING - 市场数据为空：nba-championship-2026
+2026-03-26 20:59:08,395 - __main__ - INFO - 处理市场：hottest-year-2026
+2026-03-26 20:59:08,662 - __main__ - WARNING - 市场数据为空：hottest-year-2026
+2026-03-26 20:59:09,663 - __main__ - INFO - 处理市场：fed-rate-cut-2026
+2026-03-26 20:59:10,087 - __main__ - WARNING - 市场数据为空：fed-rate-cut-2026
+2026-03-26 20:59:11,088 - __main__ - INFO - 处理市场：oscars-best-picture-2026
+2026-03-26 20:59:11,357 - __main__ - WARNING - 市场数据为空：oscars-best-picture-2026
+2026-03-26 20:59:12,358 - __main__ - INFO - 处理市场：us-iran-conflict-2026
+2026-03-26 20:59:12,721 - __main__ - WARNING - 市场数据为空：us-iran-conflict-2026
+2026-03-26 20:59:13,722 - __main__ - INFO - 轮询完成 - 2026-03-26 20:59:13.722068
+2026-03-26 20:59:13,722 - __main__ - INFO - ==================================================
+2026-03-26 21:15:15,426 - __main__ - INFO - 🚀 PolyAlert 监控服务启动
+2026-03-26 21:15:15,426 - __main__ - INFO - 监控市场数量：6
+2026-03-26 21:15:15,426 - __main__ - INFO - 轮询间隔：60秒
+2026-03-26 21:15:15,427 - __main__ - INFO - ✅ 数据库初始化完成
+2026-03-26 21:15:15,427 - __main__ - INFO - ==================================================
+2026-03-26 21:15:15,427 - __main__ - INFO - 开始轮询 - 2026-03-26 21:15:15.427409
+2026-03-26 21:15:15,427 - __main__ - INFO - 处理市场：btc-100k-march
+2026-03-26 21:15:16,019 - __main__ - WARNING - 市场数据为空：btc-100k-march
+2026-03-26 21:15:17,019 - __main__ - INFO - 处理市场：eth-price-5000
+2026-03-26 21:15:18,065 - __main__ - WARNING - 市场数据为空：eth-price-5000
+2026-03-26 21:15:19,065 - __main__ - INFO - 处理市场：doge-crypto
+2026-03-26 21:15:19,627 - __main__ - WARNING - 市场数据为空：doge-crypto
+2026-03-26 21:15:20,628 - __main__ - INFO - 处理市场：xrp-price-target
+2026-03-26 21:15:21,167 - __main__ - WARNING - 市场数据为空：xrp-price-target
+2026-03-26 21:15:22,167 - __main__ - INFO - 处理市场：trump-crypto
+2026-03-26 21:15:22,742 - __main__ - WARNING - 市场数据为空：trump-crypto
+2026-03-26 21:15:23,743 - __main__ - INFO - 处理市场：powell-rate-cut
+2026-03-26 21:15:24,382 - __main__ - WARNING - 市场数据为空：powell-rate-cut
+2026-03-26 21:15:25,382 - __main__ - INFO - 轮询完成 - 2026-03-26 21:15:25.382896
+2026-03-26 21:15:25,383 - __main__ - INFO - ==================================================
+2026-03-26 21:16:25,383 - __main__ - INFO - ==================================================
+2026-03-26 21:16:25,383 - __main__ - INFO - 开始轮询 - 2026-03-26 21:16:25.383382
+2026-03-26 21:16:25,383 - __main__ - INFO - 处理市场：btc-100k-march
+2026-03-26 21:16:26,873 - __main__ - ERROR - 获取市场数据失败 btc-100k-march: HTTPSConnectionPool(host='gamma-api.polymarket.com', port=443): Max retries exceeded with url: /events?active=true&limit=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2026-03-26 21:16:26,873 - __main__ - WARNING - 市场数据为空：btc-100k-march
+2026-03-26 21:16:27,873 - __main__ - INFO - 处理市场：eth-price-5000
+2026-03-26 21:16:29,837 - __main__ - WARNING - 市场数据为空：eth-price-5000
+2026-03-26 21:16:30,837 - __main__ - INFO - 处理市场：doge-crypto
+2026-03-26 21:16:32,955 - __main__ - WARNING - 市场数据为空：doge-crypto
+2026-03-26 21:16:33,955 - __main__ - INFO - 处理市场：xrp-price-target
+2026-03-26 21:16:34,404 - __main__ - WARNING - 市场数据为空：xrp-price-target
+2026-03-26 21:16:35,404 - __main__ - INFO - 处理市场：trump-crypto
+2026-03-26 21:16:36,482 - __main__ - WARNING - 市场数据为空：trump-crypto
+2026-03-26 21:16:37,482 - __main__ - INFO - 处理市场：powell-rate-cut
+2026-03-26 21:16:38,232 - __main__ - WARNING - 市场数据为空：powell-rate-cut
+2026-03-26 21:16:39,232 - __main__ - INFO - 轮询完成 - 2026-03-26 21:16:39.232345
+2026-03-26 21:16:39,232 - __main__ - INFO - ==================================================
+2026-03-26 21:17:39,232 - __main__ - INFO - ==================================================
+2026-03-26 21:17:39,232 - __main__ - INFO - 开始轮询 - 2026-03-26 21:17:39.232833
+2026-03-26 21:17:39,232 - __main__ - INFO - 处理市场：btc-100k-march
+2026-03-26 21:17:39,784 - __main__ - WARNING - 市场数据为空：btc-100k-march
+2026-03-26 21:17:40,784 - __main__ - INFO - 处理市场：eth-price-5000
+2026-03-26 21:17:41,143 - __main__ - WARNING - 市场数据为空：eth-price-5000
+2026-03-26 21:17:42,143 - __main__ - INFO - 处理市场：doge-crypto
+2026-03-26 21:17:42,512 - __main__ - WARNING - 市场数据为空：doge-crypto
+2026-03-26 21:17:43,512 - __main__ - INFO - 处理市场：xrp-price-target
+2026-03-26 21:17:44,012 - __main__ - WARNING - 市场数据为空：xrp-price-target
+2026-03-26 21:17:45,012 - __main__ - INFO - 处理市场：trump-crypto
+2026-03-26 21:17:45,687 - __main__ - WARNING - 市场数据为空：trump-crypto
+2026-03-26 21:17:46,687 - __main__ - INFO - 处理市场：powell-rate-cut
+2026-03-26 21:17:47,139 - __main__ - WARNING - 市场数据为空：powell-rate-cut
+2026-03-26 21:17:48,140 - __main__ - INFO - 轮询完成 - 2026-03-26 21:17:48.139968
+2026-03-26 21:17:48,140 - __main__ - INFO - ==================================================
+2026-03-26 21:18:48,140 - __main__ - INFO - ==================================================
+2026-03-26 21:18:48,140 - __main__ - INFO - 开始轮询 - 2026-03-26 21:18:48.140450
+2026-03-26 21:18:48,140 - __main__ - INFO - 处理市场：btc-100k-march
+2026-03-26 21:18:49,469 - __main__ - ERROR - 获取市场数据失败 btc-100k-march: HTTPSConnectionPool(host='gamma-api.polymarket.com', port=443): Max retries exceeded with url: /events?active=true&limit=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2026-03-26 21:18:49,469 - __main__ - WARNING - 市场数据为空：btc-100k-march
+2026-03-26 21:18:50,470 - __main__ - INFO - 处理市场：eth-price-5000
+2026-03-26 21:18:51,754 - __main__ - ERROR - 获取市场数据失败 eth-price-5000: HTTPSConnectionPool(host='gamma-api.polymarket.com', port=443): Max retries exceeded with url: /events?active=true&limit=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2026-03-26 21:18:51,755 - __main__ - WARNING - 市场数据为空：eth-price-5000
+2026-03-26 21:18:52,755 - __main__ - INFO - 处理市场：doge-crypto
+2026-03-26 21:18:54,295 - __main__ - ERROR - 获取市场数据失败 doge-crypto: HTTPSConnectionPool(host='gamma-api.polymarket.com', port=443): Max retries exceeded with url: /events?active=true&limit=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2026-03-26 21:18:54,296 - __main__ - WARNING - 市场数据为空：doge-crypto
+2026-03-26 21:18:55,296 - __main__ - INFO - 处理市场：xrp-price-target
+2026-03-26 21:18:56,564 - __main__ - ERROR - 获取市场数据失败 xrp-price-target: HTTPSConnectionPool(host='gamma-api.polymarket.com', port=443): Max retries exceeded with url: /events?active=true&limit=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2026-03-26 21:18:56,565 - __main__ - WARNING - 市场数据为空：xrp-price-target
+2026-03-26 21:18:57,565 - __main__ - INFO - 处理市场：trump-crypto
+2026-03-26 21:18:58,833 - __main__ - ERROR - 获取市场数据失败 trump-crypto: HTTPSConnectionPool(host='gamma-api.polymarket.com', port=443): Max retries exceeded with url: /events?active=true&limit=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2026-03-26 21:18:58,833 - __main__ - WARNING - 市场数据为空：trump-crypto
+2026-03-26 21:18:59,833 - __main__ - INFO - 处理市场：powell-rate-cut
+2026-03-26 21:19:00,824 - __main__ - WARNING - 市场数据为空：powell-rate-cut
+2026-03-26 21:19:01,824 - __main__ - INFO - 轮询完成 - 2026-03-26 21:19:01.824745
+2026-03-26 21:19:01,824 - __main__ - INFO - ==================================================
+2026-03-26 21:20:01,825 - __main__ - INFO - ==================================================
+2026-03-26 21:20:01,825 - __main__ - INFO - 开始轮询 - 2026-03-26 21:20:01.825207
+2026-03-26 21:20:01,825 - __main__ - INFO - 处理市场：btc-100k-march
+2026-03-26 21:20:02,197 - __main__ - WARNING - 市场数据为空：btc-100k-march
+2026-03-26 21:20:03,197 - __main__ - INFO - 处理市场：eth-price-5000
+2026-03-26 21:20:03,752 - __main__ - WARNING - 市场数据为空：eth-price-5000
+2026-03-26 21:20:04,753 - __main__ - INFO - 处理市场：doge-crypto
+2026-03-26 21:20:05,110 - __main__ - WARNING - 市场数据为空：doge-crypto
+2026-03-26 21:20:06,110 - __main__ - INFO - 处理市场：xrp-price-target
+2026-03-26 21:20:06,569 - __main__ - WARNING - 市场数据为空：xrp-price-target
+2026-03-26 21:20:07,569 - __main__ - INFO - 处理市场：trump-crypto
+2026-03-26 21:20:08,090 - __main__ - WARNING - 市场数据为空：trump-crypto
+2026-03-26 21:20:09,090 - __main__ - INFO - 处理市场：powell-rate-cut
+2026-03-26 21:20:09,454 - __main__ - WARNING - 市场数据为空：powell-rate-cut
+2026-03-26 21:20:10,455 - __main__ - INFO - 轮询完成 - 2026-03-26 21:20:10.455331
+2026-03-26 21:20:10,455 - __main__ - INFO - ==================================================
+2026-03-26 21:21:10,455 - __main__ - INFO - ==================================================
+2026-03-26 21:21:10,455 - __main__ - INFO - 开始轮询 - 2026-03-26 21:21:10.455808
+2026-03-26 21:21:10,455 - __main__ - INFO - 处理市场：btc-100k-march
+2026-03-26 21:21:10,922 - __main__ - WARNING - 市场数据为空：btc-100k-march
+2026-03-26 21:21:11,922 - __main__ - INFO - 处理市场：eth-price-5000
+2026-03-26 21:21:12,474 - __main__ - WARNING - 市场数据为空：eth-price-5000
+2026-03-26 21:21:13,474 - __main__ - INFO - 处理市场：doge-crypto
+2026-03-26 21:21:13,993 - __main__ - WARNING - 市场数据为空：doge-crypto
+2026-03-26 21:21:14,994 - __main__ - INFO - 处理市场：xrp-price-target
+2026-03-26 21:21:15,548 - __main__ - WARNING - 市场数据为空：xrp-price-target
+2026-03-26 21:21:16,549 - __main__ - INFO - 处理市场：trump-crypto
+2026-03-26 21:21:17,078 - __main__ - WARNING - 市场数据为空：trump-crypto
+2026-03-26 21:21:18,078 - __main__ - INFO - 处理市场：powell-rate-cut
+2026-03-26 21:21:18,531 - __main__ - WARNING - 市场数据为空：powell-rate-cut
+2026-03-26 21:21:19,532 - __main__ - INFO - 轮询完成 - 2026-03-26 21:21:19.532079
+2026-03-26 21:21:19,532 - __main__ - INFO - ==================================================
+2026-03-26 21:22:19,532 - __main__ - INFO - ==================================================
+2026-03-26 21:22:19,532 - __main__ - INFO - 开始轮询 - 2026-03-26 21:22:19.532681
+2026-03-26 21:22:19,532 - __main__ - INFO - 处理市场：btc-100k-march
+2026-03-26 21:22:20,737 - __main__ - ERROR - 获取市场数据失败 btc-100k-march: HTTPSConnectionPool(host='gamma-api.polymarket.com', port=443): Max retries exceeded with url: /events?active=true&limit=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2026-03-26 21:22:20,737 - __main__ - WARNING - 市场数据为空：btc-100k-march
+2026-03-26 21:22:21,737 - __main__ - INFO - 处理市场：eth-price-5000
+2026-03-26 21:22:22,916 - __main__ - ERROR - 获取市场数据失败 eth-price-5000: HTTPSConnectionPool(host='gamma-api.polymarket.com', port=443): Max retries exceeded with url: /events?active=true&limit=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2026-03-26 21:22:22,916 - __main__ - WARNING - 市场数据为空：eth-price-5000
+2026-03-26 21:22:23,916 - __main__ - INFO - 处理市场：doge-crypto
+2026-03-26 21:22:25,112 - __main__ - ERROR - 获取市场数据失败 doge-crypto: HTTPSConnectionPool(host='gamma-api.polymarket.com', port=443): Max retries exceeded with url: /events?active=true&limit=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2026-03-26 21:22:25,112 - __main__ - WARNING - 市场数据为空：doge-crypto
+2026-03-26 21:22:26,112 - __main__ - INFO - 处理市场：xrp-price-target
+2026-03-26 21:22:26,639 - __main__ - WARNING - 市场数据为空：xrp-price-target
+2026-03-26 21:22:27,640 - __main__ - INFO - 处理市场：trump-crypto
+2026-03-26 21:22:28,111 - __main__ - WARNING - 市场数据为空：trump-crypto
+2026-03-26 21:22:29,111 - __main__ - INFO - 处理市场：powell-rate-cut
+2026-03-26 21:22:29,647 - __main__ - WARNING - 市场数据为空：powell-rate-cut
+2026-03-26 21:22:30,648 - __main__ - INFO - 轮询完成 - 2026-03-26 21:22:30.648143
+2026-03-26 21:22:30,648 - __main__ - INFO - ==================================================
+2026-03-26 21:23:30,648 - __main__ - INFO - ==================================================
+2026-03-26 21:23:30,648 - __main__ - INFO - 开始轮询 - 2026-03-26 21:23:30.648597
+2026-03-26 21:23:30,648 - __main__ - INFO - 处理市场：btc-100k-march
+2026-03-26 21:23:31,051 - __main__ - WARNING - 市场数据为空：btc-100k-march
+2026-03-26 21:23:32,051 - __main__ - INFO - 处理市场：eth-price-5000
+2026-03-26 21:23:32,711 - __main__ - WARNING - 市场数据为空：eth-price-5000
+2026-03-26 21:23:33,711 - __main__ - INFO - 处理市场：doge-crypto
+2026-03-26 21:23:34,475 - __main__ - WARNING - 市场数据为空：doge-crypto
+2026-03-26 21:23:35,475 - __main__ - INFO - 处理市场：xrp-price-target
+2026-03-26 21:23:36,154 - __main__ - WARNING - 市场数据为空：xrp-price-target
+2026-03-26 21:23:37,155 - __main__ - INFO - 处理市场：trump-crypto
+2026-03-26 21:23:37,749 - __main__ - WARNING - 市场数据为空：trump-crypto
+2026-03-26 21:23:38,750 - __main__ - INFO - 处理市场：powell-rate-cut
+2026-03-26 21:23:39,243 - __main__ - WARNING - 市场数据为空：powell-rate-cut
+2026-03-26 21:23:40,244 - __main__ - INFO - 轮询完成 - 2026-03-26 21:23:40.244349
+2026-03-26 21:23:40,244 - __main__ - INFO - ==================================================
+2026-03-26 21:24:40,244 - __main__ - INFO - ==================================================
+2026-03-26 21:24:40,245 - __main__ - INFO - 开始轮询 - 2026-03-26 21:24:40.244983
+2026-03-26 21:24:40,245 - __main__ - INFO - 处理市场：btc-100k-march
+2026-03-26 21:24:41,468 - __main__ - ERROR - 获取市场数据失败 btc-100k-march: HTTPSConnectionPool(host='gamma-api.polymarket.com', port=443): Max retries exceeded with url: /events?active=true&limit=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2026-03-26 21:24:41,468 - __main__ - WARNING - 市场数据为空：btc-100k-march
+2026-03-26 21:24:42,469 - __main__ - INFO - 处理市场：eth-price-5000
+2026-03-26 21:24:43,673 - __main__ - ERROR - 获取市场数据失败 eth-price-5000: HTTPSConnectionPool(host='gamma-api.polymarket.com', port=443): Max retries exceeded with url: /events?active=true&limit=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2026-03-26 21:24:43,673 - __main__ - WARNING - 市场数据为空：eth-price-5000
+2026-03-26 21:24:44,673 - __main__ - INFO - 处理市场：doge-crypto
+2026-03-26 21:24:45,933 - __main__ - ERROR - 获取市场数据失败 doge-crypto: HTTPSConnectionPool(host='gamma-api.polymarket.com', port=443): Max retries exceeded with url: /events?active=true&limit=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2026-03-26 21:24:45,933 - __main__ - WARNING - 市场数据为空：doge-crypto
+2026-03-26 21:24:46,933 - __main__ - INFO - 处理市场：xrp-price-target
+2026-03-26 21:24:48,224 - __main__ - ERROR - 获取市场数据失败 xrp-price-target: HTTPSConnectionPool(host='gamma-api.polymarket.com', port=443): Max retries exceeded with url: /events?active=true&limit=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2026-03-26 21:24:48,224 - __main__ - WARNING - 市场数据为空：xrp-price-target
+2026-03-26 21:24:49,225 - __main__ - INFO - 处理市场：trump-crypto
+2026-03-26 21:24:50,515 - __main__ - ERROR - 获取市场数据失败 trump-crypto: HTTPSConnectionPool(host='gamma-api.polymarket.com', port=443): Max retries exceeded with url: /events?active=true&limit=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2026-03-26 21:24:50,515 - __main__ - WARNING - 市场数据为空：trump-crypto
+2026-03-26 21:24:51,515 - __main__ - INFO - 处理市场：powell-rate-cut
+2026-03-26 21:24:52,755 - __main__ - ERROR - 获取市场数据失败 powell-rate-cut: HTTPSConnectionPool(host='gamma-api.polymarket.com', port=443): Max retries exceeded with url: /events?active=true&limit=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2026-03-26 21:24:52,755 - __main__ - WARNING - 市场数据为空：powell-rate-cut
+2026-03-26 21:24:53,756 - __main__ - INFO - 轮询完成 - 2026-03-26 21:24:53.756102
+2026-03-26 21:24:53,756 - __main__ - INFO - ==================================================
+2026-03-26 21:25:53,756 - __main__ - INFO - ==================================================
+2026-03-26 21:25:53,756 - __main__ - INFO - 开始轮询 - 2026-03-26 21:25:53.756635
+2026-03-26 21:25:53,756 - __main__ - INFO - 处理市场：btc-100k-march
+2026-03-26 21:25:54,903 - __main__ - ERROR - 获取市场数据失败 btc-100k-march: HTTPSConnectionPool(host='gamma-api.polymarket.com', port=443): Max retries exceeded with url: /events?active=true&limit=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2026-03-26 21:25:54,903 - __main__ - WARNING - 市场数据为空：btc-100k-march
+2026-03-26 21:25:55,903 - __main__ - INFO - 处理市场：eth-price-5000
+2026-03-26 21:25:57,042 - __main__ - ERROR - 获取市场数据失败 eth-price-5000: HTTPSConnectionPool(host='gamma-api.polymarket.com', port=443): Max retries exceeded with url: /events?active=true&limit=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2026-03-26 21:25:57,043 - __main__ - WARNING - 市场数据为空：eth-price-5000
+2026-03-26 21:25:58,043 - __main__ - INFO - 处理市场：doge-crypto
+2026-03-26 21:25:59,210 - __main__ - ERROR - 获取市场数据失败 doge-crypto: HTTPSConnectionPool(host='gamma-api.polymarket.com', port=443): Max retries exceeded with url: /events?active=true&limit=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2026-03-26 21:25:59,211 - __main__ - WARNING - 市场数据为空：doge-crypto
+2026-03-26 21:26:00,211 - __main__ - INFO - 处理市场：xrp-price-target
+2026-03-26 21:26:01,424 - __main__ - ERROR - 获取市场数据失败 xrp-price-target: HTTPSConnectionPool(host='gamma-api.polymarket.com', port=443): Max retries exceeded with url: /events?active=true&limit=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2026-03-26 21:26:01,424 - __main__ - WARNING - 市场数据为空：xrp-price-target
+2026-03-26 21:26:02,424 - __main__ - INFO - 处理市场：trump-crypto
+2026-03-26 21:26:03,583 - __main__ - ERROR - 获取市场数据失败 trump-crypto: HTTPSConnectionPool(host='gamma-api.polymarket.com', port=443): Max retries exceeded with url: /events?active=true&limit=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2026-03-26 21:26:03,584 - __main__ - WARNING - 市场数据为空：trump-crypto
+2026-03-26 21:26:04,584 - __main__ - INFO - 处理市场：powell-rate-cut
+2026-03-26 21:26:05,752 - __main__ - ERROR - 获取市场数据失败 powell-rate-cut: HTTPSConnectionPool(host='gamma-api.polymarket.com', port=443): Max retries exceeded with url: /events?active=true&limit=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2026-03-26 21:26:05,752 - __main__ - WARNING - 市场数据为空：powell-rate-cut
+2026-03-26 21:26:06,753 - __main__ - INFO - 轮询完成 - 2026-03-26 21:26:06.753006
+2026-03-26 21:26:06,753 - __main__ - INFO - ==================================================
+2026-03-26 21:27:06,753 - __main__ - INFO - ==================================================
+2026-03-26 21:27:06,753 - __main__ - INFO - 开始轮询 - 2026-03-26 21:27:06.753513
+2026-03-26 21:27:06,753 - __main__ - INFO - 处理市场：btc-100k-march
+2026-03-26 21:27:07,915 - __main__ - ERROR - 获取市场数据失败 btc-100k-march: HTTPSConnectionPool(host='gamma-api.polymarket.com', port=443): Max retries exceeded with url: /events?active=true&limit=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2026-03-26 21:27:07,916 - __main__ - WARNING - 市场数据为空：btc-100k-march
+2026-03-26 21:27:08,916 - __main__ - INFO - 处理市场：eth-price-5000
+2026-03-26 21:27:10,100 - __main__ - ERROR - 获取市场数据失败 eth-price-5000: HTTPSConnectionPool(host='gamma-api.polymarket.com', port=443): Max retries exceeded with url: /events?active=true&limit=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2026-03-26 21:27:10,100 - __main__ - WARNING - 市场数据为空：eth-price-5000
+2026-03-26 21:27:11,100 - __main__ - INFO - 处理市场：doge-crypto
+2026-03-26 21:27:12,327 - __main__ - ERROR - 获取市场数据失败 doge-crypto: HTTPSConnectionPool(host='gamma-api.polymarket.com', port=443): Max retries exceeded with url: /events?active=true&limit=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2026-03-26 21:27:12,327 - __main__ - WARNING - 市场数据为空：doge-crypto
+2026-03-26 21:27:13,327 - __main__ - INFO - 处理市场：xrp-price-target
+2026-03-26 21:27:14,504 - __main__ - ERROR - 获取市场数据失败 xrp-price-target: HTTPSConnectionPool(host='gamma-api.polymarket.com', port=443): Max retries exceeded with url: /events?active=true&limit=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2026-03-26 21:27:14,505 - __main__ - WARNING - 市场数据为空：xrp-price-target
+2026-03-26 21:27:15,505 - __main__ - INFO - 处理市场：trump-crypto
+2026-03-26 21:27:16,662 - __main__ - ERROR - 获取市场数据失败 trump-crypto: HTTPSConnectionPool(host='gamma-api.polymarket.com', port=443): Max retries exceeded with url: /events?active=true&limit=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2026-03-26 21:27:16,665 - __main__ - WARNING - 市场数据为空：trump-crypto
+2026-03-26 21:27:17,665 - __main__ - INFO - 处理市场：powell-rate-cut
+2026-03-26 21:27:18,835 - __main__ - ERROR - 获取市场数据失败 powell-rate-cut: HTTPSConnectionPool(host='gamma-api.polymarket.com', port=443): Max retries exceeded with url: /events?active=true&limit=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2026-03-26 21:27:18,836 - __main__ - WARNING - 市场数据为空：powell-rate-cut
+2026-03-26 21:27:19,836 - __main__ - INFO - 轮询完成 - 2026-03-26 21:27:19.836271
+2026-03-26 21:27:19,836 - __main__ - INFO - ==================================================
+2026-03-26 21:28:19,836 - __main__ - INFO - ==================================================
+2026-03-26 21:28:19,836 - __main__ - INFO - 开始轮询 - 2026-03-26 21:28:19.836786
+2026-03-26 21:28:19,836 - __main__ - INFO - 处理市场：btc-100k-march
+2026-03-26 21:28:20,390 - __main__ - WARNING - 市场数据为空：btc-100k-march
+2026-03-26 21:28:21,390 - __main__ - INFO - 处理市场：eth-price-5000
+2026-03-26 21:28:21,965 - __main__ - WARNING - 市场数据为空：eth-price-5000
+2026-03-26 21:28:22,965 - __main__ - INFO - 处理市场：doge-crypto
+2026-03-26 21:28:23,495 - __main__ - WARNING - 市场数据为空：doge-crypto
+2026-03-26 21:28:24,495 - __main__ - INFO - 处理市场：xrp-price-target
+2026-03-26 21:28:24,992 - __main__ - WARNING - 市场数据为空：xrp-price-target
+2026-03-26 21:28:25,992 - __main__ - INFO - 处理市场：trump-crypto
+2026-03-26 21:28:26,969 - __main__ - WARNING - 市场数据为空：trump-crypto
+2026-03-26 21:28:27,970 - __main__ - INFO - 处理市场：powell-rate-cut
+2026-03-26 21:28:28,715 - __main__ - WARNING - 市场数据为空：powell-rate-cut
+2026-03-26 21:28:29,715 - __main__ - INFO - 轮询完成 - 2026-03-26 21:28:29.715763
+2026-03-26 21:28:29,715 - __main__ - INFO - ==================================================
+2026-03-26 21:29:29,716 - __main__ - INFO - ==================================================
+2026-03-26 21:29:29,716 - __main__ - INFO - 开始轮询 - 2026-03-26 21:29:29.716219
+2026-03-26 21:29:29,716 - __main__ - INFO - 处理市场：btc-100k-march
+2026-03-26 21:29:30,502 - __main__ - WARNING - 市场数据为空：btc-100k-march
+2026-03-26 21:29:31,506 - __main__ - INFO - 处理市场：eth-price-5000
+2026-03-26 21:29:31,864 - __main__ - WARNING - 市场数据为空：eth-price-5000
+2026-03-26 21:29:32,865 - __main__ - INFO - 处理市场：doge-crypto
+2026-03-26 21:29:33,245 - __main__ - WARNING - 市场数据为空：doge-crypto
+2026-03-26 21:29:34,246 - __main__ - INFO - 处理市场：xrp-price-target
+2026-03-26 21:29:34,715 - __main__ - WARNING - 市场数据为空：xrp-price-target
+2026-03-26 21:29:35,716 - __main__ - INFO - 处理市场：trump-crypto
+2026-03-26 21:29:36,239 - __main__ - WARNING - 市场数据为空：trump-crypto
+2026-03-26 21:29:37,240 - __main__ - INFO - 处理市场：powell-rate-cut
+2026-03-26 21:29:37,765 - __main__ - WARNING - 市场数据为空：powell-rate-cut
+2026-03-26 21:29:38,766 - __main__ - INFO - 轮询完成 - 2026-03-26 21:29:38.766256
+2026-03-26 21:29:38,766 - __main__ - INFO - ==================================================
+2026-03-26 21:30:38,766 - __main__ - INFO - ==================================================
+2026-03-26 21:30:38,766 - __main__ - INFO - 开始轮询 - 2026-03-26 21:30:38.766819
+2026-03-26 21:30:38,766 - __main__ - INFO - 处理市场：btc-100k-march
+2026-03-26 21:30:39,931 - __main__ - ERROR - 获取市场数据失败 btc-100k-march: HTTPSConnectionPool(host='gamma-api.polymarket.com', port=443): Max retries exceeded with url: /events?active=true&limit=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2026-03-26 21:30:39,931 - __main__ - WARNING - 市场数据为空：btc-100k-march
+2026-03-26 21:30:40,931 - __main__ - INFO - 处理市场：eth-price-5000
+2026-03-26 21:30:45,604 - __main__ - ERROR - 获取市场数据失败 eth-price-5000: HTTPSConnectionPool(host='gamma-api.polymarket.com', port=443): Max retries exceeded with url: /events?active=true&limit=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2026-03-26 21:30:45,604 - __main__ - WARNING - 市场数据为空：eth-price-5000
+2026-03-26 21:30:46,605 - __main__ - INFO - 处理市场：doge-crypto
+2026-03-26 21:30:48,837 - __main__ - ERROR - 获取市场数据失败 doge-crypto: HTTPSConnectionPool(host='gamma-api.polymarket.com', port=443): Max retries exceeded with url: /events?active=true&limit=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2026-03-26 21:30:48,837 - __main__ - WARNING - 市场数据为空：doge-crypto
+2026-03-26 21:30:49,838 - __main__ - INFO - 处理市场：xrp-price-target
+2026-03-26 21:30:50,991 - __main__ - ERROR - 获取市场数据失败 xrp-price-target: HTTPSConnectionPool(host='gamma-api.polymarket.com', port=443): Max retries exceeded with url: /events?active=true&limit=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2026-03-26 21:30:50,991 - __main__ - WARNING - 市场数据为空：xrp-price-target
+2026-03-26 21:30:51,991 - __main__ - INFO - 处理市场：trump-crypto
+2026-03-26 21:30:53,257 - __main__ - ERROR - 获取市场数据失败 trump-crypto: HTTPSConnectionPool(host='gamma-api.polymarket.com', port=443): Max retries exceeded with url: /events?active=true&limit=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2026-03-26 21:30:53,257 - __main__ - WARNING - 市场数据为空：trump-crypto
+2026-03-26 21:30:54,257 - __main__ - INFO - 处理市场：powell-rate-cut
+2026-03-26 21:30:55,642 - __main__ - ERROR - 获取市场数据失败 powell-rate-cut: HTTPSConnectionPool(host='gamma-api.polymarket.com', port=443): Max retries exceeded with url: /events?active=true&limit=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2026-03-26 21:30:55,642 - __main__ - WARNING - 市场数据为空：powell-rate-cut
+2026-03-26 21:30:56,642 - __main__ - INFO - 轮询完成 - 2026-03-26 21:30:56.642598
+2026-03-26 21:30:56,642 - __main__ - INFO - ==================================================
+2026-03-26 21:31:56,643 - __main__ - INFO - ==================================================
+2026-03-26 21:31:56,643 - __main__ - INFO - 开始轮询 - 2026-03-26 21:31:56.643571
+2026-03-26 21:31:56,643 - __main__ - INFO - 处理市场：btc-100k-march
+2026-03-26 21:31:57,819 - __main__ - ERROR - 获取市场数据失败 btc-100k-march: HTTPSConnectionPool(host='gamma-api.polymarket.com', port=443): Max retries exceeded with url: /events?active=true&limit=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2026-03-26 21:31:57,819 - __main__ - WARNING - 市场数据为空：btc-100k-march
+2026-03-26 21:31:58,819 - __main__ - INFO - 处理市场：eth-price-5000
+2026-03-26 21:31:59,973 - __main__ - ERROR - 获取市场数据失败 eth-price-5000: HTTPSConnectionPool(host='gamma-api.polymarket.com', port=443): Max retries exceeded with url: /events?active=true&limit=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2026-03-26 21:31:59,973 - __main__ - WARNING - 市场数据为空：eth-price-5000
+2026-03-26 21:32:00,974 - __main__ - INFO - 处理市场：doge-crypto
+2026-03-26 21:32:02,120 - __main__ - ERROR - 获取市场数据失败 doge-crypto: HTTPSConnectionPool(host='gamma-api.polymarket.com', port=443): Max retries exceeded with url: /events?active=true&limit=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2026-03-26 21:32:02,120 - __main__ - WARNING - 市场数据为空：doge-crypto
+2026-03-26 21:32:03,120 - __main__ - INFO - 处理市场：xrp-price-target
+2026-03-26 21:32:04,285 - __main__ - ERROR - 获取市场数据失败 xrp-price-target: HTTPSConnectionPool(host='gamma-api.polymarket.com', port=443): Max retries exceeded with url: /events?active=true&limit=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2026-03-26 21:32:04,285 - __main__ - WARNING - 市场数据为空：xrp-price-target
+2026-03-26 21:32:05,285 - __main__ - INFO - 处理市场：trump-crypto
+2026-03-26 21:32:06,454 - __main__ - ERROR - 获取市场数据失败 trump-crypto: HTTPSConnectionPool(host='gamma-api.polymarket.com', port=443): Max retries exceeded with url: /events?active=true&limit=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2026-03-26 21:32:06,455 - __main__ - WARNING - 市场数据为空：trump-crypto
+2026-03-26 21:32:07,455 - __main__ - INFO - 处理市场：powell-rate-cut
+2026-03-26 21:32:08,646 - __main__ - ERROR - 获取市场数据失败 powell-rate-cut: HTTPSConnectionPool(host='gamma-api.polymarket.com', port=443): Max retries exceeded with url: /events?active=true&limit=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2026-03-26 21:32:08,646 - __main__ - WARNING - 市场数据为空：powell-rate-cut
+2026-03-26 21:32:09,646 - __main__ - INFO - 轮询完成 - 2026-03-26 21:32:09.646938
+2026-03-26 21:32:09,647 - __main__ - INFO - ==================================================
+2026-03-26 21:33:09,647 - __main__ - INFO - ==================================================
+2026-03-26 21:33:09,647 - __main__ - INFO - 开始轮询 - 2026-03-26 21:33:09.647643
+2026-03-26 21:33:09,647 - __main__ - INFO - 处理市场：btc-100k-march
+2026-03-26 21:33:10,914 - __main__ - ERROR - 获取市场数据失败 btc-100k-march: HTTPSConnectionPool(host='gamma-api.polymarket.com', port=443): Max retries exceeded with url: /events?active=true&limit=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2026-03-26 21:33:10,914 - __main__ - WARNING - 市场数据为空：btc-100k-march
+2026-03-26 21:33:11,914 - __main__ - INFO - 处理市场：eth-price-5000
+2026-03-26 21:33:13,621 - __main__ - ERROR - 获取市场数据失败 eth-price-5000: HTTPSConnectionPool(host='gamma-api.polymarket.com', port=443): Max retries exceeded with url: /events?active=true&limit=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2026-03-26 21:33:13,622 - __main__ - WARNING - 市场数据为空：eth-price-5000
+2026-03-26 21:33:14,622 - __main__ - INFO - 处理市场：doge-crypto
+2026-03-26 21:33:15,881 - __main__ - ERROR - 获取市场数据失败 doge-crypto: HTTPSConnectionPool(host='gamma-api.polymarket.com', port=443): Max retries exceeded with url: /events?active=true&limit=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2026-03-26 21:33:15,882 - __main__ - WARNING - 市场数据为空：doge-crypto
+2026-03-26 21:33:16,882 - __main__ - INFO - 处理市场：xrp-price-target
+2026-03-26 21:33:18,095 - __main__ - ERROR - 获取市场数据失败 xrp-price-target: HTTPSConnectionPool(host='gamma-api.polymarket.com', port=443): Max retries exceeded with url: /events?active=true&limit=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2026-03-26 21:33:18,098 - __main__ - WARNING - 市场数据为空：xrp-price-target
+2026-03-26 21:33:19,098 - __main__ - INFO - 处理市场：trump-crypto
+2026-03-26 21:33:20,341 - __main__ - ERROR - 获取市场数据失败 trump-crypto: HTTPSConnectionPool(host='gamma-api.polymarket.com', port=443): Max retries exceeded with url: /events?active=true&limit=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2026-03-26 21:33:20,342 - __main__ - WARNING - 市场数据为空：trump-crypto
+2026-03-26 21:33:21,342 - __main__ - INFO - 处理市场：powell-rate-cut
+2026-03-26 21:33:22,143 - __main__ - WARNING - 市场数据为空：powell-rate-cut
+2026-03-26 21:33:23,144 - __main__ - INFO - 轮询完成 - 2026-03-26 21:33:23.144560
+2026-03-26 21:33:23,144 - __main__ - INFO - ==================================================
+2026-03-26 21:34:23,144 - __main__ - INFO - ==================================================
+2026-03-26 21:34:23,145 - __main__ - INFO - 开始轮询 - 2026-03-26 21:34:23.145025
+2026-03-26 21:34:23,145 - __main__ - INFO - 处理市场：btc-100k-march
+2026-03-26 21:34:23,487 - __main__ - WARNING - 市场数据为空：btc-100k-march
+2026-03-26 21:34:24,488 - __main__ - INFO - 处理市场：eth-price-5000
+2026-03-26 21:34:24,988 - __main__ - WARNING - 市场数据为空：eth-price-5000
+2026-03-26 21:34:25,992 - __main__ - INFO - 处理市场：doge-crypto
+2026-03-26 21:34:26,499 - __main__ - WARNING - 市场数据为空：doge-crypto
+2026-03-26 21:34:27,500 - __main__ - INFO - 处理市场：xrp-price-target
+2026-03-26 21:34:27,876 - __main__ - WARNING - 市场数据为空：xrp-price-target
+2026-03-26 21:34:28,877 - __main__ - INFO - 处理市场：trump-crypto
+2026-03-26 21:34:29,258 - __main__ - WARNING - 市场数据为空：trump-crypto
+2026-03-26 21:34:30,260 - __main__ - INFO - 处理市场：powell-rate-cut
+2026-03-26 21:34:30,885 - __main__ - WARNING - 市场数据为空：powell-rate-cut
+2026-03-26 21:34:31,886 - __main__ - INFO - 轮询完成 - 2026-03-26 21:34:31.886009
+2026-03-26 21:34:31,886 - __main__ - INFO - ==================================================
+2026-03-26 21:46:01,698 - __main__ - INFO - 🚀 PolyAlert 监控服务启动
+2026-03-26 21:46:01,698 - __main__ - INFO - 监控市场数量：1
+2026-03-26 21:46:01,698 - __main__ - INFO - 轮询间隔：60秒
+2026-03-26 21:46:01,699 - __main__ - INFO - ✅ 数据库初始化完成
+2026-03-26 21:46:01,699 - __main__ - INFO - ==================================================
+2026-03-26 21:46:01,699 - __main__ - INFO - 开始轮询 - 2026-03-26 21:46:01.699423
+2026-03-26 21:46:01,699 - __main__ - INFO - 处理市场：will-trump-win-2026-world-series
+2026-03-26 21:46:02,754 - __main__ - WARNING - 使用模拟数据：will-trump-win-2026-world-series
+2026-03-26 21:46:02,766 - __main__ - INFO - 首次记录市场：will-trump-win-2026-world-series - 概率 50.0%
+2026-03-26 21:46:03,767 - __main__ - INFO - 轮询完成 - 2026-03-26 21:46:03.766982
+2026-03-26 21:46:03,767 - __main__ - INFO - ==================================================
+2026-03-26 21:50:29,083 - __main__ - INFO - 🚀 PolyAlert 监控服务启动
+2026-03-26 21:50:29,083 - __main__ - INFO - 监控市场数量：6
+2026-03-26 21:50:29,083 - __main__ - INFO - 轮询间隔：60秒
+2026-03-26 21:50:29,084 - __main__ - INFO - ✅ 数据库初始化完成
+2026-03-26 21:50:29,084 - __main__ - INFO - ==================================================
+2026-03-26 21:50:29,084 - __main__ - INFO - 开始轮询 - 2026-03-26 21:50:29.084787
+2026-03-26 21:50:29,084 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 21:50:29,882 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 21:50:29,895 - __main__ - INFO - 首次记录市场：will-btc-reach-100k-by-end-of-2026 - 概率 50.0%
+2026-03-26 21:50:30,895 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 21:50:31,281 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 21:50:31,295 - __main__ - INFO - 首次记录市场：will-eth-reach-5000-by-end-of-2026 - 概率 50.0%
+2026-03-26 21:50:32,295 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 21:50:34,234 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 21:50:34,249 - __main__ - INFO - 首次记录市场：will-trump-announce-2028-campaign-in-2026 - 概率 50.0%
+2026-03-26 21:50:35,249 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 21:50:35,869 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 21:50:35,881 - __main__ - INFO - 首次记录市场：will-fed-cut-rates-in-march-2026 - 概率 50.0%
+2026-03-26 21:50:36,881 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 21:50:38,089 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 21:50:38,099 - __main__ - INFO - 首次记录市场：will-chiefs-win-super-bowl-2026 - 概率 50.0%
+2026-03-26 21:50:39,099 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 21:50:40,004 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 21:50:40,011 - __main__ - INFO - 首次记录市场：will-2026-be-hottest-year-on-record - 概率 50.0%
+2026-03-26 21:50:41,011 - __main__ - INFO - 轮询完成 - 2026-03-26 21:50:41.011597
+2026-03-26 21:50:41,011 - __main__ - INFO - ==================================================
+2026-03-26 21:51:41,011 - __main__ - INFO - ==================================================
+2026-03-26 21:51:41,012 - __main__ - INFO - 开始轮询 - 2026-03-26 21:51:41.012103
+2026-03-26 21:51:41,012 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 21:51:42,262 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 21:51:43,273 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 21:51:44,503 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 21:51:45,515 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 21:51:47,736 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 21:51:48,747 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 21:51:51,011 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 21:51:52,021 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 21:51:53,275 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 21:51:54,281 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 21:51:55,541 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 21:51:56,551 - __main__ - INFO - 轮询完成 - 2026-03-26 21:51:56.551634
+2026-03-26 21:51:56,551 - __main__ - INFO - ==================================================
+2026-03-26 21:52:56,552 - __main__ - INFO - ==================================================
+2026-03-26 21:52:56,552 - __main__ - INFO - 开始轮询 - 2026-03-26 21:52:56.552703
+2026-03-26 21:52:56,553 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 21:52:58,730 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 21:52:59,743 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 21:53:01,184 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 21:53:02,198 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 21:53:03,364 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 21:53:04,380 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 21:53:05,871 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 21:53:06,885 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 21:53:08,120 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 21:53:09,128 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 21:53:10,360 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 21:53:11,374 - __main__ - INFO - 轮询完成 - 2026-03-26 21:53:11.374698
+2026-03-26 21:53:11,375 - __main__ - INFO - ==================================================
+2026-03-26 21:54:11,375 - __main__ - INFO - ==================================================
+2026-03-26 21:54:11,376 - __main__ - INFO - 开始轮询 - 2026-03-26 21:54:11.376167
+2026-03-26 21:54:11,376 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 21:54:12,822 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 21:54:13,837 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 21:54:14,997 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 21:54:16,011 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 21:54:17,176 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 21:54:18,191 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 21:54:21,434 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 21:54:22,448 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 21:54:24,611 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 21:54:25,626 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 21:54:27,084 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 21:54:28,099 - __main__ - INFO - 轮询完成 - 2026-03-26 21:54:28.099475
+2026-03-26 21:54:28,100 - __main__ - INFO - ==================================================
+2026-03-26 21:55:28,100 - __main__ - INFO - ==================================================
+2026-03-26 21:55:28,100 - __main__ - INFO - 开始轮询 - 2026-03-26 21:55:28.100866
+2026-03-26 21:55:28,101 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 21:55:29,041 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 21:55:30,052 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 21:55:30,579 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 21:55:31,590 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 21:55:32,314 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 21:55:33,325 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 21:55:34,060 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 21:55:35,072 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 21:55:35,786 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 21:55:36,799 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 21:55:38,005 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 21:55:39,021 - __main__ - INFO - 轮询完成 - 2026-03-26 21:55:39.021214
+2026-03-26 21:55:39,021 - __main__ - INFO - ==================================================
+2026-03-26 21:56:39,022 - __main__ - INFO - ==================================================
+2026-03-26 21:56:39,022 - __main__ - INFO - 开始轮询 - 2026-03-26 21:56:39.022847
+2026-03-26 21:56:39,023 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 21:56:39,734 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 21:56:40,745 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 21:56:41,275 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 21:56:42,282 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 21:56:42,852 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 21:56:43,865 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 21:56:44,378 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 21:56:45,390 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 21:56:45,975 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 21:56:46,987 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 21:56:47,501 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 21:56:48,513 - __main__ - INFO - 轮询完成 - 2026-03-26 21:56:48.513490
+2026-03-26 21:56:48,514 - __main__ - INFO - ==================================================
+2026-03-26 21:57:48,514 - __main__ - INFO - ==================================================
+2026-03-26 21:57:48,515 - __main__ - INFO - 开始轮询 - 2026-03-26 21:57:48.515052
+2026-03-26 21:57:48,519 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 21:57:49,814 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 21:57:50,829 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 21:57:51,657 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 21:57:52,668 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 21:57:53,241 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 21:57:54,253 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 21:57:54,784 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 21:57:55,795 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 21:57:56,380 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 21:57:57,391 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 21:57:58,048 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 21:57:59,060 - __main__ - INFO - 轮询完成 - 2026-03-26 21:57:59.059962
+2026-03-26 21:57:59,060 - __main__ - INFO - ==================================================
+2026-03-26 21:58:59,060 - __main__ - INFO - ==================================================
+2026-03-26 21:58:59,061 - __main__ - INFO - 开始轮询 - 2026-03-26 21:58:59.061381
+2026-03-26 21:58:59,061 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 21:59:00,282 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 21:59:01,295 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 21:59:01,805 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 21:59:02,812 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 21:59:04,100 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 21:59:05,115 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 21:59:05,930 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 21:59:06,942 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 21:59:07,684 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 21:59:08,697 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 21:59:09,626 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 21:59:10,638 - __main__ - INFO - 轮询完成 - 2026-03-26 21:59:10.638657
+2026-03-26 21:59:10,639 - __main__ - INFO - ==================================================
+2026-03-26 22:00:10,639 - __main__ - INFO - ==================================================
+2026-03-26 22:00:10,640 - __main__ - INFO - 开始轮询 - 2026-03-26 22:00:10.640351
+2026-03-26 22:00:10,640 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:00:11,928 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:00:12,943 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:00:14,294 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:00:15,308 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:00:16,639 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:00:17,655 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:00:19,006 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:00:20,015 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:00:21,272 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:00:22,285 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:00:23,603 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:00:24,617 - __main__ - INFO - 轮询完成 - 2026-03-26 22:00:24.617466
+2026-03-26 22:00:24,617 - __main__ - INFO - ==================================================
+2026-03-26 22:01:24,618 - __main__ - INFO - ==================================================
+2026-03-26 22:01:24,618 - __main__ - INFO - 开始轮询 - 2026-03-26 22:01:24.618900
+2026-03-26 22:01:24,619 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:01:25,245 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:01:26,257 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:01:26,698 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:01:27,710 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:01:28,421 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:01:29,429 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:01:30,589 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:01:31,603 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:01:32,767 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:01:33,785 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:01:34,964 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:01:35,977 - __main__ - INFO - 轮询完成 - 2026-03-26 22:01:35.977262
+2026-03-26 22:01:35,977 - __main__ - INFO - ==================================================
+2026-03-26 22:02:35,978 - __main__ - INFO - ==================================================
+2026-03-26 22:02:35,978 - __main__ - INFO - 开始轮询 - 2026-03-26 22:02:35.978904
+2026-03-26 22:02:35,979 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:02:37,309 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:02:38,319 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:02:39,583 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:02:40,597 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:02:41,941 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:02:42,949 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:02:44,300 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:02:45,315 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:02:47,097 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:02:48,106 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:02:49,296 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:02:50,310 - __main__ - INFO - 轮询完成 - 2026-03-26 22:02:50.310461
+2026-03-26 22:02:50,311 - __main__ - INFO - ==================================================
+2026-03-26 22:03:50,311 - __main__ - INFO - ==================================================
+2026-03-26 22:03:50,311 - __main__ - INFO - 开始轮询 - 2026-03-26 22:03:50.311932
+2026-03-26 22:03:50,312 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:03:51,491 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:03:52,504 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:03:53,748 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:03:54,760 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:03:56,155 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:03:57,169 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:03:58,331 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:03:59,345 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:04:00,544 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:04:01,558 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:04:02,761 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:04:03,776 - __main__ - INFO - 轮询完成 - 2026-03-26 22:04:03.775995
+2026-03-26 22:04:03,776 - __main__ - INFO - ==================================================
+2026-03-26 22:05:03,777 - __main__ - INFO - ==================================================
+2026-03-26 22:05:03,777 - __main__ - INFO - 开始轮询 - 2026-03-26 22:05:03.777465
+2026-03-26 22:05:03,777 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:05:05,036 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:05:06,051 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:05:07,311 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:05:08,324 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:05:09,490 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:05:10,505 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:05:11,694 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:05:12,709 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:05:13,893 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:05:14,906 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:05:16,076 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:05:17,085 - __main__ - INFO - 轮询完成 - 2026-03-26 22:05:17.085490
+2026-03-26 22:05:17,086 - __main__ - INFO - ==================================================
+2026-03-26 22:06:17,086 - __main__ - INFO - ==================================================
+2026-03-26 22:06:17,087 - __main__ - INFO - 开始轮询 - 2026-03-26 22:06:17.086969
+2026-03-26 22:06:17,087 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:06:17,882 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:06:18,893 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:06:19,591 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:06:20,602 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:06:21,411 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:06:22,422 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:06:23,356 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:06:24,368 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:06:25,523 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:06:26,535 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:06:27,359 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:06:28,372 - __main__ - INFO - 轮询完成 - 2026-03-26 22:06:28.371894
+2026-03-26 22:06:28,372 - __main__ - INFO - ==================================================
+2026-03-26 22:07:28,373 - __main__ - INFO - ==================================================
+2026-03-26 22:07:28,373 - __main__ - INFO - 开始轮询 - 2026-03-26 22:07:28.373463
+2026-03-26 22:07:28,373 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:07:29,502 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:07:30,513 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:07:31,325 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:07:32,337 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:07:32,836 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:07:33,848 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:07:34,495 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:07:35,507 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:07:36,155 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:07:37,167 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:07:38,383 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:07:39,395 - __main__ - INFO - 轮询完成 - 2026-03-26 22:07:39.395741
+2026-03-26 22:07:39,396 - __main__ - INFO - ==================================================
+2026-03-26 22:08:39,396 - __main__ - INFO - ==================================================
+2026-03-26 22:08:39,396 - __main__ - INFO - 开始轮询 - 2026-03-26 22:08:39.396572
+2026-03-26 22:08:39,396 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:08:39,957 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:08:40,969 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:08:41,515 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:08:42,527 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:08:43,023 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:08:44,035 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:08:44,695 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:08:45,707 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:08:47,011 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:08:48,023 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:08:48,634 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:08:49,647 - __main__ - INFO - 轮询完成 - 2026-03-26 22:08:49.646985
+2026-03-26 22:08:49,647 - __main__ - INFO - ==================================================
+2026-03-26 22:09:49,648 - __main__ - INFO - ==================================================
+2026-03-26 22:09:49,648 - __main__ - INFO - 开始轮询 - 2026-03-26 22:09:49.648617
+2026-03-26 22:09:49,648 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:09:50,391 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:09:51,402 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:09:51,985 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:09:52,997 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:09:53,835 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:09:54,847 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:09:55,365 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:09:56,377 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:09:57,236 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:09:58,248 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:09:58,779 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:09:59,791 - __main__ - INFO - 轮询完成 - 2026-03-26 22:09:59.791695
+2026-03-26 22:09:59,792 - __main__ - INFO - ==================================================
+2026-03-26 22:10:59,792 - __main__ - INFO - ==================================================
+2026-03-26 22:10:59,792 - __main__ - INFO - 开始轮询 - 2026-03-26 22:10:59.792895
+2026-03-26 22:10:59,793 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:11:00,978 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:11:01,992 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:11:03,235 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:11:04,250 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:11:05,453 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:11:06,468 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:11:07,663 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:11:08,678 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:11:09,845 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:11:10,864 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:11:12,053 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:11:13,067 - __main__ - INFO - 轮询完成 - 2026-03-26 22:11:13.067756
+2026-03-26 22:11:13,068 - __main__ - INFO - ==================================================
+2026-03-26 22:12:13,068 - __main__ - INFO - ==================================================
+2026-03-26 22:12:13,069 - __main__ - INFO - 开始轮询 - 2026-03-26 22:12:13.069447
+2026-03-26 22:12:13,069 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:12:15,174 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:12:16,185 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:12:17,026 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:12:18,038 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:12:18,562 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:12:19,574 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:12:20,326 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:12:21,338 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:12:22,142 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:12:23,154 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:12:24,715 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:12:25,728 - __main__ - INFO - 轮询完成 - 2026-03-26 22:12:25.728119
+2026-03-26 22:12:25,728 - __main__ - INFO - ==================================================
+2026-03-26 22:13:25,729 - __main__ - INFO - ==================================================
+2026-03-26 22:13:25,729 - __main__ - INFO - 开始轮询 - 2026-03-26 22:13:25.729592
+2026-03-26 22:13:25,729 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:13:27,101 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:13:28,108 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:13:28,780 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:13:29,792 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:13:30,383 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:13:31,395 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:13:31,909 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:13:32,921 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:13:33,513 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:13:34,526 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:13:35,137 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:13:36,149 - __main__ - INFO - 轮询完成 - 2026-03-26 22:13:36.149808
+2026-03-26 22:13:36,150 - __main__ - INFO - ==================================================
+2026-03-26 22:14:36,150 - __main__ - INFO - ==================================================
+2026-03-26 22:14:36,151 - __main__ - INFO - 开始轮询 - 2026-03-26 22:14:36.151490
+2026-03-26 22:14:36,151 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:14:36,818 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:14:37,831 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:14:38,823 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:14:39,835 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:14:40,939 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:14:41,950 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:14:42,826 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:14:43,837 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:14:44,353 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:14:45,360 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:14:46,169 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:14:47,181 - __main__ - INFO - 轮询完成 - 2026-03-26 22:14:47.181154
+2026-03-26 22:14:47,181 - __main__ - INFO - ==================================================
+2026-03-26 22:15:47,182 - __main__ - INFO - ==================================================
+2026-03-26 22:15:47,182 - __main__ - INFO - 开始轮询 - 2026-03-26 22:15:47.182541
+2026-03-26 22:15:47,182 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:15:47,636 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:15:48,648 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:15:49,044 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:15:50,056 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:15:50,826 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:15:51,839 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:15:52,420 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:15:53,433 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:15:54,013 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:15:55,025 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:15:55,803 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:15:56,815 - __main__ - INFO - 轮询完成 - 2026-03-26 22:15:56.815559
+2026-03-26 22:15:56,816 - __main__ - INFO - ==================================================
+2026-03-26 22:16:56,816 - __main__ - INFO - ==================================================
+2026-03-26 22:16:56,816 - __main__ - INFO - 开始轮询 - 2026-03-26 22:16:56.816704
+2026-03-26 22:16:56,816 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:16:57,777 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:16:58,788 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:16:59,421 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:17:00,432 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:17:01,241 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:17:02,253 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:17:02,796 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:17:03,808 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:17:04,833 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:17:05,845 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:17:06,408 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:17:07,420 - __main__ - INFO - 轮询完成 - 2026-03-26 22:17:07.420573
+2026-03-26 22:17:07,421 - __main__ - INFO - ==================================================
+2026-03-26 22:18:07,421 - __main__ - INFO - ==================================================
+2026-03-26 22:18:07,421 - __main__ - INFO - 开始轮询 - 2026-03-26 22:18:07.421865
+2026-03-26 22:18:07,422 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:18:08,304 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:18:09,316 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:18:10,139 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:18:11,150 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:18:12,042 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:18:13,054 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:18:13,987 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:18:14,999 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:18:15,805 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:18:16,818 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:18:17,226 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:18:18,238 - __main__ - INFO - 轮询完成 - 2026-03-26 22:18:18.238305
+2026-03-26 22:18:18,238 - __main__ - INFO - ==================================================
+2026-03-26 22:19:18,239 - __main__ - INFO - ==================================================
+2026-03-26 22:19:18,239 - __main__ - INFO - 开始轮询 - 2026-03-26 22:19:18.239885
+2026-03-26 22:19:18,240 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:19:19,781 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:19:20,793 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:19:21,369 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:19:22,381 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:19:22,964 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:19:23,976 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:19:24,561 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:19:25,573 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:19:26,064 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:19:27,076 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:19:29,336 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:19:30,348 - __main__ - INFO - 轮询完成 - 2026-03-26 22:19:30.348216
+2026-03-26 22:19:30,348 - __main__ - INFO - ==================================================
+2026-03-26 22:20:30,349 - __main__ - INFO - ==================================================
+2026-03-26 22:20:30,349 - __main__ - INFO - 开始轮询 - 2026-03-26 22:20:30.349856
+2026-03-26 22:20:30,354 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:20:30,919 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:20:31,932 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:20:33,277 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:20:34,289 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:20:34,938 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:20:35,950 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:20:36,596 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:20:37,608 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:20:38,391 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:20:39,403 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:20:39,952 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:20:40,965 - __main__ - INFO - 轮询完成 - 2026-03-26 22:20:40.965201
+2026-03-26 22:20:40,965 - __main__ - INFO - ==================================================
+2026-03-26 22:21:40,966 - __main__ - INFO - ==================================================
+2026-03-26 22:21:40,966 - __main__ - INFO - 开始轮询 - 2026-03-26 22:21:40.966572
+2026-03-26 22:21:40,971 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:21:42,528 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:21:43,540 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:21:45,717 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:21:46,733 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:21:47,888 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:21:48,909 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:21:51,096 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:21:52,109 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:21:53,316 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:21:54,329 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:21:55,528 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:21:56,542 - __main__ - INFO - 轮询完成 - 2026-03-26 22:21:56.542086
+2026-03-26 22:21:56,542 - __main__ - INFO - ==================================================
+2026-03-26 22:22:56,543 - __main__ - INFO - ==================================================
+2026-03-26 22:22:56,543 - __main__ - INFO - 开始轮询 - 2026-03-26 22:22:56.543703
+2026-03-26 22:22:56,543 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:22:57,703 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:22:58,719 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:23:00,007 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:23:01,015 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:23:02,304 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:23:03,319 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:23:05,530 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:23:06,544 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:23:07,703 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:23:08,719 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:23:10,729 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:23:11,737 - __main__ - INFO - 轮询完成 - 2026-03-26 22:23:11.736949
+2026-03-26 22:23:11,737 - __main__ - INFO - ==================================================
+2026-03-26 22:24:11,737 - __main__ - INFO - ==================================================
+2026-03-26 22:24:11,738 - __main__ - INFO - 开始轮询 - 2026-03-26 22:24:11.738310
+2026-03-26 22:24:11,738 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:24:12,702 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:24:13,713 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:24:14,223 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:24:15,235 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:24:16,297 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:24:17,310 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:24:17,992 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:24:19,003 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:24:19,571 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:24:20,590 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:24:21,597 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:24:22,609 - __main__ - INFO - 轮询完成 - 2026-03-26 22:24:22.609650
+2026-03-26 22:24:22,610 - __main__ - INFO - ==================================================
+2026-03-26 22:25:22,610 - __main__ - INFO - ==================================================
+2026-03-26 22:25:22,610 - __main__ - INFO - 开始轮询 - 2026-03-26 22:25:22.610869
+2026-03-26 22:25:22,611 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:25:24,349 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:25:25,361 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:25:26,537 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:25:27,549 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:25:28,281 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:25:29,293 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:25:30,775 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:25:31,788 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:25:32,791 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:25:33,802 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:25:34,598 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:25:35,610 - __main__ - INFO - 轮询完成 - 2026-03-26 22:25:35.610295
+2026-03-26 22:25:35,610 - __main__ - INFO - ==================================================
+2026-03-26 22:26:35,611 - __main__ - INFO - ==================================================
+2026-03-26 22:26:35,611 - __main__ - INFO - 开始轮询 - 2026-03-26 22:26:35.611882
+2026-03-26 22:26:35,612 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:26:36,256 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:26:37,267 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:26:37,723 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:26:38,735 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:26:39,120 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:26:40,131 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:26:40,520 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:26:41,532 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:26:42,703 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:26:43,719 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:26:44,447 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:26:45,454 - __main__ - INFO - 轮询完成 - 2026-03-26 22:26:45.454469
+2026-03-26 22:26:45,455 - __main__ - INFO - ==================================================
+2026-03-26 22:27:45,455 - __main__ - INFO - ==================================================
+2026-03-26 22:27:45,456 - __main__ - INFO - 开始轮询 - 2026-03-26 22:27:45.456074
+2026-03-26 22:27:45,456 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:27:48,222 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:27:49,238 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:27:50,456 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:27:51,471 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:27:52,728 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:27:53,743 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:27:54,962 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:27:55,977 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:27:57,286 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:27:58,300 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:27:59,644 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:28:00,660 - __main__ - INFO - 轮询完成 - 2026-03-26 22:28:00.660207
+2026-03-26 22:28:00,660 - __main__ - INFO - ==================================================
+2026-03-26 22:29:00,661 - __main__ - INFO - ==================================================
+2026-03-26 22:29:00,661 - __main__ - INFO - 开始轮询 - 2026-03-26 22:29:00.661744
+2026-03-26 22:29:00,666 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:29:02,219 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:29:03,231 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:29:04,069 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:29:05,081 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:29:05,592 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:29:06,604 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:29:07,042 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:29:08,054 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:29:08,467 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:29:09,479 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:29:10,091 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:29:11,103 - __main__ - INFO - 轮询完成 - 2026-03-26 22:29:11.103760
+2026-03-26 22:29:11,104 - __main__ - INFO - ==================================================
+2026-03-26 22:30:11,104 - __main__ - INFO - ==================================================
+2026-03-26 22:30:11,105 - __main__ - INFO - 开始轮询 - 2026-03-26 22:30:11.105163
+2026-03-26 22:30:11,105 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:30:11,749 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:30:12,761 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:30:13,595 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:30:14,607 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:30:15,292 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:30:16,303 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:30:17,139 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:30:18,151 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:30:19,482 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:30:20,495 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:30:21,021 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:30:22,034 - __main__ - INFO - 轮询完成 - 2026-03-26 22:30:22.034535
+2026-03-26 22:30:22,035 - __main__ - INFO - ==================================================
+2026-03-26 22:31:22,035 - __main__ - INFO - ==================================================
+2026-03-26 22:31:22,036 - __main__ - INFO - 开始轮询 - 2026-03-26 22:31:22.036034
+2026-03-26 22:31:22,036 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:31:23,074 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:31:24,086 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:31:56,042 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:31:57,051 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:31:57,829 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:31:58,840 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:31:59,519 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:32:00,531 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:32:02,173 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:32:03,186 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:32:05,825 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:32:06,832 - __main__ - INFO - 轮询完成 - 2026-03-26 22:32:06.832242
+2026-03-26 22:32:06,832 - __main__ - INFO - ==================================================
+2026-03-26 22:33:06,833 - __main__ - INFO - ==================================================
+2026-03-26 22:33:06,833 - __main__ - INFO - 开始轮询 - 2026-03-26 22:33:06.833853
+2026-03-26 22:33:06,834 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:33:07,820 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:33:08,833 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:33:09,599 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:33:10,611 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:33:11,190 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:33:12,198 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:33:13,076 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:33:14,089 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:33:14,813 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:33:15,825 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:33:16,470 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:33:17,482 - __main__ - INFO - 轮询完成 - 2026-03-26 22:33:17.482737
+2026-03-26 22:33:17,483 - __main__ - INFO - ==================================================
+2026-03-26 22:34:17,483 - __main__ - INFO - ==================================================
+2026-03-26 22:34:17,484 - __main__ - INFO - 开始轮询 - 2026-03-26 22:34:17.484434
+2026-03-26 22:34:17,484 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:34:18,259 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:34:19,271 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:34:20,417 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:34:21,429 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:34:21,860 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:34:22,872 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:34:23,861 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:34:24,873 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:34:25,566 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:34:26,577 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:34:26,959 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:34:27,971 - __main__ - INFO - 轮询完成 - 2026-03-26 22:34:27.971467
+2026-03-26 22:34:27,972 - __main__ - INFO - ==================================================
+2026-03-26 22:35:27,972 - __main__ - INFO - ==================================================
+2026-03-26 22:35:27,973 - __main__ - INFO - 开始轮询 - 2026-03-26 22:35:27.973021
+2026-03-26 22:35:27,973 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:35:28,656 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:35:29,668 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:35:30,683 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:35:31,695 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:35:32,961 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:35:33,973 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:35:34,479 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:35:35,491 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:35:36,272 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:35:37,279 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:35:38,177 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:35:39,190 - __main__ - INFO - 轮询完成 - 2026-03-26 22:35:39.190409
+2026-03-26 22:35:39,190 - __main__ - INFO - ==================================================
+2026-03-26 22:36:39,191 - __main__ - INFO - ==================================================
+2026-03-26 22:36:39,191 - __main__ - INFO - 开始轮询 - 2026-03-26 22:36:39.191733
+2026-03-26 22:36:39,192 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:36:39,822 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:36:40,834 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:36:41,883 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:36:42,895 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:36:43,410 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:36:44,422 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:36:45,744 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:36:46,756 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:36:47,778 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:36:48,791 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:36:50,445 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:36:51,457 - __main__ - INFO - 轮询完成 - 2026-03-26 22:36:51.456956
+2026-03-26 22:36:51,457 - __main__ - INFO - ==================================================
+2026-03-26 22:37:51,457 - __main__ - INFO - ==================================================
+2026-03-26 22:37:51,458 - __main__ - INFO - 开始轮询 - 2026-03-26 22:37:51.458312
+2026-03-26 22:37:51,458 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:37:52,533 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:37:53,545 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:37:54,075 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:37:55,087 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:37:55,675 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:37:56,687 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:37:57,202 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:37:58,213 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:37:58,849 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:37:59,861 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:38:00,270 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:38:01,282 - __main__ - INFO - 轮询完成 - 2026-03-26 22:38:01.282276
+2026-03-26 22:38:01,282 - __main__ - INFO - ==================================================
+2026-03-26 22:39:01,283 - __main__ - INFO - ==================================================
+2026-03-26 22:39:01,284 - __main__ - INFO - 开始轮询 - 2026-03-26 22:39:01.283949
+2026-03-26 22:39:01,284 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:39:02,043 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:39:03,056 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:39:03,753 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:39:04,766 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:39:06,202 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:39:07,210 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:39:09,892 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:39:10,905 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:39:12,385 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:39:13,398 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:39:14,294 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:39:15,307 - __main__ - INFO - 轮询完成 - 2026-03-26 22:39:15.307401
+2026-03-26 22:39:15,307 - __main__ - INFO - ==================================================
+2026-03-26 22:40:15,308 - __main__ - INFO - ==================================================
+2026-03-26 22:40:15,309 - __main__ - INFO - 开始轮询 - 2026-03-26 22:40:15.308983
+2026-03-26 22:40:15,313 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:40:16,346 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:40:17,359 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:40:17,767 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:40:18,775 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:40:19,178 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:40:20,190 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:40:21,003 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:40:22,015 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:40:22,765 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:40:23,777 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:40:25,011 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:40:26,018 - __main__ - INFO - 轮询完成 - 2026-03-26 22:40:26.018841
+2026-03-26 22:40:26,019 - __main__ - INFO - ==================================================
+2026-03-26 22:41:26,019 - __main__ - INFO - ==================================================
+2026-03-26 22:41:26,020 - __main__ - INFO - 开始轮询 - 2026-03-26 22:41:26.020459
+2026-03-26 22:41:26,020 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:41:26,564 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:41:27,576 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:41:28,745 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:41:29,758 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:41:30,767 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:41:31,779 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:41:32,573 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:41:33,584 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:41:34,144 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:41:35,156 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:41:36,102 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:41:37,114 - __main__ - INFO - 轮询完成 - 2026-03-26 22:41:37.114640
+2026-03-26 22:41:37,115 - __main__ - INFO - ==================================================
+2026-03-26 22:42:37,115 - __main__ - INFO - ==================================================
+2026-03-26 22:42:37,116 - __main__ - INFO - 开始轮询 - 2026-03-26 22:42:37.116232
+2026-03-26 22:42:37,116 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:42:37,761 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:42:38,773 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:42:39,384 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:42:40,396 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:42:41,047 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:42:42,059 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:42:42,950 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:42:43,962 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:42:44,939 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:42:45,947 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:42:47,417 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:42:48,429 - __main__ - INFO - 轮询完成 - 2026-03-26 22:42:48.429407
+2026-03-26 22:42:48,429 - __main__ - INFO - ==================================================
+2026-03-26 22:43:48,433 - __main__ - INFO - ==================================================
+2026-03-26 22:43:48,433 - __main__ - INFO - 开始轮询 - 2026-03-26 22:43:48.433522
+2026-03-26 22:43:48,433 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:43:49,290 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:43:50,302 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:43:50,914 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:43:51,927 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:43:52,550 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:43:53,562 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:43:54,364 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:43:55,376 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:43:56,062 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:43:57,074 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:43:57,584 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:43:58,596 - __main__ - INFO - 轮询完成 - 2026-03-26 22:43:58.596302
+2026-03-26 22:43:58,596 - __main__ - INFO - ==================================================
+2026-03-26 22:44:58,597 - __main__ - INFO - ==================================================
+2026-03-26 22:44:58,597 - __main__ - INFO - 开始轮询 - 2026-03-26 22:44:58.597858
+2026-03-26 22:44:58,598 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:44:58,998 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:45:00,009 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:45:00,423 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:45:01,435 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:45:01,972 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:45:02,984 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:45:03,409 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:45:04,421 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:45:06,952 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:45:07,964 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:45:09,400 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:45:10,413 - __main__ - INFO - 轮询完成 - 2026-03-26 22:45:10.412975
+2026-03-26 22:45:10,413 - __main__ - INFO - ==================================================
+2026-03-26 22:46:10,413 - __main__ - INFO - ==================================================
+2026-03-26 22:46:10,414 - __main__ - INFO - 开始轮询 - 2026-03-26 22:46:10.414307
+2026-03-26 22:46:10,414 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:46:11,184 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:46:12,197 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:46:12,769 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:46:13,782 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:46:15,553 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:46:16,565 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:46:17,147 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:46:18,159 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:46:19,549 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:46:20,564 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:46:21,100 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:46:22,112 - __main__ - INFO - 轮询完成 - 2026-03-26 22:46:22.112814
+2026-03-26 22:46:22,113 - __main__ - INFO - ==================================================
+2026-03-26 22:47:22,113 - __main__ - INFO - ==================================================
+2026-03-26 22:47:22,114 - __main__ - INFO - 开始轮询 - 2026-03-26 22:47:22.114433
+2026-03-26 22:47:22,114 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:47:22,567 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:47:23,579 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:47:24,115 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:47:25,127 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:47:25,547 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:47:26,560 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:47:27,059 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:47:28,071 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:47:28,666 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:47:29,679 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:47:31,069 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:47:32,083 - __main__ - INFO - 轮询完成 - 2026-03-26 22:47:32.083844
+2026-03-26 22:47:32,084 - __main__ - INFO - ==================================================
+2026-03-26 22:48:32,084 - __main__ - INFO - ==================================================
+2026-03-26 22:48:32,085 - __main__ - INFO - 开始轮询 - 2026-03-26 22:48:32.085037
+2026-03-26 22:48:32,085 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:48:33,049 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:48:34,061 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:48:35,152 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:48:36,164 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:48:37,068 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:48:38,080 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:48:38,799 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:48:39,811 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:48:40,964 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:48:41,978 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:48:42,475 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:48:43,482 - __main__ - INFO - 轮询完成 - 2026-03-26 22:48:43.482141
+2026-03-26 22:48:43,482 - __main__ - INFO - ==================================================
+2026-03-26 22:49:43,483 - __main__ - INFO - ==================================================
+2026-03-26 22:49:43,483 - __main__ - INFO - 开始轮询 - 2026-03-26 22:49:43.483559
+2026-03-26 22:49:43,488 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:49:45,355 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:49:46,368 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:49:47,709 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:49:48,719 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:49:49,297 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:49:50,309 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:49:51,435 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:49:52,447 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:49:52,942 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:49:53,954 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:49:54,532 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:49:55,543 - __main__ - INFO - 轮询完成 - 2026-03-26 22:49:55.543719
+2026-03-26 22:49:55,544 - __main__ - INFO - ==================================================
+2026-03-26 22:50:55,544 - __main__ - INFO - ==================================================
+2026-03-26 22:50:55,545 - __main__ - INFO - 开始轮询 - 2026-03-26 22:50:55.545374
+2026-03-26 22:50:55,549 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:50:56,512 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:50:57,523 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:50:58,047 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:50:59,059 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:50:59,575 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:51:00,587 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:51:01,016 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:51:02,028 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:51:03,082 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:51:04,093 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:51:04,586 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:51:05,598 - __main__ - INFO - 轮询完成 - 2026-03-26 22:51:05.598104
+2026-03-26 22:51:05,598 - __main__ - INFO - ==================================================
+2026-03-26 22:52:05,599 - __main__ - INFO - ==================================================
+2026-03-26 22:52:05,599 - __main__ - INFO - 开始轮询 - 2026-03-26 22:52:05.599766
+2026-03-26 22:52:05,600 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:52:06,144 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:52:07,157 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:52:07,682 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:52:08,694 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:52:09,729 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:52:10,739 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:52:11,356 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:52:12,367 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:52:13,147 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:52:14,159 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:52:14,673 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:52:15,685 - __main__ - INFO - 轮询完成 - 2026-03-26 22:52:15.685223
+2026-03-26 22:52:15,685 - __main__ - INFO - ==================================================
+2026-03-26 22:53:15,686 - __main__ - INFO - ==================================================
+2026-03-26 22:53:15,686 - __main__ - INFO - 开始轮询 - 2026-03-26 22:53:15.686588
+2026-03-26 22:53:15,686 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:53:17,084 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:53:18,096 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:53:19,587 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:53:20,599 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:53:21,760 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:53:22,770 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:53:23,509 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:53:24,522 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:53:25,905 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:53:26,917 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:53:27,514 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:53:28,525 - __main__ - INFO - 轮询完成 - 2026-03-26 22:53:28.525823
+2026-03-26 22:53:28,526 - __main__ - INFO - ==================================================
+2026-03-26 22:54:28,526 - __main__ - INFO - ==================================================
+2026-03-26 22:54:28,527 - __main__ - INFO - 开始轮询 - 2026-03-26 22:54:28.527426
+2026-03-26 22:54:28,527 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:54:29,835 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:54:30,847 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:54:31,417 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:54:32,429 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:54:32,973 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:54:33,981 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:54:34,524 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:54:35,535 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:54:37,104 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:54:38,115 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:54:39,878 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:54:40,890 - __main__ - INFO - 轮询完成 - 2026-03-26 22:54:40.890422
+2026-03-26 22:54:40,891 - __main__ - INFO - ==================================================
+2026-03-26 22:55:40,891 - __main__ - INFO - ==================================================
+2026-03-26 22:55:40,892 - __main__ - INFO - 开始轮询 - 2026-03-26 22:55:40.891958
+2026-03-26 22:55:40,892 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:55:41,717 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:55:42,729 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:55:44,116 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:55:45,128 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:55:46,012 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:55:47,024 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:55:48,255 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:55:49,267 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:55:49,952 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:55:50,964 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:55:51,623 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:55:52,635 - __main__ - INFO - 轮询完成 - 2026-03-26 22:55:52.635193
+2026-03-26 22:55:52,635 - __main__ - INFO - ==================================================
+2026-03-26 22:56:52,636 - __main__ - INFO - ==================================================
+2026-03-26 22:56:52,636 - __main__ - INFO - 开始轮询 - 2026-03-26 22:56:52.636717
+2026-03-26 22:56:52,637 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:56:53,167 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:56:54,174 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:56:54,763 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:56:55,775 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:56:56,309 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:56:57,321 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:56:57,882 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:56:58,895 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:56:59,413 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:57:00,426 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:57:01,491 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:57:02,498 - __main__ - INFO - 轮询完成 - 2026-03-26 22:57:02.498691
+2026-03-26 22:57:02,499 - __main__ - INFO - ==================================================
+2026-03-26 22:58:02,499 - __main__ - INFO - ==================================================
+2026-03-26 22:58:02,499 - __main__ - INFO - 开始轮询 - 2026-03-26 22:58:02.499927
+2026-03-26 22:58:02,500 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:58:03,045 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:58:04,057 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:58:05,263 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:58:06,275 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:58:07,086 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:58:08,098 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:58:08,642 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:58:09,654 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:58:10,149 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:58:11,161 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:58:12,330 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:58:13,343 - __main__ - INFO - 轮询完成 - 2026-03-26 22:58:13.343806
+2026-03-26 22:58:13,344 - __main__ - INFO - ==================================================
+2026-03-26 22:59:13,344 - __main__ - INFO - ==================================================
+2026-03-26 22:59:13,345 - __main__ - INFO - 开始轮询 - 2026-03-26 22:59:13.345403
+2026-03-26 22:59:13,345 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:59:14,696 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 22:59:15,709 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:59:17,321 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 22:59:18,333 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:59:18,970 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 22:59:19,982 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 22:59:21,119 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 22:59:22,128 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 22:59:23,186 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 22:59:24,198 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 22:59:24,728 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 22:59:25,741 - __main__ - INFO - 轮询完成 - 2026-03-26 22:59:25.741385
+2026-03-26 22:59:25,741 - __main__ - INFO - ==================================================
+2026-03-26 23:00:25,742 - __main__ - INFO - ==================================================
+2026-03-26 23:00:25,742 - __main__ - INFO - 开始轮询 - 2026-03-26 23:00:25.742875
+2026-03-26 23:00:25,743 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:00:26,331 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:00:27,343 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:00:31,855 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:00:32,868 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:00:34,434 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:00:35,445 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:00:35,947 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:00:36,959 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:00:37,553 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:00:38,565 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:00:39,429 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:00:40,441 - __main__ - INFO - 轮询完成 - 2026-03-26 23:00:40.441583
+2026-03-26 23:00:40,442 - __main__ - INFO - ==================================================
+2026-03-26 23:01:40,442 - __main__ - INFO - ==================================================
+2026-03-26 23:01:40,443 - __main__ - INFO - 开始轮询 - 2026-03-26 23:01:40.443194
+2026-03-26 23:01:40,443 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:01:41,283 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:01:42,295 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:01:42,985 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:01:43,997 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:01:45,103 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:01:46,116 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:01:47,393 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:01:48,405 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:01:49,219 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:01:50,231 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:01:50,955 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:01:51,967 - __main__ - INFO - 轮询完成 - 2026-03-26 23:01:51.967087
+2026-03-26 23:01:51,967 - __main__ - INFO - ==================================================
+2026-03-26 23:02:51,968 - __main__ - INFO - ==================================================
+2026-03-26 23:02:51,968 - __main__ - INFO - 开始轮询 - 2026-03-26 23:02:51.968726
+2026-03-26 23:02:51,968 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:02:52,371 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:02:53,384 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:02:53,890 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:02:54,902 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:02:56,276 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:02:57,290 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:02:57,925 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:02:58,937 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:02:59,781 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:03:00,788 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:03:01,537 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:03:02,549 - __main__ - INFO - 轮询完成 - 2026-03-26 23:03:02.549359
+2026-03-26 23:03:02,549 - __main__ - INFO - ==================================================
+2026-03-26 23:04:02,550 - __main__ - INFO - ==================================================
+2026-03-26 23:04:02,550 - __main__ - INFO - 开始轮询 - 2026-03-26 23:04:02.550494
+2026-03-26 23:04:02,550 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:04:02,967 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:04:03,974 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:04:05,387 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:04:06,401 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:04:07,578 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:04:08,590 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:04:09,201 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:04:10,213 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:04:10,973 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:04:11,986 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:04:12,917 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:04:13,929 - __main__ - INFO - 轮询完成 - 2026-03-26 23:04:13.929385
+2026-03-26 23:04:13,929 - __main__ - INFO - ==================================================
+2026-03-26 23:05:13,930 - __main__ - INFO - ==================================================
+2026-03-26 23:05:13,930 - __main__ - INFO - 开始轮询 - 2026-03-26 23:05:13.930869
+2026-03-26 23:05:13,935 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:05:14,957 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:05:15,964 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:05:16,349 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:05:17,361 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:05:17,792 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:05:18,804 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:05:19,438 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:05:20,450 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:05:20,836 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:05:21,848 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:05:22,950 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:05:23,962 - __main__ - INFO - 轮询完成 - 2026-03-26 23:05:23.962085
+2026-03-26 23:05:23,962 - __main__ - INFO - ==================================================
+2026-03-26 23:06:23,963 - __main__ - INFO - ==================================================
+2026-03-26 23:06:23,963 - __main__ - INFO - 开始轮询 - 2026-03-26 23:06:23.963734
+2026-03-26 23:06:23,964 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:06:24,988 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:06:26,000 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:06:26,941 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:06:27,953 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:06:28,858 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:06:29,869 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:06:30,414 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:06:31,427 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:06:31,915 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:06:32,927 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:06:33,430 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:06:34,443 - __main__ - INFO - 轮询完成 - 2026-03-26 23:06:34.443259
+2026-03-26 23:06:34,443 - __main__ - INFO - ==================================================
+2026-03-26 23:07:34,444 - __main__ - INFO - ==================================================
+2026-03-26 23:07:34,444 - __main__ - INFO - 开始轮询 - 2026-03-26 23:07:34.444771
+2026-03-26 23:07:34,449 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:07:35,480 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:07:36,493 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:07:37,084 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:07:38,096 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:07:38,557 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:07:39,570 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:07:40,248 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:07:41,256 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:07:43,152 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:07:44,165 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:07:45,271 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:07:46,284 - __main__ - INFO - 轮询完成 - 2026-03-26 23:07:46.284034
+2026-03-26 23:07:46,284 - __main__ - INFO - ==================================================
+2026-03-26 23:08:46,285 - __main__ - INFO - ==================================================
+2026-03-26 23:08:46,285 - __main__ - INFO - 开始轮询 - 2026-03-26 23:08:46.285679
+2026-03-26 23:08:46,285 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:08:47,780 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:08:48,792 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:08:49,765 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:08:50,776 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:08:51,877 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:08:52,889 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:08:53,722 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:08:54,733 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:08:56,300 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:08:57,312 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:08:58,145 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:08:59,158 - __main__ - INFO - 轮询完成 - 2026-03-26 23:08:59.158144
+2026-03-26 23:08:59,158 - __main__ - INFO - ==================================================
+2026-03-26 23:09:59,158 - __main__ - INFO - ==================================================
+2026-03-26 23:09:59,159 - __main__ - INFO - 开始轮询 - 2026-03-26 23:09:59.159371
+2026-03-26 23:09:59,159 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:10:00,103 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:10:01,111 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:10:02,209 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:10:03,221 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:10:04,213 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:10:05,225 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:10:05,746 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:10:06,758 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:10:08,664 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:10:09,677 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:10:10,971 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:10:11,983 - __main__ - INFO - 轮询完成 - 2026-03-26 23:10:11.983025
+2026-03-26 23:10:11,983 - __main__ - INFO - ==================================================
+2026-03-26 23:11:11,984 - __main__ - INFO - ==================================================
+2026-03-26 23:11:11,984 - __main__ - INFO - 开始轮询 - 2026-03-26 23:11:11.984639
+2026-03-26 23:11:11,984 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:11:12,626 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:11:13,638 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:11:15,097 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:11:16,109 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:11:16,659 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:11:17,673 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:11:18,432 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:11:19,445 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:11:19,883 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:11:20,896 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:11:21,516 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:11:22,528 - __main__ - INFO - 轮询完成 - 2026-03-26 23:11:22.528882
+2026-03-26 23:11:22,529 - __main__ - INFO - ==================================================
+2026-03-26 23:12:22,529 - __main__ - INFO - ==================================================
+2026-03-26 23:12:22,530 - __main__ - INFO - 开始轮询 - 2026-03-26 23:12:22.530169
+2026-03-26 23:12:22,530 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:12:23,551 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:12:24,563 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:12:25,540 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:12:26,553 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:12:27,077 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:12:28,089 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:12:28,478 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:12:29,485 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:12:29,893 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:12:30,905 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:12:31,717 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:12:32,730 - __main__ - INFO - 轮询完成 - 2026-03-26 23:12:32.729980
+2026-03-26 23:12:32,730 - __main__ - INFO - ==================================================
+2026-03-26 23:13:32,730 - __main__ - INFO - ==================================================
+2026-03-26 23:13:32,730 - __main__ - INFO - 开始轮询 - 2026-03-26 23:13:32.730596
+2026-03-26 23:13:32,730 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:13:33,884 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:13:34,897 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:13:35,781 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:13:36,794 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:13:37,217 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:13:38,229 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:13:39,330 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:13:40,338 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:13:40,806 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:13:41,819 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:13:42,331 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:13:43,344 - __main__ - INFO - 轮询完成 - 2026-03-26 23:13:43.344000
+2026-03-26 23:13:43,344 - __main__ - INFO - ==================================================
+2026-03-26 23:14:43,345 - __main__ - INFO - ==================================================
+2026-03-26 23:14:43,345 - __main__ - INFO - 开始轮询 - 2026-03-26 23:14:43.345564
+2026-03-26 23:14:43,345 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:14:44,496 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:14:45,510 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:14:46,838 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:14:47,847 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:14:49,013 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:14:50,026 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:14:51,347 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:14:52,361 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:14:53,507 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:14:54,520 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:14:55,674 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:14:56,688 - __main__ - INFO - 轮询完成 - 2026-03-26 23:14:56.688613
+2026-03-26 23:14:56,689 - __main__ - INFO - ==================================================
+2026-03-26 23:15:56,689 - __main__ - INFO - ==================================================
+2026-03-26 23:15:56,690 - __main__ - INFO - 开始轮询 - 2026-03-26 23:15:56.689991
+2026-03-26 23:15:56,690 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:15:57,453 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:15:58,464 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:15:59,515 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:16:00,522 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:16:00,936 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:16:01,947 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:16:02,351 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:16:03,363 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:16:04,548 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:16:05,556 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:16:06,523 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:16:07,535 - __main__ - INFO - 轮询完成 - 2026-03-26 23:16:07.535301
+2026-03-26 23:16:07,535 - __main__ - INFO - ==================================================
+2026-03-26 23:17:07,536 - __main__ - INFO - ==================================================
+2026-03-26 23:17:07,536 - __main__ - INFO - 开始轮询 - 2026-03-26 23:17:07.536912
+2026-03-26 23:17:07,537 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:17:08,928 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:17:09,940 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:17:10,938 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:17:11,950 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:17:12,736 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:17:13,743 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:17:14,263 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:17:15,275 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:17:15,800 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:17:16,807 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:17:17,401 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:17:18,411 - __main__ - INFO - 轮询完成 - 2026-03-26 23:17:18.411423
+2026-03-26 23:17:18,411 - __main__ - INFO - ==================================================
+2026-03-26 23:18:18,412 - __main__ - INFO - ==================================================
+2026-03-26 23:18:18,412 - __main__ - INFO - 开始轮询 - 2026-03-26 23:18:18.412849
+2026-03-26 23:18:18,413 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:18:18,885 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:18:19,897 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:18:20,296 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:18:21,307 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:18:21,734 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:18:22,745 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:18:23,749 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:18:24,760 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:18:25,211 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:18:26,223 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:18:27,166 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:18:28,178 - __main__ - INFO - 轮询完成 - 2026-03-26 23:18:28.178273
+2026-03-26 23:18:28,178 - __main__ - INFO - ==================================================
+2026-03-26 23:19:28,179 - __main__ - INFO - ==================================================
+2026-03-26 23:19:28,180 - __main__ - INFO - 开始轮询 - 2026-03-26 23:19:28.179959
+2026-03-26 23:19:28,180 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:19:29,271 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:19:30,281 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:19:30,669 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:19:31,677 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:19:32,065 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:19:33,073 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:19:33,474 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:19:34,492 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:19:35,444 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:19:36,457 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:19:37,512 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:19:38,524 - __main__ - INFO - 轮询完成 - 2026-03-26 23:19:38.524224
+2026-03-26 23:19:38,524 - __main__ - INFO - ==================================================
+2026-03-26 23:20:38,525 - __main__ - INFO - ==================================================
+2026-03-26 23:20:38,525 - __main__ - INFO - 开始轮询 - 2026-03-26 23:20:38.525549
+2026-03-26 23:20:38,525 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:20:39,327 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:20:40,339 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:20:40,754 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:20:41,766 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:20:42,179 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:20:43,191 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:20:43,895 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:20:44,907 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:20:45,395 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:20:46,407 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:20:48,401 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:20:49,414 - __main__ - INFO - 轮询完成 - 2026-03-26 23:20:49.414051
+2026-03-26 23:20:49,414 - __main__ - INFO - ==================================================
+2026-03-26 23:21:49,415 - __main__ - INFO - ==================================================
+2026-03-26 23:21:49,415 - __main__ - INFO - 开始轮询 - 2026-03-26 23:21:49.415601
+2026-03-26 23:21:49,415 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:21:51,309 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:21:52,326 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:21:52,997 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:21:54,009 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:21:55,653 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:21:56,665 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:21:57,651 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:21:58,662 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:21:59,118 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:22:00,131 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:22:00,652 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:22:01,664 - __main__ - INFO - 轮询完成 - 2026-03-26 23:22:01.664811
+2026-03-26 23:22:01,665 - __main__ - INFO - ==================================================
+2026-03-26 23:23:01,665 - __main__ - INFO - ==================================================
+2026-03-26 23:23:01,666 - __main__ - INFO - 开始轮询 - 2026-03-26 23:23:01.666445
+2026-03-26 23:23:01,666 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:23:02,418 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:23:03,430 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:23:04,210 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:23:05,221 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:23:07,062 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:23:08,069 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:23:09,247 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:23:10,258 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:23:10,831 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:23:11,843 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:23:12,500 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:23:13,511 - __main__ - INFO - 轮询完成 - 2026-03-26 23:23:13.511605
+2026-03-26 23:23:13,512 - __main__ - INFO - ==================================================
+2026-03-26 23:24:13,512 - __main__ - INFO - ==================================================
+2026-03-26 23:24:13,513 - __main__ - INFO - 开始轮询 - 2026-03-26 23:24:13.513358
+2026-03-26 23:24:13,513 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:24:14,021 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:24:15,033 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:24:16,220 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:24:17,234 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:24:17,825 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:24:18,837 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:24:19,370 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:24:20,383 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:24:20,990 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:24:22,002 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:24:23,304 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:24:24,317 - __main__ - INFO - 轮询完成 - 2026-03-26 23:24:24.317464
+2026-03-26 23:24:24,317 - __main__ - INFO - ==================================================
+2026-03-26 23:25:24,318 - __main__ - INFO - ==================================================
+2026-03-26 23:25:24,318 - __main__ - INFO - 开始轮询 - 2026-03-26 23:25:24.318640
+2026-03-26 23:25:24,318 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:25:25,129 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:25:26,141 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:25:26,511 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:25:27,523 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:25:28,208 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:25:29,221 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:25:29,636 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:25:30,647 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:25:31,742 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:25:32,754 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:25:33,576 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:25:34,588 - __main__ - INFO - 轮询完成 - 2026-03-26 23:25:34.588152
+2026-03-26 23:25:34,588 - __main__ - INFO - ==================================================
+2026-03-26 23:26:34,589 - __main__ - INFO - ==================================================
+2026-03-26 23:26:34,589 - __main__ - INFO - 开始轮询 - 2026-03-26 23:26:34.589781
+2026-03-26 23:26:34,590 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:26:34,975 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:26:35,986 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:26:36,423 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:26:37,435 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:26:37,910 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:26:38,921 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:26:39,597 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:26:40,609 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:26:41,449 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:26:42,462 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:26:42,964 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:26:43,977 - __main__ - INFO - 轮询完成 - 2026-03-26 23:26:43.977376
+2026-03-26 23:26:43,977 - __main__ - INFO - ==================================================
+2026-03-26 23:27:43,978 - __main__ - INFO - ==================================================
+2026-03-26 23:27:43,978 - __main__ - INFO - 开始轮询 - 2026-03-26 23:27:43.978924
+2026-03-26 23:27:43,979 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:27:44,706 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:27:45,719 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:27:46,205 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:27:47,218 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:27:47,981 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:27:48,992 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:27:49,621 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:27:50,633 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:27:51,125 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:27:52,136 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:27:52,744 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:27:53,756 - __main__ - INFO - 轮询完成 - 2026-03-26 23:27:53.756196
+2026-03-26 23:27:53,756 - __main__ - INFO - ==================================================
+2026-03-26 23:28:53,757 - __main__ - INFO - ==================================================
+2026-03-26 23:28:53,757 - __main__ - INFO - 开始轮询 - 2026-03-26 23:28:53.757825
+2026-03-26 23:28:53,758 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:28:54,479 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:28:55,490 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:28:55,842 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:28:56,853 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:28:57,524 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:28:58,536 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:28:59,043 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:29:00,055 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:29:00,611 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:29:01,623 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:29:02,023 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:29:03,035 - __main__ - INFO - 轮询完成 - 2026-03-26 23:29:03.035096
+2026-03-26 23:29:03,035 - __main__ - INFO - ==================================================
+2026-03-26 23:30:03,036 - __main__ - INFO - ==================================================
+2026-03-26 23:30:03,036 - __main__ - INFO - 开始轮询 - 2026-03-26 23:30:03.036784
+2026-03-26 23:30:03,037 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:30:04,138 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:30:05,149 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:30:05,635 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:30:06,646 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:30:07,570 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:30:08,582 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:30:09,663 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:30:10,674 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:30:11,266 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:30:12,278 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:30:12,780 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:30:13,792 - __main__ - INFO - 轮询完成 - 2026-03-26 23:30:13.792467
+2026-03-26 23:30:13,793 - __main__ - INFO - ==================================================
+2026-03-26 23:31:13,793 - __main__ - INFO - ==================================================
+2026-03-26 23:31:13,794 - __main__ - INFO - 开始轮询 - 2026-03-26 23:31:13.794006
+2026-03-26 23:31:13,794 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:31:14,869 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:31:15,881 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:31:16,371 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:31:17,383 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:31:17,897 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:31:18,908 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:31:20,510 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:31:21,523 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:31:22,186 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:31:23,197 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:31:23,736 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:31:24,743 - __main__ - INFO - 轮询完成 - 2026-03-26 23:31:24.742955
+2026-03-26 23:31:24,743 - __main__ - INFO - ==================================================
+2026-03-26 23:32:24,744 - __main__ - INFO - ==================================================
+2026-03-26 23:32:24,744 - __main__ - INFO - 开始轮询 - 2026-03-26 23:32:24.744572
+2026-03-26 23:32:24,744 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:32:25,376 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:32:26,388 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:32:26,752 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:32:27,764 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:32:28,216 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:32:29,229 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:32:29,594 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:32:30,606 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:32:31,161 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:32:32,173 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:32:32,645 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:32:33,657 - __main__ - INFO - 轮询完成 - 2026-03-26 23:32:33.656937
+2026-03-26 23:32:33,657 - __main__ - INFO - ==================================================
+2026-03-26 23:33:33,657 - __main__ - INFO - ==================================================
+2026-03-26 23:33:33,658 - __main__ - INFO - 开始轮询 - 2026-03-26 23:33:33.658443
+2026-03-26 23:33:33,658 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:33:34,093 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:33:35,104 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:33:35,793 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:33:36,810 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:33:38,111 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:33:39,123 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:33:40,742 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:33:41,754 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:33:44,365 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:33:45,378 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:33:45,960 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:33:46,972 - __main__ - INFO - 轮询完成 - 2026-03-26 23:33:46.972450
+2026-03-26 23:33:46,973 - __main__ - INFO - ==================================================
+2026-03-26 23:34:46,973 - __main__ - INFO - ==================================================
+2026-03-26 23:34:46,974 - __main__ - INFO - 开始轮询 - 2026-03-26 23:34:46.974036
+2026-03-26 23:34:46,974 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:34:47,883 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:34:48,893 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:34:49,531 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:34:50,538 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:34:50,920 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:34:51,947 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:34:52,679 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:34:53,690 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:34:54,227 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:34:55,239 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:34:56,224 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:34:57,232 - __main__ - INFO - 轮询完成 - 2026-03-26 23:34:57.232735
+2026-03-26 23:34:57,233 - __main__ - INFO - ==================================================
+2026-03-26 23:35:57,233 - __main__ - INFO - ==================================================
+2026-03-26 23:35:57,234 - __main__ - INFO - 开始轮询 - 2026-03-26 23:35:57.234115
+2026-03-26 23:35:57,234 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:35:57,819 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:35:58,826 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:35:59,928 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:36:00,940 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:36:02,601 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:36:03,613 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:36:05,302 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:36:06,309 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:36:06,891 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:36:07,912 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:36:08,420 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:36:09,432 - __main__ - INFO - 轮询完成 - 2026-03-26 23:36:09.432248
+2026-03-26 23:36:09,432 - __main__ - INFO - ==================================================
+2026-03-26 23:37:09,433 - __main__ - INFO - ==================================================
+2026-03-26 23:37:09,433 - __main__ - INFO - 开始轮询 - 2026-03-26 23:37:09.433418
+2026-03-26 23:37:09,433 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:37:09,996 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:37:11,012 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:37:11,719 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:37:12,731 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:37:13,199 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:37:14,211 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:37:14,859 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:37:15,870 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:37:16,250 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:37:17,261 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:37:17,645 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:37:18,657 - __main__ - INFO - 轮询完成 - 2026-03-26 23:37:18.657386
+2026-03-26 23:37:18,657 - __main__ - INFO - ==================================================
+2026-03-26 23:38:18,658 - __main__ - INFO - ==================================================
+2026-03-26 23:38:18,658 - __main__ - INFO - 开始轮询 - 2026-03-26 23:38:18.658889
+2026-03-26 23:38:18,659 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:38:19,340 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:38:20,351 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:38:20,928 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:38:21,935 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:38:22,590 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:38:23,602 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:38:24,708 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:38:25,720 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:38:26,484 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:38:27,496 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:38:28,414 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:38:29,427 - __main__ - INFO - 轮询完成 - 2026-03-26 23:38:29.427250
+2026-03-26 23:38:29,427 - __main__ - INFO - ==================================================
+2026-03-26 23:39:29,428 - __main__ - INFO - ==================================================
+2026-03-26 23:39:29,428 - __main__ - INFO - 开始轮询 - 2026-03-26 23:39:29.428414
+2026-03-26 23:39:29,432 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:39:30,189 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:39:31,201 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:39:31,950 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:39:32,962 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:39:34,105 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:39:35,120 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:39:35,681 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:39:36,693 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:39:38,172 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:39:39,184 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:39:39,654 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:39:40,671 - __main__ - INFO - 轮询完成 - 2026-03-26 23:39:40.670911
+2026-03-26 23:39:40,671 - __main__ - INFO - ==================================================
+2026-03-26 23:40:40,671 - __main__ - INFO - ==================================================
+2026-03-26 23:40:40,672 - __main__ - INFO - 开始轮询 - 2026-03-26 23:40:40.672371
+2026-03-26 23:40:40,672 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:40:41,492 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:40:42,499 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:40:43,518 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:40:44,530 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:40:45,075 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:40:46,088 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:40:46,603 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:40:47,615 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:40:48,104 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:40:49,116 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:40:49,735 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:40:50,746 - __main__ - INFO - 轮询完成 - 2026-03-26 23:40:50.746752
+2026-03-26 23:40:50,747 - __main__ - INFO - ==================================================
+2026-03-26 23:41:50,747 - __main__ - INFO - ==================================================
+2026-03-26 23:41:50,747 - __main__ - INFO - 开始轮询 - 2026-03-26 23:41:50.747848
+2026-03-26 23:41:50,747 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:41:51,113 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:41:52,125 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:41:52,498 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:41:53,511 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:41:53,870 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:41:54,881 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:41:55,258 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:41:56,270 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:41:57,738 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:41:58,752 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:41:59,157 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:42:00,170 - __main__ - INFO - 轮询完成 - 2026-03-26 23:42:00.169982
+2026-03-26 23:42:00,170 - __main__ - INFO - ==================================================
+2026-03-26 23:43:00,170 - __main__ - INFO - ==================================================
+2026-03-26 23:43:00,171 - __main__ - INFO - 开始轮询 - 2026-03-26 23:43:00.171372
+2026-03-26 23:43:00,171 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:43:01,653 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:43:02,668 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:43:04,147 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:43:05,159 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:43:05,761 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:43:06,773 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:43:08,048 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:43:09,060 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:43:10,113 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:43:11,130 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:43:11,690 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:43:12,702 - __main__ - INFO - 轮询完成 - 2026-03-26 23:43:12.702204
+2026-03-26 23:43:12,702 - __main__ - INFO - ==================================================
+2026-03-26 23:44:12,703 - __main__ - INFO - ==================================================
+2026-03-26 23:44:12,703 - __main__ - INFO - 开始轮询 - 2026-03-26 23:44:12.703820
+2026-03-26 23:44:12,704 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:44:13,313 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:44:14,325 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:44:14,843 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:44:15,851 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:44:16,564 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:44:17,576 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:44:18,754 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:44:19,766 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:44:20,277 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:44:21,290 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:44:22,390 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:44:23,403 - __main__ - INFO - 轮询完成 - 2026-03-26 23:44:23.402994
+2026-03-26 23:44:23,403 - __main__ - INFO - ==================================================
+2026-03-26 23:45:23,403 - __main__ - INFO - ==================================================
+2026-03-26 23:45:23,404 - __main__ - INFO - 开始轮询 - 2026-03-26 23:45:23.404110
+2026-03-26 23:45:23,404 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:45:24,074 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:45:25,086 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:45:25,602 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:45:26,614 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:45:27,224 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:45:28,237 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:45:28,812 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:45:29,824 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:45:30,329 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:45:31,341 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:45:31,868 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:45:32,880 - __main__ - INFO - 轮询完成 - 2026-03-26 23:45:32.880867
+2026-03-26 23:45:32,881 - __main__ - INFO - ==================================================
+2026-03-26 23:46:32,881 - __main__ - INFO - ==================================================
+2026-03-26 23:46:32,882 - __main__ - INFO - 开始轮询 - 2026-03-26 23:46:32.882289
+2026-03-26 23:46:32,882 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:46:33,803 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:46:34,815 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:46:35,303 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:46:36,315 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:46:36,683 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:46:37,696 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:46:38,329 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:46:39,341 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:46:39,720 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:46:40,728 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:46:41,075 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:46:42,083 - __main__ - INFO - 轮询完成 - 2026-03-26 23:46:42.083256
+2026-03-26 23:46:42,083 - __main__ - INFO - ==================================================
+2026-03-26 23:47:42,084 - __main__ - INFO - ==================================================
+2026-03-26 23:47:42,084 - __main__ - INFO - 开始轮询 - 2026-03-26 23:47:42.084848
+2026-03-26 23:47:42,085 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:47:42,589 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:47:43,601 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:47:44,088 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:47:45,100 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:47:45,619 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:47:46,631 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:47:47,574 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:47:48,586 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:47:49,370 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:47:50,382 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:47:50,860 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:47:51,873 - __main__ - INFO - 轮询完成 - 2026-03-26 23:47:51.873231
+2026-03-26 23:47:51,873 - __main__ - INFO - ==================================================
+2026-03-26 23:48:51,874 - __main__ - INFO - ==================================================
+2026-03-26 23:48:51,874 - __main__ - INFO - 开始轮询 - 2026-03-26 23:48:51.874855
+2026-03-26 23:48:51,875 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:48:52,300 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:48:53,314 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:48:54,500 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:48:55,512 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:48:56,305 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:48:57,317 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:48:57,920 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:48:58,931 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:49:00,263 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:49:01,275 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:49:01,903 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:49:02,915 - __main__ - INFO - 轮询完成 - 2026-03-26 23:49:02.915574
+2026-03-26 23:49:02,916 - __main__ - INFO - ==================================================
+2026-03-26 23:50:02,916 - __main__ - INFO - ==================================================
+2026-03-26 23:50:02,917 - __main__ - INFO - 开始轮询 - 2026-03-26 23:50:02.917063
+2026-03-26 23:50:02,917 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:50:04,540 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:50:05,552 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:50:06,435 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:50:07,447 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:50:09,662 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:50:10,677 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:50:11,445 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:50:12,453 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:50:12,972 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:50:13,985 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:50:14,572 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:50:15,585 - __main__ - INFO - 轮询完成 - 2026-03-26 23:50:15.585563
+2026-03-26 23:50:15,586 - __main__ - INFO - ==================================================
+2026-03-26 23:51:15,586 - __main__ - INFO - ==================================================
+2026-03-26 23:51:15,586 - __main__ - INFO - 开始轮询 - 2026-03-26 23:51:15.586851
+2026-03-26 23:51:15,587 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:51:15,996 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:51:17,008 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:51:18,337 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:51:19,349 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:51:19,807 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:51:20,819 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:51:21,197 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:51:22,209 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:51:23,011 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:51:24,019 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:51:24,503 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:51:25,526 - __main__ - INFO - 轮询完成 - 2026-03-26 23:51:25.525963
+2026-03-26 23:51:25,526 - __main__ - INFO - ==================================================
+2026-03-26 23:52:25,526 - __main__ - INFO - ==================================================
+2026-03-26 23:52:25,527 - __main__ - INFO - 开始轮询 - 2026-03-26 23:52:25.527425
+2026-03-26 23:52:25,527 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:52:26,526 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:52:27,537 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:52:28,067 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:52:29,079 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:52:29,622 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:52:30,635 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:52:31,702 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:52:32,714 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:52:33,407 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:52:34,419 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:52:34,947 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:52:35,959 - __main__ - INFO - 轮询完成 - 2026-03-26 23:52:35.959508
+2026-03-26 23:52:35,960 - __main__ - INFO - ==================================================
+2026-03-26 23:53:35,960 - __main__ - INFO - ==================================================
+2026-03-26 23:53:35,961 - __main__ - INFO - 开始轮询 - 2026-03-26 23:53:35.961086
+2026-03-26 23:53:35,961 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:53:36,416 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:53:37,428 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:53:37,915 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:53:38,927 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:53:39,343 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:53:40,354 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:53:41,499 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:53:42,511 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:53:42,878 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:53:43,889 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:53:44,263 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:53:45,275 - __main__ - INFO - 轮询完成 - 2026-03-26 23:53:45.275583
+2026-03-26 23:53:45,276 - __main__ - INFO - ==================================================
+2026-03-26 23:54:45,276 - __main__ - INFO - ==================================================
+2026-03-26 23:54:45,277 - __main__ - INFO - 开始轮询 - 2026-03-26 23:54:45.277117
+2026-03-26 23:54:45,277 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:54:45,848 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:54:46,861 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:54:47,521 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:54:48,532 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:54:50,040 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:54:51,052 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:54:51,626 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:54:52,638 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:54:53,019 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:54:54,031 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:54:54,978 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:54:55,990 - __main__ - INFO - 轮询完成 - 2026-03-26 23:54:55.990118
+2026-03-26 23:54:55,990 - __main__ - INFO - ==================================================
+2026-03-26 23:55:55,991 - __main__ - INFO - ==================================================
+2026-03-26 23:55:55,991 - __main__ - INFO - 开始轮询 - 2026-03-26 23:55:55.991574
+2026-03-26 23:55:55,991 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:55:56,800 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:55:57,812 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:55:58,333 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:55:59,345 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:55:59,826 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:56:00,838 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:56:02,050 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:56:03,061 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:56:03,642 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:56:04,654 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:56:05,256 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:56:06,268 - __main__ - INFO - 轮询完成 - 2026-03-26 23:56:06.268286
+2026-03-26 23:56:06,268 - __main__ - INFO - ==================================================
+2026-03-26 23:57:06,269 - __main__ - INFO - ==================================================
+2026-03-26 23:57:06,269 - __main__ - INFO - 开始轮询 - 2026-03-26 23:57:06.269869
+2026-03-26 23:57:06,270 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:57:06,636 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:57:07,648 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:57:08,152 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:57:09,169 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:57:10,770 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:57:11,782 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:57:12,473 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:57:13,481 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:57:15,382 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:57:16,393 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:57:16,859 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:57:17,871 - __main__ - INFO - 轮询完成 - 2026-03-26 23:57:17.871273
+2026-03-26 23:57:17,871 - __main__ - INFO - ==================================================
+2026-03-26 23:58:17,872 - __main__ - INFO - ==================================================
+2026-03-26 23:58:17,872 - __main__ - INFO - 开始轮询 - 2026-03-26 23:58:17.872837
+2026-03-26 23:58:17,873 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:58:18,425 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:58:19,438 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:58:19,951 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:58:20,963 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:58:21,713 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:58:22,724 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:58:23,328 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:58:24,340 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:58:24,713 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:58:25,725 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:58:26,086 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:58:27,098 - __main__ - INFO - 轮询完成 - 2026-03-26 23:58:27.098186
+2026-03-26 23:58:27,098 - __main__ - INFO - ==================================================
+2026-03-26 23:59:27,099 - __main__ - INFO - ==================================================
+2026-03-26 23:59:27,099 - __main__ - INFO - 开始轮询 - 2026-03-26 23:59:27.099737
+2026-03-26 23:59:27,100 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:59:27,885 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-26 23:59:28,896 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:59:29,781 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-26 23:59:30,793 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:59:31,194 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-26 23:59:32,206 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-26 23:59:32,575 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-26 23:59:33,587 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-26 23:59:33,946 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-26 23:59:34,958 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-26 23:59:36,111 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-26 23:59:37,123 - __main__ - INFO - 轮询完成 - 2026-03-26 23:59:37.123559
+2026-03-26 23:59:37,124 - __main__ - INFO - ==================================================
+2026-03-27 00:00:37,124 - __main__ - INFO - ==================================================
+2026-03-27 00:00:37,125 - __main__ - INFO - 开始轮询 - 2026-03-27 00:00:37.125072
+2026-03-27 00:00:37,125 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-27 00:00:38,025 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-27 00:00:39,037 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-27 00:00:39,560 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-27 00:00:40,571 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-27 00:00:41,714 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-27 00:00:42,727 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-27 00:00:44,021 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-27 00:00:45,033 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-27 00:00:46,131 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-27 00:00:47,143 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-27 00:00:47,502 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-27 00:00:48,510 - __main__ - INFO - 轮询完成 - 2026-03-27 00:00:48.510375
+2026-03-27 00:00:48,510 - __main__ - INFO - ==================================================
+2026-03-27 00:01:48,511 - __main__ - INFO - ==================================================
+2026-03-27 00:01:48,511 - __main__ - INFO - 开始轮询 - 2026-03-27 00:01:48.511746
+2026-03-27 00:01:48,511 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-27 00:01:49,259 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-27 00:01:50,271 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-27 00:01:50,636 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-27 00:01:51,647 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-27 00:01:52,015 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-27 00:01:53,027 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-27 00:01:53,501 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-27 00:01:54,512 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-27 00:01:55,108 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-27 00:01:56,120 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-27 00:01:56,627 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-27 00:01:57,634 - __main__ - INFO - 轮询完成 - 2026-03-27 00:01:57.634543
+2026-03-27 00:01:57,634 - __main__ - INFO - ==================================================
+2026-03-27 00:02:57,635 - __main__ - INFO - ==================================================
+2026-03-27 00:02:57,635 - __main__ - INFO - 开始轮询 - 2026-03-27 00:02:57.635559
+2026-03-27 00:02:57,635 - __main__ - INFO - 处理市场：will-btc-reach-100k-by-end-of-2026
+2026-03-27 00:02:58,648 - __main__ - WARNING - 使用模拟数据：will-btc-reach-100k-by-end-of-2026
+2026-03-27 00:02:59,660 - __main__ - INFO - 处理市场：will-eth-reach-5000-by-end-of-2026
+2026-03-27 00:03:00,282 - __main__ - WARNING - 使用模拟数据：will-eth-reach-5000-by-end-of-2026
+2026-03-27 00:03:01,293 - __main__ - INFO - 处理市场：will-trump-announce-2028-campaign-in-2026
+2026-03-27 00:03:01,823 - __main__ - WARNING - 使用模拟数据：will-trump-announce-2028-campaign-in-2026
+2026-03-27 00:03:02,835 - __main__ - INFO - 处理市场：will-fed-cut-rates-in-march-2026
+2026-03-27 00:03:03,972 - __main__ - WARNING - 使用模拟数据：will-fed-cut-rates-in-march-2026
+2026-03-27 00:03:04,984 - __main__ - INFO - 处理市场：will-chiefs-win-super-bowl-2026
+2026-03-27 00:03:05,777 - __main__ - WARNING - 使用模拟数据：will-chiefs-win-super-bowl-2026
+2026-03-27 00:03:06,784 - __main__ - INFO - 处理市场：will-2026-be-hottest-year-on-record
+2026-03-27 00:03:07,408 - __main__ - WARNING - 使用模拟数据：will-2026-be-hottest-year-on-record
+2026-03-27 00:03:08,420 - __main__ - INFO - 轮询完成 - 2026-03-27 00:03:08.420409
+2026-03-27 00:03:08,420 - __main__ - INFO - ==================================================

@@ -1,0 +1,44 @@
+09:03:50 | INFO | 🚀 多平台采集框架启动 | 2026-03-26T09:03:50.095865
+09:03:50 | INFO | 启用的平台：x
+09:03:50 | INFO | ========== 开始采集 x ==========
+09:03:50 | INFO | 开始采集 x，目标数：8
+09:03:50 | INFO | ✅ 浏览器初始化成功
+09:03:50 | INFO | 采集账号：@OpenAI
+09:04:02 | INFO | 采集账号：@AnthropicAI
+09:04:10 | INFO | 采集账号：@googledeepmind
+09:04:18 | INFO | 采集关键词：AGI
+09:04:33 | ERROR | 提取推文失败：Page.wait_for_selector: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("[data-testid=\"tweet\"]") to be visible
+
+09:04:36 | INFO | 采集关键词：AI Agent
+09:04:50 | ERROR | 提取推文失败：Page.wait_for_selector: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("[data-testid=\"tweet\"]") to be visible
+
+09:04:53 | INFO | 采集关键词：Taiyi
+09:05:08 | ERROR | 提取推文失败：Page.wait_for_selector: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("[data-testid=\"tweet\"]") to be visible
+
+09:05:11 | INFO | 采集话题：#TaiyiAGI
+09:05:25 | ERROR | 提取推文失败：Page.wait_for_selector: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("[data-testid=\"tweet\"]") to be visible
+
+09:05:28 | INFO | 采集话题：#OpenClaw
+09:05:43 | ERROR | 提取推文失败：Page.wait_for_selector: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("[data-testid=\"tweet\"]") to be visible
+
+09:05:46 | INFO | 保存原始数据：output/raw/x_20260326_090546.jsonl
+09:05:46 | INFO | 保存处理数据：output/processed/x_20260326_090546.csv
+09:05:46 | INFO | 采集完成：{'platform': 'x', 'targets': 8, 'results': 9, 'timestamp': '2026-03-26T09:05:46.363428'}
+09:05:46 | INFO | ========== 采集完成 ==========
+09:05:46 | INFO | ✅ x: success
+09:05:46 | INFO |    采集 8 个目标 → 9 条结果
+09:05:46 | INFO | 📊 报告已保存：/home/nicola/.openclaw/workspace/crawlers/output/reports/report_20260326_090546.json
+09:05:46 | INFO | 📊 采集汇总：📊 多平台采集日报
+时间：2026-03-26T09:05:46.363777
+
+✅ x: success | 8 目标 → 9 条

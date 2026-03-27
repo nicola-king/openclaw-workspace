@@ -10,6 +10,22 @@ import json
 from datetime import datetime
 from pathlib import Path
 
+def print_terminal_header():
+    """打印终端头部"""
+    print("=" * 70)
+    print("  知几-E 量化交易终端 v2.1")
+    print("  策略：气象套利 + 鲸鱼跟随")
+    print("  " + datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+    print("=" * 70)
+
+def print_status_bar(opportunities, exposure, daily_pnl):
+    """打印状态栏"""
+    print()
+    print("📊 状态概览")
+    print("  机会数：{:d}  |  总暴露：{:.2f}%  |  日盈亏：${:+.2f}".format(
+        len(opportunities), exposure * 100, daily_pnl))
+    print("  运行状态：🟢 在线  |  更新时间：" + datetime.now().strftime("%H:%M:%S"))
+
 class ZhijiE_v21:
     """知几-E 策略引擎 v2.3 - 风控增强版"""
     

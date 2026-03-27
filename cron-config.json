@@ -1,0 +1,179 @@
+{
+  "description": "太一定时任务配置清单 - 统一管理版",
+  "updated_at": "2026-03-25 20:22",
+  "total_jobs": 15,
+  "status": "✅ 全部迁移完成（含跨境贸易）",
+  "jobs_by_agent": {
+    "taiyi": 4,
+    "zhiji": 3,
+    "shanmu": 2,
+    "suwen": 1,
+    "wangliang": 4,
+    "paoding": 1
+  },
+  "jobs": [
+    {
+      "id": "aa3d8963-fd9d-4311-a212-033b6ec6c422",
+      "name": "agent-diary",
+      "schedule": "0 23 * * *",
+      "agent": "taiyi",
+      "description": "Agent 日记 - 每日 23 点",
+      "next_run": "in 3h",
+      "status": "✅ 已配置"
+    },
+    {
+      "id": "32ef225b-7c01-434f-9be4-d6e14538ce19",
+      "name": "zhiji-weather",
+      "schedule": "0 7 * * *",
+      "agent": "zhiji",
+      "description": "知几-E 气象数据采集",
+      "next_run": "in 11h",
+      "status": "✅ 已配置"
+    },
+    {
+      "id": "b3cf7f4a-8b1a-4832-aed4-f28ea447f070",
+      "name": "weather-lite-daily",
+      "schedule": "0 7 * * *",
+      "agent": "taiyi",
+      "description": "天气技能 - 每日气象采集",
+      "next_run": "in 11h",
+      "status": "✅ 已配置"
+    },
+    {
+      "id": "205fa29c-5dc5-44f0-be7d-1c9d9640f2af",
+      "name": "shanmu-morning",
+      "schedule": "0 8 * * *",
+      "agent": "shanmu",
+      "description": "山木早间内容创意",
+      "next_run": "in 12h",
+      "status": "✅ 已配置"
+    },
+    {
+      "id": "20f881a5-919f-4434-b79b-09e28df8690f",
+      "name": "wangliang-competitor",
+      "schedule": "0 8 * * *",
+      "agent": "wangliang",
+      "description": "罔两竞品监控",
+      "next_run": "in 12h",
+      "status": "✅ 已配置"
+    },
+    {
+      "id": "32ae78ed-e559-40ac-8eb7-ca7e7e3c0937",
+      "name": "suwen-health",
+      "schedule": "0 9 * * *",
+      "agent": "suwen",
+      "description": "素问健康研究",
+      "next_run": "in 13h",
+      "status": "✅ 已配置"
+    },
+    {
+      "id": "b1d5cdd8-134d-4180-8958-cb41992bf68a",
+      "name": "crawler-daily",
+      "schedule": "0 9 * * *",
+      "agent": "taiyi",
+      "description": "采集框架 - 多平台内容采集",
+      "next_run": "in 13h",
+      "status": "✅ 已配置"
+    },
+    {
+      "id": "b9e5c9cb-b469-4e01-b608-ccf63dc44c51",
+      "name": "shanmu-afternoon",
+      "schedule": "0 12 * * *",
+      "agent": "shanmu",
+      "description": "山木午后内容创意",
+      "next_run": "in 16h",
+      "status": "✅ 已配置"
+    },
+    {
+      "id": "cb517115-6783-4d7b-9804-6f79ddf438a4",
+      "name": "noon-brief",
+      "schedule": "0 12 * * *",
+      "agent": "taiyi",
+      "description": "午间进度汇报",
+      "next_run": "in 16h",
+      "status": "✅ 已配置"
+    },
+    {
+      "id": "40384b8f-8e17-4607-9b44-2db22153bca3",
+      "name": "zhiji-whale",
+      "schedule": "0 14 * * *",
+      "agent": "zhiji",
+      "description": "知几鲸鱼追踪",
+      "next_run": "in 18h",
+      "status": "✅ 已配置"
+    },
+    {
+      "id": "50da4d24-7939-450b-93e7-8e0c46277376",
+      "name": "zhiji-report",
+      "schedule": "0 18 * * *",
+      "agent": "zhiji",
+      "description": "知几晚间汇报",
+      "next_run": "in 22h",
+      "status": "✅ 已配置"
+    },
+    {
+      "id": "bc022023-d347-4175-b303-73f5c55bc22c",
+      "name": "paoding-finance",
+      "schedule": "0 18 * * *",
+      "agent": "paoding",
+      "description": "庖丁财务汇报",
+      "next_run": "in 22h",
+      "status": "✅ 已配置"
+    }
+  ],
+  "daily_schedule": [
+    {
+      "time": "07:00",
+      "jobs": ["zhiji-weather", "weather-lite-daily"],
+      "agents": ["知几", "太一"]
+    },
+    {
+      "time": "08:00",
+      "jobs": ["shanmu-morning", "wangliang-competitor", "wangliang-cross-border"],
+      "agents": ["山木", "罔两"]
+    },
+    {
+      "time": "09:00",
+      "jobs": ["suwen-health", "crawler-daily", "cross-border-search"],
+      "agents": ["素问", "太一", "罔两"]
+    },
+    {
+      "time": "11:00",
+      "jobs": ["wangliang-market-analysis"],
+      "agents": ["罔两"]
+    },
+    {
+      "time": "12:00",
+      "jobs": ["shanmu-afternoon", "noon-brief"],
+      "agents": ["山木", "太一"]
+    },
+    {
+      "time": "14:00",
+      "jobs": ["zhiji-whale"],
+      "agents": ["知几"]
+    },
+    {
+      "time": "18:00",
+      "jobs": ["zhiji-report", "paoding-finance"],
+      "agents": ["知几", "庖丁"]
+    },
+    {
+      "time": "23:00",
+      "jobs": ["agent-diary"],
+      "agents": ["太一"]
+    }
+  ],
+  "system_cron": {
+    "status": "✅ 保留",
+    "jobs": [
+      "0 * * * * ~/.openclaw/workspace/scripts/cron-watchdog.sh"
+    ],
+    "note": "系统监控脚本保留在系统 crontab"
+  },
+  "management_commands": {
+    "list": "openclaw cron list",
+    "get": "openclaw cron get <job-id>",
+    "remove": "openclaw cron remove <job-id>",
+    "run": "openclaw cron run <job-id>"
+  }
+}

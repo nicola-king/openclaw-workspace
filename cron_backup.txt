@@ -1,0 +1,68 @@
+# 太一定时任务 - 技术保障
+
+# 07:00 晨间汇报
+0 7 * * * echo "太一晨间汇报时间" >> /home/nicola/.openclaw/logs/schedule.log
+
+# 09:00 晨间检查
+0 9 * * * echo "太一晨间检查时间" >> /home/nicola/.openclaw/logs/schedule.log
+
+# 12:00 午间进度
+0 12 * * * echo "太一午间进度时间" >> /home/nicola/.openclaw/logs/schedule.log
+
+# 17:00 晚间检查
+0 17 * * * echo "太一晚间检查时间" >> /home/nicola/.openclaw/logs/schedule.log
+
+# 23:00 Agent 日记
+0 23 * * * echo "太一 Agent 日记时间" >> /home/nicola/.openclaw/logs/schedule.log
+
+# 00:00 自主行动
+0 0 * * * echo "太一自主行动时间" >> /home/nicola/.openclaw/logs/schedule.log
+
+# 06:00 行动汇总
+0 6 * * * echo "太一行动汇总时间" >> /home/nicola/.openclaw/logs/schedule.log
+0 9 * * * /home/nicola/.openclaw/scripts/cross-border-trade.sh >> /home/nicola/.openclaw/logs/cross-border.log 2>&1
+*/5 * * * * /home/nicola/.openclaw/scripts/sync-today.sh >> /home/nicola/.openclaw/logs/sync.log 2>&1
+0 3 * * * /home/nicola/.openclaw/workspace/scripts/weixin-cleanup.sh >> /tmp/openclaw/weixin-cleanup.log 2>&1
+*/10 * * * * /home/nicola/.openclaw/workspace/scripts/auto-heal-comms.sh >> /tmp/openclaw/auto-heal.log 2>&1
+# 知几-E 气象数据采集 - 每日 07:00
+0 7 * * * /home/nicola/.openclaw/workspace/scripts/zhiji-cron.sh
+# 知几-E 24 小时监控 - 每 5 分钟
+*/5 * * * * /home/nicola/.openclaw/workspace/scripts/zhiji-auto.sh
+0 23 * * * ~/.openclaw/workspace/skills/taiyi/daily-memory-consolidate.sh >> ~/.openclaw/workspace/memory/cron-memory.log 2>&1
+# 太一军团每日定时任务
+# 知几线
+0 7 * * * ~/.openclaw/workspace/skills/taiyi/daily-routine.sh zhiji-weather >> ~/.openclaw/workspace/logs/cron-zhiji.log 2>&1
+0 14 * * * ~/.openclaw/workspace/skills/taiyi/daily-routine.sh zhiji-whale >> ~/.openclaw/workspace/logs/cron-zhiji.log 2>&1
+0 18 * * * ~/.openclaw/workspace/skills/taiyi/daily-routine.sh zhiji-report >> ~/.openclaw/workspace/logs/cron-zhiji.log 2>&1
+# 山木线
+0 8 * * * ~/.openclaw/workspace/skills/taiyi/daily-routine.sh shanmu-am >> ~/.openclaw/workspace/logs/cron-shanmu.log 2>&1
+0 12 * * * ~/.openclaw/workspace/skills/taiyi/daily-routine.sh shanmu-pm >> ~/.openclaw/workspace/logs/cron-shanmu.log 2>&1
+0 20 * * 3,6 ~/.openclaw/workspace/skills/taiyi/daily-routine.sh shanmu-video >> ~/.openclaw/workspace/logs/cron-shanmu.log 2>&1
+# 素问线
+0 9 * * * ~/.openclaw/workspace/skills/taiyi/daily-routine.sh suwen-health >> ~/.openclaw/workspace/logs/cron-suwen.log 2>&1
+0 21 * * * ~/.openclaw/workspace/skills/taiyi/daily-routine.sh suwen-log >> ~/.openclaw/workspace/logs/cron-suwen.log 2>&1
+# 罔两线
+0 8 * * * ~/.openclaw/workspace/skills/taiyi/daily-routine.sh wangliang-competitor >> ~/.openclaw/workspace/logs/cron-wangliang.log 2>&1
+0 11 * * * ~/.openclaw/workspace/skills/taiyi/daily-routine.sh wangliang-intel >> ~/.openclaw/workspace/logs/cron-wangliang.log 2>&1
+# 庖丁线
+0 9 * * * ~/.openclaw/workspace/skills/taiyi/daily-routine.sh paoding-expense >> ~/.openclaw/workspace/logs/cron-paoding.log 2>&1
+0 18 * * * ~/.openclaw/workspace/skills/taiyi/daily-routine.sh paoding-finance >> ~/.openclaw/workspace/logs/cron-paoding.log 2>&1
+# 太一线
+0 8 * * * ~/.openclaw/workspace/skills/taiyi/daily-routine.sh taiyi-morning >> ~/.openclaw/workspace/logs/cron-taiyi.log 2>&1
+0 12 * * * ~/.openclaw/workspace/skills/taiyi/daily-routine.sh taiyi-check >> ~/.openclaw/workspace/logs/cron-taiyi.log 2>&1
+0 17 * * * ~/.openclaw/workspace/skills/taiyi/daily-routine.sh taiyi-summary >> ~/.openclaw/workspace/logs/cron-taiyi.log 2>&1
+0 23 * * * ~/.openclaw/workspace/skills/taiyi/daily-routine.sh taiyi-diary >> ~/.openclaw/workspace/logs/cron-taiyi.log 2>&1
+0 23 * * * ~/.openclaw/workspace/skills/taiyi/daily-memory-consolidate.sh >> ~/.openclaw/workspace/logs/cron-memory.log 2>&1
+# 山木 - 内容创作
+0 8 * * * python3 /home/nicola/.openclaw/workspace/skills/shanmu/xiaohongshu/hot-topic-monitor.py >> /home/nicola/.openclaw/workspace/logs/cron-shanmu.log 2>&1
+0 18 * * * python3 /home/nicola/.openclaw/workspace/skills/shanmu/wechat-assistant/wechat_sender.py --topic "AI 管家" >> /home/nicola/.openclaw/workspace/logs/cron-shanmu.log 2>&1
+0 20 * * 3,6 python3 /home/nicola/.openclaw/workspace/skills/shanmu/wechat-assistant/wechat_sender.py --topic "视频号内容" >> /home/nicola/.openclaw/workspace/logs/cron-shanmu.log 2>&1
+# 罔两 - 情报收集
+0 8 * * * python3 /home/nicola/.openclaw/workspace/skills/wangliang/cross-border/cross_border_monitor.py >> /home/nicola/.openclaw/workspace/logs/cron-wangliang.log 2>&1
+0 11 * * * python3 /home/nicola/.openclaw/workspace/skills/wangliang/cross-border/cross_border_monitor.py --category market >> /home/nicola/.openclaw/workspace/logs/cron-wangliang.log 2>&1
+# 素问 - 系统维护
+0 9 * * * bash /home/nicola/.openclaw/workspace/skills/taiyi/daily-routine.sh suwen-health >> /home/nicola/.openclaw/workspace/logs/cron-suwen.log 2>&1
+0 21 * * * bash /home/nicola/.openclaw/workspace/skills/taiyi/daily-routine.sh suwen-log >> /home/nicola/.openclaw/workspace/logs/cron-suwen.log 2>&1
+# 山木 - 半自动内容发布（邮件发送）
+0 18 * * * python3 /home/nicola/.openclaw/workspace/skills/shanmu/wechat-assistant/wechat_sender.py --topic "AI 管家" >> /home/nicola/.openclaw/workspace/logs/cron-shanmu.log 2>&1
+0 18 * * 2,4 python3 /home/nicola/.openclaw/workspace/skills/shanmu/wechat-assistant/wechat_sender.py --topic "7 个场景" >> /home/nicola/.openclaw/workspace/logs/cron-shanmu.log 2>&1

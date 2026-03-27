@@ -23,7 +23,7 @@
 **实际用途：**
 - **zhiji** (知几) → 量化交易师
 - **shanmu** (山木) → 内容创意
-- **suwen** (素问) → 技术开发
+- **suwen** (素问) → **技术开发主管**（系统维护 + 新功能开发）
 - **wangliang** (罔两) → 数据/CEO
 - **paoding** (庖丁) → 预算成本
 
@@ -36,7 +36,7 @@
 | **taiyi** (太一) | `cli_a9086d6b5779dcc1` | `tXHOop03ZHQynCRuEPkambASNori3KhZ` | AGI 总管 |
 | **zhiji** (知几) | `cli_a90fc49a4b78dcd4` | `JARQ374uVMVdnehV88T4IbcPQ2TLGyZl` | 量化交易师 |
 | **shanmu** (山木) | `cli_a93298c9b0789cc6` | `Sv6FCgMGTYyg1b33DvDEKdwI76GW5krI` | 内容创意 |
-| **suwen** (素问) | `cli_a932968a1338dcc7` | `TrVWKrMIVVB0SfwF7AIhYR3dCwThSRLj` | 技术开发 |
+| **suwen** (素问) | `cli_a932968a1338dcc7` | `TrVWKrMIVVB0SfwF7AIhYR3dCwThSRLj` | **技术开发主管** |
 | **wangliang** (罔两) | `cli_a932999506789cb3` | `m02XEFFlRYX6JL3oPDsdYgVdzNdpilpW` | 数据/CEO |
 | **paoding** (庖丁) | `cli_a9329934c7f85cb0` | `P1WOIJddDHrA2fxI5XLowfvo8bSfnHWJ` | 预算成本 |
 
@@ -108,6 +108,20 @@
 | **通义千问** | 默认模型 | ¥0-50/月 | ✅ 已配置 |
 | **Claude** | 代码增强 | 🟡 待注册 | 🟡 待确认 |
 | **开源模型** | 自托管 | ✅ 免费 | 🟡 待配置 |
+| **Gemini 2.0** | AI 生图 | ✅ 免费额度 | 🟡 **待配置 API Key** |
+
+### Gemini API 配置
+
+**用途**: 山木 AI 生图工作流（公众号配图/海报生成）
+
+**配置方式**:
+```bash
+export GEMINI_API_KEY="AIzaSy..."  # 添加到 ~/.bashrc
+```
+
+**获取 Key**: https://aistudio.google.com/apikey
+
+**文档**: `skills/shanmu/AI_IMAGE_SETUP.md`
 
 ---
 
