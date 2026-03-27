@@ -16,3 +16,7 @@
 [2026-03-27 12:00:07] 🌤️ 三亚天气：天气数据获取失败
 [2026-03-27 12:00:07] ✅ 天气预测完成
 ❌ 通知发送失败
+[2026-03-27 16:00:02] === 开始天气预测 ===
+[2026-03-27 16:00:02] 🌤️ 三亚天气：+28°C ☀️   70% ↖14km/h
+[2026-03-27 16:00:02] ✅ 天气预测完成
+{"ok":true,"result":{"message_id":5267,"from":{"id":8351068758,"is_bot":true,"first_name":"\u592a\u4e00\uff08AGI\uff09","username":"sayelfbot"},"chat":{"id":7073481596,"first_name":"nicola","last_name":"king","type":"private"},"date":1774598403,"text":"\ud83d\udcf1 \u5929\u6c14\u9884\u6d4b\n\n\ud83c\udf24\ufe0f \u4e09\u4e9a\u5929\u6c14\uff1a 28\u00b0C \u2600\ufe0f   70% \u219614km/h\n\n\u65f6\u95f4\uff1a2026-03-27 16:00","entities":[{"offset":3,"length":4,"type":"bold"}]}}✅ 通知已发送到 Telegram
