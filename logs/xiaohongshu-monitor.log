@@ -147,3 +147,41 @@
 [plugins] feishu_bitable: Registered bitable tools
 [2026-03-27 08:00:06] 🟡 Telegram 发送失败
 [2026-03-27 08:00:06] 🟡 Telegram 发送失败
+[2026-03-27 12:00:02] === 罔两小红书监控 (feedgrab 增强版) ===
+[2026-03-27 12:00:02] === 罔两小红书监控 (feedgrab 增强版) ===
+[2026-03-27 12:00:02] 【搜索关键词】Polymarket 预测市场
+[2026-03-27 12:00:02] 【搜索关键词】Polymarket 预测市场
+[2026-03-27 12:00:02] ✅ Polymarket 预测市场 完成
+[2026-03-27 12:00:02] ✅ Polymarket 预测市场 完成
+[2026-03-27 12:00:02] 
+[2026-03-27 12:00:02] 
+[2026-03-27 12:00:02] 【搜索关键词】量化交易 策略
+[2026-03-27 12:00:02] 【搜索关键词】量化交易 策略
+[2026-03-27 12:00:02] ✅ 量化交易 策略 完成
+[2026-03-27 12:00:02] ✅ 量化交易 策略 完成
+[2026-03-27 12:00:02] 
+[2026-03-27 12:00:02] 
+[2026-03-27 12:00:02] 【搜索关键词】AI Agent 自动化
+[2026-03-27 12:00:02] 【搜索关键词】AI Agent 自动化
+[2026-03-27 12:00:02] ✅ AI Agent 自动化 完成
+[2026-03-27 12:00:02] ✅ AI Agent 自动化 完成
+[2026-03-27 12:00:02] 
+[2026-03-27 12:00:02] 
+[2026-03-27 12:00:02] 【搜索关键词】空投 羊毛
+[2026-03-27 12:00:02] 【搜索关键词】空投 羊毛
+[2026-03-27 12:00:02] ✅ 空投 羊毛 完成
+[2026-03-27 12:00:02] ✅ 空投 羊毛 完成
+[2026-03-27 12:00:02] 
+[2026-03-27 12:00:02] 
+[2026-03-27 12:00:02] === 监控完成 ===
+[2026-03-27 12:00:02] === 监控完成 ===
+[2026-03-27 12:00:02] 📄 报告已生成：/home/nicola/.openclaw/workspace/content/xiaohongshu-topics/monitor-20260327.md
+[2026-03-27 12:00:02] 📄 报告已生成：/home/nicola/.openclaw/workspace/content/xiaohongshu-topics/monitor-20260327.md
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+[2026-03-27 12:00:06] 🟡 Telegram 发送失败
+[2026-03-27 12:00:06] 🟡 Telegram 发送失败
+❌ 通知发送失败

@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-03-27T10:00:01+08:00",
+  "generatedAt": "2026-03-27T13:00:02+08:00",
   "files": [
-    {"name": "2026-03-27.md", "size": 1637, "originalSize": 7366, "date": "2026-03-27", "path": "/home/nicola/.openclaw/workspace/memory/2026-03-27.md"},
+    {"name": "2026-03-27.md", "size": 2228, "originalSize": 10026, "date": "2026-03-27", "path": "/home/nicola/.openclaw/workspace/memory/2026-03-27.md"},
     {"name": "2026-03-26.md", "size": 5210, "originalSize": 23445, "date": "2026-03-26", "path": "/home/nicola/.openclaw/workspace/memory/2026-03-26.md"},
     {"name": "2026-03-26-dashboard-deploy.md", "size": 1022, "originalSize": 4599, "date": "2026-03-26", "path": "/home/nicola/.openclaw/workspace/memory/2026-03-26-dashboard-deploy.md"},
     {"name": "residual.md", "size": 2737, "originalSize": 12316, "date": "2026-03-26", "path": "/home/nicola/.openclaw/workspace/memory/residual.md"},
@@ -23,13 +23,13 @@
     {"name": "2026-03-23-claude-api-guide.md", "size": 1111, "originalSize": 4999, "date": "2026-03-23", "path": "/home/nicola/.openclaw/workspace/memory/2026-03-23-claude-api-guide.md"}
   ],
   "history": [
-    {"date": "03-21", "rate": 4.00},
+    {"date": "03-21", "rate": 3.99},
     {"date": "03-22", "rate": 4.00},
     {"date": "03-23", "rate": 4.00},
     {"date": "03-24", "rate": 3.99},
     {"date": "03-25", "rate": 4.00},
     {"date": "03-26", "rate": 3.99},
-    {"date": "03-27", "rate": 3.99}
+    {"date": "03-27", "rate": 4.00}
   ],
   "alerts": []
 }

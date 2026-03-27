@@ -32,6 +32,8 @@ class XAutoPoster:
         self.config = self.load_config()
         self.session_file = Path.home() / ".taiyi" / "x" / "session.json"
         self.cookies_file = Path.home() / ".taiyi" / "x" / "cookies.json"
+        self.user_data_dir = Path.home() / ".taiyi" / "x" / "browser-profile"
+        self.user_data_dir.mkdir(parents=True, exist_ok=True)
     
     def load_config(self):
         """加载配置"""
@@ -88,6 +90,23 @@ class XAutoPoster:
         else:
             return f"知几-E 量化交易 · {datetime.now().strftime('%Y-%m-%d %H:%M')}"
     
+    def save_cookies(self, context):
+        """保存 cookies 到文件"""
+        cookies = context.cookies()
+        with open(self.cookies_file, "w") as f:
+            json.dump(cookies, f, indent=2)
+        print(f"  ✅ Cookies 已保存：{self.cookies_file}")
+    
+    def load_cookies(self, context):
+        """从文件加载 cookies"""
+        if self.cookies_file.exists():
+            with open(self.cookies_file, "r") as f:
+                cookies = json.load(f)
+            context.add_cookies(cookies)
+            print(f"  ✅ 已加载保存的 Cookies")
+            return True
+        return False
+    
     def post_with_playwright(self, content):
         """使用 Playwright 浏览器自动化发布"""
         if not PLAYWRIGHT_AVAILABLE:
@@ -97,20 +116,19 @@ class XAutoPoster:
             print("  playwright install chromium")
             return False
         
-        print("🌐 启动浏览器...")
+        print("🌐 启动浏览器（持久化配置）...")
         
         try:
             with sync_playwright() as p:
-                # 启动浏览器
-                browser = p.chromium.launch(
-                    headless=self.config.get("automation", {}).get("headless", False)
+                # 使用持久化上下文（自动保存登录状态）
+                context = p.chromium.launch_persistent_context(
+                    user_data_dir=str(self.user_data_dir),
+                    headless=self.config.get("automation", {}).get("headless", False),
+                    viewport={"width": 1280, "height": 720},
+                    proxy={"server": "http://127.0.0.1:7890"}
                 )
                 
-                # 创建上下文
-                context = browser.new_context(
-                    viewport={"width": 1280, "height": 720}
-                )
-                page = context.new_page()
+                page = context.pages[0] if context.pages else context.new_page()
                 
                 # 访问 X
                 print("📱 访问 X 平台...")
@@ -120,11 +138,17 @@ class XAutoPoster:
                 page.wait_for_timeout(5000)
                 
                 # 检查是否登录
-                if "login" in page.url.lower():
+                logged_in = not ("login" in page.url.lower() or "i/flow/login" in page.url)
+                
+                if not logged_in:
                     print("⚠️  需要登录")
-                    print("   请手动登录后，保存 Cookie")
-                    print("   按 Enter 继续...")
-                    input()
+                    print()
+                    print("   请先运行登录脚本（仅首次）：")
+                    print("   python3 /home/nicola/.openclaw/workspace/skills/zhiji/x-login.py")
+                    print()
+                    return False
+                else:
+                    print("  ✅ 已登录状态")
                 
                 # 发布推文
                 print("📝 发布内容...")
@@ -142,23 +166,23 @@ class XAutoPoster:
                     post_button = page.query_selector("[data-testid='tweetButton']")
                     if post_button:
                         print("  🚀 点击发布...")
-                        # post_button.click()
-                        print("  ⚠️  演示模式：未实际点击（需要确认）")
+                        post_button.click()
+                        print("  ✅ 发布成功！")
+                        page.wait_for_timeout(3000)  # 等待发布完成
+                        # 保存 cookies（可能更新了）
+                        self.save_cookies(context)
                     else:
                         print("  ❌ 未找到发布按钮")
                 else:
                     print("  ❌ 未找到输入框")
                 
-                # 保持浏览器打开
-                print("\n💡 浏览器保持打开，可手动操作")
-                print("   按 Enter 关闭浏览器...")
-                input()
-                
-                browser.close()
+                context.close()
                 return True
                 
         except Exception as e:
             print(f"❌ 发布失败：{e}")
+            import traceback
+            traceback.print_exc()
             return False
     
     def save_draft(self, content, post_type):
