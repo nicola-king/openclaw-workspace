@@ -45,6 +45,8 @@
 | 素问 | 8632190716:AAFR9k4811ISyQ4tTbn99G9GmtMNsgdkL6w |
 | 罔两 | 8635135614:AAEnppb2absodyReJDX-qZAoERP29YFuh1c |
 | 庖丁 | 8610739795:AAGvKpqunuyBZlB4sgZwrsly4j1LVMJa728 |
+| **猎手** | **8675078646:AAGKNVt3hXE1MMUr6HXCOl4XcwzwV0CmVyY** |
+| **管家** | **8744404079:AAHcT_zYabl5Yud3aDAGd7yY1qrjXxCEaYI** |
 
 ### 飞书应用
 | Bot | App ID | App Secret |

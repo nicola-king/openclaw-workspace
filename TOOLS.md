@@ -19,6 +19,8 @@
 | suwen (素问) | @sayelfdoctor_bot | 8632190716 | `AAFR9k4811ISyQ4tTbn99G9GmtMNsgdkL6w` |
 | wangliang (罔两) | @sayelftrade_bot | 8635135614 | `AAEnppb2absodyReJDX-qZAoERP29YFuh1c` |
 | paoding (庖丁) | @sayelfCost_bot | 8610739795 | `AAGvKpqunuyBZlB4sgZwrsly4j1LVMJa728` |
+| **hunter (猎手)** | **@sayelf_hunter_bot** | **8675078646** | **`AAGKNVt3hXE1MMUr6HXCOl4XcwzwV0CmVyY`** |
+| **steward (管家)** | **@sayelf_steward_bot** | **8744404079** | **`AAHcT_zYabl5Yud3aDAGd7yY1qrjXxCEaYI`** |
 
 **实际用途：**
 - **zhiji** (知几) → 量化交易师

@@ -1,360 +1,109 @@
-# PolyAlert - Polymarket 价格提醒服务
+# PolyAlert Lite 🐋
 
-**创建时间**: 2026-03-26 20:45
-**版本**: v0.1 (MVP)
-**状态**: 🟡 开发中
+> Free Polymarket Whale Alerts - Track Smart Money Movements
 
----
-
-## 📋 产品定位
-
-**一句话**: Polymarket 市场概率波动提醒服务
-
-**目标用户**: 
-- Polymarket 活跃交易者
-- 怕错过买卖点的用户
-- 没时间盯盘的上班族
-
-**核心价值**: 
-- 7x24 小时监控市场
-- 触发条件自动提醒
-- 不再错过交易机会
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Stars](https://img.shields.io/github/stars/nicola-king/polymarket-alert)](https://github.com/nicola-king/polymarket-alert)
 
 ---
 
-## 🎯 MVP 功能
+## 🚀 Quick Start
 
-### 核心功能（v0.1）
+```bash
+# Clone repository
+git clone https://github.com/nicola-king/polymarket-alert.git
+cd polymarket-alert
 
-1. **市场监控**
-   - 监控 5-10 个热门市场
-   - 每分钟轮询一次
-   - 记录概率变化
+# Install dependencies
+pip install requests python-telegram-bot
 
-2. **提醒触发**
-   - 概率>90%（高置信度）
-   - 概率<10%（低置信度）
-   - 概率变化>20%（剧烈波动）
-
-3. **Telegram 推送**
-   - 实时通知
-   - 包含市场链接
-   - 当前概率/变化幅度
-
-4. **免费试用**
-   - 7 天免费
-   - 无需付费即可体验
-   - 到期提醒
-
-### 后续功能（v0.2+）
-
-- [ ] 自定义触发条件
-- [ ] 多市场监控（不限制数量）
-- [ ] 邮件提醒
-- [ ] 订阅付费（Stripe/加密货币）
-- [ ] 历史提醒记录
-- [ ] 提醒频率设置
-
----
-
-## 🔧 技术方案
-
-### 架构
-
-```
-Polymarket API → PolyAlert Monitor → Telegram Bot → 用户
-      ↓                ↓
-  市场数据        条件判断
-  概率变化        触发提醒
-```
-
-### 技术栈
-
-| 组件 | 技术选型 | 说明 |
-|------|---------|------|
-| **数据源** | Polymarket API | 官方 GraphQL API |
-| **监控服务** | Python + asyncio | 异步轮询 |
-| **存储** | SQLite | 轻量级，无需额外部署 |
-| **推送** | Telegram Bot API | 免费，到达率高 |
-| **部署** | 本地/服务器 | MVP 阶段本地即可 |
-
-### 核心代码结构
-
-```
-skills/polyalert/
-├── __init__.py
-├── config.py          # 配置（API key/监控市场列表）
-├── monitor.py         # 监控服务（轮询+条件判断）
-├── notifier.py        # 通知服务（Telegram 推送）
-├── storage.py         # 数据存储（SQLite）
-├── main.py            # 入口（启动服务）
-└── README.md          # 使用文档
+# Run monitor
+python monitor_v1.py
 ```
 
 ---
 
-## 📊 监控市场列表（MVP）
+## ✨ Features
 
-### 初始监控市场（10 个）
-
-| 类别 | 市场 | 当前概率 | 触发条件 |
-|------|------|---------|---------|
-| **加密** | BTC>$100K 2026 | 45% | >90% 或<10% |
-| **加密** | ETH>$5K 2026 | 38% | >90% 或<10% |
-| **政治** | 特朗普支持率 | 52% | 变化>20% |
-| **政治** | 中期选举预测 | 48% | 变化>20% |
-| **体育** | 超级碗冠军 | 25% | >90% 或<10% |
-| **体育** | NBA 总冠军 | 30% | >90% 或<10% |
-| **天气** | 2026 最热年份 | 65% | >90% 或<10% |
-| **经济** | 美联储降息 | 72% | >90% 或<10% |
-| **娱乐** | 奥斯卡最佳影片 | 15% | >90% 或<10% |
-| **社会** | 美国进入伊朗 | 35% | 变化>20% |
-
-### 市场选择标准
-
-- ✅ 高流动性（成交量>$100K）
-- ✅ 高关注度（持仓者>1000）
-- ✅ 有明确结算时间
-- ✅ 概率波动大（有交易机会）
+- ✅ Real-time whale transaction monitoring
+- ✅ Smart money wallet tracking (ColdMath, etc.)
+- ✅ Telegram alert notifications
+- ✅ Confidence score calculation
+- ✅ Free to use (MIT License)
 
 ---
 
-## 💬 Telegram Bot 设计
+## 📊 Free vs Pro
 
-### Bot 信息
+| Feature | Free (Open Source) | Pro (Hosted) |
+|---------|-------------------|--------------|
+| **Signal Delay** | 15 minutes | Real-time (0 delay) |
+| **Wallets Monitored** | 5 wallets | 20+ wallets |
+| **Confidence Filter** | Basic (90%+) | Advanced (96%+) |
+| **Position Sizing** | Fixed | Kelly Criterion |
+| **Push Channel** | Telegram Group | DM + VIP Group |
+| **Revenue Reports** | ❌ | ✅ |
+| **Support** | Community | Priority |
+| **Price** | $0 | $99/month |
 
-- **名称**: PolyAlert Bot
-- **Username**: @PolyAlertBot（待注册）
-- **功能**: 推送提醒通知
-
-### 消息模板
-
-**触发提醒**:
-```
-🚨 PolyAlert 触发提醒
-
-市场：[市场名称]
-方向：YES / NO
-当前概率：85% → 92% (+7%)
-触发条件：概率>90%
-
-📊 市场链接：https://polymarket.com/event/xxx
-
-⏰ 时间：2026-03-26 20:45:32
-```
-
-**每日摘要**（可选）:
-```
-📋 PolyAlert 每日摘要
-
-日期：2026-03-26
-监控市场：10 个
-触发提醒：3 次
-
-今日最热：
-1. [市场 A] +15%
-2. [市场 B] -12%
-3. [市场 C] +8%
-
-🔗 查看详情：[仪表板链接]
-```
-
-### 用户命令
-
-| 命令 | 功能 | 说明 |
-|------|------|------|
-| `/start` | 开始使用 | 欢迎消息 + 使用指南 |
-| `/status` | 查看状态 | 当前监控市场列表 |
-| `/subscribe` | 订阅付费 | 付费链接（v0.2+） |
-| `/help` | 帮助 | 使用文档 |
+👉 **[Upgrade to Pro](https://chuanxi.gumroad.com/l/hunter-pro)**
 
 ---
 
-## 🗄️ 数据库设计
+## 📱 Join Community
 
-### 表结构
+- **Telegram Free Group**: https://t.me/taiyi_free
+- **WeChat Official**: SAYELF 山野精灵
+- **Twitter**: [@SayelfTea](https://twitter.com/SayelfTea)
 
-```sql
--- 监控市场表
-CREATE TABLE markets (
-    id TEXT PRIMARY KEY,
-    name TEXT NOT NULL,
-    url TEXT NOT NULL,
-    category TEXT,
-    current_prob REAL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
+---
 
--- 提醒记录表
-CREATE TABLE alerts (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    market_id TEXT,
-    trigger_type TEXT,
-    old_prob REAL,
-    new_prob REAL,
-    telegram_user_id TEXT,
-    sent_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (market_id) REFERENCES markets(id)
-);
+## 💼 Enterprise Customization
 
--- 用户订阅表
-CREATE TABLE subscriptions (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    telegram_user_id TEXT UNIQUE,
-    status TEXT DEFAULT 'trial',
-    trial_start TIMESTAMP,
-    trial_end TIMESTAMP,
-    paid_until TIMESTAMP,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
+Need custom development? Contact: contact@sayelf.com
+
+Custom development starts at ¥5000.
+
+---
+
+## 📖 Documentation
+
+For detailed setup guide and Chinese tutorial:
+- Read `docs/SETUP.md`
+- Or follow WeChat Official Account "SAYELF 山野精灵"
+
+---
+
+## 🛠️ Development
+
+```bash
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+# or
+venv\Scripts\activate  # Windows
+
+# Install dev dependencies
+pip install -r requirements.txt
+
+# Run tests
+python -m pytest tests/
 ```
 
 ---
 
-## 🚀 开发计划
+## 📄 License
 
-### Day 1（今天）- 项目初始化
-
-- [x] 项目文档创建
-- [ ] 代码框架搭建
-- [ ] Polymarket API 测试
-- [ ] Telegram Bot 创建
-
-### Day 2 - 核心功能开发
-
-- [ ] 监控服务（轮询+条件判断）
-- [ ] 数据存储（SQLite）
-- [ ] Telegram 推送集成
-
-### Day 3 - 测试与优化
-
-- [ ] 本地测试（模拟触发）
-- [ ] 性能优化（异步轮询）
-- [ ] 错误处理（API 失败重试）
-
-### Day 4-5 - 上线准备
-
-- [ ] 部署到服务器（可选）
-- [ ] 邀请测试用户（5-10 人）
-- [ ] 收集反馈迭代
-
-### Day 6-7 - 正式发布
-
-- [ ] Telegram 群推广
-- [ ] Twitter 宣传
-- [ ] 收集第一批用户
+MIT License - Feel free to use, modify, and distribute.
 
 ---
 
-## 📈 成功指标
+## 🙏 Acknowledgments
 
-### MVP 阶段（7 天）
+Built with ❤️ by [Taiyi AGI](https://github.com/nicola-king/zhiji-e)
 
-| 指标 | 目标 | 说明 |
-|------|------|------|
-| **监控市场** | 10 个 | 覆盖主流类别 |
-| **提醒准确率** | >95% | 无误报/漏报 |
-| **推送延迟** | <1 分钟 | 触发后 1 分钟内推送 |
-| **测试用户** | 5-10 人 | 种子用户 |
-| **用户反馈** | 正面 | 有用/准确/及时 |
-
-### 第一阶段（30 天）
-
-| 指标 | 目标 | 说明 |
-|------|------|------|
-| **活跃用户** | 50 人 | 日活/周活 |
-| **日提醒数** | 20-50 次 | 平均每天 |
-| **用户留存** | >60% | 7 日后留存 |
-| **付费转化** | 5-10% | 试用转付费 |
-
-### 第二阶段（90 天）
-
-| 指标 | 目标 | 说明 |
-|------|------|------|
-| **付费用户** | 100 人 | 订阅用户 |
-| **月收入** | $375+ | $45/年×100/12 |
-| **监控市场** | 50+ 个 | 覆盖更多类别 |
-| **自动化** | 95%+ | 无需人工干预 |
+Inspired by ColdMath's successful Polymarket trading strategy ($300 → $80,000).
 
 ---
 
-## 💰 变现路径
-
-### 免费层（v0.1）
-
-- 监控 5 个市场
-- 基础触发条件（>90%/<10%）
-- Telegram 推送
-- 7 天试用
-
-### 付费层（v0.2+）
-
-**基础版** ($5/月):
-- 监控 20 个市场
-- 自定义触发条件
-- 邮件提醒
-- 历史提醒记录
-
-**专业版** ($15/月):
-- 监控不限市场
-- 所有触发条件
-- 多通道提醒（Telegram+ 邮件+ 短信）
-- API 访问
-- 优先支持
-
-**企业版** ($50/月):
-- 多账号管理
-- 白标定制
-- 私有部署
-- 专属支持
-
----
-
-## ⚠️ 风险与应对
-
-### 技术风险
-
-| 风险 | 概率 | 影响 | 应对 |
-|------|------|------|------|
-| Polymarket API 限流 | 中 | 高 | 降低轮询频率/多 IP |
-| Telegram Bot 被封 | 低 | 高 | 备用 Bot/邮件提醒 |
-| 服务器宕机 | 中 | 高 | 监控告警/自动重启 |
-| 数据不准确 | 低 | 中 | 多数据源交叉验证 |
-
-### 商业风险
-
-| 风险 | 概率 | 影响 | 应对 |
-|------|------|------|------|
-| 用户增长慢 | 中 | 中 | 社区推广/内容营销 |
-| 付费转化低 | 高 | 中 | 优化免费层价值 |
-| 竞争对手出现 | 中 | 低 | 快速迭代/建立壁垒 |
-| Polymarket 官方做 | 低 | 高 | 差异化/多平台支持 |
-
----
-
-## 📝 待办事项
-
-### 立即执行（今天）
-
-- [ ] 创建 Telegram Bot（@BotFather）
-- [ ] 获取 Polymarket API 访问权限
-- [ ] 搭建代码框架
-- [ ] 测试 API 连接
-
-### 本周执行
-
-- [ ] 完成监控服务开发
-- [ ] 完成 Telegram 推送集成
-- [ ] 本地测试通过
-- [ ] 邀请 5-10 个测试用户
-
-### 本月执行
-
-- [ ] 正式上线
-- [ ] 推广到 Telegram 群
-- [ ] 收集用户反馈
-- [ ] 迭代 v0.2 版本
-
----
-
-*创建时间：2026-03-26 20:45 | 太一 | PolyAlert 项目组*
+*PolyAlert Lite v1.0 | Track Smart Money, Trade Smarter*
