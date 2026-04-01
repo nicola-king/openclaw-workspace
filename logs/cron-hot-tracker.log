@@ -1,1 +1,16 @@
 /bin/bash: 行 1: /home/nicola/.openclaw/workspace/skills/shanmu/daily-hot-tracker.sh: 权限不够
+/bin/bash: 行 1: /home/nicola/.openclaw/workspace/skills/shanmu/daily-hot-tracker.sh: 权限不够
+/bin/bash: 行 1: /home/nicola/.openclaw/workspace/skills/shanmu/daily-hot-tracker.sh: 权限不够
+/bin/bash: 行 1: /home/nicola/.openclaw/workspace/skills/shanmu/daily-hot-tracker.sh: 权限不够
+[2026-03-31 09:00:01] === 开始三平台热点追踪 ===
+[2026-03-31 09:00:02] 追踪日期：2026-03-31
+[2026-03-31 09:00:02] ✅ 热点报告已生成：/home/nicola/.openclaw/workspace/content/hot-topics/hot-topics-2026-03-31.md
+[2026-03-31 09:00:02] ✅ 内容创意已生成：/home/nicola/.openclaw/workspace/content/hot-topics/creative-ideas-2026-03-31.md
+[2026-03-31 09:00:02] === 三平台热点追踪完成 ===
+{"ok":true,"result":{"message_id":6706,"from":{"id":8351068758,"is_bot":true,"first_name":"\u592a\u4e00\uff08AGI\uff09","username":"sayelfbot"},"chat":{"id":7073481596,"first_name":"nicola","last_name":"king","type":"private"},"date":1774918802,"text":"\ud83d\udcf1 \u4e09\u5e73\u53f0\u70ed\u70b9\u8ffd\u8e2a\n\n\u2705 \u6bcf\u65e5\u70ed\u70b9\u8ffd\u8e2a\u5b8c\u6210\\n\ud83d\udcca \u5c0f\u7ea2\u4e66/\u89c6\u9891\u53f7/\u516c\u4f17\u53f7\\n\ud83d\udcc4 \u70ed\u70b9\u62a5\u544a   \u5185\u5bb9\u521b\u610f\\n\ud83c\udfaf \u5df2\u751f\u6210\u4eca\u65e5\u6267\u884c\u6e05\u5355\n\n\u65f6\u95f4\uff1a2026-03-31 09:00","entities":[{"offset":3,"length":7,"type":"bold"}]}}✅ 通知已发送到 Telegram
+[2026-04-01 09:00:01] === 开始三平台热点追踪 ===
+[2026-04-01 09:00:01] 追踪日期：2026-04-01
+[2026-04-01 09:00:01] ✅ 热点报告已生成：/home/nicola/.openclaw/workspace/content/hot-topics/hot-topics-2026-04-01.md
+[2026-04-01 09:00:01] ✅ 内容创意已生成：/home/nicola/.openclaw/workspace/content/hot-topics/creative-ideas-2026-04-01.md
+[2026-04-01 09:00:01] === 三平台热点追踪完成 ===
+{"ok":true,"result":{"message_id":6925,"from":{"id":8351068758,"is_bot":true,"first_name":"\u592a\u4e00\uff08AGI\uff09","username":"sayelfbot"},"chat":{"id":7073481596,"first_name":"nicola","last_name":"king","type":"private"},"date":1775005202,"text":"\ud83d\udcf1 \u4e09\u5e73\u53f0\u70ed\u70b9\u8ffd\u8e2a\n\n\u2705 \u6bcf\u65e5\u70ed\u70b9\u8ffd\u8e2a\u5b8c\u6210\\n\ud83d\udcca \u5c0f\u7ea2\u4e66/\u89c6\u9891\u53f7/\u516c\u4f17\u53f7\\n\ud83d\udcc4 \u70ed\u70b9\u62a5\u544a   \u5185\u5bb9\u521b\u610f\\n\ud83c\udfaf \u5df2\u751f\u6210\u4eca\u65e5\u6267\u884c\u6e05\u5355\n\n\u65f6\u95f4\uff1a2026-04-01 09:00","entities":[{"offset":3,"length":7,"type":"bold"}]}}✅ 通知已发送到 Telegram

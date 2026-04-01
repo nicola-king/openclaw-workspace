@@ -1,0 +1,41 @@
+<view class="container">
+  <!-- 卡片头部 -->
+  <view class="card-header">
+    <text class="stage-icon">♾️</text>
+    <text class="stage-name">{{stageName}}</text>
+  </view>
+
+  <!-- 阶段指示 -->
+  <view class="step-indicator">
+    <text>阶段 {{step}}/6 · {{stepName}}</text>
+  </view>
+
+  <view class="divider"></view>
+
+  <!-- 核心状态 -->
+  <view class="core-state">
+    <text>{{stateText}}</text>
+  </view>
+
+  <!-- 人格标签 -->
+  <view class="tag">
+    <text>🏷 {{personalityTag}}</text>
+  </view>
+
+  <!-- 标签 -->
+  <view class="hashtags">
+    <text>#今日 #随机视角</text>
+  </view>
+
+  <view class="divider"></view>
+
+  <!-- 解锁按钮 -->
+  <button class="unlock-btn" bindtap="unlock">
+    🔒 解锁完整分析 ¥1
+  </button>
+
+  <!-- 再来一次 -->
+  <button class="retry-btn" bindtap="retry">
+    再来一次 →
+  </button>
+</view>

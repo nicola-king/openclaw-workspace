@@ -1,0 +1,30 @@
+{
+  "version": "v1.0",
+  "created_at": "2026-03-30T20:00:00+08:00",
+  "status": "✅ 已配置",
+  
+  "gmgn_config": {
+    "base_url": "https://api.gmgn.ai",
+    "api_version": "v1",
+    "endpoints": {
+      "transactions": "/defi/swap/v1/transactions",
+      "token_info": "/defi/token/v1/info",
+      "whale_list": "/defi/whale/v1/list",
+      "copy_trade": "/defi/copytrade/v1/traders"
+    }
+  },
+  
+  "supported_chains": ["solana", "bsc", "base", "ethereum"],
+  
+  "rate_limits": {
+    "requests_per_minute": 60,
+    "requests_per_day": 10000
+  },
+  
+  "whale_tracking": {
+    "target": "majorexploiter",
+    "chain": "solana",
+    "min_trade_usd": 10000,
+    "check_interval": 300
+  }
+}

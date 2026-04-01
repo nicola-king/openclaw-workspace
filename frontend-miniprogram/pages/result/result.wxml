@@ -1,0 +1,57 @@
+<!--pages/result/result.wxml-->
+<view class="container">
+  <!-- 结果头部 -->
+  <view class="result-header">
+    <view class="state-name">{{result.state.name}}</view>
+    <view class="state-type">{{result.state.type}}</view>
+  </view>
+
+  <!-- 阶段信息 -->
+  <view class="stage-section">
+    <view class="section-title">📍 你当前的位置</view>
+    <view class="stage-info">
+      <text>Step {{result.stage.step}}/6</text>
+      <text class="stage-name">{{result.stage.name}}</text>
+    </view>
+  </view>
+
+  <!-- 免费内容 -->
+  <view class="free-section">
+    <view class="section-title">🆓 免费内容</view>
+    <view class="free-list">
+      <view class="free-item">✓ 状态识别</view>
+      <view class="free-item">✓ 阶段判断</view>
+      <view class="free-item">✓ 置信度：{{(result.confidence * 100).toFixed(0)}}%</view>
+    </view>
+  </view>
+
+  <!-- 付费解锁 -->
+  <view class="upsell-section">
+    <view class="section-title">💰 付费解锁</view>
+    
+    <view class="upsell-card" bindtap="unlockStage">
+      <view class="upsell-header">
+        <view class="upsell-name">阶段解读</view>
+        <view class="upsell-price">¥1</view>
+      </view>
+      <view class="upsell-desc">阶段详细解释 + 心理学解读</view>
+    </view>
+
+    <view class="upsell-card highlight" bindtap="unlockSkill">
+      <view class="upsell-header">
+        <view class="upsell-name">完整方案</view>
+        <view class="upsell-price">¥9.9</view>
+      </view>
+      <view class="upsell-desc">完整行动方案 + 避免事项 + 3 重心理学解读</view>
+      <view class="upsell-tag">推荐</view>
+    </view>
+
+    <view class="upsell-card" bindtap="unlockMembership">
+      <view class="upsell-header">
+        <view class="upsell-name">会员</view>
+        <view class="upsell-price">¥19/月</view>
+      </view>
+      <view class="upsell-desc">384 Skills 无限访问 + 用户轨迹追踪</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,29 @@
+# 币安交易策略 - 定时任务配置
+# 编辑：crontab -e
+# 查看：crontab -l
+
+# 环境变量
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+PYTHON=/usr/bin/python3
+
+# 交易策略 - 每 5 分钟检查信号
+*/5 * * * * cd /home/nicola/.openclaw/workspace && python3 scripts/trading-strategy.py --cron >> logs/strategy-cron.log 2>&1
+
+# 自动止盈止损 - 每 1 分钟检查
+* * * * * cd /home/nicola/.openclaw/workspace && python3 scripts/auto-exit-manager.py --check >> logs/auto-exit.log 2>&1
+
+# 日报生成 - 每天 23:00
+0 23 * * * cd /home/nicola/.openclaw/workspace && python3 scripts/generate-daily-report.py >> logs/daily-report.log 2>&1
+
+# 周报生成 - 每周一 09:00
+0 9 * * 1 cd /home/nicola/.openclaw/workspace && python3 scripts/generate-weekly-report.py >> logs/weekly-report.log 2>&1
+
+# 日志清理 - 每天 02:00（保留最近 7 天）
+0 2 * * * find /home/nicola/.openclaw/workspace/logs -name "*.log" -mtime +7 -delete
+
+# 持仓同步 - 每 10 分钟
+*/10 * * * * cd /home/nicola/.openclaw/workspace && python3 scripts/sync-positions.py >> logs/sync.log 2>&1
+
+# 健康检查 - 每 30 分钟
+*/30 * * * * cd /home/nicola/.openclaw/workspace && python3 scripts/health-check.py >> logs/health.log 2>&1

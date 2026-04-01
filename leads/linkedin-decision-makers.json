@@ -1,0 +1,218 @@
+{
+  "timestamp": "2026-04-01T21:31:58.469051",
+  "total_leads": 20,
+  "regions": [
+    "Middle East",
+    "Southeast Asia",
+    "Europe"
+  ],
+  "titles_searched": [
+    "Procurement Manager",
+    "Purchasing Director",
+    "Sourcing Manager",
+    "Construction Manager",
+    "Project Director"
+  ],
+  "leads": [
+    {
+      "source": "LinkedIn Sales Navigator",
+      "title": "Procurement Manager",
+      "location": "Dubai",
+      "region": "Middle East",
+      "industry": "Construction/Real Estate",
+      "search_url": "https://www.linkedin.com/sales/search/people?query={\"keywords\":\"Procurement Manager prefab house\",\"locations\":[\"Dubai\"]}",
+      "status": "search_link_generated",
+      "timestamp": "2026-04-01T21:31:58.468824"
+    },
+    {
+      "source": "LinkedIn Sales Navigator",
+      "title": "Purchasing Director",
+      "location": "Dubai",
+      "region": "Middle East",
+      "industry": "Construction/Real Estate",
+      "search_url": "https://www.linkedin.com/sales/search/people?query={\"keywords\":\"Purchasing Director prefab house\",\"locations\":[\"Dubai\"]}",
+      "status": "search_link_generated",
+      "timestamp": "2026-04-01T21:31:58.468841"
+    },
+    {
+      "source": "LinkedIn Sales Navigator",
+      "title": "Procurement Manager",
+      "location": "Saudi Arabia",
+      "region": "Middle East",
+      "industry": "Construction/Real Estate",
+      "search_url": "https://www.linkedin.com/sales/search/people?query={\"keywords\":\"Procurement Manager prefab house\",\"locations\":[\"Saudi Arabia\"]}",
+      "status": "search_link_generated",
+      "timestamp": "2026-04-01T21:31:58.468846"
+    },
+    {
+      "source": "LinkedIn Sales Navigator",
+      "title": "Purchasing Director",
+      "location": "Saudi Arabia",
+      "region": "Middle East",
+      "industry": "Construction/Real Estate",
+      "search_url": "https://www.linkedin.com/sales/search/people?query={\"keywords\":\"Purchasing Director prefab house\",\"locations\":[\"Saudi Arabia\"]}",
+      "status": "search_link_generated",
+      "timestamp": "2026-04-01T21:31:58.468850"
+    },
+    {
+      "source": "LinkedIn Sales Navigator",
+      "title": "Procurement Manager",
+      "location": "UAE",
+      "region": "Middle East",
+      "industry": "Construction/Real Estate",
+      "search_url": "https://www.linkedin.com/sales/search/people?query={\"keywords\":\"Procurement Manager prefab house\",\"locations\":[\"UAE\"]}",
+      "status": "search_link_generated",
+      "timestamp": "2026-04-01T21:31:58.468853"
+    },
+    {
+      "source": "LinkedIn Sales Navigator",
+      "title": "Purchasing Director",
+      "location": "UAE",
+      "region": "Middle East",
+      "industry": "Construction/Real Estate",
+      "search_url": "https://www.linkedin.com/sales/search/people?query={\"keywords\":\"Purchasing Director prefab house\",\"locations\":[\"UAE\"]}",
+      "status": "search_link_generated",
+      "timestamp": "2026-04-01T21:31:58.468859"
+    },
+    {
+      "source": "LinkedIn Sales Navigator",
+      "title": "Procurement Manager",
+      "location": "Qatar",
+      "region": "Middle East",
+      "industry": "Construction/Real Estate",
+      "search_url": "https://www.linkedin.com/sales/search/people?query={\"keywords\":\"Procurement Manager prefab house\",\"locations\":[\"Qatar\"]}",
+      "status": "search_link_generated",
+      "timestamp": "2026-04-01T21:31:58.468862"
+    },
+    {
+      "source": "LinkedIn Sales Navigator",
+      "title": "Purchasing Director",
+      "location": "Qatar",
+      "region": "Middle East",
+      "industry": "Construction/Real Estate",
+      "search_url": "https://www.linkedin.com/sales/search/people?query={\"keywords\":\"Purchasing Director prefab house\",\"locations\":[\"Qatar\"]}",
+      "status": "search_link_generated",
+      "timestamp": "2026-04-01T21:31:58.468865"
+    },
+    {
+      "source": "LinkedIn Sales Navigator",
+      "title": "Procurement Manager",
+      "location": "Singapore",
+      "region": "Southeast Asia",
+      "industry": "Construction/Real Estate",
+      "search_url": "https://www.linkedin.com/sales/search/people?query={\"keywords\":\"Procurement Manager prefab house\",\"locations\":[\"Singapore\"]}",
+      "status": "search_link_generated",
+      "timestamp": "2026-04-01T21:31:58.468869"
+    },
+    {
+      "source": "LinkedIn Sales Navigator",
+      "title": "Purchasing Director",
+      "location": "Singapore",
+      "region": "Southeast Asia",
+      "industry": "Construction/Real Estate",
+      "search_url": "https://www.linkedin.com/sales/search/people?query={\"keywords\":\"Purchasing Director prefab house\",\"locations\":[\"Singapore\"]}",
+      "status": "search_link_generated",
+      "timestamp": "2026-04-01T21:31:58.468872"
+    },
+    {
+      "source": "LinkedIn Sales Navigator",
+      "title": "Procurement Manager",
+      "location": "Malaysia",
+      "region": "Southeast Asia",
+      "industry": "Construction/Real Estate",
+      "search_url": "https://www.linkedin.com/sales/search/people?query={\"keywords\":\"Procurement Manager prefab house\",\"locations\":[\"Malaysia\"]}",
+      "status": "search_link_generated",
+      "timestamp": "2026-04-01T21:31:58.468875"
+    },
+    {
+      "source": "LinkedIn Sales Navigator",
+      "title": "Purchasing Director",
+      "location": "Malaysia",
+      "region": "Southeast Asia",
+      "industry": "Construction/Real Estate",
+      "search_url": "https://www.linkedin.com/sales/search/people?query={\"keywords\":\"Purchasing Director prefab house\",\"locations\":[\"Malaysia\"]}",
+      "status": "search_link_generated",
+      "timestamp": "2026-04-01T21:31:58.468877"
+    },
+    {
+      "source": "LinkedIn Sales Navigator",
+      "title": "Procurement Manager",
+      "location": "Thailand",
+      "region": "Southeast Asia",
+      "industry": "Construction/Real Estate",
+      "search_url": "https://www.linkedin.com/sales/search/people?query={\"keywords\":\"Procurement Manager prefab house\",\"locations\":[\"Thailand\"]}",
+      "status": "search_link_generated",
+      "timestamp": "2026-04-01T21:31:58.468880"
+    },
+    {
+      "source": "LinkedIn Sales Navigator",
+      "title": "Purchasing Director",
+      "location": "Thailand",
+      "region": "Southeast Asia",
+      "industry": "Construction/Real Estate",
+      "search_url": "https://www.linkedin.com/sales/search/people?query={\"keywords\":\"Purchasing Director prefab house\",\"locations\":[\"Thailand\"]}",
+      "status": "search_link_generated",
+      "timestamp": "2026-04-01T21:31:58.468882"
+    },
+    {
+      "source": "LinkedIn Sales Navigator",
+      "title": "Procurement Manager",
+      "location": "United Kingdom",
+      "region": "Europe",
+      "industry": "Construction/Real Estate",
+      "search_url": "https://www.linkedin.com/sales/search/people?query={\"keywords\":\"Procurement Manager prefab house\",\"locations\":[\"United Kingdom\"]}",
+      "status": "search_link_generated",
+      "timestamp": "2026-04-01T21:31:58.468886"
+    },
+    {
+      "source": "LinkedIn Sales Navigator",
+      "title": "Purchasing Director",
+      "location": "United Kingdom",
+      "region": "Europe",
+      "industry": "Construction/Real Estate",
+      "search_url": "https://www.linkedin.com/sales/search/people?query={\"keywords\":\"Purchasing Director prefab house\",\"locations\":[\"United Kingdom\"]}",
+      "status": "search_link_generated",
+      "timestamp": "2026-04-01T21:31:58.468889"
+    },
+    {
+      "source": "LinkedIn Sales Navigator",
+      "title": "Procurement Manager",
+      "location": "Germany",
+      "region": "Europe",
+      "industry": "Construction/Real Estate",
+      "search_url": "https://www.linkedin.com/sales/search/people?query={\"keywords\":\"Procurement Manager prefab house\",\"locations\":[\"Germany\"]}",
+      "status": "search_link_generated",
+      "timestamp": "2026-04-01T21:31:58.468892"
+    },
+    {
+      "source": "LinkedIn Sales Navigator",
+      "title": "Purchasing Director",
+      "location": "Germany",
+      "region": "Europe",
+      "industry": "Construction/Real Estate",
+      "search_url": "https://www.linkedin.com/sales/search/people?query={\"keywords\":\"Purchasing Director prefab house\",\"locations\":[\"Germany\"]}",
+      "status": "search_link_generated",
+      "timestamp": "2026-04-01T21:31:58.468895"
+    },
+    {
+      "source": "LinkedIn Sales Navigator",
+      "title": "Procurement Manager",
+      "location": "Poland",
+      "region": "Europe",
+      "industry": "Construction/Real Estate",
+      "search_url": "https://www.linkedin.com/sales/search/people?query={\"keywords\":\"Procurement Manager prefab house\",\"locations\":[\"Poland\"]}",
+      "status": "search_link_generated",
+      "timestamp": "2026-04-01T21:31:58.468897"
+    },
+    {
+      "source": "LinkedIn Sales Navigator",
+      "title": "Purchasing Director",
+      "location": "Poland",
+      "region": "Europe",
+      "industry": "Construction/Real Estate",
+      "search_url": "https://www.linkedin.com/sales/search/people?query={\"keywords\":\"Purchasing Director prefab house\",\"locations\":[\"Poland\"]}",
+      "status": "search_link_generated",
+      "timestamp": "2026-04-01T21:31:58.468900"
+    }
+  ]
+}

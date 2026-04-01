@@ -1,0 +1,187 @@
+scripts/daily-constitution.sh: 行 19: 
+太一每日宪法学习 v2.0
+
+功能:
+1. 宪法学习 (Tier 1 永久核)
+2. 记忆提炼 (TurboQuant 压缩)
+3. 系统自检 (Gateway+ 残留进程)
+4. 新一天重置 (创建记忆文件)
+5. HEARTBEAT 更新
+
+使用:
+    bash scripts/daily-constitution.sh
+
+定时:
+    每日 06:00 自动执行 (crontab)
+: 没有那个文件或目录
+============================================================
+📜 太一每日宪法学习 v2.0
+日期：2026-03-31
+时间：06:00
+============================================================
+
+📖 [1/5] 宪法学习...
+  ✅ constitution/CONST-ROUTER.md
+  ✅ constitution/axiom/VALUE-FOUNDATION.md
+  ✅ constitution/directives/NEGENTROPY.md
+  ✅ constitution/directives/AGI-TIMELINE.md
+  ✅ constitution/directives/OBSERVER.md
+  ✅ constitution/directives/SELF-LOOP.md
+  ✅ constitution/skills/MODEL-ROUTING.md
+  ⚠️  constitution/directives/ASK-PROTOCOL.md (不存在)
+  ✅ constitution/COLLABORATION.md
+  ✅ constitution/extensions/DELEGATION.md
+  ✅ constitution/directives/TURBOQUANT.md
+
+🧠 [2/5] 记忆提炼...
+  ✅ 昨日记忆文件：/home/nicola/.openclaw/workspace/memory/2026-03-30.md
+  📝 行数：43
+  ✅ 核心记忆：/home/nicola/.openclaw/workspace/memory/core.md
+  📝 大小：4.0K
+
+🔧 [3/5] 系统自检...
+  ⚠️  Gateway 未运行
+  📊 残留进程：1 个
+  💾 磁盘使用：18%
+
+🔄 [4/5] 新一天重置...
+date: 多余的操作对象 "%H:%M"
+请尝试执行 "date --help" 来获取更多信息。
+  ✅ 创建今日记忆文件：/home/nicola/.openclaw/workspace/memory/2026-03-31.md
+
+💓 [5/5] HEARTBEAT 更新...
+  ✅ HEARTBEAT 文件：/home/nicola/.openclaw/workspace/HEARTBEAT.md
+  📊 待办事项：23 个
+
+============================================================
+✅ 每日宪法学习完成
+============================================================
+
+📝 日志：/home/nicola/.openclaw/workspace/logs/constitution-20260331.log
+
+date: 多余的操作对象 "%H:%M"
+请尝试执行 "date --help" 来获取更多信息。
+scripts/daily-constitution.sh: 行 19: 
+太一每日宪法学习 v2.0
+
+功能:
+1. 宪法学习 (Tier 1 永久核)
+2. 记忆提炼 (TurboQuant 压缩)
+3. 系统自检 (Gateway+ 残留进程)
+4. 新一天重置 (创建记忆文件)
+5. HEARTBEAT 更新
+
+使用:
+    bash scripts/daily-constitution.sh
+
+定时:
+    每日 06:00 自动执行 (crontab)
+: 没有那个文件或目录
+============================================================
+📜 太一每日宪法学习 v2.0
+日期：2026-04-01
+时间：06:00
+============================================================
+
+📖 [1/5] 宪法学习...
+  ✅ constitution/CONST-ROUTER.md
+  ✅ constitution/axiom/VALUE-FOUNDATION.md
+  ✅ constitution/directives/NEGENTROPY.md
+  ✅ constitution/directives/AGI-TIMELINE.md
+  ✅ constitution/directives/OBSERVER.md
+  ✅ constitution/directives/SELF-LOOP.md
+  ✅ constitution/skills/MODEL-ROUTING.md
+  ✅ constitution/directives/ASK-PROTOCOL.md
+  ✅ constitution/COLLABORATION.md
+  ✅ constitution/extensions/DELEGATION.md
+  ✅ constitution/directives/TURBOQUANT.md
+
+🧠 [2/5] 记忆提炼...
+  ✅ 昨日记忆文件：/home/nicola/.openclaw/workspace/memory/2026-03-31.md
+  📝 行数：77
+  ✅ 核心记忆：/home/nicola/.openclaw/workspace/memory/core.md
+  📝 大小：4.0K
+
+🔧 [3/5] 系统自检...
+  ⚠️  Gateway 未运行
+  📊 残留进程：2 个
+  💾 磁盘使用：17%
+
+🔄 [4/5] 新一天重置...
+date: 多余的操作对象 "%H:%M"
+请尝试执行 "date --help" 来获取更多信息。
+  ✅ 创建今日记忆文件：/home/nicola/.openclaw/workspace/memory/2026-04-01.md
+
+💓 [5/5] HEARTBEAT 更新...
+  ✅ HEARTBEAT 文件：/home/nicola/.openclaw/workspace/HEARTBEAT.md
+  📊 待办事项：22 个
+
+============================================================
+✅ 每日宪法学习完成
+============================================================
+
+📝 日志：/home/nicola/.openclaw/workspace/logs/constitution-20260401.log
+
+date: 多余的操作对象 "%H:%M"
+请尝试执行 "date --help" 来获取更多信息。
+scripts/daily-constitution.sh: 行 19: 
+太一每日宪法学习 v2.0
+
+功能:
+1. 宪法学习 (Tier 1 永久核)
+2. 记忆提炼 (TurboQuant 压缩)
+3. 系统自检 (Gateway+ 残留进程)
+4. 新一天重置 (创建记忆文件)
+5. HEARTBEAT 更新
+
+使用:
+    bash scripts/daily-constitution.sh
+
+定时:
+    每日 06:00 自动执行 (crontab)
+: 没有那个文件或目录
+============================================================
+📜 太一每日宪法学习 v2.0
+日期：2026-04-02
+时间：06:00
+============================================================
+
+📖 [1/5] 宪法学习...
+  ✅ constitution/CONST-ROUTER.md
+  ✅ constitution/axiom/VALUE-FOUNDATION.md
+  ✅ constitution/directives/NEGENTROPY.md
+  ✅ constitution/directives/AGI-TIMELINE.md
+  ✅ constitution/directives/OBSERVER.md
+  ✅ constitution/directives/SELF-LOOP.md
+  ✅ constitution/skills/MODEL-ROUTING.md
+  ✅ constitution/directives/ASK-PROTOCOL.md
+  ✅ constitution/COLLABORATION.md
+  ✅ constitution/extensions/DELEGATION.md
+  ✅ constitution/directives/TURBOQUANT.md
+
+🧠 [2/5] 记忆提炼...
+  ✅ 昨日记忆文件：/home/nicola/.openclaw/workspace/memory/2026-04-01.md
+  📝 行数：490
+  ✅ 核心记忆：/home/nicola/.openclaw/workspace/memory/core.md
+  📝 大小：4.0K
+
+🔧 [3/5] 系统自检...
+  ⚠️  Gateway 未运行
+  📊 残留进程：1 个
+  💾 磁盘使用：29%
+
+🔄 [4/5] 新一天重置...
+  ✅ 今日记忆文件已存在：/home/nicola/.openclaw/workspace/memory/2026-04-02.md
+
+💓 [5/5] HEARTBEAT 更新...
+  ✅ HEARTBEAT 文件：/home/nicola/.openclaw/workspace/HEARTBEAT.md
+  📊 待办事项：22 个
+
+============================================================
+✅ 每日宪法学习完成
+============================================================
+
+📝 日志：/home/nicola/.openclaw/workspace/logs/constitution-20260402.log
+
+date: 多余的操作对象 "%H:%M"
+请尝试执行 "date --help" 来获取更多信息。

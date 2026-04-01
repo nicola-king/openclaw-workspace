@@ -1,0 +1,62 @@
+﻿platform,username,text,created_at,crawled_at
+x,OpenAI,"GPT-5.4 Thinking and GPT-5.4 Pro are rolling out now in ChatGPT.
+
+GPT-5.4 is also now available in the API and Codex.
+
+GPT-5.4 brings our advances in reasoning, coding, and agentic workflows into one frontier model.",2026-03-05T18:10:38.000Z,2026-03-30T09:04:17.878572
+x,OpenAI Developers,"We're rolling out plugins in Codex.
+
+Codex now works seamlessly out of the box with the most important tools builders already use, like 
+@SlackHQ
+, 
+@Figma
+, 
+@NotionHQ
+, 
+@gmail
+, and more.
+
+
+http://
+developers.openai.com/codex/plugins",2026-03-26T22:31:07.000Z,2026-03-30T09:04:17.920435
+x,OpenAI Developers,"Students: build something real in the Codex Creator Challenge, powered by 
+@joinHandshake
+
+
+Try new tools. Have fun. Break things. Repeat.
+
+$10K in OpenAI API credits in prizes.",2026-03-25T17:02:10.000Z,2026-03-30T09:04:17.947457
+x,OpenAI,"The more AI can do, the more we need to ask what it should and shouldn’t do.
+
+OpenAI researcher 
+@w01fe
+ joins host 
+@AndrewMayne
+ to explore the Model Spec, the public framework that defines how models are intended to behave.
+
+They break down how it works in practice, from the chain",2026-03-25T17:20:15.000Z,2026-03-30T09:04:17.976864
+x,Anthropic,"We invited Claude users to share how they use AI, what they dream it could make possible, and what they fear it might do.
+
+Nearly 81,000 people responded in one week—the largest qualitative study of its kind.
+
+Read more:",2026-03-18T16:13:23.000Z,2026-03-30T09:04:25.874585
+x,Anthropic,"New on the Engineering Blog: How we designed Claude Code auto mode.
+
+Many Claude Code users let Claude work without permission prompts. Auto mode is a safer middle ground: we built and tested classifiers that make approval decisions instead.
+
+Read more:",2026-03-25T23:14:21.000Z,2026-03-30T09:04:25.907103
+x,Anthropic,"New from the Anthropic Economic Index: how people’s use of Claude changes with experience.
+
+Longer-term users are more likely to iterate carefully with Claude, and less likely to hand it full autonomy. They attempt higher-value tasks, and receive more successful responses.",2026-03-24T17:45:37.000Z,2026-03-30T09:04:25.937945
+x,Anthropic,"We find that since November 2025, consumer use has become less concentrated: the top 10 tasks now make up 19% of conversations, down from 24%. We also see a rise in personal queries, and continued convergence in adoption rates in the US.
+
+Read more:",2026-03-24T17:45:38.000Z,2026-03-30T09:04:25.972568
+x,Google DeepMind,"As AI gets better at holding natural conversations, we need to understand how these interactions impact society.
+
+We’re sharing new research into how AI might be misused to exploit emotions or manipulate people into making harmful choices. ",2026-03-26T17:46:05.000Z,2026-03-30T09:04:33.337996
+x,Google DeepMind,"As AI gets better at holding natural conversations, we need to understand how these interactions impact society.
+
+We’re sharing new research into how AI might be misused to exploit emotions or manipulate people into making harmful choices. ",2026-03-26T17:46:05.000Z,2026-03-30T09:04:33.360706
+x,Google DeepMind,"Our study of 10,000 people shows that AI manipulation depends on the domain.
+
+Models had high influence in finance but hit a wall in health, where existing guardrails block false medical advice. By identifying red flag tactics – like using fear – we can build stronger",2026-03-26T17:46:06.000Z,2026-03-30T09:04:33.383953

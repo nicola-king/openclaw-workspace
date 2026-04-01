@@ -1,0 +1,22 @@
+{
+  "version": "v1.0",
+  "updated_at": "2026-03-30T15:23:00+08:00",
+  "status": "✅ 已配置",
+  
+  "smtp_config": {
+    "email": "285915125@qq.com",
+    "smtp_server": "smtp.qq.com",
+    "smtp_port": 465,
+    "imap_server": "imap.qq.com",
+    "imap_port": 993,
+    "auth_code": "czzbhqkqewqxcafd",
+    "ssl_enabled": true
+  },
+  
+  "usage": {
+    "daily_report": true,
+    "weekly_report": true,
+    "alert_notifications": true,
+    "trading_signals": false
+  }
+}

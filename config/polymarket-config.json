@@ -1,0 +1,29 @@
+{
+  "version": "v1.0",
+  "updated_at": "2026-03-30T15:18:00+08:00",
+  "status": "✅ 已配置",
+  
+  "api_config": {
+    "api_key": "019d2560-86f6-710d-ad87-57af5ad6b47e",
+    "secret": "_XojDuWKYjaxwqP4u04_ZqiiLIqypU_Kdn6GtjhHmnc=",
+    "passphrase": "bb52e220483228de01120365285fb6c423cb02c9122caeb655f132d3f9af2030",
+    "api_key_address": "0xaeEA94038E12ddf3E28A675F6998E87C98DBa6cD",
+    "signer_address": "0xaeEA94038E12ddf3E28A675F6998E87C98DBa6cD",
+    "base_url": "https://gamma-api.polymarket.com"
+  },
+  
+  "trading_config": {
+    "confidence_threshold": 0.96,
+    "advantage_threshold": 0.02,
+    "kelly_mode": "quarter",
+    "max_position_usd": 100,
+    "markets": ["weather", "crypto", "politics"]
+  },
+  
+  "integration_status": {
+    "config_saved": true,
+    "api_validated": false,
+    "skill_created": true,
+    "zhiji_integrated": true
+  }
+}

@@ -103,7 +103,7 @@ class ZhijiE_v21:
                         "net_edge": net_edge,
                         "fees": self.fee_rate + self.slippage,
                         "recommended_stake": self.calculate_stake(net_edge),
-                        "timestamp": datetime.utcnow().isoformat()
+                        "timestamp": datetime.now(datetime.timezone.utc).isoformat()
                     })
         
         return sorted(opportunities, key=lambda x: x["edge"], reverse=True)
@@ -121,7 +121,7 @@ class ZhijiE_v21:
         
         report = {
             "strategy": "v2.1",
-            "executed_at": datetime.utcnow().isoformat(),
+            "executed_at": datetime.now(datetime.timezone.utc).isoformat(),
             "opportunities_found": len(opportunities),
             "top_opportunities": opportunities[:5],  # Top 5
             "total_exposure": sum(o["recommended_stake"] for o in opportunities)

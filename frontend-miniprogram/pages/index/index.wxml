@@ -1,0 +1,40 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+  <!-- 头部 -->
+  <view class="header">
+    <view class="title">心景 · MindScape</view>
+    <view class="slogan">看清你正在经历什么</view>
+  </view>
+
+  <!-- 主功能 -->
+  <view class="main-functions">
+    <!-- 情景测试 -->
+    <view class="function-card" bindtap="startTest">
+      <view class="icon">🧪</view>
+      <view class="title">情景测试</view>
+      <view class="desc">30 秒快速版</view>
+    </view>
+
+    <!-- 64 情景库 -->
+    <view class="function-card" bindtap="viewStates">
+      <view class="icon">📖</view>
+      <view class="title">64 情景库</view>
+      <view class="desc">浏览所有情景</view>
+    </view>
+
+    <!-- 我的轨迹 -->
+    <view class="function-card" bindtap="viewProfile">
+      <view class="icon">📊</view>
+      <view class="title">我的轨迹</view>
+      <view class="desc">情景变化记录</view>
+    </view>
+  </view>
+
+  <!-- 底部说明 -->
+  <view class="footer">
+    <view class="stats">
+      <text>384 个具体体验单元</text>
+      <text>64 种人生情景</text>
+    </view>
+  </view>
+</view>

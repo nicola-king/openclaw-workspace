@@ -1,0 +1,85 @@
+{
+  "bots": {
+    "taiyi": {
+      "status": "healthy",
+      "last_check": "2026-04-02T07:10:01.140303"
+    },
+    "zhiji": {
+      "status": "healthy",
+      "last_check": "2026-04-02T07:10:01.140477"
+    },
+    "shanmu": {
+      "status": "healthy",
+      "last_check": "2026-04-02T07:10:01.140608"
+    },
+    "suwen": {
+      "status": "healthy",
+      "last_check": "2026-04-02T07:10:01.140772"
+    },
+    "shoucangli": {
+      "status": "healthy",
+      "last_check": "2026-04-02T07:10:01.140894"
+    },
+    "paoding": {
+      "status": "healthy",
+      "last_check": "2026-04-02T07:10:01.141010"
+    },
+    "yi": {
+      "status": "healthy",
+      "last_check": "2026-04-02T07:10:01.141131"
+    },
+    "wangliang": {
+      "status": "healthy",
+      "last_check": "2026-04-02T07:10:01.141248"
+    },
+    "yuanqui": {
+      "status": "healthy",
+      "last_check": "2026-04-02T07:10:01.141370"
+    },
+    "hudie": {
+      "status": "healthy",
+      "last_check": "2026-04-02T07:10:01.141504"
+    },
+    "zizhu": {
+      "status": "healthy",
+      "last_check": "2026-04-02T07:10:01.141617"
+    }
+  },
+  "alerts": [
+    {
+      "bot_id": "taiyi",
+      "backup_id": "shoucangli",
+      "timestamp": "2026-03-29T09:15:08.025576",
+      "priority": "P0",
+      "status": "pending"
+    },
+    {
+      "bot_id": "taiyi",
+      "backup_id": "shoucangli",
+      "timestamp": "2026-03-29T09:15:30.674703",
+      "priority": "P0",
+      "status": "pending"
+    },
+    {
+      "bot_id": "zhiji",
+      "backup_id": "yuanqui",
+      "timestamp": "2026-03-29T09:15:31.639715",
+      "priority": "P1",
+      "status": "pending"
+    },
+    {
+      "bot_id": "shoucangli",
+      "backup_id": "taiyi",
+      "timestamp": "2026-03-29T09:15:32.565299",
+      "priority": "P0",
+      "status": "pending"
+    },
+    {
+      "bot_id": "yuanqui",
+      "backup_id": "zhiji",
+      "timestamp": "2026-03-29T09:15:33.488700",
+      "priority": "P1",
+      "status": "pending"
+    }
+  ]
+}

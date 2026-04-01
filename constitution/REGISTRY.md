@@ -67,6 +67,7 @@
 | SKILL-009 | turboquant | v1.0 | ✅ | ✅ |
 | SKILL-010 | tianji | v1.0 | ✅ | ✅ |
 | SKILL-011 | hunter | v1.0 | ✅ | ✅ |
+| SKILL-012 | steward (管家) | v1.0 | ✅ | ✅ |
 
 ---
 

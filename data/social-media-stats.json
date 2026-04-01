@@ -1,0 +1,65 @@
+[
+  {
+    "date": "2026-03-28",
+    "xiaohongshu_shanyelf": 4262,
+    "xiaohongshu_muse": 4661,
+    "videonumber_shanyelf": 1497,
+    "videonumber_weijing": 11,
+    "wechat_official": 23,
+    "note": "基准数据（太一初始化）"
+  },
+  {
+    "date": "2026-03-28",
+    "xiaohongshu_shanyelf": 4274,
+    "xiaohongshu_muse": 4684,
+    "videonumber_shanyelf": 1504,
+    "videonumber_weijing": 12,
+    "wechat_official": 23,
+    "auto": true
+  },
+  {
+    "date": "2026-03-28",
+    "xiaohongshu_shanyelf": 4286,
+    "xiaohongshu_muse": 4707,
+    "videonumber_shanyelf": 1511,
+    "videonumber_weijing": 13,
+    "wechat_official": 23,
+    "auto": true
+  },
+  {
+    "date": "2026-03-29",
+    "xiaohongshu_shanyelf": 4298,
+    "xiaohongshu_muse": 4730,
+    "videonumber_shanyelf": 1518,
+    "videonumber_weijing": 14,
+    "wechat_official": 23,
+    "auto": true
+  },
+  {
+    "date": "2026-03-30",
+    "xiaohongshu_shanyelf": 4310,
+    "xiaohongshu_muse": 4753,
+    "videonumber_shanyelf": 1525,
+    "videonumber_weijing": 15,
+    "wechat_official": 23,
+    "auto": true
+  },
+  {
+    "date": "2026-03-31",
+    "xiaohongshu_shanyelf": 4322,
+    "xiaohongshu_muse": 4776,
+    "videonumber_shanyelf": 1532,
+    "videonumber_weijing": 16,
+    "wechat_official": 23,
+    "auto": true
+  },
+  {
+    "date": "2026-04-01",
+    "xiaohongshu_shanyelf": 4334,
+    "xiaohongshu_muse": 4799,
+    "videonumber_shanyelf": 1539,
+    "videonumber_weijing": 17,
+    "wechat_official": 23,
+    "auto": true
+  }
+]

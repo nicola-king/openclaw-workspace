@@ -1,0 +1,51 @@
+<view class="container">
+  <view class="unlock-header">
+    <text class="title">✅ 已解锁 · 完整分析</text>
+  </view>
+
+  <view class="content">
+    <!-- 底层问题 -->
+    <view class="section">
+      <text class="section-title">🧠 底层问题</text>
+      <text class="section-text">{{bottomProblem}}</text>
+    </view>
+
+    <view class="divider"></view>
+
+    <!-- 建议 -->
+    <view class="section">
+      <text class="section-title">📈 建议</text>
+      <view class="advice-list">
+        <text class="advice-item" wx:for="{{advice}}" wx:key="index">
+          {{index + 1}}. {{item}}
+        </text>
+      </view>
+    </view>
+
+    <view class="divider"></view>
+
+    <!-- 提醒 -->
+    <view class="section">
+      <text class="section-title">⚠️ 提醒</text>
+      <text class="section-text">{{warning}}</text>
+    </view>
+
+    <view class="divider"></view>
+
+    <!-- 今日行动 -->
+    <view class="section">
+      <text class="section-title">🎯 今日行动</text>
+      <view class="action-list">
+        <view class="action-item" wx:for="{{actions}}" wx:key="index">
+          <text class="checkbox">☐</text>
+          <text class="action-text">{{item}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 购买会员 -->
+  <button class="vip-btn" bindtap="buyVip">
+    ♾ 无限视角会员 ¥19/月
+  </button>
+</view>

@@ -1,0 +1,146 @@
+/* pages/profile/profile.wxss */
+.container {
+  min-height: 100vh;
+  background: #f8f9fa;
+  padding: 40rpx;
+  padding-bottom: 60rpx;
+}
+
+/* 用户信息 */
+.user-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 24rpx;
+  padding: 40rpx;
+  display: flex;
+  align-items: center;
+  gap: 30rpx;
+  margin-bottom: 30rpx;
+}
+
+.avatar {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4rpx solid rgba(255,255,255,0.3);
+}
+
+.avatar image {
+  width: 100%;
+  height: 100%;
+}
+
+.user-info {
+  flex: 1;
+  color: white;
+}
+
+.nickname {
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-bottom: 16rpx;
+}
+
+.member-badge {
+  display: flex;
+  flex-direction: column;
+  gap: 8rpx;
+  font-size: 24rpx;
+  background: rgba(255,255,255,0.2);
+  padding: 12rpx 20rpx;
+  border-radius: 24rpx;
+  width: fit-content;
+}
+
+.member-badge.free {
+  background: rgba(255,255,255,0.1);
+}
+
+.member-badge text:last-child {
+  font-size: 22rpx;
+  opacity: 0.9;
+}
+
+/* 统计数据 */
+.stats-section {
+  display: flex;
+  gap: 20rpx;
+  margin-bottom: 30rpx;
+}
+
+.stat-card {
+  flex: 1;
+  background: white;
+  border-radius: 24rpx;
+  padding: 30rpx 20rpx;
+  text-align: center;
+  box-shadow: 0 4rpx 12rpx rgba(0,0,0,0.05);
+}
+
+.stat-value {
+  font-size: 40rpx;
+  font-weight: bold;
+  color: #667eea;
+  margin-bottom: 12rpx;
+}
+
+.stat-label {
+  font-size: 24rpx;
+  color: #999;
+}
+
+/* 功能列表 */
+.menu-section {
+  background: white;
+  border-radius: 24rpx;
+  padding: 20rpx 0;
+  margin-bottom: 30rpx;
+  box-shadow: 0 4rpx 12rpx rgba(0,0,0,0.05);
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 28rpx 30rpx;
+  transition: background 0.2s;
+}
+
+.menu-item:active {
+  background: #f8f9fa;
+}
+
+.menu-item:not(:last-child) {
+  border-bottom: 1rpx solid #f0f0f0;
+}
+
+.menu-icon {
+  font-size: 36rpx;
+  margin-right: 24rpx;
+}
+
+.menu-text {
+  flex: 1;
+  font-size: 30rpx;
+  color: #333;
+}
+
+.menu-arrow {
+  font-size: 28rpx;
+  color: #ccc;
+}
+
+/* 底部 */
+.footer {
+  text-align: center;
+  color: #999;
+  font-size: 24rpx;
+  margin-top: 60rpx;
+}
+
+.version {
+  margin-bottom: 12rpx;
+}
+
+.copyright {
+  opacity: 0.8;
+}

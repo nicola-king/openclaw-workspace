@@ -1,0 +1,18 @@
+# TV Control Skill 依赖
+
+# HDMI-CEC 工具
+cec-utils>=0.8
+
+# Python 库
+flask>=2.0.0
+pyyaml>=5.4.0
+requests>=2.25.0
+
+# 品牌特定库 (可选)
+python-miio>=0.5.6       # 小米电视
+samsungtvws>=0.4.0       # 三星电视
+pylgtv>=0.3.0            # LG 电视
+
+# 测试
+pytest>=6.0.0
+pytest-cov>=2.0.0

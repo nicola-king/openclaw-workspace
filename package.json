@@ -1,0 +1,6 @@
+# 太一 AGI Workspace - 不是 npm 包
+# 此文件仅用于防止意外发布
+
+name: taiyi-workspace
+version: 1.0.0
+private: true

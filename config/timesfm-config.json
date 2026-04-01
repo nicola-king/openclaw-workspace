@@ -1,0 +1,72 @@
+{
+  "version": "v2.0",
+  "created_at": "2026-03-30T15:35:00+08:00",
+  "updated_at": "2026-03-31T09:31:00+08:00",
+  "status": "✅ 已完成",
+  "python_version": "3.12.3",
+  "model_config": {
+    "enabled": true,
+    "model_type": "ensemble",
+    "models": [
+      "ARIMA",
+      "Holt-Winters",
+      "Prophet"
+    ],
+    "license": "BSD/Apache 2.0"
+  },
+  "prediction_config": {
+    "forecast_horizon": 24,
+    "confidence_threshold": 0.7,
+    "min_historical_data": 10
+  },
+  "integration_config": {
+    "mode": "ensemble",
+    "zhiji_weight": 0.6,
+    "timesfm_weight": 0.4,
+    "agreement_bonus": 0.1,
+    "disagreement_penalty": 0.2
+  },
+  "deployment": {
+    "environment": "local",
+    "resource_requirement": "CPU",
+    "memory_mb": 2048,
+    "gpu_required": false
+  },
+  "integration_timeline": {
+    "start_date": "2026-03-30",
+    "end_date": "2026-04-12",
+    "total_days": 14,
+    "phases": [
+      {
+        "name": "环境搭建",
+        "days": 2,
+        "status": "待执行"
+      },
+      {
+        "name": "Hello World 测试",
+        "days": 1,
+        "status": "已完成"
+      },
+      {
+        "name": "数据集成",
+        "days": 2,
+        "status": "待执行"
+      },
+      {
+        "name": "策略融合",
+        "days": 3,
+        "status": "执行中"
+      },
+      {
+        "name": "回测验证",
+        "days": 3,
+        "status": "待执行"
+      },
+      {
+        "name": "实盘测试",
+        "days": 3,
+        "status": "待执行"
+      }
+    ]
+  }
+}

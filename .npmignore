@@ -1,0 +1,57 @@
+# Source maps
+*.map
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Tests
+tests/
+test/
+__tests__/
+*.test.ts
+*.test.js
+*.spec.ts
+*.spec.js
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs
+dist/
+build/
+out/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# node_modules (never publish)
+node_modules/
+
+# Documentation
+docs/
+*.md
+!README.md
+
+# Config files that might contain secrets
+tsconfig.json
+jsconfig.json
+.eslintrc*
+.prettierrc*

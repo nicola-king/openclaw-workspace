@@ -33,7 +33,7 @@ class WhaleTracker:
         # 简化版本：模拟数据
         return {
             "wallet": wallet_address,
-            "timestamp": datetime.utcnow().isoformat(),
+            "timestamp": datetime.now(datetime.timezone.utc).isoformat(),
             "positions": [],
             "pnl": 0,
             "volume_24h": 0

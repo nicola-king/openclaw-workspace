@@ -1,0 +1,21 @@
+
+[2026-03-28T12:37:01.005384] Assessment completed
+Gaps: 2, Proposals: 1
+
+[2026-03-28T13:04:21.820842] Assessment completed
+Gaps: 2, Anomalies: 2
+  File "/home/nicola/.openclaw/workspace/scripts/auto-assess.py", line 105
+    metrics_file = WORKSPACE / "data" / "evolution-metrics.json"
+IndentationError: unexpected indent
+  File "/home/nicola/.openclaw/workspace/scripts/auto-assess.py", line 105
+    metrics_file = WORKSPACE / "data" / "evolution-metrics.json"
+IndentationError: unexpected indent
+  File "/home/nicola/.openclaw/workspace/scripts/auto-assess.py", line 105
+    metrics_file = WORKSPACE / "data" / "evolution-metrics.json"
+IndentationError: unexpected indent
+  File "/home/nicola/.openclaw/workspace/scripts/auto-assess.py", line 105
+    metrics_file = WORKSPACE / "data" / "evolution-metrics.json"
+IndentationError: unexpected indent
+  File "/home/nicola/.openclaw/workspace/scripts/auto-assess.py", line 105
+    metrics_file = WORKSPACE / "data" / "evolution-metrics.json"
+IndentationError: unexpected indent

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>心景·MindScape - 爆款卡片生成器</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        
+        .card {
+            background: #ffffff;
+            padding: 60px 40px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        
+        .card-number {
+            font-size: 14px;
+            color: #999;
+            margin-bottom: 10px;
+        }
+        
+        .card-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 30px;
+        }
+        
+        .card-content {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #333;
+            margin-bottom: 30px;
+            white-space: pre-line;
+        }
+        
+        .card-tag {
+            display: inline-block;
+            padding: 6px 16px;
+            background: #f0f0f0;
+            border-radius: 20px;
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .card-hashtags {
+            font-size: 12px;
+            color: #999;
+        }
+        
+        .controls {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .control-group {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            display: block;
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        
+        select, input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #1a1a1a;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        
+        button:hover {
+            background: #333;
+        }
+        
+        .btn-secondary {
+            background: #f0f0f0;
+            color: #333;
+        }
+        
+        .btn-secondary:hover {
+            background: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="controls">
+            <div class="control-group">
+                <label>情境编号</label>
+                <input type="number" id="stageNum" value="17" min="1" max="64">
+            </div>
+            
+            <div class="control-group">
+                <label>情境名称</label>
+                <input type="text" id="stageName" value="路径错配期">
+            </div>
+            
+            <div class="control-group">
+                <label>核心句子</label>
+                <textarea id="stageContent" rows="3">你不是不够努力
+只是方向一开始就不对</textarea>
+            </div>
+            
+            <div class="control-group">
+                <label>类型标签</label>
+                <select id="stageType">
+                    <option value="调整型">调整型</option>
+                    <option value="过渡型">过渡型</option>
+                    <option value="观察型">观察型</option>
+                    <option value="决策型">决策型</option>
+                </select>
+            </div>
+            
+            <button onclick="updateCard()">更新卡片</button>
+            <button class="btn-secondary" onclick="downloadCard()">下载图片</button>
+            <button class="btn-secondary" onclick="randomCard()">随机生成</button>
+        </div>
+        
+        <div class="card" id="card">
+            <div class="card-number">第 <span id="cardNum">17</span> 情境</div>
+            <div class="card-title" id="cardTitle">路径错配期</div>
+            <div class="card-content" id="cardContent">你不是不够努力
+只是方向一开始就不对</div>
+            <div class="card-tag" id="cardTag">🏷 调整型</div>
+            <div class="card-hashtags">#今日状态 #随机视角</div>
+        </div>
+    </div>
+    
+    <script>
+        const stages = [
+            { num: 1, name: "积累未显期", content: "你最近的努力\n暂时还看不到结果\n但根系正在生长", type: "调整型" },
+            { num: 2, name: "路径错配期", content: "你不是不够努力\n只是方向一开始就不对", type: "调整型" },
+            { num: 3, name: "时机未到期", content: "准备已完成\n只是环境还未匹配\n选择等待", type: "观察型" },
+            { num: 4, name: "认知偏差期", content: "反复无效尝试后\n意识理解偏差\n重建逻辑", type: "决策型" },
+            { num: 5, name: "启动混乱期", content: "开始行动\n进入混乱\n形成结构", type: "调整型" },
+            { num: 6, name: "过载停滞期", content: "精力下降\n效率降低\n意识需停", type: "过渡型" },
+            { num: 17, name: "路径依赖期", content: "习惯旧模式\n觉察并尝试新方式", type: "调整型" },
+            { num: 28, name: "压力临界期", content: "快到极限了\n减压或退出\n都可以", type: "决策型" }
+        ];
+        
+        function updateCard() {
+            document.getElementById('cardNum').textContent = document.getElementById('stageNum').value;
+            document.getElementById('cardTitle').textContent = document.getElementById('stageName').value;
+            document.getElementById('cardContent').textContent = document.getElementById('stageContent').value;
+            document.getElementById('cardTag').textContent = '🏷 ' + document.getElementById('stageType').value;
+        }
+        
+        function randomCard() {
+            const random = stages[Math.floor(Math.random() * stages.length)];
+            document.getElementById('stageNum').value = random.num;
+            document.getElementById('stageName').value = random.name;
+            document.getElementById('stageContent').value = random.content;
+            document.getElementById('stageType').value = random.type;
+            updateCard();
+        }
+        
+        function downloadCard() {
+            alert('小程序内可使用 canvasToTempFilePath 生成图片\n此处为演示版本');
+        }
+    </script>
+</body>
+</html>

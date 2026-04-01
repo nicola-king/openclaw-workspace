@@ -1,0 +1,93 @@
+{
+  "timestamp": "2026-04-02T06:00:11.302040",
+  "total_leads": 10,
+  "keywords_searched": [
+    "prefab house",
+    "modular home",
+    "prefabricated building",
+    "container house",
+    "steel structure warehouse"
+  ],
+  "leads": [
+    {
+      "source": "Alibaba",
+      "keyword": "prefab house",
+      "url": "https://www.alibaba.com/showroom/prefab-house.html",
+      "type": "supplier",
+      "status": "found",
+      "timestamp": "2026-04-02T06:00:03.606169"
+    },
+    {
+      "source": "Alibaba RFQ",
+      "keyword": "prefab house",
+      "url": "https://rfq.alibaba.com/post.htm?rfqName=prefab%20house",
+      "type": "buying_request",
+      "status": "found",
+      "timestamp": "2026-04-02T06:00:03.748536"
+    },
+    {
+      "source": "Alibaba",
+      "keyword": "modular home",
+      "url": "https://www.alibaba.com/showroom/modular-home.html",
+      "type": "supplier",
+      "status": "found",
+      "timestamp": "2026-04-02T06:00:05.486169"
+    },
+    {
+      "source": "Alibaba RFQ",
+      "keyword": "modular home",
+      "url": "https://rfq.alibaba.com/post.htm?rfqName=modular%20home",
+      "type": "buying_request",
+      "status": "found",
+      "timestamp": "2026-04-02T06:00:05.544226"
+    },
+    {
+      "source": "Alibaba",
+      "keyword": "prefabricated building",
+      "url": "https://www.alibaba.com/showroom/prefabricated-building.html",
+      "type": "supplier",
+      "status": "found",
+      "timestamp": "2026-04-02T06:00:07.486292"
+    },
+    {
+      "source": "Alibaba RFQ",
+      "keyword": "prefabricated building",
+      "url": "https://rfq.alibaba.com/post.htm?rfqName=prefabricated%20building",
+      "type": "buying_request",
+      "status": "found",
+      "timestamp": "2026-04-02T06:00:07.545691"
+    },
+    {
+      "source": "Alibaba",
+      "keyword": "container house",
+      "url": "https://www.alibaba.com/showroom/container-house.html",
+      "type": "supplier",
+      "status": "found",
+      "timestamp": "2026-04-02T06:00:09.417102"
+    },
+    {
+      "source": "Alibaba RFQ",
+      "keyword": "container house",
+      "url": "https://rfq.alibaba.com/post.htm?rfqName=container%20house",
+      "type": "buying_request",
+      "status": "found",
+      "timestamp": "2026-04-02T06:00:09.475099"
+    },
+    {
+      "source": "Alibaba",
+      "keyword": "steel structure warehouse",
+      "url": "https://www.alibaba.com/showroom/steel-structure-warehouse.html",
+      "type": "supplier",
+      "status": "found",
+      "timestamp": "2026-04-02T06:00:11.237214"
+    },
+    {
+      "source": "Alibaba RFQ",
+      "keyword": "steel structure warehouse",
+      "url": "https://rfq.alibaba.com/post.htm?rfqName=steel%20structure%20warehouse",
+      "type": "buying_request",
+      "status": "found",
+      "timestamp": "2026-04-02T06:00:11.296674"
+    }
+  ]
+}

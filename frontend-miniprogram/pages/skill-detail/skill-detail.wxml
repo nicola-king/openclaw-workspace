@@ -1,0 +1,72 @@
+<!--pages/skill-detail/skill-detail.wxml-->
+<view class="container">
+  <!-- 头部 -->
+  <view class="header">
+    <view class="state-name">{{skill.state_name}}</view>
+    <view class="stage-info">Step {{skill.stage}}/6 · {{skill.stage_name}}</view>
+  </view>
+
+  <!-- 核心决策 -->
+  <view class="decision-section">
+    <view class="section-icon">💡</view>
+    <view class="section-title">最优动作</view>
+    <view class="decision-text">{{skill.decision}}</view>
+  </view>
+
+  <!-- 具体行动 -->
+  <view class="action-section">
+    <view class="section-title">🎯 具体行动</view>
+    <view class="action-list">
+      <view class="action-item" wx:for="{{skill.action}}" wx:key="index">
+        <view class="action-number">{{index + 1}}</view>
+        <view class="action-content">{{item}}</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 避免事项 -->
+  <view class="avoid-section">
+    <view class="section-title">⚠️ 避免</view>
+    <view class="avoid-list">
+      <view class="avoid-item" wx:for="{{skill.avoid}}" wx:key="index">
+        <view class="avoid-icon">✕</view>
+        <view class="avoid-content">{{item}}</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 心理学解读 -->
+  <view class="psychology-section">
+    <view class="section-title">🧠 心理学解读</view>
+    
+    <view class="psychology-card">
+      <view class="psychology-header">
+        <view class="psychology-icon">🔺</view>
+        <view class="psychology-name">阿德勒</view>
+      </view>
+      <view class="psychology-text">{{skill.psychology.adler}}</view>
+    </view>
+
+    <view class="psychology-card">
+      <view class="psychology-header">
+        <view class="psychology-icon">🌙</view>
+        <view class="psychology-name">荣格</view>
+      </view>
+      <view class="psychology-text">{{skill.psychology.jung}}</view>
+    </view>
+
+    <view class="psychology-card">
+      <view class="psychology-header">
+        <view class="psychology-icon">🛋️</view>
+        <view class="psychology-name">弗洛伊德</view>
+      </view>
+      <view class="psychology-text">{{skill.psychology.freud}}</view>
+    </view>
+  </view>
+
+  <!-- 底部操作 -->
+  <view class="footer-actions">
+    <button class="share-btn" bindtap="shareSkill">分享给朋友</button>
+    <button class="home-btn" bindtap="goHome">返回首页</button>
+  </view>
+</view>

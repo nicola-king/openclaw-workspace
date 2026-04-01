@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-03-28T12:55:51.291013",
+  "history_analyzed": 7,
+  "effective_patterns": {
+    "pattern": "从实践中学习",
+    "effectiveness": 0.8,
+    "frequency": 7
+  },
+  "recommendations": [
+    {
+      "recommendation": "增加反思环节",
+      "rationale": "从经验中学习后，花 5 分钟反思可以加深理解",
+      "implementation": "在每日 23:00 自我评估中添加反思问题"
+    },
+    {
+      "recommendation": "建立知识关联",
+      "rationale": "将新知识与已有知识关联可以提高记忆保持率",
+      "implementation": "在 Obsidian 中使用双链关联新概念"
+    }
+  ]
+}

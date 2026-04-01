@@ -1,0 +1,37 @@
+{
+  "version": "v1.0",
+  "created_at": "2026-03-30T18:06:00+08:00",
+  "updated_at": "2026-03-30T20:00:00+08:00",
+  "status": "🟡 待配置鲸鱼地址",
+  "target_whales": [
+    {
+      "name": "majorexploiter",
+      "address": "0x019782cAB5d844F02BAFB71F512758BE78579f3C",
+      "chain": "polygon",
+      "min_trade_usd": 10000,
+      "notify": true,
+      "description": "$2.4M 盈利鲸鱼，活跃交易者",
+      "tags": [
+        "whale",
+        "solana",
+        "meme",
+        "high-frequency"
+      ]
+    }
+  ],
+  "check_interval_seconds": 300,
+  "notification_channels": [
+    "wechat"
+  ],
+  "data_retention_days": 30,
+  "api_config": {
+    "provider": "gmgn",
+    "base_url": "https://api.gmgn.ai",
+    "fallback": "solscan"
+  },
+  "next_steps": [
+    "1. 获取 majorexploiter 钱包地址",
+    "2. 配置到 address 字段",
+    "3. 启动持续监控"
+  ]
+}

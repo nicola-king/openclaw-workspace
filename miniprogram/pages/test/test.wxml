@@ -1,0 +1,4 @@
+<view class="container">
+  <text class="title">正在分析你的状态...</text>
+  <view class="loading"></view>
+</view>

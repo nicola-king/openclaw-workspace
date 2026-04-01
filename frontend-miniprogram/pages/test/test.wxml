@@ -1,0 +1,61 @@
+<!--pages/test/test.wxml-->
+<view class="container">
+  <!-- 进度条 -->
+  <view class="progress-bar">
+    <view class="progress" style="width: {{progress}}%"></view>
+  </view>
+  <view class="progress-text">问题 {{currentQuestion + 1}}/{{questions.length}}</view>
+
+  <!-- 问题 -->
+  <view class="question-card" wx:if="{{!showResult}}">
+    <view class="question-text">{{questions[currentQuestion].content}}</view>
+    
+    <view class="options">
+      <view 
+        class="option {{selectedAnswer === option.label ? 'selected' : ''}}"
+        wx:for="{{questions[currentQuestion].options}}"
+        wx:key="label"
+        bindtap="selectOption"
+        data-label="{{item.label}}"
+      >
+        <view class="option-label">{{item.label}}</view>
+        <view class="option-text">{{item.text}}</view>
+      </view>
+    </view>
+
+    <view class="actions">
+      <button 
+        class="submit-btn" 
+        bindtap="nextQuestion"
+        disabled="{{!selectedAnswer}}"
+      >
+        {{currentQuestion === questions.length - 1 ? '查看结果' : '下一题'}}
+      </button>
+    </view>
+  </view>
+
+  <!-- 结果 -->
+  <view class="result-card" wx:if="{{showResult}}">
+    <view class="result-header">
+      <view class="state-name">{{result.state.name}}</view>
+      <view class="state-type">{{result.state.type}}</view>
+    </view>
+
+    <view class="result-body">
+      <view class="stage-info">
+        <text class="stage-label">阶段</text>
+        <text class="stage-text">Step {{result.stage.step}}/6 ({{result.stage.name}})</text>
+      </view>
+
+      <view class="confidence">
+        <text>匹配置信度</text>
+        <text class="confidence-value">{{(result.confidence * 100).toFixed(0)}}%</text>
+      </view>
+    </view>
+
+    <view class="result-actions">
+      <button class="primary-btn" bindtap="viewFullResult">查看完整解读</button>
+      <button class="secondary-btn" bindtap="retakeTest">重新测试</button>
+    </view>
+  </view>
+</view>

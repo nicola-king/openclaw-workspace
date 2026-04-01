@@ -1,0 +1,65 @@
+{
+  "version": "v1.0",
+  "created_at": "2026-03-30T11:14:00+08:00",
+  "status": "active",
+  "strategy_name": "知几-E 币安天气策略",
+  
+  "trading_config": {
+    "trading_pairs": ["BTCUSDT", "ETHUSDT"],
+    "confidence_threshold": 0.96,
+    "edge_threshold": 0.02,
+    "position_sizing": "quarter_kelly",
+    "max_position_pct": 0.25,
+    "max_position_usdt": 100,
+    "btc_allocation": 0.60,
+    "eth_allocation": 0.40
+  },
+  
+  "risk_management": {
+    "stop_loss_pct": 0.05,
+    "take_profit_pct": 0.10,
+    "daily_stop_loss": -0.05,
+    "single_trade_stop": -0.02,
+    "profit_withdraw": 0.50,
+    "allow_altcoins": false,
+    "allow_spot_leverage": true,
+    "allow_futures": false,
+    "max_leverage": 3
+  },
+  
+  "execution_rules": {
+    "order_type": "LIMIT",
+    "time_in_force": "GTC",
+    "min_order_size_usdt": 10,
+    "price_tolerance_pct": 0.001,
+    "retry_attempts": 3,
+    "retry_delay_ms": 1000
+  },
+  
+  "polymarket_integration": {
+    "enabled": true,
+    "data_source": "weather_markets",
+    "update_interval_sec": 300,
+    "confidence_calculation": "weighted_average",
+    "markets": {
+      "BTC": "Will it rain in Beijing on [date]?",
+      "ETH": "Will it rain in Shanghai on [date]?"
+    }
+  },
+  
+  "notification": {
+    "telegram_enabled": true,
+    "notify_on_trade": true,
+    "notify_on_stop_loss": true,
+    "notify_on_take_profit": true,
+    "daily_report_time": "23:00"
+  },
+  
+  "logging": {
+    "level": "INFO",
+    "file": "/home/nicola/.openclaw/workspace/logs/binance-trades.log",
+    "max_size_mb": 10,
+    "backup_count": 5,
+    "format": "%(asctime)s - %(levelname)s - %(message)s"
+  }
+}

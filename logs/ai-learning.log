@@ -1,0 +1,650 @@
+[2026-03-30 23:45:26] === AI 知识学习开始 ===
+[2026-03-30 23:45:26] 🔍 搜索：AGI artificial general intelligence
+❌ API 失败：202
+[2026-03-30 23:45:26] 🔍 搜索：LLM large language model
+❌ API 失败：202
+[2026-03-30 23:45:26] 🔍 搜索：AI agent autonomous
+❌ API 失败：202
+[2026-03-30 23:45:26] 🔍 搜索：machine learning breakthrough
+❌ API 失败：202
+[2026-03-30 23:45:26] 🔍 搜索：deep learning research
+❌ API 失败：202
+[2026-03-30 23:45:26] 🔍 搜索：AI reasoning thinking
+❌ API 失败：202
+[2026-03-30 23:45:26] 🔍 搜索：neural network architecture
+❌ API 失败：202
+[2026-03-30 23:45:26] 🔍 搜索：AI safety alignment
+❌ API 失败：202
+[2026-03-30 23:45:26] 🔍 搜索：multimodal AI vision language
+❌ API 失败：202
+[2026-03-30 23:45:26] 🔍 搜索：AI code generation programming
+❌ API 失败：202
+[2026-03-30 23:45:26] === AI 知识学习完成 ===
+✅ 学习成果汇总：/home/nicola/.openclaw/workspace/content/ai-learning/20260330-summary.md
+✅ 通知已发送
+[2026-03-31 01:00:01] === AI 知识学习开始 ===
+[2026-03-31 01:00:01] 🔍 搜索：AGI artificial general intelligence
+❌ API 失败：202
+[2026-03-31 01:00:01] 🔍 搜索：LLM large language model
+❌ API 失败：202
+[2026-03-31 01:00:01] 🔍 搜索：AI agent autonomous
+❌ API 失败：202
+[2026-03-31 01:00:01] 🔍 搜索：machine learning breakthrough
+❌ API 失败：202
+[2026-03-31 01:00:01] 🔍 搜索：deep learning research
+❌ API 失败：202
+[2026-03-31 01:00:01] 🔍 搜索：AI reasoning thinking
+❌ API 失败：202
+[2026-03-31 01:00:01] 🔍 搜索：neural network architecture
+❌ API 失败：202
+[2026-03-31 01:00:01] 🔍 搜索：AI safety alignment
+❌ API 失败：202
+[2026-03-31 01:00:01] 🔍 搜索：multimodal AI vision language
+❌ API 失败：202
+[2026-03-31 01:00:01] 🔍 搜索：AI code generation programming
+❌ API 失败：202
+[2026-03-31 01:00:01] === AI 知识学习完成 ===
+✅ 学习成果汇总：/home/nicola/.openclaw/workspace/content/ai-learning/20260331-summary.md
+✅ 通知已发送
+[2026-03-31 02:00:01] === AI 知识学习开始 ===
+[2026-03-31 02:00:01] 🔍 搜索：AGI artificial general intelligence
+❌ API 失败：202
+[2026-03-31 02:00:01] 🔍 搜索：LLM large language model
+❌ API 失败：202
+[2026-03-31 02:00:01] 🔍 搜索：AI agent autonomous
+❌ API 失败：202
+[2026-03-31 02:00:01] 🔍 搜索：machine learning breakthrough
+❌ API 失败：202
+[2026-03-31 02:00:01] 🔍 搜索：deep learning research
+❌ API 失败：202
+[2026-03-31 02:00:01] 🔍 搜索：AI reasoning thinking
+❌ API 失败：202
+[2026-03-31 02:00:01] 🔍 搜索：neural network architecture
+❌ API 失败：202
+[2026-03-31 02:00:01] 🔍 搜索：AI safety alignment
+❌ API 失败：202
+[2026-03-31 02:00:01] 🔍 搜索：multimodal AI vision language
+❌ API 失败：202
+[2026-03-31 02:00:01] 🔍 搜索：AI code generation programming
+❌ API 失败：202
+[2026-03-31 02:00:01] === AI 知识学习完成 ===
+✅ 学习成果汇总：/home/nicola/.openclaw/workspace/content/ai-learning/20260331-summary.md
+✅ 通知已发送
+[2026-03-31 03:00:01] === AI 知识学习开始 ===
+[2026-03-31 03:00:01] 🔍 搜索：AGI artificial general intelligence
+❌ 异常：HTTPSConnectionPool(host='api.duckduckgo.com', port=443): Max retries exceeded with url: /?q=AGI+artificial+general+intelligence&format=json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+[2026-03-31 03:00:01] 🔍 搜索：LLM large language model
+❌ API 失败：202
+[2026-03-31 03:00:01] 🔍 搜索：AI agent autonomous
+❌ API 失败：202
+[2026-03-31 03:00:01] 🔍 搜索：machine learning breakthrough
+❌ 异常：HTTPSConnectionPool(host='api.duckduckgo.com', port=443): Max retries exceeded with url: /?q=machine+learning+breakthrough&format=json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+[2026-03-31 03:00:01] 🔍 搜索：deep learning research
+❌ API 失败：202
+[2026-03-31 03:00:01] 🔍 搜索：AI reasoning thinking
+❌ API 失败：202
+[2026-03-31 03:00:01] 🔍 搜索：neural network architecture
+❌ 异常：HTTPSConnectionPool(host='api.duckduckgo.com', port=443): Max retries exceeded with url: /?q=neural+network+architecture&format=json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+[2026-03-31 03:00:01] 🔍 搜索：AI safety alignment
+❌ API 失败：202
+[2026-03-31 03:00:01] 🔍 搜索：multimodal AI vision language
+❌ API 失败：202
+[2026-03-31 03:00:01] 🔍 搜索：AI code generation programming
+❌ API 失败：202
+[2026-03-31 03:00:01] === AI 知识学习完成 ===
+✅ 学习成果汇总：/home/nicola/.openclaw/workspace/content/ai-learning/20260331-summary.md
+✅ 通知已发送
+[2026-03-31 04:00:01] === AI 知识学习开始 ===
+[2026-03-31 04:00:01] 🔍 搜索：AGI artificial general intelligence
+❌ API 失败：202
+[2026-03-31 04:00:01] 🔍 搜索：LLM large language model
+❌ API 失败：202
+[2026-03-31 04:00:01] 🔍 搜索：AI agent autonomous
+❌ API 失败：202
+[2026-03-31 04:00:01] 🔍 搜索：machine learning breakthrough
+❌ API 失败：202
+[2026-03-31 04:00:01] 🔍 搜索：deep learning research
+❌ API 失败：202
+[2026-03-31 04:00:01] 🔍 搜索：AI reasoning thinking
+❌ API 失败：202
+[2026-03-31 04:00:01] 🔍 搜索：neural network architecture
+❌ API 失败：202
+[2026-03-31 04:00:01] 🔍 搜索：AI safety alignment
+❌ API 失败：202
+[2026-03-31 04:00:01] 🔍 搜索：multimodal AI vision language
+❌ API 失败：202
+[2026-03-31 04:00:01] 🔍 搜索：AI code generation programming
+❌ API 失败：202
+[2026-03-31 04:00:01] === AI 知识学习完成 ===
+✅ 学习成果汇总：/home/nicola/.openclaw/workspace/content/ai-learning/20260331-summary.md
+✅ 通知已发送
+[2026-03-31 05:00:01] === AI 知识学习开始 ===
+[2026-03-31 05:00:01] 🔍 搜索：AGI artificial general intelligence
+❌ API 失败：202
+[2026-03-31 05:00:01] 🔍 搜索：LLM large language model
+❌ API 失败：202
+[2026-03-31 05:00:01] 🔍 搜索：AI agent autonomous
+❌ API 失败：202
+[2026-03-31 05:00:01] 🔍 搜索：machine learning breakthrough
+❌ API 失败：202
+[2026-03-31 05:00:01] 🔍 搜索：deep learning research
+❌ API 失败：202
+[2026-03-31 05:00:01] 🔍 搜索：AI reasoning thinking
+❌ API 失败：202
+[2026-03-31 05:00:01] 🔍 搜索：neural network architecture
+❌ API 失败：202
+[2026-03-31 05:00:01] 🔍 搜索：AI safety alignment
+❌ API 失败：202
+[2026-03-31 05:00:01] 🔍 搜索：multimodal AI vision language
+❌ API 失败：202
+[2026-03-31 05:00:01] 🔍 搜索：AI code generation programming
+❌ API 失败：202
+[2026-03-31 05:00:01] === AI 知识学习完成 ===
+✅ 学习成果汇总：/home/nicola/.openclaw/workspace/content/ai-learning/20260331-summary.md
+✅ 通知已发送
+[2026-03-31 06:00:02] === AI 知识学习开始 ===
+[2026-03-31 06:00:02] 🔍 搜索：AGI artificial general intelligence
+❌ API 失败：202
+[2026-03-31 06:00:02] 🔍 搜索：LLM large language model
+❌ API 失败：202
+[2026-03-31 06:00:02] 🔍 搜索：AI agent autonomous
+❌ API 失败：202
+[2026-03-31 06:00:02] 🔍 搜索：machine learning breakthrough
+❌ API 失败：202
+[2026-03-31 06:00:02] 🔍 搜索：deep learning research
+❌ API 失败：202
+[2026-03-31 06:00:02] 🔍 搜索：AI reasoning thinking
+❌ API 失败：202
+[2026-03-31 06:00:02] 🔍 搜索：neural network architecture
+❌ API 失败：202
+[2026-03-31 06:00:02] 🔍 搜索：AI safety alignment
+❌ API 失败：202
+[2026-03-31 06:00:02] 🔍 搜索：multimodal AI vision language
+❌ API 失败：202
+[2026-03-31 06:00:02] 🔍 搜索：AI code generation programming
+❌ API 失败：202
+[2026-03-31 06:00:02] === AI 知识学习完成 ===
+✅ 学习成果汇总：/home/nicola/.openclaw/workspace/content/ai-learning/20260331-summary.md
+✅ 通知已发送
+[2026-03-31 07:00:01] === AI 知识学习开始 ===
+[2026-03-31 07:00:01] 🔍 搜索：AGI artificial general intelligence
+❌ API 失败：202
+[2026-03-31 07:00:01] 🔍 搜索：LLM large language model
+❌ API 失败：202
+[2026-03-31 07:00:01] 🔍 搜索：AI agent autonomous
+❌ API 失败：202
+[2026-03-31 07:00:01] 🔍 搜索：machine learning breakthrough
+❌ API 失败：202
+[2026-03-31 07:00:01] 🔍 搜索：deep learning research
+❌ API 失败：202
+[2026-03-31 07:00:01] 🔍 搜索：AI reasoning thinking
+❌ API 失败：202
+[2026-03-31 07:00:01] 🔍 搜索：neural network architecture
+❌ API 失败：202
+[2026-03-31 07:00:01] 🔍 搜索：AI safety alignment
+❌ API 失败：202
+[2026-03-31 07:00:01] 🔍 搜索：multimodal AI vision language
+❌ API 失败：202
+[2026-03-31 07:00:01] 🔍 搜索：AI code generation programming
+❌ API 失败：202
+[2026-03-31 07:00:01] === AI 知识学习完成 ===
+✅ 学习成果汇总：/home/nicola/.openclaw/workspace/content/ai-learning/20260331-summary.md
+✅ 通知已发送
+[2026-03-31 09:10:03] === AI 知识学习开始 (v2.0) ===
+[2026-03-31 09:10:03] 🔍 搜索：AGI artificial general intelligence 2026
+[2026-03-31 09:10:03] 🔍 搜索：LLM large language model breakthrough
+[2026-03-31 09:10:03] 🔍 搜索：AI agent autonomous system
+[2026-03-31 09:10:03] 🔍 搜索：machine learning research 2026
+[2026-03-31 09:10:03] 🔍 搜索：AI code generation programming
+[2026-03-31 09:10:03] === AI 知识学习完成 ===
+[2026-03-31 09:10:03] 生成学习成果汇总...
+[2026-03-31 09:10:03] 发送通知...
+[2026-03-31 09:10:35] === AI 知识学习开始 (v2.0) ===
+[2026-03-31 09:10:35] 🔍 搜索：AGI artificial general intelligence 2026
+[2026-03-31 09:10:35] 🔍 搜索：LLM large language model breakthrough
+[2026-03-31 09:10:35] 🔍 搜索：AI agent autonomous system
+[2026-03-31 09:10:35] 🔍 搜索：machine learning research 2026
+[2026-03-31 09:10:35] 🔍 搜索：AI code generation programming
+[2026-03-31 09:10:35] === AI 知识学习完成 ===
+[2026-03-31 09:10:35] 生成学习成果汇总...
+[2026-03-31 09:10:35] 发送通知...
+[2026-04-01 00:01:01] === AI 知识学习开始 (v2.0) ===
+[2026-04-01 00:01:01] === AI 知识学习开始 (v2.0) ===
+[2026-04-01 00:01:01] 🔍 搜索：AGI artificial general intelligence 2026
+[2026-04-01 00:01:01] 🔍 搜索：AGI artificial general intelligence 2026
+搜索：AGI artificial general intelligence 2026
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260401-AGI-artificial-general-intelligence-2026.md (10 条结果)
+[2026-04-01 00:01:01] 🔍 搜索：LLM large language model breakthrough
+[2026-04-01 00:01:01] 🔍 搜索：LLM large language model breakthrough
+搜索：LLM large language model breakthrough
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260401-LLM-large-language-model-breakthrough.md (10 条结果)
+[2026-04-01 00:01:01] 🔍 搜索：AI agent autonomous system
+[2026-04-01 00:01:01] 🔍 搜索：AI agent autonomous system
+搜索：AI agent autonomous system
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260401-AI-agent-autonomous-system.md (10 条结果)
+[2026-04-01 00:01:01] 🔍 搜索：machine learning research 2026
+[2026-04-01 00:01:01] 🔍 搜索：machine learning research 2026
+搜索：machine learning research 2026
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260401-machine-learning-research-2026.md (9 条结果)
+[2026-04-01 00:01:01] 🔍 搜索：AI code generation programming
+[2026-04-01 00:01:01] 🔍 搜索：AI code generation programming
+搜索：AI code generation programming
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260401-AI-code-generation-programming.md (10 条结果)
+[2026-04-01 00:01:01] === AI 知识学习完成 ===
+[2026-04-01 00:01:01] === AI 知识学习完成 ===
+[2026-04-01 00:01:01] 生成学习成果汇总...
+[2026-04-01 00:01:01] 生成学习成果汇总...
+✅ 学习成果汇总：/home/nicola/.openclaw/workspace/content/ai-learning/20260401-summary.md
+📊 总结果数：25 条
+[2026-04-01 00:01:01] 发送通知...
+[2026-04-01 00:01:01] 发送通知...
+✅ 通知已发送
+[2026-04-01 00:02:01] === AI 知识学习开始 (v2.0) ===
+[2026-04-01 00:02:01] === AI 知识学习开始 (v2.0) ===
+[2026-04-01 00:02:01] 🔍 搜索：AGI artificial general intelligence 2026
+[2026-04-01 00:02:01] 🔍 搜索：AGI artificial general intelligence 2026
+搜索：AGI artificial general intelligence 2026
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260401-AGI-artificial-general-intelligence-2026.md (10 条结果)
+[2026-04-01 00:02:01] 🔍 搜索：LLM large language model breakthrough
+[2026-04-01 00:02:01] 🔍 搜索：LLM large language model breakthrough
+搜索：LLM large language model breakthrough
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260401-LLM-large-language-model-breakthrough.md (10 条结果)
+[2026-04-01 00:02:01] 🔍 搜索：AI agent autonomous system
+[2026-04-01 00:02:01] 🔍 搜索：AI agent autonomous system
+搜索：AI agent autonomous system
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260401-AI-agent-autonomous-system.md (10 条结果)
+[2026-04-01 00:02:01] 🔍 搜索：machine learning research 2026
+[2026-04-01 00:02:01] 🔍 搜索：machine learning research 2026
+搜索：machine learning research 2026
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260401-machine-learning-research-2026.md (9 条结果)
+[2026-04-01 00:02:01] 🔍 搜索：AI code generation programming
+[2026-04-01 00:02:01] 🔍 搜索：AI code generation programming
+搜索：AI code generation programming
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260401-AI-code-generation-programming.md (10 条结果)
+[2026-04-01 00:02:01] === AI 知识学习完成 ===
+[2026-04-01 00:02:01] === AI 知识学习完成 ===
+[2026-04-01 00:02:01] 生成学习成果汇总...
+[2026-04-01 00:02:01] 生成学习成果汇总...
+✅ 学习成果汇总：/home/nicola/.openclaw/workspace/content/ai-learning/20260401-summary.md
+📊 总结果数：25 条
+[2026-04-01 00:02:01] 发送通知...
+[2026-04-01 00:02:01] 发送通知...
+✅ 通知已发送
+[2026-04-01 00:03:01] === AI 知识学习开始 (v2.0) ===
+[2026-04-01 00:03:01] === AI 知识学习开始 (v2.0) ===
+[2026-04-01 00:03:01] 🔍 搜索：AGI artificial general intelligence 2026
+[2026-04-01 00:03:01] 🔍 搜索：AGI artificial general intelligence 2026
+搜索：AGI artificial general intelligence 2026
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260401-AGI-artificial-general-intelligence-2026.md (10 条结果)
+[2026-04-01 00:03:01] 🔍 搜索：LLM large language model breakthrough
+[2026-04-01 00:03:01] 🔍 搜索：LLM large language model breakthrough
+搜索：LLM large language model breakthrough
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260401-LLM-large-language-model-breakthrough.md (10 条结果)
+[2026-04-01 00:03:01] 🔍 搜索：AI agent autonomous system
+[2026-04-01 00:03:01] 🔍 搜索：AI agent autonomous system
+搜索：AI agent autonomous system
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260401-AI-agent-autonomous-system.md (10 条结果)
+[2026-04-01 00:03:01] 🔍 搜索：machine learning research 2026
+[2026-04-01 00:03:01] 🔍 搜索：machine learning research 2026
+搜索：machine learning research 2026
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260401-machine-learning-research-2026.md (10 条结果)
+[2026-04-01 00:03:01] 🔍 搜索：AI code generation programming
+[2026-04-01 00:03:01] 🔍 搜索：AI code generation programming
+搜索：AI code generation programming
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260401-AI-code-generation-programming.md (10 条结果)
+[2026-04-01 00:03:01] === AI 知识学习完成 ===
+[2026-04-01 00:03:01] === AI 知识学习完成 ===
+[2026-04-01 00:03:01] 生成学习成果汇总...
+[2026-04-01 00:03:01] 生成学习成果汇总...
+✅ 学习成果汇总：/home/nicola/.openclaw/workspace/content/ai-learning/20260401-summary.md
+📊 总结果数：25 条
+[2026-04-01 00:03:01] 发送通知...
+[2026-04-01 00:03:01] 发送通知...
+✅ 通知已发送
+[2026-04-01 00:04:01] === AI 知识学习开始 (v2.0) ===
+[2026-04-01 00:04:01] === AI 知识学习开始 (v2.0) ===
+[2026-04-01 00:04:01] 🔍 搜索：AGI artificial general intelligence 2026
+[2026-04-01 00:04:01] 🔍 搜索：AGI artificial general intelligence 2026
+搜索：AGI artificial general intelligence 2026
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260401-AGI-artificial-general-intelligence-2026.md (10 条结果)
+[2026-04-01 00:04:01] 🔍 搜索：LLM large language model breakthrough
+[2026-04-01 00:04:01] 🔍 搜索：LLM large language model breakthrough
+搜索：LLM large language model breakthrough
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260401-LLM-large-language-model-breakthrough.md (10 条结果)
+[2026-04-01 00:04:01] 🔍 搜索：AI agent autonomous system
+[2026-04-01 00:04:01] 🔍 搜索：AI agent autonomous system
+搜索：AI agent autonomous system
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260401-AI-agent-autonomous-system.md (10 条结果)
+[2026-04-01 00:04:01] 🔍 搜索：machine learning research 2026
+[2026-04-01 00:04:01] 🔍 搜索：machine learning research 2026
+搜索：machine learning research 2026
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260401-machine-learning-research-2026.md (9 条结果)
+[2026-04-01 00:04:01] 🔍 搜索：AI code generation programming
+[2026-04-01 00:04:01] 🔍 搜索：AI code generation programming
+搜索：AI code generation programming
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260401-AI-code-generation-programming.md (10 条结果)
+[2026-04-01 00:04:01] === AI 知识学习完成 ===
+[2026-04-01 00:04:01] === AI 知识学习完成 ===
+[2026-04-01 00:04:01] 生成学习成果汇总...
+[2026-04-01 00:04:01] 生成学习成果汇总...
+✅ 学习成果汇总：/home/nicola/.openclaw/workspace/content/ai-learning/20260401-summary.md
+📊 总结果数：25 条
+[2026-04-01 00:04:01] 发送通知...
+[2026-04-01 00:04:01] 发送通知...
+✅ 通知已发送
+[2026-04-01 00:05:01] === AI 知识学习开始 (v2.0) ===
+[2026-04-01 00:05:01] === AI 知识学习开始 (v2.0) ===
+[2026-04-01 00:05:01] 🔍 搜索：AGI artificial general intelligence 2026
+[2026-04-01 00:05:01] 🔍 搜索：AGI artificial general intelligence 2026
+搜索：AGI artificial general intelligence 2026
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260401-AGI-artificial-general-intelligence-2026.md (10 条结果)
+[2026-04-01 00:05:01] 🔍 搜索：LLM large language model breakthrough
+[2026-04-01 00:05:01] 🔍 搜索：LLM large language model breakthrough
+搜索：LLM large language model breakthrough
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260401-LLM-large-language-model-breakthrough.md (10 条结果)
+[2026-04-01 00:05:01] 🔍 搜索：AI agent autonomous system
+[2026-04-01 00:05:01] 🔍 搜索：AI agent autonomous system
+搜索：AI agent autonomous system
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260401-AI-agent-autonomous-system.md (10 条结果)
+[2026-04-01 00:05:01] 🔍 搜索：machine learning research 2026
+[2026-04-01 00:05:01] 🔍 搜索：machine learning research 2026
+搜索：machine learning research 2026
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260401-machine-learning-research-2026.md (9 条结果)
+[2026-04-01 00:05:01] 🔍 搜索：AI code generation programming
+[2026-04-01 00:05:01] 🔍 搜索：AI code generation programming
+搜索：AI code generation programming
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260401-AI-code-generation-programming.md (10 条结果)
+[2026-04-01 00:05:01] === AI 知识学习完成 ===
+[2026-04-01 00:05:01] === AI 知识学习完成 ===
+[2026-04-01 00:05:01] 生成学习成果汇总...
+[2026-04-01 00:05:01] 生成学习成果汇总...
+✅ 学习成果汇总：/home/nicola/.openclaw/workspace/content/ai-learning/20260401-summary.md
+📊 总结果数：25 条
+[2026-04-01 00:05:01] 发送通知...
+[2026-04-01 00:05:01] 发送通知...
+✅ 通知已发送
+[2026-04-01 00:06:01] === AI 知识学习开始 (v2.0) ===
+[2026-04-01 00:06:01] === AI 知识学习开始 (v2.0) ===
+[2026-04-01 00:06:01] 🔍 搜索：AGI artificial general intelligence 2026
+[2026-04-01 00:06:01] 🔍 搜索：AGI artificial general intelligence 2026
+搜索：AGI artificial general intelligence 2026
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260401-AGI-artificial-general-intelligence-2026.md (10 条结果)
+[2026-04-01 00:06:01] 🔍 搜索：LLM large language model breakthrough
+[2026-04-01 00:06:01] 🔍 搜索：LLM large language model breakthrough
+搜索：LLM large language model breakthrough
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260401-LLM-large-language-model-breakthrough.md (10 条结果)
+[2026-04-01 00:06:01] 🔍 搜索：AI agent autonomous system
+[2026-04-01 00:06:01] 🔍 搜索：AI agent autonomous system
+搜索：AI agent autonomous system
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260401-AI-agent-autonomous-system.md (10 条结果)
+[2026-04-01 00:06:01] 🔍 搜索：machine learning research 2026
+[2026-04-01 00:06:01] 🔍 搜索：machine learning research 2026
+搜索：machine learning research 2026
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260401-machine-learning-research-2026.md (10 条结果)
+[2026-04-01 00:06:01] 🔍 搜索：AI code generation programming
+[2026-04-01 00:06:01] 🔍 搜索：AI code generation programming
+搜索：AI code generation programming
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260401-AI-code-generation-programming.md (10 条结果)
+[2026-04-01 00:06:01] === AI 知识学习完成 ===
+[2026-04-01 00:06:01] === AI 知识学习完成 ===
+[2026-04-01 00:06:01] 生成学习成果汇总...
+[2026-04-01 00:06:01] 生成学习成果汇总...
+✅ 学习成果汇总：/home/nicola/.openclaw/workspace/content/ai-learning/20260401-summary.md
+📊 总结果数：25 条
+[2026-04-01 00:06:01] 发送通知...
+[2026-04-01 00:06:01] 发送通知...
+✅ 通知已发送
+[2026-04-02 00:01:01] === AI 知识学习开始 (v2.0) ===
+[2026-04-02 00:01:01] === AI 知识学习开始 (v2.0) ===
+[2026-04-02 00:01:01] 🔍 搜索：AGI artificial general intelligence 2026
+[2026-04-02 00:01:01] 🔍 搜索：AGI artificial general intelligence 2026
+搜索：AGI artificial general intelligence 2026
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260402-AGI-artificial-general-intelligence-2026.md (10 条结果)
+[2026-04-02 00:01:01] 🔍 搜索：LLM large language model breakthrough
+[2026-04-02 00:01:01] 🔍 搜索：LLM large language model breakthrough
+搜索：LLM large language model breakthrough
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260402-LLM-large-language-model-breakthrough.md (10 条结果)
+[2026-04-02 00:01:01] 🔍 搜索：AI agent autonomous system
+[2026-04-02 00:01:01] 🔍 搜索：AI agent autonomous system
+搜索：AI agent autonomous system
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260402-AI-agent-autonomous-system.md (10 条结果)
+[2026-04-02 00:01:01] 🔍 搜索：machine learning research 2026
+[2026-04-02 00:01:01] 🔍 搜索：machine learning research 2026
+搜索：machine learning research 2026
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260402-machine-learning-research-2026.md (9 条结果)
+[2026-04-02 00:01:01] 🔍 搜索：AI code generation programming
+[2026-04-02 00:01:01] 🔍 搜索：AI code generation programming
+搜索：AI code generation programming
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260402-AI-code-generation-programming.md (10 条结果)
+[2026-04-02 00:01:01] === AI 知识学习完成 ===
+[2026-04-02 00:01:01] === AI 知识学习完成 ===
+[2026-04-02 00:01:01] 生成学习成果汇总...
+[2026-04-02 00:01:01] 生成学习成果汇总...
+✅ 学习成果汇总：/home/nicola/.openclaw/workspace/content/ai-learning/20260402-summary.md
+📊 总结果数：25 条
+[2026-04-02 00:01:01] 发送通知...
+[2026-04-02 00:01:01] 发送通知...
+Traceback (most recent call last):
+  File "/home/nicola/.local/lib/python3.12/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/nicola/.local/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/nicola/.local/lib/python3.12/site-packages/urllib3/connection.py", line 796, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicola/.local/lib/python3.12/site-packages/urllib3/connection.py", line 975, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "/home/nicola/.local/lib/python3.12/site-packages/urllib3/util/ssl_.py", line 483, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicola/.local/lib/python3.12/site-packages/urllib3/util/ssl_.py", line 527, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/ssl.py", line 1042, in _create
+    self.do_handshake()
+  File "/usr/lib/python3.12/ssl.py", line 1320, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nicola/.local/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/nicola/.local/lib/python3.12/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/nicola/.local/lib/python3.12/site-packages/requests/adapters.py", line 645, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/nicola/.local/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/nicola/.local/lib/python3.12/site-packages/urllib3/util/retry.py", line 535, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot8351068758:AAGtRXv2u5fGAMuVY3d5hmeKgV9tAFpCMLY/sendMessage (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<stdin>", line 25, in <module>
+  File "/home/nicola/.local/lib/python3.12/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicola/.local/lib/python3.12/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicola/.local/lib/python3.12/site-packages/requests/sessions.py", line 592, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicola/.local/lib/python3.12/site-packages/requests/sessions.py", line 706, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicola/.local/lib/python3.12/site-packages/requests/adapters.py", line 676, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot8351068758:AAGtRXv2u5fGAMuVY3d5hmeKgV9tAFpCMLY/sendMessage (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+[2026-04-02 00:02:01] === AI 知识学习开始 (v2.0) ===
+[2026-04-02 00:02:01] === AI 知识学习开始 (v2.0) ===
+[2026-04-02 00:02:01] 🔍 搜索：AGI artificial general intelligence 2026
+[2026-04-02 00:02:01] 🔍 搜索：AGI artificial general intelligence 2026
+搜索：AGI artificial general intelligence 2026
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260402-AGI-artificial-general-intelligence-2026.md (10 条结果)
+[2026-04-02 00:02:01] 🔍 搜索：LLM large language model breakthrough
+[2026-04-02 00:02:01] 🔍 搜索：LLM large language model breakthrough
+搜索：LLM large language model breakthrough
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260402-LLM-large-language-model-breakthrough.md (10 条结果)
+[2026-04-02 00:02:01] 🔍 搜索：AI agent autonomous system
+[2026-04-02 00:02:01] 🔍 搜索：AI agent autonomous system
+搜索：AI agent autonomous system
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260402-AI-agent-autonomous-system.md (10 条结果)
+[2026-04-02 00:02:01] 🔍 搜索：machine learning research 2026
+[2026-04-02 00:02:01] 🔍 搜索：machine learning research 2026
+搜索：machine learning research 2026
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260402-machine-learning-research-2026.md (10 条结果)
+[2026-04-02 00:02:01] 🔍 搜索：AI code generation programming
+[2026-04-02 00:02:01] 🔍 搜索：AI code generation programming
+搜索：AI code generation programming
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260402-AI-code-generation-programming.md (10 条结果)
+[2026-04-02 00:02:01] === AI 知识学习完成 ===
+[2026-04-02 00:02:01] === AI 知识学习完成 ===
+[2026-04-02 00:02:01] 生成学习成果汇总...
+[2026-04-02 00:02:01] 生成学习成果汇总...
+✅ 学习成果汇总：/home/nicola/.openclaw/workspace/content/ai-learning/20260402-summary.md
+📊 总结果数：25 条
+[2026-04-02 00:02:01] 发送通知...
+[2026-04-02 00:02:01] 发送通知...
+✅ 通知已发送
+[2026-04-02 00:03:01] === AI 知识学习开始 (v2.0) ===
+[2026-04-02 00:03:01] === AI 知识学习开始 (v2.0) ===
+[2026-04-02 00:03:01] 🔍 搜索：AGI artificial general intelligence 2026
+[2026-04-02 00:03:01] 🔍 搜索：AGI artificial general intelligence 2026
+搜索：AGI artificial general intelligence 2026
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260402-AGI-artificial-general-intelligence-2026.md (10 条结果)
+[2026-04-02 00:03:01] 🔍 搜索：LLM large language model breakthrough
+[2026-04-02 00:03:01] 🔍 搜索：LLM large language model breakthrough
+搜索：LLM large language model breakthrough
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260402-LLM-large-language-model-breakthrough.md (10 条结果)
+[2026-04-02 00:03:01] 🔍 搜索：AI agent autonomous system
+[2026-04-02 00:03:01] 🔍 搜索：AI agent autonomous system
+搜索：AI agent autonomous system
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260402-AI-agent-autonomous-system.md (10 条结果)
+[2026-04-02 00:03:01] 🔍 搜索：machine learning research 2026
+[2026-04-02 00:03:01] 🔍 搜索：machine learning research 2026
+搜索：machine learning research 2026
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260402-machine-learning-research-2026.md (9 条结果)
+[2026-04-02 00:03:01] 🔍 搜索：AI code generation programming
+[2026-04-02 00:03:01] 🔍 搜索：AI code generation programming
+搜索：AI code generation programming
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260402-AI-code-generation-programming.md (10 条结果)
+[2026-04-02 00:03:01] === AI 知识学习完成 ===
+[2026-04-02 00:03:01] === AI 知识学习完成 ===
+[2026-04-02 00:03:01] 生成学习成果汇总...
+[2026-04-02 00:03:01] 生成学习成果汇总...
+✅ 学习成果汇总：/home/nicola/.openclaw/workspace/content/ai-learning/20260402-summary.md
+📊 总结果数：25 条
+[2026-04-02 00:03:01] 发送通知...
+[2026-04-02 00:03:01] 发送通知...
+✅ 通知已发送
+[2026-04-02 00:04:01] === AI 知识学习开始 (v2.0) ===
+[2026-04-02 00:04:01] === AI 知识学习开始 (v2.0) ===
+[2026-04-02 00:04:01] 🔍 搜索：AGI artificial general intelligence 2026
+[2026-04-02 00:04:01] 🔍 搜索：AGI artificial general intelligence 2026
+搜索：AGI artificial general intelligence 2026
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260402-AGI-artificial-general-intelligence-2026.md (10 条结果)
+[2026-04-02 00:04:01] 🔍 搜索：LLM large language model breakthrough
+[2026-04-02 00:04:01] 🔍 搜索：LLM large language model breakthrough
+搜索：LLM large language model breakthrough
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260402-LLM-large-language-model-breakthrough.md (10 条结果)
+[2026-04-02 00:04:01] 🔍 搜索：AI agent autonomous system
+[2026-04-02 00:04:01] 🔍 搜索：AI agent autonomous system
+搜索：AI agent autonomous system
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260402-AI-agent-autonomous-system.md (10 条结果)
+[2026-04-02 00:04:01] 🔍 搜索：machine learning research 2026
+[2026-04-02 00:04:01] 🔍 搜索：machine learning research 2026
+搜索：machine learning research 2026
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260402-machine-learning-research-2026.md (9 条结果)
+[2026-04-02 00:04:01] 🔍 搜索：AI code generation programming
+[2026-04-02 00:04:01] 🔍 搜索：AI code generation programming
+搜索：AI code generation programming
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260402-AI-code-generation-programming.md (10 条结果)
+[2026-04-02 00:04:01] === AI 知识学习完成 ===
+[2026-04-02 00:04:01] === AI 知识学习完成 ===
+[2026-04-02 00:04:01] 生成学习成果汇总...
+[2026-04-02 00:04:01] 生成学习成果汇总...
+✅ 学习成果汇总：/home/nicola/.openclaw/workspace/content/ai-learning/20260402-summary.md
+📊 总结果数：25 条
+[2026-04-02 00:04:01] 发送通知...
+[2026-04-02 00:04:01] 发送通知...
+✅ 通知已发送
+[2026-04-02 00:05:01] === AI 知识学习开始 (v2.0) ===
+[2026-04-02 00:05:01] === AI 知识学习开始 (v2.0) ===
+[2026-04-02 00:05:01] 🔍 搜索：AGI artificial general intelligence 2026
+[2026-04-02 00:05:01] 🔍 搜索：AGI artificial general intelligence 2026
+搜索：AGI artificial general intelligence 2026
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260402-AGI-artificial-general-intelligence-2026.md (10 条结果)
+[2026-04-02 00:05:01] 🔍 搜索：LLM large language model breakthrough
+[2026-04-02 00:05:01] 🔍 搜索：LLM large language model breakthrough
+搜索：LLM large language model breakthrough
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260402-LLM-large-language-model-breakthrough.md (10 条结果)
+[2026-04-02 00:05:01] 🔍 搜索：AI agent autonomous system
+[2026-04-02 00:05:01] 🔍 搜索：AI agent autonomous system
+搜索：AI agent autonomous system
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260402-AI-agent-autonomous-system.md (10 条结果)
+[2026-04-02 00:05:01] 🔍 搜索：machine learning research 2026
+[2026-04-02 00:05:01] 🔍 搜索：machine learning research 2026
+搜索：machine learning research 2026
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260402-machine-learning-research-2026.md (9 条结果)
+[2026-04-02 00:05:01] 🔍 搜索：AI code generation programming
+[2026-04-02 00:05:01] 🔍 搜索：AI code generation programming
+搜索：AI code generation programming
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260402-AI-code-generation-programming.md (10 条结果)
+[2026-04-02 00:05:01] === AI 知识学习完成 ===
+[2026-04-02 00:05:01] === AI 知识学习完成 ===
+[2026-04-02 00:05:01] 生成学习成果汇总...
+[2026-04-02 00:05:01] 生成学习成果汇总...
+✅ 学习成果汇总：/home/nicola/.openclaw/workspace/content/ai-learning/20260402-summary.md
+📊 总结果数：25 条
+[2026-04-02 00:05:01] 发送通知...
+[2026-04-02 00:05:01] 发送通知...
+✅ 通知已发送
+[2026-04-02 00:06:01] === AI 知识学习开始 (v2.0) ===
+[2026-04-02 00:06:01] === AI 知识学习开始 (v2.0) ===
+[2026-04-02 00:06:01] 🔍 搜索：AGI artificial general intelligence 2026
+[2026-04-02 00:06:01] 🔍 搜索：AGI artificial general intelligence 2026
+搜索：AGI artificial general intelligence 2026
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260402-AGI-artificial-general-intelligence-2026.md (10 条结果)
+[2026-04-02 00:06:01] 🔍 搜索：LLM large language model breakthrough
+[2026-04-02 00:06:01] 🔍 搜索：LLM large language model breakthrough
+搜索：LLM large language model breakthrough
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260402-LLM-large-language-model-breakthrough.md (10 条结果)
+[2026-04-02 00:06:01] 🔍 搜索：AI agent autonomous system
+[2026-04-02 00:06:01] 🔍 搜索：AI agent autonomous system
+搜索：AI agent autonomous system
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260402-AI-agent-autonomous-system.md (10 条结果)
+[2026-04-02 00:06:01] 🔍 搜索：machine learning research 2026
+[2026-04-02 00:06:01] 🔍 搜索：machine learning research 2026
+搜索：machine learning research 2026
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260402-machine-learning-research-2026.md (9 条结果)
+[2026-04-02 00:06:01] 🔍 搜索：AI code generation programming
+[2026-04-02 00:06:01] 🔍 搜索：AI code generation programming
+搜索：AI code generation programming
+✅ 保存：/home/nicola/.openclaw/workspace/content/ai-learning/20260402-AI-code-generation-programming.md (10 条结果)
+[2026-04-02 00:06:01] === AI 知识学习完成 ===
+[2026-04-02 00:06:01] === AI 知识学习完成 ===
+[2026-04-02 00:06:01] 生成学习成果汇总...
+[2026-04-02 00:06:01] 生成学习成果汇总...
+✅ 学习成果汇总：/home/nicola/.openclaw/workspace/content/ai-learning/20260402-summary.md
+📊 总结果数：25 条
+[2026-04-02 00:06:01] 发送通知...
+[2026-04-02 00:06:01] 发送通知...
+✅ 通知已发送

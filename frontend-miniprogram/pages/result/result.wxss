@@ -1,0 +1,135 @@
+/* pages/result/result.wxss */
+.container {
+  min-height: 100vh;
+  background: #f8f9fa;
+  padding: 40rpx;
+}
+
+.result-header {
+  text-align: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 24rpx;
+  padding: 40rpx;
+  color: white;
+  margin-bottom: 30rpx;
+}
+
+.state-name {
+  font-size: 44rpx;
+  font-weight: bold;
+  margin-bottom: 16rpx;
+}
+
+.state-type {
+  display: inline-block;
+  background: rgba(255,255,255,0.2);
+  padding: 8rpx 24rpx;
+  border-radius: 24rpx;
+  font-size: 24rpx;
+}
+
+.section-title {
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20rpx;
+}
+
+.stage-section {
+  background: white;
+  border-radius: 24rpx;
+  padding: 30rpx;
+  margin-bottom: 30rpx;
+  box-shadow: 0 4rpx 12rpx rgba(0,0,0,0.05);
+}
+
+.stage-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12rpx;
+}
+
+.stage-name {
+  font-size: 28rpx;
+  color: #667eea;
+  font-weight: bold;
+}
+
+.free-section {
+  background: white;
+  border-radius: 24rpx;
+  padding: 30rpx;
+  margin-bottom: 30rpx;
+  box-shadow: 0 4rpx 12rpx rgba(0,0,0,0.05);
+}
+
+.free-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16rpx;
+}
+
+.free-item {
+  font-size: 28rpx;
+  color: #333;
+}
+
+.upsell-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20rpx;
+}
+
+.upsell-card {
+  background: white;
+  border-radius: 24rpx;
+  padding: 30rpx;
+  box-shadow: 0 4rpx 12rpx rgba(0,0,0,0.05);
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.upsell-card:active {
+  transform: scale(0.98);
+}
+
+.upsell-card.highlight {
+  border: 2rpx solid #667eea;
+  background: linear-gradient(135deg, rgba(102,126,234,0.05) 0%, rgba(118,75,162,0.05) 100%);
+}
+
+.upsell-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16rpx;
+}
+
+.upsell-name {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+}
+
+.upsell-price {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #667eea;
+}
+
+.upsell-desc {
+  font-size: 26rpx;
+  color: #999;
+  line-height: 1.5;
+}
+
+.upsell-tag {
+  position: absolute;
+  top: 20rpx;
+  right: 20rpx;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 6rpx 16rpx;
+  border-radius: 16rpx;
+  font-size: 22rpx;
+}

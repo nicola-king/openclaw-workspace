@@ -1,0 +1,12 @@
+{
+  "ETHUSDT": {
+    "symbol": "ETHUSDT",
+    "side": "BUY",
+    "entry_price": 2047.5730708661417,
+    "quantity": 0.0127,
+    "entry_time": "2026-03-30T14:42:26",
+    "order_id": 45335941486,
+    "take_profit": 2251.931,
+    "stop_loss": 1944.8495
+  }
+}

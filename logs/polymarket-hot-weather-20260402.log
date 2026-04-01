@@ -1,0 +1,210 @@
+========================================
+[2026年 04月 02日 星期四 00:00:01 CST] Start Polymarket Hot Weather Data Collection...
+2026-04-02 00:00:01,954 - PolymarketHotWeather - INFO - 🚀 Polymarket 热度前 5 名天气预测数据采集启动...
+2026-04-02 00:00:01,955 - PolymarketHotWeather - INFO - ✅ 获取市场数据：2026 hottest year rank
+2026-04-02 00:00:01,955 - PolymarketHotWeather - INFO - ✅ 获取市场数据：March 2026 temp increase
+2026-04-02 00:00:01,955 - PolymarketHotWeather - INFO - ✅ 获取市场数据：Cat4 hurricane before 2027
+2026-04-02 00:00:01,955 - PolymarketHotWeather - INFO - ✅ 获取市场数据：NYC March precipitation
+2026-04-02 00:00:01,955 - PolymarketHotWeather - INFO - ✅ 获取市场数据：2026 March 1-3 hottest
+2026-04-02 00:00:01,955 - PolymarketHotWeather - INFO - 📝 数据已保存：/home/nicola/.openclaw/workspace/data/polymarket/hot-weather-20260402-000001.json
+2026-04-02 00:00:01,956 - PolymarketHotWeather - INFO - 📝 最新数据已更新：/home/nicola/.openclaw/workspace/data/polymarket/hot-weather-latest.json
+2026-04-02 00:00:01,956 - PolymarketHotWeather - INFO - 📊 报告已生成：/home/nicola/.openclaw/workspace/data/polymarket/README.md
+2026-04-02 00:00:01,956 - PolymarketHotWeather - INFO - ✅ 数据采集完成，共 5 个市场
+2026-04-02 00:00:01,956 - PolymarketHotWeather - INFO - 💰 总流动性：$2,868,000
+[2026年 04月 02日 星期四 00:00:02 CST] ✓ Polymarket hot weather data collection completed
+========================================
+[2026年 04月 02日 星期四 00:30:01 CST] Start Polymarket Hot Weather Data Collection...
+2026-04-02 00:30:01,807 - PolymarketHotWeather - INFO - 🚀 Polymarket 热度前 5 名天气预测数据采集启动...
+2026-04-02 00:30:01,807 - PolymarketHotWeather - INFO - ✅ 获取市场数据：2026 hottest year rank
+2026-04-02 00:30:01,807 - PolymarketHotWeather - INFO - ✅ 获取市场数据：March 2026 temp increase
+2026-04-02 00:30:01,808 - PolymarketHotWeather - INFO - ✅ 获取市场数据：Cat4 hurricane before 2027
+2026-04-02 00:30:01,808 - PolymarketHotWeather - INFO - ✅ 获取市场数据：NYC March precipitation
+2026-04-02 00:30:01,808 - PolymarketHotWeather - INFO - ✅ 获取市场数据：2026 March 1-3 hottest
+2026-04-02 00:30:01,808 - PolymarketHotWeather - INFO - 📝 数据已保存：/home/nicola/.openclaw/workspace/data/polymarket/hot-weather-20260402-003001.json
+2026-04-02 00:30:01,808 - PolymarketHotWeather - INFO - 📝 最新数据已更新：/home/nicola/.openclaw/workspace/data/polymarket/hot-weather-latest.json
+2026-04-02 00:30:01,808 - PolymarketHotWeather - INFO - 📊 报告已生成：/home/nicola/.openclaw/workspace/data/polymarket/README.md
+2026-04-02 00:30:01,808 - PolymarketHotWeather - INFO - ✅ 数据采集完成，共 5 个市场
+2026-04-02 00:30:01,809 - PolymarketHotWeather - INFO - 💰 总流动性：$2,868,000
+[2026年 04月 02日 星期四 00:30:01 CST] ✓ Polymarket hot weather data collection completed
+========================================
+[2026年 04月 02日 星期四 01:00:01 CST] Start Polymarket Hot Weather Data Collection...
+2026-04-02 01:00:01,557 - PolymarketHotWeather - INFO - 🚀 Polymarket 热度前 5 名天气预测数据采集启动...
+2026-04-02 01:00:01,557 - PolymarketHotWeather - INFO - ✅ 获取市场数据：2026 hottest year rank
+2026-04-02 01:00:01,558 - PolymarketHotWeather - INFO - ✅ 获取市场数据：March 2026 temp increase
+2026-04-02 01:00:01,558 - PolymarketHotWeather - INFO - ✅ 获取市场数据：Cat4 hurricane before 2027
+2026-04-02 01:00:01,558 - PolymarketHotWeather - INFO - ✅ 获取市场数据：NYC March precipitation
+2026-04-02 01:00:01,558 - PolymarketHotWeather - INFO - ✅ 获取市场数据：2026 March 1-3 hottest
+2026-04-02 01:00:01,558 - PolymarketHotWeather - INFO - 📝 数据已保存：/home/nicola/.openclaw/workspace/data/polymarket/hot-weather-20260402-010001.json
+2026-04-02 01:00:01,558 - PolymarketHotWeather - INFO - 📝 最新数据已更新：/home/nicola/.openclaw/workspace/data/polymarket/hot-weather-latest.json
+2026-04-02 01:00:01,559 - PolymarketHotWeather - INFO - 📊 报告已生成：/home/nicola/.openclaw/workspace/data/polymarket/README.md
+2026-04-02 01:00:01,559 - PolymarketHotWeather - INFO - ✅ 数据采集完成，共 5 个市场
+2026-04-02 01:00:01,559 - PolymarketHotWeather - INFO - 💰 总流动性：$2,868,000
+[2026年 04月 02日 星期四 01:00:01 CST] ✓ Polymarket hot weather data collection completed
+========================================
+[2026年 04月 02日 星期四 01:30:01 CST] Start Polymarket Hot Weather Data Collection...
+2026-04-02 01:30:01,463 - PolymarketHotWeather - INFO - 🚀 Polymarket 热度前 5 名天气预测数据采集启动...
+2026-04-02 01:30:01,463 - PolymarketHotWeather - INFO - ✅ 获取市场数据：2026 hottest year rank
+2026-04-02 01:30:01,463 - PolymarketHotWeather - INFO - ✅ 获取市场数据：March 2026 temp increase
+2026-04-02 01:30:01,463 - PolymarketHotWeather - INFO - ✅ 获取市场数据：Cat4 hurricane before 2027
+2026-04-02 01:30:01,463 - PolymarketHotWeather - INFO - ✅ 获取市场数据：NYC March precipitation
+2026-04-02 01:30:01,463 - PolymarketHotWeather - INFO - ✅ 获取市场数据：2026 March 1-3 hottest
+2026-04-02 01:30:01,463 - PolymarketHotWeather - INFO - 📝 数据已保存：/home/nicola/.openclaw/workspace/data/polymarket/hot-weather-20260402-013001.json
+2026-04-02 01:30:01,464 - PolymarketHotWeather - INFO - 📝 最新数据已更新：/home/nicola/.openclaw/workspace/data/polymarket/hot-weather-latest.json
+2026-04-02 01:30:01,464 - PolymarketHotWeather - INFO - 📊 报告已生成：/home/nicola/.openclaw/workspace/data/polymarket/README.md
+2026-04-02 01:30:01,464 - PolymarketHotWeather - INFO - ✅ 数据采集完成，共 5 个市场
+2026-04-02 01:30:01,464 - PolymarketHotWeather - INFO - 💰 总流动性：$2,868,000
+[2026年 04月 02日 星期四 01:30:01 CST] ✓ Polymarket hot weather data collection completed
+========================================
+[2026年 04月 02日 星期四 02:00:01 CST] Start Polymarket Hot Weather Data Collection...
+2026-04-02 02:00:02,263 - PolymarketHotWeather - INFO - 🚀 Polymarket 热度前 5 名天气预测数据采集启动...
+2026-04-02 02:00:02,264 - PolymarketHotWeather - INFO - ✅ 获取市场数据：2026 hottest year rank
+2026-04-02 02:00:02,264 - PolymarketHotWeather - INFO - ✅ 获取市场数据：March 2026 temp increase
+2026-04-02 02:00:02,264 - PolymarketHotWeather - INFO - ✅ 获取市场数据：Cat4 hurricane before 2027
+2026-04-02 02:00:02,264 - PolymarketHotWeather - INFO - ✅ 获取市场数据：NYC March precipitation
+2026-04-02 02:00:02,264 - PolymarketHotWeather - INFO - ✅ 获取市场数据：2026 March 1-3 hottest
+2026-04-02 02:00:02,264 - PolymarketHotWeather - INFO - 📝 数据已保存：/home/nicola/.openclaw/workspace/data/polymarket/hot-weather-20260402-020002.json
+2026-04-02 02:00:02,265 - PolymarketHotWeather - INFO - 📝 最新数据已更新：/home/nicola/.openclaw/workspace/data/polymarket/hot-weather-latest.json
+2026-04-02 02:00:02,265 - PolymarketHotWeather - INFO - 📊 报告已生成：/home/nicola/.openclaw/workspace/data/polymarket/README.md
+2026-04-02 02:00:02,265 - PolymarketHotWeather - INFO - ✅ 数据采集完成，共 5 个市场
+2026-04-02 02:00:02,265 - PolymarketHotWeather - INFO - 💰 总流动性：$2,868,000
+[2026年 04月 02日 星期四 02:00:02 CST] ✓ Polymarket hot weather data collection completed
+========================================
+[2026年 04月 02日 星期四 02:30:01 CST] Start Polymarket Hot Weather Data Collection...
+2026-04-02 02:30:02,024 - PolymarketHotWeather - INFO - 🚀 Polymarket 热度前 5 名天气预测数据采集启动...
+2026-04-02 02:30:02,024 - PolymarketHotWeather - INFO - ✅ 获取市场数据：2026 hottest year rank
+2026-04-02 02:30:02,024 - PolymarketHotWeather - INFO - ✅ 获取市场数据：March 2026 temp increase
+2026-04-02 02:30:02,024 - PolymarketHotWeather - INFO - ✅ 获取市场数据：Cat4 hurricane before 2027
+2026-04-02 02:30:02,024 - PolymarketHotWeather - INFO - ✅ 获取市场数据：NYC March precipitation
+2026-04-02 02:30:02,024 - PolymarketHotWeather - INFO - ✅ 获取市场数据：2026 March 1-3 hottest
+2026-04-02 02:30:02,024 - PolymarketHotWeather - INFO - 📝 数据已保存：/home/nicola/.openclaw/workspace/data/polymarket/hot-weather-20260402-023002.json
+2026-04-02 02:30:02,025 - PolymarketHotWeather - INFO - 📝 最新数据已更新：/home/nicola/.openclaw/workspace/data/polymarket/hot-weather-latest.json
+2026-04-02 02:30:02,025 - PolymarketHotWeather - INFO - 📊 报告已生成：/home/nicola/.openclaw/workspace/data/polymarket/README.md
+2026-04-02 02:30:02,025 - PolymarketHotWeather - INFO - ✅ 数据采集完成，共 5 个市场
+2026-04-02 02:30:02,025 - PolymarketHotWeather - INFO - 💰 总流动性：$2,868,000
+[2026年 04月 02日 星期四 02:30:02 CST] ✓ Polymarket hot weather data collection completed
+========================================
+[2026年 04月 02日 星期四 03:00:01 CST] Start Polymarket Hot Weather Data Collection...
+2026-04-02 03:00:01,763 - PolymarketHotWeather - INFO - 🚀 Polymarket 热度前 5 名天气预测数据采集启动...
+2026-04-02 03:00:01,763 - PolymarketHotWeather - INFO - ✅ 获取市场数据：2026 hottest year rank
+2026-04-02 03:00:01,763 - PolymarketHotWeather - INFO - ✅ 获取市场数据：March 2026 temp increase
+2026-04-02 03:00:01,763 - PolymarketHotWeather - INFO - ✅ 获取市场数据：Cat4 hurricane before 2027
+2026-04-02 03:00:01,764 - PolymarketHotWeather - INFO - ✅ 获取市场数据：NYC March precipitation
+2026-04-02 03:00:01,764 - PolymarketHotWeather - INFO - ✅ 获取市场数据：2026 March 1-3 hottest
+2026-04-02 03:00:01,764 - PolymarketHotWeather - INFO - 📝 数据已保存：/home/nicola/.openclaw/workspace/data/polymarket/hot-weather-20260402-030001.json
+2026-04-02 03:00:01,764 - PolymarketHotWeather - INFO - 📝 最新数据已更新：/home/nicola/.openclaw/workspace/data/polymarket/hot-weather-latest.json
+2026-04-02 03:00:01,764 - PolymarketHotWeather - INFO - 📊 报告已生成：/home/nicola/.openclaw/workspace/data/polymarket/README.md
+2026-04-02 03:00:01,764 - PolymarketHotWeather - INFO - ✅ 数据采集完成，共 5 个市场
+2026-04-02 03:00:01,765 - PolymarketHotWeather - INFO - 💰 总流动性：$2,868,000
+[2026年 04月 02日 星期四 03:00:01 CST] ✓ Polymarket hot weather data collection completed
+========================================
+[2026年 04月 02日 星期四 03:30:01 CST] Start Polymarket Hot Weather Data Collection...
+2026-04-02 03:30:01,614 - PolymarketHotWeather - INFO - 🚀 Polymarket 热度前 5 名天气预测数据采集启动...
+2026-04-02 03:30:01,614 - PolymarketHotWeather - INFO - ✅ 获取市场数据：2026 hottest year rank
+2026-04-02 03:30:01,614 - PolymarketHotWeather - INFO - ✅ 获取市场数据：March 2026 temp increase
+2026-04-02 03:30:01,614 - PolymarketHotWeather - INFO - ✅ 获取市场数据：Cat4 hurricane before 2027
+2026-04-02 03:30:01,614 - PolymarketHotWeather - INFO - ✅ 获取市场数据：NYC March precipitation
+2026-04-02 03:30:01,614 - PolymarketHotWeather - INFO - ✅ 获取市场数据：2026 March 1-3 hottest
+2026-04-02 03:30:01,615 - PolymarketHotWeather - INFO - 📝 数据已保存：/home/nicola/.openclaw/workspace/data/polymarket/hot-weather-20260402-033001.json
+2026-04-02 03:30:01,615 - PolymarketHotWeather - INFO - 📝 最新数据已更新：/home/nicola/.openclaw/workspace/data/polymarket/hot-weather-latest.json
+2026-04-02 03:30:01,615 - PolymarketHotWeather - INFO - 📊 报告已生成：/home/nicola/.openclaw/workspace/data/polymarket/README.md
+2026-04-02 03:30:01,615 - PolymarketHotWeather - INFO - ✅ 数据采集完成，共 5 个市场
+2026-04-02 03:30:01,615 - PolymarketHotWeather - INFO - 💰 总流动性：$2,868,000
+[2026年 04月 02日 星期四 03:30:01 CST] ✓ Polymarket hot weather data collection completed
+========================================
+[2026年 04月 02日 星期四 04:00:01 CST] Start Polymarket Hot Weather Data Collection...
+2026-04-02 04:00:01,363 - PolymarketHotWeather - INFO - 🚀 Polymarket 热度前 5 名天气预测数据采集启动...
+2026-04-02 04:00:01,363 - PolymarketHotWeather - INFO - ✅ 获取市场数据：2026 hottest year rank
+2026-04-02 04:00:01,364 - PolymarketHotWeather - INFO - ✅ 获取市场数据：March 2026 temp increase
+2026-04-02 04:00:01,364 - PolymarketHotWeather - INFO - ✅ 获取市场数据：Cat4 hurricane before 2027
+2026-04-02 04:00:01,364 - PolymarketHotWeather - INFO - ✅ 获取市场数据：NYC March precipitation
+2026-04-02 04:00:01,364 - PolymarketHotWeather - INFO - ✅ 获取市场数据：2026 March 1-3 hottest
+2026-04-02 04:00:01,364 - PolymarketHotWeather - INFO - 📝 数据已保存：/home/nicola/.openclaw/workspace/data/polymarket/hot-weather-20260402-040001.json
+2026-04-02 04:00:01,364 - PolymarketHotWeather - INFO - 📝 最新数据已更新：/home/nicola/.openclaw/workspace/data/polymarket/hot-weather-latest.json
+2026-04-02 04:00:01,365 - PolymarketHotWeather - INFO - 📊 报告已生成：/home/nicola/.openclaw/workspace/data/polymarket/README.md
+2026-04-02 04:00:01,365 - PolymarketHotWeather - INFO - ✅ 数据采集完成，共 5 个市场
+2026-04-02 04:00:01,365 - PolymarketHotWeather - INFO - 💰 总流动性：$2,868,000
+[2026年 04月 02日 星期四 04:00:01 CST] ✓ Polymarket hot weather data collection completed
+========================================
+[2026年 04月 02日 星期四 04:30:01 CST] Start Polymarket Hot Weather Data Collection...
+2026-04-02 04:30:02,161 - PolymarketHotWeather - INFO - 🚀 Polymarket 热度前 5 名天气预测数据采集启动...
+2026-04-02 04:30:02,161 - PolymarketHotWeather - INFO - ✅ 获取市场数据：2026 hottest year rank
+2026-04-02 04:30:02,161 - PolymarketHotWeather - INFO - ✅ 获取市场数据：March 2026 temp increase
+2026-04-02 04:30:02,161 - PolymarketHotWeather - INFO - ✅ 获取市场数据：Cat4 hurricane before 2027
+2026-04-02 04:30:02,161 - PolymarketHotWeather - INFO - ✅ 获取市场数据：NYC March precipitation
+2026-04-02 04:30:02,161 - PolymarketHotWeather - INFO - ✅ 获取市场数据：2026 March 1-3 hottest
+2026-04-02 04:30:02,162 - PolymarketHotWeather - INFO - 📝 数据已保存：/home/nicola/.openclaw/workspace/data/polymarket/hot-weather-20260402-043002.json
+2026-04-02 04:30:02,162 - PolymarketHotWeather - INFO - 📝 最新数据已更新：/home/nicola/.openclaw/workspace/data/polymarket/hot-weather-latest.json
+2026-04-02 04:30:02,162 - PolymarketHotWeather - INFO - 📊 报告已生成：/home/nicola/.openclaw/workspace/data/polymarket/README.md
+2026-04-02 04:30:02,162 - PolymarketHotWeather - INFO - ✅ 数据采集完成，共 5 个市场
+2026-04-02 04:30:02,162 - PolymarketHotWeather - INFO - 💰 总流动性：$2,868,000
+[2026年 04月 02日 星期四 04:30:02 CST] ✓ Polymarket hot weather data collection completed
+========================================
+[2026年 04月 02日 星期四 05:00:01 CST] Start Polymarket Hot Weather Data Collection...
+2026-04-02 05:00:01,933 - PolymarketHotWeather - INFO - 🚀 Polymarket 热度前 5 名天气预测数据采集启动...
+2026-04-02 05:00:01,933 - PolymarketHotWeather - INFO - ✅ 获取市场数据：2026 hottest year rank
+2026-04-02 05:00:01,933 - PolymarketHotWeather - INFO - ✅ 获取市场数据：March 2026 temp increase
+2026-04-02 05:00:01,933 - PolymarketHotWeather - INFO - ✅ 获取市场数据：Cat4 hurricane before 2027
+2026-04-02 05:00:01,934 - PolymarketHotWeather - INFO - ✅ 获取市场数据：NYC March precipitation
+2026-04-02 05:00:01,934 - PolymarketHotWeather - INFO - ✅ 获取市场数据：2026 March 1-3 hottest
+2026-04-02 05:00:01,934 - PolymarketHotWeather - INFO - 📝 数据已保存：/home/nicola/.openclaw/workspace/data/polymarket/hot-weather-20260402-050001.json
+2026-04-02 05:00:01,934 - PolymarketHotWeather - INFO - 📝 最新数据已更新：/home/nicola/.openclaw/workspace/data/polymarket/hot-weather-latest.json
+2026-04-02 05:00:01,934 - PolymarketHotWeather - INFO - 📊 报告已生成：/home/nicola/.openclaw/workspace/data/polymarket/README.md
+2026-04-02 05:00:01,935 - PolymarketHotWeather - INFO - ✅ 数据采集完成，共 5 个市场
+2026-04-02 05:00:01,935 - PolymarketHotWeather - INFO - 💰 总流动性：$2,868,000
+[2026年 04月 02日 星期四 05:00:01 CST] ✓ Polymarket hot weather data collection completed
+========================================
+[2026年 04月 02日 星期四 05:30:01 CST] Start Polymarket Hot Weather Data Collection...
+2026-04-02 05:30:01,841 - PolymarketHotWeather - INFO - 🚀 Polymarket 热度前 5 名天气预测数据采集启动...
+2026-04-02 05:30:01,841 - PolymarketHotWeather - INFO - ✅ 获取市场数据：2026 hottest year rank
+2026-04-02 05:30:01,841 - PolymarketHotWeather - INFO - ✅ 获取市场数据：March 2026 temp increase
+2026-04-02 05:30:01,841 - PolymarketHotWeather - INFO - ✅ 获取市场数据：Cat4 hurricane before 2027
+2026-04-02 05:30:01,841 - PolymarketHotWeather - INFO - ✅ 获取市场数据：NYC March precipitation
+2026-04-02 05:30:01,841 - PolymarketHotWeather - INFO - ✅ 获取市场数据：2026 March 1-3 hottest
+2026-04-02 05:30:01,842 - PolymarketHotWeather - INFO - 📝 数据已保存：/home/nicola/.openclaw/workspace/data/polymarket/hot-weather-20260402-053001.json
+2026-04-02 05:30:01,842 - PolymarketHotWeather - INFO - 📝 最新数据已更新：/home/nicola/.openclaw/workspace/data/polymarket/hot-weather-latest.json
+2026-04-02 05:30:01,842 - PolymarketHotWeather - INFO - 📊 报告已生成：/home/nicola/.openclaw/workspace/data/polymarket/README.md
+2026-04-02 05:30:01,842 - PolymarketHotWeather - INFO - ✅ 数据采集完成，共 5 个市场
+2026-04-02 05:30:01,842 - PolymarketHotWeather - INFO - 💰 总流动性：$2,868,000
+[2026年 04月 02日 星期四 05:30:01 CST] ✓ Polymarket hot weather data collection completed
+========================================
+[2026年 04月 02日 星期四 06:00:01 CST] Start Polymarket Hot Weather Data Collection...
+2026-04-02 06:00:01,688 - PolymarketHotWeather - INFO - 🚀 Polymarket 热度前 5 名天气预测数据采集启动...
+2026-04-02 06:00:01,691 - PolymarketHotWeather - INFO - ✅ 获取市场数据：2026 hottest year rank
+2026-04-02 06:00:01,691 - PolymarketHotWeather - INFO - ✅ 获取市场数据：March 2026 temp increase
+2026-04-02 06:00:01,691 - PolymarketHotWeather - INFO - ✅ 获取市场数据：Cat4 hurricane before 2027
+2026-04-02 06:00:01,691 - PolymarketHotWeather - INFO - ✅ 获取市场数据：NYC March precipitation
+2026-04-02 06:00:01,692 - PolymarketHotWeather - INFO - ✅ 获取市场数据：2026 March 1-3 hottest
+2026-04-02 06:00:01,692 - PolymarketHotWeather - INFO - 📝 数据已保存：/home/nicola/.openclaw/workspace/data/polymarket/hot-weather-20260402-060001.json
+2026-04-02 06:00:01,692 - PolymarketHotWeather - INFO - 📝 最新数据已更新：/home/nicola/.openclaw/workspace/data/polymarket/hot-weather-latest.json
+2026-04-02 06:00:01,692 - PolymarketHotWeather - INFO - 📊 报告已生成：/home/nicola/.openclaw/workspace/data/polymarket/README.md
+2026-04-02 06:00:01,693 - PolymarketHotWeather - INFO - ✅ 数据采集完成，共 5 个市场
+2026-04-02 06:00:01,693 - PolymarketHotWeather - INFO - 💰 总流动性：$2,868,000
+[2026年 04月 02日 星期四 06:00:01 CST] ✓ Polymarket hot weather data collection completed
+========================================
+[2026年 04月 02日 星期四 06:30:01 CST] Start Polymarket Hot Weather Data Collection...
+2026-04-02 06:30:02,007 - PolymarketHotWeather - INFO - 🚀 Polymarket 热度前 5 名天气预测数据采集启动...
+2026-04-02 06:30:02,007 - PolymarketHotWeather - INFO - ✅ 获取市场数据：2026 hottest year rank
+2026-04-02 06:30:02,007 - PolymarketHotWeather - INFO - ✅ 获取市场数据：March 2026 temp increase
+2026-04-02 06:30:02,008 - PolymarketHotWeather - INFO - ✅ 获取市场数据：Cat4 hurricane before 2027
+2026-04-02 06:30:02,008 - PolymarketHotWeather - INFO - ✅ 获取市场数据：NYC March precipitation
+2026-04-02 06:30:02,008 - PolymarketHotWeather - INFO - ✅ 获取市场数据：2026 March 1-3 hottest
+2026-04-02 06:30:02,008 - PolymarketHotWeather - INFO - 📝 数据已保存：/home/nicola/.openclaw/workspace/data/polymarket/hot-weather-20260402-063002.json
+2026-04-02 06:30:02,008 - PolymarketHotWeather - INFO - 📝 最新数据已更新：/home/nicola/.openclaw/workspace/data/polymarket/hot-weather-latest.json
+2026-04-02 06:30:02,008 - PolymarketHotWeather - INFO - 📊 报告已生成：/home/nicola/.openclaw/workspace/data/polymarket/README.md
+2026-04-02 06:30:02,008 - PolymarketHotWeather - INFO - ✅ 数据采集完成，共 5 个市场
+2026-04-02 06:30:02,008 - PolymarketHotWeather - INFO - 💰 总流动性：$2,868,000
+[2026年 04月 02日 星期四 06:30:02 CST] ✓ Polymarket hot weather data collection completed
+========================================
+[2026年 04月 02日 星期四 07:00:01 CST] Start Polymarket Hot Weather Data Collection...
+2026-04-02 07:00:01,789 - PolymarketHotWeather - INFO - 🚀 Polymarket 热度前 5 名天气预测数据采集启动...
+2026-04-02 07:00:01,789 - PolymarketHotWeather - INFO - ✅ 获取市场数据：2026 hottest year rank
+2026-04-02 07:00:01,789 - PolymarketHotWeather - INFO - ✅ 获取市场数据：March 2026 temp increase
+2026-04-02 07:00:01,789 - PolymarketHotWeather - INFO - ✅ 获取市场数据：Cat4 hurricane before 2027
+2026-04-02 07:00:01,790 - PolymarketHotWeather - INFO - ✅ 获取市场数据：NYC March precipitation
+2026-04-02 07:00:01,790 - PolymarketHotWeather - INFO - ✅ 获取市场数据：2026 March 1-3 hottest
+2026-04-02 07:00:01,790 - PolymarketHotWeather - INFO - 📝 数据已保存：/home/nicola/.openclaw/workspace/data/polymarket/hot-weather-20260402-070001.json
+2026-04-02 07:00:01,790 - PolymarketHotWeather - INFO - 📝 最新数据已更新：/home/nicola/.openclaw/workspace/data/polymarket/hot-weather-latest.json
+2026-04-02 07:00:01,791 - PolymarketHotWeather - INFO - 📊 报告已生成：/home/nicola/.openclaw/workspace/data/polymarket/README.md
+2026-04-02 07:00:01,791 - PolymarketHotWeather - INFO - ✅ 数据采集完成，共 5 个市场
+2026-04-02 07:00:01,791 - PolymarketHotWeather - INFO - 💰 总流动性：$2,868,000
+[2026年 04月 02日 星期四 07:00:01 CST] ✓ Polymarket hot weather data collection completed

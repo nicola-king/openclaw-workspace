@@ -1,0 +1,84 @@
+<!--pages/profile/profile.wxml-->
+<view class="container">
+  <!-- 用户信息 -->
+  <view class="user-section">
+    <view class="avatar" wx:if="{{userInfo}}">
+      <image src="{{userInfo.avatarUrl}}" mode="aspectFill"></image>
+    </view>
+    <view class="user-info">
+      <view class="nickname">{{userInfo.nickName || '微信用户'}}</view>
+      <view class="member-badge" wx:if="{{isMember}}">
+        <text>👑 会员</text>
+        <text>有效期至 {{memberExpire}}</text>
+      </view>
+      <view class="member-badge free" wx:else>
+        <text>🆓 免费版</text>
+        <text bindtap="upgradeMember">升级会员 ¥19/月</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 统计数据 -->
+  <view class="stats-section">
+    <view class="stat-card">
+      <view class="stat-value">{{testCount}}</view>
+      <view class="stat-label">测试次数</view>
+    </view>
+    <view class="stat-card">
+      <view class="stat-value">{{unlockedCount}}</view>
+      <view class="stat-label">已解锁 Skills</view>
+    </view>
+    <view class="stat-card">
+      <view class="stat-value">{{favoriteCount}}</view>
+      <view class="stat-label">收藏</view>
+    </view>
+  </view>
+
+  <!-- 功能列表 -->
+  <view class="menu-section">
+    <view class="menu-item" bindtap="viewTrajectory">
+      <view class="menu-icon">📊</view>
+      <view class="menu-text">我的轨迹</view>
+      <view class="menu-arrow">></view>
+    </view>
+
+    <view class="menu-item" bindtap="viewFavorites">
+      <view class="menu-icon">⭐</view>
+      <view class="menu-text">我的收藏</view>
+      <view class="menu-arrow">></view>
+    </view>
+
+    <view class="menu-item" bindtap="viewHistory">
+      <view class="menu-icon">📜</view>
+      <view class="menu-text">测试历史</view>
+      <view class="menu-arrow">></view>
+    </view>
+
+    <view class="menu-item" bindtap="viewOrders">
+      <view class="menu-icon">🧾</view>
+      <view class="menu-text">订单记录</view>
+      <view class="menu-arrow">></view>
+    </view>
+  </view>
+
+  <!-- 设置 -->
+  <view class="menu-section">
+    <view class="menu-item" bindtap="contactUs">
+      <view class="menu-icon">💬</view>
+      <view class="menu-text">联系我们</view>
+      <view class="menu-arrow">></view>
+    </view>
+
+    <view class="menu-item" bindtap="aboutUs">
+      <view class="menu-icon">ℹ️</view>
+      <view class="menu-text">关于心景</view>
+      <view class="menu-arrow">></view>
+    </view>
+  </view>
+
+  <!-- 底部 -->
+  <view class="footer">
+    <view class="version">Version 1.0.0</view>
+    <view class="copyright">© 2026 心景 · MindScape</view>
+  </view>
+</view>

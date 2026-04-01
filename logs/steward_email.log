@@ -1,0 +1,16 @@
+2026-03-27 22:16:37,981 - StewardEmail - INFO - 🚀 太一日志邮件发送服务启动...
+2026-03-27 22:16:37,981 - StewardEmail - ERROR - 加载配置失败：while scanning a block scalar
+  in "/home/nicola/.openclaw/workspace/skills/steward/.email_config.yaml", line 3, column 1
+expected a comment or a line break, but found '创'
+  in "/home/nicola/.openclaw/workspace/skills/steward/.email_config.yaml", line 3, column 3
+2026-03-27 22:16:37,981 - StewardEmail - ERROR - ❌ 配置加载失败，请检查 .email_config.yaml
+2026-03-27 22:21:52,261 - StewardEmail - INFO - 🚀 太一日志邮件发送服务启动...
+2026-03-27 22:21:52,262 - StewardEmail - INFO - ✅ 配置加载成功
+2026-03-27 22:21:52,262 - StewardEmail - INFO - 📧 发送测试邮件...
+2026-03-27 22:21:53,264 - StewardEmail - INFO - ✅ 邮件发送成功：【太一交易日志】2026-03-27
+2026-03-27 22:21:53,264 - StewardEmail - INFO - 📮 收件人：285915125@qq.com
+2026-03-27 22:21:53,265 - StewardEmail - INFO - 📧 日报发送完成
+2026-03-27 22:21:53,265 - StewardEmail - INFO - ⏰ 启动定时任务...
+2026-03-27 22:21:53,266 - StewardEmail - INFO - 📧 邮件发送任务已启动
+2026-03-27 22:21:53,266 - StewardEmail - INFO - ⏰ 发送时间：每日 20:00 (Asia/Shanghai)
+2026-03-27 22:21:53,266 - StewardEmail - INFO - 📮 收件邮箱：285915125@qq.com

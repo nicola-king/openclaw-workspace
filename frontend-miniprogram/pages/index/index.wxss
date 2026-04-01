@@ -1,0 +1,72 @@
+/* pages/index/index.wxss */
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 40rpx;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 60rpx;
+  color: white;
+}
+
+.title {
+  font-size: 48rpx;
+  font-weight: bold;
+  margin-bottom: 16rpx;
+}
+
+.slogan {
+  font-size: 28rpx;
+  opacity: 0.9;
+}
+
+.main-functions {
+  display: flex;
+  flex-direction: column;
+  gap: 30rpx;
+}
+
+.function-card {
+  background: white;
+  border-radius: 24rpx;
+  padding: 40rpx;
+  text-align: center;
+  box-shadow: 0 8rpx 24rpx rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.function-card:active {
+  transform: scale(0.98);
+}
+
+.icon {
+  font-size: 64rpx;
+  margin-bottom: 20rpx;
+}
+
+.function-card .title {
+  font-size: 36rpx;
+  color: #333;
+  margin-bottom: 12rpx;
+}
+
+.desc {
+  font-size: 26rpx;
+  color: #999;
+}
+
+.footer {
+  margin-top: 80rpx;
+  text-align: center;
+  color: white;
+  opacity: 0.8;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 40rpx;
+  font-size: 24rpx;
+}

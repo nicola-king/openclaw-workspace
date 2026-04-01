@@ -1,0 +1,17 @@
+<view class="container">
+  <text class="title">心景 · MindScape</text>
+  <text class="slogan">看清你正在经历什么</text>
+
+  <view class="input-area">
+    <input 
+      class="input" 
+      placeholder="输入你的困惑..." 
+      placeholder-class="placeholder"
+      value="{{inputValue}}"
+      bindinput="onInput"
+    />
+  </view>
+
+  <button class="btn-primary" bindtap="startTest">获取一个视角</button>
+  <button class="btn-secondary" bindtap="randomTest">随机抽取</button>
+</view>
