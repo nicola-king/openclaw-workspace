@@ -1,0 +1,20 @@
+# 太一系统 cron 定时任务配置
+# 编辑方法：crontab -e
+
+# ============ 备份任务 ============
+
+# 每周日 03:00 执行 QQ 邮箱备份
+0 3 * * 0 /home/nicola/.openclaw/workspace/scripts/qq-email-backup.sh >> /home/nicola/.openclaw/workspace/logs/qq-backup.log 2>&1
+
+# ============ 系统维护 ============
+
+# 每日 06:00 宪法学习 + 记忆提炼
+0 6 * * * /home/nicola/.openclaw/workspace/scripts/daily-constitution.sh >> /home/nicola/.openclaw/workspace/logs/constitution.log 2>&1
+
+# 每日 23:00 日报生成
+0 23 * * * /opt/openclaw-report.sh daily >> /home/nicola/.openclaw/workspace/logs/daily-report.log 2>&1
+
+# ============ 监控任务 ============
+
+# 每小时检查 Gateway 状态
+0 * * * * pgrep -f openclaw-gateway > /dev/null || systemctl --user start openclaw-gateway

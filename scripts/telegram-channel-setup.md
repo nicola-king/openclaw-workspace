@@ -1,97 +1,161 @@
-# Telegram 信号频道配置指南
+# Telegram 免费群配置
 
-## 📱 创建步骤
+> 创建时间：2026-03-27 20:17 | 状态：🟡 待创建
 
-### 步骤 1: 创建频道
+---
 
+## 📱 群组信息
+
+| 项目 | 配置 |
+|------|------|
+| **群名称** | PolyAlert Free - 太一免费信号 |
+| **群链接** | https://t.me/taiyi_free |
+| **群类型** | 公开频道 (Channel) |
+| **用途** | 免费信号推送 + 引流 |
+| **管理员** | 管家 Bot (@sayelf_steward_bot) |
+
+---
+
+## 🎯 群组定位
+
+**内容**:
+- 🐋 大户交易警报 (15 分钟延迟)
+- 📊 聪明钱钱包追踪
+- 💡 AI 信号分析
+- 📰 市场情报分享
+
+**目标**: 1000+ 免费用户
+
+**转化路径**:
 ```
-1. 打开 Telegram
-2. 点击右上角菜单 → New Channel (新建频道)
-3. 填写信息:
-   - 频道名称：PolyAlert Free - 太一免费信号
-   - 频道描述：Free Polymarket whale alerts (15min delayed). Based on ColdMath verified strategy ($300→$80K).
-   - 频道类型：Public Channel (公开频道)
-   - 永久链接：t.me/taiyi_free
-4. 点击 Create (创建)
-```
-
-### 步骤 2: 配置频道
-
-```
-1. 进入频道设置
-2. 上传频道头像 (可选：太一 Logo)
-3. 设置频道链接：@taiyi_free
-4. 添加频道描述
-5. 设置为公开频道 (Public)
-```
-
-### 步骤 3: 测试推送
-
-```
-1. 在频道发送测试消息:
-   🎉 太一信号频道正式启动！
-   
-   🐋 PolyAlert Free - 免费 Polymarket 大户监控
-   
-   【你将收到】
-   ✅ 大户交易动向 (15 分钟延迟)
-   ✅ 聪明钱钱包追踪
-   ✅ AI 信号分析
-   
-   【基于 ColdMath 验证策略】
-   $300 → $80,000 (266 倍回报)
-   
-   升级 Pro: $99/月 (实时推送)
-   📎 https://chuanxi.gumroad.com/l/qdxnm
-
-2. 确认消息显示正常
-3. 分享频道链接测试
-```
-
-### 步骤 4: 关联 Gumroad
-
-```
-1. 访问 Gumroad 产品编辑页面
-   https://chuanxi.gumroad.com/l/qdxnm/edit
-
-2. 找到 "Content" 标签页
-
-3. 粘贴交付内容:
-   (见 gumroad-delivery-content.txt)
-
-4. 保存产品配置
-
-5. 测试购买流程:
-   - 点击 "I want this!"
-   - 输入邮箱 (免费产品无需支付)
-   - 确认收到交付内容 (Telegram 链接)
+免费用户 → 体验信号价值 → 看到 Pro 效果 → 转化 $99/月
 ```
 
 ---
 
-## 🔗 频道链接
+## 📋 创建步骤
 
-**免费信号频道**: https://t.me/taiyi_free
+### 方式 1: 手动创建 (推荐)
 
-**Pro 信号频道**: (待创建)
-- 名称：PolyAlert Pro - VIP Signals
-- 链接：t.me/taiyi_pro_vip
-- 权限：私密频道 (仅付费用户)
+1. **打开 Telegram**
+2. **新建频道**:
+   - 右上角菜单 → New Channel
+   - 名称：`PolyAlert Free - 太一免费信号`
+   - 链接：`t.me/taiyi_free`
+   - 类型：Public Channel ✅
+3. **添加管理员**:
+   - 频道设置 → Administrators
+   - 添加 @sayelf_steward_bot (官家 Bot)
+   - 权限：Post Messages ✅
+4. **发布欢迎消息**
+
+### 方式 2: 浏览器创建
+
+1. 访问：https://web.telegram.org
+2. 登录 Telegram
+3. 按方式 1 步骤创建
 
 ---
 
-## 📊 推送频率
+## 📝 欢迎消息模板
 
-**免费用户**:
-- 每日 5-10 条信号
-- 15 分钟延迟
-- 基础分析
+```
+🎉 Welcome to PolyAlert Free!
 
-**Pro 用户**:
-- 每日 10-20 条信号
-- 实时推送 (0 延迟)
-- 深度分析 + 自动跟单
+🐋 免费 Polymarket 大户监控信号
+
+【你将收到什么】
+✅ 大户交易动向 (15 分钟延迟)
+✅ 聪明钱钱包追踪 (ColdMath 等)
+✅ AI 信号分析 (可买/不追/观望)
+✅ 免费社区交流
+
+【信号示例】
+🐋 大户交易警报
+📊 市场：BTC > $100K by 2026?
+📈 方向：BUY
+💰 金额：$5,000
+💵 价格：$0.52
+🎯 信号：🟢 可买 (低价)
+
+【基于 ColdMath 验证策略】
+- ColdMath: $300 → $80,000 (266 倍回报)
+- 气象套利策略验证成功
+- 置信度 96% 阈值
+- 过去 1 个月：$41,000 盈利，0 亏损
+
+━━━━━━━━━━━━━━━━━━━━━
+
+【升级 Pro - 实时信号】
+
+🚀 PolyAlert Pro: $99/月
+- 实时推送 (0 延迟，vs 免费 15 分钟)
+- 20+ 聪明钱钱包监控
+- 自动下注 (可选)
+- VIP 专属群
+
+购买：https://chuanxi.gumroad.com/l/hunter-pro
+
+━━━━━━━━━━━━━━━━━━━━━
+
+【相关问答】
+
+Q: 免费信号延迟多久？
+A: 15 分钟，Pro 用户实时收到
+
+Q: 信号准确率多少？
+A: 历史平均 87%，置信度 96%+
+
+Q: 如何升级 Pro?
+A: 点击上面 Gumroad 链接
+
+━━━━━━━━━━━━━━━━━━━━━
+
+🆓 免费 | 🚀 Pro
+
+感谢加入！🙏
+```
 
 ---
 
-*创建时间：2026-03-27*
+## 🔧 管家 Bot 集成
+
+**Webhook 配置**:
+```python
+# 管家 Bot 自动推送
+TELEGRAM_CHANNEL_ID = "@taiyi_free"
+
+def push_to_free_channel(signal):
+    message = format_signal(signal, delay=15)
+    bot.send_message(chat_id=TELEGRAM_CHANNEL_ID, text=message)
+```
+
+**推送流程**:
+```
+猎手发现信号
+    ↓
+管家检查订阅
+    ↓
+免费用户 → @taiyi_free (15 分钟延迟)
+付费用户 → 私聊 (实时)
+```
+
+---
+
+## 📊 推广计划
+
+### 第 1 周
+- [ ] Twitter 宣传
+- [ ] 公众号文章引流
+- [ ] Reddit 分享
+- [ ] Gumroad 产品页链接
+
+### 第 2-4 周
+- [ ] 每日信号推送
+- [ ] 用户互动回复
+- [ ] 数据分析和优化
+
+---
+
+*创建时间：2026-03-27 20:17*
+*状态：🟡 待创建*

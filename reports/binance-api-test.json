@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-03-30T11:11:02.429727",
+  "api_key": "ufHaoQRuML...34JcVe",
+  "tests": [
+    {
+      "name": "API Ping",
+      "status": "✅ PASS",
+      "details": "Status: 200"
+    },
+    {
+      "name": "Server Time",
+      "status": "✅ PASS",
+      "details": "Server time: 2026-03-30T11:11:02.981000"
+    },
+    {
+      "name": "Exchange Info",
+      "status": "✅ PASS",
+      "details": "Total symbols: 3549, BTC/ETH available: True"
+    },
+    {
+      "name": "Account Info",
+      "status": "✅ PASS",
+      "details": "USDT: 0.00, BTC: 0.0000, ETH: 0.0000"
+    }
+  ],
+  "account_info": {
+    "maker_commission": 10,
+    "taker_commission": 10,
+    "buyer": true,
+    "seller": false,
+    "withdraw": true,
+    "deposit": true
+  },
+  "balance": {
+    "USDT": 0.0,
+    "BTC": 0.0,
+    "ETH": 0.0
+  },
+  "permissions": [
+    "Trading: ✅",
+    "Selling: ❌",
+    "Withdrawal: ⚠️",
+    "Deposit: ✅"
+  ],
+  "errors": [],
+  "status": "✅ VALID"
+}
