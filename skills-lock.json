@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "qiaomu-info-card-designer": {
+      "source": "joeseesun/info-card-designer",
+      "sourceType": "github",
+      "computedHash": "796c46dccf1aa46417aa4ea863dcc3c66a04d945d43417ac5668695739af38ea"
+    }
+  }
+}
