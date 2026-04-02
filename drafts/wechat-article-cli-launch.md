@@ -218,11 +218,18 @@ openclaw tasks add "日报生成"
 ### 第 3 天：定时任务
 ```bash
 crontab -e
-0 9 * * * /path/to/morning-briefing.sh
+0 6 * * * /home/nicola/.openclaw/workspace/scripts/daily-constitution.sh
+0 8 * * 6 /home/nicola/.openclaw/workspace/scripts/family-coord.sh
+0 * * * * /home/nicola/.openclaw/workspace/scripts/meeting-prep.sh
 ```
 
 ### 第 7 天：工作流集成
 把你的业务逻辑封装成 CLI 命令。
+
+**完整工作流脚本**：
+- `scripts/family-coord.sh` - 周末家庭协调
+- `scripts/lead-score.sh` - 销售线索筛选
+- `scripts/meeting-prep.sh` - 会议准备
 
 ---
 
