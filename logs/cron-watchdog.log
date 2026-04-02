@@ -257,3 +257,10 @@
 [plugins] feishu_wiki: Registered feishu_wiki tool
 [plugins] feishu_drive: Registered feishu_drive tool
 [plugins] feishu_bitable: Registered bitable tools
+
+⚠️  发现 8 个任务异常，详见：/home/nicola/.openclaw/workspace/logs/cron-alerts.log
+[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
