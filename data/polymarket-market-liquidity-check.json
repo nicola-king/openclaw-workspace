@@ -1,0 +1,26 @@
+[
+  {
+    "name": "GTA VI",
+    "condition_id": "0xcccb7e7613a087c132b69cbf3a02bece3fdcb824c1da54ae79acc8d4a562d902",
+    "active": true,
+    "closed": false,
+    "accepting_orders": true,
+    "yes_price": 0.0185,
+    "has_liquidity": true
+  },
+  {
+    "name": "Bitcoin $1M",
+    "condition_id": "0x5d1a1ab716fd06943441fe27cde0089651ce769bec55e191b6953468a0e9f0d0",
+    "error": "PolyApiException[status_code=404, error_message={'error': 'market not found'}]"
+  },
+  {
+    "name": "Trump out",
+    "condition_id": "0x44f10d1cd5aaed4b7ae0b5edb76790f54f45dc0bcaa86831c83d865c774fbb90",
+    "error": "PolyApiException[status_code=404, error_message={'error': 'market not found'}]"
+  },
+  {
+    "name": "Russia-Ukraine",
+    "condition_id": "0xe3b423dfad8c22ff75c9899c4e8176f628cf4ad4caa00481764d320e7415f7a9",
+    "error": "PolyApiException[status_code=404, error_message={'error': 'market not found'}]"
+  }
+]

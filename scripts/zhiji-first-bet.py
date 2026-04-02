@@ -20,7 +20,7 @@ import json
 from datetime import datetime
 from pathlib import Path
 from py_clob_client.client import ClobClient
-from py_clob_client.clob_types import OrderArgs, OrderType, BalanceAllowanceParams, AssetType
+from py_clob_client.clob_types import OrderArgs, OrderType, BalanceAllowanceParams, AssetType, ApiCreds
 
 # 恢复代理 (后续可能需要)
 for var, val in saved_proxies.items():
@@ -32,9 +32,12 @@ with open(config_path) as f:
     config = json.load(f)
 
 API_KEY = config['polymarket']['api_key']
+API_SECRET = config['polymarket']['api_secret']
+API_PASSPHRASE = config['polymarket']['api_passphrase']
 WALLET_ADDRESS = config['polymarket']['wallet_address']
 PRIVATE_KEY = config['polymarket'].get('private_key', '')
 CHAIN_ID = config['polymarket'].get('chain_id', 137)
+CLOB_URL = config['polymarket'].get('clob_url', 'https://clob.polymarket.com')
 
 print("=" * 60)
 print("  知几首笔下注 - TASK-050")
@@ -46,28 +49,24 @@ print()
 
 # 初始化客户端
 try:
-    # 临时清除代理创建客户端
-    for var in PROXY_VARS:
-        if var in os.environ:
-            del os.environ[var]
+    # 创建 API 凭证对象
+    creds = ApiCreds(
+        api_key=API_KEY,
+        api_secret=API_SECRET,
+        api_passphrase=API_PASSPHRASE,
+    )
     
+    # 初始化客户端（key=私钥）
     client = ClobClient(
-        host="https://clob.polymarket.com",
-        key=PRIVATE_KEY,
+        host=CLOB_URL,
+        key=PRIVATE_KEY,  # 私钥用于签名
         chain_id=CHAIN_ID,
-        signature_type=1,  # EOA signature
+        creds=creds,  # API 凭证
     )
     
     print("✅ ClobClient 初始化成功")
-    
-    # 创建/派生 API 凭证
-    print("🔑 获取 API 凭证...")
-    creds = client.create_or_derive_api_creds()
-    print(f"✅ API Key: {creds.api_key[:10]}...")
-    
-    # 设置凭证
-    client.set_api_creds(creds)
-    print("✅ API 凭证已设置")
+    print(f"🔑 API Key: {API_KEY[:10]}...")
+    print(f"👛 钱包：{WALLET_ADDRESS}")
     
     # 获取余额 (USDC - ERC20, token_id 留空)
     balance = client.get_balance_allowance(

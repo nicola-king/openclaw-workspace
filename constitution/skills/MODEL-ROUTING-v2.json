@@ -1,0 +1,131 @@
+# 模型故障转移配置（GLM 5.1 增强版）
+# 版本：2.0 | 创建时间：2026-04-02 12:12
+# 参考：OpenClaw 2026.4.1 GLM 5.1 故障转移机制
+
+{
+  "version": "2.0",
+  "updated_at": "2026-04-02T12:12:00+08:00",
+  "description": "多模型故障转移配置，主模型失败时自动切换备用，不循环重试",
+  
+  "model_routing": {
+    "default": "qwen3.5-plus",
+    
+    "priority_chain": [
+      {
+        "name": "primary",
+        "model": "qwen3.5-plus",
+        "provider": "bailian",
+        "priority": 1,
+        "timeout_seconds": 60,
+        "max_retries": 2
+      },
+      {
+        "name": "fallback_1",
+        "model": "gemini-2.5-pro",
+        "provider": "google",
+        "priority": 2,
+        "timeout_seconds": 90,
+        "max_retries": 1
+      },
+      {
+        "name": "fallback_2",
+        "model": "glm-5.1",
+        "provider": "zhipu",
+        "priority": 3,
+        "timeout_seconds": 90,
+        "max_retries": 1
+      },
+      {
+        "name": "last_resort",
+        "model": "qwen2.5-72b",
+        "provider": "bailian",
+        "priority": 4,
+        "timeout_seconds": 120,
+        "max_retries": 1
+      }
+    ],
+    
+    "task_specific_routing": {
+      "code_generation": {
+        "primary": "qwen3-coder-plus",
+        "fallback": ["gemini-2.5-pro", "qwen3.5-plus"]
+      },
+      "long_context": {
+        "primary": "gemini-2.5-pro",
+        "fallback": ["qwen3.5-plus", "glm-5.1"]
+      },
+      "creative_writing": {
+        "primary": "qwen3.5-plus",
+        "fallback": ["gemini-2.5-pro", "glm-5.1"]
+      },
+      "data_analysis": {
+        "primary": "qwen3.5-plus",
+        "fallback": ["gemini-2.5-pro", "glm-5.1"]
+      },
+      "translation": {
+        "primary": "qwen3.5-plus",
+        "fallback": ["gemini-2.5-pro"]
+      }
+    }
+  },
+  
+  "故障转移规则": {
+    "触发条件": [
+      "API 超时（>timeout_seconds）",
+      "API 错误（5xx/429）",
+      "模型返回空响应",
+      "模型返回错误格式"
+    ],
+    
+    "不循环原则": {
+      "max_total_retries": 3,
+      "no_repeat_model": true,
+      "description": "失败后切换到下一个模型，不重复尝试同一模型超过 max_retries 次"
+    },
+    
+    "降级策略": {
+      "context_truncation": "当 context>80% 时，自动切换到长上下文模型",
+      "response_simplification": "连续失败 2 次后，简化任务描述",
+      "fallback_to_sync": "异步任务连续失败后，降级为同步执行"
+    }
+  },
+  
+  "监控与告警": {
+    "metrics": {
+      "success_rate": "各模型成功率统计",
+      "avg_latency": "平均响应时间",
+      "fallback_count": "故障转移次数"
+    },
+    
+    "告警阈值": {
+      "single_model_failure_rate": "50%（单模型失败率>50% 时告警）",
+      "total_fallback_rate": "20%（总故障转移率>20% 时告警）",
+      "consecutive_failures": "3（连续失败 3 次时立即告警）"
+    },
+    
+    "告警渠道": [
+      "message to @SAYELF",
+      "log to ~/.openclaw/logs/model-failures.log"
+    ]
+  },
+  
+  "成本优化": {
+    "cheap_first": false,
+    "description": "优先使用主力模型（qwen3.5-plus），失败后降级",
+    "cost_tracking": {
+      "enabled": true,
+      "daily_budget": "¥50",
+      "alert_threshold": "¥40"
+    }
+  },
+  
+  "测试验证": {
+    "monthly_failover_test": "每月测试一次故障转移流程",
+    "test_scenarios": [
+      "主模型超时",
+      "主模型返回错误",
+      "连续故障转移"
+    ],
+    "test_script": "./scripts/test-model-failover.sh"
+  }
+}
