@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=600">
+  <style>
+@font-face {
+  font-family: 'TsangerJinKai';
+  src: local('Noto Serif CJK SC'), local('Source Han Serif SC'), serif;
+}
+
+:root {
+  --font-title: 'TsangerJinKai', serif;
+  --font-body: 'TsangerJinKai', serif;
+  --font-label: 'TsangerJinKai', sans-serif;
+  --color-bg: #f5f3ed;
+  --color-text: #1a1a1a;
+  --color-accent: #c0392b;
+  --color-muted: #555;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { margin: 0; background: var(--color-bg); }
+
+.card {
+  width: 600px;
+  background: var(--color-bg);
+  padding: 38px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  overflow: hidden;
+  min-height: 900px;
+  justify-content: space-between;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
+}
+
+.card > * { position: relative; z-index: 1; }
+
+.main-title {
+  font-family: var(--font-title);
+  font-size: 56px;
+  font-weight: normal;
+  line-height: 1.15;
+  color: #0a0a0a;
+  letter-spacing: 0.02em;
+}
+
+.content-body {
+  font-family: var(--font-body);
+  font-size: 20px;
+  line-height: 1.65;
+  color: #1a1a1a;
+}
+
+.accent-bar {
+  height: 6px;
+  background: var(--color-accent);
+  width: 80px;
+}
+
+.accent-bar-full {
+  height: 4px;
+  background: var(--color-accent);
+  width: 100%;
+}
+
+.label {
+  font-family: var(--font-label);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.bg-block {
+  background: rgba(0,0,0,0.03);
+  padding: 18px 20px;
+  border-left: 4px solid var(--color-accent);
+}
+
+.footer {
+  font-size: 15px;
+  color: #888;
+  letter-spacing: 0.05em;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  padding-top: 15px;
+  margin-top: 10px;
+}
+
+.points {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.point {
+  padding: 16px 18px;
+  background: rgba(0,0,0,0.035);
+  border-left: 4px solid var(--color-accent);
+}
+
+.point h3 {
+  font-family: var(--font-title);
+  font-size: 22px;
+  font-weight: normal;
+  margin-bottom: 6px;
+  color: #0a0a0a;
+}
+
+.point p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  text-align: center;
+}
+
+.stat-number {
+  font-family: var(--font-label);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.0;
+  color: var(--color-accent);
+  letter-spacing: -0.05em;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: #666;
+  margin-top: 8px;
+}
+
+.success-badge {
+  display: inline-block;
+  background: #27ae60;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+  </style>
+</head>
+<body>
+<div class="card">
+  <div>
+    <div class="label">PageAgent 实战 · 小红书</div>
+    <div class="accent-bar" style="margin-bottom: 20px;"></div>
+    <h1 class="main-title">小红书<br>截图成功</h1>
+  </div>
+
+  <div style="text-align: center; padding: 10px;">
+    <span class="success-badge">✅ 绕过安全检测</span>
+  </div>
+
+  <div class="stat-grid">
+    <div>
+      <div class="stat-number">1200</div>
+      <div class="stat-label">宽度 px</div>
+    </div>
+    <div>
+      <div class="stat-number">2075</div>
+      <div class="stat-label">高度 px</div>
+    </div>
+    <div>
+      <div class="stat-number">1.27</div>
+      <div class="stat-label">文件大小 MB</div>
+    </div>
+    <div>
+      <div class="stat-number">100%</div>
+      <div class="stat-label">全页截图</div>
+    </div>
+  </div>
+
+  <div class="points">
+    <div class="point">
+      <h3>🛡️ 反检测配置</h3>
+      <p>• 伪装 User-Agent (Chrome 120 / macOS)<br>• 移除 navigator.webdriver 标识<br>• 模拟真实用户语言环境</p>
+    </div>
+    <div class="point">
+      <h3>🎯 技术要点</h3>
+      <p>• Playwright 无头浏览器<br>• 反自动化脚本注入<br>• 等待网络空闲 + 延迟加载</p>
+    </div>
+    <div class="point">
+      <h3>📁 保存位置</h3>
+      <p><code>content/screenshots/xiaohongshu-homepage.png</code></p>
+    </div>
+  </div>
+
+  <div class="bg-block">
+    <p style="font-size: 18px;"><strong>💡 应用场景：</strong></p>
+    <p style="margin-top: 8px; font-size: 16px;">• 竞品监控 · 内容分析<br>• 自动化报告 · 数据采集体<br>• 网页变化追踪</p>
+  </div>
+
+  <div class="footer">太一 AGI · PageAgent 集成测试 · 2026-04-02 17:00</div>
+</div>
+</body>
+</html>
