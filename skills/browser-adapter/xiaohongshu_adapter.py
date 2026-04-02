@@ -39,32 +39,66 @@ class XiaohongshuAdapter:
         """启动浏览器"""
         self.playwright = await async_playwright().start()
         
-        self.browser = await self.playwright.chromium.launch_persistent_context(
-            user_data_dir=self.user_data_dir,
-            headless=self.headless,
-            args=[
-                '--disable-blink-features=AutomationControlled',
-                '--no-sandbox',
-                '--disable-dev-shm-usage'
-            ]
-        )
+        # 使用临时用户数据目录，避免与本地 Chrome 冲突
+        import tempfile
+        import os
         
-        self.page = await self.browser.new_page()
+        # 创建临时目录（会话结束后自动清理）
+        self.temp_dir = tempfile.mkdtemp(prefix='xiaohongshu_')
+        print(f"📁 临时用户数据目录：{self.temp_dir}")
         
-        await self.page.add_init_script('''
-            Object.defineProperty(navigator, 'webdriver', {
-                get: () => undefined
-            });
-        ''')
-        
-        print("✅ 小红书浏览器已启动")
+        try:
+            self.browser = await self.playwright.chromium.launch_persistent_context(
+                user_data_dir=self.temp_dir,
+                headless=self.headless,
+                args=[
+                    '--disable-blink-features=AutomationControlled',
+                    '--no-sandbox',
+                    '--disable-dev-shm-usage',
+                    '--disable-gpu',
+                    '--disable-software-rasterizer',
+                    '--disable-extensions',
+                    '--disable-background-networking',
+                    '--disable-default-apps',
+                    '--disable-sync'
+                ]
+            )
+            
+            self.page = await self.browser.new_page()
+            
+            await self.page.add_init_script('''
+                Object.defineProperty(navigator, 'webdriver', {
+                    get: () => undefined
+                });
+            ''')
+            
+            print("✅ 小红书浏览器已启动（临时配置）")
+            
+        except Exception as e:
+            print(f"❌ 浏览器启动失败：{str(e)}")
+            if hasattr(self, 'temp_dir') and os.path.exists(self.temp_dir):
+                import shutil
+                shutil.rmtree(self.temp_dir, ignore_errors=True)
+            raise
     
     async def close(self):
-        """关闭浏览器"""
+        """关闭浏览器并清理临时目录"""
+        import os
+        import shutil
+        
         if self.browser:
             await self.browser.close()
         if self.playwright:
             await self.playwright.stop()
+        
+        # 清理临时用户数据目录
+        if hasattr(self, 'temp_dir') and os.path.exists(self.temp_dir):
+            try:
+                shutil.rmtree(self.temp_dir, ignore_errors=True)
+                print(f"🧹 临时目录已清理：{self.temp_dir}")
+            except Exception as e:
+                print(f"⚠️  清理临时目录失败：{str(e)}")
+        
         print("🚪 小红书浏览器已关闭")
     
     async def execute(self, action: str, **kwargs) -> Dict[str, Any]:
