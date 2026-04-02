@@ -238,4 +238,5 @@ class PolymarketAdapter(BrowserAdapter):
         except Exception as e:
             return {
                 'status': 'failed',
-                'error': str(e
+                'error': str(e)
+            }
