@@ -2,47 +2,47 @@
   "bots": {
     "taiyi": {
       "status": "healthy",
-      "last_check": "2026-04-02T07:55:01.128815"
+      "last_check": "2026-04-02T08:05:01.154401"
     },
     "zhiji": {
       "status": "healthy",
-      "last_check": "2026-04-02T07:55:01.128961"
+      "last_check": "2026-04-02T08:05:01.154764"
     },
     "shanmu": {
       "status": "healthy",
-      "last_check": "2026-04-02T07:55:01.129093"
+      "last_check": "2026-04-02T08:05:01.155092"
     },
     "suwen": {
       "status": "healthy",
-      "last_check": "2026-04-02T07:55:01.129248"
+      "last_check": "2026-04-02T08:05:01.155461"
     },
     "shoucangli": {
       "status": "healthy",
-      "last_check": "2026-04-02T07:55:01.129377"
+      "last_check": "2026-04-02T08:05:01.155778"
     },
     "paoding": {
       "status": "healthy",
-      "last_check": "2026-04-02T07:55:01.129513"
+      "last_check": "2026-04-02T08:05:01.156093"
     },
     "yi": {
       "status": "healthy",
-      "last_check": "2026-04-02T07:55:01.129635"
+      "last_check": "2026-04-02T08:05:01.156437"
     },
     "wangliang": {
       "status": "healthy",
-      "last_check": "2026-04-02T07:55:01.129756"
+      "last_check": "2026-04-02T08:05:01.156747"
     },
     "yuanqui": {
       "status": "healthy",
-      "last_check": "2026-04-02T07:55:01.129873"
+      "last_check": "2026-04-02T08:05:01.157041"
     },
     "hudie": {
       "status": "healthy",
-      "last_check": "2026-04-02T07:55:01.129990"
+      "last_check": "2026-04-02T08:05:01.157340"
     },
     "zizhu": {
       "status": "healthy",
-      "last_check": "2026-04-02T07:55:01.130114"
+      "last_check": "2026-04-02T08:05:01.157665"
     }
   },
   "alerts": [

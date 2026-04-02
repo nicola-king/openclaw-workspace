@@ -252,6 +252,7 @@ crontab -e
 - 知乎热榜、GitHub Trending、小红书搜索
 - 效率提升 15-20x
 - [查看完整案例](https://github.com/nicola-king/openclaw-workspace/blob/main/docs/featured-case-opencli.md)
+- [命令列表](https://github.com/nicola-king/openclaw-workspace/blob/main/docs/openclaw-fetch-spec.md)
 
 ---
 
