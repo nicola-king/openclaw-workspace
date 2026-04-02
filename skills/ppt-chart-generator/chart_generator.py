@@ -254,8 +254,39 @@ def main():
             print("❌ 流程图需要 --nodes 和 --edges 参数")
             sys.exit(1)
         
-        nodes = [n.strip() for n in args.nodes.split(",")]
-        edges = [tuple(e.strip().split("→")) for e in args.edges.split(",")]
+        # 解析节点：支持中文逗号（\uFF0C）和英文逗号分隔
+        nodes_str = args.nodes.replace("\uFF0C", ",").replace(",", ",")
+        nodes = [n.strip() for n in nodes_str.split(",") if n.strip()]
+        
+        if not nodes:
+            print("❌ 没有有效的节点，示例：--nodes 'A,B,C' 或 --nodes 'A,B,C'")
+            sys.exit(1)
+        # 解析边：支持多种分隔符（分号/逗号/换行）
+        edges = []
+        edges_str = args.edges.replace(",", ";").replace(",", ";")
+        
+        for e in edges_str.split(";"):
+            e = e.strip()
+            if not e:
+                continue
+            if "→" in e:
+                parts = e.split("→")
+                if len(parts) == 2:
+                    edges.append((parts[0].strip(), parts[1].strip()))
+                else:
+                    print(f"⚠️  跳过无效的边：{e} (parts={len(parts)})")
+            elif "-" in e:
+                parts = e.split("-")
+                if len(parts) == 2:
+                    edges.append((parts[0].strip(), parts[1].strip()))
+                else:
+                    print(f"⚠️  跳过无效的边：{e}")
+            else:
+                print(f"⚠️  跳过无效的边：{e} (无箭头)")
+        
+        if not edges:
+            print("❌ 没有有效的边，示例：--edges 'A→B;C→D' 或 --edges 'A-B,C-D'")
+            sys.exit(1)
         
         result = generator.create_flowchart(args.title, nodes, edges, args.output_name)
         print(f"✅ 流程图已生成：{result}")
