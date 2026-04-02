@@ -256,10 +256,39 @@ crontab -e
 ```
 
 **精选案例**：opencli（15+ 平台信息获取命令）
-- 知乎热榜、GitHub Trending、小红书搜索
-- 效率提升 15-20x
-- [查看完整案例](https://github.com/nicola-king/openclaw-workspace/blob/main/docs/featured-case-opencli.md)
-- [命令列表](https://github.com/nicola-king/openclaw-workspace/blob/main/docs/openclaw-fetch-spec.md)
+
+**信息获取类**（公开 API）：
+```bash
+opencli hackernews top --limit 5      # Hacker News 热帖
+opencli hf top                        # GitHub Trending
+opencli stackoverflow hot --limit 5   # StackOverflow 热门
+opencli arxiv search "large language model"  # arXiv 论文
+opencli bbc news                      # BBC 新闻
+opencli wikipedia random              # 维基百科随机
+```
+
+**国内平台**（需 Chrome 登录）：
+```bash
+opencli bilibili hot --limit 10       # B 站热榜
+opencli zhihu hot -f json             # 知乎热搜
+opencli xiaohongshu search "AI 工具"  # 小红书搜索
+opencli weibo hot                     # 微博热搜
+opencli douban top250                 # 豆瓣电影
+opencli boss search "前端开发"        # Boss 直聘
+opencli v2ex latest --limit 5         # V2EX 帖子
+opencli jike feed                     # 即刻动态
+```
+
+**海外平台**：
+```bash
+opencli twitter trending              # Twitter 趋势
+opencli producthunt top               # Product Hunt
+opencli reddit hot --subreddit all    # Reddit 热门
+```
+
+**效率提升**：30x（15 分钟→30 秒收集 5 平台热榜）
+
+👉 [查看 opencli 完整命令列表](https://github.com/nicola-king/openclaw-workspace/blob/main/docs/opencli-commands-reference.md)
 
 ---
 
