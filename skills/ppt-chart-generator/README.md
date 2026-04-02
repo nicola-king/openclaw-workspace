@@ -53,10 +53,10 @@ python chart_generator.py batch --config charts_config.json
 | 格式 | 说明 | 用途 |
 |------|------|------|
 | `.mmd` | Mermaid 源代码 | 可编辑 |
-| `.txt` | 说明文档 | 查看方法 |
-| `.png` | 高分辨率图片 | PPT 插入（Playwright 安装后） |
-| `.svg` | 矢量图 | 编辑修改（Playwright 安装后） |
-| `.html` | 可交互版本 | 网页展示（Playwright 安装后） |
+| `.html` | 可交互网页 | 浏览器查看 |
+| `.png` | 高分辨率图片 | PPT 插入 ✅ |
+| `.svg` | 矢量图 | 编辑修改 ✅ |
+| `.txt` | 说明文档 | 查看方法（Fallback） |
 
 ---
 

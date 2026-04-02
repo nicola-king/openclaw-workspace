@@ -1,0 +1,13 @@
+# taiyi-architecture-test
+
+Mermaid 代码已保存到：taiyi-architecture-test.mmd
+
+查看方法:
+1. 打开 https://mermaid.live
+2. 粘贴 taiyi-architecture-test.mmd 内容
+3. 导出 PNG/SVG
+
+或安装 Playwright 后自动渲染:
+```bash
+pip install playwright && playwright install chromium
+```

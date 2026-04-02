@@ -476,3 +476,15 @@ usage: auto-experiment.py [-h] [--run] --experiment EXPERIMENT [--check]
 auto-experiment.py: error: the following arguments are required: --experiment
 usage: auto-experiment.py [-h] [--run] --experiment EXPERIMENT [--check]
 auto-experiment.py: error: the following arguments are required: --experiment
+usage: auto-experiment.py [-h] [--run] --experiment EXPERIMENT [--check]
+auto-experiment.py: error: the following arguments are required: --experiment
+usage: auto-experiment.py [-h] [--run] --experiment EXPERIMENT [--check]
+auto-experiment.py: error: the following arguments are required: --experiment
+usage: auto-experiment.py [-h] [--run] --experiment EXPERIMENT [--check]
+auto-experiment.py: error: the following arguments are required: --experiment
+usage: auto-experiment.py [-h] [--run] --experiment EXPERIMENT [--check]
+auto-experiment.py: error: the following arguments are required: --experiment
+usage: auto-experiment.py [-h] [--run] --experiment EXPERIMENT [--check]
+auto-experiment.py: error: the following arguments are required: --experiment
+usage: auto-experiment.py [-h] [--run] --experiment EXPERIMENT [--check]
+auto-experiment.py: error: the following arguments are required: --experiment

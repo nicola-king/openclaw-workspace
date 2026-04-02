@@ -143,17 +143,92 @@ class ChartGenerator:
             print(f"⚠️  Playwright 不可用，生成文本说明")
             return self._fallback_text_output(mermaid_code, output_name)
         
-        # TODO: 实现 Playwright 渲染
-        # 1. 创建 HTML 模板（包含 mermaid.js）
-        # 2. 加载 HTML 到 Chromium
-        # 3. 截图保存为 PNG
-        # 4. 导出 SVG
-        
-        print(f"🎨 渲染图表：{output_name}")
-        print(f"📝 Mermaid 代码:\n{mermaid_code}")
-        
-        # 临时返回文本输出
-        return self._fallback_text_output(mermaid_code, output_name)
+        try:
+            # 创建 HTML 模板（使用 CDN 加载 mermaid.js）
+            html_content = self._create_mermaid_html(mermaid_code)
+            
+            # 保存临时 HTML 文件
+            html_file = self.output_dir / f"{output_name}.html"
+            html_file.write_text(html_content, encoding='utf-8')
+            
+            # 使用 Playwright 渲染
+            with sync_playwright() as p:
+                # 启动浏览器
+                browser = p.chromium.launch(headless=True)
+                page = browser.new_page(viewport={"width": 1200, "height": 800})
+                
+                # 加载 HTML 文件
+                page.goto(f"file://{html_file.absolute()}")
+                
+                # 等待 Mermaid 渲染完成
+                page.wait_for_selector(".mermaid svg", timeout=5000)
+                
+                # 截图保存为 PNG
+                png_file = self.output_dir / f"{output_name}.png"
+                page.screenshot(path=str(png_file), full_page=True)
+                
+                # 导出 SVG
+                svg_content = page.query_selector(".mermaid svg").inner_html()
+                svg_file = self.output_dir / f"{output_name}.svg"
+                svg_file.write_text(f'<svg xmlns="http://www.w3.org/2000/svg">{svg_content}</svg>', encoding='utf-8')
+                
+                browser.close()
+            
+            print(f"✅ PNG 渲染完成：{png_file}")
+            print(f"✅ SVG 导出完成：{svg_file}")
+            
+            self.generated_files.extend([html_file, png_file, svg_file])
+            
+            return {
+                "html": html_file,
+                "png": png_file,
+                "svg": svg_file,
+                "mmd": self.output_dir / f"{output_name}.mmd"
+            }
+            
+        except Exception as e:
+            print(f"⚠️  Playwright 渲染失败：{e}")
+            print("回退到文本输出模式")
+            return self._fallback_text_output(mermaid_code, output_name)
+    
+    def _create_mermaid_html(self, mermaid_code: str) -> str:
+        """创建 Mermaid HTML 模板"""
+        return f"""<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Mermaid Chart</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <style>
+        body {{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: #f0f0f0;
+        }}
+        .mermaid {{
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }}
+    </style>
+</head>
+<body>
+    <div class="mermaid">
+{mermaid_code}
+    </div>
+    <script>
+        mermaid.initialize({{ 
+            startOnLoad: true,
+            theme: 'default',
+            securityLevel: 'loose',
+        }});
+    </script>
+</body>
+</html>"""
     
     def _fallback_text_output(self, mermaid_code: str, output_name: str) -> Dict[str, Path]:
         """FALLBACK: Playwright 不可用时生成文本输出"""
