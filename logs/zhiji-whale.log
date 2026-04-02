@@ -1,5 +1,0 @@
-/home/nicola/.openclaw/workspace/skills/zhiji/whale_tracker.py:36: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
-  "timestamp": datetime.utcnow().isoformat(),
-[2026-03-25 15:48:07.966986] 鲸鱼追踪器启动
-监控目标：['majorexploiter', 'reachingthesky']
-[2026-03-25 15:48:07.967405] 数据已保存到 /home/nicola/polymarket-data/whales
