@@ -27,3 +27,6 @@ Zhiji first trade reminder: 2026年 03月 25日 星期三 10:00:01 CST
 [2026-04-01 18:00:01] 知几交易日报生成中...
 [2026-04-01 18:00:01] ✅ 交易日报完成
 {"ok":true,"result":{"message_id":6941,"from":{"id":8351068758,"is_bot":true,"first_name":"\u592a\u4e00\uff08AGI\uff09","username":"sayelfbot"},"chat":{"id":7073481596,"first_name":"nicola","last_name":"king","type":"private"},"date":1775037602,"text":"\ud83d\udcf1 \u4efb\u52a1\u5b8c\u6210\n\n\u4efb\u52a1\u5df2\u6267\u884c\n\n\u65f6\u95f4\uff1a2026-04-01 18:00","entities":[{"offset":3,"length":4,"type":"bold"}]}}✅ 通知已发送到 Telegram
+[2026-04-02 18:00:02] 知几交易日报生成中...
+[2026-04-02 18:00:02] ✅ 交易日报完成
+{"ok":true,"result":{"message_id":7039,"from":{"id":8351068758,"is_bot":true,"first_name":"\u592a\u4e00\uff08AGI\uff09","username":"sayelfbot"},"chat":{"id":7073481596,"first_name":"nicola","last_name":"king","type":"private"},"date":1775124002,"text":"\ud83d\udcf1 \u4efb\u52a1\u5b8c\u6210\n\n\u4efb\u52a1\u5df2\u6267\u884c\n\n\u65f6\u95f4\uff1a2026-04-02 18:00","entities":[{"offset":3,"length":4,"type":"bold"}]}}✅ 通知已发送到 Telegram

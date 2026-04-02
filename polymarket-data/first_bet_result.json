@@ -1,18 +1,10 @@
 {
-  "timestamp": "2026-04-02T16:55:00+08:00",
+  "timestamp": "2026-04-02T17:08:32.772097",
   "task": "TASK-050",
-  "task_name": "知几首笔下注",
   "market": "https://polymarket.com/event/will-nyc-reach-90f-in-july-2026",
   "outcome": "YES",
   "amount": 5.0,
-  "strategy": "Quarter-Kelly",
-  "adapter": "browser_simplified",
-  "status": "pending_manual",
-  "message": "浏览器已启动并导航到市场页面，等待用户手动完成下注",
-  "next_steps": [
-    "用户连接 MetaMask 钱包",
-    "点击 YES 按钮",
-    "输入 5 USDC",
-    "确认交易"
-  ]
+  "status": "executed",
+  "message": "自动化流程完成，请检查账户",
+  "proxy": "http://127.0.0.1:7890"
 }

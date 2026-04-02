@@ -10,10 +10,18 @@
 - directives/NEGENTROPY.md（负熵法则，输出前置检查）
 - directives/OBSERVER.md（观察者协议，角色边界）
 - directives/COMMANDER.md（兵团司令协议，太一定位）
+- **axiom/PHILOSOPHY-SYNTHESIS.md（哲学融合宪法：苏格拉底×波普尔×太一）🆕**
+- **skills/SOCRATIC.md（苏格拉底校验回路）🆕 升级 Tier 1**
+- **axiom/MARKET-SYNTHESIS.md（市场经济学四巨头融合宪法）🆕**
+- **axiom/PRAXEOLOGY-CONSTITUTION.md（人类行为学宪法）🆕**
+- **axiom/AUSTRIAN-SYNTHESIS.md（奥地利学派融合宪法：门格尔×米塞斯×哈耶克×罗斯巴德×柯兹纳）🆕**
+- **axiom/KONDRATIEV-CONSTITUTION.md（康波周期宪法：康德拉季耶夫×熊彼特×周金涛）🆕**
+
+**说明**: `axiom/HAYEK-MISES-SYNTHESIS.md` 已取消，内容整合入 `AUSTRIAN-SYNTHESIS.md`
 
 ### Tier 2 · 上下文激活（任务匹配时加载）
 根据对话意图按需加载，避免全量注入稀释注意力：
-- 分析/判断/决策 → skills/FOUR-DIMENSION.md + skills/SOCRATIC.md + skills/SECOND-ORDER.md
+- 分析/判断/决策 → skills/FOUR-DIMENSION.md + skills/SECOND-ORDER.md (苏格拉底已升级 Tier 1)
 - 理解动机/对话 → skills/PSYCHOLOGY.md（阿德勒·弗洛伊德·荣格）
 - 搜索/发售验证 → quality-gates/ORIGINALITY.md
 - 接入新模块 → quality-gates/DISTILLATION.md
@@ -56,7 +64,7 @@
 
 ---
 
-## 🆕 Tier 1 完整列表 (2026-03-31 22:35)
+## 🆕 Tier 1 完整列表 (2026-04-02 19:45 奥派统一最终版)
 
 | 序号 | 文件 | 主题 |
 |------|------|------|
@@ -67,9 +75,18 @@
 | 5 | `directives/OBSERVER.md` | 观察者协议 |
 | 6 | `directives/COMMANDER.md` | 兵团司令协议 |
 | 7 | `directives/AGI-AUTONOMY.md` | AGI 自主进化法则 |
-| 8 | `directives/AUTO-EXEC.md` | 自动执行保障法则 🆕 |
+| 8 | `directives/AUTO-EXEC.md` | 自动执行保障法则 |
+| 9 | `axiom/PHILOSOPHY-SYNTHESIS.md` | 哲学融合宪法 (苏格拉底×波普尔×太一) 🆕 |
+| 10 | `skills/SOCRATIC.md` | 苏格拉底校验回路 🆕 升级 Tier 1 |
+| 11 | `axiom/MARKET-SYNTHESIS.md` | 市场经济学四巨头融合宪法 🆕 |
+| 12 | `axiom/PRAXEOLOGY-CONSTITUTION.md` | 人类行为学宪法 🆕 |
+| 13 | `axiom/AUSTRIAN-SYNTHESIS.md` | 奥地利学派融合宪法 (门格尔×米塞斯×哈耶克×罗斯巴德×柯兹纳) 🆕 |
+| 14 | `axiom/KONDRATIEV-CONSTITUTION.md` | 康波周期宪法 (康德拉季耶夫×熊彼特×周金涛) 🆕 |
 
-**Tier 1 总数**: 8 文件 (每次 session 强制加载)
+**Tier 1 总数**: 14 文件 (每次 session 强制加载)
+
+**取消文件**:
+- ~~`axiom/HAYEK-MISES-SYNTHESIS.md`~~ → 已取消，内容整合入 `AUSTRIAN-SYNTHESIS.md`
 
 | 文件 | 主题 | 优先级 |
 |------|------|--------|
