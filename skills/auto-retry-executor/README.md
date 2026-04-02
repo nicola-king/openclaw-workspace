@@ -151,7 +151,7 @@ async def execute_with_auto_retry(
     task_name: str,
     executor_func: Callable,
     validate_func: Callable,
-    max_retries: int = 8,
+    max_retries: int = 5,  # Claude Code 精华：5 次后上报人类
     roi_config: Optional[Dict] = None,
     backoff_base: float = 2.0
 ) -> Dict[str, Any]:
@@ -163,7 +163,7 @@ async def execute_with_auto_retry(
         task_name: 任务名称
         executor_func: 执行函数
         validate_func: 验收函数
-        max_retries: 最大重试次数（默认 8 次）
+        max_retries: 最大重试次数（默认 5 次，Claude Code 精华）
         roi_config: ROI 计算配置
         backoff_base: 指数退避基数（默认 2 秒）
     
@@ -176,7 +176,7 @@ async def execute_with_auto_retry(
             'error': str  # 失败原因（如果有）
         }
     """
-    logger.info(f"开始执行任务：{task_id} - {task_name}")
+    logger.info(f"开始执行任务：{task_id} - {task_name}（最多{max_retries}次尝试）")
     
     start_time = datetime.now()
     failure_log = []

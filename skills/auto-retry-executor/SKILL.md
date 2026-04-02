@@ -51,7 +51,7 @@ async def execute_with_auto_retry(
     task_name: str,
     executor_func: Callable,
     validate_func: Callable,
-    max_retries: int = 8,
+    max_retries: int = 5,  # Claude Code 精华：5 次后上报人类
     roi_config: Optional[Dict] = None,
     backoff_base: float = 2.0
 ) -> Dict[str, Any]:

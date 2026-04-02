@@ -1,10 +1,111 @@
 {
-  "version": 1,
+  "version": "4.0.0",
+  "updated_at": "2026-04-02T16:28:00+08:00",
+  "description": "太一 v4.0 版本锁定配置（Claude Code 精华融合）",
   "skills": {
-    "qiaomu-info-card-designer": {
-      "source": "joeseesun/info-card-designer",
-      "sourceType": "github",
-      "computedHash": "796c46dccf1aa46417aa4ea863dcc3c66a04d945d43417ac5668695739af38ea"
+    "zhiji-e": {
+      "version": "3.0.0",
+      "commit": "681c5fda",
+      "locked": true,
+      "description": "知几-E 量化交易策略引擎"
+    },
+    "shanmu-reporter": {
+      "version": "2.1.0",
+      "commit": "f128a759",
+      "locked": true,
+      "description": "山木研报生成器"
+    },
+    "ppt-chart-generator": {
+      "version": "1.0.0",
+      "commit": "6424aaa9",
+      "locked": true,
+      "description": "PPT 图表生成器（Playwright 渲染）"
+    },
+    "auto-retry-executor": {
+      "version": "1.0.0",
+      "commit": "27503778",
+      "locked": true,
+      "description": "自动循环执行器（Claude Code 精华融合）"
+    },
+    "paoding": {
+      "version": "2.0.0",
+      "commit": "pending",
+      "locked": true,
+      "description": "庖丁预算成本（ROI 增强版）"
+    },
+    "gmgn-swap": {
+      "version": "1.0.0",
+      "commit": "stable",
+      "locked": true,
+      "description": "GMGN 链上交易执行"
+    },
+    "gmgn-token": {
+      "version": "1.0.0",
+      "commit": "stable",
+      "locked": true,
+      "description": "GMGN 代币信息查询"
+    },
+    "polymarket": {
+      "version": "3.0.0",
+      "commit": "stable",
+      "locked": true,
+      "description": "Polymarket 预测市场集成"
+    }
+  },
+  "models": {
+    "default": {
+      "provider": "bailian",
+      "model": "qwen3.5-plus",
+      "fallback": "glm-5.1",
+      "description": "默认模型（太一主力）"
+    },
+    "coding": {
+      "provider": "acp",
+      "model": "codex",
+      "fallback": "qwen-coder",
+      "description": "代码任务专用"
+    },
+    "trading": {
+      "provider": "bailian",
+      "model": "qwen3.5-plus",
+      "fallback": "glm-5.1",
+      "description": "交易决策专用"
+    },
+    "content": {
+      "provider": "bailian",
+      "model": "qwen3.5-plus",
+      "fallback": "glm-5.1",
+      "description": "内容创作专用"
+    }
+  },
+  "validation": {
+    "enabled": true,
+    "strict_mode": false,
+    "auto_update": false,
+    "description": "执行前版本校验配置",
+    "rules": {
+      "check_skill_version": true,
+      "check_model_available": true,
+      "check_config_complete": true,
+      "allow_unlocked_skills": true
+    }
+  },
+  "changelog": {
+    "v4.0.0": {
+      "date": "2026-04-02",
+      "changes": [
+        "融合 Claude Code 精华（自动循环重试）",
+        "添加自动循环执行器（5 次后上报人类）",
+        "增强庖丁 ROI 计算（实时追踪）",
+        "激活版本锁定系统（执行前校验）"
+      ]
+    },
+    "v3.0.0": {
+      "date": "2026-03-30",
+      "changes": [
+        "TurboQuant 记忆架构激活",
+        "多 Bot 协作框架完成"
+      ]
     }
   }
 }
