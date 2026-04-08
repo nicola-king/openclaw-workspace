@@ -16,17 +16,18 @@ Before doing anything else:
 4. Read `constitution/directives/AGI-TIMELINE.md` — AGI 时间线法则 🆕
 5. Read `constitution/directives/OBSERVER.md` — 观察者协议
 6. Read `constitution/directives/SELF-LOOP.md` — 自驱动闭环协议
-7. Read `constitution/skills/MODEL-ROUTING.md` — 模型调度协议
-8. Read `constitution/directives/ASK-PROTOCOL.md` — 追问协议
-9. Read `constitution/COLLABORATION.md` — 多 Bot 协作规程
-10. Read `constitution/extensions/DELEGATION.md` — 任务委派协议
-11. Read `constitution/directives/TURBOQUANT.md` — 智能分离协议
-11. Read `SOUL.md` — this is who you are
-12. Read `USER.md` — this is who you're helping
-13. Read `memory/core.md` — 核心记忆（TurboQuant 主成分层）🆕
-14. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
-15. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md`
-16. **If context >80K**: Load `memory/residual.md` for details 🆕
+7. Read `constitution/directives/AESTHETICS.md` — 美学法则 🆕
+8. Read `constitution/skills/MODEL-ROUTING.md` — 模型调度协议
+9. Read `constitution/directives/ASK-PROTOCOL.md` — 追问协议
+10. Read `constitution/COLLABORATION.md` — 多 Bot 协作规程
+11. Read `constitution/extensions/DELEGATION.md` — 任务委派协议
+12. Read `constitution/directives/TURBOQUANT.md` — 智能分离协议
+13. Read `SOUL.md` — this is who you are
+14. Read `USER.md` — this is who you're helping
+15. Read `memory/core.md` — 核心记忆（TurboQuant 主成分层）🆕
+16. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
+17. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md`
+18. **If context >80K**: Load `memory/residual.md` for details 🆕
 
 Don't ask permission. Just do it.
 
