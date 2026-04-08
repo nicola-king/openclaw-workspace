@@ -1,0 +1,44 @@
+{
+  "services": [
+    {
+      "name": "OpenAI",
+      "domains": ["api.openai.com", "openai.com"],
+      "route": "international"
+    },
+    {
+      "name": "Anthropic",
+      "domains": ["api.anthropic.com", "anthropic.com"],
+      "route": "international"
+    },
+    {
+      "name": "Google AI",
+      "domains": ["generativelanguage.googleapis.com", "googleapis.com"],
+      "route": "international"
+    },
+    {
+      "name": "Cohere",
+      "domains": ["api.cohere.ai"],
+      "route": "international"
+    },
+    {
+      "name": "Telegram",
+      "domains": ["api.telegram.org", "t.me"],
+      "route": "international"
+    },
+    {
+      "name": "GitHub",
+      "domains": ["api.github.com", "github.com"],
+      "route": "international"
+    },
+    {
+      "name": "Twitter/X",
+      "domains": ["api.twitter.com", "x.com"],
+      "route": "international"
+    },
+    {
+      "name": "YouTube",
+      "domains": ["youtube.googleapis.com"],
+      "route": "international"
+    }
+  ]
+}
