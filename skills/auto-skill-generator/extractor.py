@@ -348,9 +348,11 @@ class SkillValidator:
         if '执行流程' not in draft:
             issues.append('缺少执行流程')
         
-        # 5. 无硬编码检查
+        # 5. 无硬编码检查（允许 workspace 路径）
         if re.search(r'/home/nicola/[^{]', draft):
-            issues.append('包含硬编码路径')
+            # 检查是否是 workspace 路径（允许）
+            if '/home/nicola/.openclaw/workspace' not in draft:
+                issues.append('包含硬编码路径')
         
         # 6. 有使用示例检查
         if '示例' not in draft:
