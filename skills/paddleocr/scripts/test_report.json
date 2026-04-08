@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-04-06T08:29:21.547332",
+  "tests": {
+    "import": true,
+    "initialization": true,
+    "basic_ocr": true,
+    "performance": false
+  }
+}

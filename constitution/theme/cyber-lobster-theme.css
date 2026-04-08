@@ -1,0 +1,104 @@
+/**
+ * 🦞 赛博龙虾主题 - CSS 变量定义
+ * 灵感来源：SAYELF 2026-04-02 22:10 发送的机械龙虾图腾
+ */
+
+:root {
+  /* 主色 - 蓝紫霓虹 */
+  --primary-50: #F5F3FF;
+  --primary-100: #EDE9FE;
+  --primary-200: #DDD6FE;
+  --primary-300: #C4B5FD;
+  --primary-400: #A78BFA;
+  --primary-500: #8B5CF6;
+  --primary-600: #7C3AED;
+  --primary-700: #6D28D9;
+  --primary-800: #5B21B6;
+  --primary-900: #4C1D95;
+  --primary-950: #2E1065;
+  
+  /* 强调色 - 龙虾红 */
+  --accent-50: #FEF2F2;
+  --accent-100: #FEE2E2;
+  --accent-200: #FECACA;
+  --accent-300: #FCA5A5;
+  --accent-400: #F87171;
+  --accent-500: #FF6B6B;
+  --accent-600: #EF4444;
+  --accent-700: #DC2626;
+  --accent-800: #B91C1C;
+  --accent-900: #991B1B;
+  
+  /* 背景色 - 深空黑 */
+  --background-50: #F8F8FF;
+  --background-100: #F0F0FA;
+  --background-200: #E0E0F0;
+  --background-300: #C8C8D8;
+  --background-400: #A0A0B8;
+  --background-500: #787890;
+  --background-600: #505068;
+  --background-700: #383850;
+  --background-800: #202038;
+  --background-900: #0D0D1A;
+  --background-950: #05050A;
+  
+  /* 霓虹高光 */
+  --neon-blue: #00F0FF;
+  --neon-purple: #9D5BFF;
+  --neon-pink: #FF00FF;
+  
+  /* 渐变 */
+  --gradient-primary: linear-gradient(135deg, #5A4B9E 0%, #9D5BFF 100%);
+  --gradient-accent: linear-gradient(135deg, #FF6B6B 0%, #FF8E8E 100%);
+  --gradient-cyber: linear-gradient(135deg, #00F0FF 0%, #9D5BFF 50%, #FF00FF 100%);
+  --gradient-background: linear-gradient(180deg, #0D0D1A 0%, #1A1A2E 100%);
+  
+  /* 阴影/光晕 */
+  --shadow-neon-glow: 0 0 10px rgba(0, 240, 255, 0.5), 0 0 20px rgba(0, 240, 255, 0.3);
+  --shadow-purple-glow: 0 0 10px rgba(157, 91, 255, 0.5), 0 0 20px rgba(157, 91, 255, 0.3);
+  --shadow-lobster-glow: 0 0 10px rgba(255, 107, 107, 0.5), 0 0 20px rgba(255, 107, 107, 0.3);
+  
+  /* 字体颜色 */
+  --text-primary: #FFFFFF;
+  --text-secondary: #C4B5FD;
+  --text-muted: #787890;
+  --text-inverse: #0D0D1A;
+  
+  /* 边框 */
+  --border-default: rgba(139, 92, 246, 0.3);
+  --border-hover: rgba(139, 92, 246, 0.6);
+  --border-active: #8B5CF6;
+}
+
+/* 全局样式 */
+body {
+  background: var(--background-900);
+  color: var(--text-primary);
+}
+
+/* 赛博龙虾主题类 */
+.cyber-lobster {
+  background: var(--gradient-primary);
+  box-shadow: var(--shadow-purple-glow);
+}
+
+.cyber-lobster-text {
+  color: var(--primary-500);
+}
+
+.cyber-lobster-border {
+  border: 1px solid var(--border-default);
+}
+
+.cyber-lobster-glow {
+  box-shadow: var(--shadow-neon-glow);
+}
+
+/* 深色模式优化 */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-primary: var(--background-900);
+    --bg-secondary: var(--background-800);
+    --text-primary: var(--text-primary);
+  }
+}

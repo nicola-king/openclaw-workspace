@@ -1,0 +1,41 @@
+{
+  "timestamp": "2026-04-04T00:40:35+08:00",
+  "check_type": "scheduled_30min",
+  "status": "healthy",
+  
+  "gateway": {
+    "status": "running",
+    "pid": 89857,
+    "port": 18789,
+    "bind": "127.0.0.1",
+    "cpu": "12.3%",
+    "memory": "1034M",
+    "rpc_probe": "ok",
+    "stable": true
+  },
+  
+  "channels": {
+    "telegram": { "status": "ok" },
+    "feishu": { "status": "ok" },
+    "openclaw-weixin": { "status": "enabled" }
+  },
+  
+  "system": {
+    "disk_usage": "19% (48G/274G)",
+    "os": "linux 6.17.0-20-generic",
+    "node": "22.22.2"
+  },
+  
+  "self_heal_actions": [
+    { "action": "gateway_probe", "result": "ok" },
+    { "action": "process_check", "result": "pid 89857 stable" },
+    { "action": "disk_check", "result": "19% used, healthy" }
+  ],
+  
+  "notes": "Gateway stable (no restart). MEMORY GROWTH: 526M → 1034M (+97% in 30min). Pattern confirmed: ~1GB/hour memory leak. Auto-restart mechanism working correctly.",
+  "restart_count_today": 5,
+  "memory_trend": "rapid_increase",
+  "memory_growth_rate": "~97% per 30min",
+  "next_check": "2026-04-04T01:10:35+08:00",
+  "report_saved": "memory/self-heal-report-20260404-0040.json"
+}

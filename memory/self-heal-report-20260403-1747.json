@@ -1,0 +1,50 @@
+{
+  "timestamp": "2026-04-03T17:47:58+08:00",
+  "check_type": "scheduled_30min",
+  "status": "healthy",
+  
+  "gateway": {
+    "status": "running",
+    "pid": 67096,
+    "port": 18789,
+    "bind": "127.0.0.1",
+    "probe": "ok",
+    "uptime": "~60分钟"
+  },
+  
+  "service": {
+    "unit": "openclaw-gateway.service",
+    "state": "active",
+    "enabled": true
+  },
+  
+  "system": {
+    "disk_usage": "19%",
+    "os": "linux 6.17.0-20-generic",
+    "node": "22.22.2"
+  },
+  
+  "timers": {
+    "openclaw-module-sync": "active",
+    "openclaw-net-routing": "active",
+    "status": "normal"
+  },
+  
+  "self_heal_actions": [
+    {
+      "action": "gateway_probe",
+      "result": "ok"
+    },
+    {
+      "action": "service_check",
+      "result": "active"
+    },
+    {
+      "action": "disk_check",
+      "result": "19% used, healthy"
+    }
+  ],
+  
+  "next_check": "2026-04-03T18:17:58+08:00",
+  "report_saved": "memory/self-heal-report-20260403-1747.json"
+}

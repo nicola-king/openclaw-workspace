@@ -1,0 +1,45 @@
+{
+  "timestamp": "2026-04-03T21:10:35+08:00",
+  "check_type": "scheduled_30min",
+  "status": "healthy",
+  
+  "gateway": {
+    "status": "running",
+    "pid": 75650,
+    "port": 18789,
+    "bind": "127.0.0.1",
+    "uptime": "27 秒",
+    "memory": "655.1M",
+    "cpu_time": "20.3s"
+  },
+  
+  "channels": {
+    "telegram": { "status": "ok" },
+    "feishu": { "status": "ok", "connection_mode": "websocket" },
+    "openclaw-weixin": { "status": "enabled" }
+  },
+  
+  "system": {
+    "os": "linux 6.17.0-20-generic",
+    "node": "22.22.2",
+    "disk_usage": "19% (48G/274G)",
+    "tailscale": "off"
+  },
+  
+  "systemd_services": {
+    "openclaw-gateway": "active (running)",
+    "openclaw-module-sync": "enabled",
+    "openclaw-net-routing": "enabled",
+    "self-heal-monitor": "enabled",
+    "taiyi-boot-verify": "enabled"
+  },
+  
+  "self_heal_actions": [
+    { "action": "gateway_probe", "result": "ok" },
+    { "action": "service_check", "result": "active" },
+    { "action": "disk_check", "result": "19% used, healthy" }
+  ],
+  
+  "next_check": "2026-04-03T21:40:35+08:00",
+  "report_saved": "memory/self-heal-report-20260403-2110.json"
+}

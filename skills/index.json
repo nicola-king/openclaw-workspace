@@ -1,0 +1,192 @@
+{
+  "skills": [
+    {
+      "name": "shanmu-reporter",
+      "version": "1.0.0",
+      "author": "太一 (集成自 Awesome Finance Skills)",
+      "status": "unknown",
+      "triggers": [],
+      "permissions": [],
+      "priority": 2,
+      "description": "专业金融研报生成 - 规划→写作→编辑→图表自动化 pipeline",
+      "path": "skills/shanmu-reporter/SKILL.md",
+      "loaded": false,
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "name": "tianji",
+      "version": "1.0.0",
+      "author": "太一",
+      "status": "stable",
+      "triggers": [
+        "天机",
+        "聪明钱",
+        "市场机会",
+        "交易信号",
+        "smart money",
+        "market analysis",
+        "trading signals"
+      ],
+      "permissions": [
+        "exec",
+        "web_fetch",
+        "file_read",
+        "file_write"
+      ],
+      "priority": 1,
+      "description": "天机 - 聪明钱追踪与市场机会分析",
+      "path": "skills/tianji/SKILL.md",
+      "loaded": false,
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "name": "qiaomu-info-card-designer",
+      "version": "1.0.0",
+      "author": "太一 (集成自 qiaomu)",
+      "status": "stable",
+      "triggers": [
+        "生成信息卡",
+        "做张信息卡",
+        "信息卡片",
+        "make info card",
+        "generate card",
+        "截图分享",
+        "HTML 卡片"
+      ],
+      "permissions": [
+        "exec",
+        "web_fetch",
+        "canvas",
+        "file_write"
+      ],
+      "priority": 2,
+      "description": "将任意内容转化为杂志质感 HTML 信息卡片，自动截图 + 超长分割",
+      "path": "skills/qiaomu-info-card-designer/SKILL.md",
+      "loaded": false,
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "name": "polymarket",
+      "version": "1.0.0",
+      "author": "太一",
+      "status": "stable",
+      "triggers": [
+        "Polymarket",
+        "预测市场",
+        "下注",
+        "交易执行",
+        "prediction market",
+        "betting"
+      ],
+      "permissions": [
+        "exec",
+        "web_fetch",
+        "message"
+      ],
+      "priority": 1,
+      "description": "Polymarket 预测市场数据获取与交易执行",
+      "path": "skills/polymarket/SKILL.md",
+      "loaded": false,
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "name": "ssh-control",
+      "version": "1.0.0",
+      "author": "太一",
+      "status": "stable",
+      "triggers": [
+        "SSH",
+        "远程控制",
+        "系统状态",
+        "运维操作",
+        "ssh",
+        "remote",
+        "system status"
+      ],
+      "permissions": [
+        "exec",
+        "file_read"
+      ],
+      "priority": 2,
+      "description": "SSH 远程控制本机或其他设备",
+      "path": "skills/ssh/SKILL.md",
+      "loaded": false,
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "name": "paoding",
+      "version": "1.0.0",
+      "author": "太一",
+      "status": "stable",
+      "triggers": [
+        "庖丁",
+        "预算",
+        "成本分析",
+        "财务",
+        "budget",
+        "cost analysis",
+        "expenses"
+      ],
+      "permissions": [
+        "exec",
+        "file_read",
+        "file_write",
+        "web_fetch"
+      ],
+      "priority": 1,
+      "description": "庖丁 - 预算成本分析与财务追踪",
+      "path": "skills/paoding/SKILL.md",
+      "loaded": false,
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "name": "zhiji-sentiment",
+      "version": "1.0.0",
+      "author": "太一 (集成自 Awesome Finance Skills)",
+      "status": "unknown",
+      "triggers": [],
+      "permissions": [],
+      "priority": 2,
+      "description": "金融情绪分析 (FinBERT/LLM) - 为知几-E 策略提供情绪因子增强",
+      "path": "skills/zhiji-sentiment/SKILL.md",
+      "loaded": false,
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "name": "feishu",
+      "version": "1.0.0",
+      "author": "太一",
+      "status": "stable",
+      "triggers": [
+        "飞书",
+        "文档",
+        "多维表格",
+        "知识库",
+        "feishu",
+        "lark",
+        "doc",
+        "bitable"
+      ],
+      "permissions": [
+        "message",
+        "file_read",
+        "file_write"
+      ],
+      "priority": 2,
+      "description": "飞书消息、文档、多维表格操作",
+      "path": "skills/feishu/SKILL.md",
+      "loaded": false,
+      "last_used": null,
+      "use_count": 0
+    }
+  ],
+  "count": 8,
+  "updated": "2026-04-04T08:48:07.154750"
+}

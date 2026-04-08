@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=800">
+    <title>西双版纳泼水节·冰岛老寨茶山深度游攻略</title>
+    <style>
+        @font-face {
+            font-family: 'KaiTi';
+            src: local('KaiTi'), local('STKaiti'), serif;
+        }
+        :root {
+            --bg: #f5f3ed;
+            --accent: #1a4a3a;
+            --text: #1a1a1a;
+            --muted: #666;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'KaiTi', 'STKaiti', serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 40px;
+        }
+        .container { max-width: 800px; margin: 0 auto; }
+        .header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            border-radius: 20px;
+            margin-bottom: 40px;
+            color: white;
+        }
+        .header h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+            font-weight: normal;
+        }
+        .header .subtitle {
+            font-size: 20px;
+            opacity: 0.9;
+        }
+        .meta {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-top: 25px;
+        }
+        .meta-item {
+            background: rgba(255,255,255,0.1);
+            padding: 12px;
+            border-radius: 10px;
+        }
+        .meta-label { font-size: 14px; opacity: 0.8; }
+        .meta-value { font-size: 18px; font-weight: 600; }
+        .section {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        .section-title {
+            font-size: 28px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--accent);
+            color: var(--accent);
+        }
+        .day-card {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            border-left: 4px solid var(--accent);
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 0 12px 12px 0;
+        }
+        .day-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+        .day-number { font-size: 32px; font-weight: 700; color: var(--accent); }
+        .day-title { font-size: 24px; margin-bottom: 8px; }
+        .day-location { color: var(--muted); margin-bottom: 15px; }
+        .activity {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 12px;
+            padding: 12px;
+            background: rgba(255,255,255,0.6);
+            border-radius: 8px;
+        }
+        .activity-time { min-width: 60px; font-weight: 600; color: var(--accent); }
+        .budget-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .budget-table th, .budget-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        .budget-table th {
+            background: rgba(26,74,58,0.08);
+            color: var(--accent);
+        }
+        .budget-total {
+            font-size: 24px;
+            text-align: right;
+            margin-top: 20px;
+            padding: 15px;
+            background: rgba(26,74,58,0.08);
+            border-radius: 8px;
+            color: var(--accent);
+        }
+        .tips {
+            background: rgba(255,149,0,0.1);
+            border-left: 4px solid #ff9500;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 0 8px 8px 0;
+        }
+        .hotel-card {
+            background: rgba(26,74,58,0.06);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .hotel-name {
+            font-size: 20px;
+            color: var(--accent);
+            margin-bottom: 10px;
+        }
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: var(--muted);
+            border-top: 2px solid var(--accent);
+            margin-top: 40px;
+        }
+        .link {
+            color: #007aff;
+            text-decoration: none;
+        }
+        .link:hover { text-decoration: underline; }
+        @media print {
+            body { background: white; }
+            .section, .day-card { break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌴 西双版纳泼水节<br>冰岛老寨茶山深度游</h1>
+            <div class="subtitle">6 天 5 晚 · 泼水狂欢 × 茶山静心</div>
+            <div class="meta">
+                <div class="meta-item">
+                    <div class="meta-label">📅 日期</div>
+                    <div class="meta-value">4.13-4.18</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">👥 人数</div>
+                    <div class="meta-value">2-5 人</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">💰 预算</div>
+                    <div class="meta-value">¥3000</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">🎯 主题</div>
+                    <div class="meta-value">民俗×茶文化</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">📅 行程概览</h2>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;">
+                <div style="background: rgba(26,74,58,0.08); padding: 15px; border-radius: 8px;">
+                    <div style="color: var(--accent); font-weight: 600;">Day 1 - 4.13</div>
+                    <div>抵达告庄西双景</div>
+                </div>
+                <div style="background: rgba(26,74,58,0.08); padding: 15px; border-radius: 8px;">
+                    <div style="color: var(--accent); font-weight: 600;">Day 2 - 4.14</div>
+                    <div>泼水节狂欢</div>
+                </div>
+                <div style="background: rgba(26,74,58,0.08); padding: 15px; border-radius: 8px;">
+                    <div style="color: var(--accent); font-weight: 600;">Day 3 - 4.15</div>
+                    <div>前往冰岛老寨</div>
+                </div>
+                <div style="background: rgba(26,74,58,0.08); padding: 15px; border-radius: 8px;">
+                    <div style="color: var(--accent); font-weight: 600;">Day 4 - 4.16</div>
+                    <div>采茶制茶体验</div>
+                </div>
+                <div style="background: rgba(26,74,58,0.08); padding: 15px; border-radius: 8px;">
+                    <div style="color: var(--accent); font-weight: 600;">Day 5 - 4.17</div>
+                    <div>返回景洪</div>
+                </div>
+                <div style="background: rgba(26,74,58,0.08); padding: 15px; border-radius: 8px;">
+                    <div style="color: var(--accent); font-weight: 600;">Day 6 - 4.18</div>
+                    <div>曼听公园返程</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">🗺️ 详细行程</h2>
+            
+            <div class="day-card">
+                <div class="day-header">
+                    <div class="day-number">Day 1</div>
+                    <div style="color: var(--muted);">4 月 13 日</div>
+                </div>
+                <h3 class="day-title">抵达西双版纳 · 告庄西双景</h3>
+                <div style="color: var(--muted); margin-bottom: 15px;">📍 景洪市·告庄西双景</div>
+                <div class="activity"><div class="activity-time">上午</div><div>抵达嘎洒机场 → 打车至告庄（50 元，30 分钟）</div></div>
+                <div class="activity"><div class="activity-time">中午</div><div>入住民宿 + 傣味手抓饭（60 元）</div></div>
+                <div class="activity"><div class="activity-time">下午</div><div>游览大金塔、星光夜市踩点</div></div>
+                <div class="activity"><div class="activity-time">晚上</div><div>星光夜市美食（50 元）</div></div>
+                <div class="tips">💡 提前预订告庄住宿，泼水节价格翻倍</div>
+            </div>
+
+            <div class="day-card">
+                <div class="day-header">
+                    <div class="day-number">Day 2</div>
+                    <div style="color: var(--muted);">4 月 14 日</div>
+                </div>
+                <h3 class="day-title">泼水节狂欢日 · 全城湿身</h3>
+                <div style="color: var(--muted); margin-bottom: 15px;">📍 景洪市区·泼水广场</div>
+                <div class="activity"><div class="activity-time">上午</div><div>泼水广场开幕式 + 传统泼水（免费）</div></div>
+                <div class="activity"><div class="activity-time">中午</div><div>傣族家访（80 元）</div></div>
+                <div class="activity"><div class="activity-time">下午</div><div>街头泼水狂欢（准备水枪！）</div></div>
+                <div class="activity"><div class="activity-time">晚上</div><div>休息恢复 + 夜市宵夜</div></div>
+                <div class="tips">💡 防水手机袋、换洗衣物、贵重物品寄存</div>
+            </div>
+
+            <div class="day-card">
+                <div class="day-header">
+                    <div class="day-number">Day 3</div>
+                    <div style="color: var(--muted);">4 月 15 日</div>
+                </div>
+                <h3 class="day-title">前往冰岛老寨 · 茶山初体验</h3>
+                <div style="color: var(--muted); margin-bottom: 15px;">📍 双江县·勐库镇（海拔 1700 米）</div>
+                <div class="activity"><div class="activity-time">上午</div><div>景洪→双江 包车 3 小时（300 元/车）</div></div>
+                <div class="activity"><div class="activity-time">中午</div><div>勐库镇午餐（60 元）</div></div>
+                <div class="activity"><div class="activity-time">下午</div><div>参观古茶树群落（免费）</div></div>
+                <div class="activity"><div class="activity-time">晚上</div><div>入住茶农家</div></div>
+                <div class="tips">💡 山路崎岖，晕车药；海拔 1700 米注意保暖</div>
+            </div>
+
+            <div class="day-card">
+                <div class="day-header">
+                    <div class="day-number">Day 4</div>
+                    <div style="color: var(--muted);">4 月 16 日</div>
+                </div>
+                <h3 class="day-title">深度茶山体验 · 采茶制茶</h3>
+                <div style="color: var(--muted); margin-bottom: 15px;">📍 冰岛老寨·古茶园</div>
+                <div class="activity"><div class="activity-time">上午</div><div>采茶体验（识别古树茶）</div></div>
+                <div class="activity"><div class="activity-time">中午</div><div>茶山野餐</div></div>
+                <div class="activity"><div class="activity-time">下午</div><div>制茶体验（杀青揉捻晒青）</div></div>
+                <div class="activity"><div class="activity-time">晚上</div><div>品茶交流会</div></div>
+                <div class="tips">💡 制茶体验 100 元/人，可带走茶饼</div>
+            </div>
+
+            <div class="day-card">
+                <div class="day-header">
+                    <div class="day-number">Day 5</div>
+                    <div style="color: var(--muted);">4 月 17 日</div>
+                </div>
+                <h3 class="day-title">茶山徒步 · 返回景洪</h3>
+                <div style="color: var(--muted); margin-bottom: 15px;">📍 冰岛老寨 → 景洪</div>
+                <div class="activity"><div class="activity-time">上午</div><div>茶山徒步（500 年古茶树）</div></div>
+                <div class="activity"><div class="activity-time">中午</div><div>告别午餐</div></div>
+                <div class="activity"><div class="activity-time">下午</div><div>返回景洪（途经娜允古镇）</div></div>
+                <div class="activity"><div class="activity-time">晚上</div><div>告庄告别晚宴</div></div>
+                <div class="tips">💡 购买茶叶注意辨别，保留茶农联系方式</div>
+            </div>
+
+            <div class="day-card">
+                <div class="day-header">
+                    <div class="day-number">Day 6</div>
+                    <div style="color: var(--muted);">4 月 18 日</div>
+                </div>
+                <h3 class="day-title">曼听公园 · 返程</h3>
+                <div style="color: var(--muted); margin-bottom: 15px;">📍 曼听公园</div>
+                <div class="activity"><div class="activity-time">上午</div><div>曼听公园（门票 40 元）</div></div>
+                <div class="activity"><div class="activity-time">中午</div><div>最后午餐（60 元）</div></div>
+                <div class="activity"><div class="activity-time">下午</div><div>购买伴手礼</div></div>
+                <div class="activity"><div class="activity-time">晚上</div><div>前往机场返程</div></div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">💰 费用预算（人均）</h2>
+            <table class="budget-table">
+                <tr><th>项目</th><th>明细</th><th style="text-align: right;">金额</th></tr>
+                <tr><td>🏨 住宿</td><td>告庄 3 晚 + 冰岛 2 晚</td><td style="text-align: right;">¥900</td></tr>
+                <tr><td>🍽️ 餐饮</td><td>6 天×150 元</td><td style="text-align: right;">¥900</td></tr>
+                <tr><td>🚗 交通</td><td>包车 + 打车</td><td style="text-align: right;">¥300</td></tr>
+                <tr><td>🎁 体验</td><td>制茶 + 门票</td><td style="text-align: right;">¥200</td></tr>
+                <tr><td>🛍️ 购物</td><td>茶叶伴手礼</td><td style="text-align: right;">¥500</td></tr>
+                <tr><td>💵 备用</td><td>应急</td><td style="text-align: right;">¥200</td></tr>
+            </table>
+            <div class="budget-total">总计：¥3,000 / 人</div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">🏨 住宿推荐（真实信息）</h2>
+            <div class="hotel-card">
+                <div class="hotel-name">花筑·西双版纳轻舍民宿 (告庄西双景星光夜市店)</div>
+                <div>📍 地址：景洪告庄西双景度假区星光夜市店</div>
+                <div>💰 价格：200-400 元/晚（泼水节期间）</div>
+                <div>📞 预订：<a href="https://hotels.ctrip.com/hotels/63422037.html" class="link">携程预订链接</a></div>
+                <div>✨ 特色：步行 2 分钟到星光夜市、大金塔</div>
+            </div>
+            <div class="hotel-card">
+                <div class="hotel-name">冰岛老寨茶农家住宿</div>
+                <div>📍 地址：双江县勐库镇冰岛老寨</div>
+                <div>💰 价格：150 元/人/晚</div>
+                <div>📞 预订：到达后联系茶农或通过当地旅行社</div>
+                <div>✨ 特色：采茶制茶体验、古茶园参观</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">🎯 景点信息</h2>
+            <div class="hotel-card">
+                <div class="hotel-name">泼水节狂欢</div>
+                <div>📅 时间：2026 年 4 月 13-15 日</div>
+                <div>📍 地点：景洪市区·泼水广场</div>
+                <div>💰 门票：免费</div>
+                <div>✨ 亮点：开幕式、街头泼水、傣族家访</div>
+            </div>
+            <div class="hotel-card">
+                <div class="hotel-name">冰岛老寨古茶园</div>
+                <div>📍 位置：云南省双江县勐库镇</div>
+                <div>🏔️ 海拔：1500-2500 米</div>
+                <div>🌿 特色：百年以上古茶树 22545 株</div>
+                <div>📖 来源：百度百科</div>
+            </div>
+            <div class="hotel-card">
+                <div class="hotel-name">曼听公园</div>
+                <div>📍 位置：景洪市</div>
+                <div>💰 门票：40 元/人</div>
+                <div>⏰ 时间：08:00-18:00</div>
+                <div>✨ 亮点：傣王御花园、总佛寺</div>
+            </div>
+            <div class="hotel-card">
+                <div class="hotel-name">星光夜市</div>
+                <div>📍 位置：告庄西双景</div>
+                <div>⏰ 时间：18:00-24:00</div>
+                <div>💰 门票：免费入场</div>
+                <div>✨ 亮点：东南亚最大夜市、傣族烧烤</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">🚨 紧急联系</h2>
+            <ul style="padding-left: 20px; line-height: 2;">
+                <li>报警：110</li>
+                <li>急救：120</li>
+                <li>旅游投诉：0691-12301</li>
+                <li>景洪市医院：0691-2122222</li>
+                <li>携程客服：1010-6666</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">⚠️ 注意事项</h2>
+            <ul style="padding-left: 20px; line-height: 2;">
+                <li>泼水节注意防水，贵重物品寄存</li>
+                <li>茶山气温低，准备外套</li>
+                <li>尊重当地傣族、拉祜族习俗</li>
+                <li>购买茶叶注意辨别真伪</li>
+                <li>提前 2 周预订机票酒店</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <div style="font-size: 18px; margin-bottom: 10px;">✨ 行程亮点 ✨</div>
+            <div>泼水节狂欢 · 冰岛老寨采茶 · 亲手制茶 · 茶山云海 · 星光夜市</div>
+            <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid rgba(0,0,0,0.1);">
+                攻略生成：太一 AGI | 2026-04-06 14:55<br>
+                数据来源：携程、百度百科、西双版纳旅游局<br>
+                祝旅途愉快！🌴💦🍵
+            </div>
+        </div>
+    </div>
+</body>
+</html>

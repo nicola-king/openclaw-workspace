@@ -1,0 +1,45 @@
+{
+  "timestamp": "2026-04-07T16:01:42+08:00",
+  "checks": [
+    {
+      "name": "gateway",
+      "status": "running",
+      "pid": "3856",
+      "time": "2026-04-07T16:01:43+08:00"
+    },
+    {
+      "name": "stale_processes",
+      "count": 1,
+      "time": "2026-04-07T16:01:43+08:00"
+    },
+    {
+      "name": "disk_space",
+      "usage": "50%",
+      "time": "2026-04-07T16:01:43+08:00"
+    },
+    {
+      "name": "constitution",
+      "status": "complete",
+      "time": "2026-04-07T16:01:43+08:00"
+    },
+    {
+      "name": "git_status",
+      "uncommitted": 6,
+      "time": "2026-04-07T16:01:43+08:00"
+    },
+    {
+      "name": "memory",
+      "usage": "%",
+      "time": "2026-04-07T16:01:43+08:00"
+    }
+  ],
+  "issues": [],
+  "actions": [
+    {
+      "action": "kill_stale_processes",
+      "count": 1,
+      "time": "2026-04-07T16:01:43+08:00"
+    }
+  ],
+  "status": "healthy"
+}

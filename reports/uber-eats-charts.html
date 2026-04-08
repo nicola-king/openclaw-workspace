@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uber Eats 餐厅合作伙伴绩效分析</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 1200px; margin: 0 auto; padding: 20px; background: #f5f5f5; }
+        .slide { background: white; padding: 30px; margin: 20px 0; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        h1 { color: #000; border-bottom: 3px solid #06C167; padding-bottom: 10px; }
+        h2 { color: #06C167; }
+        .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 20px 0; }
+        .metric-card { background: linear-gradient(135deg, #06C167 0%, #05a358 100%); color: white; padding: 20px; border-radius: 8px; text-align: center; }
+        .metric-card.warning { background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%); }
+        .metric-card.danger { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+        .metric-value { font-size: 2em; font-weight: bold; }
+        .metric-label { font-size: 0.9em; opacity: 0.9; }
+        .chart-container { position: relative; height: 400px; margin: 20px 0; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background: #06C167; color: white; }
+        tr:hover { background: #f5f5f5; }
+        .highlight { background: #ffe6e6 !important; }
+        .footer { text-align: center; color: #666; margin-top: 40px; padding: 20px; }
+    </style>
+</head>
+<body>
+    <div class="slide">
+        <h1>🍽️ Uber Eats 餐厅合作伙伴绩效分析</h1>
+        <p><strong>分析周期：</strong>2025 年 1 月 - 2025 年 6 月 | <strong>数据源：</strong>411 条交易记录</p>
+        
+        <div class="metrics">
+            <div class="metric-card">
+                <div class="metric-value">£1.11M</div>
+                <div class="metric-label">总销售额</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value">60,519</div>
+                <div class="metric-label">总订单数</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value">98.5%</div>
+                <div class="metric-label">平均完成率</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value">4.27</div>
+                <div class="metric-label">平均评分</div>
+            </div>
+            <div class="metric-card danger">
+                <div class="metric-value">£171,857</div>
+                <div class="metric-label">⚠️ Payout 差异</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide">
+        <h2>📊 图表 1: 月度销售趋势</h2>
+        <div class="chart-container">
+            <canvas id="salesChart"></canvas>
+        </div>
+    </div>
+
+    <div class="slide">
+        <h2>💰 图表 2: Payout 差异分析 (核心问题)</h2>
+        <div class="chart-container">
+            <canvas id="payoutChart"></canvas>
+        </div>
+        <table>
+            <tr><th>月份</th><th>销售额</th><th>预期净收入 (85%)</th><th>实际净收入</th><th>差异</th><th>差异率</th></tr>
+            <tr><td>2025-01</td><td>£192,919</td><td>£163,981</td><td>£133,182</td><td class="highlight">£30,799</td><td class="highlight">16.0%</td></tr>
+            <tr><td>2025-02</td><td>£181,717</td><td>£154,460</td><td>£127,358</td><td class="highlight">£27,102</td><td class="highlight">14.9%</td></tr>
+            <tr><td>2025-03</td><td>£186,379</td><td>£158,422</td><td>£130,657</td><td class="highlight">£27,766</td><td class="highlight">14.9%</td></tr>
+            <tr><td>2025-04</td><td>£178,617</td><td>£151,824</td><td>£124,698</td><td class="highlight">£27,127</td><td class="highlight">15.2%</td></tr>
+            <tr><td>2025-05</td><td>£188,703</td><td>£160,397</td><td>£130,457</td><td class="highlight">£29,941</td><td class="highlight">15.9%</td></tr>
+            <tr><td>2025-06</td><td>£180,177</td><td>£153,150</td><td>£124,028</td><td class="highlight">£29,122</td><td class="highlight">16.2%</td></tr>
+            <tr style="font-weight:bold; background:#f0f0f0;"><td>总计</td><td>£1,108,512</td><td>£942,235</td><td>£770,378</td><td class="highlight">£171,857</td><td class="highlight">15.5%</td></tr>
+        </table>
+    </div>
+
+    <div class="slide">
+        <h2>💸 图表 3: 佣金率对比</h2>
+        <div class="chart-container">
+            <canvas id="commissionChart"></canvas>
+        </div>
+        <p><strong>关键发现：</strong>实际佣金率 18.2% vs 约定 15%，多收取 3.2pp，累计差异 £171,857</p>
+    </div>
+
+    <div class="slide">
+        <h2>🕐 图表 4: 时段订单分布</h2>
+        <div class="chart-container">
+            <canvas id="timeChart"></canvas>
+        </div>
+        <p><strong>增长机会：</strong>晚餐仅占 3.1%，夜宵 0.1%。若晚餐提升至 15%，潜在增收 £50K/月</p>
+    </div>
+
+    <div class="slide">
+        <h2>👥 图表 5: 顾客结构</h2>
+        <div class="chart-container">
+            <canvas id="customerChart"></canvas>
+        </div>
+        <p><strong>复购分析：</strong>新客 36.6%，老客 63.4%。建议推出会员计划提升复购率至 70%+</p>
+    </div>
+
+    <div class="slide">
+        <h2>📈 图表 6: 订单完成率趋势</h2>
+        <div class="chart-container">
+            <canvas id="completionChart"></canvas>
+        </div>
+        <p><strong>运营表现：</strong>平均完成率 98.5%，表现优秀。若提升至 99%，潜在增收 £10K/月</p>
+    </div>
+
+    <div class="footer">
+        <p>Uber Eats Case Study | Enterprise Account Coordinator Intern 面试案例 | 2026-04-04</p>
+    </div>
+
+    <script>
+        // 图表 1: 销售趋势
+        new Chart(document.getElementById('salesChart'), {
+            type: 'bar',
+            data: {
+                labels: ['2025-01', '2025-02', '2025-03', '2025-04', '2025-05', '2025-06'],
+                datasets: [{
+                    label: '销售额 (£)',
+                    data: [192919, 181717, 186379, 178617, 188703, 180177],
+                    backgroundColor: '#06C167',
+                    yAxisID: 'y'
+                }, {
+                    label: '订单数',
+                    data: [10414, 10166, 10171, 9544, 10466, 9758],
+                    type: 'line',
+                    borderColor: '#000',
+                    yAxisID: 'y1'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: { type: 'linear', display: true, position: 'left', title: {display: true, text: '销售额 (£)'} },
+                    y1: { type: 'linear', display: true, position: 'right', grid: {drawOnChartArea: false}, title: {display: true, text: '订单数'} }
+                }
+            }
+        });
+
+        // 图表 2: Payout 差异
+        new Chart(document.getElementById('payoutChart'), {
+            type: 'bar',
+            data: {
+                labels: ['2025-01', '2025-02', '2025-03', '2025-04', '2025-05', '2025-06'],
+                datasets: [{
+                    label: '预期净收入 (85%)',
+                    data: [163981, 154460, 158422, 151824, 160397, 153150],
+                    backgroundColor: '#3498db'
+                }, {
+                    label: '实际净收入',
+                    data: [133182, 127358, 130657, 124698, 130457, 124028],
+                    backgroundColor: '#e74c3c'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    title: { display: true, text: '每月 Payout 差异 (£171,857 累计)' }
+                }
+            }
+        });
+
+        // 图表 3: 佣金率对比
+        new Chart(document.getElementById('commissionChart'), {
+            type: 'bar',
+            data: {
+                labels: ['约定佣金率', '实际佣金率'],
+                datasets: [{
+                    label: '佣金率 (%)',
+                    data: [15.0, 18.2],
+                    backgroundColor: ['#06C167', '#e74c3c']
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                indexAxis: 'y',
+                plugins: {
+                    legend: { display: false }
+                }
+            }
+        });
+
+        // 图表 4: 时段分布
+        new Chart(document.getElementById('timeChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ['早间订单', '下午订单', '晚餐订单', '夜宵订单'],
+                datasets: [{
+                    data: [42333, 25073, 2176, 49],
+                    backgroundColor: ['#3498db', '#f39c12', '#e74c3c', '#9b59b6']
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false
+            }
+        });
+
+        // 图表 5: 顾客结构
+        new Chart(document.getElementById('customerChart'), {
+            type: 'pie',
+            data: {
+                labels: ['新顾客', '老顾客'],
+                datasets: [{
+                    data: [14211, 24662],
+                    backgroundColor: ['#06C167', '#95a5a6']
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false
+            }
+        });
+
+        // 图表 6: 完成率趋势
+        new Chart(document.getElementById('completionChart'), {
+            type: 'line',
+            data: {
+                labels: ['2025-01', '2025-02', '2025-03', '2025-04', '2025-05', '2025-06'],
+                datasets: [{
+                    label: '完成率 (%)',
+                    data: [98.0, 98.4, 98.8, 98.8, 98.5, 98.8],
+                    borderColor: '#06C167',
+                    backgroundColor: 'rgba(6, 193, 103, 0.1)',
+                    fill: true,
+                    tension: 0.4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: { min: 97, max: 100 }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

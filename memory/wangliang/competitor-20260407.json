@@ -1,0 +1,34 @@
+{
+  "timestamp": "2026-04-07T08:02:00+08:00",
+  "task_id": "wangliang-competitor",
+  "cron_job_id": "20f881a5-919f-4434-b79b-09e28df8690f",
+  "status": "completed",
+  "delivery_status": "failed",
+  "delivery_error": "Telegram recipient @nicola_king could not be resolved to a numeric chat ID",
+  "summary": {
+    "top_competitors": [
+      {"name": "Kalshi", "threat_level": "high", "key_advantage": "CFTC regulated, US compliance"},
+      {"name": "Crypto.com OG", "threat_level": "medium", "key_advantage": "80M+ user base, fiat on-ramp"},
+      {"name": "Manifold Markets", "threat_level": "medium", "key_advantage": "Social prediction, UGC markets"}
+    ],
+    "industry_trends": [
+      "Compliance race (US market focus)",
+      "Institutional capital inflow",
+      "Information finance mainstream adoption",
+      "Multi-chain expansion"
+    ],
+    "key_risks": [
+      "Regulatory changes in US",
+      "Liquidity fragmentation",
+      "User acquisition cost increase"
+    ],
+    "recommendations": [
+      "Monitor Kalshi daily",
+      "Accelerate US compliance application",
+      "Launch institutional trading tools",
+      "Expand to multi-chain"
+    ]
+  },
+  "report_file": "/home/nicola/.openclaw/workspace/reports/wangliang-competitor-20260407.md",
+  "next_scheduled_run": "2026-04-08T08:00:00+08:00"
+}

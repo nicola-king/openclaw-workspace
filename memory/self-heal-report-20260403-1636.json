@@ -1,0 +1,104 @@
+{
+  "timestamp": "2026-04-03T16:36:49+08:00",
+  "check_type": "scheduled_30min",
+  "status": "healthy",
+  
+  "gateway": {
+    "status": "running",
+    "pid": 64657,
+    "port": 18789,
+    "bind": "127.0.0.1",
+    "probe_latency_ms": 19,
+    "uptime": "刚重启"
+  },
+  
+  "channels": {
+    "telegram": {
+      "status": "ok",
+      "accounts": 6,
+      "default": "taiyi"
+    },
+    "feishu": {
+      "status": "ok",
+      "accounts": 6,
+      "default": "taiyi",
+      "connection_mode": "websocket"
+    },
+    "openclaw-weixin": {
+      "status": "enabled",
+      "login_required": true
+    }
+  },
+  
+  "agents": {
+    "total": 9,
+    "active_sessions": 135,
+    "default_model": "qwen3.5-plus",
+    "context_window": 131072
+  },
+  
+  "system": {
+    "os": "linux 6.17.0-20-generic",
+    "node": "22.22.2",
+    "disk_usage": "19% (48G/274G)",
+    "tailscale": "off"
+  },
+  
+  "tasks": {
+    "active": 2,
+    "queued": 0,
+    "running": 2,
+    "issues": 124,
+    "tracked": 139
+  },
+  
+  "security_audit": {
+    "critical": 11,
+    "warn": 5,
+    "info": 1,
+    "main_issues": [
+      "Exec security=full",
+      "Open channels can reach exec-enabled agents",
+      "Feishu groupPolicy=open"
+    ]
+  },
+  
+  "heartbeat": {
+    "main": "30m",
+    "others": "disabled"
+  },
+  
+  "self_heal_actions": [
+    {
+      "action": "gateway_probe",
+      "result": "ok",
+      "latency_ms": 19
+    },
+    {
+      "action": "plugin_check",
+      "result": "feishu loaded, weixin enabled"
+    },
+    {
+      "action": "session_check",
+      "result": "135 active sessions"
+    },
+    {
+      "action": "disk_check",
+      "result": "19% used, healthy"
+    },
+    {
+      "action": "process_check",
+      "result": "gateway pid 64657 running"
+    }
+  ],
+  
+  "changes_from_last_check": {
+    "gateway_pid": "59444 → 64657 (restarted)",
+    "sessions": "133 → 135 (+2)",
+    "tasks_active": "1 → 2 (+1)",
+    "security_critical": "10 → 11 (+1)"
+  },
+  
+  "next_check": "2026-04-03T17:06:49+08:00",
+  "report_saved": "memory/self-heal-report-20260403-1636.json"
+}
