@@ -1,0 +1,420 @@
+{
+  "timestamp": "2026-04-07T08:45:30.581884",
+  "workspace": "/home/nicola/.openclaw/workspace",
+  "stats": {
+    "total_skills": 50,
+    "read_avg_ms": 0.035,
+    "read_median_ms": 0.029,
+    "read_min_ms": 0.019,
+    "read_max_ms": 0.16,
+    "read_p95_ms": 0.06,
+    "metadata_avg_ms": 0.009,
+    "total_avg_ms": 0.044,
+    "under_100ms": 50,
+    "over_100ms": 0
+  },
+  "results": [
+    {
+      "skill": "gmgn-cooking",
+      "read_ms": 0.056,
+      "metadata_ms": 0.013,
+      "total_ms": 0.069,
+      "size_bytes": 18608,
+      "status": "✅"
+    },
+    {
+      "skill": "gmgn-market",
+      "read_ms": 0.16,
+      "metadata_ms": 0.017,
+      "total_ms": 0.177,
+      "size_bytes": 42843,
+      "status": "✅"
+    },
+    {
+      "skill": "gmgn-portfolio",
+      "read_ms": 0.042,
+      "metadata_ms": 0.009,
+      "total_ms": 0.052,
+      "size_bytes": 13655,
+      "status": "✅"
+    },
+    {
+      "skill": "gmgn-swap",
+      "read_ms": 0.06,
+      "metadata_ms": 0.045,
+      "total_ms": 0.104,
+      "size_bytes": 27080,
+      "status": "✅"
+    },
+    {
+      "skill": "gmgn-token",
+      "read_ms": 0.115,
+      "metadata_ms": 0.013,
+      "total_ms": 0.128,
+      "size_bytes": 32474,
+      "status": "✅"
+    },
+    {
+      "skill": "gmgn-track",
+      "read_ms": 0.041,
+      "metadata_ms": 0.009,
+      "total_ms": 0.05,
+      "size_bytes": 18239,
+      "status": "✅"
+    },
+    {
+      "skill": "qiaomu-info-card-designer",
+      "read_ms": 0.04,
+      "metadata_ms": 0.009,
+      "total_ms": 0.049,
+      "size_bytes": 8027,
+      "status": "✅"
+    },
+    {
+      "skill": "aesthetic-scorer",
+      "read_ms": 0.04,
+      "metadata_ms": 0.011,
+      "total_ms": 0.05,
+      "size_bytes": 3666,
+      "status": "✅"
+    },
+    {
+      "skill": "agent-swap",
+      "read_ms": 0.03,
+      "metadata_ms": 0.01,
+      "total_ms": 0.039,
+      "size_bytes": 1659,
+      "status": "✅"
+    },
+    {
+      "skill": "airtable-sync",
+      "read_ms": 0.026,
+      "metadata_ms": 0.009,
+      "total_ms": 0.035,
+      "size_bytes": 2085,
+      "status": "✅"
+    },
+    {
+      "skill": "alpha-vantage",
+      "read_ms": 0.035,
+      "metadata_ms": 0.008,
+      "total_ms": 0.043,
+      "size_bytes": 6956,
+      "status": "✅"
+    },
+    {
+      "skill": "arc-reel-workflow",
+      "read_ms": 0.028,
+      "metadata_ms": 0.008,
+      "total_ms": 0.036,
+      "size_bytes": 4391,
+      "status": "✅"
+    },
+    {
+      "skill": "artistic-code",
+      "read_ms": 0.045,
+      "metadata_ms": 0.008,
+      "total_ms": 0.053,
+      "size_bytes": 9721,
+      "status": "✅"
+    },
+    {
+      "skill": "auto-exec",
+      "read_ms": 0.027,
+      "metadata_ms": 0.008,
+      "total_ms": 0.034,
+      "size_bytes": 2324,
+      "status": "✅"
+    },
+    {
+      "skill": "auto-retry-executor",
+      "read_ms": 0.028,
+      "metadata_ms": 0.007,
+      "total_ms": 0.036,
+      "size_bytes": 3204,
+      "status": "✅"
+    },
+    {
+      "skill": "bot-dashboard",
+      "read_ms": 0.028,
+      "metadata_ms": 0.007,
+      "total_ms": 0.035,
+      "size_bytes": 4512,
+      "status": "✅"
+    },
+    {
+      "skill": "browser-automation",
+      "read_ms": 0.041,
+      "metadata_ms": 0.008,
+      "total_ms": 0.048,
+      "size_bytes": 8464,
+      "status": "✅"
+    },
+    {
+      "skill": "china-textbook-search",
+      "read_ms": 0.027,
+      "metadata_ms": 0.014,
+      "total_ms": 0.041,
+      "size_bytes": 5211,
+      "status": "✅"
+    },
+    {
+      "skill": "cli-toolkit",
+      "read_ms": 0.029,
+      "metadata_ms": 0.007,
+      "total_ms": 0.036,
+      "size_bytes": 2785,
+      "status": "✅"
+    },
+    {
+      "skill": "coingecko-price",
+      "read_ms": 0.03,
+      "metadata_ms": 0.007,
+      "total_ms": 0.037,
+      "size_bytes": 5093,
+      "status": "✅"
+    },
+    {
+      "skill": "content-creator",
+      "read_ms": 0.036,
+      "metadata_ms": 0.008,
+      "total_ms": 0.044,
+      "size_bytes": 6817,
+      "status": "✅"
+    },
+    {
+      "skill": "cost-tracker",
+      "read_ms": 0.022,
+      "metadata_ms": 0.007,
+      "total_ms": 0.029,
+      "size_bytes": 2208,
+      "status": "✅"
+    },
+    {
+      "skill": "crontab-manager",
+      "read_ms": 0.02,
+      "metadata_ms": 0.01,
+      "total_ms": 0.031,
+      "size_bytes": 1823,
+      "status": "✅"
+    },
+    {
+      "skill": "easter-egg",
+      "read_ms": 0.022,
+      "metadata_ms": 0.007,
+      "total_ms": 0.029,
+      "size_bytes": 2328,
+      "status": "✅"
+    },
+    {
+      "skill": "ecommerce-workflow",
+      "read_ms": 0.025,
+      "metadata_ms": 0.007,
+      "total_ms": 0.032,
+      "size_bytes": 3312,
+      "status": "✅"
+    },
+    {
+      "skill": "epub-book-generator",
+      "read_ms": 0.02,
+      "metadata_ms": 0.007,
+      "total_ms": 0.027,
+      "size_bytes": 789,
+      "status": "✅"
+    },
+    {
+      "skill": "feishu",
+      "read_ms": 0.019,
+      "metadata_ms": 0.007,
+      "total_ms": 0.026,
+      "size_bytes": 725,
+      "status": "✅"
+    },
+    {
+      "skill": "flowsint-integration",
+      "read_ms": 0.019,
+      "metadata_ms": 0.007,
+      "total_ms": 0.026,
+      "size_bytes": 824,
+      "status": "✅"
+    },
+    {
+      "skill": "gemini-cli",
+      "read_ms": 0.032,
+      "metadata_ms": 0.007,
+      "total_ms": 0.039,
+      "size_bytes": 6243,
+      "status": "✅"
+    },
+    {
+      "skill": "geo-automation",
+      "read_ms": 0.022,
+      "metadata_ms": 0.007,
+      "total_ms": 0.029,
+      "size_bytes": 1565,
+      "status": "✅"
+    },
+    {
+      "skill": "git-integration",
+      "read_ms": 0.031,
+      "metadata_ms": 0.007,
+      "total_ms": 0.038,
+      "size_bytes": 5150,
+      "status": "✅"
+    },
+    {
+      "skill": "gmgn",
+      "read_ms": 0.039,
+      "metadata_ms": 0.007,
+      "total_ms": 0.046,
+      "size_bytes": 9241,
+      "status": "✅"
+    },
+    {
+      "skill": "gmgn-cooking",
+      "read_ms": 0.027,
+      "metadata_ms": 0.007,
+      "total_ms": 0.035,
+      "size_bytes": 18608,
+      "status": "✅"
+    },
+    {
+      "skill": "gmgn.backup.20260407-082410",
+      "read_ms": 0.027,
+      "metadata_ms": 0.007,
+      "total_ms": 0.034,
+      "size_bytes": 6249,
+      "status": "✅"
+    },
+    {
+      "skill": "growth-experiment",
+      "read_ms": 0.038,
+      "metadata_ms": 0.007,
+      "total_ms": 0.046,
+      "size_bytes": 10048,
+      "status": "✅"
+    },
+    {
+      "skill": "gumroad",
+      "read_ms": 0.021,
+      "metadata_ms": 0.007,
+      "total_ms": 0.028,
+      "size_bytes": 912,
+      "status": "✅"
+    },
+    {
+      "skill": "heal-state",
+      "read_ms": 0.026,
+      "metadata_ms": 0.007,
+      "total_ms": 0.033,
+      "size_bytes": 3175,
+      "status": "✅"
+    },
+    {
+      "skill": "jimeng-cli",
+      "read_ms": 0.023,
+      "metadata_ms": 0.007,
+      "total_ms": 0.03,
+      "size_bytes": 3738,
+      "status": "✅"
+    },
+    {
+      "skill": "llm-finetune",
+      "read_ms": 0.023,
+      "metadata_ms": 0.007,
+      "total_ms": 0.03,
+      "size_bytes": 1790,
+      "status": "✅"
+    },
+    {
+      "skill": "marketplace",
+      "read_ms": 0.019,
+      "metadata_ms": 0.007,
+      "total_ms": 0.026,
+      "size_bytes": 847,
+      "status": "✅"
+    },
+    {
+      "skill": "meta-skill-creator",
+      "read_ms": 0.034,
+      "metadata_ms": 0.007,
+      "total_ms": 0.041,
+      "size_bytes": 5720,
+      "status": "✅"
+    },
+    {
+      "skill": "monitoring",
+      "read_ms": 0.033,
+      "metadata_ms": 0.007,
+      "total_ms": 0.039,
+      "size_bytes": 5574,
+      "status": "✅"
+    },
+    {
+      "skill": "news-fetcher",
+      "read_ms": 0.047,
+      "metadata_ms": 0.008,
+      "total_ms": 0.055,
+      "size_bytes": 6506,
+      "status": "✅"
+    },
+    {
+      "skill": "notebooklm-cli",
+      "read_ms": 0.041,
+      "metadata_ms": 0.01,
+      "total_ms": 0.051,
+      "size_bytes": 8567,
+      "status": "✅"
+    },
+    {
+      "skill": "notion-db",
+      "read_ms": 0.02,
+      "metadata_ms": 0.007,
+      "total_ms": 0.027,
+      "size_bytes": 1959,
+      "status": "✅"
+    },
+    {
+      "skill": "npm-audit",
+      "read_ms": 0.033,
+      "metadata_ms": 0.007,
+      "total_ms": 0.04,
+      "size_bytes": 7331,
+      "status": "✅"
+    },
+    {
+      "skill": "paddleocr",
+      "read_ms": 0.031,
+      "metadata_ms": 0.007,
+      "total_ms": 0.039,
+      "size_bytes": 5466,
+      "status": "✅"
+    },
+    {
+      "skill": "paoding",
+      "read_ms": 0.023,
+      "metadata_ms": 0.007,
+      "total_ms": 0.03,
+      "size_bytes": 1615,
+      "status": "✅"
+    },
+    {
+      "skill": "pet-companion",
+      "read_ms": 0.027,
+      "metadata_ms": 0.007,
+      "total_ms": 0.034,
+      "size_bytes": 3242,
+      "status": "✅"
+    },
+    {
+      "skill": "play-music",
+      "read_ms": 0.02,
+      "metadata_ms": 0.007,
+      "total_ms": 0.027,
+      "size_bytes": 3777,
+      "status": "✅"
+    }
+  ],
+  "test_limit": 50,
+  "total_skills_found": 96
+}

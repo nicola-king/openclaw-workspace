@@ -1,0 +1,5 @@
+# epub-book-generator 依赖
+
+jinja2
+markdown
+pypandoc

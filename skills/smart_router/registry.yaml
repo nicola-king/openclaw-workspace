@@ -1,0 +1,735 @@
+# Smart Router - 技能注册表
+# 版本：1.0.0
+# 更新：2026-04-07T08:26:03.841690
+
+categories:
+  automation:
+    cost_tier: low
+    description: 自动化任务
+  communication:
+    cost_tier: low
+    description: 通信集成
+  content:
+    cost_tier: medium
+    description: 内容创作
+  core:
+    cost_tier: low
+    description: 核心系统技能
+  data:
+    cost_tier: medium
+    description: 数据处理
+  design:
+    cost_tier: medium
+    description: 视觉设计
+  development:
+    cost_tier: medium
+    description: 技术开发
+  finance:
+    cost_tier: high
+    description: 金融交易
+  knowledge:
+    cost_tier: low
+    description: 知识库
+  system:
+    cost_tier: low
+    description: 系统管理
+  utility:
+    cost_tier: low
+    description: 工具集
+cost_tiers:
+  high:
+    max_cost_per_1k: 0.01
+    recommended_models:
+    - qwen3-coder-plus
+    - gemini-2.5-pro
+  low:
+    max_cost_per_1k: 0.001
+    recommended_models:
+    - qwen3-turbo
+  medium:
+    max_cost_per_1k: 0.003
+    recommended_models:
+    - qwen3.5-plus
+latency_tiers:
+  fast:
+    max_latency_ms: 1000
+    recommended_models:
+    - qwen3-turbo
+  normal:
+    max_latency_ms: 3000
+    recommended_models:
+    - qwen3.5-plus
+  slow:
+    max_latency_ms: 10000
+    recommended_models:
+    - gemini-2.5-pro
+skills:
+  aesthetic-scorer:
+    capabilities:
+    - general
+    category: other
+    cost_tier: low
+    enabled: true
+    latency_tier: fast
+  agent-swap:
+    capabilities:
+    - general
+    category: general
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  airtable-sync:
+    capabilities:
+    - general
+    category: general
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  alpha-vantage:
+    capabilities:
+    - general
+    category: trading
+    cost_tier: high
+    enabled: true
+    latency_tier: normal
+  arc-reel-workflow:
+    capabilities:
+    - general
+    category: general
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  artistic-code:
+    capabilities:
+    - general
+    category: other
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  auto-exec:
+    capabilities:
+    - status()
+    - discover tasks()
+    - execute task(task id)
+    - report progress()
+    category: other
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  auto-retry-executor:
+    capabilities:
+    - execute with auto retry()
+    category: general
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  bot-dashboard:
+    capabilities:
+    - general
+    category: monitoring
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  browser-automation:
+    capabilities:
+    - general
+    category: browser
+    cost_tier: medium
+    enabled: true
+    latency_tier: fast
+  china-textbook-search:
+    capabilities:
+    - general
+    category: data
+    cost_tier: high
+    enabled: true
+    latency_tier: slow
+  cli-toolkit:
+    capabilities:
+    - general
+    category: cli
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  coingecko-price:
+    capabilities:
+    - general
+    category: trading
+    cost_tier: high
+    enabled: true
+    latency_tier: normal
+  content-creator:
+    capabilities:
+    - general
+    category: content
+    cost_tier: medium
+    enabled: true
+    latency_tier: normal
+  cost-tracker:
+    capabilities:
+    - general
+    category: other
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  crontab-manager:
+    capabilities:
+    - general
+    category: general
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  docker-ctl:
+    capabilities:
+    - container_management
+    - deployment
+    category: system
+    cost_tier: low
+    enabled: false
+    latency_tier: normal
+  easter-egg:
+    capabilities:
+    - general
+    category: general
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  ecommerce-workflow:
+    capabilities:
+    - general
+    category: general
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  epub-book-generator:
+    capabilities:
+    - general
+    category: content
+    cost_tier: medium
+    enabled: true
+    latency_tier: normal
+  feishu:
+    capabilities:
+    - general
+    category: data
+    cost_tier: high
+    enabled: true
+    latency_tier: slow
+  flowsint-integration:
+    capabilities:
+    - general
+    category: general
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  gemini-cli:
+    capabilities:
+    - general
+    category: cli
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  geo-automation:
+    capabilities:
+    - general
+    category: browser
+    cost_tier: medium
+    enabled: true
+    latency_tier: fast
+  git-integration:
+    capabilities:
+    - general
+    category: cli
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  gmgn:
+    capabilities:
+    - general
+    category: trading
+    cost_tier: high
+    enabled: true
+    latency_tier: normal
+  gmgn-cooking:
+    capabilities:
+    - cooking stats
+    category: trading
+    cost_tier: high
+    enabled: true
+    latency_tier: normal
+  gmgn.backup.20260407-082410:
+    capabilities:
+    - general
+    category: trading
+    cost_tier: high
+    enabled: true
+    latency_tier: normal
+  growth-experiment:
+    capabilities:
+    - general
+    category: other
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  gumroad:
+    capabilities:
+    - general
+    category: other
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  heal-state:
+    capabilities:
+    - can heal(issue id)
+    - record success/failure(issue id)
+    - needs intervention()
+    category: other
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  healthcheck:
+    capabilities:
+    - security_audit
+    - system_hardening
+    - risk_assessment
+    category: system
+    cost_tier: low
+    enabled: false
+    latency_tier: normal
+  jimeng-cli:
+    capabilities:
+    - general
+    category: cli
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  k8s-deploy:
+    capabilities:
+    - kubernetes
+    - cluster_management
+    category: system
+    cost_tier: medium
+    enabled: false
+    latency_tier: slow
+  llm-finetune:
+    capabilities:
+    - general
+    category: general
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  marketplace:
+    capabilities:
+    - general
+    category: other
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  meta-skill-creator:
+    capabilities:
+    - general
+    category: general
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  monitoring:
+    capabilities:
+    - general
+    category: monitoring
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  news-fetcher:
+    capabilities:
+    - general
+    category: data
+    cost_tier: high
+    enabled: true
+    latency_tier: slow
+  notebooklm-cli:
+    capabilities:
+    - general
+    category: cli
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  notion-db:
+    capabilities:
+    - general
+    category: general
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  npm-audit:
+    capabilities:
+    - general
+    category: general
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  paddleocr:
+    capabilities:
+    - general
+    category: general
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  paoding:
+    capabilities:
+    - general
+    category: other
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  pet-companion:
+    capabilities:
+    - general
+    category: other
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  play-music:
+    capabilities:
+    - general
+    category: other
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  portfolio-tracker:
+    capabilities:
+    - general
+    category: trading
+    cost_tier: high
+    enabled: true
+    latency_tier: normal
+  public-apis-index:
+    capabilities:
+    - general
+    category: other
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  qa-supervisor:
+    capabilities:
+    - general
+    category: other
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  qiaomu-info-card-designer:
+    capabilities:
+    - html_card_design
+    - magazine_style
+    - auto_screenshot
+    category: design
+    cost_tier: medium
+    enabled: false
+    latency_tier: normal
+  rag-pipeline:
+    capabilities:
+    - general
+    category: other
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  roi-tracker:
+    capabilities:
+    - general
+    category: other
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  rust-bridge:
+    capabilities:
+    - general
+    category: other
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  shanmu:
+    capabilities:
+    - general
+    category: content
+    cost_tier: medium
+    enabled: true
+    latency_tier: normal
+  shanmu-reporter:
+    capabilities:
+    - general
+    category: content
+    cost_tier: medium
+    enabled: true
+    latency_tier: normal
+  shared:
+    capabilities:
+    - general
+    category: automation
+    cost_tier: medium
+    enabled: true
+    latency_tier: fast
+  shoucangli:
+    capabilities:
+    - general
+    category: general
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  slack-notify:
+    capabilities:
+    - general
+    category: general
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  smart-model-router:
+    capabilities:
+    - general
+    category: infrastructure
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  smart-router:
+    capabilities:
+    - model_routing
+    - skill_discovery
+    - cost_optimization
+    category: core
+    cost_tier: low
+    enabled: false
+    latency_tier: fast
+  smart-skills-manager:
+    capabilities:
+    - general
+    category: infrastructure
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  smart_router:
+    capabilities:
+    - route(task)
+    - register skill(skill id, metadata)
+    - discover skills(filters)
+    - get model config(model id)
+    category: core
+    cost_tier: low
+    enabled: true
+    latency_tier: fast
+  ssh:
+    capabilities:
+    - general
+    category: tools
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  steward:
+    capabilities:
+    - general
+    category: other
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  suwen:
+    capabilities:
+    - general
+    category: other
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  taiyi:
+    capabilities:
+    - general
+    category: other
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  taiyi-notebooklm:
+    capabilities:
+    - general
+    category: cli
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  task-orchestrator:
+    capabilities:
+    - general
+    category: infrastructure
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  terraform-apply:
+    capabilities:
+    - general
+    category: general
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  the-well-processor:
+    capabilities:
+    - general
+    category: data
+    cost_tier: high
+    enabled: true
+    latency_tier: slow
+  tianji:
+    capabilities:
+    - general
+    category: other
+    cost_tier: high
+    enabled: true
+    latency_tier: normal
+  today-stage:
+    capabilities:
+    - general
+    category: other
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  trading:
+    capabilities:
+    - general
+    category: trading
+    cost_tier: high
+    enabled: true
+    latency_tier: normal
+  tts:
+    capabilities:
+    - general
+    category: tools
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  tts-alternatives:
+    capabilities:
+    - general
+    category: general
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  turboquant:
+    capabilities:
+    - general
+    category: other
+    cost_tier: high
+    enabled: true
+    latency_tier: normal
+  tv-control:
+    capabilities:
+    - general
+    category: other
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  undercover-mode:
+    capabilities:
+    - general
+    category: other
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  unsplash-image:
+    capabilities:
+    - general
+    category: visual
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  vector-db:
+    capabilities:
+    - general
+    category: other
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  video-factory:
+    capabilities:
+    - general
+    category: other
+    cost_tier: high
+    enabled: true
+    latency_tier: slow
+  video-processor:
+    capabilities:
+    - general
+    category: other
+    cost_tier: high
+    enabled: true
+    latency_tier: slow
+  visual-designer:
+    capabilities:
+    - general
+    category: visual
+    cost_tier: medium
+    enabled: true
+    latency_tier: normal
+  wangliang:
+    capabilities:
+    - general
+    category: data
+    cost_tier: high
+    enabled: true
+    latency_tier: slow
+  weather:
+    capabilities:
+    - general
+    category: data
+    cost_tier: high
+    enabled: true
+    latency_tier: slow
+  web:
+    capabilities:
+    - general
+    category: tools
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  webhook-relay:
+    capabilities:
+    - general
+    category: tools
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  wechat:
+    capabilities:
+    - general
+    category: tools
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  yi:
+    capabilities:
+    - general
+    category: other
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  yijing:
+    capabilities:
+    - general
+    category: other
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  zapier-trigger:
+    capabilities:
+    - general
+    category: other
+    cost_tier: low
+    enabled: true
+    latency_tier: normal
+  zhiji:
+    capabilities:
+    - general
+    category: trading
+    cost_tier: high
+    enabled: true
+    latency_tier: normal
+  zhiji-sentiment:
+    capabilities:
+    - general
+    category: other
+    cost_tier: high
+    enabled: true
+    latency_tier: normal
+updated: '2026-04-07T08:26:03.841690'
+version: 1.0.0

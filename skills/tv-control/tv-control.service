@@ -1,0 +1,16 @@
+[Unit]
+Description=Taiyi TV Control Service
+After=network.target
+
+[Service]
+Type=simple
+User=nicola
+WorkingDirectory=/home/nicola/.openclaw/workspace/skills/tv-control
+ExecStart=/usr/bin/python3 /home/nicola/.openclaw/workspace/skills/tv-control/main.py
+Restart=always
+RestartSec=10
+StandardOutput=append:/home/nicola/.openclaw/workspace/skills/tv-control/logs/tv-control.log
+StandardError=append:/home/nicola/.openclaw/workspace/skills/tv-control/logs/tv-control.log
+
+[Install]
+WantedBy=multi-user.target

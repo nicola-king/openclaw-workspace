@@ -1,0 +1,71 @@
+# 电视配置
+tv:
+  brand: huawei          # 电视品牌：huawei/xiaomi/hisense/tcl/sony/samsung/lg/skyworth
+  ip: 192.168.1.100      # IP 地址 (网络控制需要，CEC 不需要)
+  port: 8899             # 端口 (自动，可不填)
+  token: ""              # Token (小米需要，华为不需要)
+  control_method: cec    # 控制方式：cec(首选) / xset / network
+
+# CEC 配置
+cec:
+  enabled: true
+  adapter: 0             # CEC 适配器编号
+  timeout: 5             # 超时时间 (秒)
+
+# 音频配置
+audio:
+  enabled: true
+  device: Master         # 音频设备名
+  step: 5                # 音量调节步长 (%)
+
+# 显示器配置
+display:
+  enabled: true
+  method: xset           # 控制方式：xset / cec
+
+# API 配置
+api:
+  enabled: true
+  host: "0.0.0.0"        # 监听地址
+  port: 5001             # HTTP API 端口
+  token: "taiyi_tv_control_secret"  # API 认证 token
+  cors_enabled: false
+  allowed_ips:           # IP 白名单 (可选)
+    - "127.0.0.1"
+    - "192.168.1.0/24"
+
+# Telegram 配置
+telegram:
+  enabled: true
+  bot_token: "8351068758:AAGtRXv2u5fGAMuVY3d5hmeKgV9tAFpCMLY"
+  chat_id: "7073481596"
+  commands:
+    - "on"
+    - "off"
+    - "vol+"
+    - "vol-"
+    - "mute"
+    - "ch+"
+    - "ch-"
+    - "status"
+
+# 定时任务配置
+scheduler:
+  enabled: false
+  timezone: "Asia/Shanghai"
+  tasks:
+    - name: "auto_off"
+      cron: "0 23 * * *"      # 每天 23:00
+      action: "off"
+      message: "该休息了，需要关电视吗？"
+    - name: "morning_on"
+      cron: "0 8 * * *"       # 每天早上 8:00
+      action: "on"
+      message: "早上好！电视已打开"
+
+# 日志配置
+logging:
+  level: INFO              # DEBUG / INFO / WARNING / ERROR
+  file: logs/tv-control.log
+  max_size: 10485760       # 10MB
+  backup_count: 5          # 保留日志文件数
