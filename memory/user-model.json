@@ -1,10 +1,18 @@
 {
   "version": "1.0",
-  "updated_at": "2026-04-08T23:30:00+08:00",
-  
+  "updated_at": "2026-04-09T00:01:00.528057",
   "core": {
-    "values": ["负熵", "效率", "艺术化存在", "第一性原理"],
-    "long_term_goals": ["AGI 实现", "知识传承", "太一体系完善"],
+    "values": [
+      "负熵",
+      "效率",
+      "艺术化存在",
+      "第一性原理"
+    ],
+    "long_term_goals": [
+      "AGI 实现",
+      "知识传承",
+      "太一体系完善"
+    ],
     "basic_preferences": {
       "communication_style": "极简黑客风",
       "decision_making": "第一性原理",
@@ -12,27 +20,47 @@
       "work_rhythm": "深度工作优先"
     }
   },
-  
   "contextual": {
     "work_mode": {
       "focus_hours": "09:00-12:00, 14:00-18:00, 22:00-23:00",
-      "preferred_tools": ["CLI", "Python", "Git", "OpenClaw"],
+      "preferred_tools": [
+        "CLI",
+        "Python",
+        "Git",
+        "OpenClaw"
+      ],
       "collaboration_style": "异步优先",
-      "current_projects": ["太一 AGI 系统", "地理感知路由", "可视化 Dashboard"]
+      "current_projects": [
+        "太一 AGI 系统",
+        "地理感知路由",
+        "可视化 Dashboard"
+      ]
     },
     "learning_mode": {
-      "current_topics": ["AGI 架构", "链上交易", "可视化", "Hermes Agent"],
+      "current_topics": [
+        "AGI 架构",
+        "链上交易",
+        "可视化",
+        "Hermes Agent"
+      ],
       "learning_pace": "密集型",
       "preferred_format": "实践驱动",
-      "recent_insights": ["自进化学习循环", "辩证用户建模"]
+      "recent_insights": [
+        "自进化学习循环",
+        "辩证用户建模"
+      ]
     },
     "creation_mode": {
-      "output_types": ["技能", "宪法", "Dashboard", "文档"],
+      "output_types": [
+        "技能",
+        "宪法",
+        "Dashboard",
+        "文档"
+      ],
       "quality_standard": "生产就绪",
       "iteration_style": "快速原型→完善"
     }
   },
-  
   "evolutionary": {
     "recent_attention": [
       "Hermes Agent 集成",
@@ -58,7 +86,6 @@
       "1_year": "AGI 自主进化框架"
     }
   },
-  
   "change_log": [
     {
       "date": "2026-04-08",

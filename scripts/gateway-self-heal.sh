@@ -3,9 +3,14 @@
 # 触发条件：Gateway 不可用时自动执行
 # 目标：60 秒内自动恢复
 
-LOG_FILE="/home/nicola/.openclaw/logs/gateway-self-heal.log"
+WORKSPACE="/home/nicola/.openclaw/workspace"
+LOG_DIR="$WORKSPACE/logs"
+LOG_FILE="$LOG_DIR/gateway-self-heal.log"
 START_TIME=$(date +%s)
 MAX_RESTART_ATTEMPTS=3
+
+# 确保日志目录存在
+mkdir -p "$LOG_DIR"
 
 log() {
   local elapsed=$(($(date +%s) - START_TIME))

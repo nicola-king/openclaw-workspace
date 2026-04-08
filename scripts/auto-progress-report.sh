@@ -2,8 +2,13 @@
 # 自动进度汇报脚本 v3 - 使用 Python 调用 message tool
 # 每 5 分钟自动发送进度更新到微信
 
+WORKSPACE="/home/nicola/.openclaw/workspace"
+LOG_DIR="$WORKSPACE/logs"
 PROGRESS_FILE="/tmp/cli-progress.json"
-LOG_FILE="/tmp/progress-report.log"
+LOG_FILE="$LOG_DIR/progress-report.log"
+
+# 确保日志目录存在
+mkdir -p "$LOG_DIR"
 
 log() {
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] $1" >> "$LOG_FILE"

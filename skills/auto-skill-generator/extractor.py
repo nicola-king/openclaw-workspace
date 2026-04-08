@@ -175,15 +175,22 @@ class PatternExtractor:
     
     def _generate_name(self, intent: str) -> str:
         """生成技能名称"""
-        # 简化：从意图提取关键词
+        # 从意图提取关键词
         keywords = re.findall(r'[\u4e00-\u9fa5]{2,}', intent)
         if keywords:
-            return ''.join(keywords[:3]) + 'Generator'
+            # 移除"太一"等通用词
+            keywords = [k for k in keywords if k not in ['太一']]
+            return ''.join(keywords[:3]) + 'Skill'
         return 'AutoSkill'
     
     def _summarize(self, task: Dict) -> str:
         """生成任务摘要"""
-        return f"自动{task['intent']}"
+        intent = task['intent']
+        # 移除"太一，"前缀
+        intent = re.sub(r'^太一 [，,]?\s*', '', intent)
+        # 移除"今日"等时间词
+        intent = re.sub(r'今日 | 明日 | 当前', '', intent)
+        return f"自动化{intent}"
     
     def _extract_triggers(self, intent: str) -> List[str]:
         """提取触发关键词"""
@@ -292,12 +299,18 @@ created: {timestamp}
     
     def _slugify(self, name: str) -> str:
         """将名称转换为 slug"""
-        # 简单处理：保留英文和数字
-        slug = re.sub(r'[^a-zA-Z0-9-]', '', name)
-        return slug.lower() if slug else 'auto-skill'
+        # 移除"Skill"重复
+        name = name.replace('SkillSkill', 'Skill')
+        slug = re.sub(r'[^a-zA-Z0-9-]', '-', name)
+        slug = re.sub(r'-+', '-', slug)  # 多个连字符变一个
+        return slug.lower().strip('-') if slug else 'auto-skill'
     
     def _format_triggers(self, triggers: List[str]) -> str:
         """格式化触发条件"""
+        # 过滤通用词
+        triggers = [t for t in triggers if t not in ['太一']]
+        if not triggers:
+            return '- 用户提及相关任务'
         return '\n'.join([f'- 用户提及：{t}' for t in triggers[:3]])
     
     def _format_steps(self, steps: List[str]) -> str:

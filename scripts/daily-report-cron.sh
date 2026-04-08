@@ -6,7 +6,11 @@ set -e
 
 WORKSPACE="/home/nicola/.openclaw/workspace"
 REPORT_DIR="$WORKSPACE/reports"
-LOG_FILE="/home/nicola/.openclaw/logs/daily-report.log"
+LOG_DIR="$WORKSPACE/logs"
+LOG_FILE="$LOG_DIR/daily-report.log"
+
+# 确保日志目录存在
+mkdir -p "$LOG_DIR"
 TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
 TODAY=$(date +%Y-%m-%d)
 REPORT_FILE="$REPORT_DIR/daily-report-$TODAY.md"

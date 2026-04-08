@@ -130,8 +130,8 @@ LOG_DIR="$WORKSPACE/logs"
 # 🎯 任务保障
 # ============================================================
 
-# Cron 看门狗 - 每 15 分钟检查 Cron 服务
-*/15 * * * * systemctl --user status cron > /dev/null || echo "[$(date)] Cron 服务异常!" >> $LOG_DIR/cron-watchdog.log
+# Cron 看门狗 - 每 15 分钟检查 Cron 服务 (系统级)
+*/15 * * * * pgrep -x cron > /dev/null || echo "[$(date)] Cron 服务异常!" >> $LOG_DIR/cron-watchdog.log
 
 # ============================================================
 # 配置结束

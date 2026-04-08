@@ -5,7 +5,11 @@
 set -e
 
 WORKSPACE="/home/nicola/.openclaw/workspace"
-LOG_FILE="/home/nicola/.openclaw/logs/constitution-learning.log"
+LOG_DIR="$WORKSPACE/logs"
+LOG_FILE="$LOG_DIR/constitution-learning.log"
+
+# 确保日志目录存在
+mkdir -p "$LOG_DIR"
 TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
 
 log() {

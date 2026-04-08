@@ -3,8 +3,13 @@
 # 目标：30 秒内完成重启
 # 用法：./gateway-quick-restart.sh
 
-LOG_FILE="/home/nicola/.openclaw/logs/gateway-restart.log"
+WORKSPACE="/home/nicola/.openclaw/workspace"
+LOG_DIR="$WORKSPACE/logs"
+LOG_FILE="$LOG_DIR/gateway-restart.log"
 START_TIME=$(date +%s)
+
+# 确保日志目录存在
+mkdir -p "$LOG_DIR"
 
 log() {
   local elapsed=$(($(date +%s) - START_TIME))

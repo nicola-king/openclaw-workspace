@@ -95,7 +95,9 @@ def test_skill_generation(task_log, task_name, similar_count=3):
     print(f"   复杂度：{result['task']['complexity']}/10")
     
     if result['should_generate']:
-        skill_file = generator.save_draft(result['draft'], result['pattern']['name'])
+        # 使用任务名作为技能目录
+        skill_name = task_name.replace(' ', '-').lower()
+        skill_file = generator.save_draft(result['draft'], skill_name)
         print(f"\n✅ 技能草稿已保存：{skill_file}")
         return skill_file
     else:

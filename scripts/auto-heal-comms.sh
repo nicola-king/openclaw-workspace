@@ -4,8 +4,13 @@
 
 set -e
 
-LOG_FILE="/tmp/openclaw/auto-heal.log"
-STATE_FILE="/home/nicola/.openclaw/workspace/memory/heal-state.json"
+WORKSPACE="/home/nicola/.openclaw/workspace"
+LOG_DIR="$WORKSPACE/logs"
+LOG_FILE="$LOG_DIR/auto-heal-comms.log"
+STATE_FILE="$WORKSPACE/memory/heal-state.json"
+
+# 确保日志目录存在
+mkdir -p "$LOG_DIR"
 
 log() {
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] $1" | tee -a "$LOG_FILE"

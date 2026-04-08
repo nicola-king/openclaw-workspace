@@ -5,8 +5,12 @@
 set -e
 
 WORKSPACE="/home/nicola/.openclaw/workspace"
-LOG_FILE="/home/nicola/.openclaw/logs/auto-exec-5m.log"
+LOG_DIR="$WORKSPACE/logs"
+LOG_FILE="$LOG_DIR/auto-exec-5m.log"
 STATUS_FILE="/tmp/auto-exec-status.json"
+
+# 确保日志目录存在
+mkdir -p "$LOG_DIR"
 TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
 
 log() {

@@ -8,7 +8,8 @@ set -e
 WORKSPACE="/home/nicola/.openclaw/workspace"
 STATUS_FILE="/tmp/auto-exec-status.json"
 HEARTBEAT_FILE="$WORKSPACE/HEARTBEAT.md"
-LOG_FILE="/home/nicola/.openclaw/logs/auto-exec-5m.log"
+LOG_DIR="$WORKSPACE/logs"
+LOG_FILE="$LOG_DIR/auto-exec-5m.log"
 
 # 读取状态
 if [ -f "$STATUS_FILE" ]; then
@@ -40,7 +41,7 @@ REPORT="📊 **自动执行状态汇报**
 **当前 P0 任务**:
 $P0_TASKS
 **Cron 状态**: ✅ 每 5 分钟检查中
-**日志**: /home/nicola/.openclaw/logs/auto-exec-5m.log
+**日志**: $WORKSPACE/logs/auto-exec-5m.log
 
 ---
 *自动执行保障机制 v2.0 | 每小时整点执行任务*"

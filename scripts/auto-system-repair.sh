@@ -12,7 +12,10 @@ echo "======================================"
 echo ""
 
 # 记录日志
-LOG_FILE="/tmp/system-repair-$(date +%Y%m%d-%H%M%S).log"
+WORKSPACE="/home/nicola/.openclaw/workspace"
+LOG_DIR="$WORKSPACE/logs"
+mkdir -p "$LOG_DIR"
+LOG_FILE="$LOG_DIR/system-repair-$(date +%Y%m%d-%H%M%S).log"
 exec > >(tee -a "$LOG_FILE") 2>&1
 
 # ============================================
@@ -193,7 +196,7 @@ cat > "$REPORT_FILE" << 'EOF'
 
 ## 📁 日志文件
 
-- 修复日志：`/tmp/system-repair-*.log`
+- 修复日志：`$WORKSPACE/logs/system-repair-*.log`
 - 本报告：`reports/system-auto-repair-*.md`
 
 ---
