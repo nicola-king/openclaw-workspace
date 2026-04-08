@@ -1,6 +1,6 @@
 # HEARTBEAT.md - 核心待办（TurboQuant 压缩版）
 
-> 原则：只保留 P0 核心任务 · 细节见 `memory/residual.md` · 最后更新：**2026-04-08 23:05**
+> 原则：只保留 P0 核心任务 · 细节见 `memory/residual.md` · 最后更新：**2026-04-08 23:30**
 
 ---
 
@@ -13,6 +13,7 @@
 | **TASK-149** | 即梦 CLI 集成 | 🟡 P2 待命 | 按需激活 | - |
 | **TASK-129** | DeepTutor 学习 | ✅ 完成 | CLI 增强待执行 | ✅ |
 | **TASK-130** | AI_NovelGenerator | ✅ 完成 | 状态追踪待执行 | ✅ |
+| **TASK-150** | Hermes 学习循环 | 🟢 新创建 | 核心模块开发 | 04-09 |
 
 ---
 
@@ -32,16 +33,44 @@
 | **每 30 分钟** | 任务自愈恢复 | ✅ |
 | **每 5 分钟** | 告警检查 | ✅ |
 
-### 每日检查 (22:59 更新)
+### 每日检查 (23:30 更新)
 - [x] 微信通道状态 ✅ 正常
 - [x] Telegram 通道 ✅ 正常
-- [x] Gateway 运行 ✅ PID 96022
+- [x] Gateway 运行 ✅ PID 134109
 - [x] Bot Dashboard ✅ http://localhost:3000
 - [x] ROI Dashboard ✅ http://localhost:8080
+- [x] Hermes 学习循环 ✅ 新创建
 
 ---
 
-## 🚀 本次 Session 完成 (21:06-22:59)
+## 🧠 学习循环状态 (新)
+
+| 指标 | 数值 |
+|------|------|
+| 待创建技能 | 0 个 |
+| 待优化技能 | 0 个 |
+| 待持久化洞察 | 1 条 (Hermes 集成) |
+| 本周技能创建 | 1 个 (hermes-learning-loop) |
+
+## 👤 用户模型状态 (新)
+
+| 维度 | 状态 | 最后更新 |
+|------|------|---------|
+| 核心层 | ✅ 稳定 | 2026-04-08 |
+| 情境层 | 🟡 工作中 | 实时 |
+| 演化层 | 🟢 活跃 | 实时 |
+
+### 近期关注
+- Hermes Agent 集成 ✅
+- Dashboard 部署 ✅
+- 地理感知路由 v2.0 ✅
+
+### 认知转变
+- 从静态记忆→动态学习循环
+
+---
+
+## 🚀 本次 Session 完成 (23:00-23:30)
 
 | 任务 | 状态 | 成果 |
 |------|------|------|
@@ -55,7 +84,22 @@
 | **艺术主管 Skill** | ✅ 完成 | `skills/art-director/SKILL.md` + 宪法级美学法则 |
 | **DESIGN.md** | ✅ 完成 | 太一设计系统 v1.0 |
 
-**新增文件**: 12 个技能文件，4 个配置更新，2 个宪法文件
+**新增文件**: 1 个技能 (hermes-learning-loop), 2 个宪法文件, 1 个用户模型
+
+---
+
+## 📦 Hermes 学习循环集成 (23:30)
+
+| 模块 | 状态 | 说明 |
+|------|------|------|
+| **SKILL.md** | ✅ 创建 | 自进化学习循环协议 |
+| **skill_creator.py** | ✅ 创建 | 自动技能创建核心 |
+| **nudge_manager.py** | ✅ 创建 | 知识持久化管理 |
+| **DIALECTIC-USER-MODEL.md** | ✅ 创建 | 辩证用户建模宪法 |
+| **SEMANTIC-SEARCH.md** | ✅ 创建 | 语义搜索协议 |
+| **user-model.json** | ✅ 创建 | 用户模型数据 |
+
+**灵感**: [NousResearch Hermes Agent](https://github.com/NousResearch/hermes-agent)
 
 ---
 
@@ -118,6 +162,8 @@
 | 执行日志 | `reports/` |
 | 长期记忆 | `MEMORY.md` |
 | 核心记忆 | `memory/core.md` |
+| 用户模型 | `memory/user-model.json` 🆕 |
+| 学习循环 | `skills/hermes-learning-loop/` 🆕 |
 
 ---
 
