@@ -1,0 +1,48 @@
+{
+  "bailian": {
+    "enabled": true,
+    "api_key_env": "BAILIAN_API_KEY",
+    "base_url": "https://dashscope.aliyuncs.com/v1",
+    "daily_limit": 100000,
+    "weekly_limit": 500000,
+    "monthly_limit": 2000000,
+    "warning_threshold": 0.90,
+    "switch_threshold": 0.95
+  },
+  "gemini": {
+    "enabled": true,
+    "api_key_env": "GEMINI_API_KEY",
+    "base_url": "https://generativelanguage.googleapis.com/v1beta",
+    "daily_limit": 1000,
+    "warning_threshold": 0.90,
+    "switch_threshold": 0.95
+  },
+  "local": {
+    "enabled": true,
+    "provider": "ollama",
+    "base_url": "http://127.0.0.1:11434",
+    "models": {
+      "primary": "qwen2.5:7b",
+      "code": "qwen2.5-coder:7b"
+    }
+  },
+  "monitor": {
+    "enabled": true,
+    "check_interval": 300,
+    "auto_switch": true,
+    "notify": true,
+    "cache_ttl": 60
+  },
+  "notify": {
+    "telegram": {
+      "enabled": true,
+      "bot_token_env": "TELEGRAM_BOT_TOKEN",
+      "chat_id_env": "TELEGRAM_CHAT_ID"
+    },
+    "feishu": {
+      "enabled": true,
+      "app_id_env": "FEISHU_APP_ID",
+      "app_secret_env": "FEISHU_APP_SECRET"
+    }
+  }
+}
