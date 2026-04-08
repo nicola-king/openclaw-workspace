@@ -31,13 +31,13 @@
       "route": "domestic"
     },
     {
-      "name": "钉钉",
-      "domains": ["oapi.dingtalk.com", "dingtalk.com"],
+      "name": "微信",
+      "domains": ["mp.weixin.qq.com", "weixin.qq.com", "ilinkai.weixin.qq.com"],
       "route": "domestic"
     },
     {
-      "name": "微信公众号",
-      "domains": ["mp.weixin.qq.com"],
+      "name": "钉钉",
+      "domains": ["oapi.dingtalk.com", "dingtalk.com"],
       "route": "domestic"
     }
   ]

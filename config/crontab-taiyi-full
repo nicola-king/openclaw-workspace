@@ -1,0 +1,138 @@
+# ============================================================
+# 太一 AGI 系统 Crontab 定时任务配置
+# ============================================================
+# 生成时间：2026-04-08 22:10
+# 安装方法：crontab /home/nicola/.openclaw/workspace/config/crontab-taiyi-full
+# 验证方法：crontab -l
+# 备份方法：crontab -l > backup-$(date +%Y%m%d).txt
+# ============================================================
+
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+MAILTO=""
+
+WORKSPACE="/home/nicola/.openclaw/workspace"
+LOG_DIR="$WORKSPACE/logs"
+
+# ============================================================
+# 🔄 高频任务 (每 5-30 分钟)
+# ============================================================
+
+# 每 5 分钟 - Skills 心跳检测 + 自动执行保障
+*/5 * * * * $WORKSPACE/scripts/auto-exec-5min-cron.sh >> $LOG_DIR/auto-exec-5m.log 2>&1
+
+# 每 30 分钟 - Polymarket 气象监控 (知几)
+*/30 * * * * $WORKSPACE/scripts/polymarket-hot-weather-cron.sh >> $LOG_DIR/polymarket-weather.log 2>&1
+
+# 每 30 分钟 - Git 备份提交 (守藏吏)
+*/30 * * * * cd $WORKSPACE && git add -A && git commit -m "[auto] 30min backup $(date '+%Y-%m-%d %H:%M')" >> $LOG_DIR/git-backup.log 2>&1 || true
+
+# ============================================================
+# ⏰ 每小时任务
+# ============================================================
+
+# 每小时整点 - 天气预测 (素问)
+0 * * * * $WORKSPACE/scripts/weather-forecast-cron.sh >> $LOG_DIR/weather-forecast.log 2>&1
+
+# 每小时整点 - 干预监控 (守藏吏)
+0 * * * * cd $WORKSPACE && python3 skills/steward/intervention-monitor/run.py >> $LOG_DIR/intervention-monitor.log 2>&1
+
+# 每小时整点 - 退化检查 (太一)
+0 * * * * $WORKSPACE/scripts/check-degradation.py >> $LOG_DIR/degradation-check.log 2>&1
+
+# 每小时整点 - 进化状态更新 (太一)
+0 * * * * $WORKSPACE/scripts/agi-evolution-self-check.py >> $LOG_DIR/evolution-state.log 2>&1
+
+# 每小时整点 - 系统自检 (快速) (守藏吏)
+0 * * * * $WORKSPACE/scripts/self-check.sh --quick >> $LOG_DIR/self-check.log 2>&1
+
+# 每小时整点 - Gateway 健康检查
+0 * * * * pgrep -f openclaw-gateway > /dev/null || systemctl --user start openclaw-gateway
+
+# 每小时整点 - 知几交易策略执行
+0 * * * * $WORKSPACE/scripts/zhiji-cron.sh >> $LOG_DIR/zhiji-exec.log 2>&1
+
+# ============================================================
+# 📅 每日任务
+# ============================================================
+
+# 每日 01:00 - 高价值发现 (罔两)
+0 1 * * * cd $WORKSPACE && python3 skills/wangliang/high-value-discovery/run.py >> $LOG_DIR/high-value-discovery.log 2>&1
+
+# 每日 01:00 - 深度学习 (太一)
+0 1 * * * cd $WORKSPACE && python3 skills/taiyi/night-learning/run.py >> $LOG_DIR/night-learning.log 2>&1
+
+# 每日 03:00 - Git 完整备份 (守藏吏)
+0 3 * * * $WORKSPACE/scripts/git-backup-system.sh backup >> $LOG_DIR/git-backup.log 2>&1
+
+# 每日 03:00 - QQ 邮箱备份 (每周日)
+0 3 * * 0 $WORKSPACE/scripts/qq-email-backup.sh >> $LOG_DIR/qq-backup.log 2>&1
+
+# 每日 06:00 - 宪法学习 + 记忆提炼 (守藏吏)
+0 6 * * * $WORKSPACE/scripts/constitution-learning-cron.sh >> $LOG_DIR/constitution.log 2>&1
+
+# 每日 06:00 - 系统自检 (完整) (守藏吏)
+0 6 * * * $WORKSPACE/scripts/self-check.sh --full --report >> $LOG_DIR/self-check.log 2>&1
+
+# 每日 09:00 - 模型使用统计
+0 9 * * * cd $WORKSPACE && python3 scripts/model-usage-stats.py >> $LOG_DIR/model-stats.log 2>&1
+
+# 每日 23:00 - 预算追踪 (庖丁)
+0 23 * * * cd $WORKSPACE && python3 skills/paoding/monetization-tracker/run.py >> $LOG_DIR/monetization-tracker.log 2>&1
+
+# 每日 23:00 - 日报生成 + 记忆归档 (守藏吏)
+0 23 * * * /opt/openclaw-report.sh daily >> $LOG_DIR/daily-report.log 2>&1
+
+# 每日 23:00 - Stage-4 验证 (守藏吏)
+0 23 * * * cd $WORKSPACE && python3 skills/steward/stage-verification/run.py --stage=4 >> $LOG_DIR/verify-stage4.log 2>&1
+
+# ============================================================
+# 📆 每周任务
+# ============================================================
+
+# 每周一 09:00 - 周报生成
+0 9 * * 1 /opt/openclaw-report.sh weekly >> $LOG_DIR/weekly-report.log 2>&1
+
+# 每周一 09:00 - AGI 进化检查
+0 9 * * 1 cd $WORKSPACE && python3 scripts/setup-agi-evolution-cron.sh >> $LOG_DIR/agi-evolution.log 2>&1
+
+# ============================================================
+# 📊 每月任务
+# ============================================================
+
+# 每月 1 日 09:00 - 月报生成
+0 9 1 * * /opt/openclaw-report.sh monthly >> $LOG_DIR/monthly-report.log 2>&1
+
+# 每月 7 日 23:00 - Stage-3 验证 (守藏吏)
+0 23 7 1 * cd $WORKSPACE && python3 skills/steward/stage-verification/run.py --stage=3 >> $LOG_DIR/verify-stage3.log 2>&1
+
+# ============================================================
+# 📡 通讯通道健康检查
+# ============================================================
+
+# 每 10 分钟 - 微信通道检查
+*/10 * * * * pgrep -f "openclaw-weixin" > /dev/null || echo "[$(date)] 微信通道异常" >> $LOG_DIR/channel-alert.log
+
+# 每 10 分钟 - Telegram 通道检查
+*/10 * * * * pgrep -f "telegram" > /dev/null || echo "[$(date)] Telegram 通道异常" >> $LOG_DIR/channel-alert.log
+
+# 每 10 分钟 - Discord 通道检查
+*/10 * * * * pgrep -f "discord" > /dev/null || echo "[$(date)] Discord 通道异常" >> $LOG_DIR/channel-alert.log
+
+# ============================================================
+# 🌍 地理感知路由缓存清理
+# ============================================================
+
+# 每日 00:00 - 清理 Geo-Router 缓存 (300 秒 TTL 外的额外清理)
+0 0 * * * rm -f $WORKSPACE/skills/geo-model-router/cache/*.json && echo "[$(date)] Geo-Router 缓存已清理" >> $LOG_DIR/geo-router.log
+
+# ============================================================
+# 🎯 任务保障
+# ============================================================
+
+# Cron 看门狗 - 每 15 分钟检查 Cron 服务
+*/15 * * * * systemctl --user status cron > /dev/null || echo "[$(date)] Cron 服务异常!" >> $LOG_DIR/cron-watchdog.log
+
+# ============================================================
+# 配置结束
+# ============================================================

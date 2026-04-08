@@ -26,6 +26,11 @@
       "route": "international"
     },
     {
+      "name": "Discord",
+      "domains": ["discord.com", "discordapp.com", "discord-api.com"],
+      "route": "international"
+    },
+    {
       "name": "GitHub",
       "domains": ["api.github.com", "github.com"],
       "route": "international"
@@ -38,6 +43,16 @@
     {
       "name": "YouTube",
       "domains": ["youtube.googleapis.com"],
+      "route": "international"
+    },
+    {
+      "name": "Slack",
+      "domains": ["slack.com", "slack-api.com"],
+      "route": "international"
+    },
+    {
+      "name": "WhatsApp",
+      "domains": ["graph.facebook.com", "whatsapp.com"],
       "route": "international"
     }
   ]
