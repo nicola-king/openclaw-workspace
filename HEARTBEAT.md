@@ -1,6 +1,6 @@
 # HEARTBEAT.md - 核心待办（TurboQuant 压缩版）
 
-> 原则：只保留 P0 核心任务 · 细节见 `memory/residual.md` · 最后更新：**2026-04-08 09:00**
+> 原则：只保留 P0 核心任务 · 细节见 `memory/residual.md` · 最后更新：**2026-04-08 22:15**
 
 ---
 
@@ -32,12 +32,28 @@
 | **每 30 分钟** | 任务自愈恢复 | ✅ |
 | **每 5 分钟** | 告警检查 | ✅ |
 
-### 每日检查
+### 每日检查 (22:15 更新)
 - [x] 微信通道状态 ✅ 正常
 - [x] Telegram 通道 ✅ 正常
-- [x] Gateway 运行 ✅ PID 93642
+- [x] Gateway 运行 ✅ PID 96022
 - [x] Bot Dashboard ✅ http://localhost:3000
 - [x] ROI Dashboard ✅ http://localhost:8080
+
+---
+
+## 🆕 本次 Session 完成 (21:06-22:15)
+
+| 任务 | 状态 | 成果 |
+|------|------|------|
+| **通讯模块检查** | ✅ 完成 | 2 次自检，HEARTBEAT.md 压缩 (30KB→2KB) |
+| **Discord 安装** | ✅ 完成 | v0.0.132 已安装 |
+| **桌面快捷方式** | ✅ 完成 | Chromium/Gemini/NotebookLM |
+| **Google 服务集成** | ✅ 完成 | Gemini API 测试通过 |
+| **Google Sheets 技能** | ✅ 完成 | CLI 工具 + Python 库安装 |
+| **Google Maps 技能** | ✅ 完成 | CLI 工具 + 配置模板 |
+| **NotebookLM 技能** | ✅ 完成 | CLI 工具 + 配置启用 |
+
+**新增文件**: 10 个技能文件，3 个配置更新
 
 ---
 
