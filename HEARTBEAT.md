@@ -1,6 +1,6 @@
 # HEARTBEAT.md - 核心待办（TurboQuant 压缩版）
 
-> 原则：只保留 P0 核心任务 · 细节见 `memory/residual.md` · 最后更新：**2026-04-09 23:35**
+> 原则：只保留 P0 核心任务 · 细节见 `memory/residual.md` · 最后更新：**2026-04-10 00:51**
 
 ---
 
@@ -31,15 +31,19 @@
 | **每 30 分钟** | 任务自愈恢复 | ✅ |
 | **每 5 分钟** | 告警检查 | ✅ |
 
-### 每日检查 (23:35 更新)
+### 每日检查 (00:51 更新)
 - [x] 微信通道状态 ✅ 正常
 - [x] Telegram 通道 ✅ 正常
-- [x] Gateway 运行 ✅ PID 180000+
+- [x] Gateway 运行 ✅ PID 186360
 - [x] Bot Dashboard ✅ http://localhost:3000
 - [x] ROI Dashboard ✅ http://localhost:8080
+- [x] Skill Dashboard ✅ http://localhost:5002
+- [x] Dashboard 守护进程 ✅ 已部署 (每 5 分钟检查)
+- [x] 错误根因分析 ✅ 已部署 (自动修复)
 - [x] 太一镜像 v2.0 ✅ 运行正常
 - [x] 情景 Agent ✅ 384 Skills 就绪
 - [x] MarkItDown ✅ 已安装
+- [x] 传统美学研究 ✅ 已启动
 
 ---
 
@@ -75,7 +79,24 @@
 
 ---
 
-## 🚀 今日完成 (2026-04-09)
+## 🛡️ 错误自愈系统 (00:51 新增)
+
+| 组件 | 状态 | 说明 |
+|------|------|------|
+| **Dashboard 守护** | ✅ 运行中 | 每 5 分钟自动检查 |
+| **根因分析** | ✅ 运行中 | 5 Why 分析法 |
+| **自动修复** | ✅ 已部署 | Dashboard/Git/Gateway |
+| **预防机制** | ✅ 已部署 | Crontab+systemd |
+
+**最终状态**:
+- Gateway (18789): ✅ 正常
+- Bot Dashboard (3000): ✅ 正常
+- ROI Dashboard (8080): ✅ 正常
+- Skill Dashboard (5002): ✅ 正常
+
+---
+
+## 🚀 今日完成 (2026-04-09 → 2026-04-10)
 
 | 任务 | 状态 | 成果 |
 |------|------|------|
@@ -84,6 +105,13 @@
 | **心理学框架** | ✅ | CBT/正念/习惯养成 |
 | **MarkItDown** | ✅ | PDF/Word/Excel/PPTX→Markdown |
 | **错误自愈** | ✅ | 根因分析 + 自动修复 |
+| **Dashboard 守护** | ✅ | 守护进程 + Crontab |
+| **根因分析系统** | ✅ | 5 Why 分析 + 自动修复 |
+
+**新增文件**:
+- `scripts/dashboard-guardian.sh` (守护进程)
+- `scripts/error-root-cause-analysis.py` (根因分析)
+- `reports/root-cause-analysis-*.json` (分析报告)
 
 ---
 
