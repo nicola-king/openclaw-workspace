@@ -158,7 +158,7 @@ class SkillDistiller:
             "费曼": {
                 "style": "生活化比喻",
                 "tone": "热情 + 好奇",
-                "common_phrases": "你想知道为什么吗", "让我解释一下"
+                "common_phrases": ["你想知道为什么吗", "让我解释一下"]
             },
             "马斯克": {
                 "style": "具体数字 + 目标",

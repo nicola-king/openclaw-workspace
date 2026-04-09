@@ -22,6 +22,9 @@ MEMORY_DIR = WORKSPACE / "memory"
 sys.path.insert(0, str(WORKSPACE / "skills/mind-model-extractor"))
 from extractor import MindModelExtractor
 
+# 导入 Skill 蒸馏模块
+from skill_distiller import SkillDistiller, DistilledSkill
+
 
 @dataclass
 class DecisionAdvice:
@@ -36,12 +39,13 @@ class DecisionAdvice:
 
 
 class MirrorAgent:
-    """太一镜像 Agent"""
+    """太一镜像 Agent v2.0 (融合女娲能力)"""
     
     def __init__(self, user_id: str = "sayelf"):
         self.user_id = user_id
         self.user_model = self.load_user_model()
         self.extractor = MindModelExtractor()
+        self.distiller = SkillDistiller()  # Skill 蒸馏器
     
     def load_user_model(self) -> Dict:
         """加载用户模型"""
