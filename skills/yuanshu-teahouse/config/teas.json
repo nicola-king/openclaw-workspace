@@ -1,0 +1,145 @@
+{
+  "products": {
+    "sichuan_famous": [
+      {
+        "id": "tea-zhuyeqing-lidao",
+        "name": "竹叶青·论道",
+        "category": "sichuan_famous",
+        "origin": "峨眉山",
+        "type": "绿茶",
+        "specifications": ["50g", "100g", "250g"],
+        "prices": {
+          "50g": 680,
+          "100g": 1280,
+          "250g": 3000
+        },
+        "description": "峨眉山高山茶，扁平光滑，香气持久",
+        "stock": 50,
+        "image": "zhuyeqing-lidao.jpg"
+      },
+      {
+        "id": "tea-bitanpiaoxue",
+        "name": "碧潭飘雪",
+        "category": "sichuan_famous",
+        "origin": "峨眉山",
+        "type": "花茶",
+        "specifications": ["50g", "100g", "200g"],
+        "prices": {
+          "50g": 380,
+          "100g": 680,
+          "200g": 1280
+        },
+        "description": "茉莉花茶，茶香花香交融",
+        "stock": 80,
+        "image": "bitanpiaoxue.jpg"
+      },
+      {
+        "id": "tea-mengdingganlu",
+        "name": "蒙顶甘露",
+        "category": "sichuan_famous",
+        "origin": "雅安蒙顶山",
+        "type": "绿茶",
+        "specifications": ["50g", "100g"],
+        "prices": {
+          "50g": 280,
+          "100g": 480
+        },
+        "description": "历史名茶，唐代贡茶",
+        "stock": 60,
+        "image": "mengdingganlu.jpg"
+      },
+      {
+        "id": "tea-qingchengxueya",
+        "name": "青城雪芽",
+        "category": "sichuan_famous",
+        "origin": "都江堰青城山",
+        "type": "绿茶",
+        "specifications": ["50g", "100g"],
+        "prices": {
+          "50g": 220,
+          "100g": 380
+        },
+        "description": "道家茶，清新淡雅",
+        "stock": 100,
+        "image": "qingchengxueya.jpg"
+      }
+    ],
+    "puerh": [
+      {
+        "id": "tea-lao_banzhang",
+        "name": "老班章普洱",
+        "category": "puerh",
+        "origin": "云南西双版纳",
+        "type": "生普",
+        "year": 2018,
+        "specifications": ["357g"],
+        "prices": {
+          "357g": 2800
+        },
+        "description": "古树纯料，霸气十足",
+        "stock": 20,
+        "image": "lao-banzhang.jpg"
+      },
+      {
+        "id": "tea-bingdao",
+        "name": "冰岛普洱",
+        "category": "puerh",
+        "origin": "云南临沧",
+        "type": "生普",
+        "year": 2019,
+        "specifications": ["357g"],
+        "prices": {
+          "357g": 3800
+        },
+        "description": "高端收藏，甜润细腻",
+        "stock": 15,
+        "image": "bingdao.jpg"
+      }
+    ],
+    "dark_tea": [
+      {
+        "id": "tea-anhua_heicha",
+        "name": "安化黑茶",
+        "category": "dark_tea",
+        "origin": "湖南安化",
+        "type": "茯砖",
+        "year": 2020,
+        "specifications": ["400g"],
+        "prices": {
+          "400g": 580
+        },
+        "description": "金花茯砖，独特菌花香",
+        "stock": 40,
+        "image": "anhua-heicha.jpg"
+      }
+    ],
+    "gift_sets": [
+      {
+        "id": "gift-sichuan-classic",
+        "name": "四川名茶礼盒",
+        "category": "gift_sets",
+        "contents": ["竹叶青 50g", "碧潭飘雪 50g", "蒙顶甘露 50g"],
+        "price": 1580,
+        "description": "四川三大名茶组合",
+        "stock": 30,
+        "image": "gift-sichuan.jpg"
+      },
+      {
+        "id": "gift-business-premium",
+        "name": "商务尊享礼盒",
+        "category": "gift_sets",
+        "contents": ["竹叶青·论道 100g", "老班章 357g", "紫砂壶 1 把"],
+        "price": 5800,
+        "description": "高端商务送礼",
+        "stock": 10,
+        "image": "gift-business.jpg"
+      }
+    ]
+  },
+  "membership_discount": {
+    "normal": 1.0,
+    "silver": 0.95,
+    "gold": 0.9,
+    "vip": 0.85
+  }
+}
