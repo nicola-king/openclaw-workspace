@@ -1,0 +1,74 @@
+[
+  {
+    "name": "通用任务-automation",
+    "reason": "建议创建\"通用任务\"自动化技能",
+    "trigger_type": "repetition",
+    "task_ids": [
+      "TASK-111",
+      "TASK-129",
+      "TASK-130"
+    ],
+    "responsibilities": [
+      "自动化处理通用任务任务"
+    ],
+    "estimated_commands": [
+      "通用任务 execute"
+    ],
+    "priority": "P1",
+    "created_at": "2026-04-09T08:25:25.925410"
+  },
+  {
+    "name": "通用任务-automation",
+    "reason": "建议创建\"通用任务\"自动化技能",
+    "trigger_type": "repetition",
+    "task_ids": [
+      "TASK-111",
+      "TASK-129",
+      "TASK-130"
+    ],
+    "responsibilities": [
+      "自动化处理通用任务任务"
+    ],
+    "estimated_commands": [
+      "通用任务 execute"
+    ],
+    "priority": "P1",
+    "created_at": "2026-04-09T08:25:44.307981"
+  },
+  {
+    "name": "通用任务-automation",
+    "reason": "建议创建\"通用任务\"自动化技能",
+    "trigger_type": "repetition",
+    "task_ids": [
+      "TASK-111",
+      "TASK-129",
+      "TASK-130"
+    ],
+    "responsibilities": [
+      "自动化处理通用任务任务"
+    ],
+    "estimated_commands": [
+      "通用任务 execute"
+    ],
+    "priority": "P1",
+    "created_at": "2026-04-09T08:25:53.362625"
+  },
+  {
+    "name": "通用任务-automation",
+    "reason": "建议创建\"通用任务\"自动化技能",
+    "trigger_type": "repetition",
+    "task_ids": [
+      "TASK-111",
+      "TASK-129",
+      "TASK-130"
+    ],
+    "responsibilities": [
+      "自动化处理通用任务任务"
+    ],
+    "estimated_commands": [
+      "通用任务 execute"
+    ],
+    "priority": "P1",
+    "created_at": "2026-04-09T08:26:11.810913"
+  }
+]

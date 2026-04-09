@@ -1,0 +1,56 @@
+{
+  "通用任务": {
+    "task_type": "通用任务",
+    "keywords": [
+      "timesfm",
+      "集成",
+      "情景模式小程序",
+      "deeptutor",
+      "学习"
+    ],
+    "frequency": 4,
+    "last_executed": "2026-04-09T08:24:17.135686",
+    "avg_complexity": 1.1,
+    "common_steps": [
+      "状态追踪待执行",
+      "模拟盘监控中",
+      "CLI 增强待执行",
+      "上传审核"
+    ],
+    "dependencies": [],
+    "success_rate": 1.0
+  },
+  "CLI 集成": {
+    "task_type": "CLI 集成",
+    "keywords": [
+      "即梦",
+      "cli",
+      "集成"
+    ],
+    "frequency": 1,
+    "last_executed": "2026-04-09T08:24:17.135669",
+    "avg_complexity": 1,
+    "common_steps": [
+      "按需激活"
+    ],
+    "dependencies": [
+      "Python 3.10+"
+    ],
+    "success_rate": 0.0
+  },
+  "学习集成": {
+    "task_type": "学习集成",
+    "keywords": [
+      "hermes",
+      "学习循环"
+    ],
+    "frequency": 1,
+    "last_executed": "2026-04-09T08:24:17.135695",
+    "avg_complexity": 1.1,
+    "common_steps": [
+      "核心模块开发"
+    ],
+    "dependencies": [],
+    "success_rate": 0.0
+  }
+}

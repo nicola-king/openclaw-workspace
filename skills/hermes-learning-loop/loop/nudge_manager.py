@@ -41,6 +41,24 @@ class NudgeManager:
         self.nudges = self.load_nudges()
     
     def load_nudges(self) -> List[Dict]:
+        """加载 Nudge 记录"""
+        nudge_file = WORKSPACE / "skills/hermes-learning-loop/nudge_log.json"
+        if nudge_file.exists():
+            with open(nudge_file, "r", encoding="utf-8") as f:
+                return json.load(f)
+        return []
+    
+    def save_nudges(self):
+        """保存 Nudge 记录"""
+        nudge_file = WORKSPACE / "skills/hermes-learning-loop/nudge_log.json"
+        nudge_file.parent.mkdir(exist_ok=True)
+        with open(nudge_file, "w", encoding="utf-8") as f:
+            json.dump(self.nudges, f, indent=2, ensure_ascii=False)
+    
+    def check_nudges(self) -> List[Dict]:
+        self.nudges = self.load_nudges()
+    
+    def load_nudges(self) -> List[Dict]:
         """加载 Nudge 列表"""
         if NUDGE_LOG.exists():
             with open(NUDGE_LOG, "r", encoding="utf-8") as f:
