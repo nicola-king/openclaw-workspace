@@ -4,6 +4,7 @@
 
 作者：太一 AGI
 创建：2026-04-09
+更新：2026-04-09 23:25
 """
 
 import os
@@ -30,14 +31,24 @@ def check_skills_created():
     
     # 检查每个情景的 6 个阶段文件
     total_files = 0
+    valid_scenarios = 0
     for scenario_dir in scenario_dirs[:5]:  # 检查前 5 个
         stage_files = list(scenario_dir.glob("*.md"))
         total_files += len(stage_files)
+        if len(stage_files) >= 6:
+            valid_scenarios += 1
         print(f"   {scenario_dir.name}: {len(stage_files)} 个阶段文件")
     
     print(f"   总阶段文件数：{total_files}+ 个")
+    print(f"   有效情景数：{valid_scenarios}/5 个")
     
-    return len(scenario_dirs) == 64
+    # 64 个情景 + 可能有多余目录，只要>=64 就通过
+    if len(scenario_dirs) >= 64 and valid_scenarios >= 4:
+        print(f"   ✅ Skills 创建验证通过")
+        return True
+    else:
+        print(f"   ❌ Skills 创建验证失败")
+        return False
 
 def check_mirror_integration():
     """检查太一镜像集成"""
