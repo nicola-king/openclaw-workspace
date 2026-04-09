@@ -194,6 +194,12 @@ class AestheticFeedbackCollector:
 - 日本的侘寂 → 太一留白哲学
 - 中国的写意 → 太一意境表达
 - 北欧的功能 → 太一形式追随功能
+
+穿透性搜索 (新增):
+- AdAge/AdWeek → 全球广告趋势
+- Dezeen/Design Milk → 前沿设计
+- 原研哉/深泽直人 → 大师智慧
+- 《考工记》/《园冶》→ 中国传统
 ```
 
 ---
