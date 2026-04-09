@@ -86,10 +86,17 @@ class BookingService:
         available = []
         
         all_spaces = []
-        for space_type_key, spaces in self.spaces.get("spaces", {}).items():
+        spaces_data = self.spaces.get("spaces", {})
+        
+        # 调试输出
+        print(f"  加载的空间类型：{list(spaces_data.keys())}")
+        
+        for space_type_key, spaces in spaces_data.items():
             if space_type and space_type_key != space_type:
                 continue
-            all_spaces.extend(spaces)
+            for space in spaces:
+                space_copy = {**space, "space_type": space_type_key}
+                all_spaces.append(space_copy)
         
         for space in all_spaces:
             # 检查人数匹配
@@ -104,11 +111,8 @@ class BookingService:
             if self.is_space_booked(space["id"], date, time_slot):
                 continue
             
-            # 添加到可用列表
-            available.append({
-                **space,
-                "space_type": space_type_key
-            })
+            # 添加到可用列表 (使用 space 中已存储的 space_type)
+            available.append(space)
         
         return available
     
