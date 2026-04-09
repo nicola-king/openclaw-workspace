@@ -1,0 +1,5 @@
+{
+    "bot_dashboard": {"running": false, "last_access": 0},
+    "roi_dashboard": {"running": false, "last_access": 0},
+    "skill_dashboard": {"running": false, "last_access": 0}
+}
