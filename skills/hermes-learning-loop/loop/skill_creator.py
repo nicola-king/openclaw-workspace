@@ -48,25 +48,61 @@ class SkillCreator:
         return []
     
     def save_pending(self):
-        """保存待处理技能"""
+        """保存待处理技能 (去重)"""
         PENDING_FILE.parent.mkdir(exist_ok=True)
+        
+        # 去重：按 name 字段去重，保留最新
+        seen = {}
+        for item in self.pending:
+            name = item.get("name", "")
+            if name not in seen or item.get("created_at", "") > seen[name].get("created_at", ""):
+                seen[name] = item
+        
+        self.pending = list(seen.values())
+        
         with open(PENDING_FILE, "w", encoding="utf-8") as f:
             json.dump(self.pending, f, indent=2, ensure_ascii=False)
     
-    def check_task_repetition(self, task_history: List[Dict]) -> Optional[SkillProposal]:
+    def _extract_task_type(self, task_name: str) -> str:
+        """从任务名提取任务类型"""
+        type_keywords = {
+            'skill': '技能开发',
+            'dashboard': '可视化开发',
+            'kanban': '可视化开发',
+            'learning': '学习集成',
+            'hermes': '学习集成',
+            'cli': 'CLI 集成',
+            'integration': '系统集成',
+            'repair': '系统修复',
+            'fix': '系统修复',
+            'cron': '定时任务',
+            'task': '通用任务',
+        }
+        
+        name_lower = task_name.lower()
+        for keyword, task_type in type_keywords.items():
+            if keyword in name_lower:
+                return task_type
+        
+        return '通用任务'
+    
+    def check_task_repetition(self, task_history: List[Dict], skip_existing: bool = True) -> List[SkillProposal]:
         """
         检查重复任务，触发技能创建
         
         Args:
             task_history: 任务历史记录
+            skip_existing: 是否跳过已存在的技能提议
         
         Returns:
-            SkillProposal 或 None
+            SkillProposal 列表
         """
+        proposals = []
+        
         # 按任务类型分组
         task_groups = {}
         for task in task_history:
-            task_type = task.get("type", "unknown")
+            task_type = self._extract_task_type(task.get("name", ""))
             if task_type not in task_groups:
                 task_groups[task_type] = []
             task_groups[task_type].append(task)
@@ -74,6 +110,11 @@ class SkillCreator:
         # 检查是否有类型出现 ≥3 次
         for task_type, tasks in task_groups.items():
             if len(tasks) >= 3:
+                # 检查是否已存在相同提议
+                if skip_existing:
+                    existing = [p for p in self.pending if p.get("name") == f"{task_type}-automation"]
+                    if existing:
+                        continue  # 跳过已存在的提议
                 # 生成技能提议
                 proposal = SkillProposal(
                     name=f"{task_type}-automation",
@@ -94,13 +135,19 @@ class SkillCreator:
                     created_at=datetime.now().isoformat()
                 )
                 
-                # 添加到待处理列表
-                self.pending.append(asdict(proposal))
-                self.save_pending()
-                
-                return proposal
+                proposals.append(proposal)
         
-        return None
+        # 批量添加到待处理列表
+        for proposal in proposals:
+            # 检查是否已存在
+            existing = [p for p in self.pending if p.get("name") == proposal.name]
+            if not existing:
+                self.pending.append(asdict(proposal))
+        
+        if proposals:
+            self.save_pending()
+        
+        return proposals
     
     def create_skill_from_proposal(self, proposal: Dict, approved: bool = True) -> Dict:
         """

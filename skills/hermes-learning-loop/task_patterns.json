@@ -12,9 +12,9 @@
     "last_executed": "2026-04-09T08:24:17.135686",
     "avg_complexity": 1.1,
     "common_steps": [
-      "状态追踪待执行",
-      "模拟盘监控中",
       "CLI 增强待执行",
+      "模拟盘监控中",
+      "状态追踪待执行",
       "上传审核"
     ],
     "dependencies": [],
@@ -48,9 +48,9 @@
     "last_executed": "2026-04-09T08:24:17.135695",
     "avg_complexity": 1.1,
     "common_steps": [
-      "核心模块开发"
+      "核心模块开发完成"
     ],
     "dependencies": [],
-    "success_rate": 0.0
+    "success_rate": 1.0
   }
 }
