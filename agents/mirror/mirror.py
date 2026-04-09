@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """
-太一镜像 Agent - 用户数字分身
+太一镜像 Agent v2.0 - 用户数字分身 + Skill 蒸馏师 (融合女娲能力)
 
 作者：太一 AGI
 创建：2026-04-09
+更新：2026-04-09
 """
 
 import json
@@ -159,6 +160,9 @@ class MirrorAgent:
     def generate_weekly_report(self) -> Dict:
         """生成周成长报告"""
         # 简化实现
+        skill_library = self.distiller.get_skill_library()
+        distilled_count = len(skill_library.get("skills", []))
+        
         return {
             "week": datetime.now().strftime("%Y-W%W"),
             "cognitive_shifts": [
@@ -171,13 +175,60 @@ class MirrorAgent:
             },
             "learning_progress": {
                 "new_concepts": 5,
-                "skills_distilled": 2
+                "skills_distilled": distilled_count  # 新增：蒸馏 Skill 数量
             },
             "suggestions": [
                 "继续深化反脆弱思维",
                 "考虑建立'不做什么'清单"
             ]
         }
+    
+    # ============ v2.0 新增：Skill 蒸馏能力 ============
+    
+    def distill_expert(self, expert: str, sources: List[str], skill_name: str = None) -> DistilledSkill:
+        """
+        蒸馏专家 Skill
+        
+        Args:
+            expert: 专家姓名
+            sources: 信息源列表
+            skill_name: Skill 名称 (默认：expert-skill)
+        
+        Returns:
+            DistilledSkill: 蒸馏的 Skill
+        """
+        if skill_name is None:
+            skill_name = f"{expert.lower()}-skill"
+        
+        return self.distiller.distill_expert(expert, sources, skill_name)
+    
+    def validate_skill(self, skill: DistilledSkill) -> Dict:
+        """
+        验证 Skill 质量
+        
+        Args:
+            skill: Skill 对象
+        
+        Returns:
+            验证结果
+        """
+        return self.distiller.validate_skill(skill)
+    
+    def publish_skill(self, skill: DistilledSkill) -> str:
+        """
+        发布 Skill
+        
+        Args:
+            skill: Skill 对象
+        
+        Returns:
+            发布路径
+        """
+        return self.distiller.publish_skill(skill)
+    
+    def get_skill_library(self) -> Dict:
+        """获取 Skill 库"""
+        return self.distiller.get_skill_library()
 
 
 def main():
