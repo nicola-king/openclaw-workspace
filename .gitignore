@@ -1,3 +1,4 @@
 skills/play-music
 data/
 *.db
+data/*.db
