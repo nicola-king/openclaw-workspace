@@ -179,8 +179,22 @@
 
 ### 🎯 新增 Dashboard
 - **太一看板**: http://localhost:5001 ✅
+  - 局域网：http://192.168.3.74:5001
+  - 远程访问：🟡 配置脚本已就绪
 - **Bot Dashboard**: http://localhost:3000 ✅
 - **ROI Dashboard**: http://localhost:8080 ✅
+
+### 🔧 远程访问配置
+
+**Tailscale 状态**:
+- ✅ 安装完成 (v1.96.4)
+- 🟡 等待登录
+- 登录 URL: https://login.tailscale.com/a/106d94d60159fd
+
+**配置脚本**:
+- `scripts/cloudflare-tunnel.sh` - Cloudflare 快速 Tunnel (备选)
+
+**账号**: shanyejingling@gmail.com
 
 ### 🧠 Hermes 学习循环 v1.0 ✅
 
