@@ -1,18 +1,9 @@
 {
   "version": "1.0",
-  "updated_at": "2026-04-09T00:01:00.528057",
+  "updated_at": "2026-04-09T21:25:00+08:00",
   "core": {
-    "values": [
-      "负熵",
-      "效率",
-      "艺术化存在",
-      "第一性原理"
-    ],
-    "long_term_goals": [
-      "AGI 实现",
-      "知识传承",
-      "太一体系完善"
-    ],
+    "values": ["负熵", "效率", "艺术化存在", "第一性原理"],
+    "long_term_goals": ["AGI 实现", "知识传承", "太一体系完善"],
     "basic_preferences": {
       "communication_style": "极简黑客风",
       "decision_making": "第一性原理",
@@ -23,62 +14,26 @@
   "contextual": {
     "work_mode": {
       "focus_hours": "09:00-12:00, 14:00-18:00, 22:00-23:00",
-      "preferred_tools": [
-        "CLI",
-        "Python",
-        "Git",
-        "OpenClaw"
-      ],
+      "preferred_tools": ["CLI", "Python", "Git", "OpenClaw"],
       "collaboration_style": "异步优先",
-      "current_projects": [
-        "太一 AGI 系统",
-        "地理感知路由",
-        "可视化 Dashboard"
-      ]
+      "current_projects": ["太一 AGI 系统", "地理感知路由", "可视化 Dashboard"]
     },
     "learning_mode": {
-      "current_topics": [
-        "AGI 架构",
-        "链上交易",
-        "可视化",
-        "Hermes Agent"
-      ],
+      "current_topics": ["AGI 架构", "链上交易", "可视化", "Hermes Agent"],
       "learning_pace": "密集型",
       "preferred_format": "实践驱动",
-      "recent_insights": [
-        "自进化学习循环",
-        "辩证用户建模"
-      ]
+      "recent_insights": ["自进化学习循环", "辩证用户建模"]
     },
     "creation_mode": {
-      "output_types": [
-        "技能",
-        "宪法",
-        "Dashboard",
-        "文档"
-      ],
+      "output_types": ["技能", "宪法", "Dashboard", "文档"],
       "quality_standard": "生产就绪",
       "iteration_style": "快速原型→完善"
     }
   },
   "evolutionary": {
-    "recent_attention": [
-      "Hermes Agent 集成",
-      "Dashboard 部署",
-      "地理感知路由 v2.0",
-      "Crontab 定时任务"
-    ],
-    "skill_growth": [
-      "太一体系完善",
-      "多 Bot 协作",
-      "自进化学习循环",
-      "语义搜索"
-    ],
-    "cognitive_shifts": [
-      "从静态记忆→动态学习循环",
-      "从手动技能创建→自动能力涌现",
-      "从单一模型→多模型路由"
-    ],
+    "recent_attention": ["Hermes Agent 集成", "Dashboard 部署", "地理感知路由 v2.0", "Crontab 定时任务", "元树茶馆 Skill", "4 新 Agent"],
+    "skill_growth": ["太一体系完善", "多 Bot 协作", "自进化学习循环", "语义搜索", "心智模型提取", "诚实边界"],
+    "cognitive_shifts": ["从静态记忆→动态学习循环", "从手动技能创建→自动能力涌现", "从单一模型→多模型路由", "从执行→自进化"],
     "future_self": {
       "1_month": "完整的 Hermes 学习循环集成",
       "3_months": "自主技能创建和优化能力",
@@ -86,17 +41,26 @@
       "1_year": "AGI 自主进化框架"
     }
   },
+  "mind_models": [
+    {"name": "第一性原理", "description": "从基本原理推导，不依赖类比", "examples": ["这个事的物理极限是什么？", "抛开现有方案，最优解是什么？"], "frequency": 0.35, "confidence": 0.85},
+    {"name": "逆向思维", "description": "从对立面思考问题", "examples": ["反过来会怎样？"], "frequency": 0.25, "confidence": 0.75},
+    {"name": "二阶思维", "description": "考虑后果的后果", "examples": ["然后呢？接下来会发生什么？"], "frequency": 0.20, "confidence": 0.70},
+    {"name": "能力圈", "description": "只做自己理解的事", "examples": ["这是你懂的事吗？"], "frequency": 0.15, "confidence": 0.65},
+    {"name": "复利思维", "description": "选择有复利效应的赛道", "examples": ["这个事能积累吗？"], "frequency": 0.05, "confidence": 0.55}
+  ],
+  "decision_heuristics": [
+    {"name": "速度优先", "rule": "在决策时优先考虑速度", "examples": ["尽快", "立即执行"], "confidence": 0.8},
+    {"name": "质量优先", "rule": "在决策时优先考虑质量", "examples": ["生产就绪", "完整实现"], "confidence": 0.75}
+  ],
+  "expression_dna": {
+    "style": "极简黑客风",
+    "avg_length": 50,
+    "common_phrases": ["✅", "🚀", "SAYELF", "太一"],
+    "tone": "直接/高效",
+    "emoji_usage": {"✅": 50, "🚀": 30, "🟡": 20, "❌": 10}
+  },
   "change_log": [
-    {
-      "date": "2026-04-08",
-      "type": "cognitive_shift",
-      "description": "集成 Hermes Agent 学习循环理念",
-      "impact": "从被动记忆→主动技能创建，从静态用户模型→辩证动态建模",
-      "related_files": [
-        "skills/hermes-learning-loop/SKILL.md",
-        "constitution/directives/DIALECTIC-USER-MODEL.md",
-        "constitution/directives/SEMANTIC-SEARCH.md"
-      ]
-    }
+    {"date": "2026-04-08", "type": "cognitive_shift", "description": "集成 Hermes Agent 学习循环理念", "impact": "从被动记忆→主动技能创建，从静态用户模型→辩证动态建模", "related_files": ["skills/hermes-learning-loop/SKILL.md", "constitution/directives/DIALECTIC-USER-MODEL.md", "constitution/directives/SEMANTIC-SEARCH.md"]},
+    {"date": "2026-04-09", "type": "能力涌现", "description": "创建 4 个新 Agent (镜像/蒸馏师/协调者/元学习器)", "impact": "从执行系统→自进化系统", "related_files": ["agents/mirror/", "agents/skill-distiller/", "agents/bot-coordinator/", "agents/meta-learner/"]}
   ]
 }
