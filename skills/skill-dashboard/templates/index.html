@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>太一 Skill 管理中心</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 py-4">
+            <h1 class="text-2xl font-bold">🎯 太一 Skill 管理中心</h1>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-gray-500 text-sm">总技能数</h3>
+                <p id="total-skills" class="text-3xl font-bold text-blue-600">-</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-gray-500 text-sm">活跃技能</h3>
+                <p id="active-skills" class="text-3xl font-bold text-green-600">-</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-gray-500 text-sm">系统状态</h3>
+                <p id="system-health" class="text-3xl font-bold text-green-600">✅</p>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <input type="text" id="search-input" placeholder="🔍 搜索 Skill..." 
+                   class="w-full px-4 py-2 border rounded-lg" oninput="filterSkills()">
+        </div>
+
+        <div id="skills-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    </main>
+
+    <script>
+        let allSkills = [];
+
+        async function loadSkills() {
+            const response = await fetch('/api/skills');
+            const data = await response.json();
+            allSkills = data.skills;
+            renderSkills(allSkills);
+            updateStats(allSkills);
+        }
+
+        function renderSkills(skills) {
+            document.getElementById('skills-grid').innerHTML = skills.map(skill => `
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-lg font-bold">${skill.name}</h3>
+                    <p class="text-sm text-gray-500">${skill.id}</p>
+                    <p class="text-sm text-gray-600 mt-2">${skill.description || '暂无描述'}</p>
+                    <div class="flex space-x-2 mt-4">
+                        <button onclick="startSkill('${skill.id}')" class="flex-1 px-3 py-2 bg-green-500 text-white rounded">▶️ 启动</button>
+                        <button onclick="stopSkill('${skill.id}')" class="flex-1 px-3 py-2 bg-red-500 text-white rounded">⏹️ 停止</button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function updateStats(skills) {
+            document.getElementById('total-skills').textContent = skills.length;
+            document.getElementById('active-skills').textContent = skills.filter(s => s.status === 'active').length;
+        }
+
+        function filterSkills() {
+            const query = document.getElementById('search-input').value.toLowerCase();
+            renderSkills(allSkills.filter(s => s.name.toLowerCase().includes(query) || s.id.toLowerCase().includes(query)));
+        }
+
+        async function startSkill(skillId) {
+            const response = await fetch(`/api/skills/${skillId}/start`, { method: 'POST' });
+            const data = await response.json();
+            alert(data.error ? `启动失败：${data.error}` : '✅ Skill 已启动');
+        }
+
+        async function stopSkill(skillId) {
+            const response = await fetch(`/api/skills/${skillId}/stop`, { method: 'POST' });
+            alert((await response.json()).error ? '停止失败' : '✅ Skill 已停止');
+        }
+
+        document.addEventListener('DOMContentLoaded', loadSkills);
+    </script>
+</body>
+</html>
