@@ -26,7 +26,7 @@ class Thinker:
 
 # 31 位思想家知识库
 THINKERS = {
-    # 西方哲学家 (15 位)
+    # 西方哲学家 (15 位 → 20 位)
     "popper": Thinker(
         name="卡尔·波普尔",
         tradition="批判理性主义",
@@ -306,6 +306,52 @@ THINKERS = {
         key_concepts=["超级智能", "模拟假说", "存在风险"],
         analysis_framework="这个技术是否带来存在风险？超级智能如何对齐？",
         quotes=["超级智能是人类最大的存在风险"]
+    ),
+    
+    # 新增思想家 (5 位)
+    "smith": Thinker(
+        name="亚当·斯密",
+        tradition="古典经济学",
+        specialty="市场经济/分工理论",
+        key_concepts=["看不见的手", "劳动分工", "自由市场"],
+        analysis_framework="市场机制是否有效？分工是否提升了效率？",
+        quotes=["看不见的手", "劳动分工是国民财富的源泉"]
+    ),
+    
+    "marx": Thinker(
+        name="卡尔·马克思",
+        tradition="马克思主义",
+        specialty="资本批判/阶级分析",
+        key_concepts=["剩余价值", "阶级斗争", "异化劳动"],
+        analysis_framework="这个制度是否存在剥削？阶级关系如何？",
+        quotes=["全世界无产者，联合起来!"]
+    ),
+    
+    "weber": Thinker(
+        name="马克斯·韦伯",
+        tradition="社会学",
+        specialty="科层制/新教伦理",
+        key_concepts=["科层制", "新教伦理", "理性化"],
+        analysis_framework="这个组织的理性化程度如何？科层制是否有效？",
+        quotes=["科层制是现代社会的铁笼"]
+    ),
+    
+    "camus": Thinker(
+        name="阿尔贝·加缪",
+        tradition="存在主义/荒诞哲学",
+        specialty="荒诞/反抗",
+        key_concepts=["荒诞", "反抗", "西西弗神话"],
+        analysis_framework="这个情境是否荒诞？如何反抗荒诞？",
+        quotes=["判断人生值不值得活，就是回答哲学的根本问题"]
+    ),
+    
+    "arendt": Thinker(
+        name="汉娜·阿伦特",
+        tradition="政治哲学",
+        specialty="极权主义/平庸之恶",
+        key_concepts=["平庸之恶", "极权主义", "公共领域"],
+        analysis_framework="这个行为是否体现了平庸之恶？公共领域是否健康？",
+        quotes=["恶的平庸性"]
     ),
 }
 
