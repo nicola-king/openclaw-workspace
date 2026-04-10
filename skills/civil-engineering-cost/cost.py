@@ -70,13 +70,16 @@ QUOTAS = {
     },
     'bridge': {
         '钻孔灌注桩': {'unit': '10m³', 'labor': 4500, 'material': 8200, 'machine': 12500},
+        '预应力混凝土简支梁': {'unit': '10m³', 'labor': 3800, 'material': 15600, 'machine': 5200},
         '预应力混凝土梁': {'unit': '10m³', 'labor': 3800, 'material': 15600, 'machine': 5200},
         '桥面铺装': {'unit': '100㎡', 'labor': 1200, 'material': 18500, 'machine': 2800},
     },
     'pipeline': {
+        'HDPE 双壁波纹管 DN500': {'unit': '100m', 'labor': 2800, 'material': 35000, 'machine': 4500},
+        'HDPE 双壁波纹管 DN800': {'unit': '100m', 'labor': 3500, 'material': 58000, 'machine': 6200},
         'HDPE 管道 DN500': {'unit': '100m', 'labor': 2800, 'material': 35000, 'machine': 4500},
         'HDPE 管道 DN800': {'unit': '100m', 'labor': 3500, 'material': 58000, 'machine': 6200},
-        '砖砌检查井': {'unit': '座', 'labor': 1800, 'material': 3200, 'machine': 800},
+        '检查井': {'unit': '座', 'labor': 1800, 'material': 3200, 'machine': 800},
     }
 }
 
