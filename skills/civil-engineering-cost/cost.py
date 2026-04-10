@@ -235,7 +235,7 @@ class CostCalculator:
             quota = QUOTAS['pipeline'][pipeline_item]
             direct_cost += quantities[pipeline_item] * (quota['labor'] + quota['material'] + quota['machine'])
         
-        if '检查井' in quantities:
+        if '检查井' in quantities and '检查井' in QUOTAS['pipeline']:
             quota = QUOTAS['pipeline']['检查井']
             direct_cost += quantities['检查井'] * (quota['labor'] + quota['material'] + quota['machine'])
         
