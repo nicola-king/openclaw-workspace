@@ -1,27 +1,28 @@
 {
   "schema": "taiyi/skill-graph-summary/v1",
-  "generated_at": "2026-04-10T15:57:50.906056",
+  "generated_at": "2026-04-10T16:02:20.362649",
   "statistics": {
-    "total_skills": 61,
-    "nodes": 61,
-    "edges": 1830,
-    "avg_connections": 30.0
+    "total_skills": 62,
+    "nodes": 62,
+    "edges": 1891,
+    "avg_connections": 30.5
   },
   "top_tags": [
     {
-      "tag": "emerged",
-      "count": 61
+      "tag": "self-evolution",
+      "count": 62
     },
     {
-      "tag": "self-evolution",
-      "count": 61
+      "tag": "emerged",
+      "count": 62
     },
     {
       "tag": "auto-created",
-      "count": 61
+      "count": 62
     }
   ],
   "recent_skills": [
+    "🆕 Emerged Skill - emerged-skill-20260410-160002",
     "🆕 Emerged Skill - emerged-skill-20260410-154502",
     "🆕 Emerged Skill - emerged-skill-20260410-153001",
     "🆕 Emerged Skill - emerged-skill-20260410-151501",
@@ -30,8 +31,9 @@
     "🆕 Emerged Skill - emerged-skill-20260410-143001",
     "🆕 Emerged Skill - emerged-skill-20260410-141501",
     "🆕 Emerged Skill - emerged-skill-20260410-140001",
-    "🆕 Emerged Skill - emerged-skill-20260410-134501",
-    "🆕 Emerged Skill - emerged-skill-20260410-133001"
+    "🆕 Emerged Skill - emerged-skill-20260410-134501"
   ],
-  "inspirations": []
+  "inspirations": [
+    "太一自进化系统"
+  ]
 }

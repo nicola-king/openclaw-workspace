@@ -92,9 +92,13 @@ def extract_inspiration(content):
     if match:
         return match.group(1).strip()
     
-    # 3. 检查是否提到 OpenClaw
+    # 3. 检查是否提到 OpenClaw (emerged-skill 默认都是 OpenClaw 4.9)
     if 'OpenClaw' in content:
         return 'OpenClaw 4.9'
+    
+    # 4. 默认：能力涌现 Skill 都是受自进化系统启发
+    if 'emerged-skill' in content.lower() or '能力涌现' in content:
+        return '太一自进化系统'
     
     return ""
 
@@ -222,8 +226,9 @@ def get_unique_inspirations(nodes):
     """获取唯一样本来源"""
     inspirations = set()
     for node in nodes:
-        if node.get('inspiration'):
-            inspirations.add(node['inspiration'][:50])
+        insp = node.get('inspiration', '')
+        if insp and insp.strip():  # 排除空字符串
+            inspirations.add(insp[:50])
     return list(inspirations)
 
 
