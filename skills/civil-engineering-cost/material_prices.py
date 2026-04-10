@@ -41,6 +41,11 @@ class MaterialPrice:
     price_date: str  # 价格日期
     source: str  # 数据来源
     region: str  # 地区
+    month: str = ""  # 月份 (YYYY-MM 格式)
+    
+    def __post_init__(self):
+        if not self.month:
+            self.month = self.price_date
     
     def price_change_rate(self) -> float:
         """价格变动率"""
@@ -59,6 +64,21 @@ class MaterialPriceManager:
         self.region = region
         self.material_db = self._load_material_db()
         self.price_history = self._load_price_history()
+        self.target_month = None  # 目标月份
+    
+    def set_target_month(self, year: int, month: int):
+        """设置目标月份"""
+        self.target_month = f"{year:04d}-{month:02d}"
+    
+    def get_available_months(self) -> List[str]:
+        """获取可用的月份列表"""
+        months = set()
+        for history in self.price_history.values():
+            for record in history:
+                if 'date' in record:
+                    months.add(record['date'][:7])  # YYYY-MM
+        months.add(datetime.now().strftime("%Y-%m"))  # 当前月份
+        return sorted(list(months), reverse=True)
     
     def _load_material_db(self) -> Dict:
         """加载材料数据库"""
@@ -112,8 +132,10 @@ class MaterialPriceManager:
                 return json.load(f)
         return {}
     
-    def get_price(self, material_name: str) -> Optional[MaterialPrice]:
+    def get_price(self, material_name: str, month: str = None) -> Optional[MaterialPrice]:
         """获取材料价格"""
+        target_month = month or self.target_month or self._get_price_date()
+        
         for category, materials in self.material_db.items():
             if material_name in materials:
                 data = materials[material_name]
@@ -124,9 +146,10 @@ class MaterialPriceManager:
                     unit=data["unit"],
                     current_price=data["price"],
                     previous_price=data.get("previous", data["price"]),
-                    price_date=self._get_price_date(),
+                    price_date=target_month,
                     source="重庆市建设工程造价信息网",
-                    region=self.region
+                    region=self.region,
+                    month=target_month
                 )
         return None
     
@@ -197,6 +220,14 @@ class MaterialPriceManager:
     def get_price_trend(self, material_name: str, months: int = 6) -> List[Dict]:
         """获取价格趋势"""
         if material_name not in self.price_history:
+            # 如果没有历史记录，返回当前价格
+            price = self.get_price(material_name)
+            if price:
+                return [{
+                    'date': price.month,
+                    'price': price.current_price,
+                    'change_rate': 0
+                }]
             return []
         
         history = self.price_history[material_name]
@@ -271,11 +302,13 @@ def main():
     
     parser = argparse.ArgumentParser(description="📊 材料信息价管理")
     parser.add_argument("--action", "-a", required=True,
-                       choices=["list", "get", "update", "trend", "export", "import"],
+                       choices=["list", "get", "update", "trend", "export", "import", "months"],
                        help="操作类型")
     parser.add_argument("--material", "-m", help="材料名称")
     parser.add_argument("--category", "-c", help="材料类别")
     parser.add_argument("--price", "-p", type=float, help="新价格")
+    parser.add_argument("--month", "-M", help="目标月份 (YYYY-MM)")
+    parser.add_argument("--months", "-n", type=int, default=6, help="查看月份数")
     parser.add_argument("--file", "-f", help="导入文件路径")
     parser.add_argument("--region", "-r", default="重庆", help="地区")
     
@@ -320,13 +353,21 @@ def main():
             print("❌ 需要指定材料名称 --material")
             return 1
         
-        trend = manager.get_price_trend(args.material)
+        trend = manager.get_price_trend(args.material, args.months)
         if trend:
-            print(f"📈 {args.material} 价格趋势:")
+            print(f"📈 {args.material} 价格趋势 (近{args.months}个月):")
             for record in trend:
-                print(f"   {record['date'][:10]}: ¥{record['new_price']:,.2f} ({record['change_rate']:+.2f}%)")
+                print(f"   {record['date'][:10]}: ¥{record.get('price', record.get('new_price', 0)):,.2f} ({record.get('change_rate', 0):+.2f}%)")
         else:
             print(f"❌ 无历史数据：{args.material}")
+    
+    elif args.action == "months":
+        months = manager.get_available_months()
+        print(f"📅 可用月份 ({len(months)}个):")
+        for m in months[:12]:
+            print(f"  - {m}")
+        if len(months) > 12:
+            print(f"  ... 还有 {len(months) - 12} 个月")
     
     elif args.action == "export":
         json_data = manager.export_to_json()
@@ -337,7 +378,7 @@ def main():
             print("❌ 需要指定导入文件 --file")
             return 1
         
-        manager.import_from_zaojiazhan (args.file)
+        manager.import_from_zaojiazhan(args.file)
     
     return 0
 
