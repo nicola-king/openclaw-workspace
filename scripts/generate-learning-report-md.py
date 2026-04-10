@@ -22,8 +22,12 @@ import os
 import sys
 import json
 import subprocess
+import random
 from pathlib import Path
 from datetime import datetime
+
+# 导入艺术设计系统
+from artistic_design_system import ArtisticDesignSystem, LAYOUT_STYLES, TRADITIONAL_COLORS, SPACING_STYLES, PATTERNS
 
 # 配置
 WORKSPACE = Path("/home/nicola/.openclaw/workspace")
@@ -139,9 +143,19 @@ def create_pattern_divider(pattern='cloud', repeat=10):
 def generate_artistic_markdown(reports, evolution_reports, output_file=None):
     """生成艺术设计增强的 Markdown 报告"""
     
-    # 汇总数据
-    total_sessions = len(reports)
-    total_innovations = sum(len(r.get('innovations', [])) for r in reports)
+    # 初始化艺术设计系统
+    design_system = ArtisticDesignSystem()
+    current_design = design_system.get_current_design()
+    
+    # 每份报告都有独特的艺术设计 (自进化)
+    if random.random() < 0.5:  # 50% 概率自进化
+        current_design = design_system.evolve_design()
+    
+    # 获取设计元素
+    layout = LAYOUT_STYLES.get(current_design['layout'], LAYOUT_STYLES['classic'])
+    spacing = SPACING_STYLES.get(current_design['spacing'], SPACING_STYLES['comfortable'])
+    palette = design_system.get_color_palette()
+    patterns = current_design['patterns']
     
     # 创新汇总 (去重)
     all_innovations = []

@@ -1,0 +1,74 @@
+{
+  "current_design": {
+    "layout": "classic",
+    "color_scheme": [
+      "sky_blue",
+      "ink",
+      "moon_white"
+    ],
+    "spacing": "comfortable",
+    "patterns": [
+      "cloud",
+      "lotus",
+      "bamboo"
+    ]
+  },
+  "history": [
+    {
+      "timestamp": "2026-04-10T08:35:18.137380",
+      "design": {
+        "layout": "classic",
+        "color_scheme": [
+          "sky_blue",
+          "ink",
+          "moon_white"
+        ],
+        "spacing": "comfortable",
+        "patterns": [
+          "cloud",
+          "lotus",
+          "bamboo"
+        ]
+      }
+    }
+  ],
+  "evolution_log": [
+    {
+      "timestamp": "2026-04-10T08:35:18.137396",
+      "type": "auto_evolution",
+      "from": {
+        "layout": "classic",
+        "color_scheme": [
+          "sky_blue",
+          "ink",
+          "moon_white"
+        ],
+        "spacing": "comfortable",
+        "patterns": [
+          "cloud",
+          "lotus",
+          "bamboo"
+        ]
+      },
+      "to": {
+        "layout": "classic",
+        "color_scheme": [
+          "sky_blue",
+          "ink",
+          "moon_white"
+        ],
+        "spacing": "comfortable",
+        "patterns": [
+          "cloud",
+          "lotus",
+          "bamboo"
+        ]
+      }
+    }
+  ],
+  "preferences": {
+    "favorite_layouts": [],
+    "favorite_colors": [],
+    "favorite_patterns": []
+  }
+}
