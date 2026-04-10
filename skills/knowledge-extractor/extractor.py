@@ -182,13 +182,17 @@ class KnowledgeExtractor:
                 
                 # 验证事件文本有效性
                 if event_text and 2 <= len(event_text) <= 100:
-                    # 排除纯符号或括号内容
+                    # 排除纯符号、括号内容、或不完整文本
                     if not re.match(r'^[\s\-:()\[\]]+$', event_text):
-                        events.append(Event(
-                            timestamp=timestamp,
-                            event=event_text[:100],
-                            type='time'
-                        ))
+                        # 排除以括号或冒号结尾的 (通常是不完整内容)
+                        if not re.search(r'[:)]\s*$', event_text):
+                            # 必须包含中文或字母
+                            if re.search(r'[\u4e00-\u9fa5A-Za-z]', event_text):
+                                events.append(Event(
+                                    timestamp=timestamp,
+                                    event=event_text[:100],
+                                    type='time'
+                                ))
         
         return events
     
