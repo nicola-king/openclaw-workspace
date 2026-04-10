@@ -4,6 +4,7 @@ Skill Dashboard - 太一 Skill 可视化管理中心
 
 作者：太一 AGI
 创建：2026-04-09
+更新：2026-04-10 - 增强应用启动功能
 """
 
 import os
@@ -18,6 +19,12 @@ SKILLS_DIR = WORKSPACE / "skills"
 APP = Flask(__name__, 
             template_folder='templates',
             static_folder='static')
+
+# 导入进程管理器
+from api.process_manager import (
+    start_skill, stop_skill, get_skill_status,
+    get_all_status, get_logs
+)
 
 # 缓存
 SKILL_CACHE = {}
@@ -89,29 +96,59 @@ def api_skill_detail(skill_id):
 
 @APP.route('/api/skills/<skill_id>/start', methods=['POST'])
 def api_skill_start(skill_id):
+    """启动 Skill 应用（增强版）"""
     skill_dir = SKILLS_DIR / skill_id
-    main_py = skill_dir / "main.py"
-    app_py = skill_dir / "app.py"
+    if not skill_dir.exists():
+        return jsonify({"error": "Skill not found"}), 404
     
-    script = str(main_py) if main_py.exists() else (str(app_py) if app_py.exists() else None)
+    result = start_skill(skill_id, skill_dir)
     
-    if not script:
-        return jsonify({"error": "No executable script found"}), 400
+    if "error" in result:
+        return jsonify(result), 400 if "未找到" in result.get("error", "") else 500
     
-    try:
-        subprocess.Popen(["python3", script], cwd=str(skill_dir),
-                        stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-        return jsonify({"status": "started", "script": script})
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
+    return jsonify(result)
 
 @APP.route('/api/skills/<skill_id>/stop', methods=['POST'])
 def api_skill_stop(skill_id):
-    try:
-        subprocess.run(["pkill", "-f", skill_id], capture_output=True)
-        return jsonify({"status": "stopped"})
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
+    """停止 Skill 应用（增强版）"""
+    result = stop_skill(skill_id)
+    
+    if "error" in result:
+        return jsonify(result), 400
+    
+    return jsonify(result)
+
+@APP.route('/api/skills/<skill_id>/status')
+def api_skill_status(skill_id):
+    """获取 Skill 运行状态"""
+    status = get_skill_status(skill_id)
+    return jsonify(status)
+
+@APP.route('/api/skills/<skill_id>/logs')
+def api_skill_logs(skill_id):
+    """获取 Skill 应用日志"""
+    lines = request.args.get('lines', 100, type=int)
+    logs = get_logs(skill_id, lines)
+    return jsonify(logs)
+
+@APP.route('/api/skills/<skill_id>/open', methods=['POST'])
+def api_skill_open(skill_id):
+    """在浏览器中打开 Skill 应用"""
+    status = get_skill_status(skill_id)
+    
+    if not status.get("running"):
+        return jsonify({"error": "应用未运行，请先启动"}), 400
+    
+    url = status.get("url")
+    if not url:
+        return jsonify({"error": "未检测到端口号"}), 400
+    
+    return jsonify({"url": url})
+
+@APP.route('/api/system/processes')
+def api_system_processes():
+    """获取所有运行中的应用"""
+    return jsonify(get_all_status())
 
 @APP.route('/api/skills/create', methods=['POST'])
 def api_skill_create():

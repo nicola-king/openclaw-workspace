@@ -1,6 +1,6 @@
 # HEARTBEAT.md - 核心待办（TurboQuant 压缩版）
 
-> 原则：只保留 P0 核心任务 · 细节见 `memory/residual.md` · 最后更新：**2026-04-10 08:15**
+> 原则：只保留 P0 核心任务 · 细节见 `memory/residual.md` · 最后更新：**2026-04-10 19:52**
 
 ---
 
@@ -31,13 +31,16 @@
 | **每 30 分钟** | 任务自愈恢复 | ✅ |
 | **每 5 分钟** | 告警检查 | ✅ |
 
-### 每日检查 (01:20 更新)
+### 每日检查 (19:52 更新)
 - [x] 微信通道状态 ✅ 正常
 - [x] Telegram 通道 ✅ 正常
-- [x] Gateway 运行 ✅ PID 186360 (1h 27min)
+- [x] Gateway 运行 ✅ PID 186360
 - [x] Bot Dashboard ✅ http://localhost:3000
 - [x] ROI Dashboard ✅ http://localhost:8080
 - [x] Skill Dashboard ✅ http://localhost:5002
+- [x] 太一 Dashboard ✅ http://localhost:5001 (支持导航)
+- [x] 百度网盘 API ✅ http://localhost:5003
+- [x] 百度网盘客户端 ✅ 已安装并登录
 - [x] Dashboard 守护进程 ✅ 运行中
 - [x] Dashboard 自动管理 ✅ 权限已修复
 - [x] 凌晨学习系统 ✅ 已就绪 (01:00-07:00)
@@ -127,7 +130,7 @@
 
 ---
 
-## 🚀 今日完成 (2026-04-09 → 2026-04-10)
+## 🚀 今日完成 (2026-04-09 → 2026-04-10 19:52)
 
 | 任务 | 状态 | 成果 |
 |------|------|------|
@@ -143,6 +146,9 @@
 - `scripts/dashboard-guardian.sh` (守护进程)
 - `scripts/error-root-cause-analysis.py` (根因分析)
 - `reports/root-cause-analysis-*.json` (分析报告)
+- `skills/taiyi-dashboard/` (太一综合 Dashboard)
+- `skills/baidu-netdisk-integration/` (百度网盘集成)
+- 百度网盘管理界面 (5003 端口)
 
 ---
 
@@ -179,7 +185,7 @@
 
 ---
 
-*TurboQuant 压缩版 | 最后更新：2026-04-09 23:35 | 文件大小：~5KB*
+*TurboQuant 压缩版 | 最后更新：2026-04-10 19:52 | 文件大小：~6KB*
 
 ---
 

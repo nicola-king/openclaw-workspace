@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Google Gemini
+Comment=Google Gemini AI 助手
+Exec=chromium-browser --app=https://gemini.google.com
+Icon=google-chrome
+Type=Application
+Categories=Network;WebBrowser;
+StartupNotify=true

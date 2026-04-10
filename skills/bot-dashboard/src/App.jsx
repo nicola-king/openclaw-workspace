@@ -83,6 +83,23 @@ function SystemStatus() {
   )
 }
 
+// 视频播放组件
+function VideoSection({ videoUrl, title }) {
+  return (
+    <div className="bg-white rounded-lg shadow-md p-6">
+      <h3 className="text-xl font-bold text-gray-800 mb-4">{title}</h3>
+      <video 
+        src={videoUrl} 
+        controls 
+        className="w-full rounded-lg"
+        autoPlay
+        loop
+        playsInline
+      />
+    </div>
+  )
+}
+
 // 主应用
 function App() {
   const [bots, setBots] = useState(MOCK_BOTS)
@@ -147,6 +164,33 @@ function App() {
                 <span className="text-gray-700">Git 提交</span>
                 <span className="text-2xl font-bold text-yellow-600">8</span>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 视频监控区域 */}
+        <section className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <VideoSection 
+            videoUrl="/videos/monitoring.mp4" 
+            title="🎥 太一可视化总控" 
+          />
+          
+          {/* 快速操作 */}
+          <div className="bg-white rounded-lg shadow-md p-6">
+            <h3 className="text-xl font-bold text-gray-800 mb-4">⚡ 快速操作</h3>
+            <div className="space-y-3">
+              <button className="w-full bg-blue-500 text-white py-3 px-4 rounded-lg hover:bg-blue-600 transition">
+                📊 查看详细报告
+              </button>
+              <button className="w-full bg-green-500 text-white py-3 px-4 rounded-lg hover:bg-green-600 transition">
+                🔄 刷新所有数据
+              </button>
+              <button className="w-full bg-purple-500 text-white py-3 px-4 rounded-lg hover:bg-purple-600 transition">
+                ⚙️ 系统设置
+              </button>
+              <button className="w-full bg-red-500 text-white py-3 px-4 rounded-lg hover:bg-red-600 transition">
+                🛑 紧急停止
+              </button>
             </div>
           </div>
         </section>
