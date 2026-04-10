@@ -99,7 +99,7 @@ class TenDScore:
         return 5.0  # 默认中等分数
     
     def _eval_match(self, target: Dict) -> float:
-        """匹配度评分"""
+        """匹配度评分 (0-10 分)"""
         match_rate = target.get("match_rate", 0.5)
         if match_rate > 0.9:
             return 9.5
@@ -113,19 +113,19 @@ class TenDScore:
             return 2.0
     
     def _eval_growth(self, target: Dict) -> float:
-        """成长性评分"""
+        """成长性评分 (0-10 分)"""
         growth_potential = target.get("growth_potential", "medium")
         scores = {"low": 3.0, "medium": 6.0, "high": 8.5, "explosive": 9.5}
         return scores.get(growth_potential, 6.0)
     
     def _eval_impact(self, target: Dict) -> float:
-        """影响力评分"""
+        """影响力评分 (0-10 分)"""
         impact_level = target.get("impact_level", "medium")
         scores = {"low": 3.0, "medium": 6.0, "high": 8.5, "massive": 9.5}
         return scores.get(impact_level, 6.0)
     
     def _eval_learning(self, target: Dict) -> float:
-        """学习价值评分"""
+        """学习价值评分 (0-10 分)"""
         learning_opportunities = target.get("learning_opportunities", [])
         if len(learning_opportunities) > 5:
             return 9.0
@@ -137,13 +137,13 @@ class TenDScore:
             return 4.0
     
     def _eval_team(self, target: Dict) -> float:
-        """团队质量评分"""
+        """团队质量评分 (0-10 分)"""
         team_quality = target.get("team_quality", "medium")
         scores = {"low": 3.0, "medium": 6.0, "high": 8.5, "excellent": 9.5}
         return scores.get(team_quality, 6.0)
     
     def _eval_tech_stack(self, target: Dict) -> float:
-        """技术栈评分"""
+        """技术栈评分 (0-10 分)"""
         tech_stack = target.get("tech_stack", [])
         if len(tech_stack) > 5:
             return 9.0
@@ -155,25 +155,25 @@ class TenDScore:
             return 4.0
     
     def _eval_company(self, target: Dict) -> float:
-        """公司前景评分"""
+        """公司前景评分 (0-10 分)"""
         company_stage = target.get("company_stage", "growth")
         scores = {"startup": 7.0, "growth": 8.5, "mature": 7.5, "decline": 3.0}
         return scores.get(company_stage, 7.0)
     
     def _eval_compensation(self, target: Dict) -> float:
-        """薪资福利评分"""
+        """薪资福利评分 (0-10 分)"""
         compensation_level = target.get("compensation_level", "market")
         scores = {"below": 3.0, "market": 6.0, "above": 8.0, "excellent": 9.5}
         return scores.get(compensation_level, 6.0)
     
     def _eval_wlb(self, target: Dict) -> float:
-        """工作生活平衡评分"""
+        """工作生活平衡评分 (0-10 分)"""
         wlb_rating = target.get("wlb_rating", "medium")
         scores = {"poor": 2.0, "fair": 5.0, "good": 7.5, "excellent": 9.0}
         return scores.get(wlb_rating, 6.0)
     
     def _eval_location(self, target: Dict) -> float:
-        """地理位置评分"""
+        """地理位置评分 (0-10 分)"""
         location_score = target.get("location_score", 6.0)
         return min(10.0, max(1.0, location_score))
     
