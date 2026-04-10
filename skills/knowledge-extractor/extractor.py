@@ -166,23 +166,29 @@ class KnowledgeExtractor:
         """提取时间线"""
         events = []
         
-        # 提取时间标记 - 更精确的模式
-        # 只提取 HH:MM 格式，后面跟有效中文/英文描述
-        time_pattern = r'(\d{2}:\d{2})\s*[:：]?\s*([\u4e00-\u9fa5A-Za-z][^\n]{0,100})'
-        matches = re.findall(time_pattern, content)
-        
-        for timestamp, event_text in matches:
-            # 清理事件文本
-            event_clean = event_text.strip()
-            # 过滤无效事件
-            if event_clean and len(event_clean) >= 2 and len(event_clean) <= 100:
-                # 排除包含括号不匹配的
-                if event_clean.count(')') == event_clean.count('('):
-                    events.append(Event(
-                        timestamp=timestamp,
-                        event=event_clean,
-                        type='time'
-                    ))
+        # 查找所有包含时间的行
+        lines = content.split('\n')
+        for line in lines:
+            # 匹配 HH:MM 或 YYYY-MM-DD 格式
+            time_match = re.search(r'(\d{2}:\d{2}|\d{4}-\d{2}-\d{2})', line)
+            if time_match:
+                timestamp = time_match.group(1)
+                # 提取时间后的内容
+                event_text = line[time_match.end():].strip()
+                # 清理 markdown 符号
+                event_text = re.sub(r'^[\s\-*:]+', '', event_text)
+                event_text = re.sub(r'[\[\]】]+', '', event_text)
+                event_text = event_text.strip()
+                
+                # 验证事件文本有效性
+                if event_text and 2 <= len(event_text) <= 100:
+                    # 排除纯符号或括号内容
+                    if not re.match(r'^[\s\-:()\[\]]+$', event_text):
+                        events.append(Event(
+                            timestamp=timestamp,
+                            event=event_text[:100],
+                            type='time'
+                        ))
         
         return events
     
