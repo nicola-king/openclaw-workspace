@@ -547,12 +547,13 @@ SCENE_CONFIGS = {
         'name': '学习报告',
         'type': 'academic',
         'weight': {
-            'eastern_western': 0.80,  # 东方 + 西方 80%
-            'chinese': 0.20            # 中国 20%
+            'apple': 0.80,         # 苹果设计 80%
+            'eastern_other': 0.15,  # 其他东方 15%
+            'chinese': 0.05         # 中国 5%
         },
         'recommended': {
+            'apple': ['apple'],
             'eastern': ['zen', 'wabi_sabi'],
-            'western': ['swiss', 'apple', 'material'],
             'chinese': ['classic', 'cloud', 'lotus']
         }
     },
@@ -561,12 +562,13 @@ SCENE_CONFIGS = {
         'name': '技术文档',
         'type': 'technical',
         'weight': {
-            'eastern_western': 0.90,
-            'chinese': 0.10
+            'apple': 0.85,
+            'eastern_other': 0.10,
+            'chinese': 0.05
         },
         'recommended': {
+            'apple': ['apple', 'material'],
             'eastern': ['zen'],
-            'western': ['bauhaus', 'swiss', 'material'],
             'chinese': ['classic']
         }
     },
@@ -575,12 +577,13 @@ SCENE_CONFIGS = {
         'name': '艺术报告',
         'type': 'artistic',
         'weight': {
-            'eastern_western': 0.70,
-            'chinese': 0.30
+            'apple': 0.70,
+            'eastern_other': 0.20,
+            'chinese': 0.10
         },
         'recommended': {
+            'apple': ['apple'],
             'eastern': ['wabi_sabi', 'zen'],
-            'western': ['apple'],
             'chinese': ['double', 'cloud', 'lotus', 'bamboo']
         }
     },
@@ -589,12 +592,13 @@ SCENE_CONFIGS = {
         'name': '商业报告',
         'type': 'business',
         'weight': {
-            'eastern_western': 0.85,
-            'chinese': 0.15
+            'apple': 0.80,
+            'eastern_other': 0.15,
+            'chinese': 0.05
         },
         'recommended': {
+            'apple': ['apple', 'swiss'],
             'eastern': ['garden_city', 'skyline'],
-            'western': ['swiss', 'apple'],
             'chinese': ['classic']
         }
     },
@@ -603,12 +607,13 @@ SCENE_CONFIGS = {
         'name': '创意作品',
         'type': 'creative',
         'weight': {
-            'eastern_western': 0.75,
-            'chinese': 0.25
+            'apple': 0.75,
+            'eastern_other': 0.15,
+            'chinese': 0.10
         },
         'recommended': {
+            'apple': ['apple', 'material'],
             'eastern': ['zen', 'night_market'],
-            'western': ['material', 'bauhaus'],
             'chinese': ['double', 'cloud']
         }
     }
