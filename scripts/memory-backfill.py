@@ -5,8 +5,9 @@
 功能:
 1. 选择性回填历史记忆到核心层
 2. 从 daily notes 提炼决策/任务/洞察
-3. 更新 memory/core.md
-4. 生成回填报告
+3. 集成 Knowledge Extractor 自动提炼
+4. 更新 memory/core.md
+5. 生成回填报告
 
 灵感来源：OpenClaw v2026.4.9 REM Backfill
 
@@ -16,8 +17,20 @@
 
 import json
 import re
+import sys
 from pathlib import Path
 from datetime import datetime, timedelta
+
+# 添加 knowledge-extractor 路径
+sys.path.insert(0, str(Path(__file__).parent.parent / "skills" / "knowledge-extractor"))
+
+try:
+    from models import KnowledgeAbstract
+    from extractor import KnowledgeExtractor
+    KNOWLEDGE_EXTRACTOR_AVAILABLE = True
+except ImportError:
+    print("⚠️  Knowledge Extractor 未加载，使用基础模式")
+    KNOWLEDGE_EXTRACTOR_AVAILABLE = False
 
 # 配置
 WORKSPACE = Path("/home/nicola/.openclaw/workspace")
@@ -30,10 +43,25 @@ REPORTS_DIR = WORKSPACE / "reports"
 def parse_daily_note(file_path):
     """解析每日笔记，提取结构化内容"""
     if not file_path.exists():
-        return None
+        return None, None
     
     with open(file_path, "r", encoding="utf-8") as f:
         content = f.read()
+    
+    # 使用 Knowledge Extractor 提取 (如果可用)
+    knowledge_data = None
+    if KNOWLEDGE_EXTRACTOR_AVAILABLE:
+        try:
+            extractor = KnowledgeExtractor()
+            abstract = extractor.extract(str(file_path))
+            knowledge_data = {
+                'source': str(file_path),
+                'summary': abstract.summary,
+                'entities': [e.name for e in abstract.entities[:10]],
+                'tags': list(abstract.tags)[:10]
+            }
+        except Exception as e:
+            print(f"⚠️  Knowledge Extractor 提取失败：{e}")
     
     # 提取各类标记
     patterns = {
@@ -57,35 +85,7 @@ def parse_daily_note(file_path):
         matches = re.findall(pattern, content, re.DOTALL)
         extracted[key] = [m.strip() for m in matches if m.strip()]
     
-    return extracted
-
-
-def load_core_memory():
-    """加载核心记忆"""
-    if not CORE_FILE.exists():
-        return {'sections': {}, 'last_updated': None}
-    
-    with open(CORE_FILE, "r", encoding="utf-8") as f:
-        content = f.read()
-    
-    # 简单解析核心记忆结构
-    core = {
-        'sections': {
-            'decisions': [],
-            'tasks': [],
-            'insights': [],
-            'emergence': [],
-            'constitution': []
-        },
-        'last_updated': None
-    }
-    
-    # 提取最后更新时间
-    date_match = re.search(r'最后更新：(\d{4}-\d{2}-\d{2})', content)
-    if date_match:
-        core['last_updated'] = date_match.group(1)
-    
-    return core
+    return extracted, knowledge_data
 
 
 def backfill_date_range(start_date, end_date, dry_run=False):
@@ -98,7 +98,9 @@ def backfill_date_range(start_date, end_date, dry_run=False):
         'emergence': [],
         'constitution': [],
         'files_processed': 0,
-        'files_skipped': 0
+        'files_skipped': 0,
+        'knowledge_abstracts': 0,
+        'knowledge_data': []
     }
     
     current = start_date
@@ -107,7 +109,7 @@ def backfill_date_range(start_date, end_date, dry_run=False):
         daily_file = MEMORY_DIR / f"{date_str}.md"
         
         if daily_file.exists():
-            parsed = parse_daily_note(daily_file)
+            parsed, knowledge_data = parse_daily_note(daily_file)
             if parsed:
                 for key in ['decisions', 'tasks', 'insights', 'emergence', 'constitution']:
                     backfilled[key].extend([
@@ -115,6 +117,10 @@ def backfill_date_range(start_date, end_date, dry_run=False):
                         for c in parsed[key]
                     ])
                 backfilled['files_processed'] += 1
+            
+            if knowledge_data:
+                backfilled['knowledge_abstracts'] += 1
+                backfilled['knowledge_data'].append(knowledge_data)
             else:
                 backfilled['files_skipped'] += 1
         else:
@@ -132,7 +138,8 @@ def generate_backfill_report(backfilled, output_file):
 
 > **执行时间**: {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}  
 > **系统**: 太一 AGI · 记忆回填系统  
-> **灵感**: OpenClaw v2026.4.9 REM Backfill
+> **灵感**: OpenClaw v2026.4.9 REM Backfill  
+> **增强**: Knowledge Extractor 自动提炼
 
 ---
 
@@ -146,7 +153,7 @@ def generate_backfill_report(backfilled, output_file):
 | 任务提炼 | {len(backfilled['tasks'])} |
 | 洞察提炼 | {len(backfilled['insights'])} |
 | 能力涌现 | {len(backfilled['emergence'])} |
-| 宪法修订 | {len(backfilled['constitution'])} |
+| 知识抽象 | {backfilled['knowledge_abstracts']} |
 
 ---
 
@@ -156,7 +163,7 @@ def generate_backfill_report(backfilled, output_file):
 
 """
     
-    for item in backfilled['decisions'][:10]:  # 限制显示前 10 条
+    for item in backfilled['decisions'][:10]:
         report += f"- **{item['date']}**: {item['content'][:100]}...\n"
     
     if len(backfilled['decisions']) > 10:
@@ -195,6 +202,15 @@ def generate_backfill_report(backfilled, output_file):
     if len(backfilled['emergence']) > 10:
         report += f"\n*... 还有 {len(backfilled['emergence']) - 10} 个能力涌现*\n"
     
+    # Knowledge Abstracts 部分
+    if backfilled['knowledge_data']:
+        report += """
+### 知识抽象 (Knowledge Abstracts)
+
+"""
+        for kd in backfilled['knowledge_data'][:5]:
+            report += f"- **{kd['source']}**: {kd['summary'][:100]}...\n"
+    
     report += f"""
 ---
 
@@ -223,6 +239,12 @@ def main():
     print("="*60)
     print()
     
+    if KNOWLEDGE_EXTRACTOR_AVAILABLE:
+        print("✅ Knowledge Extractor 已集成")
+    else:
+        print("⚠️  Knowledge Extractor 未加载")
+    print()
+    
     # 默认回填最近 7 天
     end_date = datetime.now()
     start_date = end_date - timedelta(days=7)
@@ -241,6 +263,7 @@ def main():
     print(f"   任务提炼：{len(backfilled['tasks'])}")
     print(f"   洞察提炼：{len(backfilled['insights'])}")
     print(f"   能力涌现：{len(backfilled['emergence'])}")
+    print(f"   知识抽象：{backfilled['knowledge_abstracts']}")
     print()
     
     # 生成报告
@@ -250,26 +273,6 @@ def main():
     print(f"📄 回填报告：{report_file}")
     print()
     
-    # 打印摘要
-    print("📋 回填摘要 (前 5 条):")
-    print("-"*60)
-    
-    if backfilled['decisions']:
-        print("\n【决策】")
-        for item in backfilled['decisions'][:5]:
-            print(f"  {item['date']}: {item['content'][:60]}...")
-    
-    if backfilled['insights']:
-        print("\n【洞察】")
-        for item in backfilled['insights'][:5]:
-            print(f"  {item['date']}: {item['content'][:60]}...")
-    
-    if backfilled['emergence']:
-        print("\n【能力涌现】")
-        for item in backfilled['emergence'][:5]:
-            print(f"  {item['date']}: {item['content'][:60]}...")
-    
-    print()
     print("✅ 记忆回填完成 - 可审查后手动更新 core.md")
     
     return 0
