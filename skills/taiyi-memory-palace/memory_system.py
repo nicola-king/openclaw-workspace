@@ -15,6 +15,14 @@
 
 import chromadb
 from chromadb.config import Settings
+import os
+
+# 修复代理问题
+os.environ.pop('HTTP_PROXY', None)
+os.environ.pop('HTTPS_PROXY', None)
+os.environ.pop('http_proxy', None)
+os.environ.pop('https_proxy', None)
+
 import json
 from pathlib import Path
 from datetime import datetime, timedelta
