@@ -155,16 +155,18 @@ class WuEnlightenmentAgent:
     
     async def _check_review_due(self, user_id: str) -> Optional[str]:
         """检查是否需要复习 (艾宾浩斯机制)"""
-        # 从记忆宫殿获取需要复习的内容
-        due_memories = self.memory_palace.review_due_memories()
+        # 从记忆宫殿获取用户的对话记录
+        user_records = self.memory_palace.search(
+            query=f"[{user_id}]",
+            category="learning",
+            limit=5
+        )
         
-        user_due = [m for m in due_memories if m.get('metadata', {}).get('user_id') == user_id]
-        
-        if user_due:
-            # 生成复习提醒
-            reminder = "📚 根据艾宾浩斯遗忘曲线，以下是你需要复习的佛法教义：\n\n"
-            for memory in user_due[:3]:  # 最多显示 3 条
-                text = memory.get('text', '')[:100]
+        if user_records and len(user_records) > 2:
+            # 有学习记录，生成复习提醒
+            reminder = "📚 根据艾宾浩斯遗忘曲线，建议你复习以下佛法教义：\n\n"
+            for record in user_records[:3]:
+                text = record.get('text', '')[:80]
                 reminder += f"- {text}...\n"
             
             reminder += "\n🙏 温故而知新，可以为师矣。"
