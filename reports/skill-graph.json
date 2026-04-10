@@ -1,6 +1,6 @@
 {
   "schema": "taiyi/skill-graph/v1",
-  "generated_at": "2026-04-10T15:57:12.108469",
+  "generated_at": "2026-04-10T15:57:32.961424",
   "total_skills": 61,
   "nodes": [
     {
@@ -496,6 +496,6 @@
   "metadata": {
     "node_count": 61,
     "edge_count": 0,
-    "skills_per_day": 61.0
+    "avg_connections": 0.0
   }
 }
