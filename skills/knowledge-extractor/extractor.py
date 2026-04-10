@@ -95,21 +95,24 @@ class KnowledgeExtractor:
         
         # 提取标题作为实体
         title_patterns = [
+            (r'^#{4,}\s+(.+)$', EntityType.SKILL),  # 4+ 级标题
+            (r'^###\s+(.+)$', EntityType.FEATURE),
+            (r'^##\s+(.+)$', EntityType.CONCEPT),
             (r'^#\s+(.+)$', EntityType.CONCEPT),
-            (r'^##\s+(.+)$', EntityType.FEATURE),
-            (r'^###\s+(.+)$', EntityType.SKILL),
         ]
         
         for pattern, entity_type in title_patterns:
             matches = re.findall(pattern, content, re.MULTILINE)
             for match in matches:
-                entities.append(Entity(
-                    id=f"entity_{entity_id}",
-                    name=match.strip(),
-                    type=entity_type,
-                    description=f"来自 {path.name}"
-                ))
-                entity_id += 1
+                name = match.strip()
+                if name and len(name) < 100:  # 过滤无效标题
+                    entities.append(Entity(
+                        id=f"entity_{entity_id}",
+                        name=name,
+                        type=entity_type,
+                        description=f"来自 {path.name}"
+                    ))
+                    entity_id += 1
         
         # 提取【决策】【任务】【洞察】等标记
         marker_patterns = {
@@ -163,20 +166,23 @@ class KnowledgeExtractor:
         """提取时间线"""
         events = []
         
-        # 提取时间标记
-        time_patterns = [
-            r'(\d{2}:\d{2})\s*(.+?)(?=\n|$)',  # 13:00 开始 P0
-            r'(\d{4}-\d{2}-\d{2})\s*(.+?)(?=\n|$)',  # 2026-04-10 发布
-        ]
+        # 提取时间标记 - 更精确的模式
+        # 只提取 HH:MM 格式，后面跟有效中文/英文描述
+        time_pattern = r'(\d{2}:\d{2})\s*[:：]?\s*([\u4e00-\u9fa5A-Za-z][^\n]{0,100})'
+        matches = re.findall(time_pattern, content)
         
-        for pattern in time_patterns:
-            matches = re.findall(pattern, content)
-            for timestamp, event_text in matches:
-                events.append(Event(
-                    timestamp=timestamp,
-                    event=event_text.strip()[:100],
-                    type="general"
-                ))
+        for timestamp, event_text in matches:
+            # 清理事件文本
+            event_clean = event_text.strip()
+            # 过滤无效事件
+            if event_clean and len(event_clean) >= 2 and len(event_clean) <= 100:
+                # 排除包含括号不匹配的
+                if event_clean.count(')') == event_clean.count('('):
+                    events.append(Event(
+                        timestamp=timestamp,
+                        event=event_clean,
+                        type='time'
+                    ))
         
         return events
     
@@ -184,10 +190,13 @@ class KnowledgeExtractor:
         """提取标签"""
         tags = set()
         
-        # 提取 #标签
-        hashtag_pattern = r'#(\w+)'
+        # 提取 #标签 (必须是有效标签 - 中文或字母开头，排除颜色代码)
+        hashtag_pattern = r'#([\u4e00-\u9fa5][\u4e00-\u9fa5a-zA-Z0-9_-]{0,20}|[a-zA-Z][a-zA-Z0-9_-]{0,20})'
         matches = re.findall(hashtag_pattern, content)
-        tags.update(matches)
+        for match in matches:
+            # 排除颜色代码 (如 #8E8E93, #FFFFFF 等 6 位十六进制)
+            if not re.match(r'^[0-9A-Fa-f]{6}$', match):
+                tags.add(match)
         
         # 提取常见关键词作为标签
         keywords = {
@@ -197,6 +206,7 @@ class KnowledgeExtractor:
             '美学': '美学宪法',
             '设计': '设计系统',
             '模型': '模型路由',
+            '知识': '知识提取',
         }
         
         for keyword, tag in keywords.items():
@@ -207,12 +217,22 @@ class KnowledgeExtractor:
     
     def _generate_summary(self, content: str, entities: List[Entity]) -> str:
         """生成摘要"""
-        # 简单摘要：取前 500 字符 + 实体统计
-        preview = content[:500].strip()
-        if len(content) > 500:
+        # 提取第一个段落作为预览
+        paragraphs = content.split('\n\n')
+        preview = ""
+        for para in paragraphs:
+            para = para.strip()
+            if para and not para.startswith('#') and not para.startswith('['):
+                preview = para[:300]
+                break
+        
+        if not preview:
+            preview = content[:300].strip()
+        
+        if len(preview) >= 300:
             preview += "..."
         
-        summary = f"文档包含 {len(entities)} 个实体。预览：{preview}"
+        summary = f"文档包含 {len(entities)} 个实体。内容预览：{preview}"
         return summary
 
 
