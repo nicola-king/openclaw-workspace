@@ -105,8 +105,8 @@ class CostCalculator:
         self.region = region
         self.standard = standard
         self.tax_rate = 0.09  # 增值税 9%
-        self.regulation_rate = 0.03  # 规费 3%
-        self.measure_rate = 0.05  # 措施费 5%
+        self.regulation_rate = 0.28  # 规费 28%(重庆)
+        self.measure_rate = 0.025  # 措施费 2.5%(重庆市政)
         
         # 地区调整系数 (不同地区人工/材料/机械价格差异)
         self.region_factors = {
@@ -161,6 +161,7 @@ class CostCalculator:
             '分部分项工程费': direct_cost,
             '措施项目费': direct_cost * self.measure_rate,
             '其他项目费': direct_cost * 0.02,
+            '安全文明施工费': direct_cost * 0.025,  # 市政工程 2.5%
             '规费': direct_cost * self.regulation_rate,
         }
         
