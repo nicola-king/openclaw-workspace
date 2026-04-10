@@ -337,7 +337,7 @@ def main():
             print("❌ 需要指定导入文件 --file")
             return 1
         
-        manager.import_from 造价站 (args.file)
+        manager.import_from_zaojiazhan (args.file)
     
     return 0
 
