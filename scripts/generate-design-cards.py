@@ -142,15 +142,15 @@ CHINESE_CLASSICAL = {
 
 
 # ═══════════════════════════════════════════════════════════
-# 场景权重配置
+# 场景权重配置 (苹果设计 80%)
 # ═══════════════════════════════════════════════════════════
 
 SCENE_WEIGHTS = {
-    '学习报告': {'eastern_western': 0.80, 'chinese': 0.20},
-    '技术文档': {'eastern_western': 0.90, 'chinese': 0.10},
-    '艺术报告': {'eastern_western': 0.70, 'chinese': 0.30},
-    '商业报告': {'eastern_western': 0.85, 'chinese': 0.15},
-    '创意作品': {'eastern_western': 0.75, 'chinese': 0.25}
+    '学习报告': {'apple': 0.80, 'eastern_other': 0.15, 'chinese': 0.05},
+    '技术文档': {'apple': 0.85, 'eastern_other': 0.10, 'chinese': 0.05},
+    '艺术报告': {'apple': 0.70, 'eastern_other': 0.20, 'chinese': 0.10},
+    '商业报告': {'apple': 0.80, 'eastern_other': 0.15, 'chinese': 0.05},
+    '创意作品': {'apple': 0.75, 'eastern_other': 0.15, 'chinese': 0.10}
 }
 
 
@@ -175,13 +175,17 @@ def generate_header():
 def generate_scene_weight_table():
     """生场场景权重表"""
     table = """
-## 📍 场景权重配置
+## 📍 场景权重配置 (苹果设计 80%)
 
-| 场景 | 东方西方 | 中国 |
-|------|---------|------|
+| 场景 | 苹果设计 | 其他东方 | 中国 |
+|------|---------|---------|------|
 """
     for scene, weight in SCENE_WEIGHTS.items():
-        table += f"| {scene} | {weight['eastern_western']:.0%} | {weight['chinese']:.0%} |\n"
+        table += f"| {scene} | {weight['apple']:.0%} | {weight['eastern_other']:.0%} | {weight['chinese']:.0%} |\n"
+    
+    table += """
+**设计原则**: 苹果设计风格为主导 (80%) + 其他东方元素 (15%) + 中国元素 (5%)
+"""
     
     return table
 
@@ -280,7 +284,7 @@ def generate_chinese_card():
 
 
 def generate_fusion_card(eastern_region, western_style):
-    """生成融合风格卡片 (东方西方 80% + 中国 20%)"""
+    """生成融合风格卡片 (苹果设计 80% + 其他东方 15% + 中国 5%)"""
     
     eastern_data = EASTERN_DESIGN.get(eastern_region, {})
     eastern_colors = list(eastern_data.get('colors', {}).values())[:2]
@@ -294,41 +298,46 @@ def generate_fusion_card(eastern_region, western_style):
     chinese_patterns = list(CHINESE_CLASSICAL['patterns'].values())[:2]
     chinese_colors = list(CHINESE_CLASSICAL['colors'].values())[:2]
     
-    eastern_color_str = ', '.join([f"{c['name']}({c['hex']})" for c in eastern_colors])
-    western_color_str = ', '.join([f"{c['name']}({c['hex']})" for c in western_colors])
-    chinese_pattern_str = ' '.join([f"{p['emoji']}{p['name']}" for p in chinese_patterns])
-    chinese_color_str = ', '.join([f"{c['name']}({c['hex']})" for c in chinese_colors])
+    # 突出苹果设计
+    if western_style == 'apple':
+        apple_note = "⭐ 主导风格"
+    else:
+        apple_note = ""
     
     card = f"""
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-┃  🌸 融合设计卡片 · FUSION CARD                   权重 80/20  ┃
+┃  🌸 融合设计卡片 · FUSION CARD                   苹果 80%    ┃
 ┃                                                               ┃
 ┃  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  ┃
 ┃                                                               ┃
-┃  【东方西方 80%】                                             ┃
+┃  【苹果设计 80%】{apple_note:<10}                             ┃
 ┃                                                               ┃
-┃  🇯🇵 东方 ({eastern_region}):                                     ┃
-┃     色彩：{eastern_color_str:<52}     ┃
-┃     原则：{', '.join(eastern_principles):<52}     ┃
-┃                                                               ┃
-┃  🇪🇺 西方 ({western_style}):                                     ┃
-┃     色彩：{western_color_str:<52}     ┃
+┃  🍎 苹果 ({western_style}):                                     ┃
+┃     色彩：{', '.join([f"{c['name']}({c['hex']})" for c in western_colors]):<52}     ┃
 ┃     大师：{', '.join(western_masters):<52}     ┃
 ┃     原则：{', '.join(western_principles):<52}     ┃
 ┃                                                               ┃
 ┃  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  ┃
 ┃                                                               ┃
-┃  【中国 20%】                                                 ┃
+┃  【其他东方 15%】                                             ┃
 ┃                                                               ┃
-┃  🇨🇳 纹样：{chinese_pattern_str:<54}     ┃
-┃  🇨🇳 色彩：{chinese_color_str:<54}     ┃
+┃  🇯🇵 东方 ({eastern_region}):                                     ┃
+┃     色彩：{', '.join([f"{c['name']}({c['hex']})" for c in eastern_colors]):<52}     ┃
+┃     原则：{', '.join(eastern_principles):<52}     ┃
 ┃                                                               ┃
 ┃  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  ┃
 ┃                                                               ┃
-┃  设计案例：{eastern_region}+{western_style}+ 中国                              ┃
+┃  【中国 5%】                                                  ┃
+┃                                                               ┃
+┃  🇨🇳 纹样：{' '.join([f"{p['emoji']}{p['name']}" for p in chinese_patterns]):<54}     ┃
+┃  🇨🇳 色彩：{', '.join([f"{c['name']}({c['hex']})" for c in chinese_colors]):<54}     ┃
+┃                                                               ┃
+┃  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  ┃
+┃                                                               ┃
+┃  设计案例：{eastern_region}+{western_style}+ 中国 (精简)                    ┃
 ┃  应用场景：学习报告/商业文档/创意作品                        ┃
 ┃                                                               ┃
-┃  设计原则：东方西方大师灵感 80% + 中国元素 20%                ┃
+┃  设计原则：苹果设计 80% + 其他东方 15% + 中国 5%              ┃
 ┃                                                               ┃
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 """
@@ -366,25 +375,22 @@ def generate_principles():
     return """
 ## 🎯 设计原则
 
-> **东方（台湾、香港、新加坡、日本、泰国等）西方设计大师的灵感占比 80%**
+> **苹果设计风格为主导 (80%)**
 
-- 🇯🇵 日本：禅意/侘寂/间 (Ma)/渋い
-- 🇹🇼 台湾：街头文化/茶文化/庙宇文化
-- 🇭🇰 香港：霓虹文化/都市美学/饮茶文化
-- 🇸🇬 新加坡：花园城市/多元融合/生态和谐
-- 🇹🇭 泰国：佛教艺术/传统工艺/美食文化
-- 🇪🇺 西方：包豪斯/瑞士/苹果/材料设计
+- 🍎 苹果设计：简约是终极的复杂 · 极致工艺 · 用户体验至上
+- 🇪🇺 西方设计：包豪斯/瑞士/材料设计
+- 🇯🇵🇹🇼🇭🇰🇸🇬🇹🇭 其他东方：日本/台湾/香港/新加坡/泰国 (15%)
 
-> **中国元素占比 20%**
+> **中国元素占比 5%**
 
-- 🇨🇳 传统色彩体系
-- 🇨🇳 传统纹样寓意
-- 🇨🇳 传统布局美学
+- 🇨🇳 传统色彩体系 (精简使用)
+- 🇨🇳 传统纹样寓意 (点睛之笔)
+- 🇨🇳 传统布局美学 (偶尔使用)
 
 > **特殊情况下可以根据事件和场景进行调整**
 
-- 传统节日：中国元素 +30%
-- 国际活动：东方西方 +10%
+- 传统节日：中国元素 +5%
+- 国际活动：苹果设计 +5%
 - 场景感知：自动调整权重
 - 用户偏好：学习优化
 """
