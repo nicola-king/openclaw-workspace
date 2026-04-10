@@ -1,0 +1,31 @@
+{
+  "name": "@taiyi/design-system",
+  "version": "1.0.0",
+  "description": "太一 AGI 设计系统 - 苹果 80% + 东方 15% + 中国 5%",
+  "main": "src/index.js",
+  "style": "src/styles.css",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "taiyi",
+    "design-system",
+    "components",
+    "apple-design",
+    "chinese-aesthetics"
+  ],
+  "author": "太一 AGI",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nicola-king/openclaw-workspace.git",
+    "directory": "skills/taiyi-design-system"
+  },
+  "devDependencies": {
+    "vite": "^6.4.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
