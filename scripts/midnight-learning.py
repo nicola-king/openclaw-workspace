@@ -146,13 +146,29 @@ class MidnightLearningSystem:
             }
         }
         
-        # 保存报告
+        # 保存 JSON 报告
         report_file = REPORTS_DIR / f"midnight-learning-{datetime.now().strftime('%Y%m%d-%H%M%S')}.json"
         with open(report_file, "w", encoding="utf-8") as f:
             json.dump(report, f, indent=2, ensure_ascii=False)
         
-        self.log(f"📄 学习报告已保存：{report_file}")
+        self.log(f"📄 JSON 报告已保存：{report_file}")
+        
+        # 如果是最后一次学习 (07:00)，生成 Markdown 汇总报告
+        current_hour = datetime.now().hour
+        if current_hour == 7:
+            self.generate_markdown_summary()
+        
         return report, report_file
+    
+    def generate_markdown_summary(self):
+        """生成 Markdown 汇总报告"""
+        self.log("📄 生成 Markdown 汇总报告...")
+        
+        # 调用 Markdown 生成脚本
+        script = WORKSPACE / "scripts" / "generate-learning-report-md.py"
+        if script.exists():
+            subprocess.run(["python3", str(script)], capture_output=True)
+            self.log("✅ Markdown 报告已生成")
     
     def update_heartbeat(self):
         """更新 HEARTBEAT.md"""
