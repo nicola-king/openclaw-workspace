@@ -2,15 +2,24 @@
   "current_design": {
     "scene": "learning_report",
     "weight": {
-      "chinese": 0.6,
-      "western": 0.4
+      "eastern_western": 0.8,
+      "chinese": 0.2
     },
-    "chinese_elements": {},
+    "eastern_elements": {},
     "western_elements": {},
+    "chinese_elements": {
+      "layout": "double",
+      "patterns": [
+        "bamboo",
+        "lotus"
+      ]
+    },
     "color_scheme": [
-      "ink",
-      "indigo",
-      "bauhaus_red"
+      "matcha_green",
+      "garden_green",
+      "apple_silver",
+      "bauhaus_yellow",
+      "indigo"
     ]
   },
   "history": [
@@ -46,6 +55,24 @@
           "cloud",
           "lotus",
           "bamboo"
+        ]
+      }
+    },
+    {
+      "timestamp": "2026-04-10T09:05:02.342253",
+      "scene": "learning_report",
+      "design": {
+        "scene": "learning_report",
+        "weight": {
+          "chinese": 0.6,
+          "western": 0.4
+        },
+        "chinese_elements": {},
+        "western_elements": {},
+        "color_scheme": [
+          "ink",
+          "indigo",
+          "bauhaus_red"
         ]
       }
     }
@@ -117,6 +144,53 @@
           "ink",
           "indigo",
           "bauhaus_red"
+        ]
+      }
+    },
+    {
+      "timestamp": "2026-04-10T09:05:02.342261",
+      "type": "auto_evolution",
+      "scene": "learning_report",
+      "special_condition": null,
+      "weight": {
+        "eastern_western": 0.8,
+        "chinese": 0.2
+      },
+      "from": {
+        "scene": "learning_report",
+        "weight": {
+          "chinese": 0.6,
+          "western": 0.4
+        },
+        "chinese_elements": {},
+        "western_elements": {},
+        "color_scheme": [
+          "ink",
+          "indigo",
+          "bauhaus_red"
+        ]
+      },
+      "to": {
+        "scene": "learning_report",
+        "weight": {
+          "eastern_western": 0.8,
+          "chinese": 0.2
+        },
+        "eastern_elements": {},
+        "western_elements": {},
+        "chinese_elements": {
+          "layout": "double",
+          "patterns": [
+            "bamboo",
+            "lotus"
+          ]
+        },
+        "color_scheme": [
+          "matcha_green",
+          "garden_green",
+          "apple_silver",
+          "bauhaus_yellow",
+          "indigo"
         ]
       }
     }
