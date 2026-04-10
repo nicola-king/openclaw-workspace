@@ -20,12 +20,17 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nicola-king/openclaw-workspace.git",
+    "url": "git+https://github.com/nicola-king/openclaw-workspace.git",
     "directory": "skills/taiyi-design-system"
   },
   "devDependencies": {
     "vite": "^6.4.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
-  }
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/nicola-king/openclaw-workspace/issues"
+  },
+  "homepage": "https://github.com/nicola-king/openclaw-workspace#readme"
 }
