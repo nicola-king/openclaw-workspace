@@ -44,7 +44,7 @@ class WuEnlightenmentAgent:
         
         # 数据目录
         self.data_dir = Path(__file__).parent / "agents" / "wu"
-        self.data_dir.mkdir(exist_ok=True)
+        self.data_dir.mkdir(parents=True, exist_ok=True)  # parents=True 确保创建所有父目录
         
         # 加载自进化数据
         self._load_evolution_data()
