@@ -60,6 +60,14 @@ class TaiyiMemoryPalace:
             744,    # 31 天
         ]
     
+    def _calculate_next_review(self, review_count: int) -> datetime:
+        """计算下次复习时间 (艾宾浩斯曲线)"""
+        if review_count >= len(self.ebbinghaus_intervals):
+            interval_hours = 2160  # 90 天
+        else:
+            interval_hours = self.ebbinghaus_intervals[review_count]
+        return datetime.now() + timedelta(hours=interval_hours)
+    
     def remember(self, text: str, category: str = "daily", 
                  metadata: Optional[Dict] = None) -> str:
         """存储记忆"""
