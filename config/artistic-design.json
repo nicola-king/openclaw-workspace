@@ -1,21 +1,39 @@
 {
   "current_design": {
-    "layout": "classic",
+    "scene": "learning_report",
+    "weight": {
+      "chinese": 0.6,
+      "western": 0.4
+    },
+    "chinese_elements": {},
+    "western_elements": {},
     "color_scheme": [
-      "sky_blue",
       "ink",
-      "moon_white"
-    ],
-    "spacing": "comfortable",
-    "patterns": [
-      "cloud",
-      "lotus",
-      "bamboo"
+      "indigo",
+      "bauhaus_red"
     ]
   },
   "history": [
     {
       "timestamp": "2026-04-10T08:35:18.137380",
+      "design": {
+        "layout": "classic",
+        "color_scheme": [
+          "sky_blue",
+          "ink",
+          "moon_white"
+        ],
+        "spacing": "comfortable",
+        "patterns": [
+          "cloud",
+          "lotus",
+          "bamboo"
+        ]
+      }
+    },
+    {
+      "timestamp": "2026-04-10T08:50:05.734404",
+      "scene": "learning_report",
       "design": {
         "layout": "classic",
         "color_scheme": [
@@ -62,6 +80,43 @@
           "cloud",
           "lotus",
           "bamboo"
+        ]
+      }
+    },
+    {
+      "timestamp": "2026-04-10T08:50:05.734413",
+      "type": "auto_evolution",
+      "scene": "learning_report",
+      "weight": {
+        "chinese": 0.6,
+        "western": 0.4
+      },
+      "from": {
+        "layout": "classic",
+        "color_scheme": [
+          "sky_blue",
+          "ink",
+          "moon_white"
+        ],
+        "spacing": "comfortable",
+        "patterns": [
+          "cloud",
+          "lotus",
+          "bamboo"
+        ]
+      },
+      "to": {
+        "scene": "learning_report",
+        "weight": {
+          "chinese": 0.6,
+          "western": 0.4
+        },
+        "chinese_elements": {},
+        "western_elements": {},
+        "color_scheme": [
+          "ink",
+          "indigo",
+          "bauhaus_red"
         ]
       }
     }
