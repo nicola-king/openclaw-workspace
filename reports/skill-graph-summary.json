@@ -1,6 +1,6 @@
 {
   "schema": "taiyi/skill-graph-summary/v1",
-  "generated_at": "2026-04-10T16:02:20.362649",
+  "generated_at": "2026-04-10T16:02:27.876855",
   "statistics": {
     "total_skills": 62,
     "nodes": 62,
@@ -9,15 +9,15 @@
   },
   "top_tags": [
     {
-      "tag": "self-evolution",
-      "count": 62
-    },
-    {
       "tag": "emerged",
       "count": 62
     },
     {
       "tag": "auto-created",
+      "count": 62
+    },
+    {
+      "tag": "self-evolution",
       "count": 62
     }
   ],
