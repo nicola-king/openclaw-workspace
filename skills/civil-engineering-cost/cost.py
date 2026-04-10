@@ -62,24 +62,34 @@ class CostResult:
 
 QUOTAS = {
     'road': {
-        '路基土方': {'unit': '1000m³', 'labor': 2500, 'material': 0, 'machine': 8500},
-        '路基石方': {'unit': '1000m³', 'labor': 3200, 'material': 1500, 'machine': 12000},
-        '沥青混凝土路面': {'unit': '1000㎡', 'labor': 1800, 'material': 85000, 'machine': 3500},
-        '水泥混凝土路面': {'unit': '1000㎡', 'labor': 2200, 'material': 72000, 'machine': 4200},
-        '路缘石': {'unit': '100m', 'labor': 800, 'material': 3500, 'machine': 200},
+        # 2018 定额
+        '路基土方': {'unit': '1000m³', 'labor': 2400, 'material': 0, 'machine': 8000},
+        '路基石方': {'unit': '1000m³', 'labor': 3000, 'material': 1400, 'machine': 11500},
+        '沥青混凝土路面': {'unit': '1000㎡', 'labor': 1700, 'material': 82000, 'machine': 3300},
+        '水泥混凝土路面': {'unit': '1000㎡', 'labor': 2100, 'material': 70000, 'machine': 4000},
+        '路缘石': {'unit': '100m', 'labor': 750, 'material': 3300, 'machine': 180},
+        # 2020 定额 (备用)
+        '路基土方_2020': {'unit': '1000m³', 'labor': 2500, 'material': 0, 'machine': 8500},
+        '沥青混凝土路面_2020': {'unit': '1000㎡', 'labor': 1800, 'material': 85000, 'machine': 3500},
     },
     'bridge': {
-        '钻孔灌注桩': {'unit': '10m³', 'labor': 4500, 'material': 8200, 'machine': 12500},
-        '预应力混凝土简支梁': {'unit': '10m³', 'labor': 3800, 'material': 15600, 'machine': 5200},
-        '预应力混凝土梁': {'unit': '10m³', 'labor': 3800, 'material': 15600, 'machine': 5200},
-        '桥面铺装': {'unit': '100㎡', 'labor': 1200, 'material': 18500, 'machine': 2800},
+        # 2018 定额
+        '钻孔灌注桩': {'unit': '10m³', 'labor': 4300, 'material': 7800, 'machine': 12000},
+        '预应力混凝土简支梁': {'unit': '10m³', 'labor': 3600, 'material': 15000, 'machine': 5000},
+        '预应力混凝土梁': {'unit': '10m³', 'labor': 3600, 'material': 15000, 'machine': 5000},
+        '桥面铺装': {'unit': '100㎡', 'labor': 1100, 'material': 18000, 'machine': 2600},
+        # 2020 定额 (备用)
+        '钻孔灌注桩_2020': {'unit': '10m³', 'labor': 4500, 'material': 8200, 'machine': 12500},
     },
     'pipeline': {
-        'HDPE 双壁波纹管 DN500': {'unit': '100m', 'labor': 2800, 'material': 35000, 'machine': 4500},
-        'HDPE 双壁波纹管 DN800': {'unit': '100m', 'labor': 3500, 'material': 58000, 'machine': 6200},
-        'HDPE 管道 DN500': {'unit': '100m', 'labor': 2800, 'material': 35000, 'machine': 4500},
-        'HDPE 管道 DN800': {'unit': '100m', 'labor': 3500, 'material': 58000, 'machine': 6200},
-        '检查井': {'unit': '座', 'labor': 1800, 'material': 3200, 'machine': 800},
+        # 2018 定额
+        'HDPE 双壁波纹管 DN500': {'unit': '100m', 'labor': 2600, 'material': 33000, 'machine': 4200},
+        'HDPE 双壁波纹管 DN800': {'unit': '100m', 'labor': 3300, 'material': 55000, 'machine': 5800},
+        'HDPE 管道 DN500': {'unit': '100m', 'labor': 2600, 'material': 33000, 'machine': 4200},
+        'HDPE 管道 DN800': {'unit': '100m', 'labor': 3300, 'material': 55000, 'machine': 5800},
+        '检查井': {'unit': '座', 'labor': 1700, 'material': 3000, 'machine': 750},
+        # 2020 定额 (备用)
+        'HDPE 管道 DN800_2020': {'unit': '100m', 'labor': 3500, 'material': 58000, 'machine': 6200},
     }
 }
 
@@ -91,12 +101,21 @@ QUOTAS = {
 class CostCalculator:
     """工程造价计算器"""
     
-    def __init__(self, region: str = "上海", standard: str = "2020 定额"):
+    def __init__(self, region: str = "重庆", standard: str = "2018 定额"):
         self.region = region
         self.standard = standard
         self.tax_rate = 0.09  # 增值税 9%
         self.regulation_rate = 0.03  # 规费 3%
         self.measure_rate = 0.05  # 措施费 5%
+        
+        # 地区调整系数 (不同地区人工/材料/机械价格差异)
+        self.region_factors = {
+            '重庆': {'labor': 1.05, 'material': 1.02, 'machine': 1.08},  # 山城地形
+            '上海': {'labor': 1.15, 'material': 1.05, 'machine': 1.10},
+            '北京': {'labor': 1.12, 'material': 1.03, 'machine': 1.08},
+            '广州': {'labor': 1.10, 'material': 1.04, 'machine': 1.06},
+            '成都': {'labor': 1.00, 'material': 1.00, 'machine': 1.00},  # 基准
+        }
     
     def calculate_road(self, length: float, width: float, structure: str, grade: str = "城市主干路") -> CostResult:
         """
@@ -120,12 +139,21 @@ class CostCalculator:
             '路缘石': length * 2 / 100,
         }
         
-        # 直接工程费计算
+        # 直接工程费计算 (含地区调整)
         direct_cost = 0
+        factor = self.region_factors.get(self.region, {'labor': 1.0, 'material': 1.0, 'machine': 1.0})
+        
         for item, qty in quantities.items():
-            if item in QUOTAS['road']:
-                quota = QUOTAS['road'][item]
-                unit_price = quota['labor'] + quota['material'] + quota['machine']
+            # 2018 定额优先
+            quota_key = item
+            if quota_key not in QUOTAS['road'] and f"{item}_2020" in QUOTAS['road']:
+                quota_key = f"{item}_2020"
+            
+            if quota_key in QUOTAS['road']:
+                quota = QUOTAS['road'][quota_key]
+                unit_price = (quota['labor'] * factor['labor'] + 
+                             quota['material'] * factor['material'] + 
+                             quota['machine'] * factor['machine'])
                 direct_cost += qty * unit_price
         
         # 费用组成
@@ -321,9 +349,9 @@ def main():
     parser.add_argument("--output", "-o", default="console",
                        choices=["console", "json"],
                        help="输出格式")
-    parser.add_argument("--region", "-r", default="上海",
+    parser.add_argument("--region", "-r", default="重庆",
                        help="地区")
-    parser.add_argument("--standard", "-s", default="2020 定额",
+    parser.add_argument("--standard", "-s", default="2018 定额",
                        help="定额标准")
     
     # 道路工程参数
