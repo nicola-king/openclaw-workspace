@@ -1,116 +1,59 @@
-# 百度网盘 Linux 客户端安装指南
+# 百度网盘集成配置指南
 
 > 创建时间：2026-04-10  
-> 系统：Ubuntu 24.04 LTS
+> 系统：Ubuntu 24.04 LTS  
+> 状态：✅ bypy 已安装
 
 ---
 
-## 📦 安装方式
+## ✅ 已安装工具
 
-### 方式 1: 官方客户端 (推荐)
-
-**步骤 1: 下载安装包**
-
-访问百度网盘官网下载 Linux 版本：
-```
-https://pan.baidu.com/download
-```
-
-选择 **Linux 版本** (deb 格式)
-
-**步骤 2: 保存到下载目录**
-
-将下载的 `.deb` 文件保存到：
-```
-~/下载/BaiduNetdisk_linux_*.deb
-```
-
-**步骤 3: 自动安装**
-
-运行安装脚本：
-```bash
-bash ~/下载/baidu-netdisk-install.sh
-```
-
-**或者手动安装**：
-```bash
-cd ~/下载
-sudo dpkg -i BaiduNetdisk_linux_*.deb
-sudo apt-get install -f -y
-```
+| 工具 | 版本 | 状态 |
+|------|------|------|
+| **bypy** | v1.8.9 | ✅ 已安装 |
 
 ---
 
-### 方式 2: 第三方客户端 (baidupcs-web)
+## 🔐 登录绑定流程
 
-**安装**：
-```bash
-# 从 GitHub 克隆
-cd ~/下载
-git clone https://github.com/PeterDing/baidupcs-web.git
-cd baidupcs-web
+### 步骤 1: 授权百度网盘
 
-# 安装依赖
-npm install
-
-# 启动
-npm start
-```
-
-**访问**：
-```
-http://localhost:8080
-```
-
----
-
-### 方式 3: 命令行工具 (bypy)
-
-**安装**：
-```bash
-pip3 install bypy --break-system-packages
-```
-
-**配置**：
+**在终端执行**：
 ```bash
 bypy info
 ```
 
-**使用**：
+**或者**：
 ```bash
-# 上传
-bypy upload localfile remotefile
-
-# 下载
-bypy download remotefile localfile
-
-# 列出文件
-bypy list
+bypy authorize
 ```
+
+### 步骤 2: 获取授权码
+
+1. 命令会输出一个 URL 链接
+2. 在浏览器中打开该链接
+3. 使用百度账号登录
+4. 授予应用访问权限
+5. 复制授权码
+
+### 步骤 3: 完成绑定
+
+将授权码输入终端，完成绑定。
 
 ---
 
-## 🔐 登录绑定
+## 📋 常用命令
 
-### 官方客户端
-
-1. 启动百度网盘：
-   ```bash
-   baidunetdisk
-   ```
-   或从应用程序菜单启动
-
-2. 使用百度账号登录（扫码或账号密码）
-
-3. 登录成功后，太一会自动检测并绑定
-
-### 第三方客户端
-
-1. 访问 http://localhost:8080
-
-2. 扫码登录
-
-3. 登录后即可使用
+| 命令 | 功能 | 示例 |
+|------|------|------|
+| `bypy info` | 查看网盘信息 | `bypy info` |
+| `bypy list` | 列出文件 | `bypy list /apps` |
+| `bypy upload` | 上传文件 | `bypy upload local.txt remote.txt` |
+| `bypy download` | 下载文件 | `bypy download remote.txt local.txt` |
+| `bypy mkdir` | 创建目录 | `bypy mkdir /apps/taiyi` |
+| `bypy remove` | 删除文件 | `bypy remove remote.txt` |
+| `bypy search` | 搜索文件 | `bypy search keyword` |
+| `bypy quota` | 查看配额 | `bypy quota` |
 
 ---
 
@@ -118,59 +61,79 @@ bypy list
 
 | 项目 | 路径 |
 |------|------|
-| 安装目录 | `/opt/baidunetdisk` |
-| 配置文件 | `~/.config/baidunetdisk` |
-| 下载目录 | `~/BaiduNetdiskDownload` |
-| 缓存目录 | `~/.cache/baidunetdisk` |
+| 配置文件 | `~/.bypy` |
+| 授权令牌 | `~/.bypy.json` |
+| 默认下载目录 | `~/BaiduNetdiskDownload` |
 
 ---
 
-## 🚀 启动方式
+## 🚀 自动化集成
 
-**图形界面**：
-- 应用程序菜单 → 互联网 → 百度网盘
-- 或搜索 "百度网盘"
+### 太一自动备份
 
-**命令行**：
+配置完成后，太一可以：
+- ✅ 自动备份重要文件到百度网盘
+- ✅ 自动下载指定文件
+- ✅ 同步工作区文件
+- ✅ 远程文件管理
+
+### Cron 定时备份
+
 ```bash
-baidunetdisk
+# 每天凌晨 2 点备份
+0 2 * * * bypy upload /home/nicola/.openclaw/workspace /apps/taiyi/workspace
 ```
 
 ---
 
 ## ⚠️ 注意事项
 
-1. **网络要求**: 需要稳定的网络连接
-2. **账号安全**: 建议使用扫码登录
-3. **存储空间**: 确保有足够的磁盘空间
-4. **同步设置**: 可在设置中配置自动同步文件夹
+1. **API 限制**: 百度网盘 API 有调用频率限制
+2. **文件大小**: 单文件最大 4GB (非会员)
+3. **下载速度**: 非会员可能限速
+4. **授权有效期**: 授权令牌长期有效，除非手动撤销
 
 ---
 
 ## 🔧 故障排查
 
-### 无法启动
+### 授权失败
 ```bash
-# 检查安装
-dpkg -l | grep baidunetdisk
-
-# 修复依赖
-sudo apt-get install -f -y
-
-# 重新安装
-sudo dpkg -i ~/下载/BaiduNetdisk_linux_*.deb
+# 删除旧授权，重新授权
+rm ~/.bypy.json
+bypy authorize
 ```
 
-### 无法登录
-- 检查网络连接
-- 尝试扫码登录
-- 清除缓存后重试
+### 上传失败
+```bash
+# 检查网络连接
+bypy info
 
-### 同步问题
-- 检查文件夹权限
-- 检查磁盘空间
-- 重启客户端
+# 检查配额
+bypy quota
+```
+
+### 下载失败
+```bash
+# 检查文件路径
+bypy list /apps
+
+# 重试下载
+bypy download -d remote.txt
+```
 
 ---
 
-*太一 AGI 协助配置*
+## 📞 获取帮助
+
+```bash
+# 查看帮助
+bypy --help
+
+# 查看子命令帮助
+bypy upload --help
+```
+
+---
+
+*太一 AGI 协助配置 | 2026-04-10*
