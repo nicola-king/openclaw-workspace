@@ -6,43 +6,42 @@
 1. 重庆造价站材料信息价管理
 2. 实时材料价格查询
 3. 材料价格趋势分析
-4. 支持手动更新/自动导入
-5. 按月份匹配材料价格
+4. 按月份匹配材料价格
+5. 支持手动更新/自动导入
 
 数据来源:
 - 重庆市建设工程造价管理总站
 - 重庆建设工程造价信息网
-- 市场询价数据库
 
 作者：太一 AGI
 创建：2026-04-10
 """
 
 import json
+import argparse
 from pathlib import Path
-from datetime import datetime, timedelta
+from datetime import datetime
 from typing import Dict, List, Optional
 from dataclasses import dataclass, asdict
 
-# 配置
-SKILL_DIR = Path(__file__).parent
-MATERIAL_DB_FILE = SKILL_DIR / "config" / "material_prices.json"
-PRICE_HISTORY_FILE = SKILL_DIR / "config" / "price_history.json"
 
+# ═══════════════════════════════════════════════════════════
+# 数据结构
+# ═══════════════════════════════════════════════════════════
 
 @dataclass
 class MaterialPrice:
     """材料价格数据"""
-    name: str  # 材料名称
-    category: str  # 材料类别
-    specification: str  # 规格型号
-    unit: str  # 单位
-    current_price: float  # 当前价格
-    previous_price: float  # 上期价格
-    price_date: str  # 价格日期
-    source: str  # 数据来源
-    region: str  # 地区
-    month: str = ""  # 月份 (YYYY-MM 格式)
+    name: str
+    category: str
+    specification: str
+    unit: str
+    current_price: float
+    previous_price: float
+    price_date: str
+    source: str
+    region: str
+    month: str = ""
     
     def __post_init__(self):
         if not self.month:
@@ -58,6 +57,10 @@ class MaterialPrice:
         return asdict(self)
 
 
+# ═══════════════════════════════════════════════════════════
+# 管理器核心
+# ═══════════════════════════════════════════════════════════
+
 class MaterialPriceManager:
     """材料价格管理器"""
     
@@ -65,29 +68,30 @@ class MaterialPriceManager:
         self.region = region
         self.material_db = self._load_material_db()
         self.price_history = self._load_price_history()
-        self.target_month = None  # 目标月份
+        self.target_month = None
     
     def set_target_month(self, year: int, month: int):
         """设置目标月份"""
         self.target_month = f"{year:04d}-{month:02d}"
     
     def get_available_months(self) -> List[str]:
-        """获取可用的月份列表"""
+        """获取可用月份列表"""
         months = set()
         for history in self.price_history.values():
             for record in history:
-                if 'date' in record:
-                    months.add(record['date'][:7])  # YYYY-MM
-        months.add(datetime.now().strftime("%Y-%m"))  # 当前月份
+                if "date" in record:
+                    months.add(record["date"][:7])
+        months.add(datetime.now().strftime("%Y-%m"))
         return sorted(list(months), reverse=True)
     
     def _load_material_db(self) -> Dict:
         """加载材料数据库"""
-        if MATERIAL_DB_FILE.exists():
-            with open(MATERIAL_DB_FILE, "r", encoding="utf-8") as f:
+        db_file = Path(__file__).parent / "config" / "material_prices.json"
+        if db_file.exists():
+            with open(db_file, "r", encoding="utf-8") as f:
                 return json.load(f)
         
-        # 默认材料数据库 (重庆地区 2026 年 3 月信息价)
+        # 默认材料数据库 (重庆地区 2026 年 4 月信息价)
         return {
             "钢材": {
                 "HRB400E 钢筋 Φ10": {"unit": "t", "price": 4250, "previous": 4200},
@@ -128,14 +132,15 @@ class MaterialPriceManager:
     
     def _load_price_history(self) -> Dict:
         """加载价格历史"""
-        if PRICE_HISTORY_FILE.exists():
-            with open(PRICE_HISTORY_FILE, "r", encoding="utf-8") as f:
+        history_file = Path(__file__).parent / "config" / "price_history.json"
+        if history_file.exists():
+            with open(history_file, "r", encoding="utf-8") as f:
                 return json.load(f)
         return {}
     
-    def get_price(self, material_name: str, month: str = None) -> Optional[MaterialPrice]:
-        """获取材料价格"""
-        target_month = month or self.target_month or self._get_price_date()
+    def get_price(self, material_name: str, month: Optional[str] = None) -> Optional[MaterialPrice]:
+        """获取材料价格 (按月份匹配)"""
+        target_month = month or self.target_month or datetime.now().strftime("%Y-%m")
         
         for category, materials in self.material_db.items():
             if material_name in materials:
@@ -154,14 +159,8 @@ class MaterialPriceManager:
                 )
         return None
     
-    def _get_price_date(self) -> str:
-        """获取价格日期"""
-        # 默认返回最新一期 (每月更新)
-        return datetime.now().strftime("%Y-%m")
-    
-    def update_price(self, material_name: str, new_price: float, category: str = ""):
+    def update_price(self, material_name: str, new_price: float, category: str = "") -> None:
         """更新材料价格"""
-        # 查找材料
         found = False
         for cat, materials in self.material_db.items():
             if material_name in materials:
@@ -169,7 +168,6 @@ class MaterialPriceManager:
                 materials[material_name]["previous"] = old_price
                 materials[material_name]["price"] = new_price
                 
-                # 记录历史
                 if material_name not in self.price_history:
                     self.price_history[material_name] = []
                 self.price_history[material_name].append({
@@ -178,12 +176,10 @@ class MaterialPriceManager:
                     "new_price": new_price,
                     "change_rate": (new_price - old_price) / old_price * 100 if old_price > 0 else 0
                 })
-                
                 found = True
                 break
         
         if not found and category:
-            # 新材料
             if category not in self.material_db:
                 self.material_db[category] = {}
             self.material_db[category][material_name] = {
@@ -192,27 +188,27 @@ class MaterialPriceManager:
                 "previous": new_price
             }
         
-        # 保存
         self._save_material_db()
         self._save_price_history()
     
-    def _save_material_db(self):
+    def _save_material_db(self) -> None:
         """保存材料数据库"""
-        MATERIAL_DB_FILE.parent.mkdir(exist_ok=True)
-        with open(MATERIAL_DB_FILE, "w", encoding="utf-8") as f:
+        db_file = Path(__file__).parent / "config" / "material_prices.json"
+        db_file.parent.mkdir(exist_ok=True)
+        with open(db_file, "w", encoding="utf-8") as f:
             json.dump(self.material_db, f, indent=2, ensure_ascii=False)
     
-    def _save_price_history(self):
+    def _save_price_history(self) -> None:
         """保存价格历史"""
-        PRICE_HISTORY_FILE.parent.mkdir(exist_ok=True)
-        with open(PRICE_HISTORY_FILE, "w", encoding="utf-8") as f:
+        history_file = Path(__file__).parent / "config" / "price_history.json"
+        history_file.parent.mkdir(exist_ok=True)
+        with open(history_file, "w", encoding="utf-8") as f:
             json.dump(self.price_history, f, indent=2, ensure_ascii=False)
     
     def list_materials(self, category: str = "") -> List[str]:
         """列出材料"""
         if category:
             return list(self.material_db.get(category, {}).keys())
-        
         all_materials = []
         for cat, materials in self.material_db.items():
             all_materials.extend([f"{cat}: {m}" for m in materials.keys()])
@@ -221,14 +217,9 @@ class MaterialPriceManager:
     def get_price_trend(self, material_name: str, months: int = 6) -> List[Dict]:
         """获取价格趋势"""
         if material_name not in self.price_history:
-            # 如果没有历史记录，返回当前价格
             price = self.get_price(material_name)
             if price:
-                return [{
-                    'date': price.month,
-                    'price': price.current_price,
-                    'change_rate': 0
-                }]
+                return [{"date": price.month, "price": price.current_price, "change_rate": 0}]
             return []
         
         history = self.price_history[material_name]
@@ -238,16 +229,8 @@ class MaterialPriceManager:
         """导出为 JSON"""
         return json.dumps(self.material_db, indent=2, ensure_ascii=False)
     
-    def import_from造价站(self, file_path: str):
-        """
-        从重庆造价站 Excel/CSV 导入
-        
-        文件格式要求:
-        材料名称，规格，单位，信息价，上期价
-        
-        示例:
-        HRB400E 钢筋，Φ20,t,4180,4150
-        """
+    def import_from_zaojiazhan(self, file_path: str) -> None:
+        """从重庆造价站 Excel/CSV 导入"""
         import csv
         
         with open(file_path, "r", encoding="utf-8-sig") as f:
@@ -297,10 +280,12 @@ class MaterialPriceManager:
         return "其他"
 
 
+# ═══════════════════════════════════════════════════════════
+# 主函数
+# ═══════════════════════════════════════════════════════════
+
 def main():
     """主函数"""
-    import argparse
-    
     parser = argparse.ArgumentParser(description="📊 材料信息价管理")
     parser.add_argument("--action", "-a", required=True,
                        choices=["list", "get", "update", "trend", "export", "import", "months"],
@@ -330,14 +315,14 @@ def main():
             print("❌ 需要指定材料名称 --material")
             return 1
         
-        price = manager.get_price(args.material)
+        price = manager.get_price(args.material, args.month)
         if price:
             print(f"📊 {price.name}")
             print(f"   当前价格：¥{price.current_price:,.2f} /{price.unit}")
             print(f"   上期价格：¥{price.previous_price:,.2f} /{price.unit}")
             print(f"   变动率：{price.price_change_rate():+.2f}%")
             print(f"   数据来源：{price.source}")
-            print(f"   价格日期：{price.price_date}")
+            print(f"   价格日期：{price.month}")
         else:
             print(f"❌ 未找到材料：{args.material}")
     
