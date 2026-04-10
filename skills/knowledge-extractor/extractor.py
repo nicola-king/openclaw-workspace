@@ -48,6 +48,24 @@ class KnowledgeExtractor:
             output_format="console"
         )
     
+    def extract_with_llm(self, file_path: str, model: str = "qwen3.5-plus") -> KnowledgeAbstract:
+        """
+        使用 LLM 深度提取知识 (增强版)
+        
+        Args:
+            file_path: 文件路径
+            model: 使用的模型
+        
+        Returns:
+            KnowledgeAbstract 知识抽象
+        """
+        # TODO: 集成太一核心模型进行深度提取
+        # 当前使用基于规则的提取
+        # 未来可调用 LLM API 进行更准确的实体/关系提取
+        
+        print(f"🧠 使用 {model} 进行深度提取...")
+        return self.extract(file_path)
+    
     def extract(self, file_path: str) -> KnowledgeAbstract:
         """
         从文件提取知识

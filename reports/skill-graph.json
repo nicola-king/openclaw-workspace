@@ -1,0 +1,501 @@
+{
+  "schema": "taiyi/skill-graph/v1",
+  "generated_at": "2026-04-10T15:55:17.234374",
+  "total_skills": 61,
+  "nodes": [
+    {
+      "id": "emerged-skill-20260410-154502",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-154502",
+      "type": "Skill",
+      "timestamp": "2026-04-10T15:45:02",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-153001",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-153001",
+      "type": "Skill",
+      "timestamp": "2026-04-10T15:30:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-151501",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-151501",
+      "type": "Skill",
+      "timestamp": "2026-04-10T15:15:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-150001",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-150001",
+      "type": "Skill",
+      "timestamp": "2026-04-10T15:00:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-144501",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-144501",
+      "type": "Skill",
+      "timestamp": "2026-04-10T14:45:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-143001",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-143001",
+      "type": "Skill",
+      "timestamp": "2026-04-10T14:30:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-141501",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-141501",
+      "type": "Skill",
+      "timestamp": "2026-04-10T14:15:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-140001",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-140001",
+      "type": "Skill",
+      "timestamp": "2026-04-10T14:00:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-134501",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-134501",
+      "type": "Skill",
+      "timestamp": "2026-04-10T13:45:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-133001",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-133001",
+      "type": "Skill",
+      "timestamp": "2026-04-10T13:30:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-131501",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-131501",
+      "type": "Skill",
+      "timestamp": "2026-04-10T13:15:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-130001",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-130001",
+      "type": "Skill",
+      "timestamp": "2026-04-10T13:00:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-124501",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-124501",
+      "type": "Skill",
+      "timestamp": "2026-04-10T12:45:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-123001",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-123001",
+      "type": "Skill",
+      "timestamp": "2026-04-10T12:30:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-121501",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-121501",
+      "type": "Skill",
+      "timestamp": "2026-04-10T12:15:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-120002",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-120002",
+      "type": "Skill",
+      "timestamp": "2026-04-10T12:00:02",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-114501",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-114501",
+      "type": "Skill",
+      "timestamp": "2026-04-10T11:45:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-113002",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-113002",
+      "type": "Skill",
+      "timestamp": "2026-04-10T11:30:02",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-111501",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-111501",
+      "type": "Skill",
+      "timestamp": "2026-04-10T11:15:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-110001",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-110001",
+      "type": "Skill",
+      "timestamp": "2026-04-10T11:00:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-104501",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-104501",
+      "type": "Skill",
+      "timestamp": "2026-04-10T10:45:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-103001",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-103001",
+      "type": "Skill",
+      "timestamp": "2026-04-10T10:30:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-101501",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-101501",
+      "type": "Skill",
+      "timestamp": "2026-04-10T10:15:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-100001",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-100001",
+      "type": "Skill",
+      "timestamp": "2026-04-10T10:00:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-094501",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-094501",
+      "type": "Skill",
+      "timestamp": "2026-04-10T09:45:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-093001",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-093001",
+      "type": "Skill",
+      "timestamp": "2026-04-10T09:30:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-091501",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-091501",
+      "type": "Skill",
+      "timestamp": "2026-04-10T09:15:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-090001",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-090001",
+      "type": "Skill",
+      "timestamp": "2026-04-10T09:00:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-084501",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-084501",
+      "type": "Skill",
+      "timestamp": "2026-04-10T08:45:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-083001",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-083001",
+      "type": "Skill",
+      "timestamp": "2026-04-10T08:30:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-081501",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-081501",
+      "type": "Skill",
+      "timestamp": "2026-04-10T08:15:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-080001",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-080001",
+      "type": "Skill",
+      "timestamp": "2026-04-10T08:00:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-074501",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-074501",
+      "type": "Skill",
+      "timestamp": "2026-04-10T07:45:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-073001",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-073001",
+      "type": "Skill",
+      "timestamp": "2026-04-10T07:30:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-071501",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-071501",
+      "type": "Skill",
+      "timestamp": "2026-04-10T07:15:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-070002",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-070002",
+      "type": "Skill",
+      "timestamp": "2026-04-10T07:00:02",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-064501",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-064501",
+      "type": "Skill",
+      "timestamp": "2026-04-10T06:45:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-063001",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-063001",
+      "type": "Skill",
+      "timestamp": "2026-04-10T06:30:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-061501",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-061501",
+      "type": "Skill",
+      "timestamp": "2026-04-10T06:15:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-060001",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-060001",
+      "type": "Skill",
+      "timestamp": "2026-04-10T06:00:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-054501",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-054501",
+      "type": "Skill",
+      "timestamp": "2026-04-10T05:45:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-053001",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-053001",
+      "type": "Skill",
+      "timestamp": "2026-04-10T05:30:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-051501",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-051501",
+      "type": "Skill",
+      "timestamp": "2026-04-10T05:15:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-050001",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-050001",
+      "type": "Skill",
+      "timestamp": "2026-04-10T05:00:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-044501",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-044501",
+      "type": "Skill",
+      "timestamp": "2026-04-10T04:45:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-043001",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-043001",
+      "type": "Skill",
+      "timestamp": "2026-04-10T04:30:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-041501",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-041501",
+      "type": "Skill",
+      "timestamp": "2026-04-10T04:15:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-040001",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-040001",
+      "type": "Skill",
+      "timestamp": "2026-04-10T04:00:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-034501",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-034501",
+      "type": "Skill",
+      "timestamp": "2026-04-10T03:45:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-033001",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-033001",
+      "type": "Skill",
+      "timestamp": "2026-04-10T03:30:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-031501",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-031501",
+      "type": "Skill",
+      "timestamp": "2026-04-10T03:15:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-030001",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-030001",
+      "type": "Skill",
+      "timestamp": "2026-04-10T03:00:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-024501",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-024501",
+      "type": "Skill",
+      "timestamp": "2026-04-10T02:45:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-023002",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-023002",
+      "type": "Skill",
+      "timestamp": "2026-04-10T02:30:02",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-021501",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-021501",
+      "type": "Skill",
+      "timestamp": "2026-04-10T02:15:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-020001",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-020001",
+      "type": "Skill",
+      "timestamp": "2026-04-10T02:00:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-014501",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-014501",
+      "type": "Skill",
+      "timestamp": "2026-04-10T01:45:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-013001",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-013001",
+      "type": "Skill",
+      "timestamp": "2026-04-10T01:30:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-011501",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-011501",
+      "type": "Skill",
+      "timestamp": "2026-04-10T01:15:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-010001",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-010001",
+      "type": "Skill",
+      "timestamp": "2026-04-10T01:00:01",
+      "inspiration": "",
+      "tags": []
+    },
+    {
+      "id": "emerged-skill-20260410-005931",
+      "label": "🆕 Emerged Skill - emerged-skill-20260410-005931",
+      "type": "Skill",
+      "timestamp": "2026-04-10T00:59:31",
+      "inspiration": "",
+      "tags": []
+    }
+  ],
+  "edges": [],
+  "metadata": {
+    "node_count": 61,
+    "edge_count": 0,
+    "skills_per_day": 61.0
+  }
+}
