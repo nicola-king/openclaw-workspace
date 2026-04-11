@@ -1,1 +1,22 @@
-{"app_id": "待配置", "app_secret": "待配置"}
+{
+  "app_id": "cli_a9086d6b5779dcc1",
+  "app_secret": "tXHOop03ZHQynCRuEPkambASNori3KhZ",
+  "bot_name": "太一",
+  "status": "已验证",
+  "backup_location": "/home/nicola/.openclaw/workspace/memory/residual.md",
+  "gemini_api_key": "AIzaSyBbOg3I31WRifCfN5nF6UxGU5oHKdV0EfI",
+  "all_bots": {
+    "太一": {"app_id": "cli_a9086d6b5779dcc1", "app_secret": "tXHOop03ZHQynCRuEPkambASNori3KhZ", "status": "已验证"},
+    "知几": {"app_id": "cli_a90fc49a4b78dcd4", "app_secret": "JARQ374uVMVdnehV88T4IbcPQ2TLGyZl", "status": "已验证"},
+    "山木": {"app_id": "cli_a93298c9b0789cc6", "app_secret": "Sv6FCgMGTYyg1b33DvDEKdwI76GW5krI", "status": "已验证", "gemini_api_key": "AIzaSyBbOg3I31WRifCfN5nF6UxGU5oHKdV0EfI"},
+    "素问": {"app_id": "cli_a932968a1338dcc7", "app_secret": "TrVWKrMIVVB0SfwF7AIhYR3dCwThSRLj", "status": "已验证"},
+    "罔两": {"app_id": "cli_a932999506789cb3", "app_secret": "m02XEFFlRYX6JL3oPDsdYgVdzNdpilpW", "status": "已验证"},
+    "庖丁": {"app_id": "cli_a9329934c7f85cb0", "app_secret": "P1WOIJddDHrA2fxI5XLowfvo8bSfnHWJ", "status": "已验证"}
+  },
+  "google_integration": {
+    "gemini_api_key": "AIzaSyBbOg3I31WRifCfN5nF6UxGU5oHKdV0EfI",
+    "model": "gemini-2.5-flash",
+    "max_requests_per_minute": 60,
+    "backup_location": "/home/nicola/.openclaw/workspace-taiyi/config/google-integration.json"
+  }
+}
