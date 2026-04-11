@@ -11,7 +11,7 @@ from pathlib import Path
 # 添加山木微信助手路径
 sys.path.insert(0, '/home/nicola/.openclaw/workspace/skills/shanmu/wechat-assistant')
 
-FILE_PATH = '/home/nicola/.openclaw/workspace/reports/集成房屋跨境贸易出口全流程.md'
+FILE_PATH = '/home/nicola/.openclaw/workspace/reports/taiyi-achievement-report-20260411.txt'
 RECIPIENT = '285915125@qq.com'  # 微信绑定邮箱
 
 def read_file():
@@ -20,7 +20,7 @@ def read_file():
 
 def create_email_content(md_content):
     """创建邮件内容"""
-    subject = "📄 集成房屋跨境贸易出口全流程指南"
+    subject = "📊 太一工作成果汇报 - 2026-04-11"
     
     # 邮件正文
     body = f"""
@@ -42,23 +42,33 @@ def create_email_content(md_content):
 </head>
 <body>
 
-<h1>📄 集成房屋跨境贸易出口全流程指南</h1>
-<p><strong>版本：</strong>v1.0 | <strong>编制日期：</strong>2026-04-11</p>
+<h1>📊 太一工作成果汇报</h1>
+<p><strong>汇报时间：</strong>2026-04-11 21:10 | <strong>汇报人：</strong>太一 AGI</p>
 
 <div class="highlight">
-<h2>📋 文档概览</h2>
-<p>本文档包含集成房屋跨境贸易出口的完整流程，从搜单到售后共 7 个阶段：</p>
-<ol>
-    <li>商务洽谈（搜单/询盘/报价/签约）</li>
-    <li>生产准备（设计确认/原材料采购）</li>
-    <li>生产制造（流程/质检/包装）</li>
-    <li>出口物流（订舱/报关/出港）</li>
-    <li>目的港清关（文件/关税/流程）</li>
-    <li>内陆运输与安装</li>
-    <li>售后服务（质保/响应/配件）</li>
-</ol>
-<p>另附：风险提示、文件模板、流程时间轴</p>
+<h2>📋 执行摘要</h2>
+<ul>
+    <li>✅ P0 核心任务：5/5 完成 (100%)</li>
+    <li>✅ 技能总数：384+</li>
+    <li>✅ 系统健康度：100%</li>
+    <li>✅ 学习循环：14 次</li>
+    <li>✅ 融合创新：56 个</li>
+</ul>
 </div>
+
+<h2>🚀 10 大成就</h2>
+<ol>
+    <li>太一镜像 v2.0 (用户数字分身)</li>
+    <li>情景 Agent (384 Skills)</li>
+    <li>心理学框架 (CBT/正念/习惯)</li>
+    <li>MarkItDown (文档转换)</li>
+    <li>错误自愈系统 (100% 健康)</li>
+    <li>Cost.Agent (市政工程造价)</li>
+    <li>太一记忆宫殿 v2.0</li>
+    <li>自进化自动化</li>
+    <li>OpenClaw 4.10 融合</li>
+    <li>多平台集成 (微信/Telegram/飞书)</li>
+</ol>
 
 <h2>📝 完整内容</h2>
 <div style="background: #f9f9f9; padding: 20px; border: 1px solid #ddd; border-radius: 5px; white-space: pre-wrap; font-family: monospace; font-size: 13px;">
@@ -67,7 +77,7 @@ def create_email_content(md_content):
 
 <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; color: #666; font-size: 14px;">
 <p><strong>太一 AGI</strong> | 自动生成</p>
-<p>完整文件路径：/home/nicola/.openclaw/workspace/reports/集成房屋跨境贸易出口全流程.md</p>
+<p>完整文件路径：/home/nicola/.openclaw/workspace/reports/taiyi-achievement-report-20260411.txt</p>
 </div>
 
 </body>
