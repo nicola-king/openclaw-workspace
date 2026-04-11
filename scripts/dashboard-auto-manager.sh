@@ -1,163 +1,233 @@
 #!/bin/bash
-# Dashboard 自动管理器 - 按需启动 + 10 分钟自动关闭
-# 功能：检测访问需求，自动启动/停止 Dashboard
-# 运行：每 2 分钟自动检查 (crontab)
+# Dashboard 自动管理器 - 仅太一 Dashboard
+# 功能：
+# 1. 太一 Dashboard 按需启动 + 闲置 20 分钟自动关闭
+# 2. 其他 Dashboard 不自动管理，按需手动启动
 
 set -e
 
 LOG_DIR="/home/nicola/.openclaw/workspace/logs"
 LOG_FILE="$LOG_DIR/dashboard-auto-manager.log"
-STATE_FILE="$LOG_DIR/dashboard-state.json"
-TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
-IDLE_TIMEOUT=600  # 10 分钟空闲自动关闭
+STATE_FILE="/tmp/taiyi-dashboard-state.json"
+IDLE_TIMEOUT=1200
+CHECK_INTERVAL=120
 
 log() {
-    echo "[$TIMESTAMP] $1" | tee -a "$LOG_FILE"
+    local timestamp=$(date '+%Y-%m-%d %H:%M:%S')
+    echo "[$timestamp] $1" | tee -a "$LOG_FILE"
 }
 
-# 初始化状态文件
-init_state() {
-    if [ ! -f "$STATE_FILE" ]; then
-        cat > "$STATE_FILE" << EOF
-{
-    "bot_dashboard": {"running": false, "last_access": 0},
-    "roi_dashboard": {"running": false, "last_access": 0},
-    "skill_dashboard": {"running": false, "last_access": 0}
-}
-EOF
-    fi
-}
-
-# 检查端口是否有访问
-check_port_access() {
+check_port() {
     local port=$1
-    # 检查最近 10 分钟是否有 HTTP 请求
-    local recent_requests=$(netstat -an 2>/dev/null | grep ":$port" | grep ESTABLISHED | wc -l)
-    echo $recent_requests
+    curl -s -o /dev/null -w "%{http_code}" http://localhost:$port --connect-timeout 2 2>/dev/null | grep -q "200"
+    return $?
 }
 
-# 启动 Dashboard
-start_dashboard() {
-    local name=$1
-    local port=$2
-    local cmd=$3
+start_taiyi() {
+    if check_port 5001; then
+        log "✅ 太一 Dashboard 已在运行 (端口 5001)"
+        return 0
+    fi
     
-    if ! curl -s -o /dev/null -w "%{http_code}" http://localhost:$port | grep -q "200"; then
-        log "🚀 启动 $name (端口$port)..."
-        eval "$cmd" &
-        sleep 5
-        
-        if curl -s -o /dev/null -w "%{http_code}" http://localhost:$port | grep -q "200"; then
-            log "✅ $name 启动成功"
-            update_state "$name" "running" "true"
-        else
-            log "❌ $name 启动失败"
-        fi
+    log "🚀 启动 太一 Dashboard (端口 5001)..."
+    cd /home/nicola/.openclaw/workspace/skills/taiyi-dashboard
+    nohup python3 app.py > /tmp/taiyi-dashboard.log 2>&1 &
+    sleep 3
+    
+    if check_port 5001; then
+        log "✅ 太一 Dashboard 启动成功"
+        record_access
+        return 0
+    else
+        log "❌ 太一 Dashboard 启动失败"
+        return 1
     fi
 }
 
-# 停止 Dashboard
-stop_dashboard() {
-    local name=$1
-    local port=$2
-    local pattern=$3
+stop_taiyi() {
+    if ! check_port 5001; then
+        log "ℹ️  太一 Dashboard 未运行"
+        return 0
+    fi
     
-    log "🛑 停止 $name (端口$port) - 空闲超时..."
-    pkill -f "$pattern" 2>/dev/null || true
-    sleep 2
-    update_state "$name" "running" "false"
-    log "✅ $name 已停止"
+    log "⏹️  停止 太一 Dashboard (端口 5001)..."
+    
+    local pid=$(lsof -t -i:5001 2>/dev/null | head -1)
+    if [ -n "$pid" ]; then
+        kill -15 $pid 2>/dev/null || kill -9 $pid 2>/dev/null
+        sleep 2
+        log "✅ 太一 Dashboard 已停止"
+    else
+        log "⚠️  未找到太一 Dashboard 进程"
+    fi
 }
 
-# 更新状态
-update_state() {
-    local name=$1
-    local key=$2
-    local value=$3
-    
-    # 简化实现：直接更新状态文件
-    python3 << PYTHON
-import json
-from pathlib import Path
-
-state_file = Path("$STATE_FILE")
-if state_file.exists():
-    with open(state_file, "r", encoding="utf-8") as f:
-        state = json.load(f)
-    
-    name_key = "$name".lower().replace(" ", "_").replace("_dashboard", "")
-    if name_key in state:
-        state[name_key][key] = value
-        if key == "last_access":
-            state[name_key][key] = $value
-        elif key == "running":
-            state[name_key][key] = $value
-    
-    with open(state_file, "w", encoding="utf-8") as f:
-        json.dump(state, f, indent=2, ensure_ascii=False)
-PYTHON
+get_idle_time() {
+    if [ -f "$STATE_FILE" ]; then
+        local last_access=$(cat "$STATE_FILE" | grep -o '"last_access":"[^"]*"' | cut -d'"' -f4)
+        if [ -n "$last_access" ]; then
+            local last_ts=$(date -d "$last_access" +%s 2>/dev/null || date +%s)
+            local now_ts=$(date +%s)
+            echo $((now_ts - last_ts))
+            return
+        fi
+    fi
+    echo 0
 }
 
-# 主逻辑
-main() {
-    log "========== Dashboard 自动管理检查 =========="
-    
-    init_state
-    
-    # 检查 Bot Dashboard (3000)
-    bot_access=$(check_port_access 3000)
-    if [ "$bot_access" -gt 0 ]; then
-        start_dashboard "Bot Dashboard" "3000" "cd /home/nicola/.openclaw/workspace/skills/bot-dashboard && npm run dev"
-        update_state "bot_dashboard" "last_access" "$(date +%s)"
-    fi
-    
-    # 检查 ROI Dashboard (8080)
-    roi_access=$(check_port_access 8080)
-    if [ "$roi_access" -gt 0 ]; then
-        start_dashboard "ROI Dashboard" "8080" "cd /home/nicola/.openclaw/workspace/skills/roi-tracker && /usr/bin/python3 roi_dashboard.py"
-        update_state "roi_dashboard" "last_access" "$(date +%s)"
-    fi
-    
-    # 检查 Skill Dashboard (5002)
-    skill_access=$(check_port_access 5002)
-    if [ "$skill_access" -gt 0 ]; then
-        start_dashboard "Skill Dashboard" "5002" "cd /home/nicola/.openclaw/workspace/skills/skill-dashboard && /usr/bin/python3 app.py"
-        update_state "skill_dashboard" "last_access" "$(date +%s)"
-    fi
-    
-    # 检查空闲超时 (10 分钟)
-    current_time=$(date +%s)
-    
-    # 检查 Bot Dashboard 空闲
-    bot_last=$(python3 -c "import json; print(json.load(open('$STATE_FILE'))['bot_dashboard']['last_access'])" 2>/dev/null || echo "0")
-    if [ "$bot_last" -gt 0 ]; then
-        idle_time=$((current_time - bot_last))
-        if [ "$idle_time" -gt "$IDLE_TIMEOUT" ]; then
-            stop_dashboard "Bot Dashboard" "3000" "vite.*3000"
+record_access() {
+    echo "{\"last_access\":\"$(date -Iseconds)\",\"running\":true}" > "$STATE_FILE"
+    log "📝 记录用户访问"
+}
+
+save_state() {
+    local running=$1
+    echo "{\"last_access\":\"$(date -Iseconds)\",\"running\":$running}" > "$STATE_FILE"
+}
+
+check_activity() {
+    # 检查太一 Dashboard 是否有访问
+    if check_port 5001; then
+        # 检查日志是否有最近访问
+        local log_file="/tmp/taiyi-dashboard.log"
+        if [ -f "$log_file" ]; then
+            local recent=$(tail -50 "$log_file" 2>/dev/null | grep -i "GET\|POST" | tail -3)
+            if [ -n "$recent" ]; then
+                return 0
+            fi
         fi
+        # 端口开放即认为有活动
+        return 0
+    fi
+    return 1
+}
+
+start_all() {
+    log "🚀 启动 太一 Dashboard..."
+    start_taiyi
+    log "✅ 启动完成"
+}
+
+stop_all() {
+    log "⏹️  停止 太一 Dashboard..."
+    stop_taiyi
+    save_state "false"
+    log "✅ 停止完成"
+}
+
+status() {
+    echo "========== Dashboard 状态 =========="
+    echo ""
+    echo "【太一 Dashboard】(自动管理)"
+    if check_port 5001; then
+        echo "  状态：✅ 运行中 (端口 5001)"
+        echo "  访问：http://localhost:5001"
+    else
+        echo "  状态：⚪ 未运行"
+        echo "  提示：访问时自动启动，或手动运行 './dashboard-auto-manager.sh start'"
     fi
     
-    # 检查 ROI Dashboard 空闲
-    roi_last=$(python3 -c "import json; print(json.load(open('$STATE_FILE'))['roi_dashboard']['last_access'])" 2>/dev/null || echo "0")
-    if [ "$roi_last" -gt 0 ]; then
-        idle_time=$((current_time - roi_last))
-        if [ "$idle_time" -gt "$IDLE_TIMEOUT" ]; then
-            stop_dashboard "ROI Dashboard" "8080" "roi_dashboard.*8080"
-        fi
-    fi
+    echo ""
+    echo "【其他 Dashboard】(手动管理)"
+    echo "  Bot Dashboard   (3001): 按需启动"
+    echo "  Skill Dashboard (5002): 按需启动"
+    echo "  百度网盘 API    (5003): 按需启动"
     
-    # 检查 Skill Dashboard 空闲
-    skill_last=$(python3 -c "import json; print(json.load(open('$STATE_FILE'))['skill_dashboard']['last_access'])" 2>/dev/null || echo "0")
-    if [ "$skill_last" -gt 0 ]; then
-        idle_time=$((current_time - skill_last))
-        if [ "$idle_time" -gt "$IDLE_TIMEOUT" ]; then
-            stop_dashboard "Skill Dashboard" "5002" "app.py.*5002"
-        fi
-    fi
-    
-    log "========== 检查完成 =========="
+    local idle_time=$(get_idle_time)
+    local idle_minutes=$((idle_time / 60))
+    echo ""
+    echo "闲置时间：${idle_minutes}分钟"
+    echo "自动关闭：${IDLE_TIMEOUT}秒 (${IDLE_TIMEOUT}分钟)"
+    echo "=================================="
+}
+
+auto_run() {
+    log "========== 太一 Dashboard 自动管理器启动 =========="
+    log "管理对象：太一 Dashboard (端口 5001)"
+    log "闲置超时：${IDLE_TIMEOUT}秒 (20 分钟)"
+    log "检查间隔：${CHECK_INTERVAL}秒 (2 分钟)"
     log ""
+    log "💡 提示：其他 Dashboard 需手动启动"
+    log "   Bot Dashboard:   cd skills/bot-dashboard && npm run dev"
+    log "   Skill Dashboard: cd skills/skill-dashboard && python3 app.py"
+    log "   百度网盘 API:    cd skills/baidu-netdisk-integration && python3 app.py"
+    log "=========================================="
+    
+    while true; do
+        local idle_time=$(get_idle_time)
+        local idle_minutes=$((idle_time / 60))
+        
+        if [ $((idle_time % 600)) -eq 0 ]; then
+            log "⏱️  当前闲置时间：${idle_minutes}分钟"
+        fi
+        
+        if check_activity; then
+            record_access
+            if [ $((idle_time % 600)) -eq 0 ]; then
+                log "✅ 有用户活动，保持运行"
+            fi
+        else
+            if [ $idle_time -ge $IDLE_TIMEOUT ]; then
+                log "⚠️  闲置超过 20 分钟，关闭太一 Dashboard..."
+                stop_taiyi
+                save_state "false"
+                log "💤 进入休眠模式，等待下次访问"
+            else
+                if [ $((idle_time % 600)) -eq 0 ]; then
+                    log "ℹ️  无活动，继续监控"
+                fi
+            fi
+        fi
+        
+        sleep $CHECK_INTERVAL
+    done
 }
 
-# 执行
-main
+case "${1:-auto}" in
+    auto)
+        auto_run
+        ;;
+    start)
+        start_all
+        ;;
+    stop)
+        stop_all
+        ;;
+    status)
+        status
+        ;;
+    open)
+        # 立即打开太一 Dashboard
+        start_taiyi
+        echo "✅ 太一 Dashboard 已启动"
+        echo "🌐 访问地址：http://localhost:5001"
+        ;;
+    close)
+        stop_all
+        echo "✅ 太一 Dashboard 已关闭"
+        ;;
+    *)
+        echo "太一 Dashboard 自动管理器"
+        echo ""
+        echo "用法：$0 {auto|start|stop|status|open|close}"
+        echo ""
+        echo "命令说明:"
+        echo "  auto   - 自动管理 (后台运行)"
+        echo "  start  - 手动启动太一 Dashboard"
+        echo "  stop   - 手动停止太一 Dashboard"
+        echo "  status - 查看状态"
+        echo "  open   - 立即打开太一 Dashboard"
+        echo "  close  - 立即关闭太一 Dashboard"
+        echo ""
+        echo "自动管理:"
+        echo "  - 闲置 20 分钟后自动关闭"
+        echo "  - 访问时自动启动"
+        echo "  - 每 2 分钟检查一次"
+        echo ""
+        echo "其他 Dashboard (手动管理):"
+        echo "  Bot Dashboard:   cd skills/bot-dashboard && npm run dev"
+        echo "  Skill Dashboard: cd skills/skill-dashboard && python3 app.py"
+        echo "  百度网盘 API:    cd skills/baidu-netdisk-integration && python3 app.py"
+        exit 1
+        ;;
+esac

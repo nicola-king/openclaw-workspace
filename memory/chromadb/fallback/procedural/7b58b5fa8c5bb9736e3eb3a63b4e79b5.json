@@ -1,0 +1,16 @@
+{
+  "id": "7b58b5fa8c5bb9736e3eb3a63b4e79b5",
+  "text": "步骤 1: 读取文件\n步骤 2: 转换 MD\n步骤 3: 保存",
+  "metadata": {
+    "created_at": "2026-04-11T10:19:58.678944",
+    "category": "procedural",
+    "review_count": 0,
+    "next_review": "2026-04-11T10:39:46.678947",
+    "encoded": {
+      "semantic": "步骤 读取文件 步骤 转换 MD 步骤 保存",
+      "episodic": "[2026-04-11T10:19:58.678919] 步骤 1: 读取文件\n步骤 2: 转换 MD\n步骤 3: 保存",
+      "procedural": "步骤 1: 读取文件\n步骤 2: 转换 MD\n步骤 3: 保存",
+      "associative": "保存 读取文件 转换 步骤"
+    }
+  }
+}

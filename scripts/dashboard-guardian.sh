@@ -45,8 +45,9 @@ mkdir -p "$LOG_DIR"
 
 log "========== Dashboard 守护进程检查 =========="
 
-# 检查 Bot Dashboard
-check_and_restart "vite" "3000" "cd /home/nicola/.openclaw/workspace/skills/bot-dashboard && npm run dev"
+# 检查 Bot Dashboard (自动检测端口)
+BOT_PORT=$(curl -s http://localhost:3000 2>/dev/null && echo 3000 || echo 3001)
+check_and_restart "vite" "$BOT_PORT" "cd /home/nicola/.openclaw/workspace/skills/bot-dashboard && npm run dev"
 
 # 检查 ROI Dashboard
 check_and_restart "roi_dashboard" "8080" "cd /home/nicola/.openclaw/workspace/skills/roi-tracker && /usr/bin/python3 roi_dashboard.py"
