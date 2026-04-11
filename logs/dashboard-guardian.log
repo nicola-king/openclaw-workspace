@@ -14771,3 +14771,2589 @@ window.$RefreshSig$ = () => (type) => type;</script>
 [2026-04-11 17:30:01] ========== 检查完成 ==========
 [2026-04-11 17:30:01] 
 [2026-04-11 17:30:01] 
+[2026-04-11 17:35:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 17:35:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 17:35:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+[2026-04-11 17:35:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+已终止
+
+> taiyi-bot-dashboard@1.0.0 dev
+> vite
+
+
+  VITE v6.4.2  ready in 123 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.3.74:3000/
+[2026-04-11 17:35:01] ❌ vite 重启失败，需要人工干预
+[2026-04-11 17:35:01] ❌ vite 重启失败，需要人工干预
+127.0.0.1 - - [11/Apr/2026 17:35:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 17:35:01] ✅ roi_dashboard (端口8080) 运行正常
+[2026-04-11 17:35:01] ✅ roi_dashboard (端口8080) 运行正常
+127.0.0.1 - - [11/Apr/2026 17:35:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 17:35:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 17:35:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 17:35:01] ========== 检查完成 ==========
+[2026-04-11 17:35:01] ========== 检查完成 ==========
+[2026-04-11 17:35:01] 
+[2026-04-11 17:35:01] 
+[2026-04-11 17:40:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 17:40:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 17:40:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+[2026-04-11 17:40:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+已终止
+
+> taiyi-bot-dashboard@1.0.0 dev
+> vite
+
+
+  VITE v6.4.2  ready in 149 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.3.74:3000/
+[2026-04-11 17:40:01] ❌ vite 重启失败，需要人工干预
+[2026-04-11 17:40:01] ❌ vite 重启失败，需要人工干预
+127.0.0.1 - - [11/Apr/2026 17:40:09] "GET / HTTP/1.1" 200 -
+[2026-04-11 17:40:01] ✅ roi_dashboard (端口8080) 运行正常
+[2026-04-11 17:40:01] ✅ roi_dashboard (端口8080) 运行正常
+127.0.0.1 - - [11/Apr/2026 17:40:09] "GET / HTTP/1.1" 200 -
+[2026-04-11 17:40:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 17:40:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 17:40:01] ========== 检查完成 ==========
+[2026-04-11 17:40:01] ========== 检查完成 ==========
+[2026-04-11 17:40:01] 
+[2026-04-11 17:40:01] 
+[2026-04-11 17:45:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 17:45:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 17:45:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+[2026-04-11 17:45:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+已终止
+
+> taiyi-bot-dashboard@1.0.0 dev
+> vite
+
+
+  VITE v6.4.2  ready in 122 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.3.74:3000/
+[2026-04-11 17:45:01] ❌ vite 重启失败，需要人工干预
+[2026-04-11 17:45:01] ❌ vite 重启失败，需要人工干预
+127.0.0.1 - - [11/Apr/2026 17:45:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 17:45:01] ✅ roi_dashboard (端口8080) 运行正常
+[2026-04-11 17:45:01] ✅ roi_dashboard (端口8080) 运行正常
+127.0.0.1 - - [11/Apr/2026 17:45:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 17:45:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 17:45:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 17:45:01] ========== 检查完成 ==========
+[2026-04-11 17:45:01] ========== 检查完成 ==========
+[2026-04-11 17:45:01] 
+[2026-04-11 17:45:01] 
+[2026-04-11 17:50:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 17:50:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 17:50:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+[2026-04-11 17:50:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+已终止
+
+> taiyi-bot-dashboard@1.0.0 dev
+> vite
+
+
+  VITE v6.4.2  ready in 145 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.3.74:3000/
+[2026-04-11 17:50:01] ❌ vite 重启失败，需要人工干预
+[2026-04-11 17:50:01] ❌ vite 重启失败，需要人工干预
+127.0.0.1 - - [11/Apr/2026 17:50:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 17:50:01] ✅ roi_dashboard (端口8080) 运行正常
+[2026-04-11 17:50:01] ✅ roi_dashboard (端口8080) 运行正常
+127.0.0.1 - - [11/Apr/2026 17:50:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 17:50:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 17:50:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 17:50:01] ========== 检查完成 ==========
+[2026-04-11 17:50:01] ========== 检查完成 ==========
+[2026-04-11 17:50:01] 
+[2026-04-11 17:50:01] 
+[2026-04-11 17:55:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 17:55:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 17:55:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+[2026-04-11 17:55:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+已终止
+
+> taiyi-bot-dashboard@1.0.0 dev
+> vite
+
+
+  VITE v6.4.2  ready in 126 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.3.74:3000/
+[2026-04-11 17:55:01] ❌ vite 重启失败，需要人工干预
+[2026-04-11 17:55:01] ❌ vite 重启失败，需要人工干预
+127.0.0.1 - - [11/Apr/2026 17:55:09] "GET / HTTP/1.1" 200 -
+[2026-04-11 17:55:01] ✅ roi_dashboard (端口8080) 运行正常
+[2026-04-11 17:55:01] ✅ roi_dashboard (端口8080) 运行正常
+127.0.0.1 - - [11/Apr/2026 17:55:09] "GET / HTTP/1.1" 200 -
+[2026-04-11 17:55:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 17:55:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 17:55:01] ========== 检查完成 ==========
+[2026-04-11 17:55:01] ========== 检查完成 ==========
+[2026-04-11 17:55:01] 
+[2026-04-11 17:55:01] 
+[2026-04-11 18:00:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 18:00:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 18:00:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+[2026-04-11 18:00:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+已终止
+
+> taiyi-bot-dashboard@1.0.0 dev
+> vite
+
+
+  VITE v6.4.2  ready in 155 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.3.74:3000/
+[2026-04-11 18:00:01] ❌ vite 重启失败，需要人工干预
+[2026-04-11 18:00:01] ❌ vite 重启失败，需要人工干预
+127.0.0.1 - - [11/Apr/2026 18:00:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 18:00:01] ✅ roi_dashboard (端口8080) 运行正常
+[2026-04-11 18:00:01] ✅ roi_dashboard (端口8080) 运行正常
+127.0.0.1 - - [11/Apr/2026 18:00:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 18:00:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 18:00:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 18:00:01] ========== 检查完成 ==========
+[2026-04-11 18:00:01] ========== 检查完成 ==========
+[2026-04-11 18:00:01] 
+[2026-04-11 18:00:01] 
+[2026-04-11 18:05:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 18:05:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 18:05:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+[2026-04-11 18:05:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+已终止
+
+> taiyi-bot-dashboard@1.0.0 dev
+> vite
+
+
+  VITE v6.4.2  ready in 125 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.3.74:3000/
+[2026-04-11 18:05:01] ❌ vite 重启失败，需要人工干预
+[2026-04-11 18:05:01] ❌ vite 重启失败，需要人工干预
+127.0.0.1 - - [11/Apr/2026 18:05:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 18:05:01] ✅ roi_dashboard (端口8080) 运行正常
+[2026-04-11 18:05:01] ✅ roi_dashboard (端口8080) 运行正常
+127.0.0.1 - - [11/Apr/2026 18:05:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 18:05:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 18:05:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 18:05:01] ========== 检查完成 ==========
+[2026-04-11 18:05:01] ========== 检查完成 ==========
+[2026-04-11 18:05:01] 
+[2026-04-11 18:05:01] 
+[2026-04-11 18:10:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 18:10:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 18:10:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+[2026-04-11 18:10:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+已终止
+
+> taiyi-bot-dashboard@1.0.0 dev
+> vite
+
+
+  VITE v6.4.2  ready in 122 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.3.74:3000/
+[2026-04-11 18:10:01] ❌ vite 重启失败，需要人工干预
+[2026-04-11 18:10:01] ❌ vite 重启失败，需要人工干预
+127.0.0.1 - - [11/Apr/2026 18:10:09] "GET / HTTP/1.1" 200 -
+[2026-04-11 18:10:01] ✅ roi_dashboard (端口8080) 运行正常
+[2026-04-11 18:10:01] ✅ roi_dashboard (端口8080) 运行正常
+127.0.0.1 - - [11/Apr/2026 18:10:09] "GET / HTTP/1.1" 200 -
+[2026-04-11 18:10:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 18:10:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 18:10:01] ========== 检查完成 ==========
+[2026-04-11 18:10:01] ========== 检查完成 ==========
+[2026-04-11 18:10:01] 
+[2026-04-11 18:10:01] 
+[2026-04-11 18:15:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 18:15:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 18:15:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+[2026-04-11 18:15:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+已终止
+
+> taiyi-bot-dashboard@1.0.0 dev
+> vite
+
+
+  VITE v6.4.2  ready in 121 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.3.74:3000/
+[2026-04-11 18:15:01] ❌ vite 重启失败，需要人工干预
+[2026-04-11 18:15:01] ❌ vite 重启失败，需要人工干预
+127.0.0.1 - - [11/Apr/2026 18:15:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 18:15:01] ✅ roi_dashboard (端口8080) 运行正常
+[2026-04-11 18:15:01] ✅ roi_dashboard (端口8080) 运行正常
+127.0.0.1 - - [11/Apr/2026 18:15:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 18:15:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 18:15:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 18:15:01] ========== 检查完成 ==========
+[2026-04-11 18:15:01] ========== 检查完成 ==========
+[2026-04-11 18:15:01] 
+[2026-04-11 18:15:01] 
+[2026-04-11 18:20:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 18:20:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 18:20:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+[2026-04-11 18:20:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+已终止
+
+> taiyi-bot-dashboard@1.0.0 dev
+> vite
+
+
+  VITE v6.4.2  ready in 130 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.3.74:3000/
+[2026-04-11 18:20:01] ❌ vite 重启失败，需要人工干预
+[2026-04-11 18:20:01] ❌ vite 重启失败，需要人工干预
+127.0.0.1 - - [11/Apr/2026 18:20:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 18:20:01] ✅ roi_dashboard (端口8080) 运行正常
+[2026-04-11 18:20:01] ✅ roi_dashboard (端口8080) 运行正常
+127.0.0.1 - - [11/Apr/2026 18:20:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 18:20:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 18:20:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 18:20:01] ========== 检查完成 ==========
+[2026-04-11 18:20:01] ========== 检查完成 ==========
+[2026-04-11 18:20:01] 
+[2026-04-11 18:20:01] 
+[2026-04-11 18:25:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 18:25:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 18:25:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+[2026-04-11 18:25:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+已终止
+
+> taiyi-bot-dashboard@1.0.0 dev
+> vite
+
+
+  VITE v6.4.2  ready in 125 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.3.74:3000/
+[2026-04-11 18:25:01] ❌ vite 重启失败，需要人工干预
+[2026-04-11 18:25:01] ❌ vite 重启失败，需要人工干预
+127.0.0.1 - - [11/Apr/2026 18:25:09] "GET / HTTP/1.1" 200 -
+[2026-04-11 18:25:01] ✅ roi_dashboard (端口8080) 运行正常
+[2026-04-11 18:25:01] ✅ roi_dashboard (端口8080) 运行正常
+127.0.0.1 - - [11/Apr/2026 18:25:09] "GET / HTTP/1.1" 200 -
+[2026-04-11 18:25:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 18:25:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 18:25:01] ========== 检查完成 ==========
+[2026-04-11 18:25:01] ========== 检查完成 ==========
+[2026-04-11 18:25:01] 
+[2026-04-11 18:25:01] 
+[2026-04-11 18:30:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 18:30:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 18:30:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+[2026-04-11 18:30:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+已终止
+
+> taiyi-bot-dashboard@1.0.0 dev
+> vite
+
+
+  VITE v6.4.2  ready in 165 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.3.74:3000/
+[2026-04-11 18:30:01] ❌ vite 重启失败，需要人工干预
+[2026-04-11 18:30:01] ❌ vite 重启失败，需要人工干预
+127.0.0.1 - - [11/Apr/2026 18:30:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 18:30:01] ✅ roi_dashboard (端口8080) 运行正常
+[2026-04-11 18:30:01] ✅ roi_dashboard (端口8080) 运行正常
+127.0.0.1 - - [11/Apr/2026 18:30:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 18:30:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 18:30:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 18:30:01] ========== 检查完成 ==========
+[2026-04-11 18:30:01] ========== 检查完成 ==========
+[2026-04-11 18:30:01] 
+[2026-04-11 18:30:01] 
+[2026-04-11 18:35:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 18:35:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 18:35:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+[2026-04-11 18:35:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+已终止
+
+> taiyi-bot-dashboard@1.0.0 dev
+> vite
+
+
+  VITE v6.4.2  ready in 125 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.3.74:3000/
+[2026-04-11 18:35:01] ❌ vite 重启失败，需要人工干预
+[2026-04-11 18:35:01] ❌ vite 重启失败，需要人工干预
+127.0.0.1 - - [11/Apr/2026 18:35:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 18:35:01] ✅ roi_dashboard (端口8080) 运行正常
+[2026-04-11 18:35:01] ✅ roi_dashboard (端口8080) 运行正常
+127.0.0.1 - - [11/Apr/2026 18:35:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 18:35:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 18:35:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 18:35:01] ========== 检查完成 ==========
+[2026-04-11 18:35:01] ========== 检查完成 ==========
+[2026-04-11 18:35:01] 
+[2026-04-11 18:35:01] 
+[2026-04-11 18:40:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 18:40:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 18:40:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+[2026-04-11 18:40:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+已终止
+
+> taiyi-bot-dashboard@1.0.0 dev
+> vite
+
+
+  VITE v6.4.2  ready in 126 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.3.74:3000/
+[2026-04-11 18:40:01] ❌ vite 重启失败，需要人工干预
+[2026-04-11 18:40:01] ❌ vite 重启失败，需要人工干预
+127.0.0.1 - - [11/Apr/2026 18:40:09] "GET / HTTP/1.1" 200 -
+[2026-04-11 18:40:01] ✅ roi_dashboard (端口8080) 运行正常
+[2026-04-11 18:40:01] ✅ roi_dashboard (端口8080) 运行正常
+127.0.0.1 - - [11/Apr/2026 18:40:09] "GET / HTTP/1.1" 200 -
+[2026-04-11 18:40:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 18:40:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 18:40:01] ========== 检查完成 ==========
+[2026-04-11 18:40:01] ========== 检查完成 ==========
+[2026-04-11 18:40:01] 
+[2026-04-11 18:40:01] 
+[2026-04-11 18:45:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 18:45:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 18:45:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+[2026-04-11 18:45:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+已终止
+
+> taiyi-bot-dashboard@1.0.0 dev
+> vite
+
+
+  VITE v6.4.2  ready in 121 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.3.74:3000/
+[2026-04-11 18:45:01] ❌ vite 重启失败，需要人工干预
+[2026-04-11 18:45:01] ❌ vite 重启失败，需要人工干预
+127.0.0.1 - - [11/Apr/2026 18:45:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 18:45:01] ✅ roi_dashboard (端口8080) 运行正常
+[2026-04-11 18:45:01] ✅ roi_dashboard (端口8080) 运行正常
+127.0.0.1 - - [11/Apr/2026 18:45:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 18:45:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 18:45:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 18:45:01] ========== 检查完成 ==========
+[2026-04-11 18:45:01] ========== 检查完成 ==========
+[2026-04-11 18:45:01] 
+[2026-04-11 18:45:01] 
+[2026-04-11 18:50:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 18:50:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 18:50:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+[2026-04-11 18:50:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+已终止
+
+> taiyi-bot-dashboard@1.0.0 dev
+> vite
+
+
+  VITE v6.4.2  ready in 122 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.3.74:3000/
+[2026-04-11 18:50:01] ❌ vite 重启失败，需要人工干预
+[2026-04-11 18:50:01] ❌ vite 重启失败，需要人工干预
+127.0.0.1 - - [11/Apr/2026 18:50:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 18:50:01] ✅ roi_dashboard (端口8080) 运行正常
+[2026-04-11 18:50:01] ✅ roi_dashboard (端口8080) 运行正常
+127.0.0.1 - - [11/Apr/2026 18:50:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 18:50:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 18:50:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 18:50:01] ========== 检查完成 ==========
+[2026-04-11 18:50:01] ========== 检查完成 ==========
+[2026-04-11 18:50:01] 
+[2026-04-11 18:50:01] 
+[2026-04-11 18:55:02] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 18:55:02] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 18:55:02] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+[2026-04-11 18:55:02] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+已终止
+
+> taiyi-bot-dashboard@1.0.0 dev
+> vite
+
+
+  VITE v6.4.2  ready in 121 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.3.74:3000/
+[2026-04-11 18:55:02] ❌ vite 重启失败，需要人工干预
+[2026-04-11 18:55:02] ❌ vite 重启失败，需要人工干预
+127.0.0.1 - - [11/Apr/2026 18:55:09] "GET / HTTP/1.1" 200 -
+[2026-04-11 18:55:02] ✅ roi_dashboard (端口8080) 运行正常
+[2026-04-11 18:55:02] ✅ roi_dashboard (端口8080) 运行正常
+127.0.0.1 - - [11/Apr/2026 18:55:09] "GET / HTTP/1.1" 200 -
+[2026-04-11 18:55:02] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 18:55:02] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 18:55:02] ========== 检查完成 ==========
+[2026-04-11 18:55:02] ========== 检查完成 ==========
+[2026-04-11 18:55:02] 
+[2026-04-11 18:55:02] 
+[2026-04-11 19:00:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 19:00:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 19:00:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+[2026-04-11 19:00:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+已终止
+
+> taiyi-bot-dashboard@1.0.0 dev
+> vite
+
+
+  VITE v6.4.2  ready in 128 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.3.74:3000/
+[2026-04-11 19:00:01] ❌ vite 重启失败，需要人工干预
+[2026-04-11 19:00:01] ❌ vite 重启失败，需要人工干预
+127.0.0.1 - - [11/Apr/2026 19:00:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 19:00:01] ✅ roi_dashboard (端口8080) 运行正常
+[2026-04-11 19:00:01] ✅ roi_dashboard (端口8080) 运行正常
+127.0.0.1 - - [11/Apr/2026 19:00:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 19:00:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 19:00:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 19:00:01] ========== 检查完成 ==========
+[2026-04-11 19:00:01] ========== 检查完成 ==========
+[2026-04-11 19:00:01] 
+[2026-04-11 19:00:01] 
+[2026-04-11 19:05:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 19:05:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 19:05:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+[2026-04-11 19:05:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+已终止
+
+> taiyi-bot-dashboard@1.0.0 dev
+> vite
+
+
+  VITE v6.4.2  ready in 122 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.3.74:3000/
+[2026-04-11 19:05:01] ❌ vite 重启失败，需要人工干预
+[2026-04-11 19:05:01] ❌ vite 重启失败，需要人工干预
+127.0.0.1 - - [11/Apr/2026 19:05:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 19:05:01] ✅ roi_dashboard (端口8080) 运行正常
+[2026-04-11 19:05:01] ✅ roi_dashboard (端口8080) 运行正常
+127.0.0.1 - - [11/Apr/2026 19:05:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 19:05:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 19:05:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 19:05:01] ========== 检查完成 ==========
+[2026-04-11 19:05:01] ========== 检查完成 ==========
+[2026-04-11 19:05:01] 
+[2026-04-11 19:05:01] 
+[2026-04-11 19:10:02] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 19:10:02] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 19:10:02] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+[2026-04-11 19:10:02] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+已终止
+
+> taiyi-bot-dashboard@1.0.0 dev
+> vite
+
+
+  VITE v6.4.2  ready in 123 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.3.74:3000/
+[2026-04-11 19:10:02] ❌ vite 重启失败，需要人工干预
+[2026-04-11 19:10:02] ❌ vite 重启失败，需要人工干预
+127.0.0.1 - - [11/Apr/2026 19:10:09] "GET / HTTP/1.1" 200 -
+[2026-04-11 19:10:02] ✅ roi_dashboard (端口8080) 运行正常
+[2026-04-11 19:10:02] ✅ roi_dashboard (端口8080) 运行正常
+127.0.0.1 - - [11/Apr/2026 19:10:09] "GET / HTTP/1.1" 200 -
+[2026-04-11 19:10:02] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 19:10:02] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 19:10:02] ========== 检查完成 ==========
+[2026-04-11 19:10:02] ========== 检查完成 ==========
+[2026-04-11 19:10:02] 
+[2026-04-11 19:10:02] 
+[2026-04-11 19:15:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 19:15:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 19:15:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+[2026-04-11 19:15:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+已终止
+
+> taiyi-bot-dashboard@1.0.0 dev
+> vite
+
+
+  VITE v6.4.2  ready in 124 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.3.74:3000/
+[2026-04-11 19:15:01] ❌ vite 重启失败，需要人工干预
+[2026-04-11 19:15:01] ❌ vite 重启失败，需要人工干预
+127.0.0.1 - - [11/Apr/2026 19:15:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 19:15:01] ✅ roi_dashboard (端口8080) 运行正常
+[2026-04-11 19:15:01] ✅ roi_dashboard (端口8080) 运行正常
+127.0.0.1 - - [11/Apr/2026 19:15:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 19:15:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 19:15:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 19:15:01] ========== 检查完成 ==========
+[2026-04-11 19:15:01] ========== 检查完成 ==========
+[2026-04-11 19:15:01] 
+[2026-04-11 19:15:01] 
+[2026-04-11 19:20:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 19:20:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 19:20:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+[2026-04-11 19:20:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+已终止
+
+> taiyi-bot-dashboard@1.0.0 dev
+> vite
+
+
+  VITE v6.4.2  ready in 144 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.3.74:3000/
+[2026-04-11 19:20:01] ❌ vite 重启失败，需要人工干预
+[2026-04-11 19:20:01] ❌ vite 重启失败，需要人工干预
+127.0.0.1 - - [11/Apr/2026 19:20:09] "GET / HTTP/1.1" 200 -
+[2026-04-11 19:20:01] ✅ roi_dashboard (端口8080) 运行正常
+[2026-04-11 19:20:01] ✅ roi_dashboard (端口8080) 运行正常
+127.0.0.1 - - [11/Apr/2026 19:20:09] "GET / HTTP/1.1" 200 -
+[2026-04-11 19:20:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 19:20:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 19:20:01] ========== 检查完成 ==========
+[2026-04-11 19:20:01] ========== 检查完成 ==========
+[2026-04-11 19:20:01] 
+[2026-04-11 19:20:01] 
+[2026-04-11 19:25:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 19:25:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 19:25:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+[2026-04-11 19:25:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+已终止
+
+> taiyi-bot-dashboard@1.0.0 dev
+> vite
+
+
+  VITE v6.4.2  ready in 124 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.3.74:3000/
+[2026-04-11 19:25:01] ❌ vite 重启失败，需要人工干预
+[2026-04-11 19:25:01] ❌ vite 重启失败，需要人工干预
+127.0.0.1 - - [11/Apr/2026 19:25:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 19:25:01] ✅ roi_dashboard (端口8080) 运行正常
+[2026-04-11 19:25:01] ✅ roi_dashboard (端口8080) 运行正常
+127.0.0.1 - - [11/Apr/2026 19:25:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 19:25:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 19:25:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 19:25:01] ========== 检查完成 ==========
+[2026-04-11 19:25:01] ========== 检查完成 ==========
+[2026-04-11 19:25:01] 
+[2026-04-11 19:25:01] 
+[2026-04-11 19:30:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 19:30:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 19:30:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+[2026-04-11 19:30:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+已终止
+
+> taiyi-bot-dashboard@1.0.0 dev
+> vite
+
+
+  VITE v6.4.2  ready in 123 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.3.74:3000/
+[2026-04-11 19:30:01] ❌ vite 重启失败，需要人工干预
+[2026-04-11 19:30:01] ❌ vite 重启失败，需要人工干预
+127.0.0.1 - - [11/Apr/2026 19:30:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 19:30:01] ✅ roi_dashboard (端口8080) 运行正常
+[2026-04-11 19:30:01] ✅ roi_dashboard (端口8080) 运行正常
+127.0.0.1 - - [11/Apr/2026 19:30:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 19:30:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 19:30:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 19:30:01] ========== 检查完成 ==========
+[2026-04-11 19:30:01] ========== 检查完成 ==========
+[2026-04-11 19:30:01] 
+[2026-04-11 19:30:01] 
+[2026-04-11 19:35:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 19:35:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 19:35:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+[2026-04-11 19:35:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+已终止
+
+> taiyi-bot-dashboard@1.0.0 dev
+> vite
+
+
+  VITE v6.4.2  ready in 122 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.3.74:3000/
+[2026-04-11 19:35:01] ❌ vite 重启失败，需要人工干预
+[2026-04-11 19:35:01] ❌ vite 重启失败，需要人工干预
+127.0.0.1 - - [11/Apr/2026 19:35:09] "GET / HTTP/1.1" 200 -
+[2026-04-11 19:35:01] ✅ roi_dashboard (端口8080) 运行正常
+[2026-04-11 19:35:01] ✅ roi_dashboard (端口8080) 运行正常
+127.0.0.1 - - [11/Apr/2026 19:35:09] "GET / HTTP/1.1" 200 -
+[2026-04-11 19:35:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 19:35:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 19:35:01] ========== 检查完成 ==========
+[2026-04-11 19:35:01] ========== 检查完成 ==========
+[2026-04-11 19:35:01] 
+[2026-04-11 19:35:01] 
+[2026-04-11 19:40:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 19:40:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 19:40:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+[2026-04-11 19:40:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+已终止
+
+> taiyi-bot-dashboard@1.0.0 dev
+> vite
+
+
+  VITE v6.4.2  ready in 148 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.3.74:3000/
+[2026-04-11 19:40:01] ❌ vite 重启失败，需要人工干预
+[2026-04-11 19:40:01] ❌ vite 重启失败，需要人工干预
+127.0.0.1 - - [11/Apr/2026 19:40:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 19:40:01] ✅ roi_dashboard (端口8080) 运行正常
+[2026-04-11 19:40:01] ✅ roi_dashboard (端口8080) 运行正常
+127.0.0.1 - - [11/Apr/2026 19:40:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 19:40:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 19:40:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 19:40:01] ========== 检查完成 ==========
+[2026-04-11 19:40:01] ========== 检查完成 ==========
+[2026-04-11 19:40:01] 
+[2026-04-11 19:40:01] 
+[2026-04-11 19:45:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 19:45:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 19:45:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+[2026-04-11 19:45:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+已终止
+
+> taiyi-bot-dashboard@1.0.0 dev
+> vite
+
+
+  VITE v6.4.2  ready in 124 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.3.74:3000/
+[2026-04-11 19:45:01] ❌ vite 重启失败，需要人工干预
+[2026-04-11 19:45:01] ❌ vite 重启失败，需要人工干预
+127.0.0.1 - - [11/Apr/2026 19:45:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 19:45:01] ✅ roi_dashboard (端口8080) 运行正常
+[2026-04-11 19:45:01] ✅ roi_dashboard (端口8080) 运行正常
+127.0.0.1 - - [11/Apr/2026 19:45:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 19:45:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 19:45:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 19:45:01] ========== 检查完成 ==========
+[2026-04-11 19:45:01] ========== 检查完成 ==========
+[2026-04-11 19:45:01] 
+[2026-04-11 19:45:01] 
+[2026-04-11 19:50:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 19:50:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 19:50:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+[2026-04-11 19:50:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+已终止
+
+> taiyi-bot-dashboard@1.0.0 dev
+> vite
+
+
+  VITE v6.4.2  ready in 140 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.3.74:3000/
+[2026-04-11 19:50:01] ❌ vite 重启失败，需要人工干预
+[2026-04-11 19:50:01] ❌ vite 重启失败，需要人工干预
+127.0.0.1 - - [11/Apr/2026 19:50:09] "GET / HTTP/1.1" 200 -
+[2026-04-11 19:50:01] ✅ roi_dashboard (端口8080) 运行正常
+[2026-04-11 19:50:01] ✅ roi_dashboard (端口8080) 运行正常
+127.0.0.1 - - [11/Apr/2026 19:50:09] "GET / HTTP/1.1" 200 -
+[2026-04-11 19:50:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 19:50:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 19:50:01] ========== 检查完成 ==========
+[2026-04-11 19:50:01] ========== 检查完成 ==========
+[2026-04-11 19:50:01] 
+[2026-04-11 19:50:01] 
+[2026-04-11 19:55:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 19:55:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 19:55:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+[2026-04-11 19:55:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+已终止
+
+> taiyi-bot-dashboard@1.0.0 dev
+> vite
+
+
+  VITE v6.4.2  ready in 124 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.3.74:3000/
+[2026-04-11 19:55:01] ❌ vite 重启失败，需要人工干预
+[2026-04-11 19:55:01] ❌ vite 重启失败，需要人工干预
+127.0.0.1 - - [11/Apr/2026 19:55:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 19:55:01] ✅ roi_dashboard (端口8080) 运行正常
+[2026-04-11 19:55:01] ✅ roi_dashboard (端口8080) 运行正常
+127.0.0.1 - - [11/Apr/2026 19:55:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 19:55:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 19:55:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 19:55:01] ========== 检查完成 ==========
+[2026-04-11 19:55:01] ========== 检查完成 ==========
+[2026-04-11 19:55:01] 
+[2026-04-11 19:55:01] 
+[2026-04-11 20:00:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 20:00:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 20:00:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+[2026-04-11 20:00:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+已终止
+
+> taiyi-bot-dashboard@1.0.0 dev
+> vite
+
+
+  VITE v6.4.2  ready in 152 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.3.74:3000/
+[2026-04-11 20:00:01] ❌ vite 重启失败，需要人工干预
+[2026-04-11 20:00:01] ❌ vite 重启失败，需要人工干预
+127.0.0.1 - - [11/Apr/2026 20:00:09] "GET / HTTP/1.1" 200 -
+[2026-04-11 20:00:01] ✅ roi_dashboard (端口8080) 运行正常
+[2026-04-11 20:00:01] ✅ roi_dashboard (端口8080) 运行正常
+127.0.0.1 - - [11/Apr/2026 20:00:09] "GET / HTTP/1.1" 200 -
+[2026-04-11 20:00:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 20:00:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 20:00:01] ========== 检查完成 ==========
+[2026-04-11 20:00:01] ========== 检查完成 ==========
+[2026-04-11 20:00:01] 
+[2026-04-11 20:00:01] 
+[2026-04-11 20:05:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 20:05:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 20:05:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+[2026-04-11 20:05:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+已终止
+
+> taiyi-bot-dashboard@1.0.0 dev
+> vite
+
+
+  VITE v6.4.2  ready in 123 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.3.74:3000/
+[2026-04-11 20:05:01] ❌ vite 重启失败，需要人工干预
+[2026-04-11 20:05:01] ❌ vite 重启失败，需要人工干预
+127.0.0.1 - - [11/Apr/2026 20:05:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 20:05:01] ✅ roi_dashboard (端口8080) 运行正常
+[2026-04-11 20:05:01] ✅ roi_dashboard (端口8080) 运行正常
+127.0.0.1 - - [11/Apr/2026 20:05:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 20:05:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 20:05:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 20:05:01] ========== 检查完成 ==========
+[2026-04-11 20:05:01] ========== 检查完成 ==========
+[2026-04-11 20:05:01] 
+[2026-04-11 20:05:01] 
+[2026-04-11 20:10:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 20:10:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 20:10:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+[2026-04-11 20:10:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+已终止
+
+> taiyi-bot-dashboard@1.0.0 dev
+> vite
+
+
+  VITE v6.4.2  ready in 142 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.3.74:3000/
+[2026-04-11 20:10:01] ❌ vite 重启失败，需要人工干预
+[2026-04-11 20:10:01] ❌ vite 重启失败，需要人工干预
+127.0.0.1 - - [11/Apr/2026 20:10:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 20:10:01] ✅ roi_dashboard (端口8080) 运行正常
+[2026-04-11 20:10:01] ✅ roi_dashboard (端口8080) 运行正常
+127.0.0.1 - - [11/Apr/2026 20:10:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 20:10:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 20:10:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 20:10:01] ========== 检查完成 ==========
+[2026-04-11 20:10:01] ========== 检查完成 ==========
+[2026-04-11 20:10:01] 
+[2026-04-11 20:10:01] 
+[2026-04-11 20:15:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 20:15:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 20:15:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+[2026-04-11 20:15:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+已终止
+
+> taiyi-bot-dashboard@1.0.0 dev
+> vite
+
+
+  VITE v6.4.2  ready in 152 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.3.74:3000/
+[2026-04-11 20:15:01] ❌ vite 重启失败，需要人工干预
+[2026-04-11 20:15:01] ❌ vite 重启失败，需要人工干预
+127.0.0.1 - - [11/Apr/2026 20:15:09] "GET / HTTP/1.1" 200 -
+[2026-04-11 20:15:01] ✅ roi_dashboard (端口8080) 运行正常
+[2026-04-11 20:15:01] ✅ roi_dashboard (端口8080) 运行正常
+127.0.0.1 - - [11/Apr/2026 20:15:09] "GET / HTTP/1.1" 200 -
+[2026-04-11 20:15:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 20:15:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 20:15:01] ========== 检查完成 ==========
+[2026-04-11 20:15:01] ========== 检查完成 ==========
+[2026-04-11 20:15:01] 
+[2026-04-11 20:15:01] 
+20:16:39 [vite] (client) Pre-transform error: Failed to resolve import "@taiyi/design-system" from "src/App.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/nicola/.openclaw/workspace/skills/bot-dashboard/src/App.jsx:2:29
+  17 |  var _s = $RefreshSig$();
+  18 |  import React, { useState, useEffect } from "react";
+  19 |  import { Button, Card } from "@taiyi/design-system";
+     |                                ^
+  20 |  import "@taiyi/design-system/src/styles.css";
+  21 |  const MOCK_BOTS = [
+20:16:39 [vite] Internal server error: Failed to resolve import "@taiyi/design-system" from "src/App.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/nicola/.openclaw/workspace/skills/bot-dashboard/src/App.jsx:2:29
+  17 |  var _s = $RefreshSig$();
+  18 |  import React, { useState, useEffect } from "react";
+  19 |  import { Button, Card } from "@taiyi/design-system";
+     |                                ^
+  20 |  import "@taiyi/design-system/src/styles.css";
+  21 |  const MOCK_BOTS = [
+      at TransformPluginContext._formatLog (file:///home/nicola/.openclaw/workspace/skills/bot-dashboard/node_modules/vite/dist/node/chunks/dep-Dq2t6Dq0.js:42553:41)
+      at TransformPluginContext.error (file:///home/nicola/.openclaw/workspace/skills/bot-dashboard/node_modules/vite/dist/node/chunks/dep-Dq2t6Dq0.js:42550:16)
+      at normalizeUrl (file:///home/nicola/.openclaw/workspace/skills/bot-dashboard/node_modules/vite/dist/node/chunks/dep-Dq2t6Dq0.js:40529:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///home/nicola/.openclaw/workspace/skills/bot-dashboard/node_modules/vite/dist/node/chunks/dep-Dq2t6Dq0.js:40648:37
+      at async Promise.all (index 4)
+      at async TransformPluginContext.transform (file:///home/nicola/.openclaw/workspace/skills/bot-dashboard/node_modules/vite/dist/node/chunks/dep-Dq2t6Dq0.js:40575:7)
+      at async EnvironmentPluginContainer.transform (file:///home/nicola/.openclaw/workspace/skills/bot-dashboard/node_modules/vite/dist/node/chunks/dep-Dq2t6Dq0.js:42348:18)
+      at async loadAndTransform (file:///home/nicola/.openclaw/workspace/skills/bot-dashboard/node_modules/vite/dist/node/chunks/dep-Dq2t6Dq0.js:35740:27)
+      at async viteTransformMiddleware (file:///home/nicola/.openclaw/workspace/skills/bot-dashboard/node_modules/vite/dist/node/chunks/dep-Dq2t6Dq0.js:37264:24)
+[2026-04-11 20:20:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 20:20:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 20:20:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+[2026-04-11 20:20:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+已终止
+
+> taiyi-bot-dashboard@1.0.0 dev
+> vite
+
+
+  VITE v6.4.2  ready in 226 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.3.74:3000/
+[2026-04-11 20:20:01] ❌ vite 重启失败，需要人工干预
+[2026-04-11 20:20:01] ❌ vite 重启失败，需要人工干预
+127.0.0.1 - - [11/Apr/2026 20:20:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 20:20:01] ✅ roi_dashboard (端口8080) 运行正常
+[2026-04-11 20:20:01] ✅ roi_dashboard (端口8080) 运行正常
+127.0.0.1 - - [11/Apr/2026 20:20:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 20:20:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 20:20:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 20:20:01] ========== 检查完成 ==========
+[2026-04-11 20:20:01] ========== 检查完成 ==========
+[2026-04-11 20:20:01] 
+[2026-04-11 20:20:01] 
+[2026-04-11 20:25:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 20:25:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 20:25:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+[2026-04-11 20:25:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+已终止
+
+> taiyi-bot-dashboard@1.0.0 dev
+> vite
+
+
+  VITE v6.4.2  ready in 146 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.3.74:3000/
+[2026-04-11 20:25:01] ❌ vite 重启失败，需要人工干预
+[2026-04-11 20:25:01] ❌ vite 重启失败，需要人工干预
+127.0.0.1 - - [11/Apr/2026 20:25:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 20:25:01] ✅ roi_dashboard (端口8080) 运行正常
+[2026-04-11 20:25:01] ✅ roi_dashboard (端口8080) 运行正常
+127.0.0.1 - - [11/Apr/2026 20:25:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 20:25:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 20:25:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 20:25:01] ========== 检查完成 ==========
+[2026-04-11 20:25:01] ========== 检查完成 ==========
+[2026-04-11 20:25:01] 
+[2026-04-11 20:25:01] 
+[2026-04-11 20:30:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 20:30:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 20:30:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+[2026-04-11 20:30:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+已终止
+
+> taiyi-bot-dashboard@1.0.0 dev
+> vite
+
+
+  VITE v6.4.2  ready in 139 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.3.74:3000/
+[2026-04-11 20:30:01] ❌ vite 重启失败，需要人工干预
+[2026-04-11 20:30:01] ❌ vite 重启失败，需要人工干预
+127.0.0.1 - - [11/Apr/2026 20:30:09] "GET / HTTP/1.1" 200 -
+[2026-04-11 20:30:01] ✅ roi_dashboard (端口8080) 运行正常
+[2026-04-11 20:30:01] ✅ roi_dashboard (端口8080) 运行正常
+127.0.0.1 - - [11/Apr/2026 20:30:09] "GET / HTTP/1.1" 200 -
+[2026-04-11 20:30:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 20:30:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 20:30:01] ========== 检查完成 ==========
+[2026-04-11 20:30:01] ========== 检查完成 ==========
+[2026-04-11 20:30:01] 
+[2026-04-11 20:30:01] 
+[2026-04-11 20:35:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 20:35:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 20:35:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+[2026-04-11 20:35:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+已终止
+20:35:01 [vite] (client) Pre-transform error: Failed to resolve import "@taiyi/design-system" from "src/App.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/nicola/.openclaw/workspace/skills/bot-dashboard/src/App.jsx:2:29
+  17 |  var _s = $RefreshSig$();
+  18 |  import React, { useState, useEffect } from "react";
+  19 |  import { Button, Card } from "@taiyi/design-system";
+     |                                ^
+  20 |  import "@taiyi/design-system/src/styles.css";
+  21 |  const MOCK_BOTS = [
+
+> taiyi-bot-dashboard@1.0.0 dev
+> vite
+
+
+  VITE v6.4.2  ready in 140 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.3.74:3000/
+[2026-04-11 20:35:01] ❌ vite 重启失败，需要人工干预
+[2026-04-11 20:35:01] ❌ vite 重启失败，需要人工干预
+127.0.0.1 - - [11/Apr/2026 20:35:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 20:35:01] ✅ roi_dashboard (端口8080) 运行正常
+[2026-04-11 20:35:01] ✅ roi_dashboard (端口8080) 运行正常
+127.0.0.1 - - [11/Apr/2026 20:35:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 20:35:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 20:35:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 20:35:01] ========== 检查完成 ==========
+[2026-04-11 20:35:01] ========== 检查完成 ==========
+[2026-04-11 20:35:01] 
+[2026-04-11 20:35:01] 
+[2026-04-11 20:50:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 20:50:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 20:50:01] ❌ vite (端口3001) 无响应，尝试重启...
+[2026-04-11 20:50:01] ❌ vite (端口3001) 无响应，尝试重启...
+
+> taiyi-bot-dashboard@1.0.0 dev
+> vite
+
+
+  VITE v6.4.2  ready in 213 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.31.99:3000/
+[2026-04-11 20:50:01] ❌ vite 重启失败，需要人工干预
+[2026-04-11 20:50:01] ❌ vite 重启失败，需要人工干预
+[2026-04-11 20:50:01] ❌ roi_dashboard (端口8080) 无响应，尝试重启...
+[2026-04-11 20:50:01] ❌ roi_dashboard (端口8080) 无响应，尝试重启...
+127.0.0.1 - - [11/Apr/2026 20:50:16] "GET / HTTP/1.1" 200 -
+[2026-04-11 20:50:01] ✅ roi_dashboard 重启成功
+[2026-04-11 20:50:01] ✅ roi_dashboard 重启成功
+[2026-04-11 20:50:01] ❌ skill-dashboard (端口5002) 无响应，尝试重启...
+[2026-04-11 20:50:01] ❌ skill-dashboard (端口5002) 无响应，尝试重启...
+🎯 Skill Dashboard 启动中...
+==================================================
+📁 Skills 目录：/home/nicola/.openclaw/workspace/skills
+🌐 访问地址：http://localhost:5002
+
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://192.168.31.99:5002
+Press CTRL+C to quit
+127.0.0.1 - - [11/Apr/2026 20:50:23] "GET / HTTP/1.1" 200 -
+[2026-04-11 20:50:01] ✅ skill-dashboard 重启成功
+[2026-04-11 20:50:01] ✅ skill-dashboard 重启成功
+[2026-04-11 20:50:01] ========== 检查完成 ==========
+[2026-04-11 20:50:01] ========== 检查完成 ==========
+[2026-04-11 20:50:01] 
+[2026-04-11 20:50:01] 
+[2026-04-11 20:55:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 20:55:01] ========== Dashboard 守护进程检查 ==========
+[2026-04-11 20:55:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+[2026-04-11 20:55:01] ❌ vite (端口<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太一 AGI · Bot Dashboard</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+3000) 无响应，尝试重启...
+已终止
+
+> taiyi-bot-dashboard@1.0.0 dev
+> vite
+
+
+  VITE v6.4.2  ready in 124 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.31.99:3000/
+[2026-04-11 20:55:01] ❌ vite 重启失败，需要人工干预
+[2026-04-11 20:55:01] ❌ vite 重启失败，需要人工干预
+127.0.0.1 - - [11/Apr/2026 20:55:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 20:55:01] ✅ roi_dashboard (端口8080) 运行正常
+[2026-04-11 20:55:01] ✅ roi_dashboard (端口8080) 运行正常
+127.0.0.1 - - [11/Apr/2026 20:55:08] "GET / HTTP/1.1" 200 -
+[2026-04-11 20:55:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 20:55:01] ✅ skill-dashboard (端口5002) 运行正常
+[2026-04-11 20:55:01] ========== 检查完成 ==========
+[2026-04-11 20:55:01] ========== 检查完成 ==========
+[2026-04-11 20:55:01] 
+[2026-04-11 20:55:01] 

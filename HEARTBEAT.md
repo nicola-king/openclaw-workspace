@@ -1,6 +1,6 @@
 # HEARTBEAT.md - 核心待办（TurboQuant 压缩版）
 
-> 原则：只保留 P0 核心任务 · 细节见 `memory/residual.md` · 最后更新：**2026-04-11 00:52**
+> 原则：只保留 P0 核心任务 · 细节见 `memory/residual.md` · 最后更新：**2026-04-11 20:48**
 
 ---
 
@@ -33,7 +33,10 @@
 
 ### 每日检查 (16:25 更新)
 - [x] 微信通道状态 ✅ 正常
-- [x] Telegram 通道 ✅ 正常
+- [x] Telegram 通道 ✅ 正常 (PID 3464163，已重装)
+- [x] MD 文件查看器 ✅ 已部署 (太一 Dashboard 5001)
+- [x] Google 搜索国内网站 ✅ 已部署 (端口 5004)
+- [x] 代理网关 ✅ 正常 (Clash PID 1185, 端口 7890)
 - [x] Discord 集成 ✅ 客户端已就绪 (待配置凭证)
 - [x] 飞书集成 ✅ 已配置 (太一 Bot + Gemini API)
 - [x] WhatsApp 集成 ✅ 框架已创建 (后期配备)

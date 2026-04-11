@@ -10,7 +10,7 @@ import os
 import json
 import subprocess
 from pathlib import Path
-from flask import Flask, render_template, jsonify
+from flask import Flask, render_template, jsonify, request
 from datetime import datetime
 
 # 配置
@@ -205,6 +205,74 @@ def api_service_detail(service_id):
 @APP.route('/api/reports')
 def api_reports():
     return jsonify(get_recent_reports())
+
+@APP.route('/api/md-files')
+def api_md_files():
+    """获取所有 MD 文件列表"""
+    md_files = []
+    # 扫描 reports 目录
+    reports_dir = WORKSPACE / "reports"
+    if reports_dir.exists():
+        for f in reports_dir.glob("*.md"):
+            md_files.append({
+                "name": f.name,
+                "path": str(f),
+                "dir": "reports",
+                "created": datetime.fromtimestamp(f.stat().st_mtime).strftime('%Y-%m-%d %H:%M')
+            })
+    # 扫描 memory 目录
+    memory_dir = WORKSPACE / "memory"
+    if memory_dir.exists():
+        for f in memory_dir.glob("*.md"):
+            md_files.append({
+                "name": f.name,
+                "path": str(f),
+                "dir": "memory",
+                "created": datetime.fromtimestamp(f.stat().st_mtime).strftime('%Y-%m-%d %H:%M')
+            })
+    # 扫描 skills 目录
+    skills_dir = WORKSPACE / "skills"
+    if skills_dir.exists():
+        for f in skills_dir.glob("*/*.md"):
+            md_files.append({
+                "name": f.name,
+                "path": str(f),
+                "dir": "skills/" + f.parent.name,
+                "created": datetime.fromtimestamp(f.stat().st_mtime).strftime('%Y-%m-%d %H:%M')
+            })
+    
+    # 按时间排序，最新的在前
+    md_files.sort(key=lambda x: x['created'], reverse=True)
+    return jsonify(md_files[:50])  # 限制 50 个
+
+@APP.route('/api/md-content')
+def api_md_content():
+    """获取 MD 文件内容"""
+    file_path = request.args.get('path', '')
+    try:
+        # 安全检查：确保路径在 workspace 内
+        full_path = Path(file_path).resolve()
+        if not str(full_path).startswith(str(WORKSPACE.resolve())):
+            return jsonify({"error": "Invalid path"}), 403
+        
+        if not full_path.exists():
+            return jsonify({"error": "File not found"}), 404
+        
+        with open(full_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+        
+        return jsonify({
+            "path": str(full_path),
+            "name": full_path.name,
+            "content": content
+        })
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+@APP.route('/md-viewer')
+def md_viewer():
+    """MD 文件查看器页面"""
+    return render_template('md_viewer.html')
 
 if __name__ == '__main__':
     print("🎯 太一 Dashboard 启动中...")

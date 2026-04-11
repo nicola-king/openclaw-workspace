@@ -307,6 +307,7 @@ def main():
     
     # 发布
     print(f"\n2. 发布模式：{args.mode}")
+    success = False
     
     if args.mode == 'email':
         # 短期方案：邮件发送

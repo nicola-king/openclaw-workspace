@@ -294,10 +294,11 @@
                 }
                 
                 list.innerHTML = reports.map(report => `
-                    <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                    <a href="/md-viewer?file=${encodeURIComponent(report.name)}" 
+                       class="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors block">
                         <span class="font-medium text-gray-700">📄 ${report.name}</span>
                         <span class="text-sm text-gray-500">${report.created}</span>
-                    </div>
+                    </a>
                 `).join('');
             } catch (error) {
                 console.error('加载报告失败:', error);
