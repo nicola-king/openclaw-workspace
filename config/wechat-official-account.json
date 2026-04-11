@@ -1,0 +1,12 @@
+{
+  "name": "SAYELF 山野精灵",
+  "app_id": "wx720a4c489fec9df3",
+  "app_secret": "94066275ad79af78b29b3c5f1ef7660c",
+  "status": "active",
+  "updated_at": "2026-04-11T17:30:00+08:00",
+  "features": {
+    "auto_publish": true,
+    "api_access": true,
+    "data_tracking": true
+  }
+}
