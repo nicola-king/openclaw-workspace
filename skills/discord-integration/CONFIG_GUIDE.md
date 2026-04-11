@@ -76,6 +76,21 @@
 
 ## ⚙️ 配置本地文件
 
+### 安装依赖
+
+**注意**: 需要稳定的网络连接
+
+```bash
+# 方法 1: 使用 pip (需要网络)
+pip install discord.py aiohttp --break-system-packages
+
+# 方法 2: 使用国内镜像
+pip install discord.py aiohttp -i https://pypi.tuna.tsinghua.edu.cn/simple --break-system-packages
+
+# 方法 3: 离线安装 (如有本地缓存)
+pip install discord.py --no-index --find-links=/path/to/cache --break-system-packages
+```
+
 ### 获取服务器 ID
 
 1. 在 Discord 中，右键点击服务器图标
