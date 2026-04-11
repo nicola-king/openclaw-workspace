@@ -32,6 +32,7 @@
       "env_prefix": "OPENAI",
       "auth_type": "api_key",
       "variants": [
+        {"id": "codex-latest", "name": "Codex Latest", "context": "128K", "usage": "code"},
         {"id": "gpt-4o", "name": "GPT-4o", "context": "128K", "usage": "visual"},
         {"id": "gpt-4-turbo", "name": "GPT-4 Turbo", "context": "128K", "usage": "backup"},
         {"id": "gpt-3.5-turbo", "name": "GPT-3.5 Turbo", "context": "16K", "usage": "cheap"}

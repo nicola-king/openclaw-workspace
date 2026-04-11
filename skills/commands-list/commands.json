@@ -1,0 +1,174 @@
+{
+  "commands": [
+    {
+      "name": "help",
+      "type": "runtime",
+      "description": "显示帮助信息",
+      "arguments": [],
+      "surface_aware": true
+    },
+    {
+      "name": "status",
+      "type": "runtime",
+      "description": "显示系统状态",
+      "arguments": [],
+      "surface_aware": true
+    },
+    {
+      "name": "memory",
+      "type": "runtime",
+      "description": "记忆管理",
+      "arguments": [
+        {
+          "name": "action",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "query",
+          "type": "string",
+          "required": false
+        }
+      ],
+      "surface_aware": true
+    },
+    {
+      "name": "config",
+      "type": "runtime",
+      "description": "配置管理",
+      "arguments": [
+        {
+          "name": "key",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "value",
+          "type": "any",
+          "required": false
+        }
+      ],
+      "surface_aware": true
+    },
+    {
+      "name": "reply",
+      "type": "text",
+      "description": "回复消息",
+      "arguments": [
+        {
+          "name": "message_id",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "content",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "surface_aware": true
+    },
+    {
+      "name": "quote",
+      "type": "text",
+      "description": "引用回复",
+      "arguments": [
+        {
+          "name": "message_id",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "content",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "surface_aware": true
+    },
+    {
+      "name": "cost.estimate",
+      "type": "skill",
+      "skill": "cost-agent",
+      "description": "造价估算",
+      "arguments": [
+        {
+          "name": "project_type",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "parameters",
+          "type": "object",
+          "required": false
+        }
+      ],
+      "surface_aware": true
+    },
+    {
+      "name": "memory.search",
+      "type": "skill",
+      "skill": "taiyi-memory-palace",
+      "description": "记忆搜索",
+      "arguments": [
+        {
+          "name": "query",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "limit",
+          "type": "integer",
+          "required": false
+        }
+      ],
+      "surface_aware": true
+    },
+    {
+      "name": "feishu.send",
+      "type": "plugin",
+      "plugin": "feishu",
+      "description": "发送飞书消息",
+      "arguments": [
+        {
+          "name": "user_id",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "content",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "surface_aware": true
+    },
+    {
+      "name": "telegram.send",
+      "type": "plugin",
+      "plugin": "telegram",
+      "description": "发送 Telegram 消息",
+      "arguments": [
+        {
+          "name": "chat_id",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "content",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "surface_aware": true
+    }
+  ],
+  "total": 10,
+  "by_type": {
+    "runtime": 4,
+    "text": 2,
+    "skill": 2,
+    "plugin": 2
+  },
+  "discovered_at": "2026-04-11T16:49:16.869959"
+}
