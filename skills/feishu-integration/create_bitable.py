@@ -122,7 +122,14 @@ def create_table(client: FeishuClient, app_id: str) -> str:
     result = client._request("POST", url, json=payload)
     
     if result.get('code') == 0:
-        return result['data']['table_id']
+        table_data = result.get('data', {})
+        if 'table' in table_data:
+            return table_data['table']['table_id']
+        elif 'table_id' in table_data:
+            return table_data['table_id']
+        else:
+            print(f"❌ 未知的响应格式：{result}")
+            return None
     else:
         print(f"❌ 创建失败：{result}")
         return None
