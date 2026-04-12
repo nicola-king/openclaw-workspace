@@ -30,6 +30,25 @@
       "auto_heal_actions": [],
       "self_check_passed": true,
       "emergence_signals": 80
+    },
+    {
+      "timestamp": "2026-04-12T22:45:01.358040",
+      "cpu_usage": 32.7,
+      "memory_usage": 0.0,
+      "disk_usage": 5.0,
+      "load_average": [
+        0.16064453125,
+        0.17333984375,
+        0.18408203125
+      ],
+      "gateway_running": true,
+      "gateway_port_ok": true,
+      "gateway_pid": "359130",
+      "gateway_response_ms": 5.2127838134765625,
+      "alerts": [],
+      "auto_heal_actions": [],
+      "self_check_passed": true,
+      "emergence_signals": 80
     }
   ],
   "performance_trends": {
@@ -40,8 +59,8 @@
       0.0
     ],
     "gateway_response_history": [
-      2.0999908447265625
+      5.2127838134765625
     ]
   },
-  "last_updated": "2026-04-12T22:33:31.292631"
+  "last_updated": "2026-04-12T22:45:01.358377"
 }

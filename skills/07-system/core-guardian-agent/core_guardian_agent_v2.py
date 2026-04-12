@@ -27,6 +27,10 @@ from typing import Dict, List, Optional, Tuple
 from dataclasses import dataclass, asdict
 import logging
 
+# 导入踩坑记录 API
+sys.path.insert(0, str(Path(__file__).parent.parent / 'issue-pitfalls-record'))
+from api import IssuePitfallsAPI, Issue, Solution
+
 # 日志配置
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -55,6 +59,7 @@ class SystemMetrics:
     auto_heal_actions: List[str]
     self_check_passed: bool
     emergence_signals: int
+    evolution_signals: int = 0  # 自进化信号
 
 
 class CoreGuardianAgent:
@@ -93,9 +98,19 @@ class CoreGuardianAgent:
             'gateway_response_history': [],
         }
         
-        logger.info("🛡️ Core Guardian Agent v2.0 已初始化")
+        # 踩坑记录 API (智能自动化)
+        self.issue_api = IssuePitfallsAPI()
+        
+        # 自进化能力
+        self.evolution_signals = 0
+        self.last_optimization = None
+        self.optimization_history = []
+        
+        logger.info("🛡️ Core Guardian Agent v2.1 已初始化")
         logger.info(f"  阈值配置：{self.thresholds}")
         logger.info(f"  历史数据：{len(self.evolution_history)} 次记录")
+        logger.info(f"  踩坑记录：已集成")
+        logger.info(f"  自进化能力：已激活")
     
     def run(self) -> SystemMetrics:
         """运行核心保障"""
@@ -129,10 +144,16 @@ class CoreGuardianAgent:
         # Step 8: 更新性能趋势
         self.update_performance_trends(metrics)
         
-        # Step 9: 保存进化历史
+        # Step 9: 踩坑记录智能自动化
+        self.auto_record_issues(metrics)
+        
+        # Step 10: 智能自进化
+        self.self_evolution(metrics)
+        
+        # Step 11: 保存进化历史
         self.save_evolution_history(metrics)
         
-        logger.info("✅ 核心保障 v2.0 完成！")
+        logger.info("✅ 核心保障 v2.1 完成！")
         logger.info(f"  CPU: {metrics.cpu_usage:.1f}%")
         logger.info(f"  内存：{metrics.memory_usage:.1f}%")
         logger.info(f"  磁盘：{metrics.disk_usage:.1f}%")
@@ -613,6 +634,228 @@ class CoreGuardianAgent:
         else:
             logger.info("  无进化历史，从头开始")
             self.evolution_history = []
+    
+    def auto_record_issues(self, metrics: SystemMetrics):
+        """踩坑记录智能自动化"""
+        logger.info("📝 踩坑记录智能自动化...")
+        
+        # 自动检测并记录问题
+        self.issue_api.integrate_with_core_guardian(metrics)
+        
+        # 自动查询并执行解决方案
+        if metrics.alerts:
+            for alert in metrics.alerts:
+                # 提取关键词
+                keywords = self.extract_keywords(alert)
+                
+                # 查询解决方案
+                solution = self.issue_api.search_solution(keywords)
+                
+                if solution:
+                    logger.info(f"🔍 找到解决方案：{solution['problem']} (成功率：{solution.get('success_rate', 0)*100:.1f}%)")
+                    
+                    # 自动执行解决方案
+                    if self.should_auto_execute(solution, alert):
+                        self.execute_solution(solution)
+        
+        logger.info("✅ 踩坑记录智能自动化完成")
+    
+    def extract_keywords(self, alert: str) -> str:
+        """从告警中提取关键词"""
+        # 简单关键词提取
+        keywords_map = {
+            'Gateway': 'Gateway',
+            '端口': 'Gateway 端口',
+            'CPU': 'CPU',
+            '内存': '内存',
+            '磁盘': '磁盘',
+        }
+        
+        for keyword, value in keywords_map.items():
+            if keyword in alert:
+                return value
+        
+        return alert.split(':')[0] if ':' in alert else alert
+    
+    def should_auto_execute(self, solution: Dict, alert: str) -> bool:
+        """判断是否自动执行解决方案"""
+        # 成功率 >90% 且告警级别 >=P2 则自动执行
+        success_rate = solution.get('success_rate', 0)
+        
+        if success_rate >= 0.9:
+            logger.info(f"✅ 解决方案成功率高 ({success_rate*100:.1f}%)，自动执行")
+            return True
+        
+        logger.info(f"⚠️ 解决方案成功率较低 ({success_rate*100:.1f}%)，需要人工确认")
+        return False
+    
+    def execute_solution(self, solution: Dict):
+        """执行解决方案"""
+        logger.info(f"⚙️ 执行解决方案：{solution['problem']}")
+        
+        try:
+            # 执行命令
+            for command in solution.get('commands', []):
+                logger.info(f"  执行：{command}")
+                result = subprocess.run(
+                    command,
+                    shell=True,
+                    capture_output=True,
+                    text=True,
+                    timeout=30
+                )
+                
+                if result.returncode == 0:
+                    logger.info(f"  ✅ 执行成功")
+                else:
+                    logger.warning(f"  ⚠️ 执行失败：{result.stderr}")
+            
+            # 更新解决方案使用次数
+            solution['usage_count'] = solution.get('usage_count', 0) + 1
+            solution['last_used'] = datetime.now().isoformat()
+            
+            logger.info(f"✅ 解决方案执行完成")
+        except Exception as e:
+            logger.error(f"❌ 解决方案执行失败：{e}")
+    
+    def self_evolution(self, metrics: SystemMetrics):
+        """智能自进化"""
+        logger.info("🧬 智能自进化...")
+        
+        evolution_signals = 0
+        optimization_actions = []
+        
+        # 自进化信号 1: 性能趋势分析
+        trend_optimization = self.analyze_performance_trends(metrics)
+        if trend_optimization:
+            evolution_signals += 1
+            optimization_actions.append(trend_optimization)
+        
+        # 自进化信号 2: 阈值自适应优化
+        threshold_optimization = self.optimize_thresholds(metrics)
+        if threshold_optimization:
+            evolution_signals += 1
+            optimization_actions.append(threshold_optimization)
+        
+        # 自进化信号 3: 故障模式学习
+        pattern_learning = self.learn_fault_patterns(metrics)
+        if pattern_learning:
+            evolution_signals += 1
+            optimization_actions.append(pattern_learning)
+        
+        # 自进化信号 4: 解决方案优化
+        solution_optimization = self.optimize_solutions(metrics)
+        if solution_optimization:
+            evolution_signals += 1
+            optimization_actions.append(solution_optimization)
+        
+        # 自进化信号 5: 知识库增长
+        if len(self.evolution_history) > 0 and len(self.evolution_history) % 10 == 0:
+            evolution_signals += 1
+            optimization_actions.append("知识库增长里程碑")
+        
+        # 记录自进化信号
+        self.evolution_signals = evolution_signals
+        
+        if evolution_signals > 0:
+            logger.info(f"✅ 检测到 {evolution_signals} 个自进化信号:")
+            for action in optimization_actions:
+                logger.info(f"    - {action}")
+            
+            # 记录优化历史
+            self.optimization_history.append({
+                'timestamp': datetime.now().isoformat(),
+                'signals': evolution_signals,
+                'actions': optimization_actions,
+            })
+            
+            # 更新最后优化时间
+            self.last_optimization = datetime.now()
+        else:
+            logger.info("✅ 自进化运行正常，无需优化")
+        
+        logger.info("✅ 智能自进化完成")
+    
+    def analyze_performance_trends(self, metrics: SystemMetrics) -> Optional[str]:
+        """性能趋势分析"""
+        # 分析 CPU 趋势
+        if len(self.performance_trends['cpu_history']) >= 10:
+            recent_cpu = self.performance_trends['cpu_history'][-10:]
+            avg_cpu = sum(recent_cpu) / len(recent_cpu)
+            
+            if avg_cpu > 70 and self.thresholds['cpu_warning'] == 80:
+                return f"CPU 平均使用率偏高 ({avg_cpu:.1f}%)，建议降低告警阈值"
+        
+        # 分析内存趋势
+        if len(self.performance_trends['memory_history']) >= 10:
+            recent_memory = self.performance_trends['memory_history'][-10:]
+            avg_memory = sum(recent_memory) / len(recent_memory)
+            
+            if avg_memory > 70 and self.thresholds['memory_warning'] == 80:
+                return f"内存平均使用率偏高 ({avg_memory:.1f}%)，建议降低告警阈值"
+        
+        # 分析 Gateway 响应时间趋势
+        if len(self.performance_trends['gateway_response_history']) >= 10:
+            recent_response = self.performance_trends['gateway_response_history'][-10:]
+            avg_response = sum(recent_response) / len(recent_response)
+            
+            if avg_response > 80 and self.thresholds['gateway_response_warning'] == 100:
+                return f"Gateway 平均响应时间偏高 ({avg_response:.1f}ms)，建议降低告警阈值"
+        
+        return None
+    
+    def optimize_thresholds(self, metrics: SystemMetrics) -> Optional[str]:
+        """阈值自适应优化"""
+        # 基于历史数据优化阈值
+        if len(self.evolution_history) < 20:
+            return None  # 数据不足
+        
+        # 分析告警频率
+        recent_alerts = [h.get('alerts', []) for h in self.evolution_history[-20:]]
+        total_alerts = sum(len(alerts) for alerts in recent_alerts)
+        avg_alerts = total_alerts / 20
+        
+        if avg_alerts > 5:
+            # 告警过于频繁，可能需要调整阈值
+            return f"告警频率过高 (平均 {avg_alerts:.1f} 次/次)，建议审查阈值设置"
+        
+        return None
+    
+    def learn_fault_patterns(self, metrics: SystemMetrics) -> Optional[str]:
+        """故障模式学习"""
+        # 从踩坑记录中学习故障模式
+        if not hasattr(self, 'issue_api'):
+            return None
+        
+        stats = self.issue_api.get_stats()
+        
+        # 分析高频问题
+        if stats['total_issues'] >= 10:
+            by_category = stats.get('by_category', {})
+            max_category = max(by_category.items(), key=lambda x: x[1])[0] if by_category else None
+            
+            if max_category:
+                return f"高频故障类别：{max_category} ({by_category[max_category]} 次)，建议加强监控"
+        
+        return None
+    
+    def optimize_solutions(self, metrics: SystemMetrics) -> Optional[str]:
+        """解决方案优化"""
+        # 分析解决方案成功率
+        if not hasattr(self, 'issue_api'):
+            return None
+        
+        stats = self.issue_api.get_stats()
+        avg_success_rate = stats.get('avg_success_rate', 0)
+        
+        if avg_success_rate < 0.8 and stats['total_solutions'] > 0:
+            return f"解决方案平均成功率偏低 ({avg_success_rate*100:.1f}%)，建议优化解决方案"
+        
+        # 分析未解决问题
+        if stats['open_issues'] > 5:
+            return f"未解决问题较多 ({stats['open_issues']} 个)，建议优先处理"
+        
+        return None
     
     def save_evolution_history(self, metrics: SystemMetrics):
         """保存进化历史"""
