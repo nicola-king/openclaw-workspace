@@ -1,294 +1,212 @@
-# 太一技能库 v2.0 - 整合版
+# 📚 太一技能库索引
 
-> **版本**: 2.1.0 | **更新时间**: 2026-04-07 08:45  
-> **技能数量**: 88 (原 127，减少 30.7%)  
-> **状态**: ✅ 文档完善完成
+> **版本**: v2.0 (分类整理版)  
+> **更新**: 2026-04-12 19:20  
+> **技能总数**: 451 个  
+> **分类数**: 8 大类
 
 ---
 
-## 📊 技能架构
+## 🗂️ 分类导航
 
-### 三层架构
+| 分类 | 目录 | 数量 | 说明 |
+|------|------|------|------|
+| **01** | [01-trading/](#01-trading-交易类) | ~15 | 交易类技能 |
+| **02** | [02-business/](#02-business-业务类) | ~20 | 业务类技能 |
+| **03** | [03-automation/](#03-automation-自动化类) | ~50 | 自动化类技能 |
+| **04** | [04-integration/](#04-integration-集成类) | ~30 | 集成类技能 |
+| **05** | [05-content/](#05-content-内容类) | ~40 | 内容类技能 |
+| **06** | [06-analysis/](#06-analysis-分析类) | ~35 | 分析类技能 |
+| **07** | [07-system/](#07-system-系统类) | ~40 | 系统类技能 |
+| **08** | [08-emerged/](#08-emerged-涌现技能) | ~220 | 涌现技能 (待整理) |
 
+---
+
+## 📋 详细分类
+
+### 01-trading/ 交易类
+
+**核心技能**:
+- `binance-trading-agent` - 币安交易 Agent
+- `gmgn-trading-agent` - GMGN 链上交易 Agent
+- `polymarket-trading-agent` - Polymarket 预测市场交易 Agent
+- `cross-border-trade-agent` - 跨境贸易 Agent
+- `zhiji-sentiment` - 知几情绪分析
+- `turboquant` - TurboQuant 量化交易
+- `trading` - 统一交易引擎
+- `alpha-vantage` - Alpha Vantage 金融数据
+- `coingecko-price` - CoinGecko 加密货币价格
+- `portfolio-tracker` - 投资组合追踪
+- `cost-tracker` - 成本追踪
+
+**用途**: 交易执行、量化策略、金融数据分析
+
+---
+
+### 02-business/ 业务类
+
+**核心技能**:
+- `cost-agent` - 市政工程造价 Agent
+- `civil-engineering-cost` - 土木工程造价
+- `市政工程造价` - 定额知识库
+- `airtable-sync` - Airtable 数据同步
+- `gumroad` - Gumroad 销售管理
+- `ecommerce-workflow` - 电商工作流程
+
+**用途**: 工程造价、业务管理、销售流程
+
+---
+
+### 03-automation/ 自动化类
+
+**核心技能**:
+- `auto-exec` - 自动执行
+- `auto-retry-executor` - 自动重试执行
+- `auto-skill-generator` - 自动生成技能
+- `auto-evolution-system` - 自进化系统
+- `self-heal` - 自愈系统
+- `task-orchestrator` - 任务编排
+- `smart-skills-manager` - 智能技能管理
+- `crontab-manager` - 定时任务管理
+- `daily-report-generator` - 日报生成
+- `heartbeat-cli` - 心跳检查
+- `emergency-stop` - 紧急停止
+
+**用途**: 自动化任务、系统维护、定时执行
+
+---
+
+### 04-integration/ 集成类
+
+**核心技能**:
+- `browser-automation` - 浏览器自动化
+- `feishu` - 飞书集成
+- `discord-integration` - Discord 集成
+- `wechat` - 微信集成
+- `ssh` - SSH 远程控制
+- `baidu-netdisk-integration` - 百度网盘集成
+- `git-integration` - Git 集成
+
+**用途**: 第三方平台集成、外部服务连接
+
+---
+
+### 05-content/ 内容类
+
+**核心技能**:
+- `content-creator` - 内容创作引擎
+- `shanmu` - 山木文案生成
+- `visual-designer` - 视觉设计引擎
+- `artistic-code` - 艺术代码生成
+- `aesthetic-scorer` - 美学评分
+- `chinese-traditional-aesthetics` - 中国传统美学
+- `classic-chinese-poetry` - 中国古典诗词
+- `china-textbook-search` - 教材搜索
+- `epub-book-generator` - EPUB 电子书生成
+- `tts` - 语音合成
+- `video-factory` - 视频工厂
+- `video-processor` - 视频处理
+
+**用途**: 内容创作、视觉设计、媒体处理
+
+---
+
+### 06-analysis/ 分析类
+
+**核心技能**:
+- `wangliang` - 王良知识库搜索
+- `semantic-search` - 语义搜索
+- `news-fetcher` - 新闻获取
+- `unsplash-image` - Unsplash 图片搜索
+- `public-apis-index` - 公共 API 索引
+- `data-visualization` - 数据可视化
+- `chart-generator` - 图表生成
+
+**用途**: 数据分析、信息检索、可视化
+
+---
+
+### 07-system/ 系统类
+
+**核心技能**:
+- `taiyi` - 太一 AGI 总管 ⭐
+- `taiyi-memory-palace` - 太一记忆宫殿
+- `taiyi-memory-v3` - 太一记忆系统 v3.0
+- `taiyi-voice-agent` - 太一语音 Agent
+- `taiyi-education-agent` - 太一教育 Agent
+- `taiyi-office-agent` - 太一办公 Agent
+- `taiyi-diagram-agent` - 太一图表 Agent
+- `smart-model-router` - 智能模型路由
+- `smart-router` - 智能路由
+- `healthcheck` - 健康检查
+- `security-hardening` - 安全加固
+- `npm-audit` - NPM 安全审计
+- `cli-toolkit` - CLI 工具集
+
+**用途**: 系统核心、模型调度、安全管理
+
+---
+
+### 08-emerged/ 涌现技能
+
+**说明**: 自进化系统自动生成的技能，共 220+ 个
+
+**命名规则**:
 ```
-┌─────────────────────────────────────────┐
-│  Layer 1: Bot 专属技能 (8 个)              │
-│  太一/知几/山木/素问/罔两/庖丁/羿/守藏吏    │
-└─────────────────────────────────────────┘
-              ↓ 调用
-┌─────────────────────────────────────────┐
-│  Layer 2: 通用技能 (~40 个)               │
-│  整合后：browser/gmgn/content/visual/... │
-└─────────────────────────────────────────┘
-              ↓ 依赖
-┌─────────────────────────────────────────┐
-│  Layer 3: 工具技能 (~40 个)               │
-│  独立工具：feishu/ssh/tts/weather/...    │
-└─────────────────────────────────────────┘
+emerged-skill-YYYYMMDD-HHMMSS/
+```
+
+**处理策略**:
+1. 定期分析功能
+2. 归类到上述 7 大类
+3. 重命名规范
+4. 删除重复/无用
+
+**待整理数量**: ~220 个
+
+---
+
+## 🔍 快速查找
+
+**按名称搜索**:
+```bash
+cd /home/nicola/.openclaw/workspace/skills
+find . -name "*trading*" -type d
+```
+
+**按分类查找**:
+```bash
+ls -la 01-trading/
+ls -la 07-system/
+```
+
+**查看技能详情**:
+```bash
+cat 01-trading/binance-trading-agent/SKILL.md
 ```
 
 ---
 
-## 🏆 核心技能
+## 📊 统计信息
 
-### 基础设施
-
-| 技能 | 说明 | 优先级 |
-|------|------|--------|
-| **smart-model-router** | 智能模型路由 | P0 |
-| **smart-router** | 智能技能路由 | P0 |
-| **shared** | 共享数据层 | P0 |
-
-### 业务技能
-
-| 技能 | 说明 | 优先级 |
-|------|------|--------|
-| **browser-automation** | 浏览器自动化 | P0 |
-| **gmgn** | GMGN 链上交易 | P0 |
-| **content-creator** | 内容创作引擎 | P0 |
-| **visual-designer** | 视觉设计引擎 | P0 |
-| **cli-toolkit** | CLI 工具集 | P1 |
-| **monitoring** | 监控告警 | P1 |
-| **trading** | 交易引擎 | P1 |
+| 指标 | 数值 |
+|------|------|
+| 技能总数 | 451 个 |
+| 已分类 | 230 个 (51%) |
+| 待整理 | 220 个 (49%) |
+| 分类数 | 8 大类 |
+| GitHub 发布 | 9 个 |
 
 ---
 
-## 📈 整合成果
+## 🔗 相关链接
 
-### P0 整合 (2026-04-07 08:19-08:50)
-
-- ✅ browser-automation (3→1)
-- ✅ smart-model-router (4→1)
-- ✅ gmgn (6→2)
-- ✅ content-creator (5→1)
-- ✅ visual-designer (4→1)
-- ✅ shared 共享层 (已存在)
-- ✅ smart-router 路由引擎 (已存在)
-
-**减少**: 14 技能 (11%)
-
-### P1 整合 (2026-04-07 09:00-09:15)
-
-- ✅ cli-toolkit (5→1)
-- ✅ monitoring (4→1)
-- ✅ trading (3→1)
-- ✅ 技能注册表更新
-
-**减少**: 9 技能 (8%)
-
-### 累计
-
-- **初始**: 127 技能
-- **当前**: 88 技能
-- **减少**: 39 技能 (30.7%)
+- **GitHub**: https://github.com/nicola-king
+- **文档**: `/home/nicola/.openclaw/workspace/docs/`
+- **分类方案**: `SKILLS_CATEGORY_PLAN.md`
 
 ---
 
-## 🚀 快速开始
+**📚 太一技能库 - 分类整理 v2.0**
 
-### 使用技能
-
-```python
-# 导入共享层
-from skills.shared import SharedDatabase, EventBus
-
-# 使用浏览器自动化
-from skills.browser_automation import BrowserAutomation
-
-# 使用 GMGN
-from skills.gmgn import GMGN
-
-# 使用内容创作
-from skills.content_creator import ContentCreator
-```
-
-### 智能路由
-
-```python
-from skills.smart_router import SmartRouter
-
-router = SmartRouter()
-skill = router.route("帮我分析一下 Polymarket 市场")
-# 自动选择最优技能
-```
-
----
-
-## 📚 文档
-
-### 整合报告
-- [P0 整合报告](../reports/skill-integration-p0.md)
-- [P1 整合报告](../reports/skill-integration-p1.md)
-- [P2 文档完善报告](../reports/p2-docs-completion.md)
-
-### 使用文档
-- [技能使用手册](USAGE.md)
-- [技能注册表](registry.yaml)
-
-### 技能文档
-- [GMGN](gmgn/README.md) - 链上交易
-- [Content Creator](content-creator/README.md) - 内容创作
-- [Visual Designer](visual-designer/README.md) - 视觉设计
-- [CLI Toolkit](cli-toolkit/README.md) - CLI 工具集
-- [Monitoring](monitoring/README.md) - 监控告警
-- [Trading](trading/README.md) - 交易引擎
-- [Smart Router](smart-router/README.md) - 智能技能路由
-- [Smart Model Router](smart-model-router/README.md) - 智能模型路由
-- [Browser Automation](browser-automation/README.md) - 浏览器自动化
-- [Shared](shared/README.md) - 共享数据层
-
----
-
-## 📋 完整技能列表
-
-### Bot 专属 (8)
-
-| 技能 | 负责 Bot | 说明 |
-|------|---------|------|
-| taiyi | 太一 | AGI 执行总管 |
-| zhiji | 知几 | 量化交易策略 |
-| zhiji-sentiment | 知几 | 金融情绪分析 |
-| shanmu | 山木 | 内容创意生成 |
-| shanmu-reporter | 山木 | 金融研报生成 |
-| suwen | 素问 | 技术开发 |
-| wangliang | 罔两 | 知识库搜索 |
-| paoding | 庖丁 | 预算成本分析 |
-
-### 基础设施 (5)
-
-| 技能 | 说明 |
-|------|------|
-| smart-model-router | 智能模型路由引擎 |
-| smart-router | 智能技能路由引擎 |
-| shared | 共享数据层 (数据库/事件总线/缓存) |
-| task-orchestrator | 任务编排引擎 |
-| smart-skills-manager | 智能技能管理器 |
-
-### 浏览器自动化 (2)
-
-| 技能 | 说明 |
-|------|------|
-| browser-automation | Playwright 网页导航/交互/截图 |
-| geo-automation | 地理位置自动化 |
-
-### 交易金融 (10)
-
-| 技能 | 说明 |
-|------|------|
-| gmgn | GMGN 链上交易统一 API |
-| gmgn-cooking | 代币发射平台 |
-| trading | 交易引擎 (币安/Polymarket) |
-| portfolio-tracker | 投资组合追踪 |
-| alpha-vantage | 股票/外汇数据 |
-| coingecko-price | 加密货币价格 |
-| news-fetcher | 新闻数据采集 |
-| public-apis-index | 公共 API 索引 |
-| turboquant | 量化交易框架 |
-| tianji | 聪明钱追踪 |
-
-### 内容创作 (4)
-
-| 技能 | 说明 |
-|------|------|
-| content-creator | 内容创作引擎 (排期/优化/发布) |
-| shanmu-reporter | 专业金融研报 |
-| epub-book-generator | EPUB 电子书生成 |
-| video-factory | 视频工厂 |
-
-### 视觉设计 (4)
-
-| 技能 | 说明 |
-|------|------|
-| visual-designer | 图表/卡片/艺术生成 |
-| unsplash-image | 高质量图片搜索 |
-| paddleocr | OCR 文字识别 |
-| video-processor | 视频处理 |
-
-### CLI 工具 (8)
-
-| 技能 | 说明 |
-|------|------|
-| cli-toolkit | 云厂商/DevOps 工具集 |
-| git-integration | Git 操作集成 |
-| gemini-cli | Gemini CLI 封装 |
-| jimeng-cli | 即梦 CLI 封装 |
-| notebooklm-cli | NotebookLM CLI |
-| ssh | SSH 远程控制 |
-| terraform-apply | Terraform 部署 |
-| npm-audit | NPM 安全审计 |
-
-### 监控告警 (4)
-
-| 技能 | 说明 |
-|------|------|
-| monitoring | 监控告警系统 |
-| self-check | 系统自检 |
-| api-monitor | API 监控 |
-| upgrade-guard | 升级守卫 |
-
-### 数据通信 (8)
-
-| 技能 | 说明 |
-|------|------|
-| feishu | 飞书消息/文档/多维表格 |
-| wechat | 微信集成 |
-| slack-notify | Slack 通知 |
-| tts | 文字转语音 |
-| tts-alternatives | TTS 替代方案 |
-| webhook-relay | Webhook 中继 |
-| email-sender | 邮件发送 |
-| notion-db | Notion 数据库 |
-
-### 开发工具 (6)
-
-| 技能 | 说明 |
-|------|------|
-| github | GitHub 操作 |
-| gh-issues | GitHub Issues 处理 |
-| rust-bridge | Rust 桥接 |
-| vector-db | 向量数据库 |
-| rag-pipeline | RAG 流水线 |
-| llm-finetune | LLM 微调 |
-
-### 工作流 (8)
-
-| 技能 | 说明 |
-|------|------|
-| arc-reel-workflow | 视频工作流 |
-| ecommerce-workflow | 电商工作流 |
-| the-well-processor | 内容处理器 |
-| task-orchestrator | 任务编排 |
-| flowsint-integration | Flowsint 集成 |
-| zapier-trigger | Zapier 触发器 |
-| airtable-sync | Airtable 同步 |
-| crontab-manager | 定时任务管理 |
-
-### 工具技能 (21)
-
-| 技能 | 说明 |
-|------|------|
-| weather | 天气预报 |
-| pet-companion | 宠物伴侣 |
-| play-music | 音乐播放 |
-| tv-control | 电视控制 |
-| heal-state | 状态恢复 |
-| steward | 管家服务 |
-| yi | 易学咨询 |
-| yijing | 易经占卜 |
-| easter-egg | 彩蛋功能 |
-| undercover-mode | 潜伏模式 |
-| artistic-code | 艺术代码 |
-| aesthetic-scorer | 美学评分 |
-| agent-swap | Agent 交换 |
-| cost-tracker | 成本追踪 |
-| roi-tracker | ROI 追踪 |
-| growth-experiment | 增长实验 |
-| gumroad | Gumroad 集成 |
-| marketplace | 市场集成 |
-| meta-skill-creator | 元技能创建 |
-| qa-supervisor | QA 监督 |
-| today-stage | 今日阶段 |
-
----
-
-*维护：太一 AGI | 技能库 v2.0*
+**太一 AGI · 2026-04-12**
