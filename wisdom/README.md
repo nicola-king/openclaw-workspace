@@ -1,97 +1,127 @@
-# 📚 太一智慧库
+# 📿 智慧推送系统
 
-> **创建时间**: 2026-04-12 23:58  
-> **内容**: 道家智慧 + 佛家智慧  
-> **推送时间**: 每日早晨 8:00
+> 每日晨间智慧 · 道家与佛家经典
 
 ---
 
-## 🌅 每日道家智慧
+## 📁 文件结构
 
-**来源**: Dao.Agent  
-**经典**: 道德经、庄子、列子  
-**推送时间**: 每日 08:00
-
-**今日智慧**:
 ```
-查看：dao_wisdom_today.md
-```
-
-**历史记录**:
-```
-查看：dao_wisdom_history.json
+wisdom/
+├── dao-buddha-quotes.md    # 智慧语录库（50+ 条）
+├── moments-v1.txt          # 朋友圈格式 1 - 简约风
+├── moments-v2.txt          # 朋友圈格式 2 - 禅意风
+├── moments-v3.txt          # 朋友圈格式 3 - 竖排古风
+├── moments-v4.txt          # 朋友圈格式 4 - 极简风
+└── README.md               # 本文件
 ```
 
 ---
 
-## 🌸 每日佛家智慧
+## ⏰ 定时推送
 
-**来源**: 悟.Agent (Satori Agent)  
-**经典**: 心经、金刚经、六祖坛经等 10 部  
-**推送时间**: 每日 08:00
-
-**今日智慧**:
-```
-查看：buddhist_wisdom_today.md
-```
-
-**历史记录**:
-```
-查看：buddhist_wisdom_history.json
-```
-
----
-
-## 📅 推送配置
-
-**Crontab 配置**:
+### 微信会话（每日 8:00）
 ```bash
-# 每日 08:00 - 道家 + 佛家智慧推送
-0 8 * * * /home/nicola/.openclaw/workspace/scripts/daily-wisdom-push.sh
+0 8 * * * bash ~/.openclaw/workspace/scripts/daily-wisdom.sh
 ```
 
-**手动执行**:
+### 朋友圈分享（手动）
 ```bash
-# 道家智慧
-python3 /home/nicola/.openclaw/workspace/skills/dao-agent/daily_dao_wisdom.py
-
-# 佛家智慧
-python3 /home/nicola/.openclaw/workspace/skills/wu-enlightenment/daily_buddhist_wisdom.py
-
-# 两者都推送
-bash /home/nicola/.openclaw/workspace/scripts/daily-wisdom-push.sh
+bash ~/.openclaw/workspace/scripts/daily-wisdom-moments.sh
 ```
 
 ---
 
-## 📊 智慧统计
+## 🎯 使用方式
 
-**道家智慧**:
-- 经典：3 部 (道德经、庄子、列子)
-- 句子：20+ 句
-- 推送：每日 1 句
+### 方式 1：微信会话卡片
+- 自动推送：每日 8:00 准时发送
+- 格式：精美卡片，适合私聊接收
 
-**佛家智慧**:
-- 经典：6 部 (心经、金刚经、六祖坛经等)
-- 句子：20+ 句
-- 推送：每日 1 句
+### 方式 2：朋友圈分享
+- 手动执行脚本生成 4 种格式
+- 选择喜欢的格式复制粘贴
+- 适合配图发朋友圈
 
----
-
-## 🔗 相关链接
-
-**Dao.Agent**:
-```
-https://github.com/nicola-king/dao.agent
-```
-
-**悟.Agent (Satori Agent)**:
-```
-https://github.com/nicola-king/satori-agent
-```
+### 方式 3：手动触发
+发送 `/智慧` 或 `/每日智慧` 立即获取
 
 ---
 
-**📚 太一智慧库 - 每日启迪心灵！**
+## 📱 朋友圈格式预览
 
-**太一 AGI · 2026-04-12**
+### 格式 1 - 简约风
+```
+📅 2026-04-13  ·  周一
+━━━━━━━━━━━━━━━━
+
+📿 晨间智慧
+
+上善若水，水善利万物而不争。
+
+—— 《道德经》
+
+🙏 太一 · 晨起静心
+```
+
+### 格式 2 - 禅意风
+```
+╭ ◜◝ ͡ ◜◝ ͡ ◜◝ ╮
+   晨间智慧
+╰ ◟◞ ͜ ◟◞ ͜ ◟◞ ╯
+
+2026-04-13  ·  周一
+
+上善若水，水善利万物而不争。
+
+  《道德经》
+  
+🌿 太一
+```
+
+### 格式 3 - 竖排古风
+```
+【晨间智慧】
+2026-04-13  周一
+──────────
+上善若水，水善利万物而不争。
+──────────
+《道德经》
+🙏
+```
+
+### 格式 4 - 极简风
+```
+上善若水，水善利万物而不争。
+
+—— 《道德经》 · 道家
+
+📿 2026-04-13
+```
+
+---
+
+## 📊 推送记录
+
+查看 `memory/daily-wisdom-log.md` 了解历史推送。
+
+---
+
+## 🔧 自定义
+
+### 添加新语录
+编辑 `dao-buddha-quotes.md`，按现有格式添加即可。
+
+### 修改推送时间
+```bash
+crontab -e
+# 修改第一行的时间（分 时 日 月 周）
+```
+
+### 新增朋友圈格式
+参考 `scripts/daily-wisdom-moments.sh` 添加新变量。
+
+---
+
+*创建时间：2026-04-12*
+*状态：✅ 已激活*

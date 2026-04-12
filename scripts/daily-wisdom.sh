@@ -5,8 +5,19 @@
 WORKSPACE="$HOME/.openclaw/workspace"
 WISDOM_FILE="$WORKSPACE/wisdom/dao-buddha-quotes.md"
 DATE=$(date +%Y-%m-%d)
+WEEKDAY_NUM=$(date +%u)
 HOUR=$(date +%H)
-WEEKDAY=$(date +%A)
+
+# 星期映射（数字转中文）
+case $WEEKDAY_NUM in
+    1) WEEKDAY_CN="周一" ;;
+    2) WEEKDAY_CN="周二" ;;
+    3) WEEKDAY_CN="周三" ;;
+    4) WEEKDAY_CN="周四" ;;
+    5) WEEKDAY_CN="周五" ;;
+    6) WEEKDAY_CN="周六" ;;
+    7) WEEKDAY_CN="周日" ;;
+esac
 
 # 从智慧库中随机选择一句
 get_random_quote() {
@@ -81,7 +92,7 @@ TYPE=$(get_type "$SOURCE")
 
 # 生成卡片格式消息（适合微信转发）
 CARD_MESSAGE="━━━━━━━━━━━━━━━━━━
-📿  晨间智慧  ·  $DATE
+📿  晨间智慧  ·  $DATE  $WEEKDAY_CN
 ━━━━━━━━━━━━━━━━━━
 
 $TYPE  ·  $SOURCE
