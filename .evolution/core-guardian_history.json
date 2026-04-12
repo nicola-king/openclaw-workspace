@@ -1,0 +1,17 @@
+{
+  "history": [
+    {
+      "timestamp": "2026-04-12T22:26:26.971667",
+      "cpu_usage": 0.0,
+      "memory_usage": 0.0,
+      "disk_usage": 0.0,
+      "gateway_running": true,
+      "gateway_port_ok": true,
+      "alerts": [
+        "系统资源检查失败：could not convert string to float: '3.6 us'"
+      ],
+      "auto_heal_actions": []
+    }
+  ],
+  "last_updated": "2026-04-12T22:26:26.971946"
+}

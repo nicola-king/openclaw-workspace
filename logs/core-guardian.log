@@ -1,0 +1,52 @@
+2026-04-12 22:26:26,607 - CoreGuardianAgent - INFO - 🛡️ Core Guardian Agent 启动...
+2026-04-12 22:26:26,607 - CoreGuardianAgent - INFO -   无进化历史，从头开始
+2026-04-12 22:26:26,607 - CoreGuardianAgent - INFO - 🛡️ Core Guardian Agent 已初始化
+2026-04-12 22:26:26,607 - CoreGuardianAgent - INFO -   阈值配置：{'cpu_warning': 80, 'cpu_critical': 90, 'memory_warning': 80, 'memory_critical': 90, 'disk_warning': 90, 'disk_critical': 95}
+2026-04-12 22:26:26,607 - CoreGuardianAgent - INFO -   历史数据：0 次记录
+2026-04-12 22:26:26,607 - CoreGuardianAgent - INFO - 🛡️ 开始运行核心保障...
+2026-04-12 22:26:26,607 - CoreGuardianAgent - INFO - 📊 检查 Ubuntu 系统资源...
+2026-04-12 22:26:26,884 - CoreGuardianAgent - ERROR - ❌ 系统资源检查失败：could not convert string to float: '3.6 us'
+2026-04-12 22:26:26,884 - CoreGuardianAgent - INFO - 🤖 检查 Gateway 状态...
+2026-04-12 22:26:26,968 - CoreGuardianAgent - INFO - ✅ Gateway 进程运行中 (PID: 359130)
+2026-04-12 22:26:26,971 - CoreGuardianAgent - INFO - ✅ Gateway 端口 18789 正常监听
+2026-04-12 22:26:26,971 - CoreGuardianAgent - INFO - 🔧 检查是否需要自动修复...
+2026-04-12 22:26:26,971 - CoreGuardianAgent - INFO - ✅ 无需自动修复
+2026-04-12 22:26:26,971 - CoreGuardianAgent - INFO - 🚨 发送告警...
+2026-04-12 22:26:26,971 - CoreGuardianAgent - INFO - 🚨 告警消息:
+🛡️ Core Guardian 告警
+
+时间：2026-04-12T22:26:26.971667
+
+系统状态:
+- CPU: 0.0%
+- 内存：0.0%
+- 磁盘：0.0%
+- Gateway: ✅
+
+告警：1 个
+- 系统资源检查失败：could not convert string to float: '3.6 us'
+
+2026-04-12 22:26:26,972 - CoreGuardianAgent - INFO - ✅ 进化历史已保存：/home/nicola/.openclaw/workspace/.evolution/core-guardian_history.json
+2026-04-12 22:26:26,972 - CoreGuardianAgent - INFO - ✅ 核心保障完成！
+2026-04-12 22:26:26,972 - CoreGuardianAgent - INFO -   CPU: 0.0%
+2026-04-12 22:26:26,972 - CoreGuardianAgent - INFO -   内存：0.0%
+2026-04-12 22:26:26,972 - CoreGuardianAgent - INFO -   磁盘：0.0%
+2026-04-12 22:26:26,972 - CoreGuardianAgent - INFO -   Gateway: ✅
+2026-04-12 22:26:26,972 - CoreGuardianAgent - INFO -   告警：1 个
+2026-04-12 22:26:26,972 - CoreGuardianAgent - INFO -   自愈：0 个
+2026-04-12 22:26:26,972 - CoreGuardianAgent - INFO - ✅ Core Guardian Agent 完成！
+2026-04-12 22:33:30,917 - CoreGuardianAgent - INFO - 🛡️ Core Guardian Agent v2.0 启动...
+2026-04-12 22:33:30,917 - CoreGuardianAgent - INFO -   加载进化历史：1 次记录
+2026-04-12 22:33:30,917 - CoreGuardianAgent - INFO - 🛡️ Core Guardian Agent v2.0 已初始化
+2026-04-12 22:33:30,917 - CoreGuardianAgent - INFO -   阈值配置：{'cpu_warning': 80, 'cpu_critical': 90, 'memory_warning': 80, 'memory_critical': 90, 'disk_warning': 90, 'disk_critical': 95, 'load_warning': 4.0, 'load_critical': 6.0, 'gateway_response_warning': 100, 'gateway_response_critical': 500}
+2026-04-12 22:33:30,917 - CoreGuardianAgent - INFO -   历史数据：1 次记录
+2026-04-12 22:33:30,917 - CoreGuardianAgent - INFO - 🛡️ 开始运行核心保障 v2.0...
+2026-04-12 22:33:30,917 - CoreGuardianAgent - INFO - 🔍 执行自检系统...
+2026-04-12 22:33:30,917 - CoreGuardianAgent - INFO - ✅ 自检完成：通过
+2026-04-12 22:33:30,917 - CoreGuardianAgent - INFO - 📊 检查 Ubuntu 系统资源 (增强版)...
+2026-04-12 22:33:31,192 - CoreGuardianAgent - INFO - ✅ 系统资源检查完成
+2026-04-12 22:33:31,192 - CoreGuardianAgent - INFO -     CPU: 32.7%
+2026-04-12 22:33:31,192 - CoreGuardianAgent - INFO -     内存：0.0%
+2026-04-12 22:33:31,193 - CoreGuardianAgent - INFO -     磁盘：5.0%
+2026-04-12 22:33:31,193 - CoreGuardianAgent - INFO -     负载：(0.1796875, 0.2333984375, 0.234375)
+2026-04-12 22:33:31,193 - CoreGuardianAgent - INFO - 🤖 检查 Gateway 状态 (增强版)...
