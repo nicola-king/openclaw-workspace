@@ -45,11 +45,12 @@ def create_file_management_bitable():
     
     print(f"✅ App ID: {app_id}\n")
     
-    # 创建表格
-    print("3️⃣  创建表格...")
-    table_id = create_table(client, app_id)
+    # 获取表格 (多维表格应用创建后会自动有一个默认表格)
+    print("3️⃣  获取表格列表...")
+    table_id = get_tables(client, app_id)
     if not table_id:
-        return None
+        print("⚠️  未找到表格，将使用默认表格 ID")
+        table_id = "default"
     
     print(f"✅ Table ID: {table_id}\n")
     
@@ -97,41 +98,28 @@ def create_app(client: FeishuClient) -> str:
         return None
 
 
-def create_table(client: FeishuClient, app_id: str) -> str:
-    """创建表格"""
+def get_tables(client: FeishuClient, app_id: str) -> str:
+    """获取表格列表并返回第一个表格 ID"""
     url = f"https://open.feishu.cn/open-apis/bitable/v1/apps/{app_id}/tables"
     
-    # 定义字段
-    fields = [
-        {"field_name": "文件名", "type": 1},  # 文本
-        {"field_name": "文件类型", "type": 1},  # 文本
-        {"field_name": "文件大小 (KB)", "type": 2},  # 数字
-        {"field_name": "创建时间", "type": 3},  # 日期
-        {"field_name": "修改时间", "type": 3},  # 日期
-        {"field_name": "文件路径", "type": 1},  # 文本
-        {"field_name": "标签", "type": 1},  # 文本
-        {"field_name": "备注", "type": 1},  # 文本
-        {"field_name": "状态", "type": 4},  # 单选
-    ]
+    result = client._request("GET", url)
     
-    payload = {
-        "table_name": "文件列表",
-        "fields": fields
-    }
-    
-    result = client._request("POST", url, json=payload)
+    print(f"   表格列表响应：{result}")
     
     if result.get('code') == 0:
-        table_data = result.get('data', {})
-        if 'table' in table_data:
-            return table_data['table']['table_id']
-        elif 'table_id' in table_data:
-            return table_data['table_id']
-        else:
-            print(f"❌ 未知的响应格式：{result}")
-            return None
+        data = result.get('data', {})
+        items = data.get('items', [])
+        if items:
+            # 返回第一个表格的 ID
+            first_table = items[0]
+            if 'table' in first_table:
+                return first_table['table']['table_id']
+            elif 'table_id' in first_table:
+                return first_table['table_id']
+        print(f"⚠️  未找到表格")
+        return None
     else:
-        print(f"❌ 创建失败：{result}")
+        print(f"❌ 获取失败：{result}")
         return None
 
 

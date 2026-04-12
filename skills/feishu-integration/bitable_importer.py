@@ -182,7 +182,9 @@ class FeishuBitableImporter:
         result = self._request("POST", url, json=payload)
         
         if result.get('code') == 0:
-            count = len(result['data']['items'])
+            data = result.get('data', {})
+            items = data.get('items', [])
+            count = len(items)
             print(f"✅ 已创建 {count} 条记录")
             return result['data']
         else:
