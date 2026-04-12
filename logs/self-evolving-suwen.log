@@ -1,0 +1,8 @@
+2026-04-12 20:48:53,952 - SelfEvolvingSuwenAgent - INFO - 🧬 自进化素问 Agent v2.0 启动...
+2026-04-12 20:48:53,952 - SelfEvolvingSuwenAgent - INFO -   无进化历史，从头开始
+2026-04-12 20:48:53,952 - SelfEvolvingSuwenAgent - INFO - 🧬 自进化素问 Agent v2.0 已初始化
+2026-04-12 20:48:53,952 - SelfEvolvingSuwenAgent - INFO - 🧬 开始执行自进化素问...
+2026-04-12 20:48:53,954 - SelfEvolvingSuwenAgent - INFO - ✅ 研究学习完成：{'技术研究': 1.0, '系统开发': 1.0, '原理分析': 1.0, '代码优化': 1.0}
+2026-04-12 20:48:53,954 - SelfEvolvingSuwenAgent - INFO - ✅ 进化历史已保存
+2026-04-12 20:48:53,954 - SelfEvolvingSuwenAgent - INFO - ✅ 进化报告已生成
+2026-04-12 20:48:53,954 - SelfEvolvingSuwenAgent - INFO - ✅ 自进化素问完成！研究完成：8 个
