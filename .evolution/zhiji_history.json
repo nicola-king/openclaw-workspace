@@ -1,0 +1,21 @@
+{
+  "history": [
+    {
+      "timestamp": "2026-04-12T20:45:49.600571",
+      "strategy_count": 10,
+      "signal_accuracy": 95.0,
+      "profit_rate": 5.0,
+      "risk_score": 0.3,
+      "skills_created": 78,
+      "execution_time_seconds": 0.000224
+    }
+  ],
+  "strategy_weights": {
+    "趋势跟踪": 1.0,
+    "均值回归": 1.0,
+    "动量策略": 1.0,
+    "套利策略": 1.0,
+    "网格交易": 1.0
+  },
+  "last_updated": "2026-04-12T20:45:49.601121"
+}
