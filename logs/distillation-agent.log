@@ -358,3 +358,45 @@
 2026-04-12 20:30:44,375 - DistillationAgent - INFO - 📝 生成报告...
 2026-04-12 20:30:44,375 - DistillationAgent - INFO - ✅ 报告已生成：/home/nicola/.openclaw/workspace/reports/distillation-report-20260412.md
 2026-04-12 20:30:44,375 - DistillationAgent - INFO - 💾 Git 提交...
+2026-04-12 20:30:44,630 - DistillationAgent - INFO - ✅ Git 提交完成
+2026-04-12 20:30:44,630 - DistillationAgent - INFO - 📱 Telegram 通知...
+2026-04-12 20:30:44,630 - DistillationAgent - INFO -   通知内容：
+🧬 太一蒸馏提炼报告
+
+执行时间：2026-04-12T20:30:44.374933
+蒸馏范围：太一系统 + 工控机 (100% 授权)
+负熵增量：ΔS = 2702700.0
+有序度提升：30.0%
+
+删除：0 个
+合并：0 个
+模板化：0 个
+
+报告：/home/nicola/.openclaw/workspace/reports/distillation-report-20260412.md
+
+2026-04-12 20:30:44,631 - DistillationAgent - INFO - ✅ Telegram 通知完成
+2026-04-12 20:30:44,631 - DistillationAgent - INFO - ✅ 蒸馏提炼完成！
+2026-04-12 20:30:44,632 - SelfEvolvingDistillationAgent - INFO - 📊 性能监控...
+2026-04-12 20:30:44,634 - SelfEvolvingDistillationAgent - INFO - ✅ 性能监控完成
+2026-04-12 20:30:44,634 - SelfEvolvingDistillationAgent - INFO -     效率提升：0.0%
+2026-04-12 20:30:44,634 - SelfEvolvingDistillationAgent - INFO -     规则准确率：100.0%
+2026-04-12 20:30:44,634 - SelfEvolvingDistillationAgent - INFO -     技能涌现：78 个
+2026-04-12 20:30:44,634 - SelfEvolvingDistillationAgent - INFO - 🧠 规则学习...
+2026-04-12 20:30:44,634 - SelfEvolvingDistillationAgent - INFO - ✅ 规则学习完成
+2026-04-12 20:30:44,634 - SelfEvolvingDistillationAgent - INFO -     规则权重：{'空框架': 1.0, '完全重复': 1.0, '部分重叠': 1.0, '低价值': 1.0, '高价值': 1.0, '通用模式': 1.0}
+2026-04-12 20:30:44,634 - SelfEvolvingDistillationAgent - INFO - 🔮 能力涌现检测...
+2026-04-12 20:30:44,634 - SelfEvolvingDistillationAgent - INFO - ✅ 检测到 2 个涌现信号:
+2026-04-12 20:30:44,634 - SelfEvolvingDistillationAgent - INFO -     - 技能涌现：78 个
+2026-04-12 20:30:44,634 - SelfEvolvingDistillationAgent - INFO -     - 规则准确率高：100.0%
+2026-04-12 20:30:44,634 - SelfEvolvingDistillationAgent - INFO - ⚙️ 智能优化...
+2026-04-12 20:30:44,634 - SelfEvolvingDistillationAgent - INFO - ✅ 智能优化完成
+2026-04-12 20:30:44,635 - SelfEvolvingDistillationAgent - INFO - ✅ 进化历史已保存：/home/nicola/.openclaw/workspace/.evolution/distillation_history.json
+2026-04-12 20:30:44,635 - SelfEvolvingDistillationAgent - INFO - 📝 生成进化报告...
+2026-04-12 20:30:44,635 - SelfEvolvingDistillationAgent - INFO - ✅ 进化报告已生成：/home/nicola/.openclaw/workspace/reports/self-evolving-distillation-report-20260412.md
+2026-04-12 20:30:44,635 - SelfEvolvingDistillationAgent - INFO - ✅ 自进化蒸馏提炼完成！
+2026-04-12 20:30:44,635 - SelfEvolvingDistillationAgent - INFO -   负熵增量：ΔS = 2702700.0
+2026-04-12 20:30:44,635 - SelfEvolvingDistillationAgent - INFO -   效率提升：0.0%
+2026-04-12 20:30:44,635 - SelfEvolvingDistillationAgent - INFO -   规则准确率：100.0%
+2026-04-12 20:30:44,635 - SelfEvolvingDistillationAgent - INFO -   技能涌现：78 个
+2026-04-12 20:30:44,635 - SelfEvolvingDistillationAgent - INFO - ✅ 自进化蒸馏提炼完成！
+2026-04-12 20:30:44,635 - SelfEvolvingDistillationAgent - INFO -   负熵增量：ΔS = 2702700.0
