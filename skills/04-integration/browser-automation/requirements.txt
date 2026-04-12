@@ -1,0 +1,3 @@
+# Browser Automation Skill - 太一 AGI v5.0
+
+playwright>=1.40.0
