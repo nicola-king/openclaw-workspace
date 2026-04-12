@@ -12,6 +12,8 @@ from .core.aesthetics import AestheticsEngine, ReviewResult
 from .core.evolution import EvolutionCore, Feedback
 from .core.style import TaiyiStyle, StyleCategory
 from .engines.wisdom import WisdomCardEngine
+from .engines.charts import ChartsEngine
+from .engines.cards import CardsEngine
 
 __version__ = "1.0.0"
 __author__ = "太一 AGI"
@@ -45,6 +47,8 @@ class Artisan:
         self.evolution = EvolutionCore(workspace)
         self.style = TaiyiStyle()
         self.wisdom = WisdomCardEngine()
+        self.charts = ChartsEngine()
+        self.cards = CardsEngine()
     
     def review(self, content: str, content_type: str = 'code'):
         """美学审核"""
@@ -57,6 +61,17 @@ class Artisan:
     def generate_daily_wisdom(self, category: str = None):
         """生成每日智慧"""
         return self.wisdom.generate_daily(category)
+    
+    def create_chart(self, chart_type: str, **kwargs):
+        """生成图表"""
+        method = getattr(self.charts, f'create_{chart_type}', None)
+        if method:
+            return method(**kwargs)
+        raise ValueError(f"不支持的图表类型：{chart_type}")
+    
+    def create_info_card(self, title: str, points: list, **kwargs):
+        """生成信息卡片"""
+        return self.cards.create_info_card(title, points, **kwargs)
     
     def collect_feedback(self, feedback: Feedback):
         """收集反馈"""
