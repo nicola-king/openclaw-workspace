@@ -50,3 +50,23 @@
 2026-04-12 22:33:31,193 - CoreGuardianAgent - INFO -     磁盘：5.0%
 2026-04-12 22:33:31,193 - CoreGuardianAgent - INFO -     负载：(0.1796875, 0.2333984375, 0.234375)
 2026-04-12 22:33:31,193 - CoreGuardianAgent - INFO - 🤖 检查 Gateway 状态 (增强版)...
+2026-04-12 22:33:31,283 - CoreGuardianAgent - INFO - ✅ Gateway 进程运行中 (PID: 359130)
+2026-04-12 22:33:31,287 - CoreGuardianAgent - INFO - ✅ Gateway 端口 18789 正常监听
+2026-04-12 22:33:31,290 - CoreGuardianAgent - INFO - 🔮 检测能力涌现...
+2026-04-12 22:33:31,292 - CoreGuardianAgent - INFO -   今日涌现技能：78 个
+2026-04-12 22:33:31,292 - CoreGuardianAgent - INFO - ✅ 检测到 80 个涌现信号
+2026-04-12 22:33:31,292 - CoreGuardianAgent - INFO - 🔧 检查是否需要自动修复 (增强版)...
+2026-04-12 22:33:31,292 - CoreGuardianAgent - INFO - ✅ 无需自动修复
+2026-04-12 22:33:31,292 - CoreGuardianAgent - INFO - ✅ 进化历史已保存：/home/nicola/.openclaw/workspace/.evolution/core-guardian_history.json
+2026-04-12 22:33:31,292 - CoreGuardianAgent - INFO - ✅ 核心保障 v2.0 完成！
+2026-04-12 22:33:31,293 - CoreGuardianAgent - INFO -   CPU: 32.7%
+2026-04-12 22:33:31,293 - CoreGuardianAgent - INFO -   内存：0.0%
+2026-04-12 22:33:31,293 - CoreGuardianAgent - INFO -   磁盘：5.0%
+2026-04-12 22:33:31,293 - CoreGuardianAgent - INFO -   负载：(0.1796875, 0.2333984375, 0.234375)
+2026-04-12 22:33:31,293 - CoreGuardianAgent - INFO -   Gateway: ✅ (PID: 359130)
+2026-04-12 22:33:31,293 - CoreGuardianAgent - INFO -   响应时间：2.1ms
+2026-04-12 22:33:31,293 - CoreGuardianAgent - INFO -   自检：✅
+2026-04-12 22:33:31,293 - CoreGuardianAgent - INFO -   涌现信号：80 个
+2026-04-12 22:33:31,293 - CoreGuardianAgent - INFO -   告警：0 个
+2026-04-12 22:33:31,293 - CoreGuardianAgent - INFO -   自愈：0 个
+2026-04-12 22:33:31,293 - CoreGuardianAgent - INFO - ✅ Core Guardian Agent v2.0 完成！

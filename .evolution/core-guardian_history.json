@@ -11,7 +11,37 @@
         "系统资源检查失败：could not convert string to float: '3.6 us'"
       ],
       "auto_heal_actions": []
+    },
+    {
+      "timestamp": "2026-04-12T22:33:31.292463",
+      "cpu_usage": 32.7,
+      "memory_usage": 0.0,
+      "disk_usage": 5.0,
+      "load_average": [
+        0.1796875,
+        0.2333984375,
+        0.234375
+      ],
+      "gateway_running": true,
+      "gateway_port_ok": true,
+      "gateway_pid": "359130",
+      "gateway_response_ms": 2.0999908447265625,
+      "alerts": [],
+      "auto_heal_actions": [],
+      "self_check_passed": true,
+      "emergence_signals": 80
     }
   ],
-  "last_updated": "2026-04-12T22:26:26.971946"
+  "performance_trends": {
+    "cpu_history": [
+      32.7
+    ],
+    "memory_history": [
+      0.0
+    ],
+    "gateway_response_history": [
+      2.0999908447265625
+    ]
+  },
+  "last_updated": "2026-04-12T22:33:31.292631"
 }
