@@ -88,6 +88,10 @@ class SelfEvolvingWuAgent:
         signals += 1
         logger.info("  ✅ 明心见性 - 直指人心")
         
+        # 信号 4: 佛教佛经经典
+        signals += 1
+        logger.info("  ✅ 佛教佛经经典 - 心经/金刚经/六祖坛经")
+        
         logger.info(f"✅ 检测到 {signals} 个自进化信号")
     
     def load_evolution_history(self):
