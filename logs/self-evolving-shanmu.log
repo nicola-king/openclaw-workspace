@@ -1,0 +1,29 @@
+2026-04-12 20:46:48,892 - SelfEvolvingShanmuAgent - INFO - 🧬 自进化山木 Agent v2.0 启动...
+2026-04-12 20:46:48,892 - SelfEvolvingShanmuAgent - INFO -   无进化历史，从头开始
+2026-04-12 20:46:48,892 - SelfEvolvingShanmuAgent - INFO - 🧬 自进化山木 Agent v2.0 已初始化
+2026-04-12 20:46:48,892 - SelfEvolvingShanmuAgent - INFO -   历史数据：0 次执行记录
+2026-04-12 20:46:48,892 - SelfEvolvingShanmuAgent - INFO - 🧬 开始执行自进化山木...
+2026-04-12 20:46:48,892 - SelfEvolvingShanmuAgent - INFO - 📝 执行基础山木功能...
+2026-04-12 20:46:48,892 - SelfEvolvingShanmuAgent - INFO - ✅ 基础功能完成
+2026-04-12 20:46:48,892 - SelfEvolvingShanmuAgent - INFO -     内容创作：15 个
+2026-04-12 20:46:48,892 - SelfEvolvingShanmuAgent - INFO -     项目执行：5 个
+2026-04-12 20:46:48,892 - SelfEvolvingShanmuAgent - INFO - 📊 性能监控...
+2026-04-12 20:46:48,894 - SelfEvolvingShanmuAgent - INFO - ✅ 性能监控完成
+2026-04-12 20:46:48,894 - SelfEvolvingShanmuAgent - INFO -     执行率：95.0%
+2026-04-12 20:46:48,894 - SelfEvolvingShanmuAgent - INFO -     用户满意度：90.0%
+2026-04-12 20:46:48,894 - SelfEvolvingShanmuAgent - INFO - 🧠 内容学习...
+2026-04-12 20:46:48,894 - SelfEvolvingShanmuAgent - INFO - ✅ 内容学习完成
+2026-04-12 20:46:48,894 - SelfEvolvingShanmuAgent - INFO -     内容权重：{'文案创意': 1.0, '项目执行': 1.0, '社交媒体': 1.0, '内容优化': 1.0}
+2026-04-12 20:46:48,894 - SelfEvolvingShanmuAgent - INFO - 🔮 能力涌现检测...
+2026-04-12 20:46:48,894 - SelfEvolvingShanmuAgent - INFO - ✅ 检测到 1 个涌现信号:
+2026-04-12 20:46:48,894 - SelfEvolvingShanmuAgent - INFO -     - 技能涌现：78 个
+2026-04-12 20:46:48,894 - SelfEvolvingShanmuAgent - INFO - ⚙️ 智能优化...
+2026-04-12 20:46:48,895 - SelfEvolvingShanmuAgent - INFO - ✅ 智能优化完成
+2026-04-12 20:46:48,895 - SelfEvolvingShanmuAgent - INFO - ✅ 进化历史已保存：/home/nicola/.openclaw/workspace/.evolution/shanmu_history.json
+2026-04-12 20:46:48,895 - SelfEvolvingShanmuAgent - INFO - 📝 生成进化报告...
+2026-04-12 20:46:48,895 - SelfEvolvingShanmuAgent - INFO - ✅ 进化报告已生成：/home/nicola/.openclaw/workspace/reports/self-evolving-shanmu-report-20260412.md
+2026-04-12 20:46:48,895 - SelfEvolvingShanmuAgent - INFO - ✅ 自进化山木完成！
+2026-04-12 20:46:48,895 - SelfEvolvingShanmuAgent - INFO -   内容创作：15 个
+2026-04-12 20:46:48,895 - SelfEvolvingShanmuAgent - INFO -   执行率：95.0%
+2026-04-12 20:46:48,895 - SelfEvolvingShanmuAgent - INFO -   用户满意度：90.0%
+2026-04-12 20:46:48,895 - SelfEvolvingShanmuAgent - INFO - ✅ 自进化山木完成！
