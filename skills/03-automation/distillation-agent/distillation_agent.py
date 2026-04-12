@@ -135,14 +135,26 @@ class DistillationAgent:
         logger.info(f"✅ 备份完成：{self.backup_dir}")
     
     def scan(self) -> Dict:
-        """扫描系统"""
+        """扫描系统 (OpenClaw + 工控机)"""
         logger.info("🔍 开始扫描...")
+        logger.info("  范围：OpenClaw 系统 + 工控机系统")
         
         scan_result = {
+            # OpenClaw 系统
             'skills': self.scan_skills(),
             'files': self.scan_files(),
             'code': self.scan_code(),
             'config': self.scan_config(),
+            
+            # 工控机系统
+            'industrial_pc': self.scan_industrial_pc(),
+            'desktop': self.scan_directory(self.desktop_dir, 'desktop'),
+            'documents': self.scan_directory(self.documents_dir, 'documents'),
+            'downloads': self.scan_directory(self.downloads_dir, 'downloads'),
+            'projects': self.scan_directory(self.projects_dir, 'projects'),
+            'opt': self.scan_directory(self.opt_dir, 'opt'),
+            'var': self.scan_directory(self.var_dir, 'var'),
+            'tmp': self.scan_directory(self.tmp_dir, 'tmp'),
         }
         
         total_files = sum(len(v) if isinstance(v, list) else 0 for v in scan_result.values())
@@ -202,11 +214,12 @@ class DistillationAgent:
         return files
     
     def scan_code(self) -> List[Dict]:
-        """扫描代码库"""
+        """扫描代码库 (OpenClaw + 工控机)"""
         logger.info("  扫描代码库...")
         
         code_files = []
         
+        # OpenClaw 代码
         for py_file in self.skills_dir.rglob('*.py'):
             code_files.append({
                 'path': str(py_file),
@@ -214,6 +227,17 @@ class DistillationAgent:
                 'size': py_file.stat().st_size,
                 'lines': self.count_lines(py_file),
             })
+        
+        # 工控机代码
+        for code_dir in [self.projects_dir, self.opt_dir]:
+            if code_dir.exists():
+                for py_file in code_dir.rglob('*.py'):
+                    code_files.append({
+                        'path': str(py_file),
+                        'type': 'python_industrial',
+                        'size': py_file.stat().st_size,
+                        'lines': self.count_lines(py_file),
+                    })
         
         logger.info(f"    发现：{len(code_files)} 个代码文件")
         
@@ -242,6 +266,60 @@ class DistillationAgent:
         logger.info(f"    发现：{len(configs)} 个配置文件")
         
         return configs
+    
+    def scan_industrial_pc(self) -> List[Dict]:
+        """扫描工控机系统"""
+        logger.info("  扫描工控机系统...")
+        
+        industrial_files = []
+        
+        # 扫描用户目录
+        for dir_path in [self.desktop_dir, self.documents_dir, self.downloads_dir, self.projects_dir]:
+            if dir_path.exists():
+                industrial_files.extend(self.scan_directory(dir_path, dir_path.name))
+        
+        # 扫描系统目录
+        for dir_path in [self.opt_dir, self.var_dir, self.tmp_dir]:
+            if dir_path.exists():
+                industrial_files.extend(self.scan_directory(dir_path, dir_path.name, max_depth=2))
+        
+        logger.info(f"    发现：{len(industrial_files)} 个工控机文件")
+        
+        return industrial_files
+    
+    def scan_directory(self, dir_path: Path, name: str, max_depth: int = -1) -> List[Dict]:
+        """扫描指定目录"""
+        if not dir_path.exists():
+            return []
+        
+        files = []
+        depth = 0 if max_depth > 0 else -1
+        
+        for file_path in dir_path.rglob('*'):
+            if not file_path.is_file():
+                continue
+            
+            # 深度限制
+            if max_depth > 0:
+                try:
+                    rel_depth = len(file_path.relative_to(dir_path).parts)
+                    if rel_depth > max_depth:
+                        continue
+                except:
+                    pass
+            
+            # 跳过系统文件
+            if file_path.name.startswith('.'):
+                continue
+            
+            files.append({
+                'path': str(file_path),
+                'type': name,
+                'size': file_path.stat().st_size,
+                'modified': file_path.stat().st_mtime,
+            })
+        
+        return files
     
     def analyze(self, scan_result: Dict) -> Dict:
         """分析扫描结果"""

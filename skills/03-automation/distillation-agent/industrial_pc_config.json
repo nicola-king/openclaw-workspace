@@ -1,0 +1,94 @@
+{
+  "authorization": {
+    "granted_by": "SAYELF (nicola king)",
+    "granted_at": "2026-04-12 20:09",
+    "scope": "100% 控制工控机",
+    "level": "P0 - 最高权限",
+    "valid_until": "permanent"
+  },
+  
+  "scan_targets": {
+    "user_directories": [
+      "/home/nicola/Desktop",
+      "/home/nicola/Documents",
+      "/home/nicola/Downloads",
+      "/home/nicola/projects"
+    ],
+    "system_directories": [
+      "/opt",
+      "/var/log",
+      "/var/tmp",
+      "/tmp"
+    ],
+    "excluded_directories": [
+      "/home/nicola/.cache",
+      "/home/nicola/.local/share/Trash",
+      "/home/nicola/.git",
+      "/proc",
+      "/sys",
+      "/dev"
+    ]
+  },
+  
+  "distillation_rules": {
+    "logs": {
+      "keep_days": 30,
+      "compress_after_days": 7,
+      "max_size_mb": 100
+    },
+    "temp_files": {
+      "delete_immediately": true,
+      "extensions": [".tmp", ".temp", ".bak", ".old", ".swp"]
+    },
+    "duplicates": {
+      "detect_by_hash": true,
+      "keep_newest": true,
+      "backup_before_delete": true
+    },
+    "large_files": {
+      "report_threshold_mb": 500,
+      "compress_threshold_mb": 100
+    },
+    "old_projects": {
+      "archive_after_days": 180,
+      "notify_before_archive": true
+    }
+  },
+  
+  "cleanup_schedule": {
+    "daily": [
+      "清空 /tmp 超过 7 天的文件",
+      "清理日志压缩文件"
+    ],
+    "weekly": [
+      "扫描重复文件",
+      "清理下载目录",
+      "整理桌面文件"
+    ],
+    "monthly": [
+      "归档旧项目",
+      "清理文档目录",
+      "系统配置优化"
+    ]
+  },
+  
+  "safety_rules": {
+    "never_delete": [
+      "/home/nicola/.openclaw",
+      "/home/nicola/.ssh",
+      "/home/nicola/.config",
+      "/etc/openclaw",
+      "/etc/systemd/system/taiyi*"
+    ],
+    "require_confirmation": [
+      "/home/nicola/projects/*",
+      "/opt/*"
+    ],
+    "auto_delete": [
+      "/tmp/*",
+      "/var/tmp/*",
+      "*.tmp",
+      "*.temp"
+    ]
+  }
+}
