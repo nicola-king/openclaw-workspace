@@ -1,0 +1,218 @@
+{
+  "timestamp": "2026-04-12T21:51:37.474567",
+  "taiyi": {
+    "history": [
+      {
+        "timestamp": "2026-04-12T21:18:02.154022",
+        "bots_coordinated": 9,
+        "decision_accuracy": 96.0,
+        "coordination_efficiency": 97.0,
+        "emergence_signals": 5,
+        "skills_created": 78,
+        "system_negentropy": 1000000.0,
+        "execution_time_seconds": 0.000227
+      }
+    ],
+    "coordination_weights": {
+      "任务分发": 1.05,
+      "资源调度": 1.05,
+      "冲突仲裁": 1.05,
+      "进度追踪": 1.05,
+      "多 Bot 协作": 1.05
+    },
+    "decision_rules": {
+      "高置信度": 0.91,
+      "中置信度": 0.7,
+      "低置信度": 0.5,
+      "需要 Bot 协作": true,
+      "需要人工干预": false
+    },
+    "last_updated": "2026-04-12T21:18:02.154877"
+  },
+  "bot_fleet": {
+    "zhiji": {
+      "history": [
+        {
+          "timestamp": "2026-04-12T20:45:49.600571",
+          "strategy_count": 10,
+          "signal_accuracy": 95.0,
+          "profit_rate": 5.0,
+          "risk_score": 0.3,
+          "skills_created": 78,
+          "execution_time_seconds": 0.000224
+        }
+      ],
+      "strategy_weights": {
+        "趋势跟踪": 1.0,
+        "均值回归": 1.0,
+        "动量策略": 1.0,
+        "套利策略": 1.0,
+        "网格交易": 1.0
+      },
+      "last_updated": "2026-04-12T20:45:49.601121"
+    },
+    "paoding": {
+      "history": [
+        {
+          "timestamp": "2026-04-12T20:48:54.123494",
+          "cost_analyzed": 12,
+          "budget_accuracy": 96.0,
+          "risk_control": 95.0,
+          "skills_created": 78
+        }
+      ],
+      "finance_weights": {
+        "成本控制": 1.0,
+        "预算管理": 1.0,
+        "财务分析": 1.0,
+        "风险评估": 1.0
+      },
+      "last_updated": "2026-04-12T20:48:54.125471"
+    },
+    "yi": {
+      "history": [
+        {
+          "timestamp": "2026-04-12T21:07:35.931016",
+          "signals_captured": 25,
+          "detection_accuracy": 97.0,
+          "response_speed": 95.0,
+          "skills_created": 78
+        }
+      ],
+      "monitor_weights": {
+        "信号捕捉": 1.0,
+        "异常检测": 1.0,
+        "实时监控": 1.0,
+        "事件响应": 1.0
+      },
+      "last_updated": "2026-04-12T21:07:35.933238"
+    },
+    "mirror": {
+      "history": [
+        {
+          "timestamp": "2026-04-12T21:07:36.000806",
+          "skills_distilled": 15,
+          "duplication_accuracy": 98.0,
+          "knowledge_transfer": 95.0,
+          "skills_created": 78
+        }
+      ],
+      "distillation_weights": {
+        "Skill 蒸馏": 1.0,
+        "数字分身": 1.0,
+        "能力复制": 1.0,
+        "知识固化": 1.0
+      },
+      "last_updated": "2026-04-12T21:07:36.002896"
+    },
+    "steward": {
+      "history": [
+        {
+          "timestamp": "2026-04-12T21:07:35.956793",
+          "tasks_dispatched": 30,
+          "resource_utilization": 94.0,
+          "coordination_efficiency": 96.0,
+          "skills_created": 78
+        }
+      ],
+      "coordination_weights": {
+        "任务分发": 1.0,
+        "资源调度": 1.0,
+        "进度追踪": 1.0,
+        "冲突仲裁": 1.0
+      },
+      "last_updated": "2026-04-12T21:07:35.959020"
+    },
+    "distillation": {
+      "history": [
+        {
+          "timestamp": "2026-04-12T20:18:55.382823",
+          "delta_s": 2701980.0,
+          "efficiency_improvement": 0,
+          "rule_accuracy": 100.0,
+          "skills_created": 78,
+          "scan_count": 15011,
+          "execution_time_seconds": 3.727134
+        },
+        {
+          "timestamp": "2026-04-12T20:30:44.634499",
+          "delta_s": 2702700.0,
+          "efficiency_improvement": 0.026647125441343015,
+          "rule_accuracy": 100.0,
+          "skills_created": 78,
+          "scan_count": 15015,
+          "execution_time_seconds": 3.684824
+        }
+      ],
+      "rule_weights": {
+        "空框架": 1.0,
+        "完全重复": 1.0,
+        "部分重叠": 1.0,
+        "低价值": 1.0,
+        "高价值": 1.0,
+        "通用模式": 1.0
+      },
+      "last_updated": "2026-04-12T20:30:44.635017"
+    },
+    "wangliang": {
+      "history": [
+        {
+          "timestamp": "2026-04-12T20:49:18.281487",
+          "market_monitored": 20,
+          "intelligence_accuracy": 95.0,
+          "response_speed": 90.0,
+          "skills_created": 78
+        }
+      ],
+      "intel_weights": {
+        "市场监控": 1.0,
+        "竞品分析": 1.0,
+        "舆情收集": 1.0,
+        "情报报告": 1.0
+      },
+      "last_updated": "2026-04-12T20:49:18.283352"
+    },
+    "shanmu": {
+      "history": [
+        {
+          "timestamp": "2026-04-12T20:46:48.894611",
+          "content_created": 15,
+          "execution_rate": 95.0,
+          "user_satisfaction": 90.0,
+          "skills_created": 78,
+          "execution_time_seconds": 0.000216
+        }
+      ],
+      "content_weights": {
+        "文案创意": 1.0,
+        "项目执行": 1.0,
+        "社交媒体": 1.0,
+        "内容优化": 1.0
+      },
+      "last_updated": "2026-04-12T20:46:48.895082"
+    },
+    "suwen": {
+      "history": [
+        {
+          "timestamp": "2026-04-12T20:48:53.952588",
+          "research_completed": 8,
+          "code_quality": 92.0,
+          "user_satisfaction": 92.0,
+          "skills_created": 78
+        }
+      ],
+      "research_weights": {
+        "技术研究": 1.0,
+        "系统开发": 1.0,
+        "原理分析": 1.0,
+        "代码优化": 1.0
+      },
+      "last_updated": "2026-04-12T20:48:53.954480"
+    }
+  },
+  "summary": {
+    "total_agents": 10,
+    "all_level4": true,
+    "system_order": 98.5
+  }
+}
