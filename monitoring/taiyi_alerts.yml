@@ -1,0 +1,106 @@
+# 太一监控告警规则
+# 版本：v1.0
+# 创建：2026-04-12
+
+groups:
+  - name: taiyi_critical
+    rules:
+      # Gateway 宕机
+      - alert: GatewayDown
+        expr: up{job="gateway"} == 0
+        for: 1m
+        labels:
+          severity: critical
+          channel: telegram
+        annotations:
+          summary: "🔴 Gateway 宕机"
+          description: "Gateway 服务已停止运行超过 1 分钟"
+          action: "1. 检查 Gateway 进程\n2. 查看系统日志\n3. 重启 Gateway"
+
+      # 所有 Agent 宕机
+      - alert: AllAgentsDown
+        expr: count(up{job=~"dashboard"} == 0) >= 3
+        for: 2m
+        labels:
+          severity: critical
+          channel: telegram
+        annotations:
+          summary: "🔴 多个 Dashboard 宕机"
+          description: "超过 3 个 Dashboard 服务不可用"
+          action: "1. 检查系统资源\n2. 查看各服务日志\n3. 逐个重启服务"
+
+  - name: taiyi_warning
+    rules:
+      # 高延迟告警
+      - alert: HighLatency
+        expr: histogram_quantile(0.95, rate(http_request_duration_seconds_bucket[5m])) > 0.5
+        for: 5m
+        labels:
+          severity: warning
+          channel: telegram
+        annotations:
+          summary: "🟠 响应延迟过高"
+          description: "95% 请求延迟超过 500ms"
+          action: "1. 检查系统负载\n2. 优化慢查询\n3. 考虑扩容"
+
+      # 高错误率告警
+      - alert: HighErrorRate
+        expr: rate(http_requests_total{status=~"5.."}[5m]) / rate(http_requests_total[5m]) > 0.01
+        for: 5m
+        labels:
+          severity: warning
+          channel: telegram
+        annotations:
+          summary: "🟠 错误率过高"
+          description: "HTTP 5xx 错误率超过 1%"
+          action: "1. 查看错误日志\n2. 定位问题服务\n3. 修复或回滚"
+
+      # 内存使用过高
+      - alert: HighMemory
+        expr: process_resident_memory_bytes / 1024 / 1024 > 2048
+        for: 10m
+        labels:
+          severity: warning
+          channel: email
+        annotations:
+          summary: "🟡 内存使用过高"
+          description: "进程内存超过 2GB"
+          action: "1. 检查内存泄漏\n2. 优化内存使用\n3. 考虑重启"
+
+      # CPU 使用过高
+      - alert: HighCPU
+        expr: rate(process_cpu_seconds_total[5m]) * 100 > 80
+        for: 10m
+        labels:
+          severity: warning
+          channel: email
+        annotations:
+          summary: "🟡 CPU 使用过高"
+          description: "CPU 使用率超过 80%"
+          action: "1. 检查 CPU 密集任务\n2. 优化算法\n3. 考虑扩容"
+
+  - name: taiyi_trading
+    rules:
+      # 交易亏损告警
+      - alert: TradingLoss
+        expr: trading_pnl_percent < -5
+        for: 1m
+        labels:
+          severity: critical
+          channel: telegram
+        annotations:
+          summary: "🔴 交易亏损超过 5%"
+          description: "当前交易亏损达到 {{ $value }}%"
+          action: "1. 检查持仓\n2. 考虑止损\n3. 分析原因"
+
+      # 交易异常频繁
+      - alert: HighTradeFrequency
+        expr: rate(trading_orders_total[5m]) > 10
+        for: 5m
+        labels:
+          severity: warning
+          channel: telegram
+        annotations:
+          summary: "🟠 交易频率异常"
+          description: "5 分钟内交易超过 50 次"
+          action: "1. 检查策略逻辑\n2. 防止过度交易\n3. 暂停策略"

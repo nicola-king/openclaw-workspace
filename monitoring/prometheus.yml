@@ -1,0 +1,57 @@
+# 太一监控系统 Prometheus 配置
+# 版本：v1.0
+# 创建：2026-04-12
+
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets: []
+
+rule_files:
+  - "taiyi_alerts.yml"
+
+scrape_configs:
+  # Gateway 监控
+  - job_name: 'gateway'
+    static_configs:
+      - targets: ['localhost:18789']
+    metrics_path: '/metrics'
+
+  # Bot Dashboard 监控
+  - job_name: 'bot-dashboard'
+    static_configs:
+      - targets: ['localhost:3000']
+
+  # ROI Dashboard 监控
+  - job_name: 'roi-dashboard'
+    static_configs:
+      - targets: ['localhost:8080']
+
+  # Skill Dashboard 监控
+  - job_name: 'skill-dashboard'
+    static_configs:
+      - targets: ['localhost:5002']
+
+  # 太一 Dashboard 监控
+  - job_name: 'taiyi-dashboard'
+    static_configs:
+      - targets: ['localhost:5001']
+
+  # 交易系统监控
+  - job_name: 'trading-system'
+    static_configs:
+      - targets: ['localhost:5000']
+
+  # 自进化系统监控
+  - job_name: 'self-evolution'
+    static_configs:
+      - targets: ['localhost:5005']
+
+  # 系统资源监控 (Node Exporter)
+  - job_name: 'node-exporter'
+    static_configs:
+      - targets: ['localhost:9100']
