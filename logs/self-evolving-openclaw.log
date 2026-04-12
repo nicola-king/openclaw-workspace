@@ -1,0 +1,45 @@
+2026-04-12 21:31:03,288 - SelfEvolvingOpenClawAgent - INFO - 🧬 自进化 OpenCLaw 系统 v2.0 启动...
+2026-04-12 21:31:03,288 - SelfEvolvingOpenClawAgent - INFO -   无进化历史，从头开始
+2026-04-12 21:31:03,288 - SelfEvolvingOpenClawAgent - INFO - 🤖 检查系统状态...
+2026-04-12 21:31:03,380 - SelfEvolvingOpenClawAgent - INFO - ✅ 系统状态：Gateway=running, Skills=138, Bot 舰队=100.0%
+2026-04-12 21:31:03,380 - SelfEvolvingOpenClawAgent - INFO - 🧬 自进化 OpenCLaw 系统 v2.0 已初始化
+2026-04-12 21:31:03,380 - SelfEvolvingOpenClawAgent - INFO -   历史数据：0 次执行记录
+2026-04-12 21:31:03,380 - SelfEvolvingOpenClawAgent - INFO -   Gateway: running
+2026-04-12 21:31:03,380 - SelfEvolvingOpenClawAgent - INFO -   Skills: 138 个
+2026-04-12 21:31:03,380 - SelfEvolvingOpenClawAgent - INFO -   Channels: 3 个
+2026-04-12 21:31:03,380 - SelfEvolvingOpenClawAgent - INFO -   系统有序度：5000.0%
+2026-04-12 21:31:03,380 - SelfEvolvingOpenClawAgent - INFO - 🧬 开始执行自进化 OpenCLaw...
+2026-04-12 21:31:03,380 - SelfEvolvingOpenClawAgent - INFO - 🤖 执行基础 OpenCLaw 功能...
+2026-04-12 21:31:03,464 - SelfEvolvingOpenClawAgent - INFO - ✅ 基础功能完成
+2026-04-12 21:31:03,464 - SelfEvolvingOpenClawAgent - INFO -     Gateway: running
+2026-04-12 21:31:03,464 - SelfEvolvingOpenClawAgent - INFO -     Skills: 138 个
+2026-04-12 21:31:03,464 - SelfEvolvingOpenClawAgent - INFO -     Channels: 3 个
+2026-04-12 21:31:03,464 - SelfEvolvingOpenClawAgent - INFO - 📊 性能监控...
+2026-04-12 21:31:03,468 - SelfEvolvingOpenClawAgent - INFO - ✅ 性能监控完成
+2026-04-12 21:31:03,468 - SelfEvolvingOpenClawAgent - INFO - 🧠 Gateway 学习...
+2026-04-12 21:31:03,468 - SelfEvolvingOpenClawAgent - INFO - ✅ Gateway 学习完成
+2026-04-12 21:31:03,468 - SelfEvolvingOpenClawAgent - INFO -     Gateway 权重：{'消息处理': 1.02, '会话管理': 1.02, '工具调用': 1.02, '模型路由': 1.02, '错误处理': 1.02}
+2026-04-12 21:31:03,468 - SelfEvolvingOpenClawAgent - INFO - ⚙️ Skill 系统优化...
+2026-04-12 21:31:03,468 - SelfEvolvingOpenClawAgent - INFO - ✅ Skill 系统优化完成
+2026-04-12 21:31:03,468 - SelfEvolvingOpenClawAgent - INFO -     Skill 权重：{'交易类': 1.0, '内容类': 1.0, '技术类': 1.0, '集成类': 1.0, '系统类': 1.0}
+2026-04-12 21:31:03,468 - SelfEvolvingOpenClawAgent - INFO - 🔮 能力涌现检测...
+2026-04-12 21:31:03,468 - SelfEvolvingOpenClawAgent - INFO - ✅ 检测到 3 个涌现信号:
+2026-04-12 21:31:03,468 - SelfEvolvingOpenClawAgent - INFO -     - Gateway 运行中
+2026-04-12 21:31:03,468 - SelfEvolvingOpenClawAgent - INFO -     - 技能涌现：78 个
+2026-04-12 21:31:03,468 - SelfEvolvingOpenClawAgent - INFO -     - 太一 Bot 舰队 100% 自进化
+2026-04-12 21:31:03,468 - SelfEvolvingOpenClawAgent - INFO - 📊 计算系统负熵...
+2026-04-12 21:31:03,468 - SelfEvolvingOpenClawAgent - INFO - ✅ 系统负熵：644000
+2026-04-12 21:31:03,468 - SelfEvolvingOpenClawAgent - INFO - ⚙️ 智能优化...
+2026-04-12 21:31:03,468 - SelfEvolvingOpenClawAgent - INFO -   优化：技能数量偏少，促进技能创建
+2026-04-12 21:31:03,468 - SelfEvolvingOpenClawAgent - INFO -   优化：Channel 活跃数偏低，促进 Channel 集成
+2026-04-12 21:31:03,468 - SelfEvolvingOpenClawAgent - INFO - ✅ 智能优化完成
+2026-04-12 21:31:03,469 - SelfEvolvingOpenClawAgent - INFO - ✅ 进化历史已保存：/home/nicola/.openclaw/workspace/.evolution/openclaw_history.json
+2026-04-12 21:31:03,469 - SelfEvolvingOpenClawAgent - INFO - 📝 生成进化报告...
+2026-04-12 21:31:03,469 - SelfEvolvingOpenClawAgent - INFO - ✅ 进化报告已生成：/home/nicola/.openclaw/workspace/reports/self-evolving-openclaw-report-20260412.md
+2026-04-12 21:31:03,469 - SelfEvolvingOpenClawAgent - INFO - ✅ 自进化 OpenCLaw 完成！
+2026-04-12 21:31:03,469 - SelfEvolvingOpenClawAgent - INFO -   Gateway: running
+2026-04-12 21:31:03,469 - SelfEvolvingOpenClawAgent - INFO -   Skills: 138 个
+2026-04-12 21:31:03,469 - SelfEvolvingOpenClawAgent - INFO -   Channels: 3 个
+2026-04-12 21:31:03,469 - SelfEvolvingOpenClawAgent - INFO -   系统负熵：644000
+2026-04-12 21:31:03,469 - SelfEvolvingOpenClawAgent - INFO -   自进化程度：Level 4 (95-100%)
+2026-04-12 21:31:03,469 - SelfEvolvingOpenClawAgent - INFO - ✅ 自进化 OpenCLaw 完成！
