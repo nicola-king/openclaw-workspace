@@ -98,7 +98,7 @@ class SimpleImporter:
             
             if result.get('code') == 0:
                 data = result.get('data', {})
-                items = data.get('items', [])
+                items = data.get('records', [])  # 飞书 API 返回的是 records
                 count = len(items)
                 total_imported += count
                 print(f"✅ 已导入 {total_imported} / {len(records)} 条记录")
