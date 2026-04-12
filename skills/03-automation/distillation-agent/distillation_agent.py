@@ -449,7 +449,7 @@ class DistillationAgent:
         files_after = files_before - self.stats['deleted']
         
         # 计算大小变化
-        size_before = sum(s.get('size', 0) for skills in scan_result.get('skills', []) for s in (skills if isinstance(skills, dict) else [skills])) / 1024 / 1024
+        size_before = sum(s.get('size', 0) for s in scan_result.get('skills', [])) / 1024 / 1024
         size_after = size_before * 0.7
         
         result = DistillationResult(
