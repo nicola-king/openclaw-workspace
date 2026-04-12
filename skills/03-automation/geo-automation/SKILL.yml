@@ -1,0 +1,48 @@
+name: geo-automation
+version: 1.0.0
+description: GEO 内容自动化生成与发布 - 零成本开源工作流
+author: 太一 AGI
+license: MIT
+
+# 触发词
+triggers:
+  - "生成 GEO 内容"
+  - "发布 GEO 内容"
+  - "自动化发布"
+  - "多平台分发"
+
+# 依赖
+dependencies:
+  - python3
+  - pandas
+  - openpyxl
+
+# 动作
+actions:
+  - name: 生成问题库
+    command: python3 /home/nicola/.openclaw/workspace/scripts/geo-question-generator.py
+    timeout: 300
+  
+  - name: 生成内容
+    command: python3 /home/nicola/.openclaw/workspace/scripts/geo-content-generator.py
+    timeout: 600
+  
+  - name: 生成发布文件
+    command: python3 /home/nicola/.openclaw/workspace/scripts/geo-publisher.py
+    timeout: 300
+
+# 输出
+output:
+  questions: /home/nicola/.openclaw/workspace/geo-questions/
+  content: /home/nicola/.openclaw/workspace/geo-content/
+  published: /home/nicola/.openclaw/workspace/geo-published/
+
+# 定时执行（可选）
+schedule:
+  # 每天 10:00 生成内容
+  - cron: "0 10 * * *"
+    action: 生成问题库
+  
+  # 每天 14:00 生成发布文件
+  - cron: "0 14 * * *"
+    action: 生成发布文件

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>太一 Dashboard - 综合总览</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100">
+    <!-- 顶部导航 -->
+    <header class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 py-6">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h1 class="text-3xl font-bold text-indigo-600">🎯 太一 Dashboard</h1>
+                    <p class="text-gray-500 mt-1">综合系统总览 · 实时监控</p>
+                </div>
+                <div class="text-right">
+                    <p id="current-time" class="text-lg font-semibold text-gray-700">--:--:--</p>
+                    <p id="current-date" class="text-sm text-gray-500">----</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-8">
+        <!-- 系统状态卡片 -->
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-6 mb-8">
+            <a href="/service/gateway" class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg hover:scale-105 transition-all cursor-pointer block">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-gray-500 text-sm">Gateway</p>
+                        <p id="gateway-status" class="text-2xl font-bold text-gray-400">⚪ 检查中</p>
+                    </div>
+                    <div class="text-4xl">🔄</div>
+                </div>
+            </a>
+
+            <a href="/service/bot" class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg hover:scale-105 transition-all cursor-pointer block">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-gray-500 text-sm">Bot Dashboard</p>
+                        <p id="bot-status" class="text-2xl font-bold text-gray-400">⚪ 检查中</p>
+                    </div>
+                    <div class="text-4xl">🤖</div>
+                </div>
+            </a>
+
+            <a href="/service/roi" class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg hover:scale-105 transition-all cursor-pointer block">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-gray-500 text-sm">ROI Dashboard</p>
+                        <p id="roi-status" class="text-2xl font-bold text-gray-400">⚪ 检查中</p>
+                    </div>
+                    <div class="text-4xl">📊</div>
+                </div>
+            </a>
+
+            <a href="/service/skill" class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg hover:scale-105 transition-all cursor-pointer block">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-gray-500 text-sm">Skill Dashboard</p>
+                        <p id="skill-status" class="text-2xl font-bold text-gray-400">⚪ 检查中</p>
+                    </div>
+                    <div class="text-4xl">🎯</div>
+                </div>
+            </a>
+
+            <a href="/baidu" class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg hover:scale-105 transition-all cursor-pointer block">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-gray-500 text-sm">百度网盘</p>
+                        <p id="baidu-status" class="text-2xl font-bold text-gray-400">⚪ 检查中</p>
+                    </div>
+                    <div class="text-4xl">☁️</div>
+                </div>
+            </a>
+        </div>
+
+        <!-- 资源使用 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            <div class="bg-white rounded-xl shadow-md p-6">
+                <h3 class="text-lg font-bold text-gray-800 mb-4">💾 内存使用</h3>
+                <div class="flex items-center justify-center">
+                    <canvas id="memory-chart"></canvas>
+                </div>
+                <p id="memory-text" class="text-center text-gray-600 mt-4">加载中...</p>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md p-6">
+                <h3 class="text-lg font-bold text-gray-800 mb-4">📁 磁盘使用</h3>
+                <div class="flex items-center justify-center">
+                    <canvas id="disk-chart"></canvas>
+                </div>
+                <p id="disk-text" class="text-center text-gray-600 mt-4">加载中...</p>
+            </div>
+        </div>
+
+        <!-- Google 服务 -->
+        <div class="bg-white rounded-xl shadow-md p-6 mb-8">
+            <div class="flex items-center justify-between mb-4">
+                <h3 class="text-lg font-bold text-gray-800">🌐 Google 服务集成</h3>
+                <a href="/google" class="text-indigo-600 hover:text-indigo-800 text-sm font-semibold">查看详情 →</a>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <a href="https://gemini.google.com" target="_blank" class="text-center p-4 rounded-lg bg-blue-50 hover:bg-blue-100 transition-colors block">
+                    <p class="text-3xl mb-2">✨</p>
+                    <p class="font-semibold">Gemini</p>
+                    <p id="gemini-status" class="text-sm text-green-600">✅ 已配置</p>
+                </a>
+                <a href="https://notebooklm.google.com" target="_blank" class="text-center p-4 rounded-lg bg-green-50 hover:bg-green-100 transition-colors block">
+                    <p class="text-3xl mb-2">📓</p>
+                    <p class="font-semibold">NotebookLM</p>
+                    <p id="notebooklm-status" class="text-sm text-green-600">✅ 已配置</p>
+                </a>
+                <a href="https://drive.google.com" target="_blank" class="text-center p-4 rounded-lg bg-yellow-50 hover:bg-yellow-100 transition-colors block">
+                    <p class="text-3xl mb-2">☁️</p>
+                    <p class="font-semibold">Google Drive</p>
+                    <p id="drive-status" class="text-sm text-yellow-600">🟡 待凭证</p>
+                </a>
+                <a href="#" onclick="alert('Chromium 已安装，可通过桌面快捷方式启动')" class="text-center p-4 rounded-lg bg-red-50 hover:bg-red-100 transition-colors block">
+                    <p class="text-3xl mb-2">🌐</p>
+                    <p class="font-semibold">Chromium</p>
+                    <p id="chromium-status" class="text-sm text-green-600">✅ 已安装</p>
+                </a>
+            </div>
+        </div>
+
+        <!-- 快速访问 -->
+        <div class="bg-white rounded-xl shadow-md p-6 mb-8">
+            <div class="flex items-center justify-between mb-4">
+                <h3 class="text-lg font-bold text-gray-800">🚀 快速访问</h3>
+                <a href="/skills" class="text-indigo-600 hover:text-indigo-800 text-sm font-semibold">全部技能 →</a>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                <a href="http://localhost:3000" target="_blank" class="text-center p-4 rounded-lg bg-indigo-50 hover:bg-indigo-100 hover:scale-105 transition-all">
+                    <p class="text-2xl mb-2">🤖</p>
+                    <p class="font-semibold">Bot Dashboard</p>
+                    <p class="text-xs text-gray-500">:3000</p>
+                </a>
+                <a href="http://localhost:8080" target="_blank" class="text-center p-4 rounded-lg bg-green-50 hover:bg-green-100 hover:scale-105 transition-all">
+                    <p class="text-2xl mb-2">📊</p>
+                    <p class="font-semibold">ROI Dashboard</p>
+                    <p class="text-xs text-gray-500">:8080</p>
+                </a>
+                <a href="http://localhost:5002" target="_blank" class="text-center p-4 rounded-lg bg-purple-50 hover:bg-purple-100 hover:scale-105 transition-all">
+                    <p class="text-2xl mb-2">🎯</p>
+                    <p class="font-semibold">Skill Dashboard</p>
+                    <p class="text-xs text-gray-500">:5002</p>
+                </a>
+                <a href="https://gemini.google.com" target="_blank" class="text-center p-4 rounded-lg bg-blue-50 hover:bg-blue-100 hover:scale-105 transition-all">
+                    <p class="text-2xl mb-2">✨</p>
+                    <p class="font-semibold">Gemini</p>
+                    <p class="text-xs text-gray-500">AI</p>
+                </a>
+                <a href="https://notebooklm.google.com" target="_blank" class="text-center p-4 rounded-lg bg-yellow-50 hover:bg-yellow-100 hover:scale-105 transition-all">
+                    <p class="text-2xl mb-2">📓</p>
+                    <p class="font-semibold">NotebookLM</p>
+                    <p class="text-xs text-gray-500">笔记</p>
+                </a>
+            </div>
+        </div>
+
+        <!-- 最近报告 -->
+        <div class="bg-white rounded-xl shadow-md p-6">
+            <h3 class="text-lg font-bold text-gray-800 mb-4">📄 最近报告</h3>
+            <div id="reports-list" class="space-y-2">
+                <p class="text-gray-500">加载中...</p>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // 更新时间
+        function updateTime() {
+            const now = new Date();
+            document.getElementById('current-time').textContent = now.toLocaleTimeString('zh-CN');
+            document.getElementById('current-date').textContent = now.toLocaleDateString('zh-CN', { 
+                year: 'numeric', month: 'long', day: 'numeric', weekday: 'long' 
+            });
+        }
+        setInterval(updateTime, 1000);
+        updateTime();
+
+        // 加载状态
+        async function loadStatus() {
+            try {
+                const response = await fetch('/api/status');
+                const data = await response.json();
+                
+                // 更新系统状态
+                updateStatus('gateway', data.system.gateway);
+                updateStatus('bot', data.system.bot_dashboard);
+                updateStatus('roi', data.system.roi_dashboard);
+                updateStatus('skill', data.system.skill_dashboard);
+                updateStatus('baidu', data.system.baidu_netdisk);
+                
+                // 更新资源使用
+                updateMemory(data.memory);
+                updateDisk(data.disk);
+                
+                // 更新 Google 服务
+                updateGoogleServices(data.google_services);
+                
+            } catch (error) {
+                console.error('加载状态失败:', error);
+            }
+        }
+
+        function updateStatus(id, running) {
+            const el = document.getElementById(`${id}-status`);
+            if (running) {
+                el.textContent = '🟢 运行中';
+                el.className = 'text-2xl font-bold text-green-600';
+            } else {
+                el.textContent = '🔴 已停止';
+                el.className = 'text-2xl font-bold text-red-600';
+            }
+        }
+
+        function updateMemory(memory) {
+            document.getElementById('memory-text').textContent = 
+                `${memory.used_gb}GB / ${memory.total_gb}GB (${memory.percent}%)`;
+            
+            new Chart(document.getElementById('memory-chart'), {
+                type: 'doughnut',
+                data: {
+                    labels: ['已使用', '可用'],
+                    datasets: [{
+                        data: [memory.used_gb, memory.total_gb - memory.used_gb],
+                        backgroundColor: ['#3b82f6', '#e5e7eb']
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    plugins: {
+                        legend: { position: 'bottom' }
+                    }
+                }
+            });
+        }
+
+        function updateDisk(disk) {
+            document.getElementById('disk-text').textContent = 
+                `${disk.used_gb}GB / ${disk.total_gb}GB (${disk.percent}%)`;
+            
+            new Chart(document.getElementById('disk-chart'), {
+                type: 'doughnut',
+                data: {
+                    labels: ['已使用', '可用'],
+                    datasets: [{
+                        data: [disk.used_gb, disk.free_gb],
+                        backgroundColor: ['#10b981', '#e5e7eb']
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    plugins: {
+                        legend: { position: 'bottom' }
+                    }
+                }
+            });
+        }
+
+        function updateGoogleServices(services) {
+            const statusMap = {
+                true: '✅ 已配置',
+                false: '🟡 待凭证'
+            };
+            
+            document.getElementById('gemini-status').textContent = 
+                statusMap[services.gemini] || '❌ 未配置';
+            document.getElementById('notebooklm-status').textContent = 
+                statusMap[services.notebooklm] || '❌ 未配置';
+            document.getElementById('drive-status').textContent = 
+                statusMap[services.drive] || '❌ 未配置';
+            document.getElementById('chromium-status').textContent = 
+                statusMap[services.chromium] || '❌ 未配置';
+        }
+
+        // 加载报告
+        async function loadReports() {
+            try {
+                const response = await fetch('/api/reports');
+                const reports = await response.json();
+                
+                const list = document.getElementById('reports-list');
+                if (reports.length === 0) {
+                    list.innerHTML = '<p class="text-gray-500">暂无报告</p>';
+                    return;
+                }
+                
+                list.innerHTML = reports.map(report => `
+                    <a href="/md-viewer?file=${encodeURIComponent(report.name)}" 
+                       class="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors block">
+                        <span class="font-medium text-gray-700">📄 ${report.name}</span>
+                        <span class="text-sm text-gray-500">${report.created}</span>
+                    </a>
+                `).join('');
+            } catch (error) {
+                console.error('加载报告失败:', error);
+            }
+        }
+
+        // 初始化
+        loadStatus();
+        loadReports();
+        
+        // 每 10 秒刷新状态
+        setInterval(loadStatus, 10000);
+    </script>
+</body>
+</html>
