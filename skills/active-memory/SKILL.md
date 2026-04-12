@@ -1,16 +1,16 @@
 ---
-name: human-memory-theory
+name: active-memory
 version: 1.0.0
-description: 人类记忆理论 - 记忆科学研究
+description: 主动记忆 - 主动记忆管理
 category: system
-tags: ['memory', 'theory', 'science']
+tags: ['memory', 'active', 'management']
 author: 太一 AGI
-created: 2026-04-10
+created: 2026-04-11
 updated: 2026-04-13
 status: active
 ---
 
-# 人类记忆理论
+# 主动记忆
 
 > **版本**: v1.0.0 | **更新**: 2026-04-13  
 > **分类**: system  
@@ -20,20 +20,21 @@ status: active
 
 ## 🎯 功能
 
-人类记忆理论研究
+主动记忆管理
 
-- 记忆模型研究
-- 记忆机制分析
-- 记忆优化策略
+- 主动记忆检索
+- 记忆更新优化
+- 记忆清理
 
 ---
 
 ## 📁 文件结构
 
 ```
-human-memory-theory/
+active-memory/
 ├── SKILL.md
-└── SKILL.md (已有)
+├── active_memory.py
+└── requirements.txt
 ```
 
 ---
