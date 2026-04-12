@@ -1,0 +1,8 @@
+2026-04-12 21:07:35,930 - SelfEvolvingYiAgent - INFO - 🧬 自进化羿 Agent v2.0 启动...
+2026-04-12 21:07:35,930 - SelfEvolvingYiAgent - INFO -   无进化历史，从头开始
+2026-04-12 21:07:35,930 - SelfEvolvingYiAgent - INFO - 🧬 自进化羿 Agent v2.0 已初始化
+2026-04-12 21:07:35,930 - SelfEvolvingYiAgent - INFO - 🧬 开始执行自进化羿...
+2026-04-12 21:07:35,933 - SelfEvolvingYiAgent - INFO - ✅ 监控学习完成：{'信号捕捉': 1.0, '异常检测': 1.0, '实时监控': 1.0, '事件响应': 1.0}
+2026-04-12 21:07:35,933 - SelfEvolvingYiAgent - INFO - ✅ 进化历史已保存
+2026-04-12 21:07:35,933 - SelfEvolvingYiAgent - INFO - ✅ 进化报告已生成
+2026-04-12 21:07:35,933 - SelfEvolvingYiAgent - INFO - ✅ 自进化羿完成！信号捕捉：25 个
