@@ -1,61 +1,103 @@
 #!/bin/bash
-# daily-wisdom.sh - 每日智慧推送脚本
+# daily-wisdom.sh - 每日智慧推送脚本（卡片格式）
 # 用法：bash scripts/daily-wisdom.sh
 
 WORKSPACE="$HOME/.openclaw/workspace"
 WISDOM_FILE="$WORKSPACE/wisdom/dao-buddha-quotes.md"
 DATE=$(date +%Y-%m-%d)
 HOUR=$(date +%H)
+WEEKDAY=$(date +%A)
 
 # 从智慧库中随机选择一句
 get_random_quote() {
-    # 读取智慧库，提取所有语录
     local quotes=()
+    local sources=()
     
-    # 提取道家智慧
+    # 提取道德经
     while IFS= read -r line; do
         if [[ "$line" =~ ^[0-9]+\.[[:space:]]+(.*) ]]; then
             quotes+=("${BASH_REMATCH[1]}")
+            sources+=("《道德经》")
         fi
-    done < <(sed -n '/## 《道德经》/,/## 《庄子》/p' "$WISDOM_FILE" | head -20)
+    done < <(sed -n '/### 《道德经》/,/### 《庄子》/p' "$WISDOM_FILE")
+    
+    # 提取庄子
+    while IFS= read -r line; do
+        if [[ "$line" =~ ^[0-9]+\.[[:space:]]+(.*) ]]; then
+            quotes+=("${BASH_REMATCH[1]}")
+            sources+=("《庄子》")
+        fi
+    done < <(sed -n '/### 《庄子》/,/## 佛家智慧/p' "$WISDOM_FILE")
+    
+    # 提取心经
+    while IFS= read -r line; do
+        if [[ "$line" =~ ^[0-9]+\.[[:space:]]+(.*) ]]; then
+            quotes+=("${BASH_REMATCH[1]}")
+            sources+=("《心经》")
+        fi
+    done < <(sed -n '/### 《心经》/,/### 《金刚经》/p' "$WISDOM_FILE")
+    
+    # 提取金刚经
+    while IFS= read -r line; do
+        if [[ "$line" =~ ^[0-9]+\.[[:space:]]+(.*) ]]; then
+            quotes+=("${BASH_REMATCH[1]}")
+            sources+=("《金刚经》")
+        fi
+    done < <(sed -n '/### 《金刚经》/,/### 禅宗公案/p' "$WISDOM_FILE")
+    
+    # 提取禅宗公案
+    while IFS= read -r line; do
+        if [[ "$line" =~ ^[0-9]+\.[[:space:]]+(.*) ]]; then
+            quotes+=("${BASH_REMATCH[1]}")
+            sources+=("禅宗")
+        fi
+    done < <(sed -n '/### 禅宗公案/,/### 佛家箴言/p' "$WISDOM_FILE")
     
     # 随机选择
     local count=${#quotes[@]}
     if [ $count -gt 0 ]; then
         local idx=$((RANDOM % count))
-        echo "${quotes[$idx]}"
+        echo "${quotes[$idx]}|${sources[$idx]}"
     else
-        echo "道可道，非常道。"
+        echo "道可道，非常道。|《道德经》"
+    fi
+}
+
+# 判断道家或佛家
+get_type() {
+    local source=$1
+    if [[ "$source" == *"道德经"* ]] || [[ "$source" == *"庄子"* ]]; then
+        echo "道家"
+    else
+        echo "佛家"
     fi
 }
 
 # 获取今日智慧
-QUOTE=$(get_random_quote)
-SOURCE="《道德经》"
-TYPE="道家"
+RESULT=$(get_random_quote)
+QUOTE=$(echo "$RESULT" | cut -d'|' -f1)
+SOURCE=$(echo "$RESULT" | cut -d'|' -f2)
+TYPE=$(get_type "$SOURCE")
 
-# 随机选择道家或佛家
-if [ $((RANDOM % 2)) -eq 0 ]; then
-    TYPE="道家"
-    SOURCE="《道德经》"
-else
-    TYPE="佛家"
-    SOURCE="《心经》"
-fi
+# 生成卡片格式消息（适合微信转发）
+CARD_MESSAGE="━━━━━━━━━━━━━━━━━━
+📿  晨间智慧  ·  $DATE
+━━━━━━━━━━━━━━━━━━
 
-# 推送消息
-MESSAGE="📿 晨间智慧 · $DATE
+$TYPE  ·  $SOURCE
 
-$TYPE · $SOURCE
+╔══════════════════════╗
+║
+║   $QUOTE
+║
+╚══════════════════════╝
 
-「$QUOTE」
+—— 太一  ·  晨起静心
 
-—— 太一 · 晨起静心"
+━━━━━━━━━━━━━━━━━━
+🙏 愿您今日  心安自在"
 
-echo "$MESSAGE"
-
-# 通过 OpenClaw 发送（需要配置微信通道）
-# openclaw send "SAYELF" "$MESSAGE"
+echo "$CARD_MESSAGE"
 
 # 记录日志
-echo "[$DATE $HOUR:00] 推送：$QUOTE" >> "$WORKSPACE/memory/daily-wisdom-log.md"
+echo "[$DATE $HOUR:00] $TYPE · $SOURCE: $QUOTE" >> "$WORKSPACE/memory/daily-wisdom-log.md"
