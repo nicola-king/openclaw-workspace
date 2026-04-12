@@ -1,0 +1,22 @@
+{
+  "history": [
+    {
+      "timestamp": "2026-04-12T20:18:55.382823",
+      "delta_s": 2701980.0,
+      "efficiency_improvement": 0,
+      "rule_accuracy": 100.0,
+      "skills_created": 78,
+      "scan_count": 15011,
+      "execution_time_seconds": 3.727134
+    }
+  ],
+  "rule_weights": {
+    "空框架": 1.0,
+    "完全重复": 1.0,
+    "部分重叠": 1.0,
+    "低价值": 1.0,
+    "高价值": 1.0,
+    "通用模式": 1.0
+  },
+  "last_updated": "2026-04-12T20:18:55.383417"
+}
