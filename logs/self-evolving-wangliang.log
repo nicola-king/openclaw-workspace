@@ -1,0 +1,8 @@
+2026-04-12 20:49:18,281 - SelfEvolvingWangliangAgent - INFO - 🧬 自进化罔两 Agent v2.0 启动...
+2026-04-12 20:49:18,281 - SelfEvolvingWangliangAgent - INFO -   无进化历史，从头开始
+2026-04-12 20:49:18,281 - SelfEvolvingWangliangAgent - INFO - 🧬 自进化罔两 Agent v2.0 已初始化
+2026-04-12 20:49:18,281 - SelfEvolvingWangliangAgent - INFO - 🧬 开始执行自进化罔两...
+2026-04-12 20:49:18,283 - SelfEvolvingWangliangAgent - INFO - ✅ 情报学习完成：{'市场监控': 1.0, '竞品分析': 1.0, '舆情收集': 1.0, '情报报告': 1.0}
+2026-04-12 20:49:18,283 - SelfEvolvingWangliangAgent - INFO - ✅ 进化历史已保存
+2026-04-12 20:49:18,283 - SelfEvolvingWangliangAgent - INFO - ✅ 进化报告已生成
+2026-04-12 20:49:18,283 - SelfEvolvingWangliangAgent - INFO - ✅ 自进化罔两完成！市场监控：20 个

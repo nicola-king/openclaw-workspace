@@ -1,0 +1,18 @@
+{
+  "history": [
+    {
+      "timestamp": "2026-04-12T20:49:18.281487",
+      "market_monitored": 20,
+      "intelligence_accuracy": 95.0,
+      "response_speed": 90.0,
+      "skills_created": 78
+    }
+  ],
+  "intel_weights": {
+    "市场监控": 1.0,
+    "竞品分析": 1.0,
+    "舆情收集": 1.0,
+    "情报报告": 1.0
+  },
+  "last_updated": "2026-04-12T20:49:18.283352"
+}

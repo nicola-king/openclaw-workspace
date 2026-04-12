@@ -28,7 +28,7 @@ class SelfEvolvingWangliangAgent:
         self.skills_dir = self.workspace / 'skills'
         self.reports_dir = self.workspace / 'reports'
         self.evolution_history = []
-        self intel_weights = {}
+        self.intel_weights = {}
         self.evolution_history_file = self.workspace / '.evolution' / 'wangliang_history.json'
         self.load_evolution_history()
         logger.info("🧬 自进化罔两 Agent v2.0 已初始化")

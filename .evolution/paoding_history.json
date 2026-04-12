@@ -1,0 +1,18 @@
+{
+  "history": [
+    {
+      "timestamp": "2026-04-12T20:48:54.123494",
+      "cost_analyzed": 12,
+      "budget_accuracy": 96.0,
+      "risk_control": 95.0,
+      "skills_created": 78
+    }
+  ],
+  "finance_weights": {
+    "成本控制": 1.0,
+    "预算管理": 1.0,
+    "财务分析": 1.0,
+    "风险评估": 1.0
+  },
+  "last_updated": "2026-04-12T20:48:54.125471"
+}

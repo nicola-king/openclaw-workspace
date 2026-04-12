@@ -1,0 +1,8 @@
+2026-04-12 20:48:54,123 - SelfEvolvingPaodingAgent - INFO - 🧬 自进化庖丁 Agent v2.0 启动...
+2026-04-12 20:48:54,123 - SelfEvolvingPaodingAgent - INFO -   无进化历史，从头开始
+2026-04-12 20:48:54,123 - SelfEvolvingPaodingAgent - INFO - 🧬 自进化庖丁 Agent v2.0 已初始化
+2026-04-12 20:48:54,123 - SelfEvolvingPaodingAgent - INFO - 🧬 开始执行自进化庖丁...
+2026-04-12 20:48:54,125 - SelfEvolvingPaodingAgent - INFO - ✅ 财务学习完成：{'成本控制': 1.0, '预算管理': 1.0, '财务分析': 1.0, '风险评估': 1.0}
+2026-04-12 20:48:54,125 - SelfEvolvingPaodingAgent - INFO - ✅ 进化历史已保存
+2026-04-12 20:48:54,125 - SelfEvolvingPaodingAgent - INFO - ✅ 进化报告已生成
+2026-04-12 20:48:54,125 - SelfEvolvingPaodingAgent - INFO - ✅ 自进化庖丁完成！成本分析：12 个
