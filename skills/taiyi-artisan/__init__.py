@@ -14,6 +14,7 @@ from .core.style import TaiyiStyle, StyleCategory
 from .engines.wisdom import WisdomCardEngine
 from .engines.charts import ChartsEngine
 from .engines.cards import CardsEngine
+from .design_systems.tokens import DesignTokens
 
 __version__ = "1.0.0"
 __author__ = "太一 AGI"
@@ -49,6 +50,7 @@ class Artisan:
         self.wisdom = WisdomCardEngine()
         self.charts = ChartsEngine()
         self.cards = CardsEngine()
+        self.tokens = DesignTokens()
     
     def review(self, content: str, content_type: str = 'code'):
         """美学审核"""
@@ -72,6 +74,27 @@ class Artisan:
     def create_info_card(self, title: str, points: list, **kwargs):
         """生成信息卡片"""
         return self.cards.create_info_card(title, points, **kwargs)
+    
+    def review_design(self, content: str, content_type: str = 'ui'):
+        """设计审核（新增）"""
+        return self.aesthetics.review(content, content_type)
+    
+    def get_design_tokens(self) -> DesignTokens:
+        """获取设计令牌"""
+        return self.tokens
+    
+    def get_css_variables(self) -> str:
+        """生成 CSS 变量"""
+        return self.tokens.get_css_variables()
+    
+    def get_design_principles(self) -> dict:
+        """获取设计原则"""
+        return self.tokens.get_design_principles()
+    
+    def generate_ui(self, ui_type: str, style: str = 'taiyi-apple', **kwargs):
+        """生成 UI（待实现）"""
+        # TODO: 实现 UI 生成
+        pass
     
     def collect_feedback(self, feedback: Feedback):
         """收集反馈"""

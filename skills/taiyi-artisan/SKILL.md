@@ -8,7 +8,7 @@ author: 太一 AGI
 created: 2026-04-13
 status: active
 priority: P0
-replaces: ['art-director', 'visual-designer', 'aesthetic-evolution']
+replaces: ['art-director', 'visual-designer', 'aesthetic-evolution', 'taiyi-design-system', 'design-md-integration']
 ---
 
 # 🎨 Taiyi Artisan - 太一艺境 v1.0
@@ -30,7 +30,7 @@ replaces: ['art-director', 'visual-designer', 'aesthetic-evolution']
 
 ---
 
-## 🎯 三大核心能力
+## 🎯 四大核心能力
 
 ### 1️⃣ 美学大脑（Aesthetic Brain）
 
