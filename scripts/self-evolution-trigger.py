@@ -367,7 +367,7 @@ TODO: 定义技能职责
         one_hour_ago = now - timedelta(hours=1)
         
         reports = []
-        reports_dir = Path(self.workspace) / 'reports'
+        reports_dir = REPORTS_DIR
         
         for report_file in reports_dir.glob('self-evolution-*.json'):
             try:
@@ -420,7 +420,7 @@ TODO: 定义技能职责
 """
         
         # 保存到发送日志
-        log_file = Path(self.workspace) / 'logs' / 'telegram-send.log'
+        log_file = LOGS_DIR / 'telegram-send.log'
         with open(log_file, 'a', encoding='utf-8') as f:
             f.write(f"[{datetime.now()}] {message}\n")
         
