@@ -3,3 +3,30 @@
 [2026-04-13 13:07:16]   ✅ 检查：self-evolution-trigger.py
 [2026-04-13 13:07:16]   ✅ 语法正确：self-evolution-trigger.py
 [2026-04-13 13:07:16]   ✅ 检查：merge-emerged-skills.py
+[2026-04-13 13:07:16]   ✅ 语法正确：merge-emerged-skills.py
+[2026-04-13 13:07:16]   ✅ 检查：distill-all-skills.py
+[2026-04-13 13:07:16]   ✅ 语法正确：distill-all-skills.py
+[2026-04-13 13:07:16] 🔍 检查日志错误...
+[2026-04-13 13:07:16]   ✅ 检查：self-evolution.log
+[2026-04-13 13:07:16]   ⚠️ 发现错误：Traceback (most recent call last):
+[2026-04-13 13:07:16]   ⚠️ 发现错误：AttributeError: 'SelfEvolutionTrigger' object has no attribute 'workspace'
+[2026-04-13 13:07:16]   ⚠️ 发现错误：Traceback (most recent call last):
+[2026-04-13 13:07:16]   ⚠️ 发现错误：AttributeError: 'SelfEvolutionTrigger' object has no attribute 'workspace'
+[2026-04-13 13:07:16]   ⚠️ 发现错误：Traceback (most recent call last):
+[2026-04-13 13:07:16]   ⚠️ 发现错误：AttributeError: 'SelfEvolutionTrigger' object has no attribute 'workspace'
+[2026-04-13 13:07:16]   ✅ 检查：auto-exec-5m.log
+[2026-04-13 13:07:16]   ✅ 检查：telegram-send.log
+[2026-04-13 13:07:16] 🔧 自动修复常见 Bug...
+[2026-04-13 13:07:16]   🔧 检查：self-evolution-trigger.py
+[2026-04-13 13:07:16] ⚙️ 优化代码...
+[2026-04-13 13:07:16]   ℹ️  代码优化功能待实现
+[2026-04-13 13:07:16] 📝 生成修复报告...
+[2026-04-13 13:07:16] ✅ 报告已生成：auto-bug-fix-20260413-130716.md
+[2026-04-13 13:07:16] ✅ 自动化 Bug 检测和修复完成！
+[2026-04-13 13:08:08] 🔍 开始增强版 Bug 检测和修复...
+[2026-04-13 13:08:08] 🔧 修复 self-evolution-trigger.py...
+[2026-04-13 13:08:08]   ℹ️  无需修复
+[2026-04-13 13:08:08] 🔍 检查其他脚本...
+[2026-04-13 13:08:08]   ✅ 检查：merge-emerged-skills.py
+[2026-04-13 13:08:08]   ✅ 语法正确：merge-emerged-skills.py
+[2026-04-13 13:08:08]   ✅ 检查：distill-all-skills.py
