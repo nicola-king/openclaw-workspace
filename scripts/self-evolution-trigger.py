@@ -338,6 +338,14 @@ TODO: 定义技能职责
         report, report_file = self.generate_report()
         self.log("")
         
+        # 生成小时汇总报告
+        hourly_summary = self.generate_hourly_summary()
+        self.log("")
+        
+        # 发送 Telegram 通知
+        self.send_telegram_notification(report, hourly_summary)
+        self.log("")
+        
         # 总结
         self.log("📊 自进化检查总结:")
         self.log(f"   开始时间：{self.start_time.strftime('%Y-%m-%d %H:%M:%S')}")
@@ -349,6 +357,76 @@ TODO: 定义技能职责
         self.log("✅ 太一系统自进化检查完成")
         
         return report
+    
+    def generate_hourly_summary(self):
+        """生成小时汇总报告"""
+        self.log("📊 生成小时汇总报告...")
+        
+        # 收集过去 1 小时的报告
+        now = datetime.now()
+        one_hour_ago = now - timedelta(hours=1)
+        
+        reports = []
+        reports_dir = Path(self.workspace) / 'reports'
+        
+        for report_file in reports_dir.glob('self-evolution-*.json'):
+            try:
+                mtime = datetime.fromtimestamp(report_file.stat().st_mtime)
+                if one_hour_ago <= mtime <= now:
+                    with open(report_file, 'r', encoding='utf-8') as f:
+                        data = json.load(f)
+                        reports.append(data)
+            except Exception as e:
+                self.log(f"  ⚠️ 读取失败：{report_file} - {e}")
+        
+        # 生成汇总
+        summary = {
+            'timestamp': now.isoformat(),
+            'period_start': one_hour_ago.isoformat(),
+            'period_end': now.isoformat(),
+            'total_executions': len(reports),
+            'total_skills_created': sum(r.get('skills_created', 0) for r in reports),
+            'total_signals': sum(r.get('signals_detected', 0) for r in reports),
+        }
+        
+        # 保存汇总报告
+        timestamp = now.strftime('%Y%m%d-%H0000')
+        summary_file = reports_dir / f'hourly-summary-{timestamp}.json'
+        
+        with open(summary_file, 'w', encoding='utf-8') as f:
+            json.dump(summary, f, indent=2, ensure_ascii=False)
+        
+        self.log(f"  ✅ 汇总报告已保存：{summary_file}")
+        self.log(f"  总执行：{summary['total_executions']} 次")
+        self.log(f"  总技能创建：{summary['total_skills_created']} 个")
+        self.log(f"  总信号检测：{summary['total_signals']} 个")
+        
+        return summary
+    
+    def send_telegram_notification(self, report, hourly_summary):
+        """发送 Telegram 通知"""
+        self.log("📱 准备发送 Telegram 通知...")
+        
+        message = f"""📊 太一自进化小时报告
+
+时间：{hourly_summary['period_start'][:16]} - {hourly_summary['period_end'][:16]}
+
+执行统计:
+- 执行次数：{hourly_summary['total_executions']} 次
+- 技能创建：{hourly_summary['total_skills_created']} 个
+- 信号检测：{hourly_summary['total_signals']} 个
+
+状态：✅ 正常
+"""
+        
+        # 保存到发送日志
+        log_file = Path(self.workspace) / 'logs' / 'telegram-send.log'
+        with open(log_file, 'a', encoding='utf-8') as f:
+            f.write(f"[{datetime.now()}] {message}\n")
+        
+        self.log(f"📱 Telegram 消息已记录到日志")
+        # 注意：实际发送需要 Telegram Bot API，这里只记录日志
+        # 实际使用时可以调用 send-telegram-report.py
 
 
 def main():
