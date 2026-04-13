@@ -115,20 +115,14 @@ echo "$CARD_MESSAGE"
 # 记录日志
 echo "[$DATE $HOUR:00] $TYPE · $SOURCE: $QUOTE" >> "$WORKSPACE/memory/daily-wisdom-log.md"
 
-# 如果带 --send 参数，通过 OpenClaw 发送
+# 保存智慧卡片到文件（由主 session 心跳时读取并发送）
+WISDOM_OUTPUT="$WORKSPACE/.wisdom-today.md"
+echo "$CARD_MESSAGE" > "$WISDOM_OUTPUT"
+echo "[$DATE $HOUR:00] ✅ 已生成，待心跳发送" >> "$WORKSPACE/memory/daily-wisdom-log.md"
+
+# 如果带 --send 参数，直接输出到 stdout（用于手动测试）
 if [[ "$SEND_FLAG" == "--send" ]]; then
-    # 方法 1: 通过 openclaw message send 发送
-    if command -v openclaw &> /dev/null; then
-        # 使用 openclaw-weixin 通道
-        openclaw message send --channel openclaw-weixin --target "o9cq80yz80T13iCV5N_djDCSVo88@im.wechat" --message "$CARD_MESSAGE" 2>&1 | tee -a "$WORKSPACE/logs/wisdom-send.log"
-        if [ ${PIPESTATUS[0]} -eq 0 ]; then
-            echo "[$DATE $HOUR:00] ✅ 已发送微信" >> "$WORKSPACE/memory/daily-wisdom-log.md"
-        else
-            echo "[$DATE $HOUR:00] ❌ 发送失败" >> "$WORKSPACE/memory/daily-wisdom-log.md"
-        fi
-    # 方法 2: 保存到待发送队列（由主 session 处理）
-    else
-        echo "$CARD_MESSAGE" >> "$WORKSPACE/.pending-messages.md"
-        echo "[$DATE $HOUR:00] ⏳ 已加入待发送队列" >> "$WORKSPACE/memory/daily-wisdom-log.md"
-    fi
+    echo ""
+    echo "--- 脚本执行完成 ---"
+    echo "文件已保存：$WISDOM_OUTPUT"
 fi
