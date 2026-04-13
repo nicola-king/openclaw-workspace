@@ -324,7 +324,7 @@ def main():
     # Telegram 测试
     if comm.telegram_enabled:
         result = comm.send_telegram(
-            chat_id='@sayelfbot',
+            chat_id=comm.telegram_chat_id,
             message='🧪 通讯智能路由器测试消息'
         )
         print(f"Telegram: {'✅ 成功' if result else '❌ 失败'}")
