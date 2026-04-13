@@ -1,0 +1,6 @@
+[plugins] feishu_doc: Registered feishu_app_scopes
+[plugins] feishu_chat: Registered feishu_chat tool
+[plugins] feishu_wiki: Registered feishu_wiki tool
+[plugins] feishu_drive: Registered feishu_drive tool
+[plugins] feishu_bitable: Registered bitable tools
+Error: weixin: cannot determine which account to use for to=o9cq80yz80T13iCV5N_djDCSVo88@im.wechat (2 accounts registered, none has an active session with this recipient). Specify accountId in the delivery config, or ensure the recipient has recently messaged the bot.

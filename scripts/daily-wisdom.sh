@@ -117,14 +117,16 @@ echo "[$DATE $HOUR:00] $TYPE · $SOURCE: $QUOTE" >> "$WORKSPACE/memory/daily-wis
 
 # 如果带 --send 参数，通过 OpenClaw 发送
 if [[ "$SEND_FLAG" == "--send" ]]; then
-    # 方法 1: 通过 openclaw CLI 发送（如果可用）
+    # 方法 1: 通过 openclaw message send 发送
     if command -v openclaw &> /dev/null; then
-        echo "$CARD_MESSAGE" | openclaw send --chat "o9cq80yz80T13iCV5N_djDCSVo88@im.wechat" 2>/dev/null
-        echo "[$DATE $HOUR:00] ✅ 已发送微信" >> "$WORKSPACE/memory/daily-wisdom-log.md"
-    # 方法 2: 通过 sessions_send（如果在 OpenClaw 内部运行）
-    elif [[ -n "$OPENCLAW_SESSION" ]]; then
-        echo "SEND:$CARD_MESSAGE"
-    # 方法 3: 保存到待发送队列
+        # 使用 openclaw-weixin 通道
+        openclaw message send --channel openclaw-weixin --target "o9cq80yz80T13iCV5N_djDCSVo88@im.wechat" --message "$CARD_MESSAGE" 2>&1 | tee -a "$WORKSPACE/logs/wisdom-send.log"
+        if [ ${PIPESTATUS[0]} -eq 0 ]; then
+            echo "[$DATE $HOUR:00] ✅ 已发送微信" >> "$WORKSPACE/memory/daily-wisdom-log.md"
+        else
+            echo "[$DATE $HOUR:00] ❌ 发送失败" >> "$WORKSPACE/memory/daily-wisdom-log.md"
+        fi
+    # 方法 2: 保存到待发送队列（由主 session 处理）
     else
         echo "$CARD_MESSAGE" >> "$WORKSPACE/.pending-messages.md"
         echo "[$DATE $HOUR:00] ⏳ 已加入待发送队列" >> "$WORKSPACE/memory/daily-wisdom-log.md"
