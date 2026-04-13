@@ -45,7 +45,7 @@ cat /home/nicola/.openclaw/workspace/.wisdom-today.md
 | **每 30 分钟** | 任务自愈恢复 | ✅ |
 | **每 5 分钟** | 告警检查 | ✅ |
 
-### 每日检查 (10:25 更新)
+### 每日检查 (13:05 更新)
 - [x] 微信通道状态 ✅ 正常
 - [x] Telegram 通道 ✅ 正常
 - [x] MD 文件查看器 ✅ 已部署
