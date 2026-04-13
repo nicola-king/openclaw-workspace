@@ -8807,3 +8807,37 @@ Traceback (most recent call last):
     reports_dir = Path(self.workspace) / 'reports'
                        ^^^^^^^^^^^^^^
 AttributeError: 'SelfEvolutionTrigger' object has no attribute 'workspace'
+[2026-04-13 10:30:02] 🧬 太一系统自进化触发器启动
+[2026-04-13 10:30:02] ==================================================
+[2026-04-13 10:30:02] 🔍 检测能力涌现信号...
+[2026-04-13 10:30:02]   📊 检查任务重复模式...
+[2026-04-13 10:30:02]   ✅ 发现重复任务模式：美学 (7次)
+[2026-04-13 10:30:02]   📊 检查职责域边界...
+[2026-04-13 10:30:02]   ✅ 发现职责域空白：['色彩', '纹样', '园林']
+[2026-04-13 10:30:02]   📊 检查用户请求...
+[2026-04-13 10:30:02]   📊 检查学习洞察...
+[2026-04-13 10:30:02]   ✅ 发现学习洞察：['融合创新产出 4 个']
+[2026-04-13 10:30:02] ✅ 能力涌现信号检测完成，发现 3 个信号
+[2026-04-13 10:30:02] 
+[2026-04-13 10:30:02] 🎯 决策结果：创建 skill (优先级：P0)
+[2026-04-13 10:30:02]    原因：同类任务重复出现
+[2026-04-13 10:30:02] 
+[2026-04-13 10:30:02] 🎨 开始创建 Skill 框架...
+[2026-04-13 10:30:02] ✅ Skill 框架已创建：emerged-skill-20260413-103002
+[2026-04-13 10:30:02] 📄 能力涌现报告已保存：/home/nicola/.openclaw/workspace/reports/self-evolution-20260413-103002.json
+[2026-04-13 10:30:02] 
+[2026-04-13 10:30:02] 📊 生成小时汇总报告...
+Traceback (most recent call last):
+  File "/home/nicola/.openclaw/workspace/scripts/self-evolution-trigger.py", line 441, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/nicola/.openclaw/workspace/scripts/self-evolution-trigger.py", line 435, in main
+    report = system.run_full_check()
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicola/.openclaw/workspace/scripts/self-evolution-trigger.py", line 342, in run_full_check
+    hourly_summary = self.generate_hourly_summary()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nicola/.openclaw/workspace/scripts/self-evolution-trigger.py", line 370, in generate_hourly_summary
+    reports_dir = Path(self.workspace) / 'reports'
+                       ^^^^^^^^^^^^^^
+AttributeError: 'SelfEvolutionTrigger' object has no attribute 'workspace'
