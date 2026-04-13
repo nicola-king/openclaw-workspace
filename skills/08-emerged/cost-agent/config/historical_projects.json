@@ -1,0 +1,180 @@
+{
+  "schema": "taiyi/historical-projects/v1",
+  "description": "重庆地区历史工程造价数据",
+  "created": "2026-04-10",
+  "region": "重庆",
+  "projects": [
+    {
+      "id": "CQ-2025-RD-001",
+      "name": "重庆市 xx 大道改造工程",
+      "type": "道路工程",
+      "location": "重庆市渝北区",
+      "completion_date": "2025-12",
+      "scale": {
+        "length": 2500,
+        "width": 32,
+        "area": 80000
+      },
+      "structure": "沥青混凝土路面",
+      "grade": "城市主干路",
+      "cost": {
+        "total": 12800000,
+        "unit_price": 160,
+        "breakdown": {
+          "分部分项工程费": 10240000,
+          "措施项目费": 512000,
+          "安全文明施工费": 512000,
+          "其他项目费": 204800,
+          "规费": 2867200,
+          "税金": 1036800
+        }
+      },
+      "materials": {
+        "沥青混凝土": {"quantity": 24000, "unit": "㎡", "price": 185},
+        "路基土石方": {"quantity": 100000, "unit": "m³", "price": 45},
+        "路缘石": {"quantity": 5000, "unit": "m", "price": 85}
+      }
+    },
+    {
+      "id": "CQ-2025-BR-001",
+      "name": "重庆市 xx 桥工程",
+      "type": "桥梁工程",
+      "location": "重庆市江北区",
+      "completion_date": "2025-11",
+      "scale": {
+        "span": 50,
+        "width": 25,
+        "area": 1250
+      },
+      "structure": "预应力混凝土简支梁",
+      "foundation": "钻孔灌注桩",
+      "cost": {
+        "total": 2625000,
+        "unit_price": 2100,
+        "breakdown": {
+          "分部分项工程费": 2100000,
+          "措施项目费": 105000,
+          "安全文明施工费": 105000,
+          "其他项目费": 42000,
+          "规费": 588000,
+          "税金": 213750
+        }
+      },
+      "materials": {
+        "预应力混凝土梁": {"quantity": 375, "unit": "m³", "price": 1850},
+        "钻孔灌注桩": {"quantity": 187.5, "unit": "m³", "price": 2200},
+        "桥面铺装": {"quantity": 12.5, "unit": "100㎡", "price": 28000}
+      }
+    },
+    {
+      "id": "CQ-2025-PL-001",
+      "name": "重庆市 xx 片区管网工程",
+      "type": "管网工程",
+      "location": "重庆市沙坪坝区",
+      "completion_date": "2025-10",
+      "scale": {
+        "length": 1200,
+        "diameter": "DN800"
+      },
+      "material": "HDPE 双壁波纹管",
+      "depth": 2.8,
+      "cost": {
+        "total": 1320000,
+        "unit_price": 1100,
+        "breakdown": {
+          "分部分项工程费": 1056000,
+          "措施项目费": 52800,
+          "安全文明施工费": 52800,
+          "其他项目费": 21120,
+          "规费": 295680,
+          "税金": 107520
+        }
+      },
+      "materials": {
+        "HDPE 双壁波纹管 DN800": {"quantity": 1200, "unit": "m", "price": 520},
+        "沟槽土石方": {"quantity": 5040, "unit": "m³", "price": 65},
+        "检查井": {"quantity": 24, "unit": "座", "price": 8500}
+      }
+    },
+    {
+      "id": "CQ-2024-RD-002",
+      "name": "重庆市 xx 路新建工程",
+      "type": "道路工程",
+      "location": "重庆市南岸区",
+      "completion_date": "2024-12",
+      "scale": {
+        "length": 1800,
+        "width": 24,
+        "area": 43200
+      },
+      "structure": "沥青混凝土路面",
+      "grade": "城市次干路",
+      "cost": {
+        "total": 5616000,
+        "unit_price": 130,
+        "breakdown": {
+          "分部分项工程费": 4492800,
+          "措施项目费": 224640,
+          "安全文明施工费": 224640,
+          "其他项目费": 89856,
+          "规费": 1257984,
+          "税金": 456480
+        }
+      },
+      "materials": {
+        "沥青混凝土": {"quantity": 12960, "unit": "㎡", "price": 175},
+        "路基土石方": {"quantity": 51840, "unit": "m³", "price": 42},
+        "路缘石": {"quantity": 3600, "unit": "m", "price": 78}
+      }
+    },
+    {
+      "id": "CQ-2024-PL-002",
+      "name": "重庆市 xx 区排水管网工程",
+      "type": "管网工程",
+      "location": "重庆市九龙坡区",
+      "completion_date": "2024-11",
+      "scale": {
+        "length": 800,
+        "diameter": "DN600"
+      },
+      "material": "HDPE 双壁波纹管",
+      "depth": 2.5,
+      "cost": {
+        "total": 640000,
+        "unit_price": 800,
+        "breakdown": {
+          "分部分项工程费": 512000,
+          "措施项目费": 25600,
+          "安全文明施工费": 25600,
+          "其他项目费": 10240,
+          "规费": 143360,
+          "税金": 52160
+        }
+      },
+      "materials": {
+        "HDPE 双壁波纹管 DN600": {"quantity": 800, "unit": "m", "price": 380},
+        "沟槽土石方": {"quantity": 3000, "unit": "m³", "price": 60},
+        "检查井": {"quantity": 16, "unit": "座", "price": 7500}
+      }
+    }
+  ],
+  
+  "cost_indexes": {
+    "道路工程": {
+      "城市主干路": {"min": 120, "max": 180, "avg": 150, "unit": "元/㎡"},
+      "城市次干路": {"min": 100, "max": 150, "avg": 125, "unit": "元/㎡"},
+      "城市支路": {"min": 80, "max": 120, "avg": 100, "unit": "元/㎡"}
+    },
+    "桥梁工程": {
+      "简支梁桥": {"min": 1800, "max": 2500, "avg": 2100, "unit": "元/㎡"},
+      "连续梁桥": {"min": 2200, "max": 3000, "avg": 2600, "unit": "元/㎡"},
+      "拱桥": {"min": 2500, "max": 3500, "avg": 3000, "unit": "元/㎡"}
+    },
+    "管网工程": {
+      "DN300": {"min": 350, "max": 500, "avg": 420, "unit": "元/m"},
+      "DN500": {"min": 550, "max": 750, "avg": 650, "unit": "元/m"},
+      "DN800": {"min": 850, "max": 1200, "avg": 1000, "unit": "元/m"},
+      "DN1000": {"min": 1100, "max": 1500, "avg": 1300, "unit": "元/m"}
+    }
+  }
+}

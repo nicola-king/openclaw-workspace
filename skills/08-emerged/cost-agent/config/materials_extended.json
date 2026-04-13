@@ -1,0 +1,171 @@
+{
+  "钢材": {
+    "HRB400E 钢筋 Φ10": {"unit": "t", "price": 4250, "previous": 4200},
+    "HRB400E 钢筋 Φ12": {"unit": "t", "price": 4230, "previous": 4200},
+    "HRB400E 钢筋 Φ14": {"unit": "t", "price": 4200, "previous": 4170},
+    "HRB400E 钢筋 Φ16": {"unit": "t", "price": 4180, "previous": 4150},
+    "HRB400E 钢筋 Φ18": {"unit": "t", "price": 4180, "previous": 4150},
+    "HRB400E 钢筋 Φ20": {"unit": "t", "price": 4180, "previous": 4150},
+    "HRB400E 钢筋 Φ22": {"unit": "t", "price": 4180, "previous": 4150},
+    "HRB400E 钢筋 Φ25": {"unit": "t", "price": 4200, "previous": 4170},
+    "HRB400E 钢筋 Φ28": {"unit": "t", "price": 4250, "previous": 4220},
+    "HRB400E 钢筋 Φ32": {"unit": "t", "price": 4280, "previous": 4250},
+    "HRB500E 钢筋 Φ10": {"unit": "t", "price": 4550, "previous": 4500},
+    "HRB500E 钢筋 Φ20": {"unit": "t", "price": 4480, "previous": 4450},
+    "Q235 钢板 6mm": {"unit": "t", "price": 4580, "previous": 4550},
+    "Q235 钢板 8mm": {"unit": "t", "price": 4630, "previous": 4600},
+    "Q235 钢板 10mm": {"unit": "t", "price": 4680, "previous": 4650},
+    "Q235 钢板 12mm": {"unit": "t", "price": 4700, "previous": 4670},
+    "Q345 钢板 10mm": {"unit": "t", "price": 4880, "previous": 4850},
+    "Q345 钢板 12mm": {"unit": "t", "price": 4900, "previous": 4870},
+    "工字钢 16#": {"unit": "t", "price": 4550, "previous": 4520},
+    "工字钢 20#": {"unit": "t", "price": 4580, "previous": 4550},
+    "槽钢 16#": {"unit": "t", "price": 4520, "previous": 4490},
+    "槽钢 20#": {"unit": "t", "price": 4550, "previous": 4520},
+    "角钢 50×5": {"unit": "t", "price": 4480, "previous": 4450},
+    "角钢 63×6": {"unit": "t", "price": 4500, "previous": 4470}
+  },
+  
+  "水泥": {
+    "P.O 32.5 水泥": {"unit": "t", "price": 420, "previous": 410},
+    "P.C 32.5 水泥": {"unit": "t", "price": 450, "previous": 440},
+    "P.O 42.5 水泥": {"unit": "t", "price": 520, "previous": 510},
+    "P.O 42.5R 水泥": {"unit": "t", "price": 540, "previous": 530},
+    "P.O 52.5 水泥": {"unit": "t", "price": 580, "previous": 570},
+    "P.O 52.5R 水泥": {"unit": "t", "price": 600, "previous": 590},
+    "P.II 42.5 水泥": {"unit": "t", "price": 560, "previous": 550},
+    "白水泥 42.5": {"unit": "t", "price": 680, "previous": 670}
+  },
+  
+  "砂石": {
+    "特细砂": {"unit": "m³", "price": 185, "previous": 180},
+    "细砂": {"unit": "m³", "price": 175, "previous": 170},
+    "中砂": {"unit": "m³", "price": 170, "previous": 165},
+    "粗砂": {"unit": "m³", "price": 165, "previous": 160},
+    "机制砂": {"unit": "m³", "price": 165, "previous": 160},
+    "混合砂": {"unit": "m³", "price": 160, "previous": 155},
+    "碎石 5-10mm": {"unit": "m³", "price": 155, "previous": 150},
+    "碎石 10-20mm": {"unit": "m³", "price": 150, "previous": 145},
+    "碎石 10-30mm": {"unit": "m³", "price": 148, "previous": 143},
+    "碎石 20-40mm": {"unit": "m³", "price": 145, "previous": 140},
+    "石屑": {"unit": "m³", "price": 135, "previous": 130},
+    "石粉": {"unit": "t", "price": 120, "previous": 115}
+  },
+  
+  "沥青": {
+    "70# 道路石油沥青": {"unit": "t", "price": 4850, "previous": 4800},
+    "90# 道路石油沥青": {"unit": "t", "price": 4750, "previous": 4700},
+    "110# 道路石油沥青": {"unit": "t", "price": 4650, "previous": 4600},
+    "SBS 改性沥青": {"unit": "t", "price": 6200, "previous": 6100},
+    "SBS 改性沥青 I-C": {"unit": "t", "price": 6300, "previous": 6200},
+    "SBS 改性沥青 I-D": {"unit": "t", "price": 6400, "previous": 6300},
+    "乳化沥青": {"unit": "t", "price": 3800, "previous": 3750},
+    "改性乳化沥青": {"unit": "t", "price": 4500, "previous": 4450}
+  },
+  
+  "管材": {
+    "HDPE 双壁波纹管 DN300": {"unit": "m", "price": 125, "previous": 120},
+    "HDPE 双壁波纹管 DN400": {"unit": "m", "price": 185, "previous": 180},
+    "HDPE 双壁波纹管 DN500": {"unit": "m", "price": 285, "previous": 280},
+    "HDPE 双壁波纹管 DN600": {"unit": "m", "price": 380, "previous": 370},
+    "HDPE 双壁波纹管 DN800": {"unit": "m", "price": 520, "previous": 510},
+    "HDPE 双壁波纹管 DN1000": {"unit": "m", "price": 780, "previous": 760},
+    "HDPE 双壁波纹管 DN1200": {"unit": "m", "price": 1050, "previous": 1020},
+    "钢筋混凝土管 DN300": {"unit": "m", "price": 180, "previous": 175},
+    "钢筋混凝土管 DN400": {"unit": "m", "price": 250, "previous": 245},
+    "钢筋混凝土管 DN500": {"unit": "m", "price": 320, "previous": 315},
+    "钢筋混凝土管 DN600": {"unit": "m", "price": 380, "previous": 375},
+    "钢筋混凝土管 DN800": {"unit": "m", "price": 450, "previous": 440},
+    "钢筋混凝土管 DN1000": {"unit": "m", "price": 620, "previous": 610},
+    "钢筋混凝土管 DN1200": {"unit": "m", "price": 850, "previous": 830},
+    "PVC-U 管 DN110": {"unit": "m", "price": 28, "previous": 27},
+    "PVC-U 管 DN160": {"unit": "m", "price": 52, "previous": 50},
+    "PVC-U 管 DN200": {"unit": "m", "price": 85, "previous": 82},
+    "PPR 管 DN20": {"unit": "m", "price": 12, "previous": 11},
+    "PPR 管 DN25": {"unit": "m", "price": 18, "previous": 17},
+    "PPR 管 DN32": {"unit": "m", "price": 25, "previous": 24}
+  },
+  
+  "商品混凝土": {
+    "C15 商品砼": {"unit": "m³", "price": 460, "previous": 450},
+    "C20 商品砼": {"unit": "m³", "price": 480, "previous": 470},
+    "C25 商品砼": {"unit": "m³", "price": 500, "previous": 490},
+    "C30 商品砼": {"unit": "m³", "price": 520, "previous": 510},
+    "C35 商品砼": {"unit": "m³", "price": 545, "previous": 535},
+    "C40 商品砼": {"unit": "m³", "price": 570, "previous": 560},
+    "C45 商品砼": {"unit": "m³", "price": 595, "previous": 585},
+    "C50 商品砼": {"unit": "m³", "price": 625, "previous": 615},
+    "C55 商品砼": {"unit": "m³", "price": 655, "previous": 645},
+    "C60 商品砼": {"unit": "m³", "price": 690, "previous": 680},
+    "抗渗砼 C30 P6": {"unit": "m³", "price": 550, "previous": 540},
+    "抗渗砼 C35 P6": {"unit": "m³", "price": 575, "previous": 565},
+    "抗渗砼 C40 P8": {"unit": "m³", "price": 610, "previous": 600}
+  },
+  
+  "木材": {
+    "原木": {"unit": "m³", "price": 1580, "previous": 1560},
+    "锯材": {"unit": "m³", "price": 1850, "previous": 1820},
+    "模板木材": {"unit": "m³", "price": 1680, "previous": 1650},
+    "竹胶板": {"unit": "㎡", "price": 45, "previous": 44},
+    "木模板": {"unit": "㎡", "price": 38, "previous": 37}
+  },
+  
+  "砖瓦": {
+    "页岩砖 240×115×53": {"unit": "千匹", "price": 580, "previous": 570},
+    "页岩多孔砖 240×115×90": {"unit": "千匹", "price": 620, "previous": 610},
+    "页岩空心砖 240×200×115": {"unit": "千匹", "price": 680, "previous": 670},
+    "混凝土实心砖": {"unit": "千匹", "price": 520, "previous": 510},
+    "混凝土多孔砖": {"unit": "千匹", "price": 550, "previous": 540},
+    "水泥标砖": {"unit": "千匹", "price": 480, "previous": 470},
+    "屋面瓦": {"unit": "千匹", "price": 850, "previous": 830}
+  },
+  
+  "防水材料": {
+    "SBS 防水卷材 3mm": {"unit": "㎡", "price": 28, "previous": 27},
+    "SBS 防水卷材 4mm": {"unit": "㎡", "price": 35, "previous": 34},
+    "APP 防水卷材 3mm": {"unit": "㎡", "price": 30, "previous": 29},
+    "聚氨酯防水涂料": {"unit": "kg", "price": 18, "previous": 17},
+    "JS 防水涂料": {"unit": "kg", "price": 12, "previous": 11},
+    "防水卷材 (自粘)": {"unit": "㎡", "price": 32, "previous": 31}
+  },
+  
+  "电线电缆": {
+    "铜芯线 BV-2.5": {"unit": "100m", "price": 180, "previous": 175},
+    "铜芯线 BV-4": {"unit": "100m", "price": 280, "previous": 275},
+    "铜芯线 BV-6": {"unit": "100m", "price": 420, "previous": 410},
+    "铜芯线 BV-10": {"unit": "100m", "price": 680, "previous": 670},
+    "铜芯电缆 YJV-3×4": {"unit": "100m", "price": 850, "previous": 830},
+    "铜芯电缆 YJV-3×6": {"unit": "100m", "price": 1250, "previous": 1220},
+    "铜芯电缆 YJV-3×10": {"unit": "100m", "price": 1980, "previous": 1950}
+  },
+  
+  "油漆涂料": {
+    "乳胶漆 (内墙)": {"unit": "kg", "price": 18, "previous": 17},
+    "乳胶漆 (外墙)": {"unit": "kg", "price": 25, "previous": 24},
+    "调和漆": {"unit": "kg", "price": 15, "previous": 14},
+    "防锈漆": {"unit": "kg", "price": 22, "previous": 21},
+    "防火涂料": {"unit": "kg", "price": 35, "previous": 34}
+  },
+  
+  "五金材料": {
+    "铁钉": {"unit": "kg", "price": 8, "previous": 7.5},
+    "铁丝 8#": {"unit": "kg", "price": 6, "previous": 5.8},
+    "铁丝 10#": {"unit": "kg", "price": 5.8, "previous": 5.6},
+    "铁丝 12#": {"unit": "kg", "price": 5.5, "previous": 5.3},
+    "电焊条": {"unit": "kg", "price": 12, "previous": 11.5},
+    "膨胀螺栓 M10": {"unit": "百套", "price": 85, "previous": 82},
+    "膨胀螺栓 M12": {"unit": "百套", "price": 120, "previous": 115},
+    "普通螺栓": {"unit": "kg", "price": 9, "previous": 8.5},
+    "高强螺栓": {"unit": "kg", "price": 15, "previous": 14.5}
+  },
+  
+  "其他材料": {
+    "石灰": {"unit": "t", "price": 380, "previous": 370},
+    "石膏": {"unit": "t", "price": 420, "previous": 410},
+    "土工布": {"unit": "㎡", "price": 8, "previous": 7.5},
+    "土工格栅": {"unit": "㎡", "price": 15, "previous": 14},
+    "脚手架钢管": {"unit": "t", "price": 4200, "previous": 4150},
+    "扣件": {"unit": "套", "price": 8, "previous": 7.5},
+    "安全网": {"unit": "㎡", "price": 12, "previous": 11}
+  }
+}

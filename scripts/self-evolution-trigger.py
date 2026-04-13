@@ -98,6 +98,13 @@ class SelfEvolutionTrigger:
                 'insights': insights['insights'],
                 'trigger': '学习循环产生新洞察'
             })
+        
+        # 信号 5: 造价 Agent 自进化检测
+        self.log("  📊 检查造价 Agent 自进化...")
+        cost_agent_signal = self.check_cost_agent_evolution()
+        if cost_agent_signal:
+            signals.append(cost_agent_signal)
+            self.log(f"  ✅ 发现造价 Agent 自进化信号")
             self.log(f"  ✅ 发现学习洞察：{insights['insights']}")
         
         self.log(f"✅ 能力涌现信号检测完成，发现 {len(signals)} 个信号")
@@ -187,6 +194,61 @@ class SelfEvolutionTrigger:
             'insights': insights
         }
     
+
+    def check_cost_agent_evolution(self):
+        """检查造价 Agent 自进化"""
+        # 检查造价 Agent 目录
+        cost_agent_dir = SKILLS_DIR / '08-emerged' / 'cost-agent'
+        
+        if not cost_agent_dir.exists():
+            return None
+        
+        # 检查自进化脚本
+        evolution_script = cost_agent_dir / 'self_evolution_cost_agent.py'
+        if not evolution_script.exists():
+            return None
+        
+        # 检查最近的自进化报告
+        reports_dir = cost_agent_dir / 'reports'
+        if reports_dir.exists():
+            reports = list(reports_dir.glob('cost-agent-evolution-*.json'))
+            if reports:
+                latest_report = max(reports)
+                mtime = datetime.fromtimestamp(latest_report.stat().st_mtime)
+                age = datetime.now() - mtime
+                
+                # 如果 1 小时内有自进化报告，返回信号
+                if age.seconds < 3600:
+                    return {
+                        'type': 'cost_agent_evolution',
+                        'agent': 'cost-agent',
+                        'trigger': '造价 Agent 自进化检测',
+                        'last_evolution': mtime.isoformat(),
+                    }
+        
+        return None
+
+    def run_cost_agent_evolution(self):
+        """运行造价 Agent 自进化"""
+        cost_agent_dir = SKILLS_DIR / '08-emerged' / 'cost-agent'
+        evolution_script = cost_agent_dir / 'self_evolution_cost_agent.py'
+        
+        if evolution_script.exists():
+            try:
+                result = subprocess.run(
+                    ['python3', str(evolution_script)],
+                    capture_output=True,
+                    text=True,
+                    timeout=60
+                )
+                
+                if result.returncode == 0:
+                    self.log("  ✅ 造价 Agent 自进化成功")
+                else:
+                    self.log(f"  ⚠️ 造价 Agent 自进化失败：{result.stderr}")
+            except Exception as e:
+                self.log(f"  ⚠️ 造价 Agent 自进化错误：{e}")
+
     def decide_creation(self, signals):
         """决策是否创建新 Skill/Agent"""
         if not signals:
@@ -439,3 +501,57 @@ def main():
 
 if __name__ == "__main__":
     sys.exit(main())
+
+    def check_cost_agent_evolution(self):
+        """检查造价 Agent 自进化"""
+        # 检查造价 Agent 目录
+        cost_agent_dir = SKILLS_DIR / '08-emerged' / 'cost-agent'
+        
+        if not cost_agent_dir.exists():
+            return None
+        
+        # 检查自进化脚本
+        evolution_script = cost_agent_dir / 'self_evolution_cost_agent.py'
+        if not evolution_script.exists():
+            return None
+        
+        # 检查最近的自进化报告
+        reports_dir = cost_agent_dir / 'reports'
+        if reports_dir.exists():
+            reports = list(reports_dir.glob('cost-agent-evolution-*.json'))
+            if reports:
+                latest_report = max(reports)
+                mtime = datetime.fromtimestamp(latest_report.stat().st_mtime)
+                age = datetime.now() - mtime
+                
+                # 如果 1 小时内有自进化报告，返回信号
+                if age.seconds < 3600:
+                    return {
+                        'type': 'cost_agent_evolution',
+                        'agent': 'cost-agent',
+                        'trigger': '造价 Agent 自进化检测',
+                        'last_evolution': mtime.isoformat(),
+                    }
+        
+        return None
+    
+    def run_cost_agent_evolution(self):
+        """运行造价 Agent 自进化"""
+        cost_agent_dir = SKILLS_DIR / '08-emerged' / 'cost-agent'
+        evolution_script = cost_agent_dir / 'self_evolution_cost_agent.py'
+        
+        if evolution_script.exists():
+            try:
+                result = subprocess.run(
+                    ['python3', str(evolution_script)],
+                    capture_output=True,
+                    text=True,
+                    timeout=60
+                )
+                
+                if result.returncode == 0:
+                    self.log("  ✅ 造价 Agent 自进化成功")
+                else:
+                    self.log(f"  ⚠️ 造价 Agent 自进化失败：{result.stderr}")
+            except Exception as e:
+                self.log(f"  ⚠️ 造价 Agent 自进化错误：{e}")

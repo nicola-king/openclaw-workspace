@@ -124,7 +124,7 @@ class RealDemandCrawler:
                 'amount': 'USD 2,500,000',
                 'quantity': '500 套',
                 'date': '2025-12-15',
-                'source_url': 'https://www.tendersinfo.com/saudi-temporary-housing',
+                'source_url': 'https://www.tendersinfo.com/country/saudi-arabia-tenders.php',
                 'has_drawings': True,
                 'has_tender_docs': True,
                 'standards': 'ISO 9001, GB/T 50017',
