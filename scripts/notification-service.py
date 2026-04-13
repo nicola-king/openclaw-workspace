@@ -18,9 +18,9 @@ class NotificationService:
         self.wechat_enabled = True
         
         # Telegram 配置
-        self.telegram_enabled = False
-        self.telegram_bot_token = None
-        self.telegram_chat_id = None
+        self.telegram_enabled = True
+        self.telegram_bot_token = "8351068758:AAGtRXv2u5fGAMuVY3d5hmeKgV9tAFpCMLY"
+        self.telegram_chat_id = "7073481596"  # SAYELF 的 Telegram ID
         
         # 通知日志
         self.log_file = Path('/home/nicola/.openclaw/workspace/logs/notifications.log')
