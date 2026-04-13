@@ -47,7 +47,8 @@ class SmartCommunication:
         self.wechat_enabled = bool(self.wechat_app_id and self.wechat_app_secret)
         
         # Telegram 配置
-        self.telegram_bot_token = os.getenv('TELEGRAM_BOT_TOKEN', '')
+        self.telegram_bot_token = os.getenv('TELEGRAM_BOT_TOKEN', '8351068758:AAGtRXv2u5fGAMuVY3d5hmeKgV9tAFpCMLY')
+        self.telegram_chat_id = os.getenv('TELEGRAM_CHAT_ID', '7073481596')
         self.telegram_enabled = bool(self.telegram_bot_token)
         
         # 渠道优先级
