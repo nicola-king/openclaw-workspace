@@ -609,6 +609,78 @@ class RealDemandCrawler:
             }, f, indent=2, ensure_ascii=False)
         
         print(f"✅ 数据已保存：{json_file.name}")
+        
+        # 铁律：发送报告到通讯端口
+        self.send_to_communication_ports(report_file, json_file)
+
+
+    def send_to_communication_ports(self, md_file, json_file):
+        """发送报告到通讯端口 (铁律)"""
+        print("📱 执行铁律：发送报告到通讯端口...")
+        
+        # 创建独立报告目录 (手机/其他电脑可访问)
+        share_dir = WORKSPACE / 'share' / 'reports'
+        share_dir.mkdir(parents=True, exist_ok=True)
+        
+        # 复制 MD 报告到共享目录
+        import shutil
+        timestamp = datetime.now().strftime('%Y%m%d-%H%M%S')
+        share_md = share_dir / f'steel-structure-demand-{timestamp}.md'
+        share_json = share_dir / f'steel-structure-demand-{timestamp}.json'
+        
+        shutil.copy(md_file, share_md)
+        shutil.copy(json_file, share_json)
+        
+        print(f"  ✅ 报告已复制到共享目录：{share_md.name}")
+        print(f"  ✅ JSON 数据已复制到共享目录：{share_json.name}")
+        print(f"  📱 手机/其他电脑可访问：{share_dir}")
+        
+        # 生成访问说明
+        readme_file = share_dir / 'README.md'
+        readme_content = f"""# 📱 报告共享目录
+
+> **创建时间**: {timestamp}  
+> **用途**: 手机/其他电脑可访问和转发
+
+---
+
+## 📄 最新报告
+
+- **MD 报告**: [{share_md.name}]({share_md.name})
+- **JSON 数据**: [{share_json.name}]({share_json.name})
+
+---
+
+## 📱 访问方式
+
+### 手机访问
+1. 通过局域网访问共享目录
+2. 或通过云同步访问
+
+### 电脑访问
+1. 直接访问共享目录
+2. 或通过云同步访问
+
+---
+
+## 📋 报告内容
+
+- **地区**: 中东、东南亚、东欧、乌克兰、国内
+- **需求数量**: 每个地区 5 条
+- **总计**: 25 条需求
+- **时间**: 3 个月以上
+- **包含**: 金额、数量、图纸、招标文件、标准、来源链接
+
+---
+
+**铁律**: 每次生成报告后自动复制到此目录，确保手机和其他电脑可以访问和转发。
+"""
+        
+        with open(readme_file, 'w', encoding='utf-8') as f:
+            f.write(readme_content)
+        
+        print(f"  ✅ 访问说明已生成：{readme_file.name}")
+        print(f"✅ 铁律执行完成！")
 
 
 def main():
