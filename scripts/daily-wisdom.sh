@@ -1,12 +1,13 @@
 #!/bin/bash
-# daily-wisdom.sh - 每日智慧推送脚本（卡片格式）
-# 用法：bash scripts/daily-wisdom.sh
+# daily-wisdom.sh - 每日智慧推送脚本（卡片格式 + 自动发送）
+# 用法：bash scripts/daily-wisdom.sh [--send]
 
 WORKSPACE="$HOME/.openclaw/workspace"
 WISDOM_FILE="$WORKSPACE/wisdom/dao-buddha-quotes.md"
 DATE=$(date +%Y-%m-%d)
 WEEKDAY_NUM=$(date +%u)
 HOUR=$(date +%H)
+SEND_FLAG="${1:-}"
 
 # 星期映射（数字转中文）
 case $WEEKDAY_NUM in
@@ -108,7 +109,24 @@ $TYPE  ·  $SOURCE
 ━━━━━━━━━━━━━━━━━━
 🙏 愿您今日  心安自在"
 
+# 输出到 stdout（用于手动查看）
 echo "$CARD_MESSAGE"
 
 # 记录日志
 echo "[$DATE $HOUR:00] $TYPE · $SOURCE: $QUOTE" >> "$WORKSPACE/memory/daily-wisdom-log.md"
+
+# 如果带 --send 参数，通过 OpenClaw 发送
+if [[ "$SEND_FLAG" == "--send" ]]; then
+    # 方法 1: 通过 openclaw CLI 发送（如果可用）
+    if command -v openclaw &> /dev/null; then
+        echo "$CARD_MESSAGE" | openclaw send --chat "o9cq80yz80T13iCV5N_djDCSVo88@im.wechat" 2>/dev/null
+        echo "[$DATE $HOUR:00] ✅ 已发送微信" >> "$WORKSPACE/memory/daily-wisdom-log.md"
+    # 方法 2: 通过 sessions_send（如果在 OpenClaw 内部运行）
+    elif [[ -n "$OPENCLAW_SESSION" ]]; then
+        echo "SEND:$CARD_MESSAGE"
+    # 方法 3: 保存到待发送队列
+    else
+        echo "$CARD_MESSAGE" >> "$WORKSPACE/.pending-messages.md"
+        echo "[$DATE $HOUR:00] ⏳ 已加入待发送队列" >> "$WORKSPACE/memory/daily-wisdom-log.md"
+    fi
+fi
