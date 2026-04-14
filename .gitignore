@@ -1,4 +1,39 @@
-skills/play-music
-data/
-*.db
-data/*.db
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+env/
+*.egg-info/
+dist/
+build/
+
+# 大文件
+*.so
+*.dll
+*.dylib
+*.pdb
+*.lib
+*.exe
+*.msi
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 日志
+logs/*.log
+
+# 临时文件
+*.tmp
+*.bak
