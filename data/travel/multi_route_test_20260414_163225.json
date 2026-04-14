@@ -1,0 +1,26 @@
+{
+  "type": "Multi-Route Optimizer",
+  "optimized": {
+    "total_price": 4200,
+    "total_duration": "12h30m",
+    "segments": [
+      {
+        "from": "北京",
+        "to": "上海",
+        "price": 1200
+      },
+      {
+        "from": "上海",
+        "to": "东京",
+        "price": 1800
+      },
+      {
+        "from": "东京",
+        "to": "首尔",
+        "price": 1200
+      }
+    ],
+    "savings": 800
+  },
+  "timestamp": "2026-04-14T16:32:25.379890"
+}
