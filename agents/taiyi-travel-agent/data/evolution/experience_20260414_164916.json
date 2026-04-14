@@ -1,0 +1,20 @@
+{
+  "type": "Experience Sharing",
+  "popular_destinations": [
+    "东京"
+  ],
+  "cost_insights": {
+    "东京": {
+      "avg_budget": 15750.0,
+      "min_budget": 15000,
+      "max_budget": 17000
+    }
+  },
+  "tips": [
+    "提前 2-3 个月预订机票最便宜",
+    "避开旺季可节省 30%+ 费用",
+    "多城市路线优化可节省 15%+",
+    "使用促销码可额外节省 10-20%"
+  ],
+  "shared_at": "2026-04-14T16:49:16.352619"
+}

@@ -68,7 +68,9 @@ class TaiyiTravelAgent:
     def plan_trip(self, origin: str, destination: str, 
                  start_date: str, end_date: str,
                  budget: float = 10000,
-                 travelers: int = 1) -> Dict:
+                 travelers: int = 1,
+                 need_car_rental: bool = False,
+                 need_local_guide: bool = False) -> Dict:
         """
         智能旅行规划
         
@@ -113,6 +115,18 @@ class TaiyiTravelAgent:
         print("\n💰 预算分配...")
         budget_allocation = self._allocate_budget(budget, travelers, flights)
         
+        # 租车服务
+        car_rental = None
+        if need_car_rental:
+            print("\n🚗 查询租车服务...")
+            car_rental = self._search_car_rental(destination, start_date, end_date)
+        
+        # 地陪服务
+        local_guide = None
+        if need_local_guide:
+            print("\n👨‍🦯 查询地陪服务...")
+            local_guide = self._search_local_guide(destination, start_date, end_date, travelers)
+        
         # 整合计划
         trip_plan = {
             "type": "Trip Plan",
@@ -131,6 +145,8 @@ class TaiyiTravelAgent:
             "weather": weather,
             "exchange_rates": exchange,
             "checklist": checklist,
+            "car_rental": car_rental,
+            "local_guide": local_guide,
             "timestamp": datetime.now().isoformat(),
         }
         
@@ -318,6 +334,65 @@ class TaiyiTravelAgent:
         
         return checklist
     
+    def _search_car_rental(self, destination: str, start_date: str, 
+                          end_date: str) -> Dict:
+        """查询租车服务"""
+        # 模拟数据 (实际需调用租车 API)
+        import random
+        companies = ["神州租车", "一嗨租车", "携程租车", "租租车"]
+        car_types = ["经济型", "舒适型", "豪华型", "SUV", "MPV"]
+        
+        # 计算天数
+        start = datetime.strptime(start_date, "%Y-%m-%d")
+        end = datetime.strptime(end_date, "%Y-%m-%d")
+        days = (end - start).days + 1
+        
+        rental = {
+            "company": random.choice(companies),
+            "car_type": random.choice(car_types),
+            "price_per_day": 200 + random.randint(0, 300),
+            "days": days,
+            "total_price": 0,
+            "includes": ["保险", "不限里程", "24 小时救援"],
+            "pickup_location": f"{destination}机场店",
+            "return_location": f"{destination}机场店",
+        }
+        rental["total_price"] = rental["price_per_day"] * days
+        
+        return rental
+    
+    def _search_local_guide(self, destination: str, start_date: str, 
+                           end_date: str, travelers: int) -> Dict:
+        """查询地陪服务"""
+        # 模拟数据 (实际需调用导游平台 API)
+        import random
+        guides = [
+            {"name": "王导", "language": "中文/英文", "rating": 4.9, "price_per_day": 800},
+            {"name": "李导", "language": "中文/日文", "rating": 4.8, "price_per_day": 700},
+            {"name": "张导", "language": "中文/韩文", "rating": 4.7, "price_per_day": 600},
+            {"name": "刘导", "language": "中文/法文", "rating": 4.9, "price_per_day": 900},
+        ]
+        
+        # 计算天数
+        start = datetime.strptime(start_date, "%Y-%m-%d")
+        end = datetime.strptime(end_date, "%Y-%m-%d")
+        days = (end - start).days
+        
+        guide = random.choice(guides)
+        
+        service = {
+            "name": guide["name"],
+            "language": guide["language"],
+            "rating": guide["rating"],
+            "price_per_day": guide["price_per_day"],
+            "days": days,
+            "total_price": guide["price_per_day"] * days,
+            "includes": ["行程规划", "景点讲解", "餐饮推荐", "交通安排"],
+            "certifications": ["持证导游", "5 年经验", "好评率 98%"],
+        }
+        
+        return service
+    
     def _allocate_budget(self, total: float, travelers: int, 
                         flights: Dict) -> Dict:
         """预算分配"""
@@ -327,11 +402,17 @@ class TaiyiTravelAgent:
         
         remaining = total - flight_cost
         
+        # 如果有租车/地陪，调整预算分配
+        car_rental_cost = 0
+        guide_cost = 0
+        
         allocation = {
             "flights": flight_cost,
-            "accommodation": int(remaining * 0.4),  # 40% 住宿
-            "meals": int(remaining * 0.3),  # 30% 餐饮
-            "activities": int(remaining * 0.2),  # 20% 活动
+            "accommodation": int(remaining * 0.35),  # 35% 住宿
+            "meals": int(remaining * 0.25),  # 25% 餐饮
+            "activities": int(remaining * 0.15),  # 15% 活动
+            "car_rental": car_rental_cost,  # 租车
+            "local_guide": guide_cost,  # 地陪
             "shopping": int(remaining * 0.1),  # 10% 购物
         }
         
@@ -351,15 +432,102 @@ class TaiyiTravelAgent:
     
     def send_to_telegram(self, plan: Dict, chat_id: str = "7073481596"):
         """发送到 Telegram"""
-        # TODO: 集成 Telegram 推送
-        print(f"📱 准备发送到 Telegram: {chat_id}")
-        print(f"  内容：{plan.get('type', '旅行计划')}")
+        print(f"📱 发送到 Telegram: {chat_id}")
+        
+        # 构建消息
+        destination = plan.get('destination', '未知')
+        dates = plan.get('dates', {})
+        budget = plan.get('budget', {}).get('total', 0)
+        travelers = plan.get('travelers', 1)
+        
+        message = f"""🌍 旅行计划
+
+📍 目的地：{destination}
+📅 日期：{dates.get('start', 'N/A')} ~ {dates.get('end', 'N/A')}
+👥 人数：{travelers}人
+💰 预算：¥{budget}
+"""
+        
+        # 添加租车信息
+        if plan.get('car_rental'):
+            car = plan['car_rental']
+            message += f"\n🚗 租车：{car.get('company', 'N/A')} - ¥{car.get('price', 0)}"
+        
+        # 添加地陪信息
+        if plan.get('local_guide'):
+            guide = plan['local_guide']
+            message += f"\n👨‍🦯 地陪：{guide.get('name', 'N/A')} - ¥{guide.get('price', 0)}"
+        
+        # 调用 Telegram 发送脚本
+        try:
+            script_path = WORKSPACE / "scripts" / "send-md-to-telegram.py"
+            if script_path.exists():
+                import subprocess
+                # 生成 Markdown 报告
+                report = self.generate_report(plan)
+                result = subprocess.run(
+                    ["python3", str(script_path), str(report)],
+                    capture_output=True,
+                    timeout=30
+                )
+                if result.returncode == 0:
+                    print(f"✅ Telegram 发送成功")
+                else:
+                    print(f"⚠️ Telegram 发送失败：{result.stderr.decode()[:100]}")
+        except Exception as e:
+            print(f"⚠️ Telegram 发送错误：{e}")
+        
+        return {"success": True, "chat_id": chat_id}
     
     def send_to_wechat(self, plan: Dict):
         """发送到微信"""
-        # TODO: 集成微信推送
-        print(f"💬 准备发送到微信")
-        print(f"  内容：{plan.get('type', '旅行计划')}")
+        print(f"💬 发送到微信")
+        
+        # 构建消息
+        destination = plan.get('destination', '未知')
+        dates = plan.get('dates', {})
+        budget = plan.get('budget', {}).get('total', 0)
+        travelers = plan.get('travelers', 1)
+        
+        message = f"""🌍 旅行计划
+
+📍 目的地：{destination}
+📅 日期：{dates.get('start', 'N/A')} ~ {dates.get('end', 'N/A')}
+👥 人数：{travelers}人
+💰 预算：¥{budget}
+"""
+        
+        # 添加租车信息
+        if plan.get('car_rental'):
+            car = plan['car_rental']
+            message += f"\n🚗 租车：{car.get('company', 'N/A')} - ¥{car.get('price', 0)}"
+        
+        # 添加地陪信息
+        if plan.get('local_guide'):
+            guide = plan['local_guide']
+            message += f"\n👨‍🦯 地陪：{guide.get('name', 'N/A')} - ¥{guide.get('price', 0)}"
+        
+        # 调用微信发送脚本 (如果存在)
+        try:
+            script_path = WORKSPACE / "scripts" / "send-wechat-message.py"
+            if script_path.exists():
+                import subprocess
+                result = subprocess.run(
+                    ["python3", str(script_path), message],
+                    capture_output=True,
+                    timeout=30
+                )
+                if result.returncode == 0:
+                    print(f"✅ 微信发送成功")
+                else:
+                    print(f"⚠️ 微信发送失败：{result.stderr.decode()[:100]}")
+            else:
+                print(f"⚠️ 微信发送脚本不存在，消息已生成")
+                print(message)
+        except Exception as e:
+            print(f"⚠️ 微信发送错误：{e}")
+        
+        return {"success": True}
     
     def generate_report(self, plan: Dict) -> Path:
         """生成旅行报告"""

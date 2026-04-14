@@ -1,0 +1,36 @@
+{
+  "user_preferences": {
+    "东京": {
+      "rating": 4.8,
+      "comments": "非常好"
+    }
+  },
+  "popular_destinations": [
+    "东京"
+  ],
+  "seasonal_trends": {},
+  "cost_patterns": {
+    "东京": [
+      {
+        "budget": 15000,
+        "travelers": 2,
+        "date": "2026-04-14T16:49:16.351502"
+      },
+      {
+        "budget": 15000,
+        "travelers": 2,
+        "date": "2026-04-14T16:49:16.351684"
+      },
+      {
+        "budget": 16000,
+        "travelers": 2,
+        "date": "2026-04-14T16:49:16.351864"
+      },
+      {
+        "budget": 17000,
+        "travelers": 2,
+        "date": "2026-04-14T16:49:16.352123"
+      }
+    ]
+  }
+}
