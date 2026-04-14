@@ -487,8 +487,27 @@ TODO: 定义技能职责
             f.write(f"[{datetime.now()}] {message}\n")
         
         self.log(f"📱 Telegram 消息已记录到日志")
-        # 注意：实际发送需要 Telegram Bot API，这里只记录日志
-        # 实际使用时可以调用 send-telegram-report.py
+        
+        # 实际发送到 Telegram (使用专用的小时报告发送脚本)
+        self.log(f"📱 发送 Telegram 消息...")
+        try:
+            import subprocess
+            script_path = WORKSPACE / 'scripts' / 'send-hourly-report.py'
+            if script_path.exists():
+                result = subprocess.run(
+                    ['python3', str(script_path)],
+                    capture_output=True,
+                    text=True,
+                    timeout=30
+                )
+                if result.returncode == 0:
+                    self.log(f"  ✅ Telegram 发送成功")
+                else:
+                    self.log(f"  ⚠️ Telegram 发送失败：{result.stderr[:100]}")
+            else:
+                self.log(f"  ⚠️ 发送脚本不存在：{script_path}")
+        except Exception as e:
+            self.log(f"  ⚠️ Telegram 发送错误：{str(e)[:100]}")
 
 
 def main():
