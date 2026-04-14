@@ -20,13 +20,18 @@ from pathlib import Path
 from typing import Optional
 
 # 尝试导入 moss-tts-nano
+import subprocess
+
 try:
-    import torch
-    from moss_tts_nano import MOSSTTSNano
-    MOSS_AVAILABLE = True
-except ImportError:
+    # 检查 CLI 是否可用
+    result = subprocess.run(
+        ["python3", "/tmp/moss-tts-nano/moss_tts_nano/cli.py", "--help"],
+        capture_output=True,
+        timeout=10
+    )
+    MOSS_AVAILABLE = (result.returncode == 0)
+except:
     MOSS_AVAILABLE = False
-    print("⚠️ MOSS-TTS-Nano 未安装，使用备用方案")
 
 
 class MossTTSEngine:
