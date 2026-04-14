@@ -1,0 +1,16 @@
+[
+  {
+    "id": "charter_20260414172018",
+    "type": "charter",
+    "status": "pending",
+    "registered_at": "2026-04-14T17:20:18.148286",
+    "name": "神州包车",
+    "location": "东京",
+    "car_types": [
+      "舒适型",
+      "豪华型"
+    ],
+    "price_per_day": 600.0,
+    "rating": 4.8
+  }
+]
