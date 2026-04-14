@@ -116,7 +116,7 @@ class GroundServices:
         
         # 如果包含接机服务
         if include_airport_pickup and airport:
-            pickup_service = self.search_airport_pickup(
+            pickup_service = self._search_airport_pickup_internal(
                 destination, airport, flight_number or "待定", travelers, car_type
             )
             service["airport_pickup"] = pickup_service
@@ -126,6 +126,60 @@ class GroundServices:
         print(f"  服务商：{provider['name']} (评分：{provider['rating']})")
         print(f"  车型：{car_type}")
         print(f"  价格：¥{total_price} ({days}天)")
+        
+        return service
+    
+    # ========== 内部方法：接机服务 (被包车服务调用) ==========
+    
+    def _search_airport_pickup_internal(self, destination: str, airport: str,
+                             flight_number: str, travelers: int = 2,
+                             car_type: str = "舒适型") -> Dict:
+        """
+        内部接机服务方法 (被包车服务调用)
+        """
+        # 选择服务商
+        provider = random.choice(self.service_providers["接机"])
+        
+        # 计算价格
+        base_price = provider["price_base"]
+        multiplier = self.car_types.get(car_type, {}).get("price_multiplier", 1.0)
+        total_price = int(base_price * multiplier)
+        
+        # 生成服务信息
+        service = {
+            "type": "Airport Pickup",
+            "destination": destination,
+            "airport": airport,
+            "flight_number": flight_number,
+            "provider": provider["name"],
+            "provider_rating": provider["rating"],
+            "car_type": car_type,
+            "car_info": self.car_types.get(car_type, {}),
+            "travelers": travelers,
+            "price": total_price,
+            "includes": [
+                "航班动态追踪",
+                "免费等待 60 分钟",
+                "举牌接机",
+                "协助搬运行李",
+                "保险",
+            ],
+            "driver_info": {
+                "contact": "预订后提供",
+                "vehicle_plate": "预订后提供",
+                "meeting_point": f"{airport}到达厅出口",
+            },
+            "notes": [
+                "航班延误免费等待",
+                "夜间服务 (22:00-6:00) 加收 20%",
+                "超大行李可能加收",
+            ],
+            "booking_info": {
+                "advance_booking": "建议提前 24 小时预订",
+                "cancellation": "起飞前免费取消",
+                "payment": "在线支付/上车支付",
+            },
+        }
         
         return service
     
