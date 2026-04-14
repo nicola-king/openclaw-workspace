@@ -58,6 +58,9 @@ from travel_knowledge_learner import TravelKnowledgeLearner
 # 导入目的地注意事项模块
 from destination_notices import DestinationNotices
 
+# 导入双模式策略模块
+from dual_mode_strategy import DualModeTravelStrategy
+
 
 class TaiyiTravelAgent:
     """太一旅行探路者 Agent"""
@@ -68,6 +71,7 @@ class TaiyiTravelAgent:
         self.ground_services = GroundServices()
         self.knowledge_learner = TravelKnowledgeLearner()
         self.destination_notices = DestinationNotices()
+        self.dual_mode_strategy = DualModeTravelStrategy()
         self.session_data = {}
         
         print(f"🌍 太一旅行探路者 Agent 启动")
@@ -127,6 +131,16 @@ class TaiyiTravelAgent:
         print("\n💰 预算分配...")
         budget_allocation = self._allocate_budget(budget, travelers, flights)
         
+        # 判断旅游模式 (国内/跨国)
+        travel_mode = self.dual_mode_strategy.get_travel_mode(origin, destination)
+        print(f"\n🌏 旅游模式：{'国内游' if travel_mode == 'domestic' else '跨国游'}")
+        
+        # 获取对应策略
+        if travel_mode == 'domestic':
+            travel_strategy = self.dual_mode_strategy.get_domestic_strategy(destination)
+        else:
+            travel_strategy = self.dual_mode_strategy.get_international_strategy(destination)
+        
         # 落地服务 (包车/接机/导游)
         ground_services = None
         if need_car_rental or need_local_guide:
@@ -184,6 +198,8 @@ class TaiyiTravelAgent:
             "checklist": checklist,
             "ground_services": ground_services,
             "destination_notices": self.destination_notices.get_destination_notices(destination),
+            "travel_mode": travel_mode,
+            "travel_strategy": travel_strategy,
             "timestamp": datetime.now().isoformat(),
         }
         
