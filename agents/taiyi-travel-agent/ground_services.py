@@ -399,8 +399,8 @@ class GroundServices:
                 "中文", travelers, "休闲游"
             )
         
-        # 计算总价
-        total = pickup["price"] + charter["total_price"]
+        # 计算总价 (包车已包含接机)
+        total = charter["total_price"]
         if guide:
             total += guide["total_price"]
         
@@ -420,8 +420,7 @@ class GroundServices:
                 "local_guide": guide,  # 合并地陪 + 导游
             },
             "pricing": {
-                "pickup_price": pickup["price"],
-                "charter_price": charter["total_price"],
+                "charter_pickup_price": charter["total_price"],
                 "guide_price": guide["total_price"] if guide else 0,
                 "subtotal": total,
                 "discount": package_config["discount"],
