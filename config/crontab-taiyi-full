@@ -136,3 +136,5 @@ LOG_DIR="$WORKSPACE/logs"
 # ============================================================
 # 配置结束
 # ============================================================
+# 每周日凌晨 3 点自动清理重复文件
+0 3 * * 0 python3 /home/nicola/.openclaw/workspace/scripts/cleanup-duplicate-reports.py >> $LOG_DIR/cleanup.log 2>&1
