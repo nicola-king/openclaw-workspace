@@ -391,13 +391,12 @@ class GroundServices:
             flight_number=flight_number
         )
         
-        # 地陪导游服务 (合并)
+        # 地陪导游服务
         guide = None
         if package_config["guide_days"] > 0:
             guide = self.search_local_guide(
                 destination, package_config["guide_days"],
-                "中文", travelers, "休闲游",
-                include_car_service=False  # 已包含在包车中
+                "中文", travelers, "休闲游"
             )
         
         # 计算总价
