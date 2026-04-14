@@ -35,43 +35,38 @@ except:
 
 
 class MossTTSEngine:
-    """MOSS-TTS 引擎"""
+    """MOSS-TTS 引擎 (CLI 方式)"""
     
-    def __init__(self, model_path: Optional[str] = None):
-        self.model_path = model_path
-        self.model = None
-        self.available = MOSS_AVAILABLE
-        
-        if self.available:
-            self.load_model()
-    
-    def load_model(self):
-        """加载模型"""
-        if not MOSS_AVAILABLE:
-            return
-        
-        try:
-            self.model = MOSSTTSNano.from_pretrained("openmoss/moss-tts-nano")
-            print(f"✅ MOSS-TTS-Nano 模型已加载")
-        except Exception as e:
-            print(f"⚠️ 模型加载失败：{e}")
-            self.available = False
+    def __init__(self, moss_path: str = "/tmp/moss-tts-nano"):
+        self.moss_path = Path(moss_path)
+        self.cli_path = self.moss_path / "moss_tts_nano" / "cli.py"
+        self.available = MOSS_AVAILABLE and self.cli_path.exists()
     
     def generate_speech(self, text: str, output_path: str, voice: str = "default"):
-        """生成语音"""
+        """生成语音 (使用 CLI)"""
         if not self.available:
             print("❌ MOSS-TTS 不可用")
             return False
         
         try:
-            # 生成语音
-            audio = self.model.generate(text, voice=voice)
+            # 使用 CLI 生成
+            cmd = [
+                "python3", str(self.cli_path),
+                "--text", text,
+                "--output", output_path,
+            ]
             
-            # 保存
-            self.model.save_audio(audio, output_path)
+            if voice != "default":
+                cmd.extend(["--voice", voice])
             
-            print(f"✅ 语音生成成功：{output_path}")
-            return True
+            result = subprocess.run(cmd, capture_output=True, timeout=60)
+            
+            if result.returncode == 0:
+                print(f"✅ 语音生成成功：{output_path}")
+                return True
+            else:
+                print(f"❌ 语音生成失败：{result.stderr.decode()}")
+                return False
         except Exception as e:
             print(f"❌ 语音生成失败：{e}")
             return False
@@ -79,12 +74,10 @@ class MossTTSEngine:
     def list_voices(self):
         """列出可用声音"""
         if not self.available:
-            return []
+            return ["default", "female_1", "male_1"]
         
-        try:
-            return self.model.list_voices()
-        except:
-            return []
+        # TODO: 从 CLI 获取
+        return ["default", "female_1", "male_1"]
 
 
 def main():
