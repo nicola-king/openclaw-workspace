@@ -1,0 +1,30 @@
+[
+  {
+    "timestamp": "2026-04-14T15:28:42.893719",
+    "text": "你好，这是 MOSS-TTS-Nano 智能自动化调用测试。",
+    "output_path": "/home/nicola/.openclaw/workspace/audio/moss-tts/moss_tts_20260414_152842.wav",
+    "voice": "default",
+    "duration_seconds": null
+  },
+  {
+    "timestamp": "2026-04-14T15:28:42.937118",
+    "text": "第一条测试语音。",
+    "output_path": "/home/nicola/.openclaw/workspace/audio/moss-tts/test_batch_000.wav",
+    "voice": "default",
+    "duration_seconds": null
+  },
+  {
+    "timestamp": "2026-04-14T15:28:42.975240",
+    "text": "第二条测试语音。",
+    "output_path": "/home/nicola/.openclaw/workspace/audio/moss-tts/test_batch_001.wav",
+    "voice": "default",
+    "duration_seconds": null
+  },
+  {
+    "timestamp": "2026-04-14T15:28:43.010176",
+    "text": "第三条测试语音。",
+    "output_path": "/home/nicola/.openclaw/workspace/audio/moss-tts/test_batch_002.wav",
+    "voice": "default",
+    "duration_seconds": null
+  }
+]

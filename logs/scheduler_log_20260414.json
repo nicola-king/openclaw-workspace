@@ -1,0 +1,39 @@
+{
+  "timestamp": "2026-04-14T15:32:00.273429",
+  "stats": {
+    "total_tasks": 3,
+    "success_tasks": 2,
+    "failed_tasks": 1,
+    "success_rate": "66.7%",
+    "avg_duration_seconds": "0.13",
+    "total_skills": 8102,
+    "total_agents": 0,
+    "total_scripts": 219
+  },
+  "tasks": [
+    {
+      "task_id": "task_20260414_153159_binance-live-test",
+      "agent_skill": "binance-live-test",
+      "success": false,
+      "duration_seconds": 0.236613,
+      "timestamp": "2026-04-14T15:31:59.892097",
+      "error": "Script 执行失败：Traceback (most recent call last):\n  File \"/home/nicola/.openclaw/workspace/scripts/binance-live-test.py\", line 14, in <module>\n    with open('/home/nicola/.openclaw/workspace/config/binance-config.json') as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/home/nicola/.openclaw/workspace/config/binance-config.json'\n"
+    },
+    {
+      "task_id": "task_20260414_153200_token-optimization-analysis",
+      "agent_skill": "token-optimization-analysis",
+      "success": true,
+      "duration_seconds": 0.034297,
+      "timestamp": "2026-04-14T15:32:00.128752",
+      "error": null
+    },
+    {
+      "task_id": "task_20260414_153200_memory-compression-algorithm",
+      "agent_skill": "memory-compression-algorithm",
+      "success": true,
+      "duration_seconds": 0.110176,
+      "timestamp": "2026-04-14T15:32:00.163083",
+      "error": null
+    }
+  ]
+}
