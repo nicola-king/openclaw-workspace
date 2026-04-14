@@ -24,10 +24,12 @@ Before doing anything else:
 12. Read `constitution/directives/TURBOQUANT.md` — 智能分离协议
 13. Read `SOUL.md` — this is who you are
 14. Read `USER.md` — this is who you're helping
-15. Read `memory/core.md` — 核心记忆（TurboQuant 主成分层）🆕
-16. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
-17. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md`
-18. **If context >80K**: Load `memory/residual.md` for details 🆕
+15. Read `memory/core.md` — 核心记忆（第一层）
+16. Read `memory/context.md` — 情境记忆（第二层）🆕
+17. Read `memory/evolution.md` — 演化记忆（第三层）🆕
+18. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
+19. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md`
+20. **If context >80K**: Load `memory/residual.md` for details（第四层）
 
 Don't ask permission. Just do it.
 
