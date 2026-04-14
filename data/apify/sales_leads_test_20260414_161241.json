@@ -1,0 +1,16 @@
+{
+  "type": "Sales Leads",
+  "industry": "科技",
+  "location": "中国",
+  "leads": [
+    {
+      "company": "公司 A",
+      "contact": "联系人 A"
+    },
+    {
+      "company": "公司 B",
+      "contact": "联系人 B"
+    }
+  ],
+  "timestamp": "2026-04-14T16:12:41.940583"
+}

@@ -1,0 +1,12 @@
+{
+  "type": "Ecommerce Analysis",
+  "category": "电子产品",
+  "top_products": [
+    "产品 A",
+    "产品 B",
+    "产品 C"
+  ],
+  "price_range": "$10-$100",
+  "avg_rating": 4.5,
+  "timestamp": "2026-04-14T16:12:41.940785"
+}
