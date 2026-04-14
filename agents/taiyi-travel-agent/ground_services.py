@@ -53,11 +53,14 @@ class GroundServices:
             "保姆车": {"seats": 7, "luggage": 5, "price_multiplier": 2.5},
         }
     
-    # ========== 落地包车服务 ==========
+    # ========== 包车接机服务 (合并落地包车 + 落地接机) ==========
     
     def search_charter_car(self, destination: str, days: int, 
                           car_type: str = "舒适型", 
-                          travelers: int = 2) -> Dict:
+                          travelers: int = 2,
+                          include_airport_pickup: bool = False,
+                          airport: str = None,
+                          flight_number: str = None) -> Dict:
         """
         搜索包车服务
         
@@ -82,7 +85,7 @@ class GroundServices:
         
         # 生成服务信息
         service = {
-            "type": "Charter Car",
+            "type": "Charter Car & Airport Pickup",
             "destination": destination,
             "provider": provider["name"],
             "provider_rating": provider["rating"],
@@ -111,31 +114,28 @@ class GroundServices:
             },
         }
         
+        # 如果包含接机服务
+        if include_airport_pickup and airport:
+            pickup_service = self.search_airport_pickup(
+                destination, airport, flight_number or "待定", travelers, car_type
+            )
+            service["airport_pickup"] = pickup_service
+            service["total_price"] += pickup_service["price"]
+            service["includes"].append("落地接机服务")
+        
         print(f"  服务商：{provider['name']} (评分：{provider['rating']})")
         print(f"  车型：{car_type}")
         print(f"  价格：¥{total_price} ({days}天)")
         
         return service
     
-    # ========== 落地接机服务 ==========
+    # ========== 地陪导游服务 (合并地陪服务 + 落地导游) ==========
     
-    def search_airport_pickup(self, destination: str, airport: str,
-                             flight_number: str, travelers: int = 2,
-                             car_type: str = "舒适型") -> Dict:
-        """
-        搜索接机服务
-        
-        Args:
-            destination: 目的地城市
-            airport: 机场名称
-            flight_number: 航班号
-            travelers: 人数
-            car_type: 车型
-        
-        Returns:
-            接机服务信息
-        """
-        print(f"🚗 搜索接机服务：{airport} → {destination}")
+    def search_local_guide(self, destination: str, days: int,
+                          language: str = "中文",
+                          travelers: int = 2,
+                          tour_type: str = "休闲游",
+                          include_car_service: bool = False) -> Dict:
         
         # 选择服务商
         provider = random.choice(self.service_providers["接机"])
@@ -231,7 +231,7 @@ class GroundServices:
         
         # 生成服务信息
         service = {
-            "type": "Local Guide",
+            "type": "Local Guide & Car Service",
             "destination": destination,
             "guide": {
                 "name": guide["name"],
@@ -275,13 +275,20 @@ class GroundServices:
             },
         }
         
+        # 如果包含包车服务
+        if include_car_service:
+            car_service = self.search_charter_car(destination, days, "舒适型", travelers)
+            service["car_service"] = car_service
+            service["total_price"] += car_service["total_price"]
+            service["includes"].append("包车服务")
+        
         print(f"  导游：{guide['name']} ({guide['language']})")
         print(f"  评分：{guide['rating']} (经验：{guide['experience']})")
         print(f"  价格：¥{total_price} ({days}天)")
         
         return service
     
-    # ========== 套餐服务 ==========
+    # ========== 全包套餐服务 ==========
     
     def search_ground_package(self, destination: str, days: int,
                              airport: str, flight_number: str,
@@ -329,23 +336,21 @@ class GroundServices:
         
         package_config = packages.get(package_type, packages["标准套餐"])
         
-        # 接机服务
-        pickup = self.search_airport_pickup(
-            destination, airport, flight_number, travelers,
-            package_config["car_type"]
-        )
-        
-        # 包车服务 (全程)
+        # 包车接机服务 (合并)
         charter = self.search_charter_car(
-            destination, days, package_config["car_type"], travelers
+            destination, days, package_config["car_type"], travelers,
+            include_airport_pickup=True,
+            airport=airport,
+            flight_number=flight_number
         )
         
-        # 导游服务 (部分天数)
+        # 地陪导游服务 (合并)
         guide = None
         if package_config["guide_days"] > 0:
             guide = self.search_local_guide(
                 destination, package_config["guide_days"],
-                "中文", travelers, "休闲游"
+                "中文", travelers, "休闲游",
+                include_car_service=False  # 已包含在包车中
             )
         
         # 计算总价
@@ -365,9 +370,8 @@ class GroundServices:
             "days": days,
             "travelers": travelers,
             "services": {
-                "airport_pickup": pickup,
-                "charter_car": charter,
-                "local_guide": guide,
+                "charter_car_pickup": charter,  # 合并包车 + 接机
+                "local_guide": guide,  # 合并地陪 + 导游
             },
             "pricing": {
                 "pickup_price": pickup["price"],
@@ -379,9 +383,8 @@ class GroundServices:
                 "total_price": discount_price,
             },
             "includes": [
-                "落地接机服务",
-                f"{days}天包车服务",
-                f"{package_config['guide_days']}天地陪导游",
+                f"{days}天包车接机服务",
+                f"{package_config['guide_days']}天地陪导游服务",
                 "专业司机",
                 "航班动态追踪",
                 "24 小时客服",
@@ -397,6 +400,7 @@ class GroundServices:
         print(f"  原价：¥{total}")
         print(f"  套餐价：¥{discount_price}")
         print(f"  节省：¥{savings}")
+        print(f"  包含：{days}天包车接机 + {package_config['guide_days']}天地陪导游")
         
         return package
     
@@ -458,42 +462,36 @@ class GroundServices:
 def main():
     """测试"""
     print("=" * 60)
-    print("🚐 太一旅行落地服务测试")
+    print("🚐 太一旅行落地服务测试 (合并版)")
     print("=" * 60)
     
     services = GroundServices()
     
-    # 测试 1: 包车服务
-    print("\n🚐 测试 1: 包车服务")
+    # 测试 1: 包车接机服务 (合并)
+    print("\n🚐 测试 1: 包车接机服务 (合并落地包车 + 落地接机)")
     charter = services.search_charter_car(
         destination="东京",
         days=5,
         car_type="舒适型",
-        travelers=2
-    )
-    
-    # 测试 2: 接机服务
-    print("\n🚗 测试 2: 接机服务")
-    pickup = services.search_airport_pickup(
-        destination="东京",
-        airport="成田国际机场",
-        flight_number="CA181",
         travelers=2,
-        car_type="舒适型"
+        include_airport_pickup=True,
+        airport="成田国际机场",
+        flight_number="CA181"
     )
     
-    # 测试 3: 导游服务
-    print("\n👨‍🦯 测试 3: 导游服务")
+    # 测试 2: 地陪导游服务 (合并)
+    print("\n👨‍🦯 测试 2: 地陪导游服务 (合并地陪服务 + 落地导游)")
     guide = services.search_local_guide(
         destination="东京",
         days=3,
         language="中文",
         travelers=2,
-        tour_type="深度游"
+        tour_type="深度游",
+        include_car_service=False
     )
     
-    # 测试 4: 套餐服务
-    print("\n🎁 测试 4: 套餐服务")
+    # 测试 3: 全包套餐服务
+    print("\n🎁 测试 3: 全包套餐服务")
     package = services.search_ground_package(
         destination="东京",
         days=5,
@@ -503,8 +501,8 @@ def main():
         package_type="豪华套餐"
     )
     
-    # 测试 5: 推荐服务
-    print("\n💡 测试 5: 推荐服务")
+    # 测试 4: 推荐服务
+    print("\n💡 测试 4: 推荐服务")
     recommendation = services.recommend_services(
         destination="东京",
         days=5,
@@ -514,8 +512,12 @@ def main():
     )
     
     print("\n" + "=" * 60)
-    print("✅ 落地服务测试完成")
+    print("✅ 落地服务测试完成 (合并版)")
     print("=" * 60)
+
+
+if __name__ == "__main__":
+    main()
 
 
 if __name__ == "__main__":

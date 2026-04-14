@@ -141,10 +141,10 @@ class TaiyiTravelAgent:
         else:
             travel_strategy = self.dual_mode_strategy.get_international_strategy(destination)
         
-        # 落地服务 (包车/接机/导游)
+        # 落地服务 (包车接机/地陪导游 - 已合并)
         ground_services = None
         if need_car_rental or need_local_guide:
-            print("\n🚐 查询落地服务...")
+            print("\n🚐 查询落地服务 (合并版)...")
             days = (datetime.strptime(end_date, "%Y-%m-%d") - datetime.strptime(start_date, "%Y-%m-%d")).days + 1
             
             # 根据需求选择套餐
@@ -159,15 +159,20 @@ class TaiyiTravelAgent:
                     package_type=package_type
                 )
             elif need_car_rental:
+                # 包车接机服务 (合并)
                 ground_services = {
-                    "charter_car": self.ground_services.search_charter_car(
+                    "charter_car_pickup": self.ground_services.search_charter_car(
                         destination=destination,
                         days=days,
                         car_type="舒适型",
-                        travelers=travelers
+                        travelers=travelers,
+                        include_airport_pickup=True,
+                        airport=f"{destination}国际机场",
+                        flight_number="待定"
                     )
                 }
             elif need_local_guide:
+                # 地陪导游服务 (合并)
                 ground_services = {
                     "local_guide": self.ground_services.search_local_guide(
                         destination=destination,
