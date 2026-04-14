@@ -49,6 +49,12 @@ from ai_travel_explorer import AITravelExplorer
 sys.path.insert(0, str(WORKSPACE / "skills" / "04-integration" / "apilayer-integration"))
 from apilayer_client import APILayerClient
 
+# 导入落地服务模块
+from ground_services import GroundServices
+
+# 导入知识学习模块
+from travel_knowledge_learner import TravelKnowledgeLearner
+
 
 class TaiyiTravelAgent:
     """太一旅行探路者 Agent"""
@@ -56,6 +62,8 @@ class TaiyiTravelAgent:
     def __init__(self):
         self.travel_explorer = AITravelExplorer()
         self.apilayer = APILayerClient()
+        self.ground_services = GroundServices()
+        self.knowledge_learner = TravelKnowledgeLearner()
         self.session_data = {}
         
         print(f"🌍 太一旅行探路者 Agent 启动")
@@ -115,17 +123,42 @@ class TaiyiTravelAgent:
         print("\n💰 预算分配...")
         budget_allocation = self._allocate_budget(budget, travelers, flights)
         
-        # 租车服务
-        car_rental = None
-        if need_car_rental:
-            print("\n🚗 查询租车服务...")
-            car_rental = self._search_car_rental(destination, start_date, end_date)
-        
-        # 地陪服务
-        local_guide = None
-        if need_local_guide:
-            print("\n👨‍🦯 查询地陪服务...")
-            local_guide = self._search_local_guide(destination, start_date, end_date, travelers)
+        # 落地服务 (包车/接机/导游)
+        ground_services = None
+        if need_car_rental or need_local_guide:
+            print("\n🚐 查询落地服务...")
+            days = (datetime.strptime(end_date, "%Y-%m-%d") - datetime.strptime(start_date, "%Y-%m-%d")).days + 1
+            
+            # 根据需求选择套餐
+            if need_car_rental and need_local_guide:
+                package_type = "豪华套餐" if budget >= 10000 else "标准套餐"
+                ground_services = self.ground_services.search_ground_package(
+                    destination=destination,
+                    days=days,
+                    airport=f"{destination}国际机场",
+                    flight_number="待定",
+                    travelers=travelers,
+                    package_type=package_type
+                )
+            elif need_car_rental:
+                ground_services = {
+                    "charter_car": self.ground_services.search_charter_car(
+                        destination=destination,
+                        days=days,
+                        car_type="舒适型",
+                        travelers=travelers
+                    )
+                }
+            elif need_local_guide:
+                ground_services = {
+                    "local_guide": self.ground_services.search_local_guide(
+                        destination=destination,
+                        days=days,
+                        language="中文",
+                        travelers=travelers,
+                        tour_type="休闲游"
+                    )
+                }
         
         # 整合计划
         trip_plan = {
@@ -145,8 +178,7 @@ class TaiyiTravelAgent:
             "weather": weather,
             "exchange_rates": exchange,
             "checklist": checklist,
-            "car_rental": car_rental,
-            "local_guide": local_guide,
+            "ground_services": ground_services,
             "timestamp": datetime.now().isoformat(),
         }
         
@@ -528,6 +560,34 @@ class TaiyiTravelAgent:
             print(f"⚠️ 微信发送错误：{e}")
         
         return {"success": True}
+    
+    def auto_learn(self, destinations: List[str] = None) -> Dict:
+        """自动学习旅行知识"""
+        print(f"\n📚 自动学习旅行知识")
+        
+        # 从博主学习
+        blogger_result = self.knowledge_learner.learn_from_bloggers("全部")
+        
+        # 从网站学习
+        website_result = self.knowledge_learner.learn_from_websites("全部")
+        
+        # 提取攻略
+        if destinations:
+            for dest in destinations:
+                self.knowledge_learner.extract_travel_guides(dest)
+        
+        # 更新推荐
+        recommendation_result = self.knowledge_learner.update_recommendations()
+        
+        # 生成学习报告
+        report = self.knowledge_learner.generate_learning_report()
+        
+        return {
+            "blogger_learning": blogger_result,
+            "website_learning": website_result,
+            "recommendation_update": recommendation_result,
+            "learning_report": str(report),
+        }
     
     def generate_report(self, plan: Dict) -> Path:
         """生成旅行报告"""
