@@ -1,0 +1,14 @@
+[
+  {
+    "id": "mem-20260409212434",
+    "name": "李四",
+    "phone": "139****5678",
+    "level": "normal",
+    "total_consumption": 1000,
+    "points": 1000,
+    "join_date": "2026-04-09",
+    "last_visit": "2026-04-09",
+    "birthday": "1990-05-15",
+    "notes": ""
+  }
+]

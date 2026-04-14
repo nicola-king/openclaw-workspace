@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-04-13T23:05:01.640141",
+  "total_feedback": 5,
+  "style_performance": {
+    "治愈系": {
+      "count": 2,
+      "viral": 2,
+      "avg_views": 9975.5,
+      "viral_rate": 100.0
+    },
+    "教程类": {
+      "count": 1,
+      "viral": 1,
+      "avg_views": 13504.0,
+      "viral_rate": 100.0
+    },
+    "分享类": {
+      "count": 2,
+      "viral": 0,
+      "avg_views": 7519.5,
+      "viral_rate": 0.0
+    }
+  },
+  "best_style": "治愈系",
+  "recommendations": [
+    "✓ 重点发展 治愈系 风格 (爆款率 100.0%)",
+    "⚠ 分享类 风格需要优化 (爆款率仅 0.0%)",
+    "✓ 保持日更频率，持续输出",
+    "✓ 蹭热搜话题，获取流量红利",
+    "✓ 优化封面设计，提高点击率",
+    "✓ 增加互动引导，提高评论率"
+  ]
+}

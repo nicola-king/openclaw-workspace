@@ -1,0 +1,203 @@
+{
+  "timestamp": "2026-04-13T23:05:01.636947",
+  "category": "全部",
+  "update_time": "2026-04-13 23:05",
+  "trending_topics": [
+    {
+      "rank": 1,
+      "topic": "春暖花开/春游踏青",
+      "heat": "🔥🔥🔥🔥🔥",
+      "category": "旅行",
+      "growth": "+31%",
+      "notes_count": 21924
+    },
+    {
+      "rank": 2,
+      "topic": "AI 技术突破/新产品",
+      "heat": "🔥🔥🔥🔥🔥",
+      "category": "科技",
+      "growth": "+31%",
+      "notes_count": 3570
+    },
+    {
+      "rank": 3,
+      "topic": "加密货币/比特币",
+      "heat": "🔥🔥🔥🔥",
+      "category": "财经",
+      "growth": "+12%",
+      "notes_count": 18550
+    },
+    {
+      "rank": 4,
+      "topic": "美食/小龙虾季",
+      "heat": "🔥🔥🔥",
+      "category": "美食",
+      "growth": "+15%",
+      "notes_count": 40797
+    },
+    {
+      "rank": 5,
+      "topic": "情感/治愈系",
+      "heat": "🔥🔥🔥🔥",
+      "category": "情感",
+      "growth": "+12%",
+      "notes_count": 21061
+    },
+    {
+      "rank": 6,
+      "topic": "健身/减肥",
+      "heat": "🔥🔥🔥",
+      "category": "健身",
+      "growth": "+12%",
+      "notes_count": 10588
+    },
+    {
+      "rank": 7,
+      "topic": "穿搭/春季新品",
+      "heat": "🔥🔥🔥🔥",
+      "category": "穿搭",
+      "growth": "+15%",
+      "notes_count": 33133
+    },
+    {
+      "rank": 8,
+      "topic": "美妆/护肤",
+      "heat": "🔥🔥🔥",
+      "category": "美妆",
+      "growth": "+31%",
+      "notes_count": 9683
+    },
+    {
+      "rank": 9,
+      "topic": "家居/收纳",
+      "heat": "🔥🔥",
+      "category": "家居",
+      "growth": "+12%",
+      "notes_count": 36151
+    },
+    {
+      "rank": 10,
+      "topic": "职场/求职",
+      "heat": "🔥🔥🔥",
+      "category": "职场",
+      "growth": "+31%",
+      "notes_count": 9779
+    },
+    {
+      "rank": 11,
+      "topic": "壁纸/手机主题",
+      "heat": "🔥🔥🔥",
+      "category": "科技",
+      "growth": "+8%",
+      "notes_count": 14569
+    },
+    {
+      "rank": 12,
+      "topic": "摄影/拍照技巧",
+      "heat": "🔥🔥🔥🔥",
+      "category": "旅行",
+      "growth": "+15%",
+      "notes_count": 15566
+    },
+    {
+      "rank": 13,
+      "topic": "学习/自我提升",
+      "heat": "🔥🔥🔥",
+      "category": "职场",
+      "growth": "+31%",
+      "notes_count": 16501
+    },
+    {
+      "rank": 14,
+      "topic": "宠物/萌宠",
+      "heat": "🔥🔥🔥🔥",
+      "category": "情感",
+      "growth": "+15%",
+      "notes_count": 8890
+    },
+    {
+      "rank": 15,
+      "topic": "电影/剧集推荐",
+      "heat": "🔥🔥🔥",
+      "category": "娱乐",
+      "growth": "+8%",
+      "notes_count": 2952
+    }
+  ],
+  "rising_keywords": [
+    {
+      "keyword": "春日壁纸",
+      "growth": "+156%"
+    },
+    {
+      "keyword": "AI 绘画",
+      "growth": "+89%"
+    },
+    {
+      "keyword": " Polymarket",
+      "growth": "+234%"
+    },
+    {
+      "keyword": "被动收入",
+      "growth": "+67%"
+    },
+    {
+      "keyword": "极简生活",
+      "growth": "+45%"
+    },
+    {
+      "keyword": "自我成长",
+      "growth": "+78%"
+    },
+    {
+      "keyword": "治愈系",
+      "growth": "+92%"
+    },
+    {
+      "keyword": "副业赚钱",
+      "growth": "+123%"
+    }
+  ],
+  "category_stats": {
+    "旅行": {
+      "posts": 125000,
+      "growth": "+12%"
+    },
+    "科技": {
+      "posts": 89000,
+      "growth": "+25%"
+    },
+    "财经": {
+      "posts": 67000,
+      "growth": "+18%"
+    },
+    "美食": {
+      "posts": 156000,
+      "growth": "+8%"
+    },
+    "情感": {
+      "posts": 198000,
+      "growth": "+15%"
+    },
+    "健身": {
+      "posts": 78000,
+      "growth": "+10%"
+    },
+    "穿搭": {
+      "posts": 234000,
+      "growth": "+5%"
+    },
+    "美妆": {
+      "posts": 189000,
+      "growth": "+7%"
+    },
+    "家居": {
+      "posts": 92000,
+      "growth": "+9%"
+    },
+    "职场": {
+      "posts": 112000,
+      "growth": "+11%"
+    }
+  }
+}

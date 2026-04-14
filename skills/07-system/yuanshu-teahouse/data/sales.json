@@ -1,0 +1,26 @@
+[
+  {
+    "id": "sale-20260409212434",
+    "customer_phone": "138****1234",
+    "items": [
+      {
+        "product_id": "tea-zhuyeqing-lidao",
+        "quantity": 1,
+        "spec": "100g"
+      },
+      {
+        "product_id": "tea-bitanpiaoxue",
+        "quantity": 2,
+        "spec": "50g"
+      }
+    ],
+    "subtotal": 2040,
+    "discount": 1.0,
+    "points_used": 0,
+    "total": 2040.0,
+    "payment_method": "wechat",
+    "status": "completed",
+    "created_at": "2026-04-09T21:24:34.613265",
+    "notes": ""
+  }
+]

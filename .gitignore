@@ -2,14 +2,19 @@
 __pycache__/
 *.py[cod]
 *$py.class
-*.so
 .Python
-venv/
-ENV/
-env/
 *.egg-info/
 dist/
 build/
+
+# 虚拟环境 (大文件) - 所有 Python 虚拟环境
+**/venv/
+**/ENV/
+**/env/
+**/.venv/
+**/__pycache__/
+**/*.pyc
+**/node_modules/
 
 # 大文件
 *.so
@@ -19,6 +24,7 @@ build/
 *.lib
 *.exe
 *.msi
+*.whl
 
 # IDE
 .vscode/
