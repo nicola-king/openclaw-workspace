@@ -1,0 +1,33 @@
+{
+  "whitelist": [
+    "SAYELF",
+    "nicola king",
+    "文件传输助手",
+    "太一 Bot",
+    "太一 AGI",
+    "工控机管理员",
+    "系统通知"
+  ],
+  "blacklist": [
+    "广告群",
+    "营销号",
+    "优惠券",
+    "拼多多助力",
+    "砍价"
+  ],
+  "patterns": [
+    "^测试",
+    "^你好",
+    "^HELP",
+    "^帮助",
+    "^状态",
+    "^/cmd",
+    ".*太一.*",
+    ".*AGI.*"
+  ],
+  "enable_whitelist": true,
+  "enable_blacklist": true,
+  "enable_pattern": true,
+  "auto_update": true,
+  "last_update": "2026-04-14 12:19:00"
+}

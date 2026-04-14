@@ -1,0 +1,3 @@
+0 23 * * * python3 /home/nicola/.openclaw/workspace/scripts/memory-four-layers-update.py daily >> /home/nicola/.openclaw/workspace/logs/memory-update.log 2>&1
+0 18 * * * cd /home/nicola/.openclaw/workspace/skills/05-content/shanmu/wechat-assistant && python3 wechat_sender.py --topic "AI 管家" >> /home/nicola/.openclaw/workspace/logs/wechat-auto-publish.log 2>&1
+0 9 * * * cd /home/nicola/.openclaw/workspace/skills/05-content/shanmu && python3 wechat-metrics-dashboard.py >> /home/nicola/.openclaw/workspace/logs/wechat-metrics.log 2>&1
