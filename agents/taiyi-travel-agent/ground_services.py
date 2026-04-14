@@ -285,7 +285,7 @@ class GroundServices:
         
         # 生成服务信息
         service = {
-            "type": "Local Guide & Car Service",
+            "type": "Local Guide",
             "destination": destination,
             "guide": {
                 "name": guide["name"],
@@ -328,13 +328,6 @@ class GroundServices:
                 "payment": "服务结束后支付",
             },
         }
-        
-        # 如果包含包车服务
-        if include_car_service:
-            car_service = self.search_charter_car(destination, days, "舒适型", travelers)
-            service["car_service"] = car_service
-            service["total_price"] += car_service["total_price"]
-            service["includes"].append("包车服务")
         
         print(f"  导游：{guide['name']} ({guide['language']})")
         print(f"  评分：{guide['rating']} (经验：{guide['experience']})")
@@ -540,8 +533,7 @@ def main():
         days=3,
         language="中文",
         travelers=2,
-        tour_type="深度游",
-        include_car_service=False
+        tour_type="深度游"
     )
     
     # 测试 3: 全包套餐服务
