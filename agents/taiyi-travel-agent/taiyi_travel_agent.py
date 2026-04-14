@@ -55,6 +55,9 @@ from ground_services import GroundServices
 # 导入知识学习模块
 from travel_knowledge_learner import TravelKnowledgeLearner
 
+# 导入目的地注意事项模块
+from destination_notices import DestinationNotices
+
 
 class TaiyiTravelAgent:
     """太一旅行探路者 Agent"""
@@ -64,6 +67,7 @@ class TaiyiTravelAgent:
         self.apilayer = APILayerClient()
         self.ground_services = GroundServices()
         self.knowledge_learner = TravelKnowledgeLearner()
+        self.destination_notices = DestinationNotices()
         self.session_data = {}
         
         print(f"🌍 太一旅行探路者 Agent 启动")
@@ -179,6 +183,7 @@ class TaiyiTravelAgent:
             "exchange_rates": exchange,
             "checklist": checklist,
             "ground_services": ground_services,
+            "destination_notices": self.destination_notices.get_destination_notices(destination),
             "timestamp": datetime.now().isoformat(),
         }
         
