@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "skills": {
+    "arxiv-research": {
+      "version": "1.0.0",
+      "installedAt": 1777186681869
+    },
+    "karpathy-llm-wiki": {
+      "version": "1.0.0",
+      "installedAt": 1777186742535
+    },
+    "polymarket-trade": {
+      "version": "1.0.6",
+      "installedAt": 1777186801944
+    },
+    "gifgrep": {
+      "version": "1.0.1",
+      "installedAt": 1777186862484
+    },
+    "blogwatcher": {
+      "version": "1.0.0",
+      "installedAt": 1777186983118
+    },
+    "twitter-research": {
+      "version": "1.0.0",
+      "installedAt": 1777187941677
+    },
+    "youtube-transcript": {
+      "version": "1.0.1",
+      "installedAt": 1777188003640
+    },
+    "cafes": {
+      "version": "0.1.0",
+      "installedAt": 1777188121952
+    },
+    "bars": {
+      "version": "0.1.0",
+      "installedAt": 1777188182238
+    },
+    "wikipedia-nearby": {
+      "version": "1.0.0",
+      "installedAt": 1777188231976
+    }
+  }
+}

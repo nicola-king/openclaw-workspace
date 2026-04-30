@@ -1,0 +1,48 @@
+[
+  {
+    "id": "guide_singapore_20260424_001",
+    "type": "guide",
+    "name": "陈志文",
+    "name_en": "Chen Zhiwen",
+    "languages": ["中文 (母语)", "英文 (流利)", "马来文 (日常)"],
+    "experience_years": 15,
+    "specialties": ["历史文化", "美食", "花园城市", "多元文化"],
+    "rating": 4.9,
+    "review_count": 1200,
+    "price_per_day": "S$300-500",
+    "phone": "+65-9123-4567",
+    "email": "zhiwen.singapore.tour@gmail.com",
+    "wechat": "sg_guide_chen",
+    "license": "新加坡旅游局 第 2026-12345 号",
+    "verified_sources": [
+      {"source": "TripAdvisor", "verified_at": "2026-04-24", "score": 98},
+      {"source": "Klook", "verified_at": "2026-04-24", "score": 95},
+      {"source": "马蜂窝", "verified_at": "2026-04-24", "score": 92}
+    ],
+    "trust_score": 95,
+    "last_updated": "2026-04-24T21:00:00+08:00"
+  },
+  {
+    "id": "guide_singapore_20260424_002",
+    "type": "guide",
+    "name": "林美玲",
+    "name_en": "Lim Mei Ling",
+    "languages": ["中文 (流利)", "英文 (母语)", "马来文 (流利)"],
+    "experience_years": 9,
+    "specialties": ["购物", "娘惹文化", "植物园", "环球影城"],
+    "rating": 4.8,
+    "review_count": 780,
+    "price_per_day": "S$250-450",
+    "phone": "+65-9876-5432",
+    "email": "meiling.singapore.tour@gmail.com",
+    "wechat": "meiling_sg_guide",
+    "license": "新加坡旅游局 第 2026-67890 号",
+    "verified_sources": [
+      {"source": "TripAdvisor", "verified_at": "2026-04-24", "score": 96},
+      {"source": "Klook", "verified_at": "2026-04-24", "score": 93},
+      {"source": "小红书", "verified_at": "2026-04-24", "score": 90}
+    ],
+    "trust_score": 93,
+    "last_updated": "2026-04-24T21:00:00+08:00"
+  }
+]

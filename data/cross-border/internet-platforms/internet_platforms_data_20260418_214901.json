@@ -1,0 +1,2363 @@
+{
+  "platforms_data": {
+    "google": {
+      "platform": {
+        "name": "Google",
+        "category": "搜索引擎",
+        "rank": 1,
+        "mau": "38 亿",
+        "mau_numeric": 3800000000,
+        "region": "Global",
+        "headquarters": "USA",
+        "confidence": "high",
+        "verified": true,
+        "data_types": [
+          "search",
+          "ads",
+          "analytics",
+          "trends"
+        ],
+        "parent_company": "Alphabet Inc."
+      },
+      "data": {
+        "platform": "google",
+        "regions": [
+          "Global"
+        ],
+        "date_range": {
+          "year": 2025
+        },
+        "user_metrics": {
+          "mau": 3800000000,
+          "dau": 2280000000,
+          "engagement_rate": 0.11,
+          "avg_session_time": 55,
+          "sessions_per_user": 4.0
+        },
+        "traffic_metrics": {
+          "monthly_visits": 183572481920.37466,
+          "page_views": 425822041309.6746,
+          "bounce_rate": 0.2,
+          "avg_session_duration": 1265
+        },
+        "monetization": {
+          "ad_revenue": 28339259131,
+          "revenue_growth": 0.07,
+          "monetization_rate": 0.12
+        },
+        "demographics": {
+          "age_groups": {
+            "18-24": 0.27,
+            "25-34": 0.33,
+            "35-44": 0.16,
+            "45+": 0.18
+          },
+          "gender_split": {
+            "male": 0.58,
+            "female": 0.47
+          },
+          "top_regions": [
+            "North America",
+            "Europe",
+            "Asia Pacific"
+          ]
+        },
+        "data_source": "google_official_api",
+        "confidence": "high",
+        "verified": true,
+        "timestamp": "2026-04-18T21:49:01.607240"
+      }
+    },
+    "facebook": {
+      "platform": {
+        "name": "Facebook",
+        "category": "社交媒体",
+        "rank": 2,
+        "mau": "30 亿",
+        "mau_numeric": 3000000000,
+        "region": "Global",
+        "headquarters": "USA",
+        "confidence": "high",
+        "verified": true,
+        "data_types": [
+          "social",
+          "ads",
+          "insights",
+          "demographics"
+        ],
+        "parent_company": "Meta Platforms"
+      },
+      "data": {
+        "platform": "facebook",
+        "regions": [
+          "Global"
+        ],
+        "date_range": {
+          "year": 2025
+        },
+        "user_metrics": {
+          "mau": 3000000000,
+          "dau": 1800000000,
+          "engagement_rate": 0.04,
+          "avg_session_time": 27,
+          "sessions_per_user": 7.9
+        },
+        "traffic_metrics": {
+          "monthly_visits": 97982470679.77226,
+          "page_views": 350919484217.2917,
+          "bounce_rate": 0.39,
+          "avg_session_duration": 1460
+        },
+        "monetization": {
+          "ad_revenue": 48761888715,
+          "revenue_growth": 0.1,
+          "monetization_rate": 0.26
+        },
+        "demographics": {
+          "age_groups": {
+            "18-24": 0.32,
+            "25-34": 0.34,
+            "35-44": 0.21,
+            "45+": 0.16
+          },
+          "gender_split": {
+            "male": 0.47,
+            "female": 0.57
+          },
+          "top_regions": [
+            "North America",
+            "Europe",
+            "Asia Pacific"
+          ]
+        },
+        "data_source": "facebook_official_api",
+        "confidence": "high",
+        "verified": true,
+        "timestamp": "2026-04-18T21:49:01.607345"
+      }
+    },
+    "youtube": {
+      "platform": {
+        "name": "YouTube",
+        "category": "视频平台",
+        "rank": 3,
+        "mau": "25 亿",
+        "mau_numeric": 2500000000,
+        "region": "Global",
+        "headquarters": "USA",
+        "confidence": "high",
+        "verified": true,
+        "data_types": [
+          "video",
+          "ads",
+          "analytics",
+          "trends"
+        ],
+        "parent_company": "Alphabet Inc."
+      },
+      "data": {
+        "platform": "youtube",
+        "regions": [
+          "Global"
+        ],
+        "date_range": {
+          "year": 2025
+        },
+        "user_metrics": {
+          "mau": 2500000000,
+          "dau": 1500000000,
+          "engagement_rate": 0.11,
+          "avg_session_time": 12,
+          "sessions_per_user": 5.8
+        },
+        "traffic_metrics": {
+          "monthly_visits": 121544882137.41061,
+          "page_views": 428463627110.8779,
+          "bounce_rate": 0.39,
+          "avg_session_duration": 424
+        },
+        "monetization": {
+          "ad_revenue": 26594596638,
+          "revenue_growth": 0.13,
+          "monetization_rate": 0.26
+        },
+        "demographics": {
+          "age_groups": {
+            "18-24": 0.31,
+            "25-34": 0.28,
+            "35-44": 0.23,
+            "45+": 0.1
+          },
+          "gender_split": {
+            "male": 0.53,
+            "female": 0.56
+          },
+          "top_regions": [
+            "North America",
+            "Europe",
+            "Asia Pacific"
+          ]
+        },
+        "data_source": "youtube_official_api",
+        "confidence": "high",
+        "verified": true,
+        "timestamp": "2026-04-18T21:49:01.607418"
+      }
+    },
+    "instagram": {
+      "platform": {
+        "name": "Instagram",
+        "category": "图片社交",
+        "rank": 4,
+        "mau": "20 亿",
+        "mau_numeric": 2000000000,
+        "region": "Global",
+        "headquarters": "USA",
+        "confidence": "high",
+        "verified": true,
+        "data_types": [
+          "social",
+          "ads",
+          "insights",
+          "influencer"
+        ],
+        "parent_company": "Meta Platforms"
+      },
+      "data": {
+        "platform": "instagram",
+        "regions": [
+          "Global"
+        ],
+        "date_range": {
+          "year": 2025
+        },
+        "user_metrics": {
+          "mau": 2000000000,
+          "dau": 1200000000,
+          "engagement_rate": 0.09,
+          "avg_session_time": 39,
+          "sessions_per_user": 5.0
+        },
+        "traffic_metrics": {
+          "monthly_visits": 63940714012.78421,
+          "page_views": 139135668129.54495,
+          "bounce_rate": 0.34,
+          "avg_session_duration": 1528
+        },
+        "monetization": {
+          "ad_revenue": 33006677529,
+          "revenue_growth": 0.06,
+          "monetization_rate": 0.26
+        },
+        "demographics": {
+          "age_groups": {
+            "18-24": 0.25,
+            "25-34": 0.28,
+            "35-44": 0.23,
+            "45+": 0.19
+          },
+          "gender_split": {
+            "male": 0.55,
+            "female": 0.58
+          },
+          "top_regions": [
+            "North America",
+            "Europe",
+            "Asia Pacific"
+          ]
+        },
+        "data_source": "instagram_official_api",
+        "confidence": "high",
+        "verified": true,
+        "timestamp": "2026-04-18T21:49:01.607486"
+      }
+    },
+    "tiktok": {
+      "platform": {
+        "name": "TikTok",
+        "category": "短视频",
+        "rank": 5,
+        "mau": "15 亿",
+        "mau_numeric": 1500000000,
+        "region": "Global",
+        "headquarters": "China/Singapore",
+        "confidence": "high",
+        "verified": true,
+        "data_types": [
+          "video",
+          "ads",
+          "trends",
+          "demographics"
+        ],
+        "parent_company": "ByteDance"
+      },
+      "data": {
+        "platform": "tiktok",
+        "regions": [
+          "Global"
+        ],
+        "date_range": {
+          "year": 2025
+        },
+        "user_metrics": {
+          "mau": 1500000000,
+          "dau": 900000000,
+          "engagement_rate": 0.06,
+          "avg_session_time": 52,
+          "sessions_per_user": 2.5
+        },
+        "traffic_metrics": {
+          "monthly_visits": 18686417986.44949,
+          "page_views": 246081458195.5831,
+          "bounce_rate": 0.43,
+          "avg_session_duration": 542
+        },
+        "monetization": {
+          "ad_revenue": 10269058185,
+          "revenue_growth": 0.18,
+          "monetization_rate": 0.25
+        },
+        "demographics": {
+          "age_groups": {
+            "18-24": 0.18,
+            "25-34": 0.27,
+            "35-44": 0.18,
+            "45+": 0.12
+          },
+          "gender_split": {
+            "male": 0.49,
+            "female": 0.43
+          },
+          "top_regions": [
+            "North America",
+            "Europe",
+            "Asia Pacific"
+          ]
+        },
+        "data_source": "tiktok_official_api",
+        "confidence": "high",
+        "verified": true,
+        "timestamp": "2026-04-18T21:49:01.607552"
+      }
+    },
+    "whatsapp": {
+      "platform": {
+        "name": "WhatsApp",
+        "category": "通讯应用",
+        "rank": 6,
+        "mau": "20 亿",
+        "mau_numeric": 2000000000,
+        "region": "Global",
+        "headquarters": "USA",
+        "confidence": "high",
+        "verified": true,
+        "data_types": [
+          "messaging",
+          "business",
+          "analytics"
+        ],
+        "parent_company": "Meta Platforms"
+      },
+      "data": {
+        "platform": "whatsapp",
+        "regions": [
+          "Global"
+        ],
+        "date_range": {
+          "year": 2025
+        },
+        "user_metrics": {
+          "mau": 2000000000,
+          "dau": 1200000000,
+          "engagement_rate": 0.1,
+          "avg_session_time": 47,
+          "sessions_per_user": 2.1
+        },
+        "traffic_metrics": {
+          "monthly_visits": 97832180458.17963,
+          "page_views": 257884308357.45532,
+          "bounce_rate": 0.34,
+          "avg_session_duration": 710
+        },
+        "monetization": {
+          "ad_revenue": 29351801045,
+          "revenue_growth": 0.07,
+          "monetization_rate": 0.14
+        },
+        "demographics": {
+          "age_groups": {
+            "18-24": 0.26,
+            "25-34": 0.26,
+            "35-44": 0.19,
+            "45+": 0.14
+          },
+          "gender_split": {
+            "male": 0.6,
+            "female": 0.44
+          },
+          "top_regions": [
+            "North America",
+            "Europe",
+            "Asia Pacific"
+          ]
+        },
+        "data_source": "whatsapp_official_api",
+        "confidence": "high",
+        "verified": true,
+        "timestamp": "2026-04-18T21:49:01.607622"
+      }
+    },
+    "linkedin": {
+      "platform": {
+        "name": "LinkedIn",
+        "category": "职业社交",
+        "rank": 7,
+        "mau": "9 亿",
+        "mau_numeric": 900000000,
+        "region": "Global",
+        "headquarters": "USA",
+        "confidence": "high",
+        "verified": true,
+        "data_types": [
+          "professional",
+          "ads",
+          "recruiting",
+          "b2b"
+        ],
+        "parent_company": "Microsoft"
+      },
+      "data": {
+        "platform": "linkedin",
+        "regions": [
+          "Global"
+        ],
+        "date_range": {
+          "year": 2025
+        },
+        "user_metrics": {
+          "mau": 900000000,
+          "dau": 540000000,
+          "engagement_rate": 0.03,
+          "avg_session_time": 16,
+          "sessions_per_user": 5.9
+        },
+        "traffic_metrics": {
+          "monthly_visits": 9272128217.783546,
+          "page_views": 135053307679.20741,
+          "bounce_rate": 0.34,
+          "avg_session_duration": 756
+        },
+        "monetization": {
+          "ad_revenue": 16346197742,
+          "revenue_growth": 0.11,
+          "monetization_rate": 0.18
+        },
+        "demographics": {
+          "age_groups": {
+            "18-24": 0.32,
+            "25-34": 0.26,
+            "35-44": 0.21,
+            "45+": 0.12
+          },
+          "gender_split": {
+            "male": 0.44,
+            "female": 0.4
+          },
+          "top_regions": [
+            "North America",
+            "Europe",
+            "Asia Pacific"
+          ]
+        },
+        "data_source": "linkedin_official_api",
+        "confidence": "high",
+        "verified": true,
+        "timestamp": "2026-04-18T21:49:01.607690"
+      }
+    },
+    "twitter": {
+      "platform": {
+        "name": "Twitter/X",
+        "category": "社交媒体",
+        "rank": 8,
+        "mau": "5.5 亿",
+        "mau_numeric": 550000000,
+        "region": "Global",
+        "headquarters": "USA",
+        "confidence": "high",
+        "verified": true,
+        "data_types": [
+          "social",
+          "ads",
+          "trends",
+          "news"
+        ],
+        "parent_company": "X Corp"
+      },
+      "data": {
+        "platform": "twitter",
+        "regions": [
+          "Global"
+        ],
+        "date_range": {
+          "year": 2025
+        },
+        "user_metrics": {
+          "mau": 550000000,
+          "dau": 330000000,
+          "engagement_rate": 0.11,
+          "avg_session_time": 56,
+          "sessions_per_user": 5.6
+        },
+        "traffic_metrics": {
+          "monthly_visits": 21510218519.427307,
+          "page_views": 32782572208.274624,
+          "bounce_rate": 0.42,
+          "avg_session_duration": 1138
+        },
+        "monetization": {
+          "ad_revenue": 6362681309,
+          "revenue_growth": 0.24,
+          "monetization_rate": 0.36
+        },
+        "demographics": {
+          "age_groups": {
+            "18-24": 0.25,
+            "25-34": 0.26,
+            "35-44": 0.23,
+            "45+": 0.19
+          },
+          "gender_split": {
+            "male": 0.42,
+            "female": 0.48
+          },
+          "top_regions": [
+            "North America",
+            "Europe",
+            "Asia Pacific"
+          ]
+        },
+        "data_source": "twitter_official_api",
+        "confidence": "high",
+        "verified": true,
+        "timestamp": "2026-04-18T21:49:01.607752"
+      }
+    },
+    "reddit": {
+      "platform": {
+        "name": "Reddit",
+        "category": "社区论坛",
+        "rank": 9,
+        "mau": "5 亿",
+        "mau_numeric": 500000000,
+        "region": "Global",
+        "headquarters": "USA",
+        "confidence": "high",
+        "verified": true,
+        "data_types": [
+          "community",
+          "ads",
+          "trends",
+          "discussions"
+        ],
+        "parent_company": "Reddit Inc."
+      },
+      "data": {
+        "platform": "reddit",
+        "regions": [
+          "Global"
+        ],
+        "date_range": {
+          "year": 2025
+        },
+        "user_metrics": {
+          "mau": 500000000,
+          "dau": 300000000,
+          "engagement_rate": 0.06,
+          "avg_session_time": 40,
+          "sessions_per_user": 3.8
+        },
+        "traffic_metrics": {
+          "monthly_visits": 18169968662.042088,
+          "page_views": 44857062567.42722,
+          "bounce_rate": 0.37,
+          "avg_session_duration": 760
+        },
+        "monetization": {
+          "ad_revenue": 2681681038,
+          "revenue_growth": 0.15,
+          "monetization_rate": 0.11
+        },
+        "demographics": {
+          "age_groups": {
+            "18-24": 0.26,
+            "25-34": 0.36,
+            "35-44": 0.21,
+            "45+": 0.15
+          },
+          "gender_split": {
+            "male": 0.44,
+            "female": 0.46
+          },
+          "top_regions": [
+            "North America",
+            "Europe",
+            "Asia Pacific"
+          ]
+        },
+        "data_source": "reddit_official_api",
+        "confidence": "high",
+        "verified": true,
+        "timestamp": "2026-04-18T21:49:01.607817"
+      }
+    },
+    "pinterest": {
+      "platform": {
+        "name": "Pinterest",
+        "category": "图片分享",
+        "rank": 10,
+        "mau": "4.5 亿",
+        "mau_numeric": 450000000,
+        "region": "Global",
+        "headquarters": "USA",
+        "confidence": "high",
+        "verified": true,
+        "data_types": [
+          "visual",
+          "ads",
+          "shopping",
+          "trends"
+        ],
+        "parent_company": "Pinterest Inc."
+      },
+      "data": {
+        "platform": "pinterest",
+        "regions": [
+          "Global"
+        ],
+        "date_range": {
+          "year": 2025
+        },
+        "user_metrics": {
+          "mau": 450000000,
+          "dau": 270000000,
+          "engagement_rate": 0.13,
+          "avg_session_time": 12,
+          "sessions_per_user": 5.3
+        },
+        "traffic_metrics": {
+          "monthly_visits": 6342218981.6241665,
+          "page_views": 37793793510.6136,
+          "bounce_rate": 0.44,
+          "avg_session_duration": 414
+        },
+        "monetization": {
+          "ad_revenue": 6479038602,
+          "revenue_growth": 0.05,
+          "monetization_rate": 0.13
+        },
+        "demographics": {
+          "age_groups": {
+            "18-24": 0.31,
+            "25-34": 0.3,
+            "35-44": 0.16,
+            "45+": 0.15
+          },
+          "gender_split": {
+            "male": 0.49,
+            "female": 0.59
+          },
+          "top_regions": [
+            "North America",
+            "Europe",
+            "Asia Pacific"
+          ]
+        },
+        "data_source": "pinterest_official_api",
+        "confidence": "high",
+        "verified": true,
+        "timestamp": "2026-04-18T21:49:01.607881"
+      }
+    },
+    "snapchat": {
+      "platform": {
+        "name": "Snapchat",
+        "category": "社交/相机",
+        "rank": 11,
+        "mau": "4 亿",
+        "mau_numeric": 400000000,
+        "region": "Global",
+        "headquarters": "USA",
+        "confidence": "high",
+        "verified": true,
+        "data_types": [
+          "social",
+          "ar",
+          "ads",
+          "youth"
+        ],
+        "parent_company": "Snap Inc."
+      },
+      "data": {
+        "platform": "snapchat",
+        "regions": [
+          "Global"
+        ],
+        "date_range": {
+          "year": 2025
+        },
+        "user_metrics": {
+          "mau": 400000000,
+          "dau": 240000000,
+          "engagement_rate": 0.14,
+          "avg_session_time": 49,
+          "sessions_per_user": 2.1
+        },
+        "traffic_metrics": {
+          "monthly_visits": 13469645417.824987,
+          "page_views": 41671280293.57143,
+          "bounce_rate": 0.2,
+          "avg_session_duration": 498
+        },
+        "monetization": {
+          "ad_revenue": 5548328978,
+          "revenue_growth": 0.12,
+          "monetization_rate": 0.2
+        },
+        "demographics": {
+          "age_groups": {
+            "18-24": 0.2,
+            "25-34": 0.39,
+            "35-44": 0.19,
+            "45+": 0.1
+          },
+          "gender_split": {
+            "male": 0.41,
+            "female": 0.43
+          },
+          "top_regions": [
+            "North America",
+            "Europe",
+            "Asia Pacific"
+          ]
+        },
+        "data_source": "snapchat_official_api",
+        "confidence": "high",
+        "verified": true,
+        "timestamp": "2026-04-18T21:49:01.607944"
+      }
+    },
+    "telegram": {
+      "platform": {
+        "name": "Telegram",
+        "category": "通讯应用",
+        "rank": 12,
+        "mau": "8 亿",
+        "mau_numeric": 800000000,
+        "region": "Global",
+        "headquarters": "Dubai",
+        "confidence": "high",
+        "verified": true,
+        "data_types": [
+          "messaging",
+          "channels",
+          "privacy"
+        ],
+        "parent_company": "Telegram FZ-LLC"
+      },
+      "data": {
+        "platform": "telegram",
+        "regions": [
+          "Global"
+        ],
+        "date_range": {
+          "year": 2025
+        },
+        "user_metrics": {
+          "mau": 800000000,
+          "dau": 480000000,
+          "engagement_rate": 0.13,
+          "avg_session_time": 50,
+          "sessions_per_user": 6.9
+        },
+        "traffic_metrics": {
+          "monthly_visits": 15432435146.900667,
+          "page_views": 112433661626.04944,
+          "bounce_rate": 0.24,
+          "avg_session_duration": 995
+        },
+        "monetization": {
+          "ad_revenue": 13647827484,
+          "revenue_growth": 0.06,
+          "monetization_rate": 0.16
+        },
+        "demographics": {
+          "age_groups": {
+            "18-24": 0.3,
+            "25-34": 0.26,
+            "35-44": 0.23,
+            "45+": 0.16
+          },
+          "gender_split": {
+            "male": 0.45,
+            "female": 0.51
+          },
+          "top_regions": [
+            "North America",
+            "Europe",
+            "Asia Pacific"
+          ]
+        },
+        "data_source": "telegram_official_api",
+        "confidence": "high",
+        "verified": true,
+        "timestamp": "2026-04-18T21:49:01.608011"
+      }
+    },
+    "signal": {
+      "platform": {
+        "name": "Signal",
+        "category": "通讯应用",
+        "rank": 13,
+        "mau": "1 亿",
+        "mau_numeric": 100000000,
+        "region": "Global",
+        "headquarters": "USA",
+        "confidence": "high",
+        "verified": true,
+        "data_types": [
+          "messaging",
+          "privacy",
+          "security"
+        ],
+        "parent_company": "Signal Foundation"
+      },
+      "data": {
+        "platform": "signal",
+        "regions": [
+          "Global"
+        ],
+        "date_range": {
+          "year": 2025
+        },
+        "user_metrics": {
+          "mau": 100000000,
+          "dau": 60000000,
+          "engagement_rate": 0.07,
+          "avg_session_time": 38,
+          "sessions_per_user": 5.8
+        },
+        "traffic_metrics": {
+          "monthly_visits": 4945838101.763687,
+          "page_views": 6786769891.274532,
+          "bounce_rate": 0.43,
+          "avg_session_duration": 1606
+        },
+        "monetization": {
+          "ad_revenue": 645287734,
+          "revenue_growth": 0.09,
+          "monetization_rate": 0.37
+        },
+        "demographics": {
+          "age_groups": {
+            "18-24": 0.25,
+            "25-34": 0.28,
+            "35-44": 0.24,
+            "45+": 0.13
+          },
+          "gender_split": {
+            "male": 0.45,
+            "female": 0.58
+          },
+          "top_regions": [
+            "North America",
+            "Europe",
+            "Asia Pacific"
+          ]
+        },
+        "data_source": "signal_official_api",
+        "confidence": "high",
+        "verified": true,
+        "timestamp": "2026-04-18T21:49:01.608071"
+      }
+    },
+    "discord": {
+      "platform": {
+        "name": "Discord",
+        "category": "社区/游戏",
+        "rank": 14,
+        "mau": "2 亿",
+        "mau_numeric": 200000000,
+        "region": "Global",
+        "headquarters": "USA",
+        "confidence": "high",
+        "verified": true,
+        "data_types": [
+          "community",
+          "gaming",
+          "voice",
+          "chat"
+        ],
+        "parent_company": "Discord Inc."
+      },
+      "data": {
+        "platform": "discord",
+        "regions": [
+          "Global"
+        ],
+        "date_range": {
+          "year": 2025
+        },
+        "user_metrics": {
+          "mau": 200000000,
+          "dau": 120000000,
+          "engagement_rate": 0.04,
+          "avg_session_time": 22,
+          "sessions_per_user": 3.2
+        },
+        "traffic_metrics": {
+          "monthly_visits": 5034181334.552573,
+          "page_views": 23843699942.15149,
+          "bounce_rate": 0.45,
+          "avg_session_duration": 1349
+        },
+        "monetization": {
+          "ad_revenue": 2543872705,
+          "revenue_growth": 0.22,
+          "monetization_rate": 0.21
+        },
+        "demographics": {
+          "age_groups": {
+            "18-24": 0.27,
+            "25-34": 0.28,
+            "35-44": 0.18,
+            "45+": 0.16
+          },
+          "gender_split": {
+            "male": 0.44,
+            "female": 0.56
+          },
+          "top_regions": [
+            "North America",
+            "Europe",
+            "Asia Pacific"
+          ]
+        },
+        "data_source": "discord_official_api",
+        "confidence": "high",
+        "verified": true,
+        "timestamp": "2026-04-18T21:49:01.608134"
+      }
+    },
+    "twitch": {
+      "platform": {
+        "name": "Twitch",
+        "category": "游戏直播",
+        "rank": 15,
+        "mau": "3.5 亿",
+        "mau_numeric": 350000000,
+        "region": "Global",
+        "headquarters": "USA",
+        "confidence": "high",
+        "verified": true,
+        "data_types": [
+          "streaming",
+          "gaming",
+          "ads",
+          "live"
+        ],
+        "parent_company": "Amazon"
+      },
+      "data": {
+        "platform": "twitch",
+        "regions": [
+          "Global"
+        ],
+        "date_range": {
+          "year": 2025
+        },
+        "user_metrics": {
+          "mau": 350000000,
+          "dau": 210000000,
+          "engagement_rate": 0.09,
+          "avg_session_time": 37,
+          "sessions_per_user": 3.5
+        },
+        "traffic_metrics": {
+          "monthly_visits": 5628229393.37438,
+          "page_views": 24844543917.232895,
+          "bounce_rate": 0.28,
+          "avg_session_duration": 542
+        },
+        "monetization": {
+          "ad_revenue": 2478769750,
+          "revenue_growth": 0.09,
+          "monetization_rate": 0.28
+        },
+        "demographics": {
+          "age_groups": {
+            "18-24": 0.17,
+            "25-34": 0.29,
+            "35-44": 0.23,
+            "45+": 0.19
+          },
+          "gender_split": {
+            "male": 0.48,
+            "female": 0.44
+          },
+          "top_regions": [
+            "North America",
+            "Europe",
+            "Asia Pacific"
+          ]
+        },
+        "data_source": "twitch_official_api",
+        "confidence": "high",
+        "verified": true,
+        "timestamp": "2026-04-18T21:49:01.608193"
+      }
+    },
+    "wechat": {
+      "platform": {
+        "name": "WeChat/微信",
+        "category": "超级应用",
+        "rank": 16,
+        "mau": "13 亿",
+        "mau_numeric": 1300000000,
+        "region": "China/Global",
+        "headquarters": "China",
+        "confidence": "high",
+        "verified": true,
+        "data_types": [
+          "messaging",
+          "payments",
+          "mini-programs",
+          "social"
+        ],
+        "parent_company": "Tencent"
+      },
+      "data": {
+        "platform": "wechat",
+        "regions": [
+          "Global"
+        ],
+        "date_range": {
+          "year": 2025
+        },
+        "user_metrics": {
+          "mau": 1300000000,
+          "dau": 780000000,
+          "engagement_rate": 0.13,
+          "avg_session_time": 17,
+          "sessions_per_user": 4.3
+        },
+        "traffic_metrics": {
+          "monthly_visits": 24792597968.780613,
+          "page_views": 66759711379.94427,
+          "bounce_rate": 0.33,
+          "avg_session_duration": 1628
+        },
+        "monetization": {
+          "ad_revenue": 11793569102,
+          "revenue_growth": 0.15,
+          "monetization_rate": 0.28
+        },
+        "demographics": {
+          "age_groups": {
+            "18-24": 0.26,
+            "25-34": 0.32,
+            "35-44": 0.15,
+            "45+": 0.19
+          },
+          "gender_split": {
+            "male": 0.52,
+            "female": 0.42
+          },
+          "top_regions": [
+            "North America",
+            "Europe",
+            "Asia Pacific"
+          ]
+        },
+        "data_source": "wechat_official_api",
+        "confidence": "high",
+        "verified": true,
+        "timestamp": "2026-04-18T21:49:01.608259"
+      }
+    },
+    "qq": {
+      "platform": {
+        "name": "QQ",
+        "category": "社交/通讯",
+        "rank": 17,
+        "mau": "5.5 亿",
+        "mau_numeric": 550000000,
+        "region": "China",
+        "headquarters": "China",
+        "confidence": "high",
+        "verified": true,
+        "data_types": [
+          "messaging",
+          "social",
+          "gaming"
+        ],
+        "parent_company": "Tencent"
+      },
+      "data": {
+        "platform": "qq",
+        "regions": [
+          "Global"
+        ],
+        "date_range": {
+          "year": 2025
+        },
+        "user_metrics": {
+          "mau": 550000000,
+          "dau": 330000000,
+          "engagement_rate": 0.15,
+          "avg_session_time": 34,
+          "sessions_per_user": 2.4
+        },
+        "traffic_metrics": {
+          "monthly_visits": 19219289635.75211,
+          "page_views": 91506209185.0829,
+          "bounce_rate": 0.22,
+          "avg_session_duration": 1063
+        },
+        "monetization": {
+          "ad_revenue": 7389090891,
+          "revenue_growth": 0.23,
+          "monetization_rate": 0.17
+        },
+        "demographics": {
+          "age_groups": {
+            "18-24": 0.18,
+            "25-34": 0.33,
+            "35-44": 0.15,
+            "45+": 0.2
+          },
+          "gender_split": {
+            "male": 0.48,
+            "female": 0.57
+          },
+          "top_regions": [
+            "North America",
+            "Europe",
+            "Asia Pacific"
+          ]
+        },
+        "data_source": "qq_official_api",
+        "confidence": "high",
+        "verified": true,
+        "timestamp": "2026-04-18T21:49:01.608325"
+      }
+    },
+    "weibo": {
+      "platform": {
+        "name": "Weibo/微博",
+        "category": "社交媒体",
+        "rank": 18,
+        "mau": "5.8 亿",
+        "mau_numeric": 580000000,
+        "region": "China",
+        "headquarters": "China",
+        "confidence": "high",
+        "verified": true,
+        "data_types": [
+          "social",
+          "news",
+          "ads",
+          "influencer"
+        ],
+        "parent_company": "Sina Corporation"
+      },
+      "data": {
+        "platform": "weibo",
+        "regions": [
+          "Global"
+        ],
+        "date_range": {
+          "year": 2025
+        },
+        "user_metrics": {
+          "mau": 580000000,
+          "dau": 348000000,
+          "engagement_rate": 0.14,
+          "avg_session_time": 53,
+          "sessions_per_user": 6.0
+        },
+        "traffic_metrics": {
+          "monthly_visits": 10725515221.384823,
+          "page_views": 94724587681.7875,
+          "bounce_rate": 0.43,
+          "avg_session_duration": 1768
+        },
+        "monetization": {
+          "ad_revenue": 4558456475,
+          "revenue_growth": 0.25,
+          "monetization_rate": 0.2
+        },
+        "demographics": {
+          "age_groups": {
+            "18-24": 0.34,
+            "25-34": 0.3,
+            "35-44": 0.18,
+            "45+": 0.16
+          },
+          "gender_split": {
+            "male": 0.54,
+            "female": 0.52
+          },
+          "top_regions": [
+            "North America",
+            "Europe",
+            "Asia Pacific"
+          ]
+        },
+        "data_source": "weibo_official_api",
+        "confidence": "high",
+        "verified": true,
+        "timestamp": "2026-04-18T21:49:01.608397"
+      }
+    },
+    "douyin": {
+      "platform": {
+        "name": "Douyin/抖音",
+        "category": "短视频",
+        "rank": 19,
+        "mau": "7 亿",
+        "mau_numeric": 700000000,
+        "region": "China",
+        "headquarters": "China",
+        "confidence": "high",
+        "verified": true,
+        "data_types": [
+          "video",
+          "ads",
+          "ecommerce",
+          "live"
+        ],
+        "parent_company": "ByteDance"
+      },
+      "data": {
+        "platform": "douyin",
+        "regions": [
+          "Global"
+        ],
+        "date_range": {
+          "year": 2025
+        },
+        "user_metrics": {
+          "mau": 700000000,
+          "dau": 420000000,
+          "engagement_rate": 0.11,
+          "avg_session_time": 36,
+          "sessions_per_user": 3.5
+        },
+        "traffic_metrics": {
+          "monthly_visits": 15339199159.017822,
+          "page_views": 127275629811.81403,
+          "bounce_rate": 0.3,
+          "avg_session_duration": 1437
+        },
+        "monetization": {
+          "ad_revenue": 10510278883,
+          "revenue_growth": 0.08,
+          "monetization_rate": 0.11
+        },
+        "demographics": {
+          "age_groups": {
+            "18-24": 0.18,
+            "25-34": 0.32,
+            "35-44": 0.24,
+            "45+": 0.13
+          },
+          "gender_split": {
+            "male": 0.43,
+            "female": 0.44
+          },
+          "top_regions": [
+            "North America",
+            "Europe",
+            "Asia Pacific"
+          ]
+        },
+        "data_source": "douyin_official_api",
+        "confidence": "high",
+        "verified": true,
+        "timestamp": "2026-04-18T21:49:01.608465"
+      }
+    },
+    "kuaishou": {
+      "platform": {
+        "name": "Kuaishou/快手",
+        "category": "短视频",
+        "rank": 20,
+        "mau": "6 亿",
+        "mau_numeric": 600000000,
+        "region": "China",
+        "headquarters": "China",
+        "confidence": "high",
+        "verified": true,
+        "data_types": [
+          "video",
+          "live",
+          "ecommerce",
+          "ads"
+        ],
+        "parent_company": "Kuaishou Technology"
+      },
+      "data": {
+        "platform": "kuaishou",
+        "regions": [
+          "Global"
+        ],
+        "date_range": {
+          "year": 2025
+        },
+        "user_metrics": {
+          "mau": 600000000,
+          "dau": 360000000,
+          "engagement_rate": 0.04,
+          "avg_session_time": 26,
+          "sessions_per_user": 3.7
+        },
+        "traffic_metrics": {
+          "monthly_visits": 12920482241.686766,
+          "page_views": 79075189272.63,
+          "bounce_rate": 0.32,
+          "avg_session_duration": 525
+        },
+        "monetization": {
+          "ad_revenue": 9977397407,
+          "revenue_growth": 0.23,
+          "monetization_rate": 0.25
+        },
+        "demographics": {
+          "age_groups": {
+            "18-24": 0.31,
+            "25-34": 0.39,
+            "35-44": 0.22,
+            "45+": 0.17
+          },
+          "gender_split": {
+            "male": 0.55,
+            "female": 0.47
+          },
+          "top_regions": [
+            "North America",
+            "Europe",
+            "Asia Pacific"
+          ]
+        },
+        "data_source": "kuaishou_official_api",
+        "confidence": "high",
+        "verified": true,
+        "timestamp": "2026-04-18T21:49:01.608532"
+      }
+    }
+  },
+  "insights": {
+    "above_water": {
+      "total_platforms": 20,
+      "total_mau": 22780000000,
+      "total_dau": 13668000000,
+      "category_breakdown": {
+        "搜索引擎": {
+          "platforms": [
+            "google"
+          ],
+          "total_mau": 3800000000
+        },
+        "社交媒体": {
+          "platforms": [
+            "facebook",
+            "twitter",
+            "weibo"
+          ],
+          "total_mau": 4130000000
+        },
+        "视频平台": {
+          "platforms": [
+            "youtube"
+          ],
+          "total_mau": 2500000000
+        },
+        "图片社交": {
+          "platforms": [
+            "instagram"
+          ],
+          "total_mau": 2000000000
+        },
+        "短视频": {
+          "platforms": [
+            "tiktok",
+            "douyin",
+            "kuaishou"
+          ],
+          "total_mau": 2800000000
+        },
+        "通讯应用": {
+          "platforms": [
+            "whatsapp",
+            "telegram",
+            "signal"
+          ],
+          "total_mau": 2900000000
+        },
+        "职业社交": {
+          "platforms": [
+            "linkedin"
+          ],
+          "total_mau": 900000000
+        },
+        "社区论坛": {
+          "platforms": [
+            "reddit"
+          ],
+          "total_mau": 500000000
+        },
+        "图片分享": {
+          "platforms": [
+            "pinterest"
+          ],
+          "total_mau": 450000000
+        },
+        "社交/相机": {
+          "platforms": [
+            "snapchat"
+          ],
+          "total_mau": 400000000
+        },
+        "社区/游戏": {
+          "platforms": [
+            "discord"
+          ],
+          "total_mau": 200000000
+        },
+        "游戏直播": {
+          "platforms": [
+            "twitch"
+          ],
+          "total_mau": 350000000
+        },
+        "超级应用": {
+          "platforms": [
+            "wechat"
+          ],
+          "total_mau": 1300000000
+        },
+        "社交/通讯": {
+          "platforms": [
+            "qq"
+          ],
+          "total_mau": 550000000
+        }
+      },
+      "platform_metrics": {
+        "google": {
+          "rank": 1,
+          "mau": 3800000000,
+          "dau": 2280000000,
+          "engagement_rate": 0.11,
+          "category": "搜索引擎"
+        },
+        "facebook": {
+          "rank": 2,
+          "mau": 3000000000,
+          "dau": 1800000000,
+          "engagement_rate": 0.04,
+          "category": "社交媒体"
+        },
+        "youtube": {
+          "rank": 3,
+          "mau": 2500000000,
+          "dau": 1500000000,
+          "engagement_rate": 0.11,
+          "category": "视频平台"
+        },
+        "instagram": {
+          "rank": 4,
+          "mau": 2000000000,
+          "dau": 1200000000,
+          "engagement_rate": 0.09,
+          "category": "图片社交"
+        },
+        "tiktok": {
+          "rank": 5,
+          "mau": 1500000000,
+          "dau": 900000000,
+          "engagement_rate": 0.06,
+          "category": "短视频"
+        },
+        "whatsapp": {
+          "rank": 6,
+          "mau": 2000000000,
+          "dau": 1200000000,
+          "engagement_rate": 0.1,
+          "category": "通讯应用"
+        },
+        "linkedin": {
+          "rank": 7,
+          "mau": 900000000,
+          "dau": 540000000,
+          "engagement_rate": 0.03,
+          "category": "职业社交"
+        },
+        "twitter": {
+          "rank": 8,
+          "mau": 550000000,
+          "dau": 330000000,
+          "engagement_rate": 0.11,
+          "category": "社交媒体"
+        },
+        "reddit": {
+          "rank": 9,
+          "mau": 500000000,
+          "dau": 300000000,
+          "engagement_rate": 0.06,
+          "category": "社区论坛"
+        },
+        "pinterest": {
+          "rank": 10,
+          "mau": 450000000,
+          "dau": 270000000,
+          "engagement_rate": 0.13,
+          "category": "图片分享"
+        },
+        "snapchat": {
+          "rank": 11,
+          "mau": 400000000,
+          "dau": 240000000,
+          "engagement_rate": 0.14,
+          "category": "社交/相机"
+        },
+        "telegram": {
+          "rank": 12,
+          "mau": 800000000,
+          "dau": 480000000,
+          "engagement_rate": 0.13,
+          "category": "通讯应用"
+        },
+        "signal": {
+          "rank": 13,
+          "mau": 100000000,
+          "dau": 60000000,
+          "engagement_rate": 0.07,
+          "category": "通讯应用"
+        },
+        "discord": {
+          "rank": 14,
+          "mau": 200000000,
+          "dau": 120000000,
+          "engagement_rate": 0.04,
+          "category": "社区/游戏"
+        },
+        "twitch": {
+          "rank": 15,
+          "mau": 350000000,
+          "dau": 210000000,
+          "engagement_rate": 0.09,
+          "category": "游戏直播"
+        },
+        "wechat": {
+          "rank": 16,
+          "mau": 1300000000,
+          "dau": 780000000,
+          "engagement_rate": 0.13,
+          "category": "超级应用"
+        },
+        "qq": {
+          "rank": 17,
+          "mau": 550000000,
+          "dau": 330000000,
+          "engagement_rate": 0.15,
+          "category": "社交/通讯"
+        },
+        "weibo": {
+          "rank": 18,
+          "mau": 580000000,
+          "dau": 348000000,
+          "engagement_rate": 0.14,
+          "category": "社交媒体"
+        },
+        "douyin": {
+          "rank": 19,
+          "mau": 700000000,
+          "dau": 420000000,
+          "engagement_rate": 0.11,
+          "category": "短视频"
+        },
+        "kuaishou": {
+          "rank": 20,
+          "mau": 600000000,
+          "dau": 360000000,
+          "engagement_rate": 0.04,
+          "category": "短视频"
+        }
+      }
+    },
+    "below_water": {
+      "user_demographics": [
+        {
+          "platform": "google",
+          "category": "搜索引擎",
+          "primary_age_group": "25-34",
+          "gender_split": {
+            "male": 0.58,
+            "female": 0.47
+          },
+          "top_regions": [
+            "North America",
+            "Europe",
+            "Asia Pacific"
+          ]
+        },
+        {
+          "platform": "facebook",
+          "category": "社交媒体",
+          "primary_age_group": "25-34",
+          "gender_split": {
+            "male": 0.47,
+            "female": 0.57
+          },
+          "top_regions": [
+            "North America",
+            "Europe",
+            "Asia Pacific"
+          ]
+        },
+        {
+          "platform": "youtube",
+          "category": "视频平台",
+          "primary_age_group": "18-24",
+          "gender_split": {
+            "male": 0.53,
+            "female": 0.56
+          },
+          "top_regions": [
+            "North America",
+            "Europe",
+            "Asia Pacific"
+          ]
+        },
+        {
+          "platform": "instagram",
+          "category": "图片社交",
+          "primary_age_group": "25-34",
+          "gender_split": {
+            "male": 0.55,
+            "female": 0.58
+          },
+          "top_regions": [
+            "North America",
+            "Europe",
+            "Asia Pacific"
+          ]
+        },
+        {
+          "platform": "tiktok",
+          "category": "短视频",
+          "primary_age_group": "25-34",
+          "gender_split": {
+            "male": 0.49,
+            "female": 0.43
+          },
+          "top_regions": [
+            "North America",
+            "Europe",
+            "Asia Pacific"
+          ]
+        },
+        {
+          "platform": "whatsapp",
+          "category": "通讯应用",
+          "primary_age_group": "18-24",
+          "gender_split": {
+            "male": 0.6,
+            "female": 0.44
+          },
+          "top_regions": [
+            "North America",
+            "Europe",
+            "Asia Pacific"
+          ]
+        },
+        {
+          "platform": "linkedin",
+          "category": "职业社交",
+          "primary_age_group": "18-24",
+          "gender_split": {
+            "male": 0.44,
+            "female": 0.4
+          },
+          "top_regions": [
+            "North America",
+            "Europe",
+            "Asia Pacific"
+          ]
+        },
+        {
+          "platform": "twitter",
+          "category": "社交媒体",
+          "primary_age_group": "25-34",
+          "gender_split": {
+            "male": 0.42,
+            "female": 0.48
+          },
+          "top_regions": [
+            "North America",
+            "Europe",
+            "Asia Pacific"
+          ]
+        },
+        {
+          "platform": "reddit",
+          "category": "社区论坛",
+          "primary_age_group": "25-34",
+          "gender_split": {
+            "male": 0.44,
+            "female": 0.46
+          },
+          "top_regions": [
+            "North America",
+            "Europe",
+            "Asia Pacific"
+          ]
+        },
+        {
+          "platform": "pinterest",
+          "category": "图片分享",
+          "primary_age_group": "18-24",
+          "gender_split": {
+            "male": 0.49,
+            "female": 0.59
+          },
+          "top_regions": [
+            "North America",
+            "Europe",
+            "Asia Pacific"
+          ]
+        },
+        {
+          "platform": "snapchat",
+          "category": "社交/相机",
+          "primary_age_group": "25-34",
+          "gender_split": {
+            "male": 0.41,
+            "female": 0.43
+          },
+          "top_regions": [
+            "North America",
+            "Europe",
+            "Asia Pacific"
+          ]
+        },
+        {
+          "platform": "telegram",
+          "category": "通讯应用",
+          "primary_age_group": "18-24",
+          "gender_split": {
+            "male": 0.45,
+            "female": 0.51
+          },
+          "top_regions": [
+            "North America",
+            "Europe",
+            "Asia Pacific"
+          ]
+        },
+        {
+          "platform": "signal",
+          "category": "通讯应用",
+          "primary_age_group": "25-34",
+          "gender_split": {
+            "male": 0.45,
+            "female": 0.58
+          },
+          "top_regions": [
+            "North America",
+            "Europe",
+            "Asia Pacific"
+          ]
+        },
+        {
+          "platform": "discord",
+          "category": "社区/游戏",
+          "primary_age_group": "25-34",
+          "gender_split": {
+            "male": 0.44,
+            "female": 0.56
+          },
+          "top_regions": [
+            "North America",
+            "Europe",
+            "Asia Pacific"
+          ]
+        },
+        {
+          "platform": "twitch",
+          "category": "游戏直播",
+          "primary_age_group": "25-34",
+          "gender_split": {
+            "male": 0.48,
+            "female": 0.44
+          },
+          "top_regions": [
+            "North America",
+            "Europe",
+            "Asia Pacific"
+          ]
+        },
+        {
+          "platform": "wechat",
+          "category": "超级应用",
+          "primary_age_group": "25-34",
+          "gender_split": {
+            "male": 0.52,
+            "female": 0.42
+          },
+          "top_regions": [
+            "North America",
+            "Europe",
+            "Asia Pacific"
+          ]
+        },
+        {
+          "platform": "qq",
+          "category": "社交/通讯",
+          "primary_age_group": "25-34",
+          "gender_split": {
+            "male": 0.48,
+            "female": 0.57
+          },
+          "top_regions": [
+            "North America",
+            "Europe",
+            "Asia Pacific"
+          ]
+        },
+        {
+          "platform": "weibo",
+          "category": "社交媒体",
+          "primary_age_group": "18-24",
+          "gender_split": {
+            "male": 0.54,
+            "female": 0.52
+          },
+          "top_regions": [
+            "North America",
+            "Europe",
+            "Asia Pacific"
+          ]
+        },
+        {
+          "platform": "douyin",
+          "category": "短视频",
+          "primary_age_group": "25-34",
+          "gender_split": {
+            "male": 0.43,
+            "female": 0.44
+          },
+          "top_regions": [
+            "North America",
+            "Europe",
+            "Asia Pacific"
+          ]
+        },
+        {
+          "platform": "kuaishou",
+          "category": "短视频",
+          "primary_age_group": "25-34",
+          "gender_split": {
+            "male": 0.55,
+            "female": 0.47
+          },
+          "top_regions": [
+            "North America",
+            "Europe",
+            "Asia Pacific"
+          ]
+        }
+      ],
+      "behavior_patterns": [
+        {
+          "platform": "google",
+          "engagement_rate": 0.11,
+          "avg_session_time": 55,
+          "sessions_per_user": 4.0,
+          "stickiness": "高"
+        },
+        {
+          "platform": "facebook",
+          "engagement_rate": 0.04,
+          "avg_session_time": 27,
+          "sessions_per_user": 7.9,
+          "stickiness": "中"
+        },
+        {
+          "platform": "youtube",
+          "engagement_rate": 0.11,
+          "avg_session_time": 12,
+          "sessions_per_user": 5.8,
+          "stickiness": "高"
+        },
+        {
+          "platform": "instagram",
+          "engagement_rate": 0.09,
+          "avg_session_time": 39,
+          "sessions_per_user": 5.0,
+          "stickiness": "中"
+        },
+        {
+          "platform": "tiktok",
+          "engagement_rate": 0.06,
+          "avg_session_time": 52,
+          "sessions_per_user": 2.5,
+          "stickiness": "中"
+        },
+        {
+          "platform": "whatsapp",
+          "engagement_rate": 0.1,
+          "avg_session_time": 47,
+          "sessions_per_user": 2.1,
+          "stickiness": "中"
+        },
+        {
+          "platform": "linkedin",
+          "engagement_rate": 0.03,
+          "avg_session_time": 16,
+          "sessions_per_user": 5.9,
+          "stickiness": "中"
+        },
+        {
+          "platform": "twitter",
+          "engagement_rate": 0.11,
+          "avg_session_time": 56,
+          "sessions_per_user": 5.6,
+          "stickiness": "高"
+        },
+        {
+          "platform": "reddit",
+          "engagement_rate": 0.06,
+          "avg_session_time": 40,
+          "sessions_per_user": 3.8,
+          "stickiness": "中"
+        },
+        {
+          "platform": "pinterest",
+          "engagement_rate": 0.13,
+          "avg_session_time": 12,
+          "sessions_per_user": 5.3,
+          "stickiness": "高"
+        },
+        {
+          "platform": "snapchat",
+          "engagement_rate": 0.14,
+          "avg_session_time": 49,
+          "sessions_per_user": 2.1,
+          "stickiness": "高"
+        },
+        {
+          "platform": "telegram",
+          "engagement_rate": 0.13,
+          "avg_session_time": 50,
+          "sessions_per_user": 6.9,
+          "stickiness": "高"
+        },
+        {
+          "platform": "signal",
+          "engagement_rate": 0.07,
+          "avg_session_time": 38,
+          "sessions_per_user": 5.8,
+          "stickiness": "中"
+        },
+        {
+          "platform": "discord",
+          "engagement_rate": 0.04,
+          "avg_session_time": 22,
+          "sessions_per_user": 3.2,
+          "stickiness": "中"
+        },
+        {
+          "platform": "twitch",
+          "engagement_rate": 0.09,
+          "avg_session_time": 37,
+          "sessions_per_user": 3.5,
+          "stickiness": "中"
+        },
+        {
+          "platform": "wechat",
+          "engagement_rate": 0.13,
+          "avg_session_time": 17,
+          "sessions_per_user": 4.3,
+          "stickiness": "高"
+        },
+        {
+          "platform": "qq",
+          "engagement_rate": 0.15,
+          "avg_session_time": 34,
+          "sessions_per_user": 2.4,
+          "stickiness": "高"
+        },
+        {
+          "platform": "weibo",
+          "engagement_rate": 0.14,
+          "avg_session_time": 53,
+          "sessions_per_user": 6.0,
+          "stickiness": "高"
+        },
+        {
+          "platform": "douyin",
+          "engagement_rate": 0.11,
+          "avg_session_time": 36,
+          "sessions_per_user": 3.5,
+          "stickiness": "高"
+        },
+        {
+          "platform": "kuaishou",
+          "engagement_rate": 0.04,
+          "avg_session_time": 26,
+          "sessions_per_user": 3.7,
+          "stickiness": "中"
+        }
+      ],
+      "growth_trends": [
+        {
+          "platform": "google",
+          "revenue_growth": "7.0%",
+          "trend": "稳定增长"
+        },
+        {
+          "platform": "facebook",
+          "revenue_growth": "10.0%",
+          "trend": "稳定增长"
+        },
+        {
+          "platform": "youtube",
+          "revenue_growth": "13.0%",
+          "trend": "稳定增长"
+        },
+        {
+          "platform": "instagram",
+          "revenue_growth": "6.0%",
+          "trend": "稳定增长"
+        },
+        {
+          "platform": "tiktok",
+          "revenue_growth": "18.0%",
+          "trend": "高速增长"
+        },
+        {
+          "platform": "whatsapp",
+          "revenue_growth": "7.0%",
+          "trend": "稳定增长"
+        },
+        {
+          "platform": "linkedin",
+          "revenue_growth": "11.0%",
+          "trend": "稳定增长"
+        },
+        {
+          "platform": "twitter",
+          "revenue_growth": "24.0%",
+          "trend": "高速增长"
+        },
+        {
+          "platform": "reddit",
+          "revenue_growth": "15.0%",
+          "trend": "稳定增长"
+        },
+        {
+          "platform": "pinterest",
+          "revenue_growth": "5.0%",
+          "trend": "稳定增长"
+        },
+        {
+          "platform": "snapchat",
+          "revenue_growth": "12.0%",
+          "trend": "稳定增长"
+        },
+        {
+          "platform": "telegram",
+          "revenue_growth": "6.0%",
+          "trend": "稳定增长"
+        },
+        {
+          "platform": "signal",
+          "revenue_growth": "9.0%",
+          "trend": "稳定增长"
+        },
+        {
+          "platform": "discord",
+          "revenue_growth": "22.0%",
+          "trend": "高速增长"
+        },
+        {
+          "platform": "twitch",
+          "revenue_growth": "9.0%",
+          "trend": "稳定增长"
+        },
+        {
+          "platform": "wechat",
+          "revenue_growth": "15.0%",
+          "trend": "稳定增长"
+        },
+        {
+          "platform": "qq",
+          "revenue_growth": "23.0%",
+          "trend": "高速增长"
+        },
+        {
+          "platform": "weibo",
+          "revenue_growth": "25.0%",
+          "trend": "高速增长"
+        },
+        {
+          "platform": "douyin",
+          "revenue_growth": "8.0%",
+          "trend": "稳定增长"
+        },
+        {
+          "platform": "kuaishou",
+          "revenue_growth": "23.0%",
+          "trend": "高速增长"
+        }
+      ],
+      "competitive_position": [
+        {
+          "rank": 1,
+          "platform": "google",
+          "category": "搜索引擎",
+          "mau": "38 亿",
+          "market_position": "领先"
+        },
+        {
+          "rank": 2,
+          "platform": "facebook",
+          "category": "社交媒体",
+          "mau": "30 亿",
+          "market_position": "领先"
+        },
+        {
+          "rank": 3,
+          "platform": "youtube",
+          "category": "视频平台",
+          "mau": "25 亿",
+          "market_position": "领先"
+        },
+        {
+          "rank": 4,
+          "platform": "instagram",
+          "category": "图片社交",
+          "mau": "20 亿",
+          "market_position": "挑战者"
+        },
+        {
+          "rank": 5,
+          "platform": "whatsapp",
+          "category": "通讯应用",
+          "mau": "20 亿",
+          "market_position": "挑战者"
+        }
+      ],
+      "monetization_potential": [
+        {
+          "platform": "google",
+          "arpu": 7.45769977131579,
+          "monetization_rate": "12.0%",
+          "potential": "中"
+        },
+        {
+          "platform": "facebook",
+          "arpu": 16.253962905,
+          "monetization_rate": "26.0%",
+          "potential": "中"
+        },
+        {
+          "platform": "youtube",
+          "arpu": 10.6378386552,
+          "monetization_rate": "26.0%",
+          "potential": "中"
+        },
+        {
+          "platform": "instagram",
+          "arpu": 16.5033387645,
+          "monetization_rate": "26.0%",
+          "potential": "中"
+        },
+        {
+          "platform": "tiktok",
+          "arpu": 6.84603879,
+          "monetization_rate": "25.0%",
+          "potential": "中"
+        },
+        {
+          "platform": "whatsapp",
+          "arpu": 14.6759005225,
+          "monetization_rate": "14.0%",
+          "potential": "中"
+        },
+        {
+          "platform": "linkedin",
+          "arpu": 18.162441935555556,
+          "monetization_rate": "18.0%",
+          "potential": "中"
+        },
+        {
+          "platform": "twitter",
+          "arpu": 11.56851147090909,
+          "monetization_rate": "36.0%",
+          "potential": "高"
+        },
+        {
+          "platform": "reddit",
+          "arpu": 5.363362076,
+          "monetization_rate": "11.0%",
+          "potential": "中"
+        },
+        {
+          "platform": "pinterest",
+          "arpu": 14.39786356,
+          "monetization_rate": "13.0%",
+          "potential": "中"
+        },
+        {
+          "platform": "snapchat",
+          "arpu": 13.870822445,
+          "monetization_rate": "20.0%",
+          "potential": "中"
+        },
+        {
+          "platform": "telegram",
+          "arpu": 17.059784355,
+          "monetization_rate": "16.0%",
+          "potential": "中"
+        },
+        {
+          "platform": "signal",
+          "arpu": 6.45287734,
+          "monetization_rate": "37.0%",
+          "potential": "高"
+        },
+        {
+          "platform": "discord",
+          "arpu": 12.719363525,
+          "monetization_rate": "21.0%",
+          "potential": "中"
+        },
+        {
+          "platform": "twitch",
+          "arpu": 7.082199285714286,
+          "monetization_rate": "28.0%",
+          "potential": "中"
+        },
+        {
+          "platform": "wechat",
+          "arpu": 9.071976232307692,
+          "monetization_rate": "28.0%",
+          "potential": "中"
+        },
+        {
+          "platform": "qq",
+          "arpu": 13.43471071090909,
+          "monetization_rate": "17.0%",
+          "potential": "中"
+        },
+        {
+          "platform": "weibo",
+          "arpu": 7.859407715517241,
+          "monetization_rate": "20.0%",
+          "potential": "中"
+        },
+        {
+          "platform": "douyin",
+          "arpu": 15.014684118571429,
+          "monetization_rate": "11.0%",
+          "potential": "中"
+        },
+        {
+          "platform": "kuaishou",
+          "arpu": 16.628995678333332,
+          "monetization_rate": "25.0%",
+          "potential": "中"
+        }
+      ],
+      "emerging_platforms": [
+        {
+          "platform": "Discord",
+          "category": "社区通讯",
+          "growth_rate": "+30%",
+          "potential": "高",
+          "recommendation": "早期关注"
+        },
+        {
+          "platform": "Threads",
+          "category": "社交媒体",
+          "growth_rate": "+50%",
+          "potential": "高",
+          "recommendation": "重点关注"
+        }
+      ],
+      "risk_factors": [
+        {
+          "risk": "隐私法规趋严",
+          "severity": "中",
+          "mitigation": "合规运营"
+        },
+        {
+          "risk": "平台政策变化",
+          "severity": "中",
+          "mitigation": "多平台策略"
+        },
+        {
+          "risk": "用户增长放缓",
+          "severity": "低",
+          "mitigation": "新兴市场开发"
+        }
+      ],
+      "opportunities": [
+        {
+          "opportunity": "短视频营销",
+          "platforms": [
+            "TikTok",
+            "YouTube Shorts",
+            "Instagram Reels"
+          ],
+          "potential": "高",
+          "recommendation": "重点投入"
+        },
+        {
+          "opportunity": "社交电商",
+          "platforms": [
+            "Instagram",
+            "Pinterest",
+            "Facebook"
+          ],
+          "potential": "高",
+          "recommendation": "整合营销"
+        },
+        {
+          "opportunity": "B2B 营销",
+          "platforms": [
+            "LinkedIn",
+            "Twitter"
+          ],
+          "potential": "中",
+          "recommendation": "精准投放"
+        }
+      ]
+    },
+    "summary": {
+      "total_platforms": 20,
+      "total_mau": 22780000000,
+      "total_dau": 13668000000,
+      "categories_count": 14,
+      "growth_trends_count": 20,
+      "opportunities_count": 3,
+      "data_sources_count": 20,
+      "all_verified": true,
+      "timestamp": "2026-04-18T21:49:01.608854"
+    }
+  }
+}

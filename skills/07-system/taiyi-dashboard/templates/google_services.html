@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google 服务 - 太一 Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100">
+    <div class="max-w-7xl mx-auto px-4 py-4">
+        <a href="/" class="inline-flex items-center text-indigo-600 hover:text-indigo-800">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+            </svg>
+            返回首页
+        </a>
+    </div>
+
+    <main class="max-w-6xl mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-gray-800 mb-8">🌐 Google 服务集成</h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Gemini -->
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <div class="flex items-center justify-between mb-4">
+                    <h2 class="text-2xl font-bold">✨ Gemini</h2>
+                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">✅ 已配置</span>
+                </div>
+                <p class="text-gray-600 mb-4">Google AI 助手，支持文本分析、代码生成、创意写作</p>
+                <div class="bg-gray-50 rounded-lg p-4 mb-4">
+                    <p class="text-sm text-gray-500">API 状态</p>
+                    <p class="text-lg font-semibold text-green-600">正常运行</p>
+                </div>
+                <a href="https://gemini.google.com" target="_blank" class="block text-center px-4 py-2 bg-indigo-500 text-white rounded-lg hover:bg-indigo-600 transition-colors">
+                    🌐 打开 Gemini
+                </a>
+            </div>
+
+            <!-- NotebookLM -->
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <div class="flex items-center justify-between mb-4">
+                    <h2 class="text-2xl font-bold">📓 NotebookLM</h2>
+                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">✅ 已配置</span>
+                </div>
+                <p class="text-gray-600 mb-4">Google 笔记工具，支持文档管理、AI 问答、摘要生成</p>
+                <div class="bg-gray-50 rounded-lg p-4 mb-4">
+                    <p class="text-sm text-gray-500">集成状态</p>
+                    <p class="text-lg font-semibold text-green-600">网页自动化就绪</p>
+                </div>
+                <a href="https://notebooklm.google.com" target="_blank" class="block text-center px-4 py-2 bg-indigo-500 text-white rounded-lg hover:bg-indigo-600 transition-colors">
+                    🌐 打开 NotebookLM
+                </a>
+            </div>
+
+            <!-- Google Drive -->
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <div class="flex items-center justify-between mb-4">
+                    <h2 class="text-2xl font-bold">☁️ Google Drive</h2>
+                    <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">🟡 待凭证</span>
+                </div>
+                <p class="text-gray-600 mb-4">Google 云存储，支持文件同步、自动备份</p>
+                <div class="bg-yellow-50 rounded-lg p-4 mb-4">
+                    <p class="text-sm text-yellow-700">配置状态</p>
+                    <p class="text-lg font-semibold text-yellow-600">需要 Google Cloud 凭证</p>
+                </div>
+                <a href="https://drive.google.com" target="_blank" class="block text-center px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors">
+                    🌐 打开 Drive
+                </a>
+            </div>
+
+            <!-- Chromium -->
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <div class="flex items-center justify-between mb-4">
+                    <h2 class="text-2xl font-bold">🌐 Chromium</h2>
+                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">✅ 已安装</span>
+                </div>
+                <p class="text-gray-600 mb-4">Google 浏览器，支持网页自动化、数据采集</p>
+                <div class="bg-gray-50 rounded-lg p-4 mb-4">
+                    <p class="text-sm text-gray-500">安装状态</p>
+                    <p class="text-lg font-semibold text-green-600">已安装 (v120+)</p>
+                </div>
+                <button onclick="alert('可通过桌面快捷方式启动 Chromium')" class="block w-full text-center px-4 py-2 bg-indigo-500 text-white rounded-lg hover:bg-indigo-600 transition-colors">
+                    🚀 启动浏览器
+                </button>
+            </div>
+        </div>
+
+        <!-- 配置指南 -->
+        <div class="bg-white rounded-xl shadow-lg p-6 mt-8">
+            <h3 class="text-xl font-bold text-gray-800 mb-4">📖 配置指南</h3>
+            <div class="space-y-4">
+                <div class="bg-blue-50 rounded-lg p-4">
+                    <h4 class="font-semibold text-blue-800 mb-2">Gemini API 配置</h4>
+                    <p class="text-sm text-blue-700">配置文件：<code class="bg-blue-100 px-2 py-1 rounded">~/.openclaw/workspace-taiyi/config/google-integration.json</code></p>
+                </div>
+                <div class="bg-yellow-50 rounded-lg p-4">
+                    <h4 class="font-semibold text-yellow-800 mb-2">Google Drive 配置</h4>
+                    <p class="text-sm text-yellow-700">需要创建 Google Cloud 项目并获取凭证，保存到 <code class="bg-yellow-100 px-2 py-1 rounded">google-credentials.json</code></p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

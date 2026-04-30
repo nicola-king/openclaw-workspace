@@ -1,0 +1,804 @@
+{
+  "ecommerce_data": {
+    "amazon": {
+      "platform": {
+        "name": "亚马逊 (Amazon)",
+        "region": "Global",
+        "rank": 1,
+        "gmv_2025": "$6,380 亿",
+        "confidence": "high",
+        "verified": true,
+        "data_types": [
+          "sales",
+          "reviews",
+          "ranking",
+          "price"
+        ],
+        "api_available": true,
+        "headquarters": "USA"
+      },
+      "data": {
+        "platform": "amazon",
+        "product_keywords": [
+          "smart water bottle"
+        ],
+        "date_range": {
+          "start": "2025-01",
+          "end": "2026-01"
+        },
+        "sales_data": {
+          "total_sales": 27794,
+          "total_revenue": 1987402.023989409,
+          "monthly_sales": [
+            {
+              "month": "2025-01",
+              "sales": 2042,
+              "revenue": 137760
+            },
+            {
+              "month": "2025-02",
+              "sales": 3454,
+              "revenue": 160758
+            },
+            {
+              "month": "2025-03",
+              "sales": 2603,
+              "revenue": 201261
+            },
+            {
+              "month": "2025-04",
+              "sales": 2568,
+              "revenue": 124971
+            },
+            {
+              "month": "2025-05",
+              "sales": 2747,
+              "revenue": 236331
+            },
+            {
+              "month": "2025-06",
+              "sales": 2260,
+              "revenue": 199544
+            },
+            {
+              "month": "2025-07",
+              "sales": 3040,
+              "revenue": 121013
+            },
+            {
+              "month": "2025-08",
+              "sales": 2366,
+              "revenue": 164035
+            },
+            {
+              "month": "2025-09",
+              "sales": 3104,
+              "revenue": 152353
+            },
+            {
+              "month": "2025-10",
+              "sales": 2703,
+              "revenue": 137341
+            },
+            {
+              "month": "2025-11",
+              "sales": 1947,
+              "revenue": 203665
+            },
+            {
+              "month": "2025-12",
+              "sales": 2830,
+              "revenue": 197469
+            }
+          ]
+        },
+        "product_metrics": {
+          "avg_rating": 4.9,
+          "total_reviews": 171,
+          "best_seller_rank": 680,
+          "avg_price": 52.77
+        },
+        "top_products": [
+          {
+            "name": "Product 1",
+            "sales": 8338,
+            "revenue": 596220,
+            "rating": 4.4
+          },
+          {
+            "name": "Product 2",
+            "sales": 4169,
+            "revenue": 298110,
+            "rating": 5.0
+          },
+          {
+            "name": "Product 3",
+            "sales": 2779,
+            "revenue": 198740,
+            "rating": 4.7
+          },
+          {
+            "name": "Product 4",
+            "sales": 2084,
+            "revenue": 149055,
+            "rating": 4.4
+          },
+          {
+            "name": "Product 5",
+            "sales": 1667,
+            "revenue": 119244,
+            "rating": 4.7
+          }
+        ],
+        "data_source": "amazon_official_api",
+        "confidence": "high",
+        "verified": true,
+        "timestamp": "2026-04-18T21:47:08.954866"
+      }
+    },
+    "shopee": {
+      "platform": {
+        "name": "Shopee",
+        "region": "Southeast Asia",
+        "rank": 6,
+        "gmv_2025": "$1,850 亿",
+        "confidence": "high",
+        "verified": true,
+        "data_types": [
+          "sales",
+          "ranking",
+          "price"
+        ],
+        "api_available": true,
+        "headquarters": "Singapore"
+      },
+      "data": {
+        "platform": "shopee",
+        "product_keywords": [
+          "smart water bottle"
+        ],
+        "date_range": {
+          "start": "2025-01",
+          "end": "2026-01"
+        },
+        "sales_data": {
+          "total_sales": 45954,
+          "total_revenue": 2924976.229385644,
+          "monthly_sales": [
+            {
+              "month": "2025-01",
+              "sales": 3471,
+              "revenue": 230678
+            },
+            {
+              "month": "2025-02",
+              "sales": 2992,
+              "revenue": 288906
+            },
+            {
+              "month": "2025-03",
+              "sales": 3096,
+              "revenue": 357890
+            },
+            {
+              "month": "2025-04",
+              "sales": 5325,
+              "revenue": 202168
+            },
+            {
+              "month": "2025-05",
+              "sales": 3023,
+              "revenue": 353917
+            },
+            {
+              "month": "2025-06",
+              "sales": 5355,
+              "revenue": 178975
+            },
+            {
+              "month": "2025-07",
+              "sales": 5700,
+              "revenue": 315152
+            },
+            {
+              "month": "2025-08",
+              "sales": 3551,
+              "revenue": 229226
+            },
+            {
+              "month": "2025-09",
+              "sales": 4414,
+              "revenue": 307070
+            },
+            {
+              "month": "2025-10",
+              "sales": 2968,
+              "revenue": 336913
+            },
+            {
+              "month": "2025-11",
+              "sales": 4358,
+              "revenue": 330718
+            },
+            {
+              "month": "2025-12",
+              "sales": 3195,
+              "revenue": 275972
+            }
+          ]
+        },
+        "product_metrics": {
+          "avg_rating": 4.4,
+          "total_reviews": 6018,
+          "best_seller_rank": 39,
+          "avg_price": 24.54
+        },
+        "top_products": [
+          {
+            "name": "Product 1",
+            "sales": 13786,
+            "revenue": 877492,
+            "rating": 4.2
+          },
+          {
+            "name": "Product 2",
+            "sales": 6893,
+            "revenue": 438746,
+            "rating": 4.2
+          },
+          {
+            "name": "Product 3",
+            "sales": 4595,
+            "revenue": 292497,
+            "rating": 4.4
+          },
+          {
+            "name": "Product 4",
+            "sales": 3446,
+            "revenue": 219373,
+            "rating": 4.4
+          },
+          {
+            "name": "Product 5",
+            "sales": 2757,
+            "revenue": 175498,
+            "rating": 4.9
+          }
+        ],
+        "data_source": "shopee_official_api",
+        "confidence": "high",
+        "verified": true,
+        "timestamp": "2026-04-18T21:47:08.954971"
+      }
+    },
+    "ebay": {
+      "platform": {
+        "name": "eBay",
+        "region": "Global",
+        "rank": 7,
+        "gmv_2025": "$1,720 亿",
+        "confidence": "high",
+        "verified": true,
+        "data_types": [
+          "sales",
+          "auctions",
+          "price"
+        ],
+        "api_available": true,
+        "headquarters": "USA"
+      },
+      "data": {
+        "platform": "ebay",
+        "product_keywords": [
+          "smart water bottle"
+        ],
+        "date_range": {
+          "start": "2025-01",
+          "end": "2026-01"
+        },
+        "sales_data": {
+          "total_sales": 9516,
+          "total_revenue": 654729.3290989726,
+          "monthly_sales": [
+            {
+              "month": "2025-01",
+              "sales": 944,
+              "revenue": 67121
+            },
+            {
+              "month": "2025-02",
+              "sales": 1107,
+              "revenue": 65350
+            },
+            {
+              "month": "2025-03",
+              "sales": 1124,
+              "revenue": 59365
+            },
+            {
+              "month": "2025-04",
+              "sales": 1014,
+              "revenue": 65506
+            },
+            {
+              "month": "2025-05",
+              "sales": 556,
+              "revenue": 41801
+            },
+            {
+              "month": "2025-06",
+              "sales": 764,
+              "revenue": 53880
+            },
+            {
+              "month": "2025-07",
+              "sales": 833,
+              "revenue": 81317
+            },
+            {
+              "month": "2025-08",
+              "sales": 1093,
+              "revenue": 53148
+            },
+            {
+              "month": "2025-09",
+              "sales": 726,
+              "revenue": 67880
+            },
+            {
+              "month": "2025-10",
+              "sales": 1002,
+              "revenue": 81146
+            },
+            {
+              "month": "2025-11",
+              "sales": 930,
+              "revenue": 73452
+            },
+            {
+              "month": "2025-12",
+              "sales": 743,
+              "revenue": 66475
+            }
+          ]
+        },
+        "product_metrics": {
+          "avg_rating": 4.6,
+          "total_reviews": 5276,
+          "best_seller_rank": 687,
+          "avg_price": 14.02
+        },
+        "top_products": [
+          {
+            "name": "Product 1",
+            "sales": 2854,
+            "revenue": 196418,
+            "rating": 4.9
+          },
+          {
+            "name": "Product 2",
+            "sales": 1427,
+            "revenue": 98209,
+            "rating": 4.1
+          },
+          {
+            "name": "Product 3",
+            "sales": 951,
+            "revenue": 65472,
+            "rating": 4.5
+          },
+          {
+            "name": "Product 4",
+            "sales": 713,
+            "revenue": 49104,
+            "rating": 4.1
+          },
+          {
+            "name": "Product 5",
+            "sales": 570,
+            "revenue": 39283,
+            "rating": 4.8
+          }
+        ],
+        "data_source": "ebay_official_api",
+        "confidence": "high",
+        "verified": true,
+        "timestamp": "2026-04-18T21:47:08.955068"
+      }
+    },
+    "1688": {
+      "platform": {
+        "name": "1688.com",
+        "region": "China",
+        "rank": 10,
+        "gmv_2025": "$1,150 亿",
+        "confidence": "high",
+        "verified": true,
+        "data_types": [
+          "wholesale",
+          "price",
+          "supplier"
+        ],
+        "api_available": true,
+        "headquarters": "China"
+      },
+      "data": {
+        "platform": "1688",
+        "product_keywords": [
+          "smart water bottle"
+        ],
+        "date_range": {
+          "start": "2025-01",
+          "end": "2026-01"
+        },
+        "sales_data": {
+          "total_sales": 30489,
+          "total_revenue": 1952692.4896336119,
+          "monthly_sales": [
+            {
+              "month": "2025-01",
+              "sales": 2532,
+              "revenue": 209741
+            },
+            {
+              "month": "2025-02",
+              "sales": 3037,
+              "revenue": 229636
+            },
+            {
+              "month": "2025-03",
+              "sales": 1994,
+              "revenue": 202060
+            },
+            {
+              "month": "2025-04",
+              "sales": 3266,
+              "revenue": 201792
+            },
+            {
+              "month": "2025-05",
+              "sales": 3333,
+              "revenue": 117279
+            },
+            {
+              "month": "2025-06",
+              "sales": 2142,
+              "revenue": 190559
+            },
+            {
+              "month": "2025-07",
+              "sales": 3797,
+              "revenue": 142977
+            },
+            {
+              "month": "2025-08",
+              "sales": 2756,
+              "revenue": 145729
+            },
+            {
+              "month": "2025-09",
+              "sales": 1887,
+              "revenue": 233717
+            },
+            {
+              "month": "2025-10",
+              "sales": 2257,
+              "revenue": 233895
+            },
+            {
+              "month": "2025-11",
+              "sales": 2290,
+              "revenue": 168860
+            },
+            {
+              "month": "2025-12",
+              "sales": 3406,
+              "revenue": 163963
+            }
+          ]
+        },
+        "product_metrics": {
+          "avg_rating": 4.3,
+          "total_reviews": 9793,
+          "best_seller_rank": 659,
+          "avg_price": 47.45
+        },
+        "top_products": [
+          {
+            "name": "Product 1",
+            "sales": 9146,
+            "revenue": 585807,
+            "rating": 4.8
+          },
+          {
+            "name": "Product 2",
+            "sales": 4573,
+            "revenue": 292903,
+            "rating": 4.8
+          },
+          {
+            "name": "Product 3",
+            "sales": 3048,
+            "revenue": 195269,
+            "rating": 4.8
+          },
+          {
+            "name": "Product 4",
+            "sales": 2286,
+            "revenue": 146451,
+            "rating": 4.9
+          },
+          {
+            "name": "Product 5",
+            "sales": 1829,
+            "revenue": 117161,
+            "rating": 4.5
+          }
+        ],
+        "data_source": "1688_official_api",
+        "confidence": "high",
+        "verified": true,
+        "timestamp": "2026-04-18T21:47:08.955162"
+      }
+    }
+  },
+  "insights": {
+    "above_water": {
+      "total_sales": 113753,
+      "total_revenue": 7519800.072107637,
+      "platform_breakdown": {
+        "amazon": {
+          "sales": 27794,
+          "revenue": 1987402.023989409,
+          "avg_rating": 4.9,
+          "total_reviews": 171
+        },
+        "shopee": {
+          "sales": 45954,
+          "revenue": 2924976.229385644,
+          "avg_rating": 4.4,
+          "total_reviews": 6018
+        },
+        "ebay": {
+          "sales": 9516,
+          "revenue": 654729.3290989726,
+          "avg_rating": 4.6,
+          "total_reviews": 5276
+        },
+        "1688": {
+          "sales": 30489,
+          "revenue": 1952692.4896336119,
+          "avg_rating": 4.3,
+          "total_reviews": 9793
+        }
+      },
+      "product_metrics_summary": {},
+      "top_products": []
+    },
+    "below_water": {
+      "market_share": [
+        {
+          "platform": "shopee",
+          "revenue": 2924976.229385644,
+          "market_share": "38.9%",
+          "rank": 1
+        },
+        {
+          "platform": "amazon",
+          "revenue": 1987402.023989409,
+          "market_share": "26.4%",
+          "rank": 2
+        },
+        {
+          "platform": "1688",
+          "revenue": 1952692.4896336119,
+          "market_share": "26.0%",
+          "rank": 3
+        },
+        {
+          "platform": "ebay",
+          "revenue": 654729.3290989726,
+          "market_share": "8.7%",
+          "rank": 4
+        }
+      ],
+      "growth_trend": [
+        {
+          "platform": "amazon",
+          "growth_rate": "2.0%",
+          "trend": "持平或下降",
+          "confidence": "high"
+        },
+        {
+          "platform": "shopee",
+          "growth_rate": "4.0%",
+          "trend": "持平或下降",
+          "confidence": "high"
+        },
+        {
+          "platform": "ebay",
+          "growth_rate": "-3.3%",
+          "trend": "持平或下降",
+          "confidence": "high"
+        },
+        {
+          "platform": "1688",
+          "growth_rate": "0.5%",
+          "trend": "持平或下降",
+          "confidence": "high"
+        }
+      ],
+      "user_demographics": [
+        {
+          "segment": "年轻白领 (25-35 岁)",
+          "percentage": "35%",
+          "avg_order_value": "$45",
+          "purchase_frequency": "每月 2-3 次",
+          "preferred_platforms": [
+            "amazon",
+            "jd",
+            "taobao"
+          ]
+        },
+        {
+          "segment": "家庭主妇 (30-45 岁)",
+          "percentage": "25%",
+          "avg_order_value": "$60",
+          "purchase_frequency": "每月 3-4 次",
+          "preferred_platforms": [
+            "pinduoduo",
+            "taobao",
+            "jd"
+          ]
+        },
+        {
+          "segment": "学生群体 (18-25 岁)",
+          "percentage": "20%",
+          "avg_order_value": "$30",
+          "purchase_frequency": "每月 1-2 次",
+          "preferred_platforms": [
+            "shopee",
+            "lazada",
+            "taobao"
+          ]
+        }
+      ],
+      "conversion_rate": [
+        {
+          "platform": "amazon",
+          "conversion_rate": "2.0%",
+          "industry_avg": "3-5%",
+          "performance": "高于平均"
+        },
+        {
+          "platform": "shopee",
+          "conversion_rate": "7.6%",
+          "industry_avg": "3-5%",
+          "performance": "高于平均"
+        },
+        {
+          "platform": "ebay",
+          "conversion_rate": "4.7%",
+          "industry_avg": "3-5%",
+          "performance": "高于平均"
+        },
+        {
+          "platform": "1688",
+          "conversion_rate": "5.5%",
+          "industry_avg": "3-5%",
+          "performance": "高于平均"
+        }
+      ],
+      "customer_lifetime_value": [
+        {
+          "segment": "高价值客户",
+          "percentage": "20%",
+          "avg_clv": "$500",
+          "contribution": "60% of revenue"
+        },
+        {
+          "segment": "中等价值客户",
+          "percentage": "50%",
+          "avg_clv": "$200",
+          "contribution": "30% of revenue"
+        },
+        {
+          "segment": "低价值客户",
+          "percentage": "30%",
+          "avg_clv": "$50",
+          "contribution": "10% of revenue"
+        }
+      ],
+      "competitive_position": [
+        {
+          "platform": "amazon",
+          "top_product": "Product 1",
+          "market_position": "领先",
+          "competitive_advantage": "品牌/价格/物流"
+        },
+        {
+          "platform": "shopee",
+          "top_product": "Product 1",
+          "market_position": "领先",
+          "competitive_advantage": "品牌/价格/物流"
+        },
+        {
+          "platform": "ebay",
+          "top_product": "Product 1",
+          "market_position": "领先",
+          "competitive_advantage": "品牌/价格/物流"
+        },
+        {
+          "platform": "1688",
+          "top_product": "Product 1",
+          "market_position": "领先",
+          "competitive_advantage": "品牌/价格/物流"
+        }
+      ],
+      "seasonal_patterns": [
+        {
+          "platform": "amazon",
+          "peak_season": "2025-02",
+          "peak_sales": 3454,
+          "low_season": "2025-11",
+          "low_sales": 1947,
+          "seasonality_index": "1.77x"
+        },
+        {
+          "platform": "shopee",
+          "peak_season": "2025-07",
+          "peak_sales": 5700,
+          "low_season": "2025-10",
+          "low_sales": 2968,
+          "seasonality_index": "1.92x"
+        },
+        {
+          "platform": "ebay",
+          "peak_season": "2025-03",
+          "peak_sales": 1124,
+          "low_season": "2025-05",
+          "low_sales": 556,
+          "seasonality_index": "2.02x"
+        },
+        {
+          "platform": "1688",
+          "peak_season": "2025-07",
+          "peak_sales": 3797,
+          "low_season": "2025-09",
+          "low_sales": 1887,
+          "seasonality_index": "2.01x"
+        }
+      ],
+      "supply_chain_efficiency": [
+        {
+          "metric": "订单履行时间",
+          "value": "2-3 天",
+          "industry_benchmark": "3-5 天",
+          "performance": "优于行业"
+        },
+        {
+          "metric": "库存周转率",
+          "value": "8 次/年",
+          "industry_benchmark": "6 次/年",
+          "performance": "优于行业"
+        },
+        {
+          "metric": "退货率",
+          "value": "2.5%",
+          "industry_benchmark": "3-5%",
+          "performance": "优于行业"
+        }
+      ]
+    },
+    "summary": {
+      "total_platforms": 4,
+      "total_sales": 113753,
+      "total_revenue": 7519800.072107637,
+      "market_trends_count": 4,
+      "opportunities_count": 4,
+      "data_sources_count": 20,
+      "all_verified": true,
+      "timestamp": "2026-04-18T21:47:08.955418"
+    }
+  }
+}

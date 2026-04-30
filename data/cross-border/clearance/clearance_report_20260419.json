@@ -1,0 +1,167 @@
+{
+  "generated_at": "2026-04-19T00:13:47.555899",
+  "summary": {
+    "total_products_in_inventory": 5,
+    "clearance_products": 4,
+    "tier_1_count": 2,
+    "tier_2_count": 2,
+    "tier_3_count": 0
+  },
+  "clearance_plan": {
+    "generated_at": "2026-04-19T00:13:47.555798",
+    "total_products": 4,
+    "total_inventory_value": 189000,
+    "estimated_recovery": 192521.7,
+    "products_by_tier": {
+      "tier_1": [
+        {
+          "sku": "SKU001",
+          "name": "通用小型汽油发动机",
+          "stock": 150,
+          "cost": 180,
+          "price": 350,
+          "last_sale_days": 45,
+          "monthly_sales": 3,
+          "trend": "declining",
+          "category": "C 级产品",
+          "clearance_tier": "tier_1",
+          "recommended_discount": 0.2,
+          "reason": "轻微滞销",
+          "priority": "P2",
+          "action": "清仓促销"
+        },
+        {
+          "sku": "SKU002",
+          "name": "老款储能电源 1000Wh",
+          "stock": 80,
+          "cost": 400,
+          "price": 799,
+          "last_sale_days": 35,
+          "monthly_sales": 4,
+          "trend": "declining",
+          "category": "B 级产品",
+          "clearance_tier": "tier_1",
+          "recommended_discount": 0.2,
+          "reason": "轻微滞销",
+          "priority": "P2",
+          "action": "清仓促销"
+        }
+      ],
+      "tier_2": [
+        {
+          "sku": "SKU003",
+          "name": "旧款无人机 V1",
+          "stock": 50,
+          "cost": 2000,
+          "price": 3999,
+          "last_sale_days": 60,
+          "monthly_sales": 1,
+          "trend": "declining",
+          "category": "C 级产品",
+          "clearance_tier": "tier_2",
+          "recommended_discount": 0.3,
+          "reason": "中度滞销",
+          "priority": "P1",
+          "action": "清仓促销"
+        },
+        {
+          "sku": "SKU004",
+          "name": "老款电动滑板车",
+          "stock": 100,
+          "cost": 300,
+          "price": 599,
+          "last_sale_days": 50,
+          "monthly_sales": 2,
+          "trend": "declining",
+          "category": "C 级产品",
+          "clearance_tier": "tier_2",
+          "recommended_discount": 0.3,
+          "reason": "中度滞销",
+          "priority": "P1",
+          "action": "清仓促销"
+        }
+      ],
+      "tier_3": []
+    },
+    "actions": [
+      {
+        "sku": "SKU001",
+        "name": "通用小型汽油发动机",
+        "current_price": 350,
+        "discounted_price": 280.0,
+        "discount": "20%",
+        "stock": 150,
+        "action": "清仓促销",
+        "priority": "P2"
+      },
+      {
+        "sku": "SKU002",
+        "name": "老款储能电源 1000Wh",
+        "current_price": 799,
+        "discounted_price": 639.2,
+        "discount": "20%",
+        "stock": 80,
+        "action": "清仓促销",
+        "priority": "P2"
+      },
+      {
+        "sku": "SKU003",
+        "name": "旧款无人机 V1",
+        "current_price": 3999,
+        "discounted_price": 2799.3,
+        "discount": "30%",
+        "stock": 50,
+        "action": "清仓促销",
+        "priority": "P1"
+      },
+      {
+        "sku": "SKU004",
+        "name": "老款电动滑板车",
+        "current_price": 599,
+        "discounted_price": 419.3,
+        "discount": "30%",
+        "stock": 100,
+        "action": "清仓促销",
+        "priority": "P1"
+      }
+    ]
+  },
+  "inventory_turnover": {
+    "current_turnover_rate": 0.056752525252525256,
+    "current_turnover_days": 528.6108391919552,
+    "target_turnover_days": 60,
+    "recommendations": [
+      "严重滞销，建议立即清仓"
+    ]
+  },
+  "recommendations": [
+    {
+      "type": "normal_clearance",
+      "priority": "P2",
+      "product": "通用小型汽油发动机",
+      "action": "常规清仓，折扣20%",
+      "reason": "轻微滞销 (30-45 天无销售)"
+    },
+    {
+      "type": "normal_clearance",
+      "priority": "P2",
+      "product": "老款储能电源 1000Wh",
+      "action": "常规清仓，折扣20%",
+      "reason": "轻微滞销 (30-45 天无销售)"
+    },
+    {
+      "type": "priority_clearance",
+      "priority": "P1",
+      "product": "旧款无人机 V1",
+      "action": "优先清仓，折扣30%",
+      "reason": "中度滞销 (45-60 天无销售)"
+    },
+    {
+      "type": "priority_clearance",
+      "priority": "P1",
+      "product": "老款电动滑板车",
+      "action": "优先清仓，折扣30%",
+      "reason": "中度滞销 (45-60 天无销售)"
+    }
+  ]
+}

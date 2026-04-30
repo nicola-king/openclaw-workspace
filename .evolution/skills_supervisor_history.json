@@ -1,0 +1,26 @@
+{
+  "history": [
+    {
+      "timestamp": "2026-04-13T00:21:16.724735",
+      "total_skills": 467,
+      "self_evolving_skills": 311,
+      "healthy_skills": 290,
+      "unhealthy_skills": 12,
+      "category_distribution": {
+        "01-trading": 11,
+        "02-business": 0,
+        "03-automation": 2,
+        "04-integration": 7,
+        "05-content": 0,
+        "06-analysis": 0,
+        "07-system": 13,
+        "08-emerged": 267,
+        "其他": 167
+      },
+      "optimization_suggestions": 5,
+      "evolution_signals": 4,
+      "status": "active"
+    }
+  ],
+  "last_updated": "2026-04-13T00:21:16.724823"
+}

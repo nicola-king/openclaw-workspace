@@ -1,0 +1,60 @@
+{
+  "version": "1.0",
+  "created_at": "2026-04-16T13:18:40.246119",
+  "metrics": [
+    {
+      "id": "M001",
+      "name": "效率提升",
+      "current": 2000,
+      "target": 10000,
+      "unit": "倍",
+      "frequency": "daily"
+    },
+    {
+      "id": "M002",
+      "name": "进化率",
+      "current": 0.8,
+      "target": 1.0,
+      "unit": "%",
+      "frequency": "hourly"
+    },
+    {
+      "id": "M003",
+      "name": "融合度",
+      "current": 0.7,
+      "target": 1.0,
+      "unit": "%",
+      "frequency": "daily"
+    },
+    {
+      "id": "M004",
+      "name": "Level 5 完成度",
+      "current": 0.5,
+      "target": 1.0,
+      "unit": "%",
+      "frequency": "daily"
+    }
+  ],
+  "alerts": [
+    {
+      "metric": "M001",
+      "threshold": 4000,
+      "action": "notify"
+    },
+    {
+      "metric": "M002",
+      "threshold": 0.9,
+      "action": "celebrate"
+    },
+    {
+      "metric": "M004",
+      "threshold": 1.0,
+      "action": "level_up"
+    }
+  ],
+  "reporting": {
+    "daily_report": true,
+    "weekly_summary": true,
+    "milestone_alerts": true
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "ssrf_defense": {
+    "enabled": true,
+    "strict_defaults": true,
+    "interaction_driven_redirects": true,
+    "status": "✅ enabled"
+  },
+  "hostname_allowlist": {
+    "enabled": true,
+    "hosts": [
+      "api.telegram.org",
+      "open.feishu.cn",
+      "discord.com",
+      "api.openai.com",
+      "generativelanguage.googleapis.com"
+    ],
+    "count": 5,
+    "status": "✅ 5 hosts"
+  },
+  "exec_preflight": {
+    "enabled": true,
+    "hardened_reads": true,
+    "host_env_denylist": [
+      "PASSWORD",
+      "SECRET",
+      "KEY",
+      "TOKEN"
+    ],
+    "node_output_boundaries": true,
+    "status": "✅ enabled"
+  },
+  "plugin_scanning": {
+    "enabled": true,
+    "scan_dependencies": true,
+    "reject_malicious": true,
+    "status": "✅ enabled"
+  },
+  "websocket_budget": {
+    "enabled": true,
+    "max_connections": 100,
+    "upgrade_budget_seconds": 30,
+    "status": "✅ 100 connections"
+  },
+  "generated_at": "2026-04-11T16:50:09.355893"
+}

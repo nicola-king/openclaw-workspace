@@ -1,0 +1,195 @@
+{
+  "type": "Bangkok Travel Plan",
+  "origin": "北京",
+  "destination": "曼谷",
+  "start_date": "2026-05-01",
+  "end_date": "2026-05-07",
+  "days": 7,
+  "travelers": 2,
+  "mode": "跨国游",
+  "budget": 8000,
+  "budget_per_person": 4000.0,
+  "budget_allocation": {
+    "航班": 2400.0,
+    "住宿": 2000.0,
+    "餐饮": 1600.0,
+    "活动": 1200.0,
+    "购物": 800.0
+  },
+  "preferences": [
+    "文化",
+    "美食",
+    "购物"
+  ],
+  "daily_itinerary": [
+    {
+      "day": 1,
+      "date": "2026-05-01",
+      "attractions": [
+        {
+          "name": "大皇宫",
+          "duration": "3h",
+          "cost": 500
+        },
+        {
+          "name": "卧佛寺",
+          "duration": "2h",
+          "cost": 200
+        },
+        {
+          "name": "考山路",
+          "duration": "3h",
+          "cost": 500
+        }
+      ],
+      "meal_breakfast": "酒店早餐/泰式早餐",
+      "meal_lunch": "泰式炒河粉",
+      "meal_dinner": "冬阴功汤"
+    },
+    {
+      "day": 2,
+      "date": "2026-05-02",
+      "attractions": [
+        {
+          "name": "大皇宫",
+          "duration": "3h",
+          "cost": 500
+        },
+        {
+          "name": "卧佛寺",
+          "duration": "2h",
+          "cost": 200
+        },
+        {
+          "name": "考山路",
+          "duration": "3h",
+          "cost": 500
+        }
+      ],
+      "meal_breakfast": "酒店早餐/泰式早餐",
+      "meal_lunch": "泰式炒河粉",
+      "meal_dinner": "冬阴功汤"
+    },
+    {
+      "day": 3,
+      "date": "2026-05-03",
+      "attractions": [
+        {
+          "name": "大皇宫",
+          "duration": "3h",
+          "cost": 500
+        },
+        {
+          "name": "卧佛寺",
+          "duration": "2h",
+          "cost": 200
+        },
+        {
+          "name": "考山路",
+          "duration": "3h",
+          "cost": 500
+        }
+      ],
+      "meal_breakfast": "酒店早餐/泰式早餐",
+      "meal_lunch": "泰式炒河粉",
+      "meal_dinner": "冬阴功汤"
+    },
+    {
+      "day": 4,
+      "date": "2026-05-04",
+      "attractions": [
+        {
+          "name": "大皇宫",
+          "duration": "3h",
+          "cost": 500
+        },
+        {
+          "name": "卧佛寺",
+          "duration": "2h",
+          "cost": 200
+        },
+        {
+          "name": "考山路",
+          "duration": "3h",
+          "cost": 500
+        }
+      ],
+      "meal_breakfast": "酒店早餐/泰式早餐",
+      "meal_lunch": "泰式炒河粉",
+      "meal_dinner": "冬阴功汤"
+    },
+    {
+      "day": 5,
+      "date": "2026-05-05",
+      "attractions": [
+        {
+          "name": "大皇宫",
+          "duration": "3h",
+          "cost": 500
+        },
+        {
+          "name": "卧佛寺",
+          "duration": "2h",
+          "cost": 200
+        },
+        {
+          "name": "考山路",
+          "duration": "3h",
+          "cost": 500
+        }
+      ],
+      "meal_breakfast": "酒店早餐/泰式早餐",
+      "meal_lunch": "泰式炒河粉",
+      "meal_dinner": "冬阴功汤"
+    },
+    {
+      "day": 6,
+      "date": "2026-05-06",
+      "attractions": [
+        {
+          "name": "大皇宫",
+          "duration": "3h",
+          "cost": 500
+        },
+        {
+          "name": "卧佛寺",
+          "duration": "2h",
+          "cost": 200
+        },
+        {
+          "name": "考山路",
+          "duration": "3h",
+          "cost": 500
+        }
+      ],
+      "meal_breakfast": "酒店早餐/泰式早餐",
+      "meal_lunch": "泰式炒河粉",
+      "meal_dinner": "冬阴功汤"
+    },
+    {
+      "day": 7,
+      "date": "2026-05-07",
+      "attractions": [
+        {
+          "name": "大皇宫",
+          "duration": "3h",
+          "cost": 500
+        },
+        {
+          "name": "卧佛寺",
+          "duration": "2h",
+          "cost": 200
+        },
+        {
+          "name": "考山路",
+          "duration": "3h",
+          "cost": 500
+        }
+      ],
+      "meal_breakfast": "酒店早餐/泰式早餐",
+      "meal_lunch": "泰式炒河粉",
+      "meal_dinner": "冬阴功汤"
+    }
+  ],
+  "timestamp": "2026-04-24T21:33:19.160075"
+}

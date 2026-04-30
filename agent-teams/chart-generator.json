@@ -1,0 +1,80 @@
+{
+  "team_id": "chart-generator",
+  "name": "图表生成组团",
+  "version": "1.0.1",
+  "created_at": "2026-04-15T22:21:06.888103",
+  "coordinator": "taiyi",
+  "members": [
+    {
+      "role": "parser",
+      "agent": "chart-generator",
+      "task": "智能解析"
+    },
+    {
+      "role": "generator",
+      "agent": "chart-generator",
+      "task": "图表生成"
+    },
+    {
+      "role": "exporter",
+      "agent": "chart-generator",
+      "task": "多格式导出"
+    }
+  ],
+  "workflow": [
+    "parse",
+    "generate",
+    "export",
+    "validate"
+  ],
+  "communication_protocol": {
+    "format": "json",
+    "fields": [
+      "from",
+      "to",
+      "type",
+      "content",
+      "timestamp"
+    ],
+    "types": [
+      "task",
+      "result",
+      "error",
+      "query"
+    ]
+  },
+  "error_handling": {
+    "retry": {
+      "max_attempts": 3,
+      "backoff": "exponential"
+    },
+    "fallback": {
+      "alternative_agent": "backup",
+      "degraded_mode": true
+    },
+    "escalation": {
+      "notify": "coordinator",
+      "log": true
+    }
+  },
+  "metrics": {
+    "efficiency_gain": "600 倍",
+    "target_response_time": "<1 分钟",
+    "target_success_rate": ">95%"
+  },
+  "optimized_at": "2026-04-16T13:06:49.737017",
+  "optimizations": [
+    {
+      "type": "parallel_processing",
+      "description": "建议增加并行处理能力",
+      "suggestion": "独立任务可并行执行，减少等待时间"
+    }
+  ],
+  "external_integrations": [
+    "supervision",
+    "veo31",
+    "skill_evolution",
+    "openmaic",
+    "codeflow"
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "executions": [
+    {
+      "id": "EXEC_20260419_233259",
+      "deletion_id": "DEL_001",
+      "category": "获客流程",
+      "item": "潜客搜寻人工环节",
+      "action": "自动化",
+      "priority": "P0",
+      "status": "completed",
+      "started_at": "2026-04-19T23:32:59.222837",
+      "result": {
+        "success": true,
+        "message": "已自动化: 潜客搜寻人工环节",
+        "changes": [
+          "优化潜客搜寻流程",
+          "删除重复验证步骤"
+        ]
+      },
+      "actual_impact": {
+        "time_saved": "5 小时/周",
+        "efficiency_gain": "+20%",
+        "measured_at": "2026-04-19T23:32:59.222849"
+      },
+      "completed_at": "2026-04-19T23:32:59.222890"
+    },
+    {
+      "id": "EXEC_20260419_233259",
+      "deletion_id": "DEL_002",
+      "category": "获客流程",
+      "item": "数据验证重复步骤",
+      "action": "删除或合并",
+      "priority": "P1",
+      "status": "completed",
+      "started_at": "2026-04-19T23:32:59.223190",
+      "result": {
+        "success": true,
+        "message": "已删除或合并: 数据验证重复步骤",
+        "changes": [
+          "优化潜客搜寻流程",
+          "删除重复验证步骤"
+        ]
+      },
+      "actual_impact": {
+        "time_saved": "2 小时/周",
+        "efficiency_gain": "+10%",
+        "measured_at": "2026-04-19T23:32:59.223198"
+      },
+      "completed_at": "2026-04-19T23:32:59.223237"
+    },
+    {
+      "id": "EXEC_20260419_233259",
+      "deletion_id": "DEL_003",
+      "category": "内容流程",
+      "item": "内容选题优化",
+      "action": "优化流程",
+      "priority": "P2",
+      "status": "completed",
+      "started_at": "2026-04-19T23:32:59.223558",
+      "result": {
+        "success": true,
+        "message": "已优化流程: 内容选题优化",
+        "changes": [
+          "简化内容选题流程",
+          "优化审核流程"
+        ]
+      },
+      "actual_impact": {
+        "time_saved": "1 小时/周",
+        "efficiency_gain": "+5%",
+        "measured_at": "2026-04-19T23:32:59.223565"
+      },
+      "completed_at": "2026-04-19T23:32:59.223602"
+    },
+    {
+      "id": "EXEC_20260419_233259",
+      "deletion_id": "DEL_004",
+      "category": "内容流程",
+      "item": "审核流程简化",
+      "action": "优化流程",
+      "priority": "P2",
+      "status": "completed",
+      "started_at": "2026-04-19T23:32:59.223966",
+      "result": {
+        "success": true,
+        "message": "已优化流程: 审核流程简化",
+        "changes": [
+          "简化内容选题流程",
+          "优化审核流程"
+        ]
+      },
+      "actual_impact": {
+        "time_saved": "1 小时/周",
+        "efficiency_gain": "+5%",
+        "measured_at": "2026-04-19T23:32:59.223974"
+      },
+      "completed_at": "2026-04-19T23:32:59.224013"
+    },
+    {
+      "id": "EXEC_20260419_233259",
+      "deletion_id": "DEL_005",
+      "category": "数据流程",
+      "item": "API 调用优化",
+      "action": "优化流程",
+      "priority": "P2",
+      "status": "completed",
+      "started_at": "2026-04-19T23:32:59.224342",
+      "result": {
+        "success": true,
+        "message": "已优化流程: API 调用优化",
+        "changes": [
+          "优化 API 调用",
+          "减少冗余查询"
+        ]
+      },
+      "actual_impact": {
+        "time_saved": "1 小时/周",
+        "efficiency_gain": "+5%",
+        "measured_at": "2026-04-19T23:32:59.224349"
+      },
+      "completed_at": "2026-04-19T23:32:59.224383"
+    }
+  ],
+  "stats": {
+    "获客流程": {
+      "total_executions": 2,
+      "successful_executions": 2,
+      "failed_executions": 0,
+      "total_time_saved": "0 小时/周"
+    },
+    "内容流程": {
+      "total_executions": 2,
+      "successful_executions": 2,
+      "failed_executions": 0,
+      "total_time_saved": "0 小时/周"
+    },
+    "数据流程": {
+      "total_executions": 1,
+      "successful_executions": 1,
+      "failed_executions": 0,
+      "total_time_saved": "0 小时/周"
+    }
+  }
+}

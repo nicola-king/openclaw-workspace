@@ -1,0 +1,89 @@
+{
+  "type": "Multi-City Route",
+  "cities": [
+    "北京",
+    "上海",
+    "东京",
+    "首尔"
+  ],
+  "routes": [
+    {
+      "from": "北京",
+      "to": "上海"
+    },
+    {
+      "from": "上海",
+      "to": "东京"
+    },
+    {
+      "from": "东京",
+      "to": "首尔"
+    }
+  ],
+  "optimized": {
+    "total_price": 4200,
+    "total_duration": "12h30m",
+    "segments": [
+      {
+        "from": "北京",
+        "to": "上海",
+        "price": 1200
+      },
+      {
+        "from": "上海",
+        "to": "东京",
+        "price": 1800
+      },
+      {
+        "from": "东京",
+        "to": "首尔",
+        "price": 1200
+      }
+    ],
+    "savings": 800
+  },
+  "city_suggestions": [
+    {
+      "city": "北京",
+      "days_recommended": 2,
+      "highlights": [
+        "北京景点 A",
+        "北京景点 B",
+        "北京美食"
+      ],
+      "estimated_cost": 2500
+    },
+    {
+      "city": "上海",
+      "days_recommended": 2,
+      "highlights": [
+        "上海景点 A",
+        "上海景点 B",
+        "上海美食"
+      ],
+      "estimated_cost": 2500
+    },
+    {
+      "city": "东京",
+      "days_recommended": 2,
+      "highlights": [
+        "东京景点 A",
+        "东京景点 B",
+        "东京美食"
+      ],
+      "estimated_cost": 2500
+    },
+    {
+      "city": "首尔",
+      "days_recommended": 2,
+      "highlights": [
+        "首尔景点 A",
+        "首尔景点 B",
+        "首尔美食"
+      ],
+      "estimated_cost": 2500
+    }
+  ],
+  "total_budget": 30000,
+  "timestamp": "2026-04-14T16:44:01.289058"
+}

@@ -1,0 +1,61 @@
+{
+  "decisions": [
+    {
+      "id": "TRADE_DECISION_20260420_213516",
+      "asset": "SUI",
+      "timestamp": "2026-04-20T21:35:16.315046",
+      "model_opinions": {
+        "GPT-5.4": {
+          "signal": "sell",
+          "confidence": 0.7,
+          "reasoning": "GPT-5.4分析：基于横盘整理",
+          "veto": false
+        },
+        "Claude-4.6": {
+          "signal": "strong_buy",
+          "confidence": 0.9,
+          "reasoning": "Claude-4.6分析：基于横盘整理",
+          "veto": false
+        },
+        "Technical_Analyst": {
+          "signal": "buy",
+          "confidence": 0.7,
+          "reasoning": "Technical_Analyst分析：基于横盘整理",
+          "veto": false
+        },
+        "Risk_Manager": {
+          "signal": "buy",
+          "confidence": 0.95,
+          "reasoning": "风险可控",
+          "veto": false
+        }
+      },
+      "consensus": {
+        "weighted_score": 3.5555555555555554,
+        "confidence": 0.9,
+        "model_count": 3
+      },
+      "final_decision": "BUY",
+      "risk_veto": false,
+      "confidence": 0.9
+    }
+  ],
+  "performance": [
+    {
+      "decision_id": "TRADE_DECISION_20260420_213516",
+      "asset": "SUI",
+      "decision": "BUY",
+      "actual_return": 0.26,
+      "predicted_confidence": 0.9,
+      "accuracy": 0.76,
+      "timestamp": "2026-04-20T21:35:16.316494"
+    }
+  ],
+  "stats": {
+    "total_decisions": 1,
+    "buy_signals": 1,
+    "sell_signals": 0,
+    "risk_vetos": 0,
+    "avg_confidence": 0.9
+  }
+}

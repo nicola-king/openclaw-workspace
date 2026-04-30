@@ -1,0 +1,123 @@
+{
+  "type": "Shanghai Travel Plan",
+  "origin": "北京",
+  "destination": "上海",
+  "start_date": "2026-05-01",
+  "end_date": "2026-05-04",
+  "days": 4,
+  "travelers": 2,
+  "mode": "国内游",
+  "budget": 4000,
+  "budget_per_person": 2000.0,
+  "budget_allocation": {
+    "交通": 1000.0,
+    "住宿": 1200.0,
+    "餐饮": 800.0,
+    "活动": 600.0,
+    "购物": 400.0
+  },
+  "preferences": [
+    "现代都市",
+    "购物",
+    "美食"
+  ],
+  "daily_itinerary": [
+    {
+      "day": 1,
+      "date": "2026-05-01",
+      "attractions": [
+        {
+          "name": "外滩",
+          "duration": "2h",
+          "cost": 0
+        },
+        {
+          "name": "东方明珠",
+          "duration": "2h",
+          "cost": 120
+        },
+        {
+          "name": "南京路",
+          "duration": "3h",
+          "cost": 0
+        }
+      ],
+      "meal_breakfast": "酒店早餐/小笼包",
+      "meal_lunch": "本帮菜",
+      "meal_dinner": "外滩夜景餐厅"
+    },
+    {
+      "day": 2,
+      "date": "2026-05-02",
+      "attractions": [
+        {
+          "name": "外滩",
+          "duration": "2h",
+          "cost": 0
+        },
+        {
+          "name": "东方明珠",
+          "duration": "2h",
+          "cost": 120
+        },
+        {
+          "name": "南京路",
+          "duration": "3h",
+          "cost": 0
+        }
+      ],
+      "meal_breakfast": "酒店早餐/小笼包",
+      "meal_lunch": "本帮菜",
+      "meal_dinner": "外滩夜景餐厅"
+    },
+    {
+      "day": 3,
+      "date": "2026-05-03",
+      "attractions": [
+        {
+          "name": "外滩",
+          "duration": "2h",
+          "cost": 0
+        },
+        {
+          "name": "东方明珠",
+          "duration": "2h",
+          "cost": 120
+        },
+        {
+          "name": "南京路",
+          "duration": "3h",
+          "cost": 0
+        }
+      ],
+      "meal_breakfast": "酒店早餐/小笼包",
+      "meal_lunch": "本帮菜",
+      "meal_dinner": "外滩夜景餐厅"
+    },
+    {
+      "day": 4,
+      "date": "2026-05-04",
+      "attractions": [
+        {
+          "name": "外滩",
+          "duration": "2h",
+          "cost": 0
+        },
+        {
+          "name": "东方明珠",
+          "duration": "2h",
+          "cost": 120
+        },
+        {
+          "name": "南京路",
+          "duration": "3h",
+          "cost": 0
+        }
+      ],
+      "meal_breakfast": "酒店早餐/小笼包",
+      "meal_lunch": "本帮菜",
+      "meal_dinner": "外滩夜景餐厅"
+    }
+  ],
+  "timestamp": "2026-04-24T21:33:18.881137"
+}

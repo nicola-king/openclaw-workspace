@@ -1,0 +1,22 @@
+{
+  "proxy": {
+    "enabled": true,
+    "host": "127.0.0.1",
+    "port": 7890,
+    "protocol": "socks5"
+  },
+  "cache": {
+    "enabled": true,
+    "ttl": 300
+  },
+  "timeout": {
+    "domestic": 10,
+    "international": 30,
+    "probe": 3
+  },
+  "fallback": {
+    "enabled": true,
+    "max_retries": 2,
+    "retry_delay": 1
+  }
+}

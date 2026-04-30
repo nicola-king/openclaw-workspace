@@ -1,0 +1,93 @@
+{
+  "version": "1.0",
+  "created": "2026-04-18",
+  "updated": "2026-04-18",
+  
+  "communication": {
+    "preferred_channel": "wechat",
+    "fallback_channel": "telegram",
+    "notification_time": "08:00-22:00",
+    "quiet_hours": "22:00-08:00",
+    "emoji_preference": "abundant",
+    "format_preference": "structured"
+  },
+  
+  "agent_preferences": {
+    "zhiji": {
+      "voice": "冷静理性",
+      "detail_level": "detailed",
+      "include_charts": true,
+      "risk_tolerance": "中等",
+      "auto_execute": false
+    },
+    "shanmu": {
+      "voice": "温暖亲切",
+      "content_style": "创意优美",
+      "auto_publish": false,
+      "require_review": true,
+      "platform_priority": ["wechat", "xiaohongshu", "weibo"]
+    },
+    "suwen": {
+      "voice": "温和专业",
+      "focus": "中医养生",
+      "include_recipes": true,
+      "reminder_frequency": "daily"
+    },
+    "wangliang": {
+      "voice": "严谨专业",
+      "alert_threshold": "P1",
+      "report_frequency": "daily",
+      "include_metrics": true
+    },
+    "paoding": {
+      "voice": "技术极客",
+      "code_comments": "detailed",
+      "auto_deploy": false,
+      "require_review": true
+    }
+  },
+  
+  "report_preferences": {
+    "daily_report": {
+      "enabled": true,
+      "time": "23:00",
+      "format": "markdown",
+      "include_raw_data": false,
+      "channels": ["wechat"]
+    },
+    "weekly_report": {
+      "enabled": true,
+      "day": "monday",
+      "time": "08:30",
+      "format": "markdown",
+      "include_charts": true
+    },
+    "monthly_report": {
+      "enabled": true,
+      "day": 1,
+      "time": "09:00",
+      "format": "markdown",
+      "include_analysis": true
+    }
+  },
+  
+  "task_preferences": {
+    "auto_priority": true,
+    "default_deadline": "24h",
+    "require_approval_for": ["P0", "external_action"],
+    "auto_execute_for": ["health_check", "report_generation"]
+  },
+  
+  "learning_preferences": {
+    "constitution_study": {
+      "enabled": true,
+      "time": "06:00",
+      "frequency": "daily"
+    },
+    "knowledge_update": {
+      "enabled": true,
+      "topics": ["AI", "区块链", "市政建设", "健康管理"],
+      "frequency": "weekly"
+    }
+  }
+}

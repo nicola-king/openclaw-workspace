@@ -1,0 +1,33 @@
+{
+  "name": "CodeFlow Integration",
+  "version": "1.0",
+  "created_at": "2026-04-16T13:01:25.477103",
+  "target_team": "suwen",
+  "features": {
+    "code_visualization": {
+      "enabled": true,
+      "types": [
+        "dependency_graph",
+        "module_map",
+        "impact_analysis"
+      ]
+    },
+    "dependency_analysis": {
+      "enabled": true,
+      "depth": "full"
+    },
+    "architecture_understanding": {
+      "enabled": true,
+      "outputs": [
+        "architecture_doc",
+        "dependency_doc",
+        "impact_doc"
+      ]
+    }
+  },
+  "expected_improvements": {
+    "code_understanding": "+60%",
+    "architecture_analysis": "+50%",
+    "dev_suggestion_quality": "+40%"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "version": "1.0",
+  "created_at": "2026-04-16T13:10:47.386756",
+  "experiments": [
+    {
+      "id": "EXP001",
+      "name": "视觉视频融合实验",
+      "domains": [
+        "supervision",
+        "veo31"
+      ],
+      "hypothesis": "视觉分析 + 视频生成 = 智能视频分析",
+      "status": "ready"
+    },
+    {
+      "id": "EXP002",
+      "name": "学习进化融合实验",
+      "domains": [
+        "openmaic",
+        "skill-evolution"
+      ],
+      "hypothesis": "AI 学习 + 技能进化 = 自适应学习",
+      "status": "ready"
+    },
+    {
+      "id": "EXP003",
+      "name": "代码视觉融合实验",
+      "domains": [
+        "codeflow",
+        "chart-generator"
+      ],
+      "hypothesis": "代码可视化 + 图表生成 = 架构理解增强",
+      "status": "ready"
+    }
+  ]
+}

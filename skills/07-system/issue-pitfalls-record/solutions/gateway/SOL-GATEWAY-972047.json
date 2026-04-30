@@ -1,0 +1,20 @@
+{
+  "solution_id": "SOL-GATEWAY-972047",
+  "category": "gateway",
+  "problem": "Gateway 端口未监听",
+  "steps": [
+    "1. 检查 Gateway 进程",
+    "2. 检查端口占用",
+    "3. 重启 Gateway",
+    "4. 验证恢复"
+  ],
+  "commands": [
+    "pgrep -f openclaw-gateway",
+    "netstat -tln | grep 18789",
+    "systemctl restart openclaw-gateway"
+  ],
+  "success_rate": 0.95,
+  "avg_time_minutes": 2,
+  "last_used": null,
+  "usage_count": 0
+}

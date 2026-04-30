@@ -1,0 +1,217 @@
+# 内容发布工作流程
+# 版本：1.0
+# 创建：2026-04-18
+# 负责 Agent: 山木
+
+---
+name: content-publish
+version: 1.0
+description: 内容创作与发布标准化流程
+agent: 山木
+trigger: manual | scheduled | topic_request
+priority: P1
+
+# 输入参数
+inputs:
+  topic:
+    type: string
+    required: true
+    description: "内容主题"
+  
+  platform:
+    type: enum
+    options: [wechat, xiaohongshu, weibo, all]
+    default: all
+    description: "发布平台"
+  
+  content_type:
+    type: enum
+    options: [article, note, post, thread]
+    default: article
+    description: "内容类型"
+  
+  tone:
+    type: enum
+    options: [professional, casual, humorous, emotional]
+    default: professional
+    description: "内容调性"
+  
+  word_count:
+    type: integer
+    default: 1500
+    description: "目标字数"
+
+# 执行步骤
+steps:
+  - name: 选题策划
+    type: sequential
+    tasks:
+      - action: trend_analysis
+        params:
+          platforms: "${inputs.platform}"
+          timeframe: 7d
+      
+      - action: keyword_research
+        params:
+          topic: "${inputs.topic}"
+          tools: [google_trends, wechat_index]
+      
+      - action: generate_titles
+        params:
+          count: 5
+          style: catchy
+      
+      - action: select_best_title
+        params:
+          criteria: [seo, engagement, relevance]
+
+  - name: 大纲设计
+    type: sequential
+    tasks:
+      - action: outline_structure
+        params:
+          sections:
+            - introduction (10%)
+            - body (70%)
+            - conclusion (10%)
+            - call_to_action (10%)
+      
+      - action: key_points_extraction
+        params:
+          points_count: 5
+          depth: detailed
+
+  - name: 内容创作
+    type: sequential
+    tasks:
+      - action: draft_generation
+        params:
+          model: gemini-2.5-flash
+          tone: "${inputs.tone}"
+          word_count: "${inputs.word_count}"
+      
+      - action: content_enhancement
+        params:
+          enhancements: [examples, data, quotes, stories]
+      
+      - action: seo_optimization
+        params:
+          keywords: "${keywords}"
+          density: 2-3%
+
+  - name: 视觉设计
+    type: parallel
+    tasks:
+      - action: cover_image_suggestion
+        params:
+          style: match_content
+          ratio: 16:9
+      
+      - action: inline_images
+        params:
+          count: 3
+          placement: logical_breaks
+      
+      - action: image_generation
+        params:
+          model: design-agent
+          style: consistent
+
+  - name: 平台适配
+    type: parallel
+    condition: "${inputs.platform} == 'all'"
+    tasks:
+      - action: format_wechat
+        params:
+          template: official_account
+          include_qr: true
+      
+      - action: format_xiaohongshu
+        params:
+          emoji: abundant
+          hashtags: 5-10
+          layout: mobile_friendly
+      
+      - action: format_weibo
+        params:
+          length: 140
+          thread: auto_split
+          hashtags: 2-3
+
+  - name: 审核发布
+    type: sequential
+    tasks:
+      - action: quality_check
+        params:
+          checklist:
+            - grammar
+            - fact_check
+            - brand_voice
+            - compliance
+      
+      - action: user_approval
+        condition: require_approval == true
+        timeout: 24h
+      
+      - action: schedule_publish
+        params:
+          platform: "${inputs.platform}"
+          time: optimal_time
+          auto_reply: true
+
+# 输出格式
+output:
+  format: markdown
+  template: |
+    ## 📝 内容发布报告
+    
+    ### 标题
+    {{title}}
+    
+    ### 发布平台
+    {{platforms}}
+    
+    ### 发布时间
+    {{publish_time}}
+    
+    ### 内容预览
+    {{preview}}
+    
+    ### 预期数据
+    - 阅读量：{{estimated_views}}
+    - 互动率：{{estimated_engagement}}%
+    
+    ### 发布链接
+    {{links}}
+
+# 通知配置
+notifications:
+  on_draft_complete:
+    - channel: wechat
+      action: send_for_review
+  
+  on_publish_complete:
+    - channel: telegram
+      action: notify_link
+  
+  on_error:
+    - channel: telegram
+      priority: high
+
+# 错误处理
+error_handling:
+  retry_count: 1
+  retry_delay: 10s
+  fallback:
+    - action: save_draft
+    - action: notify_error
+
+# 执行日志
+logging:
+  level: info
+  destination: logs/content-publish-${date}.log
+  include:
+    - inputs
+    - draft_versions
+    - publish_status
+    - performance_metrics

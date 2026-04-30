@@ -1,0 +1,37 @@
+{
+  "search_engines": {
+    "priority": ["bing", "google", "duckduckgo", "baidu"],
+    "fallback": true,
+    "max_retries": 3,
+    "timeout": 30
+  },
+  "proxy": {
+    "enabled": true,
+    "overseas": [],
+    "domestic": [],
+    "rotation": true
+  },
+  "anti_scraping": {
+    "enabled": true,
+    "delay_range": [1, 3],
+    "max_retries": 3,
+    "user_agent_rotation": true,
+    "fingerprint_spoofing": true
+  },
+  "evolution": {
+    "enabled": true,
+    "update_interval": 3600,
+    "min_samples": 10,
+    "learning_rate": 0.1,
+    "exploration_rate": 0.1
+  },
+  "data_extraction": {
+    "validation_threshold": 0.3,
+    "confidence_weight": 0.5,
+    "max_results": 50
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "logs/search_agent.log"
+  }
+}

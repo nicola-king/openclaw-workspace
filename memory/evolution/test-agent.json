@@ -1,0 +1,30 @@
+{
+  "agent": "test-agent",
+  "version": "1.0.0",
+  "last_updated": "2026-04-25T08:49:08.828190",
+  "metrics": {
+    "total_outputs": 2,
+    "quality_scores": [
+      85,
+      90
+    ],
+    "improvements_applied": 0,
+    "last_evolution": null
+  },
+  "feedback": [
+    {
+      "timestamp": "2026-04-25T08:49:08.827958",
+      "output_preview": "test output",
+      "user_response": "good",
+      "quality_score": 85,
+      "action": "pending"
+    },
+    {
+      "timestamp": "2026-04-25T08:49:08.828174",
+      "output_preview": "test output 2",
+      "user_response": "better",
+      "quality_score": 90,
+      "action": "pending"
+    }
+  ]
+}

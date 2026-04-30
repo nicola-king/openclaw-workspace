@@ -1,0 +1,81 @@
+{
+  "default_model": "bailian/qwen3.5-plus",
+  "local_priority": true,
+  "cost_limit_daily": 100.0,
+  
+  "proxy_config": {
+    "enabled": true,
+    "strategy": "smart_routing",
+    "avoid_regions": ["HK", "CN"],
+    "preferred_regions": ["JP", "US"],
+    "endpoints": {
+      "google": {
+        "primary": "http://jp-proxy.internal:7890",
+        "backup": "http://us-proxy.internal:7891",
+        "region": "JP"
+      },
+      "openai": {
+        "primary": "http://us-proxy.internal:7891",
+        "backup": "http://jp-proxy.internal:7890",
+        "region": "US"
+      },
+      "anthropic": {
+        "primary": "http://us-proxy.internal:7891",
+        "backup": "http://jp-proxy.internal:7890",
+        "region": "US"
+      },
+      "github": {
+        "primary": "http://jp-proxy.internal:7890",
+        "backup": "http://us-proxy.internal:7891",
+        "region": "JP"
+      }
+    },
+    "region_priority": [
+      {"region": "JP", "priority": 1, "latency_ms": 50},
+      {"region": "US", "priority": 2, "latency_ms": 120},
+      {"region": "SG", "priority": 3, "latency_ms": 80},
+      {"region": "HK", "priority": 99, "latency_ms": 30, "blocked": true},
+      {"region": "CN", "priority": 99, "latency_ms": 10, "blocked": true}
+    ],
+    "auto_failover": true,
+    "health_check_interval": 60,
+    "timeout_seconds": 30
+  },
+  
+  "strategies": {
+    "code": "qwen3-coder-plus",
+    "long_text": "gemini-2.5-pro",
+    "emotional": "qwen3.5-plus",
+    "simple": "local/qwen2.5:7b",
+    "default": "qwen3.5-plus"
+  },
+  
+  "overseas_ai_routing": {
+    "enabled": true,
+    "routing_rules": [
+      {
+        "provider": "google",
+        "models": ["gemini-*"],
+        "proxy_region": "JP",
+        "endpoint": "http://jp-proxy.internal:7890",
+        "reason": "日本节点延迟低，AI 访问无限制"
+      },
+      {
+        "provider": "openai",
+        "models": ["gpt-*"],
+        "proxy_region": "US",
+        "endpoint": "http://us-proxy.internal:7891",
+        "reason": "美国节点原生访问，无地域限制"
+      },
+      {
+        "provider": "anthropic",
+        "models": ["claude-*"],
+        "proxy_region": "US",
+        "endpoint": "http://us-proxy.internal:7891",
+        "reason": "美国节点原生访问，无地域限制"
+      }
+    ],
+    "blocked_regions": ["HK", "CN"],
+    "blocked_reason": "香港节点可能限制 AI 使用，大陆节点无法访问海外 AI"
+  }
+}

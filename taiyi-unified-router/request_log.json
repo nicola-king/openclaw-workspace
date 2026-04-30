@@ -1,0 +1,222 @@
+{
+  "requests": [
+    {
+      "query": "中国最新科技新闻",
+      "search_type": "domestic_search",
+      "confidence": 0.95,
+      "matched_keywords": [
+        "中国"
+      ],
+      "route": {
+        "search_engine": "bing_cn",
+        "endpoint": "https://cn.bing.com",
+        "proxy": false,
+        "traffic": "domestic",
+        "dns": "114.114.114.114",
+        "timeout": 10,
+        "token_cost": "low"
+      },
+      "token_optimization": {
+        "enabled": true,
+        "strategies": [
+          {
+            "name": "本地模型优先",
+            "enabled": true,
+            "token_saved": "100%"
+          },
+          {
+            "name": "国内流量优先",
+            "enabled": true,
+            "token_saved": "50%"
+          },
+          {
+            "name": "缓存机制",
+            "enabled": true,
+            "token_saved": "30%"
+          }
+        ]
+      },
+      "timestamp": "2026-04-16T14:30:35.774311"
+    },
+    {
+      "query": "国内旅游攻略",
+      "search_type": "domestic_search",
+      "confidence": 0.95,
+      "matched_keywords": [
+        "国内"
+      ],
+      "route": {
+        "search_engine": "bing_cn",
+        "endpoint": "https://cn.bing.com",
+        "proxy": false,
+        "traffic": "domestic",
+        "dns": "114.114.114.114",
+        "timeout": 10,
+        "token_cost": "low"
+      },
+      "token_optimization": {
+        "enabled": true,
+        "strategies": [
+          {
+            "name": "本地模型优先",
+            "enabled": true,
+            "token_saved": "100%"
+          },
+          {
+            "name": "国内流量优先",
+            "enabled": true,
+            "token_saved": "50%"
+          },
+          {
+            "name": "缓存机制",
+            "enabled": true,
+            "token_saved": "30%"
+          }
+        ]
+      },
+      "timestamp": "2026-04-16T14:30:35.774724"
+    },
+    {
+      "query": "US latest technology news",
+      "search_type": "international_search",
+      "confidence": 0.95,
+      "matched_keywords": [
+        "US"
+      ],
+      "route": {
+        "search_engine": "chromium",
+        "endpoint": "https://www.google.com",
+        "proxy": true,
+        "proxy_url": "http://127.0.0.1:7890",
+        "traffic": "proxy",
+        "dns": "8.8.8.8",
+        "timeout": 30,
+        "token_cost": "medium"
+      },
+      "token_optimization": {
+        "enabled": true,
+        "strategies": [
+          {
+            "name": "本地模型优先",
+            "enabled": true,
+            "token_saved": "100%"
+          },
+          {
+            "name": "缓存机制",
+            "enabled": true,
+            "token_saved": "30%"
+          }
+        ]
+      },
+      "timestamp": "2026-04-16T14:30:35.775121"
+    },
+    {
+      "query": "国外旅游景点",
+      "search_type": "international_search",
+      "confidence": 0.95,
+      "matched_keywords": [
+        "国外"
+      ],
+      "route": {
+        "search_engine": "chromium",
+        "endpoint": "https://www.google.com",
+        "proxy": true,
+        "proxy_url": "http://127.0.0.1:7890",
+        "traffic": "proxy",
+        "dns": "8.8.8.8",
+        "timeout": 30,
+        "token_cost": "medium"
+      },
+      "token_optimization": {
+        "enabled": true,
+        "strategies": [
+          {
+            "name": "本地模型优先",
+            "enabled": true,
+            "token_saved": "100%"
+          },
+          {
+            "name": "缓存机制",
+            "enabled": true,
+            "token_saved": "30%"
+          }
+        ]
+      },
+      "timestamp": "2026-04-16T14:30:35.775547"
+    },
+    {
+      "query": "默认搜索测试",
+      "search_type": "default",
+      "confidence": 1.0,
+      "matched_keywords": [],
+      "route": {
+        "search_engine": "bing_cn",
+        "endpoint": "https://cn.bing.com",
+        "proxy": false,
+        "traffic": "domestic",
+        "dns": "114.114.114.114",
+        "timeout": 10,
+        "token_cost": "low"
+      },
+      "token_optimization": {
+        "enabled": true,
+        "strategies": [
+          {
+            "name": "本地模型优先",
+            "enabled": true,
+            "token_saved": "100%"
+          },
+          {
+            "name": "国内流量优先",
+            "enabled": true,
+            "token_saved": "50%"
+          },
+          {
+            "name": "缓存机制",
+            "enabled": true,
+            "token_saved": "30%"
+          }
+        ]
+      },
+      "timestamp": "2026-04-16T14:30:35.775989"
+    },
+    {
+      "query": "国内国外对比分析",
+      "search_type": "default",
+      "confidence": 0.5,
+      "matched_keywords": [
+        "国内国外对比"
+      ],
+      "route": {
+        "search_engine": "bing_cn",
+        "endpoint": "https://cn.bing.com",
+        "proxy": false,
+        "traffic": "domestic",
+        "dns": "114.114.114.114",
+        "timeout": 10,
+        "token_cost": "low"
+      },
+      "token_optimization": {
+        "enabled": true,
+        "strategies": [
+          {
+            "name": "本地模型优先",
+            "enabled": true,
+            "token_saved": "100%"
+          },
+          {
+            "name": "国内流量优先",
+            "enabled": true,
+            "token_saved": "50%"
+          },
+          {
+            "name": "缓存机制",
+            "enabled": true,
+            "token_saved": "30%"
+          }
+        ]
+      },
+      "timestamp": "2026-04-16T14:30:35.776472"
+    }
+  ]
+}

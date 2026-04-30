@@ -1,0 +1,346 @@
+{
+  "manufacturers": [],
+  "tracking_data": [
+    {
+      "id": "TRACK_20260420_214034",
+      "manufacturer": {
+        "rank": 1,
+        "name": "中集集团 (CIMC)",
+        "location": "深圳",
+        "specialty": "集装箱房屋"
+      },
+      "timestamp": "2026-04-20T21:40:34.167492",
+      "channels": {
+        "official_website": {
+          "url": "www.中集集团.com",
+          "update_frequency": "weekly",
+          "new_products": 0,
+          "price_changes": []
+        },
+        "ecommerce": {
+          "platforms": [
+            "阿里巴巴",
+            "京东",
+            "天猫",
+            "拼多多"
+          ],
+          "total_listings": 0,
+          "avg_price": 0,
+          "sales_volume": 0
+        },
+        "social_media": {
+          "platforms": [
+            "微信",
+            "微博",
+            "抖音"
+          ],
+          "mentions": 0,
+          "sentiment": "neutral"
+        }
+      },
+      "keywords": [
+        {
+          "keyword": "钢结构折叠房屋",
+          "volume": 50000,
+          "trend": "rising"
+        },
+        {
+          "keyword": "集装箱房屋",
+          "volume": 30000,
+          "trend": "stable"
+        },
+        {
+          "keyword": "装配式建筑",
+          "volume": 40000,
+          "trend": "rising"
+        },
+        {
+          "keyword": "轻钢别墅",
+          "volume": 25000,
+          "trend": "rising"
+        },
+        {
+          "keyword": "折叠房",
+          "volume": 15000,
+          "trend": "stable"
+        }
+      ],
+      "sales_data": {
+        "monthly_sales": 0,
+        "quarterly_sales": 0,
+        "yearly_sales": 0,
+        "growth_rate": 0,
+        "market_share": 0
+      },
+      "status": "completed"
+    },
+    {
+      "id": "TRACK_20260420_214034",
+      "manufacturer": {
+        "rank": 2,
+        "name": "远大住工",
+        "location": "长沙",
+        "specialty": "装配式建筑"
+      },
+      "timestamp": "2026-04-20T21:40:34.167911",
+      "channels": {
+        "official_website": {
+          "url": "www.远大住工.com",
+          "update_frequency": "weekly",
+          "new_products": 0,
+          "price_changes": []
+        },
+        "ecommerce": {
+          "platforms": [
+            "阿里巴巴",
+            "京东",
+            "天猫",
+            "拼多多"
+          ],
+          "total_listings": 0,
+          "avg_price": 0,
+          "sales_volume": 0
+        },
+        "social_media": {
+          "platforms": [
+            "微信",
+            "微博",
+            "抖音"
+          ],
+          "mentions": 0,
+          "sentiment": "neutral"
+        }
+      },
+      "keywords": [
+        {
+          "keyword": "钢结构折叠房屋",
+          "volume": 50000,
+          "trend": "rising"
+        },
+        {
+          "keyword": "集装箱房屋",
+          "volume": 30000,
+          "trend": "stable"
+        },
+        {
+          "keyword": "装配式建筑",
+          "volume": 40000,
+          "trend": "rising"
+        },
+        {
+          "keyword": "轻钢别墅",
+          "volume": 25000,
+          "trend": "rising"
+        },
+        {
+          "keyword": "折叠房",
+          "volume": 15000,
+          "trend": "stable"
+        }
+      ],
+      "sales_data": {
+        "monthly_sales": 0,
+        "quarterly_sales": 0,
+        "yearly_sales": 0,
+        "growth_rate": 0,
+        "market_share": 0
+      },
+      "status": "completed"
+    },
+    {
+      "id": "TRACK_20260420_214034",
+      "manufacturer": {
+        "rank": 3,
+        "name": "杭萧钢构",
+        "location": "杭州",
+        "specialty": "钢结构"
+      },
+      "timestamp": "2026-04-20T21:40:34.168421",
+      "channels": {
+        "official_website": {
+          "url": "www.杭萧钢构.com",
+          "update_frequency": "weekly",
+          "new_products": 0,
+          "price_changes": []
+        },
+        "ecommerce": {
+          "platforms": [
+            "阿里巴巴",
+            "京东",
+            "天猫",
+            "拼多多"
+          ],
+          "total_listings": 0,
+          "avg_price": 0,
+          "sales_volume": 0
+        },
+        "social_media": {
+          "platforms": [
+            "微信",
+            "微博",
+            "抖音"
+          ],
+          "mentions": 0,
+          "sentiment": "neutral"
+        }
+      },
+      "keywords": [
+        {
+          "keyword": "钢结构折叠房屋",
+          "volume": 50000,
+          "trend": "rising"
+        },
+        {
+          "keyword": "集装箱房屋",
+          "volume": 30000,
+          "trend": "stable"
+        },
+        {
+          "keyword": "装配式建筑",
+          "volume": 40000,
+          "trend": "rising"
+        },
+        {
+          "keyword": "轻钢别墅",
+          "volume": 25000,
+          "trend": "rising"
+        },
+        {
+          "keyword": "折叠房",
+          "volume": 15000,
+          "trend": "stable"
+        }
+      ],
+      "sales_data": {
+        "monthly_sales": 0,
+        "quarterly_sales": 0,
+        "yearly_sales": 0,
+        "growth_rate": 0,
+        "market_share": 0
+      },
+      "status": "completed"
+    }
+  ],
+  "analysis_reports": [
+    {
+      "id": "ANALYSIS_20260420_214034",
+      "timestamp": "2026-04-20T21:40:34.169020",
+      "product_category": "钢结构折叠房屋",
+      "dimensions": {
+        "market_demand": {
+          "current_demand": "high",
+          "trend": "rising",
+          "growth_rate": "+15.3%",
+          "peak_season": [
+            "3-5 月",
+            "9-11 月"
+          ],
+          "ai_prediction": "未来 3 个月需求持续增长"
+        },
+        "regional_distribution": {
+          "top_regions": [
+            {
+              "region": "华东",
+              "share": "35%",
+              "growth": "+12%"
+            },
+            {
+              "region": "华南",
+              "share": "28%",
+              "growth": "+18%"
+            },
+            {
+              "region": "华北",
+              "share": "20%",
+              "growth": "+8%"
+            },
+            {
+              "region": "西南",
+              "share": "10%",
+              "growth": "+25%"
+            },
+            {
+              "region": "其他",
+              "share": "7%",
+              "growth": "+5%"
+            }
+          ],
+          "emerging_markets": [
+            "东南亚",
+            "非洲",
+            "中东"
+          ],
+          "ai_insight": "西南地区增长最快，海外市场潜力大"
+        },
+        "price_trend": {
+          "avg_price_range": "¥50,000-¥200,000",
+          "trend": "stable",
+          "change_rate": "+2.1%",
+          "price_segments": [
+            {
+              "segment": "低端",
+              "range": "¥50,000-¥80,000",
+              "share": "30%"
+            },
+            {
+              "segment": "中端",
+              "range": "¥80,000-¥150,000",
+              "share": "50%"
+            },
+            {
+              "segment": "高端",
+              "range": "¥150,000+",
+              "share": "20%"
+            }
+          ],
+          "ai_insight": "中端产品占主导，价格稳定"
+        },
+        "product_innovation": {
+          "trending_features": [
+            "智能化控制",
+            "太阳能集成",
+            "快速折叠设计",
+            "环保材料",
+            "模块化扩展"
+          ],
+          "patent_count": 156,
+          "ai_insight": "智能化和环保是主要创新方向"
+        }
+      },
+      "ai_insights": [
+        "市场需求持续增长，年增长率 15%+",
+        "华东华南为主要市场，西南增长最快",
+        "中端产品占 50% 市场份额",
+        "智能化、环保是产品创新主流",
+        "海外市场 (东南亚/非洲/中东) 潜力巨大"
+      ],
+      "recommendations": [
+        {
+          "priority": "P0",
+          "category": "市场拓展",
+          "action": "重点开发西南地区和海外市场",
+          "expected_impact": "高"
+        },
+        {
+          "priority": "P1",
+          "category": "产品策略",
+          "action": "聚焦中端产品，增加智能化功能",
+          "expected_impact": "中高"
+        },
+        {
+          "priority": "P1",
+          "category": "价格策略",
+          "action": "保持价格稳定，推出差异化产品",
+          "expected_impact": "中"
+        },
+        {
+          "priority": "P2",
+          "category": "技术创新",
+          "action": "加大智能化和环保材料研发投入",
+          "expected_impact": "高"
+        }
+      ]
+    }
+  ],
+  "alerts": []
+}

@@ -1,0 +1,37 @@
+{
+  "timestamp": "2026-04-03T22:10:35+08:00",
+  "check_type": "scheduled_30min",
+  "status": "healthy",
+  
+  "gateway": {
+    "status": "running",
+    "pid": 77834,
+    "port": 18789,
+    "bind": "127.0.0.1",
+    "cpu": "4.0%",
+    "memory": "529M",
+    "rpc_probe": "ok"
+  },
+  
+  "channels": {
+    "telegram": { "status": "ok" },
+    "feishu": { "status": "ok" },
+    "openclaw-weixin": { "status": "enabled" }
+  },
+  
+  "system": {
+    "disk_usage": "19% (48G/274G)",
+    "os": "linux 6.17.0-20-generic",
+    "node": "22.22.2"
+  },
+  
+  "self_heal_actions": [
+    { "action": "gateway_probe", "result": "ok" },
+    { "action": "process_check", "result": "pid 77834 active" },
+    { "action": "disk_check", "result": "19% used, healthy" }
+  ],
+  
+  "notes": "Gateway restarted (pid 75811 → 77834)",
+  "next_check": "2026-04-03T22:40:35+08:00",
+  "report_saved": "memory/self-heal-report-20260403-2210.json"
+}

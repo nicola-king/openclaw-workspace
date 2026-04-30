@@ -1,0 +1,86 @@
+{
+  "type": "Trip Plan",
+  "origin": "北京",
+  "destination": "东京",
+  "dates": {
+    "start": "2026-05-01",
+    "end": "2026-05-07"
+  },
+  "travelers": 2,
+  "budget": {
+    "total": 15000,
+    "allocation": {
+      "flights": 3000,
+      "accommodation": 4800,
+      "meals": 3600,
+      "activities": 2400,
+      "shopping": 1200
+    }
+  },
+  "flights": {
+    "type": "Lowest Fare Finder",
+    "origin": "北京",
+    "destination": "东京",
+    "flights": [
+      {
+        "airline": "东方航空",
+        "price": 980,
+        "duration": "2h30m"
+      },
+      {
+        "airline": "南方航空",
+        "price": 1050,
+        "duration": "2h45m"
+      },
+      {
+        "airline": "廉价航空",
+        "price": 750,
+        "duration": "3h00m"
+      }
+    ],
+    "timestamp": "2026-04-14T16:44:01.288573"
+  },
+  "weather": {
+    "success": false,
+    "error": "API Key 未配置"
+  },
+  "exchange_rates": {
+    "success": false,
+    "error": "API Key 未配置"
+  },
+  "checklist": {
+    "essentials": [
+      "护照/身份证",
+      "钱包/信用卡",
+      "手机/充电器",
+      "常用药品",
+      "口罩/消毒液"
+    ],
+    "clothing": [
+      "换洗衣物",
+      "睡衣",
+      "外套",
+      "舒适鞋子",
+      "泳衣 (如需)"
+    ],
+    "electronics": [
+      "充电宝",
+      "转换插头",
+      "相机",
+      "耳机"
+    ],
+    "documents": [
+      "机票确认单",
+      "酒店预订单",
+      "旅行保险",
+      "紧急联系人"
+    ],
+    "optional": [
+      "防晒霜",
+      "墨镜",
+      "帽子",
+      "旅行枕"
+    ]
+  },
+  "timestamp": "2026-04-14T16:44:01.288585"
+}

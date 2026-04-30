@@ -1,0 +1,37 @@
+{
+  "social_signals": {
+    "enabled": true,
+    "description": "lanaaielsa AI 辅助交易系统 - 社交信号配置",
+    
+    "crawl_config": {
+      "interval_minutes": 60,
+      "sources": ["binance_square", "twitter"],
+      "min_post_count": 100,
+      "min_likes": 400,
+      "min_views": 100000
+    },
+    
+    "trading_config": {
+      "initial_position_usdt": 100,
+      "max_position_usdt": 1000,
+      "stop_loss_type": "fixed_usdt",
+      "stop_loss_amount": 200,
+      "min_price_change_24h": 5.0,
+      "max_trades_per_day": 10
+    },
+    
+    "risk_management": {
+      "only_bull_market": true,
+      "main_coins_only": true,
+      "manual_review_required": false,
+      "max_daily_loss_usdt": 500
+    },
+    
+    "notification": {
+      "telegram_enabled": true,
+      "notify_on_signal": true,
+      "notify_on_executed": true,
+      "notify_on_stop_loss": true
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "destination": "东京",
+  "distilled_at": "2026-04-14T17:26:07.931320",
+  "fusion": {
+    "popular_spots": [
+      {
+        "name": "东京塔",
+        "source": "domestic+international",
+        "rating": 4.9235450242917285
+      },
+      {
+        "name": "浅草寺",
+        "source": "domestic+international",
+        "rating": 4.0790302770292755
+      },
+      {
+        "name": "涩谷",
+        "source": "domestic+international",
+        "rating": 4.71318585855085
+      },
+      {
+        "name": "新宿",
+        "source": "domestic+international",
+        "rating": 4.501476769423148
+      },
+      {
+        "name": "秋叶原",
+        "source": "domestic+international",
+        "rating": 4.466205446840085
+      }
+    ],
+    "budget_analysis": {
+      "domestic": {
+        "经济": "¥4391/人",
+        "舒适": "¥5011/人",
+        "豪华": "¥11168/人"
+      },
+      "international": {
+        "hotels": {
+          "low": 370,
+          "high": 1478
+        },
+        "food": {
+          "low": 62,
+          "high": 290
+        },
+        "transport": {
+          "low": 86,
+          "high": 311
+        }
+      },
+      "fused": {
+        "recommended": "¥8860/人"
+      }
+    },
+    "best_time": {
+      "best_season": "3-5 月 (樱花) / 10-11 月 (红叶)",
+      "reviews_summary": 4
+    },
+    "tips": [
+      "避免夜间单独出行",
+      "使用当地交通卡更优惠",
+      "避开旺季可节省 30%+ 费用",
+      "记住紧急联系方式",
+      "提前 3 个月预订机票最便宜",
+      "购买旅游保险很重要",
+      "保管好贵重物品"
+    ]
+  },
+  "confidence_score": 0.8700097490086974
+}

@@ -1,0 +1,13 @@
+{
+  "date": "2026-04-06",
+  "models": {
+    "local": {
+      "calls": 1,
+      "tokens": 500,
+      "cost": 0.0
+    }
+  },
+  "total_cost": 0.0,
+  "total_tasks": 1,
+  "total_tokens": 500
+}

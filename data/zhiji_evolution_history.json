@@ -1,0 +1,547 @@
+{
+  "generation": 56,
+  "trade_history": [
+    {
+      "timestamp": "2026-04-22T15:03:52.097366",
+      "symbol": "BTCUSDT",
+      "side": "BUY",
+      "quantity": 0.00016,
+      "price": 0.0,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "strategy": "trend_following",
+      "success": true,
+      "lessons": []
+    },
+    {
+      "timestamp": "2026-04-22T15:54:28.105922",
+      "symbol": "ETHUSDT",
+      "side": "BUY",
+      "quantity": 0.0029,
+      "price": 0.0,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "strategy": "market_making",
+      "success": true,
+      "lessons": []
+    },
+    {
+      "timestamp": "2026-04-22T15:54:30.842066",
+      "symbol": "SOLUSDT",
+      "side": "BUY",
+      "quantity": 0.07,
+      "price": 0.0,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "strategy": "market_making",
+      "success": true,
+      "lessons": []
+    },
+    {
+      "timestamp": "2026-04-22T15:54:31.717609",
+      "symbol": "BNBUSDT",
+      "side": "BUY",
+      "quantity": 0.009,
+      "price": 0.0,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "strategy": "market_making",
+      "success": true,
+      "lessons": []
+    },
+    {
+      "timestamp": "2026-04-22T15:59:33.308861",
+      "symbol": "ETHUSDT",
+      "side": "BUY",
+      "quantity": 0.0021,
+      "price": 0.0,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "strategy": "arbitrage",
+      "success": true,
+      "lessons": []
+    },
+    {
+      "timestamp": "2026-04-22T16:19:46.743840",
+      "symbol": "BTCUSDT",
+      "side": "SELL",
+      "quantity": 0.00012,
+      "price": 0.0,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "strategy": "trend_following",
+      "success": true,
+      "lessons": []
+    },
+    {
+      "timestamp": "2026-04-22T16:19:47.421934",
+      "symbol": "ETHUSDT",
+      "side": "BUY",
+      "quantity": 0.0034,
+      "price": 0.0,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "strategy": "trend_following",
+      "success": true,
+      "lessons": []
+    },
+    {
+      "timestamp": "2026-04-22T16:19:49.004605",
+      "symbol": "BNBUSDT",
+      "side": "BUY",
+      "quantity": 0.011,
+      "price": 0.0,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "strategy": "trend_following",
+      "success": true,
+      "lessons": []
+    },
+    {
+      "timestamp": "2026-04-22T17:25:40.633868",
+      "symbol": "ETHUSDT",
+      "side": "BUY",
+      "quantity": 0.0024,
+      "price": 0.0,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "strategy": "trend_following",
+      "success": true,
+      "lessons": []
+    },
+    {
+      "timestamp": "2026-04-22T17:25:41.207827",
+      "symbol": "SOLUSDT",
+      "side": "BUY",
+      "quantity": 0.06,
+      "price": 0.0,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "strategy": "trend_following",
+      "success": true,
+      "lessons": []
+    },
+    {
+      "timestamp": "2026-04-22T17:30:42.369096",
+      "symbol": "BTCUSDT",
+      "side": "SELL",
+      "quantity": 0.00014,
+      "price": 0.0,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "strategy": "grid_trading",
+      "success": true,
+      "lessons": []
+    },
+    {
+      "timestamp": "2026-04-22T23:51:37.652382",
+      "symbol": "SOLUSDT",
+      "side": "BUY",
+      "quantity": 0.13,
+      "price": 0.0,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "strategy": "grid_trading",
+      "success": true,
+      "lessons": []
+    },
+    {
+      "timestamp": "2026-04-23T00:01:43.731245",
+      "symbol": "ETHUSDT",
+      "side": "BUY",
+      "quantity": 0.0028,
+      "price": 0.0,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "strategy": "market_making",
+      "success": true,
+      "lessons": []
+    },
+    {
+      "timestamp": "2026-04-23T00:01:44.772689",
+      "symbol": "SOLUSDT",
+      "side": "BUY",
+      "quantity": 0.06,
+      "price": 0.0,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "strategy": "market_making",
+      "success": true,
+      "lessons": []
+    },
+    {
+      "timestamp": "2026-04-23T00:52:30.825535",
+      "symbol": "ETHUSDT",
+      "side": "BUY",
+      "quantity": 0.0022,
+      "price": 0.0,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "strategy": "trend_following",
+      "success": true,
+      "lessons": []
+    },
+    {
+      "timestamp": "2026-04-23T09:37:58.338605",
+      "symbol": "BTCUSDT",
+      "side": "SELL",
+      "quantity": 7e-05,
+      "price": 0.0,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "strategy": "grid_trading",
+      "success": true,
+      "lessons": []
+    },
+    {
+      "timestamp": "2026-04-23T10:18:18.546016",
+      "symbol": "ETHUSDT",
+      "side": "BUY",
+      "quantity": 0.0023,
+      "price": 0.0,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "strategy": "trend_following",
+      "success": true,
+      "lessons": []
+    }
+  ],
+  "strategy_weights": {
+    "arbitrage": 0.4,
+    "market_making": 0.2,
+    "grid_trading": 0.2,
+    "trend_following": 0.2
+  },
+  "knowledge_base": {
+    "success_patterns": [],
+    "failure_patterns": [
+      {
+        "strategy": "trend_following",
+        "side": "BUY",
+        "loss_pct": 0.0,
+        "reason": "market_reversal"
+      },
+      {
+        "strategy": "market_making",
+        "side": "BUY",
+        "loss_pct": 0.0,
+        "reason": "market_reversal"
+      },
+      {
+        "strategy": "market_making",
+        "side": "BUY",
+        "loss_pct": 0.0,
+        "reason": "market_reversal"
+      },
+      {
+        "strategy": "market_making",
+        "side": "BUY",
+        "loss_pct": 0.0,
+        "reason": "market_reversal"
+      },
+      {
+        "strategy": "arbitrage",
+        "side": "BUY",
+        "loss_pct": 0.0,
+        "reason": "market_reversal"
+      },
+      {
+        "strategy": "trend_following",
+        "side": "SELL",
+        "loss_pct": 0.0,
+        "reason": "market_reversal"
+      },
+      {
+        "strategy": "trend_following",
+        "side": "BUY",
+        "loss_pct": 0.0,
+        "reason": "market_reversal"
+      },
+      {
+        "strategy": "trend_following",
+        "side": "BUY",
+        "loss_pct": 0.0,
+        "reason": "market_reversal"
+      },
+      {
+        "strategy": "trend_following",
+        "side": "BUY",
+        "loss_pct": 0.0,
+        "reason": "market_reversal"
+      },
+      {
+        "strategy": "trend_following",
+        "side": "BUY",
+        "loss_pct": 0.0,
+        "reason": "market_reversal"
+      },
+      {
+        "strategy": "grid_trading",
+        "side": "SELL",
+        "loss_pct": 0.0,
+        "reason": "market_reversal"
+      },
+      {
+        "strategy": "grid_trading",
+        "side": "BUY",
+        "loss_pct": 0.0,
+        "reason": "market_reversal"
+      },
+      {
+        "strategy": "market_making",
+        "side": "BUY",
+        "loss_pct": 0.0,
+        "reason": "market_reversal"
+      },
+      {
+        "strategy": "market_making",
+        "side": "BUY",
+        "loss_pct": 0.0,
+        "reason": "market_reversal"
+      },
+      {
+        "strategy": "trend_following",
+        "side": "BUY",
+        "loss_pct": 0.0,
+        "reason": "market_reversal"
+      },
+      {
+        "strategy": "grid_trading",
+        "side": "SELL",
+        "loss_pct": 0.0,
+        "reason": "market_reversal"
+      },
+      {
+        "strategy": "trend_following",
+        "side": "BUY",
+        "loss_pct": 0.0,
+        "reason": "market_reversal"
+      }
+    ],
+    "market_conditions": [],
+    "optimal_parameters": {}
+  },
+  "evolution_metrics": [
+    {
+      "generation": 36,
+      "total_trades": 17,
+      "win_rate": 0.0,
+      "avg_profit": 0.0,
+      "avg_loss": 0.0,
+      "best_strategy": "N/A",
+      "worst_strategy": "trend_following",
+      "evolution_score": 0.0,
+      "timestamp": "2026-04-23T23:40:08.722980"
+    },
+    {
+      "generation": 37,
+      "total_trades": 17,
+      "win_rate": 0.0,
+      "avg_profit": 0.0,
+      "avg_loss": 0.0,
+      "best_strategy": "N/A",
+      "worst_strategy": "trend_following",
+      "evolution_score": 0.0,
+      "timestamp": "2026-04-24T00:40:08.828276"
+    },
+    {
+      "generation": 38,
+      "total_trades": 17,
+      "win_rate": 0.0,
+      "avg_profit": 0.0,
+      "avg_loss": 0.0,
+      "best_strategy": "N/A",
+      "worst_strategy": "trend_following",
+      "evolution_score": 0.0,
+      "timestamp": "2026-04-24T01:40:08.905543"
+    },
+    {
+      "generation": 39,
+      "total_trades": 17,
+      "win_rate": 0.0,
+      "avg_profit": 0.0,
+      "avg_loss": 0.0,
+      "best_strategy": "N/A",
+      "worst_strategy": "trend_following",
+      "evolution_score": 0.0,
+      "timestamp": "2026-04-24T02:40:09.004744"
+    },
+    {
+      "generation": 40,
+      "total_trades": 17,
+      "win_rate": 0.0,
+      "avg_profit": 0.0,
+      "avg_loss": 0.0,
+      "best_strategy": "N/A",
+      "worst_strategy": "trend_following",
+      "evolution_score": 0.0,
+      "timestamp": "2026-04-24T03:40:09.111272"
+    },
+    {
+      "generation": 41,
+      "total_trades": 17,
+      "win_rate": 0.0,
+      "avg_profit": 0.0,
+      "avg_loss": 0.0,
+      "best_strategy": "N/A",
+      "worst_strategy": "trend_following",
+      "evolution_score": 0.0,
+      "timestamp": "2026-04-24T04:40:09.182766"
+    },
+    {
+      "generation": 42,
+      "total_trades": 17,
+      "win_rate": 0.0,
+      "avg_profit": 0.0,
+      "avg_loss": 0.0,
+      "best_strategy": "N/A",
+      "worst_strategy": "trend_following",
+      "evolution_score": 0.0,
+      "timestamp": "2026-04-24T05:40:09.215655"
+    },
+    {
+      "generation": 43,
+      "total_trades": 17,
+      "win_rate": 0.0,
+      "avg_profit": 0.0,
+      "avg_loss": 0.0,
+      "best_strategy": "N/A",
+      "worst_strategy": "trend_following",
+      "evolution_score": 0.0,
+      "timestamp": "2026-04-24T06:40:09.238181"
+    },
+    {
+      "generation": 44,
+      "total_trades": 17,
+      "win_rate": 0.0,
+      "avg_profit": 0.0,
+      "avg_loss": 0.0,
+      "best_strategy": "N/A",
+      "worst_strategy": "trend_following",
+      "evolution_score": 0.0,
+      "timestamp": "2026-04-24T07:40:10.148103"
+    },
+    {
+      "generation": 45,
+      "total_trades": 17,
+      "win_rate": 0.0,
+      "avg_profit": 0.0,
+      "avg_loss": 0.0,
+      "best_strategy": "N/A",
+      "worst_strategy": "trend_following",
+      "evolution_score": 0.0,
+      "timestamp": "2026-04-24T08:40:10.254183"
+    },
+    {
+      "generation": 46,
+      "total_trades": 17,
+      "win_rate": 0.0,
+      "avg_profit": 0.0,
+      "avg_loss": 0.0,
+      "best_strategy": "N/A",
+      "worst_strategy": "trend_following",
+      "evolution_score": 0.0,
+      "timestamp": "2026-04-24T09:40:10.355272"
+    },
+    {
+      "generation": 47,
+      "total_trades": 17,
+      "win_rate": 0.0,
+      "avg_profit": 0.0,
+      "avg_loss": 0.0,
+      "best_strategy": "N/A",
+      "worst_strategy": "trend_following",
+      "evolution_score": 0.0,
+      "timestamp": "2026-04-24T10:40:10.457184"
+    },
+    {
+      "generation": 48,
+      "total_trades": 17,
+      "win_rate": 0.0,
+      "avg_profit": 0.0,
+      "avg_loss": 0.0,
+      "best_strategy": "N/A",
+      "worst_strategy": "trend_following",
+      "evolution_score": 0.0,
+      "timestamp": "2026-04-24T11:40:10.559488"
+    },
+    {
+      "generation": 49,
+      "total_trades": 17,
+      "win_rate": 0.0,
+      "avg_profit": 0.0,
+      "avg_loss": 0.0,
+      "best_strategy": "N/A",
+      "worst_strategy": "trend_following",
+      "evolution_score": 0.0,
+      "timestamp": "2026-04-24T12:40:10.661151"
+    },
+    {
+      "generation": 50,
+      "total_trades": 17,
+      "win_rate": 0.0,
+      "avg_profit": 0.0,
+      "avg_loss": 0.0,
+      "best_strategy": "N/A",
+      "worst_strategy": "trend_following",
+      "evolution_score": 0.0,
+      "timestamp": "2026-04-24T13:40:10.763200"
+    },
+    {
+      "generation": 51,
+      "total_trades": 17,
+      "win_rate": 0.0,
+      "avg_profit": 0.0,
+      "avg_loss": 0.0,
+      "best_strategy": "N/A",
+      "worst_strategy": "trend_following",
+      "evolution_score": 0.0,
+      "timestamp": "2026-04-24T14:40:10.770973"
+    },
+    {
+      "generation": 52,
+      "total_trades": 17,
+      "win_rate": 0.0,
+      "avg_profit": 0.0,
+      "avg_loss": 0.0,
+      "best_strategy": "N/A",
+      "worst_strategy": "trend_following",
+      "evolution_score": 0.0,
+      "timestamp": "2026-04-24T15:40:10.872193"
+    },
+    {
+      "generation": 53,
+      "total_trades": 17,
+      "win_rate": 0.0,
+      "avg_profit": 0.0,
+      "avg_loss": 0.0,
+      "best_strategy": "N/A",
+      "worst_strategy": "trend_following",
+      "evolution_score": 0.0,
+      "timestamp": "2026-04-24T16:40:10.950978"
+    },
+    {
+      "generation": 54,
+      "total_trades": 17,
+      "win_rate": 0.0,
+      "avg_profit": 0.0,
+      "avg_loss": 0.0,
+      "best_strategy": "N/A",
+      "worst_strategy": "trend_following",
+      "evolution_score": 0.0,
+      "timestamp": "2026-04-24T17:40:11.029180"
+    },
+    {
+      "generation": 55,
+      "total_trades": 17,
+      "win_rate": 0.0,
+      "avg_profit": 0.0,
+      "avg_loss": 0.0,
+      "best_strategy": "N/A",
+      "worst_strategy": "trend_following",
+      "evolution_score": 0.0,
+      "timestamp": "2026-04-24T18:40:11.088129"
+    }
+  ],
+  "last_updated": "2026-04-24T19:19:37.754933"
+}

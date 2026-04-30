@@ -1,0 +1,9 @@
+# QQ 邮箱 SMTP 配置
+
+email:
+  sender_email: "285915125@qq.com"
+  sender_password: "hhsbmsyplarpbjdg"
+  receiver_email: "285915125@qq.com"
+  smtp_server: "smtp.qq.com"
+  smtp_port: 465
+  send_time: "20:00"

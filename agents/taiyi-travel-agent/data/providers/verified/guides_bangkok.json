@@ -1,0 +1,48 @@
+[
+  {
+    "id": "guide_bangkok_20260424_001",
+    "type": "guide",
+    "name": "素拉差",
+    "name_en": "Surachai Wongchai",
+    "languages": ["中文 (流利)", "泰文 (母语)", "英文 (商务)"],
+    "experience_years": 12,
+    "specialties": ["历史文化", "寺庙", "美食", "水上市场"],
+    "rating": 4.9,
+    "review_count": 890,
+    "price_per_day": "฿4,000-7,000",
+    "phone": "+66-81-234-5678",
+    "email": "surachai.bangkok.tour@gmail.com",
+    "wechat": "bangkok_guide_surachai",
+    "license": "泰国旅游局 第 2026-12345 号",
+    "verified_sources": [
+      {"source": "TripAdvisor", "verified_at": "2026-04-24", "score": 98},
+      {"source": "Klook", "verified_at": "2026-04-24", "score": 95},
+      {"source": "马蜂窝", "verified_at": "2026-04-24", "score": 92}
+    ],
+    "trust_score": 95,
+    "last_updated": "2026-04-24T21:00:00+08:00"
+  },
+  {
+    "id": "guide_bangkok_20260424_002",
+    "type": "guide",
+    "name": "婉娜",
+    "name_en": "Wanvisa Srisuwan",
+    "languages": ["中文 (商务)", "泰文 (母语)", "英文 (日常)"],
+    "experience_years": 7,
+    "specialties": ["购物", "SPA", "夜市", "泰式烹饪"],
+    "rating": 4.8,
+    "review_count": 567,
+    "price_per_day": "฿3,500-6,000",
+    "phone": "+66-89-9876-5432",
+    "email": "wanvisa.bangkok.tour@gmail.com",
+    "wechat": "wanvisa_bangkok",
+    "license": "泰国旅游局 第 2026-67890 号",
+    "verified_sources": [
+      {"source": "TripAdvisor", "verified_at": "2026-04-24", "score": 96},
+      {"source": "Klook", "verified_at": "2026-04-24", "score": 93},
+      {"source": "小红书", "verified_at": "2026-04-24", "score": 90}
+    ],
+    "trust_score": 93,
+    "last_updated": "2026-04-24T21:00:00+08:00"
+  }
+]

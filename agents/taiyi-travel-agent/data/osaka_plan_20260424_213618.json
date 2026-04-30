@@ -1,0 +1,195 @@
+{
+  "type": "Osaka Travel Plan",
+  "origin": "北京",
+  "destination": "大阪",
+  "start_date": "2026-05-01",
+  "end_date": "2026-05-07",
+  "days": 7,
+  "travelers": 2,
+  "mode": "跨国游",
+  "budget": 12000,
+  "budget_per_person": 6000.0,
+  "budget_allocation": {
+    "航班": 3600.0,
+    "住宿": 3000.0,
+    "餐饮": 2400.0,
+    "活动": 1800.0,
+    "购物": 1200.0
+  },
+  "preferences": [
+    "文化",
+    "美食",
+    "购物"
+  ],
+  "daily_itinerary": [
+    {
+      "day": 1,
+      "date": "2026-05-01",
+      "attractions": [
+        {
+          "name": "大阪城",
+          "duration": "2h",
+          "cost": 600
+        },
+        {
+          "name": "法善寺",
+          "duration": "1h",
+          "cost": 0
+        },
+        {
+          "name": "道顿堀",
+          "duration": "3h",
+          "cost": 2000
+        }
+      ],
+      "meal_breakfast": "酒店早餐/大阪烧",
+      "meal_lunch": "章鱼烧",
+      "meal_dinner": "串炸/居酒屋"
+    },
+    {
+      "day": 2,
+      "date": "2026-05-02",
+      "attractions": [
+        {
+          "name": "大阪城",
+          "duration": "2h",
+          "cost": 600
+        },
+        {
+          "name": "法善寺",
+          "duration": "1h",
+          "cost": 0
+        },
+        {
+          "name": "道顿堀",
+          "duration": "3h",
+          "cost": 2000
+        }
+      ],
+      "meal_breakfast": "酒店早餐/大阪烧",
+      "meal_lunch": "章鱼烧",
+      "meal_dinner": "串炸/居酒屋"
+    },
+    {
+      "day": 3,
+      "date": "2026-05-03",
+      "attractions": [
+        {
+          "name": "大阪城",
+          "duration": "2h",
+          "cost": 600
+        },
+        {
+          "name": "法善寺",
+          "duration": "1h",
+          "cost": 0
+        },
+        {
+          "name": "道顿堀",
+          "duration": "3h",
+          "cost": 2000
+        }
+      ],
+      "meal_breakfast": "酒店早餐/大阪烧",
+      "meal_lunch": "章鱼烧",
+      "meal_dinner": "串炸/居酒屋"
+    },
+    {
+      "day": 4,
+      "date": "2026-05-04",
+      "attractions": [
+        {
+          "name": "大阪城",
+          "duration": "2h",
+          "cost": 600
+        },
+        {
+          "name": "法善寺",
+          "duration": "1h",
+          "cost": 0
+        },
+        {
+          "name": "道顿堀",
+          "duration": "3h",
+          "cost": 2000
+        }
+      ],
+      "meal_breakfast": "酒店早餐/大阪烧",
+      "meal_lunch": "章鱼烧",
+      "meal_dinner": "串炸/居酒屋"
+    },
+    {
+      "day": 5,
+      "date": "2026-05-05",
+      "attractions": [
+        {
+          "name": "大阪城",
+          "duration": "2h",
+          "cost": 600
+        },
+        {
+          "name": "法善寺",
+          "duration": "1h",
+          "cost": 0
+        },
+        {
+          "name": "道顿堀",
+          "duration": "3h",
+          "cost": 2000
+        }
+      ],
+      "meal_breakfast": "酒店早餐/大阪烧",
+      "meal_lunch": "章鱼烧",
+      "meal_dinner": "串炸/居酒屋"
+    },
+    {
+      "day": 6,
+      "date": "2026-05-06",
+      "attractions": [
+        {
+          "name": "大阪城",
+          "duration": "2h",
+          "cost": 600
+        },
+        {
+          "name": "法善寺",
+          "duration": "1h",
+          "cost": 0
+        },
+        {
+          "name": "道顿堀",
+          "duration": "3h",
+          "cost": 2000
+        }
+      ],
+      "meal_breakfast": "酒店早餐/大阪烧",
+      "meal_lunch": "章鱼烧",
+      "meal_dinner": "串炸/居酒屋"
+    },
+    {
+      "day": 7,
+      "date": "2026-05-07",
+      "attractions": [
+        {
+          "name": "大阪城",
+          "duration": "2h",
+          "cost": 600
+        },
+        {
+          "name": "法善寺",
+          "duration": "1h",
+          "cost": 0
+        },
+        {
+          "name": "道顿堀",
+          "duration": "3h",
+          "cost": 2000
+        }
+      ],
+      "meal_breakfast": "酒店早餐/大阪烧",
+      "meal_lunch": "章鱼烧",
+      "meal_dinner": "串炸/居酒屋"
+    }
+  ],
+  "timestamp": "2026-04-24T21:36:18.551297"
+}

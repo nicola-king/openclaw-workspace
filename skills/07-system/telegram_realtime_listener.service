@@ -1,0 +1,16 @@
+[Unit]
+Description=Telegram Realtime @ Listener - 太一 AGI
+After=network.target
+
+[Service]
+Type=simple
+User=nicola
+WorkingDirectory=/home/nicola/.openclaw/workspace
+ExecStart=/usr/bin/python3 /home/nicola/.openclaw/workspace/skills/07-system/telegram_realtime_listener.py
+Restart=always
+RestartSec=10
+StandardOutput=append:/home/nicola/.openclaw/workspace/logs/telegram_realtime_listener.log
+StandardError=append:/home/nicola/.openclaw/workspace/logs/telegram_realtime_listener.log
+
+[Install]
+WantedBy=multi-user.target

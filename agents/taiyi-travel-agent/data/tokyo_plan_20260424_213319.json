@@ -1,0 +1,195 @@
+{
+  "type": "Tokyo Travel Plan",
+  "origin": "北京",
+  "destination": "东京",
+  "start_date": "2026-05-01",
+  "end_date": "2026-05-07",
+  "days": 7,
+  "travelers": 2,
+  "mode": "跨国游",
+  "budget": 15000,
+  "budget_per_person": 7500.0,
+  "budget_allocation": {
+    "航班": 4500.0,
+    "住宿": 3750.0,
+    "餐饮": 3000.0,
+    "活动": 2250.0,
+    "购物": 1500.0
+  },
+  "preferences": [
+    "文化",
+    "购物",
+    "美食"
+  ],
+  "daily_itinerary": [
+    {
+      "day": 1,
+      "date": "2026-05-01",
+      "attractions": [
+        {
+          "name": "浅草寺",
+          "duration": "2h",
+          "cost": 0
+        },
+        {
+          "name": "东京塔",
+          "duration": "2h",
+          "cost": 1500
+        },
+        {
+          "name": "涩谷十字路口",
+          "duration": "3h",
+          "cost": 0
+        }
+      ],
+      "meal_breakfast": "酒店早餐/寿司",
+      "meal_lunch": "拉面/天妇罗",
+      "meal_dinner": "烤肉/居酒屋"
+    },
+    {
+      "day": 2,
+      "date": "2026-05-02",
+      "attractions": [
+        {
+          "name": "浅草寺",
+          "duration": "2h",
+          "cost": 0
+        },
+        {
+          "name": "东京塔",
+          "duration": "2h",
+          "cost": 1500
+        },
+        {
+          "name": "涩谷十字路口",
+          "duration": "3h",
+          "cost": 0
+        }
+      ],
+      "meal_breakfast": "酒店早餐/寿司",
+      "meal_lunch": "拉面/天妇罗",
+      "meal_dinner": "烤肉/居酒屋"
+    },
+    {
+      "day": 3,
+      "date": "2026-05-03",
+      "attractions": [
+        {
+          "name": "浅草寺",
+          "duration": "2h",
+          "cost": 0
+        },
+        {
+          "name": "东京塔",
+          "duration": "2h",
+          "cost": 1500
+        },
+        {
+          "name": "涩谷十字路口",
+          "duration": "3h",
+          "cost": 0
+        }
+      ],
+      "meal_breakfast": "酒店早餐/寿司",
+      "meal_lunch": "拉面/天妇罗",
+      "meal_dinner": "烤肉/居酒屋"
+    },
+    {
+      "day": 4,
+      "date": "2026-05-04",
+      "attractions": [
+        {
+          "name": "浅草寺",
+          "duration": "2h",
+          "cost": 0
+        },
+        {
+          "name": "东京塔",
+          "duration": "2h",
+          "cost": 1500
+        },
+        {
+          "name": "涩谷十字路口",
+          "duration": "3h",
+          "cost": 0
+        }
+      ],
+      "meal_breakfast": "酒店早餐/寿司",
+      "meal_lunch": "拉面/天妇罗",
+      "meal_dinner": "烤肉/居酒屋"
+    },
+    {
+      "day": 5,
+      "date": "2026-05-05",
+      "attractions": [
+        {
+          "name": "浅草寺",
+          "duration": "2h",
+          "cost": 0
+        },
+        {
+          "name": "东京塔",
+          "duration": "2h",
+          "cost": 1500
+        },
+        {
+          "name": "涩谷十字路口",
+          "duration": "3h",
+          "cost": 0
+        }
+      ],
+      "meal_breakfast": "酒店早餐/寿司",
+      "meal_lunch": "拉面/天妇罗",
+      "meal_dinner": "烤肉/居酒屋"
+    },
+    {
+      "day": 6,
+      "date": "2026-05-06",
+      "attractions": [
+        {
+          "name": "浅草寺",
+          "duration": "2h",
+          "cost": 0
+        },
+        {
+          "name": "东京塔",
+          "duration": "2h",
+          "cost": 1500
+        },
+        {
+          "name": "涩谷十字路口",
+          "duration": "3h",
+          "cost": 0
+        }
+      ],
+      "meal_breakfast": "酒店早餐/寿司",
+      "meal_lunch": "拉面/天妇罗",
+      "meal_dinner": "烤肉/居酒屋"
+    },
+    {
+      "day": 7,
+      "date": "2026-05-07",
+      "attractions": [
+        {
+          "name": "浅草寺",
+          "duration": "2h",
+          "cost": 0
+        },
+        {
+          "name": "东京塔",
+          "duration": "2h",
+          "cost": 1500
+        },
+        {
+          "name": "涩谷十字路口",
+          "duration": "3h",
+          "cost": 0
+        }
+      ],
+      "meal_breakfast": "酒店早餐/寿司",
+      "meal_lunch": "拉面/天妇罗",
+      "meal_dinner": "烤肉/居酒屋"
+    }
+  ],
+  "timestamp": "2026-04-24T21:33:19.066527"
+}

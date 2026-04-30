@@ -1,0 +1,57 @@
+{
+  "timestamp": "2026-04-03T17:17:58+08:00",
+  "check_type": "scheduled_30min",
+  "status": "healthy",
+  
+  "gateway": {
+    "status": "running",
+    "pid": 66913,
+    "port": 18789,
+    "bind": "127.0.0.1",
+    "service_state": "active",
+    "uptime": "30分钟"
+  },
+  
+  "channels": {
+    "telegram": {
+      "status": "ok",
+      "accounts": 6
+    },
+    "feishu": {
+      "status": "ok",
+      "accounts": 6,
+      "connection_mode": "websocket"
+    },
+    "openclaw-weixin": {
+      "status": "enabled",
+      "login_required": true
+    }
+  },
+  
+  "system": {
+    "disk_usage": "19%",
+    "gateway_service": "active"
+  },
+  
+  "self_heal_actions": [
+    {
+      "action": "gateway_probe",
+      "result": "ok",
+      "pid": 66913
+    },
+    {
+      "action": "service_check",
+      "result": "active"
+    },
+    {
+      "action": "disk_check",
+      "result": "19% used, healthy"
+    }
+  ],
+  
+  "issues_detected": [],
+  "actions_taken": [],
+  
+  "next_check": "2026-04-03T17:47:58+08:00",
+  "report_saved": "memory/self-heal-report-20260403-1717.json"
+}

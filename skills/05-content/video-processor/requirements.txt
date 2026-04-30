@@ -1,0 +1,3 @@
+# video-processor 依赖
+
+ffmpeg-python

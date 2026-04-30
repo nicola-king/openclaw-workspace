@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>样式优化的图表 - tech</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <style>
+        body {
+            font-family: Courier New, monospace;
+            background: #000000;
+            color: #333;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .chart-container {
+            background: white;
+            padding: 30px;
+            border-radius: 3px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            margin: 20px 0;
+        }
+        h1 {
+            color: #00E5FF;
+            border-bottom: 3px solid #00E5FF;
+            padding-bottom: 15px;
+        }
+        .code-block {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 3px;
+            font-family: monospace;
+            overflow-x: auto;
+            margin: 20px 0;
+            border: 1px solid #ddd;
+        }
+        .theme-info {
+            background: #00E5FF;
+            color: white;
+            padding: 15px;
+            border-radius: 3px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>📊 样式优化的图表</h1>
+    
+    <div class="theme-info">
+        <strong>主题：</strong> tech | 
+        <strong>主色：</strong> #00E5FF | 
+        <strong>字体：</strong> Courier New, monospace
+    </div>
+    
+    <div class="chart-container">
+        <div class="mermaid">
+%%{
+  init: {
+    'theme': 'base',
+    'themeVariables': {
+      'primaryColor': '#00E5FF',
+      'primaryBorderColor': '#00E5FF',
+      'primaryTextColor': '#fff',
+      'secondaryColor': '#00B8D4',
+      'secondaryBorderColor': '#00B8D4',
+      'secondaryTextColor': '#fff',
+      'tertiaryColor': '#00E5FF',
+      'tertiaryBorderColor': '#00E5FF',
+      'lineColor': '#00B8D4',
+      'fontFamily': 'Courier New, monospace',
+    }
+  }
+}%%
+flowchart TD
+    需求分析 --> 方案设计
+    方案设计 --> 开发实现
+    开发实现 --> 测试验证
+    测试验证 --> 部署上线
+
+        </div>
+    </div>
+    
+    <h2>Mermaid 代码</h2>
+    <div class="code-block"><pre>%%{
+  init: {
+    'theme': 'base',
+    'themeVariables': {
+      'primaryColor': '#00E5FF',
+      'primaryBorderColor': '#00E5FF',
+      'primaryTextColor': '#fff',
+      'secondaryColor': '#00B8D4',
+      'secondaryBorderColor': '#00B8D4',
+      'secondaryTextColor': '#fff',
+      'tertiaryColor': '#00E5FF',
+      'tertiaryBorderColor': '#00E5FF',
+      'lineColor': '#00B8D4',
+      'fontFamily': 'Courier New, monospace',
+    }
+  }
+}%%
+flowchart TD
+    需求分析 --> 方案设计
+    方案设计 --> 开发实现
+    开发实现 --> 测试验证
+    测试验证 --> 部署上线
+</pre></div>
+    
+    <script>
+        mermaid.initialize({ 
+            startOnLoad: true,
+            theme: 'base',
+            themeVariables: {
+                primaryColor: '#00E5FF',
+                primaryBorderColor: '#00E5FF',
+                secondaryColor: '#00B8D4',
+                lineColor: '#00B8D4',
+                fontFamily: 'Courier New, monospace',
+            }
+        });
+    </script>
+</body>
+</html>

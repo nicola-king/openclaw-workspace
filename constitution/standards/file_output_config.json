@@ -1,0 +1,104 @@
+# 📄 文件输出格式配置
+
+> **创建时间**: 2026-04-19 10:58  
+> **版本**: v1.0  
+> **状态**: 已激活
+
+---
+
+## ⚙️ 核心配置
+
+```json
+{
+  "file_output": {
+    "default_format": "markdown",
+    "default_extension": ".md",
+    "send_via_telegram": true,
+    "telegram_method": "sendDocument",
+    "include_caption": true,
+    "caption_requirements": {
+      "title": true,
+      "key_data": true,
+      "recommendations": true,
+      "timestamp": true,
+      "agent_signature": true
+    },
+    "exception_handling": {
+      "customer_request": "use_customer_format",
+      "fallback_format": "markdown",
+      "log_exceptions": true
+    }
+  },
+  "supported_formats": {
+    "default": ".md",
+    "optional": [".pdf", ".xlsx", ".docx", ".pptx", ".json", ".csv", ".txt", ".html"]
+  },
+  "quality_checks": {
+    "before_send": [
+      "format_valid",
+      "header_complete",
+      "data_verified",
+      "recommendations_clear",
+      "footer_complete"
+    ],
+    "after_send": [
+      "send_success_confirmed",
+      "file_accessible",
+      "no_encoding_issues",
+      "git_committed"
+    ]
+  },
+  "effective_date": "2026-04-19T10:58:00+08:00",
+  "priority": "tier_1",
+  "scope": "all_taiyi_systems"
+}
+```
+
+---
+
+## ✅ 激活状态
+
+| 配置项 | 状态 | 生效时间 |
+|--------|------|---------|
+| 默认 MD 格式 | ✅ 已激活 | 立即生效 |
+| Telegram 发送 | ✅ 已激活 | 立即生效 |
+| Caption 要求 | ✅ 已激活 | 立即生效 |
+| 质量检查 | ✅ 已激活 | 立即生效 |
+| Git 归档 | ✅ 已激活 | 立即生效 |
+
+---
+
+## 📋 执行确认
+
+### 已配置系统
+
+| 系统 | 状态 | 配置时间 |
+|------|------|---------|
+| 跨境贸易 Agent | ✅ 已配置 | 2026-04-19 10:58 |
+| AI 搜索 Agent | ✅ 已配置 | 2026-04-19 10:58 |
+| 太一系统 | ✅ 已配置 | 2026-04-19 10:58 |
+
+### 已更新文档
+
+| 文档 | 状态 | 位置 |
+|------|------|------|
+| FILE_OUTPUT_STANDARDS.md | ✅ 已创建 | constitution/standards/ |
+| file_output_config.json | ✅ 已创建 | constitution/standards/ |
+
+---
+
+## 🎯 执行承诺
+
+**太一承诺**:
+- ✅ 所有文件输出默认 MD 格式
+- ✅ 通过 Telegram 文档发送
+- ✅ 附带规范 Caption
+- ✅ 执行质量检查
+- ✅ Git 归档保存
+- ✅ 例外情况需客户明确要求
+
+---
+
+*太一 AGI · 文件输出格式配置 v1.0*  
+*配置时间：2026-04-19 10:58*  
+*立即生效 · 永久执行*

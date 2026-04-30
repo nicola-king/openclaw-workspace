@@ -1,0 +1,70 @@
+{
+  "destination": "东京",
+  "sources": [
+    {
+      "name": "TripAdvisor",
+      "type": "景点点评",
+      "url": "tripadvisor.com"
+    },
+    {
+      "name": "Lonely Planet",
+      "type": "旅行指南",
+      "url": "lonelyplanet.com"
+    },
+    {
+      "name": "Booking.com",
+      "type": "酒店预订",
+      "url": "booking.com"
+    },
+    {
+      "name": "Airbnb",
+      "type": "民宿体验",
+      "url": "airbnb.com"
+    }
+  ],
+  "data": {
+    "ratings": [
+      {
+        "spot": "景点 A",
+        "rating": 4.239318578457646,
+        "reviews": 707
+      },
+      {
+        "spot": "景点 B",
+        "rating": 4.197829180661012,
+        "reviews": 198
+      }
+    ],
+    "reviews": [
+      "非常好",
+      "值得去",
+      "推荐",
+      "体验不错"
+    ],
+    "price_comparison": {
+      "hotels": {
+        "low": 370,
+        "high": 1478
+      },
+      "food": {
+        "low": 62,
+        "high": 290
+      },
+      "transport": {
+        "low": 86,
+        "high": 311
+      }
+    },
+    "local_customs": [
+      "尊重当地文化",
+      "注意着装要求",
+      "了解小费习惯"
+    ],
+    "safety_tips": [
+      "保管好贵重物品",
+      "避免夜间单独出行",
+      "记住紧急联系方式"
+    ]
+  },
+  "collected_at": "2026-04-14T17:26:07.931060"
+}

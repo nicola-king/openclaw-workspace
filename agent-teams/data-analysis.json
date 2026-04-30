@@ -1,0 +1,29 @@
+{
+  "name": "数据分析组团",
+  "members": [
+    "collector",
+    "analyst",
+    "reporter"
+  ],
+  "workflow": [
+    "collect",
+    "analyze",
+    "report"
+  ],
+  "optimized_at": "2026-04-16T13:06:49.737439",
+  "optimizations": [
+    {
+      "type": "parallel_processing",
+      "description": "建议增加并行处理能力",
+      "suggestion": "独立任务可并行执行，减少等待时间"
+    }
+  ],
+  "version": "1.0.1",
+  "external_integrations": [
+    "supervision",
+    "veo31",
+    "skill_evolution",
+    "openmaic",
+    "codeflow"
+  ]
+}

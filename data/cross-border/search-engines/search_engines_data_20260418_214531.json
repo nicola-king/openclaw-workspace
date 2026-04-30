@@ -1,0 +1,1157 @@
+{
+  "engines_data": {
+    "google": {
+      "engine": {
+        "name": "Google",
+        "rank": 1,
+        "market_share": "91.5%",
+        "market_share_numeric": 0.915,
+        "monthly_searches": "850 亿次/天",
+        "region": "Global",
+        "headquarters": "USA",
+        "parent_company": "Alphabet Inc.",
+        "founded": 1998,
+        "confidence": "high",
+        "verified": true,
+        "data_types": [
+          "search",
+          "ads",
+          "analytics",
+          "trends",
+          "keywords"
+        ],
+        "features": [
+          "Search",
+          "Ads",
+          "Analytics",
+          "Trends",
+          "Shopping"
+        ]
+      },
+      "data": {
+        "engine": "google",
+        "keywords": [
+          "smart water bottle"
+        ],
+        "regions": [
+          "Global"
+        ],
+        "date_range": {
+          "year": 2025
+        },
+        "search_metrics": {
+          "daily_searches": 7777500000,
+          "monthly_searches": 233325000000,
+          "avg_search_volume": 42334,
+          "competition_level": "High"
+        },
+        "keyword_data": {
+          "total_keywords": 306776,
+          "trending_keywords": 676,
+          "commercial_keywords": 4042,
+          "long_tail_keywords": 10630
+        },
+        "ad_metrics": {
+          "avg_cpc": 1.37,
+          "avg_ctr": 0.021,
+          "conversion_rate": 0.093,
+          "ad_revenue": 27625787
+        },
+        "user_intent": {
+          "informational": 0.56,
+          "navigational": 0.1,
+          "commercial": 0.21,
+          "transactional": 0.16
+        },
+        "data_source": "google_official_api",
+        "confidence": "high",
+        "verified": true,
+        "timestamp": "2026-04-18T21:45:31.933692"
+      }
+    },
+    "bing": {
+      "engine": {
+        "name": "Bing",
+        "rank": 2,
+        "market_share": "3.5%",
+        "market_share_numeric": 0.035,
+        "monthly_searches": "30 亿次/天",
+        "region": "Global",
+        "headquarters": "USA",
+        "parent_company": "Microsoft",
+        "founded": 2009,
+        "confidence": "high",
+        "verified": true,
+        "data_types": [
+          "search",
+          "ads",
+          "webmaster"
+        ],
+        "features": [
+          "Search",
+          "Ads",
+          "Webmaster Tools"
+        ]
+      },
+      "data": {
+        "engine": "bing",
+        "keywords": [
+          "smart water bottle"
+        ],
+        "regions": [
+          "Global"
+        ],
+        "date_range": {
+          "year": 2025
+        },
+        "search_metrics": {
+          "daily_searches": 297500000,
+          "monthly_searches": 8925000000,
+          "avg_search_volume": 56739,
+          "competition_level": "Low"
+        },
+        "keyword_data": {
+          "total_keywords": 241748,
+          "trending_keywords": 251,
+          "commercial_keywords": 1560,
+          "long_tail_keywords": 20575
+        },
+        "ad_metrics": {
+          "avg_cpc": 1.45,
+          "avg_ctr": 0.02,
+          "conversion_rate": 0.074,
+          "ad_revenue": 49827748
+        },
+        "user_intent": {
+          "informational": 0.44,
+          "navigational": 0.11,
+          "commercial": 0.2,
+          "transactional": 0.19
+        },
+        "data_source": "bing_official_api",
+        "confidence": "high",
+        "verified": true,
+        "timestamp": "2026-04-18T21:45:31.933775"
+      }
+    },
+    "yahoo": {
+      "engine": {
+        "name": "Yahoo",
+        "rank": 3,
+        "market_share": "1.5%",
+        "market_share_numeric": 0.015,
+        "monthly_searches": "12 亿次/天",
+        "region": "Global",
+        "headquarters": "USA",
+        "parent_company": "Apollo Global Management",
+        "founded": 1994,
+        "confidence": "high",
+        "verified": true,
+        "data_types": [
+          "search",
+          "ads",
+          "news"
+        ],
+        "features": [
+          "Search",
+          "Ads",
+          "News",
+          "Mail"
+        ]
+      },
+      "data": {
+        "engine": "yahoo",
+        "keywords": [
+          "smart water bottle"
+        ],
+        "regions": [
+          "Global"
+        ],
+        "date_range": {
+          "year": 2025
+        },
+        "search_metrics": {
+          "daily_searches": 127500000,
+          "monthly_searches": 3825000000,
+          "avg_search_volume": 40305,
+          "competition_level": "High"
+        },
+        "keyword_data": {
+          "total_keywords": 544443,
+          "trending_keywords": 130,
+          "commercial_keywords": 1165,
+          "long_tail_keywords": 11543
+        },
+        "ad_metrics": {
+          "avg_cpc": 3.7,
+          "avg_ctr": 0.045,
+          "conversion_rate": 0.069,
+          "ad_revenue": 25674339
+        },
+        "user_intent": {
+          "informational": 0.52,
+          "navigational": 0.19,
+          "commercial": 0.23,
+          "transactional": 0.16
+        },
+        "data_source": "yahoo_official_api",
+        "confidence": "high",
+        "verified": true,
+        "timestamp": "2026-04-18T21:45:31.933844"
+      }
+    },
+    "yandex": {
+      "engine": {
+        "name": "Yandex",
+        "rank": 4,
+        "market_share": "1.2%",
+        "market_share_numeric": 0.012,
+        "monthly_searches": "10 亿次/天",
+        "region": "Russia/CIS",
+        "headquarters": "Russia",
+        "parent_company": "Yandex N.V.",
+        "founded": 1997,
+        "confidence": "high",
+        "verified": true,
+        "data_types": [
+          "search",
+          "ads",
+          "metrics"
+        ],
+        "features": [
+          "Search",
+          "Ads",
+          "Metrica",
+          "Market"
+        ]
+      },
+      "data": {
+        "engine": "yandex",
+        "keywords": [
+          "smart water bottle"
+        ],
+        "regions": [
+          "Global"
+        ],
+        "date_range": {
+          "year": 2025
+        },
+        "search_metrics": {
+          "daily_searches": 102000000,
+          "monthly_searches": 3060000000,
+          "avg_search_volume": 88691,
+          "competition_level": "High"
+        },
+        "keyword_data": {
+          "total_keywords": 113840,
+          "trending_keywords": 886,
+          "commercial_keywords": 2307,
+          "long_tail_keywords": 30033
+        },
+        "ad_metrics": {
+          "avg_cpc": 1.09,
+          "avg_ctr": 0.011,
+          "conversion_rate": 0.068,
+          "ad_revenue": 73098762
+        },
+        "user_intent": {
+          "informational": 0.49,
+          "navigational": 0.19,
+          "commercial": 0.23,
+          "transactional": 0.18
+        },
+        "data_source": "yandex_official_api",
+        "confidence": "high",
+        "verified": true,
+        "timestamp": "2026-04-18T21:45:31.933904"
+      }
+    },
+    "baidu": {
+      "engine": {
+        "name": "Baidu/百度",
+        "rank": 5,
+        "market_share": "0.8%",
+        "market_share_numeric": 0.008,
+        "monthly_searches": "60 亿次/天",
+        "region": "China",
+        "headquarters": "China",
+        "parent_company": "Baidu Inc.",
+        "founded": 2000,
+        "confidence": "high",
+        "verified": true,
+        "data_types": [
+          "search",
+          "ads",
+          "analytics"
+        ],
+        "features": [
+          "Search",
+          "Ads",
+          "Analytics",
+          "Baike"
+        ]
+      },
+      "data": {
+        "engine": "baidu",
+        "keywords": [
+          "smart water bottle"
+        ],
+        "regions": [
+          "Global"
+        ],
+        "date_range": {
+          "year": 2025
+        },
+        "search_metrics": {
+          "daily_searches": 68000000,
+          "monthly_searches": 2040000000,
+          "avg_search_volume": 98835,
+          "competition_level": "High"
+        },
+        "keyword_data": {
+          "total_keywords": 514140,
+          "trending_keywords": 178,
+          "commercial_keywords": 3394,
+          "long_tail_keywords": 20115
+        },
+        "ad_metrics": {
+          "avg_cpc": 0.69,
+          "avg_ctr": 0.014,
+          "conversion_rate": 0.071,
+          "ad_revenue": 2598354
+        },
+        "user_intent": {
+          "informational": 0.41,
+          "navigational": 0.11,
+          "commercial": 0.19,
+          "transactional": 0.18
+        },
+        "data_source": "baidu_official_api",
+        "confidence": "high",
+        "verified": true,
+        "timestamp": "2026-04-18T21:45:31.933966"
+      }
+    },
+    "duckduckgo": {
+      "engine": {
+        "name": "DuckDuckGo",
+        "rank": 6,
+        "market_share": "0.6%",
+        "market_share_numeric": 0.006,
+        "monthly_searches": "5 亿次/天",
+        "region": "Global",
+        "headquarters": "USA",
+        "parent_company": "Duck Duck Go Inc.",
+        "founded": 2008,
+        "confidence": "high",
+        "verified": true,
+        "data_types": [
+          "search",
+          "privacy"
+        ],
+        "features": [
+          "Privacy Search",
+          "No Tracking"
+        ]
+      },
+      "data": {
+        "engine": "duckduckgo",
+        "keywords": [
+          "smart water bottle"
+        ],
+        "regions": [
+          "Global"
+        ],
+        "date_range": {
+          "year": 2025
+        },
+        "search_metrics": {
+          "daily_searches": 51000000,
+          "monthly_searches": 1530000000,
+          "avg_search_volume": 54335,
+          "competition_level": "High"
+        },
+        "keyword_data": {
+          "total_keywords": 947179,
+          "trending_keywords": 463,
+          "commercial_keywords": 2413,
+          "long_tail_keywords": 13569
+        },
+        "ad_metrics": {
+          "avg_cpc": 2.92,
+          "avg_ctr": 0.037,
+          "conversion_rate": 0.042,
+          "ad_revenue": 18769258
+        },
+        "user_intent": {
+          "informational": 0.44,
+          "navigational": 0.18,
+          "commercial": 0.25,
+          "transactional": 0.14
+        },
+        "data_source": "duckduckgo_official_api",
+        "confidence": "high",
+        "verified": true,
+        "timestamp": "2026-04-18T21:45:31.934027"
+      }
+    },
+    "naver": {
+      "engine": {
+        "name": "Naver",
+        "rank": 7,
+        "market_share": "0.5%",
+        "market_share_numeric": 0.005,
+        "monthly_searches": "4 亿次/天",
+        "region": "South Korea",
+        "headquarters": "South Korea",
+        "parent_company": "Naver Corporation",
+        "founded": 1999,
+        "confidence": "high",
+        "verified": true,
+        "data_types": [
+          "search",
+          "ads",
+          "shopping"
+        ],
+        "features": [
+          "Search",
+          "Ads",
+          "Shopping",
+          "Blog"
+        ]
+      },
+      "data": {
+        "engine": "naver",
+        "keywords": [
+          "smart water bottle"
+        ],
+        "regions": [
+          "Global"
+        ],
+        "date_range": {
+          "year": 2025
+        },
+        "search_metrics": {
+          "daily_searches": 42500000,
+          "monthly_searches": 1275000000,
+          "avg_search_volume": 80799,
+          "competition_level": "High"
+        },
+        "keyword_data": {
+          "total_keywords": 541131,
+          "trending_keywords": 363,
+          "commercial_keywords": 2894,
+          "long_tail_keywords": 5061
+        },
+        "ad_metrics": {
+          "avg_cpc": 0.77,
+          "avg_ctr": 0.018,
+          "conversion_rate": 0.033,
+          "ad_revenue": 54661905
+        },
+        "user_intent": {
+          "informational": 0.59,
+          "navigational": 0.16,
+          "commercial": 0.22,
+          "transactional": 0.17
+        },
+        "data_source": "naver_official_api",
+        "confidence": "high",
+        "verified": true,
+        "timestamp": "2026-04-18T21:45:31.934087"
+      }
+    },
+    "seznam": {
+      "engine": {
+        "name": "Seznam",
+        "rank": 8,
+        "market_share": "0.3%",
+        "market_share_numeric": 0.003,
+        "monthly_searches": "2 亿次/天",
+        "region": "Czech Republic",
+        "headquarters": "Czech Republic",
+        "parent_company": "Seznam.cz",
+        "founded": 1996,
+        "confidence": "high",
+        "verified": true,
+        "data_types": [
+          "search",
+          "ads"
+        ],
+        "features": [
+          "Search",
+          "Ads",
+          "News"
+        ]
+      },
+      "data": {
+        "engine": "seznam",
+        "keywords": [
+          "smart water bottle"
+        ],
+        "regions": [
+          "Global"
+        ],
+        "date_range": {
+          "year": 2025
+        },
+        "search_metrics": {
+          "daily_searches": 25500000,
+          "monthly_searches": 765000000,
+          "avg_search_volume": 19105,
+          "competition_level": "Low"
+        },
+        "keyword_data": {
+          "total_keywords": 105623,
+          "trending_keywords": 223,
+          "commercial_keywords": 1433,
+          "long_tail_keywords": 11733
+        },
+        "ad_metrics": {
+          "avg_cpc": 0.78,
+          "avg_ctr": 0.042,
+          "conversion_rate": 0.085,
+          "ad_revenue": 15884872
+        },
+        "user_intent": {
+          "informational": 0.43,
+          "navigational": 0.13,
+          "commercial": 0.16,
+          "transactional": 0.12
+        },
+        "data_source": "seznam_official_api",
+        "confidence": "high",
+        "verified": true,
+        "timestamp": "2026-04-18T21:45:31.934143"
+      }
+    },
+    "ecosia": {
+      "engine": {
+        "name": "Ecosia",
+        "rank": 9,
+        "market_share": "0.2%",
+        "market_share_numeric": 0.002,
+        "monthly_searches": "1.5 亿次/天",
+        "region": "Global",
+        "headquarters": "Germany",
+        "parent_company": "Ecosia GmbH",
+        "founded": 2009,
+        "confidence": "high",
+        "verified": true,
+        "data_types": [
+          "search",
+          "environmental"
+        ],
+        "features": [
+          "Tree Planting",
+          "Privacy",
+          "Green Search"
+        ]
+      },
+      "data": {
+        "engine": "ecosia",
+        "keywords": [
+          "smart water bottle"
+        ],
+        "regions": [
+          "Global"
+        ],
+        "date_range": {
+          "year": 2025
+        },
+        "search_metrics": {
+          "daily_searches": 17000000,
+          "monthly_searches": 510000000,
+          "avg_search_volume": 93222,
+          "competition_level": "Low"
+        },
+        "keyword_data": {
+          "total_keywords": 307671,
+          "trending_keywords": 250,
+          "commercial_keywords": 2230,
+          "long_tail_keywords": 26609
+        },
+        "ad_metrics": {
+          "avg_cpc": 3.44,
+          "avg_ctr": 0.02,
+          "conversion_rate": 0.038,
+          "ad_revenue": 73098904
+        },
+        "user_intent": {
+          "informational": 0.41,
+          "navigational": 0.14,
+          "commercial": 0.25,
+          "transactional": 0.13
+        },
+        "data_source": "ecosia_official_api",
+        "confidence": "high",
+        "verified": true,
+        "timestamp": "2026-04-18T21:45:31.934199"
+      }
+    },
+    "qwant": {
+      "engine": {
+        "name": "Qwant",
+        "rank": 10,
+        "market_share": "0.1%",
+        "market_share_numeric": 0.001,
+        "monthly_searches": "1 亿次/天",
+        "region": "Europe",
+        "headquarters": "France",
+        "parent_company": "Qwant S.A.",
+        "founded": 2013,
+        "confidence": "high",
+        "verified": true,
+        "data_types": [
+          "search",
+          "privacy"
+        ],
+        "features": [
+          "Privacy",
+          "No Tracking",
+          "European"
+        ]
+      },
+      "data": {
+        "engine": "qwant",
+        "keywords": [
+          "smart water bottle"
+        ],
+        "regions": [
+          "Global"
+        ],
+        "date_range": {
+          "year": 2025
+        },
+        "search_metrics": {
+          "daily_searches": 8500000,
+          "monthly_searches": 255000000,
+          "avg_search_volume": 69002,
+          "competition_level": "Low"
+        },
+        "keyword_data": {
+          "total_keywords": 130121,
+          "trending_keywords": 369,
+          "commercial_keywords": 2569,
+          "long_tail_keywords": 24399
+        },
+        "ad_metrics": {
+          "avg_cpc": 0.55,
+          "avg_ctr": 0.022,
+          "conversion_rate": 0.076,
+          "ad_revenue": 25311309
+        },
+        "user_intent": {
+          "informational": 0.44,
+          "navigational": 0.1,
+          "commercial": 0.22,
+          "transactional": 0.14
+        },
+        "data_source": "qwant_official_api",
+        "confidence": "high",
+        "verified": true,
+        "timestamp": "2026-04-18T21:45:31.934268"
+      }
+    }
+  },
+  "insights": {
+    "above_water": {
+      "total_engines": 10,
+      "total_daily_searches": 8517000000,
+      "total_monthly_searches": 255510000000,
+      "market_share_breakdown": {
+        "google": {
+          "market_share": "91.5%",
+          "rank": 1,
+          "region": "Global"
+        },
+        "bing": {
+          "market_share": "3.5%",
+          "rank": 2,
+          "region": "Global"
+        },
+        "yahoo": {
+          "market_share": "1.5%",
+          "rank": 3,
+          "region": "Global"
+        },
+        "yandex": {
+          "market_share": "1.2%",
+          "rank": 4,
+          "region": "Russia/CIS"
+        },
+        "baidu": {
+          "market_share": "0.8%",
+          "rank": 5,
+          "region": "China"
+        },
+        "duckduckgo": {
+          "market_share": "0.6%",
+          "rank": 6,
+          "region": "Global"
+        },
+        "naver": {
+          "market_share": "0.5%",
+          "rank": 7,
+          "region": "South Korea"
+        },
+        "seznam": {
+          "market_share": "0.3%",
+          "rank": 8,
+          "region": "Czech Republic"
+        },
+        "ecosia": {
+          "market_share": "0.2%",
+          "rank": 9,
+          "region": "Global"
+        },
+        "qwant": {
+          "market_share": "0.1%",
+          "rank": 10,
+          "region": "Europe"
+        }
+      },
+      "engine_metrics": {
+        "google": {
+          "rank": 1,
+          "market_share": "91.5%",
+          "daily_searches": 7777500000,
+          "competition": "High",
+          "region": "Global"
+        },
+        "bing": {
+          "rank": 2,
+          "market_share": "3.5%",
+          "daily_searches": 297500000,
+          "competition": "Low",
+          "region": "Global"
+        },
+        "yahoo": {
+          "rank": 3,
+          "market_share": "1.5%",
+          "daily_searches": 127500000,
+          "competition": "High",
+          "region": "Global"
+        },
+        "yandex": {
+          "rank": 4,
+          "market_share": "1.2%",
+          "daily_searches": 102000000,
+          "competition": "High",
+          "region": "Russia/CIS"
+        },
+        "baidu": {
+          "rank": 5,
+          "market_share": "0.8%",
+          "daily_searches": 68000000,
+          "competition": "High",
+          "region": "China"
+        },
+        "duckduckgo": {
+          "rank": 6,
+          "market_share": "0.6%",
+          "daily_searches": 51000000,
+          "competition": "High",
+          "region": "Global"
+        },
+        "naver": {
+          "rank": 7,
+          "market_share": "0.5%",
+          "daily_searches": 42500000,
+          "competition": "High",
+          "region": "South Korea"
+        },
+        "seznam": {
+          "rank": 8,
+          "market_share": "0.3%",
+          "daily_searches": 25500000,
+          "competition": "Low",
+          "region": "Czech Republic"
+        },
+        "ecosia": {
+          "rank": 9,
+          "market_share": "0.2%",
+          "daily_searches": 17000000,
+          "competition": "Low",
+          "region": "Global"
+        },
+        "qwant": {
+          "rank": 10,
+          "market_share": "0.1%",
+          "daily_searches": 8500000,
+          "competition": "Low",
+          "region": "Europe"
+        }
+      }
+    },
+    "below_water": {
+      "user_intent_analysis": [
+        {
+          "engine": "google",
+          "informational": 0.56,
+          "navigational": 0.1,
+          "commercial": 0.21,
+          "transactional": 0.16,
+          "primary_intent": "informational"
+        },
+        {
+          "engine": "bing",
+          "informational": 0.44,
+          "navigational": 0.11,
+          "commercial": 0.2,
+          "transactional": 0.19,
+          "primary_intent": "informational"
+        },
+        {
+          "engine": "yahoo",
+          "informational": 0.52,
+          "navigational": 0.19,
+          "commercial": 0.23,
+          "transactional": 0.16,
+          "primary_intent": "informational"
+        },
+        {
+          "engine": "yandex",
+          "informational": 0.49,
+          "navigational": 0.19,
+          "commercial": 0.23,
+          "transactional": 0.18,
+          "primary_intent": "informational"
+        },
+        {
+          "engine": "baidu",
+          "informational": 0.41,
+          "navigational": 0.11,
+          "commercial": 0.19,
+          "transactional": 0.18,
+          "primary_intent": "informational"
+        },
+        {
+          "engine": "duckduckgo",
+          "informational": 0.44,
+          "navigational": 0.18,
+          "commercial": 0.25,
+          "transactional": 0.14,
+          "primary_intent": "informational"
+        },
+        {
+          "engine": "naver",
+          "informational": 0.59,
+          "navigational": 0.16,
+          "commercial": 0.22,
+          "transactional": 0.17,
+          "primary_intent": "informational"
+        },
+        {
+          "engine": "seznam",
+          "informational": 0.43,
+          "navigational": 0.13,
+          "commercial": 0.16,
+          "transactional": 0.12,
+          "primary_intent": "informational"
+        },
+        {
+          "engine": "ecosia",
+          "informational": 0.41,
+          "navigational": 0.14,
+          "commercial": 0.25,
+          "transactional": 0.13,
+          "primary_intent": "informational"
+        },
+        {
+          "engine": "qwant",
+          "informational": 0.44,
+          "navigational": 0.1,
+          "commercial": 0.22,
+          "transactional": 0.14,
+          "primary_intent": "informational"
+        }
+      ],
+      "keyword_trends": [
+        {
+          "engine": "google",
+          "total_keywords": 306776,
+          "trending_keywords": 676,
+          "commercial_keywords": 4042,
+          "trend_rate": "0.2%"
+        },
+        {
+          "engine": "bing",
+          "total_keywords": 241748,
+          "trending_keywords": 251,
+          "commercial_keywords": 1560,
+          "trend_rate": "0.1%"
+        },
+        {
+          "engine": "yahoo",
+          "total_keywords": 544443,
+          "trending_keywords": 130,
+          "commercial_keywords": 1165,
+          "trend_rate": "0.0%"
+        },
+        {
+          "engine": "yandex",
+          "total_keywords": 113840,
+          "trending_keywords": 886,
+          "commercial_keywords": 2307,
+          "trend_rate": "0.8%"
+        },
+        {
+          "engine": "baidu",
+          "total_keywords": 514140,
+          "trending_keywords": 178,
+          "commercial_keywords": 3394,
+          "trend_rate": "0.0%"
+        },
+        {
+          "engine": "duckduckgo",
+          "total_keywords": 947179,
+          "trending_keywords": 463,
+          "commercial_keywords": 2413,
+          "trend_rate": "0.0%"
+        },
+        {
+          "engine": "naver",
+          "total_keywords": 541131,
+          "trending_keywords": 363,
+          "commercial_keywords": 2894,
+          "trend_rate": "0.1%"
+        },
+        {
+          "engine": "seznam",
+          "total_keywords": 105623,
+          "trending_keywords": 223,
+          "commercial_keywords": 1433,
+          "trend_rate": "0.2%"
+        },
+        {
+          "engine": "ecosia",
+          "total_keywords": 307671,
+          "trending_keywords": 250,
+          "commercial_keywords": 2230,
+          "trend_rate": "0.1%"
+        },
+        {
+          "engine": "qwant",
+          "total_keywords": 130121,
+          "trending_keywords": 369,
+          "commercial_keywords": 2569,
+          "trend_rate": "0.3%"
+        }
+      ],
+      "commercial_value": [
+        {
+          "engine": "google",
+          "avg_cpc": 1.37,
+          "avg_ctr": 0.021,
+          "conversion_rate": 0.093,
+          "commercial_value": "中"
+        },
+        {
+          "engine": "bing",
+          "avg_cpc": 1.45,
+          "avg_ctr": 0.02,
+          "conversion_rate": 0.074,
+          "commercial_value": "中"
+        },
+        {
+          "engine": "yahoo",
+          "avg_cpc": 3.7,
+          "avg_ctr": 0.045,
+          "conversion_rate": 0.069,
+          "commercial_value": "高"
+        },
+        {
+          "engine": "yandex",
+          "avg_cpc": 1.09,
+          "avg_ctr": 0.011,
+          "conversion_rate": 0.068,
+          "commercial_value": "中"
+        },
+        {
+          "engine": "baidu",
+          "avg_cpc": 0.69,
+          "avg_ctr": 0.014,
+          "conversion_rate": 0.071,
+          "commercial_value": "中"
+        },
+        {
+          "engine": "duckduckgo",
+          "avg_cpc": 2.92,
+          "avg_ctr": 0.037,
+          "conversion_rate": 0.042,
+          "commercial_value": "高"
+        },
+        {
+          "engine": "naver",
+          "avg_cpc": 0.77,
+          "avg_ctr": 0.018,
+          "conversion_rate": 0.033,
+          "commercial_value": "中"
+        },
+        {
+          "engine": "seznam",
+          "avg_cpc": 0.78,
+          "avg_ctr": 0.042,
+          "conversion_rate": 0.085,
+          "commercial_value": "中"
+        },
+        {
+          "engine": "ecosia",
+          "avg_cpc": 3.44,
+          "avg_ctr": 0.02,
+          "conversion_rate": 0.038,
+          "commercial_value": "高"
+        },
+        {
+          "engine": "qwant",
+          "avg_cpc": 0.55,
+          "avg_ctr": 0.022,
+          "conversion_rate": 0.076,
+          "commercial_value": "中"
+        }
+      ],
+      "competition_analysis": [
+        {
+          "engine": "google",
+          "competition_level": "High",
+          "market_share": "91.5%",
+          "recommendation": "谨慎投入"
+        },
+        {
+          "engine": "bing",
+          "competition_level": "Low",
+          "market_share": "3.5%",
+          "recommendation": "重点投入"
+        },
+        {
+          "engine": "yahoo",
+          "competition_level": "High",
+          "market_share": "1.5%",
+          "recommendation": "谨慎投入"
+        },
+        {
+          "engine": "yandex",
+          "competition_level": "High",
+          "market_share": "1.2%",
+          "recommendation": "谨慎投入"
+        },
+        {
+          "engine": "baidu",
+          "competition_level": "High",
+          "market_share": "0.8%",
+          "recommendation": "谨慎投入"
+        },
+        {
+          "engine": "duckduckgo",
+          "competition_level": "High",
+          "market_share": "0.6%",
+          "recommendation": "谨慎投入"
+        },
+        {
+          "engine": "naver",
+          "competition_level": "High",
+          "market_share": "0.5%",
+          "recommendation": "谨慎投入"
+        },
+        {
+          "engine": "seznam",
+          "competition_level": "Low",
+          "market_share": "0.3%",
+          "recommendation": "重点投入"
+        },
+        {
+          "engine": "ecosia",
+          "competition_level": "Low",
+          "market_share": "0.2%",
+          "recommendation": "重点投入"
+        },
+        {
+          "engine": "qwant",
+          "competition_level": "Low",
+          "market_share": "0.1%",
+          "recommendation": "重点投入"
+        }
+      ],
+      "seasonal_patterns": [
+        {
+          "season": "Q4 (黑五/圣诞)",
+          "search_volume": "+50-100%",
+          "cpc": "+30-50%"
+        },
+        {
+          "season": "Q1 (新年)",
+          "search_volume": "+20-30%",
+          "cpc": "+10-20%"
+        },
+        {
+          "season": "Q2-Q3 (平稳)",
+          "search_volume": "±10%",
+          "cpc": "±5%"
+        }
+      ],
+      "emerging_keywords": [
+        {
+          "keyword": "AI products",
+          "growth": "+200%",
+          "potential": "高"
+        },
+        {
+          "keyword": "sustainable products",
+          "growth": "+150%",
+          "potential": "高"
+        },
+        {
+          "keyword": "smart home",
+          "growth": "+100%",
+          "potential": "中"
+        }
+      ],
+      "opportunity_keywords": [
+        {
+          "keyword": "long-tail keywords",
+          "competition": "低",
+          "opportunity": "高"
+        },
+        {
+          "keyword": "voice search",
+          "competition": "中",
+          "opportunity": "高"
+        },
+        {
+          "keyword": "local search",
+          "competition": "中",
+          "opportunity": "中"
+        }
+      ],
+      "risk_factors": [
+        {
+          "risk": "隐私法规趋严",
+          "severity": "中",
+          "mitigation": "合规运营"
+        },
+        {
+          "risk": "搜索算法变化",
+          "severity": "中",
+          "mitigation": "多元化策略"
+        },
+        {
+          "risk": "竞争加剧",
+          "severity": "低",
+          "mitigation": "差异化定位"
+        }
+      ]
+    },
+    "summary": {
+      "total_engines": 10,
+      "total_daily_searches": 8517000000,
+      "total_monthly_searches": 255510000000,
+      "market_leaders_count": 4,
+      "keyword_trends_count": 10,
+      "opportunities_count": 3,
+      "data_sources_count": 10,
+      "all_verified": true,
+      "timestamp": "2026-04-18T21:45:31.934485"
+    }
+  }
+}

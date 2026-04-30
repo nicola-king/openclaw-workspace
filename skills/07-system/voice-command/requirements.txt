@@ -1,0 +1,11 @@
+# 太一语音命令依赖
+
+# 语音识别
+vosk>=0.3.45
+pyaudio>=0.2.13
+
+# 音频处理
+pydub>=0.25.0
+
+# TTS (可选)
+# espeak (系统安装): sudo apt-get install espeak

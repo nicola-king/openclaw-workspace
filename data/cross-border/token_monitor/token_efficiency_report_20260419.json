@@ -1,0 +1,57 @@
+{
+  "generated_at": "2026-04-19T00:33:15.875166",
+  "summary": {
+    "total_tokens_used": 12700,
+    "total_tokens_saved": 10300,
+    "current_efficiency": 1.811023622047244,
+    "target_efficiency": 6.0,
+    "efficiency_percentage": 30.183727034120732,
+    "skill_reuse_rate": 0.5
+  },
+  "analysis": {
+    "generated_at": "2026-04-19T00:33:15.875108",
+    "current_stats": {
+      "total_tokens_used": 12700,
+      "total_tokens_saved": 10300,
+      "current_efficiency": 1.811023622047244,
+      "target_efficiency": 6.0,
+      "skill_reuse_rate": 0.5
+    },
+    "efficiency_gap": 4.188976377952756,
+    "efficiency_percentage": 30.183727034120732,
+    "trend": {
+      "trend": "insufficient_data",
+      "daily_data": [
+        {
+          "date": "2026-04-19",
+          "efficiency": 1.811023622047244
+        }
+      ],
+      "average_efficiency": 1.811023622047244
+    },
+    "recommendations": [
+      {
+        "priority": "P0",
+        "type": "efficiency_gap",
+        "message": "当前效率1.8x，距离目标6.0x 还有4.2x 差距",
+        "action": "增加技能复用，减少重复任务"
+      }
+    ]
+  },
+  "alerts": [
+    {
+      "level": "critical",
+      "type": "efficiency_critical",
+      "message": "Token 效率严重偏低 (1.8x < 3.0x)",
+      "action": "立即优化任务执行路径"
+    }
+  ],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "type": "efficiency_gap",
+      "message": "当前效率1.8x，距离目标6.0x 还有4.2x 差距",
+      "action": "增加技能复用，减少重复任务"
+    }
+  ]
+}

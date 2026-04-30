@@ -1,0 +1,32 @@
+{
+  "timestamp": "2026-04-01T21:22:46.538880",
+  "total_tests": 3,
+  "successful": 3,
+  "failed": 0,
+  "results": [
+    {
+      "name": "httpbin",
+      "url": "https://httpbin.org/html",
+      "status_code": 200,
+      "size_bytes": 3739,
+      "status": "success",
+      "timestamp": "2026-04-01T21:22:44.263959"
+    },
+    {
+      "name": "Alibaba RFQ",
+      "url": "https://rfq.alibaba.com/post.htm?rfqName=prefab%20house",
+      "status_code": 200,
+      "size_bytes": 60411,
+      "status": "success",
+      "timestamp": "2026-04-01T21:22:44.422101"
+    },
+    {
+      "name": "Alibaba prefab",
+      "url": "https://www.alibaba.com/showroom/prefab-house.html",
+      "status_code": 200,
+      "size_bytes": 867683,
+      "status": "success",
+      "timestamp": "2026-04-01T21:22:46.538864"
+    }
+  ]
+}

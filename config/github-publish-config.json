@@ -1,0 +1,28 @@
+{
+  "version": "3.0",
+  "created_at": "2026-04-16 16:40",
+  "updated_at": "2026-04-16 17:51",
+  "github_user": "nicola-king",
+  "github_org": "",
+  "default_branch": "main",
+  "auto_create_release": true,
+  "auto_push": true,
+  "auto_commit": true,
+  "memory_enabled": true,
+  "email_notification": {
+    "enabled": true,
+    "provider": "qq",
+    "smtp_server": "smtp.qq.com",
+    "smtp_port": 465,
+    "use_ssl": true,
+    "auto_send": true,
+    "auto_configured": true,
+    "configured_from_memory": true
+  },
+  "notification_events": [
+    "publish_success",
+    "publish_failed",
+    "release_created",
+    "daily_summary"
+  ]
+}

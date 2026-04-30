@@ -1,0 +1,203 @@
+{
+  "version": "1.0",
+  "created": "2026-04-18",
+  "description": "太一 Agent 发现机制配置",
+  
+  "categories": [
+    {
+      "id": "trading",
+      "name": "交易类",
+      "icon": "📈",
+      "agents": ["知几"],
+      "capabilities": [
+        "交易信号生成",
+        "市场分析",
+        "风险评估",
+        "收益追踪"
+      ],
+      "scenarios": [
+        "需要交易建议",
+        "分析市场走势",
+        "评估投资风险",
+        "查看收益报告"
+      ]
+    },
+    {
+      "id": "content",
+      "name": "内容类",
+      "icon": "🎨",
+      "agents": ["山木"],
+      "capabilities": [
+        "公众号文章创作",
+        "小红书笔记",
+        "微博内容",
+        "内容策划"
+      ],
+      "scenarios": [
+        "写公众号文章",
+        "发小红书笔记",
+        "策划内容日历",
+        "品牌内容创作"
+      ]
+    },
+    {
+      "id": "health",
+      "name": "健康类",
+      "icon": "🌿",
+      "agents": ["素问"],
+      "capabilities": [
+        "健康评估",
+        "体质辨识",
+        "养生方案",
+        "营养计划"
+      ],
+      "scenarios": [
+        "健康咨询",
+        "体质分析",
+        "制定养生计划",
+        "营养建议"
+      ]
+    },
+    {
+      "id": "monitoring",
+      "name": "监控类",
+      "icon": "🔍",
+      "agents": ["罔两"],
+      "capabilities": [
+        "系统监控",
+        "异常检测",
+        "故障预警",
+        "性能分析"
+      ],
+      "scenarios": [
+        "检查系统状态",
+        "查看监控报告",
+        "处理告警",
+        "性能优化"
+      ]
+    },
+    {
+      "id": "tools",
+      "name": "工具类",
+      "icon": "🛠️",
+      "agents": ["庖丁"],
+      "capabilities": [
+        "代码开发",
+        "自动化脚本",
+        "工具集成",
+        "系统优化"
+      ],
+      "scenarios": [
+        "写脚本工具",
+        "自动化任务",
+        "API 集成",
+        "技术支持"
+      ]
+    },
+    {
+      "id": "coordination",
+      "name": "统筹类",
+      "icon": "🎯",
+      "agents": ["太一"],
+      "capabilities": [
+        "任务调度",
+        "多 Bot 协作",
+        "决策建议",
+        "自进化系统"
+      ],
+      "scenarios": [
+        "复杂任务",
+        "需要多 Agent 协作",
+        "决策咨询",
+        "系统报告"
+      ]
+    }
+  ],
+  
+  "discovery_rules": [
+    {
+      "name": "关键词匹配",
+      "type": "keyword",
+      "priority": 1,
+      "description": "根据用户输入关键词匹配 Agent",
+      "examples": {
+        "交易": "知几",
+        "买/卖": "知几",
+        "文章/内容": "山木",
+        "健康/养生": "素问",
+        "系统/监控": "罔两",
+        "脚本/工具": "庖丁"
+      }
+    },
+    {
+      "name": "场景匹配",
+      "type": "scenario",
+      "priority": 2,
+      "description": "根据使用场景推荐 Agent",
+      "examples": {
+        "需要交易建议": "知几",
+        "写公众号": "山木",
+        "身体不适": "素问",
+        "系统异常": "罔两",
+        "自动化需求": "庖丁"
+      }
+    },
+    {
+      "name": "能力匹配",
+      "type": "capability",
+      "priority": 3,
+      "description": "根据所需能力匹配 Agent",
+      "examples": {
+        "市场分析": "知几",
+        "内容创作": "山木",
+        "健康评估": "素问",
+        "性能分析": "罔两",
+        "代码开发": "庖丁"
+      }
+    },
+    {
+      "name": "历史偏好",
+      "type": "history",
+      "priority": 4,
+      "description": "基于用户历史选择推荐",
+      "weight": 0.8
+    }
+  ],
+  
+  "recommendation_engine": {
+    "enabled": true,
+    "algorithm": "hybrid",
+    "factors": [
+      {
+        "name": "关键词匹配度",
+        "weight": 0.3
+      },
+      {
+        "name": "场景匹配度",
+        "weight": 0.3
+      },
+      {
+        "name": "能力匹配度",
+        "weight": 0.2
+      },
+      {
+        "name": "历史偏好",
+        "weight": 0.2
+      }
+    ],
+    "min_confidence": 0.6,
+    "max_recommendations": 3
+  },
+  
+  "ui_config": {
+    "display_mode": "card",
+    "show_capabilities": true,
+    "show_scenarios": true,
+    "quick_actions": [
+      "查看 Agent 详情",
+      "调整个性配置",
+      "查看工作流程",
+      "查看历史表现"
+    ]
+  }
+}

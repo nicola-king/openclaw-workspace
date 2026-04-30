@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bot 舰队监控 - 太一 Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-gradient-to-br from-indigo-50 to-purple-100">
+    <!-- 顶部导航 -->
+    <header class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 py-6">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h1 class="text-3xl font-bold text-indigo-600">🤖 Bot 舰队监控</h1>
+                    <p class="text-gray-500 mt-1">8 Bot 实时状态 · 任务队列 · 产出统计</p>
+                </div>
+                <a href="/" class="text-indigo-600 hover:text-indigo-800 font-semibold">← 返回 Dashboard</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-8">
+        <!-- Bot 状态卡片 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+            <!-- 动态生成 Bot 卡片 -->
+        </div>
+
+        <!-- 系统状态 -->
+        <div class="bg-white rounded-xl shadow-md p-6 mb-8">
+            <h3 class="text-lg font-bold text-gray-800 mb-4">📊 系统概览</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="text-center p-4 bg-green-50 rounded-lg">
+                    <p class="text-3xl mb-2">🟢</p>
+                    <p class="font-semibold" id="running-count">0/8</p>
+                    <p class="text-sm text-gray-500">运行中 Bot</p>
+                </div>
+                <div class="text-center p-4 bg-blue-50 rounded-lg">
+                    <p class="text-3xl mb-2">📋</p>
+                    <p class="font-semibold" id="task-queue">0</p>
+                    <p class="text-sm text-gray-500">任务队列</p>
+                </div>
+                <div class="text-center p-4 bg-purple-50 rounded-lg">
+                    <p class="text-3xl mb-2">📦</p>
+                    <p class="font-semibold" id="daily-output">0</p>
+                    <p class="text-sm text-gray-500">今日产出</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Token 统计图表 -->
+        <div class="bg-white rounded-xl shadow-md p-6 mb-8">
+            <h3 class="text-lg font-bold text-gray-800 mb-4">📈 Token 使用趋势</h3>
+            <canvas id="token-chart" height="80"></canvas>
+        </div>
+    </main>
+
+    <script>
+        // 加载 Bot 状态
+        async function loadBotsStatus() {
+            try {
+                const response = await fetch('/api/bots/status');
+                const data = await response.json();
+                
+                // 更新系统概览
+                document.getElementById('running-count').textContent = `${data.running}/${data.total}`;
+                document.getElementById('task-queue').textContent = data.running * 2; // 模拟数据
+                document.getElementById('daily-output').textContent = 45; // 模拟数据
+                
+                // 生成 Bot 卡片
+                const container = document.querySelector('.grid.grid-cols-1');
+                container.innerHTML = data.bots.map(bot => `
+                    <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-all">
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <h4 class="font-bold text-lg">${bot.name}</h4>
+                                <p class="text-sm text-gray-500">${bot.task}</p>
+                            </div>
+                            <span class="text-2xl">${bot.status === 'running' ? '🟢' : '🟡'}</span>
+                        </div>
+                        <div class="space-y-2">
+                            ${bot.balance ? `<p class="text-sm">💰 余额：${bot.balance}</p>` : ''}
+                            ${bot.pnl ? `<p class="text-sm">📊 今日：${bot.pnl}</p>` : ''}
+                            ${bot.commits ? `<p class="text-sm">💻 提交：${bot.commits}</p>` : ''}
+                            ${bot.queries ? `<p class="text-sm">🔍 查询：${bot.queries}</p>` : ''}
+                            ${bot.files ? `<p class="text-sm">📁 文件：${bot.files}</p>` : ''}
+                            ${bot.skills ? `<p class="text-sm">🎯 技能：${bot.skills}</p>` : ''}
+                        </div>
+                    </div>
+                `).join('');
+                
+            } catch (error) {
+                console.error('加载 Bot 状态失败:', error);
+            }
+        }
+
+        // 加载 Token 统计图表
+        async function loadTokenChart() {
+            try {
+                const response = await fetch('/api/stats/tokens');
+                const data = await response.json();
+                
+                new Chart(document.getElementById('token-chart'), {
+                    type: 'line',
+                    data: {
+                        labels: ['00:00', '04:00', '08:00', '12:00', '16:00', '20:00', '24:00'],
+                        datasets: [{
+                            label: 'Token 使用量',
+                            data: data.hourly,
+                            borderColor: '#6366f1',
+                            backgroundColor: 'rgba(99, 102, 241, 0.1)',
+                            fill: true,
+                            tension: 0.4
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: { display: false }
+                        },
+                        scales: {
+                            y: { beginAtZero: true }
+                        }
+                    }
+                });
+            } catch (error) {
+                console.error('加载图表失败:', error);
+            }
+        }
+
+        // 初始化
+        loadBotsStatus();
+        loadTokenChart();
+        
+        // 每 30 秒刷新
+        setInterval(loadBotsStatus, 30000);
+    </script>
+</body>
+</html>

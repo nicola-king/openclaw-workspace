@@ -1,0 +1,145 @@
+# Cron 工具权限白名单配置
+# 版本：1.0 | 创建时间：2026-04-02 12:12
+# 用途：定义每个 Cron 作业允许使用的工具（安全增强）
+
+{
+  "version": "1.0",
+  "updated_at": "2026-04-02T12:12:00+08:00",
+  "description": "每个 Cron 作业的工具白名单，防止定时任务越权",
+  
+  "jobs": {
+    "daily-constitution": {
+      "description": "每日宪法学习 + 记忆提炼",
+      "schedule": "0 6 * * *",
+      "allowed_tools": [
+        "read",
+        "write",
+        "memory_search",
+        "memory_get",
+        "exec"
+      ],
+      "forbidden_tools": [
+        "message",
+        "image_generate",
+        "web_search"
+      ],
+      "risk_level": "LOW",
+      "owner": "taiyi"
+    },
+    
+    "auto-exec-report": {
+      "description": "5 分钟自动执行汇报",
+      "schedule": "*/5 * * * *",
+      "allowed_tools": [
+        "read",
+        "exec",
+        "message",
+        "sessions_list",
+        "sessions_status"
+      ],
+      "forbidden_tools": [
+        "edit",
+        "write",
+        "image_generate"
+      ],
+      "risk_level": "MEDIUM",
+      "owner": "taiyi"
+    },
+    
+    "zhiji-first-bet": {
+      "description": "知几首笔下注执行",
+      "schedule": "on-demand",
+      "allowed_tools": [
+        "read",
+        "exec",
+        "web_fetch",
+        "write"
+      ],
+      "forbidden_tools": [
+        "message",
+        "image_generate"
+      ],
+      "risk_level": "HIGH",
+      "owner": "zhiji",
+      "requires_approval": true
+    },
+    
+    "polymarket-data-collection": {
+      "description": "Polymarket 数据采集",
+      "schedule": "0 */4 * * *",
+      "allowed_tools": [
+        "read",
+        "write",
+        "web_fetch",
+        "web_search",
+        "exec"
+      ],
+      "forbidden_tools": [
+        "message",
+        "edit"
+      ],
+      "risk_level": "LOW",
+      "owner": "wangliang"
+    },
+    
+    "github-issue-monitor": {
+      "description": "GitHub Issue 监控",
+      "schedule": "0 */2 * * *",
+      "allowed_tools": [
+        "read",
+        "write",
+        "exec",
+        "message",
+        "web_fetch"
+      ],
+      "forbidden_tools": [
+        "image_generate"
+      ],
+      "risk_level": "MEDIUM",
+      "owner": "suwen"
+    },
+    
+    "daily-report": {
+      "description": "每日 23:00 报告生成",
+      "schedule": "0 23 * * *",
+      "allowed_tools": [
+        "read",
+        "write",
+        "memory_search",
+        "memory_get",
+        "exec",
+        "message"
+      ],
+      "forbidden_tools": [
+        "image_generate",
+        "web_search"
+      ],
+      "risk_level": "LOW",
+      "owner": "taiyi"
+    }
+  },
+  
+  "全局规则": {
+    "永远禁止": [
+      "elevated 执行（除非显式授权）",
+      "删除操作（rm -rf 等）",
+      "系统级修改（/etc/, /usr/ 等）"
+    ],
+    "需要审批": [
+      "message broadcast（广播消息）",
+      "write 到敏感文件（MEMORY.md, SOUL.md 等）",
+      "exec 包含 sudo/rm/curl piped to bash"
+    ],
+    "审计日志": {
+      "enabled": true,
+      "log_file": "~/.openclaw/logs/cron-audit.log",
+      "retention_days": 30
+    }
+  },
+  
+  "庖丁审计接口": {
+    "description": "庖丁 Bot 可审计所有 Cron 执行记录",
+    "command": "./scripts/paoding-audit-cron.sh",
+    "frequency": "每日 08:00"
+  }
+}

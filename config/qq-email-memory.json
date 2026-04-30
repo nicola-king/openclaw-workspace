@@ -1,0 +1,41 @@
+{
+  "email_config": {
+    "provider": "qq",
+    "smtp_server": "smtp.qq.com",
+    "smtp_port": 465,
+    "use_ssl": true,
+    "sender_name": "太一 AGI GitHub 发布系统",
+    "sender_email": "7073481596@qq.com",
+    "sender_password": "hbyvfjgmjffhbgfb",
+    "auto_configured": true,
+    "configured_at": "2026-04-16 17:51",
+    "source": "太一记忆 - wechat.json"
+  },
+  "notification_templates": {
+    "publish_success": {
+      "subject": "✅ GitHub 发布成功 - {project_name}",
+      "body": "项目 {project_name} 已成功发布到 GitHub\n\n仓库：{repo_url}\nRelease: {release_url}\n发布时间：{published_at}"
+    },
+    "publish_failed": {
+      "subject": "❌ GitHub 发布失败 - {project_name}",
+      "body": "项目 {project_name} 发布失败\n\n错误信息：{error}\n请检查后重试"
+    },
+    "release_created": {
+      "subject": "📦 Release 已创建 - {project_name} v{version}",
+      "body": "Release {version} 已创建\n\n仓库：{repo_url}\nRelease: {release_url}"
+    },
+    "daily_summary": {
+      "subject": "📊 GitHub 发布日报 - {date}",
+      "body": "今日发布统计:\n成功：{success_count} 个\n失败：{fail_count} 个\n总计：{total_count} 个\n\n累计发布：{total_published} 个"
+    }
+  },
+  "recipients": [
+    {
+      "name": "nicola king",
+      "email": "7073481596@qq.com",
+      "notify_on": ["publish_success", "publish_failed", "release_created", "daily_summary"]
+    }
+  ],
+  "last_email_sent": null,
+  "email_history": []
+}

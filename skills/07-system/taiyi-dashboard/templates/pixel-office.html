@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>太一像素办公室 3D</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: #1a1a2e;
+  font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+header {
+  background: rgba(255,255,255,0.05);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 { color: #e0d7ff; font-size: 18px; font-weight: 500; }
+header .subtitle { color: #888; font-size: 13px; margin-top: 2px; }
+.status-bar {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 13px;
+  color: #aaa;
+}
+.status-dot { width: 8px; height: 8px; border-radius: 50%; background: #4ade80; display: inline-block; margin-right: 6px; animation: pulse 2s infinite; }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+.back-link { color: #a78bfa; font-size: 13px; text-decoration: none; }
+
+.scene-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+  min-height: calc(100vh - 60px);
+}
+
+.office-wrapper {
+  position: relative;
+  width: 900px;
+}
+
+.floor-label {
+  text-align: center;
+  color: #6b7280;
+  font-size: 12px;
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* 等距投影容器 */
+.iso-scene {
+  position: relative;
+  width: 900px;
+  height: 600px;
+  transform-style: preserve-3d;
+}
+
+/* SVG 场景 */
+.scene-svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* 悬浮信息卡 */
+.bot-tooltip {
+  position: absolute;
+  background: rgba(15, 15, 35, 0.95);
+  border: 1px solid rgba(167, 139, 250, 0.4);
+  border-radius: 10px;
+  padding: 12px 16px;
+  font-size: 12px;
+  color: #e0d7ff;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s;
+  z-index: 100;
+  min-width: 160px;
+  backdrop-filter: blur(8px);
+}
+.bot-tooltip.visible { opacity: 1; }
+.bot-tooltip .bot-name { font-size: 14px; font-weight: 500; color: #c4b5fd; margin-bottom: 6px; }
+.bot-tooltip .bot-task { color: #9ca3af; font-size: 11px; margin-bottom: 8px; }
+.bot-tooltip .bot-stats { display: flex; flex-direction: column; gap: 4px; }
+.bot-tooltip .stat-row { display: flex; justify-content: space-between; gap: 16px; }
+.bot-tooltip .stat-label { color: #6b7280; }
+.bot-tooltip .stat-value { color: #4ade80; font-weight: 500; }
+
+/* 底部状态栏 */
+.bottom-stats {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 8px;
+  margin-top: 20px;
+}
+.bot-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 8px;
+  padding: 10px 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.bot-card:hover {
+  background: rgba(167,139,250,0.1);
+  border-color: rgba(167,139,250,0.3);
+  transform: translateY(-2px);
+}
+.bot-card.active {
+  background: rgba(167,139,250,0.15);
+  border-color: rgba(167,139,250,0.5);
+}
+.bot-card .card-emoji { font-size: 20px; margin-bottom: 4px; }
+.bot-card .card-name { font-size: 11px; color: #c4b5fd; font-weight: 500; }
+.bot-card .card-status { font-size: 10px; color: #6b7280; margin-top: 2px; }
+.bot-card .card-status.working { color: #4ade80; }
+.bot-card .card-status.idle { color: #f59e0b; }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>🏢 太一像素办公室</h1>
+    <div class="subtitle">8 Bot 拟人化工作场景 · 实时动画</div>
+  </div>
+  <div class="status-bar">
+    <div><span class="status-dot"></span>系统正常</div>
+    <div>任务队列: 12</div>
+    <div>今日产出: 45 文件</div>
+    <a href="/" class="back-link">← 返回 Dashboard</a>
+  </div>
+</header>
+
+<div class="scene-container">
+  <div class="office-wrapper">
+    <div class="floor-label">太一 Bot 舰队办公室 · 等距全景视图</div>
+
+    <div class="iso-scene">
+      <svg class="scene-svg" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <!-- 地板图案 -->
+          <pattern id="floor-pattern" x="0" y="0" width="60" height="34.6" patternUnits="userSpaceOnUse">
+            <path d="M30 0 L60 17.3 L30 34.6 L0 17.3 Z" fill="#1e1e3a" stroke="#2a2a4a" stroke-width="0.5"/>
+          </pattern>
+          <!-- 发光效果 -->
+          <filter id="glow">
+            <feGaussianBlur stdDeviation="2" result="blur"/>
+            <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+          <filter id="screen-glow">
+            <feGaussianBlur stdDeviation="3" result="blur"/>
+            <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+          <!-- 动画屏幕渐变 -->
+          <linearGradient id="screen1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#1a3a2a"/>
+            <stop offset="100%" stop-color="#0a1a14"/>
+            <animate attributeName="x1" values="0%;100%;0%" dur="3s" repeatCount="indefinite"/>
+          </linearGradient>
+          <linearGradient id="screen2" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#1a1a3a"/>
+            <stop offset="100%" stop-color="#0a0a1e"/>
+          </linearGradient>
+          <linearGradient id="screen3" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#3a1a2a"/>
+            <stop offset="100%" stop-color="#1e0a14"/>
+          </linearGradient>
+        </defs>
+
+        <!-- 背景地板 -->
+        <ellipse cx="450" cy="350" rx="420" ry="220" fill="#16162a" opacity="0.8"/>
+        <rect x="30" y="120" width="840" height="460" fill="url(#floor-pattern)" opacity="0.3"/>
+
+        <!-- 办公室边界墙 -->
+        <!-- 左墙 -->
+        <path d="M80 150 L80 480 L160 520 L160 200 Z" fill="#1a1a35" stroke="#2a2a55" stroke-width="1"/>
+        <!-- 右墙 -->
+        <path d="M820 150 L820 480 L740 520 L740 200 Z" fill="#1a1a35" stroke="#2a2a55" stroke-width="1"/>
+        <!-- 后墙 -->
+        <path d="M80 150 L820 150 L820 200 L80 200 Z" fill="#16163a" stroke="#2a2a55" stroke-width="1"/>
+
+        <!-- 墙上装饰 - 窗户 -->
+        <rect x="150" y="155" width="80" height="35" rx="2" fill="#0a1a2a" stroke="#2a4a6a" stroke-width="1"/>
+        <line x1="190" y1="155" x2="190" y2="190" stroke="#2a4a6a" stroke-width="0.5"/>
+        <line x1="150" y1="172" x2="230" y2="172" stroke="#2a4a6a" stroke-width="0.5"/>
+        <!-- 窗户光 -->
+        <rect x="151" y="156" width="38" height="15" rx="1" fill="#1a3a5a" opacity="0.6"/>
+        <rect x="191" y="156" width="38" height="15" rx="1" fill="#1a3a5a" opacity="0.6"/>
+
+        <rect x="400" y="155" width="100" height="35" rx="2" fill="#0a1a2a" stroke="#2a4a6a" stroke-width="1"/>
+        <line x1="450" y1="155" x2="450" y2="190" stroke="#2a4a6a" stroke-width="0.5"/>
+        <line x1="400" y1="172" x2="500" y2="172" stroke="#2a4a6a" stroke-width="0.5"/>
+        <rect x="401" y="156" width="48" height="15" rx="1" fill="#1a3a5a" opacity="0.6"/>
+        <rect x="451" y="156" width="48" height="15" rx="1" fill="#1a3a5a" opacity="0.6"/>
+
+        <rect x="670" y="155" width="80" height="35" rx="2" fill="#0a1a2a" stroke="#2a4a6a" stroke-width="1"/>
+        <line x1="710" y1="155" x2="710" y2="190" stroke="#2a4a6a" stroke-width="0.5"/>
+        <line x1="670" y1="172" x2="750" y2="172" stroke="#2a4a6a" stroke-width="0.5"/>
+        <rect x="671" y="156" width="38" height="15" rx="1" fill="#1a3a5a" opacity="0.6"/>
+        <rect x="711" y="156" width="38" height="15" rx="1" fill="#1a3a5a" opacity="0.6"/>
+
+        <!-- 墙上标语 -->
+        <text x="450" y="178" text-anchor="middle" fill="#3a3a6a" font-size="11" font-family="sans-serif" letter-spacing="3">太一智能自动化系统</text>
+
+        <!-- ======================== -->
+        <!-- 工位区域 - 等距投影 -->
+        <!-- ======================== -->
+
+        <!-- 工位宏 - 每个Bot一个工位 -->
+        <!-- 知几 - 交易监控 - 左前 -->
+        <g class="workstation" data-bot="知几" style="cursor:pointer">
+          <!-- 桌子 -->
+          <path d="M130 370 L210 330 L260 355 L180 395 Z" fill="#2a1e3a" stroke="#4a3a6a" stroke-width="1"/>
+          <path d="M130 370 L130 400 L180 425 L180 395 Z" fill="#1e1630" stroke="#3a2a5a" stroke-width="0.5"/>
+          <path d="M260 355 L260 385 L180 425 L180 395 Z" fill="#221a35" stroke="#3a2a5a" stroke-width="0.5"/>
+          <!-- 显示器 -->
+          <rect x="165" y="315" width="50" height="32" rx="2" fill="#0a1e0a" stroke="#1a4a1a" stroke-width="1" filter="url(#screen-glow)"/>
+          <rect x="166" y="316" width="48" height="30" rx="1" fill="url(#screen1)"/>
+          <!-- 交易图表动画 -->
+          <polyline points="170,338 175,332 180,335 185,328 190,331 195,325 200,329 205,322" fill="none" stroke="#4ade80" stroke-width="1.5" opacity="0.9">
+            <animate attributeName="points" values="170,338 175,332 180,335 185,328 190,331 195,325 200,329 205,322;170,334 175,338 180,330 185,334 190,327 195,331 200,325 205,328;170,338 175,332 180,335 185,328 190,331 195,325 200,329 205,322" dur="2s" repeatCount="indefinite"/>
+          </polyline>
+          <!-- 支架 -->
+          <line x1="188" y1="347" x2="188" y2="355" stroke="#3a2a5a" stroke-width="2"/>
+          <!-- 键盘 -->
+          <rect x="165" y="357" width="40" height="12" rx="2" fill="#1a1a2e" stroke="#2a2a4a" stroke-width="0.5"/>
+          <!-- Bot角色 - 知几 -->
+          <g transform="translate(195, 295)">
+            <!-- 身体 -->
+            <rect x="-10" y="0" width="20" height="22" rx="4" fill="#4a3a7a" stroke="#7a6aaa" stroke-width="1"/>
+            <!-- 头 -->
+            <rect x="-9" y="-16" width="18" height="16" rx="4" fill="#3a2a6a" stroke="#6a5a9a" stroke-width="1"/>
+            <!-- 眼睛 - 动画 -->
+            <circle cx="-4" cy="-9" r="3" fill="#0a0a1a"/>
+            <circle cx="4" cy="-9" r="3" fill="#0a0a1a"/>
+            <circle cx="-3" cy="-9" r="1.5" fill="#4ade80">
+              <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="5" cy="-9" r="1.5" fill="#4ade80">
+              <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/>
+            </circle>
+            <!-- 天线 -->
+            <line x1="0" y1="-16" x2="0" y2="-22" stroke="#6a5a9a" stroke-width="1.5"/>
+            <circle cx="0" cy="-23" r="2" fill="#a78bfa">
+              <animate attributeName="opacity" values="1;0.2;1" dur="0.8s" repeatCount="indefinite"/>
+            </circle>
+            <!-- 手臂动画 - 打字 -->
+            <line x1="-10" y1="8" x2="-18" y2="14" stroke="#4a3a7a" stroke-width="2.5" stroke-linecap="round">
+              <animate attributeName="y2" values="14;12;14" dur="0.3s" repeatCount="indefinite"/>
+            </line>
+            <line x1="10" y1="8" x2="18" y2="14" stroke="#4a3a7a" stroke-width="2.5" stroke-linecap="round">
+              <animate attributeName="y2" values="12;14;12" dur="0.3s" repeatCount="indefinite"/>
+            </line>
+          </g>
+          <!-- 工位标签 -->
+          <text x="175" y="418" text-anchor="middle" fill="#7c6aaa" font-size="10" font-family="sans-serif">知几</text>
+          <text x="175" y="430" text-anchor="middle" fill="#4ade80" font-size="9" font-family="sans-serif">交易监控</text>
+        </g>
+
+        <!-- 山木 - 代码开发 - 中左前 -->
+        <g class="workstation" data-bot="山木" style="cursor:pointer">
+          <path d="M270 390 L350 350 L400 375 L320 415 Z" fill="#1e2a1e" stroke="#2a4a2a" stroke-width="1"/>
+          <path d="M270 390 L270 420 L320 445 L320 415 Z" fill="#181e18" stroke="#243024" stroke-width="0.5"/>
+          <path d="M400 375 L400 405 L320 445 L320 415 Z" fill="#1a2a1a" stroke="#243024" stroke-width="0.5"/>
+          <!-- 双显示器 -->
+          <rect x="295" y="332" width="44" height="28" rx="2" fill="#0a0a1e" stroke="#1a1a4a" stroke-width="1" filter="url(#screen-glow)"/>
+          <rect x="296" y="333" width="42" height="26" rx="1" fill="url(#screen2)"/>
+          <!-- 代码行 -->
+          <text x="299" y="343" fill="#4a9eff" font-size="5" font-family="monospace">def solve():</text>
+          <text x="299" y="350" fill="#a78bfa" font-size="5" font-family="monospace">  return AI</text>
+          <text x="299" y="357" fill="#4ade80" font-size="5" font-family="monospace">✓ tests pass</text>
+          <line x1="317" y1="360" x2="317" y2="368" stroke="#2a2a4a" stroke-width="2"/>
+          <!-- Bot - 山木 -->
+          <g transform="translate(345, 310)">
+            <rect x="-10" y="0" width="20" height="22" rx="4" fill="#2a4a2a" stroke="#4a7a4a" stroke-width="1"/>
+            <rect x="-9" y="-16" width="18" height="16" rx="4" fill="#1e3a1e" stroke="#3a6a3a" stroke-width="1"/>
+            <circle cx="-4" cy="-9" r="3" fill="#0a0a1a"/>
+            <circle cx="4" cy="-9" r="3" fill="#0a0a1a"/>
+            <circle cx="-3" cy="-9" r="1.5" fill="#4ade80">
+              <animate attributeName="r" values="1.5;2;1.5" dur="2s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="5" cy="-9" r="1.5" fill="#4ade80">
+              <animate attributeName="r" values="2;1.5;2" dur="2s" repeatCount="indefinite"/>
+            </circle>
+            <line x1="0" y1="-16" x2="3" y2="-24" stroke="#4a7a4a" stroke-width="1.5"/>
+            <line x1="3" y1="-24" x2="-2" y2="-28" stroke="#4a7a4a" stroke-width="1.5"/>
+            <line x1="-2" y1="-28" x2="3" y2="-32" stroke="#4a7a4a" stroke-width="1"/>
+            <!-- 树形天线 -->
+            <circle cx="3" cy="-32" r="2.5" fill="#2a6a2a" opacity="0.8"/>
+            <line x1="-10" y1="8" x2="-18" y2="13" stroke="#2a4a2a" stroke-width="2.5" stroke-linecap="round">
+              <animate attributeName="y2" values="13;11;13" dur="0.4s" repeatCount="indefinite"/>
+            </line>
+            <line x1="10" y1="8" x2="18" y2="13" stroke="#2a4a2a" stroke-width="2.5" stroke-linecap="round">
+              <animate attributeName="y2" values="11;13;11" dur="0.4s" repeatCount="indefinite"/>
+            </line>
+          </g>
+          <text x="320" y="438" text-anchor="middle" fill="#4a7a4a" font-size="10" font-family="sans-serif">山木</text>
+          <text x="320" y="450" text-anchor="middle" fill="#4ade80" font-size="9" font-family="sans-serif">代码开发</text>
+        </g>
+
+        <!-- 素问 - 健康分析 - 中前 -->
+        <g class="workstation" data-bot="素问" style="cursor:pointer">
+          <path d="M415 375 L495 335 L545 360 L465 400 Z" fill="#2a1a2a" stroke="#4a2a4a" stroke-width="1"/>
+          <path d="M415 375 L415 405 L465 430 L465 400 Z" fill="#1e1420" stroke="#32203a" stroke-width="0.5"/>
+          <path d="M545 360 L545 390 L465 430 L465 400 Z" fill="#201623" stroke="#32203a" stroke-width="0.5"/>
+          <!-- 医疗屏幕 -->
+          <rect x="438" y="314" width="50" height="32" rx="2" fill="#0a0a1e" stroke="#3a1a4a" stroke-width="1" filter="url(#screen-glow)"/>
+          <rect x="439" y="315" width="48" height="30" rx="1" fill="url(#screen3)"/>
+          <!-- 心电图动画 -->
+          <polyline points="442,330 447,330 449,322 451,338 453,322 455,330 460,330 465,330 467,324 469,336 471,324 473,330 478,330 483,330" fill="none" stroke="#f472b6" stroke-width="1.5">
+            <animateTransform attributeName="transform" type="translate" values="0,0;-10,0;-20,0;-30,0;-40,0" dur="2s" repeatCount="indefinite"/>
+          </polyline>
+          <line x1="462" y1="346" x2="462" y2="355" stroke="#2a1a3a" stroke-width="2"/>
+          <!-- Bot - 素问 -->
+          <g transform="translate(493, 294)">
+            <rect x="-10" y="0" width="20" height="22" rx="4" fill="#4a1a4a" stroke="#7a3a7a" stroke-width="1"/>
+            <rect x="-9" y="-16" width="18" height="16" rx="4" fill="#3a103a" stroke="#6a2a6a" stroke-width="1"/>
+            <!-- 听诊器 -->
+            <path d="M-6,-2 Q-10,5 -8,10" fill="none" stroke="#c084fc" stroke-width="1.5"/>
+            <circle cx="-8" cy="11" r="2.5" fill="none" stroke="#c084fc" stroke-width="1.5"/>
+            <circle cx="-4" cy="-9" r="3" fill="#0a0a1a"/>
+            <circle cx="4" cy="-9" r="3" fill="#0a0a1a"/>
+            <circle cx="-3" cy="-9" r="1.5" fill="#c084fc">
+              <animate attributeName="opacity" values="1;0.4;1" dur="1s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="5" cy="-9" r="1.5" fill="#c084fc">
+              <animate attributeName="opacity" values="0.4;1;0.4" dur="1s" repeatCount="indefinite"/>
+            </circle>
+            <line x1="0" y1="-16" x2="0" y2="-23" stroke="#6a2a6a" stroke-width="1.5"/>
+            <path d="M-3,-25 L0,-29 L3,-25" fill="none" stroke="#c084fc" stroke-width="1.5"/>
+          </g>
+          <text x="465" y="423" text-anchor="middle" fill="#7a3a7a" font-size="10" font-family="sans-serif">素问</text>
+          <text x="465" y="435" text-anchor="middle" fill="#c084fc" font-size="9" font-family="sans-serif">健康分析</text>
+        </g>
+
+        <!-- 罔两 - 影子监控 - 右前 -->
+        <g class="workstation" data-bot="罔两" style="cursor:pointer">
+          <path d="M560 355 L640 315 L690 340 L610 380 Z" fill="#0a0a1a" stroke="#1a1a3a" stroke-width="1"/>
+          <path d="M560 355 L560 385 L610 410 L610 380 Z" fill="#08080e" stroke="#12122a" stroke-width="0.5"/>
+          <path d="M690 340 L690 370 L610 410 L610 380 Z" fill="#0a0a14" stroke="#12122a" stroke-width="0.5"/>
+          <!-- 多屏监控 -->
+          <rect x="578" y="293" width="36" height="24" rx="2" fill="#0a0a0a" stroke="#1a1a2a" stroke-width="1" filter="url(#screen-glow)"/>
+          <rect x="617" y="290" width="30" height="20" rx="2" fill="#0a0a0a" stroke="#1a1a2a" stroke-width="1" filter="url(#screen-glow)"/>
+          <!-- 监控画面 -->
+          <rect x="579" y="294" width="34" height="22" rx="1" fill="#0a1a0a"/>
+          <rect x="618" y="291" width="28" height="18" rx="1" fill="#1a0a0a"/>
+          <!-- 扫描线 -->
+          <line x1="579" y1="300" x2="613" y2="300" stroke="#22ff44" stroke-width="0.5" opacity="0.6">
+            <animate attributeName="y1" values="294;316;294" dur="1.5s" repeatCount="indefinite"/>
+            <animate attributeName="y2" values="294;316;294" dur="1.5s" repeatCount="indefinite"/>
+          </line>
+          <line x1="618" y1="295" x2="646" y2="295" stroke="#ff2222" stroke-width="0.5" opacity="0.6">
+            <animate attributeName="y1" values="291;309;291" dur="1.2s" repeatCount="indefinite"/>
+            <animate attributeName="y2" values="291;309;291" dur="1.2s" repeatCount="indefinite"/>
+          </line>
+          <!-- Bot - 罔两 - 幽灵形态 -->
+          <g transform="translate(638, 272)">
+            <!-- 幽灵身体 -->
+            <path d="M-12,0 Q-12,-20 0,-22 Q12,-20 12,0 L12,18 L8,14 L4,18 L0,14 L-4,18 L-8,14 L-12,18 Z" fill="#1a1a3a" stroke="#3a3a6a" stroke-width="1">
+              <animate attributeName="d" values="M-12,0 Q-12,-20 0,-22 Q12,-20 12,0 L12,18 L8,14 L4,18 L0,14 L-4,18 L-8,14 L-12,18 Z;M-12,2 Q-12,-18 0,-20 Q12,-18 12,2 L12,20 L8,16 L4,20 L0,16 L-4,20 L-8,16 L-12,20 Z;M-12,0 Q-12,-20 0,-22 Q12,-20 12,0 L12,18 L8,14 L4,18 L0,14 L-4,18 L-8,14 L-12,18 Z" dur="2s" repeatCount="indefinite"/>
+            </path>
+            <circle cx="-5" cy="-8" r="3" fill="#0a0a1a"/>
+            <circle cx="5" cy="-8" r="3" fill="#0a0a1a"/>
+            <circle cx="-4" cy="-8" r="1.5" fill="#60a5fa" opacity="0.9">
+              <animate attributeName="opacity" values="0.9;0.2;0.9" dur="1.8s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="6" cy="-8" r="1.5" fill="#60a5fa" opacity="0.9">
+              <animate attributeName="opacity" values="0.2;0.9;0.2" dur="1.8s" repeatCount="indefinite"/>
+            </circle>
+          </g>
+          <text x="610" y="403" text-anchor="middle" fill="#3a3a6a" font-size="10" font-family="sans-serif">罔两</text>
+          <text x="610" y="415" text-anchor="middle" fill="#60a5fa" font-size="9" font-family="sans-serif">影子监控</text>
+        </g>
+
+        <!-- 庖丁 - 系统构建 - 左后 -->
+        <g class="workstation" data-bot="庖丁" style="cursor:pointer">
+          <path d="M150 275 L230 235 L280 260 L200 300 Z" fill="#2a1a0a" stroke="#4a3a1a" stroke-width="1"/>
+          <path d="M150 275 L150 305 L200 330 L200 300 Z" fill="#1e1208" stroke="#382a12" stroke-width="0.5"/>
+          <path d="M280 260 L280 290 L200 330 L200 300 Z" fill="#221408" stroke="#382a12" stroke-width="0.5"/>
+          <rect x="172" y="220" width="48" height="26" rx="2" fill="#0a0a0a" stroke="#3a2a0a" stroke-width="1" filter="url(#screen-glow)"/>
+          <rect x="173" y="221" width="46" height="24" rx="1" fill="#1a0a0a"/>
+          <!-- 构建进度 -->
+          <rect x="175" y="225" width="30" height="3" rx="1" fill="#1a1a1a"/>
+          <rect x="175" y="225" width="22" height="3" rx="1" fill="#f59e0b">
+            <animate attributeName="width" values="5;42;5" dur="3s" repeatCount="indefinite"/>
+          </rect>
+          <text x="196" y="239" text-anchor="middle" fill="#f59e0b" font-size="5" font-family="monospace">BUILD...</text>
+          <text x="196" y="246" text-anchor="middle" fill="#4ade80" font-size="5" font-family="monospace">3 tasks</text>
+          <line x1="196" y1="247" x2="196" y2="258" stroke="#3a2a1a" stroke-width="2"/>
+          <!-- Bot - 庖丁 - 铁锤形态 -->
+          <g transform="translate(225, 202)">
+            <rect x="-10" y="0" width="20" height="22" rx="3" fill="#4a2a0a" stroke="#7a4a1a" stroke-width="1"/>
+            <rect x="-9" y="-16" width="18" height="16" rx="3" fill="#3a1e08" stroke="#6a3a12" stroke-width="1"/>
+            <circle cx="-4" cy="-9" r="3" fill="#0a0a1a"/>
+            <circle cx="4" cy="-9" r="3" fill="#0a0a1a"/>
+            <circle cx="-3" cy="-9" r="1.5" fill="#f59e0b">
+              <animate attributeName="opacity" values="1;0.5;1" dur="0.6s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="5" cy="-9" r="1.5" fill="#f59e0b">
+              <animate attributeName="opacity" values="0.5;1;0.5" dur="0.6s" repeatCount="indefinite"/>
+            </circle>
+            <!-- 锤子天线 -->
+            <line x1="5" y1="-16" x2="8" y2="-24" stroke="#7a4a1a" stroke-width="1.5"/>
+            <rect x="5" y="-28" width="8" height="5" rx="1" fill="#f59e0b"/>
+            <line x1="-10" y1="8" x2="-17" y2="16" stroke="#4a2a0a" stroke-width="3" stroke-linecap="round">
+              <animateTransform attributeName="transform" type="rotate" values="0,-10,8;-30,-10,8;0,-10,8" dur="0.5s" repeatCount="indefinite"/>
+            </line>
+          </g>
+          <text x="200" y="323" text-anchor="middle" fill="#7a4a1a" font-size="10" font-family="sans-serif">庖丁</text>
+          <text x="200" y="335" text-anchor="middle" fill="#f59e0b" font-size="9" font-family="sans-serif">系统构建</text>
+        </g>
+
+        <!-- 羿 - 精准执行 - 中左后 -->
+        <g class="workstation" data-bot="羿" style="cursor:pointer">
+          <path d="M310 252 L390 212 L440 237 L360 277 Z" fill="#1a1a0a" stroke="#3a3a1a" stroke-width="1"/>
+          <path d="M310 252 L310 282 L360 307 L360 277 Z" fill="#141408" stroke="#2a2a12" stroke-width="0.5"/>
+          <path d="M440 237 L440 267 L360 307 L360 277 Z" fill="#161606" stroke="#2a2a12" stroke-width="0.5"/>
+          <rect x="335" y="194" width="46" height="28" rx="2" fill="#0a0a0a" stroke="#2a2a0a" stroke-width="1" filter="url(#screen-glow)"/>
+          <rect x="336" y="195" width="44" height="26" rx="1" fill="#0a1a0a"/>
+          <!-- 目标锁定 -->
+          <circle cx="358" cy="208" r="10" fill="none" stroke="#ef4444" stroke-width="1" opacity="0.8">
+            <animate attributeName="r" values="10;7;10" dur="1s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="0.8;1;0.8" dur="1s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="358" cy="208" r="5" fill="none" stroke="#ef4444" stroke-width="1"/>
+          <circle cx="358" cy="208" r="1.5" fill="#ef4444"/>
+          <line x1="348" y1="208" x2="353" y2="208" stroke="#ef4444" stroke-width="0.5"/>
+          <line x1="363" y1="208" x2="368" y2="208" stroke="#ef4444" stroke-width="0.5"/>
+          <line x1="358" y1="198" x2="358" y2="203" stroke="#ef4444" stroke-width="0.5"/>
+          <line x1="358" y1="213" x2="358" y2="218" stroke="#ef4444" stroke-width="0.5"/>
+          <line x1="358" y1="223" x2="358" y2="267" stroke="#2a2a1a" stroke-width="2"/>
+          <!-- Bot - 羿 - 弓箭形态 -->
+          <g transform="translate(388, 175)">
+            <rect x="-10" y="0" width="20" height="22" rx="3" fill="#2a2a0a" stroke="#5a5a1a" stroke-width="1"/>
+            <rect x="-9" y="-16" width="18" height="16" rx="3" fill="#1e1e08" stroke="#4a4a12" stroke-width="1"/>
+            <circle cx="-4" cy="-9" r="3" fill="#0a0a1a"/>
+            <circle cx="4" cy="-9" r="3" fill="#0a0a1a"/>
+            <circle cx="-3" cy="-9" r="1.5" fill="#ef4444"/>
+            <circle cx="5" cy="-9" r="1.5" fill="#ef4444"/>
+            <!-- 弓天线 -->
+            <path d="M0,-16 Q8,-26 0,-32" fill="none" stroke="#5a5a1a" stroke-width="1.5"/>
+            <line x1="0" y1="-32" x2="0" y2="-16" stroke="#ef4444" stroke-width="0.8" stroke-dasharray="2,2"/>
+            <line x1="-10" y1="8" x2="-16" y2="4" stroke="#2a2a0a" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="10" y1="8" x2="16" y2="4" stroke="#2a2a0a" stroke-width="2.5" stroke-linecap="round"/>
+          </g>
+          <text x="360" y="300" text-anchor="middle" fill="#5a5a1a" font-size="10" font-family="sans-serif">羿</text>
+          <text x="360" y="312" text-anchor="middle" fill="#ef4444" font-size="9" font-family="sans-serif">精准执行</text>
+        </g>
+
+        <!-- 守藏吏 - 知识归档 - 中右后 -->
+        <g class="workstation" data-bot="守藏吏" style="cursor:pointer">
+          <path d="M470 238 L550 198 L600 223 L520 263 Z" fill="#0a1a2a" stroke="#1a3a5a" stroke-width="1"/>
+          <path d="M470 238 L470 268 L520 293 L520 263 Z" fill="#081420" stroke="#12283a" stroke-width="0.5"/>
+          <path d="M600 223 L600 253 L520 293 L520 263 Z" fill="#0a1623" stroke="#12283a" stroke-width="0.5"/>
+          <rect x="492" y="176" width="50" height="30" rx="2" fill="#0a0a0a" stroke="#0a2a4a" stroke-width="1" filter="url(#screen-glow)"/>
+          <rect x="493" y="177" width="48" height="28" rx="1" fill="#0a0a1a"/>
+          <!-- 书架/文档 -->
+          <rect x="496" y="180" width="6" height="20" rx="1" fill="#1a3a5a"/>
+          <rect x="504" y="182" width="5" height="18" rx="1" fill="#2a4a6a"/>
+          <rect x="511" y="179" width="7" height="21" rx="1" fill="#1a2a4a"/>
+          <rect x="520" y="181" width="5" height="19" rx="1" fill="#2a3a5a"/>
+          <rect x="527" y="180" width="6" height="20" rx="1" fill="#1a4a6a"/>
+          <rect x="535" y="183" width="4" height="17" rx="1" fill="#2a3a5a"/>
+          <!-- 归档光束 -->
+          <line x1="517" y1="177" x2="517" y2="200" stroke="#60a5fa" stroke-width="1" opacity="0.6">
+            <animate attributeName="x1" values="496;537;496" dur="2s" repeatCount="indefinite"/>
+            <animate attributeName="x2" values="496;537;496" dur="2s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="0.6;0;0.6" dur="2s" repeatCount="indefinite"/>
+          </line>
+          <line x1="517" y1="207" x2="517" y2="252" stroke="#1a3a5a" stroke-width="2"/>
+          <!-- Bot - 守藏吏 -->
+          <g transform="translate(548, 158)">
+            <rect x="-10" y="0" width="20" height="22" rx="3" fill="#0a1a3a" stroke="#1a3a6a" stroke-width="1"/>
+            <rect x="-9" y="-16" width="18" height="16" rx="3" fill="#08102a" stroke="#122a52" stroke-width="1"/>
+            <circle cx="-4" cy="-9" r="3" fill="#0a0a1a"/>
+            <circle cx="4" cy="-9" r="3" fill="#0a0a1a"/>
+            <circle cx="-3" cy="-9" r="1.5" fill="#60a5fa">
+              <animate attributeName="opacity" values="1;0.3;1" dur="2.5s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="5" cy="-9" r="1.5" fill="#60a5fa">
+              <animate attributeName="opacity" values="0.3;1;0.3" dur="2.5s" repeatCount="indefinite"/>
+            </circle>
+            <!-- 书卷天线 -->
+            <line x1="-3" y1="-16" x2="-3" y2="-22" stroke="#1a3a6a" stroke-width="1.5"/>
+            <rect x="-8" y="-27" width="10" height="6" rx="2" fill="#0a2a4a" stroke="#1a4a7a" stroke-width="0.5"/>
+            <!-- 手持书本 -->
+            <line x1="-10" y1="8" x2="-15" y2="15" stroke="#0a1a3a" stroke-width="2.5" stroke-linecap="round"/>
+            <rect x="-22" y="13" width="10" height="7" rx="1" fill="#0a2a4a" stroke="#1a3a5a" stroke-width="0.5"/>
+          </g>
+          <text x="520" y="286" text-anchor="middle" fill="#1a3a6a" font-size="10" font-family="sans-serif">守藏吏</text>
+          <text x="520" y="298" text-anchor="middle" fill="#60a5fa" font-size="9" font-family="sans-serif">知识归档</text>
+        </g>
+
+        <!-- 太一 - 统筹全局 - 中央后最高位 -->
+        <g class="workstation" data-bot="太一" style="cursor:pointer">
+          <path d="M620 220 L700 180 L750 205 L670 245 Z" fill="#2a1a3a" stroke="#5a3a7a" stroke-width="1.5"/>
+          <path d="M620 220 L620 250 L670 275 L670 245 Z" fill="#1e1228" stroke="#3a2257" stroke-width="0.5"/>
+          <path d="M750 205 L750 235 L670 275 L670 245 Z" fill="#22162e" stroke="#3a2257" stroke-width="0.5"/>
+          <!-- 大显示器 -->
+          <rect x="638" y="150" width="60" height="38" rx="3" fill="#0a0a1e" stroke="#5a3a8a" stroke-width="1.5" filter="url(#screen-glow)"/>
+          <rect x="639" y="151" width="58" height="36" rx="2" fill="#080818"/>
+          <!-- 系统总览 -->
+          <circle cx="668" cy="169" r="14" fill="none" stroke="#a78bfa" stroke-width="1" opacity="0.8">
+            <animate attributeName="stroke-dasharray" values="0,88;88,0;0,88" dur="3s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="668" cy="169" r="9" fill="none" stroke="#7c3aed" stroke-width="1" opacity="0.6">
+            <animate attributeName="stroke-dasharray" values="56,0;0,56;56,0" dur="2s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="668" cy="169" r="4" fill="#a78bfa" opacity="0.9">
+            <animate attributeName="opacity" values="0.9;0.4;0.9" dur="1s" repeatCount="indefinite"/>
+          </circle>
+          <!-- 轨道点 -->
+          <circle cx="668" cy="155" r="2" fill="#c084fc">
+            <animateTransform attributeName="transform" type="rotate" values="0,668,169;360,668,169" dur="3s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="682" cy="169" r="1.5" fill="#818cf8">
+            <animateTransform attributeName="transform" type="rotate" values="0,668,169;-360,668,169" dur="2s" repeatCount="indefinite"/>
+          </circle>
+          <line x1="668" y1="188" x2="668" y2="200" stroke="#3a2a5a" stroke-width="2.5"/>
+          <!-- Bot - 太一 - 皇冠形态 -->
+          <g transform="translate(700, 130)">
+            <rect x="-12" y="0" width="24" height="26" rx="5" fill="#5a3a8a" stroke="#8a6aba" stroke-width="1.5"/>
+            <rect x="-11" y="-18" width="22" height="18" rx="5" fill="#4a2a7a" stroke="#7a5aaa" stroke-width="1.5"/>
+            <!-- 皇冠 -->
+            <path d="M-11,-18 L-11,-28 L-5,-22 L0,-30 L5,-22 L11,-28 L11,-18 Z" fill="#a78bfa" stroke="#c4b5fd" stroke-width="1"/>
+            <!-- 宝石 -->
+            <circle cx="0" cy="-26" r="3" fill="#f0abfc">
+              <animate attributeName="opacity" values="1;0.5;1" dur="0.8s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="-9" cy="-9" r="3.5" fill="#0a0a1a"/>
+            <circle cx="9" cy="-9" r="3.5" fill="#0a0a1a"/>
+            <circle cx="-7" cy="-9" r="2" fill="#a78bfa">
+              <animate attributeName="r" values="2;3;2" dur="1.5s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="10" cy="-9" r="2" fill="#a78bfa">
+              <animate attributeName="r" values="3;2;3" dur="1.5s" repeatCount="indefinite"/>
+            </circle>
+            <!-- 权杖手臂 -->
+            <line x1="-12" y1="10" x2="-22" y2="20" stroke="#5a3a8a" stroke-width="3" stroke-linecap="round"/>
+            <line x1="-22" y1="20" x2="-22" y2="32" stroke="#7a5aaa" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="-22" cy="34" r="3" fill="#a78bfa">
+              <animate attributeName="opacity" values="1;0.3;1" dur="1s" repeatCount="indefinite"/>
+            </circle>
+            <line x1="12" y1="10" x2="22" y2="22" stroke="#5a3a8a" stroke-width="3" stroke-linecap="round"/>
+          </g>
+          <text x="670" y="268" text-anchor="middle" fill="#7a5aaa" font-size="11" font-family="sans-serif" font-weight="bold">太一</text>
+          <text x="670" y="281" text-anchor="middle" fill="#a78bfa" font-size="9" font-family="sans-serif">统筹全局</text>
+        </g>
+
+        <!-- 中央连接线 - 太一指挥其他Bot -->
+        <g opacity="0.25">
+          <line x1="680" y1="235" x2="200" y2="302" stroke="#a78bfa" stroke-width="1" stroke-dasharray="4,4">
+            <animate attributeName="stroke-dashoffset" values="0;-8" dur="0.5s" repeatCount="indefinite"/>
+          </line>
+          <line x1="680" y1="235" x2="345" y2="282" stroke="#a78bfa" stroke-width="1" stroke-dasharray="4,4">
+            <animate attributeName="stroke-dashoffset" values="0;-8" dur="0.5s" repeatCount="indefinite"/>
+          </line>
+          <line x1="680" y1="235" x2="465" y2="305" stroke="#a78bfa" stroke-width="1" stroke-dasharray="4,4">
+            <animate attributeName="stroke-dashoffset" values="0;-8" dur="0.5s" repeatCount="indefinite"/>
+          </line>
+          <line x1="680" y1="235" x2="605" y2="290" stroke="#a78bfa" stroke-width="1" stroke-dasharray="4,4">
+            <animate attributeName="stroke-dashoffset" values="0;-8" dur="0.5s" repeatCount="indefinite"/>
+          </line>
+          <line x1="680" y1="235" x2="200" y2="230" stroke="#a78bfa" stroke-width="1" stroke-dasharray="4,4">
+            <animate attributeName="stroke-dashoffset" values="0;-8" dur="0.5s" repeatCount="indefinite"/>
+          </line>
+          <line x1="680" y1="235" x2="360" y2="212" stroke="#a78bfa" stroke-width="1" stroke-dasharray="4,4">
+            <animate attributeName="stroke-dashoffset" values="0;-8" dur="0.5s" repeatCount="indefinite"/>
+          </line>
+          <line x1="680" y1="235" x2="520" y2="198" stroke="#a78bfa" stroke-width="1" stroke-dasharray="4,4">
+            <animate attributeName="stroke-dashoffset" values="0;-8" dur="0.5s" repeatCount="indefinite"/>
+          </line>
+        </g>
+
+        <!-- 漂浮粒子效果 -->
+        <g opacity="0.4">
+          <circle cx="250" cy="260" r="1.5" fill="#a78bfa">
+            <animate attributeName="cy" values="260;240;260" dur="3s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="0.4;0.8;0.4" dur="3s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="450" cy="220" r="1" fill="#4ade80">
+            <animate attributeName="cy" values="220;200;220" dur="2.5s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="650" cy="180" r="1.5" fill="#60a5fa">
+            <animate attributeName="cy" values="180;160;180" dur="2s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="350" cy="300" r="1" fill="#f472b6">
+            <animate attributeName="cy" values="300;280;300" dur="3.5s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="550" cy="250" r="1.5" fill="#f59e0b">
+            <animate attributeName="cy" values="250;230;250" dur="2.8s" repeatCount="indefinite"/>
+          </circle>
+        </g>
+      </svg>
+    </div>
+
+    <!-- 底部 Bot 状态卡片 -->
+    <div class="bottom-stats">
+      <div class="bot-card active">
+        <div class="card-emoji">🤖</div>
+        <div class="card-name">知几</div>
+        <div class="card-status working">工作中</div>
+      </div>
+      <div class="bot-card">
+        <div class="card-emoji">🌲</div>
+        <div class="card-name">山木</div>
+        <div class="card-status working">工作中</div>
+      </div>
+      <div class="bot-card">
+        <div class="card-emoji">🩺</div>
+        <div class="card-name">素问</div>
+        <div class="card-status working">工作中</div>
+      </div>
+      <div class="bot-card">
+        <div class="card-emoji">👻</div>
+        <div class="card-name">罔两</div>
+        <div class="card-status working">工作中</div>
+      </div>
+      <div class="bot-card">
+        <div class="card-emoji">🔨</div>
+        <div class="card-name">庖丁</div>
+        <div class="card-status working">工作中</div>
+      </div>
+      <div class="bot-card">
+        <div class="card-emoji">🏹</div>
+        <div class="card-name">羿</div>
+        <div class="card-status working">工作中</div>
+      </div>
+      <div class="bot-card">
+        <div class="card-emoji">📚</div>
+        <div class="card-name">守藏吏</div>
+        <div class="card-status working">工作中</div>
+      </div>
+      <div class="bot-card">
+        <div class="card-emoji">🎯</div>
+        <div class="card-name">太一</div>
+        <div class="card-status working">统筹中</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="tooltip" class="bot-tooltip"></div>
+
+<script>
+const botData = {
+  '知几': { task: '实时交易监控', stats: { '总收益': '+5.38%', '今日交易': '47次', '余额': '$10,420' }},
+  '山木': { task: '代码开发 & 测试', stats: { '今日提交': '8次', '测试通过': '142/144', '代码行': '+320' }},
+  '素问': { task: '健康数据分析', stats: { '分析查询': '15次', '报告生成': '3份', '异常检测': '0' }},
+  '罔两': { task: '影子监控巡逻', stats: { '监控频道': '12个', '安全告警': '0', '扫描次数': '834' }},
+  '庖丁': { task: '系统构建部署', stats: { '构建任务': '3个', '部署成功': '100%', '平均耗时': '2.3min' }},
+  '羿': { task: '精准目标执行', stats: { '目标完成': '12/12', '精确率': '99.8%', '响应时间': '120ms' }},
+  '守藏吏': { task: '知识文档归档', stats: { '归档文件': '20个', '索引条目': '1,240', '检索命中': '98%' }},
+  '太一': { task: '统筹全局协调', stats: { '管理Skills': '400+', '协调任务': '89', '系统健康': '99.2%' }}
+};
+
+const tooltip = document.getElementById('tooltip');
+const workstations = document.querySelectorAll('.workstation');
+
+workstations.forEach(ws => {
+  ws.addEventListener('mouseenter', (e) => {
+    const name = ws.getAttribute('data-bot');
+    const data = botData[name];
+    if (!data) return;
+    let statsHtml = '';
+    for (const [k, v] of Object.entries(data.stats)) {
+      statsHtml += `<div class="stat-row"><span class="stat-label">${k}</span><span class="stat-value">${v}</span></div>`;
+    }
+    tooltip.innerHTML = `<div class="bot-name">${name}</div><div class="bot-task">${data.task}</div><div class="bot-stats">${statsHtml}</div>`;
+    tooltip.classList.add('visible');
+  });
+  ws.addEventListener('mousemove', (e) => {
+    const rect = document.querySelector('.office-wrapper').getBoundingClientRect();
+    let x = e.clientX - rect.left + 15;
+    let y = e.clientY - rect.top - 10;
+    if (x + 180 > rect.width) x = e.clientX - rect.left - 180;
+    tooltip.style.left = x + 'px';
+    tooltip.style.top = y + 'px';
+  });
+  ws.addEventListener('mouseleave', () => {
+    tooltip.classList.remove('visible');
+  });
+});
+
+// 底部卡片联动
+const cards = document.querySelectorAll('.bot-card');
+cards.forEach((card, i) => {
+  card.addEventListener('click', () => {
+    cards.forEach(c => c.classList.remove('active'));
+    card.classList.add('active');
+  });
+});
+
+// 实时时间更新
+setInterval(() => {
+  const header = document.querySelector('.status-bar div:nth-child(2)');
+  const tasks = Math.floor(Math.random() * 5) + 10;
+  header.textContent = `任务队列: ${tasks}`;
+}, 5000);
+</script>
+</body>
+</html>

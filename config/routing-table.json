@@ -1,0 +1,46 @@
+{
+  "schema": "taiyi/routing-table/v1",
+  "description": "太一 AGI 路由表 - 会话通道绑定",
+  "created": "2026-04-10T13:30:00+08:00",
+  "updated": "2026-04-10T13:30:00+08:00",
+  
+  "routes": {
+    "telegram:7073481596": {
+      "channel": "telegram",
+      "account_id": "default",
+      "chat_type": "direct",
+      "user_id": "7073481596",
+      "user_name": "nicola king",
+      "status": "active",
+      "last_active": "2026-04-10T13:26:00+08:00",
+      "preferences": {
+        "language": "zh-CN",
+        "timezone": "Asia/Shanghai",
+        "reply_style": "minimalist-hacker"
+      }
+    }
+  },
+  
+  "session_bindings": {
+    "main": {
+      "route": "telegram:7073481596",
+      "type": "primary",
+      "created": "2026-04-10T00:00:00+08:00"
+    }
+  },
+  
+  "delivery_rules": {
+    "preserve_external_routes": true,
+    "prevent_route_stealing": true,
+    "allow_cross_channel": false,
+    "audit_all_deliveries": true
+  },
+  
+  "audit_log": {
+    "enabled": true,
+    "file": "logs/routing-audit.jsonl",
+    "max_entries": 10000
+  },
+  
+  "inspiration": "OpenClaw v2026.4.9 Sessions/Routing Preservation"
+}

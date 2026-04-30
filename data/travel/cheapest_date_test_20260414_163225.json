@@ -1,0 +1,24 @@
+{
+  "type": "Cheapest Date Scanner",
+  "origin": "北京",
+  "destination": "上海",
+  "target_date": "2026-05-01",
+  "best_dates": [
+    {
+      "date": "2026-05-01",
+      "price": 1200,
+      "savings": "¥300"
+    },
+    {
+      "date": "2026-05-03",
+      "price": 1150,
+      "savings": "¥350"
+    },
+    {
+      "date": "2026-05-05",
+      "price": 1100,
+      "savings": "¥400"
+    }
+  ],
+  "timestamp": "2026-04-14T16:32:25.379591"
+}

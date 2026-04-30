@@ -1,0 +1,39 @@
+{
+  "enabled": true,
+  "provider": "openai-compatible",
+  "base_url": "https://api.openai.com/v1",
+  "models": [
+    {
+      "id": "codex-latest",
+      "name": "Codex Latest",
+      "context": "128K",
+      "usage": "code_generation"
+    },
+    {
+      "id": "gpt-4o",
+      "name": "GPT-4o",
+      "context": "128K",
+      "usage": "visual"
+    },
+    {
+      "id": "gpt-4-turbo",
+      "name": "GPT-4 Turbo",
+      "context": "128K",
+      "usage": "backup"
+    }
+  ],
+  "auth": {
+    "type": "api_key",
+    "key_env": "OPENAI_API_KEY"
+  },
+  "features": {
+    "native_threads": true,
+    "model_discovery": true,
+    "compaction": true,
+    "tool_streaming": true
+  },
+  "fallback": {
+    "enabled": true,
+    "chain": ["gpt-4o", "gpt-4-turbo"]
+  }
+}

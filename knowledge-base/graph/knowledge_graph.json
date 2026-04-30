@@ -1,0 +1,364 @@
+{
+  "build_time": "2026-04-22T00:16:51.673212",
+  "agent": "太一知识图谱智能体 v1.0",
+  "source_dir": "./documents",
+  "document_count": 3,
+  "entity_count": 14,
+  "relation_count": 30,
+  "entities": [
+    {
+      "id": "E0001",
+      "name": "AI",
+      "type": "技术",
+      "source": "rag-intro",
+      "mentions": 2,
+      "description": "AI - 从文档 rag-intro 中提取"
+    },
+    {
+      "id": "E0002",
+      "name": "核心组件",
+      "type": "概念",
+      "source": "rag-intro",
+      "mentions": 2,
+      "description": "核心组件 - 从文档 rag-intro 中提取"
+    },
+    {
+      "id": "E0003",
+      "name": "LLM",
+      "type": "技术",
+      "source": "rag-intro",
+      "mentions": 2,
+      "description": "LLM - 从文档 rag-intro 中提取"
+    },
+    {
+      "id": "E0004",
+      "name": "RAG 检索增强生成",
+      "type": "概念",
+      "source": "rag-intro",
+      "mentions": 1,
+      "description": "RAG 检索增强生成 - 从文档 rag-intro 中提取"
+    },
+    {
+      "id": "E0005",
+      "name": "优势",
+      "type": "概念",
+      "source": "rag-intro",
+      "mentions": 1,
+      "description": "优势 - 从文档 rag-intro 中提取"
+    },
+    {
+      "id": "E0006",
+      "name": "RAG",
+      "type": "技术",
+      "source": "rag-intro",
+      "mentions": 2,
+      "description": "RAG - 从文档 rag-intro 中提取"
+    },
+    {
+      "id": "E0007",
+      "name": "工作流程",
+      "type": "概念",
+      "source": "rag-intro",
+      "mentions": 1,
+      "description": "工作流程 - 从文档 rag-intro 中提取"
+    },
+    {
+      "id": "E0008",
+      "name": "代表模型",
+      "type": "技术",
+      "source": "llm-architecture",
+      "mentions": 1,
+      "description": "代表模型 - 从文档 llm-architecture 中提取"
+    },
+    {
+      "id": "E0009",
+      "name": "应用",
+      "type": "概念",
+      "source": "llm-architecture",
+      "mentions": 2,
+      "description": "应用 - 从文档 llm-architecture 中提取"
+    },
+    {
+      "id": "E0011",
+      "name": "LLM 架构",
+      "type": "技术",
+      "source": "llm-architecture",
+      "mentions": 1,
+      "description": "LLM 架构 - 从文档 llm-architecture 中提取"
+    },
+    {
+      "id": "E0013",
+      "name": "GPT",
+      "type": "概念",
+      "source": "llm-architecture",
+      "mentions": 1,
+      "description": "GPT - 从文档 llm-architecture 中提取"
+    },
+    {
+      "id": "E0017",
+      "name": "架构",
+      "type": "技术",
+      "source": "agent-patterns",
+      "mentions": 1,
+      "description": "架构 - 从文档 agent-patterns 中提取"
+    },
+    {
+      "id": "E0018",
+      "name": "核心能力",
+      "type": "概念",
+      "source": "agent-patterns",
+      "mentions": 1,
+      "description": "核心能力 - 从文档 agent-patterns 中提取"
+    },
+    {
+      "id": "E0019",
+      "name": "Agent 设计模式",
+      "type": "概念",
+      "source": "agent-patterns",
+      "mentions": 1,
+      "description": "Agent 设计模式 - 从文档 agent-patterns 中提取"
+    }
+  ],
+  "relations": [
+    {
+      "id": "R0001",
+      "from": "E0001",
+      "to": "E0002",
+      "type": "相关",
+      "confidence": 0.8,
+      "source": "rag-intro"
+    },
+    {
+      "id": "R0002",
+      "from": "E0001",
+      "to": "E0003",
+      "type": "相关",
+      "confidence": 0.8,
+      "source": "rag-intro"
+    },
+    {
+      "id": "R0003",
+      "from": "E0001",
+      "to": "E0004",
+      "type": "相关",
+      "confidence": 0.8,
+      "source": "rag-intro"
+    },
+    {
+      "id": "R0004",
+      "from": "E0001",
+      "to": "E0005",
+      "type": "相关",
+      "confidence": 0.8,
+      "source": "rag-intro"
+    },
+    {
+      "id": "R0005",
+      "from": "E0001",
+      "to": "E0006",
+      "type": "相关",
+      "confidence": 0.8,
+      "source": "rag-intro"
+    },
+    {
+      "id": "R0006",
+      "from": "E0001",
+      "to": "E0007",
+      "type": "相关",
+      "confidence": 0.8,
+      "source": "rag-intro"
+    },
+    {
+      "id": "R0007",
+      "from": "E0002",
+      "to": "E0003",
+      "type": "相关",
+      "confidence": 0.8,
+      "source": "rag-intro"
+    },
+    {
+      "id": "R0008",
+      "from": "E0002",
+      "to": "E0004",
+      "type": "相关",
+      "confidence": 0.8,
+      "source": "rag-intro"
+    },
+    {
+      "id": "R0009",
+      "from": "E0002",
+      "to": "E0005",
+      "type": "相关",
+      "confidence": 0.8,
+      "source": "rag-intro"
+    },
+    {
+      "id": "R0010",
+      "from": "E0002",
+      "to": "E0006",
+      "type": "相关",
+      "confidence": 0.8,
+      "source": "rag-intro"
+    },
+    {
+      "id": "R0011",
+      "from": "E0002",
+      "to": "E0007",
+      "type": "相关",
+      "confidence": 0.8,
+      "source": "rag-intro"
+    },
+    {
+      "id": "R0012",
+      "from": "E0003",
+      "to": "E0004",
+      "type": "相关",
+      "confidence": 0.8,
+      "source": "rag-intro"
+    },
+    {
+      "id": "R0013",
+      "from": "E0003",
+      "to": "E0005",
+      "type": "相关",
+      "confidence": 0.8,
+      "source": "rag-intro"
+    },
+    {
+      "id": "R0014",
+      "from": "E0003",
+      "to": "E0006",
+      "type": "相关",
+      "confidence": 0.8,
+      "source": "rag-intro"
+    },
+    {
+      "id": "R0015",
+      "from": "E0003",
+      "to": "E0007",
+      "type": "相关",
+      "confidence": 0.8,
+      "source": "rag-intro"
+    },
+    {
+      "id": "R0016",
+      "from": "E0004",
+      "to": "E0005",
+      "type": "相关",
+      "confidence": 0.8,
+      "source": "rag-intro"
+    },
+    {
+      "id": "R0017",
+      "from": "E0004",
+      "to": "E0006",
+      "type": "相关",
+      "confidence": 0.8,
+      "source": "rag-intro"
+    },
+    {
+      "id": "R0018",
+      "from": "E0004",
+      "to": "E0007",
+      "type": "相关",
+      "confidence": 0.8,
+      "source": "rag-intro"
+    },
+    {
+      "id": "R0019",
+      "from": "E0005",
+      "to": "E0006",
+      "type": "相关",
+      "confidence": 0.8,
+      "source": "rag-intro"
+    },
+    {
+      "id": "R0020",
+      "from": "E0005",
+      "to": "E0007",
+      "type": "相关",
+      "confidence": 0.8,
+      "source": "rag-intro"
+    },
+    {
+      "id": "R0021",
+      "from": "E0006",
+      "to": "E0007",
+      "type": "相关",
+      "confidence": 0.8,
+      "source": "rag-intro"
+    },
+    {
+      "id": "R0022",
+      "from": "E0008",
+      "to": "E0009",
+      "type": "相关",
+      "confidence": 0.8,
+      "source": "llm-architecture"
+    },
+    {
+      "id": "R0023",
+      "from": "E0008",
+      "to": "E0011",
+      "type": "相关",
+      "confidence": 0.8,
+      "source": "llm-architecture"
+    },
+    {
+      "id": "R0024",
+      "from": "E0008",
+      "to": "E0013",
+      "type": "相关",
+      "confidence": 0.8,
+      "source": "llm-architecture"
+    },
+    {
+      "id": "R0025",
+      "from": "E0009",
+      "to": "E0011",
+      "type": "相关",
+      "confidence": 0.8,
+      "source": "llm-architecture"
+    },
+    {
+      "id": "R0026",
+      "from": "E0009",
+      "to": "E0013",
+      "type": "相关",
+      "confidence": 0.8,
+      "source": "llm-architecture"
+    },
+    {
+      "id": "R0027",
+      "from": "E0011",
+      "to": "E0013",
+      "type": "相关",
+      "confidence": 0.8,
+      "source": "llm-architecture"
+    },
+    {
+      "id": "R0028",
+      "from": "E0017",
+      "to": "E0018",
+      "type": "相关",
+      "confidence": 0.8,
+      "source": "agent-patterns"
+    },
+    {
+      "id": "R0029",
+      "from": "E0017",
+      "to": "E0019",
+      "type": "相关",
+      "confidence": 0.8,
+      "source": "agent-patterns"
+    },
+    {
+      "id": "R0030",
+      "from": "E0018",
+      "to": "E0019",
+      "type": "相关",
+      "confidence": 0.8,
+      "source": "agent-patterns"
+    }
+  ]
+}

@@ -1,0 +1,196 @@
+# 日报生成工作流程
+# 版本：1.0
+# 创建：2026-04-18
+# 负责 Agent: 太一 (统筹)
+
+---
+name: daily-report
+version: 1.0
+description: 每日报告自动生成流程
+agent: 太一
+trigger: scheduled (23:00 daily)
+priority: P1
+
+# 输入参数
+inputs:
+  date:
+    type: date
+    default: today
+    description: "报告日期"
+  
+  include_agents:
+    type: array
+    default: [知几，山木，素问，罔两，庖丁]
+    description: "包含的 Agent"
+  
+  format:
+    type: enum
+    options: [markdown, pdf, html]
+    default: markdown
+    description: "输出格式"
+
+# 执行步骤
+steps:
+  - name: 数据收集
+    type: parallel
+    tasks:
+      - action: collect_zhiji_metrics
+        params:
+          metrics: [signals, win_rate, pnl]
+          date: "${inputs.date}"
+      
+      - action: collect_shanmu_metrics
+        params:
+          metrics: [articles, views, engagement]
+          date: "${inputs.date}"
+      
+      - action: collect_suwen_metrics
+        params:
+          metrics: [consultations, satisfaction]
+          date: "${inputs.date}"
+      
+      - action: collect_wangliang_metrics
+        params:
+          metrics: [uptime, alerts, incidents]
+          date: "${inputs.date}"
+      
+      - action: collect_paoding_metrics
+        params:
+          metrics: [scripts, automations, optimizations]
+          date: "${inputs.date}"
+      
+      - action: collect_system_metrics
+        params:
+          metrics: [gateway_status, scheduler_runs, quality_score]
+          date: "${inputs.date}"
+
+  - name: 数据整合
+    type: sequential
+    tasks:
+      - action: aggregate_data
+        params:
+          group_by: agent
+      
+      - action: calculate_summary
+        params:
+          metrics:
+            - total_tasks
+            - completion_rate
+            - average_quality
+      
+      - action: highlight_achievements
+        params:
+          top_n: 3
+          criteria: impact
+
+  - name: 报告生成
+    type: sequential
+    tasks:
+      - action: generate_structure
+        params:
+          sections:
+            - 核心摘要
+            - 各 Agent 报告
+            - 系统状态
+            - 明日计划
+      
+      - action: fill_content
+        params:
+          template: daily-report-template.md
+          data: "${aggregated_data}"
+      
+      - action: add_visualization
+        params:
+          charts:
+            - task_completion_chart
+            - quality_trend_chart
+            - agent_performance_chart
+
+  - name: 审核发布
+    type: sequential
+    tasks:
+      - action: quality_check
+        params:
+          checklist:
+            - data_accuracy
+            - completeness
+            - readability
+      
+      - action: save_to_memory
+        params:
+          location: memory/${date}.md
+          type: daily_log
+      
+      - action: send_to_user
+        params:
+          channel: wechat
+          time: 23:30
+          include_raw_data: false
+
+# 输出格式
+output:
+  format: markdown
+  template: |
+    # 📊 太一·日报 {{date}}
+    
+    ## 🎯 核心摘要
+    - 完成任务：{{total_tasks}} 个
+    - 完成率：{{completion_rate}}%
+    - 系统健康：{{health_score}}/100
+    
+    ## 📋 各 Agent 报告
+    
+    ### 知几 · 交易
+    - 信号：{{signals_count}} 个
+    - 胜率：{{win_rate}}%
+    
+    ### 山木 · 内容
+    - 文章：{{articles_count}} 篇
+    - 阅读：{{total_views}}
+    
+    ### 素问 · 健康
+    - 咨询：{{consultations_count}} 次
+    - 满意度：{{satisfaction}}%
+    
+    ### 罔两 · 监控
+    - 告警：{{alerts_count}} 次
+    - 可用性：{{uptime}}%
+    
+    ### 庖丁 · 工具
+    - 脚本：{{scripts_count}} 个
+    - 自动化：{{automations_count}} 项
+    
+    ## 🌙 明日计划
+    {{tomorrow_plan}}
+    
+    ---
+    *太一 AGI · {{date}}*
+
+# 通知配置
+notifications:
+  on_complete:
+    - channel: wechat
+      recipient: SAYELF
+      time: "23:30"
+  
+  on_error:
+    - channel: telegram
+      priority: high
+
+# 错误处理
+error_handling:
+  retry_count: 2
+  retry_delay: 30s
+  fallback:
+    - action: send_partial_report
+    - action: notify_error
+
+# 执行日志
+logging:
+  level: info
+  destination: logs/daily-report-${date}.log
+  include:
+    - inputs
+    - metrics_collected
+    - generation_time
+    - delivery_status

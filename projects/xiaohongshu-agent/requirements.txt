@@ -1,0 +1,66 @@
+# 小红书智能自进化 Agent 系统
+
+> Phase 1 MVP | 太一 AGI | 2026-04-13
+
+## 安装依赖
+
+```bash
+pip install playwright
+playwright install chromium
+```
+
+## 快速开始
+
+### 运行每日工作流
+
+```bash
+cd /home/nicola/.openclaw/workspace/projects/xiaohongshu-agent
+python3 src/workflow.py
+```
+
+### 单独使用山木 Agent
+
+```python
+from src.shanmu_agent import ShanmuAgent
+
+agent = ShanmuAgent()
+
+# 创建完整笔记
+note = agent.create_complete_note(
+    topic="春日壁纸",
+    style="治愈系",
+    target_audience="18-35 岁女性"
+)
+
+# 保存笔记
+filepath = agent.save_note(note)
+```
+
+### 单独使用知几 Agent
+
+```python
+from src.zhiji_agent import ZhijiAgent
+
+agent = ZhijiAgent()
+
+# 获取热搜
+hot_search = agent.fetch_hot_search()
+
+# 竞品分析
+competitor = agent.analyze_competitor("账号名称")
+
+# 趋势预测
+trends = agent.predict_trends(7)
+
+# 生成日报
+report = agent.generate_daily_report()
+```
+
+## 输出目录
+
+- `output/daily_YYYYMMDD.md` - 每日创作日报
+- `output/note_YYYYMMDD_N.md` - 创作的笔记
+
+## 下一步
+
+Week 2: 知几 + 山木协作 + 微信推送

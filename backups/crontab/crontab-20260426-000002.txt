@@ -1,0 +1,263 @@
+# ============================================================
+
+
+
+
+
+# 太一系统完整定时任务配置
+
+
+
+
+
+# 更新时间：2026-04-24 20:47
+
+
+
+
+
+# 维护：太一 AGI
+
+
+
+
+
+# ============================================================
+
+
+
+
+
+
+# ============ 基础设施 ============
+
+
+
+
+
+
+# 百炼配额监控 (每 5 分钟)
+
+
+
+
+
+*/5 * * * * cd /home/nicola/.openclaw/workspace && /usr/bin/python3 scripts/check-bailian-quota.py >> logs/model-router.log 2>&1
+
+# ============ 新闻系统 ============
+
+
+
+
+
+
+# 晨间新闻搜索 (每日 00:00)
+
+
+
+
+
+30 8 * * * cd /home/nicola/.openclaw/workspace && /usr/bin/python3 scripts/daily-news-search.py >> logs/news-search.log 2>&1
+
+# 冰山理论分析 (每日 00:05)
+
+
+
+
+
+35 8 * * * cd /home/nicola/.openclaw/workspace && /usr/bin/python3 scripts/iceberg-news-analyzer.py >> logs/iceberg-analysis.log 2>&1
+
+# ============ 智慧推送 ============
+
+
+
+
+
+
+# 智慧推送 - 道 (每日 08:00)
+
+
+
+
+
+0 8 * * * cd /home/nicola/.openclaw/workspace && /usr/bin/python3 skills/05-content/wisdom-scheduler/src/scheduler.py >> logs/wisdom-push.log 2>&1
+
+# 智慧推送 - 悟 (每日 20:00)
+
+
+
+
+
+0 20 * * * cd /home/nicola/.openclaw/workspace && /usr/bin/python3 skills/05-content/wisdom-scheduler/src/scheduler.py >> logs/wisdom-push.log 2>&1
+
+# ============ 跨境贸易 ============
+
+
+
+
+
+
+# 情报报告 (每日 08:00)
+
+
+
+
+
+0 8 * * * cd /home/nicola/.openclaw/workspace && /usr/bin/python3 skills/01-trading/cross-border-trade-agent/intelligence_reporter.py >> logs/intelligence-report.log 2>&1
+
+# 竞品分析 (每日 18:00)
+
+
+
+
+
+0 18 * * * cd /home/nicola/.openclaw/workspace && /usr/bin/python3 skills/01-trading/cross-border-trade-agent/intelligence_reporter.py --mode competitor >> logs/competitor-analysis.log 2>&1
+
+# ============ IP 监控 ============
+
+
+
+
+
+
+
+# ============ 系统监控 ============
+
+
+
+
+
+
+# Cron 任务监控 (每 30 分钟)
+
+
+
+
+
+*/30 * * * * cd /home/nicola/.openclaw/workspace && bash scripts/cron-watchdog.sh >> logs/cron-alerts.log 2>&1
+
+# 定时任务诊断修复 (每 2 小时)
+
+
+
+
+
+0 */2 * * * cd /home/nicola/.openclaw/workspace && /usr/bin/python3 scripts/cron-diagnose-fix.py >> logs/cron-diagnose.log 2>&1
+
+# 系统自检 (每 2 小时)
+
+
+
+
+
+30 */2 * * * cd /home/nicola/.openclaw/workspace && /usr/bin/python3 scripts/system-cron-selfcheck.py >> logs/system-selfcheck.log 2>&1
+
+# ============ 自动执行保障 ============
+
+
+
+
+
+
+# 自动执行检查 (每 5 分钟)
+
+
+
+
+
+*/5 * * * * cd /home/nicola/.openclaw/workspace && bash scripts/auto-exec-cron.sh >> logs/auto-exec-cron.log 2>&1
+
+# ============ 天气 ============
+
+
+
+
+
+
+# 天气预报 (每小时)
+
+
+
+
+
+0 * * * * cd /home/nicola/.openclaw/workspace && bash scripts/weather-forecast-cron.sh >> logs/weather-forecast.log 2>&1
+
+# ============ 报价 ============
+
+
+
+
+
+
+# 每日简报 (每日 08:00)
+
+
+
+
+
+0 8 * * * cd /home/nicola/.openclaw/workspace && bash scripts/daily-briefing-cron.sh >> logs/daily-briefing.log 2>&1
+
+# 任务报告 (每日 07:00)
+
+
+
+
+
+0 7 * * * cd /home/nicola/.openclaw/workspace && bash scripts/task-report-cron.sh >> logs/task-report.log 2>&1
+
+# 价格告警 (每 15 分钟)
+
+
+
+
+
+*/15 * * * * cd /home/nicola/.openclaw/workspace && bash scripts/price-alert-cron.sh >> logs/price-alert.log 2>&1
+
+# Polymarket 数据 (每 30 分钟)
+
+
+
+
+
+*/30 * * * * cd /home/nicola/.openclaw/workspace && bash scripts/polymarket-data-cron.sh >> logs/polymarket-data.log 2>&1
+
+# Polymarket 热点天气 (每 30 分钟)
+
+
+
+
+
+*/30 * * * * cd /home/nicola/.openclaw/workspace && bash scripts/polymarket-hot-weather-cron.sh >> logs/polymarket-hot-weather.log 2>&1
+
+# ============ 备份 ============
+
+
+
+
+
+
+# QQ 邮箱备份 (每周日 03:00)
+
+
+
+
+
+0 3 * * 0 /home/nicola/.openclaw/workspace/scripts/qq-email-backup.sh >> /home/nicola/.openclaw/workspace/logs/qq-backup.log 2>&1
+
+# Crontab 保护 (每 6 小时)
+
+
+
+
+
+0 */6 * * * cd /home/nicola/.openclaw/workspace && bash scripts/protect-crontab.sh >> logs/crontab-protection.log 2>&1
+
+
+# Gateway 状态检查 (每小时)
+
+
+
+
+
+0 * * * * pgrep -f openclaw-gateway > /dev/null || sudo systemctl start openclaw-gateway.service
+

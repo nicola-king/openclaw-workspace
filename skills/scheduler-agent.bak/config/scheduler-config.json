@@ -1,0 +1,9 @@
+{
+  "default_interval": 3600,
+  "min_interval": 1800,
+  "max_interval": 7200,
+  "lag_threshold": 0.5,
+  "ahead_threshold": 0.2,
+  "max_concurrent": 3,
+  "memory_limit": "512MB"
+}

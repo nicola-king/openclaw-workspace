@@ -1,0 +1,40 @@
+{
+  "timestamp": "2026-04-03T23:40:35+08:00",
+  "check_type": "scheduled_30min",
+  "status": "healthy",
+  
+  "gateway": {
+    "status": "running",
+    "pid": 83835,
+    "port": 18789,
+    "bind": "127.0.0.1",
+    "cpu": "10.0%",
+    "memory": "1306M",
+    "rpc_probe": "ok",
+    "stable": true
+  },
+  
+  "channels": {
+    "telegram": { "status": "ok" },
+    "feishu": { "status": "ok" },
+    "openclaw-weixin": { "status": "enabled" }
+  },
+  
+  "system": {
+    "disk_usage": "19% (48G/274G)",
+    "os": "linux 6.17.0-20-generic",
+    "node": "22.22.2"
+  },
+  
+  "self_heal_actions": [
+    { "action": "gateway_probe", "result": "ok" },
+    { "action": "process_check", "result": "pid 83835 stable" },
+    { "action": "disk_check", "result": "19% used, healthy" }
+  ],
+  
+  "notes": "Gateway stable (pid 83835, no restart). MEMORY INCREASE: 669M → 1306M (+95%) - monitor for potential leak.",
+  "restart_count_today": 4,
+  "memory_trend": "increasing",
+  "next_check": "2026-04-04T00:10:35+08:00",
+  "report_saved": "memory/self-heal-report-20260403-2340.json"
+}

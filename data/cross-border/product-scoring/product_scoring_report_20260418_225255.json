@@ -1,0 +1,215 @@
+{
+  "score": {
+    "product_name": "钢结构折叠房屋",
+    "total_score": 73.47,
+    "max_score": 100,
+    "rating": "B 级 - 谨慎推荐",
+    "recommendation": "小规模测试，观望",
+    "dimension_scores": {
+      "trend_data": {
+        "score": 80.0,
+        "weight": 30,
+        "weighted_score": 24.0
+      },
+      "search_keywords": {
+        "score": 73.5,
+        "weight": 25,
+        "weighted_score": 18.375
+      },
+      "competitor_data": {
+        "score": 64.0,
+        "weight": 20,
+        "weighted_score": 12.8
+      },
+      "profit_margin": {
+        "score": 70,
+        "weight": 15,
+        "weighted_score": 10.5
+      },
+      "social_volume": {
+        "score": 78.0,
+        "weight": 10,
+        "weighted_score": 7.800000000000001
+      }
+    },
+    "timestamp": "2026-04-18T22:52:55.756398"
+  },
+  "competitor_analysis": {
+    "product_name": "钢结构折叠房屋",
+    "competitor_count": 5,
+    "price_analysis": {
+      "min_price": 4800,
+      "max_price": 7000,
+      "avg_price": 5660.0,
+      "price_range": 2200
+    },
+    "strategy_analysis": {
+      "strategy_distribution": {
+        "低价": 2,
+        "高质量": 1,
+        "差异化": 1,
+        "高端": 1
+      },
+      "dominant_strategy": "低价"
+    },
+    "dynamic_monitoring": {
+      "total_changes": 2,
+      "recent_changes": [
+        {
+          "competitor": "竞品 A",
+          "change_type": null,
+          "change_value": null,
+          "date": null
+        },
+        {
+          "competitor": "竞品 C",
+          "change_type": null,
+          "change_value": null,
+          "date": null
+        }
+      ]
+    },
+    "recommendations": [
+      {
+        "type": "pricing",
+        "suggestion": "建议定价在$5094 - $6226区间",
+        "priority": "P0"
+      },
+      {
+        "type": "differentiation",
+        "suggestion": "寻找竞品未覆盖的细分市场",
+        "priority": "P1"
+      }
+    ],
+    "timestamp": "2026-04-18T22:52:55.756676"
+  },
+  "new_products": {
+    "category": "钢结构折叠房屋",
+    "new_products": [
+      {
+        "name": "钢结构折叠房屋新品 A",
+        "manufacturer": "厂家 A",
+        "price": 5000,
+        "moq": 10,
+        "lead_time": "15 天",
+        "certification": [
+          "CE",
+          "FCC"
+        ],
+        "score": 85
+      },
+      {
+        "name": "钢结构折叠房屋新品 B",
+        "manufacturer": "厂家 B",
+        "price": 4500,
+        "moq": 20,
+        "lead_time": "20 天",
+        "certification": [
+          "CE"
+        ],
+        "score": 80
+      },
+      {
+        "name": "钢结构折叠房屋新品 C",
+        "manufacturer": "厂家 C",
+        "price": 5500,
+        "moq": 5,
+        "lead_time": "10 天",
+        "certification": [
+          "CE",
+          "FCC",
+          "RoHS"
+        ],
+        "score": 88
+      }
+    ],
+    "manufacturers": [
+      {
+        "name": "厂家 A",
+        "location": "广东",
+        "years_in_business": 10,
+        "main_products": "钢结构折叠房屋",
+        "price_range": "$4000-$6000",
+        "moq": 10,
+        "certification": [
+          "CE",
+          "FCC",
+          "ISO9001"
+        ]
+      },
+      {
+        "name": "厂家 B",
+        "location": "浙江",
+        "years_in_business": 8,
+        "main_products": "钢结构折叠房屋",
+        "price_range": "$3500-$5500",
+        "moq": 20,
+        "certification": [
+          "CE",
+          "ISO9001"
+        ]
+      },
+      {
+        "name": "厂家 C",
+        "location": "江苏",
+        "years_in_business": 12,
+        "main_products": "钢结构折叠房屋",
+        "price_range": "$4500-$7000",
+        "moq": 5,
+        "certification": [
+          "CE",
+          "FCC",
+          "RoHS",
+          "ISO9001"
+        ]
+      },
+      {
+        "name": "厂家 D",
+        "location": "山东",
+        "years_in_business": 6,
+        "main_products": "钢结构折叠房屋",
+        "price_range": "$3000-$5000",
+        "moq": 30,
+        "certification": [
+          "CE"
+        ]
+      },
+      {
+        "name": "厂家 E",
+        "location": "福建",
+        "years_in_business": 15,
+        "main_products": "钢结构折叠房屋",
+        "price_range": "$5000-$8000",
+        "moq": 10,
+        "certification": [
+          "CE",
+          "FCC",
+          "RoHS",
+          "ISO9001",
+          "ISO14001"
+        ]
+      }
+    ],
+    "timestamp": "2026-04-18T22:52:55.756837"
+  },
+  "monitoring": {
+    "date": "2026-04-18",
+    "products_monitored": 1,
+    "score_changes": [],
+    "alerts": [],
+    "trend_analysis": {
+      "upward": [],
+      "stable": [
+        "钢结构折叠房屋"
+      ],
+      "downward": []
+    },
+    "adjustments": [
+      {
+        "product": "钢结构折叠房屋",
+        "action": "观察调整",
+        "priority": "P2"
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "Lowest Fare Finder",
+  "origin": "北京",
+  "destination": "东京",
+  "flights": [
+    {
+      "airline": "东方航空",
+      "price": 980,
+      "duration": "2h30m"
+    },
+    {
+      "airline": "南方航空",
+      "price": 1050,
+      "duration": "2h45m"
+    },
+    {
+      "airline": "廉价航空",
+      "price": 750,
+      "duration": "3h00m"
+    }
+  ],
+  "timestamp": "2026-04-14T16:32:25.379770"
+}

@@ -1,0 +1,421 @@
+{
+  "analysis_date": "2026-04-18 23:54",
+  "location": "重庆",
+  "industry_type": "重工业基地",
+  "products_analyzed": 8,
+  "ranking": [
+    {
+      "product_key": "新能源储能系统",
+      "product_name": "便携式储能电源/太阳能储能系统",
+      "chongqing_advantage": "重庆有完善的锂电池产业链和汽车制造基础",
+      "global_trend": "全球能源转型 + 户外露营经济",
+      "total_score": 85.54,
+      "rating": "A 级 - 推荐",
+      "recommendation": "建议布局，差异化竞争",
+      "dimension_scores": {
+        "trend_data": {
+          "score": 92.5,
+          "weight": 30,
+          "weighted_score": 27.75
+        },
+        "search_keywords": {
+          "score": 79.4,
+          "weight": 25,
+          "weighted_score": 19.85
+        },
+        "competitor_data": {
+          "score": 75.5,
+          "weight": 20,
+          "weighted_score": 15.100000000000001
+        },
+        "profit_margin": {
+          "score": 90,
+          "weight": 15,
+          "weighted_score": 13.5
+        },
+        "social_volume": {
+          "score": 93.4,
+          "weight": 10,
+          "weighted_score": 9.340000000000002
+        }
+      }
+    },
+    {
+      "product_key": "工业级无人机",
+      "product_name": "工业级无人机/农业植保无人机",
+      "chongqing_advantage": "重庆航空航天产业 + 电子制造能力",
+      "global_trend": "农业智能化 + 巡检自动化 + 物流配送",
+      "total_score": 82.94,
+      "rating": "A 级 - 推荐",
+      "recommendation": "建议布局，差异化竞争",
+      "dimension_scores": {
+        "trend_data": {
+          "score": 88.0,
+          "weight": 30,
+          "weighted_score": 26.4
+        },
+        "search_keywords": {
+          "score": 79.0,
+          "weight": 25,
+          "weighted_score": 19.75
+        },
+        "competitor_data": {
+          "score": 71.4,
+          "weight": 20,
+          "weighted_score": 14.280000000000001
+        },
+        "profit_margin": {
+          "score": 90,
+          "weight": 15,
+          "weighted_score": 13.5
+        },
+        "social_volume": {
+          "score": 90.10000000000001,
+          "weight": 10,
+          "weighted_score": 9.010000000000002
+        }
+      }
+    },
+    {
+      "product_key": "智能摩托车/电动摩托",
+      "product_name": "电动摩托车/智能摩托车",
+      "chongqing_advantage": "力帆/隆鑫/宗申等摩托车产业集群",
+      "global_trend": "电动化 + 智能化 + 东南亚市场需求",
+      "total_score": 82.05,
+      "rating": "A 级 - 推荐",
+      "recommendation": "建议布局，差异化竞争",
+      "dimension_scores": {
+        "trend_data": {
+          "score": 88.0,
+          "weight": 30,
+          "weighted_score": 26.4
+        },
+        "search_keywords": {
+          "score": 76.5,
+          "weight": 25,
+          "weighted_score": 19.125
+        },
+        "competitor_data": {
+          "score": 77.5,
+          "weight": 20,
+          "weighted_score": 15.5
+        },
+        "profit_margin": {
+          "score": 80,
+          "weight": 15,
+          "weighted_score": 12.0
+        },
+        "social_volume": {
+          "score": 90.19999999999999,
+          "weight": 10,
+          "weighted_score": 9.02
+        }
+      }
+    },
+    {
+      "product_key": "新能源汽车配件",
+      "product_name": "新能源汽车配件/充电桩",
+      "chongqing_advantage": "长安汽车等新能源汽车产业链",
+      "global_trend": "新能源汽车爆发式增长 + 充电基础设施需求",
+      "total_score": 79.26,
+      "rating": "B 级 - 谨慎推荐",
+      "recommendation": "小规模测试，观望",
+      "dimension_scores": {
+        "trend_data": {
+          "score": 90.4,
+          "weight": 30,
+          "weighted_score": 27.12
+        },
+        "search_keywords": {
+          "score": 78.6,
+          "weight": 25,
+          "weighted_score": 19.65
+        },
+        "competitor_data": {
+          "score": 64.0,
+          "weight": 20,
+          "weighted_score": 12.8
+        },
+        "profit_margin": {
+          "score": 70,
+          "weight": 15,
+          "weighted_score": 10.5
+        },
+        "social_volume": {
+          "score": 91.9,
+          "weight": 10,
+          "weighted_score": 9.190000000000001
+        }
+      }
+    },
+    {
+      "product_key": "智能园林工具",
+      "product_name": "电动园林工具/智能割草机",
+      "chongqing_advantage": "通机产业升级 + 电机制造能力",
+      "global_trend": "庭院经济 + 智能化 + 锂电化",
+      "total_score": 78.31,
+      "rating": "B 级 - 谨慎推荐",
+      "recommendation": "小规模测试，观望",
+      "dimension_scores": {
+        "trend_data": {
+          "score": 88.0,
+          "weight": 30,
+          "weighted_score": 26.4
+        },
+        "search_keywords": {
+          "score": 77.0,
+          "weight": 25,
+          "weighted_score": 19.25
+        },
+        "competitor_data": {
+          "score": 66.60000000000001,
+          "weight": 20,
+          "weighted_score": 13.320000000000002
+        },
+        "profit_margin": {
+          "score": 70,
+          "weight": 15,
+          "weighted_score": 10.5
+        },
+        "social_volume": {
+          "score": 88.4,
+          "weight": 10,
+          "weighted_score": 8.840000000000002
+        }
+      }
+    },
+    {
+      "product_key": "通用机械/智能发电机",
+      "product_name": "智能变频发电机/多功能通用机械",
+      "chongqing_advantage": "传统通用机械产业升级 + 完整供应链",
+      "global_trend": "智能化 + 节能环保 + 应急备用电源需求",
+      "total_score": 75.34,
+      "rating": "B 级 - 谨慎推荐",
+      "recommendation": "小规模测试，观望",
+      "dimension_scores": {
+        "trend_data": {
+          "score": 80.0,
+          "weight": 30,
+          "weighted_score": 24.0
+        },
+        "search_keywords": {
+          "score": 73.6,
+          "weight": 25,
+          "weighted_score": 18.4
+        },
+        "competitor_data": {
+          "score": 69.0,
+          "weight": 20,
+          "weighted_score": 13.8
+        },
+        "profit_margin": {
+          "score": 70,
+          "weight": 15,
+          "weighted_score": 10.5
+        },
+        "social_volume": {
+          "score": 86.4,
+          "weight": 10,
+          "weighted_score": 8.64
+        }
+      }
+    },
+    {
+      "product_key": "智能健身器材",
+      "product_name": "智能健身器材/家用健身设备",
+      "chongqing_advantage": "金属加工能力 + 电子集成能力",
+      "global_trend": "健康意识提升 + 家庭健身常态化",
+      "total_score": 74.16,
+      "rating": "B 级 - 谨慎推荐",
+      "recommendation": "小规模测试，观望",
+      "dimension_scores": {
+        "trend_data": {
+          "score": 80.6,
+          "weight": 30,
+          "weighted_score": 24.179999999999996
+        },
+        "search_keywords": {
+          "score": 73.4,
+          "weight": 25,
+          "weighted_score": 18.35
+        },
+        "competitor_data": {
+          "score": 61.400000000000006,
+          "weight": 20,
+          "weighted_score": 12.280000000000001
+        },
+        "profit_margin": {
+          "score": 70,
+          "weight": 15,
+          "weighted_score": 10.5
+        },
+        "social_volume": {
+          "score": 88.5,
+          "weight": 10,
+          "weighted_score": 8.85
+        }
+      }
+    },
+    {
+      "product_key": "钢结构活动房屋",
+      "product_name": "钢结构折叠房屋/集装箱房屋",
+      "chongqing_advantage": "重庆钢铁产业 + 重工业制造能力",
+      "global_trend": "住房危机解决方案 + 临时建筑需求 + 环保建筑",
+      "total_score": 73.77,
+      "rating": "B 级 - 谨慎推荐",
+      "recommendation": "小规模测试，观望",
+      "dimension_scores": {
+        "trend_data": {
+          "score": 80.0,
+          "weight": 30,
+          "weighted_score": 24.0
+        },
+        "search_keywords": {
+          "score": 73.5,
+          "weight": 25,
+          "weighted_score": 18.375
+        },
+        "competitor_data": {
+          "score": 65.5,
+          "weight": 20,
+          "weighted_score": 13.100000000000001
+        },
+        "profit_margin": {
+          "score": 70,
+          "weight": 15,
+          "weighted_score": 10.5
+        },
+        "social_volume": {
+          "score": 78.0,
+          "weight": 10,
+          "weighted_score": 7.800000000000001
+        }
+      }
+    }
+  ],
+  "top_3": [
+    {
+      "product_key": "新能源储能系统",
+      "product_name": "便携式储能电源/太阳能储能系统",
+      "chongqing_advantage": "重庆有完善的锂电池产业链和汽车制造基础",
+      "global_trend": "全球能源转型 + 户外露营经济",
+      "total_score": 85.54,
+      "rating": "A 级 - 推荐",
+      "recommendation": "建议布局，差异化竞争",
+      "dimension_scores": {
+        "trend_data": {
+          "score": 92.5,
+          "weight": 30,
+          "weighted_score": 27.75
+        },
+        "search_keywords": {
+          "score": 79.4,
+          "weight": 25,
+          "weighted_score": 19.85
+        },
+        "competitor_data": {
+          "score": 75.5,
+          "weight": 20,
+          "weighted_score": 15.100000000000001
+        },
+        "profit_margin": {
+          "score": 90,
+          "weight": 15,
+          "weighted_score": 13.5
+        },
+        "social_volume": {
+          "score": 93.4,
+          "weight": 10,
+          "weighted_score": 9.340000000000002
+        }
+      }
+    },
+    {
+      "product_key": "工业级无人机",
+      "product_name": "工业级无人机/农业植保无人机",
+      "chongqing_advantage": "重庆航空航天产业 + 电子制造能力",
+      "global_trend": "农业智能化 + 巡检自动化 + 物流配送",
+      "total_score": 82.94,
+      "rating": "A 级 - 推荐",
+      "recommendation": "建议布局，差异化竞争",
+      "dimension_scores": {
+        "trend_data": {
+          "score": 88.0,
+          "weight": 30,
+          "weighted_score": 26.4
+        },
+        "search_keywords": {
+          "score": 79.0,
+          "weight": 25,
+          "weighted_score": 19.75
+        },
+        "competitor_data": {
+          "score": 71.4,
+          "weight": 20,
+          "weighted_score": 14.280000000000001
+        },
+        "profit_margin": {
+          "score": 90,
+          "weight": 15,
+          "weighted_score": 13.5
+        },
+        "social_volume": {
+          "score": 90.10000000000001,
+          "weight": 10,
+          "weighted_score": 9.010000000000002
+        }
+      }
+    },
+    {
+      "product_key": "智能摩托车/电动摩托",
+      "product_name": "电动摩托车/智能摩托车",
+      "chongqing_advantage": "力帆/隆鑫/宗申等摩托车产业集群",
+      "global_trend": "电动化 + 智能化 + 东南亚市场需求",
+      "total_score": 82.05,
+      "rating": "A 级 - 推荐",
+      "recommendation": "建议布局，差异化竞争",
+      "dimension_scores": {
+        "trend_data": {
+          "score": 88.0,
+          "weight": 30,
+          "weighted_score": 26.4
+        },
+        "search_keywords": {
+          "score": 76.5,
+          "weight": 25,
+          "weighted_score": 19.125
+        },
+        "competitor_data": {
+          "score": 77.5,
+          "weight": 20,
+          "weighted_score": 15.5
+        },
+        "profit_margin": {
+          "score": 80,
+          "weight": 15,
+          "weighted_score": 12.0
+        },
+        "social_volume": {
+          "score": 90.19999999999999,
+          "weight": 10,
+          "weighted_score": 9.02
+        }
+      }
+    }
+  ],
+  "recommendation_summary": {
+    "P0": [
+      "便携式储能电源/太阳能储能系统",
+      "工业级无人机/农业植保无人机",
+      "电动摩托车/智能摩托车"
+    ],
+    "P1": [
+      "新能源汽车配件/充电桩",
+      "电动园林工具/智能割草机",
+      "智能变频发电机/多功能通用机械",
+      "智能健身器材/家用健身设备",
+      "钢结构折叠房屋/集装箱房屋"
+    ],
+    "P2": []
+  }
+}

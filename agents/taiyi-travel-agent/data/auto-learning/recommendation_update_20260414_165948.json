@@ -1,0 +1,87 @@
+{
+  "type": "Recommendation Update",
+  "updated_at": "2026-04-14T16:59:48.792045",
+  "updates": {
+    "trending_destinations": [
+      "悉尼",
+      "奥克兰",
+      "拉斯维加斯",
+      "新加坡",
+      "巴塞罗那",
+      "巴黎",
+      "曼谷",
+      "阿布扎比",
+      "旧金山",
+      "大阪"
+    ],
+    "seasonal_recommendations": [
+      {
+        "season": "春",
+        "destinations": [
+          "日本",
+          "韩国"
+        ],
+        "activity": "赏樱"
+      },
+      {
+        "season": "夏",
+        "destinations": [
+          "海岛",
+          "欧洲"
+        ],
+        "activity": "海滩度假"
+      },
+      {
+        "season": "秋",
+        "destinations": [
+          "日本",
+          "加拿大"
+        ],
+        "activity": "赏枫"
+      },
+      {
+        "season": "冬",
+        "destinations": [
+          "北海道",
+          "北欧"
+        ],
+        "activity": "滑雪"
+      }
+    ],
+    "budget_optimization": [
+      {
+        "tip": "提前 3 个月订机票",
+        "savings": "30%"
+      },
+      {
+        "tip": "选择淡季出行",
+        "savings": "40%"
+      },
+      {
+        "tip": "使用比价网站",
+        "savings": "20%"
+      },
+      {
+        "tip": "购买套票",
+        "savings": "25%"
+      }
+    ],
+    "route_optimization": [
+      {
+        "route": "东京 - 大阪 - 京都",
+        "days": 7,
+        "optimization": "使用 JR Pass"
+      },
+      {
+        "route": "巴黎 - 伦敦 - 罗马",
+        "days": 10,
+        "optimization": "欧洲铁路通票"
+      },
+      {
+        "route": "纽约 - 洛杉矶",
+        "days": 12,
+        "optimization": "国内段飞机"
+      }
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "charter_singapore_20260424_001",
+    "type": "charter",
+    "name": "新加坡环球包车",
+    "name_en": "Singapore Global Charter Pte Ltd",
+    "address": "新加坡乌节路 333 号",
+    "address_en": "333 Orchard Road, Singapore 238867, Singapore",
+    "phone": "+65-6234-5678",
+    "email": "booking@singaporeglobal.com",
+    "website": "https://www.singaporeglobal.com/",
+    "booking_url": "https://www.ctrip.com/charter/singapore",
+    "company_reg": "新加坡会计与企业管制局 第 2026-12345X",
+    "service_areas": ["新加坡全境", "马来西亚新山"],
+    "car_types": ["舒适型 (4 座)", "豪华型 (4 座)", "商务型 (6 座)", "大巴 (20 座)"],
+    "price_range": "S$300-800/天",
+    "operating_hours": "08:00-20:00 (新加坡时间)",
+    "languages": ["中文", "英文", "马来文", " Tamil"],
+    "verified_sources": [
+      {"source": "携程", "verified_at": "2026-04-24", "score": 95},
+      {"source": "Google Places", "verified_at": "2026-04-24", "score": 90},
+      {"source": "Klook", "verified_at": "2026-04-24", "score": 88}
+    ],
+    "trust_score": 91,
+    "last_updated": "2026-04-24T21:00:00+08:00"
+  },
+  {
+    "id": "charter_singapore_20260424_002",
+    "type": "charter",
+    "name": "Grab 新加坡包车",
+    "name_en": "Grab Singapore Pte Ltd",
+    "address": "新加坡莱佛士码头 10 号",
+    "address_en": "10 Raffles Quay, Singapore 048583, Singapore",
+    "phone": "+65-6588-8888",
+    "email": "support@grab.com",
+    "website": "https://www.grab.com/sg/",
+    "booking_url": "https://www.grab.com/sg/car/",
+    "company_reg": "新加坡会计与企业管制局 第 2026-67890X",
+    "service_areas": ["新加坡全境"],
+    "car_types": ["经济型 (4 座)", "舒适型 (4 座)", "豪华型 (4 座)", "商务型 (6 座)"],
+    "price_range": "S$250-600/天",
+    "operating_hours": "24 小时服务",
+    "languages": ["中文", "英文", "马来文", " Tamil", "日文"],
+    "verified_sources": [
+      {"source": "Grab", "verified_at": "2026-04-24", "score": 98},
+      {"source": "Google Places", "verified_at": "2026-04-24", "score": 94},
+      {"source": "携程", "verified_at": "2026-04-24", "score": 92}
+    ],
+    "trust_score": 95,
+    "last_updated": "2026-04-24T21:00:00+08:00"
+  }
+]

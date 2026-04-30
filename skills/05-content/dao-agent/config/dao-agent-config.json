@@ -1,0 +1,16 @@
+{
+  "daily_time": "08:00",
+  "card_style": "minimalist",
+  "source_pool": [
+    "道德经",
+    "庄子",
+    "列子",
+    "文始真经"
+  ],
+  "output_formats": [
+    "markdown",
+    "image"
+  ],
+  "auto_send": false,
+  "telegram_chat_id": "7073481596"
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google 搜索国内网站 - 太一 Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100">
+    <!-- 顶部导航 -->
+    <header class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 py-6">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h1 class="text-3xl font-bold text-indigo-600">🔍 Google 搜索国内网站</h1>
+                    <p class="text-gray-500 mt-1">通过代理访问国内网站 · 安全便捷</p>
+                </div>
+                <a href="/" class="text-indigo-600 hover:text-indigo-800 font-semibold">← 返回 Dashboard</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-8">
+        <!-- 搜索框 -->
+        <div class="bg-white rounded-xl shadow-md p-6 mb-8">
+            <form action="/search" method="GET" class="flex gap-4">
+                <input type="text" name="q" value="{{ query if query else '' }}" 
+                       placeholder="输入要搜索的国内网站..." 
+                       class="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 text-lg"
+                       autofocus>
+                <button type="submit" class="px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors font-semibold">
+                    🔍 搜索
+                </button>
+            </form>
+            
+            <!-- 常用网站快捷方式 -->
+            <div class="mt-4 pt-4 border-t">
+                <p class="text-sm text-gray-500 mb-2">常用网站:</p>
+                <div class="flex flex-wrap gap-2">
+                    <a href="/search?q=site:zhihu.com" class="px-3 py-1 bg-blue-50 text-blue-600 rounded-full text-sm hover:bg-blue-100">知乎</a>
+                    <a href="/search?q=site:bilibili.com" class="px-3 py-1 bg-pink-50 text-pink-600 rounded-full text-sm hover:bg-pink-100">哔哩哔哩</a>
+                    <a href="/search?q=site:weibo.com" class="px-3 py-1 bg-red-50 text-red-600 rounded-full text-sm hover:bg-red-100">微博</a>
+                    <a href="/search?q=site:douban.com" class="px-3 py-1 bg-green-50 text-green-600 rounded-full text-sm hover:bg-green-100">豆瓣</a>
+                    <a href="/search?q=site:jd.com" class="px-3 py-1 bg-red-50 text-red-600 rounded-full text-sm hover:bg-red-100">京东</a>
+                    <a href="/search?q=site:taobao.com" class="px-3 py-1 bg-orange-50 text-orange-600 rounded-full text-sm hover:bg-orange-100">淘宝</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 代理状态 -->
+        <div class="bg-white rounded-xl shadow-md p-6 mb-8">
+            <h3 class="text-lg font-bold text-gray-800 mb-4">🔗 代理状态</h3>
+            <div id="proxy-status" class="flex items-center gap-4">
+                <span class="animate-pulse">⚪ 检查中...</span>
+            </div>
+        </div>
+
+        <!-- 搜索结果 -->
+        {% if query %}
+        <div class="bg-white rounded-xl shadow-md p-6">
+            <h3 class="text-lg font-bold text-gray-800 mb-4">📊 搜索结果</h3>
+            <p class="text-gray-600 mb-4">搜索关键词：<span class="font-semibold text-indigo-600">{{ query }}</span></p>
+            
+            {% if results %}
+            <div class="space-y-4">
+                {% for result in results %}
+                <div class="p-4 border border-gray-200 rounded-lg hover:border-indigo-300 hover:shadow-md transition-all">
+                    <a href="{{ result.url }}" target="_blank" class="text-xl font-semibold text-indigo-600 hover:underline">
+                        {{ result.title }}
+                    </a>
+                    <p class="text-sm text-gray-500 mt-1">{{ result.url }}</p>
+                    <p class="text-xs text-gray-400 mt-2">🌐 {{ result.domain }}</p>
+                </div>
+                {% endfor %}
+            </div>
+            {% else %}
+            <p class="text-gray-500">未找到相关结果，请尝试其他关键词</p>
+            {% endif %}
+        </div>
+        {% endif %}
+    </main>
+
+    <script>
+        // 检查代理状态
+        async function checkProxyStatus() {
+            try {
+                const response = await fetch('/api/proxy-status');
+                const data = await response.json();
+                
+                const statusEl = document.getElementById('proxy-status');
+                if (data.proxy_available) {
+                    statusEl.innerHTML = `
+                        <span class="text-green-600 font-semibold">✅ 代理可用</span>
+                        <span class="text-gray-500">${data.proxy_host}:${data.proxy_port}</span>
+                    `;
+                } else {
+                    statusEl.innerHTML = `
+                        <span class="text-red-600 font-semibold">❌ 代理不可用</span>
+                        <span class="text-gray-500">请确保 Clash 正在运行</span>
+                    `;
+                }
+            } catch (error) {
+                document.getElementById('proxy-status').innerHTML = 
+                    '<span class="text-red-600">检查失败</span>';
+            }
+        }
+
+        checkProxyStatus();
+    </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "id": "26ba099173aed026152be3863cb23a51",
+  "text": "Cost.Agent 定额转换完成 38+ MD 文件",
+  "metadata": {
+    "created_at": "2026-04-11T10:19:58.678702",
+    "category": "learning",
+    "review_count": 0,
+    "next_review": "2026-04-11T10:39:46.678707",
+    "encoded": {
+      "semantic": "Cost Agent 定额转换完成 38 MD 文件",
+      "episodic": "[2026-04-11T10:19:58.678669] Cost.Agent 定额转换完成 38+ MD 文件",
+      "procedural": "Cost.Agent 定额转换完成 38+ MD 文件",
+      "associative": "文件 Cost 定额转换完成 Agent"
+    }
+  }
+}

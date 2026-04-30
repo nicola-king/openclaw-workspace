@@ -1,0 +1,32 @@
+{
+  "name": "Google Veo 3.1 Integration",
+  "version": "1.0",
+  "created_at": "2026-04-16T13:01:25.476144",
+  "target_team": "video-factory",
+  "features": {
+    "video_generation": {
+      "enabled": true,
+      "quality": "1080p",
+      "duration": "60s",
+      "free": true
+    },
+    "batch_processing": {
+      "enabled": true,
+      "max_batch": 10
+    },
+    "style_transfer": {
+      "enabled": true,
+      "styles": [
+        "cinematic",
+        "documentary",
+        "animation",
+        "artistic"
+      ]
+    }
+  },
+  "expected_improvements": {
+    "cost": "-100% (免费)",
+    "quality": "+60%",
+    "speed": "+40%"
+  }
+}

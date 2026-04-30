@@ -1,0 +1,18 @@
+{
+  "version": "3.0",
+  "name": "太一统一智能路由器",
+  "created_at": "2026-04-16T14:30:35.774084",
+  "features": [
+    "关键词智能匹配",
+    "搜索类型识别",
+    "自动路由决策",
+    "Token 节约优化",
+    "请求日志记录"
+  ],
+  "integration": {
+    "smart-model-router": true,
+    "geo-model-router": true,
+    "smart-search-router": true,
+    "quota-router": true
+  }
+}

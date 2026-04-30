@@ -1,0 +1,72 @@
+{
+  "version": "2.0.0",
+  "updated": "2026-04-22T13:00:00+08:00",
+  "description": "知几统一交易调度器配置 (整合币安/GMGN/Polymarket)",
+  
+  "total_capital": 10000,
+  
+  "platforms": {
+    "polymarket": {
+      "enabled": true,
+      "allocation": 0.30,
+      "api_key": "YOUR_POLYMARKET_KEY",
+      "wallet": "YOUR_WALLET_ADDRESS",
+      "strategies": ["arbitrage", "market_making"]
+    },
+    "gmgn": {
+      "enabled": true,
+      "allocation": 0.30,
+      "wallet": "YOUR_GMGN_WALLET",
+      "strategies": ["trend_following", "whale_tracking"]
+    },
+    "binance": {
+      "enabled": true,
+      "allocation": 0.30,
+      "api_key": "oIsi9bQiX2BCqHw29QQzSfcLWttt4BYwNWaZOxrNZOjuZyDI3qfILt4XHfzmVRS3",
+      "api_secret": "jKSPGVEAcsvVTe50K2X7rVkI6SnfI2sPB63xPjHPvoTy6Wv8PIJ6u6SFpk01PdeC",
+      "ip_whitelist": "103.151.172.28",
+      "strategies": ["grid_trading", "trend_following", "arbitrage"]
+    }
+  },
+  
+  "reserved_cash": 0.10,
+  
+  "risk_management": {
+    "max_position_per_trade": 0.25,
+    "max_total_exposure": 0.80,
+    "max_concentration_per_platform": 0.30,
+    "hard_stop_loss": 0.10,
+    "daily_stop_loss": 0.05,
+    "max_drawdown": 0.15,
+    "kelly_divisor": 4
+  },
+  
+  "strategy_weights": {
+    "arbitrage": 0.40,
+    "market_making": 0.20,
+    "trend_following": 0.20,
+    "grid_trading": 0.20
+  },
+  
+  "signal_thresholds": {
+    "high_confidence": 0.80,
+    "medium_confidence": 0.60,
+    "low_confidence": 0.40,
+    "min_ev_edge": 0.045
+  },
+  
+  "execution": {
+    "max_slippage": 0.01,
+    "timeout_seconds": 30,
+    "retry_count": 3,
+    "use_proxy": true,
+    "proxy_url": "http://127.0.0.1:7890"
+  },
+  
+  "monitoring": {
+    "log_level": "INFO",
+    "save_history": true,
+    "telegram_notifications": true,
+    "performance_report_interval": "daily"
+  }
+}

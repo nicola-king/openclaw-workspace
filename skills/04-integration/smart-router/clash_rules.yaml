@@ -1,0 +1,90 @@
+# Clash 智能分流规则
+# 用途：自动区分国内/海外流量
+# 部署：~/.config/clash/config.yaml
+
+payload:
+  # ========== 国内服务 - 直连 ==========
+  
+  # 微信
+  - DOMAIN-SUFFIX,weixin.qq.com,DIRECT
+  - DOMAIN-SUFFIX,wechat.com,DIRECT
+  - DOMAIN,api.weixin.qq.com,DIRECT
+  - DOMAIN,mp.weixin.qq.com,DIRECT
+  - DOMAIN,qyapi.weixin.qq.com,DIRECT
+  - DOMAIN,support.weixin.qq.com,DIRECT
+  - DOMAIN,bin.weixin.qq.com,DIRECT
+  
+  # 飞书
+  - DOMAIN-SUFFIX,feishu.cn,DIRECT
+  - DOMAIN-SUFFIX,feishucdn.com,DIRECT
+  - DOMAIN-SUFFIX,feishupkg.com,DIRECT
+  - DOMAIN,open.feishu.cn,DIRECT
+  - DOMAIN,api.feishu.cn,DIRECT
+  - DOMAIN,bytedance.com,DIRECT
+  
+  # 阿里云 (国内服务)
+  - DOMAIN-SUFFIX,aliyun.com,DIRECT
+  - DOMAIN-SUFFIX,aliyuncs.com,DIRECT
+  - DOMAIN,dashscope.aliyuncs.com,DIRECT
+  
+  # 腾讯云
+  - DOMAIN-SUFFIX,tencent.com,DIRECT
+  - DOMAIN-SUFFIX,qq.com,DIRECT
+  
+  # 其他国内 CDN
+  - DOMAIN-SUFFIX,bdstatic.com,DIRECT
+  - DOMAIN-SUFFIX,tbcdn.cn,DIRECT
+  - DOMAIN-SUFFIX,126.net,DIRECT
+  - DOMAIN-SUFFIX,163.com,DIRECT
+  
+  # ========== 海外服务 - 代理 ==========
+  
+  # Telegram
+  - DOMAIN-SUFFIX,telegram.org,PROXY
+  - DOMAIN-SUFFIX,telegram.me,PROXY
+  - DOMAIN-SUFFIX,t.me,PROXY
+  - DOMAIN,api.telegram.org,PROXY
+  
+  # Google
+  - DOMAIN-SUFFIX,google.com,PROXY
+  - DOMAIN-SUFFIX,googleapis.com,PROXY
+  - DOMAIN-SUFFIX,googleapi.com,PROXY
+  - DOMAIN-SUFFIX,googlevideo.com,PROXY
+  - DOMAIN-SUFFIX,youtube.com,PROXY
+  - DOMAIN-SUFFIX,ytimg.com,PROXY
+  
+  # GitHub
+  - DOMAIN-SUFFIX,github.com,PROXY
+  - DOMAIN,api.github.com,PROXY
+  - DOMAIN-SUFFIX,githubusercontent.com,PROXY
+  - DOMAIN-SUFFIX,github.io,PROXY
+  
+  # AI API
+  - DOMAIN-SUFFIX,openai.com,PROXY
+  - DOMAIN,api.openai.com,PROXY
+  - DOMAIN-SUFFIX,anthropic.com,PROXY
+  - DOMAIN,api.anthropic.com,PROXY
+  - DOMAIN-SUFFIX,perplexity.ai,PROXY
+  - DOMAIN,api.perplexity.ai,PROXY
+  
+  # 其他海外服务
+  - DOMAIN-SUFFIX,notion.so,PROXY
+  - DOMAIN-SUFFIX,notion.com,PROXY
+  - DOMAIN,api.notion.com,PROXY
+  - DOMAIN-SUFFIX,slack.com,PROXY
+  - DOMAIN,api.slack.com,PROXY
+  
+  # ========== 默认规则 ==========
+  
+  # 国内 IP - 直连
+  - GEOIP,CN,DIRECT
+  
+  # 局域网 - 直连
+  - DOMAIN-SUFFIX,local,DIRECT
+  - IP-CIDR,127.0.0.0/8,DIRECT
+  - IP-CIDR,192.168.0.0/16,DIRECT
+  - IP-CIDR,10.0.0.0/8,DIRECT
+  - IP-CIDR,172.16.0.0/12,DIRECT
+  
+  # 默认 - 代理
+  - MATCH,PROXY

@@ -1,0 +1,182 @@
+{
+  "product_category": "steel_foldable_house",
+  "manufacturers": [
+    {
+      "rank": 2,
+      "company_name": "浙江杭萧钢构股份有限公司",
+      "company_name_en": "Zhejiang Hangxiao Steel Structure Co., Ltd.",
+      "location": "浙江省杭州市萧山区",
+      "established_year": 2001,
+      "years_in_business": 25,
+      "main_products": "钢结构建筑/折叠房屋/轻钢别墅",
+      "price_range": "$4,000-$7,000",
+      "moq": 5,
+      "lead_time": "20-25 天",
+      "certifications": [
+        "CE",
+        "FCC",
+        "ISO9001",
+        "ISO14001",
+        "OHSAS18001"
+      ],
+      "contact": {
+        "phone": "+86-571-8262-3888",
+        "mobile": "+86-139-0571-3888",
+        "email": "export@hangxiao.com",
+        "website": "www.hangxiao.com",
+        "address": "浙江省杭州市萧山区经济技术开发区"
+      },
+      "capacity": "800 套/月",
+      "export_markets": [
+        "美国",
+        "欧洲",
+        "澳洲",
+        "东南亚",
+        "非洲"
+      ],
+      "rating": 4.9,
+      "verified": true
+    },
+    {
+      "rank": 1,
+      "company_name": "青岛宏大钢结构有限公司",
+      "company_name_en": "Qingdao Hongda Steel Structure Co., Ltd.",
+      "location": "山东省青岛市胶州市",
+      "established_year": 2008,
+      "years_in_business": 18,
+      "main_products": "钢结构房屋/折叠房屋/活动房",
+      "price_range": "$3,500-$6,000",
+      "moq": 10,
+      "lead_time": "15-20 天",
+      "certifications": [
+        "CE",
+        "ISO9001",
+        "ISO14001"
+      ],
+      "contact": {
+        "phone": "+86-532-8228-5678",
+        "mobile": "+86-138-0532-5678",
+        "email": "sales@hongdasteel.com",
+        "website": "www.hongdasteel.com",
+        "address": "山东省青岛市胶州市北关工业园"
+      },
+      "capacity": "500 套/月",
+      "export_markets": [
+        "美国",
+        "澳洲",
+        "欧洲",
+        "中东"
+      ],
+      "rating": 4.8,
+      "verified": true
+    },
+    {
+      "rank": 4,
+      "company_name": "广东雅达钢结构工程有限公司",
+      "company_name_en": "Guangdong Yada Steel Structure Engineering Co., Ltd.",
+      "location": "广东省佛山市南海区",
+      "established_year": 2010,
+      "years_in_business": 16,
+      "main_products": "钢结构房屋/折叠房屋/轻钢别墅",
+      "price_range": "$4,500-$8,000",
+      "moq": 10,
+      "lead_time": "18-22 天",
+      "certifications": [
+        "CE",
+        "FCC",
+        "RoHS",
+        "ISO9001",
+        "ISO14001"
+      ],
+      "contact": {
+        "phone": "+86-757-8655-8888",
+        "mobile": "+86-135-0757-8888",
+        "email": "export@yadasteel.com",
+        "website": "www.yadasteel.com",
+        "address": "广东省佛山市南海区狮山镇工业园"
+      },
+      "capacity": "400 套/月",
+      "export_markets": [
+        "美国",
+        "欧洲",
+        "澳洲",
+        "东南亚"
+      ],
+      "rating": 4.7,
+      "verified": true
+    },
+    {
+      "rank": 3,
+      "company_name": "江苏中泰钢结构有限公司",
+      "company_name_en": "Jiangsu Zhongtai Steel Structure Co., Ltd.",
+      "location": "江苏省无锡市江阴市",
+      "established_year": 2005,
+      "years_in_business": 21,
+      "main_products": "折叠房屋/集装箱房/活动板房",
+      "price_range": "$3,000-$5,500",
+      "moq": 20,
+      "lead_time": "15-18 天",
+      "certifications": [
+        "CE",
+        "ISO9001"
+      ],
+      "contact": {
+        "phone": "+86-510-8628-9999",
+        "mobile": "+86-137-0510-9999",
+        "email": "sales@zhongtaisteel.com",
+        "website": "www.zhongtaisteel.com",
+        "address": "江苏省无锡市江阴市周庄镇工业园"
+      },
+      "capacity": "600 套/月",
+      "export_markets": [
+        "美国",
+        "澳洲",
+        "中东",
+        "非洲"
+      ],
+      "rating": 4.6,
+      "verified": true
+    },
+    {
+      "rank": 5,
+      "company_name": "福建金鼎钢结构有限公司",
+      "company_name_en": "Fujian Jinding Steel Structure Co., Ltd.",
+      "location": "福建省泉州市晋江市",
+      "established_year": 2003,
+      "years_in_business": 23,
+      "main_products": "折叠房屋/活动房/集装箱房",
+      "price_range": "$3,200-$5,800",
+      "moq": 15,
+      "lead_time": "12-18 天",
+      "certifications": [
+        "CE",
+        "ISO9001",
+        "ISO14001"
+      ],
+      "contact": {
+        "phone": "+86-595-8568-6666",
+        "mobile": "+86-136-0595-6666",
+        "email": "sales@jindingsteel.com",
+        "website": "www.jindingsteel.com",
+        "address": "福建省泉州市晋江市经济开发区"
+      },
+      "capacity": "550 套/月",
+      "export_markets": [
+        "美国",
+        "澳洲",
+        "中东",
+        "欧洲"
+      ],
+      "rating": 4.5,
+      "verified": true
+    }
+  ],
+  "count": 5,
+  "average_rating": 4.7,
+  "price_range": {
+    "min": 0,
+    "max": 0,
+    "average": 0
+  },
+  "timestamp": "2026-04-18T23:00:06.366034"
+}

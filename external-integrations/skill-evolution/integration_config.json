@@ -1,0 +1,29 @@
+{
+  "name": "Skill Evolution Model Integration",
+  "version": "1.0",
+  "created_at": "2026-04-16T13:01:25.476487",
+  "target_team": "self-evolution-engine",
+  "mechanisms": {
+    "multi_user_learning": {
+      "enabled": true,
+      "description": "4 Users, One Skill, Continuous Growth"
+    },
+    "version_evolution": {
+      "enabled": true,
+      "versions": [
+        "v1.0-auto-generated",
+        "v2.0-auto-evolved",
+        "v3.0-auto-evolved"
+      ]
+    },
+    "capability_accumulation": {
+      "enabled": true,
+      "inheritance": "3 users wisdom → new user instant"
+    }
+  },
+  "expected_improvements": {
+    "evolution_speed": "+30%",
+    "knowledge_transfer": "+50%",
+    "completeness": "100%"
+  }
+}

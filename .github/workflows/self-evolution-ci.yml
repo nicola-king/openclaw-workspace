@@ -1,0 +1,46 @@
+name: OpenClaw Self-Evolution CI/CD
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: '0 0 * * *'  # 每天运行
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      
+      - name: Install dependencies
+        run: |
+          pip install pytest pytest-cov
+      
+      - name: Run tests
+        run: |
+          python scripts/self-evolution-engine.py
+          python scripts/standardize-emerged-skills.py
+          python scripts/auto-skills-dedup.py
+      
+      - name: Upload coverage
+        uses: codecov/codecov-action@v3
+
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Deploy
+        run: |
+          echo "Deploying to production..."

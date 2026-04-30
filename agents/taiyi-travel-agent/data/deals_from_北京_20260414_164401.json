@@ -1,0 +1,42 @@
+{
+  "type": "Travel Deals",
+  "origin": "北京",
+  "deals": [
+    {
+      "destination": "东京",
+      "flight_price": 1200,
+      "hotel_price": 300,
+      "package_discount": "15%",
+      "valid_until": "2026-05-31"
+    },
+    {
+      "destination": "首尔",
+      "flight_price": 1200,
+      "hotel_price": 300,
+      "package_discount": "15%",
+      "valid_until": "2026-05-31"
+    },
+    {
+      "destination": "曼谷",
+      "flight_price": 1200,
+      "hotel_price": 300,
+      "package_discount": "15%",
+      "valid_until": "2026-05-31"
+    },
+    {
+      "destination": "新加坡",
+      "flight_price": 1300,
+      "hotel_price": 300,
+      "package_discount": "15%",
+      "valid_until": "2026-05-31"
+    },
+    {
+      "destination": "巴厘岛",
+      "flight_price": 1300,
+      "hotel_price": 300,
+      "package_discount": "15%",
+      "valid_until": "2026-05-31"
+    }
+  ],
+  "timestamp": "2026-04-14T16:44:01.289231"
+}

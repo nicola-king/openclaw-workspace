@@ -1,0 +1,229 @@
+{
+  "analysis_date": "2026-04-19 09:45",
+  "company": "重庆兴旺工具制造有限公司",
+  "event": "CCMT 2026 上海展会 (E1-B183)",
+  "products_analyzed": 4,
+  "ranking": [
+    {
+      "product_key": "数控铣刀",
+      "product_name": "数控铣刀/CNC Milling Cutters",
+      "total_score": 78.69,
+      "rating": "B 级 - 谨慎推荐",
+      "recommendation": "小规模测试，观望",
+      "dimension_scores": {
+        "trend_data": {
+          "score": 86.80000000000001,
+          "weight": 30,
+          "weighted_score": 26.040000000000003
+        },
+        "search_keywords": {
+          "score": 74.9,
+          "weight": 25,
+          "weighted_score": 18.725
+        },
+        "competitor_data": {
+          "score": 65.80000000000001,
+          "weight": 20,
+          "weighted_score": 13.160000000000004
+        },
+        "profit_margin": {
+          "score": 80,
+          "weight": 15,
+          "weighted_score": 12.0
+        },
+        "social_volume": {
+          "score": 87.6,
+          "weight": 10,
+          "weighted_score": 8.76
+        }
+      }
+    },
+    {
+      "product_key": "数控刀具",
+      "product_name": "数控刀具/CNC Cutting Tools",
+      "total_score": 77.69,
+      "rating": "B 级 - 谨慎推荐",
+      "recommendation": "小规模测试，观望",
+      "dimension_scores": {
+        "trend_data": {
+          "score": 88.0,
+          "weight": 30,
+          "weighted_score": 26.4
+        },
+        "search_keywords": {
+          "score": 74.6,
+          "weight": 25,
+          "weighted_score": 18.65
+        },
+        "competitor_data": {
+          "score": 67.5,
+          "weight": 20,
+          "weighted_score": 13.5
+        },
+        "profit_margin": {
+          "score": 70,
+          "weight": 15,
+          "weighted_score": 10.5
+        },
+        "social_volume": {
+          "score": 86.4,
+          "weight": 10,
+          "weighted_score": 8.64
+        }
+      }
+    },
+    {
+      "product_key": "机床附件",
+      "product_name": "机床附件/Machine Tool Accessories",
+      "total_score": 74.64,
+      "rating": "B 级 - 谨慎推荐",
+      "recommendation": "小规模测试，观望",
+      "dimension_scores": {
+        "trend_data": {
+          "score": 81.19999999999999,
+          "weight": 30,
+          "weighted_score": 24.359999999999996
+        },
+        "search_keywords": {
+          "score": 73.5,
+          "weight": 25,
+          "weighted_score": 18.375
+        },
+        "competitor_data": {
+          "score": 64.80000000000001,
+          "weight": 20,
+          "weighted_score": 12.960000000000003
+        },
+        "profit_margin": {
+          "score": 70,
+          "weight": 15,
+          "weighted_score": 10.5
+        },
+        "social_volume": {
+          "score": 84.5,
+          "weight": 10,
+          "weighted_score": 8.450000000000001
+        }
+      }
+    },
+    {
+      "product_key": "工业钻头",
+      "product_name": "工业钻头/Industrial Drill Bits",
+      "total_score": 74.02,
+      "rating": "B 级 - 谨慎推荐",
+      "recommendation": "小规模测试，观望",
+      "dimension_scores": {
+        "trend_data": {
+          "score": 80.0,
+          "weight": 30,
+          "weighted_score": 24.0
+        },
+        "search_keywords": {
+          "score": 74.0,
+          "weight": 25,
+          "weighted_score": 18.5
+        },
+        "competitor_data": {
+          "score": 62.5,
+          "weight": 20,
+          "weighted_score": 12.5
+        },
+        "profit_margin": {
+          "score": 70,
+          "weight": 15,
+          "weighted_score": 10.5
+        },
+        "social_volume": {
+          "score": 85.2,
+          "weight": 10,
+          "weighted_score": 8.520000000000001
+        }
+      }
+    }
+  ],
+  "target_markets": {
+    "东南亚": {
+      "countries": [
+        "越南",
+        "泰国",
+        "印尼",
+        "马来西亚"
+      ],
+      "demand": "高",
+      "growth": "+35%/年",
+      "competition": "中等",
+      "recommendation": "重点开发"
+    },
+    "欧洲": {
+      "countries": [
+        "德国",
+        "意大利",
+        "波兰",
+        "捷克"
+      ],
+      "demand": "高",
+      "growth": "+20%/年",
+      "competition": "高",
+      "recommendation": "差异化竞争"
+    },
+    "北美": {
+      "countries": [
+        "美国",
+        "加拿大",
+        "墨西哥"
+      ],
+      "demand": "高",
+      "growth": "+25%/年",
+      "competition": "高",
+      "recommendation": "高端市场"
+    },
+    "中东": {
+      "countries": [
+        "阿联酋",
+        "沙特",
+        "土耳其"
+      ],
+      "demand": "中等",
+      "growth": "+40%/年",
+      "competition": "低",
+      "recommendation": "新兴市场"
+    },
+    "南美": {
+      "countries": [
+        "巴西",
+        "阿根廷",
+        "智利"
+      ],
+      "demand": "中等",
+      "growth": "+30%/年",
+      "competition": "低",
+      "recommendation": "潜力市场"
+    }
+  },
+  "recommendations": [
+    {
+      "priority": "P0",
+      "type": "market",
+      "message": "东南亚市场增长快 (+35%)，竞争中等",
+      "action": "优先开发越南/泰国/印尼"
+    },
+    {
+      "priority": "P1",
+      "type": "market",
+      "message": "中东/南美竞争低，增长快",
+      "action": "新兴市场提前布局"
+    },
+    {
+      "priority": "P1",
+      "type": "channel",
+      "message": "工业品适合 B2B 平台 + 展会",
+      "action": "阿里巴巴国际站 + 海外展会"
+    },
+    {
+      "priority": "P2",
+      "type": "certification",
+      "message": "欧洲市场需要 CE 认证",
+      "action": "提前准备认证资质"
+    }
+  ]
+}

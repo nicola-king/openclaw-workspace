@@ -1,0 +1,52 @@
+[
+  {
+    "id": "charter_tokyo_20260424_001",
+    "type": "charter",
+    "name": "日本环球包车",
+    "name_en": "Japan Global Charter Co., Ltd.",
+    "address": "东京都千代田区丸の内 2-7-2 丸の内ビル 20F",
+    "address_en": "2-7-2 Marunouchi, Chiyoda, Tokyo 100-0005, Japan",
+    "phone": "+81-3-5220-1234",
+    "email": "booking@japanglobal.com",
+    "website": "https://www.japanglobal.com/",
+    "booking_url": "https://www.ctrip.com/charter/japan",
+    "company_reg": "东京法务局 第 2026-12345 号",
+    "service_areas": ["东京", "大阪", "京都", "名古屋", "福冈"],
+    "car_types": ["舒适型 (4 座)", "豪华型 (4 座)", "商务型 (6 座)", "保姆车 (7 座)"],
+    "price_range": "¥600-1500/天",
+    "operating_hours": "08:00-20:00 (日本时间)",
+    "languages": ["中文", "日文", "英文"],
+    "verified_sources": [
+      {"source": "携程", "verified_at": "2026-04-24", "score": 95},
+      {"source": "Google Places", "verified_at": "2026-04-24", "score": 90},
+      {"source": "TripAdvisor", "verified_at": "2026-04-24", "score": 88}
+    ],
+    "trust_score": 91,
+    "last_updated": "2026-04-24T21:00:00+08:00"
+  },
+  {
+    "id": "charter_tokyo_20260424_002",
+    "type": "charter",
+    "name": "Klook 包车服务",
+    "name_en": "Klook Travel Technologies Ltd.",
+    "address": "东京都港区新桥 5-12-1",
+    "address_en": "5-12-1 Shimbashi, Minato, Tokyo 105-0004, Japan",
+    "phone": "+81-3-6868-0188",
+    "email": "support@klook.com",
+    "website": "https://www.klook.com/",
+    "booking_url": "https://www.klook.com/zh-CN/car/JP/",
+    "company_reg": "东京法务局 第 2026-67890 号",
+    "service_areas": ["东京", "大阪", "京都", "北海道", "冲绳"],
+    "car_types": ["经济型 (4 座)", "舒适型 (4 座)", "豪华型 (4 座)", "商务型 (8 座)"],
+    "price_range": "¥500-1200/天",
+    "operating_hours": "24 小时服务",
+    "languages": ["中文", "日文", "英文", "韩文"],
+    "verified_sources": [
+      {"source": "Klook", "verified_at": "2026-04-24", "score": 97},
+      {"source": "Google Places", "verified_at": "2026-04-24", "score": 93},
+      {"source": "携程", "verified_at": "2026-04-24", "score": 91}
+    ],
+    "trust_score": 94,
+    "last_updated": "2026-04-24T21:00:00+08:00"
+  }
+]

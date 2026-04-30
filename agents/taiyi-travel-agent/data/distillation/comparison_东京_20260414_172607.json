@@ -1,0 +1,45 @@
+{
+  "destination": "东京",
+  "compared_at": "2026-04-14T17:26:07.931681",
+  "hotels": [
+    {
+      "name": "东京大酒店",
+      "rating": 4.5,
+      "price": 800
+    }
+  ],
+  "guides": [
+    {
+      "name": "王导",
+      "rating": 4.9,
+      "price": 800
+    }
+  ],
+  "charters": [
+    {
+      "name": "神州包车",
+      "rating": 4.8,
+      "price": 600
+    }
+  ],
+  "recommendations": [
+    {
+      "type": "hotel",
+      "name": "东京大酒店",
+      "reason": "评分高/价格优/位置好",
+      "confidence": 0.9191214607955103
+    },
+    {
+      "type": "guide",
+      "name": "王导",
+      "reason": "经验丰富/语言好/评价高",
+      "confidence": 0.9110124301888117
+    },
+    {
+      "type": "charter",
+      "name": "神州包车",
+      "reason": "车况好/司机专业/价格优",
+      "confidence": 0.9012202166284244
+    }
+  ]
+}

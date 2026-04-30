@@ -1,0 +1,86 @@
+{
+  "generated_at": "2026-04-19T00:17:38.361174",
+  "summary": {
+    "total_tasks": 6,
+    "ok": 6,
+    "warning": 0,
+    "error": 0
+  },
+  "results": [
+    {
+      "task_id": "daily_intelligence",
+      "task_name": "每日情报推送",
+      "script": "daily_intelligence_job.py",
+      "schedule": "0 8 * * *",
+      "priority": "P0",
+      "status": "ok",
+      "issues": [],
+      "fixes": [],
+      "checked_at": "2026-04-19T00:17:38.125832"
+    },
+    {
+      "task_id": "weekly_report",
+      "task_name": "每周报告",
+      "script": "weekly_report_job.py",
+      "schedule": "0 9 * * 1",
+      "priority": "P0",
+      "status": "ok",
+      "issues": [],
+      "fixes": [],
+      "checked_at": "2026-04-19T00:17:38.168386"
+    },
+    {
+      "task_id": "monthly_strategy",
+      "task_name": "每月战略",
+      "script": "monthly_strategy_job.py",
+      "schedule": "0 10 1 * *",
+      "priority": "P2",
+      "status": "ok",
+      "issues": [],
+      "fixes": [],
+      "checked_at": "2026-04-19T00:17:38.206070"
+    },
+    {
+      "task_id": "trend_monitor",
+      "task_name": "趋势监控",
+      "script": "trend_alert_module.py",
+      "schedule": "0 * * * *",
+      "priority": "P1",
+      "status": "ok",
+      "issues": [],
+      "fixes": [],
+      "checked_at": "2026-04-19T00:17:38.243830"
+    },
+    {
+      "task_id": "competitor_monitor",
+      "task_name": "竞品监控",
+      "script": "competitor_monitor_job.py",
+      "schedule": "0 */4 * * *",
+      "priority": "P2",
+      "status": "ok",
+      "issues": [],
+      "fixes": [],
+      "checked_at": "2026-04-19T00:17:38.282850"
+    },
+    {
+      "task_id": "clearance_job",
+      "task_name": "滞销清仓",
+      "script": "clearance_job.py",
+      "schedule": "0 6 * * *",
+      "priority": "P3",
+      "status": "ok",
+      "issues": [],
+      "fixes": [],
+      "checked_at": "2026-04-19T00:17:38.323280"
+    }
+  ],
+  "fix_records": [],
+  "recommendations": [
+    {
+      "priority": "P3",
+      "type": "info",
+      "message": "所有定时任务运行正常",
+      "action": "继续监控"
+    }
+  ]
+}

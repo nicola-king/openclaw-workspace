@@ -1,0 +1,81 @@
+{
+  "published_projects": [
+    {
+      "name": "taiyi-smart-router",
+      "repo": "taiyi-smart-router",
+      "version": "v4.0.0",
+      "path": "/home/nicola/.openclaw/workspace/github-release/taiyi-smart-router",
+      "published_at": "2026-04-16 16:35",
+      "status": "published",
+      "release_url": "https://github.com/nicola-king/taiyi-smart-router/releases/tag/v4.0.0",
+      "repo_url": "https://github.com/nicola-king/taiyi-smart-router"
+    },
+    {
+      "name": "polymarket-trading-agent",
+      "repo": "polymarket-trading-agent",
+      "path": "/home/nicola/.openclaw/workspace/skills/01-trading/polymarket-trading-agent",
+      "published_at": "2026-04-14",
+      "status": "published"
+    },
+    {
+      "name": "gmgn-trading-agent",
+      "repo": "gmgn-trading-agent",
+      "path": "/home/nicola/.openclaw/workspace/skills/01-trading/gmgn-trading-agent",
+      "published_at": "2026-04-14",
+      "status": "published"
+    },
+    {
+      "name": "binance-trading-agent",
+      "repo": "binance-trading-agent",
+      "path": "/home/nicola/.openclaw/workspace/skills/01-trading/binance-trading-agent",
+      "published_at": "2026-04-14",
+      "status": "published"
+    },
+    {
+      "name": "cross-border-trade-agent",
+      "repo": "cross-border-trade-agent",
+      "path": "/home/nicola/.openclaw/workspace/skills/01-trading/cross-border-trade-agent",
+      "published_at": "2026-04-14",
+      "status": "published"
+    },
+    {
+      "name": "taiyi-voice-agent",
+      "repo": "taiyi-voice-agent",
+      "path": "/home/nicola/.openclaw/workspace/skills/07-system/taiyi-voice-agent",
+      "published_at": "2026-04-14",
+      "status": "published"
+    },
+    {
+      "name": "taiyi-memory-system-v3",
+      "repo": "taiyi-memory-system-v3",
+      "path": "/home/nicola/.openclaw/workspace/skills/07-system/taiyi-memory-v3",
+      "published_at": "2026-04-14",
+      "status": "published"
+    },
+    {
+      "name": "taiyi-education-agent",
+      "repo": "taiyi-education-agent",
+      "path": "/home/nicola/.openclaw/workspace/skills/07-system/taiyi-education-agent",
+      "published_at": "2026-04-14",
+      "status": "published"
+    },
+    {
+      "name": "taiyi-office-agent",
+      "repo": "taiyi-office-agent",
+      "path": "/home/nicola/.openclaw/workspace/skills/07-system/taiyi-office-agent",
+      "published_at": "2026-04-14",
+      "status": "published"
+    },
+    {
+      "name": "taiyi-diagram-agent",
+      "repo": "taiyi-diagram-agent",
+      "path": "/home/nicola/.openclaw/workspace/skills/07-system/taiyi-diagram-agent",
+      "published_at": "2026-04-14",
+      "status": "published"
+    }
+  ],
+  "pending_projects": [],
+  "failed_projects": [],
+  "last_publish": "2026-04-16 16:35",
+  "total_published": 10
+}

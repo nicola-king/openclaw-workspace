@@ -1,0 +1,194 @@
+{
+  "executions": [
+    {
+      "id": "AUTO_EXEC_20260420_213145",
+      "task_name": "晨间新闻推送",
+      "module": "self_media_engine",
+      "priority": "P0",
+      "started_at": "2026-04-20T21:31:45.064605",
+      "status": "completed",
+      "auto_approved": true,
+      "result": {
+        "module": "self_media_engine",
+        "status": "success",
+        "message": "self_media_engine executed successfully",
+        "timestamp": "2026-04-20T21:31:45.064611"
+      },
+      "completed_at": "2026-04-20T21:31:45.064614"
+    },
+    {
+      "id": "AUTO_EXEC_20260420_213145",
+      "task_name": "流量数据汇总",
+      "module": "self_media_engine",
+      "priority": "P0",
+      "started_at": "2026-04-20T21:31:45.064891",
+      "status": "completed",
+      "auto_approved": true,
+      "result": {
+        "module": "self_media_engine",
+        "status": "success",
+        "message": "self_media_engine executed successfully",
+        "timestamp": "2026-04-20T21:31:45.064896"
+      },
+      "completed_at": "2026-04-20T21:31:45.064899"
+    },
+    {
+      "id": "AUTO_EXEC_20260420_213145",
+      "task_name": "系统资源检查",
+      "module": "system_monitor",
+      "priority": "P0",
+      "started_at": "2026-04-20T21:31:45.065189",
+      "status": "completed",
+      "auto_approved": true,
+      "result": {
+        "module": "system_monitor",
+        "status": "success",
+        "message": "system_monitor executed successfully",
+        "timestamp": "2026-04-20T21:31:45.065194"
+      },
+      "completed_at": "2026-04-20T21:31:45.065197"
+    },
+    {
+      "id": "AUTO_EXEC_20260420_213145",
+      "task_name": "自动质疑调度",
+      "module": "auto_question_scheduler",
+      "priority": "P0",
+      "started_at": "2026-04-20T21:31:45.069660",
+      "status": "completed",
+      "auto_approved": true,
+      "result": {
+        "module": "auto_question_scheduler",
+        "status": "success",
+        "message": "auto_question_scheduler executed successfully",
+        "timestamp": "2026-04-20T21:31:45.069667"
+      },
+      "completed_at": "2026-04-20T21:31:45.069671"
+    },
+    {
+      "id": "AUTO_EXEC_20260420_213145",
+      "task_name": "每周流程审查",
+      "module": "weekly_process_review",
+      "priority": "P1",
+      "started_at": "2026-04-20T21:31:45.070020",
+      "status": "completed",
+      "auto_approved": false,
+      "result": {
+        "module": "weekly_process_review",
+        "status": "success",
+        "message": "weekly_process_review executed successfully",
+        "timestamp": "2026-04-20T21:31:45.070025"
+      },
+      "completed_at": "2026-04-20T21:31:45.070029"
+    },
+    {
+      "id": "AUTO_EXEC_20260420_213145",
+      "task_name": "删除操作执行",
+      "module": "execute_deletions",
+      "priority": "P1",
+      "started_at": "2026-04-20T21:31:45.070362",
+      "status": "completed",
+      "auto_approved": false,
+      "result": {
+        "module": "execute_deletions",
+        "status": "success",
+        "message": "execute_deletions executed successfully",
+        "timestamp": "2026-04-20T21:31:45.070367"
+      },
+      "completed_at": "2026-04-20T21:31:45.070370"
+    },
+    {
+      "id": "AUTO_EXEC_20260420_213145",
+      "task_name": "融合状态监控",
+      "module": "elon_integration_status",
+      "priority": "P1",
+      "started_at": "2026-04-20T21:31:45.070677",
+      "status": "completed",
+      "auto_approved": false,
+      "result": {
+        "module": "elon_integration_status",
+        "status": "success",
+        "message": "elon_integration_status executed successfully",
+        "timestamp": "2026-04-20T21:31:45.070682"
+      },
+      "completed_at": "2026-04-20T21:31:45.070685"
+    },
+    {
+      "id": "AUTO_EXEC_20260420_213145",
+      "task_name": "SEO 网站审计",
+      "module": "technical_audit",
+      "priority": "P1",
+      "started_at": "2026-04-20T21:31:45.071007",
+      "status": "completed",
+      "auto_approved": false,
+      "result": {
+        "module": "technical_audit",
+        "status": "success",
+        "message": "technical_audit executed successfully",
+        "timestamp": "2026-04-20T21:31:45.071011"
+      },
+      "completed_at": "2026-04-20T21:31:45.071014"
+    },
+    {
+      "id": "AUTO_EXEC_20260420_213145",
+      "task_name": "关键词研究",
+      "module": "keyword_research",
+      "priority": "P2",
+      "started_at": "2026-04-20T21:31:45.071360",
+      "status": "completed",
+      "auto_approved": false,
+      "result": {
+        "module": "keyword_research",
+        "status": "success",
+        "message": "keyword_research executed successfully",
+        "timestamp": "2026-04-20T21:31:45.071364"
+      },
+      "completed_at": "2026-04-20T21:31:45.071367"
+    },
+    {
+      "id": "AUTO_EXEC_20260420_213145",
+      "task_name": "内容优化",
+      "module": "content_optimizer",
+      "priority": "P2",
+      "started_at": "2026-04-20T21:31:45.071709",
+      "status": "completed",
+      "auto_approved": false,
+      "result": {
+        "module": "content_optimizer",
+        "status": "success",
+        "message": "content_optimizer executed successfully",
+        "timestamp": "2026-04-20T21:31:45.071713"
+      },
+      "completed_at": "2026-04-20T21:31:45.071715"
+    },
+    {
+      "id": "AUTO_EXEC_20260420_213145",
+      "task_name": "竞品分析",
+      "module": "competitor_seo",
+      "priority": "P2",
+      "started_at": "2026-04-20T21:31:45.072076",
+      "status": "completed",
+      "auto_approved": false,
+      "result": {
+        "module": "competitor_seo",
+        "status": "success",
+        "message": "competitor_seo executed successfully",
+        "timestamp": "2026-04-20T21:31:45.072081"
+      },
+      "completed_at": "2026-04-20T21:31:45.072083"
+    }
+  ],
+  "scheduled_tasks": [],
+  "stats": {
+    "total_executions": 11,
+    "successful": 11,
+    "failed": 0,
+    "auto_approved": 4
+  },
+  "events": [
+    {
+      "type": "autonomous_mode_enabled",
+      "message": "SAYELF 授权自主执行",
+      "timestamp": "2026-04-20T21:31:45.064466"
+    }
+  ]
+}

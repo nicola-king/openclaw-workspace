@@ -1,0 +1,11 @@
+# 太一蒸馏提炼 Agent - Crontab 配置
+# 每周一中午 12:00 执行
+
+# 添加到 crontab:
+# crontab -e
+# 然后粘贴以下内容:
+
+0 12 * * 1 /home/nicola/.openclaw/workspace/skills/03-automation/distillation-agent/run.sh >> /home/nicola/.openclaw/workspace/logs/distillation-agent.log 2>&1
+
+# 验证 crontab:
+# crontab -l

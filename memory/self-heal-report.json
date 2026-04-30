@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-04-12T10:20:12+08:00",
+  "checks": [
+    {
+      "name": "gateway",
+      "status": "running",
+      "pid": "18498",
+      "time": "2026-04-12T10:20:12+08:00"
+    }
+  ],
+  "issues": [],
+  "actions": [],
+  "status": "healthy"
+}

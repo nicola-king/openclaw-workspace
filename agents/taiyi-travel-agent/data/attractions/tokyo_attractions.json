@@ -1,0 +1,127 @@
+[
+  {
+    "id": "attraction_tokyo_001",
+    "name": "浅草寺",
+    "name_en": "Senso-ji Temple",
+    "type": "历史文化",
+    "address": "东京都台东区浅草 2-3-1",
+    "address_en": "2-3-1 Asakusa, Taito, Tokyo 111-0032, Japan",
+    "phone": "+81-3-3842-0853",
+    "website": "https://www.asakusa-culture.or.jp/",
+    "duration": "2h",
+    "cost": 0,
+    "rating": 4.8,
+    "opening_hours": "24 小时 (本堂 06:00-17:00)",
+    "images": [
+      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?w=800",
+      "https://images.unsplash.com/photo-1493976040374-85b3ed56a4dd?w=800",
+      "https://images.unsplash.com/photo-1528360983277-13d4b1e40dda?w=800"
+    ],
+    "description": "东京最古老的寺庙，雷门大灯笼是标志性建筑",
+    "verified_sources": [
+      {"source": "Google Places", "verified_at": "2026-04-24", "score": 98},
+      {"source": "TripAdvisor", "verified_at": "2026-04-24", "score": 96}
+    ],
+    "trust_score": 97
+  },
+  {
+    "id": "attraction_tokyo_002",
+    "name": "东京塔",
+    "name_en": "Tokyo Tower",
+    "type": "现代都市",
+    "address": "东京都港区芝公园 4-2-8",
+    "address_en": "4-2-8 Shibakoen, Minato, Tokyo 105-0011, Japan",
+    "phone": "+81-3-3433-5111",
+    "website": "https://www.tokyotower.co.jp/",
+    "duration": "2h",
+    "cost": 1500,
+    "rating": 4.6,
+    "opening_hours": "09:00-23:00",
+    "images": [
+      "https://images.unsplash.com/photo-1536098561742-c93490372321?w=800",
+      "https://images.unsplash.com/photo-1540959733332-eab4deabee2a?w=800",
+      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?w=800"
+    ],
+    "description": "东京地标建筑，高 333 米，可俯瞰全城",
+    "verified_sources": [
+      {"source": "Google Places", "verified_at": "2026-04-24", "score": 96},
+      {"source": "TripAdvisor", "verified_at": "2026-04-24", "score": 94}
+    ],
+    "trust_score": 95
+  },
+  {
+    "id": "attraction_tokyo_003",
+    "name": "涩谷十字路口",
+    "name_en": "Shibuya Crossing",
+    "type": "现代都市",
+    "address": "东京都涩谷区道玄坂",
+    "address_en": "Dogenzaka, Shibuya, Tokyo, Japan",
+    "phone": "N/A",
+    "website": "https://www.shibuya.scramble.com/",
+    "duration": "1h",
+    "cost": 0,
+    "rating": 4.7,
+    "opening_hours": "24 小时",
+    "images": [
+      "https://images.unsplash.com/photo-1542903660-eedbae54f5df?w=800",
+      "https://images.unsplash.com/photo-1540959733332-eab4deabee2a?w=800",
+      "https://images.unsplash.com/photo-1536098561742-c93490372321?w=800"
+    ],
+    "description": "世界上最繁忙的十字路口，东京潮流文化中心",
+    "verified_sources": [
+      {"source": "Google Places", "verified_at": "2026-04-24", "score": 95},
+      {"source": "TripAdvisor", "verified_at": "2026-04-24", "score": 93}
+    ],
+    "trust_score": 94
+  },
+  {
+    "id": "attraction_tokyo_004",
+    "name": "秋叶原",
+    "name_en": "Akihabara",
+    "type": "购物",
+    "address": "东京都千代田区外神田",
+    "address_en": "Sotokanda, Chiyoda, Tokyo, Japan",
+    "phone": "N/A",
+    "website": "https://www.akiba-orion.co.jp/",
+    "duration": "3h",
+    "cost": 0,
+    "rating": 4.8,
+    "opening_hours": "10:00-21:00 (各店铺不同)",
+    "images": [
+      "https://images.unsplash.com/photo-1542051841857-5f90071e7989?w=800",
+      "https://images.unsplash.com/photo-1540959733332-eab4deabee2a?w=800",
+      "https://images.unsplash.com/photo-1528360983277-13d4b1e40dda?w=800"
+    ],
+    "description": "全球动漫/游戏/电子产品圣地",
+    "verified_sources": [
+      {"source": "Google Places", "verified_at": "2026-04-24", "score": 97},
+      {"source": "TripAdvisor", "verified_at": "2026-04-24", "score": 95}
+    ],
+    "trust_score": 96
+  },
+  {
+    "id": "attraction_tokyo_005",
+    "name": "新宿御苑",
+    "name_en": "Shinjuku Gyoen",
+    "type": "自然风光",
+    "address": "东京都新宿区内藤町 11",
+    "address_en": "11 Naito-cho, Shinjuku, Tokyo 160-0014, Japan",
+    "phone": "+81-3-3350-0151",
+    "website": "https://www.shinjukugyoen.go.jp/",
+    "duration": "2h",
+    "cost": 500,
+    "rating": 4.7,
+    "opening_hours": "09:00-16:30 (周一闭园)",
+    "images": [
+      "https://images.unsplash.com/photo-1524413840807-6c1e98f0e5e7?w=800",
+      "https://images.unsplash.com/photo-1540959733332-eab4deabee2a?w=800",
+      "https://images.unsplash.com/photo-1536098561742-c93490372321?w=800"
+    ],
+    "description": "东京最美花园，春季赏樱胜地",
+    "verified_sources": [
+      {"source": "Google Places", "verified_at": "2026-04-24", "score": 96},
+      {"source": "TripAdvisor", "verified_at": "2026-04-24", "score": 94}
+    ],
+    "trust_score": 95
+  }
+]

@@ -1,0 +1,92 @@
+{
+  "created_at": "2026-04-19T11:07:31.007521",
+  "total_institutions": 10,
+  "institutions": {
+    "research": [
+      {
+        "name": "Gartner",
+        "type": "IT 研究",
+        "api_available": true,
+        "api_endpoint": "https://www.gartner.com/api",
+        "confidence_weight": 0.95,
+        "database_url": "https://www.gartner.com/en/documents"
+      },
+      {
+        "name": "IDC",
+        "type": "市场研究",
+        "api_available": true,
+        "api_endpoint": "https://www.idc.com/api",
+        "confidence_weight": 0.95,
+        "database_url": "https://www.idc.com/research"
+      },
+      {
+        "name": "Forrester",
+        "type": "市场研究",
+        "api_available": true,
+        "api_endpoint": "https://www.forrester.com/api",
+        "confidence_weight": 0.95,
+        "database_url": "https://www.forrester.com/research"
+      }
+    ],
+    "consulting": [
+      {
+        "name": "McKinsey",
+        "type": "咨询",
+        "api_available": false,
+        "public_reports": true,
+        "confidence_weight": 0.9,
+        "database_url": "https://www.mckinsey.com/featured-insights"
+      },
+      {
+        "name": "BCG",
+        "type": "咨询",
+        "api_available": false,
+        "public_reports": true,
+        "confidence_weight": 0.9,
+        "database_url": "https://www.bcg.com/publications"
+      },
+      {
+        "name": "Bain",
+        "type": "咨询",
+        "api_available": false,
+        "public_reports": true,
+        "confidence_weight": 0.9,
+        "database_url": "https://www.bain.com/insights"
+      }
+    ],
+    "audit": [
+      {
+        "name": "Deloitte",
+        "type": "审计/咨询",
+        "api_available": false,
+        "public_reports": true,
+        "confidence_weight": 0.9,
+        "database_url": "https://www2.deloitte.com/global/en/insights.html"
+      },
+      {
+        "name": "PwC",
+        "type": "审计/咨询",
+        "api_available": false,
+        "public_reports": true,
+        "confidence_weight": 0.9,
+        "database_url": "https://www.pwc.com/gx/en/insights.html"
+      },
+      {
+        "name": "EY",
+        "type": "审计/咨询",
+        "api_available": false,
+        "public_reports": true,
+        "confidence_weight": 0.9,
+        "database_url": "https://www.ey.com/en_gl/insights"
+      },
+      {
+        "name": "KPMG",
+        "type": "审计/咨询",
+        "api_available": false,
+        "public_reports": true,
+        "confidence_weight": 0.9,
+        "database_url": "https://home.kpmg/xx/en/home/insights.html"
+      }
+    ]
+  }
+}

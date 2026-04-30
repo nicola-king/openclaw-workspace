@@ -1,0 +1,350 @@
+{
+  "verification_date": "2026-04-18 23:51",
+  "products_analyzed": 5,
+  "ranking": [
+    {
+      "rank": "本月 Top 1",
+      "product_name": "便携式储能电源",
+      "total_score": 83.43,
+      "rating": "A 级 - 推荐",
+      "recommendation": "建议布局，差异化竞争",
+      "dimension_scores": {
+        "trend_data": {
+          "score": 91.0,
+          "weight": 30,
+          "weighted_score": 27.3
+        },
+        "search_keywords": {
+          "score": 77.5,
+          "weight": 25,
+          "weighted_score": 19.375
+        },
+        "competitor_data": {
+          "score": 70.5,
+          "weight": 20,
+          "weighted_score": 14.100000000000001
+        },
+        "profit_margin": {
+          "score": 90,
+          "weight": 15,
+          "weighted_score": 13.5
+        },
+        "social_volume": {
+          "score": 91.5,
+          "weight": 10,
+          "weighted_score": 9.15
+        }
+      }
+    },
+    {
+      "rank": "本月 Top 2",
+      "product_name": "智能宠物喂食器",
+      "total_score": 77.83,
+      "rating": "B 级 - 谨慎推荐",
+      "recommendation": "小规模测试，观望",
+      "dimension_scores": {
+        "trend_data": {
+          "score": 88.0,
+          "weight": 30,
+          "weighted_score": 26.4
+        },
+        "search_keywords": {
+          "score": 75.5,
+          "weight": 25,
+          "weighted_score": 18.875
+        },
+        "competitor_data": {
+          "score": 65.5,
+          "weight": 20,
+          "weighted_score": 13.100000000000001
+        },
+        "profit_margin": {
+          "score": 70,
+          "weight": 15,
+          "weighted_score": 10.5
+        },
+        "social_volume": {
+          "score": 89.6,
+          "weight": 10,
+          "weighted_score": 8.959999999999999
+        }
+      }
+    },
+    {
+      "rank": "本月 Top 3",
+      "product_name": "便携式投影仪",
+      "total_score": 73.94,
+      "rating": "B 级 - 谨慎推荐",
+      "recommendation": "小规模测试，观望",
+      "dimension_scores": {
+        "trend_data": {
+          "score": 80.0,
+          "weight": 30,
+          "weighted_score": 24.0
+        },
+        "search_keywords": {
+          "score": 74.4,
+          "weight": 25,
+          "weighted_score": 18.6
+        },
+        "competitor_data": {
+          "score": 60.5,
+          "weight": 20,
+          "weighted_score": 12.100000000000001
+        },
+        "profit_margin": {
+          "score": 70,
+          "weight": 15,
+          "weighted_score": 10.5
+        },
+        "social_volume": {
+          "score": 87.4,
+          "weight": 10,
+          "weighted_score": 8.74
+        }
+      }
+    },
+    {
+      "rank": "钢结构折叠房屋",
+      "product_name": "钢结构折叠房屋",
+      "total_score": 73.47,
+      "rating": "B 级 - 谨慎推荐",
+      "recommendation": "小规模测试，观望",
+      "dimension_scores": {
+        "trend_data": {
+          "score": 80.0,
+          "weight": 30,
+          "weighted_score": 24.0
+        },
+        "search_keywords": {
+          "score": 73.5,
+          "weight": 25,
+          "weighted_score": 18.375
+        },
+        "competitor_data": {
+          "score": 64.0,
+          "weight": 20,
+          "weighted_score": 12.8
+        },
+        "profit_margin": {
+          "score": 70,
+          "weight": 15,
+          "weighted_score": 10.5
+        },
+        "social_volume": {
+          "score": 78.0,
+          "weight": 10,
+          "weighted_score": 7.800000000000001
+        }
+      }
+    },
+    {
+      "rank": "通用小型汽油发动机",
+      "product_name": "通用小型汽油发动机",
+      "total_score": 64.58,
+      "rating": "C 级 - 观察",
+      "recommendation": "暂不进入，持续观察",
+      "dimension_scores": {
+        "trend_data": {
+          "score": 72.0,
+          "weight": 30,
+          "weighted_score": 21.599999999999998
+        },
+        "search_keywords": {
+          "score": 68.5,
+          "weight": 25,
+          "weighted_score": 17.125
+        },
+        "competitor_data": {
+          "score": 55.5,
+          "weight": 20,
+          "weighted_score": 11.100000000000001
+        },
+        "profit_margin": {
+          "score": 50,
+          "weight": 15,
+          "weighted_score": 7.5
+        },
+        "social_volume": {
+          "score": 72.6,
+          "weight": 10,
+          "weighted_score": 7.26
+        }
+      }
+    }
+  ],
+  "top_3": [
+    {
+      "rank": "本月 Top 1",
+      "product_name": "便携式储能电源",
+      "total_score": 83.43,
+      "rating": "A 级 - 推荐",
+      "recommendation": "建议布局，差异化竞争",
+      "dimension_scores": {
+        "trend_data": {
+          "score": 91.0,
+          "weight": 30,
+          "weighted_score": 27.3
+        },
+        "search_keywords": {
+          "score": 77.5,
+          "weight": 25,
+          "weighted_score": 19.375
+        },
+        "competitor_data": {
+          "score": 70.5,
+          "weight": 20,
+          "weighted_score": 14.100000000000001
+        },
+        "profit_margin": {
+          "score": 90,
+          "weight": 15,
+          "weighted_score": 13.5
+        },
+        "social_volume": {
+          "score": 91.5,
+          "weight": 10,
+          "weighted_score": 9.15
+        }
+      }
+    },
+    {
+      "rank": "本月 Top 2",
+      "product_name": "智能宠物喂食器",
+      "total_score": 77.83,
+      "rating": "B 级 - 谨慎推荐",
+      "recommendation": "小规模测试，观望",
+      "dimension_scores": {
+        "trend_data": {
+          "score": 88.0,
+          "weight": 30,
+          "weighted_score": 26.4
+        },
+        "search_keywords": {
+          "score": 75.5,
+          "weight": 25,
+          "weighted_score": 18.875
+        },
+        "competitor_data": {
+          "score": 65.5,
+          "weight": 20,
+          "weighted_score": 13.100000000000001
+        },
+        "profit_margin": {
+          "score": 70,
+          "weight": 15,
+          "weighted_score": 10.5
+        },
+        "social_volume": {
+          "score": 89.6,
+          "weight": 10,
+          "weighted_score": 8.959999999999999
+        }
+      }
+    },
+    {
+      "rank": "本月 Top 3",
+      "product_name": "便携式投影仪",
+      "total_score": 73.94,
+      "rating": "B 级 - 谨慎推荐",
+      "recommendation": "小规模测试，观望",
+      "dimension_scores": {
+        "trend_data": {
+          "score": 80.0,
+          "weight": 30,
+          "weighted_score": 24.0
+        },
+        "search_keywords": {
+          "score": 74.4,
+          "weight": 25,
+          "weighted_score": 18.6
+        },
+        "competitor_data": {
+          "score": 60.5,
+          "weight": 20,
+          "weighted_score": 12.100000000000001
+        },
+        "profit_margin": {
+          "score": 70,
+          "weight": 15,
+          "weighted_score": 10.5
+        },
+        "social_volume": {
+          "score": 87.4,
+          "weight": 10,
+          "weighted_score": 8.74
+        }
+      }
+    }
+  ],
+  "special_products": {
+    "钢结构折叠房屋": {
+      "rank": "钢结构折叠房屋",
+      "product_name": "钢结构折叠房屋",
+      "total_score": 73.47,
+      "rating": "B 级 - 谨慎推荐",
+      "recommendation": "小规模测试，观望",
+      "dimension_scores": {
+        "trend_data": {
+          "score": 80.0,
+          "weight": 30,
+          "weighted_score": 24.0
+        },
+        "search_keywords": {
+          "score": 73.5,
+          "weight": 25,
+          "weighted_score": 18.375
+        },
+        "competitor_data": {
+          "score": 64.0,
+          "weight": 20,
+          "weighted_score": 12.8
+        },
+        "profit_margin": {
+          "score": 70,
+          "weight": 15,
+          "weighted_score": 10.5
+        },
+        "social_volume": {
+          "score": 78.0,
+          "weight": 10,
+          "weighted_score": 7.800000000000001
+        }
+      }
+    },
+    "通用小型汽油发动机": {
+      "rank": "通用小型汽油发动机",
+      "product_name": "通用小型汽油发动机",
+      "total_score": 64.58,
+      "rating": "C 级 - 观察",
+      "recommendation": "暂不进入，持续观察",
+      "dimension_scores": {
+        "trend_data": {
+          "score": 72.0,
+          "weight": 30,
+          "weighted_score": 21.599999999999998
+        },
+        "search_keywords": {
+          "score": 68.5,
+          "weight": 25,
+          "weighted_score": 17.125
+        },
+        "competitor_data": {
+          "score": 55.5,
+          "weight": 20,
+          "weighted_score": 11.100000000000001
+        },
+        "profit_margin": {
+          "score": 50,
+          "weight": 15,
+          "weighted_score": 7.5
+        },
+        "social_volume": {
+          "score": 72.6,
+          "weight": 10,
+          "weighted_score": 7.26
+        }
+      }
+    }
+  }
+}

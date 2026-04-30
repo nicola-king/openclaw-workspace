@@ -1,0 +1,92 @@
+[
+  {
+    "id": "hotel_tokyo_20260424_001",
+    "type": "hotel",
+    "name": "东京格兰贝尔酒店",
+    "name_en": "Hotel Gracery Tokyo",
+    "address": "东京都新宿区歌舞伎町 1-18-1",
+    "address_en": "1-18-1 Kabukicho, Shinjuku, Tokyo 160-0021, Japan",
+    "phone": "+81-3-5392-0090",
+    "email": "info@hotel-gracery.jp",
+    "website": "https://www.hotel-gracery.jp/",
+    "booking_url": "https://www.booking.com/hotel/jp/gracery.zh-cn.html",
+    "rating": 4.5,
+    "review_count": 2341,
+    "price_range": "¥800-2000/晚",
+    "check_in": "15:00",
+    "check_out": "11:00",
+    "facilities": ["WiFi", "餐厅", "健身房", "停车场", "行李寄存"],
+    "images": [
+      "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800",
+      "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800",
+      "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800"
+    ],
+    "verified_sources": [
+      {"source": "Booking.com", "verified_at": "2026-04-24", "score": 95},
+      {"source": "Google Places", "verified_at": "2026-04-24", "score": 92},
+      {"source": "携程", "verified_at": "2026-04-24", "score": 90}
+    ],
+    "trust_score": 92,
+    "last_updated": "2026-04-24T21:00:00+08:00"
+  },
+  {
+    "id": "hotel_tokyo_20260424_002",
+    "type": "hotel",
+    "name": "东京站大酒店",
+    "name_en": "Hotel Metropolitan Tokyo Marunouchi",
+    "address": "东京都千代田区丸の内 1-8-4",
+    "address_en": "1-8-4 Marunouchi, Chiyoda, Tokyo 100-0005, Japan",
+    "phone": "+81-3-3211-5511",
+    "email": "reservation@metropolitan.co.jp",
+    "website": "https://www.hotel-metropolitan.co.jp/marunouchi/",
+    "booking_url": "https://www.booking.com/hotel/jp/metropolitan-marunouchi.zh-cn.html",
+    "rating": 4.6,
+    "review_count": 3456,
+    "price_range": "¥1000-2500/晚",
+    "check_in": "15:00",
+    "check_out": "11:00",
+    "facilities": ["WiFi", "餐厅", "健身房", "游泳池", "水疗"],
+    "images": [
+      "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800",
+      "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800",
+      "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800"
+    ],
+    "verified_sources": [
+      {"source": "Booking.com", "verified_at": "2026-04-24", "score": 96},
+      {"source": "Google Places", "verified_at": "2026-04-24", "score": 94},
+      {"source": "Hotels.com", "verified_at": "2026-04-24", "score": 93}
+    ],
+    "trust_score": 94,
+    "last_updated": "2026-04-24T21:00:00+08:00"
+  },
+  {
+    "id": "hotel_tokyo_20260424_003",
+    "type": "hotel",
+    "name": "浅草ビューホテル",
+    "name_en": "Asakusa View Hotel",
+    "address": "东京都台东区浅草 2-28-16",
+    "address_en": "2-28-16 Asakusa, Taito, Tokyo 111-0032, Japan",
+    "phone": "+81-3-5812-9001",
+    "email": "reserve@asakusa-view-hotel.jp",
+    "website": "https://www.hotelmystays.com/en/asakusa/",
+    "booking_url": "https://www.booking.com/hotel/jp/asakusa-view.zh-cn.html",
+    "rating": 4.4,
+    "review_count": 1890,
+    "price_range": "¥700-1800/晚",
+    "check_in": "15:00",
+    "check_out": "11:00",
+    "facilities": ["WiFi", "餐厅", "温泉", "行李寄存"],
+    "images": [
+      "https://images.unsplash.com/photo-1618773928121-c32242e69407?w=800",
+      "https://images.unsplash.com/photo-1596394516093-501ba68a4ba7?w=800",
+      "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=800"
+    ],
+    "verified_sources": [
+      {"source": "Booking.com", "verified_at": "2026-04-24", "score": 93},
+      {"source": "Google Places", "verified_at": "2026-04-24", "score": 91},
+      {"source": "Agoda", "verified_at": "2026-04-24", "score": 90}
+    ],
+    "trust_score": 91,
+    "last_updated": "2026-04-24T21:00:00+08:00"
+  }
+]

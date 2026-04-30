@@ -1,0 +1,145 @@
+{
+  "destination": "东京",
+  "generated_at": "2026-04-14T17:26:07.931895",
+  "info_sources": {
+    "domestic": 5,
+    "international": 4
+  },
+  "distilled_data": {
+    "destination": "东京",
+    "distilled_at": "2026-04-14T17:26:07.931320",
+    "fusion": {
+      "popular_spots": [
+        {
+          "name": "东京塔",
+          "source": "domestic+international",
+          "rating": 4.9235450242917285
+        },
+        {
+          "name": "浅草寺",
+          "source": "domestic+international",
+          "rating": 4.0790302770292755
+        },
+        {
+          "name": "涩谷",
+          "source": "domestic+international",
+          "rating": 4.71318585855085
+        },
+        {
+          "name": "新宿",
+          "source": "domestic+international",
+          "rating": 4.501476769423148
+        },
+        {
+          "name": "秋叶原",
+          "source": "domestic+international",
+          "rating": 4.466205446840085
+        }
+      ],
+      "budget_analysis": {
+        "domestic": {
+          "经济": "¥4391/人",
+          "舒适": "¥5011/人",
+          "豪华": "¥11168/人"
+        },
+        "international": {
+          "hotels": {
+            "low": 370,
+            "high": 1478
+          },
+          "food": {
+            "low": 62,
+            "high": 290
+          },
+          "transport": {
+            "low": 86,
+            "high": 311
+          }
+        },
+        "fused": {
+          "recommended": "¥8860/人"
+        }
+      },
+      "best_time": {
+        "best_season": "3-5 月 (樱花) / 10-11 月 (红叶)",
+        "reviews_summary": 4
+      },
+      "tips": [
+        "避免夜间单独出行",
+        "使用当地交通卡更优惠",
+        "避开旺季可节省 30%+ 费用",
+        "记住紧急联系方式",
+        "提前 3 个月预订机票最便宜",
+        "购买旅游保险很重要",
+        "保管好贵重物品"
+      ]
+    },
+    "confidence_score": 0.8700097490086974
+  },
+  "comparison": {
+    "destination": "东京",
+    "compared_at": "2026-04-14T17:26:07.931681",
+    "hotels": [
+      {
+        "name": "东京大酒店",
+        "rating": 4.5,
+        "price": 800
+      }
+    ],
+    "guides": [
+      {
+        "name": "王导",
+        "rating": 4.9,
+        "price": 800
+      }
+    ],
+    "charters": [
+      {
+        "name": "神州包车",
+        "rating": 4.8,
+        "price": 600
+      }
+    ],
+    "recommendations": [
+      {
+        "type": "hotel",
+        "name": "东京大酒店",
+        "reason": "评分高/价格优/位置好",
+        "confidence": 0.9191214607955103
+      },
+      {
+        "type": "guide",
+        "name": "王导",
+        "reason": "经验丰富/语言好/评价高",
+        "confidence": 0.9110124301888117
+      },
+      {
+        "type": "charter",
+        "name": "神州包车",
+        "reason": "车况好/司机专业/价格优",
+        "confidence": 0.9012202166284244
+      }
+    ]
+  },
+  "best_choices": [
+    {
+      "type": "hotel",
+      "name": "东京大酒店",
+      "reason": "评分高/价格优/位置好",
+      "confidence": 0.9191214607955103
+    },
+    {
+      "type": "guide",
+      "name": "王导",
+      "reason": "经验丰富/语言好/评价高",
+      "confidence": 0.9110124301888117
+    },
+    {
+      "type": "charter",
+      "name": "神州包车",
+      "reason": "车况好/司机专业/价格优",
+      "confidence": 0.9012202166284244
+    }
+  ],
+  "confidence": 0.8700097490086974
+}

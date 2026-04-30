@@ -1,0 +1,72 @@
+{
+  "version": "2.0",
+  "default_tool": "taiyi_router",
+  "tool_priority": [
+    "taiyi_router",
+    "claw_code",
+    "opencoder"
+  ],
+  "tools": {
+    "taiyi_router": {
+      "name": "太一智能路由系统",
+      "path": "/home/nicola/.openclaw/workspace/skills/07-system/smart-model-router/router.py",
+      "version": "2.0",
+      "type": "python",
+      "features": [
+        "智能模型调度",
+        "成本优化",
+        "多模型支持",
+        "自动降级",
+        "代码开发优化",
+        "Git 集成",
+        "OpenClaw 原生集成"
+      ],
+      "priority": 1,
+      "models": [
+        "qwen/qwen3.5-plus",
+        "qwen/qwen3-coder-plus",
+        "gemini/gemini-2.0-flash",
+        "anthropic/claude-sonnet-4"
+      ]
+    },
+    "claw_code": {
+      "name": "Claw Code",
+      "path": "/opt/claw-code/rust/target/debug/claw",
+      "version": "0.1.0",
+      "type": "rust",
+      "features": [
+        "代码生成",
+        "代码审查",
+        "Bug 修复",
+        "代码优化",
+        "多 Agent 编排",
+        "Git 集成"
+      ],
+      "priority": 2,
+      "requires_api": true
+    },
+    "opencoder": {
+      "name": "OpenCode",
+      "path": "/home/nicola/.bun/bin/opencoder",
+      "version": "0.0.79",
+      "type": "typescript",
+      "features": [
+        "代码生成",
+        "代码审查",
+        "Bug 修复",
+        "代码优化"
+      ],
+      "priority": 3,
+      "requires_api": true
+    }
+  },
+  "auto_detect": true,
+  "fallback_enabled": true,
+  "taiyi_config": {
+    "default_model": "qwen/qwen3.5-plus",
+    "code_model": "qwen/qwen3-coder-plus",
+    "fallback_model": "gemini/gemini-2.0-flash",
+    "cost_optimization": true,
+    "auto_retry": true
+  }
+}

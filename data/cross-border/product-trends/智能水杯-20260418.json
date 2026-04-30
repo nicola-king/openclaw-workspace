@@ -1,0 +1,137 @@
+{
+  "product": "智能水杯",
+  "generated_at": "2026-04-18T20:42:08.200425",
+  "trend_analysis": {
+    "product": "智能水杯",
+    "data_points": [
+      {
+        "month": "2025-04",
+        "demand": 1022,
+        "competition": 95,
+        "avg_price": 26.82
+      },
+      {
+        "month": "2025-05",
+        "demand": 1180,
+        "competition": 179,
+        "avg_price": 29.03
+      },
+      {
+        "month": "2025-06",
+        "demand": 1220,
+        "competition": 193,
+        "avg_price": 26.92
+      },
+      {
+        "month": "2025-07",
+        "demand": 1329,
+        "competition": 58,
+        "avg_price": 34.1
+      },
+      {
+        "month": "2025-08",
+        "demand": 1313,
+        "competition": 104,
+        "avg_price": 33.08
+      },
+      {
+        "month": "2025-09",
+        "demand": 1199,
+        "competition": 50,
+        "avg_price": 28.58
+      },
+      {
+        "month": "2025-10",
+        "demand": 1166,
+        "competition": 145,
+        "avg_price": 25.59
+      },
+      {
+        "month": "2025-11",
+        "demand": 972,
+        "competition": 195,
+        "avg_price": 33.28
+      },
+      {
+        "month": "2025-12",
+        "demand": 1068,
+        "competition": 151,
+        "avg_price": 34.55
+      },
+      {
+        "month": "2026-01",
+        "demand": 931,
+        "competition": 69,
+        "avg_price": 25.93
+      },
+      {
+        "month": "2026-02",
+        "demand": 906,
+        "competition": 177,
+        "avg_price": 27.92
+      },
+      {
+        "month": "2026-03",
+        "demand": 1004,
+        "competition": 170,
+        "avg_price": 27.37
+      }
+    ],
+    "recent_3m_avg": 947.0,
+    "growth_rate": -0.11384903306300692,
+    "trend_stage": "declining",
+    "trend_name": "衰退期",
+    "recommended_action": "避免进入",
+    "confidence": 0.85
+  },
+  "lifecycle": {
+    "product": "智能水杯",
+    "current_stage": "declining",
+    "remaining_months": 3,
+    "total_lifecycle_months": 18,
+    "lifecycle_progress": 83.33333333333334,
+    "exit_strategy": "在衰退期前 1 个月退出"
+  },
+  "seasonality": {
+    "product": "智能水杯",
+    "peak_season": "Q3",
+    "peak_months": "7-9 月",
+    "peak_factor": 1.1,
+    "best_launch_time": "Q3前 2-3 个月",
+    "quarterly_factors": {
+      "Q1": {
+        "months": "1-3 月",
+        "factor": 0.9,
+        "name": "淡季 (春节)"
+      },
+      "Q2": {
+        "months": "4-6 月",
+        "factor": 1.0,
+        "name": "平稳期"
+      },
+      "Q3": {
+        "months": "7-9 月",
+        "factor": 1.1,
+        "name": "旺季前奏"
+      },
+      "Q4": {
+        "months": "10-12 月",
+        "factor": 1.5,
+        "name": "旺季 (黑五/圣诞)"
+      }
+    }
+  },
+  "recommendation": {
+    "product": "智能水杯",
+    "frequency": "monthly",
+    "frequency_name": "每月",
+    "urgency": "low",
+    "reason": "衰退期，准备退出",
+    "next_review_date": "2026-05-18",
+    "action_items": [
+      "每月审查整体表现",
+      "评估是否继续",
+      "准备替代产品"
+    ]
+  }
+}

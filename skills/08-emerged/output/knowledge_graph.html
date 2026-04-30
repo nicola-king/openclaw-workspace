@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定额知识图谱可视化</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Microsoft YaHei', sans-serif;
+            background: #1a1a2e;
+            color: #eee;
+        }
+        #graph {
+            width: 100vw;
+            height: 100vh;
+        }
+        .legend {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(0,0,0,0.7);
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+        }
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .controls {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(0,0,0,0.7);
+            padding: 15px;
+            border-radius: 8px;
+        }
+        input[type="text"] {
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+            background: #333;
+            color: #fff;
+            width: 200px;
+        }
+        .stats {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(0,0,0,0.7);
+            padding: 15px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div id="graph"></div>
+
+    <div class="legend">
+        <h3>图例</h3>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #4CAF50"></div>
+            <span>定额条目</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #2196F3"></div>
+            <span>解释 Q&A</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #FF9800"></div>
+            <span>政府文件</span>
+        </div>
+    </div>
+
+    <div class="controls">
+        <h3>搜索</h3>
+        <input type="text" id="search" placeholder="输入关键词搜索..." onkeyup="searchNodes(this.value)">
+    </div>
+
+    <div class="stats">
+        <h3>统计</h3>
+        <p>节点: 200</p>
+        <p>边: 0</p>
+    </div>
+
+    <script>
+        const nodes = [{"id": "quota:AA0001", "type": "quota", "label": "AA0001 - \u4eba\u5de5\u5e73\u6574\u573a\u5730", "color": "#4CAF50"}, {"id": "quota:AA0002", "type": "quota", "label": "AA0002 - \u4eba\u5de5\u6316\u571f\u65b9", "color": "#4CAF50"}, {"id": "quota:AA0003", "type": "quota", "label": "AA0003 - \u4eba\u5de5\u6316\u6de4\u6ce5\u3001\u6d41\u7802", "color": "#4CAF50"}, {"id": "quota:AA0004", "type": "quota", "label": "AA0004 - \u6c9f\u69fd\u571f\u65b9 \u6df1m\u4ee5\u5185 2", "color": "#4CAF50"}, {"id": "quota:AA0005", "type": "quota", "label": "AA0005 - \u6c9f\u69fd\u571f\u65b9 \u6df1m\u4ee5\u5185 4", "color": "#4CAF50"}, {"id": "quota:AA0006", "type": "quota", "label": "AA0006 - \u6c9f\u69fd\u571f\u65b9 \u6df1m\u4ee5\u5185 6", "color": "#4CAF50"}, {"id": "quota:AA0007", "type": "quota", "label": "AA0007 - \u6c9f\u69fd\u571f\u65b9 \u6df1m\u4ee5\u5185 8", "color": "#4CAF50"}, {"id": "quota:AA0008", "type": "quota", "label": "AA0008 - \u57fa\u5751\u571f\u65b9 \u6df1m\u4ee5\u5185 2", "color": "#4CAF50"}, {"id": "quota:AA0009", "type": "quota", "label": "AA0009 - \u57fa\u5751\u571f\u65b9 \u6df1m\u4ee5\u5185 4", "color": "#4CAF50"}, {"id": "quota:AA0010", "type": "quota", "label": "AA0010 - \u57fa\u5751\u571f\u65b9 \u6df1m\u4ee5\u5185 6", "color": "#4CAF50"}, {"id": "quota:AA0011", "type": "quota", "label": "AA0011 - \u57fa\u5751\u571f\u65b9 \u6df1m\u4ee5\u5185 8", "color": "#4CAF50"}, {"id": "quota:AA0012", "type": "quota", "label": "AA0012 - \u4eba\u5de5\u8fd0\u571f\u65b9 \u8fd0\u8ddd20m\u4ee5\u5185", "color": "#4CAF50"}, {"id": "quota:AA0013", "type": "quota", "label": "AA0013 - \u4eba\u5de5\u8fd0\u571f\u65b9 \u6bcf\u589e\u52a020m", "color": "#4CAF50"}, {"id": "quota:AA0014", "type": "quota", "label": "AA0014 - \u4eba\u5de5\u8fd0\u6de4\u6ce5\u3001\u6d41\u7802 \u8fd0\u8ddd20m\u4ee5\u5185", "color": "#4CAF50"}, {"id": "quota:AA0015", "type": "quota", "label": "AA0015 - \u4eba\u5de5\u8fd0\u6de4\u6ce5\u3001\u6d41\u7802 \u6bcf\u589e\u52a020m", "color": "#4CAF50"}, {"id": "quota:AA0016", "type": "quota", "label": "AA0016 - \u5355\uff08\u53cc\uff09\u8f6e\u8f66\u8fd0\u571f \u8fd0\u8ddd50m\u4ee5\u5185", "color": "#4CAF50"}, {"id": "quota:AA0017", "type": "quota", "label": "AA0017 - \u5355\uff08\u53cc\uff09\u8f6e\u8f66\u8fd0\u571f \u6bcf\u589e\u52a050m", "color": "#4CAF50"}, {"id": "quota:AA0018", "type": "quota", "label": "AA0018 - \u5355\uff08\u53cc\uff09\u8f6e\u8f66\u8fd0\u6de4\u6ce5\u3001\u6d41\u7802 \u8fd0\u8ddd50m\u4ee5\u5185", "color": "#4CAF50"}, {"id": "quota:AA0019", "type": "quota", "label": "AA0019 - \u5355\uff08\u53cc\uff09\u8f6e\u8f66\u8fd0\u6de4\u6ce5\u3001\u6d41\u7802 \u6bcf\u589e\u52a050m", "color": "#4CAF50"}, {"id": "quota:AA0020", "type": "quota", "label": "AA0020 - \u6574\u7406\u6316\u65b9\u8fb9\u5761", "color": "#4CAF50"}, {"id": "quota:AA0021", "type": "quota", "label": "AA0021 - \u6574\u7406\u586b\u65b9\u8fb9\u5761", "color": "#4CAF50"}, {"id": "quota:AA0022", "type": "quota", "label": "AA0022 - \u4eba\u5de5\u6316\u683c\u6784\u3001\u808b\u67f1\u3001\u808b\u6881\u571f\u65b9", "color": "#4CAF50"}, {"id": "quota:AA0023", "type": "quota", "label": "AA0023 - \u673a\u68b0\u5e73\u6574\u573a\u5730", "color": "#4CAF50"}, {"id": "quota:AA0024", "type": "quota", "label": "AA0024 - \u6316\u4e00\u822c\u571f\u65b9 \u4e0d\u88c5\u8f66", "color": "#4CAF50"}, {"id": "quota:AA0025", "type": "quota", "label": "AA0025 - \u6316\u56de\u586b\u533a\u57df\u571f\u5939\u77f3\u65b9 \u4e0d\u88c5\u8f66", "color": "#4CAF50"}, {"id": "quota:AA0026", "type": "quota", "label": "AA0026 - \u673a\u68b0\u6316\u6c9f\u69fd\u571f\u65b9 \u6df1\u5ea6(m\u4ee5\u5185) 4", "color": "#4CAF50"}, {"id": "quota:AA0027", "type": "quota", "label": "AA0027 - \u673a\u68b0\u6316\u6c9f\u69fd\u571f\u65b9 \u6df1\u5ea6(m\u4ee5\u5185) 8", "color": "#4CAF50"}, {"id": "quota:AA0028", "type": "quota", "label": "AA0028 - \u673a\u68b0\u6316\u57fa\u5751\u571f\u65b9 \u6df1\u5ea6(m\u4ee5\u5185) 4", "color": "#4CAF50"}, {"id": "quota:AA0029", "type": "quota", "label": "AA0029 - \u673a\u68b0\u6316\u57fa\u5751\u571f\u65b9 \u6df1\u5ea6(m\u4ee5\u5185) 8", "color": "#4CAF50"}, {"id": "quota:AA0030", "type": "quota", "label": "AA0030 - \u4eba\u5de5\u88c5\u673a\u68b0\u8fd0\u571f\u65b9 \u8fd0\u8ddd1000m\u4ee5\u5185", "color": "#4CAF50"}, {"id": "quota:AA0031", "type": "quota", "label": "AA0031 - \u673a\u68b0\u88c5\u8fd0\u571f\u65b9 \u8fd0\u8ddd1000m\u4ee5\u5185", "color": "#4CAF50"}, {"id": "quota:AA0032", "type": "quota", "label": "AA0032 - \u5168\u7a0b\u8fd0\u8ddd 100m\u4ee5\u5185 \u8fd0\u8ddd\u226420m\u4ee5\u5185", "color": "#4CAF50"}, {"id": "quota:AA0033", "type": "quota", "label": "AA0033 - \u5168\u7a0b\u8fd0\u8ddd 100m\u4ee5\u5185 \u6bcf\u589e\u52a020m", "color": "#4CAF50"}, {"id": "quota:AA0034", "type": "quota", "label": "AA0034 - \u5168\u7a0b\u8fd0\u8ddd 500m\u4ee5\u5185 \u8fd0\u8ddd\u2264200m\u4ee5", "color": "#4CAF50"}, {"id": "quota:AA0035", "type": "quota", "label": "AA0035 - \u5168\u7a0b\u8fd0\u8ddd 500m\u4ee5\u5185 \u6bcf\u589e\u52a0100m", "color": "#4CAF50"}, {"id": "quota:AA0036", "type": "quota", "label": "AA0036 - \u5168\u7a0b\u8fd0\u8ddd 500m\u4ee5\u5916 \u8fd0\u8ddd\u22641000m", "color": "#4CAF50"}, {"id": "quota:AA0037", "type": "quota", "label": "AA0037 - \u673a\u68b0\u88c5\u673a\u68b0\u8fd0\u571f\u65b9 \u5168\u7a0b\u8fd0\u8ddd1000m\u4ee5\u5916", "color": "#4CAF50"}, {"id": "quota:AA0038", "type": "quota", "label": "AA0038 - \u4eba\u5de5\u88c5\u673a\u68b0\u8fd0\u571f\u65b9 \u5168\u7a0b\u8fd0\u8ddd1000m\u4ee5\u5916", "color": "#4CAF50"}, {"id": "quota:AA0039", "type": "quota", "label": "AA0039 - \u4eba\u5de5\u51ff\u77f3 \u8f6f\u8d28\u5ca9", "color": "#4CAF50"}, {"id": "quota:AA0040", "type": "quota", "label": "AA0040 - \u4eba\u5de5\u51ff\u77f3 \u8f83\u786c\u5ca9", "color": "#4CAF50"}, {"id": "quota:AA0041", "type": "quota", "label": "AA0041 - \u4eba\u5de5\u51ff\u77f3 \u575a\u786c\u5ca9", "color": "#4CAF50"}, {"id": "quota:AA0042", "type": "quota", "label": "AA0042 - \u6c9f\u69fd \u8f6f\u8d28\u5ca9 \u6df1m\u4ee5\u5185 2", "color": "#4CAF50"}, {"id": "quota:AA0043", "type": "quota", "label": "AA0043 - \u6c9f\u69fd \u8f6f\u8d28\u5ca9 \u6df1m\u4ee5\u5185 4", "color": "#4CAF50"}, {"id": "quota:AA0044", "type": "quota", "label": "AA0044 - \u6c9f\u69fd \u8f6f\u8d28\u5ca9 \u6df1m\u4ee5\u5185 6", "color": "#4CAF50"}, {"id": "quota:AA0045", "type": "quota", "label": "AA0045 - \u6c9f\u69fd \u8f6f\u8d28\u5ca9 \u6df1m\u4ee5\u5185 8", "color": "#4CAF50"}, {"id": "quota:AA0046", "type": "quota", "label": "AA0046 - \u6c9f\u69fd \u8f83\u786c\u5ca9 \u69fd\u6df1m\u4ee5\u5185 2", "color": "#4CAF50"}, {"id": "quota:AA0047", "type": "quota", "label": "AA0047 - \u6c9f\u69fd \u8f83\u786c\u5ca9 \u69fd\u6df1m\u4ee5\u5185 4", "color": "#4CAF50"}, {"id": "quota:AA0048", "type": "quota", "label": "AA0048 - \u6c9f\u69fd \u8f83\u786c\u5ca9 \u69fd\u6df1m\u4ee5\u5185 6", "color": "#4CAF50"}, {"id": "quota:AA0049", "type": "quota", "label": "AA0049 - \u6c9f\u69fd \u8f83\u786c\u5ca9 \u69fd\u6df1m\u4ee5\u5185 8", "color": "#4CAF50"}, {"id": "quota:AA0050", "type": "quota", "label": "AA0050 - \u6c9f\u69fd \u575a\u786c\u5ca9 \u69fd\u6df1m\u4ee5\u5185 2", "color": "#4CAF50"}, {"id": "quota:AA0051", "type": "quota", "label": "AA0051 - \u6c9f\u69fd \u575a\u786c\u5ca9 \u69fd\u6df1m\u4ee5\u5185 4", "color": "#4CAF50"}, {"id": "quota:AA0052", "type": "quota", "label": "AA0052 - \u6c9f\u69fd \u575a\u786c\u5ca9 \u69fd\u6df1m\u4ee5\u5185 6", "color": "#4CAF50"}, {"id": "quota:AA0053", "type": "quota", "label": "AA0053 - \u6c9f\u69fd \u575a\u786c\u5ca9 \u69fd\u6df1m\u4ee5\u5185 8", "color": "#4CAF50"}, {"id": "quota:AA0054", "type": "quota", "label": "AA0054 - \u57fa\u5751 \u8f6f\u8d28\u5ca9 \u6df1m\u4ee5\u5185 2", "color": "#4CAF50"}, {"id": "quota:AA0055", "type": "quota", "label": "AA0055 - \u57fa\u5751 \u8f6f\u8d28\u5ca9 \u6df1m\u4ee5\u5185 4", "color": "#4CAF50"}, {"id": "quota:AA0056", "type": "quota", "label": "AA0056 - \u57fa\u5751 \u8f6f\u8d28\u5ca9 \u6df1m\u4ee5\u5185 6", "color": "#4CAF50"}, {"id": "quota:AA0057", "type": "quota", "label": "AA0057 - \u57fa\u5751 \u8f6f\u8d28\u5ca9 \u6df1m\u4ee5\u5185 8", "color": "#4CAF50"}, {"id": "quota:AA0058", "type": "quota", "label": "AA0058 - \u57fa\u5751 \u8f83\u786c\u5ca9 \u6df1m\u4ee5\u5185 2", "color": "#4CAF50"}, {"id": "quota:AA0059", "type": "quota", "label": "AA0059 - \u57fa\u5751 \u8f83\u786c\u5ca9 \u6df1m\u4ee5\u5185 4", "color": "#4CAF50"}, {"id": "quota:AA0060", "type": "quota", "label": "AA0060 - \u57fa\u5751 \u8f83\u786c\u5ca9 \u6df1m\u4ee5\u5185 6", "color": "#4CAF50"}, {"id": "quota:AA0061", "type": "quota", "label": "AA0061 - \u57fa\u5751 \u8f83\u786c\u5ca9 \u6df1m\u4ee5\u5185 8", "color": "#4CAF50"}, {"id": "quota:AA0062", "type": "quota", "label": "AA0062 - \u57fa\u5751 \u575a\u786c\u5ca9 \u69fd\u6df1m\u4ee5\u5185 2", "color": "#4CAF50"}, {"id": "quota:AA0063", "type": "quota", "label": "AA0063 - \u57fa\u5751 \u575a\u786c\u5ca9 \u69fd\u6df1m\u4ee5\u5185 4", "color": "#4CAF50"}, {"id": "quota:AA0064", "type": "quota", "label": "AA0064 - \u57fa\u5751 \u575a\u786c\u5ca9 \u69fd\u6df1m\u4ee5\u5185 6", "color": "#4CAF50"}, {"id": "quota:AA0065", "type": "quota", "label": "AA0065 - \u57fa\u5751 \u575a\u786c\u5ca9 \u69fd\u6df1m\u4ee5\u5185 8", "color": "#4CAF50"}, {"id": "quota:AA0066", "type": "quota", "label": "AA0066 - \u4eba\u5de5\u51ff\u77f3\u652f\u6c9f\uff08\u65ad\u9762300\u00d7300\u5185\uff09 \u8f6f", "color": "#4CAF50"}, {"id": "quota:AA0067", "type": "quota", "label": "AA0067 - \u4eba\u5de5\u51ff\u77f3\u652f\u6c9f\uff08\u65ad\u9762300\u00d7300\u5185\uff09 \u8f83", "color": "#4CAF50"}, {"id": "quota:AA0068", "type": "quota", "label": "AA0068 - \u4eba\u5de5\u51ff\u77f3\u652f\u6c9f\uff08\u65ad\u9762300\u00d7300\u5185\uff09 \u575a", "color": "#4CAF50"}, {"id": "quota:AA0069", "type": "quota", "label": "AA0069 - \u5730\u9762\u644a\u5ea7 \u8f6f\u8d28\u5ca9", "color": "#4CAF50"}, {"id": "quota:AA0070", "type": "quota", "label": "AA0070 - \u5730\u9762\u644a\u5ea7 \u8f83\u786c\u5ca9", "color": "#4CAF50"}, {"id": "quota:AA0071", "type": "quota", "label": "AA0071 - \u5730\u9762\u644a\u5ea7 \u575a\u786c\u5ca9", "color": "#4CAF50"}, {"id": "quota:AA0072", "type": "quota", "label": "AA0072 - \u69fd(\u5751)\u644a\u5ea7 \u8f6f\u8d28\u5ca9", "color": "#4CAF50"}, {"id": "quota:AA0073", "type": "quota", "label": "AA0073 - \u69fd(\u5751)\u644a\u5ea7 \u8f83\u786c\u5ca9", "color": "#4CAF50"}, {"id": "quota:AA0074", "type": "quota", "label": "AA0074 - \u69fd(\u5751)\u644a\u5ea7 \u575a\u786c\u5ca9", "color": "#4CAF50"}, {"id": "quota:AA0075", "type": "quota", "label": "AA0075 - \u4fee\u6574\u8fb9\u5761 \u8f6f\u8d28\u5ca9", "color": "#4CAF50"}, {"id": "quota:AA0076", "type": "quota", "label": "AA0076 - \u4fee\u6574\u8fb9\u5761 \u8f83\u786c\u5ca9", "color": "#4CAF50"}, {"id": "quota:AA0077", "type": "quota", "label": "AA0077 - \u4fee\u6574\u8fb9\u5761 \u575a\u786c\u5ca9", "color": "#4CAF50"}, {"id": "quota:AA0078", "type": "quota", "label": "AA0078 - \u683c\u6784\u3001\u808b\u67f1\u3001\u808b\u6881 \u8f6f\u8d28\u5ca9", "color": "#4CAF50"}, {"id": "quota:AA0079", "type": "quota", "label": "AA0079 - \u683c\u6784\u3001\u808b\u67f1\u3001\u808b\u6881 \u8f83\u786c\u5ca9", "color": "#4CAF50"}, {"id": "quota:AA0080", "type": "quota", "label": "AA0080 - \u4eba\u529b\u8fd0\u77f3\u65b9 \u8fd0\u8ddd20m\u4ee5\u5185", "color": "#4CAF50"}, {"id": "quota:AA0081", "type": "quota", "label": "AA0081 - \u4eba\u529b\u8fd0\u77f3\u65b9 \u6bcf\u589e\u52a020m", "color": "#4CAF50"}, {"id": "quota:AA0082", "type": "quota", "label": "AA0082 - \u5355(\u53cc)\u8f6e\u8f66\u8fd0\u77f3\u65b9 \u8fd0\u8ddd50m\u4ee5\u5185", "color": "#4CAF50"}, {"id": "quota:AA0083", "type": "quota", "label": "AA0083 - \u5355(\u53cc)\u8f6e\u8f66\u8fd0\u77f3\u65b9 \u6bcf\u589e\u52a050m", "color": "#4CAF50"}, {"id": "quota:AA0084", "type": "quota", "label": "AA0084 - \u673a\u68b0\u6316\u77f3\u6e23 \u4e0d\u88c5\u8f66", "color": "#4CAF50"}, {"id": "quota:AA0085", "type": "quota", "label": "AA0085 - \u673a\u68b0\u51ff\u6253 \u8f6f\u8d28\u5ca9", "color": "#4CAF50"}, {"id": "quota:AA0086", "type": "quota", "label": "AA0086 - \u673a\u68b0\u51ff\u6253 \u8f83\u786c\u5ca9", "color": "#4CAF50"}, {"id": "quota:AA0087", "type": "quota", "label": "AA0087 - \u673a\u68b0\u51ff\u6253 \u575a\u786c\u5ca9", "color": "#4CAF50"}, {"id": "quota:AA0088", "type": "quota", "label": "AA0088 - \u673a\u68b0\u51ff\u6253 \u6df7\u51dd\u571f", "color": "#4CAF50"}, {"id": "quota:AA0089", "type": "quota", "label": "AA0089 - \u673a\u68b0\u51ff\u6253 \u94a2\u7b4b\u6df7\u51dd\u571f", "color": "#4CAF50"}, {"id": "quota:AA0090", "type": "quota", "label": "AA0090 - \u6316\u6c9f\u69fd\u77f3\u6e23\u3001\u6df7\u51dd\u571f\u53ca\u94a2\u7b4b\u6df7\u51dd\u571f \u6df1\u5ea6(m", "color": "#4CAF50"}, {"id": "quota:AA0091", "type": "quota", "label": "AA0091 - \u6316\u6c9f\u69fd\u77f3\u6e23\u3001\u6df7\u51dd\u571f\u53ca\u94a2\u7b4b\u6df7\u51dd\u571f \u6df1\u5ea6(m", "color": "#4CAF50"}, {"id": "quota:AA0092", "type": "quota", "label": "AA0092 - \u6316\u6c9f\u69fd\u77f3\u6e23\u3001\u6df7\u51dd\u571f\u53ca\u94a2\u7b4b\u6df7\u51dd\u571f \u6df1\u5ea6(m", "color": "#4CAF50"}, {"id": "quota:AA0093", "type": "quota", "label": "AA0093 - \u6316\u57fa\u5751\u77f3\u6e23\u3001\u6df7\u51dd\u571f\u53ca\u94a2\u7b4b\u6df7\u51dd\u571f \u6df1\u5ea6(m", "color": "#4CAF50"}, {"id": "quota:AA0094", "type": "quota", "label": "AA0094 - \u6316\u57fa\u5751\u77f3\u6e23\u3001\u6df7\u51dd\u571f\u53ca\u94a2\u7b4b\u6df7\u51dd\u571f \u6df1\u5ea6(m", "color": "#4CAF50"}, {"id": "quota:AA0095", "type": "quota", "label": "AA0095 - \u6316\u57fa\u5751\u77f3\u6e23\u3001\u6df7\u51dd\u571f\u53ca\u94a2\u7b4b\u6df7\u51dd\u571f \u6df1\u5ea6(m", "color": "#4CAF50"}, {"id": "quota:AA0096", "type": "quota", "label": "AA0096 - \u51ff\u6253\u6c9f\u69fd\uff08\u5751\uff09 \u8f6f\u8d28\u5ca9", "color": "#4CAF50"}, {"id": "quota:AA0097", "type": "quota", "label": "AA0097 - \u51ff\u6253\u6c9f\u69fd\uff08\u5751\uff09 \u8f83\u786c\u5ca9", "color": "#4CAF50"}, {"id": "quota:AA0098", "type": "quota", "label": "AA0098 - \u51ff\u6253\u6c9f\u69fd\uff08\u5751\uff09 \u575a\u786c\u5ca9", "color": "#4CAF50"}, {"id": "quota:AA0099", "type": "quota", "label": "AA0099 - \u51ff\u6253\u6c9f\u69fd\uff08\u5751\uff09 \u6df7\u51dd\u571f", "color": "#4CAF50"}, {"id": "quota:AA0100", "type": "quota", "label": "AA0100 - \u51ff\u6253\u6c9f\u69fd\uff08\u5751\uff09 \u94a2\u7b4b\u6df7\u51dd\u571f", "color": "#4CAF50"}, {"id": "quota:AA0101", "type": "quota", "label": "AA0101 - \u4eba\u5de5\u88c5\u673a\u68b0\u8fd0\u77f3\u6e23 \u8fd0\u8ddd1000m\u4ee5\u5185", "color": "#4CAF50"}, {"id": "quota:AA0102", "type": "quota", "label": "AA0102 - \u673a\u68b0\u88c5\u8fd0\u77f3\u6e23 \u8fd0\u8ddd1000m\u4ee5\u5185", "color": "#4CAF50"}, {"id": "quota:AA0103", "type": "quota", "label": "AA0103 - \u5168\u7a0b\u8fd0\u8ddd 100m\u4ee5\u5185 \u8fd0\u8ddd\u226420m\u4ee5\u5185", "color": "#4CAF50"}, {"id": "quota:AA0104", "type": "quota", "label": "AA0104 - \u5168\u7a0b\u8fd0\u8ddd 100m\u4ee5\u5185 \u6bcf\u589e\u52a020m", "color": "#4CAF50"}, {"id": "quota:AA0105", "type": "quota", "label": "AA0105 - \u5168\u7a0b\u8fd0\u8ddd 500m\u4ee5\u5185 \u8fd0\u8ddd\u2264200m\u4ee5", "color": "#4CAF50"}, {"id": "quota:AA0106", "type": "quota", "label": "AA0106 - \u5168\u7a0b\u8fd0\u8ddd 500m\u4ee5\u5185 \u6bcf\u589e\u52a0100m", "color": "#4CAF50"}, {"id": "quota:AA0107", "type": "quota", "label": "AA0107 - \u5168\u7a0b\u8fd0\u8ddd 500m\u4ee5\u5916 \u8fd0\u8ddd\u22641000m", "color": "#4CAF50"}, {"id": "quota:AA0108", "type": "quota", "label": "AA0108 - \u673a\u68b0\u88c5\u8fd0\u77f3\u6e23 \u5168\u7a0b\u8fd0\u8ddd1000m\u4ee5\u5916 \u6bcf", "color": "#4CAF50"}, {"id": "quota:AA0109", "type": "quota", "label": "AA0109 - \u4eba\u5de5\u88c5\u673a\u68b0\u8fd0\u77f3\u6e23 \u5168\u7a0b\u8fd0\u8ddd1000m\u4ee5\u5916", "color": "#4CAF50"}, {"id": "quota:AA0110", "type": "quota", "label": "AA0110 - \u5e73\u57fa\u56de\u586b \u677e\u586b\u571f\u65b9", "color": "#4CAF50"}, {"id": "quota:AA0111", "type": "quota", "label": "AA0111 - \u5e73\u57fa\u56de\u586b \u592f\u586b\u571f\u65b9", "color": "#4CAF50"}, {"id": "quota:AA0112", "type": "quota", "label": "AA0112 - \u5e73\u57fa\u56de\u586b \u592f\u586b\u77f3\u65b9", "color": "#4CAF50"}, {"id": "quota:AA0113", "type": "quota", "label": "AA0113 - \u69fd\u3001\u5751\u56de\u586b \u677e\u586b\u571f\u65b9", "color": "#4CAF50"}, {"id": "quota:AA0114", "type": "quota", "label": "AA0114 - \u69fd\u3001\u5751\u56de\u586b \u592f\u586b\u571f\u65b9", "color": "#4CAF50"}, {"id": "quota:AA0115", "type": "quota", "label": "AA0115 - \u69fd\u3001\u5751\u56de\u586b \u592f\u586b\u77f3\u65b9", "color": "#4CAF50"}, {"id": "quota:AA0116", "type": "quota", "label": "AA0116 - \u5ba4\u5185\u5730\u576a\u56de\u586b \u592f\u586b\u571f\u65b9", "color": "#4CAF50"}, {"id": "quota:AA0117", "type": "quota", "label": "AA0117 - \u5ba4\u5185\u5730\u576a\u56de\u586b \u592f\u586b\u571f\u5939\u77f3", "color": "#4CAF50"}, {"id": "quota:AA0118", "type": "quota", "label": "AA0118 - \u56de\u586b\u3001\u78be\u538b \u7802\u77f3", "color": "#4CAF50"}, {"id": "quota:AA0119", "type": "quota", "label": "AA0119 - \u56de\u586b\u3001\u78be\u538b \u4eba\u5de5\u7ea7\u914d\u788e\u77f3\u571f", "color": "#4CAF50"}, {"id": "quota:AA0120", "type": "quota", "label": "AA0120 - \u56de\u586b\u3001\u78be\u538b \u5e73\u57fa\u571f\u65b9", "color": "#4CAF50"}, {"id": "quota:AA0121", "type": "quota", "label": "AA0121 - \u56de\u586b\u3001\u78be\u538b \u5e73\u57fa\u77f3\u65b9", "color": "#4CAF50"}, {"id": "quota:AB0001", "type": "quota", "label": "AB0001 - \u70b9\u592f \u592f\u51fb\u80fd\u91cf 1200kN\u00b7m\u4ee5\u5185 \u6bcf", "color": "#4CAF50"}, {"id": "quota:AB0002", "type": "quota", "label": "AB0002 - \u70b9\u592f \u592f\u51fb\u80fd\u91cf 1200kN\u00b7m\u4ee5\u5185 \u6bcf", "color": "#4CAF50"}, {"id": "quota:AB0003", "type": "quota", "label": "AB0003 - \u70b9\u592f \u592f\u51fb\u80fd\u91cf 1200kN\u00b7m\u4ee5\u5185 \u6bcf", "color": "#4CAF50"}, {"id": "quota:AB0004", "type": "quota", "label": "AB0004 - \u70b9\u592f \u592f\u51fb\u80fd\u91cf 1200kN\u00b7m\u4ee5\u5185 \u6bcf", "color": "#4CAF50"}, {"id": "quota:AB0005", "type": "quota", "label": "AB0005 - \u70b9\u592f \u592f\u51fb\u80fd\u91cf 2000kN\u00b7m\u4ee5\u5185 \u6bcf", "color": "#4CAF50"}, {"id": "quota:AB0006", "type": "quota", "label": "AB0006 - \u70b9\u592f \u592f\u51fb\u80fd\u91cf 2000kN\u00b7m\u4ee5\u5185 \u6bcf", "color": "#4CAF50"}, {"id": "quota:AB0007", "type": "quota", "label": "AB0007 - \u70b9\u592f \u592f\u51fb\u80fd\u91cf 2000kN\u00b7m\u4ee5\u5185 \u6bcf", "color": "#4CAF50"}, {"id": "quota:AB0008", "type": "quota", "label": "AB0008 - \u70b9\u592f \u592f\u51fb\u80fd\u91cf 2000kN\u00b7m\u4ee5\u5185 \u6bcf", "color": "#4CAF50"}, {"id": "quota:AB0009", "type": "quota", "label": "AB0009 - \u70b9\u592f \u592f\u51fb\u80fd\u91cf 3000kN\u00b7m\u4ee5\u5185 \u6bcf", "color": "#4CAF50"}, {"id": "quota:AB0010", "type": "quota", "label": "AB0010 - \u70b9\u592f \u592f\u51fb\u80fd\u91cf 3000kN\u00b7m\u4ee5\u5185 \u6bcf", "color": "#4CAF50"}, {"id": "quota:AB0011", "type": "quota", "label": "AB0011 - \u70b9\u592f \u592f\u51fb\u80fd\u91cf 3000kN\u00b7m\u4ee5\u5185 \u6bcf", "color": "#4CAF50"}, {"id": "quota:AB0012", "type": "quota", "label": "AB0012 - \u70b9\u592f \u592f\u51fb\u80fd\u91cf 3000kN\u00b7m\u4ee5\u5185 \u6bcf", "color": "#4CAF50"}, {"id": "quota:AB0013", "type": "quota", "label": "AB0013 - \u70b9\u592f \u592f\u51fb\u80fd\u91cf 4000kN\u00b7m\u4ee5\u5185 \u6bcf", "color": "#4CAF50"}, {"id": "quota:AB0014", "type": "quota", "label": "AB0014 - \u70b9\u592f \u592f\u51fb\u80fd\u91cf 4000kN\u00b7m\u4ee5\u5185 \u6bcf", "color": "#4CAF50"}, {"id": "quota:AB0015", "type": "quota", "label": "AB0015 - \u70b9\u592f \u592f\u51fb\u80fd\u91cf 4000kN\u00b7m\u4ee5\u5185 \u6bcf", "color": "#4CAF50"}, {"id": "quota:AB0016", "type": "quota", "label": "AB0016 - \u70b9\u592f \u592f\u51fb\u80fd\u91cf 4000kN\u00b7m\u4ee5\u5185 \u6bcf", "color": "#4CAF50"}, {"id": "quota:AB0017", "type": "quota", "label": "AB0017 - \u70b9\u592f \u592f\u51fb\u80fd\u91cf 5000kN\u00b7m\u4ee5\u5185 \u6bcf", "color": "#4CAF50"}, {"id": "quota:AB0018", "type": "quota", "label": "AB0018 - \u70b9\u592f \u592f\u51fb\u80fd\u91cf 5000kN\u00b7m\u4ee5\u5185 \u6bcf", "color": "#4CAF50"}, {"id": "quota:AB0019", "type": "quota", "label": "AB0019 - \u70b9\u592f \u592f\u51fb\u80fd\u91cf 5000kN\u00b7m\u4ee5\u5185 \u6bcf", "color": "#4CAF50"}, {"id": "quota:AB0020", "type": "quota", "label": "AB0020 - \u70b9\u592f \u592f\u51fb\u80fd\u91cf 5000kN\u00b7m\u4ee5\u5185 \u6bcf", "color": "#4CAF50"}, {"id": "quota:AB0021", "type": "quota", "label": "AB0021 - \u70b9\u592f \u592f\u51fb\u80fd\u91cf 6000kN\u00b7m\u4ee5\u5185 \u6bcf", "color": "#4CAF50"}, {"id": "quota:AB0022", "type": "quota", "label": "AB0022 - \u70b9\u592f \u592f\u51fb\u80fd\u91cf 6000kN\u00b7m\u4ee5\u5185 \u6bcf", "color": "#4CAF50"}, {"id": "quota:AB0023", "type": "quota", "label": "AB0023 - \u70b9\u592f \u592f\u51fb\u80fd\u91cf 6000kN\u00b7m\u4ee5\u5185 \u6bcf", "color": "#4CAF50"}, {"id": "quota:AB0024", "type": "quota", "label": "AB0024 - \u70b9\u592f \u592f\u51fb\u80fd\u91cf 6000kN\u00b7m\u4ee5\u5185 \u6bcf", "color": "#4CAF50"}, {"id": "quota:AB0025", "type": "quota", "label": "AB0025 - \u4f4e\u5782\u6ee1\u62cd \u592f\u51fb\u80fd\u91cf \u22641000kN\u00b7m", "color": "#4CAF50"}, {"id": "quota:AB0026", "type": "quota", "label": "AB0026 - \u4f4e\u5782\u6ee1\u62cd \u592f\u51fb\u80fd\u91cf \u22642000kN\u00b7m", "color": "#4CAF50"}, {"id": "quota:AB0027", "type": "quota", "label": "AB0027 - \u4f4e\u5782\u6ee1\u62cd \u592f\u51fb\u80fd\u91cf \u22643000kN\u00b7m", "color": "#4CAF50"}, {"id": "quota:AB0028", "type": "quota", "label": "AB0028 - \u4f4e\u5782\u6ee1\u62cd \u592f\u51fb\u80fd\u91cf \u22644000kN\u00b7m", "color": "#4CAF50"}, {"id": "quota:AB0029", "type": "quota", "label": "AB0029 - \u4f4e\u5782\u6ee1\u62cd \u592f\u51fb\u80fd\u91cf \u22645000kN\u00b7m", "color": "#4CAF50"}, {"id": "quota:AB0030", "type": "quota", "label": "AB0030 - \u4f4e\u5782\u6ee1\u62cd \u592f\u51fb\u80fd\u91cf \u22646000kN\u00b7m", "color": "#4CAF50"}, {"id": "quota:AB0031", "type": "quota", "label": "AB0031 - \u571f\u9489 \u571f\u5c42", "color": "#4CAF50"}, {"id": "quota:AB0032", "type": "quota", "label": "AB0032 - \u7802\u6d46\u951a\u9489 \u5ca9\u5c42", "color": "#4CAF50"}, {"id": "quota:AB0033", "type": "quota", "label": "AB0033 - \u55b7\u5c04\u6df7\u51dd\u571f \u521d\u55b7\u539a50mm \u5782\u76f4\u9762\u7d20\u55b7", "color": "#4CAF50"}, {"id": "quota:AB0034", "type": "quota", "label": "AB0034 - \u55b7\u5c04\u6df7\u51dd\u571f \u6bcf\u589e\u51cf10mm \u5782\u76f4\u9762\u7d20\u55b7", "color": "#4CAF50"}, {"id": "quota:AB0035", "type": "quota", "label": "AB0035 - \u55b7\u5c04\u6df7\u51dd\u571f \u521d\u55b7\u539a50mm \u659c\u9762\u7d20\u55b7", "color": "#4CAF50"}, {"id": "quota:AB0036", "type": "quota", "label": "AB0036 - \u55b7\u5c04\u6df7\u51dd\u571f \u6bcf\u589e\u51cf10mm \u659c\u9762\u7d20\u55b7", "color": "#4CAF50"}, {"id": "quota:AB0037", "type": "quota", "label": "AB0037 - \u55b7\u5c04\u6df7\u51dd\u571f \u521d\u55b7\u539a50mm \u5782\u76f4\u9762\u7f51\u55b7", "color": "#4CAF50"}, {"id": "quota:AB0038", "type": "quota", "label": "AB0038 - \u55b7\u5c04\u6df7\u51dd\u571f \u6bcf\u589e\u51cf10mm \u5782\u76f4\u9762\u7f51\u55b7", "color": "#4CAF50"}, {"id": "quota:AB0039", "type": "quota", "label": "AB0039 - \u55b7\u5c04\u6df7\u51dd\u571f \u521d\u55b7\u539a50mm \u659c\u9762\u7f51\u55b7", "color": "#4CAF50"}, {"id": "quota:AB0040", "type": "quota", "label": "AB0040 - \u55b7\u5c04\u6df7\u51dd\u571f \u6bcf\u589e\u51cf10mm \u659c\u9762\u7f51\u55b7", "color": "#4CAF50"}, {"id": "quota:AB0041", "type": "quota", "label": "AB0041 - \u951a\u5934\u5236\u4f5c\u3001\u5b89\u88c5\u3001\u5f20\u62c9\u3001\u9501\u5b9a", "color": "#4CAF50"}, {"id": "quota:AB0042", "type": "quota", "label": "AB0042 - \u55b7\u5c04\u6df7\u51dd\u571f\u6302\u7f51 \u5236\u4f5c\u3001\u5b89\u88c5", "color": "#4CAF50"}, {"id": "quota:AB0043", "type": "quota", "label": "AB0043 - \u683c\u6784\u6df7\u51dd\u571f \u81ea\u62cc\u783c", "color": "#4CAF50"}, {"id": "quota:AB0044", "type": "quota", "label": "AB0044 - \u683c\u6784\u6df7\u51dd\u571f \u5546\u54c1\u783c", "color": "#4CAF50"}, {"id": "quota:AB0045", "type": "quota", "label": "AB0045 - \u683c\u6784\u6df7\u51dd\u571f \u6a21\u677f", "color": "#4CAF50"}, {"id": "quota:AB0046", "type": "quota", "label": "AB0046 - \u94a2\u652f\u6491 \u7af9\u6321\u571f\u677f", "color": "#4CAF50"}, {"id": "quota:AB0047", "type": "quota", "label": "AB0047 - \u94a2\u652f\u6491 \u6728\u6321\u571f\u677f", "color": "#4CAF50"}, {"id": "quota:AB0048", "type": "quota", "label": "AB0048 - \u94a2\u652f\u6491 \u94a2\u6321\u571f\u677f", "color": "#4CAF50"}, {"id": "quota:AB0049", "type": "quota", "label": "AB0049 - \u5b54\u5f84\uff08mm\uff09 \u03a6100\u5185 \u571f\u5c42", "color": "#4CAF50"}, {"id": "quota:AB0050", "type": "quota", "label": "AB0050 - \u5b54\u5f84\uff08mm\uff09 \u03a6100\u5185 \u5ca9\u5c42", "color": "#4CAF50"}, {"id": "quota:AB0051", "type": "quota", "label": "AB0051 - \u5b54\u5f84\uff08mm\uff09 \u03a6130\u5185 \u571f\u5c42", "color": "#4CAF50"}, {"id": "quota:AB0052", "type": "quota", "label": "AB0052 - \u5b54\u5f84\uff08mm\uff09 \u03a6130\u5185 \u5ca9\u5c42", "color": "#4CAF50"}, {"id": "quota:AB0053", "type": "quota", "label": "AB0053 - \u5b54\u5f84\uff08mm\uff09 \u03a6150\u5185 \u571f\u5c42", "color": "#4CAF50"}, {"id": "quota:AB0054", "type": "quota", "label": "AB0054 - \u5b54\u5f84\uff08mm\uff09 \u03a6150\u5185 \u5ca9\u5c42", "color": "#4CAF50"}, {"id": "quota:AB0055", "type": "quota", "label": "AB0055 - \u975e\u9884\u5e94\u529b\u94a2\u7b4b\u951a\u6746", "color": "#4CAF50"}, {"id": "quota:AB0056", "type": "quota", "label": "AB0056 - \u9884\u5e94\u529b\u94a2\u7b4b\u951a\u6746", "color": "#4CAF50"}, {"id": "quota:AB0057", "type": "quota", "label": "AB0057 - \u540e\u5f20\u6cd5\uff08OVM\u951a\uff09 \u675f\u957f20m\u4ee5\u5185 7\u5b54", "color": "#4CAF50"}, {"id": "quota:AB0058", "type": "quota", "label": "AB0058 - \u540e\u5f20\u6cd5\uff08OVM\u951a\uff09 \u675f\u957f20m\u4ee5\u5185 12", "color": "#4CAF50"}, {"id": "quota:AB0059", "type": "quota", "label": "AB0059 - \u540e\u5f20\u6cd5\uff08OVM\u951a\uff09 \u675f\u957f20m\u4ee5\u5185 19", "color": "#4CAF50"}, {"id": "quota:AB0060", "type": "quota", "label": "AB0060 - \u540e\u5f20\u6cd5\uff08OVM\u951a\uff09 \u675f\u957f40m\u4ee5\u5185 7\u5b54", "color": "#4CAF50"}, {"id": "quota:AB0061", "type": "quota", "label": "AB0061 - \u540e\u5f20\u6cd5\uff08OVM\u951a\uff09 \u675f\u957f40m\u4ee5\u5185 12", "color": "#4CAF50"}, {"id": "quota:AB0062", "type": "quota", "label": "AB0062 - \u540e\u5f20\u6cd5\uff08OVM\u951a\uff09 \u675f\u957f40m\u4ee5\u5185 19", "color": "#4CAF50"}, {"id": "quota:AB0063", "type": "quota", "label": "AB0063 - \u951a\u5177\u5b89\u88c5", "color": "#4CAF50"}, {"id": "quota:AB0064", "type": "quota", "label": "AB0064 - \u951a\u5b54\u704c\u6d46", "color": "#4CAF50"}, {"id": "quota:AC0001", "type": "quota", "label": "AC0001 - \u571f\u5c42 \u03a6400mm", "color": "#4CAF50"}, {"id": "quota:AC0002", "type": "quota", "label": "AC0002 - \u5ca9\u5c42 \u03a6400mm", "color": "#4CAF50"}, {"id": "quota:AC0003", "type": "quota", "label": "AC0003 - \u571f\u5c42 \u03a6600mm", "color": "#4CAF50"}, {"id": "quota:AC0004", "type": "quota", "label": "AC0004 - \u5ca9\u5c42 \u03a6600mm", "color": "#4CAF50"}, {"id": "quota:AC0005", "type": "quota", "label": "AC0005 - \u571f\u5c42 \u03a6800mm", "color": "#4CAF50"}, {"id": "quota:AC0006", "type": "quota", "label": "AC0006 - \u5ca9\u5c42 \u03a6800mm", "color": "#4CAF50"}, {"id": "quota:AC0007", "type": "quota", "label": "AC0007 - \u03a6\u22641000mm H\u226420m \u571f\u3001\u7802\u783e\u77f3", "color": "#4CAF50"}, {"id": "quota:AC0008", "type": "quota", "label": "AC0008 - \u03a6\u22641000mm H\u226420m \u5ca9\u5c42", "color": "#4CAF50"}, {"id": "quota:AC0009", "type": "quota", "label": "AC0009 - \u03a6\u22641000mm H\u226420m \u571f\u77f3\u56de\u586b\u533a", "color": "#4CAF50"}, {"id": "quota:AC0010", "type": "quota", "label": "AC0010 - \u03a6\u22641000mm H\u226440m \u571f\u3001\u7802\u783e\u77f3", "color": "#4CAF50"}, {"id": "quota:AC0011", "type": "quota", "label": "AC0011 - \u03a6\u22641000mm H\u226440m \u5ca9\u5c42", "color": "#4CAF50"}, {"id": "quota:AC0012", "type": "quota", "label": "AC0012 - \u03a6\u22641000mm H\u226440m \u571f\u77f3\u56de\u586b\u533a", "color": "#4CAF50"}, {"id": "quota:AC0013", "type": "quota", "label": "AC0013 - \u03a6\u22641500mm H\u226420m \u571f\u3001\u7802\u783e\u77f3", "color": "#4CAF50"}, {"id": "quota:AC0014", "type": "quota", "label": "AC0014 - \u03a6\u22641500mm H\u226420m \u5ca9\u5c42", "color": "#4CAF50"}, {"id": "quota:AC0015", "type": "quota", "label": "AC0015 - \u03a6\u22641500mm H\u226420m \u571f\u77f3\u56de\u586b\u533a", "color": "#4CAF50"}];
+        const edges = [];
+
+        const width = window.innerWidth;
+        const height = window.innerHeight;
+
+        const svg = d3.select("#graph")
+            .append("svg")
+            .attr("width", width)
+            .attr("height", height);
+
+        const simulation = d3.forceSimulation(nodes)
+            .force("link", d3.forceLink(edges).id(d => d.id).distance(100))
+            .force("charge", d3.forceManyBody().strength(-300))
+            .force("center", d3.forceCenter(width / 2, height / 2));
+
+        const link = svg.append("g")
+            .selectAll("line")
+            .data(edges)
+            .enter().append("line")
+            .attr("stroke", "#666")
+            .attr("stroke-width", d => d.width);
+
+        const node = svg.append("g")
+            .selectAll("circle")
+            .data(nodes)
+            .enter().append("circle")
+            .attr("r", 5)
+            .attr("fill", d => d.color)
+            .call(d3.drag()
+                .on("start", dragstarted)
+                .on("drag", dragged)
+                .on("end", dragended));
+
+        const label = svg.append("g")
+            .selectAll("text")
+            .data(nodes)
+            .enter().append("text")
+            .text(d => d.label)
+            .attr("font-size", 10)
+            .attr("fill", "#ccc")
+            .attr("dx", 10)
+            .attr("dy", 5);
+
+        simulation.on("tick", () => {
+            link
+                .attr("x1", d => d.source.x)
+                .attr("y1", d => d.source.y)
+                .attr("x2", d => d.target.x)
+                .attr("y2", d => d.target.y);
+
+            node
+                .attr("cx", d => d.x)
+                .attr("cy", d => d.y);
+
+            label
+                .attr("x", d => d.x)
+                .attr("y", d => d.y);
+        });
+
+        function dragstarted(event, d) {
+            if (!event.active) simulation.alphaTarget(0.3).restart();
+            d.fx = d.x;
+            d.fy = d.y;
+        }
+
+        function dragged(event, d) {
+            d.fx = event.x;
+            d.fy = event.y;
+        }
+
+        function dragended(event, d) {
+            if (!event.active) simulation.alphaTarget(0);
+            d.fx = null;
+            d.fy = null;
+        }
+
+        function searchNodes(query) {
+            const filtered = nodes.filter(n =>
+                n.label.toLowerCase().includes(query.toLowerCase())
+            );
+            node.attr("opacity", d => filtered.includes(d) ? 1 : 0.1);
+            label.attr("opacity", d => filtered.includes(d) ? 1 : 0.1);
+        }
+    </script>
+</body>
+</html>

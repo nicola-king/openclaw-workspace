@@ -1,0 +1,2 @@
+文本：<speed=0.9><emotion=happy>早安，今天是美好的一天！
+错误：[Errno 101] Network is unreachable

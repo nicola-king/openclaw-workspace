@@ -1,0 +1,28 @@
+{
+  "version": "4.0",
+  "name": "太一自进化智能路由系统",
+  "created_at": "2026-04-16T14:34:03.143221",
+  "features": [
+    "关键词智能匹配",
+    "搜索类型识别",
+    "自动路由决策",
+    "Token 节约优化",
+    "自学习能力",
+    "自动进化"
+  ],
+  "evolution_config": {
+    "version": "4.0",
+    "name": "太一自进化智能路由系统",
+    "auto_learning": true,
+    "auto_optimization": true,
+    "auto_evolution": true,
+    "evolution_interval": 100,
+    "pattern_threshold": 10
+  },
+  "integration": {
+    "smart-model-router": true,
+    "geo-model-router": true,
+    "smart-search-router": true,
+    "quota-router": true
+  }
+}

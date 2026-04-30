@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>太一进化树 - Taiyi Evolution Tree</title>
+    <meta name="description" content="太一 AGI 社区进化树可视化 - 一个人的代码，变成全世界的进化树">
+    
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- D3.js -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    
+    <!-- Framer Motion (可选) -->
+    <script src="https://www.unpkg.com/motion@10.16.2/dist/motion.js"></script>
+    
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .tree-container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+        
+        .node circle {
+            fill: #fff;
+            stroke: #667eea;
+            stroke-width: 3px;
+            transition: all 0.3s ease;
+        }
+        
+        .node circle:hover {
+            stroke: #764ba2;
+            stroke-width: 5px;
+            cursor: pointer;
+        }
+        
+        .node text {
+            font-size: 14px;
+            fill: #333;
+            font-weight: 500;
+        }
+        
+        .link {
+            fill: none;
+            stroke: #667eea;
+            stroke-width: 2px;
+            opacity: 0.6;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 15px;
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .event-item {
+            border-left: 3px solid #667eea;
+            padding-left: 15px;
+            margin-bottom: 15px;
+            transition: all 0.3s ease;
+        }
+        
+        .event-item:hover {
+            border-left-color: #764ba2;
+            padding-left: 20px;
+        }
+        
+        @keyframes grow {
+            from {
+                opacity: 0;
+                transform: scaleY(0);
+            }
+            to {
+                opacity: 1;
+                transform: scaleY(1);
+            }
+        }
+        
+        .growing {
+            animation: grow 1s ease forwards;
+        }
+    </style>
+</head>
+<body class="p-8">
+    <!-- Header -->
+    <div class="max-w-7xl mx-auto mb-8">
+        <div class="text-center text-white">
+            <h1 class="text-5xl font-bold mb-4">🌳 太一进化树</h1>
+            <p class="text-xl opacity-90">Taiyi Evolution Tree</p>
+            <p class="text-lg opacity-75 mt-2">"一个人的代码，变成全世界的进化树"</p>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
+        
+        <!-- Evolution Tree Visualization -->
+        <div class="lg:col-span-2 tree-container p-6">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800">🌿 进化树可视化</h2>
+            <div id="tree-viz" class="w-full h-[600px]"></div>
+        </div>
+        
+        <!-- Sidebar -->
+        <div class="space-y-6">
+            
+            <!-- Statistics -->
+            <div class="grid grid-cols-2 gap-4">
+                <div class="stat-card">
+                    <div class="text-3xl font-bold" id="stat-agents">189</div>
+                    <div class="text-sm opacity-75">🤖 Agent 数量</div>
+                </div>
+                <div class="stat-card">
+                    <div class="text-3xl font-bold" id="stat-skills">548</div>
+                    <div class="text-sm opacity-75">📚 技能数量</div>
+                </div>
+                <div class="stat-card">
+                    <div class="text-3xl font-bold" id="stat-contributors">1</div>
+                    <div class="text-sm opacity-75">👥 贡献者</div>
+                </div>
+                <div class="stat-card">
+                    <div class="text-3xl font-bold" id="stat-commits">1000+</div>
+                    <div class="text-sm opacity-75">💾 提交次数</div>
+                </div>
+            </div>
+            
+            <!-- Recent Events -->
+            <div class="tree-container p-6">
+                <h3 class="text-xl font-bold mb-4 text-gray-800">⏰ 最近进化事件</h3>
+                <div id="events-timeline" class="space-y-3">
+                    <!-- Events will be loaded here -->
+                </div>
+            </div>
+            
+            <!-- Top Contributors -->
+            <div class="tree-container p-6">
+                <h3 class="text-xl font-bold mb-4 text-gray-800">🏆 核心贡献者</h3>
+                <div id="contributors-wall" class="space-y-3">
+                    <!-- Contributors will be loaded here -->
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <div class="max-w-7xl mx-auto mt-8 text-center text-white opacity-75">
+        <p>太一 AGI · 全域自进化 · 2026-04-17</p>
+        <p class="text-sm mt-2">
+            <a href="https://github.com/nicola-king/taiyi-agents" class="underline hover:opacity-100" target="_blank">
+                GitHub
+            </a>
+            ·
+            <a href="https://github.com/nicola-king/taiyi-agents/tree/main/docs" class="underline hover:opacity-100" target="_blank">
+                文档
+            </a>
+            ·
+            <a href="https://github.com/nicola-king/taiyi-agents/blob/main/HACKING.md" class="underline hover:opacity-100" target="_blank">
+                Hack 指南
+            </a>
+        </p>
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="data.js"></script>
+    <script src="tree.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

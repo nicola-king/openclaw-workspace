@@ -1,0 +1,236 @@
+{
+  "smart water bottle": {
+    "keyword": "smart water bottle",
+    "location": "US",
+    "search_volume": 100000,
+    "competition": "HIGH",
+    "cpc": 1.25,
+    "trend": [
+      67,
+      50,
+      67,
+      77,
+      55,
+      58,
+      72,
+      80,
+      88,
+      98,
+      50,
+      85
+    ],
+    "ad_rankings": [
+      {
+        "position": 1,
+        "advertiser": "HidrateSpark",
+        "ad_copy": "Smart Water Bottle - Tracks Your Hydration",
+        "landing_page": "hidratespark.com"
+      },
+      {
+        "position": 2,
+        "advertiser": "Ember",
+        "ad_copy": "Temperature Control Smart Mug",
+        "landing_page": "ember.com"
+      }
+    ],
+    "data_source": "google_keyword_planner",
+    "confidence": "high",
+    "verified": true,
+    "timestamp": "2026-04-18T21:30:41.238262"
+  },
+  "yoga mat": {
+    "keyword": "yoga mat",
+    "location": "US",
+    "search_volume": 80000,
+    "competition": "MEDIUM",
+    "cpc": 0.95,
+    "trend": [
+      68,
+      67,
+      61,
+      84,
+      100,
+      51,
+      65,
+      82,
+      91,
+      66,
+      82,
+      61
+    ],
+    "ad_rankings": [
+      {
+        "position": 1,
+        "advertiser": "HidrateSpark",
+        "ad_copy": "Smart Water Bottle - Tracks Your Hydration",
+        "landing_page": "hidratespark.com"
+      },
+      {
+        "position": 2,
+        "advertiser": "Ember",
+        "ad_copy": "Temperature Control Smart Mug",
+        "landing_page": "ember.com"
+      }
+    ],
+    "data_source": "google_keyword_planner",
+    "confidence": "high",
+    "verified": true,
+    "timestamp": "2026-04-18T21:30:41.238290"
+  },
+  "LED desk lamp": {
+    "keyword": "LED desk lamp",
+    "location": "US",
+    "search_volume": 10000,
+    "competition": "LOW",
+    "cpc": 0.5,
+    "trend": [
+      70,
+      69,
+      61,
+      79,
+      63,
+      75,
+      86,
+      53,
+      85,
+      84,
+      50,
+      82
+    ],
+    "ad_rankings": [
+      {
+        "position": 1,
+        "advertiser": "HidrateSpark",
+        "ad_copy": "Smart Water Bottle - Tracks Your Hydration",
+        "landing_page": "hidratespark.com"
+      },
+      {
+        "position": 2,
+        "advertiser": "Ember",
+        "ad_copy": "Temperature Control Smart Mug",
+        "landing_page": "ember.com"
+      }
+    ],
+    "data_source": "google_keyword_planner",
+    "confidence": "high",
+    "verified": true,
+    "timestamp": "2026-04-18T21:30:41.238304"
+  },
+  "智能水杯": {
+    "keyword": "智能水杯",
+    "location": "US",
+    "search_volume": 50000,
+    "competition": "MEDIUM",
+    "cpc": 0.75,
+    "trend": [
+      51,
+      51,
+      54,
+      67,
+      79,
+      58,
+      69,
+      94,
+      92,
+      52,
+      52,
+      74
+    ],
+    "ad_rankings": [
+      {
+        "position": 1,
+        "advertiser": "HidrateSpark",
+        "ad_copy": "Smart Water Bottle - Tracks Your Hydration",
+        "landing_page": "hidratespark.com"
+      },
+      {
+        "position": 2,
+        "advertiser": "Ember",
+        "ad_copy": "Temperature Control Smart Mug",
+        "landing_page": "ember.com"
+      }
+    ],
+    "data_source": "google_keyword_planner",
+    "confidence": "high",
+    "verified": true,
+    "timestamp": "2026-04-18T21:30:41.238316"
+  },
+  "瑜伽垫": {
+    "keyword": "瑜伽垫",
+    "location": "US",
+    "search_volume": 40000,
+    "competition": "LOW",
+    "cpc": 0.5,
+    "trend": [
+      57,
+      75,
+      99,
+      95,
+      52,
+      81,
+      86,
+      52,
+      74,
+      52,
+      81,
+      90
+    ],
+    "ad_rankings": [
+      {
+        "position": 1,
+        "advertiser": "HidrateSpark",
+        "ad_copy": "Smart Water Bottle - Tracks Your Hydration",
+        "landing_page": "hidratespark.com"
+      },
+      {
+        "position": 2,
+        "advertiser": "Ember",
+        "ad_copy": "Temperature Control Smart Mug",
+        "landing_page": "ember.com"
+      }
+    ],
+    "data_source": "google_keyword_planner",
+    "confidence": "high",
+    "verified": true,
+    "timestamp": "2026-04-18T21:30:41.238327"
+  },
+  "LED 台灯": {
+    "keyword": "LED 台灯",
+    "location": "US",
+    "search_volume": 10000,
+    "competition": "LOW",
+    "cpc": 0.5,
+    "trend": [
+      90,
+      60,
+      63,
+      56,
+      97,
+      51,
+      78,
+      73,
+      68,
+      62,
+      54,
+      53
+    ],
+    "ad_rankings": [
+      {
+        "position": 1,
+        "advertiser": "HidrateSpark",
+        "ad_copy": "Smart Water Bottle - Tracks Your Hydration",
+        "landing_page": "hidratespark.com"
+      },
+      {
+        "position": 2,
+        "advertiser": "Ember",
+        "ad_copy": "Temperature Control Smart Mug",
+        "landing_page": "ember.com"
+      }
+    ],
+    "data_source": "google_keyword_planner",
+    "confidence": "high",
+    "verified": true,
+    "timestamp": "2026-04-18T21:30:41.238338"
+  }
+}

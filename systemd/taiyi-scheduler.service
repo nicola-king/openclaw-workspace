@@ -1,0 +1,30 @@
+[Unit]
+Description=Taiyi Scheduler Agent - 定时任务自进化引擎
+Documentation=https://github.com/nicola-king/taiyi-smart-router
+After=network.target
+
+[Service]
+Type=oneshot
+User=nicola
+Group=nicola
+WorkingDirectory=/home/nicola/.openclaw/workspace
+Environment="PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+EnvironmentFile=/home/nicola/.openclaw/.env
+ExecStart=/usr/bin/python3 /home/nicola/.openclaw/workspace/skills/scheduler-agent/src/scheduler.py --run-all
+RemainAfterExit=no
+
+# 重启策略
+Restart=on-failure
+RestartSec=60
+
+# 资源限制
+MemoryMax=512M
+CPUQuota=50%
+
+# 日志
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=taiyi-scheduler
+
+[Install]
+WantedBy=multi-user.target

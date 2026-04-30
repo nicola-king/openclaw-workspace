@@ -1,0 +1,158 @@
+# 交易信号生成工作流程
+# 版本：1.0
+# 创建：2026-04-18
+# 负责 Agent: 知几
+
+---
+name: trading-signal
+version: 1.0
+description: 交易信号生成标准化流程
+agent: 知几
+trigger: manual | scheduled | market_event
+priority: P0
+
+# 输入参数
+inputs:
+  symbol:
+    type: string
+    required: true
+    description: "交易标的 (如 BTC/USDT)"
+  
+  analysis_type:
+    type: enum
+    options: [technical, onchain, sentiment, comprehensive]
+    default: comprehensive
+    description: "分析类型"
+  
+  timeframe:
+    type: enum
+    options: [15m, 1h, 4h, 1d, 1w]
+    default: 4h
+    description: "时间周期"
+
+# 执行步骤
+steps:
+  - name: 数据收集
+    type: parallel
+    tasks:
+      - action: fetch_price_data
+        params:
+          symbol: "${inputs.symbol}"
+          timeframe: "${inputs.timeframe}"
+          limit: 100
+        timeout: 30s
+      
+      - action: fetch_onchain_data
+        params:
+          symbol: "${inputs.symbol}"
+          source: gmgn
+        timeout: 30s
+      
+      - action: fetch_sentiment_data
+        params:
+          symbol: "${inputs.symbol}"
+          sources: [twitter, telegram, reddit]
+        timeout: 30s
+
+  - name: 技术分析
+    type: sequential
+    tasks:
+      - action: calculate_indicators
+        params:
+          indicators: [RSI, MACD, EMA, Bollinger]
+      
+      - action: identify_pattern
+        params:
+          patterns: [support_resistance, trend_line, chart_pattern]
+      
+      - action: timesfm_prediction
+        params:
+          model: timesfm-v2
+          horizon: 24h
+
+  - name: 风险评估
+    type: sequential
+    tasks:
+      - action: calculate_volatility
+        params:
+          period: 30d
+      
+      - action: check_market_risk
+        params:
+          factors: [liquidity, correlation, macro]
+      
+      - action: generate_risk_score
+        output: risk_score (0-100)
+
+  - name: 信号生成
+    type: decision
+    logic:
+      if: "risk_score < 30 and confidence > 70"
+      then:
+        signal: BUY
+        confidence: "${confidence}"
+        target_price: "${entry_price * 1.08}"
+        stop_loss: "${entry_price * 0.95}"
+      elif: "risk_score < 30 and confidence < 30"
+      then:
+        signal: SELL
+        confidence: "${100 - confidence}"
+        target_price: "${entry_price * 0.92}"
+        stop_loss: "${entry_price * 1.05}"
+      else:
+        signal: HOLD
+        confidence: 50
+
+# 输出格式
+output:
+  format: markdown
+  template: |
+    ## 🎯 交易信号 · {{symbol}}
+    
+    ### 信号类型
+    {{signal}} (置信度：{{confidence}}%)
+    
+    ### 核心数据
+    - 当前价格：${{current_price}}
+    - 目标价格：${{target_price}}
+    - 止损价格：${{stop_loss}}
+    - 风险评分：{{risk_score}}/100
+    
+    ### 分析逻辑
+    1. 技术分析：{{technical_summary}}
+    2. 链上数据：{{onchain_summary}}
+    3. 市场情绪：{{sentiment_summary}}
+    
+    ### 风险提示
+    ⚠️ {{risk_warning}}
+
+# 通知配置
+notifications:
+  on_complete:
+    - channel: telegram
+      recipient: "${TELEGRAM_CHAT_ID}"
+    - channel: feishu
+      recipient: "user_id"
+  
+  on_error:
+    - channel: telegram
+      recipient: "${TELEGRAM_CHAT_ID}"
+      priority: high
+
+# 错误处理
+error_handling:
+  retry_count: 2
+  retry_delay: 5s
+  fallback:
+    - action: notify_error
+    - action: log_error
+
+# 执行日志
+logging:
+  level: info
+  destination: logs/trading-signal-${date}.log
+  include:
+    - inputs
+    - outputs
+    - execution_time
+    - errors

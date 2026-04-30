@@ -1,0 +1,219 @@
+{
+  "type": "Yunnan Travel Plan",
+  "origin": "北京",
+  "destination": "云南",
+  "start_date": "2026-05-01",
+  "end_date": "2026-05-08",
+  "days": 8,
+  "travelers": 2,
+  "mode": "国内游",
+  "budget": 5000,
+  "budget_per_person": 2500.0,
+  "budget_allocation": {
+    "交通": 1250.0,
+    "住宿": 1500.0,
+    "餐饮": 1000.0,
+    "活动": 750.0,
+    "购物": 500.0
+  },
+  "preferences": [
+    "自然风光",
+    "文化体验",
+    "美食"
+  ],
+  "daily_itinerary": [
+    {
+      "day": 1,
+      "date": "2026-05-01",
+      "attractions": [
+        {
+          "name": "丽江古城",
+          "duration": "2d",
+          "cost": 0
+        },
+        {
+          "name": "大理洱海",
+          "duration": "1d",
+          "cost": 0
+        },
+        {
+          "name": "西双版纳",
+          "duration": "2d",
+          "cost": 100
+        }
+      ],
+      "meal_breakfast": "酒店早餐/米线",
+      "meal_lunch": "云南特色菜",
+      "meal_dinner": "夜市小吃"
+    },
+    {
+      "day": 2,
+      "date": "2026-05-02",
+      "attractions": [
+        {
+          "name": "丽江古城",
+          "duration": "2d",
+          "cost": 0
+        },
+        {
+          "name": "大理洱海",
+          "duration": "1d",
+          "cost": 0
+        },
+        {
+          "name": "西双版纳",
+          "duration": "2d",
+          "cost": 100
+        }
+      ],
+      "meal_breakfast": "酒店早餐/米线",
+      "meal_lunch": "云南特色菜",
+      "meal_dinner": "夜市小吃"
+    },
+    {
+      "day": 3,
+      "date": "2026-05-03",
+      "attractions": [
+        {
+          "name": "丽江古城",
+          "duration": "2d",
+          "cost": 0
+        },
+        {
+          "name": "大理洱海",
+          "duration": "1d",
+          "cost": 0
+        },
+        {
+          "name": "西双版纳",
+          "duration": "2d",
+          "cost": 100
+        }
+      ],
+      "meal_breakfast": "酒店早餐/米线",
+      "meal_lunch": "云南特色菜",
+      "meal_dinner": "夜市小吃"
+    },
+    {
+      "day": 4,
+      "date": "2026-05-04",
+      "attractions": [
+        {
+          "name": "丽江古城",
+          "duration": "2d",
+          "cost": 0
+        },
+        {
+          "name": "大理洱海",
+          "duration": "1d",
+          "cost": 0
+        },
+        {
+          "name": "西双版纳",
+          "duration": "2d",
+          "cost": 100
+        }
+      ],
+      "meal_breakfast": "酒店早餐/米线",
+      "meal_lunch": "云南特色菜",
+      "meal_dinner": "夜市小吃"
+    },
+    {
+      "day": 5,
+      "date": "2026-05-05",
+      "attractions": [
+        {
+          "name": "丽江古城",
+          "duration": "2d",
+          "cost": 0
+        },
+        {
+          "name": "大理洱海",
+          "duration": "1d",
+          "cost": 0
+        },
+        {
+          "name": "西双版纳",
+          "duration": "2d",
+          "cost": 100
+        }
+      ],
+      "meal_breakfast": "酒店早餐/米线",
+      "meal_lunch": "云南特色菜",
+      "meal_dinner": "夜市小吃"
+    },
+    {
+      "day": 6,
+      "date": "2026-05-06",
+      "attractions": [
+        {
+          "name": "丽江古城",
+          "duration": "2d",
+          "cost": 0
+        },
+        {
+          "name": "大理洱海",
+          "duration": "1d",
+          "cost": 0
+        },
+        {
+          "name": "西双版纳",
+          "duration": "2d",
+          "cost": 100
+        }
+      ],
+      "meal_breakfast": "酒店早餐/米线",
+      "meal_lunch": "云南特色菜",
+      "meal_dinner": "夜市小吃"
+    },
+    {
+      "day": 7,
+      "date": "2026-05-07",
+      "attractions": [
+        {
+          "name": "丽江古城",
+          "duration": "2d",
+          "cost": 0
+        },
+        {
+          "name": "大理洱海",
+          "duration": "1d",
+          "cost": 0
+        },
+        {
+          "name": "西双版纳",
+          "duration": "2d",
+          "cost": 100
+        }
+      ],
+      "meal_breakfast": "酒店早餐/米线",
+      "meal_lunch": "云南特色菜",
+      "meal_dinner": "夜市小吃"
+    },
+    {
+      "day": 8,
+      "date": "2026-05-08",
+      "attractions": [
+        {
+          "name": "丽江古城",
+          "duration": "2d",
+          "cost": 0
+        },
+        {
+          "name": "大理洱海",
+          "duration": "1d",
+          "cost": 0
+        },
+        {
+          "name": "西双版纳",
+          "duration": "2d",
+          "cost": 100
+        }
+      ],
+      "meal_breakfast": "酒店早餐/米线",
+      "meal_lunch": "云南特色菜",
+      "meal_dinner": "夜市小吃"
+    }
+  ],
+  "timestamp": "2026-04-24T21:33:19.017842"
+}

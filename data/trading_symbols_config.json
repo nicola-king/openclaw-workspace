@@ -1,0 +1,43 @@
+{
+  "symbols": [
+    {
+      "symbol": "BTCUSDT",
+      "name": "比特币",
+      "allocation": 0.25,
+      "priority": 1,
+      "description": "BTC - 数字黄金，市场风向标"
+    },
+    {
+      "symbol": "ETHUSDT",
+      "name": "以太坊",
+      "allocation": 0.25,
+      "priority": 2,
+      "description": "ETH - 智能合约平台龙头"
+    },
+    {
+      "symbol": "SOLUSDT",
+      "name": "Solana",
+      "allocation": 0.20,
+      "priority": 3,
+      "description": "SOL - 高性能公链"
+    },
+    {
+      "symbol": "BNBUSDT",
+      "name": "币安币",
+      "allocation": 0.20,
+      "priority": 4,
+      "description": "BNB - 币安生态代币"
+    },
+    {
+      "symbol": "LIFEUSDT",
+      "name": "币安人生",
+      "allocation": 0.10,
+      "priority": 5,
+      "description": "LIFE - 币安人生生态代币"
+    }
+  ],
+  "total_allocation": 1.0,
+  "rebalance_interval": 86400,
+  "risk_per_symbol": 0.03,
+  "updated": "2026-04-22T14:30:00+08:00"
+}

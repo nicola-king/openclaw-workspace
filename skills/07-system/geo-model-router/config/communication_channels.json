@@ -1,0 +1,92 @@
+{
+  "channels": [
+    {
+      "name": "微信 (WeChat)",
+      "type": "domestic",
+      "domains": [
+        "mp.weixin.qq.com",
+        "weixin.qq.com",
+        "qyapi.weixin.qq.com",
+        "ilinkai.weixin.qq.com"
+      ],
+      "plugin": "openclaw-weixin",
+      "status": "active",
+      "priority": "P0"
+    },
+    {
+      "name": "Telegram",
+      "type": "international",
+      "domains": [
+        "api.telegram.org",
+        "t.me"
+      ],
+      "plugin": "telegram",
+      "status": "active",
+      "priority": "P0"
+    },
+    {
+      "name": "Discord",
+      "type": "international",
+      "domains": [
+        "discord.com",
+        "discordapp.com",
+        "discord-api.com"
+      ],
+      "plugin": "discord-integration",
+      "status": "active",
+      "priority": "P1"
+    },
+    {
+      "name": "飞书 (Feishu)",
+      "type": "domestic",
+      "domains": [
+        "open.feishu.cn",
+        "feishu.cn"
+      ],
+      "plugin": "feishu",
+      "status": "active",
+      "priority": "P0"
+    },
+    {
+      "name": "Slack",
+      "type": "international",
+      "domains": [
+        "slack.com",
+        "slack-api.com"
+      ],
+      "plugin": "slack-notify",
+      "status": "standby",
+      "priority": "P2"
+    },
+    {
+      "name": "WhatsApp",
+      "type": "international",
+      "domains": [
+        "graph.facebook.com",
+        "whatsapp.com"
+      ],
+      "plugin": "whatsapp",
+      "status": "standby",
+      "priority": "P2"
+    }
+  ],
+  "routing_rules": {
+    "domestic_channels": ["微信", "飞书"],
+    "international_channels": ["Telegram", "Discord", "Slack", "WhatsApp"],
+    "default_channel": "telegram",
+    "fallback_order": ["telegram", "wechat", "discord", "feishu"]
+  },
+  "proxy_config": {
+    "domestic": {
+      "use_proxy": false,
+      "reason": "国内直连，低延迟"
+    },
+    "international": {
+      "use_proxy": true,
+      "proxy_type": "socks5",
+      "proxy_host": "127.0.0.1",
+      "proxy_port": 7890,
+      "reason": "国外代理，突破地域限制"
+    }
+  }
+}

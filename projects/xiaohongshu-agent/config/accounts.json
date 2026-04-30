@@ -1,0 +1,18 @@
+{
+  "account1": {
+    "name": "SAYELF 山野精灵",
+    "positioning": "AI + 交易 + 壁纸",
+    "style": "极简黑客风",
+    "target_audience": "25-40 岁 搞钱青年",
+    "content_direction": "AI 工具/交易信号/极简壁纸",
+    "best_publish_time": "19:00-21:00"
+  },
+  "account2": {
+    "name": "SAYELF 壁纸屋",
+    "positioning": "治愈系壁纸",
+    "style": "温暖治愈风",
+    "target_audience": "18-35 岁 女性",
+    "content_direction": "治愈系壁纸/情感共鸣",
+    "best_publish_time": "21:00-23:00"
+  }
+}

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Google NotebookLM
+Comment=Google NotebookLM 笔记与研究
+Exec=chromium-browser --app=https://notebooklm.google.com
+Icon=google-chrome
+Type=Application
+Categories=Network;WebBrowser;
+StartupNotify=true

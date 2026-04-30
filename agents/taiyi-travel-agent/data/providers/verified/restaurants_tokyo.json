@@ -1,0 +1,83 @@
+[
+  {
+    "id": "restaurant_tokyo_20260424_001",
+    "type": "restaurant",
+    "name": "筑地市场寿司大",
+    "name_en": "Sushi Dai",
+    "address": "东京都中央区筑地 4-13-1",
+    "address_en": "4-13-1 Tsukiji, Chuo, Tokyo 104-0045, Japan",
+    "phone": "+81-3-3547-5254",
+    "email": "info@sushidai.jp",
+    "website": "https://www.sushidai.jp/",
+    "cuisine": "寿司",
+    "price_range": "¥3000-8000/人",
+    "rating": 4.7,
+    "review_count": 5678,
+    "opening_hours": "05:00-14:00",
+    "images": [
+      "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=800",
+      "https://images.unsplash.com/photo-1553621042-f6e147245754?w=800",
+      "https://images.unsplash.com/photo-1611143666189-1f35728e8720?w=800"
+    ],
+    "verified_sources": [
+      {"source": "Google Places", "verified_at": "2026-04-24", "score": 95},
+      {"source": "TripAdvisor", "verified_at": "2026-04-24", "score": 93}
+    ],
+    "trust_score": 94,
+    "last_updated": "2026-04-24T21:00:00+08:00"
+  },
+  {
+    "id": "restaurant_tokyo_20260424_002",
+    "type": "restaurant",
+    "name": "一兰拉面 涩谷店",
+    "name_en": "Ichiran Ramen Shibuya",
+    "address": "东京都涩谷区道玄坂 2-19-1",
+    "address_en": "2-19-1 Dogenzaka, Shibuya, Tokyo 150-0043, Japan",
+    "phone": "+81-3-6416-7711",
+    "email": "info@ichiran.jp",
+    "website": "https://www.ichiran.jp/",
+    "cuisine": "拉面",
+    "price_range": "¥1000-2000/人",
+    "rating": 4.6,
+    "review_count": 8901,
+    "opening_hours": "24 小时",
+    "images": [
+      "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=800",
+      "https://images.unsplash.com/photo-1591814262895-812f85340346?w=800",
+      "https://images.unsplash.com/photo-1557872393-439189e6882f?w=800"
+    ],
+    "verified_sources": [
+      {"source": "Google Places", "verified_at": "2026-04-24", "score": 94},
+      {"source": "TripAdvisor", "verified_at": "2026-04-24", "score": 92}
+    ],
+    "trust_score": 93,
+    "last_updated": "2026-04-24T21:00:00+08:00"
+  },
+  {
+    "id": "restaurant_tokyo_20260424_003",
+    "type": "restaurant",
+    "name": "新宿鸟岩",
+    "name_en": "Torikazu Shinjuku",
+    "address": "东京都新宿区新宿 3-38-12",
+    "address_en": "3-38-12 Shinjuku, Shinjuku, Tokyo 160-0022, Japan",
+    "phone": "+81-3-3353-0777",
+    "email": "info@torikazu.jp",
+    "website": "https://www.torikazu.jp/",
+    "cuisine": "烤鸡肉串",
+    "price_range": "¥2000-5000/人",
+    "rating": 4.8,
+    "review_count": 3456,
+    "opening_hours": "17:00-02:00",
+    "images": [
+      "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800",
+      "https://images.unsplash.com/photo-1525920481916-483410486746?w=800",
+      "https://images.unsplash.com/photo-1516600162266-98e0463c6fc5?w=800"
+    ],
+    "verified_sources": [
+      {"source": "Google Places", "verified_at": "2026-04-24", "score": 96},
+      {"source": "Tabelog", "verified_at": "2026-04-24", "score": 94}
+    ],
+    "trust_score": 95,
+    "last_updated": "2026-04-24T21:00:00+08:00"
+  }
+]

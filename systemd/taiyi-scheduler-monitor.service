@@ -1,0 +1,18 @@
+[Unit]
+Description=Taiyi Scheduler Agent Monitor - 监控告警
+After=network.target
+
+[Service]
+Type=oneshot
+User=nicola
+WorkingDirectory=/home/nicola/.openclaw/workspace
+Environment="PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+EnvironmentFile=/home/nicola/.openclaw/.env
+ExecStart=/usr/bin/python3 /home/nicola/.openclaw/workspace/scripts/scheduler-monitor.py
+RemainAfterExit=no
+
+Restart=on-failure
+RestartSec=300
+
+[Install]
+WantedBy=multi-user.target

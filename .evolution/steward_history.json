@@ -1,0 +1,18 @@
+{
+  "history": [
+    {
+      "timestamp": "2026-04-12T21:07:35.956793",
+      "tasks_dispatched": 30,
+      "resource_utilization": 94.0,
+      "coordination_efficiency": 96.0,
+      "skills_created": 78
+    }
+  ],
+  "coordination_weights": {
+    "任务分发": 1.0,
+    "资源调度": 1.0,
+    "进度追踪": 1.0,
+    "冲突仲裁": 1.0
+  },
+  "last_updated": "2026-04-12T21:07:35.959020"
+}

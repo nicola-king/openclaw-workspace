@@ -1,0 +1,123 @@
+{
+  "type": "Xian Travel Plan",
+  "origin": "北京",
+  "destination": "西安",
+  "start_date": "2026-05-01",
+  "end_date": "2026-05-04",
+  "days": 4,
+  "travelers": 2,
+  "mode": "国内游",
+  "budget": 3000,
+  "budget_per_person": 1500.0,
+  "budget_allocation": {
+    "交通": 750.0,
+    "住宿": 900.0,
+    "餐饮": 600.0,
+    "活动": 450.0,
+    "购物": 300.0
+  },
+  "preferences": [
+    "历史文化",
+    "美食",
+    "文化体验"
+  ],
+  "daily_itinerary": [
+    {
+      "day": 1,
+      "date": "2026-05-01",
+      "attractions": [
+        {
+          "name": "兵马俑",
+          "duration": "1d",
+          "cost": 120
+        },
+        {
+          "name": "大雁塔",
+          "duration": "2h",
+          "cost": 50
+        },
+        {
+          "name": "回民街",
+          "duration": "2h",
+          "cost": 0
+        }
+      ],
+      "meal_breakfast": "酒店早餐/肉夹馍",
+      "meal_lunch": "羊肉泡馍",
+      "meal_dinner": "回民街小吃"
+    },
+    {
+      "day": 2,
+      "date": "2026-05-02",
+      "attractions": [
+        {
+          "name": "兵马俑",
+          "duration": "1d",
+          "cost": 120
+        },
+        {
+          "name": "大雁塔",
+          "duration": "2h",
+          "cost": 50
+        },
+        {
+          "name": "回民街",
+          "duration": "2h",
+          "cost": 0
+        }
+      ],
+      "meal_breakfast": "酒店早餐/肉夹馍",
+      "meal_lunch": "羊肉泡馍",
+      "meal_dinner": "回民街小吃"
+    },
+    {
+      "day": 3,
+      "date": "2026-05-03",
+      "attractions": [
+        {
+          "name": "兵马俑",
+          "duration": "1d",
+          "cost": 120
+        },
+        {
+          "name": "大雁塔",
+          "duration": "2h",
+          "cost": 50
+        },
+        {
+          "name": "回民街",
+          "duration": "2h",
+          "cost": 0
+        }
+      ],
+      "meal_breakfast": "酒店早餐/肉夹馍",
+      "meal_lunch": "羊肉泡馍",
+      "meal_dinner": "回民街小吃"
+    },
+    {
+      "day": 4,
+      "date": "2026-05-04",
+      "attractions": [
+        {
+          "name": "兵马俑",
+          "duration": "1d",
+          "cost": 120
+        },
+        {
+          "name": "大雁塔",
+          "duration": "2h",
+          "cost": 50
+        },
+        {
+          "name": "回民街",
+          "duration": "2h",
+          "cost": 0
+        }
+      ],
+      "meal_breakfast": "酒店早餐/肉夹馍",
+      "meal_lunch": "羊肉泡馍",
+      "meal_dinner": "回民街小吃"
+    }
+  ],
+  "timestamp": "2026-04-24T21:33:18.972183"
+}

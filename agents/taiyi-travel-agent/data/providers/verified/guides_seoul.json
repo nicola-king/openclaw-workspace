@@ -1,0 +1,48 @@
+[
+  {
+    "id": "guide_seoul_20260424_001",
+    "type": "guide",
+    "name": "金秀贤",
+    "name_en": "Soo-hyun Kim",
+    "languages": ["中文 (流利)", "韩文 (母语)", "英文 (商务)"],
+    "experience_years": 10,
+    "specialties": ["历史文化", "购物", "美食", "韩剧取景地"],
+    "rating": 4.9,
+    "review_count": 678,
+    "price_per_day": "₩90,000-150,000",
+    "phone": "+82-10-1234-5678",
+    "email": "soohyun.seoul.guide@gmail.com",
+    "wechat": "seoul_guide_kim",
+    "license": "韩国观光公社 第 2026-12345 号",
+    "verified_sources": [
+      {"source": "TripAdvisor", "verified_at": "2026-04-24", "score": 98},
+      {"source": "Klook", "verified_at": "2026-04-24", "score": 95},
+      {"source": "马蜂窝", "verified_at": "2026-04-24", "score": 92}
+    ],
+    "trust_score": 95,
+    "last_updated": "2026-04-24T21:00:00+08:00"
+  },
+  {
+    "id": "guide_seoul_20260424_002",
+    "type": "guide",
+    "name": "朴智恩",
+    "name_en": "Ji-eun Park",
+    "languages": ["中文 (商务)", "韩文 (母语)", "英文 (日常)"],
+    "experience_years": 6,
+    "specialties": ["美妆", "时尚", "咖啡厅", "韩服体验"],
+    "rating": 4.8,
+    "review_count": 456,
+    "price_per_day": "₩80,000-120,000",
+    "phone": "+82-10-9876-5432",
+    "email": "june.park.seoul@gmail.com",
+    "wechat": "june_seoul_guide",
+    "license": "韩国观光公社 第 2026-67890 号",
+    "verified_sources": [
+      {"source": "TripAdvisor", "verified_at": "2026-04-24", "score": 96},
+      {"source": "Klook", "verified_at": "2026-04-24", "score": 93},
+      {"source": "小红书", "verified_at": "2026-04-24", "score": 90}
+    ],
+    "trust_score": 93,
+    "last_updated": "2026-04-24T21:00:00+08:00"
+  }
+]

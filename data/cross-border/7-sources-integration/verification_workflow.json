@@ -1,0 +1,69 @@
+{
+  "name": "7 大数据源验证流程",
+  "version": "1.0.0",
+  "steps": [
+    {
+      "step": 1,
+      "name": "全球海关数据验证",
+      "module": "customs_verification",
+      "confidence_weight": 0.2,
+      "auto_execute": true
+    },
+    {
+      "step": 2,
+      "name": "电商销售数据验证",
+      "module": "ecommerce_verification",
+      "confidence_weight": 0.2,
+      "auto_execute": true
+    },
+    {
+      "step": 3,
+      "name": "互联网平台验证",
+      "module": "platforms_verification",
+      "confidence_weight": 0.15,
+      "auto_execute": true
+    },
+    {
+      "step": 4,
+      "name": "搜索引擎验证",
+      "module": "search_verification",
+      "confidence_weight": 0.15,
+      "auto_execute": true
+    },
+    {
+      "step": 5,
+      "name": "第三方报告验证",
+      "module": "reports_verification",
+      "confidence_weight": 0.1,
+      "auto_execute": true
+    },
+    {
+      "step": 6,
+      "name": "海陆空运输验证",
+      "module": "logistics_verification",
+      "confidence_weight": 0.1,
+      "auto_execute": true
+    },
+    {
+      "step": 7,
+      "name": "Google Ads 验证",
+      "module": "ads_verification",
+      "confidence_weight": 0.1,
+      "auto_execute": true
+    },
+    {
+      "step": 8,
+      "name": "综合置信度计算",
+      "module": "confidence_calculation",
+      "auto_execute": true
+    },
+    {
+      "step": 9,
+      "name": "核心记忆写入",
+      "module": "memory_write",
+      "auto_execute": true
+    }
+  ],
+  "auto_execute": true,
+  "parallel_execution": true
+}

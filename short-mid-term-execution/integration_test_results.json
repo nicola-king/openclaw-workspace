@@ -1,0 +1,37 @@
+{
+  "status": "success",
+  "tested": 5,
+  "passed": 5,
+  "details": [
+    {
+      "project": "veo31",
+      "config_exists": true,
+      "readme_exists": true,
+      "status": "pass"
+    },
+    {
+      "project": "skill-evolution",
+      "config_exists": true,
+      "readme_exists": true,
+      "status": "pass"
+    },
+    {
+      "project": "supervision",
+      "config_exists": true,
+      "readme_exists": true,
+      "status": "pass"
+    },
+    {
+      "project": "openmaic",
+      "config_exists": true,
+      "readme_exists": true,
+      "status": "pass"
+    },
+    {
+      "project": "codeflow",
+      "config_exists": true,
+      "readme_exists": true,
+      "status": "pass"
+    }
+  ]
+}

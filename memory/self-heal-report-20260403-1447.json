@@ -1,0 +1,99 @@
+{
+  "timestamp": "2026-04-03T14:47:58+08:00",
+  "check_type": "scheduled_30min",
+  "status": "healthy",
+  
+  "gateway": {
+    "status": "running",
+    "pid": 59444,
+    "port": 18789,
+    "bind": "127.0.0.1",
+    "probe_latency_ms": 26,
+    "uptime": "5分钟"
+  },
+  
+  "channels": {
+    "telegram": {
+      "status": "ok",
+      "accounts": 6,
+      "default": "taiyi"
+    },
+    "feishu": {
+      "status": "ok",
+      "accounts": 6,
+      "default": "taiyi",
+      "connection_mode": "websocket"
+    },
+    "openclaw-weixin": {
+      "status": "enabled",
+      "login_required": true
+    }
+  },
+  
+  "agents": {
+    "total": 9,
+    "active_sessions": 133,
+    "default_model": "qwen3.5-plus",
+    "context_window": 131072
+  },
+  
+  "system": {
+    "os": "linux 6.17.0-20-generic",
+    "node": "22.22.2",
+    "disk_usage": "19% (48G/274G)",
+    "tailscale": "off"
+  },
+  
+  "timers": {
+    "openclaw-net-routing": "3分钟后可用",
+    "openclaw-module-sync": "下次 03:00",
+    "status": "normal"
+  },
+  
+  "security_audit": {
+    "critical": 10,
+    "warn": 5,
+    "info": 1,
+    "main_issues": [
+      "Exec security=full",
+      "Feishu groupPolicy=open",
+      "Open channels can reach exec-enabled agents"
+    ]
+  },
+  
+  "tasks": {
+    "active": 1,
+    "queued": 0,
+    "running": 1,
+    "issues": 124,
+    "tracked": 137
+  },
+  
+  "heartbeat": {
+    "main": "30m",
+    "others": "disabled"
+  },
+  
+  "self_heal_actions": [
+    {
+      "action": "gateway_probe",
+      "result": "ok",
+      "latency_ms": 26
+    },
+    {
+      "action": "plugin_check",
+      "result": "feishu loaded, weixin enabled"
+    },
+    {
+      "action": "session_check",
+      "result": "133 active sessions"
+    },
+    {
+      "action": "disk_check",
+      "result": "19% used, healthy"
+    }
+  ],
+  
+  "next_check": "2026-04-03T15:17:58+08:00",
+  "report_saved": "memory/self-heal-report-20260403-1447.json"
+}

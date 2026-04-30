@@ -1,0 +1,52 @@
+[
+  {
+    "id": "charter_bangkok_20260424_001",
+    "type": "charter",
+    "name": "泰国环球包车",
+    "name_en": "Thailand Global Charter Co., Ltd.",
+    "address": "曼谷是隆路 123 巷 45 号",
+    "address_en": "45, Silom Soi 123, Bangrak, Bangkok 10500, Thailand",
+    "phone": "+66-2-234-5678",
+    "email": "booking@thailandglobal.com",
+    "website": "https://www.thailandglobal.com/",
+    "booking_url": "https://www.ctrip.com/charter/thailand",
+    "company_reg": "泰国商业部 第 2026-12345 号",
+    "service_areas": ["曼谷", "清迈", "普吉岛", "芭堤雅"],
+    "car_types": ["舒适型 (4 座)", "豪华型 (4 座)", "商务型 (6 座)", "大巴 (30 座)"],
+    "price_range": "฿3,000-8,000/天",
+    "operating_hours": "07:00-21:00 (泰国时间)",
+    "languages": ["中文", "泰文", "英文"],
+    "verified_sources": [
+      {"source": "携程", "verified_at": "2026-04-24", "score": 95},
+      {"source": "Google Places", "verified_at": "2026-04-24", "score": 90},
+      {"source": "Klook", "verified_at": "2026-04-24", "score": 88}
+    ],
+    "trust_score": 91,
+    "last_updated": "2026-04-24T21:00:00+08:00"
+  },
+  {
+    "id": "charter_bangkok_20260424_002",
+    "type": "charter",
+    "name": "Grab 包车服务",
+    "name_en": "Grab Thailand Co., Ltd.",
+    "address": "曼谷素坤逸路 21 巷 10 号",
+    "address_en": "10, Sukhumvit Soi 21, Watthana, Bangkok 10110, Thailand",
+    "phone": "+66-2-688-8888",
+    "email": "support@grab.com",
+    "website": "https://www.grab.com/th/",
+    "booking_url": "https://www.grab.com/th/car/",
+    "company_reg": "泰国商业部 第 2026-67890 号",
+    "service_areas": ["曼谷", "清迈", "普吉岛", "合艾"],
+    "car_types": ["经济型 (4 座)", "舒适型 (4 座)", "豪华型 (4 座)", "商务型 (6 座)"],
+    "price_range": "฿2,500-6,000/天",
+    "operating_hours": "24 小时服务",
+    "languages": ["中文", "泰文", "英文", "马来文"],
+    "verified_sources": [
+      {"source": "Grab", "verified_at": "2026-04-24", "score": 98},
+      {"source": "Google Places", "verified_at": "2026-04-24", "score": 94},
+      {"source": "携程", "verified_at": "2026-04-24", "score": 92}
+    ],
+    "trust_score": 95,
+    "last_updated": "2026-04-24T21:00:00+08:00"
+  }
+]

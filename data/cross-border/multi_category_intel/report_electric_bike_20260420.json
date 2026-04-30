@@ -1,0 +1,92 @@
+{
+  "id": "REPORT_electric_bike_20260420",
+  "category_id": "electric_bike",
+  "category_name": "电动自行车",
+  "generated_at": "2026-04-20T21:41:53.855631",
+  "summary": {
+    "manufacturers_tracked": 3,
+    "keywords_monitored": 3,
+    "channels": [
+      "官网",
+      "电商",
+      "社媒",
+      "7 大数据"
+    ],
+    "analysis_dimensions": 6
+  },
+  "top_manufacturers": [
+    {
+      "rank": 1,
+      "name": "雅迪",
+      "location": "无锡"
+    },
+    {
+      "rank": 2,
+      "name": "爱玛",
+      "location": "天津"
+    },
+    {
+      "rank": 3,
+      "name": "台铃",
+      "location": "深圳"
+    }
+  ],
+  "keywords": [
+    "电动自行车",
+    "电动车",
+    "锂电池电动车"
+  ],
+  "ai_insights": [
+    "电动自行车市场需求持续增长",
+    "华东华南为主要市场，西南增长最快",
+    "中端产品占主导市场份额",
+    "智能化、环保是产品创新主流",
+    "海外市场潜力巨大"
+  ],
+  "recommendations": [
+    {
+      "priority": "P0",
+      "category": "市场拓展",
+      "action": "重点开发西南地区和海外市场",
+      "expected_impact": "高"
+    },
+    {
+      "priority": "P1",
+      "category": "产品策略",
+      "action": "聚焦中端产品，增加智能化功能",
+      "expected_impact": "中高"
+    },
+    {
+      "priority": "P1",
+      "category": "价格策略",
+      "action": "保持价格稳定，推出差异化产品",
+      "expected_impact": "中"
+    },
+    {
+      "priority": "P2",
+      "category": "技术创新",
+      "action": "加大智能化和环保材料研发投入",
+      "expected_impact": "高"
+    }
+  ],
+  "alerts": [
+    {
+      "level": "info",
+      "type": "market_growth",
+      "message": "电动自行车市场需求持续增长，建议加大投入",
+      "timestamp": "2026-04-20T21:41:53.855641"
+    },
+    {
+      "level": "opportunity",
+      "type": "emerging_market",
+      "message": "新兴市场机会：东南亚、非洲、中东",
+      "timestamp": "2026-04-20T21:41:53.855644"
+    },
+    {
+      "level": "info",
+      "type": "innovation_trend",
+      "message": "产品创新趋势：智能化、环保材料",
+      "timestamp": "2026-04-20T21:41:53.855646"
+    }
+  ]
+}

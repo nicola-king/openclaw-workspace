@@ -1,0 +1,245 @@
+{
+  "audits": [
+    {
+      "id": "CRAWL_20260420_211910",
+      "domain": "example.com",
+      "timestamp": "2026-04-20T21:19:10.359609",
+      "total_urls": 450,
+      "status_codes": {
+        "200": 400,
+        "301": 30,
+        "302": 5,
+        "404": 10,
+        "500": 5
+      },
+      "content_types": {
+        "html": 350,
+        "images": 80,
+        "css": 15,
+        "js": 5
+      },
+      "issues_found": [
+        {
+          "type": "404 错误",
+          "severity": "high",
+          "count": 10,
+          "recommendation": "修复或重定向死链"
+        },
+        {
+          "type": "500 服务器错误",
+          "severity": "critical",
+          "count": 5,
+          "recommendation": "检查服务器配置"
+        }
+      ]
+    },
+    {
+      "id": "AUDIT_20260420_211910",
+      "domain": "example.com",
+      "timestamp": "2026-04-20T21:19:10.360035",
+      "overall_score": 86,
+      "categories": {
+        "crawlability": {
+          "score": 85,
+          "checks": {
+            "robots.txt": {
+              "status": "pass",
+              "details": "存在且配置正确"
+            },
+            "sitemap.xml": {
+              "status": "pass",
+              "details": "存在且可访问"
+            },
+            "internal_links": {
+              "status": "warning",
+              "details": "部分页面内部链接少"
+            }
+          }
+        },
+        "indexability": {
+          "score": 90,
+          "checks": {
+            "noindex": {
+              "status": "pass",
+              "details": "无意外 noindex"
+            },
+            "canonical": {
+              "status": "pass",
+              "details": "canonical 标签正确"
+            },
+            "duplicate_content": {
+              "status": "warning",
+              "details": "发现 3 个重复页面"
+            }
+          }
+        },
+        "site_speed": {
+          "score": 75,
+          "checks": {
+            "load_time": {
+              "status": "warning",
+              "details": "平均 3.5 秒"
+            },
+            "first_byte": {
+              "status": "pass",
+              "details": "0.5 秒"
+            },
+            "resource_optimization": {
+              "status": "fail",
+              "details": "图片未优化"
+            }
+          }
+        },
+        "mobile": {
+          "score": 95,
+          "checks": {
+            "mobile_friendly": {
+              "status": "pass",
+              "details": "移动友好"
+            },
+            "responsive": {
+              "status": "pass",
+              "details": "响应式设计"
+            },
+            "mobile_speed": {
+              "status": "pass",
+              "details": "移动速度良好"
+            }
+          }
+        },
+        "security": {
+          "score": 100,
+          "checks": {
+            "https": {
+              "status": "pass",
+              "details": "全站 HTTPS"
+            },
+            "ssl": {
+              "status": "pass",
+              "details": "SSL 证书有效"
+            },
+            "mixed_content": {
+              "status": "pass",
+              "details": "无混合内容"
+            }
+          }
+        },
+        "structured_data": {
+          "score": 70,
+          "checks": {
+            "schema": {
+              "status": "warning",
+              "details": "缺少产品 Schema"
+            },
+            "open_graph": {
+              "status": "pass",
+              "details": "Open Graph 完整"
+            },
+            "twitter_cards": {
+              "status": "pass",
+              "details": "Twitter Cards 完整"
+            }
+          }
+        }
+      },
+      "critical_issues": [
+        {
+          "category": "site_speed",
+          "check": "resource_optimization",
+          "details": "图片未优化"
+        }
+      ],
+      "warnings": [
+        {
+          "category": "crawlability",
+          "check": "internal_links",
+          "details": "部分页面内部链接少"
+        },
+        {
+          "category": "indexability",
+          "check": "duplicate_content",
+          "details": "发现 3 个重复页面"
+        },
+        {
+          "category": "site_speed",
+          "check": "load_time",
+          "details": "平均 3.5 秒"
+        },
+        {
+          "category": "structured_data",
+          "check": "schema",
+          "details": "缺少产品 Schema"
+        }
+      ],
+      "recommendations": [
+        {
+          "priority": "P0",
+          "category": "site_speed",
+          "issue": "resource_optimization",
+          "action": "修复：图片未优化",
+          "impact": "高"
+        },
+        {
+          "priority": "P1",
+          "category": "crawlability",
+          "issue": "internal_links",
+          "action": "优化：部分页面内部链接少",
+          "impact": "中"
+        },
+        {
+          "priority": "P1",
+          "category": "indexability",
+          "issue": "duplicate_content",
+          "action": "优化：发现 3 个重复页面",
+          "impact": "中"
+        },
+        {
+          "priority": "P1",
+          "category": "site_speed",
+          "issue": "load_time",
+          "action": "优化：平均 3.5 秒",
+          "impact": "中"
+        },
+        {
+          "priority": "P1",
+          "category": "structured_data",
+          "issue": "schema",
+          "action": "优化：缺少产品 Schema",
+          "impact": "中"
+        }
+      ]
+    }
+  ],
+  "issues": [
+    {
+      "id": "BROKEN_20260420_211910",
+      "domain": "example.com",
+      "timestamp": "2026-04-20T21:19:10.360840",
+      "total_checked": 450,
+      "broken_count": 10,
+      "broken_links": [
+        {
+          "url": "/old-product",
+          "status": 404,
+          "linked_from": [
+            "/products",
+            "/blog"
+          ]
+        },
+        {
+          "url": "/discontinued",
+          "status": 404,
+          "linked_from": [
+            "/archive"
+          ]
+        }
+      ],
+      "recommendations": [
+        "设置 301 重定向到相关页面",
+        "更新内部链接",
+        "创建自定义 404 页面"
+      ]
+    }
+  ],
+  "fixes": []
+}

@@ -1,0 +1,77 @@
+[
+  {
+    "id": "attraction_bangkok_001",
+    "name": "大皇宫",
+    "name_en": "Grand Palace",
+    "type": "历史文化",
+    "address": "曼谷拍那空区猜那空路",
+    "address_en": "Na Phra Lan Road, Phra Borom Maha Ratchawang, Phra Nakhon, Bangkok, Thailand",
+    "phone": "+66-2-623-5500",
+    "website": "https://www Grandpalace.thai.go.th/",
+    "duration": "3h",
+    "cost": 500,
+    "rating": 4.8,
+    "opening_hours": "08:30-15:30",
+    "images": [
+      "https://images.unsplash.com/photo-1563492065599-3520f775eeed?w=800",
+      "https://images.unsplash.com/photo-1553830920-332f7c6d14e7?w=800",
+      "https://images.unsplash.com/photo-1506665531115-b97e69860485?w=800"
+    ],
+    "description": "泰国历代王宫，金碧辉煌的建筑群",
+    "verified_sources": [
+      {"source": "Google Places", "verified_at": "2026-04-24", "score": 98},
+      {"source": "TripAdvisor", "verified_at": "2026-04-24", "score": 96}
+    ],
+    "trust_score": 97
+  },
+  {
+    "id": "attraction_bangkok_002",
+    "name": "考山路",
+    "name_en": "Khao San Road",
+    "type": "美食",
+    "address": "曼谷拍那空区考山路",
+    "address_en": "Khao San Road, Bang Lamphu, Phra Nakhon, Bangkok, Thailand",
+    "phone": "N/A",
+    "website": "https://www.khaosanroad.com/",
+    "duration": "3h",
+    "cost": 0,
+    "rating": 4.5,
+    "opening_hours": "18:00-02:00",
+    "images": [
+      "https://images.unsplash.com/photo-1563492065599-3520f775eeed?w=800",
+      "https://images.unsplash.com/photo-1553830920-332f7c6d14e7?w=800",
+      "https://images.unsplash.com/photo-1506665531115-b97e69860485?w=800"
+    ],
+    "description": "背包客圣地，夜市美食集中地",
+    "verified_sources": [
+      {"source": "Google Places", "verified_at": "2026-04-24", "score": 95},
+      {"source": "TripAdvisor", "verified_at": "2026-04-24", "score": 93}
+    ],
+    "trust_score": 94
+  },
+  {
+    "id": "attraction_bangkok_003",
+    "name": "水上市场",
+    "name_en": "Damnoen Saduak Floating Market",
+    "type": "文化体验",
+    "address": "叻武里府丹嫩沙多县",
+    "address_en": "Damnoen Saduak District, Ratchaburi Province, Thailand",
+    "phone": "+66-32-242222",
+    "website": "https://www.tourismthailand.org/",
+    "duration": "1d",
+    "cost": 1500,
+    "rating": 4.6,
+    "opening_hours": "07:00-12:00",
+    "images": [
+      "https://images.unsplash.com/photo-1563492065599-3520f775eeed?w=800",
+      "https://images.unsplash.com/photo-1553830920-332f7c6d14e7?w=800",
+      "https://images.unsplash.com/photo-1506665531115-b97e69860485?w=800"
+    ],
+    "description": "泰国传统水上市场，船上的美食天堂",
+    "verified_sources": [
+      {"source": "Google Places", "verified_at": "2026-04-24", "score": 96},
+      {"source": "TripAdvisor", "verified_at": "2026-04-24", "score": 94}
+    ],
+    "trust_score": 95
+  }
+]

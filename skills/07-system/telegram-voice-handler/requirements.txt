@@ -1,0 +1,13 @@
+# Telegram 语音处理器依赖
+
+# 方案 1: Whisper (推荐，免费本地)
+openai-whisper>=20231117
+
+# 方案 2: Azure Speech (云端，免费 500 分钟/月)
+azure-cognitiveservices-speech>=1.30.0
+
+# Telegram Bot
+python-telegram-bot>=20.0
+
+# 音频处理
+pydub>=0.25.0

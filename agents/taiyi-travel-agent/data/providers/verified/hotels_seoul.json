@@ -1,0 +1,77 @@
+[
+  {
+    "id": "hotel_seoul_20260424_001",
+    "type": "hotel",
+    "name": "首尔半岛酒店",
+    "name_en": "The Peninsula Seoul",
+    "address": "首尔特别市汝矣岛洞 20 街 30",
+    "address_en": "30, 20-gil, Yeouido-dong, Yeongdeungpo-gu, Seoul, South Korea",
+    "phone": "+82-2-730-2888",
+    "email": "reservations.seoul@peninsula.com",
+    "website": "https://www.peninsula.com/en/seoul",
+    "booking_url": "https://www.booking.com/hotel/kr/peninsula-seoul.zh-cn.html",
+    "rating": 4.8,
+    "review_count": 1890,
+    "price_range": "₩200,000-500,000/晚",
+    "check_in": "15:00",
+    "check_out": "12:00",
+    "facilities": ["WiFi", "餐厅", "健身房", "游泳池", "水疗", "停车场"],
+    "verified_sources": [
+      {"source": "Booking.com", "verified_at": "2026-04-24", "score": 97},
+      {"source": "Google Places", "verified_at": "2026-04-24", "score": 95},
+      {"source": "携程", "verified_at": "2026-04-24", "score": 93}
+    ],
+    "trust_score": 95,
+    "last_updated": "2026-04-24T21:00:00+08:00"
+  },
+  {
+    "id": "hotel_seoul_20260424_002",
+    "type": "hotel",
+    "name": "乐天酒店首尔",
+    "name_en": "Lotte Hotel Seoul",
+    "address": "首尔特别市小公洞 1 街 300",
+    "address_en": "300, Sogong-dong, Jung-gu, Seoul, South Korea",
+    "phone": "+82-2-771-1000",
+    "email": "reserve@lottehotel.com",
+    "website": "https://www.lottehotel.com/seoul",
+    "booking_url": "https://www.booking.com/hotel/kr/lotte-seoul.zh-cn.html",
+    "rating": 4.7,
+    "review_count": 2345,
+    "price_range": "₩180,000-450,000/晚",
+    "check_in": "15:00",
+    "check_out": "11:00",
+    "facilities": ["WiFi", "餐厅", "健身房", "游泳池", "水疗"],
+    "verified_sources": [
+      {"source": "Booking.com", "verified_at": "2026-04-24", "score": 96},
+      {"source": "Google Places", "verified_at": "2026-04-24", "score": 94},
+      {"source": "Agoda", "verified_at": "2026-04-24", "score": 92}
+    ],
+    "trust_score": 94,
+    "last_updated": "2026-04-24T21:00:00+08:00"
+  },
+  {
+    "id": "hotel_seoul_20260424_003",
+    "type": "hotel",
+    "name": "明洞乐天城市酒店",
+    "name_en": "Lotte City Hotel Myeongdong",
+    "address": "首尔特别市明洞街 70 街 40",
+    "address_en": "40, Myeongdong-gil, Jung-gu, Seoul, South Korea",
+    "phone": "+82-2-778-1000",
+    "email": "myeongdong@lottehotel.com",
+    "website": "https://www.lottecityhotel.com/myeongdong",
+    "booking_url": "https://www.booking.com/hotel/kr/lotte-city-myeongdong.zh-cn.html",
+    "rating": 4.5,
+    "review_count": 3456,
+    "price_range": "₩120,000-300,000/晚",
+    "check_in": "15:00",
+    "check_out": "11:00",
+    "facilities": ["WiFi", "餐厅", "健身房", "行李寄存"],
+    "verified_sources": [
+      {"source": "Booking.com", "verified_at": "2026-04-24", "score": 94},
+      {"source": "Google Places", "verified_at": "2026-04-24", "score": 91},
+      {"source": "携程", "verified_at": "2026-04-24", "score": 90}
+    ],
+    "trust_score": 92,
+    "last_updated": "2026-04-24T21:00:00+08:00"
+  }
+]

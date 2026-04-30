@@ -1,0 +1,447 @@
+{
+  "categories": {
+    "steel_foldable_house": {
+      "id": "steel_foldable_house",
+      "name": "钢结构折叠房屋",
+      "top_n": 10,
+      "manufacturers": [
+        {
+          "rank": 1,
+          "name": "中集集团 (CIMC)",
+          "location": "深圳"
+        },
+        {
+          "rank": 2,
+          "name": "远大住工",
+          "location": "长沙"
+        },
+        {
+          "rank": 3,
+          "name": "杭萧钢构",
+          "location": "杭州"
+        }
+      ],
+      "keywords": [
+        "钢结构",
+        "折叠房屋",
+        "集装箱房屋"
+      ],
+      "channels": [
+        "官网",
+        "电商",
+        "社媒",
+        "7 大数据"
+      ],
+      "analysis_dimensions": [
+        "市场需求变化趋势",
+        "地区分布",
+        "价格走势",
+        "产品创新",
+        "营销策略",
+        "客户评价"
+      ],
+      "enabled": true,
+      "created_at": "2026-04-20T21:41:53.847796",
+      "last_updated": "2026-04-20T21:41:53.847809"
+    },
+    "portable_power_station": {
+      "id": "portable_power_station",
+      "name": "便携式储能电源",
+      "top_n": 10,
+      "manufacturers": [
+        {
+          "rank": 1,
+          "name": "华宝新能",
+          "location": "深圳"
+        },
+        {
+          "rank": 2,
+          "name": "正浩科技",
+          "location": "深圳"
+        },
+        {
+          "rank": 3,
+          "name": "德兰明海",
+          "location": "深圳"
+        }
+      ],
+      "keywords": [
+        "储能电源",
+        "便携式电源",
+        "户外电源"
+      ],
+      "channels": [
+        "官网",
+        "电商",
+        "社媒",
+        "7 大数据"
+      ],
+      "analysis_dimensions": [
+        "市场需求变化趋势",
+        "地区分布",
+        "价格走势",
+        "产品创新",
+        "营销策略",
+        "客户评价"
+      ],
+      "enabled": true,
+      "created_at": "2026-04-20T21:41:53.848159",
+      "last_updated": "2026-04-20T21:41:53.848165"
+    },
+    "electric_bike": {
+      "id": "electric_bike",
+      "name": "电动自行车",
+      "top_n": 10,
+      "manufacturers": [
+        {
+          "rank": 1,
+          "name": "雅迪",
+          "location": "无锡"
+        },
+        {
+          "rank": 2,
+          "name": "爱玛",
+          "location": "天津"
+        },
+        {
+          "rank": 3,
+          "name": "台铃",
+          "location": "深圳"
+        }
+      ],
+      "keywords": [
+        "电动自行车",
+        "电动车",
+        "锂电池电动车"
+      ],
+      "channels": [
+        "官网",
+        "电商",
+        "社媒",
+        "7 大数据"
+      ],
+      "analysis_dimensions": [
+        "市场需求变化趋势",
+        "地区分布",
+        "价格走势",
+        "产品创新",
+        "营销策略",
+        "客户评价"
+      ],
+      "enabled": true,
+      "created_at": "2026-04-20T21:41:53.848581",
+      "last_updated": "2026-04-20T21:41:53.848588"
+    }
+  },
+  "tracking_history": [
+    {
+      "timestamp": "2026-04-20T21:41:53.853367",
+      "categories_tracked": 3,
+      "results": {
+        "steel_foldable_house": {
+          "category_id": "steel_foldable_house",
+          "category_name": "钢结构折叠房屋",
+          "manufacturers_count": 3,
+          "keywords_count": 3,
+          "status": "completed",
+          "tracked_at": "2026-04-20T21:41:53.853280"
+        },
+        "portable_power_station": {
+          "category_id": "portable_power_station",
+          "category_name": "便携式储能电源",
+          "manufacturers_count": 3,
+          "keywords_count": 3,
+          "status": "completed",
+          "tracked_at": "2026-04-20T21:41:53.853330"
+        },
+        "electric_bike": {
+          "category_id": "electric_bike",
+          "category_name": "电动自行车",
+          "manufacturers_count": 3,
+          "keywords_count": 3,
+          "status": "completed",
+          "tracked_at": "2026-04-20T21:41:53.853363"
+        }
+      }
+    }
+  ],
+  "reports": [
+    {
+      "id": "REPORT_steel_foldable_house_20260420",
+      "category_id": "steel_foldable_house",
+      "category_name": "钢结构折叠房屋",
+      "generated_at": "2026-04-20T21:41:53.853939",
+      "summary": {
+        "manufacturers_tracked": 3,
+        "keywords_monitored": 3,
+        "channels": [
+          "官网",
+          "电商",
+          "社媒",
+          "7 大数据"
+        ],
+        "analysis_dimensions": 6
+      },
+      "top_manufacturers": [
+        {
+          "rank": 1,
+          "name": "中集集团 (CIMC)",
+          "location": "深圳"
+        },
+        {
+          "rank": 2,
+          "name": "远大住工",
+          "location": "长沙"
+        },
+        {
+          "rank": 3,
+          "name": "杭萧钢构",
+          "location": "杭州"
+        }
+      ],
+      "keywords": [
+        "钢结构",
+        "折叠房屋",
+        "集装箱房屋"
+      ],
+      "ai_insights": [
+        "钢结构折叠房屋市场需求持续增长",
+        "华东华南为主要市场，西南增长最快",
+        "中端产品占主导市场份额",
+        "智能化、环保是产品创新主流",
+        "海外市场潜力巨大"
+      ],
+      "recommendations": [
+        {
+          "priority": "P0",
+          "category": "市场拓展",
+          "action": "重点开发西南地区和海外市场",
+          "expected_impact": "高"
+        },
+        {
+          "priority": "P1",
+          "category": "产品策略",
+          "action": "聚焦中端产品，增加智能化功能",
+          "expected_impact": "中高"
+        },
+        {
+          "priority": "P1",
+          "category": "价格策略",
+          "action": "保持价格稳定，推出差异化产品",
+          "expected_impact": "中"
+        },
+        {
+          "priority": "P2",
+          "category": "技术创新",
+          "action": "加大智能化和环保材料研发投入",
+          "expected_impact": "高"
+        }
+      ],
+      "alerts": [
+        {
+          "level": "info",
+          "type": "market_growth",
+          "message": "钢结构折叠房屋市场需求持续增长，建议加大投入",
+          "timestamp": "2026-04-20T21:41:53.853955"
+        },
+        {
+          "level": "opportunity",
+          "type": "emerging_market",
+          "message": "新兴市场机会：东南亚、非洲、中东",
+          "timestamp": "2026-04-20T21:41:53.853958"
+        },
+        {
+          "level": "info",
+          "type": "innovation_trend",
+          "message": "产品创新趋势：智能化、环保材料",
+          "timestamp": "2026-04-20T21:41:53.853960"
+        }
+      ]
+    },
+    {
+      "id": "REPORT_portable_power_station_20260420",
+      "category_id": "portable_power_station",
+      "category_name": "便携式储能电源",
+      "generated_at": "2026-04-20T21:41:53.854744",
+      "summary": {
+        "manufacturers_tracked": 3,
+        "keywords_monitored": 3,
+        "channels": [
+          "官网",
+          "电商",
+          "社媒",
+          "7 大数据"
+        ],
+        "analysis_dimensions": 6
+      },
+      "top_manufacturers": [
+        {
+          "rank": 1,
+          "name": "华宝新能",
+          "location": "深圳"
+        },
+        {
+          "rank": 2,
+          "name": "正浩科技",
+          "location": "深圳"
+        },
+        {
+          "rank": 3,
+          "name": "德兰明海",
+          "location": "深圳"
+        }
+      ],
+      "keywords": [
+        "储能电源",
+        "便携式电源",
+        "户外电源"
+      ],
+      "ai_insights": [
+        "便携式储能电源市场需求持续增长",
+        "华东华南为主要市场，西南增长最快",
+        "中端产品占主导市场份额",
+        "智能化、环保是产品创新主流",
+        "海外市场潜力巨大"
+      ],
+      "recommendations": [
+        {
+          "priority": "P0",
+          "category": "市场拓展",
+          "action": "重点开发西南地区和海外市场",
+          "expected_impact": "高"
+        },
+        {
+          "priority": "P1",
+          "category": "产品策略",
+          "action": "聚焦中端产品，增加智能化功能",
+          "expected_impact": "中高"
+        },
+        {
+          "priority": "P1",
+          "category": "价格策略",
+          "action": "保持价格稳定，推出差异化产品",
+          "expected_impact": "中"
+        },
+        {
+          "priority": "P2",
+          "category": "技术创新",
+          "action": "加大智能化和环保材料研发投入",
+          "expected_impact": "高"
+        }
+      ],
+      "alerts": [
+        {
+          "level": "info",
+          "type": "market_growth",
+          "message": "便携式储能电源市场需求持续增长，建议加大投入",
+          "timestamp": "2026-04-20T21:41:53.854755"
+        },
+        {
+          "level": "opportunity",
+          "type": "emerging_market",
+          "message": "新兴市场机会：东南亚、非洲、中东",
+          "timestamp": "2026-04-20T21:41:53.854757"
+        },
+        {
+          "level": "info",
+          "type": "innovation_trend",
+          "message": "产品创新趋势：智能化、环保材料",
+          "timestamp": "2026-04-20T21:41:53.854759"
+        }
+      ]
+    },
+    {
+      "id": "REPORT_electric_bike_20260420",
+      "category_id": "electric_bike",
+      "category_name": "电动自行车",
+      "generated_at": "2026-04-20T21:41:53.855631",
+      "summary": {
+        "manufacturers_tracked": 3,
+        "keywords_monitored": 3,
+        "channels": [
+          "官网",
+          "电商",
+          "社媒",
+          "7 大数据"
+        ],
+        "analysis_dimensions": 6
+      },
+      "top_manufacturers": [
+        {
+          "rank": 1,
+          "name": "雅迪",
+          "location": "无锡"
+        },
+        {
+          "rank": 2,
+          "name": "爱玛",
+          "location": "天津"
+        },
+        {
+          "rank": 3,
+          "name": "台铃",
+          "location": "深圳"
+        }
+      ],
+      "keywords": [
+        "电动自行车",
+        "电动车",
+        "锂电池电动车"
+      ],
+      "ai_insights": [
+        "电动自行车市场需求持续增长",
+        "华东华南为主要市场，西南增长最快",
+        "中端产品占主导市场份额",
+        "智能化、环保是产品创新主流",
+        "海外市场潜力巨大"
+      ],
+      "recommendations": [
+        {
+          "priority": "P0",
+          "category": "市场拓展",
+          "action": "重点开发西南地区和海外市场",
+          "expected_impact": "高"
+        },
+        {
+          "priority": "P1",
+          "category": "产品策略",
+          "action": "聚焦中端产品，增加智能化功能",
+          "expected_impact": "中高"
+        },
+        {
+          "priority": "P1",
+          "category": "价格策略",
+          "action": "保持价格稳定，推出差异化产品",
+          "expected_impact": "中"
+        },
+        {
+          "priority": "P2",
+          "category": "技术创新",
+          "action": "加大智能化和环保材料研发投入",
+          "expected_impact": "高"
+        }
+      ],
+      "alerts": [
+        {
+          "level": "info",
+          "type": "market_growth",
+          "message": "电动自行车市场需求持续增长，建议加大投入",
+          "timestamp": "2026-04-20T21:41:53.855641"
+        },
+        {
+          "level": "opportunity",
+          "type": "emerging_market",
+          "message": "新兴市场机会：东南亚、非洲、中东",
+          "timestamp": "2026-04-20T21:41:53.855644"
+        },
+        {
+          "level": "info",
+          "type": "innovation_trend",
+          "message": "产品创新趋势：智能化、环保材料",
+          "timestamp": "2026-04-20T21:41:53.855646"
+        }
+      ]
+    }
+  ],
+  "alerts": []
+}

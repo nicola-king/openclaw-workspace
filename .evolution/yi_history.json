@@ -1,0 +1,18 @@
+{
+  "history": [
+    {
+      "timestamp": "2026-04-12T21:07:35.931016",
+      "signals_captured": 25,
+      "detection_accuracy": 97.0,
+      "response_speed": 95.0,
+      "skills_created": 78
+    }
+  ],
+  "monitor_weights": {
+    "信号捕捉": 1.0,
+    "异常检测": 1.0,
+    "实时监控": 1.0,
+    "事件响应": 1.0
+  },
+  "last_updated": "2026-04-12T21:07:35.933238"
+}

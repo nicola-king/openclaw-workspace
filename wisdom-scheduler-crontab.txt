@@ -1,0 +1,2 @@
+0 8 * * * cd /home/nicola/.openclaw/workspace && python3 skills/05-content/wisdom-scheduler/src/scheduler.py --dao >> logs/wisdom-scheduler/dao-cron.log 2>&1
+0 20 * * * cd /home/nicola/.openclaw/workspace && python3 skills/05-content/wisdom-scheduler/src/scheduler.py --wu >> logs/wisdom-scheduler/wu-cron.log 2>&1

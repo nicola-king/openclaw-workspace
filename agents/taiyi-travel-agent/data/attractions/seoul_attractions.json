@@ -1,0 +1,77 @@
+[
+  {
+    "id": "attraction_seoul_001",
+    "name": "景福宫",
+    "name_en": "Gyeongbokgung Palace",
+    "type": "历史文化",
+    "address": "首尔特别市钟路区世宗路 1-1",
+    "address_en": "1-1 Sejong-daero, Jongno-gu, Seoul, South Korea",
+    "phone": "+82-2-3700-3900",
+    "website": "https://www.royalpalace.go.kr/",
+    "duration": "2h",
+    "cost": 3000,
+    "rating": 4.7,
+    "opening_hours": "09:00-18:00 (周二闭馆)",
+    "images": [
+      "https://images.unsplash.com/photo-1538485399081-3c67f865ccb1?w=800",
+      "https://images.unsplash.com/photo-1547838028-4e71-ba0f205b8d77?w=800",
+      "https://images.unsplash.com/photo-1517154421773-0529f29ea451?w=800"
+    ],
+    "description": "朝鲜王朝正宫，首尔最大规模宫殿",
+    "verified_sources": [
+      {"source": "Google Places", "verified_at": "2026-04-24", "score": 97},
+      {"source": "TripAdvisor", "verified_at": "2026-04-24", "score": 95}
+    ],
+    "trust_score": 96
+  },
+  {
+    "id": "attraction_seoul_002",
+    "name": "明洞",
+    "name_en": "Myeongdong",
+    "type": "购物",
+    "address": "首尔特别市中区明洞",
+    "address_en": "Myeongdong, Jung-gu, Seoul, South Korea",
+    "phone": "N/A",
+    "website": "https://www.myeongdong.or.kr/",
+    "duration": "3h",
+    "cost": 0,
+    "rating": 4.6,
+    "opening_hours": "10:00-23:00",
+    "images": [
+      "https://images.unsplash.com/photo-1538485399081-3c67f865ccb1?w=800",
+      "https://images.unsplash.com/photo-1547838028-4e71-ba0f205b8d77?w=800",
+      "https://images.unsplash.com/photo-1517154421773-0529f29ea451?w=800"
+    ],
+    "description": "首尔最大购物区，美妆/服饰/美食集中地",
+    "verified_sources": [
+      {"source": "Google Places", "verified_at": "2026-04-24", "score": 95},
+      {"source": "TripAdvisor", "verified_at": "2026-04-24", "score": 93}
+    ],
+    "trust_score": 94
+  },
+  {
+    "id": "attraction_seoul_003",
+    "name": "南山塔",
+    "name_en": "N Seoul Tower",
+    "type": "现代都市",
+    "address": "首尔特别市龙山区南山公园路 105",
+    "address_en": "105 Namsan-gongwon-gil, Yongsan-gu, Seoul, South Korea",
+    "phone": "+82-2-3455-9277",
+    "website": "https://www.seoultower.co.kr/",
+    "duration": "2h",
+    "cost": 15000,
+    "rating": 4.5,
+    "opening_hours": "10:00-23:00",
+    "images": [
+      "https://images.unsplash.com/photo-1538485399081-3c67f865ccb1?w=800",
+      "https://images.unsplash.com/photo-1547838028-4e71-ba0f205b8d77?w=800",
+      "https://images.unsplash.com/photo-1517154421773-0529f29ea451?w=800"
+    ],
+    "description": "首尔地标，可俯瞰全城夜景",
+    "verified_sources": [
+      {"source": "Google Places", "verified_at": "2026-04-24", "score": 96},
+      {"source": "TripAdvisor", "verified_at": "2026-04-24", "score": 94}
+    ],
+    "trust_score": 95
+  }
+]

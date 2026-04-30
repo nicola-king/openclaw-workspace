@@ -1,0 +1,33 @@
+{
+  "name": "交叉验证自动化系统",
+  "version": "1.0.0",
+  "verification_matrix": {
+    "customs_vs_ecommerce": {
+      "description": "海关数据 vs 电商销售数据",
+      "match_threshold": 0.8,
+      "confidence_boost": 0.1
+    },
+    "platforms_vs_search": {
+      "description": "互联网平台 vs 搜索引擎",
+      "match_threshold": 0.75,
+      "confidence_boost": 0.08
+    },
+    "reports_vs_logistics": {
+      "description": "第三方报告 vs 物流数据",
+      "match_threshold": 0.7,
+      "confidence_boost": 0.07
+    },
+    "all_sources": {
+      "description": "7 大数据源交叉验证",
+      "match_threshold": 0.85,
+      "confidence_boost": 0.15
+    }
+  },
+  "auto_execute": true,
+  "parallel_verification": true,
+  "output": {
+    "format": "json",
+    "include_verification_matrix": true,
+    "include_confidence_breakdown": true
+  }
+}

@@ -1,0 +1,395 @@
+{
+  "keywords": {
+    "portable power station_US_today 12-m": {
+      "keyword": "portable power station",
+      "geo": "US",
+      "time_range": "today 12-m",
+      "data": {
+        "keyword": "portable power station",
+        "geo": "US",
+        "time_range": "today 12-m",
+        "timeline_data": [
+          {
+            "date": "2025-04",
+            "interest": 40.0
+          },
+          {
+            "date": "2025-05",
+            "interest": 53.79425538604203
+          },
+          {
+            "date": "2025-06",
+            "interest": 58.414709848078964
+          },
+          {
+            "date": "2025-07",
+            "interest": 52.97494986604055
+          },
+          {
+            "date": "2025-08",
+            "interest": 64.09297426825682
+          },
+          {
+            "date": "2025-09",
+            "interest": 56.98472144103957
+          },
+          {
+            "date": "2025-10",
+            "interest": 53.411200080598675
+          },
+          {
+            "date": "2025-11",
+            "interest": 47.492167723103805
+          },
+          {
+            "date": "2025-12",
+            "interest": 55.43197504692072
+          },
+          {
+            "date": "2026-01",
+            "interest": 51.22469882334903
+          },
+          {
+            "date": "2026-02",
+            "interest": 48.410757253368615
+          },
+          {
+            "date": "2026-03",
+            "interest": 55.94459674429608
+          }
+        ],
+        "average_interest": 53.2,
+        "peak_interest": 64.09297426825682,
+        "trend_direction": "stable",
+        "growth_rate": 39.9,
+        "related_queries": {
+          "top": [
+            {
+              "query": "portable power station price",
+              "value": 100
+            },
+            {
+              "query": "portable power station supplier",
+              "value": 85
+            },
+            {
+              "query": "portable power station manufacturer",
+              "value": 72
+            },
+            {
+              "query": "portable power station wholesale",
+              "value": 65
+            },
+            {
+              "query": "portable power station bulk",
+              "value": 58
+            }
+          ],
+          "rising": [
+            {
+              "query": "portable power station 2026",
+              "value": "Breakout"
+            },
+            {
+              "query": "best portable power station",
+              "value": "+350%"
+            },
+            {
+              "query": "portable power station near me",
+              "value": "+280%"
+            },
+            {
+              "query": "portable power station online",
+              "value": "+150%"
+            }
+          ]
+        },
+        "regional_interest": [
+          {
+            "region": "California",
+            "interest": 100
+          },
+          {
+            "region": "Texas",
+            "interest": 85
+          },
+          {
+            "region": "New York",
+            "interest": 78
+          },
+          {
+            "region": "Florida",
+            "interest": 72
+          },
+          {
+            "region": "Illinois",
+            "interest": 65
+          }
+        ],
+        "category": "general"
+      },
+      "fetched_at": "2026-04-19T19:21:35.225224"
+    },
+    "solar generator_US_today 12-m": {
+      "keyword": "solar generator",
+      "geo": "US",
+      "time_range": "today 12-m",
+      "data": {
+        "keyword": "solar generator",
+        "geo": "US",
+        "time_range": "today 12-m",
+        "timeline_data": [
+          {
+            "date": "2025-04",
+            "interest": 36.0
+          },
+          {
+            "date": "2025-05",
+            "interest": 45.79425538604203
+          },
+          {
+            "date": "2025-06",
+            "interest": 53.414709848078964
+          },
+          {
+            "date": "2025-07",
+            "interest": 51.97494986604055
+          },
+          {
+            "date": "2025-08",
+            "interest": 58.09297426825682
+          },
+          {
+            "date": "2025-09",
+            "interest": 54.98472144103957
+          },
+          {
+            "date": "2025-10",
+            "interest": 50.411200080598675
+          },
+          {
+            "date": "2025-11",
+            "interest": 48.492167723103805
+          },
+          {
+            "date": "2025-12",
+            "interest": 43.43197504692072
+          },
+          {
+            "date": "2026-01",
+            "interest": 49.22469882334903
+          },
+          {
+            "date": "2026-02",
+            "interest": 49.410757253368615
+          },
+          {
+            "date": "2026-03",
+            "interest": 55.94459674429608
+          }
+        ],
+        "average_interest": 49.8,
+        "peak_interest": 58.09297426825682,
+        "trend_direction": "rising",
+        "growth_rate": 55.4,
+        "related_queries": {
+          "top": [
+            {
+              "query": "solar generator price",
+              "value": 100
+            },
+            {
+              "query": "solar generator supplier",
+              "value": 85
+            },
+            {
+              "query": "solar generator manufacturer",
+              "value": 72
+            },
+            {
+              "query": "solar generator wholesale",
+              "value": 65
+            },
+            {
+              "query": "solar generator bulk",
+              "value": 58
+            }
+          ],
+          "rising": [
+            {
+              "query": "solar generator 2026",
+              "value": "Breakout"
+            },
+            {
+              "query": "best solar generator",
+              "value": "+350%"
+            },
+            {
+              "query": "solar generator near me",
+              "value": "+280%"
+            },
+            {
+              "query": "solar generator online",
+              "value": "+150%"
+            }
+          ]
+        },
+        "regional_interest": [
+          {
+            "region": "California",
+            "interest": 100
+          },
+          {
+            "region": "Texas",
+            "interest": 85
+          },
+          {
+            "region": "New York",
+            "interest": 78
+          },
+          {
+            "region": "Florida",
+            "interest": 72
+          },
+          {
+            "region": "Illinois",
+            "interest": 65
+          }
+        ],
+        "category": "general"
+      },
+      "fetched_at": "2026-04-19T19:21:35.219176"
+    },
+    "electric bike_US_today 12-m": {
+      "keyword": "electric bike",
+      "geo": "US",
+      "time_range": "today 12-m",
+      "data": {
+        "keyword": "electric bike",
+        "geo": "US",
+        "time_range": "today 12-m",
+        "timeline_data": [
+          {
+            "date": "2025-04",
+            "interest": 36.0
+          },
+          {
+            "date": "2025-05",
+            "interest": 45.79425538604203
+          },
+          {
+            "date": "2025-06",
+            "interest": 56.414709848078964
+          },
+          {
+            "date": "2025-07",
+            "interest": 59.97494986604055
+          },
+          {
+            "date": "2025-08",
+            "interest": 60.09297426825682
+          },
+          {
+            "date": "2025-09",
+            "interest": 50.98472144103957
+          },
+          {
+            "date": "2025-10",
+            "interest": 57.411200080598675
+          },
+          {
+            "date": "2025-11",
+            "interest": 44.492167723103805
+          },
+          {
+            "date": "2025-12",
+            "interest": 48.43197504692072
+          },
+          {
+            "date": "2026-01",
+            "interest": 47.22469882334903
+          },
+          {
+            "date": "2026-02",
+            "interest": 54.410757253368615
+          },
+          {
+            "date": "2026-03",
+            "interest": 54.94459674429608
+          }
+        ],
+        "average_interest": 51.3,
+        "peak_interest": 60.09297426825682,
+        "trend_direction": "rising",
+        "growth_rate": 52.6,
+        "related_queries": {
+          "top": [
+            {
+              "query": "electric bike price",
+              "value": 100
+            },
+            {
+              "query": "electric bike supplier",
+              "value": 85
+            },
+            {
+              "query": "electric bike manufacturer",
+              "value": 72
+            },
+            {
+              "query": "electric bike wholesale",
+              "value": 65
+            },
+            {
+              "query": "electric bike bulk",
+              "value": 58
+            }
+          ],
+          "rising": [
+            {
+              "query": "electric bike 2026",
+              "value": "Breakout"
+            },
+            {
+              "query": "best electric bike",
+              "value": "+350%"
+            },
+            {
+              "query": "electric bike near me",
+              "value": "+280%"
+            },
+            {
+              "query": "electric bike online",
+              "value": "+150%"
+            }
+          ]
+        },
+        "regional_interest": [
+          {
+            "region": "California",
+            "interest": 100
+          },
+          {
+            "region": "Texas",
+            "interest": 85
+          },
+          {
+            "region": "New York",
+            "interest": 78
+          },
+          {
+            "region": "Florida",
+            "interest": 72
+          },
+          {
+            "region": "Illinois",
+            "interest": 65
+          }
+        ],
+        "category": "general"
+      },
+      "fetched_at": "2026-04-19T19:21:35.223983"
+    }
+  },
+  "last_update": "2026-04-19T19:21:35.225232"
+}

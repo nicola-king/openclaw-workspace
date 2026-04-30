@@ -1,0 +1,140 @@
+# 太一贵客跨境贸易 Agent - 定时任务配置
+# 配置时间：2026-04-19 20:39
+# 时区：Asia/Shanghai
+# 品牌：太一出手，贵客自来
+
+# ============================================
+# 环境变量
+# ============================================
+
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+MAILTO=""
+
+# ============================================
+# 太一贵客核心任务
+# ============================================
+
+# 晨间新闻推送 - 每日 08:00
+0 8 * * * cd /home/nicola/.openclaw/workspace/skills/01-trading/cross-border-trade-agent && python3 self_media_engine.py --task daily_news >> logs/cross-border/daily_news.log 2>&1
+
+# 流量数据汇总 - 每日 20:00
+0 20 * * * cd /home/nicola/.openclaw/workspace/skills/01-trading/cross-border-trade-agent && python3 self_media_engine.py --task traffic_report >> logs/cross-border/traffic_report.log 2>&1
+
+# ============================================
+# 周度任务
+# ============================================
+
+# 周度深度分析 - 工作日 09:00
+0 9 * * 1-5 cd /home/nicola/.openclaw/workspace/skills/01-trading/cross-border-trade-agent && python3 self_media_engine.py --task weekly_analysis >> logs/cross-border/weekly_analysis.log 2>&1
+
+# 转化漏斗分析 - 每周五 18:00
+0 18 * * 5 cd /home/nicola/.openclaw/workspace/skills/01-trading/cross-border-trade-agent && python3 self_media_engine.py --task funnel_analysis >> logs/cross-border/funnel_analysis.log 2>&1
+
+# ============================================
+# 周度报告
+# ============================================
+
+# 自进化报告 - 每周日 22:00
+0 22 * * 0 cd /home/nicola/.openclaw/workspace/skills/01-trading/cross-border-trade-agent && python3 self_evolution_engine.py >> logs/cross-border/evolution_report.log 2>&1
+
+# 品牌健康度报告 - 每周一 10:00
+0 10 * * 1 cd /home/nicola/.openclaw/workspace/skills/01-trading/cross-border-trade-agent && python3 brand_building_engine.py >> logs/cross-border/brand_report.log 2>&1
+
+# 私域运营报告 - 每周一 11:00
+0 11 * * 1 cd /home/nicola/.openclaw/workspace/skills/01-trading/cross-border-trade-agent && python3 private_traffic_engine.py >> logs/cross-border/private_report.log 2>&1
+
+# 运营报告生成 - 每周一 09:00
+0 9 * * 1 cd /home/nicola/.openclaw/workspace/skills/01-trading/cross-border-trade-agent && python3 operation_report_generator.py --weekly >> logs/cross-border/operation_report.log 2>&1
+
+# ============================================
+# 数据维护
+# ============================================
+
+# 数据备份 - 每日 03:00
+0 3 * * * cd /home/nicola/.openclaw/workspace && python3 scripts/backup.py >> logs/backup.log 2>&1
+
+# 数据清理 - 每周日 04:00
+0 4 * * 0 find /home/nicola/.openclaw/workspace/data/cross-border -name "*.tmp" -mtime +7 -delete
+
+# ============================================
+# 太一贵客自媒体运营任务
+# ============================================
+
+# 内容生产 - 每日 09:00
+0 9 * * * cd /home/nicola/.openclaw/workspace/skills/01-trading/cross-border-trade-agent && python3 self_media_engine.py --task content_production >> logs/self_media/content_production.log 2>&1
+
+# 流量追踪 - 每日 21:00
+0 21 * * * cd /home/nicola/.openclaw/workspace/skills/01-trading/cross-border-trade-agent && python3 self_media_engine.py --task traffic_tracking >> logs/self_media/traffic_tracking.log 2>&1
+
+# 私域用户运营 - 每日 10:00
+0 10 * * * cd /home/nicola/.openclaw/workspace/skills/01-trading/cross-border-trade-agent && python3 private_traffic_engine.py --task daily_operation >> logs/private_traffic/daily_operation.log 2>&1
+
+# 品牌内容发布 - 每周二 14:00
+0 14 * * 2 cd /home/nicola/.openclaw/workspace/skills/01-trading/cross-border-trade-agent && python3 brand_building_engine.py --task content_publish >> logs/brand_building/content_publish.log 2>&1
+
+# 渠道效果分析 - 每周三 15:00
+0 15 * * 3 cd /home/nicola/.openclaw/workspace/skills/01-trading/cross-border-trade-agent && python3 channel_expansion_module.py --task analyze >> logs/channel_expansion/analysis.log 2>&1
+
+# ============================================
+# 系统资源监控 - 新增
+# ============================================
+
+# 系统资源检查 - 每小时
+0 * * * * cd /home/nicola/.openclaw/workspace/skills/01-trading/cross-border-trade-agent && python3 system_monitor.py >> logs/system_monitor.log 2>&1
+
+# 监控日报 - 每日 23:00
+0 23 * * * cd /home/nicola/.openclaw/workspace/skills/01-trading/cross-border-trade-agent && python3 system_monitor.py --report >> logs/system_monitor_daily.log 2>&1
+
+# ============================================
+# 太一自主执行引擎 - 新增 (SAYELF 授权)
+# ============================================
+
+# 自主执行检查 - 每 5 分钟
+*/5 * * * * cd /home/nicola/.openclaw/workspace/skills/01-trading/cross-border-trade-agent && python3 autonomous_execution_engine.py >> logs/autonomous_execution.log 2>&1
+
+# ============================================
+# Elon 五步算法自动化 - 新增
+# ============================================
+
+# 自动质疑调度 - 每小时
+0 * * * * cd /home/nicola/.openclaw/workspace/skills/01-trading/cross-border-trade-agent && python3 auto_question_scheduler.py >> logs/elon/question.log 2>&1
+
+# 每周流程审查 - 每周日 22:00
+0 22 * * 0 cd /home/nicola/.openclaw/workspace/skills/01-trading/cross-border-trade-agent && python3 weekly_process_review.py >> logs/elon/review.log 2>&1
+
+# 删除操作执行 - 每周一 09:00
+0 9 * * 1 cd /home/nicola/.openclaw/workspace/skills/01-trading/cross-border-trade-agent && python3 execute_deletions.py >> logs/elon/deletions.log 2>&1
+
+# 融合状态监控 - 每日 23:00
+0 23 * * * cd /home/nicola/.openclaw/workspace/skills/01-trading/cross-border-trade-agent && python3 elon_integration_status.py >> logs/elon/status.log 2>&1
+
+# ============================================
+# 竞品情报分析 - 新增 (钢结构折叠房屋专项)
+# ============================================
+
+# 竞品情报跟踪 - 每日 07:00
+0 7 * * * cd /home/nicola/.openclaw/workspace/skills/01-trading/cross-border-trade-agent && python3 competitor_intelligence.py >> logs/competitor_intelligence.log 2>&1
+
+# 情报报告生成 - 每周一 08:00
+0 8 * * 1 cd /home/nicola/.openclaw/workspace/skills/01-trading/cross-border-trade-agent && python3 competitor_intelligence.py --report >> logs/competitor_report.log 2>&1
+
+# ============================================
+# 多品类竞品情报 - 新增 (通用框架)
+# ============================================
+
+# 多品类跟踪 - 每日 07:30
+0 7 30 * * * cd /home/nicola/.openclaw/workspace/skills/01-trading/cross-border-trade-agent && python3 multi_category_intelligence.py >> logs/multi_category_intel.log 2>&1
+
+# 多品类报告 - 每周一 08:30
+0 8 30 * * 1 cd /home/nicola/.openclaw/workspace/skills/01-trading/cross-border-trade-agent && python3 multi_category_intelligence.py --reports >> logs/multi_category_reports.log 2>&1
+
+# ============================================
+# 智能路由系统自进化 - 新增
+# ============================================
+
+# 路由系统自进化 - 每小时
+0 * * * * cd /home/nicola/.openclaw/workspace/skills/07-system/smart-model-router && python3 self_evolution_router_v2.py >> logs/smart_router_evolution.log 2>&1
+
+# 路由进化报告 - 每日 06:00
+0 6 * * * cd /home/nicola/.openclaw/workspace/skills/07-system/smart-model-router && python3 self_evolution_router_v2.py --report >> logs/smart_router_evolution_daily.log 2>&1

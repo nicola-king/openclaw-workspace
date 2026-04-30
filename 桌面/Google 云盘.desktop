@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Google 云盘
+Comment=Google Drive 云存储
+Exec=chromium-browser --app=https://drive.google.com
+Icon=google-chrome
+Type=Application
+Categories=Network;WebBrowser;
+StartupNotify=true

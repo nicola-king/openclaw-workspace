@@ -1,0 +1,29 @@
+{
+  "history": [
+    {
+      "timestamp": "2026-04-12T21:18:02.154022",
+      "bots_coordinated": 9,
+      "decision_accuracy": 96.0,
+      "coordination_efficiency": 97.0,
+      "emergence_signals": 5,
+      "skills_created": 78,
+      "system_negentropy": 1000000.0,
+      "execution_time_seconds": 0.000227
+    }
+  ],
+  "coordination_weights": {
+    "任务分发": 1.05,
+    "资源调度": 1.05,
+    "冲突仲裁": 1.05,
+    "进度追踪": 1.05,
+    "多 Bot 协作": 1.05
+  },
+  "decision_rules": {
+    "高置信度": 0.91,
+    "中置信度": 0.7,
+    "低置信度": 0.5,
+    "需要 Bot 协作": true,
+    "需要人工干预": false
+  },
+  "last_updated": "2026-04-12T21:18:02.154877"
+}

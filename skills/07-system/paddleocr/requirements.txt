@@ -1,0 +1,31 @@
+# PaddleOCR Skill 依赖 - 太一 AGI 集成版
+# 创建时间：2026-04-06 08:15
+# 依据：DEEP-LEARNING-EXECUTION.md 学习后立即执行原则
+
+# 核心依赖
+paddleocr>=2.7.0
+paddlex>=3.4.0
+
+# 图像处理
+opencv-python>=4.5.0
+opencv-contrib-python>=4.5.0
+Pillow>=8.0.0
+
+# 数值计算
+numpy>=1.20.0
+scipy>=1.7.0
+
+# 工具库
+PyYAML>=6.0
+requests>=2.25.0
+tqdm>=4.60.0
+shapely>=1.7.0
+scikit-image>=0.18.0
+
+# 可选：GPU 加速
+# paddlepaddle-gpu>=2.5.0  # NVIDIA GPU
+# onnxruntime-gpu>=1.10.0  # ONNX 推理
+
+# 可选：文档解析增强
+# pdf2image>=1.16.0  # PDF 转图片
+# pdfplumber>=0.7.0  # PDF 文本提取

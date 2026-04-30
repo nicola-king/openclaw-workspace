@@ -1,0 +1,28 @@
+{
+  "history": [
+    {
+      "timestamp": "2026-04-12T21:55:23.008862",
+      "skills_created": 15,
+      "learning_cycles": 50,
+      "knowledge_persisted": 95.0,
+      "emergence_signals": 5,
+      "skills_created_today": 78,
+      "execution_time_seconds": 0.000208
+    }
+  ],
+  "learning_weights": {
+    "任务模式识别": 1.05,
+    "技能框架生成": 1.05,
+    "知识持久化": 1.05,
+    "运行时优化": 1.05,
+    "能力涌现检测": 1.05
+  },
+  "skill_creation_rules": {
+    "重复任务阈值": 2.9,
+    "复杂度阈值": 5,
+    "耗时阈值": 10,
+    "用户请求触发": true,
+    "职责域检测": true
+  },
+  "last_updated": "2026-04-12T21:55:23.009590"
+}

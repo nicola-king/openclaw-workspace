@@ -1,0 +1,58 @@
+{
+  "version": "2.0",
+  "activated_at": "2026-04-15T23:14:22.633764",
+  "loop_active": true,
+  "stages": {
+    "capture": {
+      "name": "知识捕获",
+      "active": true,
+      "sources": [
+        "task_execution",
+        "user_feedback",
+        "error_logs"
+      ]
+    },
+    "process": {
+      "name": "知识处理",
+      "active": true,
+      "methods": [
+        "pattern_extraction",
+        "insight_generation",
+        "optimization_suggestion"
+      ]
+    },
+    "store": {
+      "name": "知识存储",
+      "active": true,
+      "storage": [
+        "task_history",
+        "performance_metrics",
+        "lessons_learned"
+      ]
+    },
+    "apply": {
+      "name": "知识应用",
+      "active": true,
+      "applications": [
+        "team_optimization",
+        "workflow_improvement",
+        "prediction_enhancement"
+      ]
+    },
+    "review": {
+      "name": "知识回顾",
+      "active": true,
+      "frequency": "daily",
+      "output": [
+        "daily_report",
+        "optimization_plan"
+      ]
+    }
+  },
+  "metrics": {
+    "tasks_processed": 0,
+    "lessons_learned": 0,
+    "optimizations_applied": 0,
+    "efficiency_improvement": 0
+  }
+}

@@ -1,0 +1,2 @@
+文本：你好，欢迎使用太一 AGI 系统！
+错误：[Errno 101] Network is unreachable

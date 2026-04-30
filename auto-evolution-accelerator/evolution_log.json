@@ -1,0 +1,34 @@
+{
+  "version": "1.0",
+  "started_at": "2026-04-16T13:18:40.245568",
+  "target_date": "2026-04-25",
+  "current_rate": 0.8,
+  "target_rate": 1.0,
+  "daily_goals": [
+    {
+      "day": 1,
+      "goal": "扫描 10 个进化机会",
+      "status": "pending"
+    },
+    {
+      "day": 2,
+      "goal": "执行 5 个进化任务",
+      "status": "pending"
+    },
+    {
+      "day": 3,
+      "goal": "评估进化效果",
+      "status": "pending"
+    },
+    {
+      "day": 7,
+      "goal": "达到 90% 进化率",
+      "status": "pending"
+    },
+    {
+      "day": 10,
+      "goal": "达到 100% 进化率",
+      "status": "pending"
+    }
+  ]
+}

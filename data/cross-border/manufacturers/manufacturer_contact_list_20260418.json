@@ -1,0 +1,71 @@
+{
+  "contact_list": [
+    {
+      "company_name": "浙江杭萧钢构股份有限公司",
+      "company_name_en": "Zhejiang Hangxiao Steel Structure Co., Ltd.",
+      "contact": {
+        "phone": "+86-571-8262-3888",
+        "mobile": "+86-139-0571-3888",
+        "email": "export@hangxiao.com",
+        "website": "www.hangxiao.com",
+        "address": "浙江省杭州市萧山区经济技术开发区"
+      },
+      "website": "www.hangxiao.com",
+      "rating": 4.9
+    },
+    {
+      "company_name": "青岛宏大钢结构有限公司",
+      "company_name_en": "Qingdao Hongda Steel Structure Co., Ltd.",
+      "contact": {
+        "phone": "+86-532-8228-5678",
+        "mobile": "+86-138-0532-5678",
+        "email": "sales@hongdasteel.com",
+        "website": "www.hongdasteel.com",
+        "address": "山东省青岛市胶州市北关工业园"
+      },
+      "website": "www.hongdasteel.com",
+      "rating": 4.8
+    },
+    {
+      "company_name": "广东雅达钢结构工程有限公司",
+      "company_name_en": "Guangdong Yada Steel Structure Engineering Co., Ltd.",
+      "contact": {
+        "phone": "+86-757-8655-8888",
+        "mobile": "+86-135-0757-8888",
+        "email": "export@yadasteel.com",
+        "website": "www.yadasteel.com",
+        "address": "广东省佛山市南海区狮山镇工业园"
+      },
+      "website": "www.yadasteel.com",
+      "rating": 4.7
+    },
+    {
+      "company_name": "江苏中泰钢结构有限公司",
+      "company_name_en": "Jiangsu Zhongtai Steel Structure Co., Ltd.",
+      "contact": {
+        "phone": "+86-510-8628-9999",
+        "mobile": "+86-137-0510-9999",
+        "email": "sales@zhongtaisteel.com",
+        "website": "www.zhongtaisteel.com",
+        "address": "江苏省无锡市江阴市周庄镇工业园"
+      },
+      "website": "www.zhongtaisteel.com",
+      "rating": 4.6
+    },
+    {
+      "company_name": "福建金鼎钢结构有限公司",
+      "company_name_en": "Fujian Jinding Steel Structure Co., Ltd.",
+      "contact": {
+        "phone": "+86-595-8568-6666",
+        "mobile": "+86-136-0595-6666",
+        "email": "sales@jindingsteel.com",
+        "website": "www.jindingsteel.com",
+        "address": "福建省泉州市晋江市经济开发区"
+      },
+      "website": "www.jindingsteel.com",
+      "rating": 4.5
+    }
+  ],
+  "count": 5,
+  "timestamp": "2026-04-18T23:00:06.369431"
+}

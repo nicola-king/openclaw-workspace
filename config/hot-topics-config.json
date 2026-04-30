@@ -1,0 +1,31 @@
+{
+  "version": "2.0",
+  "platforms": [
+    "bilibili",
+    "weibo",
+    "zhihu",
+    "douyin",
+    "xiaohongshu",
+    "toutiao",
+    "baidu",
+    "hupu",
+    "36kr",
+    "v2ex"
+  ],
+  "top_n": 5,
+  "push_to_telegram": true,
+  "schedule": {
+    "enabled": true,
+    "interval_hours": 2,
+    "morning_push": "08:00",
+    "evening_push": "20:00"
+  },
+  "data_sources": {
+    "primary": "dailyhot",
+    "backup": ["uapis", "52api", "official"]
+  },
+  "filters": {
+    "keywords": [],
+    "min_hot_value": 0
+  }
+}

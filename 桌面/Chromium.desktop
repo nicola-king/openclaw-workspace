@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Chromium
+Comment=Google Chromium 浏览器
+Exec=chromium-browser
+Icon=chromium
+Type=Application
+Categories=Network;WebBrowser;
+StartupNotify=true

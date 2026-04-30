@@ -1,0 +1,20 @@
+--- /home/nicola/.openclaw/workspace/logs/crontab-last.txt	2026-04-27 18:00:02.000988043 +0800
++++ /home/nicola/.openclaw/workspace/backups/crontab/current.txt	2026-04-28 00:00:01.324414549 +0800
+@@ -7,7 +7,7 @@
+ # ============ 基础设施 ============
+ 
+ # 百炼配额监控 (每 5 分钟)
+-*/45 * * * * cd /home/nicola/.openclaw/workspace && /usr/bin/python3 scripts/check-bailian-quota.py >> logs/model-router.log 2>&1
++#*/45 * * * * cd /home/nicola/.openclaw/workspace && /usr/bin/python3 scripts/check-bailian-quota.py >> logs/model-router.log 2>&1
+ 
+ # ============ 新闻系统 ============
+ 
+@@ -45,7 +45,7 @@
+ 0 */2 * * * cd /home/nicola/.openclaw/workspace && /usr/bin/python3 scripts/cron-diagnose-fix.py >> logs/cron-diagnose.log 2>&1
+ 
+ # 系统自检 (每 2 小时)
+-30 */2 * * * cd /home/nicola/.openclaw/workspace && /usr/bin/python3 scripts/system-cron-selfcheck.py >> logs/system-selfcheck.log 2>&1
++*/30 * * * * cd /home/nicola/.openclaw/workspace && /usr/bin/python3 scripts/system-cron-selfcheck.py >> logs/system-selfcheck.log 2>&1
+ 
+ # ============ 自动执行保障 ============
+ 

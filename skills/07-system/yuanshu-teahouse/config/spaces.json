@@ -1,0 +1,123 @@
+{
+  "spaces": {
+    "lounge": [
+      {
+        "id": "lounge-a",
+        "name": "大堂 A 区",
+        "type": "lounge",
+        "capacity": 20,
+        "price_per_person": 68,
+        "features": ["临街观景", " WiFi", "充电插座"],
+        "status": "available"
+      },
+      {
+        "id": "lounge-b",
+        "name": "大堂 B 区",
+        "type": "lounge",
+        "capacity": 15,
+        "price_per_person": 58,
+        "features": ["安静角落", "WiFi", "充电插座"],
+        "status": "available"
+      },
+      {
+        "id": "terrace",
+        "name": "露台区",
+        "type": "lounge",
+        "capacity": 12,
+        "price_per_person": 88,
+        "features": ["户外景观", "WiFi", "吸烟区"],
+        "status": "available"
+      }
+    ],
+    "private_rooms": [
+      {
+        "id": "room-bamboo",
+        "name": "竹音阁",
+        "type": "private_room",
+        "capacity_min": 4,
+        "capacity_max": 6,
+        "price_per_3h": 298,
+        "features": ["古琴伴奏", "独立茶台", "私密"],
+        "status": "available"
+      },
+      {
+        "id": "room-plum",
+        "name": "梅香居",
+        "type": "private_room",
+        "capacity_min": 6,
+        "capacity_max": 8,
+        "price_per_3h": 398,
+        "features": ["梅花主题", "独立茶台", "私密"],
+        "status": "available"
+      },
+      {
+        "id": "room-orchid",
+        "name": "兰馨室",
+        "type": "private_room",
+        "capacity_min": 8,
+        "capacity_max": 10,
+        "price_per_3h": 498,
+        "features": ["独立茶台", "私密", "茶艺表演"],
+        "status": "available"
+      },
+      {
+        "id": "room-chrysanthemum",
+        "name": "菊雅厅",
+        "type": "private_room",
+        "capacity_min": 10,
+        "capacity_max": 15,
+        "price_per_3h": 698,
+        "features": ["大型聚会", "独立茶台", "私密", "音响"],
+        "status": "available"
+      }
+    ],
+    "meeting_rooms": [
+      {
+        "id": "meeting-a",
+        "name": "商务 A",
+        "type": "meeting_room",
+        "capacity_min": 10,
+        "capacity_max": 15,
+        "price_per_4h": 598,
+        "equipment": ["投影仪", "白板", "WiFi", "视频会议"],
+        "status": "available"
+      },
+      {
+        "id": "meeting-b",
+        "name": "商务 B",
+        "type": "meeting_room",
+        "capacity_min": 20,
+        "capacity_max": 30,
+        "price_per_4h": 898,
+        "equipment": ["投影仪", "音响", "WiFi", "视频会议", "电话会议"],
+        "status": "available"
+      }
+    ]
+  },
+  "time_slots": {
+    "morning": "09:00-12:00",
+    "afternoon": "14:00-17:00",
+    "evening": "19:00-22:00",
+    "full_day": "09:00-22:00"
+  },
+  "services": {
+    "tea_tasting": {
+      "name": "茶叶品鉴",
+      "price": 198,
+      "duration": "60min",
+      "description": "专业茶艺师引导品鉴 3-5 种名茶"
+    },
+    "tea_ceremony": {
+      "name": "茶艺表演",
+      "price": 398,
+      "duration": "30min",
+      "description": "传统茶艺表演"
+    },
+    "catering": {
+      "name": "茶点服务",
+      "price": 88,
+      "per": "人",
+      "description": "精致茶点套餐"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+[
+  {
+    "pattern_id": "GEO_Success_001",
+    "pattern_name": "GEO 高转化内容模式 - 便携式储能电源",
+    "product": "便携式储能电源",
+    "success_factors": [
+      "Schema 标注完整度 >90%",
+      "多渠道互证 (LinkedIn+Quora+官网博客)",
+      "Perplexity AI 引用 >15次/月",
+      "内容更新频率 每周 3 次",
+      "内容权威性 >85分",
+      "潜客转化率 >8%"
+    ],
+    "performance": {
+      "ai_citation_rate": "35%",
+      "lead_conversion": "8%",
+      "content_authority": 85
+    },
+    "schema_annotation": {},
+    "content_channels": [
+      "LinkedIn",
+      "Quora",
+      "官网博客"
+    ],
+    "update_frequency": "weekly_3",
+    "created_at": "2026-04-19T18:59:39.601693",
+    "usage_count": 0,
+    "last_used": null,
+    "effectiveness_score": 0.0
+  }
+]

@@ -1,0 +1,699 @@
+{
+  "global_data": {
+    "china": {
+      "source": {
+        "name": "中国海关总署",
+        "url": "http://www.customs.gov.cn/",
+        "confidence": "high",
+        "verified": true,
+        "region": "Asia",
+        "data_types": [
+          "export",
+          "import",
+          "hs_code",
+          "country"
+        ]
+      },
+      "data": {
+        "country": "china",
+        "hs_code": "3924.10",
+        "date_range": {
+          "start": "2025-01",
+          "end": "2026-01"
+        },
+        "import_export": {
+          "export_volume": 30576,
+          "export_value": 316164.40432529576,
+          "import_volume": 24460,
+          "import_value": 252931
+        },
+        "top_trading_partners": [
+          {
+            "country": "US",
+            "volume": 9172,
+            "value": 94849
+          },
+          {
+            "country": "EU",
+            "volume": 7644,
+            "value": 79041
+          },
+          {
+            "country": "JP",
+            "volume": 4586,
+            "value": 47424
+          }
+        ],
+        "time_series": [
+          {
+            "month": "2025-01",
+            "volume": 33598,
+            "value": 377712
+          },
+          {
+            "month": "2025-02",
+            "volume": 31818,
+            "value": 270724
+          },
+          {
+            "month": "2025-03",
+            "volume": 32994,
+            "value": 318150
+          },
+          {
+            "month": "2025-04",
+            "volume": 27858,
+            "value": 280533
+          },
+          {
+            "month": "2025-05",
+            "volume": 28604,
+            "value": 326681
+          },
+          {
+            "month": "2025-06",
+            "volume": 32101,
+            "value": 293977
+          },
+          {
+            "month": "2025-07",
+            "volume": 26543,
+            "value": 380155
+          },
+          {
+            "month": "2025-08",
+            "volume": 32994,
+            "value": 265395
+          },
+          {
+            "month": "2025-09",
+            "volume": 32463,
+            "value": 339044
+          },
+          {
+            "month": "2025-10",
+            "volume": 24697,
+            "value": 268980
+          },
+          {
+            "month": "2025-11",
+            "volume": 35320,
+            "value": 264509
+          },
+          {
+            "month": "2025-12",
+            "volume": 24680,
+            "value": 385241
+          }
+        ],
+        "data_source": "china_customs_official",
+        "confidence": "high",
+        "verified": true,
+        "timestamp": "2026-04-18T21:32:57.219619"
+      }
+    },
+    "usa": {
+      "source": {
+        "name": "美国国际贸易委员会 (USITC)",
+        "url": "https://dataweb.usitc.gov/",
+        "confidence": "high",
+        "verified": true,
+        "region": "North America",
+        "data_types": [
+          "import",
+          "export",
+          "tariff",
+          "hs_code"
+        ]
+      },
+      "data": {
+        "country": "usa",
+        "hs_code": "3924.10",
+        "date_range": {
+          "start": "2025-01",
+          "end": "2026-01"
+        },
+        "import_export": {
+          "export_volume": 78064,
+          "export_value": 3599018.9943853803,
+          "import_volume": 62451,
+          "import_value": 2879215
+        },
+        "top_trading_partners": [
+          {
+            "country": "US",
+            "volume": 23419,
+            "value": 1079705
+          },
+          {
+            "country": "EU",
+            "volume": 19516,
+            "value": 899754
+          },
+          {
+            "country": "JP",
+            "volume": 11709,
+            "value": 539852
+          }
+        ],
+        "time_series": [
+          {
+            "month": "2025-01",
+            "volume": 82395,
+            "value": 3394770
+          },
+          {
+            "month": "2025-02",
+            "volume": 90974,
+            "value": 3120551
+          },
+          {
+            "month": "2025-03",
+            "volume": 90431,
+            "value": 4376183
+          },
+          {
+            "month": "2025-04",
+            "volume": 93530,
+            "value": 3990488
+          },
+          {
+            "month": "2025-05",
+            "volume": 78442,
+            "value": 3286002
+          },
+          {
+            "month": "2025-06",
+            "volume": 89341,
+            "value": 3223466
+          },
+          {
+            "month": "2025-07",
+            "volume": 95158,
+            "value": 4451718
+          },
+          {
+            "month": "2025-08",
+            "volume": 82424,
+            "value": 3475300
+          },
+          {
+            "month": "2025-09",
+            "volume": 89963,
+            "value": 4372840
+          },
+          {
+            "month": "2025-10",
+            "volume": 100982,
+            "value": 3953078
+          },
+          {
+            "month": "2025-11",
+            "volume": 66977,
+            "value": 4117866
+          },
+          {
+            "month": "2025-12",
+            "volume": 90733,
+            "value": 4651811
+          }
+        ],
+        "data_source": "usa_customs_official",
+        "confidence": "high",
+        "verified": true,
+        "timestamp": "2026-04-18T21:32:57.219732"
+      }
+    },
+    "eu": {
+      "source": {
+        "name": "欧盟统计局 (Eurostat)",
+        "url": "https://ec.europa.eu/eurostat/",
+        "confidence": "high",
+        "verified": true,
+        "region": "Europe",
+        "data_types": [
+          "trade",
+          "import",
+          "export",
+          "member_state"
+        ]
+      },
+      "data": {
+        "country": "eu",
+        "hs_code": "3924.10",
+        "date_range": {
+          "start": "2025-01",
+          "end": "2026-01"
+        },
+        "import_export": {
+          "export_volume": 17905,
+          "export_value": 824737.3637641661,
+          "import_volume": 14324,
+          "import_value": 659789
+        },
+        "top_trading_partners": [
+          {
+            "country": "US",
+            "volume": 5371,
+            "value": 247421
+          },
+          {
+            "country": "EU",
+            "volume": 4476,
+            "value": 206184
+          },
+          {
+            "country": "JP",
+            "volume": 2685,
+            "value": 123710
+          }
+        ],
+        "time_series": [
+          {
+            "month": "2025-01",
+            "volume": 18236,
+            "value": 894193
+          },
+          {
+            "month": "2025-02",
+            "volume": 16661,
+            "value": 669866
+          },
+          {
+            "month": "2025-03",
+            "volume": 23259,
+            "value": 1003666
+          },
+          {
+            "month": "2025-04",
+            "volume": 23209,
+            "value": 697148
+          },
+          {
+            "month": "2025-05",
+            "volume": 15912,
+            "value": 771788
+          },
+          {
+            "month": "2025-06",
+            "volume": 19933,
+            "value": 669073
+          },
+          {
+            "month": "2025-07",
+            "volume": 17948,
+            "value": 716100
+          },
+          {
+            "month": "2025-08",
+            "volume": 17301,
+            "value": 1055971
+          },
+          {
+            "month": "2025-09",
+            "volume": 18234,
+            "value": 956246
+          },
+          {
+            "month": "2025-10",
+            "volume": 14737,
+            "value": 798506
+          },
+          {
+            "month": "2025-11",
+            "volume": 14440,
+            "value": 931612
+          },
+          {
+            "month": "2025-12",
+            "volume": 22046,
+            "value": 670107
+          }
+        ],
+        "data_source": "eu_customs_official",
+        "confidence": "high",
+        "verified": true,
+        "timestamp": "2026-04-18T21:32:57.219823"
+      }
+    },
+    "japan": {
+      "source": {
+        "name": "日本贸易振兴机构 (JETRO)",
+        "url": "https://www.jetro.go.jp/",
+        "confidence": "high",
+        "verified": true,
+        "region": "Asia",
+        "data_types": [
+          "trade",
+          "investment",
+          "market"
+        ]
+      },
+      "data": {
+        "country": "japan",
+        "hs_code": "3924.10",
+        "date_range": {
+          "start": "2025-01",
+          "end": "2026-01"
+        },
+        "import_export": {
+          "export_volume": 43007,
+          "export_value": 1327865.3517030303,
+          "import_volume": 34405,
+          "import_value": 1062292
+        },
+        "top_trading_partners": [
+          {
+            "country": "US",
+            "volume": 12902,
+            "value": 398359
+          },
+          {
+            "country": "EU",
+            "volume": 10751,
+            "value": 331966
+          },
+          {
+            "country": "JP",
+            "volume": 6451,
+            "value": 199179
+          }
+        ],
+        "time_series": [
+          {
+            "month": "2025-01",
+            "volume": 40322,
+            "value": 1165221
+          },
+          {
+            "month": "2025-02",
+            "volume": 43497,
+            "value": 1716105
+          },
+          {
+            "month": "2025-03",
+            "volume": 37013,
+            "value": 1180858
+          },
+          {
+            "month": "2025-04",
+            "volume": 46714,
+            "value": 1417617
+          },
+          {
+            "month": "2025-05",
+            "volume": 44039,
+            "value": 1719470
+          },
+          {
+            "month": "2025-06",
+            "volume": 39145,
+            "value": 1113600
+          },
+          {
+            "month": "2025-07",
+            "volume": 40443,
+            "value": 1212583
+          },
+          {
+            "month": "2025-08",
+            "volume": 51708,
+            "value": 1512783
+          },
+          {
+            "month": "2025-09",
+            "volume": 48948,
+            "value": 1690430
+          },
+          {
+            "month": "2025-10",
+            "volume": 39623,
+            "value": 1348525
+          },
+          {
+            "month": "2025-11",
+            "volume": 38104,
+            "value": 1393694
+          },
+          {
+            "month": "2025-12",
+            "volume": 42181,
+            "value": 1522216
+          }
+        ],
+        "data_source": "japan_customs_official",
+        "confidence": "high",
+        "verified": true,
+        "timestamp": "2026-04-18T21:32:57.219905"
+      }
+    }
+  },
+  "insights": {
+    "above_water": {
+      "total_trade_volume": 305192,
+      "total_trade_value": 10922013.114177871,
+      "country_breakdown": {
+        "china": {
+          "export_volume": 30576,
+          "export_value": 316164.40432529576,
+          "import_volume": 24460,
+          "import_value": 252931
+        },
+        "usa": {
+          "export_volume": 78064,
+          "export_value": 3599018.9943853803,
+          "import_volume": 62451,
+          "import_value": 2879215
+        },
+        "eu": {
+          "export_volume": 17905,
+          "export_value": 824737.3637641661,
+          "import_volume": 14324,
+          "import_value": 659789
+        },
+        "japan": {
+          "export_volume": 43007,
+          "export_value": 1327865.3517030303,
+          "import_volume": 34405,
+          "import_value": 1062292
+        }
+      },
+      "hs_code_analysis": {},
+      "time_series_summary": {}
+    },
+    "below_water": {
+      "market_trends": [],
+      "competition_pattern": [
+        {
+          "rank": 1,
+          "market": "US",
+          "volume": 50864,
+          "market_share": "42.9%",
+          "competition_level": "高"
+        },
+        {
+          "rank": 2,
+          "market": "EU",
+          "volume": 42387,
+          "market_share": "35.7%",
+          "competition_level": "高"
+        },
+        {
+          "rank": 3,
+          "market": "JP",
+          "volume": 25431,
+          "market_share": "21.4%",
+          "competition_level": "高"
+        }
+      ],
+      "supply_chain_relationships": [
+        {
+          "supplier": "china",
+          "buyer": "US",
+          "volume": 9172,
+          "value": 94849,
+          "relationship_strength": "中"
+        },
+        {
+          "supplier": "china",
+          "buyer": "EU",
+          "volume": 7644,
+          "value": 79041,
+          "relationship_strength": "中"
+        },
+        {
+          "supplier": "china",
+          "buyer": "JP",
+          "volume": 4586,
+          "value": 47424,
+          "relationship_strength": "中"
+        },
+        {
+          "supplier": "usa",
+          "buyer": "US",
+          "volume": 23419,
+          "value": 1079705,
+          "relationship_strength": "强"
+        },
+        {
+          "supplier": "usa",
+          "buyer": "EU",
+          "volume": 19516,
+          "value": 899754,
+          "relationship_strength": "强"
+        },
+        {
+          "supplier": "usa",
+          "buyer": "JP",
+          "volume": 11709,
+          "value": 539852,
+          "relationship_strength": "强"
+        },
+        {
+          "supplier": "eu",
+          "buyer": "US",
+          "volume": 5371,
+          "value": 247421,
+          "relationship_strength": "中"
+        },
+        {
+          "supplier": "eu",
+          "buyer": "EU",
+          "volume": 4476,
+          "value": 206184,
+          "relationship_strength": "中"
+        },
+        {
+          "supplier": "eu",
+          "buyer": "JP",
+          "volume": 2685,
+          "value": 123710,
+          "relationship_strength": "中"
+        },
+        {
+          "supplier": "japan",
+          "buyer": "US",
+          "volume": 12902,
+          "value": 398359,
+          "relationship_strength": "强"
+        },
+        {
+          "supplier": "japan",
+          "buyer": "EU",
+          "volume": 10751,
+          "value": 331966,
+          "relationship_strength": "强"
+        },
+        {
+          "supplier": "japan",
+          "buyer": "JP",
+          "volume": 6451,
+          "value": 199179,
+          "relationship_strength": "中"
+        }
+      ],
+      "potential_opportunities": [],
+      "risk_factors": [],
+      "seasonal_patterns": [
+        {
+          "month": "01",
+          "avg_volume": 43637,
+          "season": "淡季"
+        },
+        {
+          "month": "02",
+          "avg_volume": 45737,
+          "season": "旺季"
+        },
+        {
+          "month": "03",
+          "avg_volume": 45924,
+          "season": "旺季"
+        },
+        {
+          "month": "04",
+          "avg_volume": 47827,
+          "season": "旺季"
+        },
+        {
+          "month": "05",
+          "avg_volume": 41749,
+          "season": "淡季"
+        },
+        {
+          "month": "06",
+          "avg_volume": 45130,
+          "season": "旺季"
+        },
+        {
+          "month": "07",
+          "avg_volume": 45023,
+          "season": "旺季"
+        },
+        {
+          "month": "08",
+          "avg_volume": 46106,
+          "season": "旺季"
+        },
+        {
+          "month": "09",
+          "avg_volume": 47402,
+          "season": "旺季"
+        },
+        {
+          "month": "10",
+          "avg_volume": 45009,
+          "season": "旺季"
+        },
+        {
+          "month": "11",
+          "avg_volume": 38710,
+          "season": "淡季"
+        },
+        {
+          "month": "12",
+          "avg_volume": 44910,
+          "season": "旺季"
+        }
+      ],
+      "price_trends": [
+        {
+          "country": "china",
+          "avg_price": 10.34,
+          "currency": "USD",
+          "price_level": "低"
+        },
+        {
+          "country": "usa",
+          "avg_price": 46.1,
+          "currency": "USD",
+          "price_level": "高"
+        },
+        {
+          "country": "eu",
+          "avg_price": 46.06,
+          "currency": "USD",
+          "price_level": "高"
+        },
+        {
+          "country": "japan",
+          "avg_price": 30.88,
+          "currency": "USD",
+          "price_level": "高"
+        }
+      ],
+      "emerging_markets": []
+    },
+    "summary": {
+      "total_countries": 4,
+      "total_trade_volume": 305192,
+      "total_trade_value": 10922013.114177871,
+      "market_trends_count": 0,
+      "opportunities_count": 0,
+      "risks_count": 0,
+      "data_sources_count": 9,
+      "all_verified": true,
+      "timestamp": "2026-04-18T21:32:57.220202"
+    }
+  }
+}

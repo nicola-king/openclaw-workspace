@@ -1,0 +1,29 @@
+{
+  "history": [
+    {
+      "timestamp": "2026-04-12T21:31:03.468180",
+      "gateway_status": "running",
+      "skills_count": 138,
+      "channels_active": 3,
+      "system_negentropy": 644000.0,
+      "emergence_signals": 78,
+      "skills_created": 78,
+      "execution_time_seconds": 0.084442
+    }
+  ],
+  "gateway_weights": {
+    "消息处理": 1.02,
+    "会话管理": 1.02,
+    "工具调用": 1.02,
+    "模型路由": 1.02,
+    "错误处理": 1.02
+  },
+  "skill_weights": {
+    "交易类": 1.0,
+    "内容类": 1.0,
+    "技术类": 1.0,
+    "集成类": 1.0,
+    "系统类": 1.0
+  },
+  "last_updated": "2026-04-12T21:31:03.468952"
+}

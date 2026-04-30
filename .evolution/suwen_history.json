@@ -1,0 +1,18 @@
+{
+  "history": [
+    {
+      "timestamp": "2026-04-12T20:48:53.952588",
+      "research_completed": 8,
+      "code_quality": 92.0,
+      "user_satisfaction": 92.0,
+      "skills_created": 78
+    }
+  ],
+  "research_weights": {
+    "技术研究": 1.0,
+    "系统开发": 1.0,
+    "原理分析": 1.0,
+    "代码优化": 1.0
+  },
+  "last_updated": "2026-04-12T20:48:53.954480"
+}

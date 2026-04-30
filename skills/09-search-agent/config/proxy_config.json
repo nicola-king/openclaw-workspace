@@ -1,0 +1,61 @@
+{
+  "proxies": [
+    {
+      "server": "http://127.0.0.1:7890",
+      "username": "",
+      "password": "",
+      "region": "singapore",
+      "enabled": true,
+      "type": "clash_local",
+      "node": "🇸🇬 新加坡节点",
+      "ip": "103.151.172.30"
+    },
+    {
+      "server": "http://127.0.0.1:7890",
+      "username": "",
+      "password": "",
+      "region": "japan",
+      "enabled": true,
+      "type": "clash_local",
+      "node": "🇯🇵 日本节点"
+    },
+    {
+      "server": "http://127.0.0.1:7890",
+      "username": "",
+      "password": "",
+      "region": "usa",
+      "enabled": true,
+      "type": "clash_local",
+      "node": "🇺🇲 美国节点"
+    },
+    {
+      "server": "http://103.172.182.26:7890",
+      "username": "",
+      "password": "",
+      "region": "overseas",
+      "enabled": false,
+      "type": "clash_remote"
+    }
+  ],
+  "rotation": {
+    "enabled": true,
+    "strategy": "round_robin",
+    "failover": true,
+    "max_retries_per_proxy": 2
+  },
+  "health_check": {
+    "enabled": true,
+    "interval": 300,
+    "timeout": 10,
+    "test_url": "https://www.google.com"
+  },
+  "auto_detect": {
+    "enabled": true,
+    "clash_port": 7890,
+    "test_endpoints": [
+      "https://www.google.com",
+      "https://www.bing.com",
+      "https://www.linkedin.com"
+    ]
+  }
+}

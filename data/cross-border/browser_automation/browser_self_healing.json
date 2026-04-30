@@ -1,0 +1,38 @@
+{
+  "sessions": [
+    {
+      "id": "BROWSER_SESSION_20260420_212852",
+      "target_url": "https://example.com",
+      "created_at": "2026-04-20T21:28:52.251063",
+      "status": "closed",
+      "cdp_connection": {
+        "protocol": "CDP",
+        "websocket_url": "ws://localhost:9222/devtools/page/639718f33e2036aebba630f0c8a5075f",
+        "connected": true
+      },
+      "actions_executed": 1,
+      "healing_events": 0,
+      "last_activity": "2026-04-20T21:28:52.252514",
+      "closed_at": "2026-04-20T21:28:52.258555"
+    }
+  ],
+  "healing_events": [
+    {
+      "id": "ACTION_20260420_212852",
+      "session_id": "BROWSER_SESSION_20260420_212852",
+      "action": "click_element",
+      "params": {
+        "selector": "#submit-button",
+        "session_id": "BROWSER_SESSION_20260420_212852"
+      },
+      "timestamp": "2026-04-20T21:28:52.252500",
+      "status": "success",
+      "attempts": 1,
+      "healing_applied": false,
+      "result": {
+        "message": "click_element executed successfully"
+      }
+    }
+  ],
+  "stats": {}
+}

@@ -1,0 +1,341 @@
+#!/usr/bin/env python3
+
+# scripts/check-bailian-quota.py
+
+
+"""
+百炼配额监控脚本 v2.0（SAYELF 指令 v2026-04-25）
+
+功能：
+1. 每 5 分钟检查百炼 API 配额状态
+2. 百炼 98% (日/周/月任一) → 自动切换 Gemini 免费额度
+3. Gemini 90% → 自动切换本地模型
+4. 百炼恢复 → 强制切回（无视 Gemini 用量/冷却期）
+5. 记录状态变更到 JSON 文件
+
+使用：
+    python3 scripts/check-bailian-quota.py
+
+Cron：
+    */5 * * * * python3 /home/nicola/.openclaw/workspace/scripts/check-bailian-quota.py
+"""
+
+import os
+import sys
+import json
+import requests
+from datetime import datetime, timedelta
+from pathlib import Path
+
+# 配置
+
+STATUS_FILE = Path.home() / ".openclaw" / "workspace" / "data" / "model-router-status.json"
+LOG_FILE = Path.home() / ".openclaw" / "workspace" / "logs" / "model-router.log"
+SWITCH_COOLDOWN = 1800  # 30 分钟冷却时间（仅适用于百炼→Gemini 切换）
+CONSECUTIVE_FAILURES_THRESHOLD = 3  # 百炼连续失败 3 次即切换
+
+# 阈值配置
+
+BAILIAN_SWITCH_THRESHOLD = 0.98  # 百炼 98% 触发切换
+GEMINI_SWITCH_THRESHOLD = 0.90   # Gemini 90% 触发切换
+
+# 切换优先级：百炼 → DeepSeek → Gemini → 本地模型
+SWITCH_ORDER = ["deepseek-chat", "gemini-2.5-pro"]
+
+# API 配置
+
+DASHSCOPE_API_KEY = os.getenv("DASHSCOPE_API_KEY", "")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
+DASHSCOPE_PROBE_ENDPOINT = "https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation"
+
+def load_status() -> dict:
+    """加载状态文件"""
+    if not STATUS_FILE.exists():
+        return {
+            "current_model": "qwen3.5-plus",
+            "bailian_status": "normal",
+            "last_check": None,
+            "last_switch_to_gemini": None,
+            "last_switch_to_bailian": None,
+            "switch_count_today": 0,
+            "consecutive_failures": 0,
+            "bailian_usage": {
+                "daily": {"used": 0, "limit": 0, "percentage": 0.0},
+                "weekly": {"used": 0, "limit": 0, "percentage": 0.0},
+                "monthly": {"used": 0, "limit": 0, "percentage": 0.0}
+            },
+            "gemini_usage": {
+                "used": 0,
+                "limit": 0,
+                "percentage": 0.0
+            },
+            "notes": ""
+        }
+    
+    with open(STATUS_FILE, 'r', encoding='utf-8') as f:
+        return json.load(f)
+
+def save_status(status: dict):
+    """保存状态文件"""
+    STATUS_FILE.parent.mkdir(parents=True, exist_ok=True)
+    with open(STATUS_FILE, 'w', encoding='utf-8') as f:
+        json.dump(status, f, ensure_ascii=False, indent=2)
+
+def log_message(message: str):
+    """记录日志"""
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    log_entry = f"[{timestamp}] {message}\n"
+    
+    LOG_FILE.parent.mkdir(parents=True, exist_ok=True)
+    with open(LOG_FILE, 'a', encoding='utf-8') as f:
+        f.write(log_entry)
+    
+    print(log_entry.strip())
+
+def probe_bailian_api() -> tuple:
+    """
+    探测百炼 API 状态
+    
+    Returns:
+        (success: bool, error_type: str|None, usage_data: dict|None)
+    """
+    if not DASHSCOPE_API_KEY:
+        return False, "no_api_key", None
+    
+    headers = {
+        "Authorization": f"Bearer {DASHSCOPE_API_KEY}",
+        "Content-Type": "application/json"
+    }
+    
+    # 轻量探测请求（最小 token 消耗）
+    payload = {
+        "model": "qwen3.5-plus",
+        "input": {
+            "messages": [
+                {"role": "user", "content": "Hi"}
+            ]
+        },
+        "parameters": {
+            "max_tokens": 10
+        }
+    }
+    
+    try:
+        response = requests.post(
+            DASHSCOPE_PROBE_ENDPOINT,
+            headers=headers,
+            json=payload,
+            timeout=10
+        )
+        
+        if response.status_code == 200:
+            # 尝试从响应头获取配额信息
+            usage_data = {
+                "daily": {"used": 0, "limit": 0, "percentage": 0.0},
+                "weekly": {"used": 0, "limit": 0, "percentage": 0.0},
+                "monthly": {"used": 0, "limit": 0, "percentage": 0.0}
+            }
+            
+            # 如果有配额信息头，解析它
+            if "X-DashScope-Quota-Remaining" in response.headers:
+                try:
+                    quota_info = json.loads(response.headers["X-DashScope-Quota-Remaining"])
+                    usage_data = quota_info
+                except:
+                    pass
+            
+            return True, None, usage_data
+        elif response.status_code == 429:
+            return False, "rate_limit", None
+        elif response.status_code == 402:
+            return False, "quota_exceeded", None
+        elif response.status_code == 401:
+            return False, "auth_error", None
+        else:
+            return False, f"http_{response.status_code}", None
+    
+    except requests.exceptions.Timeout:
+        return False, "timeout", None
+    except requests.exceptions.ConnectionError:
+        return False, "connection_error", None
+    except Exception as e:
+        return False, f"unknown_{type(e).__name__}", None
+
+def check_bailian_usage_percentage(status: dict) -> tuple:
+    """
+    检查百炼使用百分比
+    
+    Returns:
+        (max_percentage: float, trigger_reason: str)
+    """
+    usage = status.get("bailian_usage", {})
+    daily_pct = usage.get("daily", {}).get("percentage", 0.0)
+    weekly_pct = usage.get("weekly", {}).get("percentage", 0.0)
+    monthly_pct = usage.get("monthly", {}).get("percentage", 0.0)
+    
+    max_pct = max(daily_pct, weekly_pct, monthly_pct)
+    
+    if daily_pct >= BAILIAN_SWITCH_THRESHOLD:
+        return daily_pct, "daily"
+    elif weekly_pct >= BAILIAN_SWITCH_THRESHOLD:
+        return weekly_pct, "weekly"
+    elif monthly_pct >= BAILIAN_SWITCH_THRESHOLD:
+        return monthly_pct, "monthly"
+    
+    return max_pct, "none"
+
+def switch_to_gemini(status: dict, reason: str = "百炼配额耗尽") -> bool:
+    """切换到 Gemini"""
+    now = datetime.now()
+    
+    # 检查冷却时间（仅适用于百炼→Gemini 切换）
+    if status.get("last_switch_to_gemini"):
+        last_switch = datetime.fromisoformat(status["last_switch_to_gemini"])
+        if (now - last_switch).total_seconds() < SWITCH_COOLDOWN:
+            log_message("⚠️  冷却期内，暂不切换到 Gemini")
+            return False
+    
+    # 执行切换
+    old_model = status["current_model"]
+    status["current_model"] = "gemini-2.5-pro"
+    status["bailian_status"] = "exhausted"
+    status["last_switch_to_gemini"] = now.isoformat()
+    status["switch_count_today"] = status.get("switch_count_today", 0) + 1
+    status["consecutive_failures"] = 0
+    status["notes"] = f"切换原因：{reason}"
+    
+    save_status(status)
+    log_message(f"🔄 切换到 Gemini（原因：{reason}，今日第{status['switch_count_today']}次切换）")
+    
+    return True
+
+def switch_to_bailian(status: dict) -> bool:
+    """切换回百炼（无视冷却期）"""
+    now = datetime.now()
+    
+    # 执行切换（无冷却限制）
+    old_model = status["current_model"]
+    status["current_model"] = "qwen3.5-plus"
+    status["bailian_status"] = "normal"
+    status["last_switch_to_bailian"] = now.isoformat()
+    status["consecutive_failures"] = 0
+    status["notes"] = "百炼配额已恢复，强制切回"
+    
+    save_status(status)
+    log_message(f"✅ 切换回百炼（原因：配额已恢复，从 {old_model} 切回）")
+    
+    return True
+
+def switch_to_local(status: dict, reason: str = "Gemini 免费额度不足") -> bool:
+    """切换到本地模型"""
+    now = datetime.now()
+    
+    status["current_model"] = "qwen2.5:7b-instruct-q4_K_M"
+    status["bailian_status"] = "gemini_exhausted"
+    status["notes"] = f"切换原因：{reason}"
+    
+    save_status(status)
+    log_message(f"🔄 切换到本地模型（原因：{reason}）")
+    
+    return True
+
+def check_and_switch():
+    """主检查逻辑"""
+    status = load_status()
+    now = datetime.now()
+    
+    log_message("=" * 60)
+    log_message("🔍 开始检查百炼配额状态")
+    log_message(f"当前模型：{status['current_model']}")
+    log_message(f"当前状态：{status['bailian_status']}")
+    
+    # 探测百炼 API
+    success, error_type, usage_data = probe_bailian_api()
+    
+    log_message(f"探测结果：{'✅ 成功' if success else '❌ 失败'} ({error_type})")
+    
+    # 更新使用量数据
+    if usage_data:
+        status["bailian_usage"] = usage_data
+    
+    # 检查百炼使用百分比
+    max_pct, trigger_reason = check_bailian_usage_percentage(status)
+    log_message(f"百炼使用百分比：{max_pct*100:.1f}% (触发原因：{trigger_reason})")
+    
+    if success:
+        # 百炼正常
+        status["consecutive_failures"] = 0
+        
+        # 规则 3：百炼恢复 → 强制切回（无视 Gemini 用量/冷却期）
+        if status["bailian_status"] in ["exhausted", "gemini_exhausted"]:
+            log_message("🎉 百炼配额已恢复，强制切回百炼（无视 Gemini 用量）")
+            switch_to_bailian(status)
+        else:
+            status["bailian_status"] = "normal"
+            log_message("✅ 百炼状态正常，保持当前配置")
+    
+    else:
+        # 百炼异常（任何错误类型都计数：quota/rate_limit/auth/timeout/connection）
+        status["consecutive_failures"] = status.get("consecutive_failures", 0) + 1
+        log_message(f"连续失败次数：{status['consecutive_failures']}/{CONSECUTIVE_FAILURES_THRESHOLD}")
+        
+        # 检查是否达到切换阈值（百炼失败 3 次即切换）
+        if status["consecutive_failures"] >= CONSECUTIVE_FAILURES_THRESHOLD:
+            if status["bailian_status"] == "normal" or status["current_model"] == "qwen3.5-plus":
+                # 按优先级切换：DeepSeek → Gemini → 本地
+                switched = False
+                for fallback_model in SWITCH_ORDER:
+                    if fallback_model == "deepseek-chat":
+                        status["current_model"] = "deepseek-chat"
+                        status["bailian_status"] = "exhausted"
+                        status["last_switch_to_deepseek"] = now.isoformat()
+                        status["switch_count_today"] = status.get("switch_count_today", 0) + 1
+                        status["consecutive_failures"] = 0
+                        status["notes"] = f"百炼连续失败 {CONSECUTIVE_FAILURES_THRESHOLD} 次，切换到 DeepSeek（错误：{error_type}）"
+                        save_status(status)
+                        log_message(f"🔄 切换到 DeepSeek（百炼连续失败 {CONSECUTIVE_FAILURES_THRESHOLD} 次，错误：{error_type}）")
+                        switched = True
+                        break
+                    elif fallback_model == "gemini-2.5-pro":
+                        switch_to_gemini(status, f"百炼连续失败 {CONSECUTIVE_FAILURES_THRESHOLD} 次，错误：{error_type}")
+                        switched = True
+                        break
+                
+                if not switched:
+                    log_message("⚠️  所有备用模型均不可用")
+                    status["consecutive_failures"] = 0
+            else:
+                log_message(f"⚠️  已在使用备用模型 {status['current_model']}，保持当前配置")
+        else:
+            log_message("⚠️  失败次数未达阈值，暂不切换")
+        
+        status["bailian_status"] = "warning"
+    
+    # 检查 Gemini 使用量（规则 2）
+    gemini_usage = status.get("gemini_usage", {})
+    gemini_pct = gemini_usage.get("percentage", 0.0)
+    
+    if gemini_pct >= GEMINI_SWITCH_THRESHOLD and status["current_model"] == "gemini-2.5-pro":
+        log_message(f"🚨 Gemini 免费额度达 {gemini_pct*100:.1f}%，切换到本地模型")
+        switch_to_local(status, f"Gemini 免费额度达 {gemini_pct*100:.1f}%")
+    
+    # 更新最后检查时间
+    status["last_check"] = now.isoformat()
+    save_status(status)
+    
+    log_message("=" * 60)
+    log_message(f"最终状态：current_model={status['current_model']}, bailian_status={status['bailian_status']}")
+    
+    return status
+
+if __name__ == "__main__":
+    try:
+        status = check_and_switch()
+        print(f"\n📊 当前配置:")
+        print(f"  模型：{status['current_model']}")
+        print(f"  百炼状态：{status['bailian_status']}")
+        print(f"  最后检查：{status['last_check']}")
+        sys.exit(0)
+    except Exception as e:
+        log_message(f"❌ 检查失败：{e}")
+        sys.exit(1)

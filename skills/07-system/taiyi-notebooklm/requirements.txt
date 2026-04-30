@@ -1,0 +1,4 @@
+# Taiyi NotebookLM CLI 依赖
+
+# 零依赖！只使用 Python 标准库
+# Python 3.10+

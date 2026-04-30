@@ -1,0 +1,77 @@
+[
+  {
+    "id": "hotel_singapore_20260424_001",
+    "type": "hotel",
+    "name": "新加坡莱佛士酒店",
+    "name_en": "Raffles Hotel Singapore",
+    "address": "新加坡莱佛士大道 1 号",
+    "address_en": "1 Beach Road, Singapore 189673, Singapore",
+    "phone": "+65-6337-1886",
+    "email": "reservations.singapore@raffles.com",
+    "website": "https://www.raffles.com/singapore/",
+    "booking_url": "https://www.booking.com/hotel/sg/raffles-singapore.zh-cn.html",
+    "rating": 4.8,
+    "review_count": 1200,
+    "price_range": "S$800-2000/晚",
+    "check_in": "15:00",
+    "check_out": "12:00",
+    "facilities": ["WiFi", "餐厅", "健身房", "游泳池", "水疗", "遗产导览"],
+    "verified_sources": [
+      {"source": "Booking.com", "verified_at": "2026-04-24", "score": 98},
+      {"source": "Google Places", "verified_at": "2026-04-24", "score": 97},
+      {"source": "TripAdvisor", "verified_at": "2026-04-24", "score": 96}
+    ],
+    "trust_score": 97,
+    "last_updated": "2026-04-24T21:00:00+08:00"
+  },
+  {
+    "id": "hotel_singapore_20260424_002",
+    "type": "hotel",
+    "name": "新加坡滨海湾金沙酒店",
+    "name_en": "Marina Bay Sands Singapore",
+    "address": "新加坡滨海湾金沙 10 号",
+    "address_en": "10 Bayfront Avenue, Singapore 018956, Singapore",
+    "phone": "+65-6688-8868",
+    "email": "reservations@mbs.com.sg",
+    "website": "https://www.marinabaysands.com/",
+    "booking_url": "https://www.booking.com/hotel/sg/marina-bay-sands.zh-cn.html",
+    "rating": 4.7,
+    "review_count": 5600,
+    "price_range": "S$500-1500/晚",
+    "check_in": "15:00",
+    "check_out": "11:00",
+    "facilities": ["WiFi", "餐厅", "健身房", "游泳池", "赌场", "购物"],
+    "verified_sources": [
+      {"source": "Booking.com", "verified_at": "2026-04-24", "score": 96},
+      {"source": "Google Places", "verified_at": "2026-04-24", "score": 95},
+      {"source": "Agoda", "verified_at": "2026-04-24", "score": 93}
+    ],
+    "trust_score": 95,
+    "last_updated": "2026-04-24T21:00:00+08:00"
+  },
+  {
+    "id": "hotel_singapore_20260424_003",
+    "type": "hotel",
+    "name": "新加坡史丹福瑞士酒店",
+    "name_en": "Swissotel The Stamford Singapore",
+    "address": "新加坡史丹福路 2 号",
+    "address_en": "2 Stamford Road, Singapore 178882, Singapore",
+    "phone": "+65-6823-6823",
+    "email": "singapore@swissotel.com",
+    "website": "https://www.swissotel.com/hotels/singapore-stamford/",
+    "booking_url": "https://www.booking.com/hotel/sg/swissotel-the-stamford.zh-cn.html",
+    "rating": 4.5,
+    "review_count": 4200,
+    "price_range": "S$300-800/晚",
+    "check_in": "14:00",
+    "check_out": "12:00",
+    "facilities": ["WiFi", "餐厅", "健身房", "游泳池", "停车场"],
+    "verified_sources": [
+      {"source": "Booking.com", "verified_at": "2026-04-24", "score": 94},
+      {"source": "Google Places", "verified_at": "2026-04-24", "score": 92},
+      {"source": "携程", "verified_at": "2026-04-24", "score": 90}
+    ],
+    "trust_score": 92,
+    "last_updated": "2026-04-24T21:00:00+08:00"
+  }
+]

@@ -1,0 +1,83 @@
+{
+  "version": "1.0",
+  "created_at": "2026-04-16T14:11:19.410908",
+  "search_routing": {
+    "enabled": true,
+    "rules": {
+      "domestic_search": {
+        "name": "国内内容搜索",
+        "keywords": [
+          "中国",
+          "国内",
+          "中文",
+          "大陆",
+          "内地",
+          "CN",
+          "china domestic"
+        ],
+        "search_engine": "bing_cn",
+        "endpoint": "https://cn.bing.com",
+        "proxy": false,
+        "traffic": "domestic",
+        "priority": 1
+      },
+      "international_search": {
+        "name": "国外内容搜索",
+        "keywords": [
+          "国外",
+          "国际",
+          "海外",
+          "US",
+          "global",
+          "international"
+        ],
+        "search_engine": "chromium",
+        "endpoint": "https://www.google.com",
+        "proxy": true,
+        "traffic": "proxy",
+        "priority": 2
+      },
+      "default": {
+        "name": "默认搜索",
+        "search_engine": "bing_cn",
+        "endpoint": "https://cn.bing.com",
+        "proxy": false,
+        "traffic": "domestic",
+        "priority": 3
+      }
+    },
+    "traffic_config": {
+      "domestic": {
+        "name": "国内流量",
+        "proxy_enabled": false,
+        "proxy_url": null,
+        "dns": "114.114.114.114",
+        "timeout": 10
+      },
+      "proxy": {
+        "name": "代理流量",
+        "proxy_enabled": true,
+        "proxy_url": "http://127.0.0.1:7890",
+        "dns": "8.8.8.8",
+        "timeout": 30
+      }
+    }
+  },
+  "integration_points": [
+    {
+      "name": "smart-model-router",
+      "path": "/home/nicola/.openclaw/workspace/skills/07-system/smart-model-router",
+      "integration": "search_type_routing"
+    },
+    {
+      "name": "geo-model-router",
+      "path": "/home/nicola/.openclaw/workspace/skills/07-system/geo-model-router",
+      "integration": "geo_based_routing"
+    },
+    {
+      "name": "quota-router",
+      "path": "/home/nicola/.openclaw/workspace/skills/07-system/quota-aware-model-router",
+      "integration": "quota_aware_routing"
+    }
+  ]
+}

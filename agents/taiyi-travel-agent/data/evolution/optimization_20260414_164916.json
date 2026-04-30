@@ -1,0 +1,12 @@
+{
+  "type": "Optimization",
+  "recommendations": [
+    {
+      "destination": "东京",
+      "avg_budget": 15750.0,
+      "popularity_rank": 1,
+      "recommendation_score": 100
+    }
+  ],
+  "optimized_at": "2026-04-14T16:49:16.352300"
+}

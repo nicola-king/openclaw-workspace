@@ -1,0 +1,14 @@
+{
+  "enabled": true,
+  "mode": "auto",
+  "context_mode": "full",
+  "verbose": true,
+  "persist_transcript": true,
+  "prompt_override": null,
+  "thinking_override": null,
+  "user_preferences": {
+    "language": "zh-CN",
+    "timezone": "Asia/Shanghai",
+    "reply_style": "minimalist-hacker"
+  }
+}

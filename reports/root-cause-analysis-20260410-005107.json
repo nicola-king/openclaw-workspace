@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-04-10T00:51:07.478184",
+  "total_issues": 1,
+  "issues": [
+    {
+      "component": "Git",
+      "error": "有未提交的变更",
+      "root_cause": "文件修改后未及时提交",
+      "fix": "git add -A && git commit -m '自动提交'",
+      "prevention": "设置自动提交钩子",
+      "5_whys": [
+        "Why 1: 文件修改后未及时提交"
+      ],
+      "severity": "medium"
+    }
+  ]
+}

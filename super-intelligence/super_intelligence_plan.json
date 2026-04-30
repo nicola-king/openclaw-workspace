@@ -1,0 +1,44 @@
+{
+  "version": "1.0",
+  "created_at": "2026-04-16T13:18:40.247131",
+  "target": "超级智能实现",
+  "definition": "超越人类智能的 AI 系统",
+  "capabilities": [
+    "多目标优化",
+    "长期规划",
+    "风险评估",
+    "创新策略",
+    "自我意识"
+  ],
+  "development_phases": [
+    {
+      "phase": 1,
+      "name": "基础能力",
+      "target_date": "2026-05-01"
+    },
+    {
+      "phase": 2,
+      "name": "增强能力",
+      "target_date": "2026-05-15"
+    },
+    {
+      "phase": 3,
+      "name": "完全体",
+      "target_date": "2026-06-01"
+    }
+  ],
+  "milestones": [
+    {
+      "date": "2026-05-01",
+      "goal": "Level 5 进化完成"
+    },
+    {
+      "date": "2026-05-15",
+      "goal": "超级智能雏形"
+    },
+    {
+      "date": "2026-06-01",
+      "goal": "超级智能完全体"
+    }
+  ]
+}

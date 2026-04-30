@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>统计图表 - 太一 Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-gradient-to-br from-green-50 to-teal-100">
+    <!-- 顶部导航 -->
+    <header class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 py-6">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h1 class="text-3xl font-bold text-indigo-600">📊 统计图表</h1>
+                    <p class="text-gray-500 mt-1">Token 使用 · 响应时间 · 任务完成</p>
+                </div>
+                <a href="/" class="text-indigo-600 hover:text-indigo-800 font-semibold">← 返回 Dashboard</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-8">
+        <!-- 关键指标 -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+            <div class="bg-white rounded-xl shadow-md p-6 text-center">
+                <p class="text-gray-500 text-sm mb-2">平均响应时间</p>
+                <p class="text-3xl font-bold text-indigo-600" id="avg-response">550ms</p>
+            </div>
+            <div class="bg-white rounded-xl shadow-md p-6 text-center">
+                <p class="text-gray-500 text-sm mb-2">P95 响应时间</p>
+                <p class="text-3xl font-bold text-blue-600" id="p95-response">800ms</p>
+            </div>
+            <div class="bg-white rounded-xl shadow-md p-6 text-center">
+                <p class="text-gray-500 text-sm mb-2">P99 响应时间</p>
+                <p class="text-3xl font-bold text-purple-600" id="p99-response">1200ms</p>
+            </div>
+            <div class="bg-white rounded-xl shadow-md p-6 text-center">
+                <p class="text-gray-500 text-sm mb-2">趋势</p>
+                <p class="text-3xl font-bold text-green-600" id="trend">🟢 稳定</p>
+            </div>
+        </div>
+
+        <!-- Token 使用趋势 -->
+        <div class="bg-white rounded-xl shadow-md p-6 mb-8">
+            <h3 class="text-lg font-bold text-gray-800 mb-4">📈 Token 使用趋势 (小时)</h3>
+            <canvas id="hourly-token-chart" height="80"></canvas>
+        </div>
+
+        <!-- 日 Token 使用 -->
+        <div class="bg-white rounded-xl shadow-md p-6 mb-8">
+            <h3 class="text-lg font-bold text-gray-800 mb-4">📊 Token 使用趋势 (日)</h3>
+            <canvas id="daily-token-chart" height="80"></canvas>
+        </div>
+
+        <!-- 周 Token 使用 -->
+        <div class="bg-white rounded-xl shadow-md p-6 mb-8">
+            <h3 class="text-lg font-bold text-gray-800 mb-4">📉 Token 使用趋势 (周)</h3>
+            <canvas id="weekly-token-chart" height="80"></canvas>
+        </div>
+    </main>
+
+    <script>
+        // 加载统计数据
+        async function loadStats() {
+            try {
+                const [tokensRes, responseRes] = await Promise.all([
+                    fetch('/api/stats/tokens'),
+                    fetch('/api/stats/response-time')
+                ]);
+                
+                const tokens = await tokensRes.json();
+                const response = await responseRes.json();
+                
+                // 更新关键指标
+                document.getElementById('avg-response').textContent = `${response.avg_ms}ms`;
+                document.getElementById('p95-response').textContent = `${response.p95_ms}ms`;
+                document.getElementById('p99-response').textContent = `${response.p99_ms}ms`;
+                document.getElementById('trend').textContent = response.trend === 'stable' ? '🟢 稳定' : '🔴 波动';
+                
+                // 创建小时图表
+                new Chart(document.getElementById('hourly-token-chart'), {
+                    type: 'line',
+                    data: {
+                        labels: ['00:00', '04:00', '08:00', '12:00', '16:00', '20:00', '24:00'],
+                        datasets: [{
+                            label: 'Token 使用量',
+                            data: tokens.hourly,
+                            borderColor: '#6366f1',
+                            backgroundColor: 'rgba(99, 102, 241, 0.1)',
+                            fill: true,
+                            tension: 0.4
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: { legend: { display: false } },
+                        scales: { y: { beginAtZero: true } }
+                    }
+                });
+                
+                // 创建日图表
+                new Chart(document.getElementById('daily-token-chart'), {
+                    type: 'bar',
+                    data: {
+                        labels: ['周一', '周二', '周三', '周四', '周五', '周六', '周日'],
+                        datasets: [{
+                            label: 'Token 使用量',
+                            data: tokens.daily,
+                            backgroundColor: 'rgba(59, 130, 246, 0.5)',
+                            borderColor: '#3b82f6',
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: { legend: { display: false } },
+                        scales: { y: { beginAtZero: true } }
+                    }
+                });
+                
+                // 创建周图表
+                new Chart(document.getElementById('weekly-token-chart'), {
+                    type: 'line',
+                    data: {
+                        labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
+                        datasets: [{
+                            label: 'Token 使用量',
+                            data: tokens.weekly,
+                            borderColor: '#10b981',
+                            backgroundColor: 'rgba(16, 185, 129, 0.1)',
+                            fill: true,
+                            tension: 0.4
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: { legend: { display: false } },
+                        scales: { y: { beginAtZero: true } }
+                    }
+                });
+                
+            } catch (error) {
+                console.error('加载统计数据失败:', error);
+            }
+        }
+
+        // 初始化
+        loadStats();
+    </script>
+</body>
+</html>

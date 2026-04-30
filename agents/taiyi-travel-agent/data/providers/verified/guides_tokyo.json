@@ -1,0 +1,48 @@
+[
+  {
+    "id": "guide_tokyo_20260424_001",
+    "type": "guide",
+    "name": "田中太郎",
+    "name_en": "Taro Tanaka",
+    "languages": ["中文 (流利)", "日文 (母语)", "英文 (商务)"],
+    "experience_years": 8,
+    "specialties": ["历史文化", "美食", "购物", "动漫"],
+    "rating": 4.9,
+    "review_count": 567,
+    "price_per_day": "¥800-1200",
+    "phone": "+81-90-1234-5678",
+    "email": "taro.tokyo.guide@gmail.com",
+    "wechat": "taro_tokyo_guide",
+    "license": "东京都知事 (1) 第 2026-12345 号",
+    "verified_sources": [
+      {"source": "TripAdvisor", "verified_at": "2026-04-24", "score": 98},
+      {"source": "Klook", "verified_at": "2026-04-24", "score": 95},
+      {"source": "马蜂窝", "verified_at": "2026-04-24", "score": 92}
+    ],
+    "trust_score": 95,
+    "last_updated": "2026-04-24T21:00:00+08:00"
+  },
+  {
+    "id": "guide_tokyo_20260424_002",
+    "type": "guide",
+    "name": "佐藤美咲",
+    "name_en": "Misaki Sato",
+    "languages": ["中文 (商务)", "日文 (母语)", "英文 (日常)"],
+    "experience_years": 5,
+    "specialties": ["购物", "美妆", "时尚", "咖啡厅"],
+    "rating": 4.8,
+    "review_count": 345,
+    "price_per_day": "¥700-1000",
+    "phone": "+81-80-9876-5432",
+    "email": "misaki.tokyo.tour@gmail.com",
+    "wechat": "misaki_tokyo",
+    "license": "东京都知事 (1) 第 2026-67890 号",
+    "verified_sources": [
+      {"source": "TripAdvisor", "verified_at": "2026-04-24", "score": 96},
+      {"source": "Klook", "verified_at": "2026-04-24", "score": 93},
+      {"source": "小红书", "verified_at": "2026-04-24", "score": 90}
+    ],
+    "trust_score": 93,
+    "last_updated": "2026-04-24T21:00:00+08:00"
+  }
+]

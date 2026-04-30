@@ -1,0 +1,17 @@
+{
+  "type": "Fee Minimizer",
+  "breakdown": {
+    "base_fare": 1500,
+    "baggage_fee": 200,
+    "seat_selection": 100,
+    "meal": 80,
+    "insurance": 50,
+    "total": 1930,
+    "tips": [
+      "提前在线选座免费",
+      "自带食物节省餐费",
+      "使用信用卡旅行保险"
+    ]
+  },
+  "timestamp": "2026-04-14T16:32:25.380120"
+}

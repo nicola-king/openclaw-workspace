@@ -1,0 +1,12 @@
+{
+  "type": "Brand Monitoring",
+  "brand": "太一 AGI",
+  "mentions": 100,
+  "sentiment": "正面",
+  "channels": [
+    "Twitter",
+    "Reddit",
+    "News"
+  ],
+  "timestamp": "2026-04-14T16:12:41.940686"
+}

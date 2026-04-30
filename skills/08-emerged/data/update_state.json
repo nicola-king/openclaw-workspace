@@ -1,0 +1,348 @@
+{
+  "lastUpdate": "2026-04-25T09:16:22.443008",
+  "files": {
+    "/home/nicola/.openclaw/workspace/skills/08-emerged/quota-decoration/quota_data.json": {
+      "hash": "618da812fd3fee38a3c4800d61e63207",
+      "mtime": 1777078825.534723,
+      "size": 1645032,
+      "lastChecked": "2026-04-25T09:16:22.442818"
+    },
+    "/home/nicola/.openclaw/workspace/skills/08-emerged/quota-installation/quota_data.json": {
+      "hash": "658435a5da19b91667e27f814bf58095",
+      "mtime": 1777078829.9888928,
+      "size": 28931372,
+      "lastChecked": "2026-04-25T09:16:22.442836"
+    },
+    "/home/nicola/.openclaw/workspace/skills/08-emerged/quota-transit/quota_data.json": {
+      "hash": "5f264e626a8da566e40a2913c387187d",
+      "mtime": 1777078832.2639794,
+      "size": 5470362,
+      "lastChecked": "2026-04-25T09:16:22.442840"
+    },
+    "/home/nicola/.openclaw/workspace/skills/08-emerged/quota-prefab/quota_data.json": {
+      "hash": "94391d4ab32c779a98336e600bd5571d",
+      "mtime": 1777078834.2070537,
+      "size": 530953,
+      "lastChecked": "2026-04-25T09:16:22.442842"
+    },
+    "/home/nicola/.openclaw/workspace/skills/08-emerged/quota-building/quota_data.json": {
+      "hash": "255bc51040ab91b71361e64e2d10b4e4",
+      "mtime": 1777078834.8040764,
+      "size": 1716423,
+      "lastChecked": "2026-04-25T09:16:22.442844"
+    },
+    "/home/nicola/.openclaw/workspace/skills/08-emerged/quota-municipal/quota_data.json": {
+      "hash": "c6aa12e4efbf9268450236c1fd95c601",
+      "mtime": 1777078835.8801174,
+      "size": 6120057,
+      "lastChecked": "2026-04-25T09:16:22.442846"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/08清单标准模板造价站咨询问题20181001.md": {
+      "hash": "c8df36eecca71a20a4e1c54708a84df9",
+      "mtime": 1775873647.2298284,
+      "size": 2782,
+      "lastChecked": "2026-04-25T09:16:22.442849"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/提升施工现场形象品质计算安全文明施工费的文件渝建2018-697号.md": {
+      "hash": "4881de3e7f76688ad6fe768755d8b574",
+      "mtime": 1775873647.1880555,
+      "size": 1963,
+      "lastChecked": "2026-04-25T09:16:22.442850"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/sheet.md": {
+      "hash": "3d872b5a67e0d1cc6c0eb1ae13f4c67b",
+      "mtime": 1775873647.1292987,
+      "size": 279,
+      "lastChecked": "2026-04-25T09:16:22.442852"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/2018年重庆市建设工程计价定额综合解释（六）.md": {
+      "hash": "5c87d7d4046a02709174e84001bad6d9",
+      "mtime": 1775873657.1684377,
+      "size": 26012,
+      "lastChecked": "2026-04-25T09:16:22.442854"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/综合解释七（2026.1.1执行）.md": {
+      "hash": "64dc30646ff2b76a2ca5809795a9ed6c",
+      "mtime": 1775873907.1732903,
+      "size": 22698,
+      "lastChecked": "2026-04-25T09:16:22.442856"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/重庆营改增相关文件.md": {
+      "hash": "464ee32745218a168510beb9ba492437",
+      "mtime": 1775892748.0734217,
+      "size": 230,
+      "lastChecked": "2026-04-25T09:16:22.442859"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/建筑工程安全文明工地建设标准（DBJ50T-442-2023）.md": {
+      "hash": "ba242ef6d67ab7dcb169deac5f094913",
+      "mtime": 1775873905.413932,
+      "size": 1908,
+      "lastChecked": "2026-04-25T09:16:22.442861"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/thisdayinhistory.md": {
+      "hash": "2c5156d3eef8303daf5fa5de20be6b17",
+      "mtime": 1775873647.1231105,
+      "size": 553,
+      "lastChecked": "2026-04-25T09:16:22.442863"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/hello_world.md": {
+      "hash": "e11dad235a4b32b3680ec94bf1fac46d",
+      "mtime": 1775873647.1355498,
+      "size": 286,
+      "lastChecked": "2026-04-25T09:16:22.442864"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/关于适用增值税新税率调整建设工程计价依据的通知（渝建【2019】143号）.md": {
+      "hash": "9920fb2c076907c548d83168df45d999",
+      "mtime": 1775873647.3251421,
+      "size": 482,
+      "lastChecked": "2026-04-25T09:16:22.442866"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/重庆施工现场围挡及大门标准图集2020版DJBT50-133-2020.md": {
+      "hash": "4699916bb612599559111f3e68f2697d",
+      "mtime": 1775874138.0768552,
+      "size": 15821,
+      "lastChecked": "2026-04-25T09:16:22.442868"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/渝《关于开展建筑施工现场形象品质提升攻坚行动的通知》（渝建质安〔2020〕15 号）.md": {
+      "hash": "1c1b391ae85ae8821b7811bc195320b5",
+      "mtime": 1775873649.1305592,
+      "size": 477,
+      "lastChecked": "2026-04-25T09:16:22.442870"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/建筑工程建筑面积计算规范   GBT 50353-2013（含条文说明）.md": {
+      "hash": "88c20f395bd2013bedb4b365e568f488",
+      "mtime": 1775874240.9901683,
+      "size": 27714,
+      "lastChecked": "2026-04-25T09:16:22.442872"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/重庆 2018 定额使用说明.md": {
+      "hash": "f3e02b41c708b118670228debce95033",
+      "mtime": 1775872815.9824584,
+      "size": 6730,
+      "lastChecked": "2026-04-25T09:16:22.442874"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/24机械台班定额.md": {
+      "hash": "9536b479c115c1ba0dcf13c7ea2ba82c",
+      "mtime": 1775873646.7244177,
+      "size": 16924,
+      "lastChecked": "2026-04-25T09:16:22.442875"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/关于发布《2018年重庆市建设工程计价定额综合解释（七）》的通知.md": {
+      "hash": "160b5228b1e09cbe6b3cef900d159a3d",
+      "mtime": 1775873649.1202273,
+      "size": 22804,
+      "lastChecked": "2026-04-25T09:16:22.442877"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/定额配套文件完整清单.md": {
+      "hash": "efe33d5f31e93f28b807b3df679b870a",
+      "mtime": 1775874079.6961884,
+      "size": 9971,
+      "lastChecked": "2026-04-25T09:16:22.442880"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/重庆市建筑工程施工现场安全文明施工标准化管理图集（渝建质安〔2023〕5号）.md": {
+      "hash": "ed1c7dd9cb977a774344adca2af7e4d6",
+      "mtime": 1775873886.3985374,
+      "size": 99267,
+      "lastChecked": "2026-04-25T09:16:22.442882"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/配合比表.md": {
+      "hash": "bff8bac8ac6688e3eb549c9a041159e2",
+      "mtime": 1775886004.3789263,
+      "size": 279,
+      "lastChecked": "2026-04-25T09:16:22.442883"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/关于印发《市级方舱医院和隔离用房建设项目结算指引》的通知（沪建标定联〔2022〕383 号）.md": {
+      "hash": "91f497f4abc558c42a0e9faaa011a30b",
+      "mtime": 1775873655.3583162,
+      "size": 1319,
+      "lastChecked": "2026-04-25T09:16:22.442885"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/重庆市政府投资管理办法（重庆市人民政府令第 339 号）.md": {
+      "hash": "e988ca64386e75e5baf6fbcd0782562f",
+      "mtime": 1775873647.21521,
+      "size": 23532,
+      "lastChecked": "2026-04-25T09:16:22.442887"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/换土挖坑体积参考表2017.7.2.md": {
+      "hash": "1bf85f2f6daf7ec9ee80a496f26e6f19",
+      "mtime": 1775873646.929073,
+      "size": 1459,
+      "lastChecked": "2026-04-25T09:16:22.442889"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/渝建管〔2021〕207 质量创优奖励费用.md": {
+      "hash": "db75745aa9bd579f55f332db957a4fe0",
+      "mtime": 1775873647.2374904,
+      "size": 2603,
+      "lastChecked": "2026-04-25T09:16:22.442891"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/2018通用安装定额及软件配套交底讲义.md": {
+      "hash": "5e0e16be63d2021817979de9ae180679",
+      "mtime": 1775874239.6393983,
+      "size": 59866,
+      "lastChecked": "2026-04-25T09:16:22.442892"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/2018年重庆市建设工程计价定额综合解释（七）.md": {
+      "hash": "81e2be636f232b7dece5006cda0a7bc5",
+      "mtime": 1775873889.1964653,
+      "size": 22750,
+      "lastChecked": "2026-04-25T09:16:22.442894"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/装配定额.md": {
+      "hash": "21a98b56da4b76186cdf628a129fd41b",
+      "mtime": 1775886004.3686678,
+      "size": 279,
+      "lastChecked": "2026-04-25T09:16:22.442896"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/《四川省建设工程工程量清单计价定额》2020版编制概况.md": {
+      "hash": "2461041cfa043dbcfe309f796d503a09",
+      "mtime": 1775873880.891105,
+      "size": 632,
+      "lastChecked": "2026-04-25T09:16:22.442898"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/三星智慧工地清单(香港置地)(1).md": {
+      "hash": "4a1350e7bd68fb1c9fe52ad6bcd7a198",
+      "mtime": 1775873646.632915,
+      "size": 4745,
+      "lastChecked": "2026-04-25T09:16:22.442899"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/27仪器仪表.md": {
+      "hash": "f1e9bf9bd7fca6d51bf3cdd65f85bc69",
+      "mtime": 1775873646.896234,
+      "size": 1809,
+      "lastChecked": "2026-04-25T09:16:22.442901"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/2018重庆市通用安装工程计价定额咨询20181001.md": {
+      "hash": "67e997668d20da669730bcb7e22e793e",
+      "mtime": 1775873647.1834974,
+      "size": 5391,
+      "lastChecked": "2026-04-25T09:16:22.442903"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/平基土石方典型工程测算表（2017审查会）.md": {
+      "hash": "68576d578021af469d58202c8c019e54",
+      "mtime": 1775873647.0862248,
+      "size": 3295,
+      "lastChecked": "2026-04-25T09:16:22.442904"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/GBT 50353-2013-建筑工程建筑面积计算规范 图解.md": {
+      "hash": "1a2e410520c16e1b246a520266db861b",
+      "mtime": 1775873655.1033185,
+      "size": 764,
+      "lastChecked": "2026-04-25T09:16:22.442906"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/GB_T50353-2013建筑工程建筑面积计算规范.md": {
+      "hash": "b765838179775ebed28e67a16d5aba3f",
+      "mtime": 1775873655.074801,
+      "size": 658,
+      "lastChecked": "2026-04-25T09:16:22.442908"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/2018年重庆市建设工程计价定额综合解释（四）.md": {
+      "hash": "505dbe9abb5cf1ce2f93e2c50e4b71ae",
+      "mtime": 1775873887.407075,
+      "size": 15074,
+      "lastChecked": "2026-04-25T09:16:22.442909"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/市政定额录入清单.md": {
+      "hash": "23fdcbdf888597e13e34173ff1e1647a",
+      "mtime": 1775874413.9695535,
+      "size": 7162,
+      "lastChecked": "2026-04-25T09:16:22.442911"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/配套文件录入指南.md": {
+      "hash": "0770999b9244027f3e107ed7cbb27743",
+      "mtime": 1775873802.5743303,
+      "size": 7205,
+      "lastChecked": "2026-04-25T09:16:22.442913"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/重庆首届造价员节暨18新定额应用讲座 讲义.md": {
+      "hash": "321f12a604e626546e63092c3f87910c",
+      "mtime": 1775873905.3385105,
+      "size": 93163,
+      "lastChecked": "2026-04-25T09:16:22.442914"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/重庆市建设工程安全文明施工费计取及使用管理规定（渝建管[2024]38号）.md": {
+      "hash": "39a3e8e3f8a811fe0b42fb1d33b73d3d",
+      "mtime": 1775892748.0735445,
+      "size": 366,
+      "lastChecked": "2026-04-25T09:16:22.442919"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/定额导入报告.md": {
+      "hash": "b0a092a346d67d2bd40fd03eb6817468",
+      "mtime": 1775874594.7749898,
+      "size": 4220,
+      "lastChecked": "2026-04-25T09:16:22.442921"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/2021年重庆概算定额（含2018年预算定额）中文件作废或新增及更替部分20250912.md": {
+      "hash": "12d9054d86665e2750a20622b83cf6ea",
+      "mtime": 1775873646.6557405,
+      "size": 1019,
+      "lastChecked": "2026-04-25T09:16:22.442923"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/重庆市2018序列定额章节说明.md": {
+      "hash": "360c1914caaa110b6b5386c436742e71",
+      "mtime": 1775892748.0732508,
+      "size": 250,
+      "lastChecked": "2026-04-25T09:16:22.442924"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/1819轨道.md": {
+      "hash": "f28b2f02fccda9833d1b8a89e9e7bca4",
+      "mtime": 1775886004.4068413,
+      "size": 275,
+      "lastChecked": "2026-04-25T09:16:22.442926"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/重庆 2018 机械台班定额.md": {
+      "hash": "d57d9f1a932b7eef382db942c5029df9",
+      "mtime": 1775872708.6426744,
+      "size": 3242,
+      "lastChecked": "2026-04-25T09:16:22.442928"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/《智慧工地建设与评价标准》DBJ50T-356-2020重庆.md": {
+      "hash": "49e2ec36aa4e9143aaa0a5667649ba27",
+      "mtime": 1775873655.0395324,
+      "size": 1164,
+      "lastChecked": "2026-04-25T09:16:22.442930"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/2018(不含1819轨道).md": {
+      "hash": "8622e778a59552982b04477974668e33",
+      "mtime": 1775886004.3915207,
+      "size": 299,
+      "lastChecked": "2026-04-25T09:16:22.442932"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/建设工程施工现场围挡及大门标准图集（2020版）.pdf.md": {
+      "hash": "9a9d0f110d85e80228d85903497efe5e",
+      "mtime": 1775873880.8653712,
+      "size": 8193,
+      "lastChecked": "2026-04-25T09:16:22.442934"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/市政、轨道测算表.md": {
+      "hash": "777e583acd9545653bc7627cc0b45d1e",
+      "mtime": 1775873647.1201448,
+      "size": 2919,
+      "lastChecked": "2026-04-25T09:16:22.442935"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/2018年重庆市建设工程计价定额综合解释.md": {
+      "hash": "3592a5bdc92593e0c27e1ea315d5e72c",
+      "mtime": 1775892748.0778875,
+      "size": 280,
+      "lastChecked": "2026-04-25T09:16:22.442937"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/定额解释配套文件清单.md": {
+      "hash": "4db53029fc6291b8d2a5d1f77ba5a886",
+      "mtime": 1775873092.177129,
+      "size": 5757,
+      "lastChecked": "2026-04-25T09:16:22.442939"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/渝建管〔2020〕97号 调整建设施工现场形象品质提升安全文明施工费计取.md": {
+      "hash": "868e0d1c28816117159796290d816a24",
+      "mtime": 1775873647.2218063,
+      "size": 2964,
+      "lastChecked": "2026-04-25T09:16:22.442940"
+    },
+    "/home/nicola/.openclaw/workspace/skills/07-system/cost-agent/quota_md/2018年重庆市建设工程计价定额 综合解释（三）.md": {
+      "hash": "4ffb9d3bcc979114540412f516af0d6a",
+      "mtime": 1775874228.4980154,
+      "size": 1780,
+      "lastChecked": "2026-04-25T09:16:22.442942"
+    }
+  },
+  "version": 1
+}

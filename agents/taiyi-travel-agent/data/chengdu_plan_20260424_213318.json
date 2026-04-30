@@ -1,0 +1,123 @@
+{
+  "type": "Chengdu Travel Plan",
+  "origin": "北京",
+  "destination": "成都",
+  "start_date": "2026-05-01",
+  "end_date": "2026-05-04",
+  "days": 4,
+  "travelers": 2,
+  "mode": "国内游",
+  "budget": 3000,
+  "budget_per_person": 1500.0,
+  "budget_allocation": {
+    "交通": 750.0,
+    "住宿": 900.0,
+    "餐饮": 600.0,
+    "活动": 450.0,
+    "购物": 300.0
+  },
+  "preferences": [
+    "休闲美食",
+    "文化体验",
+    "自然风光"
+  ],
+  "daily_itinerary": [
+    {
+      "day": 1,
+      "date": "2026-05-01",
+      "attractions": [
+        {
+          "name": "锦里",
+          "duration": "2h",
+          "cost": 0
+        },
+        {
+          "name": "春熙路",
+          "duration": "3h",
+          "cost": 0
+        },
+        {
+          "name": "武侯祠",
+          "duration": "2h",
+          "cost": 50
+        }
+      ],
+      "meal_breakfast": "酒店早餐/担担面",
+      "meal_lunch": "火锅",
+      "meal_dinner": "串串香"
+    },
+    {
+      "day": 2,
+      "date": "2026-05-02",
+      "attractions": [
+        {
+          "name": "锦里",
+          "duration": "2h",
+          "cost": 0
+        },
+        {
+          "name": "春熙路",
+          "duration": "3h",
+          "cost": 0
+        },
+        {
+          "name": "武侯祠",
+          "duration": "2h",
+          "cost": 50
+        }
+      ],
+      "meal_breakfast": "酒店早餐/担担面",
+      "meal_lunch": "火锅",
+      "meal_dinner": "串串香"
+    },
+    {
+      "day": 3,
+      "date": "2026-05-03",
+      "attractions": [
+        {
+          "name": "锦里",
+          "duration": "2h",
+          "cost": 0
+        },
+        {
+          "name": "春熙路",
+          "duration": "3h",
+          "cost": 0
+        },
+        {
+          "name": "武侯祠",
+          "duration": "2h",
+          "cost": 50
+        }
+      ],
+      "meal_breakfast": "酒店早餐/担担面",
+      "meal_lunch": "火锅",
+      "meal_dinner": "串串香"
+    },
+    {
+      "day": 4,
+      "date": "2026-05-04",
+      "attractions": [
+        {
+          "name": "锦里",
+          "duration": "2h",
+          "cost": 0
+        },
+        {
+          "name": "春熙路",
+          "duration": "3h",
+          "cost": 0
+        },
+        {
+          "name": "武侯祠",
+          "duration": "2h",
+          "cost": 50
+        }
+      ],
+      "meal_breakfast": "酒店早餐/担担面",
+      "meal_lunch": "火锅",
+      "meal_dinner": "串串香"
+    }
+  ],
+  "timestamp": "2026-04-24T21:33:18.927028"
+}

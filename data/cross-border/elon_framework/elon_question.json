@@ -1,0 +1,147 @@
+{
+  "questions": [
+    {
+      "id": "QUESTION_20260419_230904",
+      "requirement": "所有客户邮件必须人工审核后才能发送",
+      "context": {
+        "context": "客户触达流程"
+      },
+      "questions": [
+        {
+          "question": "这个要求是谁定的？",
+          "priority": "P0"
+        },
+        {
+          "question": "为什么需要这个要求？",
+          "priority": "P0"
+        },
+        {
+          "question": "如果没有这个要求会怎样？",
+          "priority": "P1"
+        },
+        {
+          "question": "这个要求现在还成立吗？",
+          "priority": "P1"
+        },
+        {
+          "question": "有没有更好的替代方案？",
+          "priority": "P1"
+        },
+        {
+          "question": "这个要求的成本是多少？",
+          "priority": "P0"
+        },
+        {
+          "question": "这个要求的价值是多少？",
+          "priority": "P0"
+        },
+        {
+          "question": "ROI 是否合理？",
+          "priority": "P1"
+        }
+      ],
+      "answers": {},
+      "analysis_result": {
+        "source": "法规要求",
+        "purpose": "需要进一步分析",
+        "cost": {
+          "time": "待评估",
+          "money": "待评估",
+          "resources": "待评估"
+        },
+        "value": {
+          "business_value": "待评估",
+          "user_value": "待评估",
+          "strategic_value": "待评估"
+        },
+        "roi": 0.0,
+        "alternatives": [],
+        "essential": true,
+        "optimizable": false
+      },
+      "recommendation": "建议重新评估 - ROI 偏低",
+      "created_at": "2026-04-19T23:09:04.646458"
+    }
+  ],
+  "analysis": [
+    {
+      "id": "PROCESS_20260419_230904",
+      "process": {
+        "name": "客户触达流程",
+        "steps": [
+          "人工搜寻客户",
+          "手动录入数据",
+          "人工验证信息",
+          "手动编写邮件",
+          "人工发送邮件",
+          "手动追踪回复"
+        ]
+      },
+      "step1_question": [
+        {
+          "step": "人工搜寻客户",
+          "questions": [
+            "这个步骤是谁定的？",
+            "为什么需要这个步骤？",
+            "如果没有这个步骤会怎样？"
+          ]
+        },
+        {
+          "step": "手动录入数据",
+          "questions": [
+            "这个步骤是谁定的？",
+            "为什么需要这个步骤？",
+            "如果没有这个步骤会怎样？"
+          ]
+        },
+        {
+          "step": "人工验证信息",
+          "questions": [
+            "这个步骤是谁定的？",
+            "为什么需要这个步骤？",
+            "如果没有这个步骤会怎样？"
+          ]
+        },
+        {
+          "step": "手动编写邮件",
+          "questions": [
+            "这个步骤是谁定的？",
+            "为什么需要这个步骤？",
+            "如果没有这个步骤会怎样？"
+          ]
+        },
+        {
+          "step": "人工发送邮件",
+          "questions": [
+            "这个步骤是谁定的？",
+            "为什么需要这个步骤？",
+            "如果没有这个步骤会怎样？"
+          ]
+        },
+        {
+          "step": "手动追踪回复",
+          "questions": [
+            "这个步骤是谁定的？",
+            "为什么需要这个步骤？",
+            "如果没有这个步骤会怎样？"
+          ]
+        }
+      ],
+      "step2_delete": [],
+      "step3_simplify": [
+        "人工搜寻客户",
+        "手动录入数据",
+        "人工验证信息",
+        "手动编写邮件",
+        "人工发送邮件",
+        "手动追踪回复"
+      ],
+      "step4_accelerate": [],
+      "step5_automate": [],
+      "recommendations": [
+        "简化6个手动步骤"
+      ]
+    }
+  ],
+  "optimizations": []
+}

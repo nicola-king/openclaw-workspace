@@ -1,0 +1,120 @@
+{
+  "version": "turboquant-json-v2.0",
+  "timestamp": 1774523663.1751947,
+  "compressed": {
+    "version": "turboquant-json-v2.0",
+    "schema": {
+      "timestamp": {
+        "type": "timestamp"
+      },
+      "temperature": {
+        "type": "float",
+        "min": 2.1,
+        "max": 41.8
+      },
+      "humidity": {
+        "type": "float",
+        "min": 40.1,
+        "max": 94.9
+      },
+      "pressure": {
+        "type": "float",
+        "min": 980.5,
+        "max": 1040.0
+      },
+      "wind_speed": {
+        "type": "float",
+        "min": 0.0,
+        "max": 19.91
+      },
+      "wind_direction": {
+        "type": "float",
+        "min": 9.7,
+        "max": 359.9
+      },
+      "precipitation": {
+        "type": "float",
+        "min": 0.15,
+        "max": 49.63
+      },
+      "cloud_cover": {
+        "type": "float",
+        "min": 0.4,
+        "max": 99.4
+      },
+      "visibility": {
+        "type": "float",
+        "min": 1.02,
+        "max": 19.99
+      },
+      "uv_index": {
+        "type": "float",
+        "min": 0.0,
+        "max": 11.0
+      }
+    },
+    "columns": {
+      "timestamp": {
+        "base": 1767196800,
+        "data": "/Td6WFoAAATm1rRGAgAhARYAAAB0L+Wj4AUmABddAC2MAYIReusE6Wiblxi/wqK7BSCpvAAAAAADnLOk2IeT6wABM6cKAAAAPAIB7LHEZ/sCAAAAAARZWg=="
+      },
+      "temperature": {
+        "min": 2.1,
+        "max": 41.8,
+        "data": "/Td6WFoAAATm1rRGAgAhARYAAAB0L+Wj4ARAAZ9dAC2MgoL/Z3OPsnFsY4M3Yn6c0D/iTcRW86yF7ymCejvSLoFMNN6eBxaNSGhq9aCJ3CwZF0+GRlPpqeVda0JYZyTQjb4uPl1VlrwLJD5qKU4ziv6P6j4xUF2/++d3UzSac5QRxnbV74P3X3l3V74rYCM2968uLgkQiETkwZv9O/Rl+3YD56RX2cFtfHQQAlUbazY9lovB9h5PMQF58bdWExhQUr6SmyeQ3AgqKvmmNVwkPhq2xqPd7grk7vWGJ0a5+a6Xc8VdiOfEwny4CUNLr8aSzg0AGwi+SGxp91zvTeJOXDY3bvZGzQockQnYTg8j5teqUr5XAnUSDJiP3BWUroGulwcQICwYnTW0D/ylahLkwWTkrduAvNOSTXNaRUttUj2e/DONdxY/eIdFGMWq/F1DWjWhc6MfSLDFcmMzzDBhFkttANcE4T1l+G0h0T9Tg+iYp88Otn3XsKH9WuHGRi1IuBIo/I7OSu0VfDRSiAHaSAITWRKLVEoIJtGe/naevbmTHvSkeu1x8dphyANlJ2wR6cxpSQn2ohex+FcCrgAAAAiyzyEfyw5SAAG7A8EIAABglRo0scRn+wIAAAAABFla"
+      },
+      "humidity": {
+        "min": 40.1,
+        "max": 94.9,
+        "data": "/Td6WFoAAATm1rRGAgAhARYAAAB0L+Wj4ARtAaNdAC2NAqL/iOwg8o8zUIZF2WCk/MIOzueFFyO7klqlzgwc3qFJzvVJtc+JUvGBT4oEAVCXC66NoZ4RrSwlDU5dZcMjHoA6CZu06qUxQ0WKCjH14H2fnfJsjgbMvrH9/JTIeqVvxK6Dcj4GFBzqaH8F5VhcAzYcffFgMcgj7uMpn18SIdO6PgLQKwcjFqOZkAlkYyvZNQCTdI2qjkUlf3J15NXkAW1wUtu8S7cwPVtS1bUhOvvq6m2MJF5qpYXiZPWxBvL0miwwWZC3yd9//r79lqZdxPdQ22z1OzcC/UkUMPptlBi3ES4xg+EqeocASZeHNs96+rnZNyBpLWePxIBBU5tfYR9q/NxmarEbeoD0S9rsbj61SpcZ44DmRh1M0GiYYeTKhDTk3O15Kwk5OMr3nOa/E+xgH/soJ9tLv+KEQqT4kT5Umh/NaBieriDSZDpTaQcuxuWsE29etz0+15cUOFdIqFlKoIK6aoYISsdvgyMUaFYTOCY8C3AMUKinXQe4JJTZHlpbNYu1lRlz5n3vMN2FrgQ2aiRoOG0hZEOZFQgJssgAAAAGiRfVndm0XwABvwPuCAAAHmjaV7HEZ/sCAAAAAARZWg=="
+      },
+      "pressure": {
+        "min": 980.5,
+        "max": 1040.0,
+        "data": "/Td6WFoAAATm1rRGAgAhARYAAAB0L+Wj4AWpAdJdAC2ObGYuHlxf2prVuthNwerF66c3KyKrAgBvpz0it1eouYxZTGx7IlwRTEFaDN5pP6YSh0tpNNotM/W2xxPWANTpdr53GQFE7S1l6UueSlTBXOOKZ+YhvACnQu2i9GG1GLDgHD0pjbhJqG5RxoaFRGPYLOLwA+gFsdqMpxBUnmG3o7UgOuGMnS8siKiKTvIVK653jtQFNTRROljT10QqHUXtT0HmdMtVX3ATBZiFNVlwME++/6YLtM8PupdaeZg90NueVVStpB4q6/2NS2zqpunGWhUKTglMt3GFjh3gWV8UWjyrZOkGRixfi5G7ZKfWebV4Njw/OHUTuVZn1FgKBpBzLNIcrjYkaBdo6fGGbDOP3Ap50/GSjvWoNtXnJWyAugCrnqWXMv/CxaeyKeyGeIlLxfTjj0LJcPvnE+p7/whxSgemV0f5sUbrrTheJhuiBR8Y2LuCjoZgmsy9UNhGvLwqcSTeh+jybWDbYmdQ1UZskSsUWQFJY3UDHXaDKSwN+4o3jedYKL/8O52MB/qhqrAc+/VAos3xE0aroK9qLPZSK3CrXhY70ELvbghMUFOrh71r6cHVyILirQ5q1etDsX6fulkoEFZpu/pSAfDwDXFesgAAAADbwN8EDqyCGQAB7gOqCwAAf8I4hrHEZ/sCAAAAAARZWg=="
+      },
+      "wind_speed": {
+        "min": 0.0,
+        "max": 19.91,
+        "data": "/Td6WFoAAATm1rRGAgAhARYAAAB0L+Wj4AS3AfRdAC2MQgL/X1f89mhCUoT0T+Q8x+e5Q4DU7LNk0iMUnvklqXgZMuTskpaaSiUfuDVSD72PRqWRA09k2cTTxmnvuDYsvyfCIxD2tfpEzTgaeBHD+UBpwwdtyMITC71naDg8nzvKkyystNZGX43bpa7+MVklEuIum+76nYdtfgWKXS3sx/UOZ291KYugRl7nDsJaqlD7WbhHpYi20kn6UuT9YhlyMyYQF6nvDcjuME8IXam1OazNNfhEmxJqL7y5MrFPtjt+WPQ9uYP+Q3dZwCo391B/jOpfL8lQiUTLNMEumrtGEfxmAdELDKePC4FrCZgFaxoD3fPL0booquqr735VFJzGfxdMYXjLHKIrDeGAqXTlYfdnrupYTfswZ8MgaYVeJETAq2YVe/VBDF+dhSmnuIjLIFaqOemgQknzr4eQ2toX/L8OfNcXzKOfbO3zqFjpfZ45FieG77QvLvr5AU4utx2nx6qrAKJ0FzCI51cGAy6F0cf8kR4CpnGoHv5jM2x7ZfASiNE8rubAugkBR/+VEY/8M86BGGsSafzoxBMsPqVDtrBwXpTuiEypR2acQkLVg+Btre4aqBa7aanzu+DPAAVIkFaHsG09WuPsNdeJt5t8sjsTcL2i0vk+2XasmNjx2iTMh7HwAkqgKVHhzf4V+dvxm40AAOcRUyn0nZLOAAGQBLgJAACkOaT8scRn+wIAAAAABFla"
+      },
+      "wind_direction": {
+        "min": 9.7,
+        "max": 359.9,
+        "data": "/Td6WFoAAATm1rRGAgAhARYAAAB0L+Wj4ATtAgxdAC2MQuMzWTGla/RIz+v5Wtul8EvN8JkHIX3mphxRXwXjw1VpendoIl9jWsJ4AF3YfG3hg5vJnvN3s6gS6GGcfEIP6VY21O6VFGoMNUGM80XpEFZU+Ezf3cWyo1gl8nYc/18GU8Lnig291KNNdn7GkAAD+u/l/haMMPqUza2+pIb1eEIQHhsek6sGrCRUNZowDmSVfqHo0ET2z5TaeAWcIBcI+DT38+B5+m4quCzO9+9loC5pGLLyZmxLSXiruTnQuM1zciyJ/Wpin8GSV5WWuSMvSVJf0G83/R2bQOb56r9+7HeUasDnul1nrQwZj+jJD9WIBW8KQvwSQuiw3+8ZvTBhPgbTp4vrzlBy2xFMM/bR13zR40E0LFXOg25PAhV9tVpvAgtEQXrCn93AmCIBgTm4DWFfESceDeRVmGbIsa6FiN3+GCLCQIgcsdO2GTL95tN/xpKM87n67VKPxy/IfgjLct4VPe+8gxGMOuHh7BCTLLN9kzfZ6q5e1oJtsDhDSZkVVPdPrc2uQeoupkYr3Wwc6v5Y9glRcjVV/hUTSu4BVyeOV/GhL5svGPRMAOc4/wFeoYMNWMWiYgYwC6lYHVze0fBHilUn/lZEhxFxljFvYvu5Vpzyq9zMEiZqFpzkYJMtGmzSfJtWdij6VZRx9Y+pgsBK8LzJYe5PDAnIXe9PCH1MBR0+ljstanwAAJvOdo3FTZPLAAGoBO4JAAAa7Ov6scRn+wIAAAAABFla"
+      },
+      "precipitation": {
+        "min": 0.15,
+        "max": 49.63,
+        "data": "/Td6WFoAAATm1rRGAgAhARYAAAB0L+Wj4ATzAipdAC2MwwL/SE3UYxClbDBcmUprKVdU/y1BATxcsOgs/pgF4t6MhT/V15O+cVTdLLLjfQDqVW6pMM03QPtaPZQ19XbNgM4XOtIsZvNWvWxdNF5C7TG0BUHxL7myzm71PLM+AcmmFeGcZhzSV2zjKzRkK0Duzs17KLcPb030BeOog81ReGv4Mg8S8mBImWVBRy9CrYUvzRxIll+3ETemOe7LYcQaBsVTWyoCP+NGlGmSzctU4VSZESR5UHBUTKrDlWk5DKiQTB/ixad2f08bIVL39nd0pR/RiESBLc0VMseLP/wPilO4LEf5rQp4sD076VqqLGZnmRbZLRSYW5sZud14nKH5rNba1U95j5hpGPjucvX8IuYLH/mC0fefSk6UAxO6BpXNE2ZG1AqGbOTHNJxKWIps/aSGJJr5HLQd6Stdsz6KHjcL5q88pS/egGQF5TnVD5ezJDZJvLih1wf3wZduVqntp4Vg/4kOFtF2qD2aJC9WICct0SNfKMrLKUm0MM56lES7y3iOVVi7BEtJqZ1VUVm4m1bURrpfxJC2rbD057gFL5iII4K8hc/pRqeynrNpR7ngu1GjK/fHm9l0slXH/0Gxgp1qFY4mlLlzO1+UlV6q+8pdRoOPbzdcBWLSB6n4G06W+GRQruHsfiMmC2zVjJZJSRLlnXsqE6q3pxBmvHz1PmZeA8294GyQRl1N9CDbxdd9l/p4wkFwk2msZBSa6d6gbqD/4uNskWwAAAAAQJ5QduwVJaMAAcYE9AkAAMs1sfexxGf7AgAAAAAEWVo="
+      },
+      "cloud_cover": {
+        "min": 0.4,
+        "max": 99.4,
+        "data": "/Td6WFoAAATm1rRGAgAhARYAAAB0L+Wj4ARcAcBdAC2NQyL/Znf1zdzfhYQp0jNBLJWpNArL+YnWZe5SY9ErGohBWM73uhR9ltIMuMyT4lv5wImSCUWSEwJ9qCQLBwPqUPDpOnnVzTtF2t3CdHV/ySlsJTAs2idlE3aItR9a8tC4Xq0MEq7UeloUs2RROi5Q+kchcOI+6CnGElVRnW25m1RonIqJotpxK4A5/KBGvKzCcKAS68zJeXjTlWuZCwNAuuX+nI+ual8jiv8ySJJlVN5r7t5YSJGWNiTkllaPKp0NDouULsXzN1TwHNxVpXYvEfKH8nlq5jsKZsuZEq9kyNZgfEalLBRzj8t2fOpqZcbRa4qnFWE18brItvjzz8pQQZS6nJ6XQ57RyzrhDG6xKeEnP724yJsLY3nv5x3xl3gTqmxaAcONcRkuOarkHrpsrsEcRAP7R85eC6L8hmObd0zHnZAbUhWZQyakR1j52nU2E1wRxSL4UhZIuzevKB5TvOjhKKJGw/SVNh9ujlbk0guUyvdPPtVeOwnLSAIXt+qvReCkAq4Eh+CsdJ5k7wvM92SaERxKg6Gv7x+rrPhXTBEG/HzgwYGlPygdGyA0i8g9r2wB1rPxASFu1qtLAAAAM12DsO2Jk+wAAdwD3QgAAKVCJDuxxGf7AgAAAAAEWVo="
+      },
+      "visibility": {
+        "min": 1.02,
+        "max": 19.99,
+        "data": "/Td6WFoAAATm1rRGAgAhARYAAAB0L+Wj4AS/AfldAC2MQcNU3Qw+CP2snYWz3rKkpBGRAMifU+S8Lx3h6pJwC9dV+mE+BvBtzZfl7Xsw8g/mJh9dJbhnuY4olkgFrgDP/yy1x5HGiXt2HNB7vHEmgFIQv4XlG7bJ82Ns9Iyaa0/F5H98FvnOMiplG0abWuwGQ1BrCkCXWrzTTO0803GeIYXcPjNCBnMj8AIPWioxIUq0KTe5RxkLxBMRH/0ii+QP8CQ/PHmKfERE8ZNJ1Foz/6hEaVvlgrsBZRSI5N6wdvq4QWxFE8bDng1Dmeg8WpPkObun43zX9DXTo/f3R7bZuYbnZnJs7rUwyhsrk9IWkQJHNRGDBRXs7iGFdj4gZrgAnEx+D66NUHanwnopm0n7oQ4lXh8gmKT8vPJhjo6RGz0X5CxQ9wUjVXVkLWTcm47KO13TVr6rx4BkvuxMOhikC2SYwtG/3JDWiHMUefGS1lgLT/MRLFFfXiA7l/BcxmQ6Pu0QNgt8B0kI87ctG39QXdOhzU1YoPihLT+3CkeEPjdRisKXBKJemL81n/CkI2fZHWypeDbIhS7wSbyt29+7JG+O1w5i52Urs5LCmVe64zxWhxElv1G4xmOmNt+ImIof8m2sBbBJKArju/jV2ghreugaESH4onI0dWuecvAWz/AfL4ydGQ7cm0gH5EmWpjrVNNkI8SfI/QAAAAAA6XZSaCkNVh4AAZUEwAkAAGQg4gKxxGf7AgAAAAAEWVo="
+      },
+      "uv_index": {
+        "min": 0.0,
+        "max": 11.0,
+        "data": "/Td6WFoAAATm1rRGAgAhARYAAAB0L+Wj4AO/AUldAC2NAcMypl9+0w/kP08VMNAkAMge0DnxHJe+uwt01Oh78jAgeecI6cwIcNcrHUebSi0FL6fqY80AzocZdedmcfl/Alky6iAlZQ2z41kVk5Jo4jUPGiGMgdQCv1cARSzSSXG9iCcYc2nK7wSRFm8iBeKA3/ctC4klJDCwwx7T7bJRG71aASvpbqz+qk6Jdxuxz34vbBliTY8o0QvsRA2T11cIJMMJYeqwinV4YtxjyZQFwcG9W8wyv2WNs0ogq2WVlSrmWvJWrR/aBsuUYTaE3i1jLPFWzRnJJ2oFqSrFXLqxLefzcfk3cm2nAB9oFd1NGgVX1cM4dYpIV3QzeAPPJniJN9t0Fj4mKxeWXStPZ7i9rQGkM3gQJFrS6iLikb5On0Lz42DrgfKtUFNQNLxLv3X051hiOBGfaTXx8Q7Xx+rRLnCCC9E3MgAAAAAAAAg+Lf0LVCzWAAHlAsAHAAAP9R6MscRn+wIAAAAABFla"
+      }
+    },
+    "meta": {
+      "rows": 189,
+      "columns": 10,
+      "timestamp": "2026-03-26T19:14:23.175013"
+    },
+    "hash": "aa9e440e7648db85"
+  },
+  "metadata": {
+    "type": "meteorological",
+    "records": 189,
+    "source": "zhiji-e"
+  },
+  "original_size": 42267
+}

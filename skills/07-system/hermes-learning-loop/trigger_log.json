@@ -1,0 +1,40 @@
+{
+  "skill_creations": [
+    {
+      "proposal": {
+        "name": "general-automation",
+        "reason": "同类任务重复出现 4 次",
+        "trigger_type": "repetition",
+        "task_ids": [
+          "TASK-129",
+          "TASK-130",
+          "TASK-150"
+        ],
+        "responsibilities": [
+          "自动化处理general任务",
+          "监控任务执行状态",
+          "生成执行报告"
+        ],
+        "priority": "P1"
+      },
+      "triggered_at": "2026-04-08T23:37:18.643579",
+      "status": "pending_approval"
+    }
+  ],
+  "nudges": [
+    {
+      "trigger": {
+        "trigger_type": "daily",
+        "time": "2026-04-08T23:37:18.643784",
+        "action": "persist_daily_insights"
+      },
+      "result": {
+        "status": "processed",
+        "target_file": "/home/nicola/.openclaw/workspace/memory/core.md",
+        "timestamp": "2026-04-08T23:37:18.646557"
+      },
+      "executed_at": "2026-04-08T23:37:18.646564"
+    }
+  ],
+  "optimizations": []
+}

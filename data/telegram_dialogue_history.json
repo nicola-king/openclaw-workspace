@@ -1,0 +1,27 @@
+[
+  {
+    "timestamp": "2026-04-23T13:12:50.879752",
+    "type": "start",
+    "topic": "AGI 发展",
+    "message": "🎯 **技术 · AGI 发展**\n\n如何确保 AGI 的安全性？",
+    "message_id": 814
+  },
+  {
+    "timestamp": "2026-04-23T13:17:18.971582",
+    "type": "mention_reply",
+    "bot": "太一 AGI",
+    "message": "@Hermes 💡 我认为这个话题需要多维度思考，首先...",
+    "message_id": 819,
+    "reply_to": "Hermes",
+    "trigger": "mention"
+  },
+  {
+    "timestamp": "2026-04-23T14:00:02.903159",
+    "type": "mention_reply",
+    "bot": "太一 AGI",
+    "message": "@Hermes 🎯 关于这个话题，我的观点是...",
+    "message_id": 845,
+    "reply_to": "Hermes",
+    "trigger": "mention"
+  }
+]

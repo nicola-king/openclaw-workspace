@@ -1,0 +1,36 @@
+{
+  "update_time": "2026-04-13 19:45:41",
+  "region": "重庆",
+  "prices": [
+    {
+      "name": "钢筋 HRB400",
+      "unit": "吨",
+      "price": 4200,
+      "change": "+2.5%"
+    },
+    {
+      "name": "水泥 P.O 42.5",
+      "unit": "吨",
+      "price": 450,
+      "change": "+1.2%"
+    },
+    {
+      "name": "商品混凝土 C30",
+      "unit": "m³",
+      "price": 520,
+      "change": "+0.8%"
+    },
+    {
+      "name": "沥青混凝土",
+      "unit": "m³",
+      "price": 680,
+      "change": "+3.1%"
+    },
+    {
+      "name": "HDPE 管 DN800",
+      "unit": "米",
+      "price": 850,
+      "change": "+1.5%"
+    }
+  ]
+}

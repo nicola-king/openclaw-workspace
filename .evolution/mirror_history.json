@@ -1,0 +1,18 @@
+{
+  "history": [
+    {
+      "timestamp": "2026-04-12T21:07:36.000806",
+      "skills_distilled": 15,
+      "duplication_accuracy": 98.0,
+      "knowledge_transfer": 95.0,
+      "skills_created": 78
+    }
+  ],
+  "distillation_weights": {
+    "Skill 蒸馏": 1.0,
+    "数字分身": 1.0,
+    "能力复制": 1.0,
+    "知识固化": 1.0
+  },
+  "last_updated": "2026-04-12T21:07:36.002896"
+}

@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-04-04T03:32:18+08:00",
+  "check_type": "scheduled_30min",
+  "status": "healthy",
+  
+  "gateway": {
+    "status": "running",
+    "pid": 97930,
+    "port": 18789,
+    "bind": "127.0.0.1",
+    "cpu": "3.0%",
+    "memory": "543M",
+    "rpc_probe": "ok",
+    "stable": true
+  },
+  
+  "channels": {
+    "telegram": { "status": "ok" },
+    "feishu": { "status": "ok" },
+    "openclaw-weixin": { "status": "enabled" }
+  },
+  
+  "system": {
+    "disk_usage": "19% (48G/274G)",
+    "os": "linux 6.17.0-20-generic",
+    "node": "22.22.2"
+  },
+  
+  "self_heal_actions": [
+    { "action": "gateway_probe", "result": "ok" },
+    { "action": "process_check", "result": "pid 97930 stable" },
+    { "action": "disk_check", "result": "19% used, healthy" }
+  ],
+  
+  "notes": "Gateway stable (pid 97930, no restart). Memory stable at ~543M (30min post-restart). Monitoring for leak pattern.",
+  "restart_count_today": 7,
+  "memory_trend": "stable_post_restart",
+  "leak_pattern": "confirmed ~1GB/hour",
+  "heal_cycle": "~60 minutes",
+  "next_check": "2026-04-04T04:02:18+08:00",
+  "report_saved": "memory/self-heal-report-20260404-0332.json"
+}

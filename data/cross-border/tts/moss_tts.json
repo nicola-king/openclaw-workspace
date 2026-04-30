@@ -1,0 +1,68 @@
+{
+  "generations": [
+    {
+      "id": "TTS_GEN_20260420_213516",
+      "text": "你好，我是太一，您的智能跨境贸易助手",
+      "language": "zh-CN",
+      "voice_type": "female_warm",
+      "timestamp": "2026-04-20T21:35:16.295645",
+      "status": "completed",
+      "output_file": "/home/nicola/.openclaw/workspace/data/cross-border/tts/audio/TTS_GEN_20260420_213516.wav",
+      "duration_seconds": 1.2,
+      "file_size_kb": 211.2
+    },
+    {
+      "id": "TTS_GEN_20260420_213516",
+      "text": "欢迎使用太一智能助手",
+      "language": "zh-CN",
+      "voice_type": "female_warm",
+      "timestamp": "2026-04-20T21:35:16.296593",
+      "status": "completed",
+      "output_file": "/home/nicola/.openclaw/workspace/data/cross-border/tts/audio/TTS_GEN_20260420_213516.wav",
+      "duration_seconds": 0.6666666666666666,
+      "file_size_kb": 117.33333333333333,
+      "batch_index": 0
+    },
+    {
+      "id": "TTS_GEN_20260420_213516",
+      "text": "请问有什么可以帮助您的？",
+      "language": "zh-CN",
+      "voice_type": "female_warm",
+      "timestamp": "2026-04-20T21:35:16.301176",
+      "status": "completed",
+      "output_file": "/home/nicola/.openclaw/workspace/data/cross-border/tts/audio/TTS_GEN_20260420_213516.wav",
+      "duration_seconds": 0.8,
+      "file_size_kb": 140.8,
+      "batch_index": 1
+    },
+    {
+      "id": "TTS_GEN_20260420_213516",
+      "text": "感谢您的使用",
+      "language": "zh-CN",
+      "voice_type": "female_warm",
+      "timestamp": "2026-04-20T21:35:16.301573",
+      "status": "completed",
+      "output_file": "/home/nicola/.openclaw/workspace/data/cross-border/tts/audio/TTS_GEN_20260420_213516.wav",
+      "duration_seconds": 0.4,
+      "file_size_kb": 70.4
+    }
+  ],
+  "cloned_voices": [
+    {
+      "id": "VOICE_CLONE_20260420_213516",
+      "name": "SAYELF",
+      "audio_file": "/path/to/voice_sample.wav",
+      "description": "温暖专业的男声",
+      "timestamp": "2026-04-20T21:35:16.296074",
+      "status": "completed",
+      "model_file": "/home/nicola/.openclaw/workspace/data/cross-border/tts/voices/VOICE_CLONE_20260420_213516.pt",
+      "quality_score": 0.85
+    }
+  ],
+  "stats": {
+    "total_generations": 4,
+    "successful": 4,
+    "failed": 0,
+    "total_duration_seconds": 0
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "start_time": "2026-04-22T16:20:00+08:00",
+  "status": "recording",
+  "file_pattern": "~/Videos/YYYY-MM-DD_HH-MM-SS.mp4",
+  "duration_limit": "60 秒",
+  "auto_stop": true,
+  "purpose": "SAYELF 指令录屏"
+}

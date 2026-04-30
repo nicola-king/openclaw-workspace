@@ -1,0 +1,56 @@
+{
+  "skills": [
+    {
+      "skill_id": "skill_5c111da6e950",
+      "name": "skill_生成每日情报推送报告",
+      "description": "生成每日情报推送报告",
+      "pattern": {
+        "steps_count": 4,
+        "tools_used": [
+          "intelligence_delivery",
+          "telegram",
+          "formatting",
+          "file_storage"
+        ],
+        "apis_called": [
+          ""
+        ],
+        "decision_points": [],
+        "success_conditions": []
+      },
+      "execution_steps": [
+        {
+          "step": 1,
+          "tool": "intelligence_delivery",
+          "action": "generate_daily_report"
+        },
+        {
+          "step": 2,
+          "tool": "formatting",
+          "action": "format_message"
+        },
+        {
+          "step": 3,
+          "tool": "telegram",
+          "action": "send_message"
+        },
+        {
+          "step": 4,
+          "tool": "file_storage",
+          "action": "save_report"
+        }
+      ],
+      "created_from": "5c111da6e950",
+      "created_at": "2026-04-19T00:32:42.504658",
+      "execution_count": 3,
+      "token_saved": 0,
+      "tags": [
+        "情报",
+        "报告",
+        "推送"
+      ]
+    }
+  ],
+  "count": 1,
+  "updated_at": "2026-04-19T00:32:42.504665"
+}

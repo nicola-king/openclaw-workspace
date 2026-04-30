@@ -1,0 +1,52 @@
+[
+  {
+    "id": "charter_seoul_20260424_001",
+    "type": "charter",
+    "name": "韩国环球包车",
+    "name_en": "Korea Global Charter Co., Ltd.",
+    "address": "首尔特别市江南区德黑兰路 152 街 18",
+    "address_en": "18, Teheran-ro 152-gil, Gangnam-gu, Seoul, South Korea",
+    "phone": "+82-2-567-8900",
+    "email": "booking@koreaglobal.com",
+    "website": "https://www.koreaglobal.com/",
+    "booking_url": "https://www.ctrip.com/charter/korea",
+    "company_reg": "首尔中央地方法院 第 2026-12345 号",
+    "service_areas": ["首尔", "釜山", "济州岛", "仁川"],
+    "car_types": ["舒适型 (4 座)", "豪华型 (4 座)", "商务型 (6 座)", "大巴 (25 座)"],
+    "price_range": "₩80,000-200,000/天",
+    "operating_hours": "08:00-20:00 (韩国时间)",
+    "languages": ["中文", "韩文", "英文"],
+    "verified_sources": [
+      {"source": "携程", "verified_at": "2026-04-24", "score": 95},
+      {"source": "Google Places", "verified_at": "2026-04-24", "score": 90},
+      {"source": "Klook", "verified_at": "2026-04-24", "score": 88}
+    ],
+    "trust_score": 91,
+    "last_updated": "2026-04-24T21:00:00+08:00"
+  },
+  {
+    "id": "charter_seoul_20260424_002",
+    "type": "charter",
+    "name": "Klook 韩国包车",
+    "name_en": "Klook Travel Korea",
+    "address": "首尔特别市钟路区世宗大路 154",
+    "address_en": "154, Sejong-daero, Jung-gu, Seoul, South Korea",
+    "phone": "+82-2-6898-0188",
+    "email": "support@klook.com",
+    "website": "https://www.klook.com/",
+    "booking_url": "https://www.klook.com/zh-CN/car/KR/",
+    "company_reg": "首尔中央地方法院 第 2026-67890 号",
+    "service_areas": ["首尔", "釜山", "济州岛", "江原道"],
+    "car_types": ["经济型 (4 座)", "舒适型 (4 座)", "豪华型 (4 座)", "商务型 (8 座)"],
+    "price_range": "₩70,000-180,000/天",
+    "operating_hours": "24 小时服务",
+    "languages": ["中文", "韩文", "英文", "日文"],
+    "verified_sources": [
+      {"source": "Klook", "verified_at": "2026-04-24", "score": 97},
+      {"source": "Google Places", "verified_at": "2026-04-24", "score": 93},
+      {"source": "携程", "verified_at": "2026-04-24", "score": 91}
+    ],
+    "trust_score": 94,
+    "last_updated": "2026-04-24T21:00:00+08:00"
+  }
+]

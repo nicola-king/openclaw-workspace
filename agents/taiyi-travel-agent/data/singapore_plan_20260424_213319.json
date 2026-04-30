@@ -1,0 +1,147 @@
+{
+  "type": "Singapore Travel Plan",
+  "origin": "北京",
+  "destination": "新加坡",
+  "start_date": "2026-05-01",
+  "end_date": "2026-05-05",
+  "days": 5,
+  "travelers": 2,
+  "mode": "跨国游",
+  "budget": 15000,
+  "budget_per_person": 7500.0,
+  "budget_allocation": {
+    "航班": 4500.0,
+    "住宿": 3750.0,
+    "餐饮": 3000.0,
+    "活动": 2250.0,
+    "购物": 1500.0
+  },
+  "preferences": [
+    "现代都市",
+    "自然风光",
+    "购物"
+  ],
+  "daily_itinerary": [
+    {
+      "day": 1,
+      "date": "2026-05-01",
+      "attractions": [
+        {
+          "name": "鱼尾狮公园",
+          "duration": "1h",
+          "cost": 0
+        },
+        {
+          "name": "滨海湾金沙",
+          "duration": "2h",
+          "cost": 0
+        },
+        {
+          "name": "滨海湾花园",
+          "duration": "3h",
+          "cost": 30
+        }
+      ],
+      "meal_breakfast": "酒店早餐/咖椰吐司",
+      "meal_lunch": "海南鸡饭",
+      "meal_dinner": "辣椒螃蟹"
+    },
+    {
+      "day": 2,
+      "date": "2026-05-02",
+      "attractions": [
+        {
+          "name": "鱼尾狮公园",
+          "duration": "1h",
+          "cost": 0
+        },
+        {
+          "name": "滨海湾金沙",
+          "duration": "2h",
+          "cost": 0
+        },
+        {
+          "name": "滨海湾花园",
+          "duration": "3h",
+          "cost": 30
+        }
+      ],
+      "meal_breakfast": "酒店早餐/咖椰吐司",
+      "meal_lunch": "海南鸡饭",
+      "meal_dinner": "辣椒螃蟹"
+    },
+    {
+      "day": 3,
+      "date": "2026-05-03",
+      "attractions": [
+        {
+          "name": "鱼尾狮公园",
+          "duration": "1h",
+          "cost": 0
+        },
+        {
+          "name": "滨海湾金沙",
+          "duration": "2h",
+          "cost": 0
+        },
+        {
+          "name": "滨海湾花园",
+          "duration": "3h",
+          "cost": 30
+        }
+      ],
+      "meal_breakfast": "酒店早餐/咖椰吐司",
+      "meal_lunch": "海南鸡饭",
+      "meal_dinner": "辣椒螃蟹"
+    },
+    {
+      "day": 4,
+      "date": "2026-05-04",
+      "attractions": [
+        {
+          "name": "鱼尾狮公园",
+          "duration": "1h",
+          "cost": 0
+        },
+        {
+          "name": "滨海湾金沙",
+          "duration": "2h",
+          "cost": 0
+        },
+        {
+          "name": "滨海湾花园",
+          "duration": "3h",
+          "cost": 30
+        }
+      ],
+      "meal_breakfast": "酒店早餐/咖椰吐司",
+      "meal_lunch": "海南鸡饭",
+      "meal_dinner": "辣椒螃蟹"
+    },
+    {
+      "day": 5,
+      "date": "2026-05-05",
+      "attractions": [
+        {
+          "name": "鱼尾狮公园",
+          "duration": "1h",
+          "cost": 0
+        },
+        {
+          "name": "滨海湾金沙",
+          "duration": "2h",
+          "cost": 0
+        },
+        {
+          "name": "滨海湾花园",
+          "duration": "3h",
+          "cost": 30
+        }
+      ],
+      "meal_breakfast": "酒店早餐/咖椰吐司",
+      "meal_lunch": "海南鸡饭",
+      "meal_dinner": "辣椒螃蟹"
+    }
+  ],
+  "timestamp": "2026-04-24T21:33:19.213481"
+}

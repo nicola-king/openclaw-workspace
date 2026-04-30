@@ -1,0 +1,30 @@
+{
+  "scheduler": {
+    "default_interval": 3600,
+    "min_interval": 1800,
+    "max_interval": 7200,
+    "lag_threshold": 0.5,
+    "ahead_threshold": 0.2
+  },
+  "learning": {
+    "learning_rate": 0.1,
+    "discount_factor": 0.9,
+    "exploration_rate": 0.1,
+    "exploration_decay": 0.995,
+    "min_exploration": 0.01
+  },
+  "prediction": {
+    "forecast_days": 7,
+    "warning_threshold": 0.8,
+    "critical_threshold": 0.5,
+    "smoothing_window": 7,
+    "trend_window": 14
+  },
+  "evolution": {
+    "auto_optimize": true,
+    "auto_create_skills": true,
+    "auto_merge_duplicates": true,
+    "auto_update_config": true,
+    "backup_before_change": true
+  }
+}

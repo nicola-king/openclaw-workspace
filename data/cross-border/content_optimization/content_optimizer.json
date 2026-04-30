@@ -1,0 +1,187 @@
+{
+  "optimizations": [
+    {
+      "id": "CONTENT_OPT_20260420_211910",
+      "target_keyword": "portable power station",
+      "original_length": 39,
+      "timestamp": "2026-04-20T21:19:10.373701",
+      "suggestions": {
+        "add_keywords": [
+          "best portable power station",
+          "portable power station review",
+          "buy portable power station"
+        ],
+        "add_sections": [
+          "产品规格详解",
+          "使用场景介绍",
+          "客户评价",
+          "常见问题解答",
+          "购买指南"
+        ],
+        "improve_structure": [
+          "添加更多 H2/H3 子标题",
+          "使用项目符号列表",
+          "添加表格对比",
+          "增加图片说明"
+        ],
+        "add_related_terms": [
+          "portable",
+          "solar charging",
+          "battery capacity",
+          "power output",
+          "charging time"
+        ]
+      },
+      "optimized_outline": {
+        "title": "The Ultimate Guide to Portable Power Station (2026)",
+        "h1": "Portable Power Station: Everything You Need to Know",
+        "h2_sections": [
+          "What is portable power station?",
+          "Key Features to Consider",
+          "Top 5 portable power station Reviews",
+          "How to Choose the Right One",
+          "Frequently Asked Questions"
+        ],
+        "word_count_target": 2500,
+        "keyword_placement": [
+          "标题",
+          "第一段",
+          "至少 2 个 H2",
+          "结论"
+        ]
+      }
+    }
+  ],
+  "content_analyses": [
+    {
+      "id": "CONTENT_ANALYSIS_20260420_211910",
+      "url": "https://example.com/products/power-station",
+      "target_keyword": "portable power station",
+      "timestamp": "2026-04-20T21:19:10.373126",
+      "content_score": 62,
+      "metrics": {
+        "word_count": {
+          "current": 1200,
+          "recommended": 2000,
+          "serp_average": 2200
+        },
+        "keyword_density": {
+          "current": 1.5,
+          "recommended": 2.0,
+          "status": "low"
+        },
+        "heading_structure": {
+          "h1_count": 1,
+          "h2_count": 5,
+          "h3_count": 8,
+          "status": "good"
+        },
+        "internal_links": {
+          "count": 8,
+          "recommended": 15,
+          "status": "low"
+        },
+        "external_links": {
+          "count": 3,
+          "recommended": 5,
+          "status": "good"
+        },
+        "images": {
+          "count": 5,
+          "with_alt": 3,
+          "recommended": 10,
+          "status": "needs_improvement"
+        },
+        "readability": {
+          "score": 75,
+          "grade_level": "8-9",
+          "status": "good"
+        },
+        "related_terms": {
+          "used": 15,
+          "missing": [
+            "portable",
+            "solar",
+            "battery capacity",
+            "charging time"
+          ],
+          "status": "needs_improvement"
+        }
+      },
+      "recommendations": [
+        {
+          "priority": "P0",
+          "category": "内容长度",
+          "action": "增加内容到2000字",
+          "current": 1200,
+          "target": 2000,
+          "impact": "高"
+        },
+        {
+          "priority": "P1",
+          "category": "关键词优化",
+          "action": "提高关键词密度到2.0%",
+          "current": "1.5%",
+          "target": "2.0%",
+          "impact": "中"
+        },
+        {
+          "priority": "P1",
+          "category": "内部链接",
+          "action": "添加7个内部链接",
+          "current": 8,
+          "target": 15,
+          "impact": "中"
+        },
+        {
+          "priority": "P2",
+          "category": "图片优化",
+          "action": "为2张图片添加 ALT 文本",
+          "impact": "低"
+        },
+        {
+          "priority": "P1",
+          "category": "相关术语",
+          "action": "添加相关术语：portable, solar, battery capacity, charging time",
+          "impact": "中"
+        }
+      ]
+    },
+    {
+      "id": "SERP_COMPARE_20260420_211910",
+      "url": "https://example.com/products/power-station",
+      "target_keyword": "portable power station",
+      "timestamp": "2026-04-20T21:19:10.374207",
+      "your_page": {
+        "word_count": 1200,
+        "backlinks": 15,
+        "domain_authority": 45
+      },
+      "serp_average": {
+        "word_count": 2200,
+        "backlinks": 50,
+        "domain_authority": 55
+      },
+      "gaps": [
+        {
+          "metric": "字数",
+          "yours": 1200,
+          "average": 2200,
+          "gap": -1000
+        },
+        {
+          "metric": "反向链接",
+          "yours": 15,
+          "average": 50,
+          "gap": -35
+        }
+      ],
+      "opportunities": [
+        "增加内容长度到 2500 字",
+        "建设 35+ 高质量反向链接",
+        "提升域名权威度"
+      ]
+    }
+  ],
+  "suggestions": []
+}

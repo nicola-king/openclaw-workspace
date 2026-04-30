@@ -1,0 +1,43 @@
+{
+  "name": "提单验证系统",
+  "version": "1.0.0",
+  "supported_providers": [
+    "马士基",
+    "中远海运",
+    "达飞轮船",
+    "DHL",
+    "FedEx",
+    "UPS",
+    "顺丰",
+    "京东物流"
+  ],
+  "verification_methods": [
+    {
+      "method": "api_verification",
+      "description": "通过物流商 API 验证提单",
+      "confidence": 0.95
+    },
+    {
+      "method": "website_verification",
+      "description": "通过物流商官网验证提单",
+      "confidence": 0.9
+    },
+    {
+      "method": "cross_verification",
+      "description": "跨物流商交叉验证",
+      "confidence": 0.98
+    }
+  ],
+  "validation_rules": [
+    "提单号格式验证",
+    "发货人/收货人信息匹配",
+    "运输时间逻辑验证",
+    "起运港/目的港合理性验证",
+    "货物信息一致性验证"
+  ],
+  "output": {
+    "format": "json",
+    "include_confidence_score": true,
+    "include_verification_details": true
+  }
+}

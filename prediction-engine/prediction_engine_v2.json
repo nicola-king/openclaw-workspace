@@ -1,0 +1,52 @@
+{
+  "version": "2.0",
+  "activated_at": "2026-04-15T23:14:22.634142",
+  "models": {
+    "task_pattern": {
+      "name": "任务模式识别",
+      "accuracy": 0.85,
+      "features": [
+        "keywords",
+        "historical_patterns",
+        "context"
+      ]
+    },
+    "team_selection": {
+      "name": "组团选择预测",
+      "accuracy": 0.88,
+      "features": [
+        "task_type",
+        "team_performance",
+        "availability"
+      ]
+    },
+    "duration_estimation": {
+      "name": "执行时间预测",
+      "accuracy": 0.82,
+      "features": [
+        "task_complexity",
+        "historical_duration",
+        "team_efficiency"
+      ]
+    },
+    "success_probability": {
+      "name": "成功率预测",
+      "accuracy": 0.85,
+      "features": [
+        "team_experience",
+        "task_difficulty",
+        "resource_availability"
+      ]
+    }
+  },
+  "ensemble": {
+    "method": "weighted_average",
+    "weights": {
+      "task_pattern": 0.25,
+      "team_selection": 0.3,
+      "duration_estimation": 0.2,
+      "success_probability": 0.25
+    },
+    "overall_accuracy": 0.85
+  }
+}

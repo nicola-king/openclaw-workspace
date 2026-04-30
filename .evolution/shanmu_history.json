@@ -1,0 +1,19 @@
+{
+  "history": [
+    {
+      "timestamp": "2026-04-12T20:46:48.894611",
+      "content_created": 15,
+      "execution_rate": 95.0,
+      "user_satisfaction": 90.0,
+      "skills_created": 78,
+      "execution_time_seconds": 0.000216
+    }
+  ],
+  "content_weights": {
+    "文案创意": 1.0,
+    "项目执行": 1.0,
+    "社交媒体": 1.0,
+    "内容优化": 1.0
+  },
+  "last_updated": "2026-04-12T20:46:48.895082"
+}

@@ -1,0 +1,18 @@
+{
+  "type": "Hidden City Ticketing",
+  "result": {
+    "regular_route": "北京 → 东京",
+    "regular_price": 2000,
+    "hidden_city_route": "北京 → 上海 (经 东京)",
+    "hidden_city_price": 1500,
+    "savings": 500,
+    "risks": [
+      "只能携带随身行李",
+      "不能托运行李",
+      "航空公司可能禁止",
+      "影响常旅客积分"
+    ],
+    "recommendation": "谨慎使用，了解风险"
+  },
+  "timestamp": "2026-04-14T16:32:25.380350"
+}

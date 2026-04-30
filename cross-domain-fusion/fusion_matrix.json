@@ -1,0 +1,118 @@
+{
+  "version": "1.0",
+  "created_at": "2026-04-16T13:10:47.386521",
+  "domains": [
+    {
+      "id": "D001",
+      "name": "视觉分析",
+      "capabilities": [
+        "supervision",
+        "chart-generator"
+      ]
+    },
+    {
+      "id": "D002",
+      "name": "视频生成",
+      "capabilities": [
+        "veo31",
+        "video-factory"
+      ]
+    },
+    {
+      "id": "D003",
+      "name": "学习进化",
+      "capabilities": [
+        "openmaic",
+        "skill-evolution"
+      ]
+    },
+    {
+      "id": "D004",
+      "name": "代码理解",
+      "capabilities": [
+        "codeflow",
+        "suwen"
+      ]
+    },
+    {
+      "id": "D005",
+      "name": "交易决策",
+      "capabilities": [
+        "zhiji",
+        "trading-agent"
+      ]
+    },
+    {
+      "id": "D006",
+      "name": "内容创作",
+      "capabilities": [
+        "shanmu",
+        "content-creator"
+      ]
+    }
+  ],
+  "fusions": [
+    {
+      "id": "F001",
+      "name": "视觉 + 视频",
+      "domains": [
+        "D001",
+        "D002"
+      ],
+      "output": "智能视频分析系统",
+      "status": "in_progress"
+    },
+    {
+      "id": "F002",
+      "name": "学习 + 进化",
+      "domains": [
+        "D003",
+        "D003"
+      ],
+      "output": "自适应学习进化系统",
+      "status": "in_progress"
+    },
+    {
+      "id": "F003",
+      "name": "代码 + 视觉",
+      "domains": [
+        "D004",
+        "D001"
+      ],
+      "output": "可视化代码理解系统",
+      "status": "in_progress"
+    },
+    {
+      "id": "F004",
+      "name": "交易 + 内容",
+      "domains": [
+        "D005",
+        "D006"
+      ],
+      "output": "智能交易内容生成",
+      "status": "planned"
+    },
+    {
+      "id": "F005",
+      "name": "全域融合",
+      "domains": [
+        "D001",
+        "D002",
+        "D003",
+        "D004",
+        "D005",
+        "D006"
+      ],
+      "output": "太一 AGI 超级智能",
+      "status": "vision"
+    }
+  ],
+  "expected_breakthroughs": [
+    "智能视频分析",
+    "自适应学习进化",
+    "可视化代码理解",
+    "智能交易内容",
+    "超级智能"
+  ],
+  "target_date": "2026-04-30"
+}

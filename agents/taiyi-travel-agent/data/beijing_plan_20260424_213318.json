@@ -1,0 +1,176 @@
+{
+  "type": "Beijing Travel Plan",
+  "origin": "上海",
+  "destination": "北京",
+  "start_date": "2026-05-01",
+  "end_date": "2026-05-05",
+  "days": 5,
+  "travelers": 2,
+  "mode": "国内游",
+  "budget": 5000,
+  "budget_per_person": 2500.0,
+  "budget_allocation": {
+    "交通": 1250.0,
+    "住宿": 1500.0,
+    "餐饮": 1000.0,
+    "活动": 750.0,
+    "购物": 500.0
+  },
+  "preferences": [
+    "历史文化",
+    "美食",
+    "购物"
+  ],
+  "daily_itinerary": [
+    {
+      "day": 1,
+      "date": "2026-05-01",
+      "attractions": [
+        {
+          "name": "故宫",
+          "duration": "3h",
+          "cost": 60
+        },
+        {
+          "name": "长城",
+          "duration": "1d",
+          "cost": 40
+        },
+        {
+          "name": "全聚德烤鸭",
+          "duration": "1.5h",
+          "cost": 200
+        }
+      ],
+      "meal_breakfast": "酒店早餐/豆汁焦圈",
+      "meal_lunch": "北京烤鸭/涮羊肉",
+      "meal_dinner": "王府井小吃街"
+    },
+    {
+      "day": 2,
+      "date": "2026-05-02",
+      "attractions": [
+        {
+          "name": "故宫",
+          "duration": "3h",
+          "cost": 60
+        },
+        {
+          "name": "长城",
+          "duration": "1d",
+          "cost": 40
+        },
+        {
+          "name": "全聚德烤鸭",
+          "duration": "1.5h",
+          "cost": 200
+        }
+      ],
+      "meal_breakfast": "酒店早餐/豆汁焦圈",
+      "meal_lunch": "北京烤鸭/涮羊肉",
+      "meal_dinner": "王府井小吃街"
+    },
+    {
+      "day": 3,
+      "date": "2026-05-03",
+      "attractions": [
+        {
+          "name": "故宫",
+          "duration": "3h",
+          "cost": 60
+        },
+        {
+          "name": "长城",
+          "duration": "1d",
+          "cost": 40
+        },
+        {
+          "name": "全聚德烤鸭",
+          "duration": "1.5h",
+          "cost": 200
+        }
+      ],
+      "meal_breakfast": "酒店早餐/豆汁焦圈",
+      "meal_lunch": "北京烤鸭/涮羊肉",
+      "meal_dinner": "王府井小吃街"
+    },
+    {
+      "day": 4,
+      "date": "2026-05-04",
+      "attractions": [
+        {
+          "name": "故宫",
+          "duration": "3h",
+          "cost": 60
+        },
+        {
+          "name": "长城",
+          "duration": "1d",
+          "cost": 40
+        },
+        {
+          "name": "全聚德烤鸭",
+          "duration": "1.5h",
+          "cost": 200
+        }
+      ],
+      "meal_breakfast": "酒店早餐/豆汁焦圈",
+      "meal_lunch": "北京烤鸭/涮羊肉",
+      "meal_dinner": "王府井小吃街"
+    },
+    {
+      "day": 5,
+      "date": "2026-05-05",
+      "attractions": [
+        {
+          "name": "故宫",
+          "duration": "3h",
+          "cost": 60
+        },
+        {
+          "name": "长城",
+          "duration": "1d",
+          "cost": 40
+        },
+        {
+          "name": "全聚德烤鸭",
+          "duration": "1.5h",
+          "cost": 200
+        }
+      ],
+      "meal_breakfast": "酒店早餐/豆汁焦圈",
+      "meal_lunch": "北京烤鸭/涮羊肉",
+      "meal_dinner": "王府井小吃街"
+    }
+  ],
+  "packing_list": {
+    "证件类": [
+      "身份证",
+      "学生证 (优惠)",
+      "军官证 (优惠)"
+    ],
+    "电子类": [
+      "手机",
+      "充电器",
+      "充电宝",
+      "相机"
+    ],
+    "衣物类": [
+      "换洗衣物",
+      "舒适的鞋",
+      "外套 (春秋)"
+    ],
+    "洗漱类": [
+      "牙刷",
+      "牙膏",
+      "毛巾",
+      "护肤品"
+    ],
+    "其他": [
+      "防晒用品",
+      "雨具",
+      "水壶"
+    ]
+  },
+  "timestamp": "2026-04-24T21:33:18.832623"
+}

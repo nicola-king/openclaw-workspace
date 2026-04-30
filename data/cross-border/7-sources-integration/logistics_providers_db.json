@@ -1,0 +1,84 @@
+{
+  "created_at": "2026-04-19T11:07:31.007898",
+  "total_providers": 8,
+  "providers": {
+    "sea_freight": [
+      {
+        "name": "马士基 (Maersk)",
+        "type": "海运",
+        "api_available": true,
+        "api_endpoint": "https://api.maersk.com",
+        "tracking_api": "https://api.maersk.com/tracking",
+        "bill_of_lading_api": "https://api.maersk.com/bl",
+        "confidence_weight": 0.9
+      },
+      {
+        "name": "中远海运 (COSCO)",
+        "type": "海运",
+        "api_available": true,
+        "api_endpoint": "https://api.coscoshipping.com",
+        "tracking_api": "https://api.coscoshipping.com/tracking",
+        "bill_of_lading_api": "https://api.coscoshipping.com/bl",
+        "confidence_weight": 0.9
+      },
+      {
+        "name": "达飞轮船 (CMA CGM)",
+        "type": "海运",
+        "api_available": true,
+        "api_endpoint": "https://api.cma-cgm.com",
+        "tracking_api": "https://api.cma-cgm.com/tracking",
+        "bill_of_lading_api": "https://api.cma-cgm.com/bl",
+        "confidence_weight": 0.9
+      }
+    ],
+    "air_freight": [
+      {
+        "name": "DHL",
+        "type": "空运",
+        "api_available": true,
+        "api_endpoint": "https://api.dhl.com",
+        "tracking_api": "https://api.dhl.com/track",
+        "waybill_api": "https://api.dhl.com/waybill",
+        "confidence_weight": 0.85
+      },
+      {
+        "name": "FedEx",
+        "type": "空运",
+        "api_available": true,
+        "api_endpoint": "https://api.fedex.com",
+        "tracking_api": "https://api.fedex.com/track",
+        "waybill_api": "https://api.fedex.com/waybill",
+        "confidence_weight": 0.85
+      },
+      {
+        "name": "UPS",
+        "type": "空运",
+        "api_available": true,
+        "api_endpoint": "https://api.ups.com",
+        "tracking_api": "https://api.ups.com/track",
+        "waybill_api": "https://api.ups.com/waybill",
+        "confidence_weight": 0.85
+      }
+    ],
+    "land_freight": [
+      {
+        "name": "顺丰速运",
+        "type": "陆运",
+        "api_available": true,
+        "api_endpoint": "https://api.sf-express.com",
+        "tracking_api": "https://api.sf-express.com/track",
+        "waybill_api": "https://api.sf-express.com/waybill",
+        "confidence_weight": 0.85
+      },
+      {
+        "name": "京东物流",
+        "type": "陆运",
+        "api_available": true,
+        "api_endpoint": "https://api.jdl.cn",
+        "tracking_api": "https://api.jdl.cn/track",
+        "waybill_api": "https://api.jdl.cn/waybill",
+        "confidence_weight": 0.85
+      }
+    ]
+  }
+}

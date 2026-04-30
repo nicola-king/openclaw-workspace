@@ -1,0 +1,11 @@
+{
+  "current_model": "deepseek-v4-flash",
+  "deepseek_status": "normal",
+  "last_check": "2026-04-29T23:15:00.000000",
+  "last_switch_at": null,
+  "switch_count_today": 0,
+  "consecutive_failures": 0,
+  "architecture": "3-layer: DeepSeek → Gemini → Local",
+  "bailian": "removed (SAYELF 2026-04-29)",
+  "notes": "百炼已移除，三层架构生效"
+}

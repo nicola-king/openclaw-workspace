@@ -1,0 +1,2 @@
+文本：<emotion=serious><volume=loud>警告：系统检测到异常！
+错误：[Errno 101] Network is unreachable

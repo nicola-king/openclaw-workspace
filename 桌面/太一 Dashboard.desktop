@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=太一 Dashboard
+Comment=太一综合系统总览
+Exec=chromium-browser --app=http://localhost:5001
+Icon=utilities-system-monitor
+Type=Application
+Categories=System;Monitor;
+StartupNotify=true

@@ -1,0 +1,143 @@
+{
+  "type": "daily_intelligence",
+  "date": "2026-04-19",
+  "generated_at": "2026-04-19T00:02:18.843671",
+  "hot_products": [
+    {
+      "rank": 1,
+      "name": "新能源汽车配件",
+      "search_volume": 1200000,
+      "growth_rate": 0.72,
+      "score": 79.26,
+      "rating": "B 级",
+      "trend": "up",
+      "stars": "⭐⭐⭐⭐"
+    },
+    {
+      "rank": 2,
+      "name": "便携式储能电源",
+      "search_volume": 920000,
+      "growth_rate": 0.68,
+      "score": 85.54,
+      "rating": "A 级",
+      "trend": "up",
+      "stars": "⭐⭐⭐⭐⭐"
+    },
+    {
+      "rank": 3,
+      "name": "工业级无人机",
+      "search_volume": 580000,
+      "growth_rate": 0.62,
+      "score": 82.94,
+      "rating": "A 级",
+      "trend": "up",
+      "stars": "⭐⭐⭐⭐⭐"
+    }
+  ],
+  "trend_alerts": [
+    {
+      "type": "growth_rate_high",
+      "level": "high",
+      "product": "便携式储能电源",
+      "message": "便携式储能电源：增长率 68% (阈值50%) → 建议立即布局",
+      "action": "立即布局"
+    },
+    {
+      "type": "growth_rate_high",
+      "level": "high",
+      "product": "工业级无人机",
+      "message": "工业级无人机：增长率 62% (阈值50%) → 建议立即布局",
+      "action": "立即布局"
+    },
+    {
+      "type": "growth_rate_high",
+      "level": "high",
+      "product": "新能源汽车配件",
+      "message": "新能源汽车配件：增长率 72% (阈值50%) → 建议立即布局",
+      "action": "立即布局"
+    },
+    {
+      "type": "competition_increase",
+      "level": "medium",
+      "product": "智能宠物喂食器",
+      "message": "智能宠物喂食器：竞争度上升 → 建议差异化",
+      "action": "差异化竞争"
+    }
+  ],
+  "new_product_recommendations": [
+    {
+      "name": "智能变频发电机",
+      "score": 75.34,
+      "rating": "B 级",
+      "manufacturer": "重庆润通",
+      "contact": "+86-23-xxxx-xxxx",
+      "price_range": "$200-$500",
+      "moq": 50,
+      "lead_time": "20 天",
+      "action": "小规模测试"
+    },
+    {
+      "name": "电动园林工具",
+      "score": 78.31,
+      "rating": "B 级",
+      "manufacturer": "重庆神驰",
+      "contact": "+86-23-yyyy-yyyy",
+      "price_range": "$100-$300",
+      "moq": 100,
+      "lead_time": "15 天",
+      "action": "小规模测试"
+    }
+  ],
+  "competitor_updates": [
+    {
+      "competitor": "竞品 A",
+      "product": "便携式储能电源",
+      "change_type": "price_drop",
+      "change_value": "-15%",
+      "message": "竞品 A 降价 15% → 建议跟进",
+      "action": "价格调整"
+    },
+    {
+      "competitor": "竞品 B",
+      "product": "工业级无人机",
+      "change_type": "new_product",
+      "message": "竞品 B 新品上架 → 建议关注",
+      "action": "市场调研"
+    }
+  ],
+  "shop_recommendations": {
+    "new_listings": [
+      {
+        "product": "便携式储能电源",
+        "priority": "P0",
+        "quantity": 3,
+        "reason": "A 级推荐，增长率 68%"
+      },
+      {
+        "product": "工业级无人机",
+        "priority": "P0",
+        "quantity": 2,
+        "reason": "A 级推荐，增长率 62%"
+      }
+    ],
+    "optimizations": [
+      {
+        "product": "钢结构折叠房屋",
+        "action": "优化 listing",
+        "reason": "B 级，需提升转化率"
+      },
+      {
+        "product": "电动摩托车",
+        "action": "增加变体",
+        "reason": "A 级，扩大产品线"
+      }
+    ],
+    "clearance": [
+      {
+        "product": "通用小型汽油发动机",
+        "priority": "P2",
+        "reason": "C 级，增长率仅 25%"
+      }
+    ]
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "type": "Seoul Travel Plan",
+  "origin": "北京",
+  "destination": "首尔",
+  "start_date": "2026-05-01",
+  "end_date": "2026-05-06",
+  "days": 6,
+  "travelers": 2,
+  "mode": "跨国游",
+  "budget": 10000,
+  "budget_per_person": 5000.0,
+  "budget_allocation": {
+    "航班": 3000.0,
+    "住宿": 2500.0,
+    "餐饮": 2000.0,
+    "活动": 1500.0,
+    "购物": 1000.0
+  },
+  "preferences": [
+    "历史文化",
+    "购物",
+    "美食"
+  ],
+  "daily_itinerary": [
+    {
+      "day": 1,
+      "date": "2026-05-01",
+      "attractions": [
+        {
+          "name": "景福宫",
+          "duration": "2h",
+          "cost": 3000
+        },
+        {
+          "name": "南山塔",
+          "duration": "2h",
+          "cost": 15000
+        },
+        {
+          "name": "明洞",
+          "duration": "3h",
+          "cost": 0
+        }
+      ],
+      "meal_breakfast": "酒店早餐/韩式早餐",
+      "meal_lunch": "烤肉",
+      "meal_dinner": "炸鸡啤酒"
+    },
+    {
+      "day": 2,
+      "date": "2026-05-02",
+      "attractions": [
+        {
+          "name": "景福宫",
+          "duration": "2h",
+          "cost": 3000
+        },
+        {
+          "name": "南山塔",
+          "duration": "2h",
+          "cost": 15000
+        },
+        {
+          "name": "明洞",
+          "duration": "3h",
+          "cost": 0
+        }
+      ],
+      "meal_breakfast": "酒店早餐/韩式早餐",
+      "meal_lunch": "烤肉",
+      "meal_dinner": "炸鸡啤酒"
+    },
+    {
+      "day": 3,
+      "date": "2026-05-03",
+      "attractions": [
+        {
+          "name": "景福宫",
+          "duration": "2h",
+          "cost": 3000
+        },
+        {
+          "name": "南山塔",
+          "duration": "2h",
+          "cost": 15000
+        },
+        {
+          "name": "明洞",
+          "duration": "3h",
+          "cost": 0
+        }
+      ],
+      "meal_breakfast": "酒店早餐/韩式早餐",
+      "meal_lunch": "烤肉",
+      "meal_dinner": "炸鸡啤酒"
+    },
+    {
+      "day": 4,
+      "date": "2026-05-04",
+      "attractions": [
+        {
+          "name": "景福宫",
+          "duration": "2h",
+          "cost": 3000
+        },
+        {
+          "name": "南山塔",
+          "duration": "2h",
+          "cost": 15000
+        },
+        {
+          "name": "明洞",
+          "duration": "3h",
+          "cost": 0
+        }
+      ],
+      "meal_breakfast": "酒店早餐/韩式早餐",
+      "meal_lunch": "烤肉",
+      "meal_dinner": "炸鸡啤酒"
+    },
+    {
+      "day": 5,
+      "date": "2026-05-05",
+      "attractions": [
+        {
+          "name": "景福宫",
+          "duration": "2h",
+          "cost": 3000
+        },
+        {
+          "name": "南山塔",
+          "duration": "2h",
+          "cost": 15000
+        },
+        {
+          "name": "明洞",
+          "duration": "3h",
+          "cost": 0
+        }
+      ],
+      "meal_breakfast": "酒店早餐/韩式早餐",
+      "meal_lunch": "烤肉",
+      "meal_dinner": "炸鸡啤酒"
+    },
+    {
+      "day": 6,
+      "date": "2026-05-06",
+      "attractions": [
+        {
+          "name": "景福宫",
+          "duration": "2h",
+          "cost": 3000
+        },
+        {
+          "name": "南山塔",
+          "duration": "2h",
+          "cost": 15000
+        },
+        {
+          "name": "明洞",
+          "duration": "3h",
+          "cost": 0
+        }
+      ],
+      "meal_breakfast": "酒店早餐/韩式早餐",
+      "meal_lunch": "烤肉",
+      "meal_dinner": "炸鸡啤酒"
+    }
+  ],
+  "timestamp": "2026-04-24T21:33:19.113719"
+}

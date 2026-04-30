@@ -1,0 +1,54 @@
+{
+  "records": [
+    {
+      "task_id": "task_001",
+      "task_type": "daily_intelligence",
+      "tokens_used": 5000,
+      "skill_reused": false,
+      "saved_tokens": 0,
+      "timestamp": "2026-04-19T00:33:15.868816"
+    },
+    {
+      "task_id": "task_002",
+      "task_type": "daily_intelligence",
+      "tokens_used": 1000,
+      "skill_reused": true,
+      "saved_tokens": 4000,
+      "timestamp": "2026-04-19T00:33:15.869106"
+    },
+    {
+      "task_id": "task_003",
+      "task_type": "competitor_monitor",
+      "tokens_used": 3000,
+      "skill_reused": false,
+      "saved_tokens": 0,
+      "timestamp": "2026-04-19T00:33:15.869441"
+    },
+    {
+      "task_id": "task_004",
+      "task_type": "competitor_monitor",
+      "tokens_used": 800,
+      "skill_reused": true,
+      "saved_tokens": 2200,
+      "timestamp": "2026-04-19T00:33:15.873791"
+    },
+    {
+      "task_id": "task_005",
+      "task_type": "trend_alert",
+      "tokens_used": 2000,
+      "skill_reused": false,
+      "saved_tokens": 0,
+      "timestamp": "2026-04-19T00:33:15.874109"
+    },
+    {
+      "task_id": "task_006",
+      "task_type": "daily_intelligence",
+      "tokens_used": 900,
+      "skill_reused": true,
+      "saved_tokens": 4100,
+      "timestamp": "2026-04-19T00:33:15.874416"
+    }
+  ],
+  "total": 6,
+  "updated_at": "2026-04-19T00:33:15.874423"
+}

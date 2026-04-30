@@ -1,0 +1,162 @@
+{
+  "version": "1.0",
+  "updated_at": "2026-04-15T22:19:53.101275",
+  "total_count": 21,
+  "categories": {
+    "bot": [],
+    "agent": [
+      "evolution-agent",
+      "learning-agent",
+      "scheduler-agent",
+      "prediction-agent"
+    ],
+    "tool": [],
+    "skill": [
+      "emerged-skill-20260414-080001",
+      "emerged-skill-20260414-051501",
+      "emerged-skill-20260414-043001",
+      "emerged-skill-20260414-060002",
+      "emerged-skill-20260414-081815",
+      "tianji",
+      "emerged-skill-20260414-081636",
+      "emerged-skill-20260414-074501",
+      "emerged-skill-20260414-050002",
+      "emerged-skill-20260414-054501",
+      "emerged-skill-20260414-084501",
+      "emerged-skill-20260414-044501",
+      "emerged-skill-20260414-071501",
+      "emerged-skill-20260414-053002",
+      "emerged-skill-20260414-063002",
+      "emerged-skill-20260414-064501",
+      "emerged-skill-20260414-073001"
+    ]
+  },
+  "skills": [
+    {
+      "name": "emerged-skill-20260414-080001",
+      "path": "/home/nicola/.openclaw/workspace/skills/emerged-skill-20260414-080001",
+      "category": "skill",
+      "has_skill_md": true
+    },
+    {
+      "name": "emerged-skill-20260414-051501",
+      "path": "/home/nicola/.openclaw/workspace/skills/emerged-skill-20260414-051501",
+      "category": "skill",
+      "has_skill_md": true
+    },
+    {
+      "name": "emerged-skill-20260414-043001",
+      "path": "/home/nicola/.openclaw/workspace/skills/emerged-skill-20260414-043001",
+      "category": "skill",
+      "has_skill_md": true
+    },
+    {
+      "name": "emerged-skill-20260414-060002",
+      "path": "/home/nicola/.openclaw/workspace/skills/emerged-skill-20260414-060002",
+      "category": "skill",
+      "has_skill_md": true
+    },
+    {
+      "name": "emerged-skill-20260414-081815",
+      "path": "/home/nicola/.openclaw/workspace/skills/emerged-skill-20260414-081815",
+      "category": "skill",
+      "has_skill_md": true
+    },
+    {
+      "name": "tianji",
+      "path": "/home/nicola/.openclaw/workspace/skills/tianji",
+      "category": "skill",
+      "has_skill_md": true
+    },
+    {
+      "name": "emerged-skill-20260414-081636",
+      "path": "/home/nicola/.openclaw/workspace/skills/emerged-skill-20260414-081636",
+      "category": "skill",
+      "has_skill_md": true
+    },
+    {
+      "name": "emerged-skill-20260414-074501",
+      "path": "/home/nicola/.openclaw/workspace/skills/emerged-skill-20260414-074501",
+      "category": "skill",
+      "has_skill_md": true
+    },
+    {
+      "name": "emerged-skill-20260414-050002",
+      "path": "/home/nicola/.openclaw/workspace/skills/emerged-skill-20260414-050002",
+      "category": "skill",
+      "has_skill_md": true
+    },
+    {
+      "name": "evolution-agent",
+      "path": "/home/nicola/.openclaw/workspace/skills/evolution-agent",
+      "category": "agent",
+      "has_skill_md": true
+    },
+    {
+      "name": "emerged-skill-20260414-054501",
+      "path": "/home/nicola/.openclaw/workspace/skills/emerged-skill-20260414-054501",
+      "category": "skill",
+      "has_skill_md": true
+    },
+    {
+      "name": "emerged-skill-20260414-084501",
+      "path": "/home/nicola/.openclaw/workspace/skills/emerged-skill-20260414-084501",
+      "category": "skill",
+      "has_skill_md": true
+    },
+    {
+      "name": "emerged-skill-20260414-044501",
+      "path": "/home/nicola/.openclaw/workspace/skills/emerged-skill-20260414-044501",
+      "category": "skill",
+      "has_skill_md": true
+    },
+    {
+      "name": "emerged-skill-20260414-071501",
+      "path": "/home/nicola/.openclaw/workspace/skills/emerged-skill-20260414-071501",
+      "category": "skill",
+      "has_skill_md": true
+    },
+    {
+      "name": "emerged-skill-20260414-053002",
+      "path": "/home/nicola/.openclaw/workspace/skills/emerged-skill-20260414-053002",
+      "category": "skill",
+      "has_skill_md": true
+    },
+    {
+      "name": "learning-agent",
+      "path": "/home/nicola/.openclaw/workspace/skills/learning-agent",
+      "category": "agent",
+      "has_skill_md": true
+    },
+    {
+      "name": "emerged-skill-20260414-063002",
+      "path": "/home/nicola/.openclaw/workspace/skills/emerged-skill-20260414-063002",
+      "category": "skill",
+      "has_skill_md": true
+    },
+    {
+      "name": "scheduler-agent",
+      "path": "/home/nicola/.openclaw/workspace/skills/scheduler-agent",
+      "category": "agent",
+      "has_skill_md": true
+    },
+    {
+      "name": "prediction-agent",
+      "path": "/home/nicola/.openclaw/workspace/skills/prediction-agent",
+      "category": "agent",
+      "has_skill_md": true
+    },
+    {
+      "name": "emerged-skill-20260414-064501",
+      "path": "/home/nicola/.openclaw/workspace/skills/emerged-skill-20260414-064501",
+      "category": "skill",
+      "has_skill_md": true
+    },
+    {
+      "name": "emerged-skill-20260414-073001",
+      "path": "/home/nicola/.openclaw/workspace/skills/emerged-skill-20260414-073001",
+      "category": "skill",
+      "has_skill_md": true
+    }
+  ]
+}

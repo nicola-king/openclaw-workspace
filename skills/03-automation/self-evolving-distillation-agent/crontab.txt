@@ -1,0 +1,13 @@
+# 自进化蒸馏提炼 Agent v2.0 - Crontab 配置
+
+# 基础蒸馏：每周一 12:00 (v1.0)
+0 12 * * 1 /home/nicola/.openclaw/workspace/skills/03-automation/distillation-agent/run.sh >> /home/nicola/.openclaw/workspace/logs/distillation-agent.log 2>&1
+
+# 自进化蒸馏：每周日 12:00 (v2.0 额外执行)
+0 12 * * 0 /home/nicola/.openclaw/workspace/skills/03-automation/self-evolving-distillation-agent/run.sh >> /home/nicola/.openclaw/workspace/logs/self-evolving-distillation.log 2>&1
+
+# 自进化触发：每 15 分钟检测能力涌现
+*/15 * * * * /home/nicola/.openclaw/workspace/skills/03-automation/self-evolving-distillation-agent/evolution_trigger.sh >> /home/nicola/.openclaw/workspace/logs/evolution-trigger.log 2>&1
+
+# 验证 crontab:
+# crontab -l

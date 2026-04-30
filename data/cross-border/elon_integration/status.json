@@ -1,0 +1,269 @@
+{
+  "status": {
+    "check_time": "2026-04-19T23:24:29.680696",
+    "dimensions": {
+      "question": {
+        "name": "质疑",
+        "weight": 0.2,
+        "score": 100.0,
+        "modules_status": [
+          {
+            "module": "auto_question_scheduler.py",
+            "exists": true,
+            "size_kb": 11.92,
+            "status": "active"
+          }
+        ],
+        "metrics": {}
+      },
+      "delete": {
+        "name": "删除",
+        "weight": 0.3,
+        "score": 100.0,
+        "modules_status": [
+          {
+            "module": "weekly_process_review.py",
+            "exists": true,
+            "size_kb": 12.09,
+            "status": "active"
+          }
+        ],
+        "metrics": {}
+      },
+      "simplify": {
+        "name": "简化",
+        "weight": 0.15,
+        "score": 100.0,
+        "modules_status": [
+          {
+            "module": "process_optimization_engine.py",
+            "exists": true,
+            "size_kb": 11.37,
+            "status": "active"
+          }
+        ],
+        "metrics": {}
+      },
+      "accelerate": {
+        "name": "加速",
+        "weight": 0.15,
+        "score": 100.0,
+        "modules_status": [
+          {
+            "module": "prospect_search.py",
+            "exists": true,
+            "size_kb": 18.0,
+            "status": "active"
+          }
+        ],
+        "metrics": {}
+      },
+      "automate": {
+        "name": "自动化",
+        "weight": 0.2,
+        "score": 100.0,
+        "modules_status": [
+          {
+            "module": "auto_trigger_module.py",
+            "exists": true,
+            "size_kb": 10.31,
+            "status": "active"
+          },
+          {
+            "module": "self_evolution_engine.py",
+            "exists": true,
+            "size_kb": 10.91,
+            "status": "active"
+          }
+        ],
+        "metrics": {}
+      }
+    },
+    "overall_score": 100.0,
+    "health_level": "excellent"
+  },
+  "history": [
+    {
+      "check_time": "2026-04-19T23:24:29.680696",
+      "dimensions": {
+        "question": {
+          "name": "质疑",
+          "weight": 0.2,
+          "score": 100.0,
+          "modules_status": [
+            {
+              "module": "auto_question_scheduler.py",
+              "exists": true,
+              "size_kb": 11.92,
+              "status": "active"
+            }
+          ],
+          "metrics": {}
+        },
+        "delete": {
+          "name": "删除",
+          "weight": 0.3,
+          "score": 100.0,
+          "modules_status": [
+            {
+              "module": "weekly_process_review.py",
+              "exists": true,
+              "size_kb": 12.09,
+              "status": "active"
+            }
+          ],
+          "metrics": {}
+        },
+        "simplify": {
+          "name": "简化",
+          "weight": 0.15,
+          "score": 100.0,
+          "modules_status": [
+            {
+              "module": "process_optimization_engine.py",
+              "exists": true,
+              "size_kb": 11.37,
+              "status": "active"
+            }
+          ],
+          "metrics": {}
+        },
+        "accelerate": {
+          "name": "加速",
+          "weight": 0.15,
+          "score": 100.0,
+          "modules_status": [
+            {
+              "module": "prospect_search.py",
+              "exists": true,
+              "size_kb": 18.0,
+              "status": "active"
+            }
+          ],
+          "metrics": {}
+        },
+        "automate": {
+          "name": "自动化",
+          "weight": 0.2,
+          "score": 100.0,
+          "modules_status": [
+            {
+              "module": "auto_trigger_module.py",
+              "exists": true,
+              "size_kb": 10.31,
+              "status": "active"
+            },
+            {
+              "module": "self_evolution_engine.py",
+              "exists": true,
+              "size_kb": 10.91,
+              "status": "active"
+            }
+          ],
+          "metrics": {}
+        }
+      },
+      "overall_score": 100.0,
+      "health_level": "excellent"
+    }
+  ],
+  "reports": [
+    {
+      "id": "ELON_REPORT_20260419_232429",
+      "generated_at": "2026-04-19T23:24:29.681626",
+      "status": {
+        "check_time": "2026-04-19T23:24:29.680696",
+        "dimensions": {
+          "question": {
+            "name": "质疑",
+            "weight": 0.2,
+            "score": 100.0,
+            "modules_status": [
+              {
+                "module": "auto_question_scheduler.py",
+                "exists": true,
+                "size_kb": 11.92,
+                "status": "active"
+              }
+            ],
+            "metrics": {}
+          },
+          "delete": {
+            "name": "删除",
+            "weight": 0.3,
+            "score": 100.0,
+            "modules_status": [
+              {
+                "module": "weekly_process_review.py",
+                "exists": true,
+                "size_kb": 12.09,
+                "status": "active"
+              }
+            ],
+            "metrics": {}
+          },
+          "simplify": {
+            "name": "简化",
+            "weight": 0.15,
+            "score": 100.0,
+            "modules_status": [
+              {
+                "module": "process_optimization_engine.py",
+                "exists": true,
+                "size_kb": 11.37,
+                "status": "active"
+              }
+            ],
+            "metrics": {}
+          },
+          "accelerate": {
+            "name": "加速",
+            "weight": 0.15,
+            "score": 100.0,
+            "modules_status": [
+              {
+                "module": "prospect_search.py",
+                "exists": true,
+                "size_kb": 18.0,
+                "status": "active"
+              }
+            ],
+            "metrics": {}
+          },
+          "automate": {
+            "name": "自动化",
+            "weight": 0.2,
+            "score": 100.0,
+            "modules_status": [
+              {
+                "module": "auto_trigger_module.py",
+                "exists": true,
+                "size_kb": 10.31,
+                "status": "active"
+              },
+              {
+                "module": "self_evolution_engine.py",
+                "exists": true,
+                "size_kb": 10.91,
+                "status": "active"
+              }
+            ],
+            "metrics": {}
+          }
+        },
+        "overall_score": 100.0,
+        "health_level": "excellent"
+      },
+      "summary": {
+        "overall_score": 100.0,
+        "health_level": "excellent",
+        "total_dimensions": 5,
+        "total_modules": 6,
+        "active_modules": 6
+      },
+      "recommendations": [
+        "系统运行良好，继续保持"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,326 @@
+{
+  "searches": [
+    {
+      "query": "中国最新科技新闻",
+      "search_type": "domestic_search",
+      "search_engine": "bing_cn",
+      "endpoint": "https://cn.bing.com",
+      "proxy_enabled": false,
+      "traffic_type": "domestic",
+      "timestamp": "2026-04-16T14:08:50.560115"
+    },
+    {
+      "query": "US latest technology news",
+      "search_type": "international_search",
+      "search_engine": "chromium",
+      "endpoint": "https://www.google.com",
+      "proxy_enabled": true,
+      "traffic_type": "proxy",
+      "timestamp": "2026-04-16T14:08:50.560349"
+    },
+    {
+      "query": "国内旅游攻略",
+      "search_type": "domestic_search",
+      "search_engine": "bing_cn",
+      "endpoint": "https://cn.bing.com",
+      "proxy_enabled": false,
+      "traffic_type": "domestic",
+      "timestamp": "2026-04-16T14:08:50.560654"
+    },
+    {
+      "query": "international flight booking",
+      "search_type": "international_search",
+      "search_engine": "chromium",
+      "endpoint": "https://www.google.com",
+      "proxy_enabled": true,
+      "traffic_type": "proxy",
+      "timestamp": "2026-04-16T14:08:50.560944"
+    },
+    {
+      "query": "默认搜索测试",
+      "search_type": "default",
+      "search_engine": "bing_cn",
+      "endpoint": "https://cn.bing.com",
+      "proxy_enabled": false,
+      "traffic_type": "domestic",
+      "timestamp": "2026-04-16T14:08:50.561279"
+    },
+    {
+      "query": "中国最新科技新闻",
+      "search_type": "domestic_search",
+      "search_engine": "bing_cn",
+      "endpoint": "https://cn.bing.com",
+      "proxy_enabled": false,
+      "traffic_type": "domestic",
+      "timestamp": "2026-04-16T14:11:19.411157"
+    },
+    {
+      "query": "US latest technology news",
+      "search_type": "international_search",
+      "search_engine": "chromium",
+      "endpoint": "https://www.google.com",
+      "proxy_enabled": true,
+      "traffic_type": "proxy",
+      "timestamp": "2026-04-16T14:11:19.411408"
+    },
+    {
+      "query": "国内旅游攻略",
+      "search_type": "domestic_search",
+      "search_engine": "bing_cn",
+      "endpoint": "https://cn.bing.com",
+      "proxy_enabled": false,
+      "traffic_type": "domestic",
+      "timestamp": "2026-04-16T14:11:19.411656"
+    },
+    {
+      "query": "international flight booking",
+      "search_type": "international_search",
+      "search_engine": "chromium",
+      "endpoint": "https://www.google.com",
+      "proxy_enabled": true,
+      "traffic_type": "proxy",
+      "timestamp": "2026-04-16T14:11:19.411902"
+    },
+    {
+      "query": "默认搜索测试",
+      "search_type": "default",
+      "search_engine": "bing_cn",
+      "endpoint": "https://cn.bing.com",
+      "proxy_enabled": false,
+      "traffic_type": "domestic",
+      "timestamp": "2026-04-16T14:11:19.412144"
+    },
+    {
+      "query": "中国最新科技新闻",
+      "search_type": "domestic_search",
+      "confidence": 0.95,
+      "matched_keywords": [
+        "中国"
+      ],
+      "match_level": "level_1",
+      "reason": "匹配到国内关键词",
+      "timestamp": "2026-04-16T14:19:01.715043",
+      "route": {
+        "search_engine": "bing_cn",
+        "endpoint": "https://cn.bing.com",
+        "proxy": false,
+        "traffic": "domestic"
+      }
+    },
+    {
+      "query": "国内旅游攻略",
+      "search_type": "domestic_search",
+      "confidence": 0.95,
+      "matched_keywords": [
+        "国内"
+      ],
+      "match_level": "level_1",
+      "reason": "匹配到国内关键词",
+      "timestamp": "2026-04-16T14:19:01.715413",
+      "route": {
+        "search_engine": "bing_cn",
+        "endpoint": "https://cn.bing.com",
+        "proxy": false,
+        "traffic": "domestic"
+      }
+    },
+    {
+      "query": "国产手机品牌",
+      "search_type": "domestic_search",
+      "confidence": 0.8,
+      "matched_keywords": [
+        "国产"
+      ],
+      "match_level": "level_2",
+      "reason": "匹配到国内关键词",
+      "timestamp": "2026-04-16T14:19:01.715725",
+      "route": {
+        "search_engine": "bing_cn",
+        "endpoint": "https://cn.bing.com",
+        "proxy": false,
+        "traffic": "domestic"
+      }
+    },
+    {
+      "query": "北京天气预报",
+      "search_type": "domestic_search",
+      "confidence": 0.95,
+      "matched_keywords": [
+        "北京"
+      ],
+      "match_level": "level_1",
+      "reason": "匹配到国内关键词",
+      "timestamp": "2026-04-16T14:19:01.716015",
+      "route": {
+        "search_engine": "bing_cn",
+        "endpoint": "https://cn.bing.com",
+        "proxy": false,
+        "traffic": "domestic"
+      }
+    },
+    {
+      "query": "华为最新产品",
+      "search_type": "domestic_search",
+      "confidence": 0.95,
+      "matched_keywords": [
+        "华为"
+      ],
+      "match_level": "level_1",
+      "reason": "匹配到国内关键词",
+      "timestamp": "2026-04-16T14:19:01.716332",
+      "route": {
+        "search_engine": "bing_cn",
+        "endpoint": "https://cn.bing.com",
+        "proxy": false,
+        "traffic": "domestic"
+      }
+    },
+    {
+      "query": "US latest technology news",
+      "search_type": "international_search",
+      "confidence": 0.95,
+      "matched_keywords": [
+        "US"
+      ],
+      "match_level": "level_1",
+      "reason": "匹配到国外关键词",
+      "timestamp": "2026-04-16T14:19:01.716654",
+      "route": {
+        "search_engine": "chromium",
+        "endpoint": "https://www.google.com",
+        "proxy": true,
+        "traffic": "proxy"
+      }
+    },
+    {
+      "query": "国外旅游景点",
+      "search_type": "international_search",
+      "confidence": 0.95,
+      "matched_keywords": [
+        "国外"
+      ],
+      "match_level": "level_1",
+      "reason": "匹配到国外关键词",
+      "timestamp": "2026-04-16T14:19:01.716992",
+      "route": {
+        "search_engine": "chromium",
+        "endpoint": "https://www.google.com",
+        "proxy": true,
+        "traffic": "proxy"
+      }
+    },
+    {
+      "query": "国际航班查询",
+      "search_type": "international_search",
+      "confidence": 0.95,
+      "matched_keywords": [
+        "国际"
+      ],
+      "match_level": "level_1",
+      "reason": "匹配到国外关键词",
+      "timestamp": "2026-04-16T14:19:01.717361",
+      "route": {
+        "search_engine": "chromium",
+        "endpoint": "https://www.google.com",
+        "proxy": true,
+        "traffic": "proxy"
+      }
+    },
+    {
+      "query": "GitHub 使用教程",
+      "search_type": "international_search",
+      "confidence": 0.95,
+      "matched_keywords": [
+        "GitHub"
+      ],
+      "match_level": "level_1",
+      "reason": "匹配到国外关键词",
+      "timestamp": "2026-04-16T14:19:01.717833",
+      "route": {
+        "search_engine": "chromium",
+        "endpoint": "https://www.google.com",
+        "proxy": true,
+        "traffic": "proxy"
+      }
+    },
+    {
+      "query": "Google 搜索技巧",
+      "search_type": "international_search",
+      "confidence": 0.95,
+      "matched_keywords": [
+        "Google"
+      ],
+      "match_level": "level_1",
+      "reason": "匹配到国外关键词",
+      "timestamp": "2026-04-16T14:19:01.718235",
+      "route": {
+        "search_engine": "chromium",
+        "endpoint": "https://www.google.com",
+        "proxy": true,
+        "traffic": "proxy"
+      }
+    },
+    {
+      "query": "默认搜索测试",
+      "search_type": "default",
+      "confidence": 1.0,
+      "matched_keywords": [],
+      "match_level": null,
+      "reason": "未匹配到关键词，使用默认搜索",
+      "timestamp": "2026-04-16T14:19:01.718633",
+      "route": {
+        "search_engine": "bing_cn",
+        "endpoint": "https://cn.bing.com",
+        "proxy": false,
+        "traffic": "domestic"
+      }
+    },
+    {
+      "query": "今天天气怎么样",
+      "search_type": "default",
+      "confidence": 1.0,
+      "matched_keywords": [],
+      "match_level": null,
+      "reason": "未匹配到关键词，使用默认搜索",
+      "timestamp": "2026-04-16T14:19:01.719064",
+      "route": {
+        "search_engine": "bing_cn",
+        "endpoint": "https://cn.bing.com",
+        "proxy": false,
+        "traffic": "domestic"
+      }
+    },
+    {
+      "query": "如何学习编程",
+      "search_type": "default",
+      "confidence": 1.0,
+      "matched_keywords": [],
+      "match_level": null,
+      "reason": "未匹配到关键词，使用默认搜索",
+      "timestamp": "2026-04-16T14:19:01.719514",
+      "route": {
+        "search_engine": "bing_cn",
+        "endpoint": "https://cn.bing.com",
+        "proxy": false,
+        "traffic": "domestic"
+      }
+    },
+    {
+      "query": "国内国外对比分析",
+      "search_type": "default",
+      "confidence": 0.5,
+      "matched_keywords": [
+        "国内国外对比"
+      ],
+      "match_level": null,
+      "reason": "排除关键词，使用默认搜索",
+      "timestamp": "2026-04-16T14:19:01.719956",
+      "route": {
+        "search_engine": "bing_cn",
+        "endpoint": "https://cn.bing.com",
+        "proxy": false,
+        "traffic": "domestic"
+      }
+    }
+  ]
+}

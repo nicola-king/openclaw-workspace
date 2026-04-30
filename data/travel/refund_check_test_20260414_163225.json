@@ -1,0 +1,15 @@
+{
+  "type": "Refund & Flexibility Check",
+  "policy": {
+    "refundable": true,
+    "change_fee": 200,
+    "cancellation_fee": 300,
+    "flexibility_score": 8.5,
+    "low_risk_options": [
+      "免费改期一次",
+      "起飞前 24 小时免费取消",
+      "疫情特殊情况全额退款"
+    ]
+  },
+  "timestamp": "2026-04-14T16:32:25.380230"
+}

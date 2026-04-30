@@ -1,0 +1,69 @@
+# 太一系统完整定时任务配置 - 全部自动触发
+# 配置时间：2026-04-16 18:00
+# 时区：Asia/Shanghai (北京时间)
+# 任务数：13 个
+# 
+# 重要：所有任务都需要加载环境变量
+# 使用方式：在 crontab 中使用 . /home/nicola/.openclaw/load-env.sh
+
+# ============================================
+# 环境变量加载
+# ============================================
+
+# 加载环境变量 (所有任务前缀)
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+MAILTO=""
+
+# ============================================
+# 智慧推送 (道 Agent & 悟 Agent)
+# ============================================
+
+# 道 Agent - 每日 08:00 (北京时间)
+0 8 * * * . /home/nicola/.openclaw/load-env.sh && cd /home/nicola/.openclaw/workspace && python3 skills/05-content/wisdom-scheduler/src/scheduler.py --dao >> logs/wisdom-scheduler/dao-cron.log 2>&1
+
+# 悟 Agent - 每日 20:00 (北京时间)
+0 20 * * * . /home/nicola/.openclaw/load-env.sh && cd /home/nicola/.openclaw/workspace && python3 skills/05-content/wisdom-scheduler/src/scheduler.py --wu >> logs/wisdom-scheduler/wu-cron.log 2>&1
+
+# ============================================
+# 微信公众号
+# ============================================
+
+# 太一微信公众号数据报告 - 每日 09:00 生成昨日数据
+0 9 * * * . /home/nicola/.openclaw/load-env.sh && cd /home/nicola/.openclaw/workspace/skills/05-content/shanmu && python3 wechat-metrics-dashboard.py >> logs/wechat-metrics.log 2>&1
+
+# 太一微信公众号自动发布 - 每日 18:00 生成明日文章
+0 18 * * * . /home/nicola/.openclaw/load-env.sh && cd /home/nicola/.openclaw/workspace/skills/05-content/shanmu/wechat-assistant && python3 wechat_sender.py --topic "AI 管家" >> logs/wechat-auto-publish.log 2>&1
+
+# ============================================
+# 系统维护
+# ============================================
+
+# Auto Bug Fix - 每 30 分钟
+*/30 * * * * . /home/nicola/.openclaw/load-env.sh && cd /home/nicola/.openclaw/workspace && python3 scripts/auto-bug-fix.py >> logs/auto-bug-fix-cron.log 2>&1
+
+# ============================================
+# 学习与报告 (HEARTBEAT.md 要求)
+# ============================================
+
+# 宪法学习 + 记忆提炼 - 每日 06:00
+0 6 * * * . /home/nicola/.openclaw/load-env.sh && cd /home/nicola/.openclaw/workspace && python3 scripts/daily-constitution-study.py >> logs/constitution-study.log 2>&1
+
+# 日报生成 + 归档 - 每日 23:00
+0 23 * * * . /home/nicola/.openclaw/load-env.sh && cd /home/nicola/.openclaw/workspace && python3 scripts/daily-report-generator.py >> logs/daily-report.log 2>&1
+
+# 每小时任务健康检查
+0 * * * * . /home/nicola/.openclaw/load-env.sh && cd /home/nicola/.openclaw/workspace && python3 scripts/hourly-health-check.py >> logs/health-check.log 2>&1
+
+# ============================================
+# 其他定时任务
+# ============================================
+
+# 周易每日研习 - 每日 07:00
+0 7 * * * . /home/nicola/.openclaw/load-env.sh && cd /home/nicola/.openclaw/workspace/skills/07-system/suwen && python3 yijing-daily-study.py >> logs/yijing-study.log 2>&1
+
+# 先秦经典每日研习 - 每日 07:30
+30 7 * * * . /home/nicola/.openclaw/load-env.sh && cd /home/nicola/.openclaw/workspace/skills/07-system/suwen && python3 xianqin-daily-study.py >> logs/xianqin-study.log 2>&1
+
+# 天气预报 - 每日 07:00
+0 7 * * * . /home/nicola/.openclaw/load-env.sh && cd /home/nicola/.openclaw/workspace/skills/07-system/suwen && python3 weather-forecast.py >> logs/weather-forecast.log 2>&1

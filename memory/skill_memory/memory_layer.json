@@ -1,0 +1,17 @@
+{
+  "memories": [
+    {
+      "skill_id": "skill_5c111da6e950",
+      "name": "skill_生成每日情报推送报告",
+      "description": "生成每日情报推送报告",
+      "pattern_summary": {
+        "steps_count": 4,
+        "tools_count": 4
+      },
+      "created_at": "2026-04-19T00:32:42.504658",
+      "recall_count": 1
+    }
+  ],
+  "count": 1,
+  "updated_at": "2026-04-19T00:32:42.504669"
+}

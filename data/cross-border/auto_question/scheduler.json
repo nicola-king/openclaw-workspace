@@ -1,0 +1,1253 @@
+{
+  "sessions": [
+    {
+      "id": "QUESTION_20260419_231255",
+      "process_name": "客户搜寻流程",
+      "process_steps": [
+        "数据源选择",
+        "数据获取",
+        "数据清洗",
+        "数据验证",
+        "客户分级"
+      ],
+      "frequency": "weekly",
+      "questions": [
+        {
+          "step_index": 0,
+          "step_name": "数据源选择",
+          "questions": [
+            {
+              "question": "这个步骤是谁定的？为什么需要？",
+              "priority": "P0"
+            },
+            {
+              "question": "如果没有这个步骤会怎样？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能删除吗？",
+              "priority": "P0"
+            },
+            {
+              "question": "这个步骤能简化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能加速吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能自动化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤的 ROI 是多少？",
+              "priority": "P0"
+            },
+            {
+              "question": "有没有更好的替代方案？",
+              "priority": "P1"
+            }
+          ],
+          "answers": {},
+          "deletable": false,
+          "simplifiable": false,
+          "accelerable": false,
+          "automatable": false
+        },
+        {
+          "step_index": 1,
+          "step_name": "数据获取",
+          "questions": [
+            {
+              "question": "这个步骤是谁定的？为什么需要？",
+              "priority": "P0"
+            },
+            {
+              "question": "如果没有这个步骤会怎样？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能删除吗？",
+              "priority": "P0"
+            },
+            {
+              "question": "这个步骤能简化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能加速吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能自动化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤的 ROI 是多少？",
+              "priority": "P0"
+            },
+            {
+              "question": "有没有更好的替代方案？",
+              "priority": "P1"
+            }
+          ],
+          "answers": {},
+          "deletable": false,
+          "simplifiable": false,
+          "accelerable": false,
+          "automatable": false
+        },
+        {
+          "step_index": 2,
+          "step_name": "数据清洗",
+          "questions": [
+            {
+              "question": "这个步骤是谁定的？为什么需要？",
+              "priority": "P0"
+            },
+            {
+              "question": "如果没有这个步骤会怎样？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能删除吗？",
+              "priority": "P0"
+            },
+            {
+              "question": "这个步骤能简化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能加速吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能自动化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤的 ROI 是多少？",
+              "priority": "P0"
+            },
+            {
+              "question": "有没有更好的替代方案？",
+              "priority": "P1"
+            }
+          ],
+          "answers": {},
+          "deletable": false,
+          "simplifiable": false,
+          "accelerable": false,
+          "automatable": false
+        },
+        {
+          "step_index": 3,
+          "step_name": "数据验证",
+          "questions": [
+            {
+              "question": "这个步骤是谁定的？为什么需要？",
+              "priority": "P0"
+            },
+            {
+              "question": "如果没有这个步骤会怎样？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能删除吗？",
+              "priority": "P0"
+            },
+            {
+              "question": "这个步骤能简化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能加速吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能自动化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤的 ROI 是多少？",
+              "priority": "P0"
+            },
+            {
+              "question": "有没有更好的替代方案？",
+              "priority": "P1"
+            }
+          ],
+          "answers": {},
+          "deletable": false,
+          "simplifiable": false,
+          "accelerable": false,
+          "automatable": false
+        },
+        {
+          "step_index": 4,
+          "step_name": "客户分级",
+          "questions": [
+            {
+              "question": "这个步骤是谁定的？为什么需要？",
+              "priority": "P0"
+            },
+            {
+              "question": "如果没有这个步骤会怎样？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能删除吗？",
+              "priority": "P0"
+            },
+            {
+              "question": "这个步骤能简化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能加速吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能自动化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤的 ROI 是多少？",
+              "priority": "P0"
+            },
+            {
+              "question": "有没有更好的替代方案？",
+              "priority": "P1"
+            }
+          ],
+          "answers": {},
+          "deletable": false,
+          "simplifiable": false,
+          "accelerable": false,
+          "automatable": false
+        }
+      ],
+      "analysis": [],
+      "recommendations": [],
+      "status": "completed",
+      "started_at": "2026-04-19T23:12:55.312203",
+      "expected_benefits": {
+        "time_saved_hours": 0,
+        "efficiency_gain_percent": 0,
+        "cost_saved": 0
+      },
+      "completed_at": "2026-04-19T23:12:55.312296"
+    },
+    {
+      "id": "QUESTION_20260419_231255",
+      "process_name": "内容生产流程",
+      "process_steps": [
+        "选题策划",
+        "内容创作",
+        "审核优化",
+        "多平台分发",
+        "数据追踪"
+      ],
+      "frequency": "weekly",
+      "questions": [
+        {
+          "step_index": 0,
+          "step_name": "选题策划",
+          "questions": [
+            {
+              "question": "这个步骤是谁定的？为什么需要？",
+              "priority": "P0"
+            },
+            {
+              "question": "如果没有这个步骤会怎样？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能删除吗？",
+              "priority": "P0"
+            },
+            {
+              "question": "这个步骤能简化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能加速吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能自动化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤的 ROI 是多少？",
+              "priority": "P0"
+            },
+            {
+              "question": "有没有更好的替代方案？",
+              "priority": "P1"
+            }
+          ],
+          "answers": {},
+          "deletable": false,
+          "simplifiable": false,
+          "accelerable": false,
+          "automatable": false
+        },
+        {
+          "step_index": 1,
+          "step_name": "内容创作",
+          "questions": [
+            {
+              "question": "这个步骤是谁定的？为什么需要？",
+              "priority": "P0"
+            },
+            {
+              "question": "如果没有这个步骤会怎样？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能删除吗？",
+              "priority": "P0"
+            },
+            {
+              "question": "这个步骤能简化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能加速吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能自动化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤的 ROI 是多少？",
+              "priority": "P0"
+            },
+            {
+              "question": "有没有更好的替代方案？",
+              "priority": "P1"
+            }
+          ],
+          "answers": {},
+          "deletable": false,
+          "simplifiable": false,
+          "accelerable": false,
+          "automatable": false
+        },
+        {
+          "step_index": 2,
+          "step_name": "审核优化",
+          "questions": [
+            {
+              "question": "这个步骤是谁定的？为什么需要？",
+              "priority": "P0"
+            },
+            {
+              "question": "如果没有这个步骤会怎样？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能删除吗？",
+              "priority": "P0"
+            },
+            {
+              "question": "这个步骤能简化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能加速吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能自动化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤的 ROI 是多少？",
+              "priority": "P0"
+            },
+            {
+              "question": "有没有更好的替代方案？",
+              "priority": "P1"
+            }
+          ],
+          "answers": {},
+          "deletable": true,
+          "simplifiable": false,
+          "accelerable": false,
+          "automatable": false
+        },
+        {
+          "step_index": 3,
+          "step_name": "多平台分发",
+          "questions": [
+            {
+              "question": "这个步骤是谁定的？为什么需要？",
+              "priority": "P0"
+            },
+            {
+              "question": "如果没有这个步骤会怎样？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能删除吗？",
+              "priority": "P0"
+            },
+            {
+              "question": "这个步骤能简化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能加速吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能自动化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤的 ROI 是多少？",
+              "priority": "P0"
+            },
+            {
+              "question": "有没有更好的替代方案？",
+              "priority": "P1"
+            }
+          ],
+          "answers": {},
+          "deletable": false,
+          "simplifiable": false,
+          "accelerable": false,
+          "automatable": false
+        },
+        {
+          "step_index": 4,
+          "step_name": "数据追踪",
+          "questions": [
+            {
+              "question": "这个步骤是谁定的？为什么需要？",
+              "priority": "P0"
+            },
+            {
+              "question": "如果没有这个步骤会怎样？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能删除吗？",
+              "priority": "P0"
+            },
+            {
+              "question": "这个步骤能简化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能加速吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能自动化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤的 ROI 是多少？",
+              "priority": "P0"
+            },
+            {
+              "question": "有没有更好的替代方案？",
+              "priority": "P1"
+            }
+          ],
+          "answers": {},
+          "deletable": false,
+          "simplifiable": false,
+          "accelerable": false,
+          "automatable": false
+        }
+      ],
+      "analysis": [],
+      "recommendations": [
+        {
+          "type": "delete",
+          "step": "审核优化",
+          "action": "删除步骤：审核优化",
+          "impact": "高",
+          "effort": "低"
+        }
+      ],
+      "status": "completed",
+      "started_at": "2026-04-19T23:12:55.312931",
+      "expected_benefits": {
+        "time_saved_hours": 2,
+        "efficiency_gain_percent": 10,
+        "cost_saved": 200
+      },
+      "completed_at": "2026-04-19T23:12:55.312996"
+    },
+    {
+      "id": "QUESTION_20260419_231255",
+      "process_name": "触达转化流程",
+      "process_steps": [
+        "潜客筛选",
+        "话术准备",
+        "渠道选择",
+        "发送触达",
+        "回复处理",
+        "转化追踪"
+      ],
+      "frequency": "weekly",
+      "questions": [
+        {
+          "step_index": 0,
+          "step_name": "潜客筛选",
+          "questions": [
+            {
+              "question": "这个步骤是谁定的？为什么需要？",
+              "priority": "P0"
+            },
+            {
+              "question": "如果没有这个步骤会怎样？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能删除吗？",
+              "priority": "P0"
+            },
+            {
+              "question": "这个步骤能简化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能加速吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能自动化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤的 ROI 是多少？",
+              "priority": "P0"
+            },
+            {
+              "question": "有没有更好的替代方案？",
+              "priority": "P1"
+            }
+          ],
+          "answers": {},
+          "deletable": false,
+          "simplifiable": false,
+          "accelerable": false,
+          "automatable": false
+        },
+        {
+          "step_index": 1,
+          "step_name": "话术准备",
+          "questions": [
+            {
+              "question": "这个步骤是谁定的？为什么需要？",
+              "priority": "P0"
+            },
+            {
+              "question": "如果没有这个步骤会怎样？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能删除吗？",
+              "priority": "P0"
+            },
+            {
+              "question": "这个步骤能简化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能加速吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能自动化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤的 ROI 是多少？",
+              "priority": "P0"
+            },
+            {
+              "question": "有没有更好的替代方案？",
+              "priority": "P1"
+            }
+          ],
+          "answers": {},
+          "deletable": false,
+          "simplifiable": false,
+          "accelerable": false,
+          "automatable": false
+        },
+        {
+          "step_index": 2,
+          "step_name": "渠道选择",
+          "questions": [
+            {
+              "question": "这个步骤是谁定的？为什么需要？",
+              "priority": "P0"
+            },
+            {
+              "question": "如果没有这个步骤会怎样？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能删除吗？",
+              "priority": "P0"
+            },
+            {
+              "question": "这个步骤能简化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能加速吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能自动化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤的 ROI 是多少？",
+              "priority": "P0"
+            },
+            {
+              "question": "有没有更好的替代方案？",
+              "priority": "P1"
+            }
+          ],
+          "answers": {},
+          "deletable": false,
+          "simplifiable": false,
+          "accelerable": false,
+          "automatable": false
+        },
+        {
+          "step_index": 3,
+          "step_name": "发送触达",
+          "questions": [
+            {
+              "question": "这个步骤是谁定的？为什么需要？",
+              "priority": "P0"
+            },
+            {
+              "question": "如果没有这个步骤会怎样？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能删除吗？",
+              "priority": "P0"
+            },
+            {
+              "question": "这个步骤能简化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能加速吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能自动化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤的 ROI 是多少？",
+              "priority": "P0"
+            },
+            {
+              "question": "有没有更好的替代方案？",
+              "priority": "P1"
+            }
+          ],
+          "answers": {},
+          "deletable": false,
+          "simplifiable": false,
+          "accelerable": false,
+          "automatable": false
+        },
+        {
+          "step_index": 4,
+          "step_name": "回复处理",
+          "questions": [
+            {
+              "question": "这个步骤是谁定的？为什么需要？",
+              "priority": "P0"
+            },
+            {
+              "question": "如果没有这个步骤会怎样？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能删除吗？",
+              "priority": "P0"
+            },
+            {
+              "question": "这个步骤能简化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能加速吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能自动化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤的 ROI 是多少？",
+              "priority": "P0"
+            },
+            {
+              "question": "有没有更好的替代方案？",
+              "priority": "P1"
+            }
+          ],
+          "answers": {},
+          "deletable": false,
+          "simplifiable": false,
+          "accelerable": false,
+          "automatable": false
+        },
+        {
+          "step_index": 5,
+          "step_name": "转化追踪",
+          "questions": [
+            {
+              "question": "这个步骤是谁定的？为什么需要？",
+              "priority": "P0"
+            },
+            {
+              "question": "如果没有这个步骤会怎样？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能删除吗？",
+              "priority": "P0"
+            },
+            {
+              "question": "这个步骤能简化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能加速吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能自动化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤的 ROI 是多少？",
+              "priority": "P0"
+            },
+            {
+              "question": "有没有更好的替代方案？",
+              "priority": "P1"
+            }
+          ],
+          "answers": {},
+          "deletable": false,
+          "simplifiable": false,
+          "accelerable": false,
+          "automatable": false
+        }
+      ],
+      "analysis": [],
+      "recommendations": [],
+      "status": "completed",
+      "started_at": "2026-04-19T23:12:55.313870",
+      "expected_benefits": {
+        "time_saved_hours": 0,
+        "efficiency_gain_percent": 0,
+        "cost_saved": 0
+      },
+      "completed_at": "2026-04-19T23:12:55.313941"
+    },
+    {
+      "id": "QUESTION_20260419_231255",
+      "process_name": "数据整合流程",
+      "process_steps": [
+        "API 调用",
+        "数据解析",
+        "数据清洗",
+        "数据存储",
+        "数据更新"
+      ],
+      "frequency": "biweekly",
+      "questions": [
+        {
+          "step_index": 0,
+          "step_name": "API 调用",
+          "questions": [
+            {
+              "question": "这个步骤是谁定的？为什么需要？",
+              "priority": "P0"
+            },
+            {
+              "question": "如果没有这个步骤会怎样？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能删除吗？",
+              "priority": "P0"
+            },
+            {
+              "question": "这个步骤能简化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能加速吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能自动化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤的 ROI 是多少？",
+              "priority": "P0"
+            },
+            {
+              "question": "有没有更好的替代方案？",
+              "priority": "P1"
+            }
+          ],
+          "answers": {},
+          "deletable": false,
+          "simplifiable": false,
+          "accelerable": false,
+          "automatable": false
+        },
+        {
+          "step_index": 1,
+          "step_name": "数据解析",
+          "questions": [
+            {
+              "question": "这个步骤是谁定的？为什么需要？",
+              "priority": "P0"
+            },
+            {
+              "question": "如果没有这个步骤会怎样？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能删除吗？",
+              "priority": "P0"
+            },
+            {
+              "question": "这个步骤能简化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能加速吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能自动化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤的 ROI 是多少？",
+              "priority": "P0"
+            },
+            {
+              "question": "有没有更好的替代方案？",
+              "priority": "P1"
+            }
+          ],
+          "answers": {},
+          "deletable": false,
+          "simplifiable": false,
+          "accelerable": false,
+          "automatable": false
+        },
+        {
+          "step_index": 2,
+          "step_name": "数据清洗",
+          "questions": [
+            {
+              "question": "这个步骤是谁定的？为什么需要？",
+              "priority": "P0"
+            },
+            {
+              "question": "如果没有这个步骤会怎样？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能删除吗？",
+              "priority": "P0"
+            },
+            {
+              "question": "这个步骤能简化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能加速吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能自动化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤的 ROI 是多少？",
+              "priority": "P0"
+            },
+            {
+              "question": "有没有更好的替代方案？",
+              "priority": "P1"
+            }
+          ],
+          "answers": {},
+          "deletable": false,
+          "simplifiable": false,
+          "accelerable": false,
+          "automatable": false
+        },
+        {
+          "step_index": 3,
+          "step_name": "数据存储",
+          "questions": [
+            {
+              "question": "这个步骤是谁定的？为什么需要？",
+              "priority": "P0"
+            },
+            {
+              "question": "如果没有这个步骤会怎样？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能删除吗？",
+              "priority": "P0"
+            },
+            {
+              "question": "这个步骤能简化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能加速吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能自动化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤的 ROI 是多少？",
+              "priority": "P0"
+            },
+            {
+              "question": "有没有更好的替代方案？",
+              "priority": "P1"
+            }
+          ],
+          "answers": {},
+          "deletable": false,
+          "simplifiable": false,
+          "accelerable": false,
+          "automatable": false
+        },
+        {
+          "step_index": 4,
+          "step_name": "数据更新",
+          "questions": [
+            {
+              "question": "这个步骤是谁定的？为什么需要？",
+              "priority": "P0"
+            },
+            {
+              "question": "如果没有这个步骤会怎样？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能删除吗？",
+              "priority": "P0"
+            },
+            {
+              "question": "这个步骤能简化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能加速吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能自动化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤的 ROI 是多少？",
+              "priority": "P0"
+            },
+            {
+              "question": "有没有更好的替代方案？",
+              "priority": "P1"
+            }
+          ],
+          "answers": {},
+          "deletable": false,
+          "simplifiable": false,
+          "accelerable": false,
+          "automatable": false
+        }
+      ],
+      "analysis": [],
+      "recommendations": [],
+      "status": "completed",
+      "started_at": "2026-04-19T23:12:55.315010",
+      "expected_benefits": {
+        "time_saved_hours": 0,
+        "efficiency_gain_percent": 0,
+        "cost_saved": 0
+      },
+      "completed_at": "2026-04-19T23:12:55.315069"
+    },
+    {
+      "id": "QUESTION_20260419_231255",
+      "process_name": "报告生成流程",
+      "process_steps": [
+        "数据收集",
+        "数据分析",
+        "报告撰写",
+        "格式美化",
+        "发送推送"
+      ],
+      "frequency": "weekly",
+      "questions": [
+        {
+          "step_index": 0,
+          "step_name": "数据收集",
+          "questions": [
+            {
+              "question": "这个步骤是谁定的？为什么需要？",
+              "priority": "P0"
+            },
+            {
+              "question": "如果没有这个步骤会怎样？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能删除吗？",
+              "priority": "P0"
+            },
+            {
+              "question": "这个步骤能简化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能加速吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能自动化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤的 ROI 是多少？",
+              "priority": "P0"
+            },
+            {
+              "question": "有没有更好的替代方案？",
+              "priority": "P1"
+            }
+          ],
+          "answers": {},
+          "deletable": false,
+          "simplifiable": false,
+          "accelerable": false,
+          "automatable": false
+        },
+        {
+          "step_index": 1,
+          "step_name": "数据分析",
+          "questions": [
+            {
+              "question": "这个步骤是谁定的？为什么需要？",
+              "priority": "P0"
+            },
+            {
+              "question": "如果没有这个步骤会怎样？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能删除吗？",
+              "priority": "P0"
+            },
+            {
+              "question": "这个步骤能简化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能加速吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能自动化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤的 ROI 是多少？",
+              "priority": "P0"
+            },
+            {
+              "question": "有没有更好的替代方案？",
+              "priority": "P1"
+            }
+          ],
+          "answers": {},
+          "deletable": false,
+          "simplifiable": false,
+          "accelerable": false,
+          "automatable": false
+        },
+        {
+          "step_index": 2,
+          "step_name": "报告撰写",
+          "questions": [
+            {
+              "question": "这个步骤是谁定的？为什么需要？",
+              "priority": "P0"
+            },
+            {
+              "question": "如果没有这个步骤会怎样？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能删除吗？",
+              "priority": "P0"
+            },
+            {
+              "question": "这个步骤能简化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能加速吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能自动化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤的 ROI 是多少？",
+              "priority": "P0"
+            },
+            {
+              "question": "有没有更好的替代方案？",
+              "priority": "P1"
+            }
+          ],
+          "answers": {},
+          "deletable": false,
+          "simplifiable": false,
+          "accelerable": false,
+          "automatable": false
+        },
+        {
+          "step_index": 3,
+          "step_name": "格式美化",
+          "questions": [
+            {
+              "question": "这个步骤是谁定的？为什么需要？",
+              "priority": "P0"
+            },
+            {
+              "question": "如果没有这个步骤会怎样？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能删除吗？",
+              "priority": "P0"
+            },
+            {
+              "question": "这个步骤能简化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能加速吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能自动化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤的 ROI 是多少？",
+              "priority": "P0"
+            },
+            {
+              "question": "有没有更好的替代方案？",
+              "priority": "P1"
+            }
+          ],
+          "answers": {},
+          "deletable": false,
+          "simplifiable": false,
+          "accelerable": false,
+          "automatable": false
+        },
+        {
+          "step_index": 4,
+          "step_name": "发送推送",
+          "questions": [
+            {
+              "question": "这个步骤是谁定的？为什么需要？",
+              "priority": "P0"
+            },
+            {
+              "question": "如果没有这个步骤会怎样？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能删除吗？",
+              "priority": "P0"
+            },
+            {
+              "question": "这个步骤能简化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能加速吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤能自动化吗？",
+              "priority": "P1"
+            },
+            {
+              "question": "这个步骤的 ROI 是多少？",
+              "priority": "P0"
+            },
+            {
+              "question": "有没有更好的替代方案？",
+              "priority": "P1"
+            }
+          ],
+          "answers": {},
+          "deletable": false,
+          "simplifiable": false,
+          "accelerable": false,
+          "automatable": false
+        }
+      ],
+      "analysis": [],
+      "recommendations": [],
+      "status": "completed",
+      "started_at": "2026-04-19T23:12:55.316353",
+      "expected_benefits": {
+        "time_saved_hours": 0,
+        "efficiency_gain_percent": 0,
+        "cost_saved": 0
+      },
+      "completed_at": "2026-04-19T23:12:55.316408"
+    }
+  ],
+  "optimizations": [],
+  "executed": []
+}

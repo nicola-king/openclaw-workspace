@@ -1,0 +1,163 @@
+#!/bin/bash
+# Clash 自检自愈脚本
+# 功能：每 5 分钟检查 Clash 状态，异常时自动重启
+# 作者：太一 AGI
+# 创建：2026-04-21 00:07
+
+set -e
+
+# 配置
+CLASH_PORT=7890
+CLASH_CONTROLLER=9090
+CLASH_PATH="/home/nicola/clash/clash"
+CLASH_CONFIG="/home/nicola/clash"
+LOG_FILE="/tmp/clash-watchdog.log"
+TELEGRAM_BOT_TOKEN="8351068758:AAGtRXv2u5fGAMuVY3d5hmeKgV9tAFpCMLY"
+TELEGRAM_CHAT_ID="7073481596"
+
+# 日志函数
+log() {
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] $1" | tee -a "$LOG_FILE"
+}
+
+# Telegram 通知函数
+send_telegram() {
+    local message="$1"
+    curl -s -x http://127.0.0.1:$CLASH_PORT \
+        "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+        -H "Content-Type: application/json" \
+        -d "{\"chat_id\":\"${TELEGRAM_CHAT_ID}\",\"text\":\"${message}\",\"parse_mode\":\"HTML\"}" > /dev/null 2>&1
+}
+
+# 检查 Clash 进程
+check_process() {
+    if pgrep -f "clash -d $CLASH_CONFIG" > /dev/null; then
+        return 0
+    else
+        return 1
+    fi
+}
+
+# 检查端口监听
+check_port() {
+    if netstat -tlnp 2>/dev/null | grep -q ":$CLASH_PORT "; then
+        return 0
+    elif ss -tlnp 2>/dev/null | grep -q ":$CLASH_PORT "; then
+        return 0
+    else
+        return 1
+    fi
+}
+
+# 检查 API 可访问性
+check_api() {
+    local response=$(curl -s -o /dev/null -w "%{http_code}" "http://127.0.0.1:$CLASH_CONTROLLER/proxies" 2>/dev/null)
+    if [ "$response" = "200" ] || [ "$response" = "401" ]; then
+        return 0
+    else
+        return 1
+    fi
+}
+
+# 检查代理连通性
+check_proxy() {
+    local response=$(curl -s -x "http://127.0.0.1:$CLASH_PORT" -o /dev/null -w "%{http_code}" "https://api.telegram.org/" 2>/dev/null)
+    if [ "$response" = "200" ] || [ "$response" = "302" ]; then
+        return 0
+    else
+        return 1
+    fi
+}
+
+# 重启 Clash
+restart_clash() {
+    log "🔄 重启 Clash..."
+    
+    # 尝试 systemd 重启
+    if systemctl --user restart clash.service 2>/dev/null; then
+        log "✅ systemd 重启成功"
+        sleep 5
+        return 0
+    fi
+    
+    # 备用方案：直接启动
+    log "⚠️  systemd 失败，尝试直接启动..."
+    pkill -f "clash -d $CLASH_CONFIG" 2>/dev/null || true
+    sleep 2
+    nohup $CLASH_PATH -d $CLASH_CONFIG > /tmp/clash.log 2>&1 &
+    sleep 5
+    
+    if check_process; then
+        log "✅ 直接启动成功"
+        return 0
+    else
+        log "❌ 启动失败"
+        return 1
+    fi
+}
+
+# 主检查流程
+main() {
+    log "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+    log "🔍 Clash 自检开始"
+    
+    local issues=()
+    
+    # 检查 1: 进程
+    if check_process; then
+        log "✅ 进程正常"
+    else
+        log "❌ 进程异常"
+        issues+=("进程停止")
+    fi
+    
+    # 检查 2: 端口
+    if check_port; then
+        log "✅ 端口 $CLASH_PORT 监听正常"
+    else
+        log "❌ 端口 $CLASH_PORT 未监听"
+        issues+=("端口未监听")
+    fi
+    
+    # 检查 3: API
+    if check_api; then
+        log "✅ Controller API 正常"
+    else
+        log "❌ Controller API 异常"
+        issues+=("API 异常")
+    fi
+    
+    # 检查 4: 代理连通性
+    if check_proxy; then
+        log "✅ 代理连通性正常"
+    else
+        log "❌ 代理连通性异常"
+        issues+=("代理不通")
+    fi
+    
+    # 判断是否需要自愈
+    if [ ${#issues[@]} -gt 0 ]; then
+        log "⚠️  发现问题：${issues[*]}"
+        log "🔧 开始自愈..."
+        
+        # 发送告警
+        send_telegram "⚠️ <b>Clash 异常告警</b>%0A%0A📋 问题：${issues[*]}%0A🔧 状态：正在自愈..."
+        
+        # 执行自愈
+        if restart_clash; then
+            log "✅ 自愈成功"
+            send_telegram "✅ <b>Clash 自愈成功</b>%0A%0A📋 问题：${issues[*]}%0A⏰ 时间：$(date '+%Y-%m-%d %H:%M:%S')%0A🟢 状态：已恢复"
+        else
+            log "❌ 自愈失败"
+            send_telegram "❌ <b>Clash 自愈失败</b>%0A%0A📋 问题：${issues[*]}%0A⚠️ 状态：需要人工干预%0A⏰ 时间：$(date '+%Y-%m-%d %H:%M:%S')"
+        fi
+    else
+        log "✅ 所有检查通过"
+    fi
+    
+    log "🔍 自检完成"
+    log ""
+}
+
+# 执行
+main

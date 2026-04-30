@@ -1,0 +1,71 @@
+{
+  "skill_name": "ai_search",
+  "version": "1.0.0",
+  "description": "AI 搜索技能 - 网络搜索 + 网页爬取 + 交互 + Agent",
+  "author": "太一 AGI",
+  "created_at": "2026-04-19",
+  "dependencies": [
+    "crawl4ai",
+    "firecrawl-py"
+  ],
+  "config": {
+    "crawler": "crawl4ai",
+    "search": "firecrawl",
+    "local_mode": true,
+    "api_mode": false,
+    "max_results": 10,
+    "timeout": 30,
+    "firecrawl_api_key": ""
+  },
+  "endpoints": [
+    {
+      "name": "search",
+      "description": "网络搜索",
+      "method": "async",
+      "params": [
+        "query",
+        "limit"
+      ]
+    },
+    {
+      "name": "crawl",
+      "description": "网页爬取",
+      "method": "async",
+      "params": [
+        "url",
+        "options"
+      ]
+    },
+    {
+      "name": "search_and_crawl",
+      "description": "搜索 + 爬取",
+      "method": "async",
+      "params": [
+        "query",
+        "limit"
+      ]
+    },
+    {
+      "name": "agent_query",
+      "description": "Agent 自主查询",
+      "method": "async",
+      "params": [
+        "prompt"
+      ]
+    },
+    {
+      "name": "interact",
+      "description": "页面交互",
+      "method": "async",
+      "params": [
+        "url",
+        "actions"
+      ]
+    }
+  ],
+  "integration": {
+    "taiyi_system": true,
+    "skill_registry": true,
+    "api_interface": true
+  }
+}

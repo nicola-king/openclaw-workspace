@@ -1,0 +1,25 @@
+{
+  "version": "1.0",
+  "created_at": "2026-04-16T13:06:49.738245",
+  "channels": [
+    {
+      "name": "Telegram",
+      "enabled": true
+    },
+    {
+      "name": "Email",
+      "enabled": true
+    },
+    {
+      "name": "GitHub Issues",
+      "enabled": true
+    }
+  ],
+  "metrics": [
+    "efficiency_improvement",
+    "cost_reduction",
+    "user_satisfaction",
+    "feature_requests"
+  ],
+  "collection_frequency": "daily"
+}

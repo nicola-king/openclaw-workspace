@@ -1,0 +1,77 @@
+[
+  {
+    "id": "attraction_singapore_001",
+    "name": "滨海湾花园",
+    "name_en": "Gardens by the Bay",
+    "type": "自然风光",
+    "address": "新加坡滨海湾 18 号",
+    "address_en": "18 Marina Gardens Drive, Singapore 018953, Singapore",
+    "phone": "+65-6420-6840",
+    "website": "https://www.gardensbythebay.com.sg/",
+    "duration": "3h",
+    "cost": 30,
+    "rating": 4.9,
+    "opening_hours": "05:00-02:00 (花穹/云林 08:30-21:00)",
+    "images": [
+      "https://images.unsplash.com/photo-1525625293386-3f8f994856d7?w=800",
+      "https://images.unsplash.com/photo-1508963453740-f4d4865d6d89?w=800",
+      "https://images.unsplash.com/photo-1565181907638-15e4c4147e73?w=800"
+    ],
+    "description": "新加坡地标花园，擎天大树灯光秀",
+    "verified_sources": [
+      {"source": "Google Places", "verified_at": "2026-04-24", "score": 98},
+      {"source": "TripAdvisor", "verified_at": "2026-04-24", "score": 96}
+    ],
+    "trust_score": 97
+  },
+  {
+    "id": "attraction_singapore_002",
+    "name": "鱼尾狮公园",
+    "name_en": "Merlion Park",
+    "type": "现代都市",
+    "address": "新加坡鱼尾狮公园 1 号",
+    "address_en": "1 Fullerton Road, Singapore 049222, Singapore",
+    "phone": "N/A",
+    "website": "https://www.stb.gov.sg/",
+    "duration": "1h",
+    "cost": 0,
+    "rating": 4.5,
+    "opening_hours": "24 小时",
+    "images": [
+      "https://images.unsplash.com/photo-1525625293386-3f8f994856d7?w=800",
+      "https://images.unsplash.com/photo-1508963453740-f4d4865d6d89?w=800",
+      "https://images.unsplash.com/photo-1565181907638-15e4c4147e73?w=800"
+    ],
+    "description": "新加坡地标，鱼尾狮喷水池",
+    "verified_sources": [
+      {"source": "Google Places", "verified_at": "2026-04-24", "score": 95},
+      {"source": "TripAdvisor", "verified_at": "2026-04-24", "score": 93}
+    ],
+    "trust_score": 94
+  },
+  {
+    "id": "attraction_singapore_003",
+    "name": "环球影城",
+    "name_en": "Universal Studios Singapore",
+    "type": "主题乐园",
+    "address": "新加坡圣淘沙 8 号",
+    "address_en": "8 Sentosa Gateway, Singapore 098269, Singapore",
+    "phone": "+65-6577-8811",
+    "website": "https://www.rwsentosa.com/",
+    "duration": "1d",
+    "cost": 75,
+    "rating": 4.7,
+    "opening_hours": "10:00-19:00",
+    "images": [
+      "https://images.unsplash.com/photo-1525625293386-3f8f994856d7?w=800",
+      "https://images.unsplash.com/photo-1508963453740-f4d4865d6d89?w=800",
+      "https://images.unsplash.com/photo-1565181907638-15e4c4147e73?w=800"
+    ],
+    "description": "东南亚唯一环球影城，24 个游乐项目",
+    "verified_sources": [
+      {"source": "Google Places", "verified_at": "2026-04-24", "score": 97},
+      {"source": "TripAdvisor", "verified_at": "2026-04-24", "score": 95}
+    ],
+    "trust_score": 96
+  }
+]

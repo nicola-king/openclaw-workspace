@@ -1,0 +1,286 @@
+#!/bin/bash
+# IP 监控脚本 - 避免 IP 飘浮
+# 功能：定期测试出口 IP，如果变化发送告警
+
+set -e
+
+# 配置
+LOG_FILE="/home/nicola/.openclaw/workspace/logs/ip_monitor.log"
+IP_FILE="/tmp/last_export_ip.txt"
+ALERT_FILE="/tmp/ip_alert_count.txt"
+TELEGRAM_BOT_TOKEN="8351068758:AAGtRXv2u5fGAMuVY3d5hmeKgV9tAFpCMLY"
+TELEGRAM_CHAT_ID="7073481596"
+PROXY="http://127.0.0.1:7890"
+CHECK_INTERVAL=300  # 5 分钟检查一次
+
+# 日志函数
+log() {
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] $1" | tee -a "$LOG_FILE"
+}
+
+# Telegram 告警函数 (已禁用 - SAYELF 需要时再查询)
+send_telegram_alert() {
+    local message="$1"
+    # 已禁用：只记录日志，不发送通知
+    log "📝 告警记录 (已禁用): $message"
+    # 保存到告警历史文件
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] $message" >> "${LOG_FILE}.alerts"
+}
+
+# 获取当前 IP
+get_current_ip() {
+    curl -s -x "$PROXY" https://api.ipify.org 2>/dev/null || echo "ERROR"
+}
+
+# 测试 IP 固定性 (测试 5 次)
+test_ip_stability() {
+    log "🔍 测试 IP 固定性 (5 次)..."
+    
+    local ips=()
+    for i in $(seq 1 5); do
+        ip=$(get_current_ip)
+        ips+=("$ip")
+        log "  测试 $i: $ip"
+        sleep 0.5
+    done
+    
+    # 检查是否固定
+    local unique_count=$(printf "%s\n" "${ips[@]}" | sort -u | wc -l)
+    local first_ip="${ips[0]}"
+    
+    if [ "$unique_count" -eq 1 ]; then
+        log "✅ IP 固定：$first_ip"
+        echo "$first_ip"
+    else
+        log "⚠️  IP 不固定 (发现 $unique_count 个不同 IP)"
+        printf '%s\n' "${ips[@]}" | sort -u
+        echo "UNSTABLE"
+    fi
+}
+
+# 主检查函数
+check_ip() {
+    log "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+    log "🔍 开始 IP 检查"
+    
+    # 获取当前 IP
+    local current_ip=$(get_current_ip)
+    
+    if [ "$current_ip" = "ERROR" ]; then
+        log "❌ 获取 IP 失败"
+        return 1
+    fi
+    
+    log "📊 当前出口 IP: $current_ip"
+    
+    # 读取上次 IP
+    local last_ip=""
+    if [ -f "$IP_FILE" ]; then
+        last_ip=$(cat "$IP_FILE")
+        log "📊 上次出口 IP: $last_ip"
+    else
+        log "ℹ️  首次运行，保存当前 IP"
+        echo "$current_ip" > "$IP_FILE"
+        return 0
+    fi
+    
+    # 检查 IP 是否变化
+    if [ "$current_ip" != "$last_ip" ]; then
+        log "⚠️  IP 发生变化：$last_ip → $current_ip"
+        
+        # 测试 IP 固定性
+        local stable_ip=$(test_ip_stability)
+        
+        if [ "$stable_ip" = "UNSTABLE" ]; then
+            log "❌ IP 不稳定，发送告警"
+            
+            # 增加告警计数
+            local alert_count=0
+            if [ -f "$ALERT_FILE" ]; then
+                alert_count=$(cat "$ALERT_FILE")
+            fi
+            alert_count=$((alert_count + 1))
+            echo "$alert_count" > "$ALERT_FILE"
+            
+            # 如果连续告警超过 3 次，发送 Telegram
+            if [ "$alert_count" -ge 3 ]; then
+                send_telegram_alert "IP 持续飘浮%0A%0A上次 IP: $last_ip%0A当前 IP: $current_ip%0A状态：不稳定%0A%0A建议：%0A1. 检查 Clash 节点配置%0A2. 锁定固定节点%0A3. 联系代理提供商"
+                alert_count=0
+                echo "$alert_count" > "$ALERT_FILE"
+            fi
+        else
+            log "✅ IP 已稳定：$stable_ip"
+            
+            # 重置告警计数
+            echo "0" > "$ALERT_FILE"
+            
+            # 发送 IP 变化通知
+            send_telegram_alert "IP 已更新%0A%0A上次 IP: $last_ip%0A新 IP: $stable_ip%0A状态：✅ 已稳定%0A%0A请在币安更新 IP 白名单"
+            
+            # 更新 IP 文件
+            echo "$stable_ip" > "$IP_FILE"
+            
+            # 保存到历史记录
+            echo "$(date '+%Y-%m-%d %H:%M:%S'),$last_ip,$stable_ip" >> "${LOG_FILE}.history"
+        fi
+    else
+        log "✅ IP 未变化"
+        
+        # 重置告警计数
+        echo "0" > "$ALERT_FILE"
+        
+        # 静默运行，不发送通知 (避免重复报警)
+        log "🔇 相同 IP，不重复报警"
+    fi
+    
+    log "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+    log ""
+}
+
+# 测试节点 IP 函数 (手动触发)
+test_node_ip() {
+    local node_name="$1"
+    
+    echo "========================================"
+    echo "测试节点：$node_name"
+    echo "========================================"
+    echo ""
+    echo "请在 Clash 管理器中选择：$node_name"
+    echo "按回车键继续测试..."
+    read
+    
+    log "🔍 测试 $node_name IP (10 次)..."
+    
+    local ips=()
+    for i in $(seq 1 10); do
+        ip=$(get_current_ip)
+        ips+=("$ip")
+        echo "测试 $i: $ip"
+        sleep 0.3
+    done
+    
+    # 检查是否固定
+    local unique_count=$(printf "%s\n" "${ips[@]}" | sort -u | wc -l)
+    local first_ip="${ips[0]}"
+    
+    echo ""
+    if [ "$unique_count" -eq 1 ]; then
+        echo "✅ IP 固定：$first_ip"
+        echo ""
+        echo "建议添加到币安白名单：$first_ip"
+    else
+        echo "⚠️  IP 不固定 (发现 $unique_count 个不同 IP):"
+        printf '%s\n' "${ips[@]}" | sort -u
+        echo ""
+        echo "建议：更换节点或联系代理提供商"
+    fi
+    
+    echo ""
+}
+
+# 显示用法
+show_usage() {
+    echo "用法：$0 [命令]"
+    echo ""
+    echo "命令:"
+    echo "  check       检查 IP (默认)"
+    echo "  test NODE   测试指定节点 IP"
+    echo "  status      显示当前状态"
+    echo "  history     显示 IP 历史记录"
+    echo "  help        显示此帮助"
+    echo ""
+    echo "示例:"
+    echo "  $0 check"
+    echo "  $0 test '🇯🇵 日本 W01 | IEPL'"
+    echo "  $0 status"
+    echo ""
+}
+
+# 显示状态
+show_status() {
+    echo "========================================"
+    echo "IP 监控状态"
+    echo "========================================"
+    echo ""
+    
+    if [ -f "$IP_FILE" ]; then
+        echo "当前 IP: $(cat "$IP_FILE")"
+    else
+        echo "当前 IP: 未设置"
+    fi
+    
+    if [ -f "$ALERT_FILE" ]; then
+        echo "告警计数：$(cat "$ALERT_FILE")"
+    else
+        echo "告警计数：0"
+    fi
+    
+    echo ""
+    echo "日志文件：$LOG_FILE"
+    echo "检查间隔：${CHECK_INTERVAL}秒"
+    echo ""
+}
+
+# 显示历史记录
+show_history() {
+    echo "========================================"
+    echo "IP 历史记录"
+    echo "========================================"
+    echo ""
+    
+    if [ -f "${LOG_FILE}.history" ]; then
+        tail -20 "${LOG_FILE}.history"
+    else
+        echo "无历史记录"
+    fi
+    
+    echo ""
+}
+
+# 显示告警历史
+show_alerts() {
+    echo "========================================"
+    echo "IP 告警历史 (后台静默记录)"
+    echo "========================================"
+    echo ""
+    
+    if [ -f "${LOG_FILE}.alerts" ]; then
+        tail -50 "${LOG_FILE}.alerts"
+    else
+        echo "无告警记录"
+    fi
+    
+    echo ""
+}
+
+# 主程序
+main() {
+    case "${1:-check}" in
+        check)
+            check_ip
+            ;;
+        test)
+            test_node_ip "$2"
+            ;;
+        status)
+            show_status
+            ;;
+        history)
+            show_history
+            ;;
+        alerts)
+            show_alerts
+            ;;
+        help|--help|-h)
+            show_usage
+            ;;
+        *)
+            echo "❌ 未知命令：$1"
+            show_usage
+            exit 1
+            ;;
+    esac
+}
+
+# 运行
+main "$@"

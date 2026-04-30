@@ -1,0 +1,57 @@
+{
+  "name": "第三方报告爬虫系统",
+  "version": "1.0.0",
+  "targets": [
+    {
+      "institution": "McKinsey",
+      "url": "https://www.mckinsey.com/featured-insights",
+      "crawl_frequency": "daily",
+      "extract_format": "pdf/html"
+    },
+    {
+      "institution": "BCG",
+      "url": "https://www.bcg.com/publications",
+      "crawl_frequency": "daily",
+      "extract_format": "pdf/html"
+    },
+    {
+      "institution": "Bain",
+      "url": "https://www.bain.com/insights",
+      "crawl_frequency": "daily",
+      "extract_format": "pdf/html"
+    },
+    {
+      "institution": "Deloitte",
+      "url": "https://www2.deloitte.com/global/en/insights.html",
+      "crawl_frequency": "daily",
+      "extract_format": "pdf/html"
+    },
+    {
+      "institution": "PwC",
+      "url": "https://www.pwc.com/gx/en/insights.html",
+      "crawl_frequency": "daily",
+      "extract_format": "pdf/html"
+    },
+    {
+      "institution": "EY",
+      "url": "https://www.ey.com/en_gl/insights",
+      "crawl_frequency": "daily",
+      "extract_format": "pdf/html"
+    },
+    {
+      "institution": "KPMG",
+      "url": "https://home.kpmg/xx/en/home/insights.html",
+      "crawl_frequency": "daily",
+      "extract_format": "pdf/html"
+    }
+  ],
+  "storage": {
+    "format": "json",
+    "location": "/home/nicola/.openclaw/workspace/data/cross-border/7-sources-integration/crawled_reports",
+    "retention_days": 365
+  },
+  "schedule": {
+    "frequency": "daily",
+    "time": "02:00"
+  }
+}

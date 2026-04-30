@@ -1,0 +1,22 @@
+name: git-integration
+version: 1.0.0
+description: Git 版本控制 Skill - 支持 clone/commit/push/PR/branch/merge 全工作流
+author: 太一 AGI <taiyi@sayelf.com>
+license: MIT
+tags:
+  - git
+  - version-control
+  - developer-tools
+  - cli
+repository: https://github.com/nicola-king/openclaw-git-integration.git
+homepage: https://github.com/nicola-king/openclaw-git-integration
+bugs: https://github.com/nicola-king/openclaw-git-integration/issues
+category: Developer Tools
+min_openclaw_version: 2026.3.28
+dependencies:
+  - git
+  - gh (optional, for PR operations)
+pricing:
+  type: free
+  price: 0
+  currency: CNY

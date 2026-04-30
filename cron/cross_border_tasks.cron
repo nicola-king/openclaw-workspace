@@ -1,0 +1,21 @@
+# 跨境贸易 Agent 定时任务配置
+# 生成时间：2026-04-19 07:41:41
+
+# 每日情报推送 (P0)
+0 8 * * * python3 /home/nicola/.openclaw/workspace/skills/01-trading/cross-border-trade-agent/daily_intelligence_job.py >> /home/nicola/.openclaw/workspace/logs/cron/daily_intelligence.log 2>&1
+
+# 每周报告 (P0)
+0 9 * * 1 python3 /home/nicola/.openclaw/workspace/skills/01-trading/cross-border-trade-agent/weekly_report_job.py >> /home/nicola/.openclaw/workspace/logs/cron/weekly_report.log 2>&1
+
+# 每月战略 (P2)
+0 10 1 * * python3 /home/nicola/.openclaw/workspace/skills/01-trading/cross-border-trade-agent/monthly_strategy_job.py >> /home/nicola/.openclaw/workspace/logs/cron/monthly_strategy.log 2>&1
+
+# 趋势监控 (P1)
+0 * * * * python3 /home/nicola/.openclaw/workspace/skills/01-trading/cross-border-trade-agent/trend_alert_module.py >> /home/nicola/.openclaw/workspace/logs/cron/trend_monitor.log 2>&1
+
+# 竞品监控 (P2)
+0 */4 * * * python3 /home/nicola/.openclaw/workspace/skills/01-trading/cross-border-trade-agent/competitor_monitor_job.py >> /home/nicola/.openclaw/workspace/logs/cron/competitor_monitor.log 2>&1
+
+# 滞销清仓 (P3)
+0 6 * * * python3 /home/nicola/.openclaw/workspace/skills/01-trading/cross-border-trade-agent/clearance_job.py >> /home/nicola/.openclaw/workspace/logs/cron/clearance_job.log 2>&1
+

@@ -1,0 +1,140 @@
+# Skills Registry - 技能注册表
+# 自动发现技能，智能路由引擎使用
+# 最后更新：2026-04-07
+
+version: 1.0
+updated: 2026-04-07T08:50:00+08:00
+
+# 技能分类
+categories:
+  browser:
+    - browser-automation
+    - geo-automation
+  
+  trading:
+    - gmgn
+    - gmgn-cooking
+    - binance-trader
+    - polymarket
+    - zhiji
+    - zhiji-sentiment
+    - portfolio-tracker
+    - torchtrade-integration
+  
+  content:
+    - content-creator
+    - shanmu-reporter
+  
+  visual:
+    - visual-designer
+    - unsplash-image
+  
+  infrastructure:
+    - smart-model-router
+    - smart-router
+    - shared
+  
+  cli:
+    - aws-cli
+    - azure-cli
+    - gcp-cli
+    - docker-ctl
+    - k8s-deploy
+    - git-integration
+    - gemini-cli
+    - jimeng-cli
+  
+  monitoring:
+    - api-monitor
+    - polyalert
+    - self-check
+    - upgrade-guard
+  
+  data:
+    - feishu
+    - news-fetcher
+    - coingecko-price
+    - alpha-vantage
+    - public-apis-index
+  
+  communication:
+    - tts
+    - wechat
+    - slack-notify
+  
+  development:
+    - ssh
+    - github
+    - gh-issues
+  
+  bot:
+    - taiyi
+    - zhiji
+    - shanmu
+    - suwen
+    - wangliang
+    - paoding
+    - yi
+    - shoucangli
+
+# 技能元数据 (自动发现)
+skills:
+  browser-automation:
+    path: browser-automation/
+    category: browser
+    priority: P0
+    status: active
+  
+  smart-model-router:
+    path: smart_router/
+    category: infrastructure
+    priority: P0
+    status: active
+  
+  gmgn:
+    path: gmgn/
+    category: trading
+    priority: P0
+    status: active
+  
+  content-creator:
+    path: content-creator/
+    category: content
+    priority: P0
+    status: active
+  
+  visual-designer:
+    path: visual-designer/
+    category: visual
+    priority: P0
+    status: active
+  
+  shared:
+    path: shared/
+    category: infrastructure
+    priority: P0
+    status: active
+
+# 路由规则
+routing_rules:
+  # 关键词 → 技能映射
+  keywords:
+    "浏览器": browser-automation
+    "截图": browser-automation
+    "爬虫": browser-automation
+    "模型": smart-model-router
+    "路由": smart-router
+    "GMGN": gmgn
+    "交易": gmgn
+    "内容": content-creator
+    "发布": content-creator
+    "图表": visual-designer
+    "卡片": visual-designer
+    "数据库": shared
+    "缓存": shared
+
+# 统计信息
+stats:
+  total_skills: 113
+  integrated_p0: 5
+  skills_reduced: 14  # 127 → 113

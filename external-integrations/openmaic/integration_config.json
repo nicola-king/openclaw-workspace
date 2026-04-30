@@ -1,0 +1,37 @@
+{
+  "name": "OpenMAIC Integration",
+  "version": "1.0",
+  "created_at": "2026-04-16T13:01:25.476793",
+  "target_team": "education-agent",
+  "features": {
+    "ai_interaction": {
+      "enabled": true,
+      "modes": [
+        "chat",
+        "quiz",
+        "course_generation"
+      ]
+    },
+    "course_generation": {
+      "enabled": true,
+      "from": [
+        "topic",
+        "material",
+        "requirements"
+      ]
+    },
+    "practical_orientation": {
+      "enabled": true,
+      "focus": [
+        "vibe coding",
+        "practical",
+        "concrete"
+      ]
+    }
+  },
+  "expected_improvements": {
+    "course_generation": "+70%",
+    "learning_experience": "+40%",
+    "satisfaction": "+30%"
+  }
+}

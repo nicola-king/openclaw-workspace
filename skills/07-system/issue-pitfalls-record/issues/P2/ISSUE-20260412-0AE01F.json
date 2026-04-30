@@ -1,0 +1,16 @@
+{
+  "issue_id": "ISSUE-20260412-0AE01F",
+  "timestamp": "2026-04-12T22:41:29.511283",
+  "severity": "P2",
+  "category": "gateway",
+  "title": "测试问题",
+  "description": "这是一个测试问题记录",
+  "root_cause": null,
+  "solution": null,
+  "status": "open",
+  "resolved_at": null,
+  "tags": [
+    "test"
+  ],
+  "related_files": []
+}

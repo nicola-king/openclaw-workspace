@@ -1,0 +1,36 @@
+{
+  "version": "1.0",
+  "created_at": "2026-04-16T13:06:49.738558",
+  "fusions": [
+    {
+      "id": "F001",
+      "name": "视觉 + 视频融合",
+      "sources": [
+        "supervision",
+        "veo31"
+      ],
+      "target": "video-factory",
+      "description": "视觉分析 + AI 视频生成 = 智能视频分析"
+    },
+    {
+      "id": "F002",
+      "name": "学习 + 进化融合",
+      "sources": [
+        "openmaic",
+        "skill_evolution"
+      ],
+      "target": "education-agent",
+      "description": "AI 学习 + 技能进化 = 自适应学习系统"
+    },
+    {
+      "id": "F003",
+      "name": "代码 + 可视化融合",
+      "sources": [
+        "codeflow",
+        "chart-generator"
+      ],
+      "target": "suwen",
+      "description": "代码可视化 + 图表生成 = 架构理解增强"
+    }
+  ]
+}

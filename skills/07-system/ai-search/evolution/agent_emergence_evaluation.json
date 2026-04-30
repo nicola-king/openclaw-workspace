@@ -1,0 +1,28 @@
+{
+  "skill_name": "taiyi_ai_search_evolution",
+  "evaluated_at": "2026-04-19T10:27:55.391309",
+  "scores": {
+    "usage_frequency": 50.0,
+    "functionality": 80.0,
+    "complexity": 80.0,
+    "user_demand": 85.0,
+    "evolution_degree": 70.0,
+    "collaboration": 100
+  },
+  "weights": {
+    "usage_frequency": 0.2,
+    "functionality": 0.25,
+    "complexity": 0.15,
+    "user_demand": 0.2,
+    "evolution_degree": 0.15,
+    "collaboration": 0.05
+  },
+  "total_score": 74.5,
+  "decision": {
+    "action": "create_agent",
+    "timing": "this_week",
+    "priority": "P1",
+    "reason": "综合评分 60-79，本周创建 Agent"
+  },
+  "reasoning": "\n智能涌现推理:\n\n1. 使用频率：0.0分 (权重20%)\n2. 功能完整性：0.0分 (权重25%)\n3. 复杂度：0.0分 (权重15%)\n4. 用户需求：0.0分 (权重20%)\n5. 自进化程度：0.0分 (权重15%)\n6. 协同需求：0.0分 (权重5%)\n\n综合评分：0.00分\n\n决策：None\n\n建议：\n- AI 搜索是太一系统核心基础设施\n- 7 大数据源搜索是太一独有优势\n- 自进化系统已完备\n- 建议：wait\n"
+}
