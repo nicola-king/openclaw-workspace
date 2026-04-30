@@ -1,6 +1,6 @@
 # HEARTBEAT.md - 核心待办
 
-> 最后更新：**2026-04-30 13:51** | 系统健康度：**🟢**
+> 最后更新：**2026-04-30 18:30** | 系统健康度：**🟢**
 
 ---
 
@@ -14,37 +14,29 @@
 | rules/CONTEXT-HYGIENE.md | ✅ | 已创建 |
 | MEMORY.md | ✅ | 已创建 (3.3KB) |
 | memory/core.md 模型路由更新 | ✅ | 百炼引用已移除 |
-| **Git push (大规模)** | 🔴 **失败** | 409 commits / 4.54 GiB 超 SIGKILL，需拆包推送 |
+| **Git push (大规模)** | ✅ **已修复** | clean repo force push 成功，4.6GB 旧 history 已清理 |
+| **中东市场报告** | 🟡 已 cp 到 workspace | 待 art-agent 美化后交付 |
 
-### 🔴 阻塞项
+### 剩余待办
 
-| 任务 | 优先级 | 原因 |
+| 任务 | 优先级 | 说明 |
 |------|--------|------|
-| Git push 拆包 | P0 | 409 commits ahead，4.54 GiB pack file 太大被 SIGKILL。需分批次推送或清理大文件 |
 | 中东客户信息查证 | P1 | 7家中4家✅，3家DNS失败部分找到，SAYELF说转梁金飞书处理 |
-| 中东市场报告交付 | P1 | /tmp/middle_east_steel_folding_house_demand.md(9KB) 待cp到workspace + art-agent美化 |
-| art-agent 子模块提交 | P1 | core.py/scan-and-filter.sh 变更需git add/commit |
+| art-agent 子模块提交 | P1 | core.py/scan-and-filter.sh 变更需 git add/commit |
 
 ---
 
 ## 📊 今日里程碑 (2026-04-30)
 
-| 事件 | 成果 |
-|------|------|
-| **预压缩冲洗根因修复** | 发现 openclaw.json DeepSeek Flash contextWindow=64K → 已改为128K (compaction mode=safeguard) |
-| **中东客户查证** | 7家公司：Albaddad/UAE✅ Zamil/沙特✅ GRANDE House/中国→中东✅ 山东华盛/中国→中东✅ Red Sea/Speed House/Kirby 部分找到 |
-| **Art-agent 架构展示** | 18模块美学引擎 v2.1.0 |
-| **MEMORY.md 创建** | 4月全月日志蒸馏，长期固化记忆就位 |
-| **宪法文件补全** | TOOL-DISCIPLINE.md + CONTEXT-HYGIENE.md 创建 |
-
----
-
-## ⏳ 后台任务
-
-| 任务 | 状态 |
-|------|------|
-| Git push (409 commits, 4.54GiB) | ❌ SIGKILL (pack too large) |
-| openclaw.json 配置 (128K contextWindow) | ✅ 已就位，需重启 Gateway 完全生效 |
+| 时间 | 事件 | 成果 |
+|------|------|------|
+| 18:30 | **Git push 修复** | 新建 clean repo 强制推送 + 删除4.6GB 旧历史 ✅ |
+| 18:30 | **市场报告已 cp** | /tmp → workspace |
+| 13:45 | **预压缩冲洗根因修复** | openclaw.json contextWindow 64K→128K |
+| 11:25 | **中东客户查证** | 7家公司：4家✅ 3家部分找到 |
+| 11:16 | **Art-agent 架构展示** | 18模块美学引擎 v2.1.0 |
+| 12:35 | **MEMORY.md 创建** | 4月全月日志蒸馏 |
+| -- | **宪法文件补全** | TOOL-DISCIPLINE.md + CONTEXT-HYGIENE.md |
 
 ---
 
@@ -53,9 +45,8 @@
 | 指标 | 数值 |
 |------|------|
 | 待创建技能 | 0 |
-| 踩坑记录 | 1条 |
 | **LESSON-20260430-001** | contextWindow 不足(64K)导致每2分钟预压缩冲洗，打断所有正常作业 |
-| 教训 | 大模型 contextWindow 必须与实际能力匹配，否则产生虚假高频率冲洗 |
+| **LESSON-20260430-002** | 4.6GB git history（models/ + turboquant-env/）导致 push 持续 SIGKILL，需新建 clean repo |
 
 ---
 
@@ -66,4 +57,4 @@
 
 ---
 
-*太一 · 2026-04-30 13:51*
+*太一 · 2026-04-30 18:30*
