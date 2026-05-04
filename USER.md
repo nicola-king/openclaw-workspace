@@ -6,6 +6,15 @@
 - **Timezone:** Asia/Shanghai
 - **Notes:** 市政工程建设管理者
 
+## 账号信息
+
+| 平台 | 账号 | 用途 |
+|------|------|------|
+| Gmail | shanyejingling@gmail.com | 主要邮箱 / 公众号运营 |
+| Telegram | @nicola king (7073481596) | 主通讯 / GMGN登录 |
+
+---
+
 ## Context
 
 _(What do they care about? What projects are they working on? What annoys them? What makes them laugh? Build this over time.)_
