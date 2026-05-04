@@ -35,6 +35,7 @@ from hotels import Hotels
 from restaurants import Restaurants
 from attractions import Attractions
 from destination_guide import DestinationGuide
+from transport import TransportManager, TicketDatabase
 
 
 def cmd_plan(args):
@@ -139,6 +140,71 @@ def cmd_intel(args):
     if args.save:
         path = ih.save_json(result, f"intel_{args.city}")
         print(f"✅ 已保存: {path}")
+
+
+def cmd_transport(args):
+    """交通票务命令"""
+    mgr = TransportManager()
+    if args.add:
+        ticket_id = mgr.db.add_ticket(
+            city=args.city, ticket_type=args.type, provider=args.provider or '',
+            route=args.route or '', departure_time=args.departure or '',
+            arrival_time=args.arrival or '', price=args.price or 0,
+            confirmation_no=args.confirmation or '', status=args.status or 'booked',
+        )
+        ticket = mgr.get_ticket(ticket_id)
+        print(f"✅ 已添加票务 #{ticket_id}")
+        if args.json:
+            print(json.dumps(ticket, indent=2, ensure_ascii=False))
+        else:
+            print(mgr.format_ticket(ticket))
+    elif args.list:
+        tickets = mgr.list_tickets(args.city, args.type, args.status)
+        if args.json:
+            print(json.dumps(tickets, indent=2, ensure_ascii=False))
+        else:
+            print(mgr.format_ticket_list(tickets))
+    elif args.itinerary:
+        from datetime import datetime
+        date = args.date or datetime.now().strftime("%Y-%m-%d")
+        it = mgr.get_itinerary_transport(args.city, date)
+        if args.json:
+            print(json.dumps(it, indent=2, ensure_ascii=False))
+        else:
+            print(mgr.format_itinerary(it))
+    elif args.screenshot:
+        mgr.add_screenshot(args.id, args.screenshot, args.ocr or '')
+        print(f"✅ 截图已添加到票务 #{args.id}")
+    elif args.get:
+        ticket = mgr.get_ticket(args.id)
+        if args.json:
+            print(json.dumps(ticket, indent=2, ensure_ascii=False))
+        elif ticket:
+            print(mgr.format_ticket(ticket))
+        else:
+            print(f"❌ 票务 #{args.id} 不存在")
+    elif args.stats:
+        db = TicketDatabase()
+        stats = db.get_statistics(args.city)
+        if args.json:
+            print(json.dumps(stats, indent=2, ensure_ascii=False))
+        else:
+            print(f"\n📊 {args.city or '全部'} 票务统计")
+            print(f"{'='*40}")
+            print(f"  总票数: {stats['total']}")
+            for ttype, count in stats['by_type'].items():
+                label = TransportManager.TICKET_TYPE_LABELS.get(ttype, ttype)
+                print(f"  {label}: {count} 张")
+    elif args.delete:
+        db = TicketDatabase()
+        ticket = db.get_ticket(args.id)
+        if ticket:
+            label = TransportManager.TICKET_TYPE_LABELS.get(ticket['type'], '票务')
+            print(f"🗑️  删除 {label}: {ticket.get('route', '')}")
+            db.delete_ticket(args.id)
+            print(f"✅ 已删除")
+        else:
+            print(f"❌ 票务 #{args.id} 不存在")
 
 
 def cmd_search(args):
@@ -289,6 +355,29 @@ def main():
     p.add_argument('--type', default='destination')
     p.add_argument('--keywords')
 
+    # transport
+    p = sub.add_parser('transport', help='交通票务管理')
+    p.add_argument('--add', action='store_true', help='添加票务')
+    p.add_argument('--list', action='store_true', help='列出票务')
+    p.add_argument('--get', type=int, help='查看单张票务 ID')
+    p.add_argument('--screenshot', help='添加截图路径')
+    p.add_argument('--ocr', help='OCR文本')
+    p.add_argument('--itinerary', action='store_true', help='行程交通概览')
+    p.add_argument('--stats', action='store_true', help='票务统计')
+    p.add_argument('--delete', type=int, help='删除票务 ID')
+    p.add_argument('--city', default='', help='城市')
+    p.add_argument('--type', choices=['flight','train','ferry','bus',''],
+                   default='', help='票务类型')
+    p.add_argument('--route', help='路线 出发地→目的地')
+    p.add_argument('--provider', help='提供商')
+    p.add_argument('--departure', help='出发时间')
+    p.add_argument('--arrival', help='到达时间')
+    p.add_argument('--price', type=float, help='价格')
+    p.add_argument('--confirmation', help='订单号/票号')
+    p.add_argument('--status', default='booked', help='状态')
+    p.add_argument('--date', help='日期 (itinerary模式)')
+    p.add_argument('--id', type=int, help='票务 ID (screenshot/get/delete)')
+
     # search
     p = sub.add_parser('search', help='搜索旅游信息')
     p.add_argument('--query', required=True)
@@ -315,6 +404,7 @@ def main():
         'guide': cmd_guide,
         'intel': cmd_intel,
         'search': cmd_search,
+        'transport': cmd_transport,
         'stats': cmd_stats,
         'init': cmd_init_city,
     }

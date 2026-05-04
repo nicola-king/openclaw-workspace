@@ -19,6 +19,14 @@
   python3 travel_cli.py info --city 重庆 --type restaurants
   python3 travel_cli.py info --city 重庆 --type attractions
   
+  # 交通票务
+  python3 travel_cli.py transport add --type flight --city 北京 \
+    --route "重庆→北京" --departure "2026-05-10 08:00" \
+    --arrival "2026-05-10 10:30" --price 1280 --provider 中国国航
+  python3 travel_cli.py transport list --city 北京
+  python3 travel_cli.py transport screenshot --id 1 --path screenshots/CA1234.png
+  python3 travel_cli.py transport itinerary --city 北京 --date 2026-05-10
+  
   # API 模式 (MCP/HTTP)
   python3 travel_cli.py serve  # 启动 MCP/API 服务器
 """
@@ -26,10 +34,14 @@
 import sys, json, argparse
 from pathlib import Path
 
+# 尝试导入交通模块
+sys.path.insert(0, str(Path(__file__).parent / "core"))
+from transport import TransportManager, TicketDatabase
+
 def main():
     parser = argparse.ArgumentParser(description="太一旅游探路者 v2.0")
-    parser.add_argument("mode", choices=["short", "deep", "group", "info", "serve"],
-                        help="short=短游 / deep=深度游 / group=团队 / info=查询 / serve=API服务")
+    parser.add_argument("mode", choices=["short", "deep", "group", "info", "transport", "serve"],
+                        help="short=短游 / deep=深度游 / group=团队 / info=查询 / transport=交通票务 / serve=API服务")
     parser.add_argument("--city", help="目标城市")
     parser.add_argument("--days", type=int, default=3, help="旅行天数")
     parser.add_argument("--budget", type=int, help="预算(元)")
@@ -41,6 +53,10 @@ def main():
                         help="输出格式")
 
     args = parser.parse_args()
+    
+    if args.mode == "transport":
+        _run_transport(args)
+        return
     
     if args.mode == "serve":
         print("🔌 启动 MCP/API 服务...")
@@ -70,6 +86,14 @@ def main():
     print(f"\n✅ 旅游规划已生成")
     print(f"📁 数据存储: data/travel.db")
     print(f"🔗 所有商家信息已附带验证链接")
+
+
+def _run_transport(args):
+    """交通票务子命令 — 转发到 transport.py CLI"""
+    from core.transport import cli_main
+    # 跳过前 2 个参数 (script, "transport")
+    cli_main(sys.argv[:1] + sys.argv[2:])
+
 
 if __name__ == "__main__":
     main()
