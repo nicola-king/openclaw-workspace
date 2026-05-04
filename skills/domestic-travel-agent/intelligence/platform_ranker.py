@@ -19,6 +19,76 @@ WEIGHTS = {
     "transport": {"price": 0.35, "speed": 0.25, "comfort": 0.20, "reliability": 0.20},
 }
 
+# ===== 社交平台大V/博主搜索 =====
+SOCIAL_INFLUENCERS = {
+    # 国内视频/社交
+    "抖音旅游大V": [
+        {"name": "房琪kiki", "url": "https://www.douyin.com/user/房琪kiki",
+         "platform": "抖音", "followers": "2000万+", "style": "旅行Vlog/文案天花板"},
+        {"name": "itsRae", "url": "https://www.douyin.com/user/itsRae",
+         "platform": "抖音", "followers": "1500万+", "style": "旅行记录/真实感"},
+        {"name": "幻想家姜时一", "url": "https://www.douyin.com/user/幻想家姜时一",
+         "platform": "抖音", "followers": "1000万+", "style": "小众景点/深度游"},
+        {"name": "旅游约吗", "url": "https://www.douyin.com/user/旅游约吗",
+         "platform": "抖音", "followers": "800万+", "style": "酒店探店/旅行攻略"},
+    ],
+    "B站旅行UP主": [
+        {"name": "徐云流浪中国", "url": "https://space.bilibili.com/徐云",
+         "platform": "B站", "followers": "300万+", "style": "骑行/户外/纪实"},
+        {"name": "小墨与阿猴", "url": "https://space.bilibili.com/小墨与阿猴",
+         "platform": "B站", "followers": "200万+", "style": "旅行摄影/Vlog"},
+        {"name": "破产兄弟BrokeBros", "url": "https://space.bilibili.com/破产兄弟",
+         "platform": "B站", "followers": "150万+", "style": "穷游/深度体验"},
+    ],
+    "小红书旅行博主": [
+        {"name": "旅行博主XXX", "url": "https://www.xiaohongshu.com/search_result?keyword=旅行博主+攻略",
+         "platform": "小红书", "followers": "高", "style": "探店/打卡/攻略"},
+        {"name": "自制攻略", "url": "https://www.xiaohongshu.com/search_result?keyword=旅游攻略+详细",
+         "platform": "小红书", "followers": "高", "style": "详细攻略/预算"},
+    ],
+    "视频号/微信旅游": [
+        {"name": "视频号旅游", "url": "https://channels.weixin.qq.com/search?q=旅游",
+         "platform": "视频号", "followers": "—", "style": "微信生态旅行内容"},
+    ],
+    "微博旅游博主": [
+        {"name": "微博旅游", "url": "https://weibo.com/搜索/旅游攻略",
+         "platform": "微博", "followers": "—", "style": "热点头条/旅行话题"},
+    ],
+    # 国外视频/社交
+    "YouTube Travel Creators": [
+        {"name": "Mark Wiens", "url": "https://www.youtube.com/@MarkWiens",
+         "platform": "YouTube", "followers": "1000万+", "style": "美食旅行/街头美食"},
+        {"name": "Kara and Nate", "url": "https://www.youtube.com/@KaraandNate",
+         "platform": "YouTube", "followers": "500万+", "style": "环球旅行/冒险"},
+        {"name": "FunForLouis", "url": "https://www.youtube.com/@FunForLouis",
+         "platform": "YouTube", "followers": "200万+", "style": "背包旅行/自驾"},
+        {"name": "Drew Binsky", "url": "https://www.youtube.com/@DrewBinsky",
+         "platform": "YouTube", "followers": "400万+", "style": "足迹遍布197国"},
+        {"name": "Hey Nadine", "url": "https://www.youtube.com/@HeyNadine",
+         "platform": "YouTube", "followers": "100万+", "style": "旅行攻略/省钱技巧"},
+    ],
+    "Instagram Travel Influencers": [
+        {"name": "Travel + Leisure", "url": "https://www.instagram.com/travelandleisure/",
+         "platform": "Instagram", "followers": "500万+", "style": "旅行灵感/目的地推荐"},
+        {"name": "Beautiful Destinations", "url": "https://www.instagram.com/beautifuldestinations/",
+         "platform": "Instagram", "followers": "3000万+", "style": "顶级旅行摄影"},
+        {"name": "Passion Passport", "url": "https://www.instagram.com/passionpassport/",
+         "platform": "Instagram", "followers": "200万+", "style": "社区旅行故事"},
+    ],
+    "Twitter/X Travel Community": [
+        {"name": "Lonely Planet", "url": "https://twitter.com/lonelyplanet",
+         "platform": "Twitter/X", "followers": "500万+", "style": "旅行指南/目的地"},
+        {"name": "Travel Twitter", "url": "https://twitter.com/search?q=travel+guide",
+         "platform": "Twitter/X", "followers": "—", "style": "实时旅行讨论"},
+    ],
+    "Facebook Travel Groups": [
+        {"name": "Travel + Leisure", "url": "https://www.facebook.com/TravelandLeisure/",
+         "platform": "Facebook", "followers": "800万+", "style": "旅行灵感"},
+        {"name": "National Geographic Travel", "url": "https://www.facebook.com/natgeotravel/",
+         "platform": "Facebook", "followers": "600万+", "style": "自然/探险旅行"},
+    ],
+}
+
 # 平台搜索链接模板
 PLATFORM_SEARCH = {
     # 国内
@@ -31,6 +101,8 @@ PLATFORM_SEARCH = {
     "大众点评": lambda q, city: f"https://www.dianping.com/search/keyword/{city}/{quote_plus(q)}",
     "抖音": lambda q, city: f"https://www.douyin.com/search/{quote_plus(city+' '+q)}",
     "B站": lambda q, city: f"https://search.bilibili.com/all?keyword={quote_plus(city+' '+q)}",
+    "视频号": lambda q, city: f"https://channels.weixin.qq.com/search?q={quote_plus(city+' '+q)}",
+    "微博": lambda q, city: f"https://s.weibo.com/weibo?q={quote_plus(city+' '+q)}",
     # 国外
     "Booking": lambda q, city: f"https://www.booking.com/searchresults.html?ss={quote_plus(city)}",
     "TripAdvisor": lambda q, city: f"https://www.tripadvisor.com/Search?q={quote_plus(city+' '+q)}",
@@ -38,6 +110,8 @@ PLATFORM_SEARCH = {
     "KLOOK": lambda q, city: f"https://www.klook.com/search/?keyword={quote_plus(city+' '+q)}",
     "YouTube": lambda q, city: f"https://www.youtube.com/results?search_query={quote_plus(city+' '+q)}",
     "Instagram": lambda q, city: f"https://www.instagram.com/explore/tags/{quote_plus(city.replace(' ',''))}/",
+    "Twitter/X": lambda q, city: f"https://twitter.com/search?q={quote_plus(city+' '+q)}",
+    "Facebook": lambda q, city: f"https://www.facebook.com/search/top?q={quote_plus(city+' '+q)}",
     "Agoda": lambda q, city: f"https://www.agoda.com/search?city={quote_plus(city)}",
 }
 
@@ -47,6 +121,49 @@ class TravelIntelligence:
     
     def __init__(self, city: str = ""):
         self.city = city
+    
+    # ===== 大V/博主搜索 =====
+    def search_influencers(self, topic: str = "旅行") -> Dict:
+        """搜索各平台大V/博主关于目的地的内容"""
+        results = []
+        for platform_type, influencers in SOCIAL_INFLUENCERS.items():
+            platform_results = []
+            for inf in influencers:
+                # 添加城市搜索链接
+                search_url = PLATFORM_SEARCH.get(inf["platform"], lambda q,c: "")(topic, self.city)
+                platform_results.append({
+                    "name": inf["name"],
+                    "platform": inf["platform"],
+                    "url": inf["url"],
+                    "followers": inf["followers"],
+                    "style": inf["style"],
+                    "search_url": search_url,
+                })
+            results.append({"platform": platform_type, "influencers": platform_results})
+        
+        return {
+            "city": self.city,
+            "topic": topic,
+            "platforms": results,
+            "total_influencers": sum(len(r["influencers"]) for r in results),
+        }
+    
+    def format_influencers(self, data: Dict) -> str:
+        """格式化为可读文本"""
+        lines = [
+            f"\n{'='*50}",
+            f"  📱 各平台大V推荐 · {data['city']} {data['topic']}",
+            f"{'='*50}",
+        ]
+        for platform in data["platforms"]:
+            lines.append(f"\n  📂 {platform['platform']}:")
+            for inf in platform["influencers"]:
+                lines.append(f"    👤 {inf['name']}")
+                lines.append(f"       🏆 {inf['followers']}粉丝 | {inf['style']}")
+                lines.append(f"       🔗 {inf['url']}")
+                if inf['search_url']:
+                    lines.append(f"       🔍 [{inf['platform']}搜索]({inf['search_url']})")
+        return "\n".join(lines)
     
     # ===== 多平台搜索 =====
     def search_all_platforms(self, query: str, category: str = "") -> Dict:
