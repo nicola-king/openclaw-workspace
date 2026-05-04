@@ -1,0 +1,13 @@
+INFO:__main__:🚀 启动飞书 Webhook 服务器
+INFO:__main__:📡 监听地址: http://0.0.0.0:8080/webhook/feishu
+ * Serving Flask app 'webhook_server'
+ * Debug mode: off
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.31.99:8080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [04/May/2026 13:06:05] "GET /health HTTP/1.1" 200 -
+INFO:__main__:收到请求: {"token": "wmWId1pTZ9oiZWJr3zcnTbWWS5Be1Ub8", "header": {"event_type": "im.message.receive_v1"}, "event": {"message": {"message_id": "test_msg_001", "content": "{\"text\":\"你好\"}"}, "sender": {"sender
+INFO:__main__:收到消息: '你好' from ou_test_user_001
+INFO:werkzeug:127.0.0.1 - - [04/May/2026 13:06:14] "POST /webhook/feishu HTTP/1.1" 200 -
