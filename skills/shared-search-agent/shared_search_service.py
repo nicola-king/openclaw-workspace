@@ -385,32 +385,74 @@ class TaiyiSharedSearchService:
             return SearchMode.REQUESTS
     
     def _requests_search(self, request: SearchRequest) -> List[Dict]:
-        """使用 requests 搜索"""
-        import requests
-        
+        """使用 requests 进行真实搜索（DuckDuckGo Lite）"""
+        import requests, re
+        from urllib.parse import quote_plus
+
         headers = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
-            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+            'Accept': 'text/html,application/xhtml+xml',
         }
-        
-        # 模拟搜索 (实际应调用搜索引擎 API)
-        logger.info("📡 使用 requests 模式")
-        
-        # 返回模拟结果
-        return [
-            {
-                "title": f"Result 1 for {request.query}",
-                "url": f"https://example.com/1?q={request.query}",
-                "description": f"Description for {request.query}",
-                "source": "requests",
-            },
-            {
-                "title": f"Result 2 for {request.query}",
-                "url": f"https://example.com/2?q={request.query}",
-                "description": f"Another result for {request.query}",
-                "source": "requests",
-            },
-        ]
+
+        logger.info(f"📡 搜索: {request.query[:50]}")
+        results = []
+
+        # DuckDuckGo Lite - 最简洁的HTML
+        try:
+            resp = requests.post(
+                'https://lite.duckduckgo.com/lite/',
+                data={'q': request.query},
+                headers=headers,
+                timeout=10
+            )
+
+            if resp.status_code == 200:
+                html = resp.text
+                # DDG Lite 简洁结构:
+                # <tr class="result">
+                #   <td class="result-snippet">...</td>
+                #   <a rel="nofollow" href="URL">TITLE</a>
+                blocks = re.findall(
+                    r'<a rel="nofollow" href="(https?://[^"]+)"[^>]*>([^<]+)</a>',
+                    html
+                )
+                for url, title in blocks[:request.max_results]:
+                    if not any(skip in url for skip in
+                               ['duckduckgo.com', 'google.com', 'yahoo.com']):
+                        results.append({
+                            "title": title.strip(),
+                            "url": url,
+                            "description": "",
+                            "source": "ddg-lite",
+                        })
+        except Exception as e:
+            logger.debug(f"DDG Lite失败: {e}")
+
+        # 回退: Bing
+        if not results:
+            try:
+                bing_url = f"https://www.bing.com/search?q={quote_plus(request.query)}&count=20"
+                resp = requests.get(bing_url, headers=headers, timeout=10)
+                if resp.status_code == 200:
+                    # <h2><a href="URL">TITLE</a></h2>
+                    for url, title in re.findall(
+                        r'<h2><a[^>]*href="(https?://[^"]+)"[^>]*>([^<]+)</a></h2>',
+                        resp.text
+                    )[:request.max_results]:
+                        if 'bing.com' not in url:
+                            results.append({
+                                "title": title.strip(), "url": url,
+                                "description": "", "source": "bing"
+                            })
+            except Exception as e:
+                logger.debug(f"Bing回退失败: {e}")
+
+        if results:
+            logger.info(f"✅ 搜索结果: {len(results)} 条 ({'DDG' if 'ddg' in results[0]['source'] else 'Bing'})")
+        else:
+            logger.warning("❌ 搜索无结果")
+
+        return results[:request.max_results]
     
     def _scrapling_available(self) -> bool:
         """检查 Scrapling 是否可用"""
@@ -433,7 +475,14 @@ class TaiyiSharedSearchService:
                 sys.path.insert(0, scrapling_path)
             
             from scrapling import Fetcher
-            from skills.scrapling-integration.GOOGLE_SEARCH_OPTIMIZED import GoogleSearchParser
+            # 动态导入（因为路径含连字符）
+            gsp_spec = importlib.util.spec_from_file_location(
+                "google_search",
+                "/home/sayelf/.openclaw/workspace/skills/scrapling-integration/GOOGLE_SEARCH_OPTIMIZED.py"
+            )
+            gsp = importlib.util.module_from_spec(gsp_spec)
+            gsp_spec.loader.exec_module(gsp)
+            GoogleSearchParser = gsp.GoogleSearchParser
             
             fetcher = Fetcher()
             

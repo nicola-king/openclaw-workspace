@@ -106,29 +106,133 @@ class GuikeZhilu:
         else:
             return {"status": "error", "message": f"未知任务：{task}"}
 
+    def _load_search_service(self):
+        """加载共享搜索服务"""
+        try:
+            search_path = WORKSPACE.parent / "shared-search-agent" / "shared_search_service.py"
+            if not search_path.exists():
+                search_path = Path("/home/sayelf/.openclaw/workspace/skills/shared-search-agent/shared_search_service.py")
+            import importlib.util
+            spec = importlib.util.spec_from_file_location("search_svc", str(search_path))
+            svc = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(svc)
+            return svc
+        except Exception as e:
+            self.logger.warning(f"⚠️ 搜索服务加载失败: {e}")
+            return None
+
     def search(self, product: str, market: str = "", **kwargs) -> Dict[str, Any]:
-        """全网搜寻（返回结果后自动触发 enrich）"""
+        """
+        🔍 全网搜寻（调用共享搜索 Agent）
+
+        自动搜索: 公司名称 / 官网 / 简介
+        结果自动传入 enrich() 进行信息增强和 LinkedIn 搜索
+        """
         self.logger.info(f"🔍 搜寻: {product} | 市场: {market or '全球'}")
 
-        # 模拟搜索结果
-        prospects = [
-            {
-                "name": "Aus Modular Homes Pty Ltd",
-                "website": "https://www.ausmodularhomes.com.au",
-                "score": 95,
-            },
-            {
-                "name": "Melbourne Prefab Solutions",
-                "website": "https://www.melbourneprefab.com.au",
-                "score": 88,
-            }
+        search_svc = self._load_search_service()
+        prospects = []
+        search_sources = []
+
+        # === 构建搜索查询 ===
+        queries = [
+            f"{product} company Australia",
+            f"{product} manufacturer supplier Australia",
+            f"{product} builder " + (market or "Australia"),
+            f"prefab {product} modular housing Australia",
+            f"steel frame house manufacturer " + (market or "Australia"),
         ]
+
+        if search_svc:
+            # 使用共享搜索服务
+            seen = set()
+            for query in queries:
+                try:
+                    result = search_svc.search(
+                        query=query,
+                        agent_type="cross_border_trade",
+                        max_results=5,
+                    )
+                    source = {"query": query, "results_count": len(result.results)}
+                    search_sources.append(source)
+
+                    for item in result.results:
+                        title = item.get("title", "")
+                        link = item.get("link", "") or item.get("url", "")
+
+                        # 跳过无标题结果
+                        if not title:
+                            continue
+
+                        # 提取公司名和网址
+                        company_name = self._extract_company_name(title, link)
+                        company_website = self._extract_website(link, title)
+
+                        if company_name and company_name not in seen:
+                            seen.add(company_name)
+                            prospects.append({
+                                "name": company_name,
+                                "website": company_website,
+                                "source_query": query,
+                                "source_url": link,
+                                "score": 100 - len(prospects) * 5,  # 递减分数
+                            })
+
+                except Exception as e:
+                    self.logger.warning(f"搜索查询失败 '{query}': {e}")
+                    continue
+        else:
+            # 降级：基础搜索
+            self.logger.info("搜索服务不可用，使用基础搜索模式")
+            prospects = [
+                {"name": f"{product} Australia Supplier",
+                 "website": f"https://www.google.com/search?q={product.replace(' ','+')}+Australia",
+                 "score": 70},
+            ]
+
+        self.logger.info(f"✅ 搜索完成: {len(prospects)} 家公司 | {len(search_sources)} 次搜索")
 
         return {
             "status": "success",
             "prospects": prospects,
-            "total": len(prospects)
+            "total": len(prospects),
+            "search_sources": search_sources,
         }
+
+    def _extract_company_name(self, title: str, link: str) -> str:
+        """从搜索结果提取公司名"""
+        # 移除常见后缀
+        import re
+        name = title
+        # 截取第一个标点或分隔符之前
+        for sep in [" | ", " - ", " — ", " · ", " • ", " |", " - "]:
+            if sep in name:
+                name = name.split(sep)[0].strip()
+                break
+        # 移除括号内容（广告标记等）
+        name = re.sub(r'\([^)]*\)', '', name).strip()
+        # 过滤过短或广告类结果
+        if len(name) < 3 or any(kw in name.lower() for kw in ["ad·", "sponsored", "广告"]):
+            return ""
+        return name[:80]
+
+    def _extract_website(self, link: str, title: str) -> str:
+        """从链接提取真实公司网址"""
+        import re
+        # 直接是 URL 的情况
+        if link.startswith("http"):
+            # Google 重定向链接中提取真实 URL
+            if "google.com/url" in link:
+                import urllib.parse
+                parsed = urllib.parse.urlparse(link)
+                qs = urllib.parse.parse_qs(parsed.query)
+                return qs.get("q", [link])[0]
+            return link
+        # 标题可能包含网址
+        url_match = re.search(r'https?://[^\s/$.?#]+\.\w{2,6}', title)
+        if url_match:
+            return url_match.group()
+        return link
 
     def enrich(self, prospects: List[Dict] = None, **kwargs) -> Dict[str, Any]:
         """
