@@ -21,6 +21,8 @@
 - 理解动机/对话 → skills/PSYCHOLOGY.md
 - 接入新模块 → quality-gates/DISTILLATION.md
 - 成果输出 → workflows/OUTPUT-VERIFICATION.md
+- 编码/开发任务 → directives/KARPATHY-CODING.md
+- CLI/终端操作 → directives/RTK-TOKEN-EFFICIENCY.md
 
 ### Tier 3 · 热插拔（enabled: false，按需激活）
 - extensions/ 下新模块自动发现
