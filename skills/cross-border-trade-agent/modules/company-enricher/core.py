@@ -354,9 +354,10 @@ class CompanyEnricher:
     # ===== 数据库操作 =====
 
     def add_company_manual(self, company: Dict) -> Dict:
-        """手动添加/更新公司信息（含联系人）
+        """手动添加/更新公司信息（含联系人+验证链接）
 
         直接写入数据库，不触发网络爬取。
+        所有信息应附带 verification_links 提供验证来源。
 
         Example:
             enricher.add_company_manual({
@@ -366,6 +367,10 @@ class CompanyEnricher:
                 "email": "sales@ausprefab.com.au",
                 "address": "Unit 5, 123 Industry Blvd, Sydney NSW 2000",
                 "linkedin_url": "https://linkedin.com/company/ausprefab",
+                "verification_links": {
+                    "abn_lookup": {"url": "https://abr.gov.au/...", "status": "✅ Active"},
+                    "office_address": {"url": "https://maps.google.com/...", "status": "verified"},
+                },
                 "contacts": [
                     {"name": "John Smith", "title": "Sales Director",
                      "email": "john@ausprefab.com.au", "linkedin": "..."}
@@ -389,6 +394,7 @@ class CompanyEnricher:
             "abn": company.get("abn", ""),
             "data_quality": company.get("data_quality", "A+ (手动录入)"),
             "source": "manual",
+            "verification_links": company.get("verification_links", {}),
             "enriched_at": datetime.now().isoformat(),
         }
 
@@ -427,15 +433,20 @@ class CompanyEnricher:
         return enriched
 
     def _save_company(self, company: Dict):
-        """保存公司到数据库"""
+        """保存公司到数据库（含验证链接）"""
         conn = sqlite3.connect(str(DB_PATH))
         cursor = conn.cursor()
         try:
+            import json
+            verification_links = company.get("verification_links", {})
+            if isinstance(verification_links, dict):
+                verification_links = json.dumps(verification_links, ensure_ascii=False)
+
             cursor.execute('''
                 INSERT OR REPLACE INTO companies
                 (name, website, phone, email, address, city, state, postcode,
-                 linkedin_url, source_url, data_quality, enriched_at)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                 linkedin_url, source_url, data_quality, enriched_at, verification_links)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             ''', (
                 company.get("name"),
                 company.get("website"),
@@ -449,6 +460,7 @@ class CompanyEnricher:
                 company.get("source", ""),
                 company.get("data_quality"),
                 company.get("enriched_at", datetime.now().isoformat()),
+                verification_links,
             ))
             conn.commit()
         except Exception as e:
@@ -457,7 +469,7 @@ class CompanyEnricher:
             conn.close()
 
     def get_company(self, name: str) -> Optional[Dict]:
-        """从数据库获取公司信息"""
+        """从数据库获取公司信息（含验证链接）"""
         conn = sqlite3.connect(str(DB_PATH))
         cursor = conn.cursor()
         cursor.execute('SELECT * FROM companies WHERE name = ?', (name,))
@@ -468,8 +480,16 @@ class CompanyEnricher:
                        'address', 'city', 'state', 'postcode', 'country',
                        'industry', 'employee_count', 'year_established',
                        'linkedin_url', 'linkedin_contacts', 'google_maps_url',
-                       'source_url', 'data_quality', 'enriched_at']
-            return dict(zip(columns, row))
+                       'source_url', 'data_quality', 'enriched_at',
+                       'verification_links']
+            result = dict(zip(columns, row))
+            # 解析 verification_links JSON
+            if 'verification_links' in result and isinstance(result['verification_links'], str):
+                try:
+                    result['verification_links'] = json.loads(result['verification_links'])
+                except:
+                    pass
+            return result
         return None
 
     def list_companies(self, limit: int = 20) -> List[Dict]:
