@@ -1,11 +1,17 @@
 # 太一飞书集成配置
 # 采用系统内部信息架构
 
-# 飞书应用配置 (可选，用于高级功能)
-app_id: ""
-app_secret: ""
-encrypt_key: ""
-verification_token: ""
+# 飞书应用配置
+app_id: "cli_a978aebd71799bd4"
+app_secret: "dPGOMqljcGKM35Cwc5Gqqcl3JJFdBdfl"
+encrypt_key: "1TnvOgOxMcu514C6W5mlvdhMamOKKhji"
+verification_token: "pubBVGcvZoR1r1keBOtB1cuo8olUelVP"
+
+# 应用信息
+app_info:
+  name: "太一 AI"
+  description: "太一系统飞书集成"
+  version: "1.0.0"
 
 # Webhook配置 (可选，用于消息推送)
 webhook_url: ""
