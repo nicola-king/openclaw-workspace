@@ -23,6 +23,7 @@
 - 成果输出 → workflows/OUTPUT-VERIFICATION.md
 - 编码/开发任务 → directives/KARPATHY-CODING.md
 - CLI/终端操作 → directives/RTK-TOKEN-EFFICIENCY.md
+- 爬虫/数据采集 → skills/anti-scraping-toolkit/ANTI_SCRAPING_CONSTITUTION.md
 
 ### Tier 3 · 热插拔（enabled: false，按需激活）
 - extensions/ 下新模块自动发现
