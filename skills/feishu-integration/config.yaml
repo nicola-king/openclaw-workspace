@@ -2,10 +2,10 @@
 # 采用系统内部信息架构
 
 # 飞书应用配置
-app_id: "cli_a978aebd71799bd4"
-app_secret: "dPGOMqljcGKM35Cwc5Gqqcl3JJFdBdfl"
-encrypt_key: "1TnvOgOxMcu514C6W5mlvdhMamOKKhji"
-verification_token: "pubBVGcvZoR1r1keBOtB1cuo8olUelVP"
+app_id: "cli_a9086d6b5779dcc1"
+app_secret: "tXHOop03ZHQynCRuEPkambASNori3KhZ"
+encrypt_key: "6qyZOZsfIj892Q9zTXYNIed5iawiUyk8"
+verification_token: "wmWId1pTZ9oiZWJr3zcnTbWWS5Be1Ub8"
 
 # 应用信息
 app_info:
