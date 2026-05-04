@@ -42,6 +42,7 @@ class SearchMode(Enum):
     """搜索模式"""
     REQUESTS = "requests"      # 快速模式
     BROWSER = "browser"        # 浏览器模式
+    SCRAPLING = "scrapling"    # Scrapling 抓取模式
     AUTO = "auto"              # 自动选择
 
 
@@ -222,7 +223,7 @@ class SearchStats:
             self.stats["total_cache_hits"] += 1
             self.stats["agent_stats"][agent_type]["cache_hits"] += 1
         
-        if result.source == "browser":
+        if result.source in ["browser", "scrapling"]:
             self.stats["agent_stats"][agent_type]["browser_requests"] += 1
         
         # 每日统计
@@ -316,7 +317,9 @@ class TaiyiSharedSearchService:
         
         # 3. 执行搜索
         try:
-            if search_mode == SearchMode.BROWSER:
+            if search_mode == SearchMode.SCRAPLING:
+                results = self._scrapling_search(request)
+            elif search_mode == SearchMode.BROWSER:
                 results = self._browser_search(request)
             else:
                 results = self._requests_search(request)
@@ -331,7 +334,7 @@ class TaiyiSharedSearchService:
                 query=request.query,
                 timestamp=datetime.now().isoformat(),
                 cache_hit=False,
-                anti_scraping_level=3 if search_mode == SearchMode.BROWSER else 0,
+                anti_scraping_level=3 if search_mode in [SearchMode.BROWSER, SearchMode.SCRAPLING] else 0,
                 duration_ms=duration,
             )
             
@@ -366,13 +369,18 @@ class TaiyiSharedSearchService:
         """选择搜索模式"""
         if request.search_mode == "browser":
             return SearchMode.BROWSER
+        elif request.search_mode == "scrapling":
+            return SearchMode.SCRAPLING
         elif request.search_mode == "requests":
             return SearchMode.REQUESTS
         else:
             # 自动选择
-            # 高保护网站使用 browser
+            # 高保护网站使用 browser 或 scrapling
             high_protection_sites = ["google", "bing", "linkedin", "twitter"]
             if any(site in request.query.lower() for site in high_protection_sites):
+                # 优先使用 scrapling，失败回退到 browser
+                if self._scrapling_available():
+                    return SearchMode.SCRAPLING
                 return SearchMode.BROWSER
             return SearchMode.REQUESTS
     
@@ -403,6 +411,63 @@ class TaiyiSharedSearchService:
                 "source": "requests",
             },
         ]
+    
+    def _scrapling_available(self) -> bool:
+        """检查 Scrapling 是否可用"""
+        try:
+            import importlib.util
+            spec = importlib.util.find_spec("scrapling")
+            return spec is not None
+        except:
+            return False
+    
+    def _scrapling_search(self, request: SearchRequest) -> List[Dict]:
+        """使用 Scrapling 搜索"""
+        logger.info("🕷️ 使用 Scrapling 模式")
+        
+        try:
+            # 激活 Scrapling 虚拟环境
+            import sys
+            scrapling_path = "/home/sayelf/.openclaw/workspace/skills/scrapling-integration/venv-scrapling/lib/python3.14/site-packages"
+            if scrapling_path not in sys.path:
+                sys.path.insert(0, scrapling_path)
+            
+            from scrapling import Fetcher
+            
+            fetcher = Fetcher()
+            
+            # 构建搜索 URL
+            search_url = f"https://www.google.com/search?q={request.query.replace(' ', '+')}"
+            
+            response = fetcher.get(search_url, timeout=15)
+            
+            # 解析结果
+            results = []
+            
+            # 提取搜索结果
+            for item in response.css('div.g')[:request.max_results]:
+                title = item.css('h3::text').get('')
+                url = item.css('a::attr(href)').get('')
+                description = item.css('div.VwiC3b::text').get('')
+                
+                if title and url:
+                    results.append({
+                        "title": title,
+                        "url": url,
+                        "description": description or '',
+                        "source": "scrapling",
+                    })
+            
+            logger.info(f"✅ Scrapling 找到 {len(results)} 个结果")
+            return results
+            
+        except ImportError:
+            logger.warning("⚠️ Scrapling 未找到，回退到 browser")
+        except Exception as e:
+            logger.error(f"❌ Scrapling 搜索失败: {e}")
+        
+        # 回退到 browser
+        return self._browser_search(request)
     
     def _browser_search(self, request: SearchRequest) -> List[Dict]:
         """使用浏览器搜索"""
