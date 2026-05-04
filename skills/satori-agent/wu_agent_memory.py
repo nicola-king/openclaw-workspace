@@ -18,11 +18,11 @@ from typing import Dict, List, Optional
 
 # 导入太一记忆宫殿系统
 import sys
-sys.path.insert(0, '/home/nicola/.openclaw/workspace/skills/taiyi-memory-palace')
+sys.path.insert(0, '/home/sayelf/.openclaw/workspace/skills/taiyi-memory-palace')
 from memory_system import TaiyiMemoryPalace
 
 # 导入悟系统 Skill
-sys.path.insert(0, '/home/nicola/.openclaw/workspace/skills/wu-enlightenment')
+sys.path.insert(0, '/home/sayelf/.openclaw/workspace/skills/wu-enlightenment')
 from root_assessment import assess_by_question, get_user_profile, update_enlightenment_stage
 from teaching_methods import select_method, generate_response, TEACHING_METHODS
 from dharma_knowledge import get_teaching_by_name, get_teachings_by_root, get_quote_by_topic

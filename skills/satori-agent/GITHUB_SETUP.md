@@ -32,7 +32,7 @@ Visibility: ● Public (公开)
 创建后，GitHub 会显示推送命令：
 
 ```bash
-cd /home/nicola/.openclaw/workspace/skills/wu-enlightenment
+cd /home/sayelf/.openclaw/workspace/skills/wu-enlightenment
 
 # 如果已有远程仓库
 git remote set-url origin https://github.com/nicola-king/satori-agent.git

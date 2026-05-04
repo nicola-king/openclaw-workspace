@@ -49,7 +49,7 @@ Visibility: ● Public (公开)
 创建成功后，执行:
 
 ```bash
-cd /home/nicola/.openclaw/workspace/skills/wu-enlightenment
+cd /home/sayelf/.openclaw/workspace/skills/wu-enlightenment
 git push -u origin main
 ```
 

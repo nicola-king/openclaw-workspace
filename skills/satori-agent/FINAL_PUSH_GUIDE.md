@@ -69,7 +69,7 @@ cat ~/.ssh/id_ed25519.pub
 ### 步骤 4: 推送代码
 
 ```bash
-cd /home/nicola/.openclaw/workspace/skills/wu-enlightenment
+cd /home/sayelf/.openclaw/workspace/skills/wu-enlightenment
 
 # 确认远程 URL
 git remote -v

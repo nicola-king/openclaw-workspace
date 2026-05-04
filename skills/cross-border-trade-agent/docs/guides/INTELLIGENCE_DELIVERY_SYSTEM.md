@@ -94,16 +94,16 @@
 # 跨境贸易 Agent - 情报送达定时任务
 
 # 每日情报推送 (08:00)
-0 8 * * * python3 /home/nicola/.openclaw/workspace/skills/01-trading/cross-border-trade-agent/daily_intelligence_job.py
+0 8 * * * python3 /home/sayelf/.openclaw/workspace/skills/01-trading/cross-border-trade-agent/daily_intelligence_job.py
 
 # 每周报告 (周一 09:00)
-0 9 * * 1 python3 /home/nicola/.openclaw/workspace/skills/01-trading/cross-border-trade-agent/weekly_report_job.py
+0 9 * * 1 python3 /home/sayelf/.openclaw/workspace/skills/01-trading/cross-border-trade-agent/weekly_report_job.py
 
 # 每月战略 (月首 10:00)
-0 10 1 * * python3 /home/nicola/.openclaw/workspace/skills/01-trading/cross-border-trade-agent/monthly_strategy_job.py
+0 10 1 * * python3 /home/sayelf/.openclaw/workspace/skills/01-trading/cross-border-trade-agent/monthly_strategy_job.py
 
 # 趋势监控 (每小时)
-0 * * * * python3 /home/nicola/.openclaw/workspace/skills/01-trading/cross-border-trade-agent/trend_alert_module.py
+0 * * * * python3 /home/sayelf/.openclaw/workspace/skills/01-trading/cross-border-trade-agent/trend_alert_module.py
 ```
 
 ---

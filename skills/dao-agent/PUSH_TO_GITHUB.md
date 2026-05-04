@@ -33,7 +33,7 @@ Visibility: Public (公开)
 创建成功后，执行:
 
 ```bash
-cd /home/nicola/.openclaw/workspace/skills/dao.agent
+cd /home/sayelf/.openclaw/workspace/skills/dao.agent
 
 # 推送
 git push -u origin main

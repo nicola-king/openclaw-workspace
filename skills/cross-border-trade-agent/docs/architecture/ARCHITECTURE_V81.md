@@ -546,7 +546,7 @@ python3 sales_forecaster.py
 ### 安装依赖
 
 ```bash
-cd /home/nicola/.openclaw/workspace/skills/01-trading/cross-border-trade-agent
+cd /home/sayelf/.openclaw/workspace/skills/01-trading/cross-border-trade-agent
 pip install -r requirements.txt
 ```
 

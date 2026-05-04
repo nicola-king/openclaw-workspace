@@ -27,7 +27,7 @@
 ### 步骤 2: 使用 Token 推送
 
 ```bash
-cd /home/nicola/.openclaw/workspace/skills/wu-enlightenment
+cd /home/sayelf/.openclaw/workspace/skills/wu-enlightenment
 
 # 推送
 git push -u origin main
@@ -72,7 +72,7 @@ ssh-keygen -t ed25519 -C "shanyejingling@gmail.com"
 ### 步骤 3: 更改远程 URL
 
 ```bash
-cd /home/nicola/.openclaw/workspace/skills/wu-enlightenment
+cd /home/sayelf/.openclaw/workspace/skills/wu-enlightenment
 
 # 更改为 SSH
 git remote set-url origin git@github.com:nicola-king/satori-agent.git

@@ -366,7 +366,7 @@ email = explorer.price_match_email("东方航空", 800)
 
 ### 当前状态
 - ✅ 已迁移到工作区
-- ✅ 路径已修复 (/home/nicola → /home/sayelf)
+- ✅ 路径已修复 (/home/sayelf → /home/sayelf)
 - ✅ 语法检查通过
 - 🟡 待集成到 OpenClaw Gateway
 

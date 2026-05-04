@@ -23,7 +23,7 @@ from typing import Dict, List, Optional
 
 # 导入太一记忆宫殿
 import sys
-sys.path.insert(0, '/home/nicola/.openclaw/workspace/skills/taiyi-memory-palace')
+sys.path.insert(0, '/home/sayelf/.openclaw/workspace/skills/taiyi-memory-palace')
 from memory_system import TaiyiMemoryPalace
 
 # 导入道家经典
@@ -40,7 +40,7 @@ class DaoAgent:
         
         # 太一记忆宫殿
         try:
-            sys.path.insert(0, '/home/nicola/.openclaw/workspace/skills/taiyi-memory-palace')
+            sys.path.insert(0, '/home/sayelf/.openclaw/workspace/skills/taiyi-memory-palace')
             from memory_system import TaiyiMemoryPalace
             self.memory_palace = TaiyiMemoryPalace()
             print("   ✅ 太一记忆宫殿已加载")

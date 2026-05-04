@@ -23,7 +23,7 @@
 ### 1. 克隆仓库
 
 ```bash
-cd /home/nicola/.openclaw/workspace
+cd /home/sayelf/.openclaw/workspace
 git pull origin main
 ```
 
@@ -82,7 +82,7 @@ openclaw gateway status
 ## 📁 目录结构
 
 ```
-/home/nicola/.openclaw/workspace/
+/home/sayelf/.openclaw/workspace/
 ├── skills/01-trading/cross-border-trade-agent/
 │   ├── 贵客之路模块 (6 个)
 │   ├── GEO 外贸模块 (7 个)
@@ -129,13 +129,13 @@ openclaw gateway status
 
 ```bash
 # 晨间新闻推送 (每日 08:00)
-0 8 * * * cd /home/nicola/.openclaw/workspace/skills/01-trading/cross-border-trade-agent && python3 self_media_engine.py
+0 8 * * * cd /home/sayelf/.openclaw/workspace/skills/01-trading/cross-border-trade-agent && python3 self_media_engine.py
 
 # 流量数据汇总 (每日 20:00)
-0 20 * * * cd /home/nicola/.openclaw/workspace/skills/01-trading/cross-border-trade-agent && python3 self_media_engine.py
+0 20 * * * cd /home/sayelf/.openclaw/workspace/skills/01-trading/cross-border-trade-agent && python3 self_media_engine.py
 
 # 自进化报告 (每周日 22:00)
-0 22 * * 0 cd /home/nicola/.openclaw/workspace/skills/01-trading/cross-border-trade-agent && python3 self_evolution_engine.py
+0 22 * * 0 cd /home/sayelf/.openclaw/workspace/skills/01-trading/cross-border-trade-agent && python3 self_evolution_engine.py
 ```
 
 ---
@@ -220,7 +220,7 @@ python3 skills/01-trading/cross-border-trade-agent/operation_report_generator.py
 echo $PYTHONPATH
 
 # 添加路径
-export PYTHONPATH=/home/nicola/.openclaw/workspace:$PYTHONPATH
+export PYTHONPATH=/home/sayelf/.openclaw/workspace:$PYTHONPATH
 ```
 
 ### 问题 2: API 密钥错误
@@ -299,7 +299,7 @@ echo "config/api_keys.json" >> .gitignore
 
 ```bash
 # 每日备份
-0 3 * * * python3 /home/nicola/.openclaw/workspace/scripts/backup.py
+0 3 * * * python3 /home/sayelf/.openclaw/workspace/scripts/backup.py
 ```
 
 ### 3. 访问控制
@@ -328,7 +328,7 @@ chmod 750 data/cross-border
 ### 联系方式
 
 - GitHub: https://github.com/nicola-king
-- 文档：`/home/nicola/.openclaw/workspace/docs/`
+- 文档：`/home/sayelf/.openclaw/workspace/docs/`
 
 ---
 

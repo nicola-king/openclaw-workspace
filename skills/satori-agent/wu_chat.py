@@ -10,7 +10,7 @@
 """
 
 import sys
-sys.path.insert(0, '/home/nicola/.openclaw/workspace/skills/wu-enlightenment')
+sys.path.insert(0, '/home/sayelf/.openclaw/workspace/skills/wu-enlightenment')
 
 from root_assessment import assess_by_question, get_user_profile, update_enlightenment_stage
 from teaching_methods import select_method, generate_response

@@ -39,7 +39,7 @@ class SelfEvolvingDaoAgent:
     """道 Agent 智能自进化"""
     
     def __init__(self):
-        self.workspace = Path('/home/nicola/.openclaw/workspace')
+        self.workspace = Path('/home/sayelf/.openclaw/workspace')
         self.dao_dir = self.workspace / 'skills' / 'dao-agent'
         self.evolution_dir = self.workspace / '.evolution'
         self.evolution_history = []

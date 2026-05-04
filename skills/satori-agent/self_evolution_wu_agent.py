@@ -39,7 +39,7 @@ class SelfEvolvingWuAgent:
     """悟 Agent 智能自进化"""
     
     def __init__(self):
-        self.workspace = Path('/home/nicola/.openclaw/workspace')
+        self.workspace = Path('/home/sayelf/.openclaw/workspace')
         self.wu_dir = self.workspace / 'skills' / 'wu-enlightenment'
         self.evolution_dir = self.workspace / '.evolution'
         self.evolution_history = []

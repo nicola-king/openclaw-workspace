@@ -18,7 +18,7 @@ Visibility: Public
 ### 2. 推送到 GitHub
 
 ```bash
-cd /home/nicola/.openclaw/workspace/skills/wu-enlightenment
+cd /home/sayelf/.openclaw/workspace/skills/wu-enlightenment
 
 # 推送
 git push -u origin main

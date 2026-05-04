@@ -34,7 +34,7 @@ class BuddhistSutras:
     """佛教佛经经典知识库"""
     
     def __init__(self):
-        self.workspace = Path('/home/nicola/.openclaw/workspace')
+        self.workspace = Path('/home/sayelf/.openclaw/workspace')
         self.wu_dir = self.workspace / 'skills' / 'wu-enlightenment'
         
         # 佛经经典

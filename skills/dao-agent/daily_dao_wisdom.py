@@ -29,7 +29,7 @@ class DailyDaoWisdom:
     """每日道家智慧"""
     
     def __init__(self):
-        self.workspace = Path('/home/nicola/.openclaw/workspace')
+        self.workspace = Path('/home/sayelf/.openclaw/workspace')
         self.dao_dir = self.workspace / 'skills' / 'dao-agent'
         self.wisdom_dir = self.workspace / 'wisdom'
         
