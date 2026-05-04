@@ -97,6 +97,7 @@ class SearchResult:
     anti_scraping_level: int = 0
     duration_ms: float = 0.0
     error_message: Optional[str] = None
+    source_urls: Optional[Dict] = None   # 验证来源URL
     
     def to_dict(self) -> Dict:
         return asdict(self)
@@ -546,14 +547,43 @@ class TaiyiSharedSearchService:
     # ========== 便捷方法 (供各 Agent 调用) ==========
     
     def search_for_cross_border(self, query: str, country: str = None, **kwargs) -> SearchResult:
-        """跨境贸易 Agent 专用搜索"""
+        """跨境贸易 Agent 专用搜索（多源综合）"""
+        from urllib.parse import quote_plus
         request = SearchRequest(
             query=query,
             agent_type=AgentType.CROSS_BORDER.value,
             country=country,
             **kwargs
         )
-        return self.search(request)
+
+        # 执行基础搜索
+        result = self.search(request)
+
+        # 附加验证来源URL（不搜索，仅提供可点击链接）
+        q = quote_plus(query)
+        country_q = quote_plus(f"{query} {country or 'Australia'}")
+
+        result.source_urls = {
+            "search_engines": [
+                {"name": "Google", "url": f"https://www.google.com/search?q={country_q}"},
+                {"name": "Bing", "url": f"https://www.bing.com/search?q={country_q}"},
+                {"name": "DuckDuckGo", "url": f"https://lite.duckduckgo.com/lite/?q={country_q}"},
+            ],
+            "business_directories": [
+                {"name": "Yellow Pages AU", "url": f"https://www.yellowpages.com.au/search/listings?clue={q}"},
+                {"name": "LinkedIn", "url": f"https://www.linkedin.com/search/results/companies/?keywords={q}"},
+                {"name": "Google Maps", "url": f"https://www.google.com/maps/search/{country_q.replace(' ', '+')}"},
+                {"name": "ABN Lookup", "url": f"https://abr.business.gov.au/SearchByAbn.aspx?SearchText={q}"},
+            ],
+            "trade_platforms": [
+                {"name": "Alibaba", "url": f"https://www.alibaba.com/trade/search?fsb=y&IndexArea=product_en&SearchText={q}"},
+                {"name": "Made-in-China", "url": f"https://www.made-in-china.com/products-search/hot-china-products/{q}.html"},
+                {"name": "Global Sources", "url": f"https://www.globalsources.com/search/?q={q}"},
+                {"name": "TradeIndia", "url": f"https://www.tradeindia.com/Seller/Search/?keyword={q}"},
+            ],
+        }
+
+        return result
     
     def search_for_travel(self, query: str, **kwargs) -> SearchResult:
         """旅游探路者 Agent 专用搜索"""
