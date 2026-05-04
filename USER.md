@@ -8,10 +8,10 @@
 
 ## 账号信息
 
-| 平台 | 账号 | 用途 |
-|------|------|------|
-| Gmail | shanyejingling@gmail.com | 主要邮箱 / 公众号运营 |
-| Telegram | @nicola king (7073481596) | 主通讯 / GMGN登录 |
+| 平台 | 账号 | 用途 | 状态 |
+|------|------|------|------|
+| Gmail | shanyejingling@gmail.com | 主要邮箱 / 公众号运营 / GitHub | ✅ 已确认 |
+| Telegram | @nicola king (7073481596) | 主通讯 / GMGN登录 | ✅ 已确认 |
 
 ---
 
