@@ -19,7 +19,7 @@ class ESReportGenerator:
     """与锐动力海外客户报告生成器"""
     
     def __init__(self):
-        self.workspace = Path("/home/nicola/.openclaw/workspace")
+        self.workspace = Path("/home/sayelf/.openclaw/workspace")
         self.output_dir = self.workspace / "es-engine-reports"
         self.output_dir.mkdir(exist_ok=True)
         

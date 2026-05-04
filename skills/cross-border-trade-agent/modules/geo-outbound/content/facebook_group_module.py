@@ -20,7 +20,7 @@ from typing import Dict, List
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 logger = logging.getLogger('FacebookGroupModule')
 
-WORKSPACE = Path("/home/nicola/.openclaw/workspace")
+WORKSPACE = Path("/home/sayelf/.openclaw/workspace")
 FACEBOOK_DIR = WORKSPACE / "data" / "cross-border" / "facebook"
 FACEBOOK_DIR.mkdir(parents=True, exist_ok=True)
 

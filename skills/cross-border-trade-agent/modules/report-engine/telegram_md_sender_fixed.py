@@ -15,7 +15,7 @@ CHAT_ID = '7073481596'
 
 # 防重复发送记录
 SENT_RECORDS = {}
-SENT_RECORDS_FILE = Path('/home/nicola/.openclaw/workspace/.telegram_sent_records.json')
+SENT_RECORDS_FILE = Path('/home/sayelf/.openclaw/workspace/.telegram_sent_records.json')
 
 # 加载已发送记录
 if SENT_RECORDS_FILE.exists():
@@ -131,7 +131,7 @@ def main():
     
     # 新闻简报文件（中文名称）
     today = datetime.datetime.now().strftime("%Y-%m-%d")
-    news_file = f"/home/nicola/.openclaw/workspace/news/daily/晨间新闻简报-{today}.md"
+    news_file = f"/home/sayelf/.openclaw/workspace/news/daily/晨间新闻简报-{today}.md"
     
     print(f"📤 发送新闻简报：{news_file}")
     

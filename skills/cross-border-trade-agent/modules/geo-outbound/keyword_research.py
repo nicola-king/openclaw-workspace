@@ -21,7 +21,7 @@ from typing import Dict, List
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 logger = logging.getLogger('KeywordResearch')
 
-WORKSPACE = Path("/home/nicola/.openclaw/workspace")
+WORKSPACE = Path("/home/sayelf/.openclaw/workspace")
 KEYWORD_DIR = WORKSPACE / "data" / "cross-border" / "keywords"
 KEYWORD_DIR.mkdir(parents=True, exist_ok=True)
 

@@ -24,7 +24,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger('ProcessOptimizationEngine')
 
-WORKSPACE = Path("/home/nicola/.openclaw/workspace")
+WORKSPACE = Path("/home/sayelf/.openclaw/workspace")
 OPTIMIZATION_DIR = WORKSPACE / "data" / "cross-border" / "optimization"
 OPTIMIZATION_DIR.mkdir(parents=True, exist_ok=True)
 

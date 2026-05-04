@@ -132,7 +132,7 @@ def verify_products():
     }
     
     # 保存报告
-    report_dir = Path("/home/nicola/.openclaw/workspace/data/cross-border/product-scoring")
+    report_dir = Path("/home/sayelf/.openclaw/workspace/data/cross-border/product-scoring")
     report_dir.mkdir(parents=True, exist_ok=True)
     report_file = report_dir / f"verification_report_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
     

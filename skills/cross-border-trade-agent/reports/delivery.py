@@ -35,7 +35,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger('IntelligenceDelivery')
 
-WORKSPACE = Path("/home/nicola/.openclaw/workspace")
+WORKSPACE = Path("/home/sayelf/.openclaw/workspace")
 DATA_DIR = WORKSPACE / "data" / "cross-border" / "intelligence"
 OUTPUT_DIR = WORKSPACE / "skills" / "01-trading" / "cross-border-trade-agent" / "daily_intelligence"
 DATA_DIR.mkdir(parents=True, exist_ok=True)

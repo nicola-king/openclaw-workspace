@@ -29,7 +29,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger('DashboardVisualization')
 
-WORKSPACE = Path("/home/nicola/.openclaw/workspace")
+WORKSPACE = Path("/home/sayelf/.openclaw/workspace")
 DATA_DIR = WORKSPACE / "data" / "cross-border" / "dashboard"
 OUTPUT_DIR = WORKSPACE / "skills" / "01-trading" / "cross-border-trade-agent" / "dashboard"
 DATA_DIR.mkdir(parents=True, exist_ok=True)

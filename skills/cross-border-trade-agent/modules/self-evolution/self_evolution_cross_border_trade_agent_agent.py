@@ -37,7 +37,7 @@ class SelfEvolvingCrossBorderTradeAgent:
     """cross-border-trade-agent 自进化 Agent"""
     
     def __init__(self):
-        self.workspace = Path('/home/nicola/.openclaw/workspace')
+        self.workspace = Path('/home/sayelf/.openclaw/workspace')
         self.evolution_dir = self.workspace / '.evolution'
         self.evolution_history = []
         self.load_evolution_history()

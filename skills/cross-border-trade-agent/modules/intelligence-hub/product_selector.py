@@ -438,7 +438,7 @@ def main():
     print(evaluator.generate_report(result1))
     
     # 保存报告
-    output_dir = Path("/home/nicola/.openclaw/workspace/reports")
+    output_dir = Path("/home/sayelf/.openclaw/workspace/reports")
     output_dir.mkdir(parents=True, exist_ok=True)
     
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
