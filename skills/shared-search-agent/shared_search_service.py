@@ -433,6 +433,7 @@ class TaiyiSharedSearchService:
                 sys.path.insert(0, scrapling_path)
             
             from scrapling import Fetcher
+            from skills.scrapling-integration.GOOGLE_SEARCH_OPTIMIZED import GoogleSearchParser
             
             fetcher = Fetcher()
             
@@ -441,22 +442,16 @@ class TaiyiSharedSearchService:
             
             response = fetcher.get(search_url, timeout=15)
             
-            # 解析结果
-            results = []
+            # 检查是否被阻止
+            if GoogleSearchParser.is_blocked(response):
+                logger.warning("⚠️ Google 反爬阻止，回退到 browser")
+                return self._browser_search(request)
             
-            # 提取搜索结果
-            for item in response.css('div.g')[:request.max_results]:
-                title = item.css('h3::text').get('')
-                url = item.css('a::attr(href)').get('')
-                description = item.css('div.VwiC3b::text').get('')
-                
-                if title and url:
-                    results.append({
-                        "title": title,
-                        "url": url,
-                        "description": description or '',
-                        "source": "scrapling",
-                    })
+            # 使用优化解析器
+            results = GoogleSearchParser.parse(response)
+            
+            # 限制结果数
+            results = results[:request.max_results]
             
             logger.info(f"✅ Scrapling 找到 {len(results)} 个结果")
             return results
