@@ -22,6 +22,9 @@ from datetime import datetime
 from pathlib import Path
 from typing import Dict, List, Optional, Set
 
+# 导入浏览器搜索引擎
+from browser_search_engine import BrowserSearchEngine, AntiScrapingSearchAdapter
+
 # 日志配置
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -31,19 +34,26 @@ logger = logging.getLogger('ProspectSearch')
 
 
 class SearchEngineSource:
-    """搜索引擎数据源"""
+    """搜索引擎数据源 (增强版 - 集成浏览器+反爬)"""
     
-    def __init__(self):
+    def __init__(self, use_browser: bool = True, anti_detection_level: int = 3):
         self.engines = [
             "google",
             "bing",
             "baidu",
             "duckduckgo",
         ]
+        self.use_browser = use_browser
+        self.anti_detection_level = anti_detection_level
+        self.browser_engine = None
+        self.anti_scraping_adapter = AntiScrapingSearchAdapter()
+        
+        if self.use_browser:
+            logger.info(f"🌐 搜索引擎数据源初始化 (浏览器模式: 开启, 反检测等级: {anti_detection_level})")
     
     async def search(self, query: str, country: str = None) -> List[Dict]:
         """
-        搜索引擎搜寻
+        搜索引擎搜寻 (增强版)
         
         Args:
             query: 搜索关键词
@@ -56,26 +66,91 @@ class SearchEngineSource:
         
         results = []
         
-        # TODO: 整合 web_search 技能
-        # TODO: 调用 Google Custom Search API
-        # TODO: 调用 Bing Search API
+        # 使用浏览器+反爬机制进行搜索
+        if self.use_browser:
+            try:
+                logger.info("🛡️ 使用反爬适配器搜索...")
+                browser_results = self.anti_scraping_adapter.search_with_fallback(query)
+                
+                for result in browser_results:
+                    results.append({
+                        "source": "search_engine",
+                        "engine": result.get('source', 'browser'),
+                        "company_name": result.get('title', 'Unknown'),
+                        "website": result.get('url', ''),
+                        "description": result.get('description', ''),
+                        "country": country or "Unknown",
+                        "relevance_score": 85,
+                        "anti_scraping": True,
+                    })
+                
+                logger.info(f"✅ 浏览器搜索找到 {len(results)} 个结果")
+                
+            except Exception as e:
+                logger.warning(f"⚠️ 浏览器搜索失败: {e}，回退到模拟数据")
         
-        # 模拟搜索结果
-        for i in range(3):
-            result = {
-                "source": "search_engine",
-                "engine": self.engines[i % len(self.engines)],
-                "company_name": f"Company {i} from {query}",
-                "website": f"https://company{i}.com",
-                "description": f"Description of company {i}",
-                "country": country or "Unknown",
-                "relevance_score": 90 - i * 10,
-            }
-            results.append(result)
+        # 如果浏览器搜索失败或关闭，使用模拟数据
+        if not results:
+            logger.info("📡 使用模拟数据...")
+            for i in range(3):
+                result = {
+                    "source": "search_engine",
+                    "engine": self.engines[i % len(self.engines)],
+                    "company_name": f"Company {i} from {query}",
+                    "website": f"https://company{i}.com",
+                    "description": f"Description of company {i}",
+                    "country": country or "Unknown",
+                    "relevance_score": 90 - i * 10,
+                    "anti_scraping": False,
+                }
+                results.append(result)
         
         logger.info(f"✅ 搜索引擎找到 {len(results)} 个结果")
         
         return results
+    
+    def search_with_browser(self, query: str, search_engine: str = "google") -> List[Dict]:
+        """
+        使用浏览器直接搜索
+        
+        Args:
+            query: 搜索关键词
+            search_engine: 搜索引擎名称
+            
+        Returns:
+            搜索结果列表
+        """
+        logger.info(f"🌐 浏览器直接搜索: {query} ({search_engine})")
+        
+        try:
+            with BrowserSearchEngine(
+                headless=True, 
+                anti_detection_level=self.anti_detection_level
+            ) as engine:
+                if engine.page:
+                    results = engine.search(query, search_engine)
+                    
+                    # 转换为标准格式
+                    formatted_results = []
+                    for result in results:
+                        formatted_results.append({
+                            "source": "search_engine",
+                            "engine": search_engine,
+                            "company_name": result.get('title', 'Unknown'),
+                            "website": result.get('url', ''),
+                            "description": result.get('description', ''),
+                            "relevance_score": 80,
+                            "anti_scraping": True,
+                            "browser_used": True,
+                        })
+                    
+                    logger.info(f"✅ 浏览器搜索完成: {len(formatted_results)} 个结果")
+                    return formatted_results
+                    
+        except Exception as e:
+            logger.error(f"❌ 浏览器搜索失败: {e}")
+        
+        return []
 
 
 class SocialMediaSource:
