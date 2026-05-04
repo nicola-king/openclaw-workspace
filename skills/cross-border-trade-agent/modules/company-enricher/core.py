@@ -381,9 +381,53 @@ class CompanyEnricher:
 
         # 增强信息（不触发网络爬取）
         address = company.get("address", "")
+        name = company.get("name", "")
+        website = company.get("website", "")
+
+        # ===== 自动生成验证链接（如未提供） =====
+        verification_links = company.get("verification_links", {})
+        if not verification_links:
+            import urllib.parse
+            kw = urllib.parse.quote_plus(name)
+            verification_links = {
+                "google_search": {
+                    "label": f"Google搜索: {name}",
+                    "url": f"https://www.google.com/search?q={kw}",
+                    "status": "自动生成"
+                },
+                "linkedin_search": {
+                    "label": f"LinkedIn搜索: {name}",
+                    "url": f"https://www.linkedin.com/search/results/companies/?keywords={kw}",
+                    "status": "自动生成"
+                },
+                "google_maps": {
+                    "label": f"Google Maps: {name}",
+                    "url": f"https://www.google.com/maps/search/{kw}",
+                    "status": "自动生成"
+                },
+            }
+            if website and website.startswith("http"):
+                verification_links["website"] = {
+                    "label": f"官网: {name}",
+                    "url": website,
+                    "status": "自动生成"
+                }
+            if company.get("abn"):
+                verification_links["abn_lookup"] = {
+                    "label": "ABN Lookup",
+                    "url": f"https://abr.business.gov.au/ABN/View/{company['abn']}",
+                    "status": "自动生成"
+                }
+            if company.get("linkedin_url"):
+                verification_links["linkedin_company"] = {
+                    "label": "LinkedIn公司页",
+                    "url": company["linkedin_url"],
+                    "status": "用户提供"
+                }
+
         enriched = {
-            "name": company.get("name"),
-            "website": company.get("website", ""),
+            "name": name,
+            "website": website,
             "phone": company.get("phone", ""),
             "email": company.get("email", ""),
             "address": address,
@@ -394,7 +438,7 @@ class CompanyEnricher:
             "abn": company.get("abn", ""),
             "data_quality": company.get("data_quality", "A+ (手动录入)"),
             "source": "manual",
-            "verification_links": company.get("verification_links", {}),
+            "verification_links": verification_links,
             "enriched_at": datetime.now().isoformat(),
         }
 

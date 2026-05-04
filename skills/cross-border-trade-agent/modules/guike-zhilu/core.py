@@ -262,12 +262,42 @@ class GuikeZhilu:
         for p in prospects:
             name = p.get("name", "")
             website = p.get("website", "")
+            source_url = p.get("source_url", "")
+            source_query = p.get("source_query", "")
 
-            # === Step 1: 调用 Company Enricher ===
+            # === 自动生成验证链接 ===
+            from urllib.parse import quote_plus
+            kw = quote_plus(name)
+            company_verification_links = {
+                "search_source": {
+                    "label": f"搜索结果来源: {source_query[:40]}",
+                    "url": source_url or f"https://www.google.com/search?q={kw}",
+                    "status": "原始搜索结果"},
+                "google_search": {
+                    "label": f"Google搜索: {name}",
+                    "url": f"https://www.google.com/search?q={kw}",
+                    "status": "用于验证公司存在性"},
+                "linkedin_search": {
+                    "label": f"LinkedIn: {name}",
+                    "url": f"https://www.linkedin.com/search/results/companies/?keywords={kw}",
+                    "status": "LinkedIn公司搜索"},
+                "google_maps": {
+                    "label": f"Google Maps: {name}",
+                    "url": f"https://www.google.com/maps/search/{kw}",
+                    "status": "地址验证"},
+            }
+            if website and website.startswith("http"):
+                company_verification_links["official_website"] = {
+                    "label": f"官网: {name}",
+                    "url": website,
+                    "status": "公司官网"}
+
+            # === Step 1: 调用 Company Enricher (含验证链接) ===
             if self._enricher:
                 enriched = self._enricher.add_company_manual({
                     "name": name,
                     "website": website,
+                    "verification_links": company_verification_links,
                 })
             else:
                 enriched = {
