@@ -29,7 +29,7 @@
 │
 ├── 04-集成 (Integration)
 │   ├── browser-automation/          # 浏览器自动化
-│   ├── feishu/                      # 飞书集成
+│   ├── feishu-integration/          # 飞书集成 ✅已部署
 │   └── ssh/                         # SSH 远程
 │
 ├── 05-系统 (System)
@@ -208,10 +208,10 @@ result = search("username", agent_type="maigret", search_mode="browser")
 | 交易 | 4 | 1 | 3 |
 | 业务 | 3 | 0 | 3 |
 | 自动化 | 2 | 0 | 2 |
-| 集成 | 3 | 0 | 3 |
+| 集成 | 3 | 1 | 2 |
 | 系统 | 2 | 0 | 2 |
-| **已部署** | - | **6** | - |
-| **总计** | **14** | **6** | **8** |
+| **已部署** | - | **7** | - |
+| **总计** | **14** | **7** | **7** |
 
 ---
 
@@ -273,10 +273,17 @@ skills/
 │   ├── app_onnx.py
 │   └── ...
 │
-└── shared-search-agent/               # 共享搜索服务
-    ├── shared_search_service.py
-    ├── __init__.py
-    └── SHARED_SEARCH_ARCHITECTURE.md
+├── shared-search-agent/               # 共享搜索服务
+│   ├── shared_search_service.py
+│   ├── __init__.py
+│   └── SHARED_SEARCH_ARCHITECTURE.md
+│
+└── feishu-integration/                # 飞书集成 ✅已部署
+    ├── SKILL.md
+    ├── feishu_integration.py
+    ├── command_router.py
+    ├── message_templates.py
+    └── config.yaml
 ```
 
 ---
@@ -294,7 +301,7 @@ skills/
 | 定时任务 | 🟡 | Cron管理增强 |
 | 工作流引擎 | 🟡 | 自动化流程 |
 | 浏览器自动化 | 🟡 | Playwright/Selenium |
-| 飞书集成 | 🟡 | 消息推送 |
+| 飞书集成 | ✅ | 系统内部信息→飞书平台 |
 | SSH远程 | 🟡 | 服务器管理 |
 | 监控告警 | 🟡 | 系统监控 |
 | 备份工具 | 🟡 | 自动备份 |
