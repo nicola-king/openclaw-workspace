@@ -208,10 +208,10 @@ result = search("username", agent_type="maigret", search_mode="browser")
 | 交易 | 4 | 1 | 3 |
 | 业务 | 3 | 0 | 3 |
 | 自动化 | 2 | 0 | 2 |
-| 集成 | 3 | 1 | 2 |
+| 集成 | 3 | 2 | 1 |
 | 系统 | 2 | 0 | 2 |
-| **已部署** | - | **7** | - |
-| **总计** | **14** | **7** | **7** |
+| **已部署** | - | **8** | - |
+| **总计** | **14** | **8** | **6** |
 
 ---
 
@@ -278,11 +278,16 @@ skills/
 │   ├── __init__.py
 │   └── SHARED_SEARCH_ARCHITECTURE.md
 │
-└── feishu-integration/                # 飞书集成 ✅已部署
+├── feishu-integration/                # 飞书集成 ✅已部署
+│   ├── SKILL.md
+│   ├── feishu_integration.py
+│   ├── command_router.py
+│   ├── message_templates.py
+│   └── config.yaml
+│
+└── github-integration/                # GitHub集成 ✅已部署
     ├── SKILL.md
-    ├── feishu_integration.py
-    ├── command_router.py
-    ├── message_templates.py
+    ├── github_integration.py
     └── config.yaml
 ```
 
@@ -302,6 +307,7 @@ skills/
 | 工作流引擎 | 🟡 | 自动化流程 |
 | 浏览器自动化 | 🟡 | Playwright/Selenium |
 | 飞书集成 | ✅ | 系统内部信息→飞书平台 |
+| GitHub集成 | ✅ | 代码管理+配置同步 |
 | SSH远程 | 🟡 | 服务器管理 |
 | 监控告警 | 🟡 | 系统监控 |
 | 备份工具 | 🟡 | 自动备份 |
