@@ -20,7 +20,7 @@ from typing import Dict, List, Optional
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 logger = logging.getLogger('BrowserSelfHealing')
 
-WORKSPACE = Path("/home/nicola/.openclaw/workspace")
+WORKSPACE = Path("/home/sayelf/.openclaw/workspace")
 BROWSER_DIR = WORKSPACE / "data" / "cross-border" / "browser_automation"
 BROWSER_DIR.mkdir(parents=True, exist_ok=True)
 

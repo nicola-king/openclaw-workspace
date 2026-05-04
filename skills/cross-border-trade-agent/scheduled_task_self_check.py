@@ -28,7 +28,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger('ScheduledTaskSelfCheck')
 
-WORKSPACE = Path("/home/nicola/.openclaw/workspace")
+WORKSPACE = Path("/home/sayelf/.openclaw/workspace")
 SCRIPTS_DIR = WORKSPACE / "skills" / "01-trading" / "cross-border-trade-agent"
 CRON_DIR = WORKSPACE / "cron"
 REPORT_DIR = WORKSPACE / "reports" / "scheduled_tasks"

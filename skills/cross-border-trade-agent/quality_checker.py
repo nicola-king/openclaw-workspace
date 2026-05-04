@@ -16,7 +16,7 @@ import tempfile
 from pathlib import Path
 from datetime import datetime
 
-WORKSPACE = Path("/home/nicola/.openclaw/workspace")
+WORKSPACE = Path("/home/sayelf/.openclaw/workspace")
 SKILLS_DIR = WORKSPACE / "skills/01-trading/cross-border-trade-agent"
 
 # 需要检查的脚本列表

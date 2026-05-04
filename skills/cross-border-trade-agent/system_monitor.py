@@ -22,7 +22,7 @@ from typing import Dict
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 logger = logging.getLogger('SystemMonitor')
 
-WORKSPACE = Path("/home/nicola/.openclaw/workspace")
+WORKSPACE = Path("/home/sayelf/.openclaw/workspace")
 MONITOR_DIR = WORKSPACE / "data" / "cross-border" / "system_monitor"
 MONITOR_DIR.mkdir(parents=True, exist_ok=True)
 

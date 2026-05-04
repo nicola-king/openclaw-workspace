@@ -31,7 +31,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger('AutoOutreach')
 
-WORKSPACE = Path("/home/nicola/.openclaw/workspace")
+WORKSPACE = Path("/home/sayelf/.openclaw/workspace")
 DATA_DIR = WORKSPACE / "data" / "cross-border" / "outreach"
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 

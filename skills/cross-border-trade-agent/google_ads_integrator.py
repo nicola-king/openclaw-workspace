@@ -30,7 +30,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger('GoogleAdsData')
 
-WORKSPACE = Path("/home/nicola/.openclaw/workspace")
+WORKSPACE = Path("/home/sayelf/.openclaw/workspace")
 DATA_DIR = WORKSPACE / "data" / "cross-border" / "google-ads"
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 

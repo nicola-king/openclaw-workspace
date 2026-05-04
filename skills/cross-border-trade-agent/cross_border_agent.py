@@ -24,7 +24,7 @@ logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     level=logging.INFO,
     handlers=[
-        logging.FileHandler('/home/nicola/.openclaw/workspace/logs/cross-border-agent.log'),
+        logging.FileHandler('/home/sayelf/.openclaw/workspace/logs/cross-border-agent.log'),
         logging.StreamHandler()
     ]
 )

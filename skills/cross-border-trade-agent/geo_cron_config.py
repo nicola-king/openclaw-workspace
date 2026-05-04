@@ -16,7 +16,7 @@ CRON_CONFIG = {
     # 每周 GEO 审计 (周一 9:00)
     "weekly_audit": {
         "schedule": "0 9 * * 1",
-        "command": "cd /home/nicola/.openclaw/workspace/skills/01-trading/cross-border-trade-agent && python3 geo_auditor.py --report",
+        "command": "cd /home/sayelf/.openclaw/workspace/skills/01-trading/cross-border-trade-agent && python3 geo_auditor.py --report",
         "description": "每周 GEO 可见度审计",
         "enabled": True,
     },
@@ -24,7 +24,7 @@ CRON_CONFIG = {
     # 每日 Earned Media 检查 (每天 10:00)
     "daily_earned_media_check": {
         "schedule": "0 10 * * *",
-        "command": "cd /home/nicola/.openclaw/workspace/skills/01-trading/cross-border-trade-agent && python3 earned_media_tracker.py --check",
+        "command": "cd /home/sayelf/.openclaw/workspace/skills/01-trading/cross-border-trade-agent && python3 earned_media_tracker.py --check",
         "description": "每日 Earned Media 状态检查",
         "enabled": True,
     },
@@ -32,7 +32,7 @@ CRON_CONFIG = {
     # 每月 GEO 报告 (每月 1 日 9:00)
     "monthly_geo_report": {
         "schedule": "0 9 1 * *",
-        "command": "cd /home/nicola/.openclaw/workspace/skills/01-trading/cross-border-trade-agent && python3 geo_auditor.py --monthly-report",
+        "command": "cd /home/sayelf/.openclaw/workspace/skills/01-trading/cross-border-trade-agent && python3 geo_auditor.py --monthly-report",
         "description": "每月 GEO 综合报告",
         "enabled": True,
     },
@@ -40,7 +40,7 @@ CRON_CONFIG = {
     # 每季度策略复盘 (每季度首月 1 日 10:00)
     "quarterly_review": {
         "schedule": "0 10 1 1,4,7,10 *",
-        "command": "cd /home/nicola/.openclaw/workspace/skills/01-trading/cross-border-trade-agent && python3 earned_media_tracker.py --quarterly-review",
+        "command": "cd /home/sayelf/.openclaw/workspace/skills/01-trading/cross-border-trade-agent && python3 earned_media_tracker.py --quarterly-review",
         "description": "每季度 GEO 策略复盘",
         "enabled": True,
     },

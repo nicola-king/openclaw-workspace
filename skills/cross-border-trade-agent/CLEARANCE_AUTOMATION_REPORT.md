@@ -139,7 +139,7 @@
 
 ```bash
 # 清仓任务 (每日 06:00)
-0 6 * * * python3 /home/nicola/.openclaw/workspace/skills/01-trading/cross-border-trade-agent/clearance_job.py
+0 6 * * * python3 /home/sayelf/.openclaw/workspace/skills/01-trading/cross-border-trade-agent/clearance_job.py
 
 # 完整定时任务列表:
 0 8 * * *    每日情报推送

@@ -20,7 +20,7 @@ from typing import Dict, List
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 logger = logging.getLogger('AutoTriggerModule')
 
-WORKSPACE = Path("/home/nicola/.openclaw/workspace")
+WORKSPACE = Path("/home/sayelf/.openclaw/workspace")
 TRIGGER_FILE = WORKSPACE / "data" / "cross-border" / "auto_trigger" / "triggers.json"
 WORKSPACE.mkdir(parents=True, exist_ok=True)
 

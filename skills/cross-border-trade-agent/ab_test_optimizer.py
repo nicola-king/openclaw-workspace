@@ -28,7 +28,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger('ABTestOptimizer')
 
-WORKSPACE = Path("/home/nicola/.openclaw/workspace")
+WORKSPACE = Path("/home/sayelf/.openclaw/workspace")
 DATA_DIR = WORKSPACE / "data" / "cross-border" / "ab_tests"
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 

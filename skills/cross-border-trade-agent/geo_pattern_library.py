@@ -24,7 +24,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger('GEOPatternLibrary')
 
-WORKSPACE = Path("/home/nicola/.openclaw/workspace")
+WORKSPACE = Path("/home/sayelf/.openclaw/workspace")
 PATTERN_DIR = WORKSPACE / "data" / "cross-border" / "geo" / "patterns"
 PATTERN_DIR.mkdir(parents=True, exist_ok=True)
 

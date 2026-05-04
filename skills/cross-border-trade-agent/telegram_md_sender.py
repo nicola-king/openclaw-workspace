@@ -10,7 +10,7 @@ from pathlib import Path
 
 logger = logging.getLogger('TelegramMDSender')
 
-WORKSPACE = Path("/home/nicola/.openclaw/workspace")
+WORKSPACE = Path("/home/sayelf/.openclaw/workspace")
 
 
 def check_telegram_compatibility(md_file_path: str) -> dict:
@@ -127,10 +127,10 @@ def main():
     
     # 今日发送的 MD 文件
     today_files = [
-        "/home/nicola/.openclaw/workspace/reports/7 大数据源验证模块集成报告_2026-04-19.md",
-        "/home/nicola/.openclaw/workspace/reports/全球产品趋势跟踪分析报告_2026-04-19.md",
-        "/home/nicola/.openclaw/workspace/reports/医疗器械_变压器_3D 打印机_市场调研报告.md",
-        "/home/nicola/.openclaw/workspace/reports/便携式储能电源_国内前 10 厂家分析.md"
+        "/home/sayelf/.openclaw/workspace/reports/7 大数据源验证模块集成报告_2026-04-19.md",
+        "/home/sayelf/.openclaw/workspace/reports/全球产品趋势跟踪分析报告_2026-04-19.md",
+        "/home/sayelf/.openclaw/workspace/reports/医疗器械_变压器_3D 打印机_市场调研报告.md",
+        "/home/sayelf/.openclaw/workspace/reports/便携式储能电源_国内前 10 厂家分析.md"
     ]
     
     logger.info("\n📄 检查今日发送的 MD 文件:\n")

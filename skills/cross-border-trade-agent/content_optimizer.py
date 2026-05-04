@@ -22,7 +22,7 @@ from typing import Dict, List
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 logger = logging.getLogger('ContentOptimizer')
 
-WORKSPACE = Path("/home/nicola/.openclaw/workspace")
+WORKSPACE = Path("/home/sayelf/.openclaw/workspace")
 CONTENT_DIR = WORKSPACE / "data" / "cross-border" / "content_optimization"
 CONTENT_DIR.mkdir(parents=True, exist_ok=True)
 

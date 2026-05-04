@@ -18,7 +18,7 @@ from datetime import datetime
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 logger = logging.getLogger('CronConfig')
 
-WORKSPACE = Path("/home/nicola/.openclaw/workspace")
+WORKSPACE = Path("/home/sayelf/.openclaw/workspace")
 CRON_DIR = WORKSPACE / "data" / "cross-border" / "cron"
 CRON_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -102,14 +102,14 @@ class CronConfigGenerator:
         ]
         
         for task_id, task in self.CRON_TASKS.items():
-            cron_line = f"{task['schedule']} cd {WORKSPACE}/skills/01-trading/cross-border-trade-agent && python3 {task['script']} # {task['name']}"
+            cron_line = f"{task['schedule']} cd {WORKSPACE}/skills/cross-border-trade-agent && python3 {task['script']} # {task['name']}"
             crontab_lines.append(cron_line)
         
         crontab_lines.extend([
             "",
             "# ========== 系统维护任务 ==========",
             "0 3 * * * find /tmp -type f -mtime +7 -delete # 清理 7 天前临时文件",
-            "0 4 * * 0 cd /home/nicola/.openclaw/workspace && git add -A && git commit -m '自动备份' # 每周备份"
+            "0 4 * * 0 cd /home/sayelf/.openclaw/workspace && git add -A && git commit -m '自动备份' # 每周备份"
         ])
         
         crontab = "\n".join(crontab_lines)

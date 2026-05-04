@@ -20,7 +20,7 @@ from typing import Dict, List
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 logger = logging.getLogger('PrivateTrafficEngine')
 
-WORKSPACE = Path("/home/nicola/.openclaw/workspace")
+WORKSPACE = Path("/home/sayelf/.openclaw/workspace")
 PRIVATE_DIR = WORKSPACE / "data" / "cross-border" / "private_traffic"
 PRIVATE_DIR.mkdir(parents=True, exist_ok=True)
 

@@ -35,7 +35,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger('SevenDataSourceVerifier')
 
-WORKSPACE = Path("/home/nicola/.openclaw/workspace")
+WORKSPACE = Path("/home/sayelf/.openclaw/workspace")
 VERIFICATION_DIR = WORKSPACE / "data" / "cross-border" / "7-sources-verification"
 VERIFICATION_DIR.mkdir(parents=True, exist_ok=True)
 

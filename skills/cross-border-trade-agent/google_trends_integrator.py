@@ -26,7 +26,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger('GoogleTrendsIntegrator')
 
-WORKSPACE = Path("/home/nicola/.openclaw/workspace")
+WORKSPACE = Path("/home/sayelf/.openclaw/workspace")
 TRENDS_DIR = WORKSPACE / "data" / "cross-border" / "trends"
 TRENDS_DIR.mkdir(parents=True, exist_ok=True)
 

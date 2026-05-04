@@ -16,7 +16,7 @@ import requests
 from pathlib import Path
 from datetime import datetime, timedelta
 
-WORKSPACE = Path("/home/nicola/.openclaw/workspace")
+WORKSPACE = Path("/home/sayelf/.openclaw/workspace")
 INTEL_DIR = WORKSPACE / "data" / "cross-border" / "intelligence"
 INTEL_DIR.mkdir(parents=True, exist_ok=True)
 

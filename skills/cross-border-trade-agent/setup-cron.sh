@@ -4,7 +4,7 @@
 
 set -e
 
-WORKSPACE="/home/nicola/.openclaw/workspace"
+WORKSPACE="/home/sayelf/.openclaw/workspace"
 SKILL_DIR="$WORKSPACE/skills/01-trading/cross-border-trade-agent"
 LOG_DIR="$WORKSPACE/logs/cross-border"
 

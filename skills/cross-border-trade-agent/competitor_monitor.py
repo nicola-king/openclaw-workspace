@@ -26,7 +26,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger('CompetitorMonitor')
 
-WORKSPACE = Path("/home/nicola/.openclaw/workspace")
+WORKSPACE = Path("/home/sayelf/.openclaw/workspace")
 DATA_DIR = WORKSPACE / "data" / "cross-border" / "competitors"
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 

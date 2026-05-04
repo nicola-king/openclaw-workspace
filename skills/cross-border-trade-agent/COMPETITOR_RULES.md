@@ -191,16 +191,16 @@ else:
 
 ```bash
 # 每日情报简报 (08:00)
-0 8 * * * cd /home/nicola/.openclaw/workspace && python3 skills/01-trading/cross-border-trade-agent/intelligence_reporter.py --daily
+0 8 * * * cd /home/sayelf/.openclaw/workspace && python3 skills/01-trading/cross-border-trade-agent/intelligence_reporter.py --daily
 
 # 每周趋势分析 (周一 09:00)
-0 9 * * 1 cd /home/nicola/.openclaw/workspace && python3 skills/01-trading/cross-border-trade-agent/product_trend_forecaster.py --weekly
+0 9 * * 1 cd /home/sayelf/.openclaw/workspace && python3 skills/01-trading/cross-border-trade-agent/product_trend_forecaster.py --weekly
 
 # 每月战略报告 (月初 10:00)
-0 10 1 * * cd /home/nicola/.openclaw/workspace && python3 skills/01-trading/cross-border-trade-agent/intelligence_reporter.py --monthly
+0 10 1 * * cd /home/sayelf/.openclaw/workspace && python3 skills/01-trading/cross-border-trade-agent/intelligence_reporter.py --monthly
 
 # 竞品监控 (每 4 小时)
-0 */4 * * * cd /home/nicola/.openclaw/workspace && python3 skills/01-trading/cross-border-trade-agent/intelligence_reporter.py --competitor
+0 */4 * * * cd /home/sayelf/.openclaw/workspace && python3 skills/01-trading/cross-border-trade-agent/intelligence_reporter.py --competitor
 ```
 
 ---
@@ -290,7 +290,7 @@ python3 product_trend_forecaster.py --report "智能水杯"
 
 ## 📊 报告存储
 
-**位置**: `/home/nicola/.openclaw/workspace/data/cross-border/product-trends/`
+**位置**: `/home/sayelf/.openclaw/workspace/data/cross-border/product-trends/`
 
 **格式**: `{产品名}-{日期}.json`
 

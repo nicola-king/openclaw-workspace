@@ -17,7 +17,7 @@ import random
 from pathlib import Path
 from datetime import datetime, timedelta
 
-WORKSPACE = Path("/home/nicola/.openclaw/workspace")
+WORKSPACE = Path("/home/sayelf/.openclaw/workspace")
 DATA_DIR = WORKSPACE / "data" / "cross-border" / "product-trends"
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 

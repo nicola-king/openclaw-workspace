@@ -15,7 +15,7 @@ class WebsiteVerifier:
     """智能网站验证器"""
     
     def __init__(self):
-        self.workspace = Path("/home/nicola/.openclaw/workspace")
+        self.workspace = Path("/home/sayelf/.openclaw/workspace")
         self.output_dir = self.workspace / "website-verification"
         self.output_dir.mkdir(exist_ok=True)
         

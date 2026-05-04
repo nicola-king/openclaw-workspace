@@ -31,7 +31,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger('SkillCrystallization')
 
-WORKSPACE = Path("/home/nicola/.openclaw/workspace")
+WORKSPACE = Path("/home/sayelf/.openclaw/workspace")
 SKILL_LIBRARY_DIR = WORKSPACE / "skills" / "crystallized"
 MEMORY_LAYER_DIR = WORKSPACE / "memory" / "skill_memory"
 SKILL_LIBRARY_DIR.mkdir(parents=True, exist_ok=True)

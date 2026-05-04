@@ -101,7 +101,7 @@ def generate_telegram_friendly_md(
     
     # 保存文件
     if output_path is None:
-        output_path = f"/home/nicola/.openclaw/workspace/reports/{datetime.now().strftime('%Y%m%d')}_report.md"
+        output_path = f"/home/sayelf/.openclaw/workspace/reports/{datetime.now().strftime('%Y%m%d')}_report.md"
     
     output_file = Path(output_path)
     output_file.parent.mkdir(parents=True, exist_ok=True)
@@ -147,7 +147,7 @@ if __name__ == "__main__":
             "日期": "4.21-25",
             "地点": "上海新国际博览中心"
         },
-        output_path="/home/nicola/.openclaw/workspace/reports/重庆兴旺工具_Telegram 简报.md"
+        output_path="/home/sayelf/.openclaw/workspace/reports/重庆兴旺工具_Telegram 简报.md"
     )
     
     print(f"✅ MD 报告已生成：{output}")

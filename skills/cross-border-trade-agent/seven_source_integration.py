@@ -28,7 +28,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger('SevenSourceIntegration')
 
-WORKSPACE = Path("/home/nicola/.openclaw/workspace")
+WORKSPACE = Path("/home/sayelf/.openclaw/workspace")
 INTEGRATION_DIR = WORKSPACE / "data" / "cross-border" / "7-sources-integration"
 INTEGRATION_DIR.mkdir(parents=True, exist_ok=True)
 

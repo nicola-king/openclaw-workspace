@@ -582,7 +582,7 @@ ollama run llama3.1:8b "你好"
 ### 步骤 3: 安装 Python 依赖 (5 分钟)
 
 ```bash
-cd /home/nicola/.openclaw/workspace/skills/01-trading/cross-border-trade-agent
+cd /home/sayelf/.openclaw/workspace/skills/01-trading/cross-border-trade-agent
 
 pip install requests chromadb crawl4ai
 ```

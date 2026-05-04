@@ -23,7 +23,7 @@ from typing import Dict, List
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 logger = logging.getLogger('TechnicalAudit')
 
-WORKSPACE = Path("/home/nicola/.openclaw/workspace")
+WORKSPACE = Path("/home/sayelf/.openclaw/workspace")
 AUDIT_DIR = WORKSPACE / "data" / "cross-border" / "technical_audit"
 AUDIT_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -283,7 +283,7 @@ class TechnicalAudit:
             "timestamp": datetime.now().isoformat(),
             "total_urls": len(urls),
             "urls": urls[:50],  # 前 50 个
-            "generated_file": f"/home/nicola/.openclaw/workspace/data/cross-border/technical_audit/sitemap_{domain.replace('.', '_')}.xml"
+            "generated_file": f"/home/sayelf/.openclaw/workspace/data/cross-border/technical_audit/sitemap_{domain.replace('.', '_')}.xml"
         }
         
         self.data["fixes"].append(sitemap)

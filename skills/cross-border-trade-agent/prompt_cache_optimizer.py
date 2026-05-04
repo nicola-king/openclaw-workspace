@@ -21,7 +21,7 @@ from typing import Dict, List, Optional
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 logger = logging.getLogger('PromptCacheOptimizer')
 
-WORKSPACE = Path("/home/nicola/.openclaw/workspace")
+WORKSPACE = Path("/home/sayelf/.openclaw/workspace")
 CACHE_DIR = WORKSPACE / "data" / "cross-border" / "prompt_cache"
 CACHE_DIR.mkdir(parents=True, exist_ok=True)
 

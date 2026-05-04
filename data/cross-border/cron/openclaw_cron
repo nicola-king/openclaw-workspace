@@ -1,0 +1,16 @@
+# 太一全域跨境贸易 Agent - 定时任务配置
+# 生成时间：2026-05-04T08:00:12.241824
+
+# ========== 自媒体运营任务 ==========
+0 8 * * * cd /home/sayelf/.openclaw/workspace/skills/cross-border-trade-agent && python3 self_media_engine.py # 晨间新闻推送
+0 9 * * 1-5 cd /home/sayelf/.openclaw/workspace/skills/cross-border-trade-agent && python3 self_media_engine.py # 周度深度分析
+0 20 * * * cd /home/sayelf/.openclaw/workspace/skills/cross-border-trade-agent && python3 self_media_engine.py # 流量数据汇总
+0 18 * * 5 cd /home/sayelf/.openclaw/workspace/skills/cross-border-trade-agent && python3 self_media_engine.py # 转化漏斗分析
+0 22 * * 0 cd /home/sayelf/.openclaw/workspace/skills/cross-border-trade-agent && python3 self_evolution_engine.py # 自进化报告
+0 10 * * 1 cd /home/sayelf/.openclaw/workspace/skills/cross-border-trade-agent && python3 brand_building_engine.py # 品牌健康度报告
+0 11 * * 1 cd /home/sayelf/.openclaw/workspace/skills/cross-border-trade-agent && python3 private_traffic_engine.py # 私域运营报告
+0 3 * * * cd /home/sayelf/.openclaw/workspace/skills/cross-border-trade-agent && python3 backup.py # 数据备份
+
+# ========== 系统维护任务 ==========
+0 3 * * * find /tmp -type f -mtime +7 -delete # 清理 7 天前临时文件
+0 4 * * 0 cd /home/sayelf/.openclaw/workspace && git add -A && git commit -m '自动备份' # 每周备份

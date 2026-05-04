@@ -251,7 +251,7 @@ message = outreach.generate_message("initial_contact", lead)
 
 ```bash
 # 1. 更新仓库
-cd /home/nicola/.openclaw/workspace/skills/01-trading/cross-border-trade-agent
+cd /home/sayelf/.openclaw/workspace/skills/01-trading/cross-border-trade-agent
 git pull
 
 # 2. 测试新模块

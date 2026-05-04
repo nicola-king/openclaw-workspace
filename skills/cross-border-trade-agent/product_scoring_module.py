@@ -35,7 +35,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger('ProductScoring')
 
-WORKSPACE = Path("/home/nicola/.openclaw/workspace")
+WORKSPACE = Path("/home/sayelf/.openclaw/workspace")
 DATA_DIR = WORKSPACE / "data" / "cross-border" / "product-scoring"
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 

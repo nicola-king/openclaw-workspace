@@ -41,7 +41,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger('EcommerceData')
 
-WORKSPACE = Path("/home/nicola/.openclaw/workspace")
+WORKSPACE = Path("/home/sayelf/.openclaw/workspace")
 DATA_DIR = WORKSPACE / "data" / "cross-border" / "ecommerce"
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 
