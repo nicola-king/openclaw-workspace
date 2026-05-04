@@ -1,0 +1,71 @@
+{
+  "city": "新加坡",
+  "country": "新加坡",
+  "days": 10,
+  "budget": 30000,
+  "phases": {
+    "phase1_research": {
+      "phase": "研究层 (提前1-2周)",
+      "intelligence": "✅ 博主/博客/社交媒体综合评估完成",
+      "culture": "✅ 风俗/历史/语言预习资料准备",
+      "visa": "✅ 签证/证件要求已查清",
+      "season": "✅ 最佳旅行时段+天气预警已确认",
+      "transport_options": "✅ 交通方案对比（飞机/火车/船/巴士）已研究"
+    },
+    "phase1_transport": {
+      "phase": "交通层 (v2.0 多段规划)",
+      "description": "支持多段交通组合规划",
+      "available_modes": [
+        "✈️ 飞机",
+        "🚄 火车",
+        "🚢 轮渡",
+        "🚌 巴士"
+      ],
+      "tickets_count": 0,
+      "tickets_by_type": {
+        "flight": 0,
+        "train": 0,
+        "ferry": 0,
+        "bus": 0
+      },
+      "tickets_by_date": {},
+      "transport_modes_suggested": [
+        {
+          "mode": "✈️ 飞机 + 🚄 高铁 + 🚢 轮渡混合",
+          "note": "深度游多城联动"
+        },
+        {
+          "mode": "分段交通规划",
+          "note": "每段独立记录截图和验证"
+        }
+      ],
+      "verification": "所有票务附带 verification_links 验证来源链接",
+      "screenshot_storage": "截图存储于 screenshots/ 目录",
+      "db_storage": "SQLite travel.db → tickets 表"
+    },
+    "phase2_planning": {
+      "phase": "规划层",
+      "route": "✅ 10天城市间动线已优化",
+      "accommodation": "✅ 多酒店清单(含验证链接)",
+      "local_services": "✅ 导游(实名)+租车(真实电话)已准备",
+      "budget": "✅ 交通/住宿/餐饮/门票/购物已分解",
+      "transport_integrated": "✅ 交通票务已集成到行程数据库"
+    },
+    "phase3_experience": {
+      "phase": "体验层",
+      "attractions_deep": "✅ 深度景点(含故事+历史背景)",
+      "food_map": "✅ 本地人推荐+特色菜已验证",
+      "local_experience": "✅ 手工艺/烹饪课/节庆信息已整理",
+      "flex_time": "✅ 每日留白时间已安排"
+    },
+    "phase4_safety": {
+      "phase": "保障层",
+      "embassy": "✅ 大使馆信息已准备",
+      "hospital": "✅ 医院/药店已验证",
+      "emergency": "✅ 丢失/生病/自然灾害应急预案",
+      "offline": "✅ 离线地图+攻略已打包",
+      "ticket_backup": "✅ 所有票务截图/OCR/验证链接已备份"
+    }
+  },
+  "generated_at": "2026-05-04T21:39:19.947622"
+}
