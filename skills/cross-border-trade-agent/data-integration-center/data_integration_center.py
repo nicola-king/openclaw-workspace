@@ -48,7 +48,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger('DataIntegrationCenter')
 
-WORKSPACE = Path("/home/sayelf/.openclaw/workspace")
+WORKSPACE = Path("/home/nicola/.openclaw/workspace")
 DATA_DIR = WORKSPACE / "data" / "cross-border" / "integration"
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 
