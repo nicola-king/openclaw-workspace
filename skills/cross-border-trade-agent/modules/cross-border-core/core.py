@@ -90,7 +90,10 @@ class CrossBorderAgent:
             "scoring": "intelligence-hub",
             "conversion": "conversion-optimizer",
             "logistics": "transaction-support",
-            "report": "report-engine"
+            "report": "report-engine",
+            "enrich": "company-enricher",
+            "business_intel": "report-engine",
+            "full_report": "report-engine"
         }
         return routing.get(task, "cross-border-core")
     
