@@ -172,22 +172,28 @@ class GuikeZhilu:
                     "data_quality": "B (Enricher未加载)"
                 }
 
-            # === Step 2: 搜索 LinkedIn 联系人（BD/采购） ===
+            # === Step 2: 搜索 LinkedIn 联系人（BD/采购/总监/创始人） ===
             linkedin_contacts = []
+            kw = '+'.join(name.split())
             if self._enricher:
                 linkedin_data = self._enricher.search_linkedin(name)
-                # 搜索关键词: "{Company} BD Manager" / "{Company} Procurement Director"
-                bd_search_url = (
-                    f"https://www.linkedin.com/search/results/people/?"
-                    f"keywords={'+'.join(name.split())}+BD+Manager&origin=GLOBAL_SEARCH_HEADER"
-                )
-                procurement_search = (
-                    f"https://www.linkedin.com/search/results/people/?"
-                    f"keywords={'+'.join(name.split())}+Procurement+Director&origin=GLOBAL_SEARCH_HEADER"
-                )
+                # 多角色搜索：BD/采购/总监/创始人
+                search_roles = [
+                    ("BD Manager", f"BD+Manager"),
+                    ("Sales Director", f"Sales+Director"),
+                    ("Business Development", f"Business+Development"),
+                    ("Procurement Director", f"Procurement+Director"),
+                    ("Supply Chain Manager", f"Supply+Chain+Manager"),
+                    ("Founder / CEO", f"Founder+CEO"),
+                    ("Managing Director", f"Managing+Director"),
+                    ("GM / Operations Director", f"General+Manager+Operations"),
+                ]
                 linkedin_contacts = [
-                    {"search": "BD Manager", "url": bd_search_url},
-                    {"search": "Procurement Director", "url": procurement_search},
+                    {
+                        "search": role_name,
+                        "url": f"https://www.linkedin.com/search/results/people/?keywords={kw}+{role_kw}&origin=GLOBAL_SEARCH_HEADER"
+                    }
+                    for role_name, role_kw in search_roles
                 ]
 
             # === Step 3: 构建最终档案 ===
