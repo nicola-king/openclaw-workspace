@@ -1,0 +1,94 @@
+/* Ollama — 品牌设计CSS变量 */
+/* An almost defiantly minimal documentation-first system that treats the home page */
+
+:root {
+  /* ===== Colors ===== */
+  --ollama-primary: #000000;
+  --ollama-on-primary: #ffffff;
+  --ollama-ink: #000000;
+  --ollama-ink-deep: #090909;
+  --ollama-charcoal: #525252;
+  --ollama-body: #737373;
+  --ollama-mute: #a3a3a3;
+  --ollama-canvas: #ffffff;
+  --ollama-surface-soft: #fafafa;
+  --ollama-surface-card: #ffffff;
+  --ollama-hairline: #e5e5e5;
+  --ollama-hairline-strong: #d4d4d4;
+  --ollama-on-dark: #ffffff;
+  --ollama-on-dark-mute: rgba(255,255,255,0.7);
+  --ollama-surface-dark: #171717;
+  --ollama-focus-ring: rgba(59,130,246,0.5);
+  --ollama-link: #000000;
+  --ollama-link-mute: #737373;
+  --ollama-terminal-red: #ff5f56;
+  --ollama-terminal-yellow: #ffbd2e;
+  --ollama-terminal-green: #27c93f;
+
+  /* ===== Typography ===== */
+  --ollama-display-xl-fontFamily: SF Pro Rounded;
+  --ollama-display-xl-fontSize: 36px;
+  --ollama-display-xl-fontWeight: 500;
+  --ollama-display-xl-lineHeight: 1.11;
+  --ollama-display-xl-letterSpacing: 0;
+  --ollama-display-lg-fontFamily: SF Pro Rounded;
+  --ollama-display-lg-fontSize: 30px;
+  --ollama-display-lg-fontWeight: 500;
+  --ollama-display-lg-lineHeight: 1.2;
+  --ollama-display-lg-letterSpacing: 0;
+  --ollama-heading-lg-fontFamily: SF Pro Rounded;
+  --ollama-heading-lg-fontSize: 24px;
+  --ollama-heading-lg-fontWeight: 600;
+  --ollama-heading-lg-lineHeight: 1.33;
+  --ollama-heading-lg-letterSpacing: 0;
+  --ollama-heading-md-fontFamily: ui-sans-serif;
+  --ollama-heading-md-fontSize: 20px;
+  --ollama-heading-md-fontWeight: 500;
+  --ollama-heading-md-lineHeight: 1.4;
+  --ollama-heading-md-letterSpacing: 0;
+  --ollama-heading-sm-fontFamily: ui-sans-serif;
+  --ollama-heading-sm-fontSize: 18px;
+  --ollama-heading-sm-fontWeight: 500;
+  --ollama-heading-sm-lineHeight: 1.56;
+  --ollama-heading-sm-letterSpacing: 0;
+  --ollama-body-md-fontFamily: ui-sans-serif;
+  --ollama-body-md-fontSize: 16px;
+  --ollama-body-md-fontWeight: 400;
+  --ollama-body-md-lineHeight: 1.5;
+  --ollama-body-md-letterSpacing: 0;
+  --ollama-body-strong-fontFamily: ui-sans-serif;
+  --ollama-body-strong-fontSize: 16px;
+  --ollama-body-strong-fontWeight: 500;
+  --ollama-body-strong-lineHeight: 1.5;
+  --ollama-body-strong-letterSpacing: 0;
+  --ollama-body-sm-fontFamily: ui-sans-serif;
+  --ollama-body-sm-fontSize: 14px;
+  --ollama-body-sm-fontWeight: 400;
+  --ollama-body-sm-lineHeight: 1.43;
+  --ollama-body-sm-letterSpacing: 0;
+  --ollama-body-sm-strong-fontFamily: ui-sans-serif;
+  --ollama-body-sm-strong-fontSize: 14px;
+  --ollama-body-sm-strong-fontWeight: 500;
+  --ollama-body-sm-strong-lineHeight: 1.43;
+  --ollama-body-sm-strong-letterSpacing: 0;
+  --ollama-caption-sm-fontFamily: ui-sans-serif;
+  --ollama-caption-sm-fontSize: 12px;
+  --ollama-caption-sm-fontWeight: 400;
+  --ollama-caption-sm-lineHeight: 1.33;
+  --ollama-caption-sm-letterSpacing: 0;
+  --ollama-code-md-fontFamily: ui-monospace;
+  --ollama-code-md-fontSize: 16px;
+  --ollama-code-md-fontWeight: 400;
+  --ollama-code-md-lineHeight: 1.5;
+  --ollama-code-md-letterSpacing: 0;
+  --ollama-code-sm-fontFamily: ui-monospace;
+  --ollama-code-sm-fontSize: 14px;
+  --ollama-code-sm-fontWeight: 400;
+  --ollama-code-sm-lineHeight: 1.43;
+  --ollama-code-sm-letterSpacing: 0;
+  --ollama-button-md-fontFamily: ui-sans-serif;
+  --ollama-button-md-fontSize: 14px;
+  --ollama-button-md-fontWeight: 500;
+  --ollama-button-md-lineHeight: 1;
+  --ollama-button-md-letterSpacing: 0;
+}

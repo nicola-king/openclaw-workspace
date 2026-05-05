@@ -88,8 +88,10 @@ class GuikeZhilu:
         if task == "search":
             result = self.search(**kwargs)
             # 搜完后自动触发增强
-            if result.get("status") == "success" and result.get("prospects"):
-                enriched = self.enrich(**kwargs, prospects=result["prospects"])
+            if result.get("status") == "success" and (result.get("prospects") or result.get("raw_prospects") or result.get("companies")):
+                prospects = result.get("prospects") or result.get("raw_prospects") or result.get("companies")
+                # 自动爬取耗时，限制前5家深度处理
+                enriched = self.enrich(**kwargs, prospects=prospects[:5])
                 result["enriched_prospects"] = enriched.get("enriched_prospects", [])
                 result["original_total"] = result["total"]
                 result["total"] = len(enriched.get("enriched_prospects", []))
@@ -190,14 +192,45 @@ class GuikeZhilu:
                  "score": 70},
             ]
 
-        self.logger.info(f"✅ 搜索完成: {len(prospects)} 家公司 | {len(search_sources)} 次搜索")
+        # === 加载多源搜索增强 ===
+        try:
+            ms_path = Path(__file__).parent / 'multi_source_search.py'
+            if ms_path.exists():
+                import importlib.util
+                spec = importlib.util.spec_from_file_location('ms_mod', str(ms_path))
+                ms = importlib.util.module_from_spec(spec)
+                spec.loader.exec_module(ms)
+                
+                # 生成多平台搜索链接
+                search_links = ms.generate_search_links(product, market or 'Australia')
+                queries = ms.build_search_queries(product, market or 'Australia')
+                
+                # 为每家公司生成LinkedIn人物搜索
+                enriched_companies = []
+                for p in prospects[:16]:
+                    li_searches = ms.generate_linkedin_people_searches(p['name'])
+                    p['linkedin_searches'] = li_searches
+                    enriched_companies.append(p)
+                
+                # 构建完整结果
+                full_result = ms.build_enriched_result(enriched_companies, product, market or 'Australia')
+                full_result["prospects"] = enriched_companies
+                full_result["raw_prospects"] = enriched_companies
+                full_result["search_sources"] = search_sources
+                full_result["search_links"] = search_links
+                full_result["total"] = len(enriched_companies)
+                full_result["status"] = "success"
+        except Exception as e:
+            self.logger.warning(f"多源搜索增强加载失败: {e}")
+            full_result = {
+                "status": "success",
+                "prospects": prospects,
+                "total": len(prospects),
+                "search_sources": search_sources,
+            }
 
-        return {
-            "status": "success",
-            "prospects": prospects,
-            "total": len(prospects),
-            "search_sources": search_sources,
-        }
+        self.logger.info(f"✅ 搜索完成: {len(prospects)} 家公司 | 多源搜索链路已就绪")
+        return full_result
 
     def _extract_company_name(self, title: str, link: str) -> str:
         """从搜索结果提取公司名"""
@@ -306,29 +339,63 @@ class GuikeZhilu:
                     "data_quality": "B (Enricher未加载)"
                 }
 
-            # === Step 2: 搜索 LinkedIn 联系人（BD/采购/总监/创始人） ===
+            # === Step 1.5: 自动爬虫搜客（无需人工点击） ===
+            if website and website.startswith('http'):
+                try:
+                    as_path = Path(__file__).parent.parent.parent / 'modules' / 'company-enricher' / 'auto_scraper.py'
+                    if as_path.exists():
+                        import importlib.util
+                        spec = importlib.util.spec_from_file_location('auto_s', str(as_path))
+                        auto_mod = importlib.util.module_from_spec(spec)
+                        spec.loader.exec_module(auto_mod)
+                        
+                        # 自动爬官网提取联系信息
+                        scraped = auto_mod.extract_contacts_from_website(website)
+                        if scraped.get('phone'):
+                            enriched['phone'] = '; '.join(scraped['phone'][:3])
+                        if scraped.get('email'):
+                            enriched['email'] = '; '.join(scraped['email'][:3])
+                        if scraped.get('linkedin'):
+                            enriched['linkedin_url'] = scraped['linkedin']
+                        
+                        # 自动搜黄页（捕获market未定义异常）
+                        try:
+                            directory = auto_mod.search_business_directory(name, kwargs.get('market', ''))
+                        except Exception:
+                            directory = {}
+                        if directory.get('phone') and not enriched.get('phone'):
+                            enriched['phone'] = '; '.join(directory['phone'][:3])
+                        if directory.get('email') and not enriched.get('email'):
+                            enriched['email'] = '; '.join(directory['email'][:3])
+                except Exception as e:
+                    self.logger.warning(f"自动爬虫失败 {name}: {e}")
+
+            # === Step 2: 搜索 LinkedIn 人物（按品类定制角色） ===
             linkedin_contacts = []
-            kw = '+'.join(name.split())
             if self._enricher:
-                linkedin_data = self._enricher.search_linkedin(name)
-                # 多角色搜索：BD/采购/总监/创始人
+                try:
+                    if engine_path.exists():
+                        li_search = engine.generate_linkedin_people_search(name)
+                        for role, url in li_search.get('searches', {}).items():
+                            linkedin_contacts.append({"search": role, "url": url})
+                except Exception:
+                    pass
+            
+            # 保底：如果engine未加载，用旧方式
+            if not linkedin_contacts:
+                kw = '+'.join(name.split())
                 search_roles = [
-                    ("BD Manager", f"BD+Manager"),
-                    ("Sales Director", f"Sales+Director"),
-                    ("Business Development", f"Business+Development"),
-                    ("Procurement Director", f"Procurement+Director"),
-                    ("Supply Chain Manager", f"Supply+Chain+Manager"),
-                    ("Founder / CEO", f"Founder+CEO"),
-                    ("Managing Director", f"Managing+Director"),
-                    ("GM / Operations Director", f"General+Manager+Operations"),
+                    ("BD Manager", "BD+Manager"),
+                    ("Sales Director", "Sales+Director"),
+                    ("Business Development", "Business+Development"),
+                    ("Procurement Director", "Procurement+Director"),
+                    ("Supply Chain Manager", "Supply+Chain+Manager"),
+                    ("Founder / CEO", "Founder+CEO"),
+                    ("Managing Director", "Managing+Director"),
+                    ("GM / Operations Director", "General+Manager+Operations"),
                 ]
-                linkedin_contacts = [
-                    {
-                        "search": role_name,
-                        "url": f"https://www.linkedin.com/search/results/people/?keywords={kw}+{role_kw}&origin=GLOBAL_SEARCH_HEADER"
-                    }
-                    for role_name, role_kw in search_roles
-                ]
+                linkedin_contacts = [{"search": rn, "url": f"https://www.linkedin.com/search/results/people/?keywords={kw}+{rk}"} for rn, rk in search_roles]
+
 
             # === Step 3: 构建最终档案 ===
             record = {

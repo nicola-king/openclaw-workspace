@@ -1,0 +1,3 @@
+usage: core.py [-h] [--config CONFIG] [--task TASK] [--product PRODUCT]
+               [--market MARKET]
+core.py: error: unrecognized arguments: --daily

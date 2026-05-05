@@ -1,0 +1,183 @@
+[2026-05-05 09:03:07] [INFO] Network Router 初始化完成 | 代理: http://127.0.0.1:7890
+[2026-05-05 09:03:07] [INFO] 健康检查触发 (周期:300秒/白天)
+[2026-05-05 09:03:07] [INFO] 代理健康检查: ✅ (218ms)
+[2026-05-05 09:03:12] [INFO] Network Router 初始化完成 | 代理: http://127.0.0.1:7890
+[2026-05-05 09:03:14] [INFO] Network Router 初始化完成 | 代理: http://127.0.0.1:7890
+[2026-05-05 09:03:14] [INFO] 健康检查触发 (周期:300秒/白天)
+[2026-05-05 09:03:14] [INFO] 代理健康检查: ✅ (215ms)
+[2026-05-05 09:03:14] [DEBUG] 路由决策: international -> international
+[2026-05-05 09:03:16] [DEBUG] 路由决策: international -> international
+[2026-05-05 09:03:18] [DEBUG] 路由决策: international -> international
+[2026-05-05 10:02:42] [INFO] Network Router 初始化完成 | 代理: http://127.0.0.1:7890
+[2026-05-05 10:02:42] [INFO] 健康检查触发 (周期:300秒/白天)
+[2026-05-05 10:02:42] [INFO] 代理健康检查: ✅ (219ms)
+[2026-05-05 10:02:42] [DEBUG] 路由决策: international -> international
+[2026-05-05 10:02:44] [DEBUG] 路由决策: international -> international
+[2026-05-05 10:02:46] [DEBUG] 路由决策: international -> international
+[2026-05-05 10:03:51] [INFO] Network Router 初始化完成 | 代理: http://127.0.0.1:7890
+[2026-05-05 10:03:51] [INFO] 健康检查触发 (周期:300秒/白天)
+[2026-05-05 10:03:51] [INFO] 代理健康检查: ✅ (213ms)
+[2026-05-05 10:03:51] [DEBUG] 路由决策: international -> international
+[2026-05-05 10:03:53] [DEBUG] 路由决策: international -> international
+[2026-05-05 10:03:55] [DEBUG] 路由决策: international -> international
+[2026-05-05 10:04:36] [INFO] Network Router 初始化完成 | 代理: http://127.0.0.1:7890
+[2026-05-05 10:04:36] [INFO] 健康检查触发 (周期:300秒/白天)
+[2026-05-05 10:04:36] [INFO] 代理健康检查: ✅ (221ms)
+[2026-05-05 10:04:36] [DEBUG] 路由决策: international -> international
+[2026-05-05 10:04:38] [DEBUG] 路由决策: international -> international
+[2026-05-05 10:04:40] [DEBUG] 路由决策: international -> international
+[2026-05-05 11:02:42] [INFO] Network Router 初始化完成 | 代理: http://127.0.0.1:7890
+[2026-05-05 11:02:42] [INFO] 健康检查触发 (周期:300秒/白天)
+[2026-05-05 11:02:42] [INFO] 代理健康检查: ✅ (214ms)
+[2026-05-05 11:02:42] [DEBUG] 路由决策: international -> international
+[2026-05-05 11:02:44] [DEBUG] 路由决策: international -> international
+[2026-05-05 11:02:46] [DEBUG] 路由决策: international -> international
+[2026-05-05 11:03:56] [INFO] Network Router 初始化完成 | 代理: http://127.0.0.1:7890
+[2026-05-05 11:03:56] [INFO] 健康检查触发 (周期:300秒/白天)
+[2026-05-05 11:03:57] [INFO] 代理健康检查: ✅ (245ms)
+[2026-05-05 11:03:57] [DEBUG] 路由决策: international -> international
+[2026-05-05 11:03:59] [DEBUG] 路由决策: international -> international
+[2026-05-05 11:04:01] [DEBUG] 路由决策: international -> international
+[2026-05-05 12:02:42] [INFO] Network Router 初始化完成 | 代理: http://127.0.0.1:7890
+[2026-05-05 12:02:42] [INFO] 健康检查触发 (周期:300秒/白天)
+[2026-05-05 12:02:42] [INFO] 代理健康检查: ✅ (225ms)
+[2026-05-05 12:02:42] [DEBUG] 路由决策: international -> international
+[2026-05-05 12:02:44] [DEBUG] 路由决策: international -> international
+[2026-05-05 12:02:46] [DEBUG] 路由决策: international -> international
+[2026-05-05 12:04:53] [INFO] Network Router 初始化完成 | 代理: http://127.0.0.1:7890
+[2026-05-05 12:04:53] [INFO] 健康检查触发 (周期:300秒/白天)
+[2026-05-05 12:04:53] [INFO] 代理健康检查: ✅ (188ms)
+[2026-05-05 12:04:53] [DEBUG] 路由决策: international -> international
+[2026-05-05 12:04:55] [DEBUG] 路由决策: international -> international
+[2026-05-05 12:04:57] [DEBUG] 路由决策: international -> international
+[2026-05-05 13:02:43] [INFO] Network Router 初始化完成 | 代理: http://127.0.0.1:7890
+[2026-05-05 13:02:43] [INFO] 健康检查触发 (周期:300秒/白天)
+[2026-05-05 13:02:43] [INFO] 代理健康检查: ✅ (284ms)
+[2026-05-05 13:02:43] [DEBUG] 路由决策: international -> international
+[2026-05-05 13:02:45] [DEBUG] 路由决策: international -> international
+[2026-05-05 13:02:47] [DEBUG] 路由决策: international -> international
+[2026-05-05 13:03:39] [INFO] Network Router 初始化完成 | 代理: http://127.0.0.1:7890
+[2026-05-05 13:03:39] [INFO] 健康检查触发 (周期:300秒/白天)
+[2026-05-05 13:03:39] [INFO] 代理健康检查: ✅ (230ms)
+[2026-05-05 13:03:39] [DEBUG] 路由决策: international -> international
+[2026-05-05 13:03:41] [DEBUG] 路由决策: international -> international
+[2026-05-05 13:03:43] [DEBUG] 路由决策: international -> international
+[2026-05-05 14:02:43] [INFO] Network Router 初始化完成 | 代理: http://127.0.0.1:7890
+[2026-05-05 14:02:43] [INFO] 健康检查触发 (周期:300秒/白天)
+[2026-05-05 14:02:43] [INFO] 代理健康检查: ✅ (403ms)
+[2026-05-05 14:02:43] [DEBUG] 路由决策: international -> international
+[2026-05-05 14:02:45] [DEBUG] 路由决策: international -> international
+[2026-05-05 14:02:47] [DEBUG] 路由决策: international -> international
+[2026-05-05 14:03:50] [INFO] Network Router 初始化完成 | 代理: http://127.0.0.1:7890
+[2026-05-05 14:03:50] [INFO] 健康检查触发 (周期:300秒/白天)
+[2026-05-05 14:03:50] [INFO] 代理健康检查: ✅ (341ms)
+[2026-05-05 14:03:50] [DEBUG] 路由决策: international -> international
+[2026-05-05 14:03:52] [DEBUG] 路由决策: international -> international
+[2026-05-05 14:03:54] [DEBUG] 路由决策: international -> international
+[2026-05-05 14:04:33] [INFO] Network Router 初始化完成 | 代理: http://127.0.0.1:7890
+[2026-05-05 14:04:33] [INFO] 健康检查触发 (周期:300秒/白天)
+[2026-05-05 14:04:34] [INFO] 代理健康检查: ✅ (217ms)
+[2026-05-05 14:04:34] [DEBUG] 路由决策: international -> international
+[2026-05-05 14:04:36] [DEBUG] 路由决策: international -> international
+[2026-05-05 14:04:38] [DEBUG] 路由决策: international -> international
+[2026-05-05 15:02:42] [INFO] Network Router 初始化完成 | 代理: http://127.0.0.1:7890
+[2026-05-05 15:02:42] [INFO] 健康检查触发 (周期:300秒/白天)
+[2026-05-05 15:02:42] [INFO] 代理健康检查: ✅ (264ms)
+[2026-05-05 15:02:42] [DEBUG] 路由决策: international -> international
+[2026-05-05 15:02:44] [DEBUG] 路由决策: international -> international
+[2026-05-05 15:02:46] [DEBUG] 路由决策: international -> international
+[2026-05-05 15:03:48] [INFO] Network Router 初始化完成 | 代理: http://127.0.0.1:7890
+[2026-05-05 15:03:48] [INFO] 健康检查触发 (周期:300秒/白天)
+[2026-05-05 15:03:49] [INFO] 代理健康检查: ✅ (213ms)
+[2026-05-05 15:03:49] [DEBUG] 路由决策: international -> international
+[2026-05-05 15:03:51] [DEBUG] 路由决策: international -> international
+[2026-05-05 15:03:53] [DEBUG] 路由决策: international -> international
+[2026-05-05 16:02:42] [INFO] Network Router 初始化完成 | 代理: http://127.0.0.1:7890
+[2026-05-05 16:02:42] [INFO] 健康检查触发 (周期:300秒/白天)
+[2026-05-05 16:02:42] [INFO] 代理健康检查: ✅ (218ms)
+[2026-05-05 16:02:42] [DEBUG] 路由决策: international -> international
+[2026-05-05 16:02:44] [DEBUG] 路由决策: international -> international
+[2026-05-05 16:02:46] [DEBUG] 路由决策: international -> international
+[2026-05-05 16:03:52] [INFO] Network Router 初始化完成 | 代理: http://127.0.0.1:7890
+[2026-05-05 16:03:52] [INFO] 健康检查触发 (周期:300秒/白天)
+[2026-05-05 16:03:53] [INFO] 代理健康检查: ✅ (928ms)
+[2026-05-05 16:03:53] [DEBUG] 路由决策: international -> international
+[2026-05-05 16:03:55] [DEBUG] 路由决策: international -> international
+[2026-05-05 16:03:57] [DEBUG] 路由决策: international -> international
+[2026-05-05 17:02:42] [INFO] Network Router 初始化完成 | 代理: http://127.0.0.1:7890
+[2026-05-05 17:02:42] [INFO] 健康检查触发 (周期:300秒/白天)
+[2026-05-05 17:02:42] [INFO] 代理健康检查: ✅ (352ms)
+[2026-05-05 17:02:42] [DEBUG] 路由决策: international -> international
+[2026-05-05 17:02:44] [DEBUG] 路由决策: international -> international
+[2026-05-05 17:02:46] [DEBUG] 路由决策: international -> international
+[2026-05-05 17:03:47] [INFO] Network Router 初始化完成 | 代理: http://127.0.0.1:7890
+[2026-05-05 17:03:47] [INFO] 健康检查触发 (周期:300秒/白天)
+[2026-05-05 17:03:47] [INFO] 代理健康检查: ✅ (223ms)
+[2026-05-05 17:03:47] [DEBUG] 路由决策: international -> international
+[2026-05-05 17:03:49] [DEBUG] 路由决策: international -> international
+[2026-05-05 17:03:51] [DEBUG] 路由决策: international -> international
+[2026-05-05 17:05:20] [INFO] Network Router 初始化完成 | 代理: http://127.0.0.1:7890
+[2026-05-05 17:05:20] [INFO] 健康检查触发 (周期:300秒/白天)
+[2026-05-05 17:05:21] [INFO] 代理健康检查: ✅ (595ms)
+[2026-05-05 17:05:21] [DEBUG] 路由决策: international -> international
+[2026-05-05 17:05:23] [DEBUG] 路由决策: international -> international
+[2026-05-05 17:05:25] [DEBUG] 路由决策: international -> international
+[2026-05-05 18:02:44] [INFO] Network Router 初始化完成 | 代理: http://127.0.0.1:7890
+[2026-05-05 18:02:44] [INFO] 健康检查触发 (周期:300秒/白天)
+[2026-05-05 18:02:45] [INFO] 代理健康检查: ✅ (966ms)
+[2026-05-05 18:02:45] [DEBUG] 路由决策: international -> international
+[2026-05-05 18:02:47] [DEBUG] 路由决策: international -> international
+[2026-05-05 18:02:49] [DEBUG] 路由决策: international -> international
+[2026-05-05 18:03:25] [INFO] Network Router 初始化完成 | 代理: http://127.0.0.1:7890
+[2026-05-05 18:03:25] [INFO] 健康检查触发 (周期:300秒/白天)
+[2026-05-05 18:03:26] [INFO] 代理健康检查: ✅ (285ms)
+[2026-05-05 18:03:26] [DEBUG] 路由决策: international -> international
+[2026-05-05 18:03:28] [DEBUG] 路由决策: international -> international
+[2026-05-05 18:03:30] [DEBUG] 路由决策: international -> international
+[2026-05-05 18:04:18] [INFO] Network Router 初始化完成 | 代理: http://127.0.0.1:7890
+[2026-05-05 18:04:18] [INFO] 健康检查触发 (周期:300秒/白天)
+[2026-05-05 18:04:18] [INFO] 代理健康检查: ✅ (219ms)
+[2026-05-05 18:04:18] [DEBUG] 路由决策: international -> international
+[2026-05-05 18:04:20] [DEBUG] 路由决策: international -> international
+[2026-05-05 18:04:22] [DEBUG] 路由决策: international -> international
+[2026-05-05 18:04:28] [INFO] Network Router 初始化完成 | 代理: http://127.0.0.1:7890
+[2026-05-05 18:04:28] [INFO] 健康检查触发 (周期:300秒/白天)
+[2026-05-05 18:04:28] [INFO] 代理健康检查: ✅ (220ms)
+[2026-05-05 19:02:44] [INFO] Network Router 初始化完成 | 代理: http://127.0.0.1:7890
+[2026-05-05 19:02:44] [INFO] 健康检查触发 (周期:300秒/白天)
+[2026-05-05 19:02:44] [INFO] 代理健康检查: ✅ (396ms)
+[2026-05-05 19:02:44] [DEBUG] 路由决策: international -> international
+[2026-05-05 19:02:46] [DEBUG] 路由决策: international -> international
+[2026-05-05 19:02:48] [DEBUG] 路由决策: international -> international
+[2026-05-05 19:04:02] [INFO] Network Router 初始化完成 | 代理: http://127.0.0.1:7890
+[2026-05-05 19:04:06] [INFO] Network Router 初始化完成 | 代理: http://127.0.0.1:7890
+[2026-05-05 19:04:06] [INFO] 健康检查触发 (周期:300秒/白天)
+[2026-05-05 19:04:06] [INFO] 代理健康检查: ✅ (392ms)
+[2026-05-05 19:04:09] [INFO] Network Router 初始化完成 | 代理: http://127.0.0.1:7890
+[2026-05-05 19:04:09] [INFO] 健康检查触发 (周期:300秒/白天)
+[2026-05-05 19:04:10] [INFO] 代理健康检查: ✅ (327ms)
+[2026-05-05 19:04:10] [DEBUG] 路由决策: international -> international
+[2026-05-05 19:04:12] [DEBUG] 路由决策: international -> international
+[2026-05-05 19:04:14] [DEBUG] 路由决策: international -> international
+[2026-05-05 19:32:50] [INFO] 健康检查触发 (周期:300秒/白天)
+[2026-05-05 19:32:51] [INFO] 代理健康检查: ✅ (368ms)
+[2026-05-05 19:32:51] [DEBUG] 路由决策: international -> international
+[2026-05-05 19:32:53] [DEBUG] 路由决策: international -> international
+[2026-05-05 19:32:55] [DEBUG] 路由决策: international -> international
+[2026-05-05 20:02:43] [INFO] Network Router 初始化完成 | 代理: http://127.0.0.1:7890
+[2026-05-05 20:02:43] [INFO] 健康检查触发 (周期:300秒/白天)
+[2026-05-05 20:02:43] [INFO] 代理健康检查: ✅ (368ms)
+[2026-05-05 20:02:43] [DEBUG] 路由决策: international -> international
+[2026-05-05 20:02:45] [DEBUG] 路由决策: international -> international
+[2026-05-05 20:02:47] [DEBUG] 路由决策: international -> international
+[2026-05-05 20:02:57] [INFO] 健康检查触发 (周期:300秒/白天)
+[2026-05-05 20:02:57] [INFO] 代理健康检查: ✅ (330ms)
+[2026-05-05 20:02:57] [DEBUG] 路由决策: international -> international
+[2026-05-05 20:02:59] [DEBUG] 路由决策: international -> international
+[2026-05-05 20:03:01] [DEBUG] 路由决策: international -> international
+[2026-05-05 20:03:56] [INFO] Network Router 初始化完成 | 代理: http://127.0.0.1:7890
+[2026-05-05 20:03:56] [INFO] 健康检查触发 (周期:300秒/白天)
+[2026-05-05 20:03:56] [INFO] 代理健康检查: ✅ (425ms)
+[2026-05-05 20:03:56] [DEBUG] 路由决策: international -> international
+[2026-05-05 20:03:58] [DEBUG] 路由决策: international -> international
+[2026-05-05 20:04:00] [DEBUG] 路由决策: international -> international

@@ -1,0 +1,86 @@
+/* Bugatti — 品牌设计CSS变量 */
+/* An austere luxury-automotive interface that uses near-pure black canvas, white u */
+
+:root {
+  /* ===== Colors ===== */
+  --bugatti-primary: #ffffff;
+  --bugatti-ink: #ffffff;
+  --bugatti-body: #cccccc;
+  --bugatti-body-strong: #e6e6e6;
+  --bugatti-muted: #999999;
+  --bugatti-muted-soft: #666666;
+  --bugatti-hairline: #262626;
+  --bugatti-hairline-strong: #3a3a3a;
+  --bugatti-canvas: #000000;
+  --bugatti-surface-soft: #0d0d0d;
+  --bugatti-surface-card: #141414;
+  --bugatti-surface-elevated: #1f1f1f;
+  --bugatti-on-primary: #000000;
+  --bugatti-on-dark: #ffffff;
+  --bugatti-on-photo: #ffffff;
+  --bugatti-link: #c3d9f3;
+  --bugatti-warning: #d4a017;
+  --bugatti-success: #5fa657;
+
+  /* ===== Typography ===== */
+  --bugatti-display-xl-fontFamily: Bugatti Display, sans-serif;
+  --bugatti-display-xl-fontSize: 64px;
+  --bugatti-display-xl-fontWeight: 400;
+  --bugatti-display-xl-lineHeight: 1.1;
+  --bugatti-display-xl-letterSpacing: 4px;
+  --bugatti-display-lg-fontFamily: Bugatti Display, sans-serif;
+  --bugatti-display-lg-fontSize: 48px;
+  --bugatti-display-lg-fontWeight: 400;
+  --bugatti-display-lg-lineHeight: 1.15;
+  --bugatti-display-lg-letterSpacing: 3px;
+  --bugatti-display-md-fontFamily: Bugatti Display, sans-serif;
+  --bugatti-display-md-fontSize: 32px;
+  --bugatti-display-md-fontWeight: 400;
+  --bugatti-display-md-lineHeight: 1.2;
+  --bugatti-display-md-letterSpacing: 2px;
+  --bugatti-display-sm-fontFamily: Bugatti Display, sans-serif;
+  --bugatti-display-sm-fontSize: 24px;
+  --bugatti-display-sm-fontWeight: 400;
+  --bugatti-display-sm-lineHeight: 1.3;
+  --bugatti-display-sm-letterSpacing: 1.5px;
+  --bugatti-wordmark-fontFamily: Bugatti Display, serif;
+  --bugatti-wordmark-fontSize: 14px;
+  --bugatti-wordmark-fontWeight: 400;
+  --bugatti-wordmark-lineHeight: 1;
+  --bugatti-wordmark-letterSpacing: 6px;
+  --bugatti-title-md-fontFamily: Bugatti Display, sans-serif;
+  --bugatti-title-md-fontSize: 20px;
+  --bugatti-title-md-fontWeight: 400;
+  --bugatti-title-md-lineHeight: 1.3;
+  --bugatti-title-md-letterSpacing: 1px;
+  --bugatti-title-sm-fontFamily: Bugatti Display, sans-serif;
+  --bugatti-title-sm-fontSize: 16px;
+  --bugatti-title-sm-fontWeight: 400;
+  --bugatti-title-sm-lineHeight: 1.3;
+  --bugatti-title-sm-letterSpacing: 1.5px;
+  --bugatti-caption-uppercase-fontFamily: Bugatti Monospace, ui-monospace, monospace;
+  --bugatti-caption-uppercase-fontSize: 11px;
+  --bugatti-caption-uppercase-fontWeight: 400;
+  --bugatti-caption-uppercase-lineHeight: 1.4;
+  --bugatti-caption-uppercase-letterSpacing: 2px;
+  --bugatti-body-md-fontFamily: Bugatti Text Regular, serif;
+  --bugatti-body-md-fontSize: 16px;
+  --bugatti-body-md-fontWeight: 400;
+  --bugatti-body-md-lineHeight: 1.5;
+  --bugatti-body-md-letterSpacing: 0;
+  --bugatti-body-sm-fontFamily: Bugatti Text Regular, serif;
+  --bugatti-body-sm-fontSize: 14px;
+  --bugatti-body-sm-fontWeight: 400;
+  --bugatti-body-sm-lineHeight: 1.5;
+  --bugatti-body-sm-letterSpacing: 0;
+  --bugatti-button-fontFamily: Bugatti Monospace, ui-monospace, monospace;
+  --bugatti-button-fontSize: 14px;
+  --bugatti-button-fontWeight: 400;
+  --bugatti-button-lineHeight: 1;
+  --bugatti-button-letterSpacing: 2.5px;
+  --bugatti-nav-link-fontFamily: Bugatti Monospace, ui-monospace, monospace;
+  --bugatti-nav-link-fontSize: 12px;
+  --bugatti-nav-link-fontWeight: 400;
+  --bugatti-nav-link-lineHeight: 1.4;
+  --bugatti-nav-link-letterSpacing: 2px;
+}

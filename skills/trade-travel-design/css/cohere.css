@@ -1,0 +1,91 @@
+/* Cohere — 品牌设计CSS变量 */
+/* Cohere's 2026 web system is a controlled enterprise AI interface built from star */
+
+:root {
+  /* ===== Colors ===== */
+  --cohere-primary: #17171c;
+  --cohere-cohere-black: #000000;
+  --cohere-ink: #212121;
+  --cohere-deep-green: #003c33;
+  --cohere-dark-navy: #071829;
+  --cohere-canvas: #ffffff;
+  --cohere-soft-stone: #eeece7;
+  --cohere-pale-green: #edfce9;
+  --cohere-pale-blue: #f1f5ff;
+  --cohere-hairline: #d9d9dd;
+  --cohere-border-light: #e5e7eb;
+  --cohere-card-border: #f2f2f2;
+  --cohere-muted: #93939f;
+  --cohere-slate: #75758a;
+  --cohere-body-muted: #616161;
+  --cohere-action-blue: #1863dc;
+  --cohere-focus-blue: #4c6ee6;
+  --cohere-coral: #ff7759;
+  --cohere-coral-soft: #ffad9b;
+  --cohere-form-focus: #9b60aa;
+  --cohere-on-primary: #ffffff;
+  --cohere-on-dark: #ffffff;
+  --cohere-error: #b30000;
+
+  /* ===== Typography ===== */
+  --cohere-hero-display-fontFamily: CohereText;
+  --cohere-hero-display-fontSize: 96px;
+  --cohere-hero-display-fontWeight: 400;
+  --cohere-hero-display-lineHeight: 1;
+  --cohere-hero-display-letterSpacing: -1.92px;
+  --cohere-product-display-fontFamily: CohereText;
+  --cohere-product-display-fontSize: 72px;
+  --cohere-product-display-fontWeight: 400;
+  --cohere-product-display-lineHeight: 1;
+  --cohere-product-display-letterSpacing: -1.44px;
+  --cohere-section-display-fontFamily: Unica77 Cohere Web;
+  --cohere-section-display-fontSize: 60px;
+  --cohere-section-display-fontWeight: 400;
+  --cohere-section-display-lineHeight: 1;
+  --cohere-section-display-letterSpacing: -1.2px;
+  --cohere-section-heading-fontFamily: Unica77 Cohere Web;
+  --cohere-section-heading-fontSize: 48px;
+  --cohere-section-heading-fontWeight: 400;
+  --cohere-section-heading-lineHeight: 1.2;
+  --cohere-section-heading-letterSpacing: -0.48px;
+  --cohere-card-heading-fontFamily: Unica77 Cohere Web;
+  --cohere-card-heading-fontSize: 32px;
+  --cohere-card-heading-fontWeight: 400;
+  --cohere-card-heading-lineHeight: 1.2;
+  --cohere-card-heading-letterSpacing: -0.32px;
+  --cohere-feature-heading-fontFamily: Unica77 Cohere Web;
+  --cohere-feature-heading-fontSize: 24px;
+  --cohere-feature-heading-fontWeight: 400;
+  --cohere-feature-heading-lineHeight: 1.3;
+  --cohere-feature-heading-letterSpacing: 0;
+  --cohere-body-large-fontFamily: Unica77 Cohere Web;
+  --cohere-body-large-fontSize: 18px;
+  --cohere-body-large-fontWeight: 400;
+  --cohere-body-large-lineHeight: 1.4;
+  --cohere-body-large-letterSpacing: 0;
+  --cohere-body-fontFamily: Unica77 Cohere Web;
+  --cohere-body-fontSize: 16px;
+  --cohere-body-fontWeight: 400;
+  --cohere-body-lineHeight: 1.5;
+  --cohere-body-letterSpacing: 0;
+  --cohere-button-fontFamily: Unica77 Cohere Web;
+  --cohere-button-fontSize: 14px;
+  --cohere-button-fontWeight: 500;
+  --cohere-button-lineHeight: 1.71;
+  --cohere-button-letterSpacing: 0;
+  --cohere-caption-fontFamily: Unica77 Cohere Web;
+  --cohere-caption-fontSize: 14px;
+  --cohere-caption-fontWeight: 400;
+  --cohere-caption-lineHeight: 1.4;
+  --cohere-caption-letterSpacing: 0;
+  --cohere-mono-label-fontFamily: CohereMono;
+  --cohere-mono-label-fontSize: 14px;
+  --cohere-mono-label-fontWeight: 400;
+  --cohere-mono-label-lineHeight: 1.4;
+  --cohere-mono-label-letterSpacing: 0.28px;
+  --cohere-micro-fontFamily: Unica77 Cohere Web;
+  --cohere-micro-fontSize: 12px;
+  --cohere-micro-fontWeight: 400;
+  --cohere-micro-lineHeight: 1.4;
+  --cohere-micro-letterSpacing: 0;
+}

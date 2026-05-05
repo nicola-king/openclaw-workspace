@@ -147,13 +147,25 @@ class CompanyEnricher:
                               if not any(s in e.lower() for s in skip_emails)][:5]
 
             # 提取电话（澳洲格式 +61 / 0x xxxx xxxx）
-            phone_patterns = [
-                r'\+61[\s\-]?\d[\s\-]?\d{4}[\s\-]?\d{4}',
-                r'\(0\d\)\s?\d{4}\s?\d{4}',
-                r'04\d{2}\s?\d{3}\s?\d{3}',
-                r'1300\s?\d{3}\s?\d{3}',
-                r'1800\s?\d{3}\s?\d{3}',
-            ]
+            ALL_PHONE_PATTERNS = [
+    # 澳洲
+    r'\+61[\s\-]?\d[\s\-]?\d{4}[\s\-]?\d{4}',
+    r'\(0\d\)\s?\d{4}\s?\d{4}',
+    r'04\d{2}\s?\d{3}\s?\d{3}',
+    r'1300\s?\d{3}\s?\d{3}',
+    r'1800\s?\d{3}\s?\d{3}',
+    # 中东
+    r'\+966[\s\-]?\d[\s\-]?\d{3}[\s\-]?\d{4}',
+    r'\+971[\s\-]?\d[\s\-]?\d{3}[\s\-]?\d{4}',
+    r'\+974[\s\-]?\d[\s\-]?\d{3}[\s\-]?\d{4}',
+    r'\+965[\s\-]?\d[\s\-]?\d{3}[\s\-]?\d{4}',
+    r'\+968[\s\-]?\d[\s\-]?\d{3}[\s\-]?\d{4}',
+    # 中国
+    r'\+86[\s\-]?\d{3}[\s\-]?\d{4}[\s\-]?\d{4}',
+    # 通用国际
+    r'\+[\d\s\-\(\)]{7,20}',
+    r'\(\d{2,4}\)[\s\-]?\d{3,4}[\s\-]?\d{3,4}',
+]
             for pattern in phone_patterns:
                 phones = re.findall(pattern, html)
                 info["phone_numbers"].extend(phones[:3])

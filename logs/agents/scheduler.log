@@ -30,3 +30,99 @@ Traceback (most recent call last):
     os.mkdir(self, mode)
     ~~~~~~~~^^^^^^^^^^^^
 FileNotFoundError: [Errno 2] No such file or directory: '/home/sayelf/.openclaw/workspace/skills/scheduler-agent/config'
+Traceback (most recent call last):
+  File "/home/sayelf/.openclaw/workspace/skills/intelligent-agents/skills/scheduler-agent/src/scheduler.py", line 649, in <module>
+    main()
+    ~~~~^^
+  File "/home/sayelf/.openclaw/workspace/skills/intelligent-agents/skills/scheduler-agent/src/scheduler.py", line 623, in main
+    scheduler = SchedulerAgent(workspace_root)
+  File "/home/sayelf/.openclaw/workspace/skills/intelligent-agents/skills/scheduler-agent/src/scheduler.py", line 67, in __init__
+    self._load_config()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/home/sayelf/.openclaw/workspace/skills/intelligent-agents/skills/scheduler-agent/src/scheduler.py", line 151, in _load_config
+    self.config_path.parent.mkdir(exist_ok=True)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/pathlib/__init__.py", line 1012, in mkdir
+    os.mkdir(self, mode)
+    ~~~~~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/sayelf/.openclaw/workspace/skills/scheduler-agent/config'
+Traceback (most recent call last):
+  File "/home/sayelf/.openclaw/workspace/skills/intelligent-agents/skills/scheduler-agent/src/scheduler.py", line 649, in <module>
+    main()
+    ~~~~^^
+  File "/home/sayelf/.openclaw/workspace/skills/intelligent-agents/skills/scheduler-agent/src/scheduler.py", line 623, in main
+    scheduler = SchedulerAgent(workspace_root)
+  File "/home/sayelf/.openclaw/workspace/skills/intelligent-agents/skills/scheduler-agent/src/scheduler.py", line 67, in __init__
+    self._load_config()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/home/sayelf/.openclaw/workspace/skills/intelligent-agents/skills/scheduler-agent/src/scheduler.py", line 151, in _load_config
+    self.config_path.parent.mkdir(exist_ok=True)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/pathlib/__init__.py", line 1012, in mkdir
+    os.mkdir(self, mode)
+    ~~~~~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/sayelf/.openclaw/workspace/skills/scheduler-agent/config'
+Traceback (most recent call last):
+  File "/home/sayelf/.openclaw/workspace/skills/intelligent-agents/skills/scheduler-agent/src/scheduler.py", line 649, in <module>
+    main()
+    ~~~~^^
+  File "/home/sayelf/.openclaw/workspace/skills/intelligent-agents/skills/scheduler-agent/src/scheduler.py", line 623, in main
+    scheduler = SchedulerAgent(workspace_root)
+  File "/home/sayelf/.openclaw/workspace/skills/intelligent-agents/skills/scheduler-agent/src/scheduler.py", line 67, in __init__
+    self._load_config()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/home/sayelf/.openclaw/workspace/skills/intelligent-agents/skills/scheduler-agent/src/scheduler.py", line 151, in _load_config
+    self.config_path.parent.mkdir(exist_ok=True)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/pathlib/__init__.py", line 1012, in mkdir
+    os.mkdir(self, mode)
+    ~~~~~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/sayelf/.openclaw/workspace/skills/scheduler-agent/config'
+Traceback (most recent call last):
+  File "/home/sayelf/.openclaw/workspace/skills/intelligent-agents/skills/scheduler-agent/src/scheduler.py", line 649, in <module>
+    main()
+    ~~~~^^
+  File "/home/sayelf/.openclaw/workspace/skills/intelligent-agents/skills/scheduler-agent/src/scheduler.py", line 623, in main
+    scheduler = SchedulerAgent(workspace_root)
+  File "/home/sayelf/.openclaw/workspace/skills/intelligent-agents/skills/scheduler-agent/src/scheduler.py", line 67, in __init__
+    self._load_config()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/home/sayelf/.openclaw/workspace/skills/intelligent-agents/skills/scheduler-agent/src/scheduler.py", line 151, in _load_config
+    self.config_path.parent.mkdir(exist_ok=True)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/pathlib/__init__.py", line 1012, in mkdir
+    os.mkdir(self, mode)
+    ~~~~~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/sayelf/.openclaw/workspace/skills/scheduler-agent/config'
+Traceback (most recent call last):
+  File "/home/sayelf/.openclaw/workspace/skills/intelligent-agents/skills/scheduler-agent/src/scheduler.py", line 649, in <module>
+    main()
+    ~~~~^^
+  File "/home/sayelf/.openclaw/workspace/skills/intelligent-agents/skills/scheduler-agent/src/scheduler.py", line 623, in main
+    scheduler = SchedulerAgent(workspace_root)
+  File "/home/sayelf/.openclaw/workspace/skills/intelligent-agents/skills/scheduler-agent/src/scheduler.py", line 67, in __init__
+    self._load_config()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/home/sayelf/.openclaw/workspace/skills/intelligent-agents/skills/scheduler-agent/src/scheduler.py", line 151, in _load_config
+    self.config_path.parent.mkdir(exist_ok=True)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/pathlib/__init__.py", line 1012, in mkdir
+    os.mkdir(self, mode)
+    ~~~~~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/sayelf/.openclaw/workspace/skills/scheduler-agent/config'
+Traceback (most recent call last):
+  File "/home/sayelf/.openclaw/workspace/skills/intelligent-agents/skills/scheduler-agent/src/scheduler.py", line 649, in <module>
+    main()
+    ~~~~^^
+  File "/home/sayelf/.openclaw/workspace/skills/intelligent-agents/skills/scheduler-agent/src/scheduler.py", line 623, in main
+    scheduler = SchedulerAgent(workspace_root)
+  File "/home/sayelf/.openclaw/workspace/skills/intelligent-agents/skills/scheduler-agent/src/scheduler.py", line 67, in __init__
+    self._load_config()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/home/sayelf/.openclaw/workspace/skills/intelligent-agents/skills/scheduler-agent/src/scheduler.py", line 151, in _load_config
+    self.config_path.parent.mkdir(exist_ok=True)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/pathlib/__init__.py", line 1012, in mkdir
+    os.mkdir(self, mode)
+    ~~~~~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/sayelf/.openclaw/workspace/skills/scheduler-agent/config'

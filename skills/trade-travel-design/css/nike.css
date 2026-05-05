@@ -1,0 +1,98 @@
+/* Nike — 品牌设计CSS变量 */
+/* A photography-first commerce system built on extreme typographic contrast — towe */
+
+:root {
+  /* ===== Colors ===== */
+  --nike-primary: #111111;
+  --nike-on-primary: #ffffff;
+  --nike-canvas: #ffffff;
+  --nike-soft-cloud: #f5f5f5;
+  --nike-ink: #111111;
+  --nike-charcoal: #39393b;
+  --nike-ash: #4b4b4d;
+  --nike-mute: #707072;
+  --nike-stone: #9e9ea0;
+  --nike-hairline: #cacacb;
+  --nike-hairline-soft: #e5e5e5;
+  --nike-sale: #d30005;
+  --nike-sale-deep: #780700;
+  --nike-success: #007d48;
+  --nike-success-bright: #1eaa52;
+  --nike-info: #1151ff;
+  --nike-info-deep: #0034e3;
+  --nike-accent-pink: #ed1aa0;
+  --nike-accent-pink-soft: #ffb0dd;
+  --nike-accent-purple-soft: #beaffd;
+  --nike-accent-purple-pale: #d6d1ff;
+  --nike-accent-teal: #0a7281;
+  --nike-accent-pink-deep: #4c012d;
+
+  /* ===== Typography ===== */
+  --nike-display-campaign-fontFamily: Nike Futura ND;
+  --nike-display-campaign-fontSize: 96px;
+  --nike-display-campaign-fontWeight: 500;
+  --nike-display-campaign-lineHeight: 0.9;
+  --nike-display-campaign-letterSpacing: 0;
+  --nike-display-campaign-textTransform: uppercase;
+  --nike-heading-xl-fontFamily: Helvetica Now Display Medium;
+  --nike-heading-xl-fontSize: 32px;
+  --nike-heading-xl-fontWeight: 500;
+  --nike-heading-xl-lineHeight: 1.2;
+  --nike-heading-xl-letterSpacing: 0;
+  --nike-heading-lg-fontFamily: Helvetica Now Display Medium;
+  --nike-heading-lg-fontSize: 24px;
+  --nike-heading-lg-fontWeight: 500;
+  --nike-heading-lg-lineHeight: 1.2;
+  --nike-heading-lg-letterSpacing: 0;
+  --nike-heading-md-fontFamily: Helvetica Now Display Medium;
+  --nike-heading-md-fontSize: 16px;
+  --nike-heading-md-fontWeight: 500;
+  --nike-heading-md-lineHeight: 1.75;
+  --nike-heading-md-letterSpacing: 0;
+  --nike-body-md-fontFamily: Helvetica Now Text;
+  --nike-body-md-fontSize: 16px;
+  --nike-body-md-fontWeight: 400;
+  --nike-body-md-lineHeight: 1.5;
+  --nike-body-md-letterSpacing: 0;
+  --nike-body-strong-fontFamily: Helvetica Now Text Medium;
+  --nike-body-strong-fontSize: 16px;
+  --nike-body-strong-fontWeight: 500;
+  --nike-body-strong-lineHeight: 1.5;
+  --nike-body-strong-letterSpacing: 0;
+  --nike-button-lg-fontFamily: Helvetica Now Display Medium;
+  --nike-button-lg-fontSize: 24px;
+  --nike-button-lg-fontWeight: 500;
+  --nike-button-lg-lineHeight: 1.2;
+  --nike-button-lg-letterSpacing: 0;
+  --nike-button-md-fontFamily: Helvetica Now Text Medium;
+  --nike-button-md-fontSize: 16px;
+  --nike-button-md-fontWeight: 500;
+  --nike-button-md-lineHeight: 1.5;
+  --nike-button-md-letterSpacing: 0;
+  --nike-button-sm-fontFamily: Helvetica Now Text Medium;
+  --nike-button-sm-fontSize: 14px;
+  --nike-button-sm-fontWeight: 500;
+  --nike-button-sm-lineHeight: 1.5;
+  --nike-button-sm-letterSpacing: 0;
+  --nike-link-md-fontFamily: Helvetica Now Text;
+  --nike-link-md-fontSize: 16px;
+  --nike-link-md-fontWeight: 500;
+  --nike-link-md-lineHeight: 1.75;
+  --nike-link-md-letterSpacing: 0;
+  --nike-link-md-textDecoration: underline;
+  --nike-caption-md-fontFamily: Helvetica Now Text Medium;
+  --nike-caption-md-fontSize: 14px;
+  --nike-caption-md-fontWeight: 500;
+  --nike-caption-md-lineHeight: 1.5;
+  --nike-caption-md-letterSpacing: 0;
+  --nike-caption-sm-fontFamily: Helvetica Now Text Medium;
+  --nike-caption-sm-fontSize: 12px;
+  --nike-caption-sm-fontWeight: 500;
+  --nike-caption-sm-lineHeight: 1.5;
+  --nike-caption-sm-letterSpacing: 0;
+  --nike-utility-xs-fontFamily: Helvetica Neue;
+  --nike-utility-xs-fontSize: 9px;
+  --nike-utility-xs-fontWeight: 500;
+  --nike-utility-xs-lineHeight: 1.75;
+  --nike-utility-xs-letterSpacing: 0;
+}

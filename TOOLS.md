@@ -116,5 +116,23 @@ Add whatever helps you do your job. This is your cheat sheet.
 
 ---
 
-*更新时间：2026-03-27 21:03*
+---
+
+## 🌐 本地代理配置
+
+> 状态：✅ 白名单（有意配置，非遗留污染）
+
+| 项目 | 配置 |
+|------|------|
+| **类型** | Clash（本地代理） |
+| **地址** | `127.0.0.1:7890` |
+| **用途** | Gateway 对外请求（Telegram API / 飞书 API / 外网访问）|
+| **配置位置** | `~/.config/systemd/user/openclaw-gateway.service` 中的 `Environment=` 字段 |
+| **白名单理由** | SAYELF 确认：此为有意配置，不清理 |
+
+**doctor 检查处理**：该配置被 OpenClaw doctor 标记为非标准，已确认忽略。
+
+---
+
+*更新时间：2026-05-05 20:40*
 *登录方式：Telegram 账号*

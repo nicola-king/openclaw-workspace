@@ -1,0 +1,76 @@
+/* OpenCode — 品牌设计CSS变量 */
+/* A terminal-native marketing system rendered entirely in Berkeley Mono — every wo */
+
+:root {
+  /* ===== Colors ===== */
+  --opencode.ai-primary: #201d1d;
+  --opencode.ai-on-primary: #fdfcfc;
+  --opencode.ai-ink: #201d1d;
+  --opencode.ai-ink-deep: #0f0000;
+  --opencode.ai-charcoal: #302c2c;
+  --opencode.ai-body: #424245;
+  --opencode.ai-mute: #646262;
+  --opencode.ai-stone: #6e6e73;
+  --opencode.ai-ash: #9a9898;
+  --opencode.ai-canvas: #fdfcfc;
+  --opencode.ai-surface-soft: #f8f7f7;
+  --opencode.ai-surface-card: #f1eeee;
+  --opencode.ai-surface-dark: #201d1d;
+  --opencode.ai-surface-dark-elevated: #302c2c;
+  --opencode.ai-hairline: rgba(15,0,0,0.12);
+  --opencode.ai-hairline-strong: #646262;
+  --opencode.ai-on-dark: #fdfcfc;
+  --opencode.ai-on-dark-mute: #9a9898;
+  --opencode.ai-accent: #007aff;
+  --opencode.ai-accent-hover: #0056b3;
+  --opencode.ai-accent-active: #004085;
+  --opencode.ai-warning: #ff9f0a;
+  --opencode.ai-warning-hover: #cc7f08;
+  --opencode.ai-warning-active: #995f06;
+  --opencode.ai-danger: #ff3b30;
+  --opencode.ai-danger-hover: #d70015;
+  --opencode.ai-danger-active: #a50011;
+  --opencode.ai-success: #30d158;
+
+  /* ===== Typography ===== */
+  --opencode.ai-display-xl-fontFamily: Berkeley Mono;
+  --opencode.ai-display-xl-fontSize: 38px;
+  --opencode.ai-display-xl-fontWeight: 700;
+  --opencode.ai-display-xl-lineHeight: 1.5;
+  --opencode.ai-display-xl-letterSpacing: 0;
+  --opencode.ai-heading-md-fontFamily: Berkeley Mono;
+  --opencode.ai-heading-md-fontSize: 16px;
+  --opencode.ai-heading-md-fontWeight: 700;
+  --opencode.ai-heading-md-lineHeight: 1.5;
+  --opencode.ai-heading-md-letterSpacing: 0;
+  --opencode.ai-body-md-fontFamily: Berkeley Mono;
+  --opencode.ai-body-md-fontSize: 16px;
+  --opencode.ai-body-md-fontWeight: 400;
+  --opencode.ai-body-md-lineHeight: 1.5;
+  --opencode.ai-body-md-letterSpacing: 0;
+  --opencode.ai-body-strong-fontFamily: Berkeley Mono;
+  --opencode.ai-body-strong-fontSize: 16px;
+  --opencode.ai-body-strong-fontWeight: 500;
+  --opencode.ai-body-strong-lineHeight: 1.5;
+  --opencode.ai-body-strong-letterSpacing: 0;
+  --opencode.ai-body-tight-fontFamily: Berkeley Mono;
+  --opencode.ai-body-tight-fontSize: 16px;
+  --opencode.ai-body-tight-fontWeight: 500;
+  --opencode.ai-body-tight-lineHeight: 1;
+  --opencode.ai-body-tight-letterSpacing: 0;
+  --opencode.ai-link-md-fontFamily: Berkeley Mono;
+  --opencode.ai-link-md-fontSize: 16px;
+  --opencode.ai-link-md-fontWeight: 400;
+  --opencode.ai-link-md-lineHeight: 1.5;
+  --opencode.ai-link-md-letterSpacing: 0;
+  --opencode.ai-button-md-fontFamily: Berkeley Mono;
+  --opencode.ai-button-md-fontSize: 16px;
+  --opencode.ai-button-md-fontWeight: 500;
+  --opencode.ai-button-md-lineHeight: 2;
+  --opencode.ai-button-md-letterSpacing: 0;
+  --opencode.ai-caption-md-fontFamily: Berkeley Mono;
+  --opencode.ai-caption-md-fontSize: 14px;
+  --opencode.ai-caption-md-fontWeight: 400;
+  --opencode.ai-caption-md-lineHeight: 2;
+  --opencode.ai-caption-md-letterSpacing: 0;
+}
