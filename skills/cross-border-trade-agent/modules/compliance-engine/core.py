@@ -241,3 +241,38 @@ if __name__ == "__main__":
     engine = ComplianceEngine()
     result = engine.check("折叠房屋", "Australia", "9406.00")
     print(json.dumps(result, ensure_ascii=False, indent=2))
+
+# ========= 出口退税模块 (v2 add-on) =========
+
+class ExportRebateChecker:
+    """出口退税查询 & 政策提醒"""
+
+    HS_REBATE_MAP = {
+        "73089000": {"name": "钢铁结构体", "rebate": 9, "note": "2025A版，9%稳定"},
+        "94069000": {"name": "其他预制房屋", "rebate": 13, "note": "2025A版，部分子目13%"},
+        "73082000": {"name": "钢铁塔楼", "rebate": 9, "note": ""},
+    }
+
+    POLICY_ALERTS = [
+        {"date": "2025-03", "title": "出口退税率文库2025A版发布", "affects": "全部钢制品HS编码"},
+        {"date": "2024-12", "title": "钢铁产品退税调整预警", "affects": "7308系列可能下调"},
+    ]
+
+    @classmethod
+    def check(cls, hs_code: str) -> dict:
+        info = cls.HS_REBATE_MAP.get(hs_code, {})
+        if not info:
+            return {"hs_code": hs_code, "found": False, "message": "未知HS编码"}
+        return {
+            "hs_code": hs_code,
+            "found": True,
+            "product": info["name"],
+            "rebate_rate_pct": info["rebate"],
+            "vat_rate_pct": 13,
+            "note": info["note"],
+            "calculation": f"退税 = 工厂开票额 / 1.13 × {info['rebate']}%",
+        }
+
+    @classmethod
+    def alerts(cls) -> list:
+        return cls.POLICY_ALERTS
