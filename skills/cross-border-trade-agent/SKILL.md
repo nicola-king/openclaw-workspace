@@ -9,7 +9,8 @@ status: active
 
 # 跨境贸易 Agent v11.0 — 分层架构
 
-> 架构标准，以此为准
+> v11 = v10 全部 18 模块 + 分层架构重组
+> 无功能丢失，所有模块代码保留在 `modules/`，通过 `agents/` 接入分层体系
 
 ## 架构总览
 
@@ -17,14 +18,23 @@ status: active
 🏢 总Agent（太一）
 调度 / 报告聚合 / 自进化 / 资源仲裁
 │
-├── 共享Agent x3
+├── 基础设施层
+│   ├── cross-border-core      核心框架/事件总线/Bot协作
+│   ├── data-integrator        7大数据源整合
+│   └── task-scheduler         定时任务调度
+│
+├── 共享Agent x5
 │   ├── 情报Agent    — 竞品监控 + 市场分析 + 趋势预警
 │   ├── 富化Agent    — 公司清洗 + 7源验证 + 信息增强
-│   └── 履约Agent    — 供应链 + 支付 + 合同 + 物流
+│   ├── 履约Agent    — 供应链 + 支付 + 合同 + 物流
+│   ├── 风控Agent    — 风险识别 + 对冲策略 + 二阶思维
+│   └── 进化Agent    — 技能结晶 + 浏览器自愈 + Token优化
 │
-├── 共享Skills x7
+├── 共享Skills x11
 │   web_crawler · company_verify · linkedin_search
 │   contact_enrich · db_writer · report_engine · geo_optimizer
+│   real_data_verify · data_integrator · culture_adapter
+│   payment_settle
 │
 ├── 常规工业品Agent
 │   Skills: amazon_radar · source_matcher · listing_optimizer
@@ -33,15 +43,83 @@ status: active
 │           catalog_pusher · stock_alert · quick_quote
 │   策略：富化输出100家 → 批量开发信 → 48h全发 → 快速报价
 │
-└── 定制产品Agent
-    Skills: persona_builder · solution_composer · rfq_parser
-            relationship_log · sample_tracker · tech_doc_pack
-    ├── 钢结构集成房：project_radar / spec_builder / compliance_check
-    ├── 变压器：tender_monitor / cert_tracker / load_calculator
-    ├── 摩配汽配：oem_matcher / catalog_builder / warranty_tracker
-    └── 储能：policy_radar / roi_calculator / bms_spec_parser
-    策略：富化输出10家 → 深度画像 → 1对1方案 → 长周期跟进
+├── 定制产品Agent
+│   Skills: persona_builder · solution_composer · rfq_parser
+│           relationship_log · sample_tracker · tech_doc_pack
+│   ├── 钢结构集成房：project_radar / spec_builder / compliance_check
+│   ├── 变压器：tender_monitor / cert_tracker / load_calculator
+│   ├── 摩配汽配：oem_matcher / catalog_builder / warranty_tracker
+│   └── 储能：policy_radar / roi_calculator / bms_spec_parser
+│   策略：富化输出10家 → 深度画像 → 1对1方案 → 长周期跟进
+│
+└── 转化优化中心
+    ├── conversion-optimizer   漏斗分析/ROI/渠道对比/AB测试
+    └── transaction-support    物流优化/比价/销售预测/多语言
 ```
+
+## 完整模块全景（v10 全部保留 + v11 新增）
+
+### P0 — 核心产品（买家情报平台）
+
+| 模块 | 功能 | 位置 | 来源 |
+|------|------|------|------|
+| 买家情报引擎 | 项目雷达/采购机会/人脉库/订阅 | `modules/buyer-intel/` | v11新增 |
+| 订阅计费 | 3级方案(free/¥299/¥999) | `modules/buyer-intel/subscriptions/` | v11新增 |
+| 情报验证管道 | 5项验证→可信度评分 | `modules/buyer-intel/` | v11新增 |
+| 工厂触达记录 | 触达→跟进→成单追踪 | `modules/buyer-intel/data/outreach.json` | v11新增 |
+
+### P1 — 情报与搜索
+
+| 模块 | 功能 | 位置 | 来源 |
+|------|------|------|------|
+| 贵客之路(guike-zhilu) | 搜索→清洗→触达→培育闭环 | `modules/guike-zhilu/` | v10 |
+| 情报中心(intelligence-hub) | 竞品监控/趋势预警/选品评分 | `modules/intelligence-hub/` | v10 |
+| 多源搜索增强 | 12国搜索资源/SERP/黄页 | `modules/guike-zhilu/multi_source_search.py` | v10 |
+| 搜索Agent v4 | Scrapling自适应搜索 | `scripts/scraper_v4.py` | v11新增 |
+| GEO优化(geo-outbound) | 市场分析/潜客名单/内容营销 | `modules/geo-outbound/` | v10 |
+| 公司富化(company-enricher) | 自动爬虫/搜索/A BN查询/验证 | `modules/company-enricher/` | v10 |
+
+### P2 — 业务工具（服务层）
+
+| 模块 | 功能 | 位置 | 来源 |
+|------|------|------|------|
+| 报价引擎 v2 | FOB/CFR/到岸价 + 退税13%/9% | `modules/quote-engine/` | v10→v11增强 |
+| 合同模板 | 14章中英双语 + SASO/SIAC仲裁 | `modules/contract-legal/` | v10 |
+| 合规引擎 | HS退税查询 + SASO合规 | `modules/compliance-engine/` | v10 |
+| 供应商匹配 | 9家工厂评分排名 | `modules/supplier-matcher/` | v11新增 |
+| 产品目录RAG | TF-IDF+买家需求匹配 | `modules/product-catalog/` | v11新增 |
+
+### P2 — 交易与履约
+
+| 模块 | 功能 | 位置 | 来源 |
+|------|------|------|------|
+| 交易支持(transaction-support) | 物流优化/比价/销售预测/多语言客服 | `modules/transaction-support/` | v10 |
+| 供应链(supply-chain) | 供应商管理/库存优化/需求预测 | `modules/supply-chain/` | v10 |
+| 支付结算(payment-settlement) | 支付通道/汇率管理/结算优化 | `modules/payment-settlement/` | v10 |
+
+### P2 — 转化与优化
+
+| 模块 | 功能 | 位置 | 来源 |
+|------|------|------|------|
+| 转化优化(conversion-optimizer) | 漏斗分析/ROI追踪/渠道对比/AB测试 | `modules/conversion-optimizer/` | v10 |
+| 跨文化适配(cultural-adapter) | 内容本地化/多语言/SEO/文化分析 | `modules/cultural-adapter/` | v10 |
+
+### P2 — 风控与进化
+
+| 模块 | 功能 | 位置 | 来源 |
+|------|------|------|------|
+| 风险管理(risk-manager) | 风险识别/预警/对冲策略/二阶思维 | `modules/risk-manager/` | v10 |
+| 自我进化(self-evolution) | 技能结晶/浏览器自愈/Token效率 | `modules/self-evolution/` | v10 |
+| 真实数据验证(real-data-verifier) | 公司/电话/邮箱/官网 单项验证 | `modules/real-data-verifier/` | v10 |
+
+### P3 — 基础设施
+
+| 模块 | 功能 | 位置 | 来源 |
+|------|------|------|------|
+| 核心框架(cross-border-core) | 路由/调度/事件总线/Bot协作 | `modules/cross-border-core/` | v10 |
+| 数据整合(data-integrator) | 7源整合(海关/电商/搜索/报告/物流/广告) | `modules/data-integrator/` | v10 |
+| 任务调度(task-scheduler) | 定时任务/自检/推送/SimpleCron | `modules/task-scheduler/` | v10 |
+| 报告引擎(report-engine) | 智能报告/ES引擎/Markdown生成 | `modules/report-engine/` | v10 |
 
 ## 治理规则
 
@@ -51,7 +129,9 @@ status: active
 | 推送你确认 | 新品市场 / 方案模板大改 / 触达策略调整 | 推你决策 |
 | 硬锁定 | 报价参数 / 合同条款 / 财务承诺 | 不可更改 |
 
-## 模块更新（2026-05-06）
+---
+
+## 模块详述
 
 ### 报价引擎 v2 — 含出口退税
 
@@ -79,60 +159,116 @@ HS编码库：
 
 ### 架构集成（卖家视角）
 
-参照用户设计架构，叠加能力层：
 ```
 ┌─ 对话层 ─────────────────┐
 │ 意图识别 → RAG知识检索    │ ← 待建
 └──────────────────────────┘
 ┌─ 业务工具层 ──────────────┘
-│ 报价引擎(含退税)  ✅ 已建  │
-│ 合规检查(SASO+退税) ✅ 已建│
-│ 产品目录RAG         ✅ 已建│
-│ 供应商匹配           ⏳ 待建│
-│ 合同模板             ⏳ 待建│
+│ 报价引擎(含退税)        ✅ │
+│ 合规检查(SASO+退税)     ✅ │
+│ 产品目录RAG             ✅ │
+│ 供应商匹配              ✅ │
+│ 合同模板                ✅ │
+│ 转化优化(漏斗/ROI/AB)   ✅ │
+│ 交易支持(物流/比价/预测) ✅ │
+│ 跨文化适配(本地化/多语言) ✅ │
+│ 风险管理(预警/对冲)      ✅ │
+│ 供应链(库存/需求预测)    ✅ │
+│ 支付结算(汇率/通道)      ✅ │
 └──────────────────────────┘
 ```
 
 ## 定时任务
 
-| 时间 | 任务 | 推送 |
-|------|------|------|
-| 03:00 | Git备份 | 静默 |
-| 06:00 | 自进化引擎 | 静默 |
-| 07:00 | 情报Agent备料 | 静默 |
-| 08:00 | 晨间简报 | 推送你 |
-| 09:00 | 富化Agent | 静默 |
-| 12:00 | 触达Agent开发信 | 静默 |
-| 14:00 | GEO优化报告 | 推送你 |
-| 14:30 | 触达Agent发送 | 静默 |
-| 18:00 | 竞品监控日报 | 推送你 |
-| 每小时 | 健康检查+调度 | 静默 |
-| 周一09:00 | 周度分析 | 推送你 |
-| 每月1日 | 月度报告 | 推送你 |
+| 时间 | 任务 | 模块 | 推送 |
+|------|------|------|------|
+| 03:00 | Git备份 | task-scheduler | 静默 |
+| 06:00 | 自进化引擎 | self-evolution | 静默 |
+| 07:00 | 情报Agent备料 | intelligence-hub | 静默 |
+| 08:00 | 晨间简报 | report-engine | 推送你 |
+| 09:00 | 富化Agent | company-enricher | 静默 |
+| 12:00 | 触达Agent开发信 | guike-zhilu | 静默 |
+| 14:00 | GEO优化报告 | geo-outbound | 推送你 |
+| 14:30 | 触达Agent发送 | guike-zhilu | 静默 |
+| 18:00 | 竞品监控日报 | intelligence-hub | 推送你 |
+| 每小时 | 健康检查+调度 | task-scheduler | 静默 |
+| 周一09:00 | 周度分析 | report-engine | 推送你 |
+| 每月1日 | 月度报告 | report-engine | 推送你 |
 
-## 目录说明
+## 目录说明（物理结构）
 
 ```
-agents/                          # v11 架构目录（标准结构）
-├── shared/                      # 共享Agent层（symlink → 已有模块）
-│   ├── intelligence/            #   情报Agent
-│   ├── enrichment/              #   富化Agent
-│   └── fulfillment/             #   履约Agent
-├── skills/                      # 共享Skills池（7个）
+agents/                          # v11 分层架构（symlink → 已有模块）
+│
+├── infrastructure/              # 基础设施层
+│   ├── core                     → modules/cross-border-core
+│   ├── data-integrator          → modules/data-integrator
+│   └── scheduler                → modules/task-scheduler
+│
+├── shared/intelligence/         # 情报Agent ×5
+│   ├── core                     → modules/intelligence-hub
+│   ├── guike                    → modules/guike-zhilu
+│   ├── geo                      → modules/geo-outbound
+│   └── buyer-intel              → modules/buyer-intel
+│
+├── shared/enrichment/           # 富化Agent
+│   ├── company-enricher         → modules/company-enricher
+│   └── verifier                 → modules/real-data-verifier
+│
+├── shared/fulfillment/          # 履约Agent
+│   ├── transaction              → modules/transaction-support
+│   ├── supply-chain             → modules/supply-chain
+│   ├── payment                  → modules/payment-settlement
+│   └── contract                 → modules/contract-legal
+│
+├── shared/risk/                 # 风控Agent
+│   └── core                     → modules/risk-manager
+│
+├── shared/evolution/            # 进化Agent
+│   ├── core                     → modules/self-evolution
+│   └── scheduler                → modules/task-scheduler
+│
+├── services/                    # 业务工具服务层
+│   ├── quote-engine             → modules/quote-engine
+│   ├── product-catalog          → modules/product-catalog
+│   ├── supplier-matcher         → modules/supplier-matcher
+│   └── compliance-engine        → modules/compliance-engine
+│
+├── conversion/                  # 转化优化中心
+│   ├── optimizer                → modules/conversion-optimizer
+│   ├── cultural                 → modules/cultural-adapter
+│   └── transaction              → modules/transaction-support
+│
+├── skills/                      # 共享Skills池（11个，symlink）
+│   ├── web_crawler              → scripts/scraper_v4.py
+│   ├── linkedin_search          → skills/shared-search-agent
+│   ├── contact_enrich           → modules/company-enricher
+│   ├── report_engine            → modules/report-engine
+│   ├── geo_optimizer            → modules/geo-outbound
+│   ├── real_data_verify         → modules/real-data-verifier
+│   ├── data_integrator          → modules/data-integrator
+│   ├── culture_adapter          → modules/cultural-adapter
+│   ├── payment_settle           → modules/payment-settlement
+│   ├── cross-border-core        → modules/cross-border-core
+│   └── db_writer                → modules/data-integrator
+│
 ├── standard-products/           # 常规工业品Agent
-│   ├── orchestrator.py          #   调度编排器
-│   └── skills/                  #   12个技能目录
+│   ├── orchestrator.py
+│   └── skills/                  (12 README)
+│
 └── custom-products/             # 定制产品Agent
-    ├── orchestrator.py          #   调度编排器
-    ├── skills/                  #   6个通用技能
-    └── categories/              #   4品类x3技能
-        ├── steel-structure/
-        ├── transformer/
-        ├── auto-parts/
-        └── energy-storage/
+    ├── orchestrator.py
+    ├── skills/                  (6 README)
+    └── categories/              (4品类x3技能 README)
 
-modules/                         # 已有模块（保留，被agents/引用）
-docs/agent-architecture-v11.md   # 完整架构文档
+modules/                         # 全部22个模块代码（symlink源）
+├── buyer-intel / quote-engine / product-catalog / supplier-matcher
+├── contract-legal / compliance-engine / company-enricher
+├── intelligence-hub / guike-zhilu / geo-outbound
+├── cross-border-core / data-integrator / conversion-optimizer
+├── transaction-support / self-evolution / real-data-verifier
+├── task-scheduler / risk-manager / cultural-adapter
+├── supply-chain / payment-settlement / report-engine
 ```
 
 ## 情报分发
@@ -271,21 +407,45 @@ docs/agent-architecture-v11.md   # 完整架构文档
 └─────────────────────────────────────────────┘
 ```
 
-## 模块全景
+## 模块全景（完整）
 
 ```
-买家情报引擎  ✅ 核心产品  ← 工厂付钱买这个
-├─ 项目雷达   ✅ 建设中的项目监控
-├─ 采购机会   ✅ 当前急需采购品类
-├─ 人脉库     ✅ 已验证联系人
-├─ 订阅控制   ✅ 三级权限
+P0 买家情报引擎    ✅  ← 工厂付钱买这个
+├─ 项目雷达        ✅
+├─ 采购机会        ✅
+├─ 人脉库          ✅
+├─ 订阅控制        ✅（3级权限）
 │
-服务层（增值，随订阅附送）:
-├─ 报价引擎   ✅
-├─ 合同模板   ✅
-├─ 合规引擎   ✅
-├─ 供应商匹配 ✅
-└─ 产品目录   ✅
+P1 情报与搜索
+├─ 贵客之路        ✅（搜索→清洗→触达→培育）
+├─ 情报中心        ✅（竞品/趋势/选品）
+├─ 多源搜索        ✅（12国搜索引擎+黄页）
+├─ 搜索Agent v4    ✅（Scrapling自适应）
+├─ GEO优化         ✅
+└─ 公司富化        ✅
+│
+P2 业务工具（服务层）
+├─ 报价引擎 v2     ✅（含退税）
+├─ 合同模板        ✅（中东专版）
+├─ 合规引擎        ✅
+├─ 供应商匹配      ✅
+├─ 产品目录RAG     ✅
+├─ 转化优化        ✅（漏斗/ROI/AB测试）
+├─ 交易支持        ✅（物流/比价/预测/多语言）
+├─ 跨文化适配      ✅（本地化/多语言/SEO）
+│
+P2 风控与进化
+├─ 风险管理        ✅（预警/对冲/二阶思维）
+├─ 自我进化        ✅（技能结晶/浏览器自愈）
+├─ 真实数据验证    ✅（官网/电话/邮箱/公司）
+│
+P3 基础设施
+├─ 核心框架        ✅（路由/调度/Bot协作）
+├─ 数据整合        ✅（7源：海关/电商/搜索/报告）
+├─ 任务调度        ✅（定时任务/自检/推送）
+├─ 支付结算        ✅（汇率/通道/结算）
+├─ 供应链          ✅（库存/需求预测）
+└─ 报告引擎        ✅
 ```
 
 ### buyer-intel 新增能力
