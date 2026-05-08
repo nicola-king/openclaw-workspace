@@ -152,6 +152,121 @@ class IntelligenceHub:
             }
         }
     
+
+    # ═══════════════════════════════════════════
+    # 5 版块归一化 (AI HOT 模式)
+    # 所有情报最终归到 5 个标准版块
+    # ═══════════════════════════════════════════
+
+    BUCKETS = {
+        "competitors": {"label": "竞品动态", "keywords": ["竞品", "competitor", "新品", "价格变动"]},
+        "tenders":    {"label": "招标信息", "keywords": ["招标", "tender", "采购", "项目"]},
+        "policies":   {"label": "政策法规", "keywords": ["关税", "tax", "政策", "certification", "合规", "标准"]},
+        "trends":     {"label": "行业趋势", "keywords": ["趋势", "趋势", "growth", "market", "机会", "预测"]},
+        "leads":      {"label": "买家线索", "keywords": ["线索", "lead", "买家", "客户", "采购需求", "需求"]},
+    }
+
+    def normalize(self, raw_info: dict) -> dict:
+        """
+        将任意原始情报归一化到 5 个版块之一
+        
+        输入: 原始情报字典（含 title / summary / source 等字段）
+        输出: 归一化后的情报（含 bucket / title / summary / source / url / date）
+        """
+        title = (raw_info.get("title") or raw_info.get("name") or "").lower()
+        summary = (raw_info.get("summary") or raw_info.get("description") or "").lower()
+        text = title + " " + summary
+
+        # 根据关键词匹配到对应版块
+        bucket = "other"
+        for bkid, spec in self.BUCKETS.items():
+            for kw in spec.get("keywords", []):
+                if kw.lower() in text:
+                    bucket = bkid
+                    break
+            if bucket != "other":
+                break
+
+        return {
+            "bucket": bucket,
+            "bucket_label": self.BUCKETS.get(bucket, {"label": "其他"})["label"],
+            "title": raw_info.get("title") or raw_info.get("name", ""),
+            "summary": raw_info.get("summary") or raw_info.get("description", ""),
+            "source": raw_info.get("source") or raw_info.get("sourceUrl", ""),
+            "url": raw_info.get("url") or raw_info.get("sourceUrl", ""),
+            "date": raw_info.get("date") or raw_info.get("publishedAt", ""),
+        }
+
+    def feed(self, mode="selected", bucket=None, days=7, **kwargs):
+        """
+        统一情报 Feed — 三层路由 + 5 版块筛选
+
+        mode:
+          selected — 精选（已验证+活跃，默认）
+          daily    — 按版块打包的聚合报告
+          all      — 全量（含未验证的冷情报）
+
+        bucket:
+          competitors / tenders / policies / trends / leads
+          不传则返回全部 5 个版块
+        """
+        # 模拟数据源（TODO: 接入真实数据源）
+        samples = self._load_samples()
+
+        # 归一化
+        normalized = [self.normalize(s) for s in samples]
+
+        # 按版块筛选
+        if bucket and bucket in self.BUCKETS:
+            normalized = [x for x in normalized if x["bucket"] == bucket]
+
+        if mode == "selected":
+            # 精选 = 有可信来源+有日期的
+            hot = [x for x in normalized if x.get("source") and x.get("date")]
+            if not hot:
+                hot = normalized[:5]
+            return self._format_selected(hot, days)
+        elif mode == "daily":
+            return self._format_daily(normalized, bucket)
+        else:
+            return self._format_all(normalized)
+
+    def _format_selected(self, items, days):
+        imported = []
+        from datetime import datetime, timedelta
+        cutoff = datetime.now() - timedelta(days=days)
+        for x in items:
+            try:
+                d = datetime.strptime(x["date"][:10], "%Y-%m-%d")
+                if d >= cutoff:
+                    imported.append(x)
+            except:
+                imported.append(x)
+        return {"mode": "selected", "count": len(imported), "items": imported[:50]}
+
+    def _format_daily(self, items, filter_bucket):
+        """按版块打包聚合"""
+        groups = {}
+        for x in items:
+            b = x["bucket"]
+            if b not in groups:
+                groups[b] = {"label": x["bucket_label"], "items": []}
+            groups[b]["items"].append(x)
+        return {"mode": "daily", "date": __import__("datetime").datetime.now().strftime("%Y-%m-%d"), "groups": dict(groups)}
+
+    def _format_all(self, items):
+        return {"mode": "all", "count": len(items), "items": items[:100]}
+
+    def _load_samples(self):
+        """加载示例情报（TODO: 接入 data-integrator 7 源）"""
+        return [
+            {"title": "沙特 NEOM 项目发布钢结构采购招标", "summary": "预算 2.5 亿美元，钢结构折叠房屋", "source": "etimad.sa", "url": "", "date": "2026-05-07"},
+            {"title": "土耳其 Karmod 在中东拿下 3 个新订单", "summary": "竞品动态：Karmod 中东订单量增长 40%", "source": "LinkedIn", "url": "", "date": "2026-05-06"},
+            {"title": "SASO 更新建筑产品合规要求", "summary": "新政：钢结构产品需新增防火认证", "source": "SASO", "url": "", "date": "2026-05-05"},
+            {"title": "中东建筑市场年增长 15%", "summary": "GCC 国家 2026 年建筑业规模预测", "source": "MEED", "url": "", "date": "2026-05-04"},
+            {"title": "伊拉克 21 城重建计划新增 3 个住宅区", "summary": "采购需求：5 万套模块化住房", "source": "Gov.IQ", "url": "", "date": "2026-05-03"},
+        ]
+
     def health_check(self) -> Dict[str, Any]:
         """健康检查"""
         return {

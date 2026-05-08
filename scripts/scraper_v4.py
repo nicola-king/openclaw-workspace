@@ -341,6 +341,34 @@ def _extract_results_bing(html: str, count: int = 10) -> list:
     return results
 
 # ── 搜索函数 ──
+
+def _extract_results_google(html: str, count: int = 10) -> list:
+    """提取 Google 搜索结果"""
+    results, seen = [], set()
+    # Google 结果模式
+    blocks = re.findall(
+        '<a[^>]*href="/url\\?q=([^"&]+)[^"]*"[^>]*>(.*?)</a>',
+        html, re.DOTALL
+    )
+    for url_raw, title_raw in blocks:
+        title = re.sub(r'<[^>]+>', '', title_raw).strip()
+        if not title or len(title) < 5:
+            continue
+        url = urllib.parse.unquote(url_raw)
+        if not url or url in seen or any(d in url for d in ['google.com','youtube.com','accounts.google']):
+            continue
+        seen.add(url)
+        results.append({"title": title, "url": url, "snippet": ""})
+        if len(results) >= count:
+            break
+    # 补 snippet
+    if results:
+        stexts = re.findall(r'<div[^>]*class="[^"]*[VwiC3b[^"]*"[^>]*>(.*?)</div>', html, re.DOTALL)
+        for i, st in enumerate(stexts[:len(results)]):
+            if i < len(results):
+                results[i]["snippet"] = re.sub(r'<[^>]+>', '', st).strip()[:300]
+    return results
+
 def search(query: str, count: int = 10) -> list:
     """
     多源搜索：DDG 主引擎 → Bing 回退 → Chromium 渲染回退
@@ -360,14 +388,26 @@ def search(query: str, count: int = 10) -> list:
     if raw["status"] == 200 and 'result__a' in raw["text"]:
         results = _extract_results_ddg(raw["text"], count)
 
-    # 方法2: Bing 回退
+    # 方法2: Google 搜索（HTML 端点，返回干净URL）
+    if not results or len(results) < 2:
+        google_url = f"https://www.google.com/search?q={encoded}&hl=en&num={count}"
+        google_raw = _fetch_raw(google_url, timeout=20)
+        if google_raw["status"] == 200 and '/url?' in google_raw["text"]:
+            results = _extract_results_google(google_raw["text"], count)
+
+    # 方法3: Bing 回退
     if not results:
         bing_url = f"https://www.bing.com/search?q={encoded}&count={count}"
         bing_raw = _fetch_raw(bing_url, timeout=20)
         if bing_raw["status"] == 200:
             results = _extract_results_bing(bing_raw["text"], count)
+        import random
+        google_url = f"https://www.google.com/search?q={encoded}&hl=en&num={count}"
+        google_raw = _fetch_raw(google_url, timeout=20)
+        if google_raw["status"] == 200 and '/url?' in google_raw["text"]:
+            results = _extract_results_google(google_raw["text"], count)
 
-    # 方法3: Chromium 渲染搜索
+    # 方法4: Chromium 渲染搜索（终极回退）
     if not results:
         try:
             import subprocess, tempfile

@@ -1,0 +1,33 @@
+---
+title: 太一 · 跨境贸易调度拓扑 — 沙特钢结构买家搜索
+---
+flowchart TD
+    subgraph 太一[太一 · 调度中枢]
+        taiyi_trade[🧘 太一]
+    end
+    subgraph Bot集群[Bot 集群]
+        zhiji_tr[🧠 知几]
+        shanmu_tr[🏔️ 山木]
+        wangliang_tr[🔍 罔两]
+    end
+    subgraph 产出[调度产出]
+        trade_output[📋 聚合交付]
+    end
+
+    taiyi_trade -->|分派| zhiji_tr
+    taiyi_trade -->|分派| shanmu_tr
+    taiyi_trade -->|分派| wangliang_tr
+    zhiji_tr -->|返回| trade_output
+    shanmu_tr -->|返回| trade_output
+    wangliang_tr -->|返回| trade_output
+
+%% 样式
+classDef taiyi fill:#6366f1,color:#fff,stroke:#4338ca,stroke-width:2px,rx:8px
+classDef bot fill:#22c55e,color:#fff,stroke:#16a34a,stroke-width:2px,rx:8px
+classDef tool fill:#f59e0b,color:#fff,stroke:#d97706,stroke-width:1px,rx:4px
+classDef output fill:#8b5cf6,color:#fff,stroke:#7c3aed,stroke-width:2px,rx:8px
+classDef data fill:#06b6d4,color:#fff,stroke:#0891b2,stroke-width:1px,rx:4px
+
+class taiyi_trade taiyi
+class zhiji_tr shanmu_tr wangliang_tr bot
+class trade_output output

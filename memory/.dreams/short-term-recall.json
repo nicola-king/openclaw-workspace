@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-07T08:22:41.112Z",
+  "updatedAt": "2026-05-08T16:29:02.903Z",
   "entries": {
     "memory:memory/2026-05-04.md:285:324": {
       "key": "memory:memory/2026-05-04.md:285:324",
@@ -261,22 +261,24 @@
       "endLine": 114,
       "source": "memory",
       "snippet": "### 57个文件路径错误 - v10.0 代码写死 `/home/nicola` 路径，导致定时任务脚本运行失败 - 57个 .py/.sh 文件路径替换 /home/nicola → /home/sayelf - crontab 路径更新 + 日志目录创建 - 状态：✅ 完成 ## [决策] 08:00 晨间新闻推送修复 ### 问题 crontab 中 08:00 任务 `python3 core.py --daily` 的 `--daily` 参数不合法，core.py 不接受 --daily 有效任务：competitor / scoring / manufacturer / forecast 导致每天早上脚本报错退出，无任何输出 ### 修复 crontab 行改为：`python3 core.py --config config.json --task competitor` 手动执行一次验证通过 ✅，竞品分析返回 2 条结果（Karmod / DXH） ### 其他发现 - OpenClaw 内置 cron 列表为空，所有定时任务均通过系统 crontab 运行 - obsidian-cli 已安装于 `/usr/local/bin/obsidian-cli` ## [架构升级] 系统 crontab → OpenClaw cron 迁移 ### 执行 清空原 crontab，全部 15 个任务迁移至 OpenClaw cron 系统： - 08:00 晨间简报 / 14:00 GEO优化 / 18:00 竞品监控 → 推送 Telegram - 0",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4,
+      "totalScore": 5,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-06T01:00:36.931Z",
-      "lastRecalledAt": "2026-05-07T04:37:12.051Z",
+      "lastRecalledAt": "2026-05-08T16:29:02.903Z",
       "queryHashes": [
         "c2ed91d77456",
         "921c566541c5",
         "462186eb038d",
-        "dc8fc4c5be34"
+        "dc8fc4c5be34",
+        "5a19891d36b5"
       ],
       "recallDays": [
         "2026-05-06",
-        "2026-05-07"
+        "2026-05-07",
+        "2026-05-09"
       ],
       "conceptTags": [
         "v10.0",
@@ -296,20 +298,22 @@
       "endLine": 140,
       "source": "memory",
       "snippet": "- 03:00 Git备份 / 06:00 自进化 / 07:00 情报备料 / 09:00 富化 / 12:00 开发信 / 14:30 触达 / 每小时健康检查 → 静默 - 周一09:00 周度分析 / 每月1日 月度报告 → 推送 - 05:00 Obsidian同步检查 / 12:00 自动清理 → 新增 ### 状态 所有 15 个任务已注册并正常运行，完全替代旧 crontab ## [知识层打通] Obsidian 双向同步 ### 架构 - Vault: `/home/sayelf/下载/Taiy（工控机）/Taiyiopenclaw` - 同步目录：`太一同步/` → symlink 链接 workspace 文件 - 同步范围：memory / notes / MEMORY.md / HEARTBEAT.md / SOUL.md - 检活脚本：`scripts/obsidian-sync-check.sh` (每天05:00 cron执行) ### 优缺点分析 优点：人机共享知识层、Graph View、移动端访问、零复制 劣势：冲突风险、误删传播 → 预案：git版本兜底、不排除.obsidian/、每天备份 ## [能力涌现] 品牌设计引擎 ### awesome-design-md × trade-travel-design 基于 VoltAgent/awesome-design-md (68.4K⭐) 70个品牌设计规范 创建 trade-travel-design skill： - design-engine.py → 品牌应用引擎（",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-06T01:00:36.931Z",
-      "lastRecalledAt": "2026-05-07T01:00:54.112Z",
+      "lastRecalledAt": "2026-05-08T01:01:00.233Z",
       "queryHashes": [
         "c2ed91d77456",
-        "921c566541c5"
+        "921c566541c5",
+        "13b50703d992"
       ],
       "recallDays": [
         "2026-05-06",
-        "2026-05-07"
+        "2026-05-07",
+        "2026-05-08"
       ],
       "conceptTags": [
         "备份",
@@ -329,20 +333,22 @@
       "endLine": 214,
       "source": "memory",
       "snippet": "- 搜索5次×5结果 → 23+公司 → 自动深度爬取 → 自动提取电话/邮箱/LinkedIn → 8角色人物搜索 ### deep auto_scraper - 多页爬取（Home+Contact+About+Contact us） - 16种国际电话格式（+966/+971/+86/+1/+44/+49/+61） - 邮箱提取+垃圾过滤 - LinkedIn公司页自动检测 - 验证链路生成+数据质量评级 - 无需人工点击，全自动 ## [任务] 中东钢结构折叠房屋报告（x3版本） ### v1：基础市场分析 沙特/AE/UAE/伊拉克分国需求，竞争格局，准入要求 ### v2：增强版（含intelligence-hub数据） IndustryExpertModule + TrendAlertModule 分析，$20亿 Jewel of the Bride 项目，伊拉克21座新城计划 ### v3：完整版（含搜索+爬取+联系人附件） 全链路搜索验证，9个搜索平台，沙特本地企业深度爬取（Afco Steel/SBS/Zamil Steel），联系人附件（78家公司+25联系人） ### 核心发现 沙特$20亿 Jewel of the Bride项目（2026.5启动） 中国10家已出口中东，年出口额$2.2亿 最有机会模式：中国生产折叠结构件 + 沙特/阿联酋本地组装 ## [系统清理] Agent Skills ### 清理结果 原36个skills → 保留21个 清理：moss-tts-nano / maigret / scrapling-integ",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-06T01:00:36.931Z",
-      "lastRecalledAt": "2026-05-07T08:22:41.112Z",
+      "lastRecalledAt": "2026-05-08T01:01:00.233Z",
       "queryHashes": [
         "c2ed91d77456",
-        "596b8b2272ae"
+        "596b8b2272ae",
+        "13b50703d992"
       ],
       "recallDays": [
         "2026-05-06",
-        "2026-05-07"
+        "2026-05-07",
+        "2026-05-08"
       ],
       "conceptTags": [
         "自动提取电话/邮箱/linkedin",
@@ -396,20 +402,22 @@
       "endLine": 165,
       "source": "memory",
       "snippet": "- design-engine.py → 品牌应用引擎（CLI+场景推荐） - design-tokens.json → 41个品牌结构化Token（精确HEX色值/字体/间距） - css/ → 41个品牌可直接用的CSS变量文件 ### 场景映射 trade_luxury / trade_tech / trade_finance / trade_ecommerce / trade_social travel_hotel / travel_luxury / travel_tech / travel_nature design_minimal / design_creative / design_fintech ## [能力涌现] 品牌设计引擎 × art-agent ### brand-studio 模块 集成到 art-agent 使 aesthetic-filter / brand-guardian / design-system 可直接调用70个品牌规范 模块：`modules/brand-studio/core.py` 功能： - list → 列出70个品牌 - show → 查看设计Token（41个品牌有结构化数据） - recommend → 按场景推荐品牌 - prompt → 生成创作提示词 - get_css → 获取品牌CSS变量 ## [架构设计] 跨境贸易 Agent v11 ### 分层架构 总Agent（太一）→ 共享Agent x3（情报/富化/履约）→ 共享Skills x7 → 产品Agent x2（常规工业品/定制产品）→",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-06T01:00:36.931Z",
-      "lastRecalledAt": "2026-05-07T01:00:54.112Z",
+      "lastRecalledAt": "2026-05-08T10:00:36.832Z",
       "queryHashes": [
         "c2ed91d77456",
-        "921c566541c5"
+        "921c566541c5",
+        "3557c60647b1"
       ],
       "recallDays": [
         "2026-05-06",
-        "2026-05-07"
+        "2026-05-07",
+        "2026-05-08"
       ],
       "conceptTags": [
         "design-engine.py",
@@ -429,20 +437,24 @@
       "endLine": 151,
       "source": "memory",
       "snippet": "- 确认双模式运营：买家情报平台(核心) + 中间贸易(机会) **2. 核心产品 — buyer-intel 买家情报引擎** - 项目/公司/人脉 15条已验证数据入库 - 情报验证管道（5项验证→可信度评分） - 工厂触达记录（情报→工厂→成单追踪） - 订阅管理（3级方案，计费限额） - CLI：search / projects / opportunities / verify / outreach / dashboard / subscribe **3. 服务层模块** - 报价引擎 v2（含退税13%/9%，FOB/CFR/到岸价） - 合规引擎扩展（退税查询） - 产品目录 RAG（TF-IDF+买家需求匹配） - 供应商匹配（9家工厂排名评分） - 合同模板（14章中英双语，中东专版SASO/SIAC） **4. 穿透式搜索器 v3** - scraper.py（cloudscraper + brotli + Chromium） - 解决Bing中文/日文结果问题、DDG brotli解码问题 - 已部署 **5. 桌面工具** - camsnap 录屏工具安装 + 桌面图标 **6. 配置调整** - Telegram 频道 exec 通知关闭（toolProgress=false） ### 主要决策记录 - 跨境贸易 Agent 业务模型：买家情报平台(订阅制) + 机会主义中间商 - 卖家服务 → 买家情报核心定位修正 - Chromium 授权使用 ### 待办（下次续建） - [ ] 项目雷达注入 etimad.sa 实时招标数据 -",
-      "recallCount": 3,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3,
+      "totalScore": 5,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-07T01:00:54.112Z",
-      "lastRecalledAt": "2026-05-07T08:22:41.112Z",
+      "lastRecalledAt": "2026-05-08T16:29:02.903Z",
       "queryHashes": [
         "921c566541c5",
         "dc8fc4c5be34",
-        "596b8b2272ae"
+        "596b8b2272ae",
+        "3557c60647b1",
+        "5a19891d36b5"
       ],
       "recallDays": [
-        "2026-05-07"
+        "2026-05-07",
+        "2026-05-08",
+        "2026-05-09"
       ],
       "conceptTags": [
         "buyer-intel",
@@ -462,19 +474,23 @@
       "endLine": 120,
       "source": "memory",
       "snippet": "├─ 工厂触达记录（情报→工厂→成单追踪） └─ 订阅管理（注册/计费/续费/限额） P1 subscription 工厂订阅计费 ✅ └─ 3级方案：free_trial/basic/pro P2 服务层（增值附送） ├─ 报价引擎（含退税）✅ ├─ 合同模板（中东专版）✅ ├─ 合规引擎（退税查询）✅ ├─ 供应商匹配（9家工厂）✅ └─ 产品目录 RAG（5款产品）✅ ``` 关键配置： - scraper.py 穿透式搜索器 v3（cloudscraper + brotli + Chromium） - SAU-xxx 情报均已验证 ## [任务] session 结束 — 暂停开发 SAYELF 要求暂停，等完善后再继续。 待办： - [ ] chrome config toolProgress = false 已设置但未验证效果 - [ ] 项目雷达注入 etimad.sa 实时数据（下次继续） - [ ] 工厂端 Telegram 推送界面（下次继续） ## [Session 结束汇报] 2026-05-06 ### 完成工作 **1. 用户架构对接** - 用户提供的跨境贸易 Agent 5层架构 → 按 Elon 五步法过滤 - 12个业务模块 → 精简为5个核心模块（去掉了订单追踪/退税(后修正保留)/报关等） - 确认双模式运营：买家情报平台(核心) + 中间贸易(机会) **2. 核心产品 — buyer-intel 买家情报引擎** - 项目/公司/人脉 15条已验证数据入库 - 情报",
-      "recallCount": 2,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 4,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-07T01:00:54.112Z",
-      "lastRecalledAt": "2026-05-07T04:37:12.051Z",
+      "lastRecalledAt": "2026-05-08T16:29:02.903Z",
       "queryHashes": [
         "921c566541c5",
-        "dc8fc4c5be34"
+        "dc8fc4c5be34",
+        "3557c60647b1",
+        "5a19891d36b5"
       ],
       "recallDays": [
-        "2026-05-07"
+        "2026-05-07",
+        "2026-05-08",
+        "2026-05-09"
       ],
       "conceptTags": [
         "注册/计费/续费/限额",
@@ -494,18 +510,22 @@
       "endLine": 90,
       "source": "memory",
       "snippet": "## [决策] 跨境贸易 Agent 真实业务模型确认 SAYELF 的业务模型： - 核心角色：跨境贸易平台运营者 / 贸易经纪 - 核心价值：找买家 → 买家信息/项目情报 → 卖给工厂订阅 - 工厂（供应商）是客户，不是业务主体 - 配套服务（合同/合规/报价）是增值服务，不是核心产品 能力涌现方向： - P0 买家情报引擎（中东项目采购/开发商/承包商） - P0 项目雷达（招标/项目动态自动化） - P1 工厂订阅系统 - 已有模块（报价/合同/合规/供应商匹配）调整为服务层 记忆更新：memory/core.md 和 memory/context.md 需修正定位 ## [架构] 跨境贸易 Agent 模块重排 业务模型确认（双模式）： - 核心：买家情报平台 → 工厂订阅制（¥299/¥999/月） - 机会：高利润匹配时亲自做中间贸易商 模块全景（按优先级）： ``` P0 buyer-intel 买家情报引擎（核心产品）✅ ├─ 项目雷达 / 采购机会 / 人脉库 ├─ 情报验证管道（5项验证→可信度评分） ├─ 工厂触达记录（情报→工厂→成单追踪） └─ 订阅管理（注册/计费/续费/限额） P1 subscription 工厂订阅计费 ✅ └─ 3级方案：free_trial/basic/pro P2 服务层（增值附送） ├─ 报价引擎（含退税）✅ ├─ 合同模板（中东专版）✅",
-      "recallCount": 1,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-07T04:37:12.051Z",
-      "lastRecalledAt": "2026-05-07T04:37:12.051Z",
+      "lastRecalledAt": "2026-05-08T16:29:02.903Z",
       "queryHashes": [
-        "dc8fc4c5be34"
+        "dc8fc4c5be34",
+        "3557c60647b1",
+        "5a19891d36b5"
       ],
       "recallDays": [
-        "2026-05-07"
+        "2026-05-07",
+        "2026-05-08",
+        "2026-05-09"
       ],
       "conceptTags": [
         "买家信息/项目情报",
@@ -525,19 +545,21 @@
       "endLine": 60,
       "source": "memory",
       "snippet": "## [任务] 09:00 富化Agent定时执行 - **模块**: company-enricher v1.0.0 - **状态**: ✅ 健康运行 - **当前库**: 20 家公司（全部手动录入） - **新增处理**: 无（无新公司列表入队） - **备注**: 静默任务完成，无需推送 ## [决策] 跨境贸易 Agent 定位确认 SAYELF 确认：跨境贸易 Agent 以 **卖家服务为主（销售产品）**，咨询为辅。Agent 角色定位从调研/分析工具转向 **主动销售引擎**。 关键转换： - 找买家 > 找竞品 - 推产品 > 写报告 - 开发信 > 市场分析 - 管道建设 > 知识整理 关联：memory/core.md 需更新跨境贸易 Agent 定位描述 ## [决策] Chromium 授权 + 搜索器部署 SAYELF 授权：Chromium 可直接使用，无需询问。 - 部署 `scripts/scraper.sh` / `scripts/scraper.py` v3 - 反爬机制：cloudscraper + brotli + Chromium + DDG/Bing 双引擎 - 功能：search / linkedin / fetch / fetchjs / pdf - 缓存目录：~/.openclaw/workspace/.cache/scraper/ 关联：跨境贸易 Agent 卖家服务模式已确认 ## [决策] 跨境贸易 Agent 真实业务模型确认 SAYELF 的业务模型： - 核心角色：跨境贸易平台运营者 / 贸易",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-07T04:37:12.051Z",
-      "lastRecalledAt": "2026-05-07T08:22:41.112Z",
+      "lastRecalledAt": "2026-05-08T01:01:00.233Z",
       "queryHashes": [
         "dc8fc4c5be34",
-        "596b8b2272ae"
+        "596b8b2272ae",
+        "13b50703d992"
       ],
       "recallDays": [
-        "2026-05-07"
+        "2026-05-07",
+        "2026-05-08"
       ],
       "conceptTags": [
         "company-enricher",
@@ -579,6 +601,164 @@
         "learning-agent",
         "plugins.allow",
         "memory-core"
+      ]
+    },
+    "memory:memory/2026-05-06.md:1:34": {
+      "key": "memory:memory/2026-05-06.md:1:34",
+      "path": "memory/2026-05-06.md",
+      "startLine": 1,
+      "endLine": 34,
+      "source": "memory",
+      "snippet": "## [情报Agent] 竞品分析晨报 (07:00) **时间**: 2026-05-06 07:00 CST **状态**: ✅ 成功 ### 竞品监测摘要 | 竞品 | 来源国 | 市场份额 | 优势 | 劣势 | |------|--------|---------|------|------| | Karmod Prefabrikasyon | 土耳其 | 15% | 欧洲品牌、快速交付、定制能力 | 价格较高、物流时间长 | | DXH Prefab House | 中国 | 12% | 价格优势、大规模生产、出口经验 | 品牌知名度低、售后服务不足 | ### 市场分析 - **饱和度**: medium - **竞争强度**: high - **机会评分**: 75/100 ### 关键洞察 - 市场仍有空间（机会评分75），但竞争激烈 - Karmod 以品牌和定制能力占据中高端，适合差异化竞争 - DXH 以价格和规模冲击市场，需注意价格战风险 - 建议晨简报聚焦：如何在高竞争强度中建立品牌差异化优势 ## [任务] 09:00 富化Agent定时执行 - **模块**: company-enricher v1.0.0 - **状态**: ✅ 健康运行 - **当前库**: 20 家公司（全部手动录入） - **新增处理**: 无（无新公司列表入队） - **备注**: 静默任务完成，无需推送 ## [决策] 跨境贸易 Agent 定位确认",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-08T00:00:32.219Z",
+      "lastRecalledAt": "2026-05-08T00:00:32.219Z",
+      "queryHashes": [
+        "cdcb770d463b"
+      ],
+      "recallDays": [
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "75/100",
+        "company-enricher",
+        "v1.0.0",
+        "情报",
+        "分析",
+        "晨报",
+        "时间",
+        "cst"
+      ]
+    },
+    "memory:memory/2026-05-07.md:1:30": {
+      "key": "memory:memory/2026-05-07.md:1:30",
+      "path": "memory/2026-05-07.md",
+      "startLine": 1,
+      "endLine": 30,
+      "source": "memory",
+      "snippet": "## [架构升级] v10→v11 全模块融合 v10 的 18 个模块已全部归入 v11 分层架构，SKILL.md 更新： - 架构总览：共享Agent x3→x5（新增风控Agent+进化Agent），共享Skills 7→11 - 新增完整模块全景表：P0/P1/P2/P3 分级 - 8个缺失模块全部纳入：conversion-optimizer / transaction-support / self-evolution / task-scheduler / risk-manager / cultural-adapter / supply-chain / payment-settlement / data-integrator - 确认无功能丢失，所有代码保留在 `modules/`，通过 `agents/` 接入 ## [架构升级] v10 → v11 物理融合 (symlink 架构) v10 所有模块代码保留在 `modules/`，通过 symlink 挂入 v11 `agents/` 分层目录： ### 物理结构 ``` agents/ ├── infrastructure/ → cross-border-core / data-integrator / task-scheduler ├── shared/ → 5 共享 Agent │ ├── intelligence/ → hub / guike / geo / buyer-intel │ ├── enrichment/ → company-enrich",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-08T01:01:00.233Z",
+      "lastRecalledAt": "2026-05-08T16:29:02.903Z",
+      "queryHashes": [
+        "13b50703d992",
+        "5a19891d36b5"
+      ],
+      "recallDays": [
+        "2026-05-08",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "skill.md",
+        "p0/p1/p2/p3",
+        "conversion-optimizer",
+        "transaction-support",
+        "self-evolution",
+        "task-scheduler",
+        "risk-manager",
+        "cultural-adapter"
+      ]
+    },
+    "memory:memory/2026-05-07.md:51:88": {
+      "key": "memory:memory/2026-05-07.md:51:88",
+      "path": "memory/2026-05-07.md",
+      "startLine": 51,
+      "endLine": 88,
+      "source": "memory",
+      "snippet": "- deep_enrich() — 一键调用深度增强全流程 ## [架构升级] 太一统一情报引擎 — 全系统共享搜索Agent 融合所有搜索/情报/验证能力到单一共享服务 `skills/shared-search-agent/`： ### 融合来源 - scripts/scraper_v4.py — Scrapling自适应搜索/验证 ✅ - modules/guike-zhilu/multi_source_search.py — 12国搜索目录 ✅ - modules/company-enricher/auto_scraper.py — 自动搜公司 ✅ - skills/shared-search-agent/ (旧版) — 缓存/统计/Multi-Agent ✅ ### 统一能力 - search() — 3层回退搜索 (DDG→Bing→Chromium) - fetch() — 爬取+邮箱/电话/链接提取 - verify_company() — 5项验证管道 (官网/电话/邮箱/LinkedIn/第三方) - search_buyers() — 买家情报搜索 - country_search_links() — 12国搜索资源链接 - 缓存+统计+多Agent分发 ### 已验证 - Search: ✅ 3结果 (ensun.io, mordorintelligence) - Verify: ✅ Afco Steel confidence 1.0 - Buyers: ✅ 3条买家线索 - Fetch: ✅ TenderSA (2邮箱, 100链接) ##",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-08T01:01:00.233Z",
+      "lastRecalledAt": "2026-05-08T10:00:36.832Z",
+      "queryHashes": [
+        "13b50703d992",
+        "3557c60647b1"
+      ],
+      "recallDays": [
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "deep-enrich",
+        "融合所有搜索/情报/验证能力到单一共享服务",
+        "skills/shared-search-agent",
+        "scripts/scraper-v4.py",
+        "scrapling自适应搜索/验证",
+        "缓存/统计/multi-agent",
+        "邮箱/电话/链接提取",
+        "verify-company"
+      ]
+    },
+    "memory:memory/2026-05-07.md:23:58": {
+      "key": "memory:memory/2026-05-07.md:23:58",
+      "path": "memory/2026-05-07.md",
+      "startLine": 23,
+      "endLine": 58,
+      "source": "memory",
+      "snippet": "├── conversion/ → optimizer / cultural / transaction ├── skills/ → 11 symlinks (含 scraper_v4 + shared-search-agent) ├── standard-products/ → 常规工业品 (orchestrator.py) └── custom-products/ → 定制产品 (orchestrator.py + 4品类) ``` 层数: 22 symlinks, 22 个 modules/, 0 代码修改 ## [能力涌现] 深度公司情报增强引擎 v2 新增 `modules/company-enricher/deep_enricher.py`，嵌入富化Agent第2步： ### 全链路 ``` search(product, market) ├─ Step 1: 多源搜索公司 (DDG×5 → 最多30家) ├─ Step 2: 验证+提取 (Scrapling自适应爬官网) │ ├─ 真实地址/电话/邮箱/链接 │ └─ 可信度评分 (0-1) ├─ Step 3: LinkedIn 8角色深度搜索 │ └─ BD/销售总监/采购/供应链/CEO/GM/创始人/CFO ├─ Step 4: 中国特搜 (天眼查/企查查/1688/Alibaba) ├─ Step 5: 入库 company-enricher DB (companies.db) └─ Step 6",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-08T10:00:36.832Z",
+      "lastRecalledAt": "2026-05-08T10:00:36.832Z",
+      "queryHashes": [
+        "3557c60647b1"
+      ],
+      "recallDays": [
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "scraper-v4",
+        "shared-search-agent",
+        "standard-products",
+        "orchestrator.py",
+        "custom-products",
+        "真实地址/电话/邮箱/链接",
+        "0-1",
+        "bd/销售总监/采购/供应链/ceo/gm/创始人/cfo"
+      ]
+    },
+    "memory:memory/2026-05-04.md:1:18": {
+      "key": "memory:memory/2026-05-04.md:1:18",
+      "path": "memory/2026-05-04.md",
+      "startLine": 1,
+      "endLine": 18,
+      "source": "memory",
+      "snippet": "--- ## [修复] 57个文件路径错误 **时间**: 2026-05-04 22:25 **执行**: 太一 **状态**: ✅ 已完成 ### 问题 v10.0代码写死 `/home/nicola` 路径，导致定时任务脚本运行失败 18:00竞品监控 / 22:00自进化报告 / 03:00Git备份 均受影响 ### 修复 - 57个 .py/.sh 文件路径替换 /home/nicola → /home/sayelf - crontab 路径更新 - 日志目录创建",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-08T16:29:02.903Z",
+      "lastRecalledAt": "2026-05-08T16:29:02.903Z",
+      "queryHashes": [
+        "5a19891d36b5"
+      ],
+      "recallDays": [
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "备份",
+        "v10.0代码写死",
+        "home/nicola",
+        "home/sayelf",
+        "修复",
+        "文件",
+        "路径",
+        "错误"
       ]
     }
   }

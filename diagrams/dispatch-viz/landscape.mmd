@@ -1,0 +1,38 @@
+---
+title: 太一 Agent 系统全景拓扑
+---
+flowchart LR
+
+    %% ===== 域 1: 旅游探路者 =====
+    subgraph 旅游[🐾 旅游探路者]
+        direction TB
+        taiyi_t[🧘 太一 · 旅游]
+        zhiji_t[🧠 知几 · 情报]
+        shanmu_t[🏔️ 山木 · 规划]
+        suwen_t[📚 素问 · 研究]
+        wangliang_t[🔍 罔两 · 验证]
+        paoding_t[💰 庖丁 · 预算]
+    end
+
+    %% ===== 域 2: 跨境贸易 =====
+    subgraph 贸易[🌐 跨境贸易]
+        direction TB
+        taiyi_tr[🧘 太一 · 贸易]
+        zhiji_tr[🧠 知几 · 情报]
+        shanmu_tr[🏔️ 山木 · 执行]
+        suwen_tr[📚 素问 · 合规]
+        wangliang_tr[🔍 罔两 · 监控]
+        paoding_tr[💰 庖丁 · 风控]
+    end
+
+    %% ===== 共享工具链 =====
+    subgraph 工具[⚙️ 共享工具链]
+        direction TB
+        search[🔎 搜索Agent v4]
+        verify[✅ 验证管道]
+        cache[💾 缓存 + 统计]
+    end
+
+    %% ===== 跨域连接 =====
+    taiyi_t -.->|共享| search
+    taiyi_tr -.->|共享| search

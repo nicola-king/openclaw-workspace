@@ -1,0 +1,39 @@
+---
+title: 太一 · 旅游探路者调度拓扑 — 三亚家族旅行10天预算5万
+---
+flowchart TD
+    subgraph 太一[太一 · 调度中枢]
+        taiyi_travel[🧘 太一]
+    end
+    subgraph Bot集群[Bot 集群]
+        zhiji_t[🧠 知几]
+        shanmu_t[🏔️ 山木]
+        suwen_t[📚 素问]
+        wangliang_t[🔍 罔两]
+        paoding_t[💰 庖丁]
+    end
+    subgraph 产出[调度产出]
+        travel_output[📋 聚合交付]
+    end
+
+    taiyi_travel -->|分派| zhiji_t
+    taiyi_travel -->|分派| shanmu_t
+    taiyi_travel -->|分派| suwen_t
+    taiyi_travel -->|分派| wangliang_t
+    taiyi_travel -->|分派| paoding_t
+    zhiji_t -->|返回| travel_output
+    shanmu_t -->|返回| travel_output
+    suwen_t -->|返回| travel_output
+    wangliang_t -->|返回| travel_output
+    paoding_t -->|返回| travel_output
+
+%% 样式
+classDef taiyi fill:#6366f1,color:#fff,stroke:#4338ca,stroke-width:2px,rx:8px
+classDef bot fill:#22c55e,color:#fff,stroke:#16a34a,stroke-width:2px,rx:8px
+classDef tool fill:#f59e0b,color:#fff,stroke:#d97706,stroke-width:1px,rx:4px
+classDef output fill:#8b5cf6,color:#fff,stroke:#7c3aed,stroke-width:2px,rx:8px
+classDef data fill:#06b6d4,color:#fff,stroke:#0891b2,stroke-width:1px,rx:4px
+
+class taiyi_travel taiyi
+class zhiji_t shanmu_t suwen_t wangliang_t paoding_t bot
+class travel_output output

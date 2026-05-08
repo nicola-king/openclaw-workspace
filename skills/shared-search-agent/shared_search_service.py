@@ -29,6 +29,25 @@ from typing import Dict, List, Optional, Callable, Any, Union
 from dataclasses import dataclass, asdict
 from enum import Enum
 
+
+# ═══════════════════════════════════════════════════════════════
+# 穿透式搜索核 v1.0 — 搜索 Agent 核心注入
+# 三层穿透: 正常浏览 → 爬虫机制 → 防反爬
+# 四步提取: 搜到 → 爬到 → 验证 → 入库
+# ═══════════════════════════════════════════════════════════════
+_SEARCH_CORE_PATH = Path.home() / ".openclaw" / "workspace" / "scripts" / "penetrating_search.py"
+if _SEARCH_CORE_PATH.exists():
+    import importlib.util
+    _pen_spec = importlib.util.spec_from_file_location("penetrating_search", str(_SEARCH_CORE_PATH))
+    _penetrating = importlib.util.module_from_spec(_pen_spec)
+    _pen_spec.loader.exec_module(_penetrating)
+    PenetratingSearch = _penetrating.PenetratingSearch
+    logger.info("🧬 穿透式搜索核已注入 — 三层穿透·四步提取")
+else:
+    PenetratingSearch = None
+    logger.warning("⚠️ 穿透式搜索核未找到")
+
+
 # ── 引入 scraper_v4 作为实际搜索引擎 ──
 # 确保在 venv 环境中运行（含 scrapling 依赖）
 _VENV_SITE = Path.home() / ".local" / "venvs" / "scraper" / "lib" / "python3.14" / "site-packages"
@@ -507,3 +526,77 @@ if __name__ == "__main__":
     # Stats
     s = svc.get_stats()
     print(f"\n📊 Stats: {s['total_requests']} requests | {s['cache_hit_rate']} hit rate")
+
+# ═══════════════════════════════════════════════
+# [SEARCH ENGINE 4] Chrome for Testing 浏览器渲染
+# 安装路径: /home/sayelf/.local/bin/chrome-for-testing
+# ═══════════════════════════════════════════════
+import subprocess, tempfile
+
+CHROME_TESTING = "/home/sayelf/.local/bin/chrome-for-testing"
+
+def search_chrome_testing(cls, query: str, count: int = 10) -> list:
+    """用 Chrome for Testing 渲染 DDG Lite 搜索"""
+    from urllib.parse import quote
+    url = f"https://lite.duckduckgo.com/lite/?q={quote(query)}"
+    tmp = tempfile.mktemp(suffix=".html")
+    try:
+        subprocess.run(
+            [CHROME_TESTING, "--headless", "--no-sandbox", "--disable-gpu",
+             "--disable-dev-shm-usage", "--dump-dom", url],
+            timeout=20, stdout=open(tmp, "w"), stderr=subprocess.DEVNULL
+        )
+        html = Path(tmp).read_text("utf-8", errors="ignore")
+        results, seen = [], set()
+        import re
+        for m in re.finditer(r'<a[^>]+href="(https?://[^"]+)"[^>]*>([^<]+)</a>', html):
+            u, t = m.group(1), m.group(2).strip()
+            bad = ["duckduckgo.com", "google.com", "youtube.com"]
+            if not any(d in u for d in bad) and len(t) > 5 and u not in seen:
+                seen.add(u)
+                results.append({"title": t, "url": u.split("?")[0], "snippet": "", "engine": "chrome_testing"})
+                if len(results) >= count: break
+        return results
+    except: return []
+    finally: Path(tmp).unlink(missing_ok=True)
+
+TaiyiSharedSearchService.search_chrome_testing = search_chrome_testing
+print("✅ Chrome for Testing 集成完成")
+
+
+# ═══════════════════════════════════════════════════════════════
+# 集成方案2: SearXNG 多引擎聚合搜索
+# ═══════════════════════════════════════════════════════════════
+SEARXNG_INSTANCES = [
+    "https://searx.be",
+    "https://search.ononoki.org",
+    "https://searx.tuxcloud.net",
+]
+
+def _search_searxng(service, query: str, count: int = 10) -> list:
+    import cloudscraper, urllib.parse, json
+    scraper = cloudscraper.create_scraper(delay=0.5)
+    for instance in SEARXNG_INSTANCES:
+        try:
+            url = f"{instance}/search?q={urllib.parse.quote(query)}&format=json"
+            resp = scraper.get(url, headers={"User-Agent": "Mozilla/5.0 Chrome/131"}, timeout=10)
+            if resp.status_code == 200:
+                data, results, seen = resp.json(), [], set()
+                for r in data.get("results", []):
+                    u, t = r.get("url",""), r.get("title","")
+                    if not t or len(t) < 5 or u in seen: continue
+                    seen.add(u)
+                    results.append({"title": t, "url": u, "snippet": r.get("content","")[:300], "engine": "searxng"})
+                    if len(results) >= count: break
+                if results: return results
+        except: continue
+    return []
+
+def _search_via_browser_agent(service, query: str, count: int = 10) -> dict:
+    return {"status": "delegated", "engine": "agent_browser",
+            "instruction": f"浏览器搜索: {query}，返回{count}条结果",
+            "action": "需在 OpenClaw 中执行 browser 工具"}
+
+TaiyiSharedSearchService.search_searxng = _search_searxng
+TaiyiSharedSearchService.search_via_browser_agent = _search_via_browser_agent
+print("✅ SearXNG + Agent Browser 集成完成")
