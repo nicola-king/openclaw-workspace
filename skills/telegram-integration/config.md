@@ -1,0 +1,24 @@
+# 太一 Telegram Bot 配置
+
+bot:
+  name: "太一（AGI）"
+  username: "@sayelfbot"
+  token: "8351068758:AAFr3T3ZTfZNIXrl26o9ppgoeg_gBhTXTeI"
+
+# 管理员配置
+admin:
+  user_id: "7073481596"  # SAYELF 的 Telegram ID
+
+# 功能开关
+features:
+  search: true
+  trade: true
+  travel: true
+  tts: true
+  osint: true
+  status: true
+
+# 日志配置
+logging:
+  level: INFO
+  file: logs/telegram_bot.log

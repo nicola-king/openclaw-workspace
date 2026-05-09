@@ -1,0 +1,21 @@
+#!/bin/bash
+# md-watch — 智能自动化转 MD 系统
+# Usage:
+#   md-watch             增量扫描并转换
+#   md-watch --full      全量扫描
+#   md-watch --watch     持续监听
+#   md-watch --status    查看状态
+#   md-watch --init      初始化
+
+SKILL_DIR="/home/sayelf/.openclaw/workspace/skills/markitdown-converter"
+VENV_PYTHON="$SKILL_DIR/.venv/bin/python3"
+SYSTEM_PYTHON=$(which python3)
+
+# 如果 venv 有 markitdown 就用 venv
+if [ -f "$SKILL_DIR/.venv/bin/markitdown" ]; then
+    PYTHON="$VENV_PYTHON"
+else
+    PYTHON="$SYSTEM_PYTHON"
+fi
+
+$PYTHON "$SKILL_DIR/universal_md_converter.py" "$@"

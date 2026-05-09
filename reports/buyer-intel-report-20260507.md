@@ -1,137 +1,439 @@
-# 🎯 买家情报全景报告
-> 2026-05-07 | 按产品匹配 | 中东+澳洲
+BUYER INTELLIGENCE REPORT
 
----
+Product-Matched Buyers | Middle East + Australia
 
-## ▎一、按产品匹配买家总览
+2026-05-07
 
-### 🏠 劳工营（Labor Camp）— 最强需求品类
+1. LABOR CAMP - HIGHEST DEMAND
 
-| # | 买家/项目 | 地区 | 预算 | 状态 | 优先级 |
-|---|-----------|------|------|------|--------|
-| 1 | **Jewel of the Bride** (吉达) | 🇸🇦 沙特 | $20亿 | 2026.5启动 | 🔴 P0 |
-| 2 | **NEOM THE LINE** | 🇸🇦 沙特 | $5000亿级 | 建设中 | 🔴 P0 |
-| 3 | **Trojena Dam (NEOM)** | 🇸🇦 沙特 | SAR 6.58亿劳工营合同 | 已签约 | 🔴 P0 |
-| 4 | **Red Sea Project** | 🇸🇦 沙特 | — | 建设中 | 🟡 P1 |
-| 5 | **Saadiyat道路项目** | 🇦🇪 阿布扎比 | $29亿 | 进行中 | 🟡 P1 |
-| 6 | **迪拜2040城市计划** | 🇦🇪 迪拜 | 长期 | 持续至2040 | 🟡 P1 |
-| 7 | **伊拉克21座新城** | 🇮🇶 伊拉克 | 300万套住房缺口 | 规划中 | 🟡 P1 |
+Project / Buyer
 
-> **劳工营买手线索：** Red Sea International (RSI)、Webuild、Dorçe Prefabricated、Mokamela Prefab、Ebn Al Arab
+Region
 
----
+Budget
 
-### 🏗️ 钢结构（Steel Structure）— 持续需求品类
+Status
 
-| # | 买家/项目 | 地区 | 预算 | 状态 | 优先级 |
-|---|-----------|------|------|------|--------|
-| 1 | **Jewel of the Bride** | 🇸🇦 沙特 | $20亿 | 2026.5启动 | 🔴 P0 |
-| 2 | **NEOM THE LINE** | 🇸🇦 沙特 | $5000亿级 | 建设中 | 🔴 P0 |
-| 3 | **H&H City Tower** (93层) | 🇸🇦 沙特 | — | 2026.5启动 | 🔴 P0 |
-| 4 | **Red Sea Project** | 🇸🇦 沙特 | — | 建设中 | 🟡 P1 |
-| 5 | **迪拜2040城市计划** | 🇦🇪 迪拜 | 长期 | 持续至2040 | 🟡 P1 |
-| 6 | **伊拉克21座新城** | 🇮🇶 伊拉克 | 300万套住房缺口 | 规划中 | 🟡 P1 |
+Pri.
 
-**已验证的钢构买方公司：**
-| 公司 | 地区 | 联系方式 | 验证状态 |
-|------|------|---------|---------|
-| Afco Steel | 🇸🇦 沙特吉达 | info@afcosteel.com.sa / +966-12-636-9088 | ✅ 5项全验 |
-| SBS Contracting | 🇸🇦 沙特 | info@sbs-contracting.com / +966-54-898-6765 | ✅ 已验证 |
-| Zamil Steel | 🇸🇦 沙特达曼 | 官网 Supplier Registration | ✅ 已验证 |
+Note
 
----
+Jewel of the Bride (Jeddah)
 
-### 🧱 模块化建筑（Modular Building）— 增长品类
+SAUDI ARABIA
 
-| # | 买家/项目 | 地区 | 预算 | 状态 | 优先级 |
-|---|-----------|------|------|------|--------|
-| 1 | **NEOM THE LINE** | 🇸🇦 沙特 | $5000亿级 | 建设中 | 🔴 P0 |
-| 2 | **Red Sea Project (豪华营地)** | 🇸🇦 沙特 | — | 建设中 | 🟡 P1 |
-| 3 | **迪拜2040城市计划** | 🇦🇪 迪拜 | 长期 | 持续至2040 | 🟡 P1 |
-| 4 | **伊拉克21座新城** | 🇮🇶 伊拉克 | 300万套住房 | 规划中 | 🟡 P1 |
+$2B
 
----
+2026.5 Launch
 
-### 🇦🇺 澳洲市场机会
+NEOM THE LINE
 
-| 市场数据 | 数值 |
-|---------|------|
-| 模块化建筑市场规模 | USD 113亿 (2024-2030) |
-| 住房缺口 | 20-30万套 |
-| 增长驱动 | 住房短缺、劳动力成本高、可持续建筑 |
+SAUDI ARABIA
 
-**关键资源：**
-- prefabAUS 会员目录 — https://www.prefabaus.org.au/member-directory/
-- 澳洲预制建筑招标 — https://www.australiantenders.com.au/tenders/category/prefabricated-buildings
-- 澳洲模块化建筑公司 Top 100 — https://ensun.io/search/modular-building/australia
+$500B+
 
----
+Under Construction
 
-## ▎二、已出发触达记录
+Trojena Dam (NEOM)
 
-| 买家情报 | 触达工厂 | 方式 | 回复 | 状态 |
-|---------|---------|------|------|------|
-| Jewel of the Bride | 广东集成房屋 | Email | 待回复 | 🔄 跟进中 |
-| Jewel of the Bride | 法狮龙建材 | Email | 待回复 | 🔄 跟进中 |
-| NEOM 劳工营 | 广东集成房屋 | Email | 待回复 | 🔄 跟进中 |
+SAUDI ARABIA
 
----
+SAR 658M
 
-## ▎三、新发现的买家线索（待验证）
+Awarded
 
-### 中东方向
-1. **Red Sea International (RSI)** 🇸🇦 — 模块化营地龙头，刚拿 Trojena Dam SAR 6.58亿合同
-2. **Webuild** 🇮🇹 — Trojena Dam 劳工营承包商
-3. **Dorçe Prefabricated** 🇹🇷 — 沙特模块化营地供应商
-4. **Mokamela Prefab** 🇸🇦 — 吉达预制建筑厂商
-5. **Base Fixed Contracting** 🇸🇦 — 预制房屋/营地供应商
-6. **Aldamegh Portable House** 🇸🇦 — 预制房屋工厂
-7. **MS Metals** 🇸🇦 — 预制建筑/钢结构
-8. **SASP** 🇸🇦 — 便携式房屋供应商
+Red Sea Project
 
-### 招投标平台（持续监控）
-| 平台 | 地区 | 链接 |
-|------|------|------|
-| Etihad Rail | 🇦🇪 | constructionweekonline.com/projects-tenders |
-| KSA Tenders Gate | 🇸🇦 | ksatendersgate.com |
-| TenderSA | 🇸🇦 | tendersa.com |
-| 伊拉克住房部 | 🇮🇶 | alaskan.moch.gov.iq |
-| UNGM Iraq | 🇮🇶 | ungm.org |
-| 澳洲预制招标 | 🇦🇺 | australiantenders.com.au |
+SAUDI ARABIA
 
----
+-
 
-## ▎四、建议行动
+Under Construction
 
-### 短期（本周）
-- [ ] 触达 Afco Steel（已验证✅）— 谈钢结构合作/分包
-- [ ] 触达 SBS Contracting（已验证✅）— 推项目情报订阅
-- [ ] 监控 Jewel of the Bride 最新招标动态
+Saadiyat Road Project
 
-### 中期（本月）
-- [ ] 验证 RSI / Webuild 的采购联系人
-- [ ] 注册 Etimad.sa 获取沙特实时招标
-- [ ] 接入澳洲 prefabAUS 会员目录
-- [ ] 伊拉克住房部招标订阅
+UAE/ABU DHABI
 
-### 长期
-- [ ] 项目雷达自动化注入（Etimad.sa → buyer-intel DB）
-- [ ] 工厂端 Telegram 推送系统
-- [ ] 订阅计费上线
+$2.9B
 
----
+Ongoing
 
-## 📊 可信度评估
+Dubai 2040 Plan
 
-| 买家 | 已验证 | 联系人 | 优先级 |
-|------|--------|--------|--------|
-| Jewel of the Bride | ✅ 公开来源 | — | P0 |
-| NEOM THE LINE | ✅ 公开来源 | — | P0 |
-| Afco Steel | ✅ 5项验证 | ✅ Email/Phone | P1-合作 |
-| SBS Contracting | ✅ 已验证 | ✅ Email | P1 |
-| Zamil Steel | ✅ 已验证 | 官网表单 | P1 |
-| SAW Constructions | ✅ 已验证 | ✅ 4人邮箱 | P1 |
+Iraq 21 New Cities
 
----
+UAE/DUBAI
 
-> *太一买家情报引擎 | 2026-05-07 12:40 CST*
+Long-term
+
+Through 2040
+
+IRAQ
+
+3M housing gap
+
+Planning
+
+P0
+
+P0
+
+P0
+
+P1
+
+P1
+
+P1
+
+P1
+
+30K peak workers
+
+World's largest project
+
+Webuild contractor
+
+Luxury camps
+
+Infrastructure
+
+Multi-zone
+
+Modular optimal
+
+Key labor camp suppliers in KSA: Red Sea Intl (RSI), Webuild, Dorce Prefab, Mokamela, Ebn Al Arab
+
+2. STEEL STRUCTURE - SUSTAINED DEMAND
+
+Project / Buyer
+
+Region
+
+Budget
+
+Status
+
+Pri.
+
+Note
+
+Jewel of the Bride
+
+NEOM THE LINE
+
+H&H City Tower (93fl)
+
+Red Sea Project
+
+Dubai 2040 Plan
+
+Iraq 21 New Cities
+
+SAUDI ARABIA
+
+$2B
+
+2026.5 Launch
+
+SAUDI ARABIA
+
+$500B+
+
+Under Construction
+
+SAUDI ARABIA
+
+SAUDI ARABIA
+
+-
+
+-
+
+2026.5 Launch
+
+Under Construction
+
+UAE/DUBAI
+
+Long-term
+
+Through 2040
+
+IRAQ
+
+3M homes
+
+Planning
+
+P0
+
+P0
+
+P0
+
+P1
+
+P1
+
+P1
+
+93-layer tower
+
+Linear city
+
+Mixed-use
+
+Resort+infra
+
+Multi-zone
+
+Nationwide
+
+Verified steel companies (buyers/partners):
+  Afco Steel - Jeddah | info@afcosteel.com.sa | +966-12-636-9088 (5/5 verified)
+  SBS Contracting - KSA | info@sbs-contracting.com | +966-54-898-6765
+  Zamil Steel - Dammam | World's largest PEB factory | 45+ years
+
+3. MODULAR BUILDING - GROWTH SEGMENT
+
+  NEOM THE LINE | SAUDI ARABIA | $500B+ | P0
+  Red Sea Project (Luxury Camps) | SAUDI ARABIA | - | P1
+  Dubai 2040 Plan | UAE/DUBAI | Long-term | P1
+  Iraq 21 New Cities | IRAQ | 3M homes | P1
+
+4. AUSTRALIA MARKET OPPORTUNITY
+
+Market size: USD 11.3B (modular construction)
+Housing gap: 200K-300K units
+
+Generated by Taiyi AI | 2026-05-07 | Confidential
+
+TAIYI - Buyer Intelligence Report
+
+Page 2
+
+Drivers: housing shortage, labor cost, sustainability
+Key resources:
+  prefabAUS member dir: prefabaus.org.au/member-directory/
+  Australian tenders: australiantenders.com.au
+  Modular co. top 100: ensun.io/search/modular-building/australia
+
+Generated by Taiyi AI | 2026-05-07 | Confidential
+
+TAIYI - Buyer Intelligence Report
+
+Page 3
+
+5. OUTREACH STATUS
+
+Buyer Lead
+
+Factory Contacted
+
+Method
+
+Response
+
+Status
+
+Jewel of the Bride
+
+Jewel of the Bride
+
+Guangdong Integrated Housing
+
+Fashilong Building Materials
+
+NEOM Labor Camp
+
+Guangdong Integrated Housing
+
+Email
+
+Email
+
+Email
+
+Pending
+
+Following up
+
+Pending
+
+Following up
+
+Pending
+
+Following up
+
+6. NEW LEADS (TO VERIFY)
+
+- Red Sea Intl (RSI) - KSA modular camp leader, won SAR 658M Trojena contract
+- Webuild - Italian EPC for Trojena Dam labor camp
+- Dorce Prefabricated - Turkish camp solutions in KSA
+- Mokamela Prefab - Jeddah-based prefab/camp builder
+- Base Fixed Contracting Co. - KSA portable cabin manufacturer (6+ yrs)
+- Aldamegh Portable House Factory - KSA prefab manufacturer
+- MS Metals (Al Raeel Group) - KSA/GCC prefab + steel since 2007
+- SASP - KSA portable cabin supplier
+
+7. TENDER PLATFORMS (MONITOR)
+
+Platform
+
+Region
+
+URL
+
+Construction Week Online
+
+Middle East
+
+constructionweekonline.com/projects-tenders
+
+KSA Tenders Gate
+
+TenderSA
+
+Etimad.sa
+
+Iraq Housing Ministry
+
+UNGM Iraq
+
+Australian Tenders
+
+prefabAUS
+
+Saudi Arabia
+
+Saudi Arabia
+
+Saudi Arabia
+
+Iraq
+
+Iraq
+
+Australia
+
+Australia
+
+ksatendersgate.com
+
+tendersa.com
+
+etimad.sa (gov procurement)
+
+alaskan.moch.gov.iq
+
+ungm.org
+
+australiantenders.com.au
+
+prefabaus.org.au
+
+Generated by Taiyi AI | 2026-05-07 | Confidential
+
+TAIYI - Buyer Intelligence Report
+
+Page 4
+
+8. RECOMMENDED ACTIONS
+
+THIS WEEK:
+
+Contact Afco Steel (verified) - negotiate steel structure cooperation
+Contact SBS Contracting (verified) - pitch buyer intel subscription
+Monitor Jewel of the Bride latest tender news
+
+THIS MONTH:
+
+Verify RSI / Webuild procurement contacts
+Register on Etimad.sa for live Saudi tenders
+Subscribe to prefabAUS directory for Australian intel
+Subscribe to Iraq Housing Ministry tenders
+
+LONG-TERM:
+
+Automate project radar (Etimad.sa -> buyer-intel DB)
+Build factory Telegram push system
+Launch subscription billing
+
+9. CONFIDENCE ASSESSMENT
+
+Buyer
+
+Jewel of the Bride
+
+NEOM THE LINE
+
+Afco Steel
+
+SBS Contracting
+
+Zamil Steel
+
+SAW Constructions (AU)
+
+Verification
+
+Contact
+
+Priority
+
+Next Step
+
+Public source
+
+Public source
+
+-
+
+-
+
+P0
+
+P0
+
+Monitor tenders
+
+Track procurement
+
+5/5 verified
+
+Email/Phone
+
+P1-Coop
+
+Reach out
+
+Verified
+
+Verified
+
+Verified
+
+Email/Phone
+
+Web form
+
+4x Email
+
+P1
+
+P1
+
+P1
+
+Pitch subscr.
+
+Register
+
+Contact
+
+TAIYI Buyer Intelligence Engine | Generated 2026-05-07 12:40 CST
+
+Generated by Taiyi AI | 2026-05-07 | Confidential
+

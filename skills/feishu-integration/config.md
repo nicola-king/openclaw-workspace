@@ -1,0 +1,54 @@
+# 太一飞书集成配置
+# 采用系统内部信息架构
+
+# 飞书应用配置
+app_id: "cli_a9086d6b5779dcc1"
+app_secret: "tXHOop03ZHQynCRuEPkambASNori3KhZ"
+encrypt_key: "6qyZOZsfIj892Q9zTXYNIed5iawiUyk8"
+verification_token: "wmWId1pTZ9oiZWJr3zcnTbWWS5Be1Ub8"
+
+# 应用信息
+app_info:
+  name: "太一 AI"
+  description: "太一系统飞书集成"
+  version: "1.0.0"
+
+# Webhook配置 (可选，用于消息推送)
+webhook_url: ""
+
+# 目标配置
+default_chat_id: ""  # 默认推送群ID
+admin_open_id: ""    # 管理员Open ID
+
+# 消息限制
+message_limit: 1000  # 消息历史保留数量
+
+# 系统内部信息配置
+system_info:
+  # 是否自动推送系统状态
+  auto_push_status: true
+  # 推送间隔 (分钟)
+  push_interval: 60
+
+  # 是否推送任务完成通知
+  push_task_completion: true
+
+  # 是否推送告警
+  push_alert: true
+  # 告警级别阈值 (info/warning/error/critical)
+  alert_threshold: "warning"
+
+# Agent状态监控
+agent_monitor:
+  # 监控的Agent列表
+  agents:
+    - cross_border_trade
+    - travel_explorer
+    - maigret
+    - moss_tts
+
+  # 状态检查间隔 (分钟)
+  check_interval: 5
+
+  # 离线告警
+  offline_alert: true
