@@ -147,11 +147,11 @@
     ".openclaw/workspace-state.json": 1777886100.8219242,
     "data/inbound_purchase_contract.pdf": 1777896208.6995313,
     "data/cross-border/competitors/competitor_report_20260509.json": 1778320805.316668,
-    "skills/markitdown-converter/converter_state.json": 1778321717.7801874,
+    "skills/markitdown-converter/converter_state.json": 1778343318.8374615,
     "skills/art-agent/modules/visual-workflow/frontend/index.html": 1778245246.013043,
     "skills/binance-trading-agent/requirements.txt": 1778318470.1217718
   },
   "skipped_ext": {},
-  "last_scan": "2026-05-09 18:15:20",
+  "last_scan": "2026-05-10 06:15:16",
   "total_converted": 150
 }
