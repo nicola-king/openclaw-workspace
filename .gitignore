@@ -1,1 +1,38 @@
+# === 敏感文件 ===
+*.env
+.env.*
+**/config/credentials*
+**/secrets*
+
+# === 缓存 & 编译 ===
+__pycache__/
+*.pyc
+*.pyo
+*$py.class
+*.swp
+*.swo
+*~
+node_modules/
+.venv/
+
+# === 日志 ===
+logs/
+*.log
+
+# === 运行时数据 ===
+**/__pycache__/
+**/.dreams/events.jsonl
+**/.cron-outputs/
+
+# === OERV 输出 ===
+# 输出文件按需提交，不自动全量
+skills/oerv-narrative-engine/output/
+
+# === 笔记 & 第三方 ===
+notes/awesome-design-md/
+skills/binance-trading-agent/
+
+# === 编辑器 ===
 .obsidian/
+.vscode/
+.idea/

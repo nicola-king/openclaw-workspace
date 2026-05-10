@@ -33,6 +33,7 @@ WECHAT_APP_ID = _ENV.get("WECHAT_APP_ID", "")
 WECHAT_APP_SECRET = _ENV.get("WECHAT_APP_SECRET", "")
 LLM_API_KEY = _ENV.get("LLM_API_KEY", "")
 PORT = int(_ENV.get("DISPATCH_PORT", "5200"))
+LAYOUT_STYLE = _ENV.get("OERV_LAYOUT_STYLE", "muji")  # muji | minimal | patagonia | notion | apple
 WECHAT_API_BASE = "https://api.weixin.qq.com/cgi-bin"
 
 # 配置目录
@@ -74,16 +75,26 @@ class WeChatPublisher:
     def is_configured(self):
         return bool(WECHAT_APP_ID and WECHAT_APP_SECRET)
 
-    def create_draft(self, title, content, cover_media_id=""):
-        """创建公众号草稿"""
+    def create_draft(self, title, content, emotion="", cover_media_id=""):
+        """创建公众号草稿（自动匹配排版风格）"""
         token = self._get_token()
         if not token:
             return {"status": "skipped", "reason": "微信未配置"}
 
+        # 智能匹配风格：情绪优先，内容兜底
+        style_name = self.smart_match_style(emotion=emotion, content=content)
+        # 环境变量可强制覆盖
+        env_style = LAYOUT_STYLE  # from .env
+        if env_style in self.LAYOUT_STYLES and env_style != self.STYLE_FALLBACK:
+            style_name = env_style if os.environ.get("OERV_LAYOUT_STYLE_FORCE") else style_name
+
+        matched_style = self.LAYOUT_STYLES.get(style_name, self.LAYOUT_STYLES[self.STYLE_FALLBACK])
+        print(f"  🎨 排版风格: {matched_style['name']} ({style_name})", file=sys.stderr)
+
         article = {
             "title": title[:64],
             "author": "SAYELF",
-            "content": self._to_wechat_html(content),
+            "content": self._to_wechat_html(content, style_name=style_name),
             "need_open_comment": 1,
             "only_fans_can_comment": 0,
         }
@@ -103,22 +114,231 @@ class WeChatPublisher:
 
         return resp
 
-    def _to_wechat_html(self, markdown_text):
-        """极简黑客风 → 公众号适配 HTML"""
-        html = []
+    # ════════════════════════════════════════
+    # 排版风格系统 (v1.0 — 2026-05-10)
+    # ════════════════════════════════════════
+
+    # 情绪 → 排版风格 智能匹配
+    EMOTION_STYLE_MAP = {
+        "焦虑": "minimal",     # 纯净，不添加任何情绪干扰
+        "愤怒": "minimal",     # 硬边，直白，不修饰
+        "悲伤": "muji",        # 米白暖灰，包容且有温度
+        "无力": "muji",        # 柔软，有温度但不煽情
+        "孤独": "muji",        # 暖底色像陪伴，但不是安慰
+        "困惑": "minimal",     # 洁净，让思绪自己浮现
+        "温暖": "patagonia",   # 手工感的暖，不精致但有温度
+        "释然": "apple",       # 呼吸感，留白多，字少
+        "希望": "apple",       # 明亮、高对比、轻松
+        "怀旧": "patagonia",   # 旧报纸质感，时间留下了痕迹
+    }
+    CONTENT_STYLE_MAP = {
+        "知识": "notion", "学习": "notion", "笔记": "notion", "教程": "notion",
+        "科技": "apple", "ai": "apple", "AI": "apple", "编程": "apple", "数码": "apple",
+        "社会": "minimal", "政治": "minimal", "新闻": "minimal",
+        "日常": "muji", "生活": "muji", "情感": "muji", "家庭": "muji",
+        "旅行": "patagonia", "自然": "patagonia", "户外": "patagonia",
+    }
+    STYLE_FALLBACK = "muji"
+
+    @classmethod
+    def smart_match_style(cls, emotion: str = "", content: str = "") -> str:
+        """根据情绪和内容智能匹配排版风格"""
+        if emotion:
+            style = cls.EMOTION_STYLE_MAP.get(emotion)
+            if style:
+                return style
+        for keyword, style in cls.CONTENT_STYLE_MAP.items():
+            if keyword in content:
+                return style
+        return cls.STYLE_FALLBACK
+
+    LAYOUT_STYLES = {
+        "muji": {
+            "name": "MUJI 无印良品",
+            "bg": "#F8F6F3",
+            "text": "#555555",
+            "text_strong": "#333333",
+            "text_muted": "#888888",
+            "link": "#8B7355",
+            "accent": "#8B7355",
+            "divider": "#E8E6E3",
+            "font_family": '"Noto Serif SC", "Source Han Serif SC", "STSong", "SimSun", serif',
+            "font_size": "16px",
+            "line_height": 2.0,
+            "paragraph_gap": "1.6em",
+            "header_font_family": '"Noto Serif SC", "Source Han Serif SC", "STSong", serif',
+            "header_weight": 450,
+            "letter_spacing": "0.03em",
+            "max_width": "680px",
+            "border_radius": "0",
+            "blockquote_border": "#D4C9B8",
+            "description": "米白底色 + 暖灰文字 + 充足留白。没有装饰，没有多余的东西。适于生活纪实类叙事。",
+        },
+        "minimal": {
+            "name": "Minimal 极简",
+            "bg": "#FFFFFF",
+            "text": "#333333",
+            "text_strong": "#111111",
+            "text_muted": "#999999",
+            "link": "#0066CC",
+            "accent": "#000000",
+            "divider": "#EEEEEE",
+            "font_family": '"Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif',
+            "font_size": "15px",
+            "line_height": 1.8,
+            "paragraph_gap": "1.4em",
+            "header_font_family": '"Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif',
+            "header_weight": 600,
+            "letter_spacing": "0",
+            "max_width": "700px",
+            "border_radius": "0",
+            "blockquote_border": "#DDD",
+            "description": "纯白背景 + 深灰文字 + 零装饰。最干净的容器。",
+        },
+        "patagonia": {
+            "name": "Patagonia 巴塔哥尼亚",
+            "bg": "#F5F3EE",
+            "text": "#2D2D2D",
+            "text_strong": "#1A1A1A",
+            "text_muted": "#7A7A7A",
+            "link": "#8B5E3C",
+            "accent": "#5A7A5A",
+            "divider": "#DED9CE",
+            "font_family": '"Noto Serif SC", "Source Han Serif SC", serif',
+            "font_size": "14px",
+            "line_height": 1.9,
+            "paragraph_gap": "1.4em",
+            "header_font_family": '"Noto Serif SC", "Source Han Serif SC", serif',
+            "header_weight": 500,
+            "letter_spacing": "0.02em",
+            "max_width": "660px",
+            "border_radius": "0",
+            "blockquote_border": "#C4B8A8",
+            "description": "自然米色底 + 粗糙质感。像旧报纸或再生纸。有手工感、有温度。",
+        },
+        "notion": {
+            "name": "Notion",
+            "bg": "#FFFFFF",
+            "text": "#222222",
+            "text_strong": "#000000",
+            "text_muted": "#AAAAAA",
+            "link": "#0075DE",
+            "accent": "#5645D4",
+            "divider": "#EFEFEF",
+            "font_family": '"-apple-system", "PingFang SC", "Helvetica Neue", sans-serif',
+            "font_size": "15px",
+            "line_height": 1.7,
+            "paragraph_gap": "1.2em",
+            "header_font_family": '"-apple-system", "PingFang SC", "Helvetica Neue", sans-serif',
+            "header_weight": 600,
+            "letter_spacing": "0",
+            "max_width": "720px",
+            "border_radius": "6px",
+            "blockquote_border": "#DDD",
+            "description": "极简无装饰 + 系统字体。像在看一个人的笔记。",
+        },
+        "apple": {
+            "name": "Apple",
+            "bg": "#FFFFFF",
+            "text": "#1D1D1F",
+            "text_strong": "#000000",
+            "text_muted": "#86868B",
+            "link": "#0066CC",
+            "accent": "#0066CC",
+            "divider": "#F0F0F0",
+            "font_family": '"SF Pro Text", "PingFang SC", "Helvetica Neue", sans-serif',
+            "font_size": "15px",
+            "line_height": 1.7,
+            "paragraph_gap": "1.2em",
+            "header_font_family": '"SF Pro Display", "PingFang SC", "Helvetica Neue", sans-serif',
+            "header_weight": 400,
+            "letter_spacing": "-0.01em",
+            "max_width": "660px",
+            "border_radius": "0",
+            "blockquote_border": "#E0E0E0",
+            "description": "大面积留白 + 细体字 + 高对比度。版面呼吸感最强。",
+        },
+    }
+
+    LAYOUT_STYLE_DEFAULT = "muji"  # 默认排版风格 — 2026-05-10 从 minimal 切换到 muji
+
+    def _to_wechat_html(self, markdown_text, style_name=None):
+        """Markdown → 适配风格化 HTML（支持多种排版风格）"""
+        style_name = style_name or os.environ.get("OERV_LAYOUT_STYLE", self.LAYOUT_STYLE_DEFAULT)
+        style = self.LAYOUT_STYLES.get(style_name, self.LAYOUT_STYLES["muji"])
+
+        # 构建完整 CSS 块
+        css_block = f'''<style>
+body {{ background: {style['bg']}; padding: 20px 0; margin: 0; }}
+.article-container {{
+    max-width: {style['max_width']};
+    margin: 0 auto;
+    background: {style['bg']};
+    padding: 30px 24px;
+    font-family: {style['font_family']};
+    font-size: {style['font_size']};
+    color: {style['text']};
+    line-height: {style['line_height']};
+    letter-spacing: {style['letter_spacing']};
+}}
+.article-container h2 {{
+    font-family: {style['header_font_family']};
+    font-weight: {style['header_weight']};
+    font-size: 1.5em;
+    color: {style['text_strong']};
+    margin: 1.8em 0 0.8em;
+    letter-spacing: {style['letter_spacing']};
+}}
+.article-container h3 {{
+    font-family: {style['header_font_family']};
+    font-weight: {style['header_weight']};
+    font-size: 1.25em;
+    color: {style['text_strong']};
+    margin: 1.5em 0 0.6em;
+}}
+.article-container p {{
+    margin: {style['paragraph_gap']} 0;
+    text-align: justify;
+}}
+.article-container strong {{
+    color: {style['text_strong']};
+    font-weight: 500;
+}}
+.article-container blockquote {{
+    border-left: 3px solid {style['blockquote_border']};
+    margin: 1.5em 0;
+    padding: 0.5em 1em;
+    color: {style['text_muted']};
+    font-style: italic;
+}}
+.article-container hr {{
+    border: none;
+    border-top: 1px solid {style['divider']};
+    margin: 2em 0;
+}}
+.article-container a {{ color: {style['link']}; text-decoration: none; }}
+</style>'''
+
+        html = [f'<div class="article-container">']
         for line in markdown_text.strip().split("\n"):
             line = line.strip()
             if not line:
-                html.append('<p style="margin: 1.5em 0;"></p>')
+                html.append(f'<p style="margin: {style["paragraph_gap"]} 0;"></p>')
             elif line.startswith("# "):
                 html.append(f"<h2>{line[2:]}</h2>")
             elif line.startswith("## "):
                 html.append(f"<h3>{line[3:]}</h3>")
+            elif line.startswith("> "):
+                html.append(f"<blockquote>{line[2:]}</blockquote>")
             elif line.startswith("**") and line.endswith("**"):
                 html.append(f"<p><strong>{line[2:-2]}</strong></p>")
+            elif line.startswith("---"):
+                html.append("<hr>")
             else:
-                html.append(f"<p style='margin: 1em 0; line-height: 1.8;'>{line}</p>")
-        return "\n".join(html)
+                html.append(f"<p>{line}</p>")
+        html.append("</div>")
+
+        return css_block + "\n".join(html)
 
     def _save_record(self, channel, title, media_id):
         """记录发布历史"""
@@ -169,9 +389,11 @@ class OERVPipeline:
         if publish and mode == "article":
             pub = WeChatPublisher()
             if pub.is_configured():
+                emotion = result.get("meta", {}).get("emotion", "")
                 pub.create_draft(
                     title=result["refined"]["core_view"][:64],
                     content=result["article"],
+                    emotion=emotion,
                 )
             else:
                 print("ℹ️ 微信未配置，跳过推送（设置 .env 中的 WECHAT_APP_ID/密")  # 截断防敏感
@@ -222,7 +444,8 @@ def start_webhook(port=None):
             # 推送公众号
             pub = WeChatPublisher()
             if pub.is_configured():
-                pub.create_draft(title, content)
+                emotion = data.get("emotion", "")
+                pub.create_draft(title, content, emotion=emotion)
                 return jsonify({"status": "success", "msg": "已推送公众号", "output": output_file})
             else:
                 return jsonify({"status": "success", "msg": "已保存（微信未配置）", "output": output_file})
