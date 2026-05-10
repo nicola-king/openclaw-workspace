@@ -1,0 +1,3 @@
+[submodule "skills/binance-trading-agent"]
+	path = skills/binance-trading-agent
+	url = https://github.com/nicola-king/binance-trading-agent.git

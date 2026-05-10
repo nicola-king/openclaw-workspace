@@ -30,7 +30,12 @@ skills/oerv-narrative-engine/output/
 
 # === 笔记 & 第三方 ===
 notes/awesome-design-md/
-skills/binance-trading-agent/
+
+# === 大文件 / 子模块排除 ===
+skills/moss-tts-nano/  # 681M venv, 不纳入版本控制
+skills/maigret/  # 空占位
+skills/learning-agent/  # 空占位
+skills/scheduler-agent/  # 空占位
 
 # === 编辑器 ===
 .obsidian/
