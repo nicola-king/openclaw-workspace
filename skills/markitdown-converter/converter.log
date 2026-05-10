@@ -173,3 +173,14 @@
 [2026-05-10 12:15:30] [INFO] 发现 1 个待转换文件（增量）
 [2026-05-10 12:15:30] [INFO]   [待转换] JSON: skills/markitdown-converter/converter_state.json
 [2026-05-10 12:15:30] [INFO] 转换完成: ✅ 0 成功, ⏭ 0 跳过, ❌ 0 失败
+[2026-05-10 18:15:27] [INFO] 发现 8 个待转换文件（增量）
+[2026-05-10 18:15:27] [INFO]   ✅ [JSON] competitor_report_20260510.json → ok (2.5KB)
+[2026-05-10 18:15:28] [INFO]   ✅ [JSON] keyword_research.json → ok (16.0KB)
+[2026-05-10 18:15:29] [INFO]   ✅ [JSON] converter_state.json → ok (12.3KB)
+[2026-05-10 18:15:30] [INFO]   ✅ [JSON] campaigns.json → ok (2.0B)
+[2026-05-10 18:15:31] [INFO]   ✅ [JSON] opportunities.json → ok (9.2KB)
+[2026-05-10 18:15:32] [INFO]   ✅ [JSON] short-term-recall.json → ok (67.6KB)
+[2026-05-10 18:15:32] [INFO] 转换完成: ✅ 6 成功, ⏭ 2 跳过, ❌ 0 失败
+[2026-05-11 00:15:23] [INFO] 发现 1 个待转换文件（增量）
+[2026-05-11 00:15:24] [INFO]   ✅ [JSON] converter_state.json → ok (12.3KB)
+[2026-05-11 00:15:24] [INFO] 转换完成: ✅ 1 成功, ⏭ 0 跳过, ❌ 0 失败
