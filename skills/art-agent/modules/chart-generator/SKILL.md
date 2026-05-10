@@ -1,0 +1,14 @@
+# chart-generator Skill
+
+## 描述
+chart-generator 模块 - 太一美学引擎组件
+
+## 依赖
+- aesthetic-filter: ^1.0.0
+
+## 使用
+```python
+from core import chartgeneratorModule
+module = chartgeneratorModule()
+result = module.execute(task="generate")
+```

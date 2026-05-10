@@ -1,0 +1,94 @@
+/* IBM — 品牌设计CSS变量 */
+/* An enterprise-marketing canvas faithful to Carbon Design System: white surfaces, */
+
+:root {
+  /* ===== Colors ===== */
+  --ibm-primary: #0f62fe;
+  --ibm-on-primary: #ffffff;
+  --ibm-ink: #161616;
+  --ibm-ink-muted: #525252;
+  --ibm-ink-subtle: #8c8c8c;
+  --ibm-canvas: #ffffff;
+  --ibm-surface-1: #f4f4f4;
+  --ibm-surface-2: #e0e0e0;
+  --ibm-inverse-canvas: #161616;
+  --ibm-inverse-surface-1: #262626;
+  --ibm-inverse-ink: #ffffff;
+  --ibm-inverse-ink-muted: #c6c6c6;
+  --ibm-hairline: #e0e0e0;
+  --ibm-hairline-strong: #161616;
+  --ibm-blue-60: #0043ce;
+  --ibm-blue-80: #002d9c;
+  --ibm-blue-hover: #0050e6;
+  --ibm-semantic-success: #24a148;
+  --ibm-semantic-warning: #f1c21b;
+  --ibm-semantic-error: #da1e28;
+  --ibm-semantic-info: #0f62fe;
+
+  /* ===== Typography ===== */
+  --ibm-display-xl-fontFamily: IBM Plex Sans;
+  --ibm-display-xl-fontSize: 76px;
+  --ibm-display-xl-fontWeight: 300;
+  --ibm-display-xl-lineHeight: 1.17;
+  --ibm-display-xl-letterSpacing: -0.5px;
+  --ibm-display-lg-fontFamily: IBM Plex Sans;
+  --ibm-display-lg-fontSize: 60px;
+  --ibm-display-lg-fontWeight: 300;
+  --ibm-display-lg-lineHeight: 1.17;
+  --ibm-display-lg-letterSpacing: -0.4px;
+  --ibm-display-md-fontFamily: IBM Plex Sans;
+  --ibm-display-md-fontSize: 42px;
+  --ibm-display-md-fontWeight: 300;
+  --ibm-display-md-lineHeight: 1.2;
+  --ibm-display-md-letterSpacing: 0;
+  --ibm-headline-fontFamily: IBM Plex Sans;
+  --ibm-headline-fontSize: 32px;
+  --ibm-headline-fontWeight: 400;
+  --ibm-headline-lineHeight: 1.25;
+  --ibm-headline-letterSpacing: 0;
+  --ibm-card-title-fontFamily: IBM Plex Sans;
+  --ibm-card-title-fontSize: 24px;
+  --ibm-card-title-fontWeight: 400;
+  --ibm-card-title-lineHeight: 1.33;
+  --ibm-card-title-letterSpacing: 0;
+  --ibm-subhead-fontFamily: IBM Plex Sans;
+  --ibm-subhead-fontSize: 20px;
+  --ibm-subhead-fontWeight: 400;
+  --ibm-subhead-lineHeight: 1.4;
+  --ibm-subhead-letterSpacing: 0;
+  --ibm-body-lg-fontFamily: IBM Plex Sans;
+  --ibm-body-lg-fontSize: 18px;
+  --ibm-body-lg-fontWeight: 400;
+  --ibm-body-lg-lineHeight: 1.5;
+  --ibm-body-lg-letterSpacing: 0;
+  --ibm-body-fontFamily: IBM Plex Sans;
+  --ibm-body-fontSize: 16px;
+  --ibm-body-fontWeight: 400;
+  --ibm-body-lineHeight: 1.5;
+  --ibm-body-letterSpacing: 0.16px;
+  --ibm-body-sm-fontFamily: IBM Plex Sans;
+  --ibm-body-sm-fontSize: 14px;
+  --ibm-body-sm-fontWeight: 400;
+  --ibm-body-sm-lineHeight: 1.29;
+  --ibm-body-sm-letterSpacing: 0.16px;
+  --ibm-body-emphasis-fontFamily: IBM Plex Sans;
+  --ibm-body-emphasis-fontSize: 14px;
+  --ibm-body-emphasis-fontWeight: 600;
+  --ibm-body-emphasis-lineHeight: 1.29;
+  --ibm-body-emphasis-letterSpacing: 0.16px;
+  --ibm-caption-fontFamily: IBM Plex Sans;
+  --ibm-caption-fontSize: 12px;
+  --ibm-caption-fontWeight: 400;
+  --ibm-caption-lineHeight: 1.33;
+  --ibm-caption-letterSpacing: 0.32px;
+  --ibm-button-fontFamily: IBM Plex Sans;
+  --ibm-button-fontSize: 14px;
+  --ibm-button-fontWeight: 400;
+  --ibm-button-lineHeight: 1.29;
+  --ibm-button-letterSpacing: 0.16px;
+  --ibm-eyebrow-fontFamily: IBM Plex Sans;
+  --ibm-eyebrow-fontSize: 14px;
+  --ibm-eyebrow-fontWeight: 400;
+  --ibm-eyebrow-lineHeight: 1.29;
+  --ibm-eyebrow-letterSpacing: 0.16px;
+}

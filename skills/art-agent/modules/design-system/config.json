@@ -1,0 +1,4 @@
+{
+  "module": "design-system",
+  "version": "1.0.0"
+}

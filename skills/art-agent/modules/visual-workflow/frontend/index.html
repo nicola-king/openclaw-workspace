@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>太一 Agent 调度面板</title>
+<link rel="stylesheet" href="vendor/reactflow.css">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  #root { height: 100vh; width: 100vw; }
+
+  .topbar {
+    height: 48px;
+    background: #1e293b;
+    border-bottom: 1px solid #334155;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+  }
+  .topbar-title { font-weight: 600; font-size: 15px; display: flex; align-items: center; gap: 8px; }
+  .topbar-title .accent { color: #6366f1; }
+  .topbar-actions { display: flex; gap: 8px; }
+  .topbar-actions button {
+    background: #334155; color: #e2e8f0; border: 1px solid #475569;
+    padding: 4px 14px; border-radius: 6px; cursor: pointer;
+    font-size: 12px; transition: all 0.15s;
+  }
+  .topbar-actions button:hover { background: #475569; }
+  .topbar-actions button.primary { background: #6366f1; border-color: #818cf8; }
+  .topbar-actions button.primary:hover { background: #4f46e5; }
+
+  .sidebar {
+    position: absolute;
+    top: 48px; left: 0; bottom: 0;
+    width: 240px;
+    background: #1e293b;
+    border-right: 1px solid #334155;
+    z-index: 100;
+    overflow-y: auto;
+    padding: 12px;
+    transition: transform 0.2s;
+  }
+  .sidebar.hidden { transform: translateX(-240px); }
+
+  .sidebar-section { margin-bottom: 16px; }
+  .sidebar-section-title {
+    font-size: 11px; text-transform: uppercase; letter-spacing: 1px;
+    color: #64748b; margin-bottom: 8px; font-weight: 600;
+  }
+
+  .wf-item {
+    background: #334155; border-radius: 8px; padding: 10px 12px;
+    margin-bottom: 8px; cursor: pointer; transition: all 0.15s;
+    border: 1px solid transparent;
+  }
+  .wf-item:hover { border-color: #6366f1; }
+  .wf-item.active { border-color: #818cf8; background: #1e3a5f; }
+  .wf-item .wf-name { font-size: 13px; font-weight: 500; margin-bottom: 2px; }
+  .wf-item .wf-meta { font-size: 11px; color: #94a3b8; }
+
+  .canvas-wrap {
+    position: absolute;
+    top: 48px; left: 240px; right: 0; bottom: 0;
+    transition: left 0.2s;
+  }
+  .canvas-wrap.full { left: 0; }
+
+  .infopanel {
+    position: absolute;
+    bottom: 12px; right: 12px;
+    width: 280px; max-height: 380px;
+    background: #1e293b; border: 1px solid #334155;
+    border-radius: 10px; padding: 14px;
+    z-index: 100;
+    overflow-y: auto;
+    font-size: 13px;
+  }
+  .infopanel h3 { font-size: 14px; margin-bottom: 8px; color: #818cf8; }
+  .infopanel dt { color: #94a3b8; font-size: 11px; margin-top: 6px; }
+  .infopanel dd { margin-left: 0; word-break: break-all; }
+
+  .status-dot {
+    display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px;
+  }
+  .status-success { background: #22c55e; }
+  .status-error { background: #ef4444; }
+  .status-running { background: #3b82f6; animation: pulse 1.5s infinite; }
+  .status-idle { background: #94a3b8; }
+
+  @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+
+  .shortcuts { font-size: 12px; color: #94a3b8; line-height: 2; }
+  .shortcuts kbd {
+    background: #334155; border: 1px solid #475569; border-radius: 3px;
+    padding: 1px 5px; font-size: 11px;
+  }
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script src="vendor/react.production.min.js"></script>
+<script src="vendor/react-dom.production.min.js"></script>
+<script src="vendor/reactflow.umd.js"></script>
+
+<script>
+// ─── 默认全景数据 ────────────────────────────────────────────
+const SYSTEM_LANDSCAPE = {
+  nodes: [
+    // Travel domain
+    { id: 't_taiyi', type: 'input', position: { x: 50, y: 20 }, data: { label: '🧘 太一 · 🐾 旅游', type: 'taiyi', status: 'success' } },
+    { id: 't_zhiji', position: { x: 0, y: 150 }, data: { label: '🧠 知几 · 情报', type: 'bot', status: 'idle' } },
+    { id: 't_shanmu', position: { x: 120, y: 150 }, data: { label: '🏔️ 山木 · 规划', type: 'bot', status: 'idle' } },
+    { id: 't_suwen', position: { x: 240, y: 150 }, data: { label: '📚 素问 · 研究', type: 'bot', status: 'idle' } },
+    { id: 't_wangliang', position: { x: 0, y: 250 }, data: { label: '🔍 罔两 · 验证', type: 'bot', status: 'idle' } },
+    { id: 't_paoding', position: { x: 240, y: 250 }, data: { label: '💰 庖丁 · 预算', type: 'bot', status: 'idle' } },
+    // Trade domain
+    { id: 'tr_taiyi', type: 'input', position: { x: 500, y: 20 }, data: { label: '🧘 太一 · 🌐 贸易', type: 'taiyi', status: 'success' } },
+    { id: 'tr_zhiji', position: { x: 450, y: 150 }, data: { label: '🧠 知几 · 情报', type: 'bot', status: 'idle' } },
+    { id: 'tr_shanmu', position: { x: 570, y: 150 }, data: { label: '🏔️ 山木 · 执行', type: 'bot', status: 'idle' } },
+    { id: 'tr_suwen', position: { x: 690, y: 150 }, data: { label: '📚 素问 · 合规', type: 'bot', status: 'idle' } },
+    { id: 'tr_wangliang', position: { x: 450, y: 250 }, data: { label: '🔍 罔两 · 监控', type: 'bot', status: 'idle' } },
+    { id: 'tr_paoding', position: { x: 690, y: 250 }, data: { label: '💰 庖丁 · 风控', type: 'bot', status: 'idle' } },
+    // Shared tools
+    { id: 'tool_search', type: 'output', position: { x: 200, y: 390 }, data: { label: '🔎 搜索Agent v4', type: 'tool' } },
+    { id: 'tool_verify', type: 'output', position: { x: 380, y: 390 }, data: { label: '✅ 验证管道', type: 'tool' } },
+    { id: 'tool_cache', type: 'output', position: { x: 560, y: 390 }, data: { label: '💾 缓存+统计', type: 'tool' } },
+  ],
+  edges: [
+    // Travel edges
+    { id: 'e_t_zj', source: 't_taiyi', target: 't_zhiji', label: '分派', animated: false },
+    { id: 'e_t_sm', source: 't_taiyi', target: 't_shanmu', label: '分派', animated: false },
+    { id: 'e_t_sw', source: 't_taiyi', target: 't_suwen', label: '分派', animated: false },
+    { id: 'e_t_wl', source: 't_taiyi', target: 't_wangliang', label: '分派', animated: false },
+    { id: 'e_t_pd', source: 't_taiyi', target: 't_paoding', label: '分派', animated: false },
+    // Trade edges
+    { id: 'e_tr_zj', source: 'tr_taiyi', target: 'tr_zhiji', label: '分派', animated: false },
+    { id: 'e_tr_sm', source: 'tr_taiyi', target: 'tr_shanmu', label: '分派', animated: false },
+    { id: 'e_tr_sw', source: 'tr_taiyi', target: 'tr_suwen', label: '分派', animated: false },
+    { id: 'e_tr_wl', source: 'tr_taiyi', target: 'tr_wangliang', label: '分派', animated: false },
+    { id: 'e_tr_pd', source: 'tr_taiyi', target: 'tr_paoding', label: '分派', animated: false },
+    // Shared tool links
+    { id: 'e_t_ts', source: 't_taiyi', target: 'tool_search', label: '共享', style: { strokeDasharray: '5 5' } },
+    { id: 'e_tr_ts', source: 'tr_taiyi', target: 'tool_search', label: '共享', style: { strokeDasharray: '5 5' } },
+    { id: 'e_t_tv', source: 't_taiyi', target: 'tool_verify', label: '共享', style: { strokeDasharray: '5 5' } },
+    { id: 'e_tr_tv', source: 'tr_taiyi', target: 'tool_verify', label: '共享', style: { strokeDasharray: '5 5' } },
+    { id: 'e_t_tc', source: 't_taiyi', target: 'tool_cache', label: '共享', style: { strokeDasharray: '5 5' } },
+    { id: 'e_tr_tc', source: 'tr_taiyi', target: 'tool_cache', label: '共享', style: { strokeDasharray: '5 5' } },
+  ],
+};
+
+// ─── 自定义节点 ──────────────────────────────────────────
+function CustomNode({ data, selected }) {
+  const type = data.type || 'bot';
+  const status = data.status || 'idle';
+  const colors = {
+    taiyi:  { bg: '#6366f1', border: '#4338ca' },
+    bot:    { bg: '#22c55e', border: '#16a34a' },
+    tool:   { bg: '#f59e0b', border: '#d97706' },
+    output: { bg: '#8b5cf6', border: '#7c3aed' },
+    input:  { bg: '#6366f1', border: '#4338ca' },
+  };
+  const c = colors[type] || colors.bot;
+  const borderColor = selected ? '#fff' : status === 'running' ? '#3b82f6'
+    : status === 'success' ? '#22c55e' : status === 'error' ? '#ef4444' : c.border;
+
+  return React.createElement('div', {
+    style: {
+      background: `linear-gradient(135deg, ${c.bg}, ${c.bg}dd)`,
+      color: '#fff',
+      border: `2px solid ${borderColor}`,
+      borderRadius: '8px',
+      padding: '6px 14px',
+      fontSize: '13px',
+      fontWeight: 500,
+      textAlign: 'center',
+      minWidth: '80px',
+      boxShadow: selected ? `0 0 0 2px ${c.bg}44` : 'none',
+      transition: 'all 0.15s',
+      cursor: 'pointer',
+    }
+  }, data.label);
+}
+
+const nodeTypes = {
+  input: CustomNode,
+  output: CustomNode,
+  default: CustomNode,
+};
+
+// ─── 主应用 ──────────────────────────────────────────────
+function App() {
+  const { ReactFlow, Background, Controls, MiniMap, useNodesState, useEdgesState, MarkerType, useReactFlow } = window.ReactFlow;
+
+  const [nodes, setNodes, onNodesChange] = useNodesState(SYSTEM_LANDSCAPE.nodes);
+  const [edges, setEdges, onEdgesChange] = useEdgesState(SYSTEM_LANDSCAPE.edges.map(e => ({
+    ...e, labelStyle: { fill: '#94a3b8', fontSize: 11 },
+  })));
+  const [selected, setSelected] = React.useState(null);
+  const [sidebar, setSidebar] = React.useState(true);
+  const [workflows, setWorkflows] = React.useState([
+    { id: 'system', name: '系统全景拓扑', domain: 'system', status: 'success' },
+  ]);
+  const [activeWf, setActiveWf] = React.useState('system');
+  const [statusText, setStatusText] = React.useState('就绪');
+  const reactFlowInstance = useReactFlow();
+
+  const loadWF = (wf) => {
+    if (!wf.nodes) return;
+    setActiveWf(wf.id);
+    setNodes(wf.nodes.map(n => ({ ...n, type: n.data?.type === 'input' || n.data?.type === 'output' ? n.data?.type : 'default' })));
+    setEdges(wf.edges.map(e => ({ ...e, labelStyle: { fill: '#94a3b8', fontSize: 11 }, markerEnd: { type: MarkerType.ArrowClosed } })));
+    setSelected(null);
+    setTimeout(() => reactFlowInstance?.fitView?.({ padding: 0.2 }), 100);
+  };
+
+  const runDemo = () => {
+    const id = `demo_${Date.now()}`;
+    const wf = {
+      id, name: `模拟调度 ${new Date().toLocaleTimeString()}`,
+      domain: 'travel', status: 'running',
+      nodes: [
+        { id: `${id}_taiyi`, type: 'input', position: { x: 250, y: 20 }, data: { label: '🧘 太一 · 旅游', type: 'taiyi', status: 'success' } },
+        { id: `${id}_zhiji`, position: { x: 50, y: 150 }, data: { label: '🧠 知几 · 情报', type: 'bot', status: 'running' } },
+        { id: `${id}_shanmu`, position: { x: 250, y: 150 }, data: { label: '🏔️ 山木 · 规划', type: 'bot', status: 'idle' } },
+        { id: `${id}_paoding`, position: { x: 450, y: 150 }, data: { label: '💰 庖丁 · 预算', type: 'bot', status: 'idle' } },
+        { id: `${id}_out`, type: 'output', position: { x: 250, y: 280 }, data: { label: '📋 聚合交付', type: 'output', status: 'idle' } },
+      ],
+      edges: [
+        { id: `${id}_e1`, source: `${id}_taiyi`, target: `${id}_zhiji`, label: '分派', animated: true },
+        { id: `${id}_e2`, source: `${id}_taiyi`, target: `${id}_shanmu`, label: '分派', animated: false },
+        { id: `${id}_e3`, source: `${id}_taiyi`, target: `${id}_paoding`, label: '分派', animated: false },
+        { id: `${id}_e4`, source: `${id}_zhiji`, target: `${id}_shanmu`, label: '数据传递', animated: true },
+        { id: `${id}_e5`, source: `${id}_shanmu`, target: `${id}_paoding`, label: '预算传递', animated: true },
+        { id: `${id}_e6`, source: `${id}_zhiji`, target: `${id}_out`, label: '返回', animated: false },
+        { id: `${id}_e7`, source: `${id}_shanmu`, target: `${id}_out`, label: '返回', animated: false },
+        { id: `${id}_e8`, source: `${id}_paoding`, target: `${id}_out`, label: '返回', animated: false },
+      ],
+    };
+    setWorkflows(prev => [...prev, { id, name: wf.name, domain: 'travel', status: 'running' }]);
+    loadWF(wf);
+    setStatusText('▶ 知几搜索中...');
+    setTimeout(() => setStatusText('▶ 知几完成，山木规划中...'), 2000);
+    setTimeout(() => setStatusText('▶ 庖丁核算预算...'), 4000);
+    setTimeout(() => {
+      setStatusText('✅ 调度完成');
+      setWorkflows(prev => prev.map(w => w.id === id ? { ...w, status: 'success' } : w));
+    }, 6000);
+  };
+
+  const handleUpload = () => {
+    const inp = document.createElement('input');
+    inp.type = 'file'; inp.accept = '.json';
+    inp.onchange = (e) => {
+      const file = e.target.files[0];
+      const reader = new FileReader();
+      reader.onload = (ev) => {
+        try {
+          const data = JSON.parse(ev.target.result);
+          const wid = data.id || `wf_${Date.now()}`;
+          if (data.nodes && data.edges) {
+            const wf = { id: wid, name: data.title || data.id || '工作流', domain: data.domain || 'custom', status: 'success', nodes: data.nodes, edges: data.edges };
+            setWorkflows(prev => [...prev, { id: wid, name: wf.name, domain: wf.domain, status: 'success' }]);
+            loadWF(wf);
+            setStatusText(`✅ 已加载: ${wf.name}`);
+          }
+        } catch (err) {
+          setStatusText(`❌ ${err.message}`);
+        }
+      };
+      reader.readAsText(file);
+    };
+    inp.click();
+  };
+
+  const onNodeClick = (ev, node) => setSelected(node);
+  const onPaneClick = () => setSelected(null);
+
+  return React.createElement('div', { style: { height: '100vh', position: 'relative' } },
+
+    // Top bar
+    React.createElement('div', { className: 'topbar' },
+      React.createElement('div', { className: 'topbar-title' },
+        React.createElement('span', { className: 'accent' }, '⏣'),
+        '太一 Agent 调度面板',
+        React.createElement('span', { style: { fontSize: 11, color: '#64748b', marginLeft: 8 } }, statusText),
+      ),
+      React.createElement('div', { className: 'topbar-actions' },
+        React.createElement('button', { onClick: () => setSidebar(!sidebar) }, '☰'),
+        React.createElement('button', { className: 'primary', onClick: runDemo }, '▶ 模拟调度'),
+        React.createElement('button', { onClick: handleUpload }, '📂 导入'),
+        React.createElement('button', { onClick: () => loadWF(workflows[0]) }, '🏠 全景'),
+      ),
+    ),
+
+    // Sidebar
+    React.createElement('div', { className: `sidebar ${sidebar ? '' : 'hidden'}` },
+      React.createElement('div', { className: 'sidebar-section' },
+        React.createElement('div', { className: 'sidebar-section-title' }, '工作流'),
+        workflows.map(w => React.createElement('div', {
+          key: w.id, className: `wf-item ${activeWf === w.id ? 'active' : ''}`,
+          onClick: () => workflowData[w.id] ? loadWF(workflowData[w.id]) : null,
+        },
+          React.createElement('div', { className: 'wf-name' },
+            React.createElement('span', { className: `status-dot status-${w.status}` }),
+            w.name,
+          ),
+          React.createElement('div', { className: 'wf-meta' }, w.domain),
+        )),
+      ),
+      React.createElement('div', { className: 'shortcuts' },
+        React.createElement('div', { className: 'sidebar-section-title' }, '操作'),
+        '<kbd>滚轮</kbd> 缩放 · <kbd>拖拽</kbd> 平移<br>',
+        '点击节点查看状态<br>',
+        '📂 导入拓扑 JSON<br>',
+        '▶ 模拟调度演示',
+      ),
+    ),
+
+    // Canvas
+    React.createElement('div', { className: `canvas-wrap ${sidebar ? '' : 'full'}` },
+      React.createElement(ReactFlow, {
+        nodes, edges, onNodesChange, onEdgesChange,
+        onNodeClick, onPaneClick,
+        nodeTypes,
+        fitView: true,
+        attributionPosition: 'bottom-left',
+        minZoom: 0.2, maxZoom: 3,
+        defaultEdgeOptions: {
+          style: { stroke: '#475569', strokeWidth: 2 },
+          labelStyle: { fill: '#94a3b8', fontSize: 11 },
+        },
+        proOptions: { hideAttribution: true },
+        nodesDraggable: true,
+      },
+        React.createElement(Background, { color: '#334155', gap: 20 }),
+        React.createElement(Controls, { style: { background: '#1e293b', border: '1px solid #334155', borderRadius: 8 } }),
+        React.createElement(MiniMap, {
+          nodeStrokeColor: '#6366f1', nodeColor: '#1e293b', nodeBorderRadius: 4,
+          style: { background: '#0f172a', border: '1px solid #334155' },
+        }),
+      ),
+    ),
+
+    // Info panel
+    selected && React.createElement('div', { className: 'infopanel', key: selected.id },
+      React.createElement('h3', {}, selected.data.label),
+      React.createElement('dl', {},
+        React.createElement('dt', {}, 'ID'),
+        React.createElement('dd', {}, selected.id),
+        React.createElement('dt', {}, '类型'),
+        React.createElement('dd', {}, selected.data.type || 'default'),
+        React.createElement('dt', {}, '状态'),
+        React.createElement('dd', {},
+          React.createElement('span', { className: `status-dot status-${selected.data.status || 'idle'}`, style: { verticalAlign: 'middle' } }),
+          ` ${selected.data.status || 'idle'}`,
+        ),
+        selected.data.details && Object.keys(selected.data.details).length > 0 &&
+          Object.entries(selected.data.details).map(([k, v]) =>
+            React.createElement(React.Fragment, { key: k },
+              React.createElement('dt', {}, k),
+              React.createElement('dd', {}, String(v)),
+            )
+          ),
+      ),
+    ),
+  );
+}
+
+// Store workflow data for sidebar lookup
+const workflowData = { system: SYSTEM_LANDSCAPE };
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(React.createElement(App));
+</script>
+</body>
+</html>
