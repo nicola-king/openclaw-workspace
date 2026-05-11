@@ -184,3 +184,22 @@
 [2026-05-11 00:15:23] [INFO] 发现 1 个待转换文件（增量）
 [2026-05-11 00:15:24] [INFO]   ✅ [JSON] converter_state.json → ok (12.3KB)
 [2026-05-11 00:15:24] [INFO] 转换完成: ✅ 1 成功, ⏭ 0 跳过, ❌ 0 失败
+[2026-05-11 06:15:21] [INFO] 发现 1 个待转换文件（增量）
+[2026-05-11 06:15:22] [INFO]   ✅ [JSON] converter_state.json → ok (12.3KB)
+[2026-05-11 06:15:22] [INFO] 转换完成: ✅ 1 成功, ⏭ 0 跳过, ❌ 0 失败
+[2026-05-11 12:15:26] [INFO] 发现 6 个待转换文件（增量）
+[2026-05-11 12:15:27] [INFO]   ✅ [JSON] process_review.json → ok (13.5KB)
+[2026-05-11 12:15:28] [INFO]   ✅ [JSON] outreach-queue-2026-05-11.json → ok (8.5KB)
+[2026-05-11 12:15:29] [INFO]   ✅ [JSON] converter_state.json → ok (12.4KB)
+[2026-05-11 12:15:30] [INFO]   ✅ [JSON] short-term-recall.json → ok (73.7KB)
+[2026-05-11 12:15:30] [INFO] 转换完成: ✅ 4 成功, ⏭ 2 跳过, ❌ 0 失败
+[2026-05-11 18:15:21] [INFO] 发现 6 个待转换文件（增量）
+[2026-05-11 18:15:22] [INFO]   ✅ [JSON] 2026-05-11.json → ok (933.0B)
+[2026-05-11 18:15:22] [INFO]   ✅ [JSON] competitor_report_20260511.json → ok (2.5KB)
+[2026-05-11 18:15:23] [INFO]   ✅ [JSON] converter_state.json → ok (12.6KB)
+[2026-05-11 18:15:24] [INFO]   ✅ [JSON] short-term-recall.json → ok (79.2KB)
+[2026-05-11 18:15:24] [INFO] 转换完成: ✅ 4 成功, ⏭ 2 跳过, ❌ 0 失败
+[2026-05-12 00:15:21] [INFO] 发现 2 个待转换文件（增量）
+[2026-05-12 00:15:22] [INFO]   ✅ [JSON] converter_state.json → ok (12.6KB)
+[2026-05-12 00:15:23] [INFO]   ✅ [JSON] short-term-recall.json → ok (79.2KB)
+[2026-05-12 00:15:23] [INFO] 转换完成: ✅ 2 成功, ⏭ 0 跳过, ❌ 0 失败

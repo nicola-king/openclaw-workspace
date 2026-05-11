@@ -31,21 +31,27 @@ from enum import Enum
 
 
 # ═══════════════════════════════════════════════════════════════
+# 日志初始化 (必须在任何日志调用之前)
+# ═══════════════════════════════════════════════════════════════
+logger = logging.getLogger(__name__)
+
+# ═══════════════════════════════════════════════════════════════
 # 穿透式搜索核 v1.0 — 搜索 Agent 核心注入
 # 三层穿透: 正常浏览 → 爬虫机制 → 防反爬
 # 四步提取: 搜到 → 爬到 → 验证 → 入库
 # ═══════════════════════════════════════════════════════════════
 _SEARCH_CORE_PATH = Path.home() / ".openclaw" / "workspace" / "scripts" / "penetrating_search.py"
+PenetratingSearch = None
 if _SEARCH_CORE_PATH.exists():
-    import importlib.util
-    _pen_spec = importlib.util.spec_from_file_location("penetrating_search", str(_SEARCH_CORE_PATH))
-    _penetrating = importlib.util.module_from_spec(_pen_spec)
-    _pen_spec.loader.exec_module(_penetrating)
-    PenetratingSearch = _penetrating.PenetratingSearch
-    logger.info("🧬 穿透式搜索核已注入 — 三层穿透·四步提取")
-else:
-    PenetratingSearch = None
-    logger.warning("⚠️ 穿透式搜索核未找到")
+    try:
+        import importlib.util
+        _pen_spec = importlib.util.spec_from_file_location("penetrating_search", str(_SEARCH_CORE_PATH))
+        _penetrating = importlib.util.module_from_spec(_pen_spec)
+        _pen_spec.loader.exec_module(_penetrating)
+        PenetratingSearch = getattr(_penetrating, 'PenetratingSearch', None)
+        logger.info("🧬 穿透式搜索核已注入 — 三层穿透·四步提取")
+    except Exception as e:
+        logger.warning(f"⚠️ 穿透式搜索核加载失败: {e}")
 
 
 # ── 引入 scraper_v4 作为实际搜索引擎 ──
@@ -66,7 +72,7 @@ logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     level=logging.INFO
 )
-logger = logging.getLogger('TaiyiSearch')
+# logger already initialized above
 
 # ── Paths ──
 WORKSPACE = Path.home() / ".openclaw" / "workspace"
@@ -565,6 +571,81 @@ print("✅ Chrome for Testing 集成完成")
 
 
 # ═══════════════════════════════════════════════════════════════
+# [SEARCH ENGINE 5] Browser Harness — OpenClaw 浏览器搜索引擎
+# 基于 OpenClaw Browser Plugin (CDP/Playwright)
+# 当 API 搜索/requests 爬取失败时回退
+# ═══════════════════════════════════════════════════════════════
+
+_BROWSER_HARNESS = None
+
+def _get_browser_harness():
+    """延迟加载 browser-harness 模块"""
+    global _BROWSER_HARNESS
+    if _BROWSER_HARNESS is not None:
+        return _BROWSER_HARNESS
+    try:
+        sys.path.insert(0, str(Path.home() / ".openclaw" / "workspace" / "skills"))
+        from browser_harness.browser_search import get_browser_harness as _get
+        _BROWSER_HARNESS = _get()
+        if _BROWSER_HARNESS.available:
+            logger.info("🌐 Browser Harness 就绪 — OpenClaw 浏览器搜索引擎")
+        else:
+            logger.warning("⚠️ Browser Harness 模块已导入但浏览器未就绪")
+        return _BROWSER_HARNESS
+    except Exception as e:
+        logger.warning(f"⚠️ Browser Harness 加载失败: {e}")
+        return None
+
+
+def _search_via_browser_harness(service, query: str, count: int = 10) -> list:
+    """使用 OpenClaw Browser Plugin 做浏览器搜索"""
+    harness = _get_browser_harness()
+    if not harness or not harness.available:
+        logger.info("Browser Harness 不可用，跳过浏览器搜索")
+        return []
+
+    try:
+        # 先试轻量模式 (snapshot), 再试深度模式 (输入框)
+        resp = harness.search(query, engine="google", count=count)
+        if resp.success and resp.results:
+            return [
+                {
+                    "title": r.title,
+                    "url": r.url,
+                    "snippet": r.snippet,
+                    "engine": "browser_harness",
+                    "source": resp.source
+                }
+                for r in resp.results
+            ]
+
+        # 轻量失败，试深度模式（输入框+提交）
+        logger.info(f"轻量浏览器搜索无结果，尝试深度模式: {query}")
+        resp = harness.search_deep(query, engine="google", count=count)
+        if resp.success and resp.results:
+            return [
+                {
+                    "title": r.title,
+                    "url": r.url,
+                    "snippet": r.snippet,
+                    "engine": "browser_harness_deep",
+                    "source": resp.source
+                }
+                for r in resp.results
+            ]
+
+        return []
+    except Exception as e:
+        logger.error(f"❌ Browser Harness 搜索失败: {e}")
+        return []
+
+
+# 注入到类
+TaiyiSharedSearchService.search_via_browser_harness = _search_via_browser_harness
+print("✅ Browser Harness (OpenClaw 浏览器搜索引擎) 集成完成")
+
+
+# ═══════════════════════════════════════════════════════════════
 # 集成方案2: SearXNG 多引擎聚合搜索
 # ═══════════════════════════════════════════════════════════════
 SEARXNG_INSTANCES = [
@@ -600,3 +681,27 @@ def _search_via_browser_agent(service, query: str, count: int = 10) -> dict:
 TaiyiSharedSearchService.search_searxng = _search_searxng
 TaiyiSharedSearchService.search_via_browser_agent = _search_via_browser_agent
 print("✅ SearXNG + Agent Browser 集成完成")
+
+
+# ═══════════════════════════════════════════════
+# Browser Harness 自动注入到搜索失败回退
+# ═══════════════════════════════════════════════
+_original_do_search = TaiyiSharedSearchService._do_search
+
+def _do_search_with_browser_fallback(self, request):
+    """原有搜索 + Browser Harness 回退"""
+    results = _original_do_search(self, request)
+    if results:
+        return results
+
+    # API 搜索无结果时，尝试浏览器搜索引擎
+    logger.info(f"🔄 API 搜索无结果，回退到浏览器引擎: {request.query}")
+    browser_results = self.search_via_browser_harness(request.query, request.max_results)
+    if browser_results:
+        logger.info(f"✅ 浏览器引擎找到 {len(browser_results)} 条结果")
+        return browser_results
+
+    return results
+
+TaiyiSharedSearchService._do_search = _do_search_with_browser_fallback
+print("✅ Browser Harness 自动回退注入完成")

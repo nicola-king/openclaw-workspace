@@ -24,4 +24,6 @@ from .shared_search_service import (
     COUNTRY_DB,
     resolve_country,
     generate_country_search_links,
+    _get_browser_harness,
+    _search_via_browser_harness,
 )
