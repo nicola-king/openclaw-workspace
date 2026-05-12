@@ -197,7 +197,48 @@ Bot          ← 对应 v11 共享Agent层       ← 对应 modules
 | "竞品监控" | 罔两(长期监控) + 知几(数据分析) |
 | "合同/合规" | 素问(研究) + 庖丁(风险审查) |
 | "全链路方案" | 知几+山木+素问+罔两+庖丁 → 太一聚合 |
+| "冷启动/推产品进市场" | Squad(Leader:知几, 山木+素问+庖丁) → WarRoom |
+| "竞品深挖" | Squad(Leader:罔两, 知几) → WarRoom |
+| "采购决策" | Squad(Leader:庖丁, 罔两+山木+素问) → WarRoom |
+| "运营诊断" | Squad(Leader:知几, 罔两+庖丁+素问) → WarRoom |
+
+### Squad 编队协议
+
+复杂任务自动组建 Squad 代替串行/并行派 Bot：
+
+```
+第1步：太一接收 → 意图解析
+第2步：识别是否需 Squad 编队
+       ├── 简单任务（查HS/报价/验证）→ 单Bot，不组建
+       └── 复杂任务（冷启动/竞品深挖/全链路）→ 组建 Squad
+第3步：SquadOrchestrator.assemble() → 创建 WarRoom
+       ├── 指定 Team Leader（知几/罔两/庖丁 按意图定）
+       ├── 组建成员 Squad（从 Bot 池动态选人）
+       └── 拉起共享上下文白板
+第4步：Squad 并行执行
+       ├── Leader 拆解任务写入白板
+       ├── 成员并行执行各子任务
+       ├── 成员通过白板共享上下文
+       └── 需决策项 Leader 裁决
+第5步：结果聚合 → 太一确认 → 交付 SAYELF
+```
+
+### Skill Registry 协议
+
+所有模块能力已标准化注册，支持动态发现：
+
+```python
+from modules.skill_registry.registry import get_registry
+
+reg = get_registry()
+# 按触发词找 Skill
+skills = reg.detect_triggers("储能沙特市场分析")
+# 按 Owner 筛选
+zhiji_skills = reg.search(owner="知几")
+```
+
+**注册中心**：`SKILL-REGISTRY.md` + `skill-manifest.schema.json`
 
 ---
 
-*版本: v1.0 · 创建: 2026-05-08 · 关联: SKILL.md + 原 v11 分层架构*
+*版本: v2.0 · 更新: 2026-05-12 · 新增 Squad 编队协议 + Skill Registry + 冷启动编排器*

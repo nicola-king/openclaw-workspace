@@ -29,8 +29,18 @@ status: active
 | "GEO优化/社媒内容" | `modules/geo-outbound/` | all |
 | "搜索买家/找客户" | `modules/guike-zhilu/` | 全量 |
 | "写开发信/触达" | `modules/cross-border-core/` outreach | 全量 |
+| "帮我推[产品]进[市场]" | `modules/orchestrator/` launch → 冷启动编排器 | 全链路 Squad |
+| "冷启动[产品]/[产品]冷启动" | `modules/orchestrator/` launch | 全链路 Squad |
+| "诊断/评估[业务/产品]" | `modules/orchestrator/` diagnose | 诊断 Squad |
+| "全链路分析[产品]" | `modules/cross-border-core/` squad_orchestrator | 动态编队 |
+| "组建Squad/编队" | `modules/cross-border-core/` squad_orchestrator | 动态编队 |
+| "注册Skill/技能包装" | `modules/skill-registry/` registry | 技能管理 |
+| "查询Skill/有什么能力" | `modules/skill-registry/` registry.search | 技能查询 |
 
 **负向规则**：
+- 冷启动（orchestrator.launch）只在用户明确说"推"或"冷启动"时触发，不猜测
+- Squad 编队只用于复杂跨域任务，简单查询不走编队
+- Skill Registry 为内部能力，不经用户主动查询不展示
 - 用户没说"全部/所有/全量" —— 默认走精选层，不要走全量
 - 用户没说"日报/报告/简报" —— 默认走列表式输出，不走聚合报告
 - 用户只问"看看/随便看看" —— 走精选层 + 7天内

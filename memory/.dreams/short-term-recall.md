@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-11T15:16:36.125Z",
+  "updatedAt": "2026-05-12T10:02:05.357Z",
   "entries": {
     "memory:memory/2026-05-04.md:285:324": {
       "key": "memory:memory/2026-05-04.md:285:324",
@@ -802,20 +802,22 @@
       "endLine": 45,
       "source": "memory",
       "snippet": "- 三条命令: sweep(单次) / monitor(全量) / countries(国家列表) - 文件: scripts/search_automation.py + penetrating_search.py ## [能力涌现] AI HOT 资讯 Skill 接入 ### 做了什么 安装 AI HOT (aihot.virxact.com) 中文 AI 资讯 Skill： - 路径：skills/aihot/SKILL.md（416行，官方源直下） - 类型：REST API Skill（无需 token/API Key） - 端点：/api/public/items (精选/全量) + /api/public/daily (日报) ### 触发关键词 今天AI圈有什么 / AI日报 / AI热点 / 最近AI / OpenAI最近发布 / 看下精选 ### API 验证结果（2026-05-08） - 日报：5个板块共30条（模型3+产品8+行业6+论文5+观点8） - 精选 items 端点：正常返回，支持翻页 cursor - 认证：无（公开匿名），限流 600r/min/IP ### 状态 - [x] SKILL.md 下载安装 - [x] API 端到端验证 - [x] 日报数据可用 ## [洞察] AI HOT 蒸馏分析完成 ### 核心收获（可直接落地） 1. **三层路由模式**（精选→日报→全量）→ buyer-intel / travel / intelligence 改为用户意图自动选粒度 2. **语义级查询组合**（catego",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-08T23:10:24.043Z",
-      "lastRecalledAt": "2026-05-10T06:00:43.364Z",
+      "lastRecalledAt": "2026-05-12T06:00:21.716Z",
       "queryHashes": [
         "85c76510d62a",
-        "fff20263ef23"
+        "fff20263ef23",
+        "ef2745fc0b87"
       ],
       "recallDays": [
         "2026-05-09",
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-12"
       ],
       "conceptTags": [
         "openai",
@@ -1090,20 +1092,26 @@
       "endLine": 163,
       "source": "memory",
       "snippet": "# 启动分发服务器（本地端口 5200） python3 skills/oerv-narrative-engine/dispatch.py # 一键流水线输出 python3 skills/oerv-narrative-engine/dispatch.py --dry-run \"你的闪念\" ``` ### Silent Operator 启用（2026-05-09 12:53） - 自动执行架构就绪，无需手动触发 `/oerv` - 分发服务器已启动 → `http://0.0.0.0:5200` - 服务保活 cron 每 5 分钟检查 - 每日 10:00 内容脉冲 cron（从记忆/对话中提取素材自动生成） - 注册脚本 `scripts/oerv_operator.sh` ### 待配置 - 配置 `skills/oerv-narrative-engine/.env` 中的 LLM_API_KEY 启用 AI 驱动写作 - 配置 WECHAT_APP_ID/SECRET 启用公众号自动推送 - 将手机拍摄的生活照放入 `media/` 目录，引擎自动检索作为配图候选 ## [cron] 跨境-API服务保活 (07:30) - 买家情报 API (port 8100) 未运行 - 已重启成功 (PID: 49860) [跨境-API保活] 2026-05-09 08:15 - health check: 200 OK [cron:跨境-API保活 2026-05-09 09:20] - 买家情报 API (localhost:8100/health): ✅ H",
-      "recallCount": 2,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 7,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-10T00:00:11.094Z",
-      "lastRecalledAt": "2026-05-11T10:00:29.518Z",
+      "lastRecalledAt": "2026-05-12T10:00:38.148Z",
       "queryHashes": [
         "786669ad2977",
-        "3a24fb565f15"
+        "3a24fb565f15",
+        "62e845fd57e6",
+        "13fb4f95e6d8",
+        "b924e48468cc",
+        "3ec874f4641b",
+        "908978dc625f"
       ],
       "recallDays": [
         "2026-05-10",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-12"
       ],
       "conceptTags": [
         "dry-run",
@@ -1123,20 +1131,24 @@
       "endLine": 55,
       "source": "memory",
       "snippet": "| 文件 | 类型 | 说明 | |------|------|------| | `modules/buyer-intel/api_server.py` | 🆕 新增 | REST API: /health / /api/v1/query / /api/v1/daily / /api/v1/rss | | `modules/buyer-intel/rss_feed.py` | 🆕 新增 | RSS 2.0 馈送生成器 | | `scripts/start_apis.sh` | 🆕 新增 | API 服务启停脚本 | | `scripts/verify_v12.py` | 🆕 新增 | v12 验证套件 (7 tests) | | `SKILL.md` | 📝 重写 | 从架构文档改为 Agent 可执行协议：触发规则+输出模板+人话规则+Do-Not-Do | | `modules/intelligence-hub/SKILL.md` | 📝 重写 | Agent 调用协议，5 版块路由 | ### 新增 cron | 名称 | 间隔 | 说明 | |------|------|------| | 跨境-API服务保活 | 每 5 分钟 | 检查 API 端口，宕机自动重启 | ### 更新的 cron | 原名称 | 新名称 | 改动 | |--------|--------|------| | 跨境-晨间简报 | 跨境-晨间简报(5版块日报) | 输出改为 5 版块结构 | | 情报日报 18:00 | 情报晚报 18:00(5版块) | 输出改为 5",
-      "recallCount": 2,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 5,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-10T00:00:11.094Z",
-      "lastRecalledAt": "2026-05-11T10:00:29.518Z",
+      "lastRecalledAt": "2026-05-12T10:00:38.148Z",
       "queryHashes": [
         "786669ad2977",
-        "3a24fb565f15"
+        "3a24fb565f15",
+        "62e845fd57e6",
+        "3ec874f4641b",
+        "908978dc625f"
       ],
       "recallDays": [
         "2026-05-10",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-12"
       ],
       "conceptTags": [
         "api/v1/query",
@@ -1156,18 +1168,21 @@
       "endLine": 165,
       "source": "memory",
       "snippet": "## [保活检查] 跨境-API服务 (13:20) - 买家情报 API `localhost:8100/health` → `200` ✅ 正常 - 无需重启 **16:40 跨境-API服务保活** ✅ 健康检查通过（HTTP 200），服务正常运行。 [保活] OERV 分发服务保活 (21:05) — 运行正常 (PID 57556, status ok) [保活检查 23:40] 买家情报 API (localhost:8100/health) → 200 OK，正常运行",
-      "recallCount": 1,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-10T00:00:11.094Z",
-      "lastRecalledAt": "2026-05-10T00:00:11.094Z",
+      "lastRecalledAt": "2026-05-12T02:00:31.695Z",
       "queryHashes": [
-        "786669ad2977"
+        "786669ad2977",
+        "62e845fd57e6",
+        "13fb4f95e6d8"
       ],
       "recallDays": [
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-12"
       ],
       "conceptTags": [
         "跨境-api服务",
@@ -1218,21 +1233,25 @@
       "endLine": 136,
       "source": "memory",
       "snippet": "OERVEngine._write() → O.E.R.V 极简黑客风写作（单句成行/零形容词/80%出刀） │ ▼ OERVEngine._generate_visuals() → 2 组 16:9 电影感 Midjourney/Flux prompt │ ▼ Webhook / Dispatch → 公众号推送 / 本地保存 / 小红书卡片 ``` ### 文件清单 | 路径 | 说明 | |------|------| | `skills/oerv-narrative-engine/SKILL.md` | Agent 可执行协议，含触发规则+输出模板+负向列表 | | `skills/oerv-narrative-engine/engine.py` | 核心引擎：情绪检测/场景提取/写作/视觉Prompt/小红书卡片 | | `skills/oerv-narrative-engine/dispatch.py` | 分发服务：Flask Webhook + 公众号草稿推送 + 发布历史 | | `skills/oerv-narrative-engine/.env` | 配置模板（LLM API / 公众号凭证） | | `scripts/deploy_oerv.sh` | 一键部署脚本 | ### 快捷命令 - `/oerv`：闪念→文章+视觉Prompt - `/oerv-card`：闪念→小红书卡片 ### 用法 ```bash # 查看 3 篇示范文章 python3 skills/oerv-narrative-en",
-      "recallCount": 3,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3,
+      "totalScore": 6,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-10T02:00:32.028Z",
-      "lastRecalledAt": "2026-05-11T02:00:28.180Z",
+      "lastRecalledAt": "2026-05-12T02:25:42.912Z",
       "queryHashes": [
         "0deaac3a8336",
         "b53a67adea80",
-        "30c831fb14f1"
+        "30c831fb14f1",
+        "1ea7a2401c34",
+        "13fb4f95e6d8",
+        "b924e48468cc"
       ],
       "recallDays": [
         "2026-05-10",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-12"
       ],
       "conceptTags": [
         "o.e.r.v",
@@ -1283,18 +1302,20 @@
       "endLine": 109,
       "source": "memory",
       "snippet": "- 公众号 AppID/Secret 从截图中 OCR 提取并配置成功 - IP 白名单已加（106.92.155.193直连 / 103.151.173.197代理） - Token 获取 + 封面上传 + 草稿创建 全链路打通 - 两篇文章均含封面图，已在草稿箱待发布 ### O.E.R.V 引擎改进 - 第二代版本从极简过渡到「有温度的零形容词」— 保留细节和声音（刀刃落在砧板上的声音、管子呜呜响）、环境信息（空摊位、一滩黑水），让情绪通过动作显现而非说出 ### 待优化 - 下行篇（管道工）结尾略长，后续可控制全文在 300 字以内 ## [能力涌现] O.E.R.V 2.0 叙事引擎 — 人即媒体公司 ### 做了什么 SAYELF 提供了 O.E.R.V 2.0 协议，要求转化为可运行的自动化工作流。已将叙事协议落地为 OpenClaw 可直接调用的完整系统。 ### 系统架构 ``` 原始闪念 │ ▼ OERVEngine._refine_input() → 提取 1 核心观点 + 3 像素场景 │ ▼ OERVEngine._write() → O.E.R.V 极简黑客风写作（单句成行/零形容词/80%出刀） │ ▼ OERVEngine._generate_visuals() → 2 组 16:9 电影感 Midjourney/Flux prompt │ ▼ Webhook / Dispatch → 公众号推送 / 本地保存 / 小红书卡片 ``` ### 文件清单 | 路径 | 说明",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-11T04:00:45.262Z",
-      "lastRecalledAt": "2026-05-11T04:00:45.262Z",
+      "lastRecalledAt": "2026-05-12T10:02:05.357Z",
       "queryHashes": [
-        "98fcb2500827"
+        "98fcb2500827",
+        "4614322b97f7"
       ],
       "recallDays": [
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-12"
       ],
       "conceptTags": [
         "appid/secret",
@@ -1314,18 +1335,20 @@
       "endLine": 79,
       "source": "memory",
       "snippet": "| 跨境-GEO优化 | 跨境-GEO日报(5版块) | 输出改为 5 版块结构（GEO 专属版块） | ### 验证结果 - 7/7 tests passed - REST API 三端点（health/query/daily）全部验证通过 - RSS feed 生成验证通过 - buyer-intel 三层路由验证通过 - 正交查询 (q=+country=+sector=) 验证通过 - 错误 suggestion 字段验证通过 ### 产品思维转变 - 精选 > 全量（用户没说\"全部\"不死走全量） - 接口即契约（SKILL.md 不是文档，是可执行协议） - 用户看到的是情报，不是架构细节 - RSS/API/SKILL 三条路让人用 - 日报固定 08:00/18:00 节奏输出 ### 信号 [能力涌现] ## [任务完成] O.E.R.V 首轮发布 — 公众号草稿推送 ### 做了什么 将两个生活事件转化为 O.E.R.V 叙事文章，推送至「SAYELF 山野精灵」公众号草稿箱： - 《卤菜摊》— 消费降级落到毛细血管的日常视角 - 《管道工》— 承诺边界与凑合代价的叙事 ### 关键里程碑 - 公众号 AppID/Secret 从截图中 OCR 提取并配置成功 - IP 白名单已加（106.92.155.193直连 / 103.151.173.197代理） - Token 获取 + 封面上传 + 草稿创建 全链路打通 - 两篇文章均含封面图，已在草稿箱待发布 ### O.E.R.V 引擎改进",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-11T04:00:45.262Z",
-      "lastRecalledAt": "2026-05-11T04:00:45.262Z",
+      "lastRecalledAt": "2026-05-12T10:02:05.357Z",
       "queryHashes": [
-        "98fcb2500827"
+        "98fcb2500827",
+        "4614322b97f7"
       ],
       "recallDays": [
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-12"
       ],
       "conceptTags": [
         "跨境-geo优化",
@@ -1345,18 +1368,22 @@
       "endLine": 82,
       "source": "memory",
       "snippet": "- 澳洲市场 4 封（Aus Modular / Melbourne Prefab / Apex / Pacific Prefab） - 沙特项目触达 2 封（法狮龙 → Jewel of the Bride / 邦山 → NEOM） - 状态：已通知 SAYELF 待审核 [保活] O.E.R.V 分发服务器检查 — 13:35 - 状态: ✅ 运行中 (PID 110785, v2.0) - 操作: 无需重启 [cron:跨境-API服务保活] 2026-05-10 13:45 | health check: 200 OK (正常运行) [保活] 买家情报 API 15:10 健康检查通过（200），无需重启 [2026-05-10 15:25:09] [保活] 买家情报API health check: 200 OK [2026-05-10 17:50] [保活] 买家情报API (port 8100) 未运行，启动成功 PID:139031, health=200 ## 18:15 [cron] 智能文件转 MD 扫描 - 扫描结果：发现 8 个待转换文件（增量） - 成功：6（JSON 文件） - 跳过：2 - 失败：0 - 静默完成，未推送 [cron] 跨境-API服务保活 18:35 — health check: 200 ✅ 运行正常 [cron] 跨境-API服务保活 18:55 — health check: 200 ✅ 运行正常 [cron 跨境-API服务保活] 20:20 — 买家情报 API (localhost:8100) 健康检查通",
-      "recallCount": 1,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 4,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-11T10:00:29.518Z",
-      "lastRecalledAt": "2026-05-11T10:00:29.518Z",
+      "lastRecalledAt": "2026-05-12T10:00:38.148Z",
       "queryHashes": [
-        "3a24fb565f15"
+        "3a24fb565f15",
+        "62e845fd57e6",
+        "3ec874f4641b",
+        "908978dc625f"
       ],
       "recallDays": [
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-12"
       ],
       "conceptTags": [
         "o.e.r.v",
@@ -1376,18 +1403,22 @@
       "endLine": 32,
       "source": "memory",
       "snippet": "# 2026-05-10 记忆 ## Cron 任务 ### 17:40 跨境-API服务保活 ### 22:45 跨境-API服务保活 - health endpoint → 200 ✅ 服务正常运行 - 无需启动，静默完成 - 状态：✅ 已自动恢复 - 发现时未运行（curl 000），已手动启动脚本 - PID: 138591，health check → 200 OK - [cron] 13:35 跨境 API 保活 — health 检查通过 (HTTP 200) - [cron] 12:15 智能文件转 MD — 扫描 6 个文件，4 转换成功，2 跳过，0 失败。累计已转换 152 文件 - [cron] 09:00 跨境富化Agent — 执行完成，模块健康，状态 healthy - [cron] 03:35 跨境 API 服务保活检查 → health 返回 200，正常运行，无需干预 - [cron] 09:10 跨境 API 服务保活检查 → health 返回 200，正常运行，无需干预 [cron:跨境-API服务保活] 2026-05-10 04:25 — Health check 200 OK, service running. ## [Cron] MD-智能自动转换 — 2026-05-10 06:15 - 脚本: scripts/md-watch - 结果: ✅ 1 成功 (converter_state.json, 12KB), ⏭ 0 跳过, ❌ 0 失败 - 增量模式，无异常 ## [保活] O.E.R.V 分发服务 — 20",
-      "recallCount": 1,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 4,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-11T10:00:29.518Z",
-      "lastRecalledAt": "2026-05-11T10:00:29.518Z",
+      "lastRecalledAt": "2026-05-12T10:00:38.148Z",
       "queryHashes": [
-        "3a24fb565f15"
+        "3a24fb565f15",
+        "62e845fd57e6",
+        "3ec874f4641b",
+        "908978dc625f"
       ],
       "recallDays": [
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-12"
       ],
       "conceptTags": [
         "跨境-api服务保活",
@@ -1429,6 +1460,37 @@
         "process-review.json",
         "13.5kb",
         "outreach-queue-2026-05-11.json"
+      ]
+    },
+    "memory:memory/2026-05-10.md:26:57": {
+      "key": "memory:memory/2026-05-10.md:26:57",
+      "path": "memory/2026-05-10.md",
+      "startLine": 26,
+      "endLine": 57,
+      "source": "memory",
+      "snippet": "## [保活] O.E.R.V 分发服务 — 2026-05-10 06:35 - 状态: ✅ 运行中 (PID 110785, v2.0) - 操作: 无需重启 ## [能力涌现] 排版风格智能匹配系统 - O.E.R.V dispatch.py 新增完整排版风格系统 - 5 套风格：MUJI(muji) / Minimal(minimal) / Patagonia(patagonia) / Notion(notion) / Apple(apple) - 智能匹配：情绪→风格映射（10种情绪） + 内容关键词兜底（12组） - 默认从 Minimal 切到 MUJI，env 可强制覆盖 - art-agent 品牌库同步新增 MUJI token，默认品牌从 binance 切到 muji [cron:跨境-API服务保活] 09:05 — 买家情报API /health 返回 200 ✅ ## [OERV保活] 10:20 - OERV dispatch 服务运行正常 (PID 110785, v2.0) - 无需重启 [cron] 跨境-API服务保活 @10:40 — health OK (200) [2026-05-10 11:25] [cron:健康检查] 买家情报API 127.0.0.1:8100/health → 200 ✅ ## [触达Agent] 开发信队列 2026-05-10 12:00 cron 执行 generate_outreach 成功。 - 新建 cross-border-core 模块（modules/cross-border-",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-12T02:00:31.684Z",
+      "lastRecalledAt": "2026-05-12T02:00:31.684Z",
+      "queryHashes": [
+        "1ea7a2401c34"
+      ],
+      "recallDays": [
+        "2026-05-12"
+      ],
+      "conceptTags": [
+        "o.e.r.v",
+        "v2.0",
+        "dispatch.py",
+        "art-agent",
+        "跨境-api服务保活",
+        "127.0.0.1",
+        "8100/health",
+        "generate-outreach"
       ]
     }
   }

@@ -203,3 +203,24 @@
 [2026-05-12 00:15:22] [INFO]   ✅ [JSON] converter_state.json → ok (12.6KB)
 [2026-05-12 00:15:23] [INFO]   ✅ [JSON] short-term-recall.json → ok (79.2KB)
 [2026-05-12 00:15:23] [INFO] 转换完成: ✅ 2 成功, ⏭ 0 跳过, ❌ 0 失败
+[2026-05-12 06:15:18] [INFO] 发现 1 个待转换文件（增量）
+[2026-05-12 06:15:19] [INFO]   ✅ [JSON] converter_state.json → ok (12.6KB)
+[2026-05-12 06:15:19] [INFO] 转换完成: ✅ 1 成功, ⏭ 0 跳过, ❌ 0 失败
+[2026-05-12 12:15:20] [INFO] 发现 4 个待转换文件（增量）
+[2026-05-12 12:15:21] [INFO]   ✅ [JSON] outreach-queue-2026-05-12.json → ok (8.5KB)
+[2026-05-12 12:15:22] [INFO]   ✅ [JSON] converter_state.json → ok (12.6KB)
+[2026-05-12 12:15:22] [INFO]   ✅ [JSON] short-term-recall.json → ok (81.4KB)
+[2026-05-12 12:15:22] [INFO] 转换完成: ✅ 3 成功, ⏭ 1 跳过, ❌ 0 失败
+[2026-05-12 18:15:21] [INFO] 发现 10 个待转换文件（增量）
+[2026-05-12 18:15:22] [INFO]   ✅ [JSON] competitor_report_20260512.json → ok (2.5KB)
+[2026-05-12 18:15:23] [INFO]   ✅ [JSON] keyword_research.json → ok (20.0KB)
+[2026-05-12 18:15:24] [INFO]   ✅ [JSON] social_media_plan.json → ok (17.8KB)
+[2026-05-12 18:15:25] [INFO]   ✅ [JSON] converter_state.json → ok (12.8KB)
+[2026-05-12 18:15:25] [INFO]   ✅ [JSON] campaigns.json → ok (2.0B)
+[2026-05-12 18:15:26] [INFO]   ✅ [JSON] opportunities.json → ok (13.8KB)
+[2026-05-12 18:15:27] [INFO]   ✅ [JSON] short-term-recall.json → ok (81.7KB)
+[2026-05-12 18:15:27] [INFO] 转换完成: ✅ 7 成功, ⏭ 3 跳过, ❌ 0 失败
+[2026-05-13 00:15:20] [INFO] 发现 4 个待转换文件（增量）
+[2026-05-13 00:15:21] [INFO]   ✅ [JSON] converter_state.json → ok (12.8KB)
+[2026-05-13 00:15:22] [INFO]   ✅ [JSON] skill-manifest.schema.json → ok (2.5KB)
+[2026-05-13 00:15:22] [INFO] 转换完成: ✅ 2 成功, ⏭ 2 跳过, ❌ 0 失败

@@ -1,6 +1,6 @@
 {
   "name": "cross-border-trade-agent",
-  "version": "10.0.0",
+  "version": "12.0.0",
   "description": "太一跨境贸易 Agent v10.0 - 穿透式蒸馏 · 模块化 · 自进化",
   "author": "太一 AGI",
   "license": "MIT",
@@ -252,6 +252,23 @@
         "cross-border-core"
       ],
       "description": "公司信息增强：ABN查询/官网爬取/地址验证/邮箱发现/LinkedIn关联"
+    },
+    "skill-registry": {
+      "version": "1.0.0",
+      "path": "modules/skill-registry",
+      "dependencies": [
+        "cross-border-core"
+      ],
+      "description": "🆕 Skill 注册中心：标准化注册/动态发现/延迟加载/跨 Bot 调用"
+    },
+    "orchestrator": {
+      "version": "1.0.0",
+      "path": "modules/orchestrator",
+      "dependencies": [
+        "cross-border-core",
+        "skill-registry"
+      ],
+      "description": "🆕 冷启动编排器：产品 Idea → 30分钟完整跨境方案 + 运营诊断"
     }
   },
   "shared": {

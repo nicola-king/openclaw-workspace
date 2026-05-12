@@ -1,0 +1,11 @@
+{"module": "buyer-intel", "action": "selected_view", "timestamp": 1778598294.847267, "datetime": "2026-05-12T23:04:54.847273", "hits": 2, "mode": "selected", "latency_ms": 800}
+{"module": "buyer-intel", "action": "selected_view", "timestamp": 1778598294.8474698, "datetime": "2026-05-12T23:04:54.847471", "hits": 3, "mode": "selected", "latency_ms": 800}
+{"module": "buyer-intel", "action": "selected_view", "timestamp": 1778598294.847575, "datetime": "2026-05-12T23:04:54.847575", "hits": 4, "mode": "selected", "latency_ms": 800}
+{"module": "buyer-intel", "action": "selected_view", "timestamp": 1778598294.847654, "datetime": "2026-05-12T23:04:54.847654", "hits": 5, "mode": "selected", "latency_ms": 800}
+{"module": "buyer-intel", "action": "selected_view", "timestamp": 1778598294.8477345, "datetime": "2026-05-12T23:04:54.847735", "hits": 6, "mode": "selected", "latency_ms": 800}
+{"module": "guike-zhilu", "action": "outreach_result", "timestamp": 1778598294.8478146, "datetime": "2026-05-12T23:04:54.847815", "sent": 100, "replied": 8, "pipeline_created": 2}
+{"module": "guike-zhilu", "action": "outreach_result", "timestamp": 1778598294.8478827, "datetime": "2026-05-12T23:04:54.847883", "sent": 80, "replied": 5, "pipeline_created": 1}
+{"module": "guike-zhilu", "action": "outreach_result", "timestamp": 1778598294.8479452, "datetime": "2026-05-12T23:04:54.847945", "sent": 120, "replied": 12, "pipeline_created": 3}
+{"module": "quote-engine", "action": "quote_sent", "timestamp": 1778598294.848009, "datetime": "2026-05-12T23:04:54.848009", "sent": 15, "replied": 4, "converted": 1, "margin": 0.12}
+{"module": "quote-engine", "action": "quote_sent", "timestamp": 1778598294.8480735, "datetime": "2026-05-12T23:04:54.848073", "sent": 10, "replied": 2, "converted": 0, "margin": 0.15}
+{"module": "orchestrator", "action": "launch_complete", "timestamp": 1778598294.8481367, "datetime": "2026-05-12T23:04:54.848136", "product": "储能电池", "market": "沙特", "steps": 12, "elapsed": 30}

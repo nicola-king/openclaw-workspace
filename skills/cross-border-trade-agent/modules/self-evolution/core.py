@@ -15,9 +15,10 @@ from datetime import datetime
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from constitution_learning import ConstitutionLearning
+from business_feedback import BusinessFeedbackLoop, integrate_into_self_evolution
 
 class SelfEvolution:
-    """自我进化系统主类 v10.0"""
+    """自我进化系统主类 v10.0 + 业务数据反哺闭环"""
 
     def __init__(self, config_path: str = "config.json"):
         self.config = self._load_config(config_path)
@@ -26,6 +27,9 @@ class SelfEvolution:
         self.skill_library = {}
         self.token_usage = []
         self.constitution_learning = ConstitutionLearning(self.config)
+        # 业务数据反哺闭环
+        self.business_feedback = BusinessFeedbackLoop()
+        self.business_feedback = integrate_into_self_evolution(self)
 
     def _load_config(self, config_path: str) -> Dict[str, Any]:
         try:
@@ -59,6 +63,18 @@ class SelfEvolution:
             return self.constitution_learning.run_learning_cycle(kwargs.get("module_name", ""))
         elif task == "get_metrics":
             return self.constitution_learning.get_metrics()
+        elif task == "business_analyze":
+            return self.business_feedback.analyze(days=kwargs.get("days", 7))
+        elif task == "business_optimize":
+            return self.business_feedback.optimize(auto_apply=kwargs.get("auto_apply", False))
+        elif task == "business_report":
+            return self.business_feedback.report(days=kwargs.get("days", 7))
+        elif task == "business_emit":
+            return self.business_feedback.emit(
+                module_name=kwargs.get("module", ""),
+                action=kwargs.get("action", ""),
+                **{k: v for k, v in kwargs.items() if k not in ("module", "action")}
+            )
         else:
             return {"status": "error", "message": f"未知任务：{task}"}
 
@@ -98,12 +114,17 @@ class SelfEvolution:
         return {
             "status": "healthy",
             "module": "self-evolution",
-            "version": "10.0.0",
+            "version": "11.0.0",
             "healing_count": len(self.healing_history),
             "skill_count": len(self.skill_library),
             "token_records": len(self.token_usage),
             "constitution_learning_cycles": len(self.constitution_learning.learning_history),
-            "evolution_metrics": self.constitution_learning.get_metrics()
+            "evolution_metrics": self.constitution_learning.get_metrics(),
+            "business_feedback": {
+                "enabled": True,
+                "insights_count": len(self.business_feedback.current_insights()),
+                "pending_optimizations": len(self.business_feedback.pending_optimizations()),
+            }
         }
 
     @property
