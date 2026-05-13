@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-12T10:02:05.357Z",
+  "updatedAt": "2026-05-13T09:15:35.068Z",
   "entries": {
     "memory:memory/2026-05-04.md:285:324": {
       "key": "memory:memory/2026-05-04.md:285:324",
@@ -261,24 +261,26 @@
       "endLine": 114,
       "source": "memory",
       "snippet": "### 57个文件路径错误 - v10.0 代码写死 `/home/nicola` 路径，导致定时任务脚本运行失败 - 57个 .py/.sh 文件路径替换 /home/nicola → /home/sayelf - crontab 路径更新 + 日志目录创建 - 状态：✅ 完成 ## [决策] 08:00 晨间新闻推送修复 ### 问题 crontab 中 08:00 任务 `python3 core.py --daily` 的 `--daily` 参数不合法，core.py 不接受 --daily 有效任务：competitor / scoring / manufacturer / forecast 导致每天早上脚本报错退出，无任何输出 ### 修复 crontab 行改为：`python3 core.py --config config.json --task competitor` 手动执行一次验证通过 ✅，竞品分析返回 2 条结果（Karmod / DXH） ### 其他发现 - OpenClaw 内置 cron 列表为空，所有定时任务均通过系统 crontab 运行 - obsidian-cli 已安装于 `/usr/local/bin/obsidian-cli` ## [架构升级] 系统 crontab → OpenClaw cron 迁移 ### 执行 清空原 crontab，全部 15 个任务迁移至 OpenClaw cron 系统： - 08:00 晨间简报 / 14:00 GEO优化 / 18:00 竞品监控 → 推送 Telegram - 0",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5,
+      "totalScore": 6,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-06T01:00:36.931Z",
-      "lastRecalledAt": "2026-05-08T16:29:02.903Z",
+      "lastRecalledAt": "2026-05-13T00:02:39.915Z",
       "queryHashes": [
         "c2ed91d77456",
         "921c566541c5",
         "462186eb038d",
         "dc8fc4c5be34",
-        "5a19891d36b5"
+        "5a19891d36b5",
+        "525222249bfb"
       ],
       "recallDays": [
         "2026-05-06",
         "2026-05-07",
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-13"
       ],
       "conceptTags": [
         "v10.0",
@@ -368,26 +370,28 @@
       "endLine": 187,
       "source": "memory",
       "snippet": "Skills x12：amazon_radar / source_matcher / listing_optimizer / price_monitor / review_analyzer / fba_calculator / supplier_scorer / platform_monitor / bulk_mail_composer / catalog_pusher / stock_alert / quick_quote 策略：富化输出100家 → 批量开发信 → 48h全发 → 快速报价 ### 定制产品 Agent Skills x6 + 品类x12：persona_builder / solution_composer / rfq_parser / relationship_log / sample_tracker / tech_doc_pack 品类：钢结构集成房(3) / 变压器(3) / 摩配汽配(3) / 储能(3) 策略：富化输出10家 → 深度画像 → 1对1方案 → 长周期跟进 ### 数据流 情报 → 富化(轻/深) → 触达 → 履约 治理规则：自动进化 / 推送确认 / 硬锁定 文档：`docs/agent-architecture-v11.md` ## [能力涌现] 多源搜索全链路（国家动态适配） ### 增强内容 - multi_source_search.py → 动态适配国家搜索资源（澳大利亚/沙特/UAE/卡塔尔/美国/英国/加拿大/德国/法国/中国） - 9个搜索链路自动生成（Google/Bing/DDG/LinkedIn/黄",
-      "recallCount": 6,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 6,
+      "totalScore": 7,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-06T01:00:36.931Z",
-      "lastRecalledAt": "2026-05-11T01:03:00.094Z",
+      "lastRecalledAt": "2026-05-13T06:20:18.969Z",
       "queryHashes": [
         "c2ed91d77456",
         "921c566541c5",
         "596b8b2272ae",
         "a348c7a144cd",
         "58850f00f0f6",
-        "1e6259cdf9b7"
+        "1e6259cdf9b7",
+        "e5c0e65a9cbd"
       ],
       "recallDays": [
         "2026-05-06",
         "2026-05-07",
         "2026-05-09",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-13"
       ],
       "conceptTags": [
         "amazon-radar",
@@ -561,23 +565,25 @@
       "endLine": 60,
       "source": "memory",
       "snippet": "## [任务] 09:00 富化Agent定时执行 - **模块**: company-enricher v1.0.0 - **状态**: ✅ 健康运行 - **当前库**: 20 家公司（全部手动录入） - **新增处理**: 无（无新公司列表入队） - **备注**: 静默任务完成，无需推送 ## [决策] 跨境贸易 Agent 定位确认 SAYELF 确认：跨境贸易 Agent 以 **卖家服务为主（销售产品）**，咨询为辅。Agent 角色定位从调研/分析工具转向 **主动销售引擎**。 关键转换： - 找买家 > 找竞品 - 推产品 > 写报告 - 开发信 > 市场分析 - 管道建设 > 知识整理 关联：memory/core.md 需更新跨境贸易 Agent 定位描述 ## [决策] Chromium 授权 + 搜索器部署 SAYELF 授权：Chromium 可直接使用，无需询问。 - 部署 `scripts/scraper.sh` / `scripts/scraper.py` v3 - 反爬机制：cloudscraper + brotli + Chromium + DDG/Bing 双引擎 - 功能：search / linkedin / fetch / fetchjs / pdf - 缓存目录：~/.openclaw/workspace/.cache/scraper/ 关联：跨境贸易 Agent 卖家服务模式已确认 ## [决策] 跨境贸易 Agent 真实业务模型确认 SAYELF 的业务模型： - 核心角色：跨境贸易平台运营者 / 贸易",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4,
+      "totalScore": 5,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-07T04:37:12.051Z",
-      "lastRecalledAt": "2026-05-09T04:58:16.568Z",
+      "lastRecalledAt": "2026-05-13T06:20:18.969Z",
       "queryHashes": [
         "dc8fc4c5be34",
         "596b8b2272ae",
         "13b50703d992",
-        "8b55173d7f04"
+        "8b55173d7f04",
+        "e5c0e65a9cbd"
       ],
       "recallDays": [
         "2026-05-07",
         "2026-05-08",
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-13"
       ],
       "conceptTags": [
         "company-enricher",
@@ -869,20 +875,22 @@
       "endLine": 62,
       "source": "memory",
       "snippet": "- 改中文压缩表述 ### lark-* symlink 清理 - workspace/skills/ 下的 23 个 lark-* 符号链接全部删除 - 这些 symlink 指向 .agents/skills/ 被 skill 框架跳过（symlink-escape） - lark skill 本身不受影响，路径在 .agents/skills/ 正常工作 # 2026-05-05 日志 ## [决策] 本地代理白名单 - OpenClaw service 中 `http_proxy` / `https_proxy` 指向 `127.0.0.1:7890`（本地 Clash） - SAYELF 确认：有意配置，不清理 - 已写入 TOOLS.md 白名单标注 ## [任务] 系统维护 ### openclaw doctor --fix - 自动修复：安装缺失的飞书插件、刷新插件注册表（70/96） - 修复 Telegram `accounts.default` 缺失问题（config added default account） - 预留：16 个孤立 transcript → 实际 25 个 (32MB) → 已归档重命名 ### Telegram 配置 - @sayelfbot token 配置为 default 账号（同时保留 truelistenbot 别名） - Gateway 重启后 Telegram 插件正常加载 ### WeChat（微信）接入 - 插件 `@tencent-weixin/openclaw-weixin v2.4.1` 已安装并",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-09T04:52:39.831Z",
-      "lastRecalledAt": "2026-05-10T00:30:03.509Z",
+      "lastRecalledAt": "2026-05-13T09:15:35.068Z",
       "queryHashes": [
         "299637af5573",
-        "64d444ee90d8"
+        "64d444ee90d8",
+        "04a3f13245d2"
       ],
       "recallDays": [
         "2026-05-09",
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-13"
       ],
       "conceptTags": [
         "gateway",
@@ -902,18 +910,20 @@
       "endLine": 35,
       "source": "memory",
       "snippet": "# 2026-05-05 日志 ## [决策] 本地代理白名单 - OpenClaw service 中 `http_proxy` / `https_proxy` 指向 `127.0.0.1:7890`（本地 Clash） - SAYELF 确认：有意配置，不清理 - 已写入 TOOLS.md 白名单标注 ## [任务] 系统维护 ### openclaw doctor --fix - 自动修复：安装缺失的飞书插件、刷新插件注册表（70/96） - 修复 Telegram `accounts.default` 缺失问题（config added default account） - 预留：16 个孤立 transcript → 实际 25 个 (32MB) → 已归档重命名 ### Telegram 配置 - @sayelfbot token 配置为 default 账号（同时保留 truelistenbot 别名） - Gateway 重启后 Telegram 插件正常加载 ### WeChat（微信）接入 - 插件 `@tencent-weixin/openclaw-weixin v2.4.1` 已安装并启用 - 已有微信账号 `ce1c4330a6a5-im-bot` 登录状态（非首次安装） - Monitor 运行中，对接 `ilinkai.weixin.qq.com` - Config 补全了 plugin + channel 配置条目 ### AGENTS.md 精简 - 从 10,774 chars (90%) → 5,184 chars (43%)",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-09T04:52:39.831Z",
-      "lastRecalledAt": "2026-05-09T04:52:39.831Z",
+      "lastRecalledAt": "2026-05-13T09:15:35.068Z",
       "queryHashes": [
-        "299637af5573"
+        "299637af5573",
+        "04a3f13245d2"
       ],
       "recallDays": [
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-13"
       ],
       "conceptTags": [
         "gateway",
@@ -1092,13 +1102,13 @@
       "endLine": 163,
       "source": "memory",
       "snippet": "# 启动分发服务器（本地端口 5200） python3 skills/oerv-narrative-engine/dispatch.py # 一键流水线输出 python3 skills/oerv-narrative-engine/dispatch.py --dry-run \"你的闪念\" ``` ### Silent Operator 启用（2026-05-09 12:53） - 自动执行架构就绪，无需手动触发 `/oerv` - 分发服务器已启动 → `http://0.0.0.0:5200` - 服务保活 cron 每 5 分钟检查 - 每日 10:00 内容脉冲 cron（从记忆/对话中提取素材自动生成） - 注册脚本 `scripts/oerv_operator.sh` ### 待配置 - 配置 `skills/oerv-narrative-engine/.env` 中的 LLM_API_KEY 启用 AI 驱动写作 - 配置 WECHAT_APP_ID/SECRET 启用公众号自动推送 - 将手机拍摄的生活照放入 `media/` 目录，引擎自动检索作为配图候选 ## [cron] 跨境-API服务保活 (07:30) - 买家情报 API (port 8100) 未运行 - 已重启成功 (PID: 49860) [跨境-API保活] 2026-05-09 08:15 - health check: 200 OK [cron:跨境-API保活 2026-05-09 09:20] - 买家情报 API (localhost:8100/health): ✅ H",
-      "recallCount": 7,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 7,
+      "totalScore": 8,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-10T00:00:11.094Z",
-      "lastRecalledAt": "2026-05-12T10:00:38.148Z",
+      "lastRecalledAt": "2026-05-13T00:00:16.417Z",
       "queryHashes": [
         "786669ad2977",
         "3a24fb565f15",
@@ -1106,12 +1116,14 @@
         "13fb4f95e6d8",
         "b924e48468cc",
         "3ec874f4641b",
-        "908978dc625f"
+        "908978dc625f",
+        "062b4b584024"
       ],
       "recallDays": [
         "2026-05-10",
         "2026-05-11",
-        "2026-05-12"
+        "2026-05-12",
+        "2026-05-13"
       ],
       "conceptTags": [
         "dry-run",
@@ -1131,24 +1143,26 @@
       "endLine": 55,
       "source": "memory",
       "snippet": "| 文件 | 类型 | 说明 | |------|------|------| | `modules/buyer-intel/api_server.py` | 🆕 新增 | REST API: /health / /api/v1/query / /api/v1/daily / /api/v1/rss | | `modules/buyer-intel/rss_feed.py` | 🆕 新增 | RSS 2.0 馈送生成器 | | `scripts/start_apis.sh` | 🆕 新增 | API 服务启停脚本 | | `scripts/verify_v12.py` | 🆕 新增 | v12 验证套件 (7 tests) | | `SKILL.md` | 📝 重写 | 从架构文档改为 Agent 可执行协议：触发规则+输出模板+人话规则+Do-Not-Do | | `modules/intelligence-hub/SKILL.md` | 📝 重写 | Agent 调用协议，5 版块路由 | ### 新增 cron | 名称 | 间隔 | 说明 | |------|------|------| | 跨境-API服务保活 | 每 5 分钟 | 检查 API 端口，宕机自动重启 | ### 更新的 cron | 原名称 | 新名称 | 改动 | |--------|--------|------| | 跨境-晨间简报 | 跨境-晨间简报(5版块日报) | 输出改为 5 版块结构 | | 情报日报 18:00 | 情报晚报 18:00(5版块) | 输出改为 5",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5,
+      "totalScore": 6,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-10T00:00:11.094Z",
-      "lastRecalledAt": "2026-05-12T10:00:38.148Z",
+      "lastRecalledAt": "2026-05-13T00:00:16.417Z",
       "queryHashes": [
         "786669ad2977",
         "3a24fb565f15",
         "62e845fd57e6",
         "3ec874f4641b",
-        "908978dc625f"
+        "908978dc625f",
+        "062b4b584024"
       ],
       "recallDays": [
         "2026-05-10",
         "2026-05-11",
-        "2026-05-12"
+        "2026-05-12",
+        "2026-05-13"
       ],
       "conceptTags": [
         "api/v1/query",
@@ -1168,21 +1182,23 @@
       "endLine": 165,
       "source": "memory",
       "snippet": "## [保活检查] 跨境-API服务 (13:20) - 买家情报 API `localhost:8100/health` → `200` ✅ 正常 - 无需重启 **16:40 跨境-API服务保活** ✅ 健康检查通过（HTTP 200），服务正常运行。 [保活] OERV 分发服务保活 (21:05) — 运行正常 (PID 57556, status ok) [保活检查 23:40] 买家情报 API (localhost:8100/health) → 200 OK，正常运行",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3,
+      "totalScore": 4,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-10T00:00:11.094Z",
-      "lastRecalledAt": "2026-05-12T02:00:31.695Z",
+      "lastRecalledAt": "2026-05-13T00:00:16.417Z",
       "queryHashes": [
         "786669ad2977",
         "62e845fd57e6",
-        "13fb4f95e6d8"
+        "13fb4f95e6d8",
+        "062b4b584024"
       ],
       "recallDays": [
         "2026-05-10",
-        "2026-05-12"
+        "2026-05-12",
+        "2026-05-13"
       ],
       "conceptTags": [
         "跨境-api服务",
@@ -1233,25 +1249,27 @@
       "endLine": 136,
       "source": "memory",
       "snippet": "OERVEngine._write() → O.E.R.V 极简黑客风写作（单句成行/零形容词/80%出刀） │ ▼ OERVEngine._generate_visuals() → 2 组 16:9 电影感 Midjourney/Flux prompt │ ▼ Webhook / Dispatch → 公众号推送 / 本地保存 / 小红书卡片 ``` ### 文件清单 | 路径 | 说明 | |------|------| | `skills/oerv-narrative-engine/SKILL.md` | Agent 可执行协议，含触发规则+输出模板+负向列表 | | `skills/oerv-narrative-engine/engine.py` | 核心引擎：情绪检测/场景提取/写作/视觉Prompt/小红书卡片 | | `skills/oerv-narrative-engine/dispatch.py` | 分发服务：Flask Webhook + 公众号草稿推送 + 发布历史 | | `skills/oerv-narrative-engine/.env` | 配置模板（LLM API / 公众号凭证） | | `scripts/deploy_oerv.sh` | 一键部署脚本 | ### 快捷命令 - `/oerv`：闪念→文章+视觉Prompt - `/oerv-card`：闪念→小红书卡片 ### 用法 ```bash # 查看 3 篇示范文章 python3 skills/oerv-narrative-en",
-      "recallCount": 6,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 6,
+      "totalScore": 7,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-10T02:00:32.028Z",
-      "lastRecalledAt": "2026-05-12T02:25:42.912Z",
+      "lastRecalledAt": "2026-05-13T02:00:29.091Z",
       "queryHashes": [
         "0deaac3a8336",
         "b53a67adea80",
         "30c831fb14f1",
         "1ea7a2401c34",
         "13fb4f95e6d8",
-        "b924e48468cc"
+        "b924e48468cc",
+        "0f369197adc7"
       ],
       "recallDays": [
         "2026-05-10",
         "2026-05-11",
-        "2026-05-12"
+        "2026-05-12",
+        "2026-05-13"
       ],
       "conceptTags": [
         "o.e.r.v",
@@ -1368,22 +1386,24 @@
       "endLine": 82,
       "source": "memory",
       "snippet": "- 澳洲市场 4 封（Aus Modular / Melbourne Prefab / Apex / Pacific Prefab） - 沙特项目触达 2 封（法狮龙 → Jewel of the Bride / 邦山 → NEOM） - 状态：已通知 SAYELF 待审核 [保活] O.E.R.V 分发服务器检查 — 13:35 - 状态: ✅ 运行中 (PID 110785, v2.0) - 操作: 无需重启 [cron:跨境-API服务保活] 2026-05-10 13:45 | health check: 200 OK (正常运行) [保活] 买家情报 API 15:10 健康检查通过（200），无需重启 [2026-05-10 15:25:09] [保活] 买家情报API health check: 200 OK [2026-05-10 17:50] [保活] 买家情报API (port 8100) 未运行，启动成功 PID:139031, health=200 ## 18:15 [cron] 智能文件转 MD 扫描 - 扫描结果：发现 8 个待转换文件（增量） - 成功：6（JSON 文件） - 跳过：2 - 失败：0 - 静默完成，未推送 [cron] 跨境-API服务保活 18:35 — health check: 200 ✅ 运行正常 [cron] 跨境-API服务保活 18:55 — health check: 200 ✅ 运行正常 [cron 跨境-API服务保活] 20:20 — 买家情报 API (localhost:8100) 健康检查通",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4,
+      "totalScore": 5,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-11T10:00:29.518Z",
-      "lastRecalledAt": "2026-05-12T10:00:38.148Z",
+      "lastRecalledAt": "2026-05-13T00:00:16.417Z",
       "queryHashes": [
         "3a24fb565f15",
         "62e845fd57e6",
         "3ec874f4641b",
-        "908978dc625f"
+        "908978dc625f",
+        "062b4b584024"
       ],
       "recallDays": [
         "2026-05-11",
-        "2026-05-12"
+        "2026-05-12",
+        "2026-05-13"
       ],
       "conceptTags": [
         "o.e.r.v",
@@ -1403,22 +1423,24 @@
       "endLine": 32,
       "source": "memory",
       "snippet": "# 2026-05-10 记忆 ## Cron 任务 ### 17:40 跨境-API服务保活 ### 22:45 跨境-API服务保活 - health endpoint → 200 ✅ 服务正常运行 - 无需启动，静默完成 - 状态：✅ 已自动恢复 - 发现时未运行（curl 000），已手动启动脚本 - PID: 138591，health check → 200 OK - [cron] 13:35 跨境 API 保活 — health 检查通过 (HTTP 200) - [cron] 12:15 智能文件转 MD — 扫描 6 个文件，4 转换成功，2 跳过，0 失败。累计已转换 152 文件 - [cron] 09:00 跨境富化Agent — 执行完成，模块健康，状态 healthy - [cron] 03:35 跨境 API 服务保活检查 → health 返回 200，正常运行，无需干预 - [cron] 09:10 跨境 API 服务保活检查 → health 返回 200，正常运行，无需干预 [cron:跨境-API服务保活] 2026-05-10 04:25 — Health check 200 OK, service running. ## [Cron] MD-智能自动转换 — 2026-05-10 06:15 - 脚本: scripts/md-watch - 结果: ✅ 1 成功 (converter_state.json, 12KB), ⏭ 0 跳过, ❌ 0 失败 - 增量模式，无异常 ## [保活] O.E.R.V 分发服务 — 20",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4,
+      "totalScore": 5,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-11T10:00:29.518Z",
-      "lastRecalledAt": "2026-05-12T10:00:38.148Z",
+      "lastRecalledAt": "2026-05-13T00:00:16.417Z",
       "queryHashes": [
         "3a24fb565f15",
         "62e845fd57e6",
         "3ec874f4641b",
-        "908978dc625f"
+        "908978dc625f",
+        "062b4b584024"
       ],
       "recallDays": [
         "2026-05-11",
-        "2026-05-12"
+        "2026-05-12",
+        "2026-05-13"
       ],
       "conceptTags": [
         "跨境-api服务保活",
@@ -1469,18 +1491,20 @@
       "endLine": 57,
       "source": "memory",
       "snippet": "## [保活] O.E.R.V 分发服务 — 2026-05-10 06:35 - 状态: ✅ 运行中 (PID 110785, v2.0) - 操作: 无需重启 ## [能力涌现] 排版风格智能匹配系统 - O.E.R.V dispatch.py 新增完整排版风格系统 - 5 套风格：MUJI(muji) / Minimal(minimal) / Patagonia(patagonia) / Notion(notion) / Apple(apple) - 智能匹配：情绪→风格映射（10种情绪） + 内容关键词兜底（12组） - 默认从 Minimal 切到 MUJI，env 可强制覆盖 - art-agent 品牌库同步新增 MUJI token，默认品牌从 binance 切到 muji [cron:跨境-API服务保活] 09:05 — 买家情报API /health 返回 200 ✅ ## [OERV保活] 10:20 - OERV dispatch 服务运行正常 (PID 110785, v2.0) - 无需重启 [cron] 跨境-API服务保活 @10:40 — health OK (200) [2026-05-10 11:25] [cron:健康检查] 买家情报API 127.0.0.1:8100/health → 200 ✅ ## [触达Agent] 开发信队列 2026-05-10 12:00 cron 执行 generate_outreach 成功。 - 新建 cross-border-core 模块（modules/cross-border-",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-12T02:00:31.684Z",
-      "lastRecalledAt": "2026-05-12T02:00:31.684Z",
+      "lastRecalledAt": "2026-05-13T02:00:29.091Z",
       "queryHashes": [
-        "1ea7a2401c34"
+        "1ea7a2401c34",
+        "0f369197adc7"
       ],
       "recallDays": [
-        "2026-05-12"
+        "2026-05-12",
+        "2026-05-13"
       ],
       "conceptTags": [
         "o.e.r.v",
@@ -1491,6 +1515,37 @@
         "127.0.0.1",
         "8100/health",
         "generate-outreach"
+      ]
+    },
+    "memory:memory/2026-05-13.md:1:40": {
+      "key": "memory:memory/2026-05-13.md:1:40",
+      "path": "memory/2026-05-13.md",
+      "startLine": 1,
+      "endLine": 40,
+      "source": "memory",
+      "snippet": "# 2026-05-13 日志 ## [系统] Git 自动备份 03:00 ## [系统] md-watch 扫描 06:15 ## [系统] 跨境API保活 06:50 — ✅ 服务运行正常 (HTTP 200) - 待转换: 1 文件 - 成功: 1 (converter_state.json → .md) - 跳过: 0 | 失败: 0 - 状态: ✅ 成功 - Commit: e43d2732 ## [保活] 买家情报 API 05:05 - 状态: ✅ 运行正常 (HTTP 200) - 端口: 8100 ## [保活] 买家情报 API 服务 03:10 - 状态: ✅ 正常 - Health Check: HTTP 200 - 变更: 53 files (5619 insertions, 413 deletions) - 推送: origin master 成功 ## [任务] 智能文件转 MD 扫描 (cron) 00:15 - 4 files found, 2 converted (JSON→MD), 2 skipped, 0 failed - 增量模式，无异常 [cron-保活 02:00] 买家情报 API 服务健康检查通过 (HTTP 200)，无需重启。 [2026-05-13 04:20] cron-b79b8c7c: 买家情报 API 健康检查 → 200 OK (无需启动) [2026-05-13 02:30:08] cron-b79b8c7c: 买家情报 API 健康检查 → 200 OK (无需启动) ## [cron] 搜",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-13T00:02:39.915Z",
+      "lastRecalledAt": "2026-05-13T00:02:39.915Z",
+      "queryHashes": [
+        "525222249bfb"
+      ],
+      "recallDays": [
+        "2026-05-13"
+      ],
+      "conceptTags": [
+        "备份",
+        "md-watch",
+        "converter-state.json",
+        "cron-保活",
+        "cron-b79b8c7c",
+        "日志",
+        "系统",
+        "git"
       ]
     }
   }

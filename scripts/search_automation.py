@@ -9,6 +9,10 @@
 """
 
 import sys, json, os, re, time, hashlib
+# 将 venv site-packages 加入路径（兼容 cron 不使用 shebang 的情况）
+_venv_site = os.path.expanduser("~/.local/venvs/scraper/lib/python3.14/site-packages")
+if os.path.isdir(_venv_site) and _venv_site not in sys.path:
+    sys.path.insert(0, _venv_site)
 from pathlib import Path
 from datetime import datetime, timedelta
 from typing import Dict, List, Optional
