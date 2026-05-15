@@ -44,3 +44,4 @@ skills/scheduler-agent/  # 空占位
 
 # === Token 监控数据 ===
 data/token-monitor/
+default/

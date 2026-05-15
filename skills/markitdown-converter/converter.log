@@ -358,3 +358,71 @@
   File "/home/sayelf/.local/venvs/markitdo
 [2026-05-14 00:15:24] [INFO]   ✅ [JSON] converter_state.json → ok (21.3KB)
 [2026-05-14 00:15:24] [INFO] 转换完成: ✅ 1 成功, ⏭ 1 跳过, ❌ 2 失败
+[2026-05-14 06:15:17] [INFO] 发现 2 个待转换文件（增量）
+[2026-05-14 06:15:18] [INFO]   ❌ [YAML] none.yaml: failed: Traceback (most recent call last):
+  File "/home/sayelf/.local/venvs/markitdown/bin/markitdown", line 8, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/home/sayelf/.local/venvs/markitdo
+[2026-05-14 06:15:19] [INFO]   ✅ [JSON] converter_state.json → ok (21.4KB)
+[2026-05-14 06:15:19] [INFO] 转换完成: ✅ 1 成功, ⏭ 0 跳过, ❌ 1 失败
+[2026-05-14 16:02:50] [INFO] 发现 9 个待转换文件（增量）
+[2026-05-14 16:02:51] [INFO]   ✅ [JSON] enriched_20260514_155952.json → ok (5.8KB)
+[2026-05-14 16:02:52] [INFO]   ✅ [JSON] keyword_research.json → ok (26.9KB)
+[2026-05-14 16:02:53] [INFO]   ❌ [YAML] none.yaml: failed: Traceback (most recent call last):
+  File "/home/sayelf/.local/venvs/markitdown/bin/markitdown", line 8, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/home/sayelf/.local/venvs/markitdo
+[2026-05-14 16:02:54] [INFO]   ✅ [JSON] outreach-queue-2026-05-14.json → ok (8.5KB)
+[2026-05-14 16:02:55] [INFO]   ✅ [JSON] converter_state.json → ok (21.6KB)
+[2026-05-14 16:02:56] [INFO]   ✅ [JSON] short-term-recall.json → ok (84.0KB)
+[2026-05-14 16:02:56] [INFO] 转换完成: ✅ 5 成功, ⏭ 3 跳过, ❌ 1 失败
+[2026-05-14 18:15:21] [INFO] 发现 11 个待转换文件（增量）
+[2026-05-14 18:15:22] [INFO]   ✅ [PDF] dali_travel_plan.pdf → ok (5.1KB)
+[2026-05-14 18:15:22] [INFO]   ✅ [PDF] dali_plan_cn.pdf → ok (4.3KB)
+[2026-05-14 18:15:23] [INFO]   ✅ [PDF] middle_east_report.pdf → ok (9.7KB)
+[2026-05-14 18:15:25] [INFO]   ✅ [PDF] g219_epic_trip.pdf → ok (10.8KB)
+[2026-05-14 18:15:26] [INFO]   ✅ [PDF] dali_beautiful.pdf → ok (5.5KB)
+[2026-05-14 18:15:26] [INFO]   ✅ [JSON] competitor_report_20260514.json → ok (2.5KB)
+[2026-05-14 18:15:27] [INFO]   ✅ [JSON] workspace-state.json → ok (70.0B)
+[2026-05-14 18:15:28] [INFO]   ❌ [YAML] none.yaml: failed: Traceback (most recent call last):
+  File "/home/sayelf/.local/venvs/markitdown/bin/markitdown", line 8, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/home/sayelf/.local/venvs/markitdo
+[2026-05-14 18:15:29] [INFO]   ✅ [JSON] converter_state.json → ok (21.9KB)
+[2026-05-14 18:15:30] [INFO]   ✅ [JSON] short-term-recall.json → ok (84.2KB)
+[2026-05-14 18:15:30] [INFO] 转换完成: ✅ 9 成功, ⏭ 1 跳过, ❌ 1 失败
+[2026-05-15 12:15:20] [INFO] 发现 6 个待转换文件（增量）
+[2026-05-15 12:15:20] [INFO]   ❌ [YAML] none.yaml: failed: Traceback (most recent call last):
+  File "/home/sayelf/.local/venvs/markitdown/bin/markitdown", line 8, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/home/sayelf/.local/venvs/markitdo
+[2026-05-15 12:15:21] [INFO]   ✅ [JSON] outreach-queue-2026-05-15.json → ok (8.5KB)
+[2026-05-15 12:15:22] [INFO]   ✅ [JSON] converter_state.json → ok (22.0KB)
+[2026-05-15 12:15:23] [INFO]   ✅ [Text] service-logs.txt → ok (80.0B)
+[2026-05-15 12:15:24] [INFO]   ✅ [JSON] short-term-recall.json → ok (87.8KB)
+[2026-05-15 12:15:24] [INFO] 转换完成: ✅ 4 成功, ⏭ 1 跳过, ❌ 1 失败
+[2026-05-15 18:15:20] [INFO] 发现 9 个待转换文件（增量）
+[2026-05-15 18:15:21] [INFO]   ✅ [JSON] competitor_report_20260515.json → ok (2.5KB)
+[2026-05-15 18:15:21] [INFO]   ✅ [JSON] keyword_research.json → ok (30.8KB)
+[2026-05-15 18:15:22] [INFO]   ❌ [YAML] none.yaml: failed: Traceback (most recent call last):
+  File "/home/sayelf/.local/venvs/markitdown/bin/markitdown", line 8, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/home/sayelf/.local/venvs/markitdo
+[2026-05-15 18:15:23] [INFO]   ✅ [JSON] converter_state.json → ok (22.2KB)
+[2026-05-15 18:15:24] [INFO]   ✅ [JSON] campaigns.json → ok (2.0B)
+[2026-05-15 18:15:25] [INFO]   ✅ [JSON] opportunities.json → ok (4.6KB)
+[2026-05-15 18:15:25] [INFO]   ✅ [JSON] short-term-recall.json → ok (89.3KB)
+[2026-05-15 18:15:25] [INFO] 转换完成: ✅ 6 成功, ⏭ 2 跳过, ❌ 1 失败
+[2026-05-16 00:15:20] [INFO] 发现 2 个待转换文件（增量）
+[2026-05-16 00:15:21] [INFO]   ❌ [YAML] none.yaml: failed: Traceback (most recent call last):
+  File "/home/sayelf/.local/venvs/markitdown/bin/markitdown", line 8, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/home/sayelf/.local/venvs/markitdo
+[2026-05-16 00:15:21] [INFO]   ✅ [JSON] converter_state.json → ok (22.3KB)
+[2026-05-16 00:15:21] [INFO] 转换完成: ✅ 1 成功, ⏭ 0 跳过, ❌ 1 失败

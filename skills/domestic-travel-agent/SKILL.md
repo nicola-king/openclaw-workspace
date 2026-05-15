@@ -27,6 +27,23 @@ status: active
 | 团体 | `group --city 三亚 --members 10` | 团建/会议/考察 |
 | API | `serve --port 8765` | REST+MCP服务 |
 
+## 输出规范（强制）
+
+### 语言
+- 所有输出文件（PDF/Word/HTML）均使用**中文**生成
+- 中文字体优先使用系统可用字体（DroidSansFallbackFull/NotoSansCJK等），必须确保中文正确渲染
+- 表头、正文、提示语全部使用中文
+- 英文数字/符号正常使用不受限
+
+### PDF生成规范
+- 报告标题：中文
+- 表格表头：中文
+- 字段内容：中文
+- 字体注册：优先注册系统DroidSansFallbackFull.ttf，失败则查找任意支持中文的TTF字体
+- 失败回退：找不到中文字体时报错阻止生成，不输出无中文的PDF
+
+---
+
 ## 10核心模块
 
 1. planner 行程规划 | 2. weather_safety 天气预警

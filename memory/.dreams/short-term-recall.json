@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-13T09:15:35.068Z",
+  "updatedAt": "2026-05-15T10:00:39.987Z",
   "entries": {
     "memory:memory/2026-05-04.md:285:324": {
       "key": "memory:memory/2026-05-04.md:285:324",
@@ -487,13 +487,13 @@
       "endLine": 120,
       "source": "memory",
       "snippet": "├─ 工厂触达记录（情报→工厂→成单追踪） └─ 订阅管理（注册/计费/续费/限额） P1 subscription 工厂订阅计费 ✅ └─ 3级方案：free_trial/basic/pro P2 服务层（增值附送） ├─ 报价引擎（含退税）✅ ├─ 合同模板（中东专版）✅ ├─ 合规引擎（退税查询）✅ ├─ 供应商匹配（9家工厂）✅ └─ 产品目录 RAG（5款产品）✅ ``` 关键配置： - scraper.py 穿透式搜索器 v3（cloudscraper + brotli + Chromium） - SAU-xxx 情报均已验证 ## [任务] session 结束 — 暂停开发 SAYELF 要求暂停，等完善后再继续。 待办： - [ ] chrome config toolProgress = false 已设置但未验证效果 - [ ] 项目雷达注入 etimad.sa 实时数据（下次继续） - [ ] 工厂端 Telegram 推送界面（下次继续） ## [Session 结束汇报] 2026-05-06 ### 完成工作 **1. 用户架构对接** - 用户提供的跨境贸易 Agent 5层架构 → 按 Elon 五步法过滤 - 12个业务模块 → 精简为5个核心模块（去掉了订单追踪/退税(后修正保留)/报关等） - 确认双模式运营：买家情报平台(核心) + 中间贸易(机会) **2. 核心产品 — buyer-intel 买家情报引擎** - 项目/公司/人脉 15条已验证数据入库 - 情报",
-      "recallCount": 8,
+      "recallCount": 9,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 8,
+      "totalScore": 9,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-07T01:00:54.112Z",
-      "lastRecalledAt": "2026-05-11T10:00:26.146Z",
+      "lastRecalledAt": "2026-05-15T10:00:39.987Z",
       "queryHashes": [
         "921c566541c5",
         "dc8fc4c5be34",
@@ -502,14 +502,16 @@
         "58850f00f0f6",
         "832128d3418c",
         "1cd438e85167",
-        "1c9267784948"
+        "1c9267784948",
+        "3b5de6a000f4"
       ],
       "recallDays": [
         "2026-05-07",
         "2026-05-08",
         "2026-05-09",
         "2026-05-10",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-15"
       ],
       "conceptTags": [
         "注册/计费/续费/限额",
@@ -808,22 +810,24 @@
       "endLine": 45,
       "source": "memory",
       "snippet": "- 三条命令: sweep(单次) / monitor(全量) / countries(国家列表) - 文件: scripts/search_automation.py + penetrating_search.py ## [能力涌现] AI HOT 资讯 Skill 接入 ### 做了什么 安装 AI HOT (aihot.virxact.com) 中文 AI 资讯 Skill： - 路径：skills/aihot/SKILL.md（416行，官方源直下） - 类型：REST API Skill（无需 token/API Key） - 端点：/api/public/items (精选/全量) + /api/public/daily (日报) ### 触发关键词 今天AI圈有什么 / AI日报 / AI热点 / 最近AI / OpenAI最近发布 / 看下精选 ### API 验证结果（2026-05-08） - 日报：5个板块共30条（模型3+产品8+行业6+论文5+观点8） - 精选 items 端点：正常返回，支持翻页 cursor - 认证：无（公开匿名），限流 600r/min/IP ### 状态 - [x] SKILL.md 下载安装 - [x] API 端到端验证 - [x] 日报数据可用 ## [洞察] AI HOT 蒸馏分析完成 ### 核心收获（可直接落地） 1. **三层路由模式**（精选→日报→全量）→ buyer-intel / travel / intelligence 改为用户意图自动选粒度 2. **语义级查询组合**（catego",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3,
+      "totalScore": 4,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-08T23:10:24.043Z",
-      "lastRecalledAt": "2026-05-12T06:00:21.716Z",
+      "lastRecalledAt": "2026-05-15T08:55:29.819Z",
       "queryHashes": [
         "85c76510d62a",
         "fff20263ef23",
-        "ef2745fc0b87"
+        "ef2745fc0b87",
+        "419e371da627"
       ],
       "recallDays": [
         "2026-05-09",
         "2026-05-10",
-        "2026-05-12"
+        "2026-05-12",
+        "2026-05-15"
       ],
       "conceptTags": [
         "openai",
@@ -1102,13 +1106,13 @@
       "endLine": 163,
       "source": "memory",
       "snippet": "# 启动分发服务器（本地端口 5200） python3 skills/oerv-narrative-engine/dispatch.py # 一键流水线输出 python3 skills/oerv-narrative-engine/dispatch.py --dry-run \"你的闪念\" ``` ### Silent Operator 启用（2026-05-09 12:53） - 自动执行架构就绪，无需手动触发 `/oerv` - 分发服务器已启动 → `http://0.0.0.0:5200` - 服务保活 cron 每 5 分钟检查 - 每日 10:00 内容脉冲 cron（从记忆/对话中提取素材自动生成） - 注册脚本 `scripts/oerv_operator.sh` ### 待配置 - 配置 `skills/oerv-narrative-engine/.env` 中的 LLM_API_KEY 启用 AI 驱动写作 - 配置 WECHAT_APP_ID/SECRET 启用公众号自动推送 - 将手机拍摄的生活照放入 `media/` 目录，引擎自动检索作为配图候选 ## [cron] 跨境-API服务保活 (07:30) - 买家情报 API (port 8100) 未运行 - 已重启成功 (PID: 49860) [跨境-API保活] 2026-05-09 08:15 - health check: 200 OK [cron:跨境-API保活 2026-05-09 09:20] - 买家情报 API (localhost:8100/health): ✅ H",
-      "recallCount": 8,
+      "recallCount": 11,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 8,
+      "totalScore": 11,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-10T00:00:11.094Z",
-      "lastRecalledAt": "2026-05-13T00:00:16.417Z",
+      "lastRecalledAt": "2026-05-15T10:00:36.594Z",
       "queryHashes": [
         "786669ad2977",
         "3a24fb565f15",
@@ -1117,13 +1121,18 @@
         "b924e48468cc",
         "3ec874f4641b",
         "908978dc625f",
-        "062b4b584024"
+        "062b4b584024",
+        "80ff9d97af4d",
+        "74f2e24e8bd6",
+        "88fa24e00b9a"
       ],
       "recallDays": [
         "2026-05-10",
         "2026-05-11",
         "2026-05-12",
-        "2026-05-13"
+        "2026-05-13",
+        "2026-05-14",
+        "2026-05-15"
       ],
       "conceptTags": [
         "dry-run",
@@ -1143,26 +1152,28 @@
       "endLine": 55,
       "source": "memory",
       "snippet": "| 文件 | 类型 | 说明 | |------|------|------| | `modules/buyer-intel/api_server.py` | 🆕 新增 | REST API: /health / /api/v1/query / /api/v1/daily / /api/v1/rss | | `modules/buyer-intel/rss_feed.py` | 🆕 新增 | RSS 2.0 馈送生成器 | | `scripts/start_apis.sh` | 🆕 新增 | API 服务启停脚本 | | `scripts/verify_v12.py` | 🆕 新增 | v12 验证套件 (7 tests) | | `SKILL.md` | 📝 重写 | 从架构文档改为 Agent 可执行协议：触发规则+输出模板+人话规则+Do-Not-Do | | `modules/intelligence-hub/SKILL.md` | 📝 重写 | Agent 调用协议，5 版块路由 | ### 新增 cron | 名称 | 间隔 | 说明 | |------|------|------| | 跨境-API服务保活 | 每 5 分钟 | 检查 API 端口，宕机自动重启 | ### 更新的 cron | 原名称 | 新名称 | 改动 | |--------|--------|------| | 跨境-晨间简报 | 跨境-晨间简报(5版块日报) | 输出改为 5 版块结构 | | 情报日报 18:00 | 情报晚报 18:00(5版块) | 输出改为 5",
-      "recallCount": 6,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 6,
+      "totalScore": 7,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-10T00:00:11.094Z",
-      "lastRecalledAt": "2026-05-13T00:00:16.417Z",
+      "lastRecalledAt": "2026-05-14T10:00:44.136Z",
       "queryHashes": [
         "786669ad2977",
         "3a24fb565f15",
         "62e845fd57e6",
         "3ec874f4641b",
         "908978dc625f",
-        "062b4b584024"
+        "062b4b584024",
+        "80ff9d97af4d"
       ],
       "recallDays": [
         "2026-05-10",
         "2026-05-11",
         "2026-05-12",
-        "2026-05-13"
+        "2026-05-13",
+        "2026-05-14"
       ],
       "conceptTags": [
         "api/v1/query",
@@ -1249,13 +1260,13 @@
       "endLine": 136,
       "source": "memory",
       "snippet": "OERVEngine._write() → O.E.R.V 极简黑客风写作（单句成行/零形容词/80%出刀） │ ▼ OERVEngine._generate_visuals() → 2 组 16:9 电影感 Midjourney/Flux prompt │ ▼ Webhook / Dispatch → 公众号推送 / 本地保存 / 小红书卡片 ``` ### 文件清单 | 路径 | 说明 | |------|------| | `skills/oerv-narrative-engine/SKILL.md` | Agent 可执行协议，含触发规则+输出模板+负向列表 | | `skills/oerv-narrative-engine/engine.py` | 核心引擎：情绪检测/场景提取/写作/视觉Prompt/小红书卡片 | | `skills/oerv-narrative-engine/dispatch.py` | 分发服务：Flask Webhook + 公众号草稿推送 + 发布历史 | | `skills/oerv-narrative-engine/.env` | 配置模板（LLM API / 公众号凭证） | | `scripts/deploy_oerv.sh` | 一键部署脚本 | ### 快捷命令 - `/oerv`：闪念→文章+视觉Prompt - `/oerv-card`：闪念→小红书卡片 ### 用法 ```bash # 查看 3 篇示范文章 python3 skills/oerv-narrative-en",
-      "recallCount": 7,
+      "recallCount": 9,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 7,
+      "totalScore": 9,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-10T02:00:32.028Z",
-      "lastRecalledAt": "2026-05-13T02:00:29.091Z",
+      "lastRecalledAt": "2026-05-15T02:00:29.915Z",
       "queryHashes": [
         "0deaac3a8336",
         "b53a67adea80",
@@ -1263,13 +1274,17 @@
         "1ea7a2401c34",
         "13fb4f95e6d8",
         "b924e48468cc",
-        "0f369197adc7"
+        "0f369197adc7",
+        "f3fd57599049",
+        "74f2e24e8bd6"
       ],
       "recallDays": [
         "2026-05-10",
         "2026-05-11",
         "2026-05-12",
-        "2026-05-13"
+        "2026-05-13",
+        "2026-05-14",
+        "2026-05-15"
       ],
       "conceptTags": [
         "o.e.r.v",
@@ -1386,24 +1401,28 @@
       "endLine": 82,
       "source": "memory",
       "snippet": "- 澳洲市场 4 封（Aus Modular / Melbourne Prefab / Apex / Pacific Prefab） - 沙特项目触达 2 封（法狮龙 → Jewel of the Bride / 邦山 → NEOM） - 状态：已通知 SAYELF 待审核 [保活] O.E.R.V 分发服务器检查 — 13:35 - 状态: ✅ 运行中 (PID 110785, v2.0) - 操作: 无需重启 [cron:跨境-API服务保活] 2026-05-10 13:45 | health check: 200 OK (正常运行) [保活] 买家情报 API 15:10 健康检查通过（200），无需重启 [2026-05-10 15:25:09] [保活] 买家情报API health check: 200 OK [2026-05-10 17:50] [保活] 买家情报API (port 8100) 未运行，启动成功 PID:139031, health=200 ## 18:15 [cron] 智能文件转 MD 扫描 - 扫描结果：发现 8 个待转换文件（增量） - 成功：6（JSON 文件） - 跳过：2 - 失败：0 - 静默完成，未推送 [cron] 跨境-API服务保活 18:35 — health check: 200 ✅ 运行正常 [cron] 跨境-API服务保活 18:55 — health check: 200 ✅ 运行正常 [cron 跨境-API服务保活] 20:20 — 买家情报 API (localhost:8100) 健康检查通",
-      "recallCount": 5,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5,
+      "totalScore": 7,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-11T10:00:29.518Z",
-      "lastRecalledAt": "2026-05-13T00:00:16.417Z",
+      "lastRecalledAt": "2026-05-15T10:00:36.594Z",
       "queryHashes": [
         "3a24fb565f15",
         "62e845fd57e6",
         "3ec874f4641b",
         "908978dc625f",
-        "062b4b584024"
+        "062b4b584024",
+        "80ff9d97af4d",
+        "88fa24e00b9a"
       ],
       "recallDays": [
         "2026-05-11",
         "2026-05-12",
-        "2026-05-13"
+        "2026-05-13",
+        "2026-05-14",
+        "2026-05-15"
       ],
       "conceptTags": [
         "o.e.r.v",
@@ -1423,24 +1442,29 @@
       "endLine": 32,
       "source": "memory",
       "snippet": "# 2026-05-10 记忆 ## Cron 任务 ### 17:40 跨境-API服务保活 ### 22:45 跨境-API服务保活 - health endpoint → 200 ✅ 服务正常运行 - 无需启动，静默完成 - 状态：✅ 已自动恢复 - 发现时未运行（curl 000），已手动启动脚本 - PID: 138591，health check → 200 OK - [cron] 13:35 跨境 API 保活 — health 检查通过 (HTTP 200) - [cron] 12:15 智能文件转 MD — 扫描 6 个文件，4 转换成功，2 跳过，0 失败。累计已转换 152 文件 - [cron] 09:00 跨境富化Agent — 执行完成，模块健康，状态 healthy - [cron] 03:35 跨境 API 服务保活检查 → health 返回 200，正常运行，无需干预 - [cron] 09:10 跨境 API 服务保活检查 → health 返回 200，正常运行，无需干预 [cron:跨境-API服务保活] 2026-05-10 04:25 — Health check 200 OK, service running. ## [Cron] MD-智能自动转换 — 2026-05-10 06:15 - 脚本: scripts/md-watch - 结果: ✅ 1 成功 (converter_state.json, 12KB), ⏭ 0 跳过, ❌ 0 失败 - 增量模式，无异常 ## [保活] O.E.R.V 分发服务 — 20",
-      "recallCount": 5,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5,
+      "totalScore": 8,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-11T10:00:29.518Z",
-      "lastRecalledAt": "2026-05-13T00:00:16.417Z",
+      "lastRecalledAt": "2026-05-15T10:00:36.594Z",
       "queryHashes": [
         "3a24fb565f15",
         "62e845fd57e6",
         "3ec874f4641b",
         "908978dc625f",
-        "062b4b584024"
+        "062b4b584024",
+        "80ff9d97af4d",
+        "f3ebed24a6f5",
+        "88fa24e00b9a"
       ],
       "recallDays": [
         "2026-05-11",
         "2026-05-12",
-        "2026-05-13"
+        "2026-05-13",
+        "2026-05-14",
+        "2026-05-15"
       ],
       "conceptTags": [
         "跨境-api服务保活",
@@ -1491,20 +1515,22 @@
       "endLine": 57,
       "source": "memory",
       "snippet": "## [保活] O.E.R.V 分发服务 — 2026-05-10 06:35 - 状态: ✅ 运行中 (PID 110785, v2.0) - 操作: 无需重启 ## [能力涌现] 排版风格智能匹配系统 - O.E.R.V dispatch.py 新增完整排版风格系统 - 5 套风格：MUJI(muji) / Minimal(minimal) / Patagonia(patagonia) / Notion(notion) / Apple(apple) - 智能匹配：情绪→风格映射（10种情绪） + 内容关键词兜底（12组） - 默认从 Minimal 切到 MUJI，env 可强制覆盖 - art-agent 品牌库同步新增 MUJI token，默认品牌从 binance 切到 muji [cron:跨境-API服务保活] 09:05 — 买家情报API /health 返回 200 ✅ ## [OERV保活] 10:20 - OERV dispatch 服务运行正常 (PID 110785, v2.0) - 无需重启 [cron] 跨境-API服务保活 @10:40 — health OK (200) [2026-05-10 11:25] [cron:健康检查] 买家情报API 127.0.0.1:8100/health → 200 ✅ ## [触达Agent] 开发信队列 2026-05-10 12:00 cron 执行 generate_outreach 成功。 - 新建 cross-border-core 模块（modules/cross-border-",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-12T02:00:31.684Z",
-      "lastRecalledAt": "2026-05-13T02:00:29.091Z",
+      "lastRecalledAt": "2026-05-14T08:00:42.203Z",
       "queryHashes": [
         "1ea7a2401c34",
-        "0f369197adc7"
+        "0f369197adc7",
+        "f3fd57599049"
       ],
       "recallDays": [
         "2026-05-12",
-        "2026-05-13"
+        "2026-05-13",
+        "2026-05-14"
       ],
       "conceptTags": [
         "o.e.r.v",
@@ -1546,6 +1572,99 @@
         "日志",
         "系统",
         "git"
+      ]
+    },
+    "memory:memory/2026-05-14.md:1:32": {
+      "key": "memory:memory/2026-05-14.md:1:32",
+      "path": "memory/2026-05-14.md",
+      "startLine": 1,
+      "endLine": 32,
+      "source": "memory",
+      "snippet": "# 2026-05-14 记忆 ## [任务] MD 智能转换扫描 ### 06:15 增量扫描结果 | 文件 | 结果 | 说明 | |------|------|------| | converter_state.json | ✅ 成功 (21.4KB) | JSON → Markdown | | none.yaml | ❌ 失败 | YAML 解析报错 | - 模式：增量扫描（仅处理新增/变更文件） - 静默任务，未推送 ### 18:15 增量扫描结果 | 文件 | 结果 | 说明 | |------|------|------| | dali_travel_plan.pdf | ✅ 成功 (5.1KB) | PDF → Markdown | | dali_plan_cn.pdf | ✅ 成功 (4.3KB) | PDF → Markdown | | middle_east_report.pdf | ✅ 成功 (9.7KB) | PDF → Markdown | | g219_epic_trip.pdf | ✅ 成功 (10.8KB) | PDF → Markdown | | dali_beautiful.pdf | ✅ 成功 (5.5KB) | PDF → Markdown | | competitor_report_20260514.json | ✅ 成功 (2.5KB) | JSON → Markdown | | workspace-state.json | ✅ 成功 (70B) | JSON → Markdown | | converter_state.",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-15T02:00:32.624Z",
+      "lastRecalledAt": "2026-05-15T02:00:32.624Z",
+      "queryHashes": [
+        "f3ebed24a6f5"
+      ],
+      "recallDays": [
+        "2026-05-15"
+      ],
+      "conceptTags": [
+        "converter-state.json",
+        "21.4kb",
+        "none.yaml",
+        "仅处理新增/变更文件",
+        "dali-travel-plan.pdf",
+        "5.1kb",
+        "dali-plan-cn.pdf",
+        "4.3kb"
+      ]
+    },
+    "memory:memory/2026-05-14.md:49:75": {
+      "key": "memory:memory/2026-05-14.md:49:75",
+      "path": "memory/2026-05-14.md",
+      "startLine": 49,
+      "endLine": 75,
+      "source": "memory",
+      "snippet": "| 北京诚栋国际营地集成房屋 | cdph.com.cn | - | C | | 雅致集成房屋 | - | - | D | **输出**: data/company-enricher/enriched_20260514_155952.json **DB总数**: 105家公司 (+7) **需后续**: 手动补充电话/LinkedIn信息 ## 文件转换 (md-watch) — 16:02 - **任务**: cron MD 智能自动转换扫描 - **结果**: 5成功 / 3跳过 / 1失败 - **成功**: enriched_20260514_155952.json, keyword_research.json, outreach-queue-2026-05-14.json, converter_state.json, short-term-recall.json - **失败**: none.yaml (markitdown 解析错误，不处理 YAML 纯键值文件) - **跳过**: 3 个无变更文件 (增量模式) - **增量记录**: updated watch.db 快照 ## [决策] 国内旅游探路者Agent输出规范 **时间**: 2026-05-14 17:47 **内容**: 国内旅游目的地（如大理）的PDF报告必须全中文生成 **规则**: - 使用 DroidSansFallbackFull.ttf 或其他支持中文的TTF字体 - PDF所有内容（标题/表头/正文/提示）均为中文 - Dali 报告的英文版已废弃 - 已写入 SKILL.m",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-15T02:00:32.624Z",
+      "lastRecalledAt": "2026-05-15T02:00:32.624Z",
+      "queryHashes": [
+        "f3ebed24a6f5"
+      ],
+      "recallDays": [
+        "2026-05-15"
+      ],
+      "conceptTags": [
+        "cdph.com.cn",
+        "手动补充电话/linkedin信息",
+        "md-watch",
+        "enriched-20260514-155952.json",
+        "keyword-research.json",
+        "outreach-queue-2026-05-14.json",
+        "converter-state.json",
+        "short-term-recall.json"
+      ]
+    },
+    "memory:memory/2026-05-15.md:50:65": {
+      "key": "memory:memory/2026-05-15.md:50:65",
+      "path": "memory/2026-05-15.md",
+      "startLine": 50,
+      "endLine": 65,
+      "source": "memory",
+      "snippet": "**背景：** 将 metro_tender_scout 重构为 轨道运营 agent，融合太一搜索 Agent + 情报引擎 **AIHOT 蒸馏成果：** - 策展分层（评分60阈值） - 主编点评 lead + 快讯 flashes - 品类分组表格 + 全链接 - 人话时间 / 联系人卡片 **全链路完成：** - 搜索 Agent (DDG/Bing) → 穿透抓取 → 字段提取 → SQLite - AIHOT 风格日报生成 → WeasyPrint PDF (地铁蓝CSS) - 飞书 Bot 推送个人会话 + 太一 bot 团队群 - Cron 06:00 自动执行 **性能：** 扫描 15s + 日报 0.1s + PDF 0.5s + 飞书 2s = ~18s 全链路",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-15T08:55:29.819Z",
+      "lastRecalledAt": "2026-05-15T08:55:29.819Z",
+      "queryHashes": [
+        "419e371da627"
+      ],
+      "recallDays": [
+        "2026-05-15"
+      ],
+      "conceptTags": [
+        "metro-tender-scout",
+        "ddg/bing",
+        "0.1s",
+        "0.5s",
+        "背景",
+        "轨道",
+        "运营",
+        "融合"
       ]
     }
   }
