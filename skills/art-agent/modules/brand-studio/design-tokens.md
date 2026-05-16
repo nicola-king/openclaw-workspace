@@ -6180,5 +6180,1766 @@
       "border-style": "none",
       "shadow": "none"
     }
+  },
+  "song-dynasty": {
+    "name": "宋代美学",
+    "description": "基于宋代美学的东方空间设计系统 — 留白、借景、宋式色彩、文人精神",
+    "colors": {
+      "ink": "#2C2416",
+      "ink-muted": "#5A4A3A",
+      "paper": "#F5F0E8",
+      "paper-warm": "#EDE4D4",
+      "paper-aged": "#D4C5A0",
+      "accent": "#8B4513",
+      "accent-ink": "#6B5B4F",
+      "muted": "#A0926B",
+      "water": "#C4A882",
+      "sky": "#D4D5CC",
+      "jade": "#7AAB82",
+      "ceramic": "#E8D5C0",
+      "light": "#FFF8F0",
+      "surface": "#FAF5ED"
+    },
+    "typography": {
+      "display": {
+        "fontFamily": "Noto Serif SC, Songti SC, serif",
+        "fontSize": "48px",
+        "fontWeight": "500",
+        "letterSpacing": "0.06em"
+      },
+      "heading": {
+        "fontFamily": "Noto Serif SC, Songti SC, serif",
+        "fontSize": "28px",
+        "fontWeight": "400",
+        "letterSpacing": "0.04em"
+      },
+      "body": {
+        "fontFamily": "Noto Serif SC, Songti SC, serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "1.8"
+      },
+      "caption": {
+        "fontFamily": "Noto Sans SC, sans-serif",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "letterSpacing": "0.08em"
+      }
+    },
+    "spacing": {
+      "xs": "4px",
+      "sm": "8px",
+      "md": "16px",
+      "lg": "32px",
+      "xl": "64px",
+      "xxl": "128px"
+    },
+    "radius": {},
+    "principles": [
+      "留白 (White Space)",
+      "借景 (Borrowed Scenery)",
+      "枯山水 (Zen Garden)",
+      "不对称 (Asymmetry)",
+      "幽玄 (Subtle Profundity)"
+    ],
+    "mood": "静、雅、淡、远",
+    "materials_traditional": [
+      "木 (Wood)",
+      "石 (Stone)",
+      "纸 (Washi Paper)",
+      "竹 (Bamboo)",
+      "陶 (Ceramic)",
+      "麻 (Linen)",
+      "铜 (Brass)",
+      "大漆 (Lacquer)"
+    ],
+    "materials_modern": [
+      "玻璃 (Glass) in借景窗",
+      "不锈钢 (Steel) in现代构件",
+      "微水泥 (Micro-cement) in地面",
+      "铜 (Brass) in灯具/五金"
+    ],
+    "culture": {
+      "paintings": {
+        "description": "宋代绘画 — 可参考其构图、色彩、意境用于空间设计",
+        "artists": [
+          {
+            "name": "范宽",
+            "代表作": "溪山行旅图",
+            "风格": "雄浑壮阔，全景山水",
+            "空间启发": "宏大叙事空间分层"
+          },
+          {
+            "name": "郭熙",
+            "代表作": "早春图",
+            "风格": "云烟变幻，三远法",
+            "空间启发": "深远/高远/平远的空间层次"
+          },
+          {
+            "name": "李唐",
+            "代表作": "万壑松风图",
+            "风格": "刚劲有力，斧劈皴",
+            "空间启发": "力度感与质感表现"
+          },
+          {
+            "name": "马远",
+            "代表作": "踏歌图",
+            "风格": "一角半边，边角构图",
+            "空间启发": "以小见大，留白边角"
+          },
+          {
+            "name": "夏圭",
+            "代表作": "溪山清远图",
+            "风格": "水墨苍劲，长卷叙事",
+            "空间启发": "长卷式空间叙事动线"
+          },
+          {
+            "name": "米芾/米友仁",
+            "代表作": "潇湘奇观图",
+            "风格": "米点皴，云山雾罩",
+            "空间启发": "朦胧模糊的边界处理"
+          },
+          {
+            "name": "赵伯驹",
+            "代表作": "江山秋色图",
+            "风格": "青绿山水，工整富丽",
+            "空间启发": "色彩的装饰性运用"
+          },
+          {
+            "name": "王希孟",
+            "代表作": "千里江山图",
+            "风格": "青绿重彩，全景长卷",
+            "空间启发": "色彩体系与空间叙事"
+          },
+          {
+            "name": "张择端",
+            "代表作": "清明上河图",
+            "风格": "风俗界画，市井繁华",
+            "空间启发": "人间烟火与功能布局"
+          },
+          {
+            "name": "梁楷",
+            "代表作": "泼墨仙人图",
+            "风格": "减笔写意，禅画",
+            "空间启发": "极简的表现力"
+          }
+        ],
+        "mood_to_painting": {
+          "雄浑": [
+            "范宽-溪山行旅图"
+          ],
+          "空灵": [
+            "米芾-潇湘奇观图"
+          ],
+          "富丽": [
+            "王希孟-千里江山图"
+          ],
+          "寂寥": [
+            "马远-寒江独钓图"
+          ],
+          "市井": [
+            "张择端-清明上河图"
+          ],
+          "禅意": [
+            "梁楷-泼墨仙人图"
+          ],
+          "清远": [
+            "夏圭-溪山清远图"
+          ],
+          "华贵": [
+            "赵伯驹-江山秋色图"
+          ]
+        }
+      },
+      "calligraphy": {
+        "description": "宋代书法 — 尚意书风，可影响空间中的文字排版与线条美学",
+        "masters": [
+          {
+            "name": "苏轼",
+            "代表作": "黄州寒食帖",
+            "风格": "尚意书风，丰腴跌宕",
+            "空间启发": "自由而有力的线条韵律"
+          },
+          {
+            "name": "黄庭坚",
+            "代表作": "松风阁诗帖",
+            "风格": "长枪大戟，纵横开阖",
+            "空间启发": "结构张力与空间延伸"
+          },
+          {
+            "name": "米芾",
+            "代表作": "蜀素帖",
+            "风格": "八面出锋，快剑斫阵",
+            "空间启发": "动态节奏感与力度变化"
+          },
+          {
+            "name": "蔡襄",
+            "代表作": "澄心堂帖",
+            "风格": "温润典雅，法度严谨",
+            "空间启发": "精致细节与规范秩序"
+          },
+          {
+            "name": "宋徽宗赵佶",
+            "代表作": "秾芳诗帖",
+            "风格": "瘦金体，挺拔锋利",
+            "空间启发": "线的极简表现力"
+          }
+        ],
+        "style_to_space": {
+          "自由有力": "苏轼书风",
+          "结构张力": "黄庭坚书风",
+          "动态节奏": "米芾书风",
+          "精致规范": "蔡襄书风",
+          "极简有力": "宋徽宗瘦金体"
+        }
+      },
+      "literature": {
+        "description": "宋代文学 — 宋词与笔记中的空间美学",
+        "texts": [
+          {
+            "title": "梦溪笔谈",
+            "author": "沈括",
+            "type": "笔记",
+            "relevance": "宋代科技与审美百科全书"
+          },
+          {
+            "title": "东京梦华录",
+            "author": "孟元老",
+            "type": "笔记",
+            "relevance": "北宋都城空间与生活场景"
+          },
+          {
+            "title": "武林旧事",
+            "author": "周密",
+            "type": "笔记",
+            "relevance": "南宋临安社会图景"
+          },
+          {
+            "title": "林泉高致",
+            "author": "郭熙",
+            "type": "画论",
+            "relevance": "山水画的空间理论"
+          }
+        ],
+        "poetry_affinity": {
+          "苏轼": {
+            "词风": "豪放旷达",
+            "代表句": "明月几时有，把酒问青天",
+            "空间情绪": "旷达高远"
+          },
+          "李清照": {
+            "词风": "婉约清丽",
+            "代表句": "帘卷西风，人比黄花瘦",
+            "空间情绪": "幽微细腻"
+          },
+          "辛弃疾": {
+            "词风": "沉郁豪放",
+            "代表句": "醉里挑灯看剑",
+            "空间情绪": "壮怀激烈"
+          },
+          "柳永": {
+            "词风": "婉约感伤",
+            "代表句": "今宵酒醒何处，杨柳岸晓风残月",
+            "空间情绪": "感伤离别"
+          },
+          "晏殊": {
+            "词风": "含蓄典雅",
+            "代表句": "无可奈何花落去，似曾相识燕归来",
+            "空间情绪": "温润典雅"
+          },
+          "姜夔": {
+            "词风": "清空骚雅",
+            "代表句": "二十四桥仍在，波心荡、冷月无声",
+            "空间情绪": "清冷空寂"
+          }
+        }
+      },
+      "philosophy": {
+        "description": "宋代哲学 — 理学与禅宗的空间美学影响",
+        "schools": [
+          {
+            "name": "程朱理学",
+            "核心": "格物致知，天理人欲",
+            "空间影响": "秩序感、理性布局"
+          },
+          {
+            "name": "陆王心学",
+            "核心": "心即理，知行合一",
+            "空间影响": "主观体验、意境优先"
+          },
+          {
+            "name": "禅宗",
+            "核心": "明心见性，不立文字",
+            "空间影响": "空寂、顿悟、极简"
+          }
+        ],
+        "concept_mapping": {
+          "格物": "通过细节和纹理体验空间的真实",
+          "致知": "空间设计是发现和呈现本质的过程",
+          "心即理": "空间的合理性来自使用者内心体验",
+          "空寂": "禅宗空间的本质 — 最大虚空容纳最大可能",
+          "顿悟": "空间的转折点和惊喜设计"
+        }
+      },
+      "ceremonies": {
+        "description": "宋代生活美学 — 四般闲事",
+        "four_arts": [
+          {
+            "name": "点茶",
+            "desc": "宋式点茶 — 茶汤美学",
+            "空间": "茶室设计核心，需水、光、静"
+          },
+          {
+            "name": "焚香",
+            "desc": "品香 — 嗅觉空间的营造",
+            "空间": "香道空间，需空气流动与静谧"
+          },
+          {
+            "name": "插花",
+            "desc": "宋式插花 — 线条与空间",
+            "空间": "不对称，单一花材，留白大量"
+          },
+          {
+            "name": "挂画",
+            "desc": "画与空间的对话",
+            "空间": "画作悬挂即是空间焦点"
+          }
+        ],
+        "scene_ceremony": {
+          "茶室": "点茶+挂画",
+          "书房": "焚香+插花",
+          "客厅": "挂画+插花",
+          "冥想室": "焚香",
+          "会所": "四般闲事俱全"
+        }
+      }
+    }
+  },
+  "ando-tadao": {
+    "name": "安藤忠雄",
+    "description": "光与混凝土 — 清水混凝土诗人，以极简几何、光影变化、自然融合为标志的日本建筑大师",
+    "colors": {
+      "concrete": "#8C8C8C",
+      "concrete-light": "#B8B8B8",
+      "concrete-dark": "#5A5A5A",
+      "shadow": "#2E2E2E",
+      "light-beam": "#F5F0E0",
+      "water": "#4A7C8A",
+      "sky-reflect": "#C8D8E0",
+      "accent": "#D4694A",
+      "nature-green": "#5A7A4A",
+      "steel": "#6A6A6A",
+      "glass": "#A8C8D8"
+    },
+    "spacing": {
+      "xs": "16px",
+      "sm": "24px",
+      "md": "48px",
+      "lg": "96px",
+      "xl": "192px"
+    },
+    "radius": {
+      "none": "0px",
+      "sharp": "2px"
+    },
+    "materials": [
+      "清水混凝土 (Fair-faced Concrete)",
+      "玻璃 (Glass)",
+      "钢 (Steel)",
+      "木 (Wood)",
+      "水 (Water)"
+    ],
+    "geometry": "极简几何 (Minimalist Geometry)",
+    "light": "自然光影 (Natural Light & Shadow)",
+    "materials_modern": [
+      "不锈钢 (Stainless Steel)",
+      "玻璃 (Glass)",
+      "钛金属 (Titanium) for details"
+    ]
+  },
+  "zumthor-peter": {
+    "name": "卒姆托",
+    "description": "材料感知大师 — 瑞士建筑大师，以材料的原始质感、氛围营造、感官体验为核心的建筑哲学",
+    "colors": {
+      "stone": "#C4BEB6",
+      "stone-dark": "#8A8278",
+      "wood-warm": "#8B7355",
+      "wood-light": "#C4A882",
+      "shadow-deep": "#1A1A1A",
+      "shadow-soft": "#3A3A3A",
+      "light-warm": "#F5EDE0",
+      "atmosphere": "#D4C8B8",
+      "metal": "#7A7A7A",
+      "textile": "#A0907A",
+      "garden": "#6A8A5A"
+    },
+    "spacing": {
+      "xs": "8px",
+      "sm": "16px",
+      "md": "32px",
+      "lg": "64px",
+      "xl": "128px"
+    },
+    "radius": {
+      "soft": "4px",
+      "round": "8px"
+    },
+    "materials": [
+      "石头 (Stone)",
+      "木材 (Timber)",
+      "金属 (Metal)",
+      "纺织品 (Textile)",
+      "玻璃 (Glass)",
+      "混凝土 (Concrete)"
+    ],
+    "design_principles": [
+      "材料真实性 (Material Authenticity)",
+      "氛围营造 (Atmosphere)",
+      "感官体验 (Sensory Experience)",
+      "场所精神 (Genius Loci)"
+    ],
+    "materials_modern": [
+      "铜 (Brass/Copper)",
+      "玻璃 (Glass)",
+      "钢 (Steel)"
+    ]
+  },
+  "kuma-kengo": {
+    "name": "隈研吾",
+    "description": "负建筑 — 日本建筑大师，以木构、自然融合、消隐建筑为理念，强调建筑与环境的共生",
+    "colors": {
+      "wood-natural": "#8B7355",
+      "wood-light": "#C4A882",
+      "wood-dark": "#5A4A3A",
+      "bamboo": "#7AAB6A",
+      "paper": "#F0EDE0",
+      "stone": "#9A9280",
+      "shadow": "#3A3A3A",
+      "water-green": "#6A9A8A",
+      "sky": "#C8D0C8",
+      "earth": "#A0907A",
+      "ceramic": "#D4C5A0",
+      "green": "#5A8A5A"
+    },
+    "spacing": {
+      "xs": "8px",
+      "sm": "16px",
+      "md": "32px",
+      "lg": "64px",
+      "xl": "96px"
+    },
+    "radius": {
+      "soft": "4px",
+      "round": "12px"
+    },
+    "materials": [
+      "木材 (Wood)",
+      "竹 (Bamboo)",
+      "纸 (Washi)",
+      "石头 (Stone)",
+      "陶土 (Terracotta)",
+      "玻璃 (Glass)",
+      "织物 (Fabric)"
+    ],
+    "design_principles": [
+      "负建筑 (Negative Architecture)",
+      "自然融合 (Nature Integration)",
+      "消隐 (Disappearing)",
+      "粒子化 (Particle Architecture)"
+    ],
+    "materials_modern": [
+      "碳纤维 (Carbon Fiber)",
+      "聚碳酸酯 (Polycarbonate)",
+      "不锈钢 (Stainless Steel)"
+    ]
+  },
+  "kahn-louis": {
+    "name": "路易斯康",
+    "description": "光的精神性 — 美国建筑大师，以光的仪式感、砖的意志、几何秩序为核心的建筑哲学",
+    "colors": {
+      "concrete-warm": "#A0907A",
+      "concrete-gold": "#B8A88A",
+      "shadow-deep": "#1A1A2E",
+      "light-gold": "#E8D8A0",
+      "light-beam": "#F5EDC0",
+      "travertine": "#D4C8B8",
+      "travertine-dark": "#B0A088",
+      "sky": "#8A9AB8",
+      "water": "#6A8A9A",
+      "steel": "#5A5A6A"
+    },
+    "spacing": {
+      "xs": "24px",
+      "sm": "48px",
+      "md": "96px",
+      "lg": "192px",
+      "xl": "384px"
+    },
+    "radius": {
+      "none": "0px"
+    },
+    "materials": [
+      "混凝土 (Concrete)",
+      "板岩 (Travertine)",
+      "砖 (Brick)",
+      "铅 (Lead)",
+      "橡木 (Oak)",
+      "玻璃 (Glass)"
+    ],
+    "design_principles": [
+      "光的仪式感 (Ritual of Light)",
+      "砖的意志 (Will of Brick)",
+      "几何秩序 (Geometric Order)",
+      "服务与被服务空间 (Served & Servant Spaces)"
+    ],
+    "materials_modern": [
+      "不锈钢 (Stainless Steel)",
+      "铅 (Lead)",
+      "玻璃 (Glass)"
+    ]
+  },
+  "eco-coast": {
+    "name": "生态·海岸",
+    "description": "开阔、自由、治愈 — 海岸场景空间设计系统",
+    "mood": "开阔、自由、治愈",
+    "colors": {
+      "primary": "#4A7A9A",
+      "secondary": "#7AB0C8",
+      "surface": "#C8D8D0",
+      "warm": "#E8D8A0",
+      "earth": "#A0A8A0"
+    },
+    "elements": [
+      "海风",
+      "潮汐",
+      "沙滩",
+      "悬崖",
+      "夕阳"
+    ],
+    "spacing": {
+      "xs": "8px",
+      "sm": "16px",
+      "md": "32px",
+      "lg": "64px",
+      "xl": "128px"
+    },
+    "recommended_masters": [
+      "ando-tadao"
+    ],
+    "master_reason": "安藤忠雄擅长水景与光影结合,海岸场景的几何处理"
+  },
+  "eco-river": {
+    "name": "生态·河流",
+    "description": "流动、生机、宁静 — 河流场景空间设计系统",
+    "mood": "流动、生机、宁静",
+    "colors": {
+      "primary": "#4A8A7A",
+      "secondary": "#7AB8A8",
+      "surface": "#C4C8B8",
+      "warm": "#D4C8A0",
+      "earth": "#8A9A7A"
+    },
+    "elements": [
+      "流水",
+      "河岸",
+      "芦苇",
+      "倒影",
+      "薄雾"
+    ],
+    "spacing": {
+      "xs": "8px",
+      "sm": "16px",
+      "md": "32px",
+      "lg": "64px",
+      "xl": "128px"
+    }
+  },
+  "eco-valley": {
+    "name": "生态·溪谷",
+    "description": "幽深、清静、避世 — 溪谷场景空间设计系统",
+    "mood": "幽深、清静、避世",
+    "colors": {
+      "primary": "#3A5A4A",
+      "secondary": "#6A8A6A",
+      "surface": "#A8B898",
+      "warm": "#C4B898",
+      "earth": "#8A7A5A"
+    },
+    "elements": [
+      "溪流",
+      "苔藓",
+      "竹林",
+      "雾气",
+      "鸟鸣"
+    ],
+    "spacing": {
+      "xs": "8px",
+      "sm": "16px",
+      "md": "32px",
+      "lg": "64px",
+      "xl": "128px"
+    },
+    "recommended_masters": [
+      "kuma-kengo",
+      "zumthor-peter"
+    ],
+    "master_reason": "隈研吾的消隐建筑 + 卒姆托的场所精神"
+  },
+  "eco-mountain": {
+    "name": "生态·山地",
+    "description": "崇高、静谧、归隐 — 山地场景空间设计系统",
+    "mood": "崇高、静谧、归隐",
+    "colors": {
+      "primary": "#4A5A5A",
+      "secondary": "#7A8880",
+      "surface": "#A8B0A0",
+      "warm": "#C8B8A0",
+      "earth": "#6A6A5A"
+    },
+    "elements": [
+      "山峦",
+      "云海",
+      "松林",
+      "石径",
+      "晨雾"
+    ],
+    "spacing": {
+      "xs": "8px",
+      "sm": "16px",
+      "md": "32px",
+      "lg": "64px",
+      "xl": "128px"
+    },
+    "recommended_masters": [
+      "kuma-kengo",
+      "kahn-louis"
+    ],
+    "master_reason": "隈研吾的负建筑融于山形 + 康的永恒感"
+  },
+  "eco-highland": {
+    "name": "生态·高原",
+    "description": "辽阔、纯净、空灵 — 高原场景空间设计系统",
+    "mood": "辽阔、纯净、空灵",
+    "colors": {
+      "primary": "#5A7A8A",
+      "secondary": "#8AB0C0",
+      "surface": "#C8D0D0",
+      "warm": "#D4C8B0",
+      "earth": "#9AA8A0"
+    },
+    "elements": [
+      "草甸",
+      "天空",
+      "风马旗",
+      "湖泊",
+      "星空"
+    ],
+    "spacing": {
+      "xs": "8px",
+      "sm": "16px",
+      "md": "32px",
+      "lg": "64px",
+      "xl": "128px"
+    },
+    "recommended_masters": [
+      "kahn-louis",
+      "kuma-kengo"
+    ],
+    "master_reason": "康的崇高感+隈研吾的自然融合"
+  },
+  "eco-plain": {
+    "name": "生态·平原",
+    "description": "舒展、安宁、质朴 — 平原场景空间设计系统",
+    "mood": "舒展、安宁、质朴",
+    "colors": {
+      "primary": "#6A8A5A",
+      "secondary": "#9AB87A",
+      "surface": "#C4D0A8",
+      "warm": "#D4C8A8",
+      "earth": "#8A9A7A"
+    },
+    "elements": [
+      "稻田",
+      "炊烟",
+      "远树",
+      "小径",
+      "黄昏"
+    ],
+    "spacing": {
+      "xs": "8px",
+      "sm": "16px",
+      "md": "32px",
+      "lg": "64px",
+      "xl": "128px"
+    },
+    "recommended_masters": [
+      "zumthor-peter",
+      "kuma-kengo"
+    ],
+    "master_reason": "卒姆托的宁静氛围+隈研吾的低姿态建筑"
+  },
+  "eco-city": {
+    "name": "生态·城市",
+    "description": "隐逸、闹中取静、微缩自然 — 城市场景空间设计系统",
+    "mood": "隐逸、闹中取静、微缩自然",
+    "colors": {
+      "primary": "#5A5A6A",
+      "secondary": "#8A8A9A",
+      "surface": "#B8B8C0",
+      "warm": "#C8C0B0",
+      "earth": "#7A7A7A"
+    },
+    "elements": [
+      "庭院",
+      "天井",
+      "绿植墙",
+      "水景",
+      "光影墙"
+    ],
+    "spacing": {
+      "xs": "8px",
+      "sm": "16px",
+      "md": "32px",
+      "lg": "64px",
+      "xl": "128px"
+    },
+    "recommended_masters": [
+      "ando-tadao",
+      "kahn-louis"
+    ],
+    "master_reason": "安藤的都市混凝土 + 康的服务空间逻辑"
+  },
+  "eco-desert": {
+    "name": "生态·沙漠",
+    "description": "寂寥、永恒、内观 — 沙漠场景空间设计系统",
+    "mood": "寂寥、永恒、内观",
+    "colors": {
+      "primary": "#8A7A5A",
+      "secondary": "#B8A888",
+      "surface": "#D4C8A8",
+      "warm": "#E8D8C0",
+      "earth": "#A09880"
+    },
+    "elements": [
+      "沙丘",
+      "绿洲",
+      "星空",
+      "风纹",
+      "黄昏光"
+    ],
+    "spacing": {
+      "xs": "8px",
+      "sm": "16px",
+      "md": "32px",
+      "lg": "64px",
+      "xl": "128px"
+    },
+    "recommended_masters": [
+      "kahn-louis"
+    ],
+    "master_reason": "康的几何秩序与沙漠的永恒感完美共鸣"
+  },
+  "eco-forest": {
+    "name": "生态·森林",
+    "description": "深邃、治愈、原始 — 森林场景空间设计系统",
+    "mood": "深邃、治愈、原始",
+    "colors": {
+      "primary": "#2A4A3A",
+      "secondary": "#5A7A4A",
+      "surface": "#8AA87A",
+      "warm": "#A8B898",
+      "earth": "#6A7A5A"
+    },
+    "elements": [
+      "乔木",
+      "蕨类",
+      "苔藓",
+      "晨光",
+      "薄雾"
+    ],
+    "spacing": {
+      "xs": "8px",
+      "sm": "16px",
+      "md": "32px",
+      "lg": "64px",
+      "xl": "128px"
+    },
+    "recommended_masters": [
+      "kuma-kengo",
+      "zumthor-peter"
+    ],
+    "master_reason": "隈研吾的木构自然融合 + 卒姆托的材料感知"
+  },
+  "eco-lake": {
+    "name": "生态·湖畔",
+    "description": "平静、内省、意境 — 湖畔场景空间设计系统",
+    "mood": "平静、内省、意境",
+    "colors": {
+      "primary": "#3A6A7A",
+      "secondary": "#6A9AA8",
+      "surface": "#A8C8C8",
+      "warm": "#C8C0A8",
+      "earth": "#7A9A8A"
+    },
+    "elements": [
+      "湖水",
+      "倒影",
+      "垂柳",
+      "莲叶",
+      "暮色"
+    ],
+    "spacing": {
+      "xs": "8px",
+      "sm": "16px",
+      "md": "32px",
+      "lg": "64px",
+      "xl": "128px"
+    },
+    "recommended_masters": [
+      "ando-tadao",
+      "kahn-louis"
+    ],
+    "master_reason": "安藤的水面倒影 + 康的光水对话"
+  },
+  "emotion-anxiety": {
+    "name": "焦虑·湖居疗愈",
+    "mood": "焦虑",
+    "space": "湖居",
+    "colors": {
+      "primary": "#5A7A8A",
+      "secondary": "#7AA8A8",
+      "accent": "#A8C8C0",
+      "warm": "#D4C8B0",
+      "calm": "#8AA8A0"
+    },
+    "elements": [
+      "柔光",
+      "水声",
+      "木质感",
+      "低刺激",
+      "开阔视野"
+    ],
+    "spacing": {
+      "xs": "8px",
+      "sm": "16px",
+      "md": "32px",
+      "lg": "64px",
+      "xl": "128px"
+    },
+    "recommended_masters": [
+      "ando-tadao"
+    ],
+    "master_reason": "安藤的封闭/开放戏剧性与疗愈氛围"
+  },
+  "emotion-tired": {
+    "name": "疲惫·森林疗愈",
+    "mood": "疲惫",
+    "space": "森林",
+    "colors": {
+      "primary": "#3A6A4A",
+      "secondary": "#6A9A6A",
+      "accent": "#8AB88A",
+      "warm": "#C4B898",
+      "calm": "#A8C0A0"
+    },
+    "elements": [
+      "温暖",
+      "柔软",
+      "自然",
+      "绿意",
+      "静谧"
+    ],
+    "spacing": {
+      "xs": "8px",
+      "sm": "16px",
+      "md": "32px",
+      "lg": "64px",
+      "xl": "128px"
+    },
+    "recommended_masters": [
+      "kuma-kengo",
+      "zumthor-peter"
+    ],
+    "master_reason": "隈研吾的自然木构+卒姆托的温暖材料感"
+  },
+  "emotion-isolated": {
+    "name": "独处·山居空间",
+    "mood": "独处",
+    "space": "山居",
+    "colors": {
+      "primary": "#4A5A5A",
+      "secondary": "#7A8880",
+      "accent": "#A8B0A0",
+      "warm": "#C8B8A0",
+      "calm": "#9AA8A0"
+    },
+    "elements": [
+      "山",
+      "雨",
+      "雾",
+      "静",
+      "冥想"
+    ],
+    "spacing": {
+      "xs": "8px",
+      "sm": "16px",
+      "md": "32px",
+      "lg": "64px",
+      "xl": "128px"
+    },
+    "recommended_masters": [
+      "kuma-kengo",
+      "song-dynasty"
+    ],
+    "master_reason": "负建筑与宋代隐逸精神的共鸣"
+  },
+  "emotion-meditation": {
+    "name": "冥想·禅修空间",
+    "mood": "冥想",
+    "space": "禅修",
+    "colors": {
+      "primary": "#3A3A3A",
+      "secondary": "#6A6A6A",
+      "accent": "#8A8A8A",
+      "warm": "#C8C0B8",
+      "calm": "#A0A0A0"
+    },
+    "elements": [
+      "极简",
+      "石",
+      "水",
+      "空",
+      "静坐"
+    ],
+    "spacing": {
+      "xs": "16px",
+      "sm": "32px",
+      "md": "64px",
+      "lg": "128px",
+      "xl": "256px"
+    },
+    "recommended_masters": [
+      "ando-tadao",
+      "kahn-louis"
+    ],
+    "master_reason": "光的精神性+几何纯粹感"
+  },
+  "emotion-social": {
+    "name": "社交·茶室空间",
+    "mood": "社交",
+    "space": "茶室",
+    "colors": {
+      "primary": "#6A5A4A",
+      "secondary": "#8A7A5A",
+      "accent": "#B8A888",
+      "warm": "#E8D8C0",
+      "calm": "#C4B8A8"
+    },
+    "elements": [
+      "半开放",
+      "茶",
+      "光",
+      "炭",
+      "共享"
+    ],
+    "spacing": {
+      "xs": "8px",
+      "sm": "16px",
+      "md": "24px",
+      "lg": "48px",
+      "xl": "96px"
+    },
+    "recommended_masters": [
+      "kuma-kengo",
+      "song-dynasty"
+    ],
+    "master_reason": "日本数奇屋+宋式文人茶室"
+  },
+  "emotion-luxury": {
+    "name": "高端隐奢·会所空间",
+    "mood": "高端隐奢",
+    "space": "会所",
+    "colors": {
+      "primary": "#2A2A3A",
+      "secondary": "#5A5A6A",
+      "accent": "#8A7A6A",
+      "warm": "#C4B8A8",
+      "calm": "#7A7A7A"
+    },
+    "elements": [
+      "克制",
+      "材料",
+      "暗光",
+      "质感",
+      "私密"
+    ],
+    "spacing": {
+      "xs": "16px",
+      "sm": "32px",
+      "md": "64px",
+      "lg": "128px",
+      "xl": "256px"
+    },
+    "recommended_masters": [
+      "kahn-louis",
+      "ando-tadao"
+    ],
+    "master_reason": "康的永恒感+安藤的精致极简"
+  },
+  "materials-tech": {
+    "name": "现代科技材质库",
+    "description": "现代科技材料系统 — 根据场景和风格智能匹配材质组合",
+    "materials": {
+      "stainless-steel": {
+        "name": "不锈钢",
+        "tags": [
+          "现代",
+          "科技",
+          "极简",
+          "工业",
+          "都市"
+        ],
+        "finishes": [
+          "拉丝 (#C0C0C0)",
+          "镜面 (#E8E8E8)",
+          "哑光 (#8A8A8A)",
+          "黑色涂层 (#2A2A2A)"
+        ],
+        "mood": "冷峻、精准、现代",
+        "best_with": [
+          "玻璃",
+          "混凝土",
+          "石材"
+        ]
+      },
+      "glass": {
+        "name": "玻璃",
+        "tags": [
+          "通透",
+          "轻盈",
+          "现代",
+          "自然",
+          "都市"
+        ],
+        "types": [
+          "超白玻璃 (#F0F8FF)",
+          "磨砂玻璃 (#D4D4D8)",
+          "长虹玻璃 (#E0E8E0)",
+          "夹丝玻璃 (#C8C8C8)",
+          "彩色玻璃 (#8A9AB8)"
+        ],
+        "mood": "通透、轻盈、延伸",
+        "best_with": [
+          "不锈钢",
+          "木材",
+          "石材"
+        ]
+      },
+      "copper-brass": {
+        "name": "铜/黄铜",
+        "tags": [
+          "温暖",
+          "复古",
+          "轻奢",
+          "质感"
+        ],
+        "finishes": [
+          "拉丝黄铜 (#B8965A)",
+          "哑光铜 (#8A6A4A)",
+          "氧化铜 (#4A7A6A)",
+          "抛光铜 (#D4A85A)"
+        ],
+        "mood": "温暖、沉淀、质感",
+        "best_with": [
+          "石材",
+          "木",
+          "皮革"
+        ]
+      },
+      "titanium": {
+        "name": "钛金属",
+        "tags": [
+          "未来",
+          "高端",
+          "科技",
+          "航天"
+        ],
+        "finishes": [
+          "钛原色 (#8A8A9A)",
+          "枪色 (#4A4A5A)",
+          "金色 (#B8A05A)",
+          "蓝色 (#5A7A9A)"
+        ],
+        "mood": "未来、高端、精密",
+        "best_with": [
+          "碳纤维",
+          "玻璃",
+          "混凝土"
+        ]
+      },
+      "carbon-fiber": {
+        "name": "碳纤维",
+        "tags": [
+          "科技",
+          "运动",
+          "轻量",
+          "未来"
+        ],
+        "weaves": [
+          "斜纹编织 (#2A2A2A)",
+          "平纹编织 (#3A3A3A)",
+          "锻纹编织 (#4A4A4A)",
+          "彩色编织 (#5A6A8A)"
+        ],
+        "mood": "速度、力量、科技",
+        "best_with": [
+          "钛金属",
+          "不锈钢",
+          "玻璃"
+        ]
+      },
+      "terrazzo": {
+        "name": "水磨石",
+        "tags": [
+          "复古",
+          "色彩",
+          "手工",
+          "民宿"
+        ],
+        "styles": [
+          "细骨料 (#E8E0D0)",
+          "粗骨料 (#D0C8B8)",
+          "彩色骨料 (#A0B8A0)",
+          "金色骨料 (#D4C0A0)"
+        ],
+        "mood": "手工、温暖、趣味",
+        "best_with": [
+          "木",
+          "铜",
+          "陶瓷"
+        ]
+      },
+      "micro-cement": {
+        "name": "微水泥",
+        "tags": [
+          "极简",
+          "现代",
+          "无缝",
+          "侘寂"
+        ],
+        "colors": [
+          "暖灰 (#C0B8B0)",
+          "冷灰 (#A0A8B0)",
+          "米白 (#E8E0D8)",
+          "炭黑 (#3A3A3A)",
+          "大地 (#B0A090)"
+        ],
+        "mood": "纯粹、连续、极简",
+        "best_with": [
+          "木",
+          "铜",
+          "玻璃"
+        ]
+      },
+      "brass-black": {
+        "name": "黑钢/黑铁",
+        "tags": [
+          "工业",
+          "暗黑",
+          "硬朗",
+          "都市"
+        ],
+        "finishes": [
+          "黑氧化 (#1A1A1A)",
+          "磷化 (#2A2A2A)",
+          "锈蚀 (#4A3A3A)",
+          "粉末涂层 (#0A0A0A)"
+        ],
+        "mood": "硬朗、沉静、都市",
+        "best_with": [
+          "水泥",
+          "木",
+          "皮革"
+        ]
+      },
+      "titanium-copper": {
+        "name": "钛铜",
+        "tags": [
+          "高端",
+          "艺术",
+          "手工",
+          "会所"
+        ],
+        "finishes": [
+          "紫金 (#8A5A5A)",
+          "青铜 (#7A6A4A)",
+          "玫瑰金 (#C08A7A)",
+          "香槟金 (#C8B08A)"
+        ],
+        "mood": "奢华、温暖、艺术",
+        "best_with": [
+          "石材",
+          "木",
+          "丝绒"
+        ]
+      },
+      "acrylic": {
+        "name": "亚克力",
+        "tags": [
+          "通透",
+          "多彩",
+          "轻盈",
+          "现代"
+        ],
+        "types": [
+          "透明 (#F8F8F8)",
+          "磨砂 (#E0E0E0)",
+          "有色 (#8AB8C8)",
+          "荧光 (#B0D0E0)"
+        ],
+        "mood": "轻盈、色彩、现代",
+        "best_with": [
+          "不锈钢",
+          "铝材",
+          "玻璃"
+        ]
+      }
+    }
+  },
+  "material-scene-matrix": {
+    "description": "材质×场景匹配矩阵 — 根据空间类型和环境自动推荐材质组合",
+    "rules": {
+      "coastal": {
+        "primary": [
+          "不锈钢",
+          "玻璃",
+          "微水泥"
+        ],
+        "avoid": [
+          "铜/黄铜",
+          "黑钢/黑铁"
+        ],
+        "reason": "海洋环境需耐腐蚀，不锈钢和玻璃抗盐雾"
+      },
+      "forest": {
+        "primary": [
+          "玻璃",
+          "铜/黄铜",
+          "微水泥"
+        ],
+        "avoid": [
+          "不锈钢",
+          "碳纤维"
+        ],
+        "reason": "自然环境中温暖材质优先，减少冷感金属"
+      },
+      "mountain": {
+        "primary": [
+          "玻璃",
+          "黑钢/黑铁",
+          "铜/黄铜"
+        ],
+        "avoid": [
+          "亚克力",
+          "钛金属"
+        ],
+        "reason": "山地需耐用厚重材质，避免轻量化材料"
+      },
+      "urban": {
+        "primary": [
+          "不锈钢",
+          "玻璃",
+          "碳纤维",
+          "黑钢/黑铁"
+        ],
+        "avoid": [
+          "水磨石"
+        ],
+        "reason": "都市空间以现代科技材质为主调"
+      },
+      "desert": {
+        "primary": [
+          "微水泥",
+          "铜/黄铜",
+          "玻璃"
+        ],
+        "avoid": [
+          "不锈钢",
+          "碳纤维"
+        ],
+        "reason": "沙漠环境需保温隔热，厚重材质优于轻薄"
+      },
+      "river-valley": {
+        "primary": [
+          "玻璃",
+          "铜/黄铜",
+          "微水泥"
+        ],
+        "avoid": [
+          "钛金属",
+          "碳纤维"
+        ],
+        "reason": "溪谷以自然和谐为主,温暖材质更适合"
+      },
+      "tea-house": {
+        "primary": [
+          "铜/黄铜",
+          "玻璃",
+          "微水泥"
+        ],
+        "avoid": [
+          "不锈钢",
+          "碳纤维"
+        ],
+        "reason": "茶室需温暖质感和传统氛围"
+      }
+    },
+    "emotion_materials": {
+      "焦虑": {
+        "primary": [
+          "木",
+          "微水泥",
+          "玻璃"
+        ],
+        "avoid": [
+          "不锈钢",
+          "黑钢"
+        ],
+        "reason": "焦虑需柔和触感，冰冷金属加剧不适"
+      },
+      "疲惫": {
+        "primary": [
+          "木",
+          "铜/黄铜",
+          "亚克力"
+        ],
+        "avoid": [
+          "不锈钢",
+          "碳纤维"
+        ],
+        "reason": "疲惫需温暖质感，轻盈明亮的材料"
+      },
+      "冥想": {
+        "primary": [
+          "微水泥",
+          "木",
+          "石材"
+        ],
+        "avoid": [
+          "不锈钢",
+          "玻璃"
+        ],
+        "reason": "冥想需静谧自然的材料"
+      },
+      "社交": {
+        "primary": [
+          "铜/黄铜",
+          "玻璃",
+          "水磨石"
+        ],
+        "avoid": [
+          "碳纤维",
+          "钛金属"
+        ],
+        "reason": "社交需温暖而有质感的氛围"
+      }
+    }
+  },
+  "master-affinity-engine": {
+    "description": "世界建筑大师动态推荐引擎 — 根据场景/情绪/风格/材质自动匹配最契合的大师",
+    "rules": {
+      "geographic": {
+        "日本": {
+          "masters": [
+            "ando-tadao",
+            "kuma-kengo"
+          ],
+          "reason": "日本建筑传统对两位大师的深层影响"
+        },
+        "中国": {
+          "masters": [
+            "song-dynasty"
+          ],
+          "reason": "宋代美学是东方空间设计的原点"
+        },
+        "欧洲": {
+          "masters": [
+            "zumthor-peter",
+            "kahn-louis"
+          ],
+          "reason": "欧洲建筑哲学与材料传统"
+        },
+        "美国": {
+          "masters": [
+            "kahn-louis"
+          ],
+          "reason": "路易斯康是美国建筑精神的代表"
+        },
+        "瑞士": {
+          "masters": [
+            "zumthor-peter"
+          ],
+          "reason": "卒姆托的瑞士精确性与材料感知"
+        }
+      },
+      "scene_affinity": {
+        "coast": {
+          "masters": [
+            "ando-tadao"
+          ],
+          "reason": "安藤忠雄擅长水景与光影结合,海岸场景的几何处理"
+        },
+        "forest": {
+          "masters": [
+            "kuma-kengo",
+            "zumthor-peter"
+          ],
+          "reason": "隈研吾的木构自然融合 + 卒姆托的材料感知"
+        },
+        "mountain": {
+          "masters": [
+            "kuma-kengo",
+            "kahn-louis"
+          ],
+          "reason": "隈研吾的负建筑融于山形 + 康的永恒感"
+        },
+        "lake": {
+          "masters": [
+            "ando-tadao",
+            "kahn-louis"
+          ],
+          "reason": "安藤的水面倒影 + 康的光水对话"
+        },
+        "desert": {
+          "masters": [
+            "kahn-louis"
+          ],
+          "reason": "康的几何秩序与沙漠的永恒感完美共鸣"
+        },
+        "valley": {
+          "masters": [
+            "kuma-kengo",
+            "zumthor-peter"
+          ],
+          "reason": "隈研吾的消隐建筑 + 卒姆托的场所精神"
+        },
+        "city": {
+          "masters": [
+            "ando-tadao",
+            "kahn-louis"
+          ],
+          "reason": "安藤的都市混凝土 + 康的服务空间逻辑"
+        },
+        "tea-house": {
+          "masters": [
+            "kuma-kengo",
+            "song-dynasty"
+          ],
+          "reason": "隈研吾的负建筑+数奇屋传统与宋代文人茶室精神"
+        },
+        "highland": {
+          "masters": [
+            "kahn-louis",
+            "kuma-kengo"
+          ],
+          "reason": "康的崇高感+隈研吾的自然融合"
+        },
+        "plain": {
+          "masters": [
+            "zumthor-peter",
+            "kuma-kengo"
+          ],
+          "reason": "卒姆托的宁静氛围+隈研吾的低姿态建筑"
+        }
+      },
+      "emotion_affinity": {
+        "焦虑·湖居疗愈": {
+          "masters": [
+            "ando-tadao"
+          ],
+          "reason": "安藤的封闭/开放戏剧性与疗愈氛围"
+        },
+        "疲惫·森林疗愈": {
+          "masters": [
+            "kuma-kengo",
+            "zumthor-peter"
+          ],
+          "reason": "隈研吾的自然木构+卒姆托的温暖材料感"
+        },
+        "独处·山居空间": {
+          "masters": [
+            "kuma-kengo",
+            "song-dynasty"
+          ],
+          "reason": "负建筑与宋代隐逸精神的共鸣"
+        },
+        "冥想·禅修空间": {
+          "masters": [
+            "ando-tadao",
+            "kahn-louis"
+          ],
+          "reason": "光的精神性+几何纯粹感"
+        },
+        "社交·茶室空间": {
+          "masters": [
+            "kuma-kengo",
+            "song-dynasty"
+          ],
+          "reason": "日本数奇屋+宋式文人茶室"
+        },
+        "高端隐奢·会所": {
+          "masters": [
+            "kahn-louis",
+            "ando-tadao"
+          ],
+          "reason": "康的永恒感+安藤的精致极简"
+        }
+      },
+      "keyword_mapping": {
+        "光": [
+          "ando-tadao",
+          "kahn-louis"
+        ],
+        "混凝土": [
+          "ando-tadao"
+        ],
+        "木": [
+          "kuma-kengo"
+        ],
+        "材料": [
+          "zumthor-peter"
+        ],
+        "禅": [
+          "kuma-kengo",
+          "song-dynasty"
+        ],
+        "几何": [
+          "ando-tadao",
+          "kahn-louis"
+        ],
+        "自然": [
+          "kuma-kengo",
+          "zumthor-peter"
+        ],
+        "极简": [
+          "ando-tadao",
+          "song-dynasty"
+        ],
+        "氛围": [
+          "zumthor-peter"
+        ],
+        "精神": [
+          "kahn-louis",
+          "song-dynasty"
+        ],
+        "水": [
+          "ando-tadao"
+        ],
+        "永恒": [
+          "kahn-louis"
+        ],
+        "手工": [
+          "zumthor-peter"
+        ],
+        "现代": [
+          "ando-tadao"
+        ],
+        "传统": [
+          "kuma-kengo",
+          "song-dynasty"
+        ],
+        "奢华": [
+          "kahn-louis"
+        ],
+        "隐": [
+          "kuma-kengo",
+          "song-dynasty"
+        ],
+        "透明": [
+          "ando-tadao"
+        ],
+        "温暖": [
+          "zumthor-peter",
+          "kuma-kengo"
+        ],
+        "冷峻": [
+          "ando-tadao"
+        ]
+      },
+      "material_affinity": {
+        "清水混凝土": [
+          "ando-tadao"
+        ],
+        "木材": [
+          "kuma-kengo"
+        ],
+        "石材": [
+          "kahn-louis",
+          "zumthor-peter"
+        ],
+        "玻璃": [
+          "ando-tadao"
+        ],
+        "钢材": [
+          "ando-tadao",
+          "kahn-louis"
+        ],
+        "纸": [
+          "kuma-kengo"
+        ],
+        "竹": [
+          "kuma-kengo"
+        ],
+        "砖": [
+          "kahn-louis"
+        ]
+      }
+    }
+  },
+  "self-evolving-dispatch": {
+    "description": "art-agent 自进化调度引擎 — 4大模块动态交叉匹配，记录反馈，持续优化",
+    "version": "1.0",
+    "cycle": "dispatch → record → learn → optimize → next dispatch better",
+    "dispatch_logic": {
+      "description": "每次接到任务，执行以下动态匹配流程：",
+      "steps": [
+        "Step 1: 解析输入（场景/情绪/风格/材质/地理/预算 维度）",
+        "Step 2: 跨模块交叉检索（宋代美学×大师×生态×材质）",
+        "Step 3: 多维评分聚合（每个候选方案综合打分）",
+        "Step 4: 输出 Top 3 推荐方案 + 匹配理由",
+        "Step 5: 记录选择结果和用户反馈",
+        "Step 6: 定期自检优化权重"
+      ]
+    },
+    "cross_module_rules": {
+      "description": "4大模块互相引用的动态规则 — 任何模块的输入都会触发其他模块的匹配",
+      "examples": [
+        {
+          "input": "海边的茶室",
+          "triggers": {
+            "eco-scene": [
+              "coast"
+            ],
+            "ceremony": [
+              "点茶+挂画"
+            ],
+            "master": [
+              "ando-tadao (水景+混凝土)",
+              "kuma-kengo (负建筑+自然)"
+            ],
+            "materials_traditional": [
+              "木",
+              "竹",
+              "纸"
+            ],
+            "materials_modern": [
+              "玻璃 (借景窗)",
+              "不锈钢 (抗盐雾)"
+            ],
+            "painting": [
+              "马远 (边角构图)",
+              "夏圭 (清远)"
+            ]
+          }
+        },
+        {
+          "input": "森林中的冥想空间",
+          "triggers": {
+            "eco-scene": [
+              "forest"
+            ],
+            "emotion": [
+              "meditation"
+            ],
+            "master": [
+              "kuma-kengo (木构)",
+              "ando-tadao (光影)"
+            ],
+            "philosophy": [
+              "禅宗 (空寂)"
+            ],
+            "painting": [
+              "梁楷 (减笔写意)",
+              "米芾 (云山雾罩)"
+            ],
+            "calligraphy": [
+              "宋徽宗瘦金体 (极简线条)"
+            ]
+          }
+        },
+        {
+          "input": "城市中心的奢华会所",
+          "triggers": {
+            "eco-scene": [
+              "city"
+            ],
+            "emotion": [
+              "luxury"
+            ],
+            "master": [
+              "kahn-louis (永恒感)",
+              "ando-tadao (精致极简)"
+            ],
+            "materials_modern": [
+              "钛金属",
+              "玻璃",
+              "黑钢"
+            ],
+            "materials_traditional": [
+              "铜",
+              "石材"
+            ],
+            "philosophy": [
+              "程朱理学 (秩序感)"
+            ]
+          }
+        },
+        {
+          "input": "高原上的酒店",
+          "triggers": {
+            "eco-scene": [
+              "highland"
+            ],
+            "master": [
+              "kahn-louis (崇高感)",
+              "kuma-kengo (自然融合)"
+            ],
+            "materials_modern": [
+              "玻璃",
+              "微水泥"
+            ],
+            "materials_traditional": [
+              "石材",
+              "木"
+            ],
+            "painting": [
+              "范宽 (雄浑)",
+              "王希孟 (色彩)"
+            ]
+          }
+        }
+      ]
+    },
+    "self_evolution": {
+      "description": "递归自进化机制 — 每次匹配都是一次学习机会",
+      "record": {
+        "dispatch_history": "记录每次输入的维度特征和输出方案",
+        "user_feedback": "记录用户的选择和修改（接受/拒绝/调整）",
+        "success_patterns": "高频成功的匹配组合自动提升权重"
+      },
+      "learning_rules": [
+        "同一模式成功 3 次 → 提升权重 10%",
+        "同一模式被拒绝 3 次 → 降低权重 20%",
+        "用户手动调整的项 → 记录为新模式",
+        "跨模块组合新颖但被接受 → 标记为创新路径"
+      ],
+      "optimization_cycle": "每 24 小时 / 每 50 次匹配 → 自动重算权重矩阵",
+      "feedback_channels": [
+        "用户直接接受 (自动加分)",
+        "用户拒绝 (自动减分)",
+        "用户调整参数 (记录新模式)",
+        "用户手动指定某一模块 (提升该模块权重)"
+      ]
+    }
   }
 }

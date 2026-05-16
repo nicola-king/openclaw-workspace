@@ -1,0 +1,47 @@
+名次の番組
+EP. 01 · NINTENDO TRIVIA
+
+01 / 12
+REC
+
+花札
+
+CHAPTER 01 · KYOTO · A PLAYING-CARD COMPANY
+
+1889
+1889
+年
+
+花HANA · FLOWER
+
+**Nintendo started as a hanafuda maker.**
+Founded in Kyoto by Fusajiro Yamauchi to print hand-painted playing
+cards. Mario wouldn’t show up for another *ninety-six* years.
+
+1889HANAFUDA · KYOTO
+
+1907WESTERN CARDS
+
+1949YAMAUCHI III
+
+1977COLOR TV-GAME
+
+1985SUPER MARIO BROS.
+
+2006WII
+
+2017SWITCH
+
+1889HANAFUDA · KYOTO
+
+1907WESTERN CARDS
+
+1949YAMAUCHI III
+
+1977COLOR TV-GAME
+
+1985SUPER MARIO BROS.
+
+2006WII
+
+2017SWITCH

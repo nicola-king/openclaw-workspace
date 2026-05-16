@@ -1,0 +1,23 @@
+/* 安藤忠雄 — 光与混凝土设计系统 */
+:root {
+  --ando-concrete: #8C8C8C;
+  --ando-concrete-light: #B8B8B8;
+  --ando-concrete-dark: #5A5A5A;
+  --ando-shadow: #2E2E2E;
+  --ando-light-beam: #F5F0E0;
+  --ando-water: #4A7C8A;
+  --ando-sky-reflect: #C8D8E0;
+  --ando-accent: #D4694A;
+  --ando-nature: #5A7A4A;
+  --ando-steel: #6A6A6A;
+  --ando-glass: #A8C8D8;
+  --ando-space-xs: 16px;
+  --ando-space-sm: 24px;
+  --ando-space-md: 48px;
+  --ando-space-lg: 96px;
+  --ando-space-xl: 192px;
+}
+.ando-concrete { color: var(--ando-concrete); }
+.ando-concrete-bg { background: var(--ando-concrete); }
+.ando-light-beam { color: var(--ando-light-beam); }
+.ando-shadow { color: var(--ando-shadow); }

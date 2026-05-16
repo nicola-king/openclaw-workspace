@@ -19,7 +19,8 @@ Before doing anything else:
 7. Read `constitution/directives/AESTHETICS.md` — 美学法则
 8. Read `constitution/skills/MODEL-ROUTING.md` — 模型调度协议
 9. Read `constitution/directives/ASK-PROTOCOL.md` — 追问协议
-10. Read `constitution/COLLABORATION.md` — 多 Bot 协作规程
+10. Read `constitution/directives/COST-EFFICIENCY.md` — 成本效率法则（本地优先，节省 token）
+11. Read `constitution/COLLABORATION.md` — 多 Bot 协作规程
 11. Read `constitution/extensions/DELEGATION.md` — 任务委派协议
 12. Read `constitution/directives/TURBOQUANT.md` — 智能分离协议
 13. Read `SOUL.md` — this is who you are
@@ -205,3 +206,18 @@ SAYELF 发送以下命令时，立即执行对应操作，无需解释：
 
 ## 📜 会话输出铁律
 > 遵守 constitution/rules/SESSION-OUTPUT-RULE.md — 会话栏零过程
+
+## 极简主义企业家命令
+
+| 命令 | 执行内容 |
+|------|---------|
+| /find-community | 分析社区，找项目方向 |
+| /validate-idea | 验证创业想法是否有人买单 |
+| /mvp | 控制范围，做最小可行版本 |
+| /processize | 手工交付→流程化→产品化 |
+| /first-customers | 获取前100个付费客户策略 |
+| /pricing | 用商业逻辑定价 |
+| /marketing-plan | 内容获客策略 |
+| /grow-sustainably | 可持续增长决策 |
+| /company-values | 定义企业文化 |
+| /minimalist-review | 极简复盘决策 |

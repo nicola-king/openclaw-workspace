@@ -1,0 +1,19 @@
+/* 路易斯康 — 光的精神性设计系统 */
+:root {
+  --kahn-concrete-warm: #A0907A;
+  --kahn-concrete-gold: #B8A88A;
+  --kahn-shadow-deep: #1A1A2E;
+  --kahn-light-gold: #E8D8A0;
+  --kahn-light-beam: #F5EDC0;
+  --kahn-travertine: #D4C8B8;
+  --kahn-travertine-dark: #B0A088;
+  --kahn-sky: #8A9AB8;
+  --kahn-water: #6A8A9A;
+  --kahn-space-xs: 24px;
+  --kahn-space-sm: 48px;
+  --kahn-space-md: 96px;
+  --kahn-space-lg: 192px;
+  --kahn-space-xl: 384px;
+}
+.kahn-light-beam { background: radial-gradient(ellipse at center, var(--kahn-light-gold) 0%, transparent 70%); }
+.kahn-monumental { font-weight: 300; letter-spacing: 0.12em; text-transform: uppercase; }

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head><title>开店选址分析MVP</title>
+<style>
+body{font-family:sans-serif;max-width:1000px;margin:20px auto;padding:0 20px}
+input{padding:4px 8px;margin:4px 0}
+table{border-collapse:collapse;width:100%;margin:12px 0}
+th,td{border:1px solid #ccc;padding:8px;text-align:left}
+th{background:#f0f0f0}
+.rank{font-weight:bold;color:#2563eb}
+</style>
+</head>
+<body>
+<h1>🏪 开店选址分析MVP</h1>
+<form action="/analyze" method="post">
+城市：<input type="text" name="city" value="上海">
+最小面积(m²)：<input type="number" name="min_area" value="50">
+最大面积(m²)：<input type="number" name="max_area" value="300">
+最大租金(元/月)：<input type="number" name="max_rent" value="50000">
+<input type="submit" value="分析">
+</form>
+
+{% if heatmap_file %}
+<h2>🗺️ 商圈与候选店铺分布</h2>
+<iframe src="{{ heatmap_file }}" width="100%" height="500"></iframe>
+
+{% if results %}
+<h2>📊 ROI排名</h2>
+<table>
+<tr><th>排名</th><th>名称</th><th>面积</th><th>月租</th><th>人流</th><th>竞品</th><th>预测ROI</th></tr>
+{% for r in results %}
+<tr>
+  <td class="rank">{{ loop.index }}</td>
+  <td>{{ r.name }}</td>
+  <td>{{ r.area }}m²</td>
+  <td>¥{{ r.rent }}</td>
+  <td>{{ r.foot_traffic }}</td>
+  <td>{{ r.competitors_count }}</td>
+  <td>{{ "%.1f"|format(r.predicted_roi) }}%</td>
+</tr>
+{% endfor %}
+</table>
+{% endif %}
+
+<h3>📈 经济数据: {{ city }}</h3>
+<p>GDP: {{ eco.gdp_亿 }}亿 · 人口: {{ eco.人口_万 }}万 · 人均消费: {{ eco.人均消费_元 }}元</p>
+
+{% if report %}
+<h3>💼 投资建议: {{ report.investment_level }}</h3>
+{% endif %}
+
+<a href="{{ excel_file }}" download>📥 下载ROI排序Excel</a>
+{% endif %}
+</body>
+</html>

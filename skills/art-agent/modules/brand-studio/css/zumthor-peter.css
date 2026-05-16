@@ -1,0 +1,18 @@
+/* 卒姆托 — 材料感知设计系统 */
+:root {
+  --zumthor-stone: #C4BEB6;
+  --zumthor-stone-dark: #8A8278;
+  --zumthor-wood-warm: #8B7355;
+  --zumthor-wood-light: #C4A882;
+  --zumthor-shadow-deep: #1A1A1A;
+  --zumthor-shadow-soft: #3A3A3A;
+  --zumthor-light-warm: #F5EDE0;
+  --zumthor-atmosphere: #D4C8B8;
+  --zumthor-space-xs: 8px;
+  --zumthor-space-sm: 16px;
+  --zumthor-space-md: 32px;
+  --zumthor-space-lg: 64px;
+  --zumthor-space-xl: 128px;
+}
+.zumthor-ambient { transition: opacity 0.6s ease; }
+.zumthor-material { border: 1px solid var(--zumthor-stone); }

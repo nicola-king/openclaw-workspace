@@ -136,5 +136,39 @@ Add whatever helps you do your job. This is your cheat sheet.
 
 ---
 
-*更新时间：2026-05-05 20:40*
+*更新时间：2026-05-16 12:00*
 *登录方式：Telegram 账号*
+
+---
+
+## 🎨 html-anything 自动渲染引擎
+
+> 已融入太一系统，自动根据内容类型智能调用
+
+### 服务
+| 项目 | 配置 |
+|------|------|
+| **服务名** | `html-anything.service` |
+| **端口** | 3777 |
+| **状态** | ✅ systemd 自启 |
+| **位置** | `skills/html-anything/` |
+
+### 自动路由策略（太一自动判断）
+
+| 渲染方式 | 成本 | 适用场景 |
+|---------|------|---------|
+| `html-render.py`（静态） | 零 token | 日常日报/报告/系统状态 |
+| `html-agent.py`（Agent） | 消耗 token | 公众号文章/月报/高价值内容 |
+| `art-agent`（品牌/视觉） | 消耗 token | 品牌设计/视觉叙事/美学审校 |
+
+### 脚本位置
+- 静态渲染: `scripts/html-render.py`
+- Agent渲染: `scripts/html-agent.py`
+- Shell包装: `scripts/html-anything-render.sh`、`scripts/html-agent.sh`
+
+### 模板速查
+- `doc-kami-parchment` — 羊皮纸报告（默认）
+- `article-magazine` — 杂志文章
+- `data-report` — 暗色数据报告
+- `card-xiaohongshu` — 小红书卡片
+- `deck-swiss-international` — 瑞士国际 Deck

@@ -17,14 +17,6 @@ from constitution_learning import ConstitutionLearning
 class SelfEvolution:
     """自进化系统主类 v1.0"""
 
-    def __init__(self, config_path: str = "config.json"):
-        self.config = self._load_config(config_path)
-        self.logger = self._setup_logger()
-        self.healing_history = []
-        self.skill_library = {}
-        self.token_usage = []
-        self.constitution_learning = ConstitutionLearning(self.config)
-
     def _load_config(self, config_path: str) -> Dict[str, Any]:
         try:
             with open(config_path, 'r', encoding='utf-8') as f:
@@ -111,14 +103,123 @@ class SelfEvolution:
             "total_records": len(self.token_usage)
         }
 
+    # ═════════════════════════════════════════════════════════
+    # v2.0 新增：4模块动态匹配 + 自进化学习
+    # ═════════════════════════════════════════════════════════
+
+    def __init__(self, config_path: str = "config.json"):
+        super().__init__()
+        self.config = self._load_config(config_path)
+        self.logger = self._setup_logger()
+        self.healing_history = []
+        self.skill_library = {}
+        self.token_usage = []
+        self.dispatch_history = []  # 调度历史
+        self.dispatch_weights = {}  # 跨模块权重矩阵
+        self.pattern_library = {}   # 成功模式库
+        self.constitution_learning = ConstitutionLearning(self.config)
+
+    def record_dispatch(self, dispatch: Dict[str, Any]) -> None:
+        """记录一次4模块调度决策（自进化的基础数据）"""
+        entry = {
+            'timestamp': datetime.now().isoformat(),
+            'input': dispatch.get('input', ''),
+            'scene': dispatch.get('scene', ''),
+            'emotion': dispatch.get('emotion', ''),
+            'masters': dispatch.get('masters', []),
+            'eco_scene': dispatch.get('eco_scene', ''),
+            'materials': dispatch.get('materials', []),
+            'culture': dispatch.get('culture', {}),
+            'selected': dispatch.get('selected', ''),
+            'feedback': dispatch.get('feedback', ''),  # accept/reject/adjust
+        }
+        self.dispatch_history.append(entry)
+        # 触发模式学习
+        self._learn_from_dispatch(entry)
+
+    def _learn_from_dispatch(self, entry: Dict) -> None:
+        """从调度记录中学习模式"""
+        feedback = entry.get('feedback', '')
+        if feedback == 'accept':
+            # 成功模式：提升组合权重
+            combo_key = f"{entry.get('scene')}_{entry.get('emotion')}"
+            if combo_key not in self.pattern_library:
+                self.pattern_library[combo_key] = {'count': 0, 'masters': {}, 'eco': {}, 'materials': {}}
+            self.pattern_library[combo_key]['count'] += 1
+            for m in entry.get('masters', []):
+                self.pattern_library[combo_key]['masters'][m] = \
+                    self.pattern_library[combo_key]['masters'].get(m, 0) + 1
+            eco = entry.get('eco_scene', '')
+            if eco:
+                self.pattern_library[combo_key]['eco'][eco] = \
+                    self.pattern_library[combo_key]['eco'].get(eco, 0) + 1
+            for mat in entry.get('materials', []):
+                self.pattern_library[combo_key]['materials'][mat] = \
+                    self.pattern_library[combo_key]['materials'].get(mat, 0) + 1
+            self.logger.info(f"📈 学习成功模式: {combo_key} (累计{self.pattern_library[combo_key]['count']}次)")
+
+        elif feedback == 'reject':
+            # 失败模式：降低该组合的权重
+            combo_key = f"{entry.get('scene')}_{entry.get('emotion')}"
+            if combo_key in self.pattern_library:
+                self.pattern_library[combo_key]['count'] = max(
+                    0, self.pattern_library[combo_key]['count'] - 1
+                )
+            self.logger.info(f"📉 学习失败模式: {combo_key}")
+
+    def get_recommendation(self, scene: str, emotion: str) -> Dict:
+        """根据已学习模式推荐最佳组合"""
+        combo_key = f"{scene}_{emotion}"
+        if combo_key in self.pattern_library:
+            pattern = self.pattern_library[combo_key]
+            if pattern['count'] >= 2:  # 至少成功2次才敢推荐
+                top_masters = sorted(
+                    pattern['masters'].items(), key=lambda x: -x[1]
+                )[:3]
+                top_eco = sorted(
+                    pattern['eco'].items(), key=lambda x: -x[1]
+                )[:2]
+                top_materials = sorted(
+                    pattern['materials'].items(), key=lambda x: -x[1]
+                )[:4]
+                return {
+                    'recommended': True,
+                    'confidence': min(pattern['count'] * 20, 95),
+                    'masters': [m[0] for m in top_masters],
+                    'eco_scene': top_eco[0][0] if top_eco else scene,
+                    'materials': [m[0] for m in top_materials],
+                    'pattern_count': pattern['count'],
+                }
+        return {'recommended': False, 'confidence': 0}
+
+    def get_evolution_report(self) -> Dict:
+        """生成自进化报告"""
+        total_dispatches = len(self.dispatch_history)
+        accepted = sum(1 for d in self.dispatch_history if d.get('feedback') == 'accept')
+        rejected = sum(1 for d in self.dispatch_history if d.get('feedback') == 'reject')
+        learned_patterns = len(self.pattern_library)
+        return {
+            'total_dispatches': total_dispatches,
+            'accepted': accepted,
+            'rejected': rejected,
+            'success_rate': f"{accepted/max(total_dispatches,1)*100:.0f}%",
+            'learned_patterns': learned_patterns,
+            'top_patterns': sorted(
+                self.pattern_library.items(), key=lambda x: -x[1]['count']
+            )[:5] if self.pattern_library else [],
+            'evolution_cycle': '每24h/每50次匹配自动优化',
+        }
+
     def health_check(self) -> Dict[str, Any]:
         return {
             "status": "healthy",
             "module": "self-evolution",
-            "version": "1.0.0",
+            "version": "2.0.0",
             "healing_count": len(self.healing_history),
             "skill_count": len(self.skill_library),
             "token_records": len(self.token_usage),
+            "dispatch_count": len(self.dispatch_history),
+            "learned_patterns": len(self.pattern_library),
             "constitution_learning_cycles": len(
                 self.constitution_learning.learning_history
             ),

@@ -1,4 +1,3 @@
-
 ## 2026-05-15 22:00 数据归档
 
 ### 已清理
@@ -29,3 +28,37 @@
 - `reports/` — 报告已就位
 - `voice-pro/model/` — 18G 语音模型，已知项目
 
+---
+
+## 2026-05-16 22:00 数据归档
+
+### 已清理
+- `workspace/=1.20.0` — 空文件，疑似 artifact
+- `data/inbound_purchase_contract.md` — 0 字节空文件
+- `skills/feishu-integration/webhook.pid` — stale PID (8042, 进程不存在)
+- `skills/feishu-integration/ngrok.pid` — stale PID (8212, 进程不存在)
+- `ngrok.pid` — stale PID (8138, 进程不存在)
+- `/tmp/openclaw/openclaw-2026-05-15.log` — 昨日日志，压缩归档至 logs/
+- `agents/shoucang/sessions/...jsonl.lock` — stale session lock
+
+### 已归档
+- `logs/openclaw-2026-05-15.log.gz` (54K, 压缩比 ~18:1)
+
+### 数据目录概览
+| 目录 | 大小 | 变化 |
+|------|------|------|
+| workspace | 25G | +2G (voice-pro 模型缓存增长) |
+| data | 3.5M | 不变 |
+| reports | 92K | 不变 |
+| logs | 1.1M | +54K (昨日日志压缩) |
+| memory | 428K | 今日记忆 8.5K |
+
+### 磁盘状态
+- 总量 1.8T，已用 99G (6%)，空间充裕
+- `/tmp` OpenClaw 日志 2.1M (今日日志仍在增长)
+
+### 无需归档
+- `data/shared-search-stats.json` vs `.md` — JSON 最新 (总请求 283)，MD 是旧版 (273)，保留 JSON，MD 留作历史参考
+- `data/.archive/202605/` — 已有月归档机制正常运行
+- `memory/2026-05-16.md` (8.5K) — 今日活跃记忆
+- `reports/` — 7 份报告已归档完毕

@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pandas
+geopandas
+folium
+lightgbm
+scikit-learn
+openpyxl
+jinja2
+requests

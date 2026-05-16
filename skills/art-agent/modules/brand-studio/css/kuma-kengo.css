@@ -1,0 +1,20 @@
+/* 隈研吾 — 负建筑设计系统 */
+:root {
+  --kuma-wood-natural: #8B7355;
+  --kuma-wood-light: #C4A882;
+  --kuma-wood-dark: #5A4A3A;
+  --kuma-bamboo: #7AAB6A;
+  --kuma-paper: #F0EDE0;
+  --kuma-stone: #9A9280;
+  --kuma-shadow: #3A3A3A;
+  --kuma-water-green: #6A9A8A;
+  --kuma-sky: #C8D0C8;
+  --kuma-earth: #A0907A;
+  --kuma-space-xs: 8px;
+  --kuma-space-sm: 16px;
+  --kuma-space-md: 32px;
+  --kuma-space-lg: 64px;
+  --kuma-space-xl: 96px;
+}
+.kuma-natural { background: linear-gradient(135deg, var(--kuma-wood-light), var(--kuma-paper)); }
+.kuma-lattice { background-image: repeating-linear-gradient(0deg, transparent, transparent 4px, var(--kuma-wood-light) 4px, var(--kuma-wood-light) 5px); }

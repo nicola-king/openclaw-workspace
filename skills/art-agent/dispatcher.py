@@ -282,22 +282,81 @@ class ArtDispatcher:
                 )
             except: pass
         
-        # ═══ 自进化学习 ═══
-        if self.evolution_agent and result["status"] == "success":
+        # ═══ 自进化学习 & 反馈闭环 ═══
+        if self.evolution_agent:
             try:
+                # 1. 记录本次调度
                 self.evolution_agent.execute(
                     task="learn",
                     dispatch_record=record
                 )
-            except: pass
+                # 2. 查询历史模式，优化下次路由
+                scene = self._extract_scene(task)
+                emotion = self._extract_emotion(task)
+                if scene or emotion:
+                    recommendation = self.evolution_agent.get_recommendation(
+                        scene=scene or 'generic',
+                        emotion=emotion or 'neutral'
+                    )
+                    if recommendation.get('recommended'):
+                        self.logger.info(
+                            f"  🧠 自进化推荐: {recommendation.get('masters',[])} "
+                            f"(置信度{recommendation['confidence']}%)"
+                        )
+                        result['evolution_recommendation'] = recommendation
+            except Exception as e:
+                self.logger.warning(f"  ⚠️ 自进化异常: {e}")
         
         # ═══ 智能品牌匹配 ═══
         brand = self.smart_match_brand(task)
         self.logger.info(f"  🏷️ 匹配品牌风格: {brand}")
-        # ⚖️ 美学原则: 客户指定>智能匹配。此处为智能匹配路径。
         result["matched_brand"] = brand
         
         return result
+    
+    def record_feedback(self, dispatch_id: str, feedback: str) -> Dict:
+        """
+        记录用户反馈，驱动自进化
+        feedback: 'accept' | 'reject' | 'adjust'
+        """
+        if not self.evolution_agent:
+            return {"status": "error", "message": "自进化系统未加载"}
+        try:
+            self.evolution_agent.record_dispatch({
+                'input': dispatch_id,
+                'feedback': feedback,
+            })
+            self.logger.info(f"  📝 反馈记录: {feedback}")
+            return {"status": "ok", "feedback": feedback}
+        except Exception as e:
+            return {"status": "error", "message": str(e)}
+    
+    def _extract_scene(self, task: str) -> str:
+        """从任务描述中提取场景关键词"""
+        scenes = ['coast', 'river', 'forest', 'mountain', 'desert', 
+                  'city', 'lake', 'valley', 'highland', 'plain',
+                  '海边', '海岸', '森林', '山地', '城市', '湖畔', 
+                  '溪谷', '高原', '平原', '沙漠', '茶室', '庭院']
+        for s in scenes:
+            if s in task.lower():
+                return {'海边': 'coast', '海岸': 'coast', '森林': 'forest', 
+                        '山地': 'mountain', '城市': 'city', '湖畔': 'lake',
+                        '溪谷': 'valley', '高原': 'highland', '平原': 'plain',
+                        '沙漠': 'desert', '茶室': 'tea-house', '庭院': 'garden'
+                       }.get(s, s)
+        return ''
+    
+    def _extract_emotion(self, task: str) -> str:
+        """从任务描述中提取情绪关键词"""
+        emotions = ['焦虑', '疲惫', '独处', '冥想', '放松', '社交', '奢华',
+                    '治愈', '宁静', '禅意', '放松', '疗愈']
+        for e in emotions:
+            if e in task:
+                return {'焦虑': 'anxiety', '疲惫': 'tired', '独处': 'isolated',
+                        '冥想': 'meditation', '放松': 'calm', '社交': 'social',
+                        '奢华': 'luxury', '治愈': 'healing', '宁静': 'calm',
+                        '禅意': 'zen', '疗愈': 'healing'}.get(e, e)
+        return ''
     
     def get_stats(self) -> Dict:
         """获取调度统计"""

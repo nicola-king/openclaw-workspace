@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e2c0f59aabd7ea272dc6a48ba606ee92 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e2c0f59aabd7ea272dc6a48ba606ee92" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e2c0f59aabd7ea272dc6a48ba606ee92 = L.map(
+                "map_e2c0f59aabd7ea272dc6a48ba606ee92",
+                {
+                    center: [39.9, 116.4],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_710d3702cc26e3c5e08baf4b6166b710 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_710d3702cc26e3c5e08baf4b6166b710.addTo(map_e2c0f59aabd7ea272dc6a48ba606ee92);
+        
+    
+            var circle_marker_cfbe50438f5301ca38b7292d3734b9b8 = L.circleMarker(
+                [39.9, 116.4],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_e2c0f59aabd7ea272dc6a48ba606ee92);
+        
+    
+        var popup_9dd9ec5af2486ad5aae1a2750c8b8fc0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d8288e30821f8c782c0090ec8e68b263 = $(`<div id="html_d8288e30821f8c782c0090ec8e68b263" style="width: 100.0%; height: 100.0%;">{'title': '北京七大购物商圈 - 知乎 - 知乎专栏', 'url': 'https://zhuanlan.zhihu.com/p/614765584', 'snippet': '北京，是一个有着多重身份的城市，除了首都、直辖市、国家中心城市、全国政治中心以外， 时尚都市绝对是个不可缺少的头衔，在这里传统意义的商圈都已成为游客们的打卡胜地，那么，北京著名商圈有哪些？MAIGOO小编为你整理了北京十大最繁华的购物商圈，包括王府井商圈、西单商圈、 国贸CBD ...'}(90分)</div>`)[0];
+                popup_9dd9ec5af2486ad5aae1a2750c8b8fc0.setContent(html_d8288e30821f8c782c0090ec8e68b263);
+            
+        
+
+        circle_marker_cfbe50438f5301ca38b7292d3734b9b8.bindPopup(popup_9dd9ec5af2486ad5aae1a2750c8b8fc0)
+        ;
+
+        
+    
+    
+            var circle_marker_d061d1627dee4494f26464b45d600596 = L.circleMarker(
+                [39.91, 116.41000000000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e2c0f59aabd7ea272dc6a48ba606ee92);
+        
+    
+        var popup_87039e4e5c1007bff792f55e0caf1c6b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b286f09e2d2f3998c1ee5cdfda0b4bde = $(`<div id="html_b286f09e2d2f3998c1ee5cdfda0b4bde" style="width: 100.0%; height: 100.0%;">{'title': '王府井、Cbd、三里屯…谁才是北京最贵的商圈？-36氪', 'url': 'https://www.36kr.com/p/2402814280622211', 'snippet': '王府井大街是一条闻名中外的百年&quot;金街&quot;，也是北京消费的一扇窗，但随着诸多潮流商圈的崛起，王府井商圈也发现了自身的局限，2019年，王府井 ...'}(85分)</div>`)[0];
+                popup_87039e4e5c1007bff792f55e0caf1c6b.setContent(html_b286f09e2d2f3998c1ee5cdfda0b4bde);
+            
+        
+
+        circle_marker_d061d1627dee4494f26464b45d600596.bindPopup(popup_87039e4e5c1007bff792f55e0caf1c6b)
+        ;
+
+        
+    
+    
+            var circle_marker_7e06797dc13a65a91797d8d91c44906a = L.circleMarker(
+                [39.92, 116.42],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_e2c0f59aabd7ea272dc6a48ba606ee92);
+        
+    
+        var popup_0e2a44cecad1154b7a91e13c8a2979a8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b7828c30e0a5cd076a9dee88be4966ac = $(`<div id="html_b7828c30e0a5cd076a9dee88be4966ac" style="width: 100.0%; height: 100.0%;">{'title': '北京人气&quot;最旺&quot;的20个商场，越老越吃香!|金源|大悦城|北京市|万达广场_网易订阅', 'url': 'https://www.163.com/dy/article/JGQSI79H05158BF0.html', 'snippet': '其中， 超极合生汇（东区） 是北京今年到目前为止最受瞩目的新开项目，人气居高不下；去年9月开业的 五棵松万达广场 为第四代万达广场的旗舰产品；2021年开业的首创 龙湖丽泽天街 则是丽泽商圈内运营指数数一数二的商业，也是此次丽泽商圈唯一上榜项目。'}(80分)</div>`)[0];
+                popup_0e2a44cecad1154b7a91e13c8a2979a8.setContent(html_b7828c30e0a5cd076a9dee88be4966ac);
+            
+        
+
+        circle_marker_7e06797dc13a65a91797d8d91c44906a.bindPopup(popup_0e2a44cecad1154b7a91e13c8a2979a8)
+        ;
+
+        
+    
+    
+            var circle_marker_65ddefda6df8427e6bf8df08e9a02e47 = L.circleMarker(
+                [39.93, 116.43],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e2c0f59aabd7ea272dc6a48ba606ee92);
+        
+    
+        var popup_50f2b1f74ac14112392738c4124c55d0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_49fb11916cd0fcf91e5a44e14fd94457 = $(`<div id="html_49fb11916cd0fcf91e5a44e14fd94457" style="width: 100.0%; height: 100.0%;">{'title': '北京商圈越来越有国际范儿_中国网', 'url': 'http://yxzg.china.com.cn/2026-05/15/content_43427957.shtml', 'snippet': '初夏的北京，国际消费活力迸发。在三里屯、国贸商城等时尚地标，国外高奢大牌旗舰店、首店扎堆儿落户，形成国际顶级品牌旗舰店集群；在秀水街、隆福寺等老牌商圈，本土国潮好物加速涌现，世界游客能3小时&quot;一站式&quot;购齐中国好物。'}(75分)</div>`)[0];
+                popup_50f2b1f74ac14112392738c4124c55d0.setContent(html_49fb11916cd0fcf91e5a44e14fd94457);
+            
+        
+
+        circle_marker_65ddefda6df8427e6bf8df08e9a02e47.bindPopup(popup_50f2b1f74ac14112392738c4124c55d0)
+        ;
+
+        
+    
+    
+            var circle_marker_e6212efe38f95d1efbbd32c139abf221 = L.circleMarker(
+                [39.94, 116.44000000000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e2c0f59aabd7ea272dc6a48ba606ee92);
+        
+    
+        var popup_95e4578399b7e26559f9c95a095d5f39 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5ccd82a4e4a96dbe5d6984019d0caddf = $(`<div id="html_5ccd82a4e4a96dbe5d6984019d0caddf" style="width: 100.0%; height: 100.0%;">{'title': '北京商圈彰显国际范儿|北京市_新浪财经_新浪网', 'url': 'https://finance.sina.com.cn/jjxw/2026-05-15/doc-inhxxnfr6315974.shtml', 'snippet': '初夏的北京，国际消费活力迸发。在三里屯、国贸商城等时尚地标，国外高奢大牌旗舰店、首店扎堆儿落户，形成国际顶级品牌旗舰店集群；在 ...'}(70分)</div>`)[0];
+                popup_95e4578399b7e26559f9c95a095d5f39.setContent(html_5ccd82a4e4a96dbe5d6984019d0caddf);
+            
+        
+
+        circle_marker_e6212efe38f95d1efbbd32c139abf221.bindPopup(popup_95e4578399b7e26559f9c95a095d5f39)
+        ;
+
+        
+    
+    
+            var circle_marker_246933eb3bf8bfda6538435eb7019d25 = L.circleMarker(
+                [39.949999999999996, 116.45],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e2c0f59aabd7ea272dc6a48ba606ee92);
+        
+    
+        var popup_c64746fd8dc6934171ececb080c010e1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_65aae1ae740db65d9ac7433cfc5d1da5 = $(`<div id="html_65aae1ae740db65d9ac7433cfc5d1da5" style="width: 100.0%; height: 100.0%;">{'title': '重点商圈_国际范·在北京_首都之窗_北京市人民政府门户网站', 'url': 'https://www.beijing.gov.cn/ywdt/zwzt/gjxxfxcs/gjf/202404/t20240410_3615082.html', 'snippet': '服务扩大内需战略扎实有效。稳步推进国际消费中心城市建设，2023年全年新开大型商业设施近240万平方米，&quot;一圈一策&quot;完成崇文门、CBD等15个重点商圈和龙湖北苑天街、五棵松万达广场、王府井喜悦等重点商场品质提升，THE BOX年轻力中心、DT51成为新晋网红打卡地，西长安中骏·世界城、京西大悦 ...'}(65分)</div>`)[0];
+                popup_c64746fd8dc6934171ececb080c010e1.setContent(html_65aae1ae740db65d9ac7433cfc5d1da5);
+            
+        
+
+        circle_marker_246933eb3bf8bfda6538435eb7019d25.bindPopup(popup_c64746fd8dc6934171ececb080c010e1)
+        ;
+
+        
+    
+    
+            var circle_marker_462474c419d653be42e6d81b07007e4d = L.circleMarker(
+                [39.96, 116.46000000000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_e2c0f59aabd7ea272dc6a48ba606ee92);
+        
+    
+        var popup_8cc8a89eb8584908956e65c78522f29d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d98ee70a88f9f3dba74c07bdd86067e5 = $(`<div id="html_d98ee70a88f9f3dba74c07bdd86067e5" style="width: 100.0%; height: 100.0%;">{'title': '北京人气商场TOP20更新：朝阳合生汇稳居TOP1，万达系成大赢家', 'url': 'https://xueqiu.com/1410476711/316237200', 'snippet': '目前，五棵松商圈规划为北京城市消费中心，商圈内聚集了华熙LIVE·五棵松和五棵松万达广场两大商业主体，有着浓厚的文体商业氛围。 通州万达广场 2014年开业，是继CBD、石景山之后，北京的第三座万达广场，也是目前通州区规模最大的商业综合体。'}(60分)</div>`)[0];
+                popup_8cc8a89eb8584908956e65c78522f29d.setContent(html_d98ee70a88f9f3dba74c07bdd86067e5);
+            
+        
+
+        circle_marker_462474c419d653be42e6d81b07007e4d.bindPopup(popup_8cc8a89eb8584908956e65c78522f29d)
+        ;
+
+        
+    
+    
+            var circle_marker_31b12a3893f56f3c09f27e949d5950d3 = L.circleMarker(
+                [39.97, 116.47],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e2c0f59aabd7ea272dc6a48ba606ee92);
+        
+    
+        var popup_02022e67d39304feedcb1bf66b4c3d4a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4a60707e92c5194e4c4e908999aa1e58 = $(`<div id="html_4a60707e92c5194e4c4e908999aa1e58" style="width: 100.0%; height: 100.0%;">{'title': '重点商圈解析丨北京36个商圈，哪个才是真正的商业&quot;顶流&quot;', 'url': 'https://m.winshang.com/news698635.html', 'snippet': '北京王府井商圈作为北京最具历史底蕴的商圈，在北京乃至全国一直享誉盛名。但随着北京城市的外延，商业竞争的加剧，三里屯商圈、CBD商圈等后起之秀的崛起，王府井商圈的客流也在慢慢外溢至周围商圈。近几年，随着王府井步行街改造工程的推进，以及新兴项目王府中环、东安睿锦的相继入市 ...'}(55分)</div>`)[0];
+                popup_02022e67d39304feedcb1bf66b4c3d4a.setContent(html_4a60707e92c5194e4c4e908999aa1e58);
+            
+        
+
+        circle_marker_31b12a3893f56f3c09f27e949d5950d3.bindPopup(popup_02022e67d39304feedcb1bf66b4c3d4a)
+        ;
+
+        
+    
+    
+            var circle_marker_d6b151f30cb03d4aa1241a7dfbbd2323 = L.circleMarker(
+                [39.98, 116.48],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e2c0f59aabd7ea272dc6a48ba606ee92);
+        
+    
+        var popup_4cb5f93c868d2304063ec699995f1268 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_beed9d4ee8bde5c282e7ea1c11027224 = $(`<div id="html_beed9d4ee8bde5c282e7ea1c11027224" style="width: 100.0%; height: 100.0%;">{'title': '北京市商圈分布图 - 2024年07月 - 行业研究数据 - 小牛行研', 'url': 'https://www.hangyan.co/charts/3408260926560797777', 'snippet': '研究报告节选: 北京传统商圈以故宫为原点，形成了位于其西面的西单商圈及东面的王府井商圈。随着北京城市规划发展，北京商圈不断更新发展，逐步形成了&quot;多中心化&quot;的格局。2021 年北京市商务局会同戴德梁行，对北京市 16 个行政区 52 个商圈代表性商业项目进行商业活力度评价，CBD 商圈在 ...'}(50分)</div>`)[0];
+                popup_4cb5f93c868d2304063ec699995f1268.setContent(html_beed9d4ee8bde5c282e7ea1c11027224);
+            
+        
+
+        circle_marker_d6b151f30cb03d4aa1241a7dfbbd2323.bindPopup(popup_4cb5f93c868d2304063ec699995f1268)
+        ;
+
+        
+    
+    
+            var circle_marker_8bab42de8d94c5f53f69c2520b862ea1 = L.circleMarker(
+                [39.99, 116.49000000000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e2c0f59aabd7ea272dc6a48ba606ee92);
+        
+    
+        var popup_d229641c4f72e455fae28398706aa4f5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0d6d5cb60225195d7b285c4551ad9fc6 = $(`<div id="html_0d6d5cb60225195d7b285c4551ad9fc6" style="width: 100.0%; height: 100.0%;">{'title': '北京6大商圈购物汇总 总有一个适合你', 'url': 'https://www.visitbeijing.com.cn/article/47QrRNBeitm', 'snippet': '在王府井商圈里有条世界著名的商业街——王府井大街是北京唯一一条步行商业街,南口紧邻长安街，由南向北全长810米，大街两侧分布着七百余家大大小小的商店。这条具有七百多年历史的商业街，拥有着众多最著名的老字号。从商业街发展到成熟的商圈，王府井经过了两次大规模的改造和建设 ...'}(50分)</div>`)[0];
+                popup_d229641c4f72e455fae28398706aa4f5.setContent(html_0d6d5cb60225195d7b285c4551ad9fc6);
+            
+        
+
+        circle_marker_8bab42de8d94c5f53f69c2520b862ea1.bindPopup(popup_d229641c4f72e455fae28398706aa4f5)
+        ;
+
+        
+    
+</script>
+</html>

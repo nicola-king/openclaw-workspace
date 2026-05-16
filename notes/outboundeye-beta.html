@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OutboundEye 内测申请 — 前 10 名免费 3 个月</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background: #0a0b0f;
+    color: #e2e8f0;
+    font-family: 'Inter', 'Noto Sans SC', system-ui, sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 48px;
+    flex: 1;
+    display: flex;
+    gap: 64px;
+    align-items: flex-start;
+  }
+
+  @media (max-width: 768px) {
+    .container { flex-direction: column; padding: 40px 24px; gap: 40px; }
+  }
+
+  /* ===== Left Column ===== */
+  .left-col {
+    flex: 1;
+    padding-top: 40px;
+  }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(239,68,68,0.1);
+    border: 1px solid rgba(239,68,68,0.2);
+    border-radius: 100px;
+    padding: 6px 16px;
+    font-size: 13px;
+    color: #f87171;
+    margin-bottom: 24px;
+  }
+  .badge-dot {
+    width: 6px; height: 6px;
+    background: #f87171;
+    border-radius: 50%;
+    animation: pulse-dot 1.5s infinite;
+  }
+  @keyframes pulse-dot {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+  .left-col h1 {
+    font-size: clamp(36px, 4.5vw, 52px);
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #f8fafc, #94a3b8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .left-col h1 span {
+    background: linear-gradient(135deg, #f87171, #fb923c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .left-col .subtitle {
+    font-size: 17px;
+    color: #94a3b8;
+    margin-bottom: 40px;
+    line-height: 1.7;
+    max-width: 480px;
+  }
+  .benefits {
+    list-style: none;
+    margin-bottom: 40px;
+  }
+  .benefits li {
+    padding: 12px 0;
+    font-size: 15px;
+    color: #cbd5e1;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+  }
+  .benefits li:last-child { border-bottom: none; }
+  .benefits li::before {
+    content: '✦';
+    color: #f87171;
+    font-size: 14px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .limit-box {
+    background: rgba(239,68,68,0.05);
+    border: 1px solid rgba(239,68,68,0.1);
+    border-radius: 12px;
+    padding: 16px 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    color: #fca5a5;
+  }
+  .limit-box strong {
+    font-size: 18px;
+    color: #f87171;
+  }
+
+  /* ===== Right Column (Form) ===== */
+  .right-col {
+    width: 420px;
+    flex-shrink: 0;
+  }
+  @media (max-width: 768px) { .right-col { width: 100%; } }
+  .form-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 20px;
+    padding: 36px;
+  }
+  .form-card h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #f8fafc;
+    text-align: center;
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  .form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    color: #94a3b8;
+    margin-bottom: 6px;
+  }
+  .form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 12px 14px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+    color: #e2e8f0;
+    font-size: 14px;
+    font-family: inherit;
+    transition: all 0.2s;
+    outline: none;
+  }
+  .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+    border-color: #3b82f6;
+    background: rgba(59,130,246,0.05);
+    box-shadow: 0 0 0 3px rgba(59,130,246,0.1);
+  }
+  .form-group input::placeholder, .form-group textarea::placeholder {
+    color: #475569;
+  }
+  .form-group textarea {
+    resize: vertical;
+    min-height: 60px;
+  }
+  .form-group select {
+    appearance: none;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%2394a3b8' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+  }
+  .form-group select option {
+    background: #1a1b23;
+    color: #e2e8f0;
+  }
+  .form-group .hint {
+    font-size: 12px;
+    color: #475569;
+    margin-top: 4px;
+  }
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  @media (max-width: 480px) { .form-row { grid-template-columns: 1fr; } }
+  .btn-submit {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-top: 8px;
+  }
+  .btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(59,130,246,0.3);
+  }
+  .form-footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #475569;
+  }
+
+  /* ===== Footer ===== */
+  .footer {
+    padding: 24px 48px;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.04);
+  }
+  .footer p { font-size: 13px; color: #475569; }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Left: Value Proposition -->
+  <div class="left-col">
+    <div class="badge">
+      <span class="badge-dot"></span>
+      限量内测 · 仅剩 7 席
+    </div>
+    <h1>
+      加入 OutboundEye 内测<br>
+      <span>前 10 名免费 3 个月</span>
+    </h1>
+    <p class="subtitle">
+      告别大海捞针式的买家寻找。AI 每日精准推送目标买家情报，
+      让你每天打开邮箱就是新的商机。
+    </p>
+    <ul class="benefits">
+      <li>免费使用全部功能 3 个月（价值 ¥5,997+）</li>
+      <li>每日 AI 推送精准买家清单，直击目标市场</li>
+      <li>GEO 可见度日报 — 品牌在 AI 搜索中的曝光追踪</li>
+      <li>竞品动态监控 — 谁在抢你的客户？第一时间知道</li>
+      <li>专属内测用户反馈通道，直接影响产品方向</li>
+      <li>正式上线后锁定创始用户终身折扣</li>
+    </ul>
+    <div class="limit-box">
+      <strong>10</strong>
+      个免费名额 · 先到先得 · 预计 48 小时内满额
+    </div>
+  </div>
+
+  <!-- Right: Form -->
+  <div class="right-col">
+    <div class="form-card">
+      <h2>📋 申请内测</h2>
+      <form action="#" method="POST">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">姓名 *</label>
+            <input type="text" id="name" name="name" placeholder="张经理" required>
+          </div>
+          <div class="form-group">
+            <label for="company">公司名称 *</label>
+            <input type="text" id="company" name="company" placeholder="XX 科技有限公司" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">企业邮箱 *</label>
+          <input type="email" id="email" name="email" placeholder="yourname@company.com" required>
+          <div class="hint">内测账号将通过此邮箱发送</div>
+        </div>
+        <div class="form-group">
+          <label for="product">主营产品 *</label>
+          <input type="text" id="product" name="product" placeholder="钢结构 / 储能系统 / 金属家具 ..." required>
+        </div>
+        <div class="form-group">
+          <label for="market">目标市场 *</label>
+          <select id="market" name="market" required>
+            <option value="">请选择目标市场</option>
+            <option value="north-america">北美（美国 / 加拿大）</option>
+            <option value="europe">欧洲（欧盟 / 英国）</option>
+            <option value="middle-east">中东（沙特 / 阿联酋 / 卡塔尔）</option>
+            <option value="southeast-asia">东南亚（越南 / 印尼 / 泰国）</option>
+            <option value="oceania">大洋洲（澳洲 / 新西兰）</option>
+            <option value="south-america">南美（巴西 / 智利 / 阿根廷）</option>
+            <option value="africa">非洲</option>
+            <option value="multiple">多个市场（请备注）</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="note">备注（当前获客方式 / 规模 / 需求）</label>
+          <textarea id="note" name="note" placeholder="例：目前主要通过展会获客，年出口额 500 万，急需拓展澳洲市场..."></textarea>
+        </div>
+        <button type="submit" class="btn-submit">提交申请 →</button>
+      </form>
+      <div class="form-footer">
+        提交后 24 小时内审核，通过即开通账号
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <p>元目 · OutboundEye © 2026 | 跨境贸易 AI 情报平台</p>
+</footer>
+
+</body>
+</html>

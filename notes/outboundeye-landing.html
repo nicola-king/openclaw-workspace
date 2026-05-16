@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>元目 · OutboundEye — 跨境贸易 AI 情报平台</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: #0a0b0f;
+    color: #e2e8f0;
+    font-family: 'Inter', 'Noto Sans SC', system-ui, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  /* ===== Navbar ===== */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 16px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(10,11,15,0.8);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+  .nav-logo {
+    font-size: 22px;
+    font-weight: 700;
+    color: #f8fafc;
+    letter-spacing: -0.02em;
+  }
+  .nav-logo span { color: #60a5fa; }
+  .nav-links { display: flex; gap: 32px; align-items: center; }
+  .nav-links a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: #f8fafc; }
+  .nav-cta {
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    color: #fff !important;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 13px;
+  }
+  .nav-cta:hover { background: linear-gradient(135deg, #60a5fa, #3b82f6); }
+
+  /* ===== Sections ===== */
+  .section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 48px;
+  }
+
+  /* ===== Hero ===== */
+  .hero {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 120px 48px 80px;
+    position: relative;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -40%;
+    left: -20%;
+    width: 140%;
+    height: 140%;
+    background: radial-gradient(ellipse at 50% 40%, rgba(59,130,246,0.08) 0%, transparent 60%);
+    pointer-events: none;
+  }
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(59,130,246,0.1);
+    border: 1px solid rgba(59,130,246,0.2);
+    border-radius: 100px;
+    padding: 6px 16px;
+    font-size: 13px;
+    color: #60a5fa;
+    margin-bottom: 32px;
+  }
+  .hero-badge-dot {
+    width: 6px; height: 6px;
+    background: #60a5fa;
+    border-radius: 50%;
+    animation: pulse-dot 2s infinite;
+  }
+  @keyframes pulse-dot {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+  .hero h1 {
+    font-size: clamp(40px, 6vw, 72px);
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    margin-bottom: 24px;
+    background: linear-gradient(135deg, #f8fafc 0%, #94a3b8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-width: 900px;
+  }
+  .hero h1 span {
+    background: linear-gradient(135deg, #60a5fa, #a78bfa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .hero p {
+    font-size: 18px;
+    color: #94a3b8;
+    max-width: 640px;
+    margin-bottom: 40px;
+    line-height: 1.7;
+  }
+  .hero-actions {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .btn-primary {
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    color: #fff;
+    padding: 14px 32px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    transition: all 0.2s;
+    border: none;
+    cursor: pointer;
+  }
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(59,130,246,0.3);
+  }
+  .btn-secondary {
+    background: rgba(255,255,255,0.06);
+    color: #e2e8f0;
+    padding: 14px 32px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration: none;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: all 0.2s;
+  }
+  .btn-secondary:hover {
+    background: rgba(255,255,255,0.1);
+  }
+  .hero-stats {
+    display: flex;
+    gap: 48px;
+    margin-top: 64px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .hero-stat { text-align: center; }
+  .hero-stat-number {
+    font-size: 32px;
+    font-weight: 700;
+    color: #f8fafc;
+  }
+  .hero-stat-label {
+    font-size: 14px;
+    color: #64748b;
+    margin-top: 4px;
+  }
+
+  /* ===== Value Prop ===== */
+  .section-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+  }
+  .section-subtitle {
+    font-size: 16px;
+    color: #64748b;
+    max-width: 600px;
+    margin-bottom: 48px;
+    line-height: 1.7;
+  }
+  .value-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  @media (max-width: 768px) { .value-grid { grid-template-columns: 1fr; } }
+  .value-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 16px;
+    padding: 32px;
+    transition: all 0.3s;
+  }
+  .value-card:hover {
+    background: rgba(255,255,255,0.06);
+    border-color: rgba(59,130,246,0.2);
+    transform: translateY(-4px);
+  }
+  .value-icon {
+    font-size: 28px;
+    margin-bottom: 16px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(59,130,246,0.1);
+    border-radius: 12px;
+    border: 1px solid rgba(59,130,246,0.15);
+  }
+  .value-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #f8fafc;
+  }
+  .value-card p {
+    font-size: 14px;
+    color: #94a3b8;
+    line-height: 1.7;
+  }
+
+  /* ===== Pricing ===== */
+  .pricing-bg { background: rgba(255,255,255,0.02); }
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  @media (max-width: 768px) { .pricing-grid { grid-template-columns: 1fr; } }
+  .pricing-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 16px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s;
+    position: relative;
+  }
+  .pricing-card.featured {
+    border-color: rgba(59,130,246,0.3);
+    background: rgba(59,130,246,0.05);
+    transform: scale(1.03);
+  }
+  .pricing-card.featured::before {
+    content: '🌟 推荐';
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    color: #fff;
+    padding: 4px 16px;
+    border-radius: 100px;
+    font-size: 12px;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  @media (max-width: 768px) { .pricing-card.featured { transform: none; } }
+  .pricing-name {
+    font-size: 16px;
+    font-weight: 500;
+    color: #94a3b8;
+    margin-bottom: 8px;
+  }
+  .pricing-card.featured .pricing-name { color: #60a5fa; }
+  .pricing-price {
+    font-size: 40px;
+    font-weight: 800;
+    color: #f8fafc;
+    margin-bottom: 16px;
+  }
+  .pricing-price span {
+    font-size: 16px;
+    font-weight: 400;
+    color: #64748b;
+  }
+  .pricing-desc {
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 24px;
+    line-height: 1.6;
+  }
+  .pricing-features {
+    list-style: none;
+    margin-bottom: 32px;
+    flex-grow: 1;
+  }
+  .pricing-features li {
+    padding: 8px 0;
+    font-size: 14px;
+    color: #94a3b8;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .pricing-features li::before {
+    content: '✓';
+    color: #4ade80;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+  .pricing-btn {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.1);
+    color: #e2e8f0;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    transition: all 0.2s;
+  }
+  .pricing-btn:hover { background: rgba(255,255,255,0.06); }
+  .pricing-card.featured .pricing-btn {
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    border: none;
+    color: #fff;
+  }
+  .pricing-card.featured .pricing-btn:hover { box-shadow: 0 4px 16px rgba(59,130,246,0.3); }
+
+  /* ===== Showcase ===== */
+  .showcase-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  @media (max-width: 768px) { .showcase-grid { grid-template-columns: 1fr; } }
+  .showcase-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.3s;
+  }
+  .showcase-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(59,130,246,0.2);
+  }
+  .showcase-card-header {
+    padding: 24px 24px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .showcase-flag {
+    width: 32px; height: 32px;
+    border-radius: 50%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .showcase-card-header h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #f8fafc;
+  }
+  .showcase-card-header span {
+    font-size: 13px;
+    color: #64748b;
+  }
+  .showcase-card-body {
+    padding: 16px 24px 24px;
+  }
+  .showcase-metric {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 8px 0;
+    font-size: 14px;
+    color: #94a3b8;
+  }
+  .showcase-metric strong {
+    color: #4ade80;
+    font-weight: 600;
+  }
+  .showcase-detail {
+    font-size: 14px;
+    color: #64748b;
+    line-height: 1.7;
+    margin-top: 12px;
+  }
+
+  /* ===== CTA ===== */
+  .cta-section {
+    text-align: center;
+    padding: 80px 48px;
+    background: linear-gradient(135deg, rgba(59,130,246,0.05), rgba(167,139,250,0.05));
+    border-radius: 24px;
+    margin: 0 48px 48px;
+  }
+  @media (max-width: 640px) { .cta-section { margin: 0 16px 48px; padding: 48px 24px; } }
+  .cta-section h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+  }
+  .cta-section p {
+    font-size: 16px;
+    color: #94a3b8;
+    max-width: 500px;
+    margin: 0 auto 32px;
+  }
+
+  /* ===== Footer ===== */
+  .footer {
+    padding: 48px;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.04);
+  }
+  .footer p {
+    font-size: 14px;
+    color: #475569;
+  }
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-logo">元目 · <span>OutboundEye</span></div>
+  <div class="nav-links">
+    <a href="#values">能力</a>
+    <a href="#pricing">定价</a>
+    <a href="#showcase">案例</a>
+    <a href="/beta" class="nav-cta">申请内测</a>
+  </div>
+</nav>
+
+<!-- ===== Hero ===== -->
+<section class="hero">
+  <div class="hero-badge">
+    <span class="hero-badge-dot"></span>
+    AI 驱动 · 每日更新 · 精准触达
+  </div>
+  <h1>
+    不再靠运气<br>
+    <span>找买家</span>
+  </h1>
+  <p>
+    AI 每日自动扫描全球贸易数据，为你推送精准买家情报、GEO 可见度分析与竞品动态。<br>
+    做跨境贸易，先让情报来找你。
+  </p>
+  <div class="hero-actions">
+    <a href="#pricing" class="btn-primary">查看方案 →</a>
+    <a href="/beta" class="btn-secondary">申请内测</a>
+  </div>
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <div class="hero-stat-number">24M+</div>
+      <div class="hero-stat-label">全球贸易数据源</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-number">每日</div>
+      <div class="hero-stat-label">情报推送</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-number">97%</div>
+      <div class="hero-stat-label">线索精准度</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Value Props ===== -->
+<section class="section" id="values">
+  <h2 class="section-title" style="text-align:center;">三大核心能力</h2>
+  <p class="section-subtitle" style="margin:0 auto 48px;text-align:center;">
+    从买家发现到市场策略，AI 贯穿全链路
+  </p>
+  <div class="value-grid">
+    <div class="value-card">
+      <div class="value-icon">🎯</div>
+      <h3>精准买家推送</h3>
+      <p>AI 每日自动扫描全球海关、招标、B2B 平台数据，匹配你的产品画像，推送高意向买家清单。不再大海捞针。</p>
+    </div>
+    <div class="value-card">
+      <div class="value-icon">📊</div>
+      <h3>GEO 可见度日报</h3>
+      <p>追踪品牌和产品在目标市场的 AI 搜索结果可见度。Google、ChatGPT、Perplexity 每日你的品牌出现几次？竞争对手呢？</p>
+    </div>
+    <div class="value-card">
+      <div class="value-icon">👁️</div>
+      <h3>竞品动态监控</h3>
+      <p>自动追踪竞争对手的社媒变化、网站更新、新客户获取情况。谁在抢你的市场？第一时间知道。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Pricing ===== -->
+<section class="section pricing-bg" id="pricing">
+  <h2 class="section-title" style="text-align:center;">灵活方案</h2>
+  <p class="section-subtitle" style="margin:0 auto 48px;text-align:center;">
+    从小团队到大企业，总有一款适合你
+  </p>
+  <div class="pricing-grid">
+    <!-- 精选情报 -->
+    <div class="pricing-card">
+      <div class="pricing-name">精选情报</div>
+      <div class="pricing-price">¥1,999 <span>/月</span></div>
+      <p class="pricing-desc">适合个人卖家或小型外贸团队，轻量起步</p>
+      <ul class="pricing-features">
+        <li>每日 10-15 条买家精准推送</li>
+        <li>基础市场分析报告</li>
+        <li>行业趋势简报</li>
+        <li>邮件 + Telegram 推送</li>
+      </ul>
+      <a href="/beta" class="pricing-btn">开始使用</a>
+    </div>
+
+    <!-- 全量专业（推荐） -->
+    <div class="pricing-card featured">
+      <div class="pricing-name">全量专业</div>
+      <div class="pricing-price">¥4,999 <span>/月</span></div>
+      <p class="pricing-desc">适合成长期外贸公司，全量情报覆盖</p>
+      <ul class="pricing-features">
+        <li>每日 50+ 条买家精准推送</li>
+        <li>全量市场与竞品分析</li>
+        <li>GEO 可见度日报</li>
+        <li>竞品社媒变化监控</li>
+        <li>多市场同时覆盖</li>
+        <li>专属客户成功经理</li>
+      </ul>
+      <a href="/beta" class="pricing-btn">开始使用</a>
+    </div>
+
+    <!-- 全链路旗舰 -->
+    <div class="pricing-card">
+      <div class="pricing-name">全链路旗舰</div>
+      <div class="pricing-price">¥9,999 <span>/月</span></div>
+      <p class="pricing-desc">适合外贸品牌企业，完整出海解决方案</p>
+      <ul class="pricing-features">
+        <li>全量专业所有功能</li>
+        <li>冷启动策略策划</li>
+        <li>全链路贸易数据分析</li>
+        <li>AI 内容工场（品牌文案）</li>
+        <li>买家深度画像分析</li>
+        <li>月度出海策略复盘</li>
+        <li>不限数量团队成员</li>
+      </ul>
+      <a href="/beta" class="pricing-btn">立即咨询</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Showcase ===== -->
+<section class="section" id="showcase">
+  <h2 class="section-title" style="text-align:center;">真实场景</h2>
+  <p class="section-subtitle" style="margin:0 auto 48px;text-align:center;">
+    看看 OutboundEye 如何帮助不同行业找到买家
+  </p>
+  <div class="showcase-grid">
+    <!-- 钢结构出口澳洲 -->
+    <div class="showcase-card">
+      <div class="showcase-card-header">
+        <div class="showcase-flag">🇦🇺</div>
+        <div>
+          <h3>钢结构 · 澳洲</h3>
+          <span>建筑材料｜冷启动</span>
+        </div>
+      </div>
+      <div class="showcase-card-body">
+        <div class="showcase-metric">📈 有效线索 <strong>+340%</strong></div>
+        <div class="showcase-metric">⏱ 首单周期 <strong>缩短至 23 天</strong></div>
+        <div class="showcase-detail">
+          一家佛山钢结构企业试图进入澳洲市场。OutboundEye 通过海关数据识别了 5 家正在采购同类产品的澳洲建筑商，AI 自动生成首封开发信。23 天后签下首单。
+        </div>
+      </div>
+    </div>
+
+    <!-- 储能进中东 -->
+    <div class="showcase-card">
+      <div class="showcase-card-header">
+        <div class="showcase-flag">🇸🇦</div>
+        <div>
+          <h3>储能系统 · 中东</h3>
+          <span>新能源｜竞品分析</span>
+        </div>
+      </div>
+      <div class="showcase-card-body">
+        <div class="showcase-metric">🎯 竞品情报 <strong>捕获 12 家</strong></div>
+        <div class="showcase-metric">📄 GEO 可见度 <strong>提升 4.2x</strong></div>
+        <div class="showcase-detail">
+          一家深圳储能企业计划进军沙特。系统监控到 3 家中国竞品已签约当地代理，同步发现沙特 Vision 2030 下的新招标项目。企业调整策略后中标。
+        </div>
+      </div>
+    </div>
+
+    <!-- 金属家具进美国 -->
+    <div class="showcase-card">
+      <div class="showcase-card-header">
+        <div class="showcase-flag">🇺🇸</div>
+        <div>
+          <h3>金属家具 · 美国</h3>
+          <span>家居用品｜社媒转化</span>
+        </div>
+      </div>
+      <div class="showcase-card-body">
+        <div class="showcase-metric">🛒 询盘转化 <strong>月均 18 单</strong></div>
+        <div class="showcase-metric">📊 竞品动态 <strong>提前预警 2 周</strong></div>
+        <div class="showcase-detail">
+          一家安吉金属家具厂原本靠展会获客。OutboundEye 通过社媒监控发现美国某连锁品牌在找新供应商，GEO 警报提示竞价对手已联系对方。团队 48 小时内提交报价。
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="cta-section">
+  <h2>准备好了？</h2>
+  <p>前 10 名内测用户免费使用 3 个月。让你的获客从"找"变成"等"。</p>
+  <a href="/beta" class="btn-primary">立即申请内测 →</a>
+</section>
+
+<footer class="footer">
+  <p>元目 · OutboundEye © 2026 — 跨境贸易 AI 情报平台 | 让情报来找你</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+/* 宋代美学 — 东方空间设计CSS变量 */
+/* 基于宋代美学的空间设计系统：留白、借景、宋式色彩、文人精神 */
+
+:root {
+  /* ===== Colors ===== */
+  --song-ink: #2C2416;
+  --song-ink-muted: #5A4A3A;
+  --song-paper: #F5F0E8;
+  --song-paper-warm: #EDE4D4;
+  --song-paper-aged: #D4C5A0;
+  --song-accent: #8B4513;
+  --song-accent-ink: #6B5B4F;
+  --song-muted: #A0926B;
+  --song-water: #C4A882;
+  --song-sky: #D4D5CC;
+  --song-jade: #7AAB82;
+  --song-ceramic: #E8D5C0;
+  --song-light: #FFF8F0;
+  --song-surface: #FAF5ED;
+
+  /* ===== Typography ===== */
+  --song-display-fontFamily: 'Noto Serif SC', 'Songti SC', serif;
+  --song-display-fontSize: 48px;
+  --song-display-fontWeight: 500;
+  --song-heading-fontFamily: 'Noto Serif SC', 'Songti SC', serif;
+  --song-heading-fontSize: 28px;
+  --song-heading-fontWeight: 400;
+  --song-body-fontFamily: 'Noto Serif SC', 'Songti SC', serif;
+  --song-body-fontSize: 16px;
+  --song-body-lineHeight: 1.8;
+  --song-caption-fontFamily: 'Noto Sans SC', sans-serif;
+  --song-caption-fontSize: 12px;
+  --song-caption-letterSpacing: 0.08em;
+
+  /* ===== Spacing ===== */
+  --song-space-xs: 4px;
+  --song-space-sm: 8px;
+  --song-space-md: 16px;
+  --song-space-lg: 32px;
+  --song-space-xl: 64px;
+  --song-space-xxl: 128px;
+}
+
+.song-serif { font-family: var(--song-display-fontFamily); }
+.song-sans { font-family: var(--song-caption-fontFamily); }
+.song-ink { color: var(--song-ink); }
+.song-paper-bg { background: var(--song-paper); }
+.song-rule { border-color: var(--song-muted); opacity: 0.3; }
+.ma-byobu { writing-mode: vertical-rl; text-orientation: upright; }

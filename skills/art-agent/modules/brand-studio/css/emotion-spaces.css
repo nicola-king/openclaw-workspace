@@ -1,0 +1,16 @@
+/* 情绪空间 — 心理疗愈空间设计系统 */
+:root {
+  --emotion-anxiety: #5A7A8A;
+  --emotion-tired: #3A6A4A;
+  --emotion-isolated: #4A5A5A;
+  --emotion-meditation: #3A3A3A;
+  --emotion-social: #6A5A4A;
+  --emotion-luxury: #2A2A3A;
+  --emotion-space-xs: 8px;
+  --emotion-space-sm: 16px;
+  --emotion-space-md: 32px;
+  --emotion-space-lg: 64px;
+}
+.emotion-calming { background: linear-gradient(135deg, var(--emotion-anxiety), #A8C8C0); }
+.emotion-healing { background: linear-gradient(135deg, var(--emotion-tired), #8AB88A); }
+.emotion-zen { background: linear-gradient(180deg, #4A5A5A, #8A8880); }

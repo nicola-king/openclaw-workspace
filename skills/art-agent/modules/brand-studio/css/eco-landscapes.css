@@ -1,0 +1,23 @@
+/* 生态场景 — 自然环境渲染设计系统 */
+:root {
+  --eco-coast-primary: #4A7A9A;
+  --eco-river-primary: #4A8A7A;
+  --eco-valley-primary: #3A5A4A;
+  --eco-mountain-primary: #4A5A5A;
+  --eco-highland-primary: #5A7A8A;
+  --eco-plain-primary: #6A8A5A;
+  --eco-city-primary: #5A5A6A;
+  --eco-desert-primary: #8A7A5A;
+  --eco-forest-primary: #2A4A3A;
+  --eco-lake-primary: #3A6A7A;
+  --eco-space-xs: 8px;
+  --eco-space-sm: 16px;
+  --eco-space-md: 32px;
+  --eco-space-lg: 64px;
+  --eco-space-xl: 128px;
+}
+.eco-coast { background: linear-gradient(180deg, var(--eco-coast-primary), #7AB0C8); }
+.eco-forest { background: linear-gradient(135deg, var(--eco-forest-primary), #5A7A4A); }
+.eco-mountain { background: linear-gradient(180deg, #7A8880, var(--eco-mountain-primary)); }
+.eco-desert { background: linear-gradient(135deg, #D4C8A8, var(--eco-desert-primary)); }
+.eco-lake { background: linear-gradient(180deg, #6A9AA8, var(--eco-lake-primary)); }

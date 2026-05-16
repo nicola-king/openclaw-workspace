@@ -1108,6 +1108,351 @@
         "competitors": []
       },
       "opportunities": []
+    },
+    {
+      "id": "KW_RESEARCH_20260516_140041",
+      "seed_keyword": "modular container house",
+      "target_market": "Australia",
+      "timestamp": "2026-05-16T14:00:41.821482",
+      "keyword_metrics": {
+        "search_volume": 50000,
+        "cpc": 2.5,
+        "competition": 0.75,
+        "trend": [
+          40000,
+          42000,
+          45000,
+          48000,
+          50000,
+          52000,
+          55000,
+          53000,
+          50000,
+          48000,
+          45000,
+          42000
+        ]
+      },
+      "related_keywords": [
+        {
+          "keyword": "modular container house best",
+          "volume": 30000,
+          "difficulty": 65
+        },
+        {
+          "keyword": "modular container house review",
+          "volume": 25000,
+          "difficulty": 55
+        },
+        {
+          "keyword": "modular container house price",
+          "volume": 20000,
+          "difficulty": 45
+        },
+        {
+          "keyword": "buy modular container house",
+          "volume": 15000,
+          "difficulty": 70
+        },
+        {
+          "keyword": "modular container house for sale",
+          "volume": 12000,
+          "difficulty": 60
+        }
+      ],
+      "long_tail_keywords": [
+        {
+          "keyword": "best modular container house for camping 2026",
+          "volume": 5000,
+          "difficulty": 25
+        },
+        {
+          "keyword": "affordable modular container house with solar panel",
+          "volume": 3000,
+          "difficulty": 20
+        },
+        {
+          "keyword": "modular container house battery life comparison",
+          "volume": 2500,
+          "difficulty": 15
+        },
+        {
+          "keyword": "how to choose modular container house",
+          "volume": 4000,
+          "difficulty": 30
+        },
+        {
+          "keyword": "modular container house vs generator",
+          "volume": 3500,
+          "difficulty": 35
+        }
+      ],
+      "keyword_difficulty": {
+        "score": 23,
+        "level": "easy",
+        "ranking_difficulty": "低",
+        "recommendation": "值得投入"
+      },
+      "opportunities": [
+        {
+          "type": "低难度长尾",
+          "keyword": "best modular container house for camping 2026",
+          "volume": 5000,
+          "difficulty": 25,
+          "priority": "P0"
+        },
+        {
+          "type": "低难度长尾",
+          "keyword": "affordable modular container house with solar panel",
+          "volume": 3000,
+          "difficulty": 20,
+          "priority": "P0"
+        },
+        {
+          "type": "低难度长尾",
+          "keyword": "modular container house battery life comparison",
+          "volume": 2500,
+          "difficulty": 15,
+          "priority": "P0"
+        },
+        {
+          "type": "相关问题",
+          "keyword": "how to use modular container house",
+          "volume": 8000,
+          "difficulty": 35,
+          "priority": "P1"
+        }
+      ]
+    },
+    {
+      "id": "KW_RESEARCH_20260516_140041",
+      "seed_keyword": "prefab house",
+      "target_market": "Australia",
+      "timestamp": "2026-05-16T14:00:41.824152",
+      "keyword_metrics": {
+        "search_volume": 50000,
+        "cpc": 2.5,
+        "competition": 0.75,
+        "trend": [
+          40000,
+          42000,
+          45000,
+          48000,
+          50000,
+          52000,
+          55000,
+          53000,
+          50000,
+          48000,
+          45000,
+          42000
+        ]
+      },
+      "related_keywords": [
+        {
+          "keyword": "prefab house best",
+          "volume": 30000,
+          "difficulty": 65
+        },
+        {
+          "keyword": "prefab house review",
+          "volume": 25000,
+          "difficulty": 55
+        },
+        {
+          "keyword": "prefab house price",
+          "volume": 20000,
+          "difficulty": 45
+        },
+        {
+          "keyword": "buy prefab house",
+          "volume": 15000,
+          "difficulty": 70
+        },
+        {
+          "keyword": "prefab house for sale",
+          "volume": 12000,
+          "difficulty": 60
+        }
+      ],
+      "long_tail_keywords": [
+        {
+          "keyword": "best prefab house for camping 2026",
+          "volume": 5000,
+          "difficulty": 25
+        },
+        {
+          "keyword": "affordable prefab house with solar panel",
+          "volume": 3000,
+          "difficulty": 20
+        },
+        {
+          "keyword": "prefab house battery life comparison",
+          "volume": 2500,
+          "difficulty": 15
+        },
+        {
+          "keyword": "how to choose prefab house",
+          "volume": 4000,
+          "difficulty": 30
+        },
+        {
+          "keyword": "prefab house vs generator",
+          "volume": 3500,
+          "difficulty": 35
+        }
+      ],
+      "keyword_difficulty": {
+        "score": 43,
+        "level": "medium",
+        "ranking_difficulty": "中",
+        "recommendation": "需要努力"
+      },
+      "opportunities": [
+        {
+          "type": "低难度长尾",
+          "keyword": "best prefab house for camping 2026",
+          "volume": 5000,
+          "difficulty": 25,
+          "priority": "P0"
+        },
+        {
+          "type": "低难度长尾",
+          "keyword": "affordable prefab house with solar panel",
+          "volume": 3000,
+          "difficulty": 20,
+          "priority": "P0"
+        },
+        {
+          "type": "低难度长尾",
+          "keyword": "prefab house battery life comparison",
+          "volume": 2500,
+          "difficulty": 15,
+          "priority": "P0"
+        },
+        {
+          "type": "相关问题",
+          "keyword": "how to use prefab house",
+          "volume": 8000,
+          "difficulty": 35,
+          "priority": "P1"
+        }
+      ]
+    },
+    {
+      "id": "KW_RESEARCH_20260516_140044",
+      "seed_keyword": "modular container house",
+      "target_market": "Australia",
+      "timestamp": "2026-05-16T14:00:44.909063",
+      "keyword_metrics": {
+        "search_volume": 50000,
+        "cpc": 2.5,
+        "competition": 0.75,
+        "trend": [
+          40000,
+          42000,
+          45000,
+          48000,
+          50000,
+          52000,
+          55000,
+          53000,
+          50000,
+          48000,
+          45000,
+          42000
+        ]
+      },
+      "related_keywords": [
+        {
+          "keyword": "modular container house best",
+          "volume": 30000,
+          "difficulty": 65
+        },
+        {
+          "keyword": "modular container house review",
+          "volume": 25000,
+          "difficulty": 55
+        },
+        {
+          "keyword": "modular container house price",
+          "volume": 20000,
+          "difficulty": 45
+        },
+        {
+          "keyword": "buy modular container house",
+          "volume": 15000,
+          "difficulty": 70
+        },
+        {
+          "keyword": "modular container house for sale",
+          "volume": 12000,
+          "difficulty": 60
+        }
+      ],
+      "long_tail_keywords": [
+        {
+          "keyword": "best modular container house for camping 2026",
+          "volume": 5000,
+          "difficulty": 25
+        },
+        {
+          "keyword": "affordable modular container house with solar panel",
+          "volume": 3000,
+          "difficulty": 20
+        },
+        {
+          "keyword": "modular container house battery life comparison",
+          "volume": 2500,
+          "difficulty": 15
+        },
+        {
+          "keyword": "how to choose modular container house",
+          "volume": 4000,
+          "difficulty": 30
+        },
+        {
+          "keyword": "modular container house vs generator",
+          "volume": 3500,
+          "difficulty": 35
+        }
+      ],
+      "keyword_difficulty": {
+        "score": 70,
+        "level": "hard",
+        "ranking_difficulty": "高",
+        "recommendation": "竞争激烈"
+      },
+      "opportunities": [
+        {
+          "type": "低难度长尾",
+          "keyword": "best modular container house for camping 2026",
+          "volume": 5000,
+          "difficulty": 25,
+          "priority": "P0"
+        },
+        {
+          "type": "低难度长尾",
+          "keyword": "affordable modular container house with solar panel",
+          "volume": 3000,
+          "difficulty": 20,
+          "priority": "P0"
+        },
+        {
+          "type": "低难度长尾",
+          "keyword": "modular container house battery life comparison",
+          "volume": 2500,
+          "difficulty": 15,
+          "priority": "P0"
+        },
+        {
+          "type": "相关问题",
+          "keyword": "how to use modular container house",
+          "volume": 8000,
+          "difficulty": 35,
+          "priority": "P1"
+        }
+      ]
     }
   ],
   "keyword_lists": [

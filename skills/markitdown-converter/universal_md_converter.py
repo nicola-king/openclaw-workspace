@@ -66,6 +66,9 @@ EXCLUDE_DIRS = [
     "venv-feishu", ".agents", ".cache", ".claude",
 ]
 
+# 排除以特定后缀结尾的目录（如 *_agent_env, *_env 等 python env）
+EXCLUDE_DIR_SUFFIXES = ["_agent_env", "_env", "-env", "_venv", "dist-packages"]
+
 # 排除文件模式
 EXCLUDE_PATTERNS = [
     ".exe", ".dll", ".so", ".dylib", ".bin", ".png", ".jpg",
@@ -117,7 +120,8 @@ def discover_files(scan_dirs, full_scan=False, state=None):
         for root, dirs, filenames in os.walk(abs_dir):
             # 排除目录
             dirs[:] = [d for d in dirs if d not in EXCLUDE_DIRS
-                       and not any(d.startswith(e) for e in ["venv", ".venv"])]
+                       and not any(d.startswith(e) for e in ["venv", ".venv"])
+                       and not any(d.endswith(e) for e in EXCLUDE_DIR_SUFFIXES)]
 
             for fname in filenames:
                 fpath = os.path.join(root, fname)
