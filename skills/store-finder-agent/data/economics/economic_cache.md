@@ -40,5 +40,30 @@
       "贝壳研究院",
       "戴德梁行"
     ]
+  },
+  "2026-08_macro": {
+    "quarter": "2026年Q3(7-9月)",
+    "gdp_growth": "5.0%",
+    "cpi": "+2.8%",
+    "consumer_confidence": "谨慎偏弱(95)",
+    "unemployment": "5.2%",
+    "retail_growth": "+4.5%",
+    "catering_growth": "+5.0%",
+    "core_trend": "消费两极分化：刚需稳·高端降·中间承压",
+    "shop_rent_trend": "稳中有降(-3%)",
+    "labor_cost_trend": "+5%"
+  },
+  "2026-08_茶馆": {
+    "business_type": "茶馆",
+    "category": "体验型消费",
+    "growth_2026": "+8%",
+    "gross_margin": "70%",
+    "anticyclical": false,
+    "price_elasticity": "中",
+    "inflation_sensitivity": "低（茶价稳定）",
+    "labor_cost_ratio": "20%",
+    "rent_cost_ratio": "15%",
+    "risk_level": "中高",
+    "strategy_advice": "中式体验差异化：茶+空间溢价，瞄准商务社交+文化消费双场景"
   }
 }

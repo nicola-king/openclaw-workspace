@@ -29,6 +29,21 @@ from typing import Dict, List, Optional, Callable, Any, Union
 from dataclasses import dataclass, asdict
 from enum import Enum
 
+# TokenJuice 压缩层注入
+_TOKEN_JUICE_PATH = Path.home() / ".openclaw" / "workspace" / "scripts" / "token_compressor.py"
+TokenJuice = None
+_juice = None
+if _TOKEN_JUICE_PATH.exists():
+    try:
+        import importlib.util
+        _tj_spec = importlib.util.spec_from_file_location("token_compressor", str(_TOKEN_JUICE_PATH))
+        _tj_mod = importlib.util.module_from_spec(_tj_spec)
+        _tj_spec.loader.exec_module(_tj_mod)
+        TokenJuice = _tj_mod.TokenJuice
+        _juice = TokenJuice
+    except Exception:
+        pass
+
 
 # ═══════════════════════════════════════════════════════════════
 # 日志初始化 (必须在任何日志调用之前)
@@ -319,6 +334,38 @@ class TaiyiSharedSearchService:
         logger.info("🌐 太一统一情报引擎初始化完成")
 
     # ── 核心搜索 ──
+    def compress_results(self, results: List[Dict], context: str = "search_results") -> List[Dict]:
+        """
+        对搜索结果应用 TokenJuice 压缩
+        在结果进入 LLM 之前调用，节省 token 成本
+        """
+        if not TokenJuice or not results:
+            return results
+        compressed = []
+        total_original = 0
+        total_compressed = 0
+        for r in results:
+            snippet = r.get("snippet") or r.get("text") or r.get("content", "")
+            if snippet:
+                c = TokenJuice.compress(snippet, context=context)
+                total_original += c["original_chars"]
+                total_compressed += c["compressed_chars"]
+                # 用压缩后的内容替换
+                new_r = dict(r)
+                for key in ("snippet", "text", "content"):
+                    if key in new_r:
+                        new_r[key] = c["text"]
+                        break
+                new_r["_compressed"] = True
+                new_r["_compression_ratio"] = c["ratio"]
+                compressed.append(new_r)
+            else:
+                compressed.append(r)
+        if total_compressed > 0:
+            ratio = round(total_compressed / total_original * 100, 1) if total_original > 0 else 100
+            logger.info(f"🔧 TokenJuice 压缩: {total_original}→{total_compressed} chars ({ratio}%)")
+        return compressed
+
     def search(self, request: SearchRequest) -> SearchResult:
         start = time.time()
 

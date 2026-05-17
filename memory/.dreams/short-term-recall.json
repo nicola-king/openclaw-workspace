@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-16T10:00:35.110Z",
+  "updatedAt": "2026-05-17T11:06:24.247Z",
   "entries": {
     "memory:memory/2026-05-04.md:285:324": {
       "key": "memory:memory/2026-05-04.md:285:324",
@@ -261,13 +261,13 @@
       "endLine": 114,
       "source": "memory",
       "snippet": "### 57个文件路径错误 - v10.0 代码写死 `/home/nicola` 路径，导致定时任务脚本运行失败 - 57个 .py/.sh 文件路径替换 /home/nicola → /home/sayelf - crontab 路径更新 + 日志目录创建 - 状态：✅ 完成 ## [决策] 08:00 晨间新闻推送修复 ### 问题 crontab 中 08:00 任务 `python3 core.py --daily` 的 `--daily` 参数不合法，core.py 不接受 --daily 有效任务：competitor / scoring / manufacturer / forecast 导致每天早上脚本报错退出，无任何输出 ### 修复 crontab 行改为：`python3 core.py --config config.json --task competitor` 手动执行一次验证通过 ✅，竞品分析返回 2 条结果（Karmod / DXH） ### 其他发现 - OpenClaw 内置 cron 列表为空，所有定时任务均通过系统 crontab 运行 - obsidian-cli 已安装于 `/usr/local/bin/obsidian-cli` ## [架构升级] 系统 crontab → OpenClaw cron 迁移 ### 执行 清空原 crontab，全部 15 个任务迁移至 OpenClaw cron 系统： - 08:00 晨间简报 / 14:00 GEO优化 / 18:00 竞品监控 → 推送 Telegram - 0",
-      "recallCount": 7,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 7,
+      "totalScore": 8,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-06T01:00:36.931Z",
-      "lastRecalledAt": "2026-05-16T00:00:50.527Z",
+      "lastRecalledAt": "2026-05-17T03:51:00.123Z",
       "queryHashes": [
         "c2ed91d77456",
         "921c566541c5",
@@ -275,14 +275,16 @@
         "dc8fc4c5be34",
         "5a19891d36b5",
         "525222249bfb",
-        "757c5c46674f"
+        "757c5c46674f",
+        "372557e38362"
       ],
       "recallDays": [
         "2026-05-06",
         "2026-05-07",
         "2026-05-09",
         "2026-05-13",
-        "2026-05-16"
+        "2026-05-16",
+        "2026-05-17"
       ],
       "conceptTags": [
         "v10.0",
@@ -372,13 +374,13 @@
       "endLine": 187,
       "source": "memory",
       "snippet": "Skills x12：amazon_radar / source_matcher / listing_optimizer / price_monitor / review_analyzer / fba_calculator / supplier_scorer / platform_monitor / bulk_mail_composer / catalog_pusher / stock_alert / quick_quote 策略：富化输出100家 → 批量开发信 → 48h全发 → 快速报价 ### 定制产品 Agent Skills x6 + 品类x12：persona_builder / solution_composer / rfq_parser / relationship_log / sample_tracker / tech_doc_pack 品类：钢结构集成房(3) / 变压器(3) / 摩配汽配(3) / 储能(3) 策略：富化输出10家 → 深度画像 → 1对1方案 → 长周期跟进 ### 数据流 情报 → 富化(轻/深) → 触达 → 履约 治理规则：自动进化 / 推送确认 / 硬锁定 文档：`docs/agent-architecture-v11.md` ## [能力涌现] 多源搜索全链路（国家动态适配） ### 增强内容 - multi_source_search.py → 动态适配国家搜索资源（澳大利亚/沙特/UAE/卡塔尔/美国/英国/加拿大/德国/法国/中国） - 9个搜索链路自动生成（Google/Bing/DDG/LinkedIn/黄",
-      "recallCount": 7,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 7,
+      "totalScore": 8,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-06T01:00:36.931Z",
-      "lastRecalledAt": "2026-05-13T06:20:18.969Z",
+      "lastRecalledAt": "2026-05-17T02:00:18.185Z",
       "queryHashes": [
         "c2ed91d77456",
         "921c566541c5",
@@ -386,14 +388,16 @@
         "a348c7a144cd",
         "58850f00f0f6",
         "1e6259cdf9b7",
-        "e5c0e65a9cbd"
+        "e5c0e65a9cbd",
+        "87fbe4aaf3f7"
       ],
       "recallDays": [
         "2026-05-06",
         "2026-05-07",
         "2026-05-09",
         "2026-05-11",
-        "2026-05-13"
+        "2026-05-13",
+        "2026-05-17"
       ],
       "conceptTags": [
         "amazon-radar",
@@ -489,13 +493,13 @@
       "endLine": 120,
       "source": "memory",
       "snippet": "├─ 工厂触达记录（情报→工厂→成单追踪） └─ 订阅管理（注册/计费/续费/限额） P1 subscription 工厂订阅计费 ✅ └─ 3级方案：free_trial/basic/pro P2 服务层（增值附送） ├─ 报价引擎（含退税）✅ ├─ 合同模板（中东专版）✅ ├─ 合规引擎（退税查询）✅ ├─ 供应商匹配（9家工厂）✅ └─ 产品目录 RAG（5款产品）✅ ``` 关键配置： - scraper.py 穿透式搜索器 v3（cloudscraper + brotli + Chromium） - SAU-xxx 情报均已验证 ## [任务] session 结束 — 暂停开发 SAYELF 要求暂停，等完善后再继续。 待办： - [ ] chrome config toolProgress = false 已设置但未验证效果 - [ ] 项目雷达注入 etimad.sa 实时数据（下次继续） - [ ] 工厂端 Telegram 推送界面（下次继续） ## [Session 结束汇报] 2026-05-06 ### 完成工作 **1. 用户架构对接** - 用户提供的跨境贸易 Agent 5层架构 → 按 Elon 五步法过滤 - 12个业务模块 → 精简为5个核心模块（去掉了订单追踪/退税(后修正保留)/报关等） - 确认双模式运营：买家情报平台(核心) + 中间贸易(机会) **2. 核心产品 — buyer-intel 买家情报引擎** - 项目/公司/人脉 15条已验证数据入库 - 情报",
-      "recallCount": 10,
+      "recallCount": 13,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 10,
+      "totalScore": 13,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-07T01:00:54.112Z",
-      "lastRecalledAt": "2026-05-16T10:00:35.110Z",
+      "lastRecalledAt": "2026-05-17T11:06:24.247Z",
       "queryHashes": [
         "921c566541c5",
         "dc8fc4c5be34",
@@ -506,7 +510,10 @@
         "1cd438e85167",
         "1c9267784948",
         "3b5de6a000f4",
-        "8cc5ac31c339"
+        "8cc5ac31c339",
+        "c00828985dac",
+        "8c2911b5febf",
+        "772224c67cb6"
       ],
       "recallDays": [
         "2026-05-07",
@@ -515,7 +522,8 @@
         "2026-05-10",
         "2026-05-11",
         "2026-05-15",
-        "2026-05-16"
+        "2026-05-16",
+        "2026-05-17"
       ],
       "conceptTags": [
         "注册/计费/续费/限额",
@@ -1112,13 +1120,13 @@
       "endLine": 163,
       "source": "memory",
       "snippet": "# 启动分发服务器（本地端口 5200） python3 skills/oerv-narrative-engine/dispatch.py # 一键流水线输出 python3 skills/oerv-narrative-engine/dispatch.py --dry-run \"你的闪念\" ``` ### Silent Operator 启用（2026-05-09 12:53） - 自动执行架构就绪，无需手动触发 `/oerv` - 分发服务器已启动 → `http://0.0.0.0:5200` - 服务保活 cron 每 5 分钟检查 - 每日 10:00 内容脉冲 cron（从记忆/对话中提取素材自动生成） - 注册脚本 `scripts/oerv_operator.sh` ### 待配置 - 配置 `skills/oerv-narrative-engine/.env` 中的 LLM_API_KEY 启用 AI 驱动写作 - 配置 WECHAT_APP_ID/SECRET 启用公众号自动推送 - 将手机拍摄的生活照放入 `media/` 目录，引擎自动检索作为配图候选 ## [cron] 跨境-API服务保活 (07:30) - 买家情报 API (port 8100) 未运行 - 已重启成功 (PID: 49860) [跨境-API保活] 2026-05-09 08:15 - health check: 200 OK [cron:跨境-API保活 2026-05-09 09:20] - 买家情报 API (localhost:8100/health): ✅ H",
-      "recallCount": 11,
+      "recallCount": 12,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 11,
+      "totalScore": 12,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-10T00:00:11.094Z",
-      "lastRecalledAt": "2026-05-15T10:00:36.594Z",
+      "lastRecalledAt": "2026-05-17T00:00:08.264Z",
       "queryHashes": [
         "786669ad2977",
         "3a24fb565f15",
@@ -1130,7 +1138,8 @@
         "062b4b584024",
         "80ff9d97af4d",
         "74f2e24e8bd6",
-        "88fa24e00b9a"
+        "88fa24e00b9a",
+        "47eaa83563b5"
       ],
       "recallDays": [
         "2026-05-10",
@@ -1138,7 +1147,8 @@
         "2026-05-12",
         "2026-05-13",
         "2026-05-14",
-        "2026-05-15"
+        "2026-05-15",
+        "2026-05-17"
       ],
       "conceptTags": [
         "dry-run",
@@ -1266,13 +1276,13 @@
       "endLine": 136,
       "source": "memory",
       "snippet": "OERVEngine._write() → O.E.R.V 极简黑客风写作（单句成行/零形容词/80%出刀） │ ▼ OERVEngine._generate_visuals() → 2 组 16:9 电影感 Midjourney/Flux prompt │ ▼ Webhook / Dispatch → 公众号推送 / 本地保存 / 小红书卡片 ``` ### 文件清单 | 路径 | 说明 | |------|------| | `skills/oerv-narrative-engine/SKILL.md` | Agent 可执行协议，含触发规则+输出模板+负向列表 | | `skills/oerv-narrative-engine/engine.py` | 核心引擎：情绪检测/场景提取/写作/视觉Prompt/小红书卡片 | | `skills/oerv-narrative-engine/dispatch.py` | 分发服务：Flask Webhook + 公众号草稿推送 + 发布历史 | | `skills/oerv-narrative-engine/.env` | 配置模板（LLM API / 公众号凭证） | | `scripts/deploy_oerv.sh` | 一键部署脚本 | ### 快捷命令 - `/oerv`：闪念→文章+视觉Prompt - `/oerv-card`：闪念→小红书卡片 ### 用法 ```bash # 查看 3 篇示范文章 python3 skills/oerv-narrative-en",
-      "recallCount": 10,
+      "recallCount": 12,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 10,
+      "totalScore": 12,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-10T02:00:32.028Z",
-      "lastRecalledAt": "2026-05-16T02:00:21.400Z",
+      "lastRecalledAt": "2026-05-17T02:00:33.417Z",
       "queryHashes": [
         "0deaac3a8336",
         "b53a67adea80",
@@ -1283,7 +1293,9 @@
         "0f369197adc7",
         "f3fd57599049",
         "74f2e24e8bd6",
-        "72ae13d2d675"
+        "72ae13d2d675",
+        "87fbe4aaf3f7",
+        "68517a8667c9"
       ],
       "recallDays": [
         "2026-05-10",
@@ -1292,7 +1304,8 @@
         "2026-05-13",
         "2026-05-14",
         "2026-05-15",
-        "2026-05-16"
+        "2026-05-16",
+        "2026-05-17"
       ],
       "conceptTags": [
         "o.e.r.v",
@@ -1409,13 +1422,13 @@
       "endLine": 82,
       "source": "memory",
       "snippet": "- 澳洲市场 4 封（Aus Modular / Melbourne Prefab / Apex / Pacific Prefab） - 沙特项目触达 2 封（法狮龙 → Jewel of the Bride / 邦山 → NEOM） - 状态：已通知 SAYELF 待审核 [保活] O.E.R.V 分发服务器检查 — 13:35 - 状态: ✅ 运行中 (PID 110785, v2.0) - 操作: 无需重启 [cron:跨境-API服务保活] 2026-05-10 13:45 | health check: 200 OK (正常运行) [保活] 买家情报 API 15:10 健康检查通过（200），无需重启 [2026-05-10 15:25:09] [保活] 买家情报API health check: 200 OK [2026-05-10 17:50] [保活] 买家情报API (port 8100) 未运行，启动成功 PID:139031, health=200 ## 18:15 [cron] 智能文件转 MD 扫描 - 扫描结果：发现 8 个待转换文件（增量） - 成功：6（JSON 文件） - 跳过：2 - 失败：0 - 静默完成，未推送 [cron] 跨境-API服务保活 18:35 — health check: 200 ✅ 运行正常 [cron] 跨境-API服务保活 18:55 — health check: 200 ✅ 运行正常 [cron 跨境-API服务保活] 20:20 — 买家情报 API (localhost:8100) 健康检查通",
-      "recallCount": 7,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 7,
+      "totalScore": 8,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-11T10:00:29.518Z",
-      "lastRecalledAt": "2026-05-15T10:00:36.594Z",
+      "lastRecalledAt": "2026-05-17T00:00:08.264Z",
       "queryHashes": [
         "3a24fb565f15",
         "62e845fd57e6",
@@ -1423,14 +1436,16 @@
         "908978dc625f",
         "062b4b584024",
         "80ff9d97af4d",
-        "88fa24e00b9a"
+        "88fa24e00b9a",
+        "47eaa83563b5"
       ],
       "recallDays": [
         "2026-05-11",
         "2026-05-12",
         "2026-05-13",
         "2026-05-14",
-        "2026-05-15"
+        "2026-05-15",
+        "2026-05-17"
       ],
       "conceptTags": [
         "o.e.r.v",
@@ -1450,13 +1465,13 @@
       "endLine": 32,
       "source": "memory",
       "snippet": "# 2026-05-10 记忆 ## Cron 任务 ### 17:40 跨境-API服务保活 ### 22:45 跨境-API服务保活 - health endpoint → 200 ✅ 服务正常运行 - 无需启动，静默完成 - 状态：✅ 已自动恢复 - 发现时未运行（curl 000），已手动启动脚本 - PID: 138591，health check → 200 OK - [cron] 13:35 跨境 API 保活 — health 检查通过 (HTTP 200) - [cron] 12:15 智能文件转 MD — 扫描 6 个文件，4 转换成功，2 跳过，0 失败。累计已转换 152 文件 - [cron] 09:00 跨境富化Agent — 执行完成，模块健康，状态 healthy - [cron] 03:35 跨境 API 服务保活检查 → health 返回 200，正常运行，无需干预 - [cron] 09:10 跨境 API 服务保活检查 → health 返回 200，正常运行，无需干预 [cron:跨境-API服务保活] 2026-05-10 04:25 — Health check 200 OK, service running. ## [Cron] MD-智能自动转换 — 2026-05-10 06:15 - 脚本: scripts/md-watch - 结果: ✅ 1 成功 (converter_state.json, 12KB), ⏭ 0 跳过, ❌ 0 失败 - 增量模式，无异常 ## [保活] O.E.R.V 分发服务 — 20",
-      "recallCount": 8,
+      "recallCount": 9,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 8,
+      "totalScore": 9,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-11T10:00:29.518Z",
-      "lastRecalledAt": "2026-05-15T10:00:36.594Z",
+      "lastRecalledAt": "2026-05-17T00:00:08.264Z",
       "queryHashes": [
         "3a24fb565f15",
         "62e845fd57e6",
@@ -1465,14 +1480,16 @@
         "062b4b584024",
         "80ff9d97af4d",
         "f3ebed24a6f5",
-        "88fa24e00b9a"
+        "88fa24e00b9a",
+        "47eaa83563b5"
       ],
       "recallDays": [
         "2026-05-11",
         "2026-05-12",
         "2026-05-13",
         "2026-05-14",
-        "2026-05-15"
+        "2026-05-15",
+        "2026-05-17"
       ],
       "conceptTags": [
         "跨境-api服务保活",
@@ -1676,6 +1693,224 @@
         "轨道",
         "运营",
         "融合"
+      ]
+    },
+    "memory:memory/2026-05-08.md:135:172": {
+      "key": "memory:memory/2026-05-08.md:135:172",
+      "path": "memory/2026-05-08.md",
+      "startLine": 135,
+      "endLine": 172,
+      "source": "memory",
+      "snippet": "- 自动识别模式输出人话 - 无基础设施泄漏（无 mode=/api/cursor/hasNext） - 集成到 dispatcher → result[\"formatted\"] ## [架构升级] 跨境贸易模式 → 旅游探路者移植 ### 移植内容 **1. shared/ 去重 (trade v11 symlink 模式)** - domestic-travel-agent/shared/core/ 新建 - 4个重复模块移入 shared/: base / weather_safety / destination_guide / report_validator - 国内/国际版 core/ 通过 symlink 引用 shared/ - 节省 4×8KB = 32KB 重复代码 **2. orchestrator.py 场景编排 (trade v11 orchestrator 模式)** - short: 3阶段 → 9模块（决策→执行→保障） - deep: 4阶段 → 12模块（研究→规划→体验→保障） - group: 3阶段 → 9模块（规划→体验→保障） - 每个场景有明确 strategy（48h极速/沉浸/团体协同） **3. 5步验证模式 (trade v11 买家情报验证管道)** - phone/website/address/rating/reviews 五项加权验证 - 置信度计算 + passed/failed 判定 - 最终输出附带 verification 报告 ### 文件 - domestic-travel-agent/sh",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-17T00:08:40.861Z",
+      "lastRecalledAt": "2026-05-17T00:08:40.861Z",
+      "queryHashes": [
+        "598b0b8dc045"
+      ],
+      "recallDays": [
+        "2026-05-17"
+      ],
+      "conceptTags": [
+        "api/cursor/hasnext",
+        "weather-safety",
+        "destination-guide",
+        "report-validator",
+        "国内/国际版",
+        "orchestrator.py",
+        "48h极速/沉浸/团体协同",
+        "passed/failed"
+      ]
+    },
+    "memory:memory/2026-05-12.md:1:39": {
+      "key": "memory:memory/2026-05-12.md:1:39",
+      "path": "memory/2026-05-12.md",
+      "startLine": 1,
+      "endLine": 39,
+      "source": "memory",
+      "snippet": "# 2026-05-12 记事 ## [保活] 买家情报 API 健康检查 (20:15) - HTTP 200 ✅ 运行正常 ## [保活] 买家情报 API 健康检查 (22:25) - HTTP 200 ✅ 运行正常 ## [保活] 买家情报 API 健康检查 (21:00) - HTTP 200 ✅ 运行正常 ## [保活] 买家情报 API 健康检查 (21:30) - HTTP 200 ✅ 运行正常 ## [任务] MD 智能转换 (18:15) - 扫描脚本执行完成 - 7 文件成功转换 (JSON→MD) - 3 跳过, 0 失败 - 增量模式无异常 ## [任务] OERV文章 — 加完柴油，我翻遍了所有的卡 ## [保活] 买家情报API服务健康检查 - **13:20** → HTTP 200 ✅（正常运行） - **时间**: 12:20 - **检查结果**: http://localhost:8100/health → 200 ✅ - **状态**: 服务正常运行，无需操作 **触发**：SAYELF /oerv 闪念 **原始素材**：早晨开路虎发现4去加0#柴油（8.47元/升，合计564元），翻遍所有卡凑不够300元。需驱车150公里外签字收30万工程款，不知流程多久、款何时到。 **OERV输出**：`output/oerv-2026-05-12/` - `article.md` — 完整OERV叙事文章（极简黑客风，单句成行） - `visual-prompts.md` — 2组16:9电影感视觉Prompt + 公众号",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-17T02:00:18.185Z",
+      "lastRecalledAt": "2026-05-17T02:00:33.417Z",
+      "queryHashes": [
+        "87fbe4aaf3f7",
+        "68517a8667c9"
+      ],
+      "recallDays": [
+        "2026-05-17"
+      ],
+      "conceptTags": [
+        "8100/health",
+        "8.47元/升",
+        "output/oerv-2026-05-12",
+        "article.md",
+        "visual-prompts.md",
+        "记事",
+        "情报",
+        "api"
+      ]
+    },
+    "memory:memory/2026-05-16.md:152:178": {
+      "key": "memory:memory/2026-05-16.md:152:178",
+      "path": "memory/2026-05-16.md",
+      "startLine": 152,
+      "endLine": 178,
+      "source": "memory",
+      "snippet": "- SAYELF 的正式代码已部署到 `store-locator-agent/app.py` ## art-agent 体系升级（18:44-19:32） **版本：** v3.0 → **v3.1** ### 新增模块（品牌库 42→67） | 模块 | 子项 | 说明 | |------|------|------| | 🏛️ 宋代美学 | 10画家·5书法·6词人·4著作·3哲学·4艺 | 文化艺术知识层，动态匹配 | | 🌍 世界大师 | 安藤忠雄/卒姆托/隈研吾/路易斯康 | 5路推荐引擎（地理/场景/情绪/关键词/材质） | | 🌿 生态场景 | 海岸/河流/溪谷/山地/高原/平原/城市/沙漠/森林/湖畔 | 10种场景×材质×大师交叉 | | 🔩 科技材质 | 不锈钢/玻璃/铜/钛/碳纤维/水磨石/微水泥/黑钢/亚克力 | 场景限制+情绪过滤+风格匹配 | | 😌 情绪空间 | 焦虑→湖居/疲惫→森林/独处→山居/冥想→禅修/社交→茶室/奢华→会所 | 6种空间处方 | ### 自进化引擎 v2.0 - 调度前查询历史模式 → 调度后记录 → 反馈学习(接受+10%/拒绝-20%/手动调→新模式) - 每 50 次或 24h → 自动优化权重矩阵 - 调度器 `dispatcher.py` 已嵌入完整三阶段循环 ## 文档产出（Telegram 可保存） | 文件 | 大小 | 类型 | |------|------|------| | `notes/commercial-distillation-report.md` | 9.9KB |",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-17T02:00:18.185Z",
+      "lastRecalledAt": "2026-05-17T02:00:18.185Z",
+      "queryHashes": [
+        "87fbe4aaf3f7"
+      ],
+      "recallDays": [
+        "2026-05-17"
+      ],
+      "conceptTags": [
+        "store-locator-agent/app.py",
+        "art-agent",
+        "44-19",
+        "v3.0",
+        "v3.1",
+        "安藤忠雄/卒姆托/隈研吾/路易斯康",
+        "地理/场景/情绪/关键词/材质",
+        "海岸/河流/溪谷/山地/高原/平原/城市/沙漠/森林/湖畔"
+      ]
+    },
+    "memory:memory/2026-05-17.md:59:101": {
+      "key": "memory:memory/2026-05-17.md:59:101",
+      "path": "memory/2026-05-17.md",
+      "startLine": 59,
+      "endLine": 101,
+      "source": "memory",
+      "snippet": "**实测效果**: 平均节省 ~50% token（搜索30% / HTML 67% / 去重 97%） ### 修正清单确认 - ✅ 报告名从 Kami → TaiYi（已修正） - ✅ 渝北区数据已纳入（咖啡馆#1新牌坊） - ✅ 巴国城已加入对比（包子店#2） - ✅ 情报晚报自愈（SRE已标记） - ✅ 动态经济背景 skill 已注入 ## [保活] 买家情报 API 服务健康检查 **时间**: 08:50 | **结果**: ✅ 200 OK **状态**: 正常运行，无需重启 ## [cron] 09:00 跨境-富化Agent ## [cron] 09:05 跨境-API服务保活 - 买家情报 API → ✅ 健康（200） - 运行 `company-enricher/core.py` → ✅ 健康（107家企业全量已富化） - 上次富化：2026-05-14（14家企业） - 本轮新增：0（无新公司待处理，静默完成） [cron:跨境-API保活] 09:20 — 买家情报 API (localhost:8100/health) 健康检查通过 ✅，HTTP 200，无需干预。 ## [cron] 10:05 跨境-API服务保活 - 买家情报 API health → 200 ✅ - 服务正常，无需启动 ## [cron] 10:05 OERV-分发服务保活 - O.E.R.V 分发服务器 → ✅ 运行中 (PID 55823) - 状态: ok, version 2.0 - 无需启动 ## [cron] 10:35 跨境-API服务",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-17T03:50:54.902Z",
+      "lastRecalledAt": "2026-05-17T03:50:54.902Z",
+      "queryHashes": [
+        "e59d792419a0"
+      ],
+      "recallDays": [
+        "2026-05-17"
+      ],
+      "conceptTags": [
+        "跨境-富化agent",
+        "跨境-api服务保活",
+        "company-enricher/core.py",
+        "跨境-api保活",
+        "8100/health",
+        "oerv-分发服务保活",
+        "o.e.r.v",
+        "2.0"
+      ]
+    },
+    "memory:memory/2026-05-16.md:1:41": {
+      "key": "memory:memory/2026-05-16.md:1:41",
+      "path": "memory/2026-05-16.md",
+      "startLine": 1,
+      "endLine": 41,
+      "source": "memory",
+      "snippet": "# 2026-05-16 Daily Log ## 22:55 [cron] 买家情报API保活 - 检查结果：HTTP 200，服务运行正常 - 无需操作 ## 23:05 [cron] 买家情报API保活 - 检查结果：HTTP 200，服务运行正常 ## 23:15 [cron] 买家情报API保活 - 检查结果：HTTP 200，服务运行正常 - 无需操作 ## 19:20 [cron] OERV分发服务保活 - 检查结果：运行正常 (PID 55823, status ok, version 2.0) - 无需操作 ## 18:15 [cron] MD智能自动转换 - 扫描 24 个文件，✅ 13 成功，⏭ 10 跳过，❌ 1 失败 - 失败: none.yaml (markitdown 解析错误) ## 19:00 [cron] 跨境-API服务保活 - 买家情报 API (localhost:8100/health) → HTTP 200 ✅ - 服务正常运行，无需重启 ## 18:05 [cron] OERV分发服务保活 - OERV dispatch: running (PID 55823, v2.0) ✅ ## 17:55 [cron] 跨境-API服务保活 - 买家情报 API (localhost:8100/health) → 200 OK，正常运行 - 无需重启 ## [情报晚报] 2026-05-16 18:00 ### 关键新增情报 1. 🆕 GCC Q1 2026合同授予额同比下降9.7%至612亿美元，沙特暴跌51.1%（",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-17T03:50:54.902Z",
+      "lastRecalledAt": "2026-05-17T03:50:54.902Z",
+      "queryHashes": [
+        "e59d792419a0"
+      ],
+      "recallDays": [
+        "2026-05-17"
+      ],
+      "conceptTags": [
+        "2.0",
+        "none.yaml",
+        "跨境-api服务保活",
+        "8100/health",
+        "v2.0",
+        "2026合同授予额同比下降9.7",
+        "沙特暴跌51.1",
+        "log"
+      ]
+    },
+    "memory:memory/2026-05-17.md:92:104": {
+      "key": "memory:memory/2026-05-17.md:92:104",
+      "path": "memory/2026-05-17.md",
+      "startLine": 92,
+      "endLine": 104,
+      "source": "memory",
+      "snippet": "- 无需启动 ## [cron] 10:35 跨境-API服务保活 - 检查 http://localhost:8100/health → 200 ✅ [cron·保活] 跨境 API 服务健康检查 11:20 — ✅ 200 OK [2026-05-17 11:35:05] [cron:跨境-API服务保活] buyer intelligence API health check: 200 ✅ [cron] 跨境-API服务保活 @ 11:45 - health check: http://localhost:8100/health → 200 ✅ - 无需重启，服务正常运行",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-17T03:50:54.902Z",
+      "lastRecalledAt": "2026-05-17T03:50:54.902Z",
+      "queryHashes": [
+        "e59d792419a0"
+      ],
+      "recallDays": [
+        "2026-05-17"
+      ],
+      "conceptTags": [
+        "跨境-api服务保活",
+        "8100/health",
+        "启动",
+        "cron",
+        "api",
+        "服务",
+        "检查",
+        "http"
+      ]
+    },
+    "memory:memory/2026-05-15.md:1:34": {
+      "key": "memory:memory/2026-05-15.md:1:34",
+      "path": "memory/2026-05-15.md",
+      "startLine": 1,
+      "endLine": 34,
+      "source": "memory",
+      "snippet": "## 2026-05-15 ### 晚间例行任务 - **21:05** [任务] 跨境 API 服务保活 — 健康检查通过 (HTTP 200)，无需启动 ✅ ## [轨道运营] 行业动态模块（AIHOT模式）上线 **新增 intelligence/industry.py** — 搜索聚合轨道交通行业新闻 - 品类：建设动态/设备材料/技术创新/运营管理/政策规划 - 使用太一 penetrating_search.fetch_requests（cloudscraper 轻量搜索） - 5品类 × 2关键词 × DDG单引擎 ≈ 10s 扫描 **DB 新增 industry_news 表** — source_url 去重，按品类分类 **日报新增行业动态章节** — AIHOT 风格的分类链接列表 **定时更新：** - 10:00 搜索 → 已删除（整合到11:00） - 11:00 推送 → 全链路：招标扫描+行业动态+品牌美化+双格式+飞书 **首次测试结果：** 17条行业动态入库（建设6/设备6/政策5），PDF从1页增至3页 [2026-05-15 22:05:08] [cron] 跨境-API服务保活: health=200 正常 ## [新Skill] 东方美学空间 agent v1.0 首跑成功 **管道：** 情绪识别 → 空间场景 → 灵感搜索 → 品牌PDF(宋式水墨风) **核心能力：** - 7种情绪→空间映射（焦虑/疲惫/独处/创作/冥想/社交/隐奢） - 7个空间模板含完整场景叙事 - 宋式美学 × 世界大师融合 -",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-17T03:51:00.123Z",
+      "lastRecalledAt": "2026-05-17T03:51:00.123Z",
+      "queryHashes": [
+        "372557e38362"
+      ],
+      "recallDays": [
+        "2026-05-17"
+      ],
+      "conceptTags": [
+        "intelligence/industry.py",
+        "建设动态/设备材料/技术创新/运营管理/政策规划",
+        "industry-news",
+        "source-url",
+        "建设6/设备6/政策5",
+        "跨境-api服务保活",
+        "v1.0",
+        "焦虑/疲惫/独处/创作/冥想/社交/隐奢"
       ]
     }
   }

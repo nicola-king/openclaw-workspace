@@ -1,0 +1,38 @@
+/* 🏮 中华传统色 · 东方美学品牌 CSS 变量 */
+/* 对齐 html-anything 渲染引擎使用 */
+
+:root {
+  /* ── 底色系 ── */
+  --canvas: #F2F0EB;
+  --canvas-light: #F8F7F4;
+  --canvas-card: #FAF8F5;
+  --canvas-overlay: rgba(242, 240, 235, 0.95);
+
+  /* ── 文字色系 ── */
+  --ink: #3C3C3C;
+  --body: #4A4A4A;
+  --ink-strong: #1A1A1A;
+  --ink-muted: #7A7A6A;
+  --ink-light: #A8A89A;
+
+  /* ── 结构色系 ── */
+  --hairline: #E5E0D8;
+  --divider: #EDE8E0;
+  --surface: #F5F2EC;
+
+  /* ── 主色系 ── */
+  --primary: #C23B22;         /* 朱砂红 */
+  --primary-light: #DB5A6B;   /* 海棠红 */
+  --on-primary: #FAF8F5;
+
+  /* ── 点缀色系 ── */
+  --accent-gold: #CDAA5C;     /* 黄不老 */
+  --accent-teal: #7EC8E3;     /* 天青色 */
+  --accent-jade: #5B8C7B;     /* 瑾瑜青 */
+  --accent-pink: #F4A7B9;     /* 桃夭 */
+  --accent-blue: #0E7B9E;     /* 孔雀蓝 */
+  --accent-mist: #D9B4A7;     /* 海天霞 */
+  --accent-purple: #8B5A76;   /* 紫檀 */
+  --accent-ink: #1A1A1A;      /* 玄色 */
+  --accent-red: #9D2933;      /* 胭脂 */
+}

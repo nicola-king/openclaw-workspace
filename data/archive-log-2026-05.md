@@ -62,3 +62,32 @@
 - `data/.archive/202605/` — 已有月归档机制正常运行
 - `memory/2026-05-16.md` (8.5K) — 今日活跃记忆
 - `reports/` — 7 份报告已归档完毕
+
+---
+
+## 2026-05-17 22:00 数据归档
+
+### 已清理
+- `/tmp/.org.chromium.Chromium.*` — 143 个过期临时文件 (>1d)
+- `data/shared-search-cache/` — 26 个过期缓存文件 (>7d)
+- `data/search-automation/` — 2 个过期 sweep 文件 (>7d)
+
+### 保留（活跃中）
+- `/tmp/cross-border-evening-20260517.md` (10K, 18:00 生成)
+- `/tmp/competitor-monitor-20260517.md` (1.5K, 18:00 生成)
+- `/tmp/geo-report-20260517.md` (9.9K, 14:00 生成)
+- `reports/` — 7 份报告，稳定
+- `notes/` — 6.9M 笔记文件，重庆项目资料活跃
+
+### 数据目录概览
+| 目录 | 大小 | 变化 |
+|------|------|------|
+| workspace | 25G | voice-pro 已知 (23G) |
+| data | 1.2M | -2.3M (清洗缓存) |
+| reports | 92K | 不变 |
+| logs | 1.1M | 不变 |
+| memory | 428K | 不变 |
+
+### 磁盘状态
+- 总量 1.8T，已用 106G (7%)，空间充裕
+- 今日无新增报告，无 PID 残留，系统健康

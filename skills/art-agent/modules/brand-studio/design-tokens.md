@@ -7941,5 +7941,115 @@
         "用户手动指定某一模块 (提升该模块权重)"
       ]
     }
+  },
+  "chinese-traditional": {
+    "name": "中华传统色 · 东方美学",
+    "description": "千年华夏文化之美。源自《中国传统色》郭浩·故宫色谱·宋元明清器物色谱。五色观为本：青赤黄白黑。套色灵感来自天青汝窑、海棠红宋代服饰、孔雀蓝元青花、月白宋瓷、玄色水墨。适合中式茶馆、国潮品牌、传统文化、诗词书画类视觉内容。与 architecture.md 路线一致：东方美学是你的核心资产。",
+    "colors": {
+      "canvas": "#F2F0EB",
+      "canvas-light": "#F8F7F4",
+      "ink": "#3C3C3C",
+      "body": "#4A4A4A",
+      "ink-strong": "#1A1A1A",
+      "ink-muted": "#7A7A6A",
+      "ink-light": "#A8A89A",
+      "hairline": "#E5E0D8",
+      "divider": "#EDE8E0",
+      "surface": "#F5F2EC",
+      "primary": "#C23B22",
+      "primary-light": "#DB5A6B",
+      "on-primary": "#FAF8F5",
+      "canvas-card": "#FAF8F5",
+      "canvas-overlay": "rgba(242, 240, 235, 0.95)",
+      "accent-gold": "#CDAA5C",
+      "accent-teal": "#7EC8E3",
+      "accent-jade": "#5B8C7B",
+      "accent-pink": "#F4A7B9",
+      "accent-blue": "#0E7B9E",
+      "accent-mist": "#D9B4A7",
+      "accent-purple": "#8B5A76",
+      "accent-ink": "#1A1A1A",
+      "accent-red": "#9D2933"
+    },
+    "typography": {
+      "hero-display": {
+        "fontFamily": "\"Noto Serif SC\", \"Source Han Serif SC\", \"STSong\", \"SimSun\", serif",
+        "fontWeight": 700,
+        "letterSpacing": "0.08em"
+      },
+      "heading": {
+        "fontFamily": "\"Noto Serif SC\", \"Source Han Serif SC\", serif",
+        "fontWeight": 600,
+        "letterSpacing": "0.05em"
+      },
+      "body": {
+        "fontFamily": "\"Noto Sans SC\", \"Source Han Sans SC\", \"PingFang SC\", sans-serif",
+        "fontWeight": 400,
+        "lineHeight": 1.8
+      },
+      "caption": {
+        "fontFamily": "\"Noto Sans SC\", sans-serif",
+        "fontWeight": 300,
+        "letterSpacing": "0.03em"
+      }
+    },
+    "spacing": {
+      "xs": 4,
+      "sm": 8,
+      "md": 16,
+      "lg": 32,
+      "xl": 64,
+      "xxl": 120
+    },
+    "radius": {
+      "sm": 0,
+      "md": 2,
+      "lg": 4,
+      "xl": 8
+    },
+    "templates": {
+      "tea-house": {
+        "name": "茶空间",
+        "colors": {
+          "primary": "#7EC8E3",
+          "secondary": "#789262",
+          "accent": "#D9B4A7",
+          "text": "#4A6670"
+        }
+      },
+      "luxury-dining": {
+        "name": "高端宴席",
+        "colors": {
+          "primary": "#C23B22",
+          "secondary": "#1A1A1A",
+          "accent": "#DAA520",
+          "text": "#3C3C3C"
+        }
+      },
+      "literati": {
+        "name": "文人书房",
+        "colors": {
+          "primary": "#4A6670",
+          "secondary": "#A67B5B",
+          "accent": "#CDAA5C",
+          "text": "#4A4A4A"
+        }
+      },
+      "guochao": {
+        "name": "国潮",
+        "colors": {
+          "primary": "#DB5A6B",
+          "secondary": "#0E7B9E",
+          "accent": "#FDD56A",
+          "text": "#1A1A1A"
+        }
+      }
+    },
+    "frames": {
+      "border-art": "双线描边·传统纹样",
+      "ornament": "云纹·回纹·如意纹",
+      "seal": "红色印章点缀",
+      "watermark": "水墨淡染"
+    }
   }
 }

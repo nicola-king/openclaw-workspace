@@ -1580,3 +1580,42 @@
 [2026-05-17 00:26:55] [INFO]   ✅ [JSON] providers.json → ok (776.1KB)
 [2026-05-17 00:26:56] [INFO]   ✅ [JSON] converter_state.json → ok (146.9KB)
 [2026-05-17 00:26:56] [INFO] 转换完成: ✅ 811 成功, ⏭ 32 跳过, ❌ 43 失败
+[2026-05-17 06:15:21] [INFO] 发现 3 个待转换文件（增量）
+[2026-05-17 06:15:22] [INFO]   ❌ [YAML] none.yaml: failed: Traceback (most recent call last):
+  File "/home/sayelf/.local/venvs/markitdown/bin/markitdown", line 8, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/home/sayelf/.local/venvs/markitdo
+[2026-05-17 06:15:22] [INFO]   ✅ [JSON] converter_state.json → ok (146.9KB)
+[2026-05-17 06:15:22] [INFO] 转换完成: ✅ 1 成功, ⏭ 1 跳过, ❌ 1 失败
+[2026-05-17 12:15:21] [INFO] 发现 5 个待转换文件（增量）
+[2026-05-17 12:15:22] [INFO]   ❌ [YAML] none.yaml: failed: Traceback (most recent call last):
+  File "/home/sayelf/.local/venvs/markitdown/bin/markitdown", line 8, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/home/sayelf/.local/venvs/markitdo
+[2026-05-17 12:15:22] [INFO]   ✅ [JSON] economic_cache.json → ok (2.2KB)
+[2026-05-17 12:15:23] [INFO]   ✅ [JSON] rental_cache.json → ok (2.4KB)
+[2026-05-17 12:15:24] [INFO]   ✅ [JSON] converter_state.json → ok (147.0KB)
+[2026-05-17 12:15:25] [INFO]   ✅ [JSON] short-term-recall.json → ok (102.8KB)
+[2026-05-17 12:15:25] [INFO] 转换完成: ✅ 4 成功, ⏭ 0 跳过, ❌ 1 失败
+[2026-05-17 18:15:17] [INFO] 发现 5 个待转换文件（增量）
+[2026-05-17 18:15:17] [INFO]   ✅ [JSON] competitor_report_20260517.json → ok (2.5KB)
+[2026-05-17 18:15:18] [INFO]   ❌ [YAML] none.yaml: failed: Traceback (most recent call last):
+  File "/home/sayelf/.local/venvs/markitdown/bin/markitdown", line 8, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/home/sayelf/.local/venvs/markitdo
+[2026-05-17 18:15:19] [INFO]   ✅ [JSON] converter_state.json → ok (147.1KB)
+[2026-05-17 18:15:20] [INFO]   ✅ [JSON] short-term-recall.json → ok (102.8KB)
+[2026-05-17 18:15:20] [INFO] 转换完成: ✅ 3 成功, ⏭ 1 跳过, ❌ 1 失败
+[2026-05-18 00:15:18] [INFO] 发现 4 个待转换文件（增量）
+[2026-05-18 00:15:18] [INFO]   ❌ [YAML] none.yaml: failed: Traceback (most recent call last):
+  File "/home/sayelf/.local/venvs/markitdown/bin/markitdown", line 8, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/home/sayelf/.local/venvs/markitdo
+[2026-05-18 00:15:19] [INFO]   ✅ [JSON] converter_state.json → ok (147.1KB)
+[2026-05-18 00:15:20] [INFO]   ✅ [JSON] design-tokens.json → ok (211.5KB)
+[2026-05-18 00:15:21] [INFO]   ✅ [JSON] short-term-recall.json → ok (102.9KB)
+[2026-05-18 00:15:21] [INFO] 转换完成: ✅ 3 成功, ⏭ 0 跳过, ❌ 1 失败

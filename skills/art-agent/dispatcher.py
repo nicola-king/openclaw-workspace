@@ -91,6 +91,27 @@ CONTENT_BRAND_MAP = {
     # 教育
     "education": "notion", "学习": "claude", "知识": "mintlify",
     
+    # 中国传统 / 东方美学 (chinese-traditional brand)
+    "茶馆": "chinese-traditional", "中式茶馆": "chinese-traditional",
+    "中式": "chinese-traditional", "东方美学": "chinese-traditional",
+    "园林": "chinese-traditional", "宋": "chinese-traditional",
+    "明": "chinese-traditional", "清": "chinese-traditional",
+    "故宫": "chinese-traditional", "诗词": "chinese-traditional",
+    "书法": "chinese-traditional", "水墨": "chinese-traditional",
+    "国风": "chinese-traditional", "古风": "chinese-traditional",
+    "华夏": "chinese-traditional", "传统色": "chinese-traditional",
+    "中国风": "chinese-traditional", "汉服": "chinese-traditional",
+    "国潮": "chinese-traditional", "瓷器": "chinese-traditional",
+    "青花": "chinese-traditional", "红木": "chinese-traditional",
+    "琴棋书画": "chinese-traditional", "竹": "chinese-traditional",
+    "茶道": "chinese-traditional", "禅意": "chinese-traditional",
+    "传统文化": "chinese-traditional", "老祖宗": "chinese-traditional",
+    "故宫红": "chinese-traditional", "天青": "chinese-traditional",
+    "孔雀蓝": "chinese-traditional", "海棠红": "chinese-traditional",
+    "桃夭": "chinese-traditional", "瑾瑜": "chinese-traditional",
+    "水龙吟": "chinese-traditional", "海天霞": "chinese-traditional",
+    "黄不老": "chinese-traditional",
+
     # 生活/纪实/日常 (MUJI 风格最匹配)
     "日常": "muji", "生活": "muji", "纪实": "muji",
     "纪录片": "muji", "daily": "muji", "life": "muji",
