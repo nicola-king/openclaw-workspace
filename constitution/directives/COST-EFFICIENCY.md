@@ -59,3 +59,9 @@ enabled: true
 
 - 违反本法则（无谓消耗 token）→ 记录到 .learnings/ERRORS.md
 - 因省 token 导致运营故障 → 触发 SRE 自检并优化判断逻辑
+
+## 相关文件
+
+更细化的 token 操作规则参见：
+- [Token 节约原则](../rules/TOKEN-CONSERVATION.md) — 去重加载、只给片段、上下文压缩
+- [RTK Token 效率协议](../directives/RTK-TOKEN-EFFICIENCY.md) — CLI 输出过滤

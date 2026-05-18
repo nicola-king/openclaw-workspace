@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>家应该是后盾，不是另一个标准</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Noto+Serif+SC:wght@400;500;600&family=Inter:wght@300;400;500;600&family=Noto+Sans+SC:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#2a1e13;display:flex;flex-direction:column;align-items:center;font-family:'Inter','Noto Sans SC',sans-serif}
+.slide{width:100vw;height:100vh;flex-shrink:0;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden}
+.folio{position:absolute;bottom:2.5rem;right:3rem;font-family:'Playfair Display',serif;font-style:italic;font-size:0.8rem;color:rgba(42,30,19,0.3);letter-spacing:0.04em}
+.kicker{font-size:0.68rem;text-transform:uppercase;letter-spacing:0.12em;font-weight:500;margin-bottom:1rem}
+.hairline{width:2.5rem;height:1px;margin-bottom:2rem}
+@media(max-width:768px){.slide{padding:2rem}.folio{bottom:1.5rem;right:1.5rem}}
+</style>
+<script>
+let idx=0,slides=[];
+document.addEventListener('DOMContentLoaded',()=>{
+  slides=document.querySelectorAll('.slide');
+  const hash=parseInt(location.hash.slice(1))||0;
+  go(hash>=0&&hash<slides.length?hash:0);
+  document.addEventListener('keydown',e=>{
+    if(e.key==='ArrowRight'||e.key==='ArrowDown')go(idx+1);
+    if(e.key==='ArrowLeft'||e.key==='ArrowUp')go(idx-1);
+  });
+});
+function go(n){
+  if(n<0||n>=slides.length)return;
+  idx=n;
+  slides.forEach((s,i)=>s.style.display=i===n?'flex':'none');
+  location.hash=n;
+}
+</script>
+</head>
+<body>
+
+<!-- L01 Hero Cover -->
+<div class="slide" style="background:#f0e6d2;">
+  <div style="padding:3rem;max-width:55rem;margin:0 auto;width:100%">
+    <div class="kicker" style="color:#2a1e13;">深夜电台叙事 · 太一</div>
+    <div class="hairline" style="background:#2a1e13;"></div>
+    <h1 style="font-family:'Noto Serif SC','Playfair Display',serif;font-weight:500;font-size:clamp(2.2rem,5.5vw,4.5rem);line-height:1.2;color:#2a1e13;max-width:18ch;margin-bottom:1.5rem;letter-spacing:-0.01em">
+      回头想，家应该是后盾，不是另一个标准
+    </h1>
+    <p style="font-size:1rem;line-height:1.7;color:rgba(42,30,19,0.65);max-width:42rem;font-weight:300">
+      一个关于理解与回应的故事
+    </p>
+  </div>
+  <div class="folio">01 / 10</div>
+</div>
+
+<!-- L02 Act Divider: The message -->
+<div class="slide" style="background:#e0d0b6;">
+  <div style="padding:3rem;max-width:48rem;margin:0 auto;width:100%;text-align:center">
+    <div class="kicker" style="color:#2a1e13;">她昨晚发来消息</div>
+    <div class="hairline" style="background:#2a1e13;margin-left:auto;margin-right:auto;"></div>
+    <p style="font-family:'Noto Serif SC','Playfair Display',serif;font-size:clamp(1.1rem,2.8vw,2rem);line-height:1.6;color:#2a1e13;max-width:36rem;margin:0 auto;font-weight:400">
+      "开始工作了，准备在伦敦租房。1000 英镑一个月。工资 2500，还没扣税。日子过得有点紧。呆不住就回重庆。"
+    </p>
+  </div>
+  <div class="folio">02 / 10</div>
+</div>
+
+<!-- L04 Quote + Image: The father's response -->
+<div class="slide" style="background:#f0e6d2;">
+  <div style="display:flex;flex:1;padding:3rem;gap:3rem;max-width:60rem;margin:0 auto;width:100%;align-items:center">
+    <div style="flex:1.2">
+      <div class="kicker" style="color:#2a1e13;">当时我没多想</div>
+      <div class="hairline" style="background:#2a1e13;"></div>
+      <p style="font-family:'Noto Serif SC','Playfair Display',serif;font-size:clamp(1.3rem,2.5vw,1.9rem);line-height:1.5;color:#2a1e13;font-weight:500">
+        "大家都从职场新人过来的，这点压力算什么。"
+      </p>
+      <p style="margin-top:1.2rem;font-size:0.9rem;line-height:1.6;color:rgba(42,30,19,0.6);font-weight:300">
+        然后她生气了。
+      </p>
+    </div>
+    <div style="flex:0.8;aspect-ratio:16/10;background:#e0d0b6;border:1px solid rgba(42,30,19,0.08);display:flex;align-items:center;justify-content:center">
+      <span style="font-size:3rem;opacity:0.15;font-family:'Playfair Display',serif;">✕</span>
+    </div>
+  </div>
+  <div class="folio">03 / 10</div>
+</div>
+
+<!-- L07 Hero Question: The reflection -->
+<div class="slide" style="background:#2a1e13;">
+  <div style="padding:3rem;max-width:50rem;margin:0 auto;width:100%;text-align:center">
+    <p style="font-family:'Noto Serif SC','Playfair Display',serif;font-size:clamp(1.6rem,5vw,3.2rem);line-height:1.35;color:#f0e6d2;font-weight:400;letter-spacing:-0.005em">
+      一个 18 岁就独自去异国他乡的女孩，<br>
+      在伦敦读了五年书，<br>
+      现在开始工作。
+    </p>
+  </div>
+  <div class="folio" style="color:rgba(240,230,210,0.25);">04 / 10</div>
+</div>
+
+<!-- L04 Quote + Image: Her journey -->
+<div class="slide" style="background:#f0e6d2;">
+  <div style="display:flex;flex:1;padding:3rem;gap:3rem;max-width:60rem;margin:0 auto;width:100%;align-items:center">
+    <div style="flex:1.2">
+      <div class="kicker" style="color:#2a1e13;">这五年里</div>
+      <div class="hairline" style="background:#2a1e13;"></div>
+      <ul style="list-style:none;padding:0;font-size:1.05rem;line-height:1.8;color:#2a1e13;font-weight:300">
+        <li style="margin-bottom:0.4rem;">✦ 一个人租房子</li>
+        <li style="margin-bottom:0.4rem;">✦ 一个人做饭</li>
+        <li style="margin-bottom:0.4rem;">✦ 一个人扛着时差跟家里报平安</li>
+        <li style="margin-bottom:0.4rem;">✦ 生病了不敢说，怕我们担心</li>
+        <li style="margin-bottom:0;">✦ 遇到困难了自己想办法</li>
+      </ul>
+      <p style="margin-top:1.2rem;font-size:0.9rem;color:rgba(42,30,19,0.55);font-style:italic;">因为知道说了也解决不了</p>
+    </div>
+    <div style="flex:0.8;aspect-ratio:16/10;background:#e0d0b6;border:1px solid rgba(42,30,19,0.08);display:flex;align-items:center;justify-content:center">
+      <span style="font-size:3rem;opacity:0.15;font-family:'Playfair Display',serif;">✦</span>
+    </div>
+  </div>
+  <div class="folio">05 / 10</div>
+</div>
+
+<!-- L08 Big Quote: The realization -->
+<div class="slide" style="background:#f0e6d2;">
+  <div style="padding:3rem;max-width:48rem;margin:0 auto;width:100%">
+    <p style="font-family:'Playfair Display','Noto Serif SC',serif;font-style:italic;font-size:clamp(1.4rem,5.8vw,3.4rem);line-height:1.3;color:#2a1e13;font-weight:400;margin-bottom:0.8rem">
+      "她从来没有抱怨过。哪怕日子真的很难。"
+    </p>
+    <p style="font-size:0.9rem;color:rgba(42,30,19,0.5);margin-top:0.5rem;font-style:italic;">
+      而她的父亲，在她第一次说有点难的时候，给她的回应是「这点压力算什么」
+    </p>
+  </div>
+  <div class="folio">06 / 10</div>
+</div>
+
+<!-- L07 Hero Question: The critique -->
+<div class="slide" style="background:#e0d0b6;">
+  <div style="padding:3rem;max-width:48rem;margin:0 auto;width:100%">
+    <p style="font-family:'Noto Serif SC','Playfair Display',serif;font-size:clamp(1.2rem,3.8vw,2.4rem);line-height:1.5;color:#2a1e13;font-weight:400;max-width:28ch">
+      中国式家长惯性的思维，觉得苦一苦就过去了。
+    </p>
+    <p style="margin-top:1rem;font-size:1rem;color:rgba(42,30,19,0.55);font-weight:300;max-width:32rem">
+      觉得自己年轻时候更苦，所以子女的苦都不算苦。
+    </p>
+  </div>
+  <div class="folio">07 / 10</div>
+</div>
+
+<!-- L08 Big Quote: The core insight -->
+<div class="slide" style="background:#2a1e13;">
+  <div style="padding:3rem;max-width:50rem;margin:0 auto;width:100%;text-align:center">
+    <p style="font-family:'Noto Serif SC','Playfair Display',serif;font-size:clamp(1.5rem,5.5vw,3.5rem);line-height:1.25;color:#f0e6d2;font-weight:500;letter-spacing:-0.005em">
+      家应该是她最后的退路，<br>
+      而不是另一套评价标准。
+    </p>
+    <div style="width:2.5rem;height:1px;background:rgba(240,230,210,0.3);margin:2rem auto;"></div>
+    <p style="font-family:'Playfair Display',serif;font-style:italic;font-size:1rem;color:rgba(240,230,210,0.5);">
+      问题不在于苦不苦
+    </p>
+  </div>
+  <div class="folio" style="color:rgba(240,230,210,0.2);">08 / 10</div>
+</div>
+
+<!-- L04 Quote + Image: The reality -->
+<div class="slide" style="background:#f0e6d2;">
+  <div style="display:flex;flex:1;padding:3rem;gap:3rem;max-width:60rem;margin:0 auto;width:100%;align-items:center">
+    <div style="flex:1">
+      <div class="kicker" style="color:#2a1e13;">在伦敦</div>
+      <div class="hairline" style="background:#2a1e13;"></div>
+      <p style="font-size:1rem;line-height:1.7;color:#2a1e13;font-weight:300;max-width:28rem">
+        月薪 2500，房租 1000。剩下 1500 要吃饭、交通、水电、社交。在伦敦，这真的不算宽裕。
+      </p>
+      <p style="margin-top:1rem;font-size:1rem;color:#2a1e13;font-weight:400;">
+        她已经在努力了。
+      </p>
+    </div>
+    <div style="flex:1">
+      <div class="kicker" style="color:#2a1e13;">我们能做的</div>
+      <div class="hairline" style="background:#2a1e13;"></div>
+      <p style="font-size:1rem;line-height:1.7;color:#2a1e13;font-weight:300;max-width:28rem">
+        给不了经济上的帮助，但至少可以提供理解和支持。
+      </p>
+    </div>
+  </div>
+  <div class="folio">09 / 10</div>
+</div>
+
+<!-- L10 Mixed Media: Final message -->
+<div class="slide" style="background:#f0e6d2;">
+  <div style="display:flex;flex:1;padding:3rem;gap:3rem;max-width:60rem;margin:0 auto;width:100%;align-items:center">
+    <div style="flex:2">
+      <div class="kicker" style="color:#2a1e13;">让她知道</div>
+      <div class="hairline" style="background:#2a1e13;"></div>
+      <p style="font-family:'Noto Serif SC','Playfair Display',serif;font-size:clamp(1.2rem,2.8vw,2rem);line-height:1.5;color:#2a1e13;font-weight:500;max-width:22ch">
+        如果撑不住了，家里永远欢迎你回来。
+      </p>
+      <p style="margin-top:1rem;font-size:0.9rem;color:rgba(42,30,19,0.55);font-weight:300;max-width:24rem">
+        不是因为你在外面混不下去了，而是因为家就是用来回去的。
+      </p>
+    </div>
+    <div style="flex:1;aspect-ratio:3/4;background:#e0d0b6;border:1px solid rgba(42,30,19,0.08);display:flex;align-items:center;justify-content:center">
+      <span style="font-family:'Playfair Display',serif;font-size:2rem;color:rgba(42,30,19,0.12);">✦</span>
+    </div>
+  </div>
+  <div class="folio">10 / 10</div>
+</div>
+
+</body>
+</html>

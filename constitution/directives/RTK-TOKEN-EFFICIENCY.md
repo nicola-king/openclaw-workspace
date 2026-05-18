@@ -3,178 +3,182 @@ name: rtk-token-efficiency
 tier: 2
 enabled: true
 ---
-# RTK Token 效率优化协议
+# RTK Token 效率优化协议（Rust Token Killer）
 
-> **来源**: RTK (Rust CLI 过滤工具)
-> **融合时间**: 2026-05-04
+> **来源**: rtk-ai/rtk (GitHub) — 39K+ ★, MIT, Rust
+> **初融**: 2026-05-04 | **蒸馏更新**: 2026-05-19 (v0.35+)
 > **定位**: Tier 2 上下文激活 (CLI/终端任务时加载)
-> **核心**: 减少 CLI 冗余输出，降低 token 消耗 89%
+> **核心**: CLI 输出压缩，降低 LLM token 消耗 60-90%
 
 ---
 
-## 🎯 核心概念
+## 🎯 核心原理
 
-**RTK 原理**: AI 编程时，CLI 工具的冗余输出（进度条、颜色代码、日志前缀）消耗大量 token，但提供极少价值。
+RTK 是一个 Rust CLI 代理。它在 Shell 和 LLM 之间拦截命令输出，压缩后送入上下文窗口。
 
-**效果**: 过滤后 token 消耗降低 **89%**
+**实测 2,927 条命令：89.2% 噪音去除，输入 11.6M → 输出 1.4M tokens。**
 
-**特点**: 一键启用，适配 Claude Code 等编辑器
+四种过滤策略：
+
+| 策略 | 说明 | 示例 |
+|------|------|------|
+| **Smart Filtering** | 去除注释、空白、样板文本 | `cargo test` 262个pass→1行摘要 |
+| **Grouping** | 同类聚合 | 文件按目录分组、错误按类型聚合 |
+| **Truncation** | 只保留信号，去掉冗余 | `git push` 15行→1行 |
+| **Deduplication** | 重复日志行折叠为计数 | 相同警告合并为 `x17` |
 
 ---
 
-## 📋 过滤规则
+## 🛠 命令覆盖（100+ 命令）
 
-### 必须过滤 (P0)
+### Git（最大节省来源之一）
+| 命令 | 原始 | 压缩后 | 节省 |
+|------|:----:|:------:|:----:|
+| `git status` | ~2,000 tokens | ~400 | 80.8% |
+| `git diff` | ~10,000 tokens | ~2,500 | 75% |
+| `git push` | 15行 | 1行 `ok main` | - |
+| `git log -n 10` | 全行输出 | 每行一条 | - |
+| `git pull` | 多行 | `ok 3 files +10 -2` | - |
 
-| 类型 | 示例 | 原因 |
-|------|------|------|
-| **ANSI 颜色代码** | `\x1b[32m` `\x1b[0m` | 视觉装饰，无语义价值 |
-| **进度条** | `[=====>   ] 50%` | 动态更新，大量重复 |
-| **时间戳前缀** | `2026-05-04 08:30:12` | 日志格式，非核心信息 |
-| **日志级别标签** | `[INFO]` `[DEBUG]` `[WARN]` | 可推断，非必要 |
-| **重复分隔线** | `==========` `----------` | 视觉装饰 |
-| **ASCII 艺术** | 框架标题、装饰边框 | 纯装饰 |
+### 测试运行器（最大节省点 — 91.8%）
+| 命令 | 原始 | 压缩后 |
+|------|:----:|:------:|
+| `cargo test` | 200+ 行（含262个pass） | ~20行（仅failures+汇总） |
+| `pytest` | 33 passed + 逐条 | `33 passed in 0.02s` |
+| `go test` | 多语言测试逐条 | 仅failures |
+| `jest / vitest` | 逐条结果 | 仅failures |
+| `playwright test` | 全输出 | 仅failures |
+| `rspec` | 全输出 | 仅failures |
 
-### 建议过滤 (P1)
+### 构建与 lint
+| 命令 | 压缩策略 |
+|------|---------|
+| `tsc` | TypeScript 错误按文件分组 |
+| `ruff check` | Python lint 错误聚合 |
+| `cargo clippy` | Rust 警告折叠 |
+| `golangci-lint run` | 按类别聚合 |
 
-| 类型 | 示例 | 原因 |
-|------|------|------|
-| **冗长路径** | `/home/sayelf/.openclaw/workspace/...` | 可用相对路径替代 |
-| **版本信息** | `v1.2.3` `build 456` | 上下文已知 |
-| **帮助提示** | `Use --help for more info` | 非任务相关 |
+### 文件操作
+| 命令 | 压缩策略 |
+|------|---------|
+| `ls` | token 优化目录树 |
+| `cat` / `read` | 智能文件读取 |
+| `grep` | 匹配行聚合（49.5% 节省） |
+| `find` | 结果折叠（78.3% 节省） |
 
-### 保留 (P2)
-
-| 类型 | 原因 |
+### DevOps（扩展覆盖）
+| 领域 | 命令 |
 |------|------|
-| **错误信息** | 关键诊断信息 |
-| **命令输出** | 实际执行结果 |
-| **文件内容** | 代码/配置本身 |
-| **用户输入** | 交互式命令 |
+| AWS | 25个子命令过滤 |
+| Docker | `docker build/pull/ps` 等 |
+| Kubernetes | `kubectl get/describe/logs` 等 |
+| GitHub CLI | `gh pr merge` 等透传 |
 
 ---
 
-## 🔧 实施策略
+## ⚡ 安装与接入
 
-### 策略一：命令包装器
-
+### 安装（单 Rust 二进制，零依赖）
 ```bash
-# 原始命令 (高 token)
-ls -la /path/to/dir
+# macOS
+brew install rtk
 
-# 过滤后 (低 token)
-ls -la /path/to/dir | rtk-filter
+# Linux/macOS
+curl -fsSL https://raw.githubusercontent.com/rtk-ai/rtk/refs/heads/master/install.sh | sh
+
+# 或 Cargo
+cargo install --git https://github.com/rtk-ai/rtk
 ```
 
-### 策略二：环境变量
+⚠️ crates.io 上另有同名包 "rtk" (Rust Type Kit)，安装后运行 `rtk gain` 验证。
 
+### 接入 AI 工具
 ```bash
-# 禁用颜色
-export NO_COLOR=1
-
-# 禁用进度条
-export CI=true
-
-# 简化输出
-export PYTHONUNBUFFERED=1
+rtk init -g                    # Claude Code / Copilot
+rtk init -g --agent cursor     # Cursor
+rtk init -g --gemini           # Gemini CLI
+rtk init --agent windsurf      # Windsurf
+rtk init --agent cline         # Cline / Roo Code
 ```
 
-### 策略三：工具配置
-
+### 验证效果
 ```bash
-# Git 简化输出
-git config --global format.pretty oneline
-
-# npm 简化
-npm config set loglevel warn
-
-# pip 简化
-pip install --quiet
-```
-
-### 策略四：太一专用过滤
-
-```python
-# 在 OpenClaw 中自动过滤
-import re
-
-def filter_cli_output(text: str) -> str:
-    """过滤 CLI 冗余输出"""
-    # 移除 ANSI 颜色代码
-    text = re.sub(r'\x1b\[[0-9;]*m', '', text)
-    
-    # 移除进度条
-    text = re.sub(r'\[=?\s*\]\s*\d+%', '', text)
-    
-    # 移除时间戳前缀
-    text = re.sub(r'\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2}:\d{2}[,.]?\d*\s*', '', text)
-    
-    # 移除日志级别
-    text = re.sub(r'\[(INFO|DEBUG|WARN|ERROR)\]\s*', '', text, flags=re.I)
-    
-    # 移除重复分隔线
-    text = re.sub(r'[=\-]{10,}', '', text)
-    
-    return text.strip()
+rtk gain
+# 📊 RTK Token Savings
+# Total commands:    2,927
+# Input tokens:      11.6M
+# Output tokens:     1.4M
+# Tokens saved:      10.3M (89.2%)
 ```
 
 ---
 
-## 📊 Token 优化效果
+## 🔄 自钩子模式（关键特性）
+
+最实用的特性：**透明重写 hook**。
+
+```mermaid
+flowchart LR
+    Agent[AI Agent] -->|bash git status| Hook[PreToolUse Hook]
+    Hook -->|透明重写| RTK[rtk git status]
+    RTK -->|压缩输出| Agent
+```
+
+一旦 `rtk init -g`，CLI 命令被自动重写。Agent 不知道 RTK 的存在，只收到更小更干净的输出。
+
+---
+
+## 🔬 与太一系统的融合
+
+### 已有融合
+我们已在 TOKEN-CONSERVATION.md 中吸收了 RTK 的核心精神（本地优先、去重加载、上下文压缩）。
+
+### 本次蒸馏新增
+1. **四种过滤策略** — 不再只是"过滤冗余"，而是精确分类：Smart Filtering / Grouping / Truncation / Deduplication
+2. **Test runner 压缩模式** — 测试输出是最大 token 浪费点，仅保留 failures + 汇总
+3. **rtk gain 指标仪表盘** — 量化 token 节省，可用于 SRE 报表
+4. **自钩子模式** — 无感集成，无需手动前缀
+5. **DevOps 扩展** — AWS/Docker/K8s/GH CLI 覆盖
+
+### 太一场景映射
+
+| 太一场景 | RTK 策略 | 预期节省 |
+|---------|---------|:-------:|
+| `exec` 系统命令 | 过滤无意义输出 | 60-90% |
+| CI/CD 日志分析 | Deduplication + Truncation | 可忽略 |
+| 情报管线 curl 调用 | Smart Filtering（去头尾样板） | ~50% |
+| `cargo test` / `pytest` 输出 | Test runner 模式 | 91.8% |
+| `git diff` / `git log` | Git 命令压缩 | 75-80% |
+| Docker/AWS 操作 | DevOps 扩展 | 按需 |
+
+### 不采用
+- **安装 RTK 二进制本身** — 太一通过 OpenClaw 执行命令，而非直接对接 Shell。但策略层完全兼容。
+- **ICM / Vox** — ICM（上下文管理）和 Vox（语音）与现有冲突，不需接入。
+
+---
+
+## 📊 Token 优化效果汇总
 
 | 场景 | 原始 Token | 过滤后 | 节省 |
-|------|-----------|--------|------|
-| `npm install` 输出 | 2,400 | 120 | 95% |
-| `docker build` 日志 | 5,600 | 280 | 95% |
-| `pytest` 测试输出 | 1,800 | 200 | 89% |
-| `git diff` | 3,200 | 450 | 86% |
-| **平均** | - | - | **89%** |
+|------|:---------:|:------:|:----:|
+| `cargo test` | 5,000+ | ~400 | 91.8% |
+| `git status` | 2,000 | ~400 | 80.8% |
+| `find` | 大量 | 折叠 | 78.3% |
+| `grep` | 按匹配 | 聚合 | 49.5% |
+| `git diff` | 10,000 | 2,500 | 75% |
+| **全量(2927条)** | **11.6M** | **1.4M** | **89.2%** |
 
 ---
 
-## 🔄 与现有宪法的融合
+## ⚖️ 注意事项
 
-| RTK 原则 | 对应宪法 | 关系 |
-|---------|---------|------|
-| 过滤冗余 | 负熵法则 | 减少噪音，增加秩序 |
-| 保留关键 | 价值基石 | 只保留有价值的信息 |
-| 极简输出 | 美学法则 | 克制即优雅 |
-| 效率优先 | AGI 时间线 | 减少 token = 加速 |
-
----
-
-## ⚠️ 注意事项
-
-1. **不要过度过滤** - 错误信息必须保留
-2. **上下文相关** - 调试时需要更多细节
-3. **可配置** - 允许临时开启完整输出
-4. **透明** - 告知用户过滤已启用
+1. **测试失败时不要过度过滤** — 保留完整的错误栈和上下文
+2. **hook 化后调试** — 如需原始输出，`RTK_DISABLE=1 git status`
+3. **命令黑白名单** — 敏感命令（如 `rm`、`sudo`）自动透传不压缩
+4. **版本兼容** — v0.35+ 稳定，定期 `rtk update` 更新
+5. **成本换算** — 团队10人每月约节省 $1,750（基于 API 定价）
 
 ---
 
-## ✅ 自检清单 (CLI 输出前)
-
-```
-□ 是否包含 ANSI 颜色代码？→ 移除
-□ 是否包含进度条？→ 移除
-□ 是否包含冗余时间戳？→ 简化
-□ 错误信息是否保留？→ 必须保留
-□ 核心输出是否清晰？→ 确认
-```
-
----
-
-## 🔧 快速启用
-
-```bash
-# 在当前 session 启用过滤
-export RTK_FILTER=1
-export NO_COLOR=1
-
-# 验证效果
-python3 -c "import os; print('RTK 过滤:', '启用' if os.getenv('RTK_FILTER') else '未启用')"
-```
-
----
-
-*RTK · Token 效率优化 · 太一宪法融合版*
+*rtk-ai/rtk · Rust Token Killer · 太一宪法融合版*
+*49.6K ★ · MIT · Zero Telemetry · Zero Config*

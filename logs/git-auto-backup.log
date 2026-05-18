@@ -1,3 +1,0 @@
-fatal: 无法访问 'https://github.com/nicola-king/openclaw-workspace.git/'：GnuTLS recv error (-110): The TLS connection was non-properly terminated.
-[2026-05-06 03:00] ✅ Git 自动备份成功 | commit: 7e50c876 | 文件变更: 233 files (22530 insertions, 386 deletions)
-[2026-05-07 03:00] 自动备份完成 ✓ | commit: 19892ed4 | 79 files, +4423/-237 | push to origin master OK

@@ -13,6 +13,8 @@
 - directives/SELF-LOOP.md（自驱动闭环协议）
 - directives/AESTHETICS.md（美学法则）
 - directives/TURBOQUANT.md（智能分离协议）
+- rules/TOKEN-CONSERVATION.md（Token节约原则）
+- rules/KNOWLEDGE-SEDIMENTATION.md（知识沉淀原则）
 - skills/MODEL-ROUTING.md（模型调度协议）
 
 ### Tier 2 · 上下文激活（任务匹配时加载）

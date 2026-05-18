@@ -172,3 +172,13 @@ Add whatever helps you do your job. This is your cheat sheet.
 - `data-report` — 暗色数据报告
 - `card-xiaohongshu` — 小红书卡片
 - `deck-swiss-international` — 瑞士国际 Deck
+
+## 🧠 知识沉淀原则
+
+> 参见 constitution/rules/KNOWLEDGE-SEDIMENTATION.md
+
+**四层沉淀路径**：
+- 代码层 → CLAUDE.md / 项目 docs/
+- 工具层 → 本文件 (TOOLS.md)
+- 会话层 → memory/core.md + memory/YYYY-MM-DD.md
+- 全局层 → wiki/ 或 constitution/

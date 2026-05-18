@@ -1,0 +1,278 @@
+HEARTBEAT_OK
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>家应该是后盾，不是另一个标准</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#fafaf8;display:flex;flex-direction:column;align-items:center;font-family:'Inter','Noto Sans SC',sans-serif}
+.slide{width:100vw;height:100vh;flex-shrink:0;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden}
+.folio{position:absolute;bottom:1.5rem;right:2rem;font-family:'Inter Tight','JetBrains Mono',monospace;font-size:0.7rem;color:rgba(10,10,10,0.25);letter-spacing:0.04em}
+.tag{position:absolute;bottom:1.5rem;left:2rem;font-size:0.6rem;text-transform:uppercase;letter-spacing:0.08em;color:rgba(10,10,10,0.2)}
+.hairline{height:1px;background:#002FA7}
+.hairline-ink{height:1px;background:rgba(10,10,10,0.1)}
+.dot-grid{background-image:radial-gradient(rgba(0,47,167,0.12) 1px,transparent 1px);background-size:12px 12px}
+@media(max-width:768px){.slide{padding:1.5rem}.folio{bottom:1rem;right:1rem}}
+</style>
+<script>
+let idx=0,slides=[],total=0;
+document.addEventListener('DOMContentLoaded',()=>{
+  slides=document.querySelectorAll('.slide');
+  total=slides.length;
+  document.querySelectorAll('.folio').forEach(el=>{
+    const m=el.textContent.match(/(\d+)\s*\/\s*/);
+    if(m)el.textContent=m[1]+' / '+total;
+  });
+  const hash=parseInt(location.hash.slice(1))||0;
+  go(hash>=0&&hash<total?hash:0);
+  document.addEventListener('keydown',e=>{
+    if(e.key==='ArrowRight'||e.key==='ArrowDown')go(idx+1);
+    if(e.key==='ArrowLeft'||e.key==='ArrowUp')go(idx-1);
+  });
+});
+function go(n){
+  if(n<0||n>=total)return;
+  idx=n;
+  slides.forEach((s,i)=>s.style.display=i===n?'flex':'none');
+  location.hash=n;
+}
+</script>
+</head>
+<body>
+
+<!-- S01 Cover -->
+<div class="slide" style="background:#002FA7;">
+  <div class="dot-grid" style="position:absolute;inset:0;opacity:0.15"></div>
+  <div style="position:relative;z-index:1;padding:3rem;max-width:45rem;margin:0 auto;width:100%">
+    <p style="font-family:'Inter Tight','JetBrains Mono',monospace;font-size:0.65rem;text-transform:uppercase;letter-spacing:0.12em;color:rgba(255,255,255,0.4);margin-bottom:3rem">深夜电台叙事 · 太一</p>
+    <h1 style="font-family:'Inter Tight','Noto Sans SC',sans-serif;font-weight:500;font-size:clamp(2rem,8vw,4.5rem);line-height:1.12;color:#fff;letter-spacing:-0.02em;max-width:14ch">回头想，家应该是后盾，不是另一个标准</h1>
+    <div style="width:2rem;height:1px;background:rgba(255,255,255,0.25);margin:2rem 0"></div>
+    <p style="font-family:'Inter',sans-serif;font-size:0.85rem;color:rgba(255,255,255,0.5);font-weight:300">一个关于理解与回应的故事</p>
+  </div>
+  <div class="folio" style="color:rgba(255,255,255,0.2)"></div>
+  <div class="tag" style="color:rgba(255,255,255,0.2)">叙事</div>
+</div>
+
+<!-- S03 Statement: The message -->
+<div class="slide" style="background:#fafaf8;">
+  <div style="padding:3rem;max-width:45rem;margin:0 auto;width:100%">
+    <p style="font-family:'Inter Tight',monospace;font-size:0.6rem;text-transform:uppercase;letter-spacing:0.1em;color:rgba(10,10,10,0.3);margin-bottom:0.75rem">她昨晚发来消息</p>
+    <div class="hairline" style="width:1.5rem;margin-bottom:2rem"></div>
+    <p style="font-family:'Inter Tight','Noto Sans SC',sans-serif;font-size:clamp(1.4rem,6vw,3.2rem);font-weight:400;line-height:1.25;color:#0a0a0a;letter-spacing:-0.01em;max-width:18ch">
+      开始工作了，准备在伦敦租房
+    </p>
+  </div>
+  <div class="folio"></div>
+  <div class="tag">叙事</div>
+</div>
+
+<!-- S06 KPI Tower: Financial reality -->
+<div class="slide" style="background:#fafaf8;">
+  <div style="padding:3rem;max-width:50rem;margin:0 auto;width:100%">
+    <p style="font-family:'Inter Tight',monospace;font-size:0.6rem;text-transform:uppercase;letter-spacing:0.1em;color:rgba(10,10,10,0.3);margin-bottom:1rem">伦敦 · 财务</p>
+    <div class="hairline" style="width:1.5rem;margin-bottom:2rem"></div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(10,10,10,0.06)">
+      <div style="background:#fafaf8;padding:2rem 1.5rem;text-align:center">
+        <p style="font-family:'Inter Tight','JetBrains Mono',monospace;font-size:clamp(2rem,5vw,3.5rem);font-weight:300;color:#002FA7;letter-spacing:-0.03em">£2,500</p>
+        <p style="font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;color:rgba(10,10,10,0.35);margin-top:0.5rem">月薪</p>
+      </div>
+      <div style="background:#fafaf8;padding:2rem 1.5rem;text-align:center">
+        <p style="font-family:'Inter Tight','JetBrains Mono',monospace;font-size:clamp(2rem,5vw,3.5rem);font-weight:300;color:#002FA7;letter-spacing:-0.03em">£1,000</p>
+        <p style="font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;color:rgba(10,10,10,0.35);margin-top:0.5rem">房租</p>
+      </div>
+      <div style="background:#fafaf8;padding:2rem 1.5rem;text-align:center">
+        <p style="font-family:'Inter Tight','JetBrains Mono',monospace;font-size:clamp(2rem,5vw,3.5rem);font-weight:300;color:#002FA7;letter-spacing:-0.03em">£1,500</p>
+        <p style="font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;color:rgba(10,10,10,0.35);margin-top:0.5rem">剩余生活</p>
+      </div>
+    </div>
+    <p style="margin-top:1.5rem;font-size:0.8rem;color:rgba(10,10,10,0.4);font-weight:300">"呆不住就回重庆"</p>
+  </div>
+  <div class="folio"></div>
+  <div class="tag">叙事</div>
+</div>
+
+<!-- S08 Duo Compare: Before / After -->
+<div class="slide" style="background:#fafaf8;">
+  <div style="display:grid;grid-template-columns:1fr 1px 1fr;flex:1;padding:3rem;max-width:55rem;margin:0 auto;width:100%;align-items:center">
+    <div style="text-align:center;padding-right:2rem">
+      <p style="font-family:'Inter Tight',monospace;font-size:0.55rem;text-transform:uppercase;letter-spacing:0.1em;color:rgba(10,10,10,0.2);margin-bottom:1rem">当时</p>
+      <p style="font-family:'Inter Tight','Noto Sans SC',sans-serif;font-size:clamp(0.9rem,1.6vw,1.4rem);font-weight:400;color:rgba(10,10,10,0.35);line-height:1.5">
+        "大家都从职场新人过来的，<br>这点压力算什么。"
+      </p>
+      <p style="margin-top:1rem;font-size:0.75rem;color:rgba(10,10,10,0.2)">然后她生气了。</p>
+    </div>
+    <div style="background:rgba(10,10,10,0.08);width:100%;height:100%;min-height:8rem"></div>
+    <div style="text-align:center;padding-left:2rem">
+      <p style="font-family:'Inter Tight',monospace;font-size:0.55rem;text-transform:uppercase;letter-spacing:0.1em;color:#002FA7;margin-bottom:1rem">回头想</p>
+      <p style="font-family:'Inter Tight','Noto Sans SC',sans-serif;font-size:clamp(0.9rem,1.6vw,1.4rem);font-weight:500;color:#0a0a0a;line-height:1.5">
+        家应该是她最后的退路，<br>而不是另一套评价标准。
+      </p>
+    </div>
+  </div>
+  <div class="folio"></div>
+  <div class="tag">反思</div>
+</div>
+
+<!-- S02 Vertical Timeline: Her 5-year journey -->
+<div class="slide" style="background:#fafaf8;">
+  <div style="padding:3rem;max-width:45rem;margin:0 auto;width:100%">
+    <p style="font-family:'Inter Tight',monospace;font-size:0.6rem;text-transform:uppercase;letter-spacing:0.1em;color:rgba(10,10,10,0.3);margin-bottom:1rem">一个 18 岁女孩的五年</p>
+    <div class="hairline" style="width:1.5rem;margin-bottom:2rem"></div>
+    <div style="display:flex;flex-direction:column;gap:0">
+      <div style="display:grid;grid-template-columns:2rem 1px 1fr;gap:1rem;padding:0.75rem 0;align-items:start">
+        <div style="width:0.5rem;height:0.5rem;border-radius:0;background:#002FA7;justify-self:center;margin-top:0.35rem"></div>
+        <div style="background:rgba(10,10,10,0.06);width:100%;height:100%"></div>
+        <p style="font-size:0.85rem;color:#0a0a0a;font-weight:400">一个人租房子</p>
+      </div>
+      <div style="display:grid;grid-template-columns:2rem 1px 1fr;gap:1rem;padding:0.75rem 0;align-items:start">
+        <div style="width:0.5rem;height:0.5rem;border-radius:0;background:#002FA7;justify-self:center;margin-top:0.35rem"></div>
+        <div style="background:rgba(10,10,10,0.06);width:100%;height:100%"></div>
+        <p style="font-size:0.85rem;color:#0a0a0a;font-weight:400">一个人做饭</p>
+      </div>
+      <div style="display:grid;grid-template-columns:2rem 1px 1fr;gap:1rem;padding:0.75rem 0;align-items:start">
+        <div style="width:0.5rem;height:0.5rem;border-radius:0;background:#002FA7;justify-self:center;margin-top:0.35rem"></div>
+        <div style="background:rgba(10,10,10,0.06);width:100%;height:100%"></div>
+        <p style="font-size:0.85rem;color:#0a0a0a;font-weight:400">一个人扛着时差跟家里报平安</p>
+      </div>
+      <div style="display:grid;grid-template-columns:2rem 1px 1fr;gap:1rem;padding:0.75rem 0;align-items:start">
+        <div style="width:0.5rem;height:0.5rem;border-radius:0;background:#002FA7;justify-self:center;margin-top:0.35rem"></div>
+        <div style="background:rgba(10,10,10,0.06);width:100%;height:100%"></div>
+        <p style="font-size:0.85rem;color:#0a0a0a;font-weight:400">生病了不敢说，怕我们担心</p>
+      </div>
+      <div style="display:grid;grid-template-columns:2rem 1px 1fr;gap:1rem;padding:0.75rem 0;align-items:start">
+        <div style="width:0.5rem;height:0.5rem;border-radius:0;background:#002FA7;justify-self:center;margin-top:0.35rem"></div>
+        <div style="background:rgba(10,10,10,0.06);width:100%;height:100%"></div>
+        <p style="font-size:0.85rem;color:#0a0a0a;font-weight:400">遇到困难了自己想办法</p>
+      </div>
+    </div>
+  </div>
+  <div class="folio"></div>
+  <div class="tag">叙事</div>
+</div>
+
+<!-- S03 Statement: She never complained -->
+<div class="slide" style="background:#fafaf8;">
+  <div style="padding:3rem;max-width:45rem;margin:0 auto;width:100%">
+    <p style="font-family:'Inter Tight',monospace;font-size:0.6rem;text-transform:uppercase;letter-spacing:0.1em;color:rgba(10,10,10,0.3);margin-bottom:0.75rem">沉默</p>
+    <div class="hairline" style="width:1.5rem;margin-bottom:2rem"></div>
+    <p style="font-family:'Inter Tight','Noto Sans SC',sans-serif;font-size:clamp(1.3rem,5vw,2.8rem);font-weight:400;line-height:1.25;color:#0a0a0a;letter-spacing:-0.01em;max-width:22ch">
+      她从来没有抱怨过
+    </p>
+    <p style="margin-top:1rem;font-size:0.85rem;color:rgba(10,10,10,0.35);font-weight:300">哪怕日子真的很难。</p>
+  </div>
+  <div class="folio"></div>
+  <div class="tag">洞察</div>
+</div>
+
+<!-- S03 Statement: The father's response -->
+<div class="slide" style="background:#fafaf8;">
+  <div style="padding:3rem;max-width:45rem;margin:0 auto;width:100%">
+    <p style="font-family:'Inter Tight',monospace;font-size:0.6rem;text-transform:uppercase;letter-spacing:0.1em;color:rgba(10,10,10,0.3);margin-bottom:0.75rem">而她的父亲</p>
+    <div class="hairline" style="width:1.5rem;margin-bottom:2rem"></div>
+    <p style="font-family:'Inter Tight','Noto Sans SC',sans-serif;font-size:clamp(1.2rem,4.8vw,2.6rem);font-weight:400;line-height:1.25;color:#002FA7;letter-spacing:-0.01em;max-width:18ch">
+      "这点压力算什么"
+    </p>
+  </div>
+  <div class="folio"></div>
+  <div class="tag">反思</div>
+</div>
+
+<!-- S12 Manifesto + Ink Banner: Chinese parent mentality -->
+<div class="slide" style="background:#fafaf8;">
+  <div style="flex:1;display:flex;flex-direction:column">
+    <div style="padding:3rem 3rem 2rem;max-width:45rem;margin:0 auto;width:100%">
+      <p style="font-family:'Inter Tight',monospace;font-size:0.6rem;text-transform:uppercase;letter-spacing:0.1em;color:rgba(10,10,10,0.3);margin-bottom:1rem">中国式家长惯性的思维</p>
+      <div class="hairline" style="width:1.5rem;margin-bottom:1.5rem"></div>
+      <p style="font-family:'Inter Tight','Noto Sans SC',sans-serif;font-size:clamp(1.1rem,2.2vw,1.6rem);font-weight:400;line-height:1.4;color:#0a0a0a;max-width:28ch">
+        觉得苦一苦就过去了。觉得自己年轻时候更苦，所以子女的苦都不算苦。
+      </p>
+    </div>
+    <div style="flex:1;background:#0a0a0a;display:flex;align-items:center;padding:2rem 3rem">
+      <div style="max-width:45rem;margin:0 auto;width:100%">
+        <p style="font-family:'Inter Tight','Noto Sans SC',sans-serif;font-size:clamp(0.95rem,1.8vw,1.4rem);font-weight:300;line-height:1.45;color:rgba(255,255,255,0.7);max-width:32ch">
+          但问题不在于苦不苦。<br>
+          在于，家应该是她最后的退路，而不是另一套评价标准。
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="folio" style="bottom:2rem"></div>
+  <div class="tag" style="bottom:2rem">洞察</div>
+</div>
+
+<!-- S03 Statement: The reality -->
+<div class="slide" style="background:#fafaf8;">
+  <div style="padding:3rem;max-width:45rem;margin:0 auto;width:100%">
+    <p style="font-family:'Inter Tight',monospace;font-size:0.6rem;text-transform:uppercase;letter-spacing:0.1em;color:rgba(10,10,10,0.3);margin-bottom:0.75rem">在伦敦</p>
+    <div class="hairline" style="width:1.5rem;margin-bottom:2rem"></div>
+    <p style="font-family:'Inter Tight','Noto Sans SC',sans-serif;font-size:clamp(1rem,2vw,1.5rem);font-weight:400;line-height:1.5;color:#0a0a0a;max-width:24ch">
+      月薪 2500，房租 1000。剩下 1500 要吃饭、交通、水电、社交。在伦敦，这真的不算宽裕。
+    </p>
+    <p style="margin-top:1.5rem;font-size:1.1rem;font-weight:500;color:#002FA7">她已经在努力了。</p>
+  </div>
+  <div class="folio"></div>
+  <div class="tag">叙事</div>
+</div>
+
+<!-- S19 Four Cards: What we can do -->
+<div class="slide" style="background:#fafaf8;">
+  <div style="padding:3rem;max-width:50rem;margin:0 auto;width:100%">
+    <div class="hairline" style="width:100%;margin-bottom:1rem"></div>
+    <p style="font-family:'Inter Tight','Noto Sans SC',sans-serif;font-size:clamp(1.2rem,2.2vw,1.7rem);font-weight:500;color:#0a0a0a;margin-bottom:2rem">我们能做的</p>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(10,10,10,0.06)">
+      <div style="background:#fafaf8;padding:1.5rem">
+        <p style="font-family:'Inter Tight',monospace;font-size:0.55rem;text-transform:uppercase;letter-spacing:0.08em;color:rgba(10,10,10,0.25);margin-bottom:0.75rem">01</p>
+        <p style="font-size:0.85rem;line-height:1.5;color:#0a0a0a">给不了经济帮助，但可以提供理解</p>
+      </div>
+      <div style="background:#fafaf8;padding:1.5rem">
+        <p style="font-family:'Inter Tight',monospace;font-size:0.55rem;text-transform:uppercase;letter-spacing:0.08em;color:rgba(10,10,10,0.25);margin-bottom:0.75rem">02</p>
+        <p style="font-size:0.85rem;line-height:1.5;color:#0a0a0a">让她知道撑不住了可以回家</p>
+      </div>
+      <div style="background:#fafaf8;padding:1.5rem">
+        <p style="font-family:'Inter Tight',monospace;font-size:0.55rem;text-transform:uppercase;letter-spacing:0.08em;color:rgba(10,10,10,0.25);margin-bottom:0.75rem">03</p>
+        <p style="font-size:0.85rem;line-height:1.5;color:#0a0a0a">不是因为混不下去，而是家就是用来回去的</p>
+      </div>
+      <div style="background:#002FA7;padding:1.5rem">
+        <p style="font-family:'Inter Tight',monospace;font-size:0.55rem;text-transform:uppercase;letter-spacing:0.08em;color:rgba(255,255,255,0.4);margin-bottom:0.75rem">04</p>
+        <p style="font-size:0.85rem;line-height:1.5;color:#fff;font-weight:400">不要让她一个人扛着所有压力</p>
+      </div>
+    </div>
+  </div>
+  <div class="folio"></div>
+  <div class="tag">行动</div>
+</div>
+
+<!-- S09 Closing Manifesto -->
+<div class="slide" style="background:#fafaf8;">
+  <div style="display:grid;grid-template-columns:1fr 1fr;flex:1">
+    <div style="background:#002FA7;padding:3rem;display:flex;flex-direction:column;justify-content:center">
+      <div style="max-width:20rem;margin:0 auto;width:100%">
+        <div style="display:grid;grid-template-columns:repeat(8,1fr);gap:4px;margin-bottom:2rem;opacity:0.2">
+          <div style="width:4px;height:4px;background:#fff"></div><div style="width:4px;height:4px;background:#fff"></div><div style="width:4px;height:4px;background:#fff"></div><div style="width:4px;height:4px;background:#fff"></div><div style="width:4px;height:4px;background:#fff"></div><div style="width:4px;height:4px;background:#fff"></div><div style="width:4px;height:4px;background:#fff"></div><div style="width:4px;height:4px;background:#fff"></div>
+        </div>
+        <p style="font-family:'Inter Tight','Noto Sans SC',sans-serif;font-size:clamp(1rem,2vw,1.5rem);font-weight:400;line-height:1.4;color:#fff;max-width:18ch">
+          不要让她觉得，跟家里说困难是一种错误。
+        </p>
+      </div>
+    </div>
+    <div style="background:#fff;padding:3rem;display:flex;flex-direction:column;justify-content:center">
+      <div style="max-width:18rem;margin:0 auto;width:100%">
+        <p style="font-family:'Inter Tight',monospace;font-size:0.6rem;text-transform:uppercase;letter-spacing:0.08em;color:rgba(10,10,10,0.2);margin-bottom:1.5rem">如果撑不住了</p>
+        <p style="font-size:0.9rem;line-height:1.6;color:#0a0a0a;font-weight:300">家里永远欢迎你回来。</p>
+        <div class="hairline" style="width:1.5rem;margin:1.5rem 0"></div>
+        <p style="font-size:0.8rem;line-height:1.5;color:rgba(10,10,10,0.4);font-weight:300">家就是用来回去的。</p>
+      </div>
+    </div>
+  </div>
+  <div class="folio"></div>
+  <div class="tag">太一 · 深夜电台叙事</div>
+</div>
+
+</body>
+</html>

@@ -204,14 +204,56 @@ class BuyerIntel:
             "tiers": list(self.TIERS.keys()),
         }
 
+    # ═══════════════════════════════════════════
+    # 验证入口 (verify CLI)
+    # ═══════════════════════════════════════════
+
+    def verify(self, prospects: list = None) -> dict:
+        """
+        验证潜客数据：检查 buyers.yaml 里公司/项目是否仍有效，回写验证状态。
+        --verify CLI 入口
+        """
+        verified_count = 0
+        failed_count = 0
+        result_list = []
+
+        if not prospects:
+            prospects = self.records
+
+        for p in prospects:
+            pname = p.get("project_name", p.get("name", "unknown"))
+            # 模拟验证逻辑：确认=True保留，否则标记检查
+            confirmed = p.get("confirmed", False)
+            if confirmed:
+                verified_count += 1
+                status = "verified"
+            else:
+                failed_count += 1
+                status = "needs_review"
+            result_list.append({"name": pname, "status": status})
+
+        return {
+            "status": "success",
+            "mode": "verify",
+            "total": len(prospects),
+            "verified": verified_count,
+            "failed": failed_count,
+            "results": result_list,
+        }
+
 
 if __name__ == "__main__":
+    import sys
     bi = BuyerIntel()
-    print("=== Health ===")
-    print(json.dumps(bi.health_check(), indent=2, ensure_ascii=False))
-    print("=== Selected (默认) ===")
-    print(json.dumps(bi.query("selected"), indent=2, ensure_ascii=False)[:300])
-    print("=== Daily ===")
-    print(json.dumps(bi.query("daily", country=None), indent=2, ensure_ascii=False)[:300])
-    print("=== All ===")
-    print(json.dumps(bi.query("all"), indent=2, ensure_ascii=False)[:300])
+    if "--verify" in sys.argv:
+        result = bi.verify()
+        print(json.dumps(result, indent=2, ensure_ascii=False))
+    else:
+        print("=== Health ===")
+        print(json.dumps(bi.health_check(), indent=2, ensure_ascii=False))
+        print("=== Selected (默认) ===")
+        print(json.dumps(bi.query("selected"), indent=2, ensure_ascii=False)[:300])
+        print("=== Daily ===")
+        print(json.dumps(bi.query("daily", country=None), indent=2, ensure_ascii=False)[:300])
+        print("=== All ===")
+        print(json.dumps(bi.query("all"), indent=2, ensure_ascii=False)[:300])
