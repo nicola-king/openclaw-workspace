@@ -1,6 +1,7 @@
 {
   "start_date": "2026-05-12T14:00:35.362331",
   "current_phase": "phase_1",
+  "status": "active",
   "phases": [
     {
       "phase_id": "phase_1",
@@ -18,7 +19,7 @@
         "followers": 500,
         "engagement_rate": "2%"
       },
-      "status": "pending"
+      "status": "active"
     },
     {
       "phase_id": "phase_2",

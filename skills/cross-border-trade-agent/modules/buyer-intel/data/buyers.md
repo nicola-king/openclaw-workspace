@@ -49,7 +49,8 @@
     "confirmed": true,
     "contacts": [],
     "notes": "全球最大在建项目，劳工营需求持续",
-    "last_updated": "2026-05-05"
+    "last_updated": "2026-05-05",
+    "type": "project"
   },
   {
     "id": "BUY-SAU-003",
@@ -73,7 +74,8 @@
     "confirmed": true,
     "contacts": [],
     "notes": "豪华度假村配套营地",
-    "last_updated": "2026-05-05"
+    "last_updated": "2026-05-05",
+    "type": "project"
   },
   {
     "id": "BUY-SAU-004",
@@ -92,7 +94,8 @@
     "source": "公开项目情报",
     "confirmed": true,
     "contacts": [],
-    "last_updated": "2026-05-05"
+    "last_updated": "2026-05-05",
+    "type": "project"
   },
   {
     "id": "BUY-UAE-001",
@@ -114,7 +117,8 @@
     "source": "公开项目情报",
     "confirmed": true,
     "contacts": [],
-    "last_updated": "2026-05-05"
+    "last_updated": "2026-05-05",
+    "type": "project"
   },
   {
     "id": "BUY-UAE-002",
@@ -137,7 +141,8 @@
     "confirmed": true,
     "contacts": [],
     "notes": "超长期城市开发计划",
-    "last_updated": "2026-05-05"
+    "last_updated": "2026-05-05",
+    "type": "project"
   },
   {
     "id": "BUY-IRQ-001",
@@ -159,134 +164,340 @@
     "confirmed": true,
     "contacts": [],
     "notes": "模块化方案最优解市场",
-    "last_updated": "2026-05-05"
+    "last_updated": "2026-05-05",
+    "type": "project"
   },
   {
-    "id": "BUY-COM-001",
-    "type": "company",
-    "company_name": "Afco Steel",
-    "country": "沙特",
-    "website": "afcosteel.com.sa",
-    "phone": "+966 12-636-9088",
-    "email": "info@afcosteel.com.sa",
-    "linkedin": "linkedin.com/company/afco-steel",
-    "address": "2nd Industrial Area, Jeddah 21245, PO Box 18646",
-    "business": "钢结构制造与安装",
-    "contact_role": "采购部/商务部",
-    "contact_person": null,
-    "relationship": "潜在竞争对手/可合作",
-    "notes": "已验证官网+Contact页信息，可直接联系洽谈合作或分包",
-    "confirmed": true,
-    "last_updated": "2026-05-06",
-    "_verifications": [
+    "id": "BUY-DEM-001",
+    "type": "demand",
+    "project_name": "BHP Billiton",
+    "project_brief": "全球最大矿业公司，澳洲5万+工人，Pilbara矿区营地住宿持续采购",
+    "country": "Australia",
+    "sectors": [
+      "矿业",
+      "营地",
+      "基建"
+    ],
+    "buyer_type": "矿业公司",
+    "procurement_needs": [
+      "矿工营房",
+      "营地模块",
+      "临时住宿"
+    ],
+    "contacts": [
       {
-        "method": "website_check",
-        "passed": true,
-        "evidence": "网站存在: afcosteel.com.sa",
-        "timestamp": "2026-05-06"
+        "name": "Luke King",
+        "role": "Head of Procurement",
+        "source": "RocketReach/ZoomInfo",
+        "email_hint": "luke.king@bhp.com（推测，RocketReach有2邮箱+2电话）",
+        "linkedin": "linkedin.com/in/lukeking"
       },
       {
-        "method": "phone_check",
-        "passed": true,
-        "evidence": "电话有效: +966 12-636-9088",
-        "timestamp": "2026-05-06"
+        "name": "Kurt Benavides",
+        "role": "Head of Procurement Operations",
+        "source": "AroundDeal",
+        "email_hint": "kurt.benavides@bhp.com（推测）"
       },
       {
-        "method": "email_check",
-        "passed": true,
-        "evidence": "邮箱有效: info@afcosteel.com.sa",
-        "timestamp": "2026-05-06"
+        "name": "Tajinder Bedi",
+        "role": "Senior Procurement Manager",
+        "source": "LinkedIn",
+        "linkedin": "au.linkedin.com/in/tejinder-bedi"
       },
       {
-        "method": "linkedin_check",
-        "passed": true,
-        "evidence": "LinkedIn: linkedin.com/company/afco-steel",
-        "timestamp": "2026-05-06"
+        "name": "供应商门户",
+        "url": "bhp.com/suppliers"
       },
       {
-        "method": "third_party",
-        "passed": true,
-        "evidence": "第三方交叉验证完成",
-        "timestamp": "2026-05-06"
+        "name": "Ariba采购系统",
+        "url": "bhp.procurement.ariba.com"
       }
     ],
-    "_confidence": 1.0
+    "location": "墨尔本/Pilbara WA",
+    "source": "bhp.com",
+    "confirmed": true,
+    "budget_usd": null,
+    "status": "持续采购",
+    "last_updated": "2026-05-19"
   },
   {
-    "id": "BUY-COM-002",
-    "company_name": "SBS Contracting",
-    "country": "沙特",
-    "website": "sbs-contracting.com",
-    "phone": "+966-54-898-6765",
-    "email": "info@sbs-contracting.com",
-    "business": "钢结构建筑系统",
-    "contact_role": "负责人",
-    "notes": "已验证联系方式",
+    "id": "BUY-DEM-002",
+    "type": "demand",
+    "project_name": "Rio Tinto",
+    "project_brief": "全球矿业巨头，澳洲4万+工人，Pilbara WA矿区营房需求",
+    "country": "Australia",
+    "sectors": [
+      "矿业",
+      "营地"
+    ],
+    "buyer_type": "矿业公司",
+    "procurement_needs": [
+      "矿工营房",
+      "营地设施"
+    ],
+    "contacts": [
+      {
+        "name": "采购/供应链部",
+        "source": "供应商门户",
+        "url": "riotinto.com/en/suppliers"
+      },
+      {
+        "name": "建议LinkedIn搜索",
+        "source": "LinkedIn",
+        "hint": "Rio Tinto Procurement Manager + Camp/Accommodation"
+      }
+    ],
+    "location": "墨尔本/Pilbara WA",
+    "source": "riotinto.com",
     "confirmed": true,
-    "last_updated": "2026-05-05"
+    "last_updated": "2026-05-19"
   },
   {
-    "id": "BUY-COM-003",
-    "company_name": "Zamil Steel",
-    "country": "沙特",
-    "website": "zamilsteel.com",
-    "linkedin": "linkedin.com/company/zamil-steel",
-    "business": "预工程钢结构建筑（全球最大单体工厂）",
-    "contact_role": "供应链/采购部",
-    "contact_method": "官网表单",
-    "notes": "达曼工厂，全球最大PEB工厂，45年经验，需通过官网Supplier Registration对接",
+    "id": "BUY-DEM-003",
+    "type": "demand",
+    "project_name": "Fortescue Metals Group",
+    "project_brief": "澳洲第三大铁矿商，2万+工人，Pilbara矿区营房",
+    "country": "Australia",
+    "sectors": [
+      "矿业",
+      "营地"
+    ],
+    "buyer_type": "矿业公司",
+    "procurement_needs": [
+      "矿工营房",
+      "营地设施"
+    ],
+    "contacts": [
+      {
+        "name": "Dara Byrne",
+        "role": "Group Manager Contracts & Procurement - Projects",
+        "source": "RocketReach(1邮箱)/Wiza/ZoomInfo",
+        "email_hint": "d*****@fmgl.com.au（Wiza可见部分），推测dara.byrne@fmgl.com.au",
+        "linkedin": "au.linkedin.com/in/dara-byrne-44a8b846"
+      },
+      {
+        "name": "Mark Cocks",
+        "role": "Senior Contracts & Procurement Specialist",
+        "source": "LinkedIn/Wiza",
+        "email_hint": "m*****@fmgl.com.au（Wiza可见部分）"
+      },
+      {
+        "name": "供应商中心",
+        "url": "suppliers.fortescue.com"
+      }
+    ],
+    "location": "珀斯/Pilbara WA",
+    "source": "fortescue.com",
     "confirmed": true,
-    "last_updated": "2026-05-05"
+    "last_updated": "2026-05-19"
   },
   {
-    "id": "BUY-PEO-001",
-    "company": "Crystalbrook Collection",
-    "person_name": "Geoffrey York (Geoff York)",
-    "title": "CEO",
-    "linkedin": "au.linkedin.com/in/geoffrey-york-a68470a",
-    "country": "澳洲",
-    "notes": "已验证联系人",
+    "id": "BUY-DEM-004",
+    "type": "demand",
+    "project_name": "Kainga Ora (NZ政府住房署)",
+    "project_brief": "新西兰最大住房供应商，模块化建筑是解决住房危机的核心方案",
+    "country": "New Zealand",
+    "sectors": [
+      "政府",
+      "住宅"
+    ],
+    "buyer_type": "政府机构",
+    "procurement_needs": [
+      "保障房",
+      "模块化住宅",
+      "临时住房"
+    ],
+    "contacts": [
+      {
+        "name": "Andrea Morton",
+        "role": "Director Procurement and Supplier Management",
+        "source": "Wiza/LinkedIn/NZ政府公开记录",
+        "email_hint": "a*****@kaingaora.govt.nz（Wiza可见部分），推测andrea.morton@kaingaora.govt.nz"
+      },
+      {
+        "name": "供应商门户",
+        "url": "kaingaora.govt.nz/suppliers"
+      },
+      {
+        "name": "招标平台",
+        "url": "tenderlink.com/kaingaora"
+      },
+      {
+        "name": "GETS招标",
+        "url": "gets.govt.nz"
+      }
+    ],
+    "location": "新西兰全国",
+    "source": "kaingaora.govt.nz",
     "confirmed": true,
-    "last_updated": "2026-05-05"
+    "last_updated": "2026-05-19"
   },
   {
-    "id": "BUY-PEO-002",
-    "company": "SAW Constructions",
-    "person_name": "Steven Vranesic",
-    "title": "Founder, Sales Director",
-    "email": "steven@sawconstructions.com.au",
-    "country": "澳洲",
+    "id": "BUY-DEM-005",
+    "type": "demand",
+    "project_name": "AusTender (联邦政府采购)",
+    "project_brief": "澳大利亚联邦政府采购平台，含国防/应急/基建模块化采购",
+    "country": "Australia",
+    "sectors": [
+      "政府",
+      "基建"
+    ],
+    "buyer_type": "政府采购",
+    "procurement_needs": [
+      "预制建筑",
+      "模块化住宿",
+      "应急住房"
+    ],
+    "contacts": [
+      {
+        "name": "招标平台",
+        "url": "austender.gov.au"
+      },
+      {
+        "name": "关键词订阅",
+        "hint": "搜索prefabricated building/modular accommodation"
+      }
+    ],
+    "location": "澳大利亚全国",
+    "source": "austender.gov.au",
     "confirmed": true,
-    "last_updated": "2026-05-05"
+    "last_updated": "2026-05-19"
   },
   {
-    "id": "BUY-PEO-003",
-    "company": "SAW Constructions",
-    "person_name": "Andrew Allen",
-    "title": "Managing Director",
-    "email": "andrew@sawconstructions.com.au",
-    "country": "澳洲",
+    "id": "BUY-HOT-001",
+    "type": "demand",
+    "project_name": "Accor Pacific (澳洲最大酒店集团)",
+    "project_brief": "300+酒店，澳洲新西兰最大酒店运营商。模块化酒店建设加速中",
+    "country": "Australia/New Zealand",
+    "sectors": [
+      "酒店",
+      "旅游",
+      "住宿"
+    ],
+    "buyer_type": "酒店集团",
+    "procurement_needs": [
+      "模块化酒店",
+      "度假屋",
+      "员工宿舍"
+    ],
+    "contacts": [
+      {
+        "name": "开发部/采购部",
+        "hint": "LinkedIn搜Accor Pacific Development Manager",
+        "url": "accor.com"
+      }
+    ],
+    "location": "悉尼/奥克兰",
+    "source": "公开情报",
     "confirmed": true,
-    "last_updated": "2026-05-05"
+    "last_updated": "2026-05-20"
   },
   {
-    "id": "BUY-PEO-004",
-    "company": "SAW Constructions",
-    "person_name": "Chris Stewart",
-    "title": "COO",
-    "email": "chris@sawconstructions.com.au",
-    "country": "澳洲",
+    "id": "BUY-HOT-002",
+    "type": "demand",
+    "project_name": "Hilton Australia (希尔顿澳洲)",
+    "project_brief": "已确认Townsville首个模块化酒店(190间)，预示模块化酒店趋势",
+    "country": "Australia",
+    "sectors": [
+      "酒店",
+      "旅游"
+    ],
+    "buyer_type": "酒店集团",
+    "procurement_needs": [
+      "模块化酒店客房",
+      "度假设施"
+    ],
+    "contacts": [
+      {
+        "name": "开发部",
+        "hint": "LinkedIn搜Hilton Australia Development",
+        "url": "hilton.com"
+      }
+    ],
+    "location": "悉尼/Townsville QLD",
+    "source": "HotelManagement.com.au",
     "confirmed": true,
-    "last_updated": "2026-05-05"
+    "last_updated": "2026-05-20"
   },
   {
-    "id": "BUY-PEO-005",
-    "company": "SAW Constructions",
-    "person_name": "Susan Agliozzo",
-    "title": "CFO",
-    "email": "susan@sawconstructions.com.au",
-    "country": "澳洲",
+    "id": "BUY-HOT-003",
+    "type": "demand",
+    "project_name": "Meriton Group (澳洲最大酒店业主)",
+    "project_brief": "澳洲最大酒店业主，6,211间客房。持续扩张中",
+    "country": "Australia",
+    "sectors": [
+      "酒店",
+      "住宅"
+    ],
+    "buyer_type": "酒店业主/开发商",
+    "procurement_needs": [
+      "酒店客房",
+      "服务公寓",
+      "建筑模块"
+    ],
+    "contacts": [
+      {
+        "name": "采购部",
+        "hint": "LinkedIn搜Meriton Procurement",
+        "url": "meriton.com.au"
+      }
+    ],
+    "location": "悉尼",
+    "source": "CBRE报告",
     "confirmed": true,
-    "last_updated": "2026-05-05"
+    "last_updated": "2026-05-20"
+  },
+  {
+    "id": "BUY-HOT-004",
+    "type": "demand",
+    "project_name": "NZ Hotel Holdings (新西兰酒店控股)",
+    "project_brief": "NZ Super Fund + Russell Property + Lockwood联合体，专注新西兰酒店资产转型",
+    "country": "New Zealand",
+    "sectors": [
+      "酒店",
+      "旅游"
+    ],
+    "buyer_type": "酒店开发商/投资者",
+    "procurement_needs": [
+      "酒店建设",
+      "模块化住宿",
+      "度假村"
+    ],
+    "contacts": [
+      {
+        "name": "团队",
+        "url": "nzhotelholdings.co.nz"
+      }
+    ],
+    "location": "新西兰全国",
+    "source": "nzhotelholdings.co.nz",
+    "confirmed": true,
+    "last_updated": "2026-05-20"
+  },
+  {
+    "id": "BUY-HOT-005",
+    "type": "demand",
+    "project_name": "NZ Horizon Hospitality Group",
+    "project_brief": "专门开发新西兰南岛新一代酒店，看中模块化技术",
+    "country": "New Zealand",
+    "sectors": [
+      "酒店",
+      "旅游"
+    ],
+    "buyer_type": "酒店开发商",
+    "procurement_needs": [
+      "酒店客房模块",
+      "度假设施"
+    ],
+    "contacts": [
+      {
+        "name": "团队",
+        "url": "nzhhg.co.nz"
+      }
+    ],
+    "location": "新西兰南岛",
+    "source": "nzhhg.co.nz",
+    "confirmed": true,
+    "last_updated": "2026-05-20"
   }
 ]

@@ -89,5 +89,13 @@
 | memory | 428K | 不变 |
 
 ### 磁盘状态
-- 总量 1.8T，已用 106G (7%)，空间充裕
+- 总量 1.8T，已用 107G (7%)，空间充裕
 - 今日无新增报告，无 PID 残留，系统健康
+
+### 2026-05-19
+- **tmp/**: 清理 `cron-cross-border-api-keepalive.log` (75B)
+- **data/**: shared-search-cache 9 文件 (今日活跃，保留)，cross-border/ (776K) 活跃
+- **notes/**: `__deprecated/` 1 个遗留文件，其他笔记正常
+- **logs/**: health.log 9.2K，无日志需归档
+- **磁盘**: 1.8T/107G (7%)，空间充裕
+- **PID/锁文件**: 无残留

@@ -209,3 +209,67 @@
 [2026-05-19 00:15:23] [INFO]   ✅ [JSON] converter_state.json → ok (149.1KB)
 [2026-05-19 00:15:24] [INFO]   ✅ [JSON] short-term-recall.json → ok (124.7KB)
 [2026-05-19 00:15:24] [INFO] 转换完成: ✅ 4 成功, ⏭ 14 跳过, ❌ 1 失败
+[2026-05-19 08:15:16] [INFO] 发现 2 个待转换文件（增量）
+[2026-05-19 08:15:17] [INFO]   ❌ [YAML] none.yaml: failed: Traceback (most recent call last):
+  File "/home/sayelf/.local/venvs/markitdown/bin/markitdown", line 8, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/home/sayelf/.local/venvs/markitdo
+[2026-05-19 08:15:17] [INFO]   ✅ [JSON] converter_state.json → ok (149.1KB)
+[2026-05-19 08:15:17] [INFO] 转换完成: ✅ 1 成功, ⏭ 0 跳过, ❌ 1 失败
+[2026-05-19 16:15:26] [INFO] 发现 45 个待转换文件（增量）
+[2026-05-19 16:15:27] [INFO]   ✅ [JSON] shared-search-stats.json → ok (354.0B)
+[2026-05-19 16:15:28] [INFO]   ✅ [JSON] 88f44d7198f0265e469770d7fbb2f084.json → ok (1.8KB)
+[2026-05-19 16:15:29] [INFO]   ✅ [JSON] 5ccff32d752527702c40456923792c55.json → ok (1.9KB)
+[2026-05-19 16:15:29] [INFO]   ✅ [JSON] d770a5b3b6b525ef99a5022fda2d7a7a.json → ok (1.7KB)
+[2026-05-19 16:15:30] [INFO]   ✅ [JSON] 51ec060fb4f26cf4b904e40ca7f5620f.json → ok (1.9KB)
+[2026-05-19 16:15:31] [INFO]   ✅ [JSON] e37c0ae5bed742e818d2661aa5e9ba4e.json → ok (1.7KB)
+[2026-05-19 16:15:32] [INFO]   ✅ [JSON] 46f41531a5bdb92b998ca861b92d87cd.json → ok (1.8KB)
+[2026-05-19 16:15:33] [INFO]   ✅ [JSON] dcc96c45b3291dbde14162a64e12d2c0.json → ok (1.7KB)
+[2026-05-19 16:15:33] [INFO]   ✅ [JSON] 344cc56a5b0dcb1f8386865668144a93.json → ok (1.7KB)
+[2026-05-19 16:15:34] [INFO]   ✅ [JSON] 94e939e71ef81d463de73bc5876c0f99.json → ok (1.9KB)
+[2026-05-19 16:15:35] [INFO]   ✅ [JSON] keyword_research.json → ok (47.4KB)
+[2026-05-19 16:15:36] [INFO]   ✅ [JSON] poland-energy-storage-boom_meta.json → ok (809.0B)
+[2026-05-19 16:15:37] [INFO]   ✅ [JSON] uk-energy-storage_meta.json → ok (805.0B)
+[2026-05-19 16:15:37] [INFO]   ✅ [JSON] energy-storage-overview_meta.json → ok (752.0B)
+[2026-05-19 16:15:38] [INFO]   ✅ [JSON] italy-energy-storage_meta.json → ok (792.0B)
+[2026-05-19 16:15:39] [INFO]   ✅ [JSON] india-ev-battery-storage_meta.json → ok (823.0B)
+[2026-05-19 16:15:40] [INFO]   ✅ [JSON] us-energy-trade-dashboard_meta.json → ok (777.0B)
+[2026-05-19 16:15:41] [INFO]   ✅ [JSON] summary.json → ok (426.0B)
+[2026-05-19 16:15:41] [INFO]   ✅ [JSON] brazil-bess-auction_meta.json → ok (800.0B)
+[2026-05-19 16:15:42] [INFO]   ❌ [YAML] none.yaml: failed: Traceback (most recent call last):
+  File "/home/sayelf/.local/venvs/markitdown/bin/markitdown", line 8, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/home/sayelf/.local/venvs/markitdo
+[2026-05-19 16:15:43] [INFO]   ✅ [JSON] outreach-queue-2026-05-19.json → ok (8.5KB)
+[2026-05-19 16:15:44] [INFO]   ✅ [JSON] schema-article-structured-data.json → ok (3.4KB)
+[2026-05-19 16:15:45] [INFO]   ✅ [PPT] 美团推流行动方案.pptx → ok (8.6KB)
+[2026-05-19 16:15:46] [INFO]   ✅ [JSON] converter_state.json → ok (150.4KB)
+[2026-05-19 16:15:46] [INFO]   ✅ [JSON] short-term-recall.json → ok (134.0KB)
+[2026-05-19 16:15:46] [INFO] 转换完成: ✅ 24 成功, ⏭ 20 跳过, ❌ 1 失败
+[2026-05-20 00:15:24] [INFO] 发现 27 个待转换文件（增量）
+[2026-05-20 00:15:24] [INFO]   ✅ [JSON] competitor_report_20260519.json → ok (2.5KB)
+[2026-05-20 00:15:25] [INFO]   ✅ [JSON] promua_20260519.json → ok (1.5KB)
+[2026-05-20 00:15:26] [INFO]   ✅ [JSON] emag_20260519.json → ok (447.0B)
+[2026-05-20 00:15:27] [INFO]   ✅ [JSON] alibaba_20260519.json → ok (1.6KB)
+[2026-05-20 00:15:28] [INFO]   ✅ [JSON] made_in_china_20260519.json → ok (1.2KB)
+[2026-05-20 00:15:28] [INFO]   ✅ [JSON] allegro_20260519.json → ok (450.0B)
+[2026-05-20 00:15:29] [INFO]   ✅ [JSON] summary.json → ok (361.0B)
+[2026-05-20 00:15:30] [INFO]   ✅ [JSON] europages_20260519.json → ok (997.0B)
+[2026-05-20 00:15:31] [INFO]   ❌ [YAML] none.yaml: failed: Traceback (most recent call last):
+  File "/home/sayelf/.local/venvs/markitdown/bin/markitdown", line 8, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/home/sayelf/.local/venvs/markitdo
+[2026-05-20 00:15:32] [INFO]   ✅ [PDF] 钢结构折叠房屋购买方画像.pdf → ok (6.7KB)
+[2026-05-20 00:15:33] [INFO]   ✅ [PDF] 澳洲新西兰买家情报报告.pdf → ok (5.9KB)
+[2026-05-20 00:15:34] [INFO]   ✅ [PDF] 钢结构折叠房屋需求方买家.pdf → ok (7.0KB)
+[2026-05-20 00:15:35] [INFO]   ✅ [PDF] 钢结构折叠房屋终端买家联系人.pdf → ok (4.2KB)
+[2026-05-20 00:15:36] [INFO]   ✅ [PDF] 钢结构折叠房屋需求方买家v4.pdf → ok (3.4KB)
+[2026-05-20 00:15:37] [INFO]   ✅ [PPT] 东欧渠道落地方案.pptx → ok (8.1KB)
+[2026-05-20 00:15:37] [INFO]   ✅ [JSON] converter_state.json → ok (151.6KB)
+[2026-05-20 00:15:38] [INFO]   ✅ [JSON] buyer_matching.json → ok (4.7KB)
+[2026-05-20 00:15:39] [INFO]   ✅ [JSON] buyers.json → ok (12.8KB)
+[2026-05-20 00:15:40] [INFO]   ✅ [JSON] short-term-recall.json → ok (135.9KB)
+[2026-05-20 00:15:40] [INFO] 转换完成: ✅ 18 成功, ⏭ 8 跳过, ❌ 1 失败
