@@ -1,7 +1,7 @@
 # india-ev-battery-storage
 
 > 来源: https://www.trade.gov/market-intelligence/india-electric-vehicle-battery-and-storage-trends
-> 抓取时间: 2026-05-19T15:41:00.924580
+> 抓取时间: 2026-05-20T18:02:10.387219
 > 分类: market-intelligence | 市场: india, apac | 优先级: P2
 
 ---

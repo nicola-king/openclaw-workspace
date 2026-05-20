@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>Memmert 药品稳定性试验箱 ICH 系列 - 结构深度解析</title>
+<style>
+@page { size: A4; margin: 1.6cm; }
+body { font-family: "Noto Sans SC", "Microsoft YaHei", "PingFang SC", sans-serif; font-size: 10.5pt; line-height: 1.5; color: #1a1a2e; }
+h1 { font-size: 19pt; color: #16213e; border-bottom: 3px solid #0f3460; padding-bottom: 8px; margin-bottom: 16px; }
+h2 { font-size: 14pt; color: #0f3460; margin-top: 20px; border-left: 4px solid #e94560; padding-left: 10px; }
+h3 { font-size: 12pt; color: #16213e; margin-top: 14px; }
+h4 { font-size: 11pt; color: #0f3460; margin: 10px 0 5px 0; }
+.header-bar { background: linear-gradient(135deg, #0f3460, #16213e); color: white; padding: 18px; text-align: center; border-radius: 8px; margin-bottom: 20px; }
+.header-bar h1 { color: white; border: none; font-size: 17pt; margin: 0 0 4px 0; }
+.header-bar p { margin: 2px 0; font-size: 9pt; opacity: 0.85; }
+table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 9pt; }
+th { background: #0f3460; color: white; padding: 7px 5px; text-align: left; }
+td { padding: 6px 5px; border-bottom: 1px solid #ddd; }
+tr:nth-child(even) { background: #f8f9fa; }
+.footer { margin-top: 30px; text-align: center; font-size: 8pt; color: #999; border-top: 1px solid #ddd; padding-top: 10px; }
+.note { background: #e3f2fd; border-left: 4px solid #1565c0; padding: 8px 12px; margin: 10px 0; border-radius: 0 5px 5px 0; font-size: 9pt; }
+.warn { background: #fff3e0; border-left: 4px solid #e65100; padding: 8px 12px; margin: 10px 0; border-radius: 0 5px 5px 0; font-size: 9pt; }
+.ok-box { background: #e8f5e9; border-left: 4px solid #2e7d32; padding: 8px 12px; margin: 10px 0; border-radius: 0 5px 5px 0; font-size: 9pt; }
+.exp-view { font-family: "Courier New", monospace; font-size: 6.5pt; line-height: 1.15; background: #f5f5f5; padding: 8px; border-radius: 4px; white-space: pre; overflow-x: auto; border: 1px solid #ddd; }
+.card { background: #fafafa; border: 1px solid #e0e0e0; border-radius: 6px; padding: 12px; margin: 10px 0; page-break-inside: avoid; }
+.card h3 { margin: 0 0 6px 0; }
+.feature-grid { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0; }
+.feature-item { background: #f0f4ff; border-radius: 4px; padding: 6px 10px; font-size: 8.5pt; flex: 1; min-width: 140px; }
+.feature-item strong { color: #0f3460; display: block; font-size: 9pt; }
+.arrow-up { color: #e94560; font-weight: bold; }
+.spec-table td:first-child { font-weight: bold; width: 28%; }
+</style>
+</head>
+<body>
+
+<div class="header-bar">
+  <h1>🏭 Memmert ICH 系列 药品稳定性试验箱</h1>
+  <p>结构细节深度解析 · 爆炸图剖视 · 技术对标学习</p>
+  <p>报告日期：2026-05-20 | 基于 Memmert 官方技术资料+行业分析</p>
+</div>
+
+<!-- ============================================ -->
+<h2>一、产品概览</h2>
+
+<table>
+<tr><th>项目</th><th>ICH260 (代表型号)</th><th>ICH750 (大容量)</th></tr>
+<tr><td>温度范围</td><td>-10℃ ~ +60℃ (ICHL: 0~60℃)</td><td>同左</td></tr>
+<tr><td>湿度范围</td><td>10~80% RH 主动控制</td><td>同左</td></tr>
+<tr><td>内腔尺寸 (W×D×H mm)</td><td>640 × 800 × 500</td><td>1040 × 1200 × 600</td></tr>
+<tr><td>容积</td><td>256 L</td><td>749 L</td></tr>
+<tr><td>外壳材质</td><td colspan="2">不锈钢 1.4301 (ASTM 304) 结构化表面</td></tr>
+<tr><td>内腔材质</td><td colspan="2">不锈钢 1.4301 (ASTM 304)，整体焊接</td></tr>
+<tr><td>控制系统</td><td colspan="2">ControlCOCKPIT — SingleDISPLAY / TwinDISPLAY</td></tr>
+<tr><td>温度传感器</td><td colspan="2">双 Pt100 铂电阻，互为备份</td></tr>
+<tr><td>冷却方式</td><td colspan="2">压缩机冷却</td></tr>
+<tr><td>门结构</td><td colspan="2">双层门：外不锈钢门 + 内玻璃门</td></tr>
+<tr><td>加湿方式</td><td colspan="2">主动加湿，气密内腔 — 达到设定点后零耗水</td></tr>
+<tr><td>接口</td><td colspan="2">Ethernet + USB + AtmoCONTROL 软件</td></tr>
+<tr><td>数据记录</td><td colspan="2">内置数据记录器，≥10 年存储</td></tr>
+</table>
+
+<!-- ============================================ -->
+<h2>二、爆炸图结构解剖</h2>
+
+<div class="note">
+<strong>📐 以下为基于 Memmert ICH 系列官方技术文档重构的垂直剖面爆炸图</strong>（自顶向下分解各层结构）
+</div>
+
+<div class="exp-view">
+╔══════════════════════════════════════════════════════════════╗
+║                   ① 顶部控制单元                              ║
+║   ┌──────────────────────────────────────────────────┐      ║
+║   │  ControlCOCKPIT 主控板                            │      ║
+║   │  ┌──────────┐  ┌──────────┐                      │      ║
+║   │  │ 显示面板  │  │ 触控模组 │   TwinDISPLAY        │      ║
+║   │  │ (左/上)   │  │ (右/下)  │   = 双屏版本          │      ║
+║   │  └──────────┘  └──────────┘                      │      ║
+║   │  USB接口 | Ethernet | 报警模块 | 电源模块           │      ║
+║   └──────────────────────────────────────────────────┘      ║
+╠══════════════════════════════════════════════════════════════╣
+║                   ② 顶部保温层 (80mm 矿物纤维)               ║
+║   ┌──────────────────────────────────────────────────┐      ║
+║   │  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓  │      ║
+║   │  ▓  Mineral Wool, 密度 ~100kg/m³, λ≤0.04 W/mK ▓  │      ║
+║   │  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓  │      ║
+║   └──────────────────────────────────────────────────┘      ║
+╠══════════════════════════════════════════════════════════════╣
+║                   ③ 空气夹套层（六面加热核心专利）              ║
+║   ┌──────────────────────────────────────────────────┐      ║
+║   │   ┌─ 上部加热板 ─────────────────────────┐       │      ║
+║   │   │  ● ● ● ● ● ● ● ● ● ● ● ● ● ●     │       │      ║
+║   │   │  (加热丝嵌入铝板, 大面积铜管换热)       │       │      ║
+║   │   └────────────────────────────────────┘       │      ║
+║   │                                                 │      ║
+║   │   ┌───────────┐              ┌───────────┐      │      ║
+║   │   │ 左侧加热   │   ◄ 循环    │ 右侧加热    │      │      ║
+║   │   │ 板 (空气   │   气流      │ 板 (空气    │      │      ║
+║   │   │ 夹套)      │  方向       │ 夹套)      │      │      ║
+║   │   │ ● ● ● ●  │  ═══►       │ ● ● ● ●   │      │      ║
+║   │   └───────────┘              └───────────┘      │      ║
+║   │              ░░░ 内腔空间 ░░░                    │      ║
+║   │              ░ (样品区) ░░░                      │      ║
+║   │   ┌───────────┐              ┌───────────┐      │      ║
+║   │   │ 循环风机   │              │ 循环风机   │      │      ║
+║   │   │ (左)       │              │ (右)       │      │      ║
+║   │   └───────────┘              └───────────┘      │      ║
+║   └──────────────────────────────────────────────────┘      ║
+║                                                 ↓           ║
+║   气流路径: 顶部加热 → 两侧夹套下行 → 底部回风 → 风机 → 顶部  ║
+╠══════════════════════════════════════════════════════════════╣
+║                   ④ 内腔工作区                              ║
+║   ┌──────────────────────────────────────────────────┐      ║
+║   │  ┌────┐  ┌────┐  ┌────┐  ┌────┐  ┌────┐       │      ║
+║   │  │ 搁板  │  │ 搁板  │  │ 搁板  │  │ 搁板  │  │ 搁板  │       │      ║
+║   │  │ #1   │  │ #2   │  │ #3   │  │ #4   │  │ #5   │       │      ║
+║   │  │ 样品  │  │ 样品  │  │ 样品  │  │ 样品  │  │ 样品  │       │      ║
+║   │  └────┘  └────┘  └────┘  └────┘  └────┘       │      ║
+║   │  304SS 冲孔不锈钢搁板, 可调间距                     │      ║
+║   │  内腔整体焊接, 圆角过渡, 电抛光处理                  │      ║
+║   └──────────────────────────────────────────────────┘      ║
+╠══════════════════════════════════════════════════════════════╣
+║                   ⑤ 前门组件 + 湿度/温度传感器              ║
+║   ┌──────────────────────────────────────────────────┐      ║
+║   │  ┌─────────────────────────────────────────┐    │      ║
+║   │  │  ① 外层不锈钢门 (结构化表面, 带把手)     │    │      ║
+║   │  │  ┌─────────────────────────────────┐   │    │      ║
+║   │  │  │  ② 内层钢化玻璃门 (密封)         │   │    │      ║
+║   │  │  │  (高温密封条, 四面压紧)           │   │    │      ║
+║   │  │  └─────────────────────────────────┘   │    │      ║
+║   │  └─────────────────────────────────────────┘    │      ║
+║   │  传感器安装位置:                                 │      ║
+║   │    Pt100 #1 — 内腔顶部 (主控)                     │      ║
+║   │    Pt100 #2 — 内腔中部 (备份/监控)                 │      ║
+║   │    湿度探头 — 内腔回风口 (电容式高分子传感器)         │      ║
+║   └──────────────────────────────────────────────────┘      ║
+╠══════════════════════════════════════════════════════════════╣
+║                   ⑥ 底部机组                               ║
+║   ┌──────────────────────────────────────────────────┐      ║
+║   │  ┌──────────┐  ┌──────────┐  ┌──────────┐      │      ║
+║   │  │ 压缩机    │  │ 加湿器   │  │ 冷凝器   │      │      ║
+║   │  │ (Danfoss) │  │ (蒸汽)   │  │ + 风机   │      │      ║
+║   │  └──────────┘  └──────────┘  └──────────┘      │      ║
+║   │  ┌──────────┐  ┌──────────┐                     │      ║
+║   │  │ 蒸发器    │  │ 膨胀阀   │                      │      ║
+║   │  │ (铜管+翅片)│  │ (电子)   │                      │      ║
+║   │  └──────────┘  └──────────┘                      │      ║
+║   │  加热元件: 不锈钢翅片加热管, 表面负荷 ≤2.5W/cm²     │      ║
+║   │  底部保温: 100mm 高密度矿棉                        │      ║
+║   └──────────────────────────────────────────────────┘      ║
+╠══════════════════════════════════════════════════════════════╣
+║                   ⑦ 底部支架 + 脚轮                        ║
+║   ┌──────────────────────────────────────────────────┐      ║
+║   │  ▓▓ 可调高脚杯 (M16, ±30mm)    ▓▓               │      ║
+║   │  ○ 万向轮 (带刹车, φ75mm)      ○                │      ║
+║   └──────────────────────────────────────────────────┘      ║
+╚══════════════════════════════════════════════════════════════╝
+</div>
+
+<!-- ============================================ -->
+<h2>三、核心结构技术详解</h2>
+
+<!-- 3.1 -->
+<div class="card">
+<h3>3.1 🔥 六面加热空气夹套系统（Memmert 核心专利）</h3>
+
+<p><strong>原理：</strong> 加热元件不直接暴露在内腔中，而是分布在 <strong>内腔外壁的六个面</strong>（四侧+顶+底），形成完整的"空气夹套"（Air Jacket）。热量通过夹套内的循环空气均匀传导至内壁，再由内壁辐射/对流至样品。</p>
+
+<table>
+<tr><th>对比</th><th>普通烘箱（直接加热）</th><th>Memmert 空气夹套</th></tr>
+<tr><td>加热方式</td><td>加热元件直接暴露在内腔</td><td>加热元件在夹套层内，间接传热</td></tr>
+<tr><td>温度均匀性</td><td>±2~3℃（靠风机搅拌）</td><td><strong>±0.3~0.5℃</strong>（六面均衡传热）</td></tr>
+<tr><td>温度波动</td><td>±0.5~1℃</td><td><strong>±0.1℃</strong></td></tr>
+<tr><td>热惯性</td><td>小（直接加热）</td><td>大（夹套缓冲，不易过冲）</td></tr>
+<tr><td>升温速率</td><td>快</td><td>稍慢但可控</td></tr>
+<tr><td>炉内洁净度</td><td>加热管表面可能落尘</td><td>加热元件完全隔离，内腔洁净</td></tr>
+<tr><td>维修便利性</td><td>加热管易更换</td><td>夹套结构维修需拆外壳</td></tr>
+</table>
+
+<div class="ok-box">
+<strong>🎯 学习要点：</strong> 空气夹套的设计本质是<br>
+<strong>"用空间换精度"</strong> — 增加了一层物理缓冲区，实现了极致的温度均匀性和稳定性。这是国产设备最值得借鉴的核心设计理念。
+</div>
+</div>
+
+<!-- 3.2 -->
+<div class="card">
+<h3>3.2 🧱 箱体结构层次</h3>
+
+<div class="exp-view">外 → 内 层次拆解：
+
+ ┌─ 1. 外壳: 结构化不锈钢 1.4301 (ASTM 304), 1.0-1.5mm 厚
+ │    表面"结构化"纹理 — 抗指纹, 耐刮擦, 易清洁
+ │
+ ├─ 2. 外壳与保温层之间: ~5mm 空气间隙 (防冷凝)
+ │
+ ├─ 3. 保温层: 80~100mm 高密度矿棉/玻璃纤维
+ │    导热系数 λ ≤ 0.035-0.04 W/mK
+ │    B1 级阻燃 (DIN 4102)
+ │
+ ├─ 4. 加热元件层: 
+ │    不锈钢翅片加热管, 嵌入铝制导热板
+ │    分布在左/右/后/顶/底 五个面 (前面为门)
+ │
+ ├─ 5. 空气夹套层: 15~25mm 间隙
+ │    热风在此层强制循环
+ │
+ └─ 6. 内胆: 不锈钢 1.4301 (ASTM 304), 1.5mm 厚
+      整体冲压+焊接, 所有转角 R10-R15 圆角
+      电抛光处理 (Ra ≤ 0.8μm)
+</div>
+
+<table>
+<tr><th>层次</th><th>材料</th><th>厚度</th><th>功能</th></tr>
+<tr><td>⑥ 内胆</td><td>SUS304 不锈钢</td><td>1.5mm</td><td>耐腐蚀、易清洁、热传导</td></tr>
+<tr><td>⑤ 空气夹套</td><td>空气层</td><td>15-25mm</td><td>均匀传热介质</td></tr>
+<tr><td>④ 加热元件</td><td>翅片管/铝板</td><td>5-8mm</td><td>发热 + 均热</td></tr>
+<tr><td>③ 保温层</td><td>矿棉/玻璃棉</td><td>80-100mm</td><td>隔热保温</td></tr>
+<tr><td>② 空气间隙</td><td>空气层</td><td>5mm</td><td>防外壳冷凝</td></tr>
+<tr><td>① 外壳</td><td>SUS304 不锈钢</td><td>1.0-1.5mm</td><td>保护、外观、耐腐蚀</td></tr>
+</table>
+</div>
+
+<!-- 3.3 -->
+<div class="card">
+<h3>3.3 💧 湿度控制系统</h3>
+
+<table>
+<tr><th>部件</th><th>技术方案</th><th>优势</th></tr>
+<tr><td>加湿方式</td><td>蒸汽加湿（内置蒸汽发生器）</td><td>快速响应，无白雾</td></tr>
+<tr><td>湿度传感器</td><td>电容式高分子薄膜传感器</td><td>长期稳定，抗污染</td></tr>
+<tr><td>除湿方式</td><td>冷凝除湿（通过压缩机冷却盘管）</td><td>精确可控</td></tr>
+<tr><td>气密性</td><td>内腔完全密封，硅胶门封条</td><td>达到设定点后零耗水</td></tr>
+<tr><td>工作范围</td><td>10~80% RH</td><td>覆盖 ICH Q1A 所有条件</td></tr>
+</table>
+
+<div class="note">
+<strong>💧 零耗水技术：</strong> 普通稳定性试验箱需要持续补水，而 Memmert 的内腔气密性极高，一旦温湿度稳定，即使不补水也能长时间维持。门一打开才需要重新加湿。这项设计的难点在于门封条的气密性和内腔焊接质量。
+</div>
+</div>
+
+<!-- 3.4 -->
+<div class="card">
+<h3>3.4 🧊 冷却系统</h3>
+
+<table>
+<tr><th>项目</th><th>ICH 系列 (压缩机)</th><th>HPPeco 系列 (Peltier)</th></tr>
+<tr><td>最低温度</td><td>-10℃</td><td>0℃ (仅降温至室温以下~20℃)</td></tr>
+<tr><td>冷却方式</td><td>Danfoss 压缩机+R134a</td><td>Peltier 元件 (热电制冷)</td></tr>
+<tr><td>蒸发器位置</td><td>空气夹套内</td><td>直接贴在夹套壁面</td></tr>
+<tr><td>振动</td><td>有 (压缩机运转)</td><td>无 (固态)</td></tr>
+<tr><td>能耗</td><td>中</td><td>低</td></tr>
+<tr><td>维护</td><td>需定期检查制冷剂</td><td>免维护</td></tr>
+</table>
+
+<p><strong>冷媒循环路径：</strong> 压缩机 → 冷凝器 (风冷) → 膨胀阀 → 蒸发器 (在空气夹套内) → 回到压缩机。蒸发器周边的空气被冷却，通过风机送入内腔夹套，间接冷却内腔。</p>
+</div>
+
+<!-- 3.5 -->
+<div class="card">
+<h3>3.5 🎛 控制系统与控制面板</h3>
+
+<table>
+<tr><th>层级</th><th>内容</th></tr>
+<tr><td>控制器</td><td>32位微处理器控制板</td></tr>
+<tr><td>显示</td><td>SingleDISPLAY: 单屏 或 TwinDISPLAY: 双屏 (5" 或 7" 彩色 LCD)</td></tr>
+<tr><td>操作方式</td><td>触控 + 旋转编码器 (Touch, Turn & Go)</td></tr>
+<tr><td>温度传感器</td><td>2× Pt100 铂电阻 (Class A, ±0.15℃@0℃)</td></tr>
+<tr><td>湿度传感器</td><td>电容式高分子 (长期漂移 &lt;1%RH/年)</td></tr>
+<tr><td>安全保护</td><td>机械式温度限制器 (DIN 12880) + 电子监控 + AutoSAFETY</td></tr>
+<tr><td>数据记录</td><td>内置闪存 ≥10年日志，Ethernet 导出</td></tr>
+<tr><td>软件</td><td>AtmoCONTROL (PC端, 编程/记录/报表)</td></tr>
+<tr><td>报警</td><td>光+声报警 + 可选 SMS (MobileALERT) / Email</td></tr>
+</table>
+</div>
+
+<!-- ============================================ -->
+<h2>四、对标分析：国产 vs Memmert</h2>
+
+<table>
+<tr><th>对比维度</th><th>国产典型水平</th><th>Memmert ICH</th><th>差距</th></tr>
+<tr><td>最高温度</td><td>+85℃</td><td>+60℃</td><td>工况不同</td></tr>
+<tr><td>最低温度</td><td>0℃ / -10℃</td><td>-10℃</td><td>≈ 持平</td></tr>
+<tr><td>控制精度</td><td>±0.3~0.5℃</td><td>±0.1~0.3℃</td><td>差 2-3 倍</td></tr>
+<tr><td>均匀性 (±℃)</td><td>±0.5~1.0℃@37℃</td><td>±0.3~0.5℃@37℃</td><td>差 1.5-2 倍</td></tr>
+<tr><td>箱体结构</td><td>单层+保温+加热管</td><td>六面空气夹套</td><td>⚡ 核心差距</td></tr>
+<tr><td>保温厚度</td><td>50-80mm</td><td>80-100mm</td><td>薄 20-40%</td></tr>
+<tr><td>内腔材质</td><td>SUS304 / 冷轧板喷涂</td><td>SUS304 整体焊接</td><td>差 1-2 级</td></tr>
+<tr><td>传感器</td><td>单 Pt100 / NTC</td><td>双 Pt100 互为备份</td><td>差 1-2 级</td></tr>
+<tr><td>控制系统</td><td>PLC / 温控仪</td><td>专用控制板+触控屏</td><td>差 1 级</td></tr>
+<tr><td>外壳材质</td><td>冷轧板喷塑</td><td>不锈钢结构化</td><td>差 1-2 级</td></tr>
+<tr><td>数据记录</td><td>可选</td><td>标配 ≥10年</td><td>差 1-2 级</td></tr>
+<tr><td>质保</td><td>1 年</td><td>3 年全球</td><td>差 3 倍</td></tr>
+<tr><td>价格 (256L)</td><td>3-8 万</td><td>15-25 万</td><td>3-5 倍</td></tr>
+</table>
+
+<div class="ok-box">
+<strong>💡 学习优先级排序（从最重要到次要）：</strong><br>
+1. <strong>空气夹套设计</strong> — 温度和湿度均匀性的根本保障<br>
+2. <strong>双 Pt100 传感架构</strong> — 容错和长期运行可靠性的保证<br>
+3. <strong>全不锈钢箱体 + 整体焊接内胆</strong> — 耐久性和气密性的基石<br>
+4. <strong>气密内腔 → 零耗水技术</strong> — 用户体验的巨大差异点<br>
+5. <strong>ControlCOCKPIT 交互设计</strong> — Touch, Turn & Go 理念<br>
+6. <strong>保温层厚度和材料选择</strong> — 节能和外壳温升控制
+</div>
+
+<!-- ============================================ -->
+<h2>五、可借鉴的技术要点摘要</h2>
+
+<table>
+<tr><th>#</th><th>技术点</th><th>实施建议</th><th>难度</th><th>效果</th></tr>
+<tr><td>1</td><td>空气夹套设计</td><td>增加 20mm 夹套层，加热元件布置在夹套内而非内腔</td><td>中</td><td>⭐⭐⭐⭐⭐</td></tr>
+<tr><td>2</td><td>双传感器互为备份</td><td>增加第二个 Pt100，CPU 检测偏差自动切换</td><td>低</td><td>⭐⭐⭐⭐</td></tr>
+<tr><td>3</td><td>整体焊接不锈钢内胆</td><td>内胆四角 R 角焊接、电抛光</td><td>中高</td><td>⭐⭐⭐⭐</td></tr>
+<tr><td>4</td><td>加厚保温层</td><td>80-100mm 矿棉（现国产很多只有 50mm）</td><td>低</td><td>⭐⭐⭐</td></tr>
+<tr><td>5</td><td>双层门（内玻璃）</td><td>增加钢化玻璃内门，观察样品不损失温湿度</td><td>中低</td><td>⭐⭐⭐</td></tr>
+<tr><td>6</td><td>结构化不锈钢外壳</td><td>替换冷轧板喷塑为 304 不锈钢 + 拉丝/压纹</td><td>中</td><td>⭐⭐⭐</td></tr>
+<tr><td>7</td><td>气密门封条</td><td>硅胶一体成型密封条 + 磁性吸附</td><td>中低</td><td>⭐⭐⭐⭐</td></tr>
+<tr><td>8</td><td>触控+旋钮交互</td><td>触控屏 + 物理旋钮双重操作</td><td>中</td><td>⭐⭐⭐</td></tr>
+</table>
+
+<!-- ============================================ -->
+<h2>六、Memmert ICH 系列技术参数速查</h2>
+
+<table>
+<tr><th>型号</th><th>容积</th><th>内尺寸 W×D×H (mm)</th><th>搁板数</th><th>最大搁板</th></tr>
+<tr><td>ICH110</td><td>108 L</td><td>560 × 480 × 400</td><td>2</td><td>5</td></tr>
+<tr><td>ICH110L (光照)</td><td>108 L</td><td>560 × 480 × 400</td><td>2</td><td>4</td></tr>
+<tr><td>ICH260</td><td>256 L</td><td>640 × 800 × 500</td><td>2</td><td>8</td></tr>
+<tr><td>ICH260L (光照)</td><td>256 L</td><td>640 × 800 × 500</td><td>2</td><td>7</td></tr>
+<tr><td>ICH750</td><td>749 L</td><td>1040 × 1200 × 600</td><td>2</td><td>16</td></tr>
+<tr><td>ICH750L (光照)</td><td>749 L</td><td>1040 × 1200 × 600</td><td>2</td><td>15</td></tr>
+</table>
+
+<div class="warn">
+<strong>⚠️ 注意：</strong> Memmert ICH 系列是 <strong>抽屉式搁板</strong>（非网架式），每个搁板可独立拉出，方便取放样品。搁板材质为 SUS304 冲孔不锈钢板。
+</div>
+
+<div class="footer">
+  <p>本报告由太一系统生成 | 报告日期：2026-05-20 | 信息来源：Memmert 官网 + 技术文档 + 行业分析</p>
+  <p>爆炸图为基于官方技术资料的示意重构，非官方原始图纸</p>
+</div>
+
+</body>
+</html>

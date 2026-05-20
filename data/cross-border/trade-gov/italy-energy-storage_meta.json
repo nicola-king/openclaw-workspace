@@ -1,6 +1,6 @@
 {
   "url": "https://www.trade.gov/market-intelligence/italy-energy-storage",
-  "fetched_at": "2026-05-19T15:40:54.971975",
+  "fetched_at": "2026-05-20T18:02:05.559537",
   "category": "market-intelligence",
   "markets": [
     "italy",

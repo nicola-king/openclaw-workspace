@@ -1,7 +1,7 @@
 # poland-energy-storage-boom
 
 > 来源: https://www.trade.gov/market-intelligence/poland-energy-transition-storage-boom
-> 抓取时间: 2026-05-19T15:40:59.162576
+> 抓取时间: 2026-05-20T18:02:08.785910
 > 分类: market-intelligence | 市场: poland, eu | 优先级: P1
 
 ---

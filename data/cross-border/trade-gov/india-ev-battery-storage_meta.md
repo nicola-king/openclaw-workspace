@@ -1,6 +1,6 @@
 {
   "url": "https://www.trade.gov/market-intelligence/india-electric-vehicle-battery-and-storage-trends",
-  "fetched_at": "2026-05-19T15:41:00.924580",
+  "fetched_at": "2026-05-20T18:02:10.387219",
   "category": "market-intelligence",
   "markets": [
     "india",

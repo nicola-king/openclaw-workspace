@@ -1,7 +1,7 @@
 # energy-storage-overview
 
 > 来源: https://www.trade.gov/energy-storage
-> 抓取时间: 2026-05-19T15:40:50.591721
+> 抓取时间: 2026-05-20T18:02:02.343316
 > 分类: energy-storage | 市场: global | 优先级: P0
 
 ---

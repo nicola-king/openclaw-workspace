@@ -1,6 +1,6 @@
 {
   "url": "https://www.trade.gov/market-intelligence/brazil-energy-battery-storage-auction",
-  "fetched_at": "2026-05-19T15:40:52.602141",
+  "fetched_at": "2026-05-20T18:02:03.964479",
   "category": "market-intelligence",
   "markets": [
     "brazil"

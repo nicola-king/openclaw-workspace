@@ -1,7 +1,7 @@
 # uk-energy-storage
 
 > 来源: https://www.trade.gov/market-intelligence/united-kingdom-energy-storage-market
-> 抓取时间: 2026-05-19T15:40:56.918824
+> 抓取时间: 2026-05-20T18:02:07.196516
 > 分类: market-intelligence | 市场: uk, eu | 优先级: P1
 
 ---

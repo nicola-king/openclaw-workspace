@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>固化区最小占地方案设计</title>
+<style>
+@page { size: A4; margin: 1.6cm; }
+body { font-family: "Noto Sans SC", "Microsoft YaHei", "PingFang SC", sans-serif; font-size: 11pt; line-height: 1.6; color: #1a1a2e; }
+h1 { font-size: 20pt; color: #16213e; border-bottom: 3px solid #0f3460; padding-bottom: 8px; margin-bottom: 18px; }
+h2 { font-size: 15pt; color: #0f3460; margin-top: 22px; border-left: 4px solid #e94560; padding-left: 10px; }
+h3 { font-size: 12pt; color: #16213e; margin-top: 16px; }
+.header-bar { background: linear-gradient(135deg, #0f3460, #16213e); color: white; padding: 18px; text-align: center; border-radius: 8px; margin-bottom: 20px; }
+.header-bar h1 { color: white; border: none; font-size: 17pt; margin: 0 0 5px 0; }
+.header-bar p { margin: 3px 0; font-size: 9pt; opacity: 0.85; }
+table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 9.5pt; }
+th { background: #0f3460; color: white; padding: 7px 5px; text-align: left; }
+td { padding: 6px 5px; border-bottom: 1px solid #ddd; }
+tr:nth-child(even) { background: #f8f9fa; }
+.layout-block { border: 2px solid #0f3460; border-radius: 8px; padding: 14px; margin: 12px 0; page-break-inside: avoid; }
+.layout-block h3 { margin: 0 0 8px 0; color: #0f3460; border: none; padding: 0; }
+.param-row { display: flex; gap: 10px; flex-wrap: wrap; margin: 6px 0; }
+.param-item { background: #f0f4ff; border-radius: 4px; padding: 4px 10px; font-size: 9pt; }
+.param-item strong { color: #0f3460; }
+.footer { margin-top: 30px; text-align: center; font-size: 8pt; color: #999; border-top: 1px solid #ddd; padding-top: 10px; }
+.note { background: #e3f2fd; border-left: 4px solid #1565c0; padding: 8px 12px; margin: 10px 0; border-radius: 0 5px 5px 0; font-size: 9.5pt; }
+.warn { background: #fff3e0; border-left: 4px solid #e65100; padding: 8px 12px; margin: 10px 0; border-radius: 0 5px 5px 0; font-size: 9.5pt; }
+.ok-box { background: #e8f5e9; border-left: 4px solid #2e7d32; padding: 8px 12px; margin: 10px 0; border-radius: 0 5px 5px 0; font-size: 9.5pt; }
+.ascii-art { font-family: "Courier New", monospace; font-size: 8pt; line-height: 1.2; background: #f5f5f5; padding: 10px; border-radius: 4px; white-space: pre; overflow-x: auto; }
+.comp-table td:first-child { font-weight: bold; }
+.star { color: #e94560; }
+</style>
+</head>
+<body>
+
+<div class="header-bar">
+  <h1>📐 固化区最小占地方案设计</h1>
+  <p>约束条件：180~190℃ · 1小时固化 · 12秒/个出料 · 双通道</p>
+  <p>报告日期：2026-05-20</p>
+</div>
+
+<!-- ============================================ -->
+<h2>一、原始方案回顾与占地分析</h2>
+
+<h3>1.1 设计约束条件</h3>
+
+<table>
+<tr><th>约束</th><th>数值</th><th>推导结果</th></tr>
+<tr><td>固化温度</td><td>180℃ ~ 190℃</td><td>中低温，常规设计</td></tr>
+<tr><td>固化时间</td><td>1 小时（3600 秒）</td><td>限制传送速度</td></tr>
+<tr><td>出料节拍</td><td>12 秒/个</td><td>即 300 个/小时/通道</td></tr>
+<tr><td>双通道</td><td>X2</td><td>总产能 600 个/小时</td></tr>
+<tr><td>箱体深度</td><td>730 mm（内）/ 1000 mm（外）</td><td>双通道并排 730mm</td></tr>
+<tr><td>物料高度</td><td>≤ 300 mm</td><td>内箱高度限制</td></tr>
+</table>
+
+<h3>1.2 关键参数推导</h3>
+<div class="note">
+<strong>传送带速度：</strong><br>
+V = 有效长度 ÷ 停留时间 = 6400 mm ÷ 3600 s = <strong>1.78 mm/s</strong><br><br>
+<strong>物料间距：</strong><br>
+S = 速度 × 节拍 = 1.78 mm/s × 12 s/<strong>个 ≈ 21.3 mm</strong><br><br>
+<strong>箱体内同时承载物料数：</strong><br>
+N = 3600 ÷ 12 = <strong>300 个/通道</strong>，双通道共 <strong>600 个</strong>
+</div>
+
+<h3>1.3 原始方案占地</h3>
+<table>
+<tr><th>项目</th><th>数值</th></tr>
+<tr><td>外形尺寸（D × W × H）</td><td>1000 × 6500 × 1950 mm</td></tr>
+<tr><td>占地面积</td><td><strong>6.5 m²</strong></td></tr>
+<tr><td>体积</td><td><strong>12.7 m³</strong></td></tr>
+</table>
+
+<!-- ============================================ -->
+<h2>二、最小占地方案对比</h2>
+
+<!-- ===== Option A ===== -->
+<div class="layout-block">
+<h3>🏆 方案A — <span class="star">★ 推荐</span> 双箱垂直堆叠</h3>
+
+<div class="ascii-art">┌───────────────────────────────────────┐
+│  ┌─────────────────────────────────┐  │
+│  │         固化区（上层）          │  │  ← 上层 180~190℃
+│  │   ← 进料   ●→●→●→●→●→●→●  出料→   │
+│  └─────────────────────────────────┘  │
+│  ═══════════════════════════════════  │  ← 中间保温层 100mm
+│  ┌─────────────────────────────────┐  │
+│  │         固化区（下层）          │  │  ← 下层 180~190℃
+│  │   ← 进料   ●→●→●→●→●→●→●  出料→   │
+│  └─────────────────────────────────┘  │
+└───────────────────────────────────────┘
+←─────── 3200 mm ───────→</div>
+
+<div class="param-row">
+  <span class="param-item"><strong>外形：</strong>1000 × 3200 × 2300 mm</span>
+  <span class="param-item"><strong>占地：</strong><strong>3.2 m²</strong></span>
+  <span class="param-item"><strong>较原方案节省：</strong>↓51%</span>
+  <span class="param-item"><strong>传送方式：</strong>每层独立网带 + 独立变频</span>
+</div>
+
+<p><strong>设计说明：</strong></p>
+<ul>
+  <li>将原 6400mm 长单箱对半折叠为上下两层，各 3200mm</li>
+  <li>上下独立温控，互不干扰</li>
+  <li>上层出料到下层进料口通过外部滑道/提升机连接（可选串联或并联模式）</li>
+  <li>内部保温中间层 100mm 硅酸铝纤维毡，防止上下串温</li>
+  <li>总高度 2300mm，仍可进标准厂房</li>
+</ul>
+
+<div class="ok-box">
+<strong>优点：</strong>结构简单，制造难度低，维护方便，成本可控<br>
+<strong>每层速度：</strong>1.78 mm/s（不变）· <strong>每层物料：</strong>150 个<br>
+<strong>双通道在每层并排：</strong>左右各一侧，共用风机系统
+</div>
+</div>
+
+<!-- ===== Option B ===== -->
+<div class="layout-block">
+<h3>方案B — 三层垂直堆叠</h3>
+
+<div class="ascii-art">┌────────────────────────────────┐
+│ ┌────────────────────────────┐ │
+│ │       固化区（上层）       │ │
+│ └────────────────────────────┘ │
+│ ─────────────────────────────── │
+│ ┌────────────────────────────┐ │
+│ │       固化区（中层）       │ │
+│ └────────────────────────────┘ │
+│ ─────────────────────────────── │
+│ ┌────────────────────────────┐ │
+│ │       固化区（下层）       │ │
+│ └────────────────────────────┘ │
+└────────────────────────────────┘
+←──── 2200 mm ────→</div>
+
+<div class="param-row">
+  <span class="param-item"><strong>外形：</strong>1000 × 2200 × 3200 mm</span>
+  <span class="param-item"><strong>占地：</strong><strong>2.2 m²</strong></span>
+  <span class="param-item"><strong>较原方案节省：</strong>↓66%</span>
+  <span class="param-item"><strong>传送方式：</strong>每层独立网带</span>
+</div>
+
+<p><strong>设计说明：</strong></p>
+<ul>
+  <li>更进一步折叠为 3 层，每层 2200mm</li>
+  <li>层与层之间通过气动升降平台或螺旋滑道连接</li>
+  <li>总高 3200mm，需考虑厂房净高 ≥ 3.5m</li>
+  <li>建议串联模式：上层进→中层→下层出，变相延长固化路径</li>
+</ul>
+
+<div class="warn">
+<strong>注意：</strong>3.2m 总高可能需要通过式装卸料平台，维护难度略高于方案A<br>
+<strong>每层物料：</strong>~100 个，共 300 个
+</div>
+</div>
+
+<!-- ===== Option C ===== -->
+<div class="layout-block">
+<h3>方案C — 箱式批量固化（极致占地）</h3>
+
+<div class="ascii-art">┌────────────────────┐
+│ ┌────┐  ┌────┐    │
+│ │ 台上  │ │ 台下  │    │
+│ │ 固化  │ │ 固化  │    │
+│ │ 箱 #1 │ │ 箱 #2 │    │
+│ └────┘  └────┘    │
+│       搬运区        │
+│ ┌────┐  ┌────┐    │
+│ │ 台上  │ │ 台下  │    │
+│ │ 固化  │ │ 固化  │    │
+│ │ 箱 #3 │ │ 箱 #4 │    │
+│ └────┘  └────┘    │
+└────────────────────┘
+←── 2000mm ──→</div>
+
+<div class="param-row">
+  <span class="param-item"><strong>外形：</strong>2000 × 2000 × 2200 mm</span>
+  <span class="param-item"><strong>占地：</strong><strong>4.0 m²</strong></span>
+  <span class="param-item"><strong>较原方案节省：</strong>↓38%</span>
+  <span class="param-item"><strong>方式：</strong>4 台独立箱式固化炉</span>
+</div>
+
+<p><strong>设计说明：</strong></p>
+<ul>
+  <li>改用 4 台独立箱式固化炉（非连续传送），每台容量 75 个物料</li>
+  <li>炉门自动开闭，机器人/人工装卸料</li>
+  <li>4 台轮流工作：3 台加热 → 1 台装卸，保证每 12 秒出一个料</li>
+  <li>箱门紧挨排列，减少搬运距离</li>
+</ul>
+
+<div class="warn">
+<strong>注意：</strong>改为批量式后需增加自动装卸机构（成本上升）<br>
+<strong>优点：</strong>温度均匀性更容易保证（小箱体），灵活应对多种产品
+</div>
+</div>
+
+<!-- ===== Option D ===== -->
+<div class="layout-block">
+<h3>方案D — U 型折叠传送（紧凑连续线）</h3>
+
+<div class="ascii-art">┌──────────────────────────────────┐
+│ ─────────────────────────         │
+│  ← 进   第一段 →→→→→→→   折返点 │
+│                                    │
+│  折返点  ←←←←←←← 第二段   出→  │
+│ ─────────────────────────        │
+└──────────────────────────────────┘
+←──────── 3400mm ────────→</div>
+
+<div class="param-row">
+  <span class="param-item"><strong>外形：</strong>1500 × 3400 × 1950 mm</span>
+  <span class="param-item"><strong>占地：</strong><strong>5.1 m²</strong></span>
+  <span class="param-item"><strong>较原方案节省：</strong>↓22%</span>
+  <span class="param-item"><strong>传送方式：</strong>单层 U 型折返</span>
+</div>
+
+<p><strong>设计说明：</strong></p>
+<ul>
+  <li>同一平面内折返，每段 3200mm，总传送路径 6400mm</li>
+  <li>折返端加装大直径转向辊（φ≥400mm）</li>
+  <li>不增加高度，适合层高受限的厂房</li>
+</ul>
+
+<div class="note">
+<strong>优点：</strong>高度不变，维护方便<br>
+<strong>缺点：</strong>节省占地有限（仅 22%），折返端需注意物料转向稳定性
+</div>
+</div>
+
+<!-- ============================================ -->
+<h2>三、方案综合对比</h2>
+
+<table>
+<tr><th>方案</th><th>占地</th><th>节省</th><th>高度</th><th>制造难度</th><th>成本</th><th>维护</th><th>推荐指数</th></tr>
+<tr>
+  <td>原方案</td><td>6.5 m²</td><td>—</td><td>1.95m</td><td>低</td><td>基准</td><td>易</td><td>⭐</td>
+</tr>
+<tr style="background: #e8f5e9;">
+  <td><strong>方案A 双箱堆叠</strong></td>
+  <td><strong>3.2 m²</strong></td>
+  <td><strong>↓51%</strong></td>
+  <td><strong>2.3m</strong></td>
+  <td>低</td>
+  <td>↑15-20%</td>
+  <td>易</td>
+  <td><strong>⭐⭐⭐⭐⭐</strong></td>
+</tr>
+<tr>
+  <td>方案B 三层堆叠</td><td>2.2 m²</td><td>↓66%</td><td>3.2m</td><td>中</td><td>↑25-35%</td><td>中</td><td>⭐⭐⭐</td>
+</tr>
+<tr>
+  <td>方案C 箱式批量</td><td>4.0 m²</td><td>↓38%</td><td>2.2m</td><td>中高</td><td>↑30-50%</td><td>中</td><td>⭐⭐</td>
+</tr>
+<tr>
+  <td>方案D U型折叠</td><td>5.1 m²</td><td>↓22%</td><td>1.95m</td><td>低</td><td>↑5-10%</td><td>易</td><td>⭐⭐⭐</td>
+</tr>
+</table>
+
+<!-- ============================================ -->
+<h2>四、推荐方案A 详细设计</h2>
+
+<h3>4.1 总成布局</h3>
+
+<table>
+<tr><th>项目</th><th>参数</th></tr>
+<tr><td>外形尺寸</td><td>1000 (D) × 3200 (W) × 2300 (H) mm</td></tr>
+<tr><td>内箱尺寸（每层每通道）</td><td>730 (D) × 2900 (W) × 280 (H) mm ×2通道 ×2层</td></tr>
+<tr><td>温度范围</td><td>180℃ ~ 190℃</td></tr>
+<tr><td>温度均匀性</td><td>±1.5℃（设计目标）</td></tr>
+<tr><td>传送带速度</td><td>0.8 mm/s（每层）</td></tr>
+<tr><td>有效传送长度</td><td>2900 mm（每层）</td></tr>
+<tr><td>单层物料容量</td><td>2900 ÷ (1.78×12) ≈ 135 个</td></tr>
+<tr><td>双层总容量</td><td>270 个（约 45 分钟缓存）</td></tr>
+<tr><td>加热功率</td><td>约 18-24 kW（每层独立控温）</td></tr>
+<tr><td>设备净重</td><td>约 1.8-2.2 吨</td></tr>
+</table>
+
+<h3>4.2 结构设计要点</h3>
+
+<table>
+<tr><th>部件</th><th>设计建议</th></tr>
+<tr><td>箱体结构</td><td>方管骨架 + SUS304 内胆 2.0mm + 冷轧板外壳 1.5mm</td></tr>
+<tr><td>保温层</td><td>硅酸铝纤维毡 120mm（内壁）+ 中间层 100mm</td></tr>
+<tr><td>加热元件</td><td>U 型不锈钢翅片管，表面负荷 ≤3W/cm²，每层 9-12kW 分 3 组</td></tr>
+<tr><td>循环风机</td><td>耐高温离心风机 × 2（每层1台），变频控制，风量 ≥ 2000m³/h</td></tr>
+<tr><td>风道</td><td>顶部送风→两侧回风，配可调导流板</td></tr>
+<tr><td>输送带</td><td>SUS304 不锈钢网带，宽度 300mm ×2 条（并排），变频电机</td></tr>
+<tr><td>上下层连接</td><td>不锈钢滑道（倾斜 30°），物料自重滑落至下层入口（可选气动缓冲）</td></tr>
+<tr><td>控制系统</td><td>PLC（西门子 S7-1200）+ 7" HMI + 每层独立 PID + 超温报警</td></tr>
+<tr><td>安全保护</td><td>超温断电、电机过载、急停按钮、开门断电、排烟口</td></tr>
+</table>
+
+<h3>4.3 物料流向</h3>
+
+<div class="ascii-art">【进料口】→ 上层传送带（进→ 2900mm →出）
+                            ↓
+                   不锈钢滑道（连接上下层）
+                            ↓
+                 下层传送带（进→ 2900mm →出）
+                            ↓
+                    【出料口】  →  每 12 秒出一个
+</div>
+
+<h3>4.4 电气方案</h3>
+<table>
+<tr><th>项目</th><th>参数</th></tr>
+<tr><td>供电要求</td><td>三相 380V / 50Hz / 30kW</td></tr>
+<tr><td>温控方式</td><td>PID + SSR 固态继电器</td></tr>
+<tr><td>传感器</td><td>K 型热电偶 × 6 点/层</td></tr>
+<tr><td>控制柜</td><td>独立电柜，安装于设备侧方</td></tr>
+<tr><td>通讯接口</td><td>RS485 / Ethernet / 可选 MQTT</td></tr>
+</table>
+
+<!-- ============================================ -->
+<h2>五、成本对比</h2>
+
+<table>
+<tr><th>方案</th><th>占地</th><th>制造成本</th><th>报价建议</th><th>毛利</th></tr>
+<tr><td>原方案 6400mm 单层</td><td>6.5 m²</td><td>12-15 万</td><td>18-22 万</td><td>✅ 标准</td></tr>
+<tr style="background: #e8f5e9;">
+<td><strong>方案A 双箱堆叠</strong></td>
+<td><strong>3.2 m²</strong></td>
+<td><strong>14-17 万</strong></td>
+<td><strong>20-26 万</strong></td>
+<td><strong>✅ 高（差异化优势）</strong></td></tr>
+<tr><td>方案B 三层堆叠</td><td>2.2 m²</td><td>16-20 万</td><td>24-32 万</td><td>⚠️ 小众</td></tr>
+<tr><td>方案C 箱式批量</td><td>4.0 m²</td><td>18-25 万</td><td>28-38 万</td><td>⚠️ 定制复杂</td></tr>
+<tr><td>方案D U型折叠</td><td>5.1 m²</td><td>13-16 万</td><td>19-24 万</td><td>⚠️ 占地节省有限</td></tr>
+</table>
+
+<div class="note">
+  <strong>💡 方案A 的卖点提炼：</strong><br>
+  • <strong>"占地减半，产能不变"</strong> — 从 6.5m² 缩至 3.2m²<br>
+  • 适合厂房面积紧张、楼层承重有限的客户<br>
+  • 上下独立温控，可以分别设置不同工艺（柔性生产）<br>
+  • 制造成本仅增加 15-20%，但可报出 25-30% 的溢价
+</div>
+
+<!-- ============================================ -->
+<h2>六、总结建议</h2>
+
+<div class="ok-box">
+<strong>✅ 首推方案A — 双箱垂直堆叠</strong><br>
+最佳平衡点：占地 ↓51% · 制造简单 · 成本可控 · 维护方便<br>
+<strong>适合场景：</strong>客户厂房面积紧张 · 层高 ≥ 2.5m · 追求极致性价比
+</div>
+
+<div class="warn">
+<strong>⚠️ 选型提醒：</strong><br>
+• 如客户层高 ≤ 2.2m（标准集装箱 / 地下室）→ 选方案D U型折叠<br>
+• 如客户多品种小批量 → 选方案C 箱式批量（灵活换型）<br>
+• 如客户对占地无硬性要求 → 保持原方案，成本最低<br>
+• 如层高充足且追求极致占地 → 选方案B 三层堆叠（2.2m²）
+</div>
+
+<div class="footer">
+  <p>本报告由太一系统生成 | 报告日期：2026-05-20 | 基于产品参数约束条件设计</p>
+  <p>工艺参数：180~190℃ · 1h 固化 · 12s/个 · 双通道</p>
+</div>
+
+</body>
+</html>

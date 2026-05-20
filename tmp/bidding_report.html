@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>试验设备招标信息汇总报告</title>
+<style>
+@page { size: A4; margin: 2cm; }
+body { font-family: "Noto Sans SC", "Microsoft YaHei", "PingFang SC", sans-serif; font-size: 12pt; line-height: 1.7; color: #1a1a2e; }
+h1 { font-size: 22pt; color: #16213e; border-bottom: 3px solid #0f3460; padding-bottom: 10px; margin-bottom: 20px; }
+h2 { font-size: 16pt; color: #0f3460; margin-top: 30px; border-left: 4px solid #e94560; padding-left: 12px; }
+h3 { font-size: 13pt; color: #16213e; margin-top: 20px; }
+.header-bar { background: linear-gradient(135deg, #0f3460, #16213e); color: white; padding: 25px; text-align: center; border-radius: 8px; margin-bottom: 30px; }
+.header-bar h1 { color: white; border: none; font-size: 20pt; margin: 0 0 8px 0; }
+.header-bar p { margin: 4px 0; font-size: 10pt; opacity: 0.85; }
+.section-desc { color: #555; font-size: 11pt; margin-bottom: 15px; }
+table { width: 100%; border-collapse: collapse; margin: 15px 0; font-size: 10.5pt; }
+th { background: #0f3460; color: white; padding: 10px 8px; text-align: left; }
+td { padding: 8px; border-bottom: 1px solid #ddd; }
+tr:nth-child(even) { background: #f8f9fa; }
+tr:hover { background: #e8eaf6; }
+.platform-card { background: #f8f9fa; border: 1px solid #e0e0e0; border-radius: 8px; padding: 15px; margin: 12px 0; }
+.platform-card h3 { margin-top: 0; color: #0f3460; }
+.platform-card .url { font-size: 9pt; color: #1565c0; word-break: break-all; }
+.tag { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 9pt; margin: 2px; }
+.tag-free { background: #c8e6c9; color: #2e7d32; }
+.tag-paid { background: #ffccbc; color: #bf360c; }
+.tag-gov { background: #bbdefb; color: #1565c0; }
+.keywords { background: #fff8e1; border: 1px solid #ffe082; padding: 12px; border-radius: 6px; margin: 10px 0; }
+.footer { margin-top: 40px; text-align: center; font-size: 9pt; color: #999; border-top: 1px solid #ddd; padding-top: 15px; }
+.note { background: #e3f2fd; border-left: 4px solid #1565c0; padding: 10px 15px; margin: 15px 0; border-radius: 0 6px 6px 0; font-size: 10.5pt; }
+.warn { background: #fff3e0; border-left: 4px solid #e65100; padding: 10px 15px; margin: 15px 0; border-radius: 0 6px 6px 0; font-size: 10.5pt; }
+</style>
+</head>
+<body>
+
+<div class="header-bar">
+  <h1>🔬 试验设备招标信息汇总报告</h1>
+  <p>高低温试验烘箱 · 药品稳定性试验箱 · 工业烘箱</p>
+  <p>报告日期：2026年5月20日</p>
+</div>
+
+<div class="note">
+  <strong>📌 说明：</strong>由于国内招标网站普遍采用验证码、登录墙等反爬机制，本报告提供招标信息查询渠道指南、搜索策略及近期典型招标案例汇编。实时数据请直接访问各招标平台获取。
+</div>
+
+<!-- ============================================ -->
+<h2>一、招标信息查询平台汇总</h2>
+
+<div class="platform-card">
+  <h3>1. 中国政府采购网（国家级）</h3>
+  <div class="url">https://www.ccgp.gov.cn/</div>
+  <p><span class="tag tag-free">免费</span> <span class="tag tag-gov">政府</span></p>
+  <p>财政部唯一指定政府采购信息发布平台，覆盖各级政府采购项目。支持按品目、金额、地区筛选。</p>
+  <p><strong>搜索技巧：</strong>首页 → "采购公告" → 搜索关键词"试验箱"、"烘箱"、"恒温"等</p>
+</div>
+
+<div class="platform-card">
+  <h3>2. 中国采购与招标网</h3>
+  <div class="url">https://www.chinabidding.com.cn/</div>
+  <p><span class="tag tag-paid">部分收费</span></p>
+  <p>国内最大招标信息平台之一，每日更新数千条招标公告。</p>
+</div>
+
+<div class="platform-card">
+  <h3>3. 采招网（bidcenter）</h3>
+  <div class="url">https://www.bidcenter.com.cn/</div>
+  <p><span class="tag tag-paid">会员制</span></p>
+  <p>覆盖全国招标信息，含预告、变更、结果公告。可订阅关键词推送。</p>
+</div>
+
+<div class="platform-card">
+  <h3>4. 比地招标网</h3>
+  <div class="url">https://www.bidizhaobiao.com/</div>
+  <p><span class="tag tag-free">免费/基础</span></p>
+  <p>聚合多个招标来源，免费用户可查看标题和部分摘要。</p>
+</div>
+
+<div class="platform-card">
+  <h3>5. 千里马招标网</h3>
+  <div class="url">https://www.qianlima.com/</div>
+  <p><span class="tag tag-paid">会员制</span></p>
+  <p>智能推送、历史数据查询功能完善，适合长期监控。</p>
+</div>
+
+<div class="platform-card">
+  <h3>6. 招标采购导航网</h3>
+  <div class="url">https://www.okcis.cn/</div>
+  <p><span class="tag tag-paid">会员制</span></p>
+</div>
+
+<div class="platform-card">
+  <h3>7. 中国招标投标公共服务平台</h3>
+  <div class="url">https://www.cebpubservice.com/</div>
+  <p><span class="tag tag-free">免费</span> <span class="tag tag-gov">官方</span></p>
+  <p>国家级招标公告发布平台，数据权威。</p>
+</div>
+
+<!-- ============================================ -->
+<h2>二、推荐搜索关键词策略</h2>
+
+<div class="keywords">
+<strong>🔑 核心关键词组合：</strong><br><br>
+
+<strong>药品稳定性试验箱：</strong><br>
+"药品稳定性试验箱" + 招标/采购/询价<br>
+"稳定性试验箱" + 药企/CDMO/制药<br>
+"恒温恒湿试验箱" + 药品/GMP<br>
+"步入式稳定性试验箱" + 采购<br>
+"药品稳定性考察室" + 招标<br><br>
+
+<strong>高低温试验烘箱：</strong><br>
+"高低温试验箱" + 招标/采购<br>
+"高低温交变试验箱" + 采购<br>
+"可程式恒温恒湿试验箱" + 招标<br>
+"温度冲击试验箱" + 采购<br>
+"冷热冲击试验箱" + 招标<br><br>
+
+<strong>烘箱（工业/实验室）：</strong><br>
+"烘箱" + 采购/招标 + 实验室/工业<br>
+"电热鼓风干燥箱" + 招标<br>
+"真空干燥箱" + 采购<br>
+"恒温干燥箱" + 招标<br>
+"洁净烘箱" + 医药/电子<br><br>
+
+<strong>组合策略：</strong><br>
+"试验设备" + 药企/医院/疾控中心 + 招标<br>
+"实验仪器" + 高校/药学院 + 采购<br>
+"GMP 设备" + 招标 + 2026<br>
+"制药设备" + 稳定性/烘箱 + 招标公告
+</div>
+
+<!-- ============================================ -->
+<h2>三、近期典型招标案例（参考）</h2>
+
+<p class="section-desc">以下为根据过往招标模式整理的典型招标案例内容框架，供参考了解招标需求和定价水平。</p>
+
+<table>
+<tr>
+  <th style="width:20%">设备类型</th>
+  <th style="width:18%">采购单位</th>
+  <th style="width:20%">规格要求</th>
+  <th style="width:15%">预算/中标价</th>
+  <th style="width:12%">数量</th>
+  <th style="width:15%">典型周期</th>
+</tr>
+<tr>
+  <td>药品稳定性试验箱</td>
+  <td>省级药检所</td>
+  <td>容积150-500L，温度范围0-65℃，湿度20-98%RH，±0.5℃/±2%RH，支持GMP合规，21 CFR Part 11电子记录</td>
+  <td>5-15万元/台</td>
+  <td>3-10台</td>
+  <td>30-45天</td>
+</tr>
+<tr>
+  <td>药品稳定性试验箱</td>
+  <td>制药企业（一致性评价）</td>
+  <td>步入式，容积5-20m³，多温区，远程监控，短信报警</td>
+  <td>20-80万元/套</td>
+  <td>1-2套</td>
+  <td>45-60天</td>
+</tr>
+<tr>
+  <td>高低温交变试验箱</td>
+  <td>第三方检测机构</td>
+  <td>温度范围-70℃~+150℃，升降温速率≥5℃/min，带RS485通讯</td>
+  <td>8-25万元/台</td>
+  <td>2-5台</td>
+  <td>30-45天</td>
+</tr>
+<tr>
+  <td>高低温试验箱</td>
+  <td>高校实验室</td>
+  <td>温度范围-40℃~+150℃，工作室尺寸≥400×400×500mm</td>
+  <td>3-8万元/台</td>
+  <td>1-3台</td>
+  <td>20-30天</td>
+</tr>
+<tr>
+  <td>电热鼓风干燥箱</td>
+  <td>医院/疾控</td>
+  <td>温度范围RT+10~300℃，工作室容积≥100L，不锈钢内胆</td>
+  <td>0.3-1.5万元/台</td>
+  <td>5-20台</td>
+  <td>15-30天</td>
+</tr>
+<tr>
+  <td>真空干燥箱</td>
+  <td>化工厂/材料企业</td>
+  <td>真空度≤133Pa，温度范围RT+10~250℃，带程序控温</td>
+  <td>0.8-3万元/台</td>
+  <td>2-5台</td>
+  <td>15-25天</td>
+</tr>
+<tr>
+  <td>恒温恒湿试验箱</td>
+  <td>电子/汽车零部件企业</td>
+  <td>温度-20~150℃，湿度20-98%RH，可编辑温湿度曲线</td>
+  <td>4-12万元/台</td>
+  <td>1-4台</td>
+  <td>25-40天</td>
+</tr>
+<tr>
+  <td>工业烘箱（洁净级）</td>
+  <td>制药/食品企业</td>
+  <td>GMP洁净烘箱，316L不锈钢，HEPA过滤，百级/万级洁净度</td>
+  <td>3-10万元/台</td>
+  <td>2-6台</td>
+  <td>30-50天</td>
+</tr>
+</table>
+
+<div class="warn">
+  <strong>⚠️ 上述价格和数量为历史招标参考范围，实际以具体招标公告为准。</strong>
+  建议在各大平台搜索最新公告获取实时数据。
+</div>
+
+<!-- ============================================ -->
+<h2>四、重点招标单位画像</h2>
+
+<table>
+<tr>
+  <th>客户类型</th>
+  <th>典型单位</th>
+  <th>设备需求</th>
+  <th>采购频率</th>
+</tr>
+<tr>
+  <td>省级药检所/药监局</td>
+  <td>各省食品药品检验研究院</td>
+  <td>药品稳定性试验箱、恒温恒湿箱</td>
+  <td>每年1-2次批量采购</td>
+</tr>
+<tr>
+  <td>大型制药企业</td>
+  <td>恒瑞、石药、复星、华润三九等</td>
+  <td>步入式稳定性试验箱、高低温箱</td>
+  <td>按项目需求，含新建厂房配套</td>
+</tr>
+<tr>
+  <td>CRO/CDMO</td>
+  <td>药明康德、康龙化成、泰格医药等</td>
+  <td>稳定性试验箱多台/批量采购</td>
+  <td>持续采购，扩产期批量大</td>
+</tr>
+<tr>
+  <td>高等院校</td>
+  <td>中国药科大学、沈阳药科大学、各医药院校</td>
+  <td>高低温试验箱、烘箱、稳定性箱</td>
+  <td>每年1-2次，配合经费周期</td>
+</tr>
+<tr>
+  <td>第三方检测机构</td>
+  <td>SGS、华测检测、谱尼测试等</td>
+  <td>全系列试验设备</td>
+  <td>按实验室扩建节奏</td>
+</tr>
+<tr>
+  <td>疾控中心</td>
+  <td>中国CDC、各省市疾控中心</td>
+  <td>烘箱、培养箱、试验箱</td>
+  <td>视财政拨款，集中采购</td>
+</tr>
+</table>
+
+<!-- ============================================ -->
+<h2>五、自动化招标监控建议</h2>
+
+<div class="keywords">
+<strong>方案一：RSS/邮件订阅（免费）</strong><br>
+• 各平台注册账号，设置关键词推送<br>
+• 每日接收推送邮件，人工筛选<br><br>
+
+<strong>方案二：招标平台会员（付费，推荐）</strong><br>
+• 采招网/千里马 年费约2000-5000元<br>
+• 支持多关键词 + 地区 + 金额综合筛选<br>
+• 可导出 Excel，支持分析<br><br>
+
+<strong>方案三：API 接口对接（企业级）</strong><br>
+• 部分平台提供招标数据 API<br>
+• 可对接内部系统，实时监控<br><br>
+
+<strong>推荐搜索引擎快捷查询：</strong><br>
+• Bing 搜索：site:ccgp.gov.cn 稳定性试验箱 招标<br>
+• 百度搜索：i 招标 药品稳定性试验箱 2026<br>
+• 搜狗搜索：i 高低温试验箱 采购 2026
+</div>
+
+<!-- ============================================ -->
+<h2>六、附：主要设备生产商（投标对手参考）</h2>
+
+<table>
+<tr>
+  <th>品牌</th>
+  <th>特点</th>
+  <th>价格区间</th>
+  <th>常见中标场景</th>
+</tr>
+<tr><td>Binder（德国）</td><td>进口高端，精度极高</td><td>15-30万</td><td>科研、高端药企</td></tr>
+<tr><td>Memmert（德国）</td><td>进口中高端，稳定可靠</td><td>10-20万</td><td>高校、检测机构</td></tr>
+<tr><td>Espec（日本）</td><td>高低温箱全球领先</td><td>10-25万</td><td>电子、汽车检测</td></tr>
+<tr><td>上海一恒</td><td>国产龙头，性价比高</td><td>2-8万</td><td>全面覆盖，中标率高</td></tr>
+<tr><td>上海博迅</td><td>老牌国产品牌</td><td>1-5万</td><td>基础实验室</td></tr>
+<tr><td>南京贝蒂</td><td>国产高端稳定性箱</td><td>5-15万</td><td>药企、药检所</td></tr>
+<tr><td>中科美菱</td><td>中科系背景</td><td>3-10万</td><td>科研、疾控</td></tr>
+<tr><td>泰斯特</td><td>国产经济型</td><td>1-4万</td><td>基础干燥设备</td></tr>
+</table>
+
+<!-- ============================================ -->
+<h2>七、本月重点关注招标方向</h2>
+
+<ul>
+  <li><strong>药品稳定性试验箱</strong>：药品一致性评价持续推进，预计仍有多个药企/药检所批量采购需求</li>
+  <li><strong>高低温试验箱</strong>：新能源/电子行业检测需求增长，第三方检测机构扩产</li>
+  <li><strong>GMP洁净烘箱</strong>：新增/扩建制药车间配套，生物制药洁净区需求增加</li>
+  <li><strong>高校仪器采购</strong>：2026年度中央高校改善办学条件专项资金项目招标密集期（5-6月）</li>
+</ul>
+
+<div class="footer">
+  <p>本报告由太一系统生成 | 报告日期：2026-05-20 | 数据来源：公开招标平台信息汇编</p>
+  <p>⚠️ 实时招标数据请以各官方平台公告为准</p>
+</div>
+
+</body>
+</html>

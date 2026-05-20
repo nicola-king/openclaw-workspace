@@ -1,6 +1,6 @@
 {
   "url": "https://www.trade.gov/market-intelligence/united-kingdom-energy-storage-market",
-  "fetched_at": "2026-05-19T15:40:56.918824",
+  "fetched_at": "2026-05-20T18:02:07.196516",
   "category": "market-intelligence",
   "markets": [
     "uk",

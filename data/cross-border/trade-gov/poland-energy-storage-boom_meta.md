@@ -1,6 +1,6 @@
 {
   "url": "https://www.trade.gov/market-intelligence/poland-energy-transition-storage-boom",
-  "fetched_at": "2026-05-19T15:40:59.162576",
+  "fetched_at": "2026-05-20T18:02:08.785910",
   "category": "market-intelligence",
   "markets": [
     "poland",

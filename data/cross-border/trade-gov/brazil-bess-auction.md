@@ -1,7 +1,7 @@
 # brazil-bess-auction
 
 > 来源: https://www.trade.gov/market-intelligence/brazil-energy-battery-storage-auction
-> 抓取时间: 2026-05-19T15:40:52.602141
+> 抓取时间: 2026-05-20T18:02:03.964479
 > 分类: market-intelligence | 市场: brazil | 优先级: P0
 
 ---

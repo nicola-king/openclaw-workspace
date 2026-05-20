@@ -1,6 +1,6 @@
 {
   "url": "https://www.trade.gov/energy-storage",
-  "fetched_at": "2026-05-19T15:40:50.591721",
+  "fetched_at": "2026-05-20T18:02:02.343316",
   "category": "energy-storage",
   "markets": [
     "global"

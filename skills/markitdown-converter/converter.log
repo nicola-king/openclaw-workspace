@@ -273,3 +273,67 @@
 [2026-05-20 00:15:39] [INFO]   ✅ [JSON] buyers.json → ok (12.8KB)
 [2026-05-20 00:15:40] [INFO]   ✅ [JSON] short-term-recall.json → ok (135.9KB)
 [2026-05-20 00:15:40] [INFO] 转换完成: ✅ 18 成功, ⏭ 8 跳过, ❌ 1 失败
+[2026-05-20 08:15:16] [INFO] 发现 18 个待转换文件（增量）
+[2026-05-20 08:15:17] [INFO]   ✅ [JSON] sweep-7071a15fcd53.json → ok (41.2KB)
+[2026-05-20 08:15:17] [INFO]   ✅ [JSON] alibaba_20260520.json → ok (1.6KB)
+[2026-05-20 08:15:18] [INFO]   ✅ [JSON] made_in_china_20260520.json → ok (1.2KB)
+[2026-05-20 08:15:19] [INFO]   ✅ [JSON] emag_20260520.json → ok (447.0B)
+[2026-05-20 08:15:20] [INFO]   ✅ [JSON] promua_20260520.json → ok (1.5KB)
+[2026-05-20 08:15:21] [INFO]   ✅ [JSON] allegro_20260520.json → ok (450.0B)
+[2026-05-20 08:15:21] [INFO]   ✅ [JSON] summary.json → ok (361.0B)
+[2026-05-20 08:15:22] [INFO]   ✅ [JSON] europages_20260520.json → ok (997.0B)
+[2026-05-20 08:15:23] [INFO]   ❌ [YAML] none.yaml: failed: Traceback (most recent call last):
+  File "/home/sayelf/.local/venvs/markitdown/bin/markitdown", line 8, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/home/sayelf/.local/venvs/markitdo
+[2026-05-20 08:15:24] [INFO]   ✅ [JSON] converter_state.json → ok (152.3KB)
+[2026-05-20 08:15:24] [INFO] 转换完成: ✅ 9 成功, ⏭ 8 跳过, ❌ 1 失败
+[2026-05-20 16:15:19] [INFO] 发现 31 个待转换文件（增量）
+[2026-05-20 16:15:19] [INFO]   ✅ [JSON] shared-search-stats.json → ok (354.0B)
+[2026-05-20 16:15:20] [INFO]   ✅ [JSON] 88f44d7198f0265e469770d7fbb2f084.json → ok (1.8KB)
+[2026-05-20 16:15:21] [INFO]   ✅ [JSON] d770a5b3b6b525ef99a5022fda2d7a7a.json → ok (1.9KB)
+[2026-05-20 16:15:22] [INFO]   ✅ [JSON] 7614a4527801c0b7077934c6249c184c.json → ok (1.9KB)
+[2026-05-20 16:15:23] [INFO]   ✅ [JSON] e37c0ae5bed742e818d2661aa5e9ba4e.json → ok (1.9KB)
+[2026-05-20 16:15:23] [INFO]   ✅ [JSON] dcc96c45b3291dbde14162a64e12d2c0.json → ok (1.9KB)
+[2026-05-20 16:15:24] [INFO]   ✅ [JSON] 94e939e71ef81d463de73bc5876c0f99.json → ok (1.9KB)
+[2026-05-20 16:15:25] [INFO]   ❌ [YAML] none.yaml: failed: Traceback (most recent call last):
+  File "/home/sayelf/.local/venvs/markitdown/bin/markitdown", line 8, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/home/sayelf/.local/venvs/markitdo
+[2026-05-20 16:15:26] [INFO]   ✅ [JSON] outreach-queue-2026-05-20.json → ok (8.5KB)
+[2026-05-20 16:15:27] [INFO]   ✅ [PDF] 设备外观优化改进方案_20260520.pdf → ok (6.9KB)
+[2026-05-20 16:15:28] [INFO]   ✅ [HTML] bidding_report.html → ok (7.1KB)
+[2026-05-20 16:15:29] [INFO]   ✅ [PDF] 双温区固化烘箱_优化可行性成本分析_20260520.pdf → ok (7.9KB)
+[2026-05-20 16:15:29] [INFO]   ✅ [HTML] device_appearance.html → ok (7.5KB)
+[2026-05-20 16:15:30] [INFO]   ✅ [PDF] 试验设备招标信息日报_20260520.pdf → ok (8.0KB)
+[2026-05-20 16:15:31] [INFO]   ✅ [HTML] min_footprint.html → ok (11.0KB)
+[2026-05-20 16:15:32] [INFO]   ✅ [HTML] bidding_report_v2.html → ok (8.2KB)
+[2026-05-20 16:15:33] [INFO]   ✅ [PDF] 固化区最小占地方案设计_20260520.pdf → ok (10.7KB)
+[2026-05-20 16:15:34] [INFO]   ✅ [HTML] oven_analysis.html → ok (8.8KB)
+[2026-05-20 16:15:35] [INFO]   ✅ [PDF] 试验设备招标信息汇总报告_20260520.pdf → ok (6.9KB)
+[2026-05-20 16:15:36] [INFO]   ✅ [JSON] converter_state.json → ok (153.1KB)
+[2026-05-20 16:15:37] [INFO]   ✅ [JSON] short-term-recall.json → ok (141.9KB)
+[2026-05-20 16:15:38] [INFO]   ✅ [PDF] 买家情报报告_AU_NZ_20260520.pdf → ok (7.5KB)
+[2026-05-20 16:15:38] [INFO] 转换完成: ✅ 21 成功, ⏭ 9 跳过, ❌ 1 失败
+[2026-05-21 00:15:17] [INFO] 发现 29 个待转换文件（增量）
+[2026-05-21 00:15:18] [INFO]   ✅ [JSON] competitor_report_20260520.json → ok (2.5KB)
+[2026-05-21 00:15:19] [INFO]   ✅ [JSON] poland-energy-storage-boom_meta.json → ok (809.0B)
+[2026-05-21 00:15:20] [INFO]   ✅ [JSON] uk-energy-storage_meta.json → ok (805.0B)
+[2026-05-21 00:15:20] [INFO]   ✅ [JSON] energy-storage-overview_meta.json → ok (752.0B)
+[2026-05-21 00:15:21] [INFO]   ✅ [JSON] italy-energy-storage_meta.json → ok (792.0B)
+[2026-05-21 00:15:22] [INFO]   ✅ [JSON] india-ev-battery-storage_meta.json → ok (823.0B)
+[2026-05-21 00:15:23] [INFO]   ✅ [JSON] us-energy-trade-dashboard_meta.json → ok (777.0B)
+[2026-05-21 00:15:24] [INFO]   ✅ [JSON] summary.json → ok (426.0B)
+[2026-05-21 00:15:24] [INFO]   ✅ [JSON] brazil-bess-auction_meta.json → ok (800.0B)
+[2026-05-21 00:15:25] [INFO]   ❌ [YAML] none.yaml: failed: Traceback (most recent call last):
+  File "/home/sayelf/.local/venvs/markitdown/bin/markitdown", line 8, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/home/sayelf/.local/venvs/markitdo
+[2026-05-21 00:15:26] [INFO]   ✅ [HTML] memmert_analysis.html → ok (17.4KB)
+[2026-05-21 00:15:27] [INFO]   ✅ [PDF] Memmert_ICH_结构深度解析_20260520.pdf → ok (18.4KB)
+[2026-05-21 00:15:28] [INFO]   ✅ [JSON] converter_state.json → ok (153.7KB)
+[2026-05-21 00:15:29] [INFO]   ✅ [JSON] short-term-recall.json → ok (143.8KB)
+[2026-05-21 00:15:29] [INFO] 转换完成: ✅ 13 成功, ⏭ 15 跳过, ❌ 1 失败

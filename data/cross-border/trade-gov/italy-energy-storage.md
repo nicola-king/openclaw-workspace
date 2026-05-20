@@ -1,7 +1,7 @@
 # italy-energy-storage
 
 > 来源: https://www.trade.gov/market-intelligence/italy-energy-storage
-> 抓取时间: 2026-05-19T15:40:54.971975
+> 抓取时间: 2026-05-20T18:02:05.559537
 > 分类: market-intelligence | 市场: italy, eu | 优先级: P0
 
 ---

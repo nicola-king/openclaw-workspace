@@ -371,10 +371,11 @@ def _extract_results_google(html: str, count: int = 10) -> list:
 
 def search(query: str, count: int = 10) -> list:
     """
-    多源搜索：DDG 主引擎 → Bing 回退 → Chromium 渲染回退
+    多源搜索：Google → Bing → DDG → Chromium 渲染回退
+    DDG 被拦截时自动切换，不卡链。
     返回统一格式 [{title, url, snippet}]
     """
-    k = _ck("ddg", f"{query}:{count}")
+    k = _ck("search", f"{query}:{count}")
     cached = _cg(k, ttl=CACHE_TTL_SEARCH)
     if cached:
         return cached
@@ -382,53 +383,69 @@ def search(query: str, count: int = 10) -> list:
     encoded = urllib.parse.quote(query)
     results = []
 
-    # 方法1: DDG HTML
-    ddg_url = f"https://html.duckduckgo.com/html/?q={encoded}"
-    raw = _fetch_raw(ddg_url)
-    if raw["status"] == 200 and 'result__a' in raw["text"]:
-        results = _extract_results_ddg(raw["text"], count)
+    # 方法1: Google HTML 搜索（最稳定，极少被拦截）
+    google_url = f"https://www.google.com/search?q={encoded}&hl=en&num={count}"
+    google_raw = _fetch_raw(google_url, timeout=20)
+    if google_raw["status"] == 200 and '/url?' in google_raw["text"]:
+        results = _extract_results_google(google_raw["text"], count)
 
-    # 方法2: Google 搜索（HTML 端点，返回干净URL）
-    if not results or len(results) < 2:
-        google_url = f"https://www.google.com/search?q={encoded}&hl=en&num={count}"
-        google_raw = _fetch_raw(google_url, timeout=20)
-        if google_raw["status"] == 200 and '/url?' in google_raw["text"]:
-            results = _extract_results_google(google_raw["text"], count)
-
-    # 方法3: Bing 回退
-    if not results:
+    # 方法2: Bing HTML 搜索
+    if not results or len(results) < 3:
         bing_url = f"https://www.bing.com/search?q={encoded}&count={count}"
         bing_raw = _fetch_raw(bing_url, timeout=20)
         if bing_raw["status"] == 200:
             results = _extract_results_bing(bing_raw["text"], count)
-        import random
-        google_url = f"https://www.google.com/search?q={encoded}&hl=en&num={count}"
-        google_raw = _fetch_raw(google_url, timeout=20)
-        if google_raw["status"] == 200 and '/url?' in google_raw["text"]:
-            results = _extract_results_google(google_raw["text"], count)
 
-    # 方法4: Chromium 渲染搜索（终极回退）
+    # 方法3: DDG HTML 搜索（常被拦截，做末位补充）
+    if not results or len(results) < 3:
+        try:
+            ddg_url = f"https://html.duckduckgo.com/html/?q={encoded}"
+            raw = _fetch_raw(ddg_url)
+            if raw["status"] == 200 and 'result__a' in raw["text"]:
+                ddg_res = _extract_results_ddg(raw["text"], count)
+                results.extend(ddg_res)
+                # 去重
+                seen = set()
+                dedup = []
+                for r in results:
+                    if r['url'] not in seen:
+                        seen.add(r['url'])
+                        dedup.append(r)
+                results = dedup[:count]
+        except Exception:
+            pass
+
+    # 方法4: Chromium 渲染 Google（终极回退，慢但可靠）
     if not results:
         try:
             import subprocess, tempfile
-            search_url = f"https://lite.duckduckgo.com/lite/?q={encoded}"
-            tmp = tempfile.mktemp(suffix=".html")
-            subprocess.run(
-                [CHROMIUM, "--headless", "--no-sandbox", "--disable-gpu",
-                 "--disable-dev-shm-usage", "--dump-dom", f"https://lite.duckduckgo.com/lite/?q={encoded}"],
-                timeout=25, stdout=open(tmp, "w"), stderr=subprocess.DEVNULL
-            )
-            html = Path(tmp).read_text()
-            # DDG Lite: simple table structure
-            lite_links = re.findall(
-                r'<a[^>]*rel="nofollow"[^>]*href="(https?://[^"]+)"[^>]*>([^<]+)</a>',
-                html
-            )
-            for url, title in lite_links[:count]:
-                bad = ['duckduckgo.com', 'google.com']
-                if not any(d in url for d in bad):
-                    results.append({"title": title.strip(), "url": url, "snippet": ""})
-            Path(tmp).unlink(missing_ok=True)
+            search_urls = [
+                f"https://lite.duckduckgo.com/lite/?q={encoded}",
+                f"https://www.google.com/search?q={encoded}&hl=en&num={count}",
+            ]
+            for search_url in search_urls:
+                if results:
+                    break
+                tmp_html = tempfile.mktemp(suffix=".html")
+                subprocess.run(
+                    [CHROMIUM, "--headless", "--no-sandbox", "--disable-gpu",
+                     "--disable-dev-shm-usage", "--dump-dom", search_url],
+                    timeout=25, stdout=open(tmp_html, "w"), stderr=subprocess.DEVNULL
+                )
+                html = Path(tmp_html).read_text()
+                # Try DDG Lite first
+                if 'lite.duckduckgo.com' in search_url:
+                    lite_links = re.findall(
+                        r'<a[^>]*rel="nofollow"[^>]*href="(https?://[^"]+)"[^>]*>([^<]+)</a>',
+                        html
+                    )
+                    for url, title in lite_links[:count]:
+                        bad = ['duckduckgo.com', 'google.com']
+                        if not any(d in url for d in bad):
+                            results.append({"title": title.strip(), "url": url, "snippet": ""})
+                else:
+                    results = _extract_results_google(html, count)
+                Path(tmp_html).unlink(missing_ok=True)
         except Exception:
             pass
 
