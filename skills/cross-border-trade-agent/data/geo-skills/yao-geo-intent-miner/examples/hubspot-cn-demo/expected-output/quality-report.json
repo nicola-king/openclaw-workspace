@@ -1,0 +1,53 @@
+{
+  "report": "HubSpot 中文简体 AI 搜索意图与问题集挖掘报告",
+  "generated_files": {
+    "markdown": "skills/yao-geo-intent-miner/examples/hubspot-cn-demo/expected-output/hubspot-cn-ai-intent-miner-demo.md",
+    "html": "skills/yao-geo-intent-miner/examples/hubspot-cn-demo/expected-output/hubspot-cn-ai-intent-miner-demo.html",
+    "docx": "skills/yao-geo-intent-miner/examples/hubspot-cn-demo/expected-output/hubspot-cn-ai-intent-miner-demo.docx",
+    "pdf": "skills/yao-geo-intent-miner/examples/hubspot-cn-demo/expected-output/hubspot-cn-ai-intent-miner-demo.pdf",
+    "quality": "skills/yao-geo-intent-miner/examples/hubspot-cn-demo/expected-output/quality-report.json"
+  },
+  "checks": {
+    "markdown_report_exists": true,
+    "html_report_exists": true,
+    "docx_report_exists": true,
+    "pdf_report_exists": true,
+    "html_has_kami_canvas": true,
+    "html_avoids_rgba": true,
+    "html_has_sticky_menu": true,
+    "html_has_toc_links": true,
+    "html_wraps_long_text": true,
+    "required_sections_present": true,
+    "section_count_at_least_15": true,
+    "data_source_status_present": true,
+    "ai_sampling_plan_or_results_present": true,
+    "calibration_actions_present": true,
+    "question_bank_at_least_18": true,
+    "question_bank_has_required_fields": true,
+    "monitoring_prompts_cover_cn_platforms": true,
+    "follow_up_chains_at_least_8": true,
+    "scoring_matrix_at_least_question_count": true,
+    "content_topics_present": true,
+    "faq_bank_present": true,
+    "knowledge_base_entries_present": true,
+    "evidence_sources_present": true,
+    "compliance_boundaries_present": true,
+    "docx_is_readable_zip": true,
+    "docx_content_width_dxa": 15138,
+    "docx_max_table_width_dxa": 15138,
+    "docx_max_grid_width_dxa": 15138,
+    "docx_tables_fit_page_width": true,
+    "docx_has_fixed_table_layout": true,
+    "pdf_has_header": true,
+    "pdf_is_landscape": true,
+    "pdf_page_size": "Page size:       841.89 x 595.276 pts (A4)"
+  },
+  "failed_checks": [],
+  "overall_score": 100,
+  "layout_limits": {
+    "word_page": "A4 landscape",
+    "word_content_width_dxa": 15138,
+    "pdf_page": "A4 landscape",
+    "html_menu": "position: sticky; top: 0"
+  }
+}

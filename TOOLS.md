@@ -173,6 +173,14 @@ Add whatever helps you do your job. This is your cheat sheet.
 - `card-xiaohongshu` — 小红书卡片
 - `deck-swiss-international` — 瑞士国际 Deck
 
+## 🔧 OpenClaw 唤醒别名
+
+| 别名 | 命令 | 用途 |
+|------|------|------|
+| `oc-status` | `openclaw channels status --deep` | 深度状态查看，避免跨用户调用报错 |
+
+> 已写入 ~/.bashrc，2026-05-21
+
 ## 🧠 知识沉淀原则
 
 > 参见 constitution/rules/KNOWLEDGE-SEDIMENTATION.md
@@ -182,3 +190,42 @@ Add whatever helps you do your job. This is your cheat sheet.
 - 工具层 → 本文件 (TOOLS.md)
 - 会话层 → memory/core.md + memory/YYYY-MM-DD.md
 - 全局层 → wiki/ 或 constitution/
+
+
+## 🖼️ VLM 视觉预处理 (2026-05-21 部署)
+
+> 状态：✅ 已集成到 OpenClaw tools.media
+
+### 架构
+```
+消息入站（任意渠道）
+  → OpenClaw Gateway 自动检测图片附件
+  → tools.media 调用 VLM CLI wrapper
+  → ollama VLM (minicpm-v) 处理图片
+  → 描述文本注入为 [Image] 上下文块
+  → DeepSeek 接收完整上下文
+```
+
+### 服务
+| 组件 | 状态 | 端口/位置 |
+|------|------|-----------|
+| ollama serve | systemd 自启 | 127.0.0.1:11434 |
+| VLM CLI wrapper | scripts/vlm-understand.sh | ~/.openclaw/workspace/ |
+| Python venv | ~/.venvs/vlm/ | ollama 0.6.2 |
+
+### 模型
+| 模型 | 大小 | 角色 |
+|------|------|------|
+| minicpm-v | 5.5GB | 主用 VLM（中文优先） |
+| llava:7b | 4.7GB | 备用 VLM |
+| qwen2.5:7b | 4.7GB | 纯文本备用 |
+
+### 测试
+```bash
+# 直接测试 VLM
+bash ~/.openclaw/workspace/scripts/vlm-understand.sh /path/to/image.jpg
+
+# Python API 测试
+source ~/.venvs/vlm/bin/activate
+python3 -c "import ollama; r=ollama.chat(model='minicpm-v', messages=[{'role':'user','content':'描述这张图','images':['/path/img.jpg']}]); print(r['message']['content'])"
+```

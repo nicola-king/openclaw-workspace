@@ -104,3 +104,40 @@
 - 归档 competitor 报告: 2026-05-11 ~ 2026-05-13 (6 文件移至 data/.archive/competitors/202605/)
 - 清理 .cache/scraper/: 644K
 ---
+
+## 2026-05-21 22:00 数据归档
+
+### 已清理
+- `__pycache__` 缓存目录 (skills/: ~264K)
+- core dump 文件 (skills/, 3 个)
+
+### 已检查
+- `data/` (4.1M): 跨境贸易数据、token 监控日志 — 活跃数据，无需归档
+- `reports/` (92K): 无新增过期文件
+- `.git/` (262M): 含 4202 个松散对象；`git gc --aggressive` 因 OOM 终止，待手工处理
+- 临时文件: 无残留 *.tmp/*.temp/*.swp 文件
+
+### 当前状态
+- workspace 总大小: 30G
+- 无过期报告需归档
+- 所有数据文件均为活跃状态
+
+## 2026-05-21 22:00 数据归档
+
+### 重大升级
+- **OpenOCR 安装** → 图片文字识别管线 (0.2s/张，CPU)
+- **AnySearch 集成** → 统一搜索后端，替代 DuckDuckGo
+- **Taiyi Search 统一搜索引擎** → 蒸馏合并 3 个旧搜索 skill 为 1 个
+- **废弃 3 个旧 skill**：search-agent, shared-search-agent, anysearch-skill
+
+### 系统配置
+- tools.media → openocr-understand.sh（自动识别图片）
+- taiyi-search → 已挂载 7 个 Agent
+- 系统搜索启用 → provider=anysearch
+- VLM 管线已取消（tools.media 和热保 cron 均移除）
+
+### 基础设施
+- ollama v0.24.0 @ systemd（3个模型，14.9GB）
+- openocr-python @ ~/.venvs/vlm/
+- anysearch-skill @ skills/anysearch-skill/
+- taiyi-search @ skills/taiyi-search/

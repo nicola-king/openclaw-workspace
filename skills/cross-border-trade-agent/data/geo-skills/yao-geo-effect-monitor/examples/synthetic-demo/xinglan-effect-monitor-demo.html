@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>星澜客户洞察 GEO Signal Monitor 系统监测报告</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <style>
+  :root {
+    --paper: #ffffff;
+    --ivory: #faf9f5;
+    --warm-sand: #e8e6dc;
+    --brand: #1B365D;
+    --brand-light: #2D5A8A;
+    --near-black: #141413;
+    --dark-warm: #3d3d3a;
+    --olive: #5e5d59;
+    --stone: #87867f;
+    --border-cream: #e8e5da;
+    --border-warm: #e0ddd2;
+  }
+  @page { size: A4 landscape; margin: 14mm; background: var(--paper); }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0 !important;
+    padding: 0;
+    width: 100%;
+    max-width: none !important;
+    background: var(--paper);
+    color: var(--near-black);
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Source Han Sans SC", "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    overflow-wrap: normal;
+  }
+  a { color: var(--brand); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  h1, h2, h3 {
+    font-family: "TsangerJinKai02", "Source Han Serif SC", "Noto Serif CJK SC", "Songti SC", Georgia, serif;
+    font-weight: 500;
+    color: var(--near-black);
+  }
+  h1 {
+    font-size: 28px;
+    line-height: 1.16;
+    margin: 0 0 18px;
+    max-width: 980px;
+  }
+  h2 {
+    font-size: 19px;
+    line-height: 1.25;
+    margin: 30px 0 12px;
+    padding: 0 0 0 11px;
+    border-left: 4px solid var(--brand);
+    break-after: avoid;
+  }
+  h3 { font-size: 16px; line-height: 1.3; margin: 22px 0 8px; }
+  p { margin: 8px 0 12px; color: var(--dark-warm); }
+  blockquote {
+    margin: 0 0 22px;
+    padding: 13px 16px;
+    border-left: 4px solid var(--brand);
+    background: var(--ivory);
+    color: var(--dark-warm);
+  }
+  blockquote p { margin: 0; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin: 10px 0 22px;
+    background: var(--paper);
+    border: 1px solid var(--border-warm);
+  }
+  th, td {
+    border: 1px solid var(--border-warm);
+    padding: 8px 9px;
+    text-align: left;
+    vertical-align: top;
+    word-break: normal;
+    overflow-wrap: anywhere;
+  }
+  th {
+    background: var(--ivory);
+    color: var(--near-black);
+    font-weight: 600;
+  }
+  tbody tr:nth-child(odd) td { background: #fffdfa; }
+  tr { break-inside: avoid; }
+  code {
+    font-family: "JetBrains Mono", "SF Mono", Consolas, Monaco, monospace;
+    font-size: 12px;
+    background: var(--ivory);
+    padding: 1px 4px;
+    border: 1px solid var(--border-cream);
+    border-radius: 4px;
+  }
+  ul { padding-left: 22px; }
+  li { margin: 4px 0; }
+  hr { border: 0; border-top: 1px solid var(--border-warm); margin: 24px 0; }
+  @media screen and (min-width: 900px) {
+    body { padding: 32px 38px 56px 328px; }
+    body > *:not(nav#TOC) { width: 100%; max-width: 1140px; margin-left: 0; margin-right: auto; }
+    nav#TOC {
+      position: fixed;
+      top: 18px;
+      left: 18px;
+      bottom: 18px;
+      width: 274px;
+      overflow: auto;
+      padding: 17px 16px 20px;
+      border: 1px solid var(--border-cream);
+      background: var(--paper);
+      box-shadow: 0 0 0 1px #f2f0e8;
+      z-index: 20;
+    }
+    nav#TOC::before { content: "报告菜单"; display: block; font-weight: 600; color: var(--near-black); margin-bottom: 10px; }
+    nav#TOC ul { list-style: none; padding-left: 0; margin: 0; }
+    nav#TOC li { margin: 4px 0; }
+    nav#TOC a { display: block; padding: 3px 0; font-size: 12px; line-height: 1.35; color: var(--brand); }
+  }
+  @media screen and (max-width: 899px) {
+    body { padding: 0 14px 40px; }
+    h1 { font-size: 24px; margin-top: 18px; }
+    nav#TOC {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      max-height: 42vh;
+      overflow: auto;
+      margin: 0 -14px 20px;
+      padding: 13px 14px;
+      border-bottom: 1px solid var(--border-warm);
+      background: var(--paper);
+      box-shadow: 0 0 0 1px #f2f0e8;
+    }
+    nav#TOC::before { content: "报告菜单"; display: block; font-weight: 600; margin-bottom: 6px; }
+    nav#TOC ul { margin: 0; padding-left: 18px; }
+  }
+  @media print {
+    body { padding: 0; }
+    nav#TOC { display: none; }
+    body > * { max-width: none; }
+    h2 { break-after: avoid; }
+  }
+  </style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#星澜客户洞察-geo-signal-monitor-系统监测报告"
+id="toc-星澜客户洞察-geo-signal-monitor-系统监测报告">星澜客户洞察 GEO
+Signal Monitor 系统监测报告</a>
+<ul>
+<li><a href="#执行摘要与关键判断" id="toc-执行摘要与关键判断">1.
+执行摘要与关键判断</a></li>
+<li><a href="#任务范围边界和采样声明" id="toc-任务范围边界和采样声明">2.
+任务范围、边界和采样声明</a></li>
+<li><a href="#权威参考与来源账本" id="toc-权威参考与来源账本">3.
+权威参考与来源账本</a></li>
+<li><a href="#公司品牌事实基线" id="toc-公司品牌事实基线">4.
+公司/品牌事实基线</a></li>
+<li><a href="#公司测试场景发现" id="toc-公司测试场景发现">5.
+公司测试场景发现</a></li>
+<li><a href="#监测-prompt-库与对照组" id="toc-监测-prompt-库与对照组">6.
+监测 Prompt 库与对照组</a></li>
+<li><a href="#真实数据接入模式与证据等级"
+id="toc-真实数据接入模式与证据等级">7.
+真实数据接入模式与证据等级</a></li>
+<li><a href="#五平台采样口径" id="toc-五平台采样口径">8.
+五平台采样口径</a></li>
+<li><a href="#核心指标总览" id="toc-核心指标总览">9.
+核心指标总览</a></li>
+<li><a href="#平台差异分析" id="toc-平台差异分析">10.
+平台差异分析</a></li>
+<li><a href="#引用源追踪与证据质量" id="toc-引用源追踪与证据质量">11.
+引用源追踪与证据质量</a></li>
+<li><a href="#答案事实性与描述准确率"
+id="toc-答案事实性与描述准确率">12. 答案事实性与描述准确率</a></li>
+<li><a href="#竞品替代和负面表述分析"
+id="toc-竞品替代和负面表述分析">13. 竞品、替代和负面表述分析</a></li>
+<li><a href="#稳定性波动和置信度" id="toc-稳定性波动和置信度">14.
+稳定性、波动和置信度</a></li>
+<li><a href="#答案差异与谨慎归因" id="toc-答案差异与谨慎归因">15.
+答案差异与谨慎归因</a></li>
+<li><a href="#纠偏任务与路线图" id="toc-纠偏任务与路线图">16.
+纠偏任务与路线图</a></li>
+<li><a href="#告警规则和复盘节奏" id="toc-告警规则和复盘节奏">17.
+告警规则和复盘节奏</a></li>
+<li><a href="#仪表盘字段数据库表和-api-草案"
+id="toc-仪表盘字段数据库表和-api-草案">18. 仪表盘字段、数据库表和 API
+草案</a></li>
+<li><a href="#治理合规数据质量和风险控制"
+id="toc-治理合规数据质量和风险控制">19.
+治理、合规、数据质量和风险控制</a></li>
+<li><a href="#自-review-结果" id="toc-自-review-结果">20. 自 review
+结果</a></li>
+<li><a href="#附录prompt-全表指标字典来源账本采样字段"
+id="toc-附录prompt-全表指标字典来源账本采样字段">21. 附录：Prompt
+全表、指标字典、来源账本、采样字段</a></li>
+</ul></li>
+</ul>
+</nav>
+<!--
+Copyright © 2026 姚金刚. All rights reserved.
+Project: yao-geo-effect-monitor
+Created by: 姚金刚
+Date: 2026-05-16
+X: https://x.com/yaojingang
+-->
+<h1 id="星澜客户洞察-geo-signal-monitor-系统监测报告">星澜客户洞察 GEO
+Signal Monitor 系统监测报告</h1>
+<blockquote>
+<p>合成公开样例。品牌、指标、采样和任务均为演示数据。</p>
+</blockquote>
+<h2 id="执行摘要与关键判断">1. 执行摘要与关键判断</h2>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>判断</th>
+<th>结论</th>
+<th>证据</th>
+<th>下步动作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>监测目标</td>
+<td>建立 AI 答案可见性、引用质量、事实准确、纠偏和谨慎归因闭环。</td>
+<td>五平台 Prompt、指标、来源账本、证据等级和纠偏任务均已定义。</td>
+<td>进入周期性采样、证据入库和复盘。</td>
+</tr>
+<tr>
+<td>真实数据状态</td>
+<td>本次为合成公开样例，不包含真实客户、真实平台答案或真实 CRM
+转化数据。</td>
+<td>sample_mode = <code>synthetic_replay</code>，evidence_level =
+<code>E0/E1</code>。</td>
+<td>如需真实月报，先接入 M1-M4 的可审计答案样本。</td>
+</tr>
+<tr>
+<td>当前风险</td>
+<td>不能只看品牌出现率，必须同时看推荐、引用、事实、稳定性和证据等级。</td>
+<td>出现率与推荐率、引用召回率存在差距。</td>
+<td>建立阈值告警和 P0 纠偏机制。</td>
+</tr>
+<tr>
+<td>报告完整性</td>
+<td>本报告按系统性、详细度、完整性三层自检。</td>
+<td>覆盖来源、场景、Prompt、数据接入、采样、六层分析、治理和附录。</td>
+<td>月报沿用同一结构。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="任务范围边界和采样声明">2. 任务范围、边界和采样声明</h2>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>项目</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>语言</td>
+<td>中文简体</td>
+</tr>
+<tr>
+<td>平台</td>
+<td>DeepSeek、豆包、千问、Kimi、元宝</td>
+</tr>
+<tr>
+<td>采样声明</td>
+<td>本次为合成公开样例，不包含真实客户、真实平台答案或真实 CRM
+转化数据。</td>
+</tr>
+<tr>
+<td>边界</td>
+<td>不绕过登录、验证码、限流、付费或平台条款；归因默认从观察相关开始。</td>
+</tr>
+<tr>
+<td>真实数据要求</td>
+<td>必须提供答案原文、Prompt、时间、平台、账号/地区/联网状态和截图、导出或接口日志。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="权威参考与来源账本">3. 权威参考与来源账本</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr>
+<th>source_id</th>
+<th>类型</th>
+<th>标题/事实</th>
+<th>URL/来源</th>
+<th>用途</th>
+<th>置信度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S1</td>
+<td>合成声明</td>
+<td>示例品牌与样本为合成</td>
+<td>report_input.json</td>
+<td>防止误用为真实客户</td>
+<td>高</td>
+</tr>
+<tr>
+<td>S2</td>
+<td>方法来源</td>
+<td>GEO、可验证性、RAGAS、NIST</td>
+<td>references/research-basis.md</td>
+<td>支撑指标和治理</td>
+<td>高</td>
+</tr>
+</tbody>
+</table>
+<h2 id="公司品牌事实基线">4. 公司/品牌事实基线</h2>
+<table>
+<thead>
+<tr>
+<th>事实</th>
+<th>官方来源或核验方式</th>
+<th>风险</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>星澜客户洞察是合成品牌。</td>
+<td>报告首段</td>
+<td>不能冒充真实客户。</td>
+</tr>
+<tr>
+<td>样本为合成回放。</td>
+<td>采样声明</td>
+<td>不能写成真实平台结论。</td>
+</tr>
+<tr>
+<td>监测主题为 B2B 客户洞察。</td>
+<td>Prompt 和场景</td>
+<td>场景过窄会影响推荐率。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="公司测试场景发现">5. 公司测试场景发现</h2>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>场景</th>
+<th>业务含义</th>
+<th>对应 Prompt 组</th>
+<th>风险</th>
+<th>正确答案应覆盖</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>XL-01</td>
+<td>B2B 销售团队选择客户洞察工具</td>
+<td>推荐、比较</td>
+<td>只看 CRM，不看客户洞察</td>
+<td>场景、推荐理由、竞品对照</td>
+</tr>
+<tr>
+<td>XL-02</td>
+<td>制造业客户分层</td>
+<td>场景问法</td>
+<td>缺少行业证据</td>
+<td>行业案例、适用边界</td>
+</tr>
+<tr>
+<td>XL-03</td>
+<td>价格和实施成本</td>
+<td>价格、风险</td>
+<td>旧价格被复述</td>
+<td>当前价格事实页</td>
+</tr>
+<tr>
+<td>XL-04</td>
+<td>品牌真实性核验</td>
+<td>品牌验证</td>
+<td>资质事实缺失</td>
+<td>官网事实卡和引用</td>
+</tr>
+</tbody>
+</table>
+<h2 id="监测-prompt-库与对照组">6. 监测 Prompt 库与对照组</h2>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>组别</th>
+<th>核心 Prompt</th>
+<th>对照 Prompt</th>
+<th>观测重点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>推荐</td>
+<td>适合星澜客户洞察目标用户的方案有哪些？</td>
+<td>不含品牌名的同类推荐</td>
+<td>候选率、推荐率、排序。</td>
+</tr>
+<tr>
+<td>比较</td>
+<td>星澜客户洞察 与主要竞品怎么选？</td>
+<td>调换品牌顺序</td>
+<td>排序、优劣描述、引用源。</td>
+</tr>
+<tr>
+<td>替代</td>
+<td>竞品有哪些替代方案？</td>
+<td>只问竞品</td>
+<td>品牌是否被召回。</td>
+</tr>
+<tr>
+<td>价格</td>
+<td>星澜客户洞察 价格、套餐或成本如何？</td>
+<td>只问贵不贵</td>
+<td>价格事实、适用边界。</td>
+</tr>
+<tr>
+<td>风险</td>
+<td>星澜客户洞察 有什么限制或风险？</td>
+<td>行业通用风险问法</td>
+<td>负面表述、误解来源。</td>
+</tr>
+<tr>
+<td>品牌验证</td>
+<td>星澜客户洞察 是什么？有哪些产品/能力？</td>
+<td>只问品牌是否正规</td>
+<td>事实准确率、引用质量。</td>
+</tr>
+<tr>
+<td>场景问法</td>
+<td>具体业务场景如何选择工具？</td>
+<td>不含品牌名场景问法</td>
+<td>场景召回、推荐理由。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="真实数据接入模式与证据等级">7. 真实数据接入模式与证据等级</h2>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>模式</th>
+<th>当前状态</th>
+<th>进入正式指标条件</th>
+<th>报告措辞</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>M0 合成回放</td>
+<td>已用于本示例</td>
+<td>仅用于流程验证，不进入真实月报指标</td>
+<td>方法演示，不代表真实平台表现。</td>
+</tr>
+<tr>
+<td>M1 用户提供真实样本</td>
+<td>可接入</td>
+<td>答案文本 + Prompt + 采样环境 + 截图/导出</td>
+<td>可作为客户样本分析。</td>
+</tr>
+<tr>
+<td>M2 人工授权采样</td>
+<td>可接入</td>
+<td>人工采样记录 + 频率边界 + 复核人</td>
+<td>可作为小规模真实样本。</td>
+</tr>
+<tr>
+<td>M3 授权 API/连接器</td>
+<td>条件可用</td>
+<td>API 权限、接口日志、频率、失败重试</td>
+<td>可进入看板趋势。</td>
+</tr>
+<tr>
+<td>M4 浏览器辅助合规采样</td>
+<td>条件可用</td>
+<td>人工授权登录、无绕过、截图和采样日志</td>
+<td>可用于复核和截图证据。</td>
+</tr>
+<tr>
+<td>M5 CRM/转化数据导入</td>
+<td>可接入用户授权数据</td>
+<td>脱敏、字段口径、时间窗口、拥有方授权</td>
+<td>只能辅助归因，不能替代 AI 答案样本。</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>证据等级</th>
+<th>条件</th>
+<th>当前样例状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E0</td>
+<td>无原始答案和环境字段</td>
+<td>不作为真实平台数据。</td>
+</tr>
+<tr>
+<td>E1</td>
+<td>有答案文本但缺少截图或完整环境</td>
+<td>可作为线索。</td>
+</tr>
+<tr>
+<td>E2</td>
+<td>有答案文本、Prompt、平台、时间、地区、联网状态</td>
+<td>可作为单次真实样本。</td>
+</tr>
+<tr>
+<td>E3</td>
+<td>E2 + 截图、导出文件、引用链接或接口日志</td>
+<td>可审计真实样本。</td>
+</tr>
+<tr>
+<td>E4</td>
+<td>E3 + 多轮复采、对照 Prompt、复核人和去重记录</td>
+<td>可进入月报统计。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="五平台采样口径">8. 五平台采样口径</h2>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>平台</th>
+<th>重点</th>
+<th>样本量建议</th>
+<th>必填环境字段</th>
+<th>质检重点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DeepSeek</td>
+<td>结论稳定性、证据链、联网状态</td>
+<td>40+</td>
+<td>时间、设备、地区、联网、sample_mode</td>
+<td>多次答案是否一致。</td>
+</tr>
+<tr>
+<td>豆包</td>
+<td>口语问答、图文输出、短答案</td>
+<td>40+</td>
+<td>设备、账号、地区、联网、截图</td>
+<td>是否省略来源或过度简化。</td>
+</tr>
+<tr>
+<td>千问</td>
+<td>引用源、追问路径、生态信源</td>
+<td>40+</td>
+<td>轮次、追问、联网、引用链接</td>
+<td>引用是否支持说法。</td>
+</tr>
+<tr>
+<td>Kimi</td>
+<td>深度研究、长文引用、文档站</td>
+<td>40+</td>
+<td>长文模式、联网、引用段落</td>
+<td>引用召回和事实更新。</td>
+</tr>
+<tr>
+<td>元宝</td>
+<td>微信生态、公众号、视频号</td>
+<td>40+</td>
+<td>账号、地区、生态来源、可访问路径</td>
+<td>二手中文来源是否可靠。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="核心指标总览">9. 核心指标总览</h2>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>合成结果</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>品牌出现率</td>
+<td>62%</td>
+<td>召回改善，但不等于被推荐。</td>
+</tr>
+<tr>
+<td>候选率</td>
+<td>46%</td>
+<td>替代类 Prompt 改善。</td>
+</tr>
+<tr>
+<td>推荐率</td>
+<td>38%</td>
+<td>推荐理由仍不足。</td>
+</tr>
+<tr>
+<td>描述准确率</td>
+<td>71%</td>
+<td>价格事实仍需纠偏。</td>
+</tr>
+<tr>
+<td>引用召回率</td>
+<td>44%</td>
+<td>Kimi 深度研究引用提升。</td>
+</tr>
+<tr>
+<td>引用准确率</td>
+<td>68%</td>
+<td>二手媒体支持度有限。</td>
+</tr>
+<tr>
+<td>负面表述率</td>
+<td>14%</td>
+<td>旧版本误解下降。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="平台差异分析">10. 平台差异分析</h2>
+<table>
+<thead>
+<tr>
+<th>平台</th>
+<th>差异</th>
+<th>动作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DeepSeek</td>
+<td>结构化比较好，但引用链弱</td>
+<td>强化官方来源账本。</td>
+</tr>
+<tr>
+<td>豆包</td>
+<td>短答案容易简化品牌定位</td>
+<td>增加短事实卡。</td>
+</tr>
+<tr>
+<td>千问</td>
+<td>引用表现较好，追问后竞品增多</td>
+<td>保留追问链路和 turn_index。</td>
+</tr>
+<tr>
+<td>Kimi</td>
+<td>长文能覆盖研究和文档站</td>
+<td>检查旧数字和长引用支持度。</td>
+</tr>
+<tr>
+<td>元宝</td>
+<td>中文生态召回强</td>
+<td>防止公众号二手内容替代官方来源。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="引用源追踪与证据质量">11. 引用源追踪与证据质量</h2>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>来源类型</th>
+<th>支持等级</th>
+<th>判断规则</th>
+<th>纠偏动作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>官方网站/文档</td>
+<td>A</td>
+<td>直接支持答案事实</td>
+<td>优先作为事实卡和纠偏锚点。</td>
+</tr>
+<tr>
+<td>官方中文资料</td>
+<td>A/B</td>
+<td>中文可读且支持说法</td>
+<td>用于国内平台引用优化。</td>
+</tr>
+<tr>
+<td>投资者/公告/标准</td>
+<td>A</td>
+<td>支持动态数字或治理要求</td>
+<td>写绝对日期，避免旧数据。</td>
+</tr>
+<tr>
+<td>媒体/评测/社区</td>
+<td>B/C</td>
+<td>可辅助比较但不一定支持事实</td>
+<td>仅作辅助，不作主事实。</td>
+</tr>
+<tr>
+<td>竞品页面</td>
+<td>C</td>
+<td>用于对照，不验证本品牌事实</td>
+<td>标注为竞品来源。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="答案事实性与描述准确率">12. 答案事实性与描述准确率</h2>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>事实类型</th>
+<th>典型错误</th>
+<th>核验方法</th>
+<th>优先级</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>产品/能力</td>
+<td>用旧名称、少列产品、夸大 AI 能力</td>
+<td>对照官网和官方文档</td>
+<td>P0</td>
+</tr>
+<tr>
+<td>价格/套餐</td>
+<td>把付费能力写成免费</td>
+<td>对照定价、知识库和公告</td>
+<td>P0</td>
+</tr>
+<tr>
+<td>客户/案例</td>
+<td>使用旧数字或未授权案例</td>
+<td>对照官方公告和案例页</td>
+<td>P1</td>
+</tr>
+<tr>
+<td>市场/适配</td>
+<td>过度绝对化国内或海外适用性</td>
+<td>对照场景和竞品</td>
+<td>P1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="竞品替代和负面表述分析">13. 竞品、替代和负面表述分析</h2>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>维度</th>
+<th>监测点</th>
+<th>风险</th>
+<th>输出</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>竞品出现</td>
+<td>竞品频率、排序、推荐理由</td>
+<td>品牌被替代或弱推荐</td>
+<td>竞品矩阵。</td>
+</tr>
+<tr>
+<td>替代关系</td>
+<td>国产替代、海外替代、传统方案</td>
+<td>不同场景混在一起</td>
+<td>场景化替代表。</td>
+</tr>
+<tr>
+<td>负面表述</td>
+<td>价格、本地化、数据、实施成本</td>
+<td>被二手内容放大</td>
+<td>风险澄清页。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="稳定性波动和置信度">14. 稳定性、波动和置信度</h2>
+<table>
+<thead>
+<tr>
+<th>置信度</th>
+<th>条件</th>
+<th>报告措辞</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>高</td>
+<td>多平台、多轮次、一致引用、E3+ 证据和对照支持</td>
+<td>可作为稳定判断。</td>
+</tr>
+<tr>
+<td>中</td>
+<td>有样本和引用，但平台间有差异或证据等级不足</td>
+<td>作为方向判断。</td>
+</tr>
+<tr>
+<td>低</td>
+<td>只有单次样本、合成回放或缺少引用</td>
+<td>仅作为观察线索。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="答案差异与谨慎归因">15. 答案差异与谨慎归因</h2>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>干预</th>
+<th>基线窗口</th>
+<th>观察窗口</th>
+<th>对照</th>
+<th>归因规则</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>内容发布</td>
+<td>T-14 至 T0</td>
+<td>T+7/T+14/T+30</td>
+<td>不相关 Prompt / 竞品 Prompt</td>
+<td>默认观察相关。</td>
+</tr>
+<tr>
+<td>页面修复</td>
+<td>T-14 至 T0</td>
+<td>T+7/T+14</td>
+<td>未修复页面组</td>
+<td>有对照改善才升置信。</td>
+</tr>
+<tr>
+<td>外部信源</td>
+<td>T-30 至 T0</td>
+<td>T+14/T+30</td>
+<td>未发布主题</td>
+<td>检查索引延迟和外部事件。</td>
+</tr>
+<tr>
+<td>CRM/转化</td>
+<td>T-30 至 T0</td>
+<td>T+30/T+60</td>
+<td>非 GEO 入口或未曝光组</td>
+<td>只能辅助解释，不能替代 AI 答案采样。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="纠偏任务与路线图">16. 纠偏任务与路线图</h2>
+<table>
+<thead>
+<tr>
+<th>优先级</th>
+<th>问题</th>
+<th>映射资产</th>
+<th>验收指标</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>P0</td>
+<td>旧价格套餐被复述</td>
+<td>官网价格事实页</td>
+<td>价格错误率低于 5%</td>
+</tr>
+<tr>
+<td>P0</td>
+<td>官网引用不足</td>
+<td>FAQ、案例页、文档站入口</td>
+<td>官网引用提升 30%</td>
+</tr>
+<tr>
+<td>P1</td>
+<td>制造业案例缺证据</td>
+<td>行业案例页</td>
+<td>场景推荐率提升 8pp</td>
+</tr>
+</tbody>
+</table>
+<h2 id="告警规则和复盘节奏">17. 告警规则和复盘节奏</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>告警</th>
+<th>阈值</th>
+<th>处理</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>事实错误</td>
+<td>P0 错误连续两轮出现或描述准确率低于 80%</td>
+<td>建 P0 纠偏，14 天内复采。</td>
+</tr>
+<tr>
+<td>引用不足</td>
+<td>引用召回率低于 50%</td>
+<td>补官方证据页和中文承接页。</td>
+</tr>
+<tr>
+<td>证据等级不足</td>
+<td>正式样本低于 E2 或截图/导出缺失</td>
+<td>降级为待复核，不进入正式指标。</td>
+</tr>
+<tr>
+<td>推荐下降</td>
+<td>推荐率环比下降超过 10pp</td>
+<td>检查平台更新、竞品动作和 Prompt 分布。</td>
+</tr>
+<tr>
+<td>负面上升</td>
+<td>负面表述率高于 18%</td>
+<td>建风险澄清页和销售口径。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="仪表盘字段数据库表和-api-草案">18. 仪表盘字段、数据库表和 API
+草案</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>表/接口</th>
+<th>字段或路径</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>monitor_prompts</td>
+<td>scenario_id、group、query_text、control_flag、prompt_version</td>
+<td>管理 Prompt 和对照组。</td>
+</tr>
+<tr>
+<td>answer_samples</td>
+<td>sample_mode、evidence_level、platform、sampled_at、region、network_enabled、answer_text</td>
+<td>保存采样答案。</td>
+</tr>
+<tr>
+<td>sample_evidence</td>
+<td>raw_answer_path、screenshot_path、api_log_id、collector、permission_basis</td>
+<td>保存真实数据证据。</td>
+</tr>
+<tr>
+<td>citations</td>
+<td>source_type、source_url、claim_text、support_level</td>
+<td>追踪引用质量。</td>
+</tr>
+<tr>
+<td>correction_tasks</td>
+<td>priority、mapped_asset、owner、acceptance_metric</td>
+<td>管理纠偏闭环。</td>
+</tr>
+<tr>
+<td>API</td>
+<td>GET /api/geo-monitor/monthly-report</td>
+<td>拉取月报聚合。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="治理合规数据质量和风险控制">19.
+治理、合规、数据质量和风险控制</h2>
+<table>
+<thead>
+<tr>
+<th>风险</th>
+<th>控制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>平台条款</td>
+<td>不绕过登录、验证码、付费和限流；批量采样需授权。</td>
+</tr>
+<tr>
+<td>数据隐私</td>
+<td>CRM、转化、账号、截图和接口日志脱敏；示例只用合成数据。</td>
+</tr>
+<tr>
+<td>数据质量</td>
+<td>记录采样环境、来源账本、复核人、证据等级和置信度。</td>
+</tr>
+<tr>
+<td>生成式 AI 风险</td>
+<td>标注幻觉、过时事实、引用不支持和过度归因。</td>
+</tr>
+<tr>
+<td>真实数据误用</td>
+<td>没有可审计样本时，报告必须标注为合成或待复核。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="自-review-结果">20. 自 review 结果</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>检查项</th>
+<th>结果</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>系统性</td>
+<td>通过</td>
+<td>覆盖来源、场景、Prompt、数据接入、采样、指标、引用、归因、纠偏、治理和附录。</td>
+</tr>
+<tr>
+<td>详细度</td>
+<td>通过</td>
+<td>每个模块有字段、阈值、动作、证据等级或验收标准。</td>
+</tr>
+<tr>
+<td>完整性</td>
+<td>通过</td>
+<td>结论可回到 Prompt、样本、来源、证据和纠偏任务。</td>
+</tr>
+<tr>
+<td>HTML 菜单</td>
+<td>通过</td>
+<td>浏览器检查确认桌面端 fixed 菜单、移动端 sticky 菜单。</td>
+</tr>
+<tr>
+<td>横向溢出</td>
+<td>通过</td>
+<td>桌面 1440px 与移动 390px 视口均无横向溢出。</td>
+</tr>
+<tr>
+<td>Pandoc 默认 CSS</td>
+<td>通过</td>
+<td>HTML 生成时禁用默认文档 CSS，并显式覆盖 body 窄栏约束。</td>
+</tr>
+<tr>
+<td>kami UI</td>
+<td>通过</td>
+<td>白底优先，采用油墨蓝、暖灰、紧凑层级、稳定表格边框。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="附录prompt-全表指标字典来源账本采样字段">21. 附录：Prompt
+全表、指标字典、来源账本、采样字段</h2>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>附录</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Prompt 全表</td>
+<td>七组 Prompt、对照 Prompt、场景 ID、版本。</td>
+</tr>
+<tr>
+<td>指标字典</td>
+<td>出现率、候选率、推荐率、排序、描述准确、引用召回、引用准确、稳定性。</td>
+</tr>
+<tr>
+<td>来源账本</td>
+<td>source_id、source_type、url、fact_supported、freshness_risk、confidence。</td>
+</tr>
+<tr>
+<td>采样字段</td>
+<td>sample_mode、evidence_level、platform、sampled_at、device、account_state、region、network_enabled、turn_index。</td>
+</tr>
+<tr>
+<td>真实数据证据</td>
+<td>raw_answer_path、screenshot_path、api_log_id、collector、permission_basis、review_status。</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-20T10:00:11.235Z",
+  "updatedAt": "2026-05-21T14:21:56.271Z",
   "entries": {
     "memory:memory/2026-05-04.md:285:324": {
       "key": "memory:memory/2026-05-04.md:285:324",
@@ -560,13 +560,13 @@
       "endLine": 90,
       "source": "memory",
       "snippet": "## [决策] 跨境贸易 Agent 真实业务模型确认 SAYELF 的业务模型： - 核心角色：跨境贸易平台运营者 / 贸易经纪 - 核心价值：找买家 → 买家信息/项目情报 → 卖给工厂订阅 - 工厂（供应商）是客户，不是业务主体 - 配套服务（合同/合规/报价）是增值服务，不是核心产品 能力涌现方向： - P0 买家情报引擎（中东项目采购/开发商/承包商） - P0 项目雷达（招标/项目动态自动化） - P1 工厂订阅系统 - 已有模块（报价/合同/合规/供应商匹配）调整为服务层 记忆更新：memory/core.md 和 memory/context.md 需修正定位 ## [架构] 跨境贸易 Agent 模块重排 业务模型确认（双模式）： - 核心：买家情报平台 → 工厂订阅制（¥299/¥999/月） - 机会：高利润匹配时亲自做中间贸易商 模块全景（按优先级）： ``` P0 buyer-intel 买家情报引擎（核心产品）✅ ├─ 项目雷达 / 采购机会 / 人脉库 ├─ 情报验证管道（5项验证→可信度评分） ├─ 工厂触达记录（情报→工厂→成单追踪） └─ 订阅管理（注册/计费/续费/限额） P1 subscription 工厂订阅计费 ✅ └─ 3级方案：free_trial/basic/pro P2 服务层（增值附送） ├─ 报价引擎（含退税）✅ ├─ 合同模板（中东专版）✅",
-      "recallCount": 7,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 7,
+      "totalScore": 8,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-07T04:37:12.051Z",
-      "lastRecalledAt": "2026-05-19T07:24:57.863Z",
+      "lastRecalledAt": "2026-05-21T03:27:11.293Z",
       "queryHashes": [
         "dc8fc4c5be34",
         "3557c60647b1",
@@ -574,14 +574,16 @@
         "58850f00f0f6",
         "2713a1272737",
         "241e48fd3d2f",
-        "a4f4620aefae"
+        "a4f4620aefae",
+        "36c03af1e8b1"
       ],
       "recallDays": [
         "2026-05-07",
         "2026-05-08",
         "2026-05-09",
         "2026-05-18",
-        "2026-05-19"
+        "2026-05-19",
+        "2026-05-21"
       ],
       "conceptTags": [
         "买家信息/项目情报",
@@ -859,24 +861,27 @@
       "endLine": 45,
       "source": "memory",
       "snippet": "- 三条命令: sweep(单次) / monitor(全量) / countries(国家列表) - 文件: scripts/search_automation.py + penetrating_search.py ## [能力涌现] AI HOT 资讯 Skill 接入 ### 做了什么 安装 AI HOT (aihot.virxact.com) 中文 AI 资讯 Skill： - 路径：skills/aihot/SKILL.md（416行，官方源直下） - 类型：REST API Skill（无需 token/API Key） - 端点：/api/public/items (精选/全量) + /api/public/daily (日报) ### 触发关键词 今天AI圈有什么 / AI日报 / AI热点 / 最近AI / OpenAI最近发布 / 看下精选 ### API 验证结果（2026-05-08） - 日报：5个板块共30条（模型3+产品8+行业6+论文5+观点8） - 精选 items 端点：正常返回，支持翻页 cursor - 认证：无（公开匿名），限流 600r/min/IP ### 状态 - [x] SKILL.md 下载安装 - [x] API 端到端验证 - [x] 日报数据可用 ## [洞察] AI HOT 蒸馏分析完成 ### 核心收获（可直接落地） 1. **三层路由模式**（精选→日报→全量）→ buyer-intel / travel / intelligence 改为用户意图自动选粒度 2. **语义级查询组合**（catego",
-      "recallCount": 4,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4,
+      "totalScore": 6,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-08T23:10:24.043Z",
-      "lastRecalledAt": "2026-05-15T08:55:29.819Z",
+      "lastRecalledAt": "2026-05-21T11:50:18.395Z",
       "queryHashes": [
         "85c76510d62a",
         "fff20263ef23",
         "ef2745fc0b87",
-        "419e371da627"
+        "419e371da627",
+        "4ceec25253d0",
+        "38cbd013dbd1"
       ],
       "recallDays": [
         "2026-05-09",
         "2026-05-10",
         "2026-05-12",
-        "2026-05-15"
+        "2026-05-15",
+        "2026-05-21"
       ],
       "conceptTags": [
         "openai",
@@ -930,22 +935,24 @@
       "endLine": 62,
       "source": "memory",
       "snippet": "- 改中文压缩表述 ### lark-* symlink 清理 - workspace/skills/ 下的 23 个 lark-* 符号链接全部删除 - 这些 symlink 指向 .agents/skills/ 被 skill 框架跳过（symlink-escape） - lark skill 本身不受影响，路径在 .agents/skills/ 正常工作 # 2026-05-05 日志 ## [决策] 本地代理白名单 - OpenClaw service 中 `http_proxy` / `https_proxy` 指向 `127.0.0.1:7890`（本地 Clash） - SAYELF 确认：有意配置，不清理 - 已写入 TOOLS.md 白名单标注 ## [任务] 系统维护 ### openclaw doctor --fix - 自动修复：安装缺失的飞书插件、刷新插件注册表（70/96） - 修复 Telegram `accounts.default` 缺失问题（config added default account） - 预留：16 个孤立 transcript → 实际 25 个 (32MB) → 已归档重命名 ### Telegram 配置 - @sayelfbot token 配置为 default 账号（同时保留 truelistenbot 别名） - Gateway 重启后 Telegram 插件正常加载 ### WeChat（微信）接入 - 插件 `@tencent-weixin/openclaw-weixin v2.4.1` 已安装并",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3,
+      "totalScore": 4,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-09T04:52:39.831Z",
-      "lastRecalledAt": "2026-05-13T09:15:35.068Z",
+      "lastRecalledAt": "2026-05-20T23:23:44.444Z",
       "queryHashes": [
         "299637af5573",
         "64d444ee90d8",
-        "04a3f13245d2"
+        "04a3f13245d2",
+        "7a74d3061131"
       ],
       "recallDays": [
         "2026-05-09",
         "2026-05-10",
-        "2026-05-13"
+        "2026-05-13",
+        "2026-05-21"
       ],
       "conceptTags": [
         "gateway",
@@ -965,20 +972,22 @@
       "endLine": 35,
       "source": "memory",
       "snippet": "# 2026-05-05 日志 ## [决策] 本地代理白名单 - OpenClaw service 中 `http_proxy` / `https_proxy` 指向 `127.0.0.1:7890`（本地 Clash） - SAYELF 确认：有意配置，不清理 - 已写入 TOOLS.md 白名单标注 ## [任务] 系统维护 ### openclaw doctor --fix - 自动修复：安装缺失的飞书插件、刷新插件注册表（70/96） - 修复 Telegram `accounts.default` 缺失问题（config added default account） - 预留：16 个孤立 transcript → 实际 25 个 (32MB) → 已归档重命名 ### Telegram 配置 - @sayelfbot token 配置为 default 账号（同时保留 truelistenbot 别名） - Gateway 重启后 Telegram 插件正常加载 ### WeChat（微信）接入 - 插件 `@tencent-weixin/openclaw-weixin v2.4.1` 已安装并启用 - 已有微信账号 `ce1c4330a6a5-im-bot` 登录状态（非首次安装） - Monitor 运行中，对接 `ilinkai.weixin.qq.com` - Config 补全了 plugin + channel 配置条目 ### AGENTS.md 精简 - 从 10,774 chars (90%) → 5,184 chars (43%)",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-09T04:52:39.831Z",
-      "lastRecalledAt": "2026-05-13T09:15:35.068Z",
+      "lastRecalledAt": "2026-05-20T23:23:44.444Z",
       "queryHashes": [
         "299637af5573",
-        "04a3f13245d2"
+        "04a3f13245d2",
+        "7a74d3061131"
       ],
       "recallDays": [
         "2026-05-09",
-        "2026-05-13"
+        "2026-05-13",
+        "2026-05-21"
       ],
       "conceptTags": [
         "gateway",
@@ -1317,13 +1326,13 @@
       "endLine": 136,
       "source": "memory",
       "snippet": "OERVEngine._write() → O.E.R.V 极简黑客风写作（单句成行/零形容词/80%出刀） │ ▼ OERVEngine._generate_visuals() → 2 组 16:9 电影感 Midjourney/Flux prompt │ ▼ Webhook / Dispatch → 公众号推送 / 本地保存 / 小红书卡片 ``` ### 文件清单 | 路径 | 说明 | |------|------| | `skills/oerv-narrative-engine/SKILL.md` | Agent 可执行协议，含触发规则+输出模板+负向列表 | | `skills/oerv-narrative-engine/engine.py` | 核心引擎：情绪检测/场景提取/写作/视觉Prompt/小红书卡片 | | `skills/oerv-narrative-engine/dispatch.py` | 分发服务：Flask Webhook + 公众号草稿推送 + 发布历史 | | `skills/oerv-narrative-engine/.env` | 配置模板（LLM API / 公众号凭证） | | `scripts/deploy_oerv.sh` | 一键部署脚本 | ### 快捷命令 - `/oerv`：闪念→文章+视觉Prompt - `/oerv-card`：闪念→小红书卡片 ### 用法 ```bash # 查看 3 篇示范文章 python3 skills/oerv-narrative-en",
-      "recallCount": 16,
+      "recallCount": 17,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 16,
+      "totalScore": 17,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-10T02:00:32.028Z",
-      "lastRecalledAt": "2026-05-20T02:30:19.620Z",
+      "lastRecalledAt": "2026-05-21T02:30:19.281Z",
       "queryHashes": [
         "0deaac3a8336",
         "b53a67adea80",
@@ -1340,7 +1349,8 @@
         "f2b8b8487ae2",
         "57f473499810",
         "d8b2e07206a1",
-        "9c78ec0c7045"
+        "9c78ec0c7045",
+        "737ef1bb0c64"
       ],
       "recallDays": [
         "2026-05-10",
@@ -1353,7 +1363,8 @@
         "2026-05-17",
         "2026-05-18",
         "2026-05-19",
-        "2026-05-20"
+        "2026-05-20",
+        "2026-05-21"
       ],
       "conceptTags": [
         "o.e.r.v",
@@ -1756,18 +1767,20 @@
       "endLine": 172,
       "source": "memory",
       "snippet": "- 自动识别模式输出人话 - 无基础设施泄漏（无 mode=/api/cursor/hasNext） - 集成到 dispatcher → result[\"formatted\"] ## [架构升级] 跨境贸易模式 → 旅游探路者移植 ### 移植内容 **1. shared/ 去重 (trade v11 symlink 模式)** - domestic-travel-agent/shared/core/ 新建 - 4个重复模块移入 shared/: base / weather_safety / destination_guide / report_validator - 国内/国际版 core/ 通过 symlink 引用 shared/ - 节省 4×8KB = 32KB 重复代码 **2. orchestrator.py 场景编排 (trade v11 orchestrator 模式)** - short: 3阶段 → 9模块（决策→执行→保障） - deep: 4阶段 → 12模块（研究→规划→体验→保障） - group: 3阶段 → 9模块（规划→体验→保障） - 每个场景有明确 strategy（48h极速/沉浸/团体协同） **3. 5步验证模式 (trade v11 买家情报验证管道)** - phone/website/address/rating/reviews 五项加权验证 - 置信度计算 + passed/failed 判定 - 最终输出附带 verification 报告 ### 文件 - domestic-travel-agent/sh",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-17T00:08:40.861Z",
-      "lastRecalledAt": "2026-05-17T00:08:40.861Z",
+      "lastRecalledAt": "2026-05-21T03:27:08.734Z",
       "queryHashes": [
-        "598b0b8dc045"
+        "598b0b8dc045",
+        "893c115823c5"
       ],
       "recallDays": [
-        "2026-05-17"
+        "2026-05-17",
+        "2026-05-21"
       ],
       "conceptTags": [
         "api/cursor/hasnext",
@@ -1787,25 +1800,27 @@
       "endLine": 39,
       "source": "memory",
       "snippet": "# 2026-05-12 记事 ## [保活] 买家情报 API 健康检查 (20:15) - HTTP 200 ✅ 运行正常 ## [保活] 买家情报 API 健康检查 (22:25) - HTTP 200 ✅ 运行正常 ## [保活] 买家情报 API 健康检查 (21:00) - HTTP 200 ✅ 运行正常 ## [保活] 买家情报 API 健康检查 (21:30) - HTTP 200 ✅ 运行正常 ## [任务] MD 智能转换 (18:15) - 扫描脚本执行完成 - 7 文件成功转换 (JSON→MD) - 3 跳过, 0 失败 - 增量模式无异常 ## [任务] OERV文章 — 加完柴油，我翻遍了所有的卡 ## [保活] 买家情报API服务健康检查 - **13:20** → HTTP 200 ✅（正常运行） - **时间**: 12:20 - **检查结果**: http://localhost:8100/health → 200 ✅ - **状态**: 服务正常运行，无需操作 **触发**：SAYELF /oerv 闪念 **原始素材**：早晨开路虎发现4去加0#柴油（8.47元/升，合计564元），翻遍所有卡凑不够300元。需驱车150公里外签字收30万工程款，不知流程多久、款何时到。 **OERV输出**：`output/oerv-2026-05-12/` - `article.md` — 完整OERV叙事文章（极简黑客风，单句成行） - `visual-prompts.md` — 2组16:9电影感视觉Prompt + 公众号",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5,
+      "totalScore": 6,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-17T02:00:18.185Z",
-      "lastRecalledAt": "2026-05-20T02:30:19.620Z",
+      "lastRecalledAt": "2026-05-21T02:30:19.281Z",
       "queryHashes": [
         "87fbe4aaf3f7",
         "68517a8667c9",
         "57f473499810",
         "d8b2e07206a1",
-        "9c78ec0c7045"
+        "9c78ec0c7045",
+        "737ef1bb0c64"
       ],
       "recallDays": [
         "2026-05-17",
         "2026-05-18",
         "2026-05-19",
-        "2026-05-20"
+        "2026-05-20",
+        "2026-05-21"
       ],
       "conceptTags": [
         "8100/health",
@@ -2592,19 +2607,21 @@
       "endLine": 206,
       "source": "memory",
       "snippet": "| 青色系 | 17色 | 天青·水龙吟·瑾瑜·孔雀蓝·月白·碧色·竹青·黛色·石青·梅子青·秋香·缥色·苍色 | | 黄色系 | 12色 | 黄不老·鹅黄·明黄·琥珀·缃色·杏黄·藤黄·栀子 | | 白色系 | 8色 | 月白·霜色·荼白·雪青·鱼肚白 | | 黑色系 | 6色 | 玄色·墨色·鸦青·绀色·黛蓝 | | 紫色系 | 8色 | 藕荷·丁香紫·紫檀·青莲·玫瑰紫 | | 灰褐系 | 10色 | 海天霞·相思灰·赭石·驼色·茶色 | | **总计** | **76色** | + 五行五正色 + 场景配色方案 | ### 场景配色 - 茶空间：天青+竹青+海天霞 - 高端餐厅：朱砂+玄色+金 - 新中式咖啡：月白+瑾瑜+桃夭 - 国潮品牌：海棠红+孔雀蓝+鹅黄 - 文人书房：黛色+茶色+缥色 ## 21:38 art-agent 智能路由 → 传统色自动调用 ### 改动 1. **dispatcher.py CONTENT_BRAND_MAP** → 加入28个中式关键词，自动路由到 chinese-traditional 2. **design-tokens.json** → 新增 chinese-traditional 品牌 (68→68个) 3. **brand-specs/DESIGN.md** → 完整设计规范，包含场景模板和色名索引 4. **css/chinese-traditional.css** → CSS 变量（html-anything渲染可用） ### 自动匹配覆盖 - 中式茶馆·国潮·传统色·天青·海棠红·孔雀蓝·桃夭·水龙吟·海天",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-20T05:51:10.550Z",
-      "lastRecalledAt": "2026-05-20T05:51:13.448Z",
+      "lastRecalledAt": "2026-05-21T03:27:08.724Z",
       "queryHashes": [
         "64573ae4340e",
-        "b504f4213a9e"
+        "b504f4213a9e",
+        "9b751f3774d7"
       ],
       "recallDays": [
-        "2026-05-20"
+        "2026-05-20",
+        "2026-05-21"
       ],
       "conceptTags": [
         "art-agent",
@@ -2646,6 +2663,224 @@
         "晨间",
         "简报",
         "数据"
+      ]
+    },
+    "memory:memory/2026-05-17.md:151:184": {
+      "key": "memory:memory/2026-05-17.md:151:184",
+      "path": "memory/2026-05-17.md",
+      "startLine": 151,
+      "endLine": 184,
+      "source": "memory",
+      "snippet": "- Mintplex-Labs/anything-llm, ⭐38K+, MIT, v1.12.1 (2026-04-22) - 全能 AI 生产力加速器：文档 RAG + Agent + 多用户 - NodeJS monorepo, ~700 依赖, 3 个独立服务 ### 精华吸收 1. **智能技能路由** → 自动判断任务→最小工具集→省 token。与我们 TokenJuice 互补 2. **LanceDB** → 轻量向量数据库候选 3. **嵌入式聊天组件** → 元目客户界面候选 4. **MCP 兼容** → 关注行业标准演進 ### 不部署 - NodeJS 太重 (700+ deps) vs 我们极简风格 - Electron 桌面端不需要 - 遥测默认开启违反隐私宪法 - 各单项不如专用工具 ### 战略观察 AI Agent 下一个进化点 = **智能路由层**，我们已在路径上 ### 文件 `notes/anything-llm-distilled.md` ## 19:10 老祖宗传统色接入 art-agent ### 文件 `skills/art-agent/modules/traditional-colors/chinese-traditional-colors.md` ### 色谱结构 | 系 | 色数 | 特色色 | |---|:----:|--------| | 赤色系 | 15色 | 海棠红·桃夭·胭脂·朱砂·石榴红·十样锦·杨妃·猩红·麹尘 | | 青色系 | 17色 | 天青·水龙吟·瑾瑜·孔雀蓝·月白·碧色·竹青·黛",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-21T00:00:15.109Z",
+      "lastRecalledAt": "2026-05-21T00:00:15.109Z",
+      "queryHashes": [
+        "2989ce631e6b"
+      ],
+      "recallDays": [
+        "2026-05-21"
+      ],
+      "conceptTags": [
+        "mintplex-labs/anything-llm",
+        "v1.12.1",
+        "notes/anything-llm-distilled.md",
+        "art-agent",
+        "mintplex",
+        "labs",
+        "anything",
+        "llm"
+      ]
+    },
+    "memory:memory/2026-05-17.md:68:105": {
+      "key": "memory:memory/2026-05-17.md:68:105",
+      "path": "memory/2026-05-17.md",
+      "startLine": 68,
+      "endLine": 105,
+      "source": "memory",
+      "snippet": "- ❌ 1 失败: `none.yaml`（markitdown 不支持 YAML） - 总计输出: 254.4KB - bash oerv_operator.sh status → running (PID 55823, v2.0) ✅ ## [cron] 11:00 跨境-API服务保活 - 检查 http://localhost:8100/health → 200 ✅ ## [cron] 09:25 跨境-API服务保活 - 检查 http://localhost:8100/health → 200 ✅ - **[08:45]** 二次保活检查 → 200 ✅ （cron跨境-API服务保活） - 服务正常，无需启动 ## 08:10 开店寻址 Agent 全面升级 ### 新 Skill 模块 | Skill | 文件 | 功能 | 状态 | |-------|------|------|:----:| | 动态经济背景 | `skills/economic_background.py` | 宏观/行业经济指标+策略适配 | ✅ | | 穿透式租房爬虫 | `skills/rental_crawler.py` | 安/贝/58加权租金 | ✅ | | 租金智能识别 | `skills/rental_crawler.py(RentDifferentiator)` | 商业/住宅/写字楼自动匹配 | ✅ | | SKILL.md | 启动文档 | 使用指南+模块说明 | ✅ | ### 新报告生成 | 报告 | 路径 | 预算 | 状态 | |-----",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-21T00:00:15.109Z",
+      "lastRecalledAt": "2026-05-21T03:27:08.734Z",
+      "queryHashes": [
+        "2989ce631e6b",
+        "893c115823c5"
+      ],
+      "recallDays": [
+        "2026-05-21"
+      ],
+      "conceptTags": [
+        "none.yaml",
+        "254.4kb",
+        "oerv-operator.sh",
+        "v2.0",
+        "跨境-api服务保活",
+        "8100/health",
+        "cron跨境-api服务保活",
+        "skills/economic-background.py"
+      ]
+    },
+    "memory:memory/2026-05-18.md:57:88": {
+      "key": "memory:memory/2026-05-18.md:57:88",
+      "path": "memory/2026-05-18.md",
+      "startLine": 57,
+      "endLine": 88,
+      "source": "memory",
+      "snippet": "## [月刊·W1] 折叠房屋市场趋势 (14:39) **cron**: 20437b4f-b8b3-41a3-b84d-7f976e33fcf9 **状态**: ✅ 完成 **报告**: notes/ge1-foldable-house-market.md ### 核心数据 - 全球折叠房屋市场2025年约$93亿，CAGR 9.3%-20%（口径差异） - 北美最大市场（35%），亚太增速最快（15-20%） - 驱动：传统住房成本飙升、城市化、绿色建筑合规、灾难救援 - 竞争激烈：Boxabl / Karmod（15%）/ DXH（12%）/ 中国供应链集群 - 技术趋势：机器人组装、智能家居集成、太阳能一体化 ### 关键洞察 - 机会评分75/100，仍有空间 - 欧盟循环合规 = 高门槛 + 高回报的切入机会 - 日本METI标准 = 补贴驱动市场窗口 - 中国折叠房屋企业出海需品牌化策略 ## [规则确立] 文件交付协议 **来源**: SAYELF 指令 — 工控机在机房不可直接访问 **核心**: 所有产出文件，一份存 workspace 本地，一份发 Telegram 会话栏 **文件**: `constitution/rules/FILE-DELIVERY.md` (Tier 1) [cron: 跨境-API服务保活] 14:55 — 买家情报 API (localhost:8100/health) 正常，HTTP 200 [保活] OERV 分发服务 — ✅ 运行中（PID 256421, v2.0） ## [cron] GEO 内容日历生",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-21T03:27:08.734Z",
+      "lastRecalledAt": "2026-05-21T03:27:08.734Z",
+      "queryHashes": [
+        "893c115823c5"
+      ],
+      "recallDays": [
+        "2026-05-21"
+      ],
+      "conceptTags": [
+        "9.3",
+        "15-20",
+        "机会评分75/100",
+        "跨境-api服务保活",
+        "8100/health",
+        "v2.0",
+        "月刊",
+        "折叠"
+      ]
+    },
+    "memory:memory/2026-05-19.md:226:260": {
+      "key": "memory:memory/2026-05-19.md:226:260",
+      "path": "memory/2026-05-19.md",
+      "startLine": 226,
+      "endLine": 260,
+      "source": "memory",
+      "snippet": "4. 整合到 middle-east-market-research.md（新增全球储能招标雷达表） 5. 数据路径：data/cross-border/trade-gov/（与GEO系统同目录） ## [规则确认] 权威数据源引用原则 SAYELF确认：「后期都加入权威数据和信息源」 → 已写入 memory/core.md 作为常驻规则 → 所有现有GEO文档已补上「数据来源」表格 → 工作原则：每份报告必须标注数据源，优先.gov/.org，禁止无出处数据 [cron] 跨境-API服务保活 | 16:15 — health check 返回 200，正常运行 ## [MD转换] 16:15 增量扫描 - **发现**: 45 个待转换文件 - **成功**: 24 ✅ (JSON ×22, PPT ×1, 其他 ×1) - **跳过**: 20 ⏭ (缓存命中，未变更) - **失败**: 1 ❌ (`none.yaml` → markitdown 解析错误) - **模式**: 增量扫描，静默执行 [cron] 跨境-API服务保活 @16:55 - health check: http://localhost:8100/health → 200 ✅ - 服务正常运行，无操作 ## [东欧渠道方案] 2026-05-19 17:38-17:45 SAYELF要求做东欧产品渠道落地完整方案，针对4类产品： 1. 钢结构折叠集成房屋 (HS 7308.90) → 招标平台+展会+分销商 2. 变压器 (HS 8504.21) → 招标+能源EPC+展会 3",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-21T03:27:11.293Z",
+      "lastRecalledAt": "2026-05-21T03:27:11.293Z",
+      "queryHashes": [
+        "36c03af1e8b1"
+      ],
+      "recallDays": [
+        "2026-05-21"
+      ],
+      "conceptTags": [
+        "middle-east-market-research.md",
+        "data/cross-border/trade-gov",
+        "memory/core.md",
+        "优先.gov",
+        "跨境-api服务保活",
+        "none.yaml",
+        "8100/health",
+        "38-17"
+      ]
+    },
+    "memory:memory/2026-05-19.md:253:291": {
+      "key": "memory:memory/2026-05-19.md:253:291",
+      "path": "memory/2026-05-19.md",
+      "startLine": 253,
+      "endLine": 291,
+      "source": "memory",
+      "snippet": "1. 钢结构折叠集成房屋 (HS 7308.90) → 招标平台+展会+分销商 2. 变压器 (HS 8504.21) → 招标+能源EPC+展会 3. 移动电源 (HS 8507.60) → 电商平台+分销 4. 通用发动机 (HS 8408.20) → 招标+工业分销 数据源拉取： - Trade.gov Poland Energy Guide ✅ - Trade.gov Romania Energy Guide ✅ - 各国招标平台信息汇总 产出： - output/geo-optimization/eastern-europe-channel-plan.md（完整方案文档） - output/geo-optimization/东欧渠道落地方案.pptx（20页PPT） ## [平台热卖情报系统] 2026-05-19 17:49-17:53 SAYELF要求把电商平台热卖产品加入跨境日报/情报。 已实施： 1. 创建 scripts/marketplace-intel.py — 覆盖6个平台： - 🇺🇦 Prom.ua（乌克兰B2B/B2C）— 主战场 - 🇵🇱 Allegro（波兰B2C） - 🇷🇴 eMAG（罗马尼亚B2C） - 🌐 Alibaba（全球B2B） - 🌐 Made-in-China（全球B2B） - 🇪🇺 Europages（欧洲B2B目录） 2. 已创建 cron 任务「跨境-平台热卖情报」→ 每天06:00自动采集 3. 数据注入路径：output/marketplace-inte",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-21T03:27:11.293Z",
+      "lastRecalledAt": "2026-05-21T03:27:11.293Z",
+      "queryHashes": [
+        "36c03af1e8b1"
+      ],
+      "recallDays": [
+        "2026-05-21"
+      ],
+      "conceptTags": [
+        "7308.90",
+        "8504.21",
+        "8507.60",
+        "8408.20",
+        "trade.gov",
+        "49-17",
+        "sayelf要求把电商平台热卖产品加入跨境日报/情报",
+        "scripts/marketplace-intel.py"
+      ]
+    },
+    "memory:memory/2026-05-21.md:92:129": {
+      "key": "memory:memory/2026-05-21.md:92:129",
+      "path": "memory/2026-05-21.md",
+      "startLine": 92,
+      "endLine": 129,
+      "source": "memory",
+      "snippet": "### 执行结果 | 阶段 | 结果 | |------|------| | 多源搜寻 | 10 条原始线索（澳洲钢结构+沙特模块化建筑） | | 搜索质量 | 🔴 **极差**（DDG 连续三天被拦截，100%噪音） | | buyer-intel 验证 | ✅ 17/17 buyer 记录全部验证通过 | | 入库清理 | 7 条噪音清理（词典/Britannica/CSDN/Unity），库总量 93 | | 新增入库 | 0 家（无有效新线索） | ### 关键问题 - **DuckDuckGo 搜索 Agent 持续不可用** — 连续 3 天零有效结果 - 中文优先+Baidu权重过高 → 结果均为中文百科/词典/教程 - `prefab` 关键词被 Unity Prefab 污染 - **紧急建议**: 切换至 Bing Search API（免费层 1000次/月足够） ### 买家库高优项目（待触达） 1. NEOM (THE LINE) — $5000亿 2. Jewel of the Bride — $20亿 3. Red Sea Project 4. BHP/Rio Tinto/Fortescue 5. Kainga Ora (NZ) ## [保活] OERV 分发服务 - **时间**: 10:15 - **状态**: ✅ 运行正常 (PID 9949, v2.0) - **操作**: 无 ## OERV 保活检查 (11:40) - OERV dispatch: ✅ running (PID 9949, v2.0) ## [能力涌现]",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-21T14:21:56.271Z",
+      "lastRecalledAt": "2026-05-21T14:21:56.271Z",
+      "queryHashes": [
+        "c6acf51d477f"
+      ],
+      "recallDays": [
+        "2026-05-21"
+      ],
+      "conceptTags": [
+        "buyer-intel",
+        "17/17",
+        "词典/britannica/csdn/unity",
+        "结果均为中文百科/词典/教程",
+        "1000次/月足够",
+        "bhp/rio",
+        "tinto/fortescue",
+        "v2.0"
+      ]
+    },
+    "memory:memory/2026-05-21.md:123:156": {
+      "key": "memory:memory/2026-05-21.md:123:156",
+      "path": "memory/2026-05-21.md",
+      "startLine": 123,
+      "endLine": 156,
+      "source": "memory",
+      "snippet": "## [能力涌现] VLM 视觉预处理 - 安装完成 - ollama v0.24.0 安装在 ~/.local/bin/ - systemd user service 已启用 + 开机自启 - 模型已拉取（共15GB）： - qwen2.5:7b (4.7GB) - 纯文本模型 - llava:7b (4.7GB) - 视觉语言模型 - minicpm-v (5.5GB) - 视觉语言模型（中文更好） - Python 客户端: ~/.venvs/vlm/ (ollama 0.6.2) - VLM 推理验证通过（minicpm-v 首次 138s CPU） - 待建 VLM Middleware Agent Skill ## [能力涌现] VLM Middleware Agent — 全链路部署完成 ### 架构 ``` 用户（任意渠道）→ OpenClaw Gateway → tools.media 检测图片 → CLI wrapper → ollama VLM (minicpm-v/llava:7b) → 图片描述文本 → [Image] 块注入 → DeepSeek 接收完整上下文 → 回复 ``` ### 组件 - ollama v0.24.0 @ systemd 用户服务 (127.0.0.1:11434) - 模型: minicpm-v (5.5GB, 中文VLM主用), llava:7b (4.7GB, 备用), qwen2.5:7b (4.7GB) - Python venv: ~/.venvs/vlm/ (ollama 0.6.2)",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-21T14:21:56.271Z",
+      "lastRecalledAt": "2026-05-21T14:21:56.271Z",
+      "queryHashes": [
+        "c6acf51d477f"
+      ],
+      "recallDays": [
+        "2026-05-21"
+      ],
+      "conceptTags": [
+        "gateway",
+        "v0.24.0",
+        "local/bin",
+        "qwen2.5",
+        "4.7gb",
+        "minicpm-v",
+        "5.5gb",
+        "venvs/vlm"
       ]
     }
   }

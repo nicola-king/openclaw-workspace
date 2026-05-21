@@ -1,1 +1,0 @@
-{"total_requests": 331, "total_cache_hits": 86, "agent_stats": {"cross_border_trade": {"requests": 325, "cache_hits": 85, "browser_requests": 0}, "general": {"requests": 6, "cache_hits": 1}}, "daily_stats": {"2026-05-04": {"requests": 40, "cache_hits": 8}, "2026-05-05": {"requests": 75, "cache_hits": 61}}, "engine_stats": {"google": {"requests": 115}}}

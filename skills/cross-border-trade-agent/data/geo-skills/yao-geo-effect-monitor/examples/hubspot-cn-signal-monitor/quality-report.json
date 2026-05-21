@@ -1,0 +1,43 @@
+{
+  "artifact_set": "hubspot-cn-effect-monitor",
+  "language": "zh-Hans",
+  "company": "HubSpot",
+  "domestic_ai_platforms": [
+    "DeepSeek",
+    "豆包",
+    "千问",
+    "Kimi",
+    "元宝"
+  ],
+  "sample_mode": "synthetic_replay for skill test; not live platform sampling",
+  "evidence_level": "E0/E1 demonstration only",
+  "checks": {
+    "four_files_required": true,
+    "single_markdown_source": true,
+    "white_background_required": true,
+    "kami_ui_white_variant": true,
+    "table_borders_required": true,
+    "docx_text_extractable": true,
+    "pdf_text_extractable": true,
+    "html_key_sections_present": true,
+    "no_pending_review_marker": true,
+    "systematic_detailed_complete": true,
+    "authoritative_source_ledger_present": true,
+    "six_layer_analysis_present": true,
+    "sticky_html_toc_required": true,
+    "governance_risk_controls_present": true,
+    "desktop_fixed_toc_browser_checked": true,
+    "mobile_sticky_toc_browser_checked": true,
+    "no_horizontal_overflow_browser_checked": true,
+    "pandoc_default_css_suppressed": true,
+    "desktop_content_width_checked": true,
+    "real_data_acquisition_modes_present": true,
+    "evidence_level_gate_present": true,
+    "authorized_sampling_boundaries_present": true,
+    "official_fact_sources_present": true,
+    "company_scenario_discovery_present": true
+  },
+  "review_status": "file_checks_passed",
+  "report_structure_version": "2026-05-21-real-data-evidence-kami-ui",
+  "visual_review": "browser_checked_desktop_and_mobile"
+}

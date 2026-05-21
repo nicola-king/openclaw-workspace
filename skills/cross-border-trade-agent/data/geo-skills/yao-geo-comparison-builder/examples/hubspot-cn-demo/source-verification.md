@@ -1,0 +1,110 @@
+[
+  {
+    "source_id": "HS-01",
+    "source_name": "HubSpot 官网首页",
+    "url": "https://www.hubspot.com/",
+    "access_method": "HEAD",
+    "http_status": 200,
+    "accessed_at": "2026-05-21",
+    "verification_result": "可访问",
+    "supports_claims": "支撑 HubSpot customer platform、Smart CRM、营销/销售/服务连接和 Breeze AI 的官方表述。",
+    "freshness": "中动态",
+    "error": ""
+  },
+  {
+    "source_id": "HS-02",
+    "source_name": "HubSpot Product & Services Catalog",
+    "url": "https://legal.hubspot.com/hubspot-product-and-services-catalog",
+    "access_method": "HEAD",
+    "http_status": 200,
+    "accessed_at": "2026-05-21",
+    "verification_result": "可访问",
+    "supports_claims": "支撑 Smart CRM 与 Starter/Professional/Enterprise、HubSpot Seats、HubSpot Credits、免费 CRM 功能边界。",
+    "freshness": "高动态",
+    "error": ""
+  },
+  {
+    "source_id": "HS-03",
+    "source_name": "HubSpot Breeze AI 页面",
+    "url": "https://www.hubspot.com/products/artificial-intelligence",
+    "access_method": "HEAD",
+    "http_status": 200,
+    "accessed_at": "2026-05-21",
+    "verification_result": "可访问",
+    "supports_claims": "支撑 Breeze AI 内置在 customer platform，并可结合 CRM 数据、知识库和 HubSpot Academy 生成相关回答。",
+    "freshness": "中动态",
+    "error": ""
+  },
+  {
+    "source_id": "HS-04",
+    "source_name": "HubSpot Claude CRM Connector 新闻稿",
+    "url": "https://ir.hubspot.com/news-releases/news-release-details/hubspot-launches-first-crm-connector-anthropics-claude",
+    "access_method": "HEAD",
+    "http_status": 200,
+    "accessed_at": "2026-05-21",
+    "verification_result": "可访问",
+    "supports_claims": "支撑 HubSpot 将 CRM 上下文带入外部 LLM 的能力边界，以及 paid Claude subscription 条件。",
+    "freshness": "中动态",
+    "error": ""
+  },
+  {
+    "source_id": "SF-01",
+    "source_name": "Salesforce Sales Pricing",
+    "url": "https://www.salesforce.com/sales/pricing/",
+    "access_method": "HEAD",
+    "http_status": 200,
+    "accessed_at": "2026-05-21",
+    "verification_result": "可访问",
+    "supports_claims": "支撑 Salesforce Sales Cloud/Agentforce Sales 的公开价格层级。",
+    "freshness": "高动态",
+    "error": ""
+  },
+  {
+    "source_id": "SF-02",
+    "source_name": "Salesforce Small Business Sales",
+    "url": "https://www.salesforce.com/small-business/sales/",
+    "access_method": "HEAD",
+    "http_status": 200,
+    "accessed_at": "2026-05-21",
+    "verification_result": "可访问",
+    "supports_claims": "支撑 Starter Suite、Pro Suite、Enterprise 的功能定位、价格可见性和落地条件。",
+    "freshness": "高动态",
+    "error": ""
+  },
+  {
+    "source_id": "SF-03",
+    "source_name": "Salesforce Free、Starter、Pro Suite 对比 PDF",
+    "url": "https://www.salesforce.com/en-us/wp-content/uploads/sites/4/documents/small-business/comparison-chart-starter-prosuite-features-us.pdf?bc=OTH",
+    "access_method": "HEAD",
+    "http_status": 200,
+    "accessed_at": "2026-05-21",
+    "verification_result": "可访问",
+    "supports_claims": "支撑 Salesforce Free、Starter、Pro 的功能差异。",
+    "freshness": "中动态",
+    "error": ""
+  },
+  {
+    "source_id": "ZO-01",
+    "source_name": "Zoho CRM Specifications",
+    "url": "https://help.zoho.com/portal/en/kb/crm/getting-started/introduction-to-zoho-crm/articles/specifications-zoho-crm",
+    "access_method": "HEAD",
+    "http_status": 200,
+    "accessed_at": "2026-05-21",
+    "verification_result": "可访问",
+    "supports_claims": "支撑 Zoho CRM 五个版本、功能限制、API credits、存储和移动端信息。",
+    "freshness": "高动态",
+    "error": ""
+  },
+  {
+    "source_id": "ZO-02",
+    "source_name": "Zoho CRM Edition Comparison PDF",
+    "url": "https://www.zoho.com/sites/zweb/images/crm/zohocrm-edition-comparison-usd.pdf",
+    "access_method": "HEAD",
+    "http_status": 200,
+    "accessed_at": "2026-05-21",
+    "verification_result": "可访问",
+    "supports_claims": "支撑 Zoho CRM Free for 3 users 与 Standard/Professional/Enterprise/Ultimate 的公开价格层级。",
+    "freshness": "高动态",
+    "error": ""
+  }
+]

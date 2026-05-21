@@ -16,6 +16,10 @@
     "skill-vetter": {
       "version": "1.0.0",
       "installedAt": 1777950022316
+    },
+    "openocr-skill": {
+      "version": "0.1.6",
+      "installedAt": 1779370008422
     }
   }
 }

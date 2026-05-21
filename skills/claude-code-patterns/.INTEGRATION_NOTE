@@ -1,0 +1,8 @@
+=== 集成点 ===
+1. 安全检查钩子 → 已添加到 Git 备份 cron 的预检查
+2. CLAUDE.md 模式 → 已文档化在 SKILL.md
+3. Conventional Commits → 已在 Git cron 中
+
+修改点:
+- Git 备份 cron 在 commit 前运行 pre-git-backup.sh
+- 如需进一步集成，挂载到 agent skills 列表

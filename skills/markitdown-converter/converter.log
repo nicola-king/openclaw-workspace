@@ -337,3 +337,93 @@
 [2026-05-21 00:15:28] [INFO]   ✅ [JSON] converter_state.json → ok (153.7KB)
 [2026-05-21 00:15:29] [INFO]   ✅ [JSON] short-term-recall.json → ok (143.8KB)
 [2026-05-21 00:15:29] [INFO] 转换完成: ✅ 13 成功, ⏭ 15 跳过, ❌ 1 失败
+[2026-05-21 08:15:16] [INFO] 发现 18 个待转换文件（增量）
+[2026-05-21 08:15:17] [INFO]   ✅ [JSON] alibaba_20260521.json → ok (1.6KB)
+[2026-05-21 08:15:17] [INFO]   ✅ [JSON] promua_20260521.json → ok (1.5KB)
+[2026-05-21 08:15:18] [INFO]   ✅ [JSON] made_in_china_20260521.json → ok (1.2KB)
+[2026-05-21 08:15:19] [INFO]   ✅ [JSON] europages_20260521.json → ok (997.0B)
+[2026-05-21 08:15:20] [INFO]   ✅ [JSON] emag_20260521.json → ok (447.0B)
+[2026-05-21 08:15:21] [INFO]   ✅ [JSON] allegro_20260521.json → ok (450.0B)
+[2026-05-21 08:15:21] [INFO]   ✅ [JSON] summary.json → ok (361.0B)
+[2026-05-21 08:15:22] [INFO]   ❌ [YAML] none.yaml: failed: Traceback (most recent call last):
+  File "/home/sayelf/.local/venvs/markitdown/bin/markitdown", line 8, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/home/sayelf/.local/venvs/markitdo
+[2026-05-21 08:15:23] [INFO]   ✅ [HTML] oerv-openclaw-language.html → ok (4.1KB)
+[2026-05-21 08:15:24] [INFO]   ✅ [JSON] converter_state.json → ok (154.2KB)
+[2026-05-21 08:15:25] [INFO]   ✅ [JSON] short-term-recall.json → ok (147.6KB)
+[2026-05-21 08:15:25] [INFO] 转换完成: ✅ 10 成功, ⏭ 7 跳过, ❌ 1 失败
+[2026-05-21 19:53:34] [INFO] 发现 9 个待转换文件（增量）
+[2026-05-21 19:53:36] [INFO]   ✅ [JSON] shared-search-stats.json → ok (354.0B)
+[2026-05-21 19:53:38] [INFO]   ✅ [JSON] competitor_report_20260521.json → ok (2.5KB)
+[2026-05-21 19:53:39] [INFO]   ❌ [YAML] none.yaml: failed: Traceback (most recent call last):
+  File "/home/sayelf/.local/venvs/markitdown/bin/markitdown", line 8, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/home/sayelf/.local/venvs/markitdo
+[2026-05-21 19:53:41] [INFO]   ✅ [JSON] outreach-queue-2026-05-21.json → ok (8.5KB)
+[2026-05-21 19:53:44] [INFO]   ✅ [JSON] converter_state.json → ok (154.4KB)
+[2026-05-21 19:53:47] [INFO]   ✅ [JSON] short-term-recall.json → ok (153.7KB)
+[2026-05-21 19:53:47] [INFO] 转换完成: ✅ 5 成功, ⏭ 3 跳过, ❌ 1 失败
+[2026-05-22 00:15:12] [INFO] 发现 70 个待转换文件（增量）
+[2026-05-22 00:15:13] [INFO]   ✅ [JSON] 2026-05-21_2122.json → ok (3.7KB)
+[2026-05-22 00:15:14] [INFO]   ✅ [JSON] lock.json → ok (498.0B)
+[2026-05-22 00:15:14] [INFO]   ✅ [Text] system_results.txt → ok (1.6KB)
+[2026-05-22 00:15:15] [INFO]   ❌ [YAML] none.yaml: failed: Traceback (most recent call last):
+  File "/home/sayelf/.local/venvs/markitdown/bin/markitdown", line 8, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/home/sayelf/.local/venvs/markitdo
+[2026-05-22 00:15:16] [INFO]   ✅ [JSON] converter_state.json → ok (154.5KB)
+[2026-05-22 00:15:17] [INFO]   ✅ [JSON] manifest.json → ok (572.0B)
+[2026-05-22 00:15:18] [INFO]   ✅ [JSON] quality_cases.json → ok (1.5KB)
+[2026-05-22 00:15:19] [INFO]   ✅ [JSON] trigger_cases.json → ok (360.0B)
+[2026-05-22 00:15:19] [INFO]   ✅ [JSON] expected_artifacts.json → ok (901.0B)
+[2026-05-22 00:15:20] [INFO]   ✅ [YAML] interface.yaml → ok (2.8KB)
+[2026-05-22 00:15:22] [INFO]   ✅ [PDF] hubspot-cn-geo-title-lab.pdf → ok (20.1KB)
+[2026-05-22 00:15:22] [INFO]   ✅ [JSON] evidence_snapshot.json → ok (3.6KB)
+[2026-05-22 00:15:23] [INFO]   ✅ [JSON] report_input.json → ok (22.8KB)
+[2026-05-22 00:15:24] [INFO]   ✅ [JSON] quality-report.json → ok (4.5KB)
+[2026-05-22 00:15:25] [INFO]   ✅ [JSON] manifest.json → ok (726.0B)
+[2026-05-22 00:15:26] [INFO]   ✅ [JSON] quality_cases.json → ok (674.0B)
+[2026-05-22 00:15:27] [INFO]   ✅ [JSON] trigger_cases.json → ok (334.0B)
+[2026-05-22 00:15:27] [INFO]   ✅ [JSON] expected_artifacts.json → ok (495.0B)
+[2026-05-22 00:15:28] [INFO]   ✅ [YAML] interface.yaml → ok (1005.0B)
+[2026-05-22 00:15:30] [INFO]   ✅ [PDF] hubspot-cn-ai-intent-miner-demo.pdf → ok (41.7KB)
+[2026-05-22 00:15:31] [INFO]   ✅ [HTML] index.html → ok (45.3KB)
+[2026-05-22 00:15:32] [INFO]   ✅ [JSON] quality-report.json → ok (2.2KB)
+[2026-05-22 00:15:33] [INFO]   ✅ [JSON] report_input.json → ok (70.4KB)
+[2026-05-22 00:15:34] [INFO]   ✅ [JSON] manifest.json → ok (808.0B)
+[2026-05-22 00:15:35] [INFO]   ✅ [JSON] quality_cases.json → ok (1.9KB)
+[2026-05-22 00:15:35] [INFO]   ✅ [JSON] trigger_cases.json → ok (431.0B)
+[2026-05-22 00:15:36] [INFO]   ✅ [JSON] expected_artifacts.json → ok (1.3KB)
+[2026-05-22 00:15:37] [INFO]   ✅ [YAML] interface.yaml → ok (1.8KB)
+[2026-05-22 00:15:38] [INFO]   ✅ [JSON] source-verification.json → ok (4.2KB)
+[2026-05-22 00:15:39] [INFO]   ✅ [JSON] report_input.json → ok (1.2KB)
+[2026-05-22 00:15:40] [INFO]   ✅ [PDF] hubspot-cn-comparison-report.pdf → ok (27.5KB)
+[2026-05-22 00:15:41] [INFO]   ✅ [JSON] sources.json → ok (4.2KB)
+[2026-05-22 00:15:42] [INFO]   ✅ [JSON] quality-report.json → ok (9.6KB)
+[2026-05-22 00:15:42] [INFO]   ✅ [JSON] manifest.json → ok (1005.0B)
+[2026-05-22 00:15:43] [INFO]   ✅ [JSON] quality_cases.json → ok (2.8KB)
+[2026-05-22 00:15:44] [INFO]   ✅ [JSON] trigger_cases.json → ok (1.2KB)
+[2026-05-22 00:15:45] [INFO]   ✅ [JSON] expected_artifacts.json → ok (2.4KB)
+[2026-05-22 00:15:46] [INFO]   ✅ [YAML] interface.yaml → ok (1.2KB)
+[2026-05-22 00:15:47] [INFO]   ✅ [PDF] lingxu-panorama-audit.pdf → ok (16.6KB)
+[2026-05-22 00:15:49] [INFO]   ✅ [PDF] hubspot-cn-panorama-audit.pdf → ok (20.7KB)
+[2026-05-22 00:15:50] [INFO]   ✅ [JSON] manifest.json → ok (409.0B)
+[2026-05-22 00:15:51] [INFO]   ✅ [JSON] trigger_cases.json → ok (1.7KB)
+[2026-05-22 00:15:51] [INFO]   ✅ [JSON] expected_artifacts.json → ok (2.2KB)
+[2026-05-22 00:15:52] [INFO]   ✅ [YAML] interface.yaml → ok (1.3KB)
+[2026-05-22 00:15:54] [INFO]   ✅ [PDF] xinglan-effect-monitor-demo.pdf → ok (12.2KB)
+[2026-05-22 00:15:55] [INFO]   ❌ [HTML] html-head.html: failed: unknown error
+[2026-05-22 00:15:55] [INFO]   ✅ [JSON] report_input.json → ok (214.0B)
+[2026-05-22 00:15:56] [INFO]   ✅ [JSON] quality-report.json → ok (1.2KB)
+[2026-05-22 00:15:58] [INFO]   ✅ [PDF] hubspot-cn-effect-monitor.pdf → ok (13.7KB)
+[2026-05-22 00:15:58] [INFO]   ❌ [HTML] html-head.html: failed: unknown error
+[2026-05-22 00:15:59] [INFO]   ✅ [JSON] report_input.json → ok (413.0B)
+[2026-05-22 00:16:00] [INFO]   ✅ [JSON] quality-report.json → ok (1.5KB)
+[2026-05-22 00:16:01] [INFO]   ✅ [JSON] _meta.json → ok (132.0B)
+[2026-05-22 00:16:02] [INFO]   ✅ [JSON] origin.json → ok (230.0B)
+[2026-05-22 00:16:03] [INFO]   ✅ [JSON] short-term-recall.json → ok (157.2KB)
+[2026-05-22 00:16:03] [INFO] 转换完成: ✅ 52 成功, ⏭ 15 跳过, ❌ 3 失败
