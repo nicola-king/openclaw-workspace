@@ -427,3 +427,39 @@
 [2026-05-22 00:16:02] [INFO]   ✅ [JSON] origin.json → ok (230.0B)
 [2026-05-22 00:16:03] [INFO]   ✅ [JSON] short-term-recall.json → ok (157.2KB)
 [2026-05-22 00:16:03] [INFO] 转换完成: ✅ 52 成功, ⏭ 15 跳过, ❌ 3 失败
+[2026-05-22 08:15:21] [INFO] 发现 18 个待转换文件（增量）
+[2026-05-22 08:15:22] [INFO]   ✅ [JSON] made_in_china_20260522.json → ok (1.2KB)
+[2026-05-22 08:15:22] [INFO]   ✅ [JSON] allegro_20260522.json → ok (450.0B)
+[2026-05-22 08:15:23] [INFO]   ✅ [JSON] europages_20260522.json → ok (997.0B)
+[2026-05-22 08:15:24] [INFO]   ✅ [JSON] alibaba_20260522.json → ok (1.6KB)
+[2026-05-22 08:15:25] [INFO]   ✅ [JSON] promua_20260522.json → ok (1.5KB)
+[2026-05-22 08:15:26] [INFO]   ✅ [JSON] summary.json → ok (361.0B)
+[2026-05-22 08:15:26] [INFO]   ✅ [JSON] emag_20260522.json → ok (447.0B)
+[2026-05-22 08:15:27] [INFO]   ❌ [YAML] none.yaml: failed: Traceback (most recent call last):
+  File "/home/sayelf/.local/venvs/markitdown/bin/markitdown", line 8, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/home/sayelf/.local/venvs/markitdo
+[2026-05-22 08:15:28] [INFO]   ✅ [JSON] converter_state.json → ok (163.3KB)
+[2026-05-22 08:15:28] [INFO] 转换完成: ✅ 8 成功, ⏭ 9 跳过, ❌ 1 失败
+[2026-05-22 16:15:24] [INFO] 发现 8 个待转换文件（增量）
+[2026-05-22 16:15:25] [INFO]   ✅ [Word] 烘箱-技术方案_修订版.docx → ok (14.8KB)
+[2026-05-22 16:15:26] [INFO]   ✅ [JSON] keyword_research.json → ok (51.4KB)
+[2026-05-22 16:15:27] [INFO]   ❌ [YAML] none.yaml: failed: Traceback (most recent call last):
+  File "/home/sayelf/.local/venvs/markitdown/bin/markitdown", line 8, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/home/sayelf/.local/venvs/markitdo
+[2026-05-22 16:15:27] [INFO]   ✅ [JSON] outreach-queue-2026-05-22.json → ok (8.5KB)
+[2026-05-22 16:15:28] [INFO]   ✅ [Word] 烘箱-技术方案_修订版.docx → ok (14.8KB)
+[2026-05-22 16:15:29] [INFO]   ✅ [JSON] converter_state.json → ok (163.8KB)
+[2026-05-22 16:15:29] [INFO] 转换完成: ✅ 5 成功, ⏭ 2 跳过, ❌ 1 失败
+[2026-05-23 00:15:24] [INFO] 发现 4 个待转换文件（增量）
+[2026-05-23 00:15:25] [INFO]   ✅ [JSON] competitor_report_20260522.json → ok (2.5KB)
+[2026-05-23 00:15:26] [INFO]   ❌ [YAML] none.yaml: failed: Traceback (most recent call last):
+  File "/home/sayelf/.local/venvs/markitdown/bin/markitdown", line 8, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/home/sayelf/.local/venvs/markitdo
+[2026-05-23 00:15:27] [INFO]   ✅ [JSON] converter_state.json → ok (163.9KB)
+[2026-05-23 00:15:27] [INFO] 转换完成: ✅ 2 成功, ⏭ 1 跳过, ❌ 1 失败
