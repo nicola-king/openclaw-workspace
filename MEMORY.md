@@ -14,6 +14,7 @@
 - **跨境贸易 Agent v10.0**: `skills/cross-border-trade-agent/` — 穿透式蒸馏版，17模块
 - **智能代理调度**: `skills/intelligent-agents/` — 自进化/预测/学习/调度
 - **MarkItDown**: `~/.local/venvs/markitdown` — 微软开源文件→Markdown 转换器
+- **Understand-Anything v2.7.4**: `~/.openclaw/skills/understand-anything/` — 代码库→知识图谱(8个子技能,太一智能自动化调度)
 
 ### 定时任务
 14 个 OpenClaw cron jobs，已完全替代旧 crontab：
@@ -45,3 +46,4 @@
 | 2026-05-04 | 蒸馏备份融入 OpenClaw workspace | 能力涌现 |
 | 2026-05-05 | 系统 crontab 迁移至 OpenClaw cron（14个任务） | 架构升级 |
 | 2026-05-05 | Obsidian 双向打通（symlink 方案） | 知识层打通 |
+| 2026-05-23 | Understand-Anything 融入太一系统（18.4K⭐） | 能力涌现 |

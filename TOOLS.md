@@ -229,3 +229,47 @@ bash ~/.openclaw/workspace/scripts/vlm-understand.sh /path/to/image.jpg
 source ~/.venvs/vlm/bin/activate
 python3 -c "import ollama; r=ollama.chat(model='minicpm-v', messages=[{'role':'user','content':'描述这张图','images':['/path/img.jpg']}]); print(r['message']['content'])"
 ```
+
+---
+
+## 🧠 Understand-Anything — 太一智能自动化集成 (2026-05-23)
+
+> 状态: ✅ 已安装 | 18.4K ⭐ | 8个子技能
+
+### 安装路径
+| 组件 | 路径 |
+|------|------|
+| 技能链接 | `~/.openclaw/skills/understand-anything/` |
+| 插件根目录 | `~/.understand-anything-plugin/` |
+| 仓库位置 | `~/.understand-anything/repo/` |
+
+### 子技能速查
+| 子技能 | 位置 |
+|--------|------|
+| `understand` | `~/.openclaw/skills/understand-anything/understand/` |
+| `understand-chat` | `~/.openclaw/skills/understand-anything/understand-chat/` |
+| `understand-dashboard` | `~/.openclaw/skills/understand-anything/understand-dashboard/` |
+| `understand-diff` | `~/.openclaw/skills/understand-anything/understand-diff/` |
+| `understand-explain` | `~/.openclaw/skills/understand-anything/understand-explain/` |
+| `understand-onboard` | `~/.openclaw/skills/understand-anything/understand-onboard/` |
+| `understand-domain` | `~/.openclaw/skills/understand-anything/understand-domain/` |
+| `understand-knowledge` | `~/.openclaw/skills/understand-anything/understand-knowledge/` |
+
+### 首次使用构建
+```bash
+cd ~/.understand-anything-plugin && pnpm install --frozen-lockfile 2>/dev/null || pnpm install
+cd ~/.understand-anything-plugin && pnpm --filter @understand-anything/core build
+```
+
+### 太一自动调度规则
+参见 `skills/understand-anything/SKILL.md` — 太一根据用户意图自动匹配最优子技能。
+
+**匹配矩阵摘要**:
+- 理解代码 → `/understand`
+- 看可视化 → `/understand-dashboard`
+- 提问代码 → `/understand-chat`
+- 差异分析 → `/understand-diff`
+- 解释文件 → `/understand-explain`
+- 上手指南 → `/understand-onboard`
+- 业务领域 → `/understand-domain`
+- 知识库分析 → `/understand-knowledge`

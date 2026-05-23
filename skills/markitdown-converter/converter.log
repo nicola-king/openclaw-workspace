@@ -463,3 +463,40 @@
   File "/home/sayelf/.local/venvs/markitdo
 [2026-05-23 00:15:27] [INFO]   ✅ [JSON] converter_state.json → ok (163.9KB)
 [2026-05-23 00:15:27] [INFO] 转换完成: ✅ 2 成功, ⏭ 1 跳过, ❌ 1 失败
+[2026-05-23 08:15:31] [INFO] 发现 18 个待转换文件（增量）
+[2026-05-23 08:15:31] [INFO]   ✅ [JSON] emag_20260523.json → ok (447.0B)
+[2026-05-23 08:15:32] [INFO]   ✅ [JSON] alibaba_20260523.json → ok (1.6KB)
+[2026-05-23 08:15:33] [INFO]   ✅ [JSON] allegro_20260523.json → ok (450.0B)
+[2026-05-23 08:15:34] [INFO]   ✅ [JSON] europages_20260523.json → ok (997.0B)
+[2026-05-23 08:15:35] [INFO]   ✅ [JSON] promua_20260523.json → ok (1.5KB)
+[2026-05-23 08:15:35] [INFO]   ✅ [JSON] made_in_china_20260523.json → ok (1.2KB)
+[2026-05-23 08:15:36] [INFO]   ✅ [JSON] summary.json → ok (361.0B)
+[2026-05-23 08:15:37] [INFO]   ❌ [YAML] none.yaml: failed: Traceback (most recent call last):
+  File "/home/sayelf/.local/venvs/markitdown/bin/markitdown", line 8, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/home/sayelf/.local/venvs/markitdo
+[2026-05-23 08:15:38] [INFO]   ✅ [JSON] converter_state.json → ok (164.4KB)
+[2026-05-23 08:15:39] [INFO]   ✅ [JSON] knowledge-graph.json → ok (516.6KB)
+[2026-05-23 08:15:40] [INFO]   ✅ [JSON] 2026-05-23-competitor-briefing.json → ok (932.0B)
+[2026-05-23 08:15:40] [INFO] 转换完成: ✅ 10 成功, ⏭ 7 跳过, ❌ 1 失败
+[2026-05-23 16:15:35] [INFO] 发现 8 个待转换文件（增量）
+[2026-05-23 16:15:36] [INFO]   ✅ [JSON] enriched_20260523_090332.json → ok (7.5KB)
+[2026-05-23 16:15:36] [INFO]   ✅ [JSON] keyword_research.json → ok (55.4KB)
+[2026-05-23 16:15:37] [INFO]   ❌ [YAML] none.yaml: failed: Traceback (most recent call last):
+  File "/home/sayelf/.local/venvs/markitdown/bin/markitdown", line 8, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/home/sayelf/.local/venvs/markitdo
+[2026-05-23 16:15:38] [INFO]   ✅ [JSON] outreach-queue-2026-05-23.json → ok (8.5KB)
+[2026-05-23 16:15:39] [INFO]   ✅ [JSON] converter_state.json → ok (164.7KB)
+[2026-05-23 16:15:39] [INFO] 转换完成: ✅ 4 成功, ⏭ 3 跳过, ❌ 1 失败
+[2026-05-24 00:15:40] [INFO] 发现 8 个待转换文件（增量）
+[2026-05-24 00:15:41] [INFO]   ✅ [JSON] competitor_report_20260523.json → ok (2.5KB)
+[2026-05-24 00:15:41] [INFO]   ❌ [YAML] none.yaml: failed: Traceback (most recent call last):
+  File "/home/sayelf/.local/venvs/markitdown/bin/markitdown", line 8, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/home/sayelf/.local/venvs/markitdo
+[2026-05-24 00:15:42] [INFO]   ✅ [JSON] converter_state.json → ok (165.0KB)
+[2026-05-24 00:15:42] [INFO] 转换完成: ✅ 2 成功, ⏭ 5 跳过, ❌ 1 失败
