@@ -273,3 +273,22 @@ cd ~/.understand-anything-plugin && pnpm --filter @understand-anything/core buil
 - 上手指南 → `/understand-onboard`
 - 业务领域 → `/understand-domain`
 - 知识库分析 → `/understand-knowledge`
+
+---
+
+## 🤖 NotebookLM 集成 (2026-05-24)
+
+| 项目 | 配置 |
+|------|------|
+| **上游** | teng-lin/notebooklm-py ⭐14.8K |
+| **安装路径** | skills/notebooklm-py/ |
+| **虚拟环境** | skills/notebooklm-py/.venv/ |
+| **版本** | 0.5.0 |
+| **CLI** | `source .venv/bin/activate && notebooklm ...` |
+| **状态** | ✅ 已安装 |
+
+### 使用
+```bash
+cd ~/.openclaw/workspace/skills/notebooklm-py && source .venv/bin/activate
+notebooklm --version
+```

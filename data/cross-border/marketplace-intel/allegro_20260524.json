@@ -1,0 +1,19 @@
+{
+  "platform": "Allegro.pl",
+  "market": "🇵🇱 波兰",
+  "type": "B2C",
+  "fetched_at": "2026-05-24T06:04:50.256169",
+  "status": "ok",
+  "categories": {
+    "electronics": {
+      "category": "electronics",
+      "search_url": "https://allegro.pl/listing?string=power+bank+przenosny",
+      "keyword": "power+bank+przenosny",
+      "related_products": [
+        "power bank",
+        "portable charger"
+      ],
+      "samples": []
+    }
+  }
+}

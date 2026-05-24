@@ -2021,6 +2021,121 @@
         "competitors": []
       },
       "opportunities": []
+    },
+    {
+      "id": "KW_RESEARCH_20260524_140033",
+      "seed_keyword": "portable power station",
+      "target_market": "US",
+      "timestamp": "2026-05-24T14:00:33.678875",
+      "keyword_metrics": {
+        "search_volume": 50000,
+        "cpc": 2.5,
+        "competition": 0.75,
+        "trend": [
+          40000,
+          42000,
+          45000,
+          48000,
+          50000,
+          52000,
+          55000,
+          53000,
+          50000,
+          48000,
+          45000,
+          42000
+        ]
+      },
+      "related_keywords": [
+        {
+          "keyword": "portable power station best",
+          "volume": 30000,
+          "difficulty": 65
+        },
+        {
+          "keyword": "portable power station review",
+          "volume": 25000,
+          "difficulty": 55
+        },
+        {
+          "keyword": "portable power station price",
+          "volume": 20000,
+          "difficulty": 45
+        },
+        {
+          "keyword": "buy portable power station",
+          "volume": 15000,
+          "difficulty": 70
+        },
+        {
+          "keyword": "portable power station for sale",
+          "volume": 12000,
+          "difficulty": 60
+        }
+      ],
+      "long_tail_keywords": [
+        {
+          "keyword": "best portable power station for camping 2026",
+          "volume": 5000,
+          "difficulty": 25
+        },
+        {
+          "keyword": "affordable portable power station with solar panel",
+          "volume": 3000,
+          "difficulty": 20
+        },
+        {
+          "keyword": "portable power station battery life comparison",
+          "volume": 2500,
+          "difficulty": 15
+        },
+        {
+          "keyword": "how to choose portable power station",
+          "volume": 4000,
+          "difficulty": 30
+        },
+        {
+          "keyword": "portable power station vs generator",
+          "volume": 3500,
+          "difficulty": 35
+        }
+      ],
+      "keyword_difficulty": {
+        "score": 48,
+        "level": "medium",
+        "ranking_difficulty": "中",
+        "recommendation": "需要努力"
+      },
+      "opportunities": [
+        {
+          "type": "低难度长尾",
+          "keyword": "best portable power station for camping 2026",
+          "volume": 5000,
+          "difficulty": 25,
+          "priority": "P0"
+        },
+        {
+          "type": "低难度长尾",
+          "keyword": "affordable portable power station with solar panel",
+          "volume": 3000,
+          "difficulty": 20,
+          "priority": "P0"
+        },
+        {
+          "type": "低难度长尾",
+          "keyword": "portable power station battery life comparison",
+          "volume": 2500,
+          "difficulty": 15,
+          "priority": "P0"
+        },
+        {
+          "type": "相关问题",
+          "keyword": "how to use portable power station",
+          "volume": 8000,
+          "difficulty": 35,
+          "priority": "P1"
+        }
+      ]
     }
   ],
   "keyword_lists": [

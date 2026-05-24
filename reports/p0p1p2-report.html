@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<style>
+@page {
+  size: A4;
+  margin: 2cm 1.8cm;
+  @bottom-center {
+    content: "太一·跨境贸易报告 | 第 " counter(page) " 页";
+    font-size: 9px;
+    color: #888;
+  }
+}
+body {
+  font-family: 'Noto Sans SC', 'Segoe UI', 'Helvetica', sans-serif;
+  font-size: 11pt;
+  line-height: 1.7;
+  color: #1a1a1a;
+}
+h1 { font-size: 22pt; color: #1a365d; border-bottom: 3px solid #2b6cb0; padding-bottom: 8px; margin-top: 0; }
+h2 { font-size: 16pt; color: #2b6cb0; border-bottom: 1px solid #cbd5e0; padding-bottom: 4px; margin-top: 30px; }
+h3 { font-size: 13pt; color: #2d3748; margin-top: 18px; }
+.p0-badge { display: inline-block; background: #e53e3e; color: white; font-size: 10pt; padding: 2px 10px; border-radius: 12px; margin-right: 8px; }
+.p1-badge { display: inline-block; background: #3182ce; color: white; font-size: 10pt; padding: 2px 10px; border-radius: 12px; margin-right: 8px; }
+.p2-badge { display: inline-block; background: #38a169; color: white; font-size: 10pt; padding: 2px 10px; border-radius: 12px; margin-right: 8px; }
+.section-meta { color: #718096; font-size: 10pt; margin-bottom: 12px; }
+table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 10pt; }
+th { background: #edf2f7; border: 1px solid #cbd5e0; padding: 8px 10px; text-align: left; font-weight: 600; }
+td { border: 1px solid #cbd5e0; padding: 6px 10px; }
+tr:nth-child(even) { background: #f7fafc; }
+.highlight-box { background: #ebf8ff; border-left: 4px solid #3182ce; padding: 12px 16px; margin: 12px 0; border-radius: 4px; }
+.warn-box { background: #fffff0; border-left: 4px solid #ecc94b; padding: 12px 16px; margin: 12px 0; border-radius: 4px; }
+.ok-box { background: #f0fff4; border-left: 4px solid #38a169; padding: 12px 16px; margin: 12px 0; border-radius: 4px; }
+.module-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 8px 0; }
+.module-item { background: #f7fafc; border: 1px solid #e2e8f0; padding: 6px 10px; border-radius: 4px; font-size: 9.5pt; }
+.module-item strong { color: #2b6cb0; }
+.link { color: #2b6cb0; word-break: break-all; }
+.footer { margin-top: 40px; padding-top: 15px; border-top: 1px solid #e2e8f0; text-align: center; color: #a0aec0; font-size: 9pt; }
+.tag { display: inline-block; background: #e2e8f0; padding: 1px 6px; border-radius: 3px; font-size: 8pt; margin: 1px; }
+</style>
+</head>
+<body>
+
+<h1>📋 太一跨境贸易报告</h1>
+<p class="section-meta">生成日期：2026-05-24 | 数据来源：跨境贸易 Agent v12.0 | 包含 p0/p1/p2 三项分析</p>
+
+<!-- ====================== P0 ====================== -->
+<h2><span class="p0-badge">P0</span> 跨境贸易 Skill v12 深度分析</h2>
+
+<h3>一、概览</h3>
+<p>跨境贸易 Agent 已完成 <strong>v12 升级</strong>，借鉴 AI HOT 产品思维重构，当前稳定版本。系统覆盖三大核心能力：<strong>情报获取 → 触达转化 → 履约保障</strong>，共计 <strong>17 个模块</strong>，支持 REST API/RSS/Agent CLI 三轨接入。</p>
+
+<table>
+<tr><th>维度</th><th>状态</th></tr>
+<tr><td>版本</td><td>v12.0.0（2026-05-09）</td></tr>
+<tr><td>模块数</td><td>17 个（含 Skill Registry）</td></tr>
+<tr><td>数据接入</td><td>三层路由（精选/日报/全量）+ 三轨（API/RSS/CLI）</td></tr>
+<tr><td>报告输出</td><td>5 版块归一化（竞品/招标/政策/趋势/买家）</td></tr>
+<tr><td>AI 编队</td><td>Squad 动态编队 + 冷启动编排器</td></tr>
+<tr><td>验证机制</td><td>7 源交叉验证 + 五项验证</td></tr>
+</table>
+
+<h3>二、完整模块目录（17 个模块）</h3>
+
+<table>
+<tr><th>模块</th><th>职责</th><th>状态</th></tr>
+<tr><td><strong>buyer-intel</strong></td><td>买家情报引擎（三层路由）</td><td>✅ 活跃</td></tr>
+<tr><td><strong>intelligence-hub</strong></td><td>情报中心（5版块归一化）</td><td>✅ 活跃</td></tr>
+<tr><td><strong>geo-outbound</strong></td><td>GEO 优化 + 社媒内容</td><td>✅ 活跃</td></tr>
+<tr><td><strong>guike-zhilu</strong></td><td>贵客之路（搜索→触达→培育）</td><td>✅ 活跃</td></tr>
+<tr><td><strong>company-enricher</strong></td><td>公司富化 + 7源验证</td><td>✅ 活跃</td></tr>
+<tr><td><strong>report-engine</strong></td><td>报告生成 + Telegram 推送</td><td>✅ 活跃</td></tr>
+<tr><td><strong>cross-border-core</strong></td><td>核心框架 + 事件总线</td><td>✅ 活跃</td></tr>
+<tr><td><strong>conversion-optimizer</strong></td><td>转化优化 + 漏斗分析 + ROI</td><td>✅ 活跃</td></tr>
+<tr><td><strong>data-integrator</strong></td><td>多源数据聚合清洗</td><td>✅ 活跃</td></tr>
+<tr><td><strong>supplier-matcher</strong></td><td>供应商匹配</td><td>✅ 活跃</td></tr>
+<tr><td><strong>product-catalog</strong></td><td>产品目录管理</td><td>✅ 活跃</td></tr>
+<tr><td><strong>supply-chain</strong></td><td>供应链优化</td><td>✅ 已配置</td></tr>
+<tr><td><strong>payment-settlement</strong></td><td>支付结算</td><td>✅ 已配置</td></tr>
+<tr><td><strong>compliance-engine</strong></td><td>合规引擎（VAT/关税/认证）</td><td>✅ 已配置</td></tr>
+<tr><td><strong>contract-legal</strong></td><td>合同与法律</td><td>✅ 已配置</td></tr>
+<tr><td><strong>risk-manager</strong></td><td>风险管理</td><td>✅ 已配置</td></tr>
+<tr><td><strong>task-scheduler</strong></td><td>任务调度</td><td>✅ 已配置</td></tr>
+<tr><td><strong>self-evolution</strong></td><td>自进化（学习/迭代）</td><td>✅ 已配置</td></tr>
+<tr><td><strong>skill-registry</strong></td><td>技能注册中心</td><td>✅ 内部</td></tr>
+</table>
+
+<h3>三、4 Bot 编队分工</h3>
+
+<table>
+<tr><th>Bot</th><th>Skill ID 数</th><th>核心职责</th></tr>
+<tr><td><strong>🧠 知几</strong></td><td>10</td><td>市场分析、竞品监控、选品评分、趋势预测、招标雷达、政策监控、买家情报、GEO分析、数据整合、报告生成</td></tr>
+<tr><td><strong>🏔️ 山木</strong></td><td>7</td><td>搜索触达、开发信、线索培育、供应链优化、订单履约、多语言内容、跨文化适配</td></tr>
+<tr><td><strong>📚 素问</strong></td><td>7</td><td>VAT/退税、法规追踪、清关自动化、合同生成、法律审查、跨文化合规、产品目录匹配</td></tr>
+<tr><td><strong>🔍 罔两</strong></td><td>4</td><td>公司验证、信息富化、五项验证、实时数据</td></tr>
+</table>
+
+<h3>四、核心数据资产</h3>
+
+<div class="highlight-box">
+<strong>已验证的真实数据：</strong>
+<ul>
+<li><strong>制造商</strong>：3 家（浙江法狮龙、广东集成房屋、上海邦山模块化）— 官网/电话/邮箱交叉验证</li>
+<li><strong>潜在买家</strong>：2 家（Aus Modular Homes、Melbourne Prefab Solutions）— 已验证</li>
+<li><strong>竞品</strong>：2 家（土耳其 Karmod、中国 DXH）— 已验证</li>
+<li><strong>物流商</strong>：2 家（中远海运、DHL Global Forwarding）— 已验证</li>
+<li><strong>展会</strong>：2 个（Big 5 Construct Australia、中国国际建博会）— 已验证</li>
+</ul>
+</div>
+
+<h3>五、关键改进点（v12 亮点）</h3>
+
+<ol>
+<li><strong>三层路由</strong>：精选层（默认7天活跃）→ 日报层（按国家/品类打包）→ 全量层（含冷线索），拒绝暴力全量</li>
+<li><strong>5 版块归一化</strong>：竞品/招标/政策/趋势/买家，统一输出模板</li>
+<li><strong>人话输出铁律</strong>：不暴露 API 端点、不抛架构术语、错误必须带下一步建议</li>
+<li><strong>三轨接入</strong>：REST API + RSS 订阅 + Agent CLI，跨系统集成就绪</li>
+<li><strong>Squad 动态编队</strong>：冷启动、诊断、全链路分析自动调配合适模块</li>
+</ol>
+
+<h3>六、待完善项</h3>
+
+<div class="warn-box">
+<strong>改进空间：</strong>
+<ul>
+<li>实时数据接入依赖手动维护的 buyers.json/companies.md — 建议接入自动化爬虫</li>
+<li>未集成贸易画像 Agent — 用户画像跨模块传播需强化</li>
+<li>冷启动编排器（orchestrator.launch）仅在用户明确触发时激活，缺少主动推送</li>
+<li>部分模块（risk-manager, task-scheduler）已配置但未充分激活</li>
+</ul>
+</div>
+
+<!-- ====================== P1 ====================== -->
+<div style="page-break-before: always;"></div>
+<h2><span class="p1-badge">P1</span> Crystalbrook Collection 官网分析</h2>
+
+<h3>一、基本信息</h3>
+
+<table>
+<tr><th>项目</th><th>内容</th></tr>
+<tr><td>官网</td><td><strong>crystalbrookcollection.com</strong></td></tr>
+<tr><td>总部</td><td>澳大利亚</td></tr>
+<tr><td>定位</td><td>可持续奢华酒店及度假村（#ResponsibleLuxury）</td></tr>
+<tr><td>首家开业</td><td>2018 年（Crystalbrook Riley, 凯恩斯）</td></tr>
+</table>
+
+<h3>二、酒店资产（8 处）</h3>
+
+<table>
+<tr><th>酒店</th><th>城市</th><th>特点</th></tr>
+<tr><td>Crystalbrook Riley</td><td>凯恩斯</td><td>热带度假村，Paper Cranes 现代亚洲融合餐厅</td></tr>
+<tr><td>Crystalbrook Flynn</td><td>凯恩斯</td><td>精品风格</td></tr>
+<tr><td>Crystalbrook Bailey</td><td>凯恩斯</td><td>精品风格</td></tr>
+<tr><td>Crystalbrook Kingsley</td><td>纽卡斯尔</td><td>屋顶酒吧</td></tr>
+<tr><td>Crystalbrook Vincent</td><td>布里斯班</td><td>艺术氛围精品酒店</td></tr>
+<tr><td>Crystalbrook Byron</td><td>拜伦湾</td><td>亚热带雨林度假村</td></tr>
+<tr><td>Crystalbrook Albion</td><td>悉尼</td><td>Surry Hills 历史街区</td></tr>
+<tr><td>Eleme Day Spa</td><td>SPA</td><td>自然科技融合水疗</td></tr>
+</table>
+
+<p>此外还有 Port Douglas 超级游艇码头项目。</p>
+
+<h3>三、核心卖点</h3>
+
+<ol>
+<li><strong>#ResponsibleLuxury 可持续奢华</strong> — 环保不仅不妥协品质，反而提升体验</li>
+<li><strong>地域表达</strong> — 每家酒店都是所在地的独特表达</li>
+<li><strong>直销 10% 折扣</strong> — "Crystalbrook Crowd" 会员直接预订享受即时折扣</li>
+<li><strong>餐饮矩阵</strong> — 从现代亚洲融合到地中海共享餐</li>
+</ol>
+
+<h3>四、商业启示</h3>
+
+<div class="highlight-box">
+<strong>对跨境贸易的参考价值：</strong>
+<ul>
+<li>Crystalbrook 作为澳大利亚高端酒店集团，是模块化建筑/折叠房屋的潜在 B 端客户（度假村扩建、临时设施）</li>
+<li>其 "地域表达" 品牌理念提示：澳大利亚市场对定制化、环保材料有强需求</li>
+<li>建议将 Crystalbrook 列入贵客之路（guike-zhilu）的目标买家候选</li>
+</ul>
+</div>
+
+<!-- ====================== P2 ====================== -->
+<div style="page-break-before: always;"></div>
+<h2><span class="p2-badge">P2</span> 澳大利亚公司验证官方工具</h2>
+
+<h3>一、官方验证渠道总览</h3>
+
+<table>
+<tr><th>工具</th><th>机构</th><th>官网</th><th>验证内容</th><th>是否需要登录</th></tr>
+<tr><td><strong>ABN Lookup</strong></td><td>Australian Business Register</td><td><span class="link">abr.business.gov.au</span></td><td>ABN 状态（活跃/取消）、GST 状态、企业类型、历史交易名</td><td>❌ 无需登录</td></tr>
+<tr><td><strong>ASIC Connect</strong></td><td>ASIC (Australian Securities & Investments Commission)</td><td><span class="link">asic.gov.au/online-services</span></td><td>公司注册信息、董事信息、年度申报状态</td><td>公共搜索无需登录</td></tr>
+<tr><td><strong>ASIC Business Names</strong></td><td>ASIC</td><td><span class="link">asic.gov.au/for-business/registering-a-business</span></td><td>商业名称注册查询</td><td>公共搜索无需登录</td></tr>
+</table>
+
+<h3>二、详细使用指南</h3>
+
+<h4>1️⃣ ABN Lookup（首选，最快）</h4>
+<div class="ok-box">
+<strong>URL</strong>：<span class="link">https://abr.business.gov.au</span><br>
+<strong>用途</strong>：查询澳大利亚公司 ABN（澳大利亚商业编号）是否有效<br>
+<strong>输入</strong>：ABN 编号 或 公司名称<br>
+<strong>返回</strong>：ABN 状态、实体名称、类型、GST 注册状态、地址<br>
+<strong>优势</strong>：免费、无需注册、实时数据
+</div>
+
+<h4>2️⃣ ASIC 公司搜索</h4>
+<div class="highlight-box">
+<strong>URL</strong>：<span class="link">https://connectonline.asic.gov.au</span><br>
+<strong>用途</strong>：查询公司注册详情、董事信息、年度申报<br>
+<strong>输入</strong>：公司名 或 ACN（澳大利亚公司编号）<br>
+<strong>返回</strong>：公司状态、注册日期、董事名单、注册地址<br>
+<strong>注意</strong>：ASIC 每天 4:00-4:30 AEST 系统维护，部分搜索功能受限
+</div>
+
+<h4>3️⃣ 完整验证流程</h4>
+
+<p>跨境电商验证澳大利亚公司的 <strong>推荐 3 步流程</strong>：</p>
+<ol>
+<li><strong>步骤 1</strong>：ABN Lookup 查 ABN 是否活跃 → 快速筛掉注销公司</li>
+<li><strong>步骤 2</strong>：ASIC Connect 查公司详情 → 确认董事/注册地址匹配</li>
+<li><strong>步骤 3</strong>：交叉验证（官网/电话/邮箱/LinkedIn/Google Maps）→ 罔两的 company-enricher 模块可自动执行</li>
+</ol>
+
+<h3>三、跨境贸易验证模板</h3>
+
+<div class="warn-box">
+<strong>✏️ 验证 Crystalbrook Collection 实操示例：</strong><br>
+1. 打开 <span class="link">abr.business.gov.au</span>，搜索 "Crystalbrook Collection"<br>
+2. 查看 ABN 状态（应为 Active）<br>
+3. ASIC Connect 查询公司注册详情<br>
+4. 交叉验证官网（crystalbrookcollection.com）与 ABN 记录中的注册地址<br>
+5. 完成验证
+</div>
+
+<h3>四、价格对比</h3>
+
+<table>
+<tr><th>工具</th><th>费用</th><th>数据时效</th><th>最适合</th></tr>
+<tr><td>ABN Lookup</td><td>免费</td><td>实时</td><td>快速验证</td></tr>
+<tr><td>ASIC Connect 搜索</td><td>免费（公共搜索）</td><td>实时</td><td>详细信息查询</td></tr>
+<tr><td>ASIC 官方报告</td><td>$4.70+ / 份</td><td>官方存档</td><td>尽职调查</td></tr>
+<tr><td>商业信用报告</td><td>$30-100+ / 份</td><td>含信用评估</td><td>大额交易风控</td></tr>
+</table>
+
+<h3>五、跨境验证自动化</h3>
+
+<p>在太一系统中，上述验证流程已模块化到 <strong>罔两·company-enricher</strong>（7 源交叉验证），可通过以下方式触发：</p>
+
+<div class="module-grid">
+<div class="module-item"><strong>company-enricher.verify</strong> — 公司真实性验证</div>
+<div class="module-item"><strong>company-enricher.enrich</strong> — 信息富化</div>
+<div class="module-item"><strong>real-data-verifier.five-way</strong> — 五项验证</div>
+<div class="module-item"><strong>澳洲 ABN 自动查询</strong> — 接入 abr.business.gov.au API</div>
+</div>
+
+<h3>六、重要提醒</h3>
+
+<div class="warn-box">
+<strong>⚠️ 注意事项：</strong>
+<ul>
+<li>ABN Lookup 的数据由企业自行申报，ASIC 数据更具法律效力</li>
+<li>2026-05-24（今天）ASIC Connect 正在进行系统维护（17:30-21:00 AEST），搜索功能可能不可用</li>
+<li>澳大利亚公司名后缀必须包含 Pty Ltd（私人有限公司）或 Ltd（上市公司）</li>
+<li>已验证的 ABN 不等于可信任的交易伙伴 — 仍需商业尽职调查</li>
+</ul>
+</div>
+
+<div class="footer">
+太一·跨境贸易 Agent v12 | 报告生成时间：2026-05-24 16:45 CST<br>
+数据来源：跨境贸易 Skill 模块 + ABR/ASIC 官方站点 + Crystalbrook Collection 官网
+</div>
+
+</body>
+</html>

@@ -23,9 +23,10 @@ Before doing anything else:
 11. Read `constitution/COLLABORATION.md` — 多 Bot 协作规程
 11. Read `constitution/extensions/DELEGATION.md` — 任务委派协议
 12. Read `constitution/directives/TURBOQUANT.md` — 智能分离协议
-13. Read `SOUL.md` — this is who you are
-14. Read `USER.md` — this is who you're helping
-15. Read `memory/core.md` — 核心记忆（第一层）
+13. Read `constitution/rules/THINKING-MODELS.md` — 太一10大思维协议（SAYELF指定）
+14. Read `SOUL.md` — this is who you are
+15. Read `USER.md` — this is who you're helping
+16. Read `memory/core.md` — 核心记忆（第一层）
 16. Read `memory/context.md` — 情境记忆（第二层）
 17. Read `memory/evolution.md` — 演化记忆（第三层）
 18. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context

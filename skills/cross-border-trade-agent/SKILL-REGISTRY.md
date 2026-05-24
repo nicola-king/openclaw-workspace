@@ -46,6 +46,8 @@ result = skill.execute({"product": "钢结构", "market": "沙特"})
 | `geo-outbound.market-analysis` | GEO 市场分析 | 关键词策略 + 市场定位 | GEO, 市场分析 | sync |
 | `data-integrator.multi-source` | 多源数据整合 | 7源数据聚合清洗 | 数据整合, 数据源 | sync |
 | `report-engine.report` | 智能报告生成 | 结构化报告/Markdown/热点趋势 | 报告, 简报, 分析报告 | async |
+| `trade-profile.profile` | 贸易画像 | 用户画像跨模块传播（新建）| 画像, 贸易画像, 用户轮廓 | sync |
+| `trade-profile.consolidate` | 画像聚合 | 拉取所有模块数据整合（新建）| 聚合, 全览 | async |
 
 ### 🏔️ 山木 — 业务执行 · 触达推进 · 履约交付
 

@@ -1,0 +1,53 @@
+{
+  "platform": "Alibaba.com",
+  "market": "🌐 全球",
+  "type": "B2B",
+  "fetched_at": "2026-05-24T06:04:50.256397",
+  "status": "ok",
+  "categories": {
+    "building": {
+      "category": "building",
+      "search_url": "https://www.alibaba.com/trade/search?fsb=y&IndexArea=product_en&CatId=&SearchText=prefab+house+steel+structure",
+      "keyword": "prefab+house+steel+structure",
+      "related_products": [
+        "prefab house",
+        "steel structure",
+        "container house"
+      ],
+      "samples": []
+    },
+    "electrical": {
+      "category": "electrical",
+      "search_url": "https://www.alibaba.com/trade/search?fsb=y&IndexArea=product_en&CatId=&SearchText=power+transformer+distribution",
+      "keyword": "power+transformer+distribution",
+      "related_products": [
+        "transformer",
+        "power transformer",
+        "electrical equipment"
+      ],
+      "samples": []
+    },
+    "electronics": {
+      "category": "electronics",
+      "search_url": "https://www.alibaba.com/trade/search?fsb=y&IndexArea=product_en&CatId=&SearchText=power+bank+portable+power+station",
+      "keyword": "power+bank+portable+power+station",
+      "related_products": [
+        "power bank",
+        "portable power station",
+        "solar generator"
+      ],
+      "samples": []
+    },
+    "machinery": {
+      "category": "machinery",
+      "search_url": "https://www.alibaba.com/trade/search?fsb=y&IndexArea=product_en&CatId=&SearchText=diesel+engine+generator",
+      "keyword": "diesel+engine+generator",
+      "related_products": [
+        "diesel engine",
+        "gasoline engine",
+        "generator"
+      ],
+      "samples": []
+    }
+  }
+}
