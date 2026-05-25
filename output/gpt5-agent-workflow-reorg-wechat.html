@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GPT-5 + AI Agent：工作流的终极重组</title>
+<style>
+ @layer base { * { box-sizing: border-box; margin: 0; padding: 0; } html { scroll-behavior: smooth; } body { font-family: 'Inter', 'Noto Sans SC', system-ui, sans-serif; background: #fafafa; color: #0a0a0a; } .serif { font-family: 'Noto Serif SC', serif; } .sans { font-family: 'Inter', 'Noto Sans SC', sans-serif; } .max-w-article { max-width: 700px; } .prose-lg p { margin-bottom: 1.25em; line-height: 1.85; } .prose-lg li { line-height: 1.8; margin-bottom: 0.5em; } .ornament { display: flex; align-items: center; justify-content: center; gap: 12px; margin: 3rem 0; color: #a3a3a3; font-size: 14px; } .ornament::before, .ornament::after { content: ''; flex: 1; max-width: 80px; height: 1px; background: #d4d4d4; } blockquote { border-left: 4px solid; padding-left: 1.25rem; margin: 1.75rem 0; font-style: italic; } .code-block { position: relative; background: #1a1a2e; border-radius: 12px; padding: 1.25rem; margin: 1.5rem 0; overflow-x: auto; } .code-block .lang-tag { position: absolute; top: 8px; right: 12px; font-size: 11px; font-weight: 600; color: #6b7280; letter-spacing: 0.5px; text-transform: uppercase; background: rgba(255,255,255,0.08); padding: 2px 10px; border-radius: 6px; } .code-block code { font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 13px; line-height: 1.7; color: #e4e4e7; } .fade-in { animation: fadeIn 0.6s ease-out both; } @keyframes fadeIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } } .comparison-grid { display: grid; grid-template-columns: 1fr; gap: 0; margin: 1.5rem 0; border-radius: 16px; overflow: hidden; border: 1px solid #e5e7eb; } @media (min-width: 640px) { .comparison-grid { grid-template-columns: 1fr 1fr; } } .comparison-old { background: #fef2f2; padding: 1.25rem; } .comparison-new { background: #f0fdf4; padding: 1.25rem; } .layer-card { background: white; border: 1px solid #e5e7eb; border-radius: 16px; padding: 1.5rem; margin: 1rem 0; transition: box-shadow 0.2s; } .layer-card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.06); } .stat-number { font-size: 2.5rem; font-weight: 700; line-height: 1; } .pill { display: inline-block; font-size: 12px; font-weight: 600; padding: 2px 10px; border-radius: 999px; letter-spacing: 0.3px; } .pill-auto { background: #dcfce7; color: #166534; } .pill-collab { background: #dbeafe; color: #1e40af; } .pill-aug { background: #fef3c7; color: #92400e; } .pill-create { background: #f3e8ff; color: #6b21a8; } .action-card { background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border: 1px solid #bae6fd; border-radius: 16px; padding: 1.75rem; text-align: center; margin: 2rem 0; } ul.custom-bullets { list-style: none; padding-left: 0; } ul.custom-bullets li { position: relative; padding-left: 1.5rem; margin-bottom: 0.5rem; } ul.custom-bullets li::before { content: '◆'; position: absolute; left: 0; color: #2563eb; font-size: 10px; top: 0.35em; } .gradient-text { background: linear-gradient(135deg, #2563eb, #7c3aed); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; } .timeline-dot { width: 10px; height: 10px; border-radius: 50%; background: #2563eb; flex-shrink: 0; margin-top: 6px; } } 
+body { background: #fafafa; color: #1a1a1a; font-family: -apple-system, BlinkMacSystemFont, "Noto Sans SC", "PingFang SC", sans-serif; padding: 20px; }
+h1 { font-size: 28px; font-weight: 700; line-height: 1.4; margin-bottom: 12px; }
+h2 { font-size: 22px; font-weight: 600; margin-top: 32px; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; }
+h3 { font-size: 18px; font-weight: 600; margin-top: 24px; margin-bottom: 8px; }
+p { line-height: 1.8; margin-bottom: 16px; font-size: 16px; }
+blockquote { border-left: 4px solid #2563eb; padding: 12px 20px; margin: 16px 0; background: #f8fafc; border-radius: 0 8px 8px 0; color: #475569; }
+pre { background: #1a1a2e; color: #e4e4e7; padding: 16px; border-radius: 8px; overflow-x: auto; font-size: 14px; line-height: 1.6; margin: 16px 0; }
+code { font-family: 'SF Mono', 'Fira Code', monospace; }
+ul { padding-left: 20px; margin: 12px 0; }
+li { line-height: 1.8; margin-bottom: 6px; }
+</style>
+</head>
+<body>
+
+  <div>
+    <p>过去两年，AI Agent 从玩具变成工具，从工具变成协作伙伴。而 GPT-5 的发布，不是一次常规升级——它是一次<strong>计算范式的断裂</strong>。</p>
+    <p>这篇文章不是 GPT-5 的功能清单，而是我和它一起工作半年后，对<strong>工作流如何被重组</strong>的真实观察。</p>
+  </div>
+
+  <div>✦</div>
+
+  <!-- Section 1 -->
+  <section id="section-1">
+    <h2>一、从「人找工具」到「工具找人」</h2>
+    <p>传统工作流的本质是：<strong>人制造信息，工具处理信息，人验收结果。</strong></p>
+    <p>GPT-5 + Agent 把它反转了：<strong>工具主动感知信息，自主决策，人只在关键节点做判断。</strong></p>
+
+    <h3>典型场景：跨境贸易情报</h3>
+
+    <div>
+      <div>
+        <span>旧工作流</span>
+        <ul>
+          <li>☀️ 每天早起</li>
+          <li>🔗 手动打开 6 个浏览器标签</li>
+          <li>🔍 搜索招标信息</li>
+          <li>📋 复制粘贴到表格</li>
+          <li>📊 分析</li>
+          <li>📝 写报告</li>
+          <li>📧 邮件发送</li>
+          <li>↺ 每天重复</li>
+        </ul>
+      </div>
+      <div>
+        <span>Agent 重组后</span>
+        <ul>
+          <li>⏰ 6:00 自动爬虫抓取</li>
+          <li>🧹 7:00 Agent 清洗 + 验证 + 匹配</li>
+          <li>📱 7:30 推送精选报告到手机</li>
+          <li>🧑‍💻 人在通勤路上做 <strong>3 个判断</strong></li>
+        </ul>
+      </div>
+    </div>
+
+    <blockquote>
+      效率提升不是 2 倍，是 <strong>10 倍</strong>。因为人从「执行者」变成了「决策者」。
+    </blockquote>
+  </section>
+
+  <div>✦</div>
+
+  <!-- Section 2 -->
+  <section id="section-2">
+    <h2>二、GPT-5 带来的三个关键能力</h2>
+
+    <div>
+      <span>2.1</span>
+      <h3>上下文不再是瓶颈</h3>
+      <p>GPT-4 的上下文窗口是 128K，能处理一本书。GPT-5 的 1M~2M 上下文意味着它可以<strong>读完一个公司的全套文档</strong>才回答你的问题。</p>
+      <p>这对 Agent 架构的影响是根本性的：</p>
+      <div>
+        <div>
+          <span>旧模式</span>
+          <p>Agent 需要 RAG（检索增强）来「记住」知识 → 每次查询都要检索</p>
+        </div>
+        <div>
+          <span>新模式</span>
+          <p>Agent 原生吞入整个知识库 → 上下文即是记忆 → 检索退化到边缘角色</p>
+        </div>
+      </div>
+      <div>
+        <span>Insight</span>
+        <code>RAG 将死，长上下文永生。</code>
+      </div>
+    </div>
+
+    <div>
+      <span>2.2</span>
+      <h3>推理即执行</h3>
+      <p>GPT-5 的推理能力让 Agent 不再需要「思考链脚手架」。</p>
+      <div>
+        <div>
+          <span>过去的架构</span>
+          <div>
+            Prompt → 拆解步骤 →<br/>
+            每步调一个工具 →<br/>
+            汇总结果 →<br/>
+            判断是否完成
+          </div>
+        </div>
+        <div>
+          <span>GPT-5 的架构</span>
+          <div>
+            Prompt →<br/>
+            模型内部完成推理链 →<br/>
+            输出完整执行计划 →<br/>
+            一步到位
+          </div>
+        </div>
+      </div>
+      <blockquote>
+        以前写 300 行 prompt 才能让 Agent 干一件事，现在写 30 行就够了。
+      </blockquote>
+    </div>
+
+    <div>
+      <span>2.3</span>
+      <h3>工具调用原生融合</h3>
+      <p>GPT-5 的工具调用不再是「模型生成 JSON → 后端解析 → 执行 → 返回」，而是<strong>模型原生理解工具 API</strong>。</p>
+      <ul>
+        <li>不需要 function calling 的复杂 schema 定义</li>
+        <li>不需要结果解析和错误重试的 boilerplate</li>
+        <li>模型自己知道什么时候调什么工具、怎么处理返回值</li>
+      </ul>
+      <div>
+        <p><strong>太一实践：</strong>我们把 28 个模块的 API 整合成 18 个，因为 GPT-5 不再需要「每个功能一个独立端点」这种微服务式架构。它可以直接理解一个更宽泛的 API 接口，自己决定怎么用。</p>
+      </div>
+    </div>
+  </section>
+
+  <div>✦</div>
+
+  <!-- Section 3 -->
+  <section id="section-3">
+    <h2>三、工作流重构的四个层级</h2>
+    <p>和 GPT-5 协作半年，我观察到工作流重组发生在四个层面：</p>
+
+    <!-- Layer 1 -->
+    <div>
+      <div>
+        <h3>第一层：自动化</h3>
+        <span>不需要人</span>
+      </div>
+      <p><strong>特征</strong>：完全由 Agent 独立完成，人在最后看一眼即可。</p>
+      <p>太一实践：</p>
+      <ul>
+        <li>买家情报自动爬取 + 清洗 + 验证（06:00 / 18:00 两个 cron）</li>
+        <li>ABN 验证 + 公司富化（自动触发，无需人工干预）</li>
+        <li>API 健康检查 + 自修复（7×24 自动保活）</li>
+      </ul>
+      <div>
+        <span>60%</span>
+        <span>的工作量从「人做」变成「自动」</span>
+      </div>
+    </div>
+
+    <!-- Layer 2 -->
+    <div>
+      <div>
+        <h3>第二层：协作</h3>
+        <span>人和 Agent 一起做</span>
+      </div>
+      <p><strong>特征</strong>：Agent 做大部分工作，人在关键节点做决策。</p>
+      <p>太一实践：</p>
+      <ul>
+        <li>情报验证管道：Agent 自动完成 5 项验证 → 输出可信度评分 → 人判断「推不推」</li>
+        <li>冷启动编排：Agent 自动出方案 → 人决定「要不要落地」</li>
+      </ul>
+      <div>
+        <span>25%</span>
+        <span>的工作量从「人在做」变成「人判断」</span>
+      </div>
+    </div>
+
+    <!-- Layer 3 -->
+    <div>
+      <div>
+        <h3>第三层：增强</h3>
+        <span>Agent 让人做得更好</span>
+      </div>
+      <p><strong>特征</strong>：Agent 不代替人做事，而是在旁边提供数据、分析和建议。</p>
+      <p>太一实践：</p>
+      <ul>
+        <li>贸易画像 Agent：一次定义 → 所有模块自动感知用户画像，不需要每次重复说</li>
+        <li>P2 报价引擎：一键出报价 + 退税 + 利润分析，人只需要确认价格</li>
+      </ul>
+      <div>
+        <span>10%</span>
+        <span>的工作量从「人自己搞」变成「人+Agent 一起搞」</span>
+      </div>
+    </div>
+
+    <!-- Layer 4 -->
+    <div>
+      <div>
+        <h3>第四层：创造</h3>
+        <span>Agent 做不到的</span>
+      </div>
+      <p><strong>特征</strong>：关系维护、战略决策、商业直觉——这些目前还属于人。</p>
+      <div>
+        <span>5%</span>
+        <span>——但这一层会越来越薄</span>
+      </div>
+    </div>
+  </section>
+
+  <div>✦</div>
+
+  <!-- Section 4 -->
+  <section id="section-4">
+    <h2>四、不只是一次升级，是一次范式转换</h2>
+    <p>GPT-5 + Agent 对我的工作流最深刻的改变不是「更快」，而是<strong>可以做的事情的边界改变了</strong>。</p>
+
+    <div>
+      <h4>以前不能做的事情</h4>
+      <ul>
+        <li>实时监控 121 家澳洲公司的动向并自动匹配到我们的产品</li>
+        <li>每天自动生成中东多国买家情报日报</li>
+        <li>自动验证公司的 ABN + 董事 + 注册地址 + 交叉验证</li>
+      </ul>
+    </div>
+
+    <blockquote>
+      这些在 2025 年需要一支 <strong>5 人团队</strong>才能做的事情，2026 年<strong>一个人 + Agent</strong> 就搞定了。
+      <div>这不是效率提升，这是成本结构的根本变化。</div>
+    </blockquote>
+  </section>
+
+  <div>✦</div>
+
+  <!-- Section 5 -->
+  <section id="section-5">
+    <h2>五、行动清单</h2>
+    <p>如果你也在考虑用 GPT-5 + Agent 重组自己的 workflow：</p>
+
+    <div>
+      <div>
+        <span>1</span>
+        <div>
+          <h4>先找到那 60% 可以自动化的</h4>
+          <p>先做「完全不需要人」的部分</p>
+        </div>
+      </div>
+      <div>
+        <span>2</span>
+        <div>
+          <h4>不要一步到位</h4>
+          <p>先让 Agent 做初稿，你 review，迭代优化 Prompt</p>
+        </div>
+      </div>
+      <div>
+        <span>3</span>
+        <div>
+          <h4>API 设计要宽泛</h4>
+          <p>GPT-5 不需要微服务，给一个大接口让它自己探索</p>
+        </div>
+      </div>
+      <div>
+        <span>4</span>
+        <div>
+          <h4>建立反馈闭环</h4>
+          <p>Agent 执行结果的好坏要能回流到系统</p>
+        </div>
+      </div>
+      <div>
+        <span>5</span>
+        <div>
+          <h4>保留人的决策权</h4>
+          <p>Agent 输出方案，人做判断，这个比例会变但不会消失</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Author Footer -->
+  <div>✦ ✦</div>
+
+  <footer>
+    <div>
+      <p>太一</p>
+      <p>跨境贸易 Agent v12 · 一个和 AI 一起工作的实践者</p>
+      <p>2026.05.25</p>
+    </div>
+
+    <div>
+      <p>觉得有用？</p>
+      <p>如果这篇文章帮你梳理了思路，欢迎转发给同样在探索 AI Agent 的朋友。</p>
+      <div>
+        <span>
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/></svg>
+            复制链接
+          </span>
+          <span>·</span>
+          <span>本文由 GPT-5 + 太一 Agent 协作完成。写作 10 分钟，审校 5 分钟。</span>
+      </div>
+    </div>
+
+    <p>以前这种深度的文章需要 2 天。</p>
+  </footer>
+
+</body>
+</html>

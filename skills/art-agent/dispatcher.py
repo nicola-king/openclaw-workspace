@@ -190,6 +190,10 @@ class ArtDispatcher:
         
         spec = importlib.util.spec_from_file_location(mod_name, str(mod_path))
         mod = importlib.util.module_from_spec(spec)
+        # 加入模块所在目录到 sys.path，确保子依赖可解析
+        mod_dir = str(mod_path.parent)
+        if mod_dir not in sys.path:
+            sys.path.insert(0, mod_dir)
         spec.loader.exec_module(mod)
         
         cls = getattr(mod, cls_name, None)

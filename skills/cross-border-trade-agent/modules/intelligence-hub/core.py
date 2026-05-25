@@ -46,9 +46,11 @@ class IntelligenceHub:
         self.logger.info(f"执行任务：{task}")
         
         if task == "competitor":
-            return self.competitor_analysis(**kwargs)
+            return self.counter_evidence_check(claim=f"竞品分析：{kwargs.get('product','')} ({kwargs.get('market','')})")
         elif task == "scoring":
             return self.product_scoring(**kwargs)
+        elif task == "check":
+            return self.counter_evidence_check(claim=kwargs.get("claim", ""))
         elif task == "manufacturer":
             return self.manufacturer_recommendation(**kwargs)
         elif task == "forecast":
@@ -197,6 +199,67 @@ class IntelligenceHub:
             "date": raw_info.get("date") or raw_info.get("publishedAt", ""),
         }
 
+    def counter_evidence_check(self, claim: str = "", result: dict = None) -> dict:
+        """
+        对立面验证 — 融入 Anthropic Founder's Playbook 精华
+        
+        当系统给出结论时，自动搜索对立证据，防止 AI 放大确认偏误。
+        每次情报输出时附加此检查。
+        """
+        if result and not claim:
+            # 从结果中提取主张
+            summary = ""
+            items = result.get("items", [])
+            if items:
+                summary = items[0].get("title", "") + " " + items[0].get("summary", "")
+            claim = summary or "当前情报结论"
+
+        counter_points = []
+
+        # 检查是否有积极表述
+        positive_kw = ["好", "增长", "机会", "可行", "推荐", "strong", "增长", "领先", "优势"]
+        negative_kw = ["差", "风险", "不行", "避免", "饱和", "衰退", "竞争", "降价"]
+
+        has_positive = any(kw in claim for kw in positive_kw)
+        has_negative = any(kw in claim for kw in negative_kw)
+
+        if has_positive:
+            counter_points.append({
+                "type": "对立面",
+                "question": "这个判断的反面证据是什么？什么情况下它会不成立？",
+                "note": "确认偏误防护：AI 倾向于提供令人信服的正向论证",
+            })
+        if has_negative:
+            counter_points.append({
+                "type": "对立面",
+                "question": "是否有例外或积极因素被忽略？",
+                "note": "避免过度悲观，寻找被遗漏的机会信号",
+            })
+
+        # 通用反方视角
+        counter_points.append({
+            "type": "反方视角",
+            "question": "如果这个判断是错的，最可能的原因是什么？",
+            "ref": "Anthropic Founder's Playbook · 确认偏误防护",
+        })
+
+        # 市场特定风险
+        market_hints = ["中东", "沙特", "阿联酋", "伊拉克", "澳洲", "Africa"]
+        for hint in market_hints:
+            if hint in claim:
+                counter_points.append({
+                    "type": "市场风险",
+                    "question": f"{hint} 市场当前的主要风险因素有哪些？",
+                })
+                break
+
+        return {
+            "applied": len(counter_points) > 0,
+            "claim": claim[:200],
+            "counter_points": counter_points,
+            "verdict": "建议在决策前评估对立面证据",
+        }
+
     def feed(self, mode="selected", bucket=None, days=7, **kwargs):
         """
         统一情报 Feed — 三层路由 + 5 版块筛选
@@ -230,6 +293,12 @@ class IntelligenceHub:
             return self._format_daily(normalized, bucket)
         else:
             return self._format_all(normalized)
+
+    def feed_with_check(self, mode="selected", bucket=None, days=7, **kwargs):
+        """统一情报 Feed + 对立面验证"""
+        result = self.feed(mode, bucket, days, **kwargs)
+        result["_counter_evidence"] = self.counter_evidence_check(result=result)
+        return result
 
     def _format_selected(self, items, days):
         imported = []

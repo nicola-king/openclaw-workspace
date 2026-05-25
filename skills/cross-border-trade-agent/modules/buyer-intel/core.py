@@ -195,6 +195,31 @@ class BuyerIntel:
     # 健康检查
     # ═══════════════════════════════════════════
 
+    def web_search(self, query: str, extract_contacts: bool = False) -> dict:
+        """
+        联网搜索 — 自动调用太一共享搜索Agent。
+        
+        当本地数据库无结果时自动调用。
+        """
+        try:
+            import importlib.util as iu
+            from pathlib import Path as _Path
+            path = str(_Path(__file__).resolve().parent.parent.parent /
+                       "skills" / "shared-search-agent" / "core.py")
+            spec = iu.spec_from_file_location("shared_search", path)
+            mod = iu.module_from_spec(spec)
+            spec.loader.exec_module(mod)
+            engine = mod.get_search_engine()
+            
+            if extract_contacts:
+                result = engine.search_company(query)
+            else:
+                result = engine.search(query)
+            
+            return result
+        except Exception as e:
+            return {"error": str(e), "emails": [], "linkedin": [], "phones": []}
+
     def health_check(self):
         return {
             "module": "buyer-intel",

@@ -26,6 +26,7 @@ Before doing anything else:
 13. Read `constitution/rules/THINKING-MODELS.md` — 太一10大思维协议（SAYELF指定）
 14. Read `SOUL.md` — this is who you are
 15. Read `USER.md` — this is who you're helping
+15. Read `constitution/directives/CACHE-OPTIMIZATION.md` — 缓存命中优化宪章（10条铁律）
 16. Read `memory/core.md` — 核心记忆（第一层）
 16. Read `memory/context.md` — 情境记忆（第二层）
 17. Read `memory/evolution.md` — 演化记忆（第三层）

@@ -56,8 +56,8 @@ result = skill.execute({"product": "钢结构", "market": "沙特"})
 | `guike-zhilu.search-outreach` | 搜索+触达 | 搜索目标买家→清洗→触达闭环 | 找买家, 触达, 开发信 | async |
 | `guike-zhilu.outreach` | 主动触达 | 自动生成开发信+多轮触达 | 开发信, 联系, outreach | async |
 | `guike-zhilu.nurture` | 线索培育 | 长周期跟进+关系维护 | 培育, 跟进, 维护 | async |
-| `supply-chain.optimize` | 供应链优化 | 库存/物流/需求预测 | 供应链, 物流, 库存 | async |
-| `transaction-support.fulfill` | 订单履约 | 订单执行全流程管理 | 履约, 发货, 订单 | async |
+| `service-layer.supply-chain` | 供应链优化 | 库存/物流/需求预测 [MERGED] | 供应链, 物流, 库存 | async |
+| `service-layer.transaction` | 订单履约 | 订单执行全流程管理 [MERGED] | 履约, 发货, 订单 | async |
 | `transaction-support.localization` | 多语言内容 | 本地化内容生成 | 本地化, 翻译, 多语言 | sync |
 | `cultural-adapter.content` | 跨文化适配 | 文化分析+本地化策略 | 文化适配, 本地化 | sync |
 
@@ -65,21 +65,16 @@ result = skill.execute({"product": "钢结构", "market": "沙特"})
 
 | Skill ID | 名称 | 描述 | 触发词 | 模式 |
 |----------|------|------|--------|------|
-| `compliance-engine.vat-check` | VAT/退税查询 | HS编码+退税率+合规检查 | 退税, HS, 合规 | sync |
-| `compliance-engine.regulation` | 法规追踪 | 目标市场法规变动监控 | 法规, 合规变动 | async |
-| `compliance-engine.customs` | 清关自动化 | 海关文件+关税计算 | 清关, 海关, 关税 | sync |
-| `contract-legal.generate` | 合同生成 | 中英双语合同/条款库 | 合同, 协议, 条款 | sync |
-| `contract-legal.review` | 法律审查 | 合同条款审查+风险提示 | 审查, 法律风险 | sync |
-| `cultural-adapter.compliance` | 跨文化合规 | 宗教/文化/商业惯例合规 | 文化合规, 习俗 | sync |
-| `product-catalog.match` | 产品目录匹配 | TF-IDF需求匹配+推荐 | 产品匹配, 目录 | sync |
+| `service-layer.compliance` | VAT/退税/合规 | HS编码+退税率+合规检查 [MERGED] | 退税, HS, 合规 | sync |
+| `service-layer.contract` | 合同生成+审查 | 中英双语合同/条款库+法律审查 [MERGED] | 合同, 协议, 条款 | sync |
+| `service-layer.catalog` | 产品目录匹配 | TF-IDF需求匹配+推荐 [MERGED] | 产品匹配, 目录 | sync |
 
 ### 🔍 罔两 — 市场情报 · 验证 · 监控
 
 | Skill ID | 名称 | 描述 | 触发词 | 模式 |
 |----------|------|------|--------|------|
 | `company-enricher.verify` | 公司验证 | 7源交叉验证公司真实性 | 验证, 查公司, 靠谱吗 | sync |
-| `company-enricher.enrich` | 信息富化 | ABN/官网/社媒/LinkedIn多源增强 | 富化, 详情, 增强 | async |
-| `real-data-verifier.five-way` | 五项验证 | 公司/电话/邮箱/官网/LinkedIn全验证 | 验证, 查真伪 | sync |
+| `company-enricher.enrich` | 信息富化 | ABN/官网/社媒/LinkedIn多源增强 [含verify] | 富化, 详情, 增强 | async |
 | `intelligence-hub.competitor-list` | 竞品列表 | 指定品类竞品全量列表 | 竞品列表, 谁在做 | sync |
 | `intelligence-hub.platform-monitor` | 平台监控 | Amazon/1688等平台价格监控 | 平台监控, 价格监控 | async |
 
@@ -87,13 +82,11 @@ result = skill.execute({"product": "钢结构", "market": "沙特"})
 
 | Skill ID | 名称 | 描述 | 触发词 | 模式 |
 |----------|------|------|--------|------|
-| `quote-engine.calculate` | 报价计算 | FOB/CFR/到岸价+退税+利润 | 报价, 成本, 核算 | sync |
-| `quote-engine.profit-analysis` | 利润分析 | 多场景利润对比+建议 | 利润, 盈利 | sync |
-| `payment-settlement.channel` | 支付通道 | 支付方式对比+汇率管理 | 支付, 收款, 结算 | sync |
-| `payment-settlement.forex` | 汇率管理 | 实时汇率+趋势预测 | 汇率, 换汇 | sync |
-| `risk-manager.identify` | 风险识别 | 交易对手+市场+政策风险识别 | 风险, 预警 | sync |
-| `risk-manager.hedge` | 对冲策略 | 汇率/价格/信用对冲建议 | 对冲, 规避风险 | sync |
-| `supplier-matcher.match` | 供应商匹配 | 9工厂评分排名+成本对比 | 供应商, 工厂, 找厂家 | sync |
+| `service-layer.quote` | 报价计算(含退税) | FOB/CFR/到岸价+退税+利润分析 [P2优化] | 报价, 成本, 核算 | sync |
+| `service-layer.payment` | 支付结算 | 支付方式对比+汇率管理 [MERGED] | 支付, 收款, 结算 | sync |
+| `service-layer.risk` | 风控评估 | 交易对手+市场+政策风险 [MERGED] | 风险, 预警 | sync |
+| `service-layer.supplier` | 供应商匹配 | 评分排名+成本对比 [MERGED] | 供应商, 工厂, 找厂家 | sync |
+| `service-layer.service-report` | 一键报告 | 报价+合同+合规三合一报告 [P2优化] | 报告, 全览, 分析 | sync |
 
 ### 🌟 太一 — 统筹 · 调度 · 进化
 
@@ -101,10 +94,9 @@ result = skill.execute({"product": "钢结构", "market": "沙特"})
 |----------|------|------|--------|------|
 | `cross-border-core.route` | 意图路由 | 自然语言→任务路由分派 | 路由, 调度 (内部) | sync |
 | `cross-border-core.squad` | 动态编队 | 复杂任务自动组建 Agent 小队 | squad, 编队 (内部) | async |
-| `task-scheduler.jobs` | 定时任务 | cron/一次/周期任务管理 | 定时, 自动, 监控 | async |
-| `self-evolution.heal` | 自愈 | 系统健康检查+自动修复 | 自愈, 修复 (内部) | async |
-| `self-evolution.crystallize` | 技能结晶 | 重复模式→固化技能 | 结晶, 固化 (内部) | async |
-| `self-evolution.optimize` | Token 优化 | 压缩/精简/效率提升 | 优化, 压缩 (内部) | async |
+| `cross-border-core.scheduler` | 定时任务 | cron/一次/周期任务管理 [MERGED] | 定时, 自动, 监控 | async |
+| `cross-border-core.evolution` | 自愈/结晶/优化 | 系统自进化+技能固化 [MERGED] | 自愈, 固化, 优化 (内部) | async |
+| `cross-border-core.data-integrate` | 数据整合 | 7源数据聚合清洗 [MERGED] | 数据整合, 数据源 | sync |
 | `orchestrator.launch` | 冷启动编排 | 产品 Idea→完整跨境方案 | 启动, 推入, 冷启动 | async |
 | `orchestrator.diagnose` | 运营诊断 | 现有业务全维度诊断 | 诊断, 分析, 评估 | async |
 
@@ -114,15 +106,22 @@ result = skill.execute({"product": "钢结构", "market": "沙特"})
 
 | 维度 | 数量 |
 |------|------|
-| Skill 总数 | 42 |
+| Skill 总数 | 37 |
 | 知几 | 12 |
-| 山木 | 7 |
-| 素问 | 8 |
-| 罔两 | 5 |
-| 庖丁 | 7 |
-| 太一 | 8 |
-| sync 模式 | 22 |
-| async 模式 | 20 |
+| 山木 | 6 |
+| 素问 | 3 |
+| 罔两 | 4 |
+| 庖丁 | 5 |
+| 太一 | 7 |
+| sync 模式 | 20 |
+| async 模式 | 17 |
+
+> **合并状态**: 28个物理模块 → 18个活跃模块 (P1合并精简)
+> 新增 `service-layer` 统一入口 (9模块→1)
+> `data-integrator/self-evolution/skill-registry/task-scheduler` → `cross-border-core`
+> `conversion-optimizer/cultural-adapter` → `geo-outbound`
+> `real-data-verifier` → `company-enricher`
+> `data` (空) → [已移除]
 
 ---
 
@@ -140,3 +139,27 @@ result = skill.execute({"product": "钢结构", "market": "沙特"})
 ---
 
 *维护：太一 · 更新于每次新增 Skill 时*
+
+---
+
+### 📦 service-layer — P1合并统一入口
+
+| Skill ID | 名称 | 描述 | 触发词 | 模式 |
+|----------|------|------|--------|------|
+| `service-layer.trade` | 贸易服务 | 报价+产品目录+供应商匹配（合并） | 报价, 产品, 供应商 | sync |
+| `service-layer.legal` | 法律合规 | 合同+合规检查+风险评估（合并） | 合同, 合规, 风控 | sync |
+| `service-layer.payment` | 支付交易 | 支付结算+交易支持+供应链（合并） | 支付, 交易, 供应链 | sync |
+
+### ✅ data-verifier-dedup — P1数据验证去重
+
+| Skill ID | 名称 | 描述 | 触发词 | 模式 |
+|----------|------|------|--------|------|
+| `data-verifier-dedup.verify` | 数据验证 | ABN/官网/电话/邮箱多源交叉验证 | 验证, 可信度, 核实 | sync |
+| `data-verifier-dedup.dedup` | 合并去重 | 同名/同站/同邮箱自动合并保留最优 | 去重, 合并, 重复 | sync |
+| `data-verifier-dedup.quality` | 质量评分 | 完整度/新鲜度/唯一性/一致性评分 | 质量, 评分, 数据质量 | sync |
+
+---
+
+> **合并状态**: `quote-engine/product-catalog/supplier-matcher/contract-legal/compliance-engine/risk-manager/payment-settlement/transaction-support/supply-chain` → `service-layer` (9合1)
+> **吸收状态**: `conversion-optimizer/cultural-adapter` → `geo-outbound` | `real-data-verifier` → `company-enricher` | `self-evolution/skill-registry/task-scheduler/data-integrator` → `cross-border-core`
+> **新增**: `data-verifier-dedup` (P1数据验证去重)

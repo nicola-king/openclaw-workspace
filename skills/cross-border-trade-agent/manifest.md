@@ -291,3 +291,61 @@
     "recursive_optimization": "≥85%"
   }
 }
+---
+
+## P1 合并 (2026-05-25)
+
+**28个模块 → 18个活跃模块**
+
+### 合并映射
+
+| 新位置 | 合并来源 | 旧模块被标记为 |
+|--------|---------|--------------|
+| `modules/service-layer/` (新建) | quote-engine, product-catalog, supplier-matcher, contract-legal, compliance-engine, risk-manager, payment-settlement, transaction-support, supply-chain | `[MERGED → service-layer]` |
+| `modules/cross-border-core/` (吸收) | self-evolution, skill-registry, task-scheduler, data-integrator | `[MERGED → cross-border-core]` |
+| `modules/geo-outbound/` (吸收) | conversion-optimizer, cultural-adapter | `[MERGED → geo-outbound]` |
+| `modules/company-enricher/` (吸收) | real-data-verifier | `[MERGED → company-enricher]` |
+| `modules/data/` | 空目录 | [已移除] |
+
+### 活跃模块清单 (18个)
+
+| 模块 | 描述 |
+|------|------|
+| `buyer-intel` | P0核心 — 买家情报引擎 |
+| `company-enricher` | P0核心 — 公司富化+7源验证 |
+| `orchestrator` | P0核心 — 冷启动编排+自动触发 |
+| `trade-profile` | P0核心 — 贸易画像跨模块传播 |
+| `intelligence-hub` | 情报中心 —5版块归一化 |
+| `geo-outbound` | GEO优化 — 含转化优化+文化适配 |
+| `guike-zhilu` | 贵客之路 — 搜索→触达→培育 |
+| `cross-border-core` | 核心框架 — 含调度/自进化/数据整合 |
+| `report-engine` | 报告系统 |
+| `service-layer` | **新建** — 统一入口(报价/合同/合规/支付/风控) |
+| 另有8个配置/工具/数据目录 | |
+
+### P2 三项优化 (2026-05-25)
+
+1. **P2-1**: 报价引擎一键生成（含退税自动计算+利润明细）→ `P2QuoteOptimizer`
+2. **P2-2**: 合同模板（中东专版）自动化填充 → `P2ContractOptimizer`
+3. **P2-3**: 合规验证一键出报告 → `P2ComplianceOptimizer`
+
+---
+
+## 架构变更 (2026-05-25)
+
+### P0 自动化
+- buyer-intel 全自动化：cron爬虫(06:00/18:00) + 冷启动自动触发(工作日07:00/19:00)
+- trade-profile Agent 激活：用户画像跨模块传播
+- ABN 自动验证集成到 company-enricher
+
+### P1 模块合并 (28→18活跃) + 数据验证去重
+- `service-layer/` — 9模块统一入口（报价/产品/供应商/合同/合规/风控/支付/交易/供应链）
+- `data-verifier-dedup/` — **新增** 数据验证+去重+质量评分
+- `geo-outbound` 吸收 conversion-optimizer + cultural-adapter
+- `company-enricher` 吸收 real-data-verifier
+- `cross-border-core` 吸收 self-evolution/skill-registry/task-scheduler/data-integrator
+
+### P2 三项优化 (service-layer 内置)
+1. P2-1 选题优化 → `P2TopicOptimizer`
+2. P2-2 审核优化 → `P2ReviewOptimizer`
+3. P2-3 API 优化 → `P2ApiOptimizer`

@@ -160,3 +160,8 @@
 - openocr-python @ ~/.venvs/vlm/
 - anysearch-skill @ skills/anysearch-skill/
 - taiyi-search @ skills/taiyi-search/
+=== 2026-05-25 22:00 数据归档 ===
+- tmp/: 24 个临时文件 (May 20-21) 移至 data/archive/tmp-files-202605/
+- 剩余 2 个文件 (烘箱方案, May 22) 保留在 tmp/
+- 磁盘使用: 131G/1.8T (8%)
+---

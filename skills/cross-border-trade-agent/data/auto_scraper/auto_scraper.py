@@ -29,38 +29,39 @@ CACHE_DIR.mkdir(parents=True, exist_ok=True)
 # ═══════════════════════════════════════════
 
 def search_abn(abn: str) -> Optional[dict]:
-    """ABN Lookup 查询"""
-    import requests
+    """ABN Lookup 查询 — 使用 Scrapling 自适应爬取"""
+    from skills.scrapling_adaptor.core import smart_fetch, extract_items
     cache = CACHE_DIR / f"abn_{abn}.json"
     if cache.exists() and (time.time() - cache.stat().st_mtime) < 3600:
         return json.loads(cache.read_text())
     try:
         url = f"https://abr.business.gov.au/Search/ResultsActive?SearchText={abn}"
-        resp = requests.get(url, timeout=10, headers={"User-Agent": "Mozilla/5.0 (TaiyiTradeBot/1.0)"})
-        if resp.status_code == 200:
-            rows = re.findall(r'<tr[^>]*>([\s\S]*?)</tr>', resp.text)
+        result = smart_fetch(url, timeout=10)
+        if result["status"] == 200:
+            html = result["body"]
+            rows = __import__('re').findall(r'<tr[^>]*>([\s\S]*?)</tr>', html)
             for row in rows:
-                cells = re.findall(r'<t[dh][^>]*>([\s\S]*?)</t[dh]>', row)
+                cells = __import__('re').findall(r'<t[dh][^>]*>([\s\S]*?)</t[dh]>', row)
                 if len(cells) >= 2:
-                    raw_abn = re.sub(r'<[^>]+>', '', cells[0]).strip()
-                    name = re.sub(r'<[^>]+>', '', cells[1]).strip()
-                    clean = re.sub(r'\D', '', raw_abn)
+                    raw_abn = __import__('re').sub(r'<[^>]+>', '', cells[0]).strip()
+                    name = __import__('re').sub(r'<[^>]+>', '', cells[1]).strip()
+                    clean = __import__('re').sub(r'\D', '', raw_abn)
                     if clean and len(clean) >= 9:
-                        result = {"Abn": clean, "Name": name, "AbnStatus": "Active"}
-                        cache.write_text(json.dumps(result, indent=2))
-                        return result
+                        result_data = {"Abn": clean, "Name": name, "AbnStatus": "Active"}
+                        cache.write_text(json.dumps(result_data, indent=2))
+                        return result_data
     except Exception as e:
         pass
     return None
 
 
 def exchange_rate() -> Optional[float]:
-    """今日 CNY→AUD 汇率"""
-    import requests
+    """今日 CNY→AUD 汇率 — 使用 Scrapling"""
+    from skills.scrapling_adaptor.core import smart_fetch
     try:
-        r = requests.get("https://api.frankfurter.app/latest?from=CNY&to=AUD", timeout=10)
-        if r.status_code == 200:
-            return r.json()["rates"].get("AUD")
+        result = smart_fetch("https://api.frankfurter.app/latest?from=CNY&to=AUD", timeout=10)
+        if result["status"] == 200:
+            return __import__('json').loads(result["body"])["rates"].get("AUD")
     except:
         pass
     return None

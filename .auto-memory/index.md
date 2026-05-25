@@ -1,0 +1,16 @@
+{
+  "chunks": {
+    "62dd66513b54_0": {
+      "id": "62dd66513b54_0",
+      "source": "test",
+      "text": "Ukraine reconstruction: $500B opportunity",
+      "metadata": {
+        "country": "Ukraine"
+      },
+      "score": 4.041,
+      "created_at": "2026-05-25T13:50:01.551719+00:00"
+    }
+  },
+  "scores": {},
+  "updated_at": "2026-05-25T13:50:01.551917+00:00"
+}

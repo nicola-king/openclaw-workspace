@@ -58,25 +58,29 @@ def search_companies_auto(product: str, market: str) -> List[Dict]:
 
 
 def search_duckduckgo(query: str, max_results: int = 5) -> List[Dict]:
-    """DuckDuckGo搜索（不走API，直接HTML解析）"""
-    results = []
+    """反爬搜索 — 使用太一共享搜索Agent"""
     try:
-        url = f"https://html.duckduckgo.com/html/?q={quote_plus(query)}"
-        req = Request(url, headers={'User-Agent': 'Mozilla/5.0'})
-        with urlopen(req, timeout=10) as resp:
-            html = resp.read().decode('utf-8', errors='ignore')
+        import importlib.util as iu
+        path = str(Path(__file__).resolve().parent.parent.parent.parent.parent /
+                   "skills" / "shared-search-agent" / "core.py")
+        spec = iu.spec_from_file_location("shared_search", path)
+        mod = iu.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        engine = mod.get_search_engine()
         
-        # 提取结果
-        for match in re.finditer(r'<a rel="nofollow" class="result__a" href="(.*?)">(.*?)</a>', html, re.DOTALL):
-            if len(results) >= max_results:
-                break
-            link = match.group(1).strip()
-            title = re.sub(r'<[^>]+>', '', match.group(2)).strip()
-            if title and link and 'duckduckgo.com' not in link:
-                results.append({"title": title, "url": link})
-    except Exception:
-        pass
-    return results
+        # Search for company info
+        result = engine.search_company(query) if " " in query else engine.search(query)
+        
+        # Convert to expected format
+        results = []
+        for email in result.get("emails", [])[:max_results]:
+            results.append({"title": email, "url": f"mailto:{email}"})
+        for link in result.get("linkedin", [])[:max_results]:
+            results.append({"title": link.split("/")[-1] if "/" in link else link, "url": link})
+        return results
+    except Exception as e:
+        print(f"[search_duckduckgo] error: {e}")
+        return []
 
 
 def is_noise_url(url: str, title: str) -> bool:

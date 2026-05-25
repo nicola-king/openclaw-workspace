@@ -125,8 +125,8 @@ def search_name(name: str) -> list:
 
 
 def search_abn(abn: str) -> Optional[dict]:
-    """按 ABN 号查询（Web 搜索）"""
-    import requests
+    """按 ABN 号查询（Web 搜索）— 使用 Scrapling 自适应爬取"""
+    from skills.scrapling_adaptor.core import smart_fetch
     cache_file = CACHE_DIR / f"abn_{abn}.json"
     if cache_file.exists():
         age = time.time() - cache_file.stat().st_mtime
@@ -135,9 +135,9 @@ def search_abn(abn: str) -> Optional[dict]:
 
     try:
         url = f"{ABN_SEARCH_URL}{abn}"
-        resp = requests.get(url, timeout=10, headers=HEADERS)
-        if resp.status_code == 200:
-            data = _extract_table_rows(resp.text)
+        result = smart_fetch(url, timeout=10)
+        if result["status"] == 200:
+            data = _extract_table_rows(result["body"])
             if data:
                 cache_file.write_text(json.dumps(data[0], indent=2))
                 return data[0]

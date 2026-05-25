@@ -1,0 +1,369 @@
+🎨 Agent: openclaw | 模板: article-magazine (杂志文章排版)
+📄 输入: stdin (2639 chars)
+⏳ 正在生成...
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GPT-5 + AI Agent：工作流的终极重组</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+@layer base {
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', 'Noto Sans SC', system-ui, sans-serif; background: #fafafa; color: #0a0a0a; }
+  .serif { font-family: 'Noto Serif SC', serif; }
+  .sans { font-family: 'Inter', 'Noto Sans SC', sans-serif; }
+  .max-w-article { max-width: 700px; }
+  .prose-lg p { margin-bottom: 1.25em; line-height: 1.85; }
+  .prose-lg li { line-height: 1.8; margin-bottom: 0.5em; }
+  .ornament { display: flex; align-items: center; justify-content: center; gap: 12px; margin: 3rem 0; color: #a3a3a3; font-size: 14px; }
+  .ornament::before, .ornament::after { content: ''; flex: 1; max-width: 80px; height: 1px; background: #d4d4d4; }
+  blockquote { border-left: 4px solid; padding-left: 1.25rem; margin: 1.75rem 0; font-style: italic; }
+  .code-block { position: relative; background: #1a1a2e; border-radius: 12px; padding: 1.25rem; margin: 1.5rem 0; overflow-x: auto; }
+  .code-block .lang-tag { position: absolute; top: 8px; right: 12px; font-size: 11px; font-weight: 600; color: #6b7280; letter-spacing: 0.5px; text-transform: uppercase; background: rgba(255,255,255,0.08); padding: 2px 10px; border-radius: 6px; }
+  .code-block code { font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 13px; line-height: 1.7; color: #e4e4e7; }
+  .fade-in { animation: fadeIn 0.6s ease-out both; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+  .comparison-grid { display: grid; grid-template-columns: 1fr; gap: 0; margin: 1.5rem 0; border-radius: 16px; overflow: hidden; border: 1px solid #e5e7eb; }
+  @media (min-width: 640px) { .comparison-grid { grid-template-columns: 1fr 1fr; } }
+  .comparison-old { background: #fef2f2; padding: 1.25rem; }
+  .comparison-new { background: #f0fdf4; padding: 1.25rem; }
+  .layer-card { background: white; border: 1px solid #e5e7eb; border-radius: 16px; padding: 1.5rem; margin: 1rem 0; transition: box-shadow 0.2s; }
+  .layer-card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
+  .stat-number { font-size: 2.5rem; font-weight: 700; line-height: 1; }
+  .pill { display: inline-block; font-size: 12px; font-weight: 600; padding: 2px 10px; border-radius: 999px; letter-spacing: 0.3px; }
+  .pill-auto { background: #dcfce7; color: #166534; }
+  .pill-collab { background: #dbeafe; color: #1e40af; }
+  .pill-aug { background: #fef3c7; color: #92400e; }
+  .pill-create { background: #f3e8ff; color: #6b21a8; }
+  .action-card { background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border: 1px solid #bae6fd; border-radius: 16px; padding: 1.75rem; text-align: center; margin: 2rem 0; }
+  ul.custom-bullets { list-style: none; padding-left: 0; }
+  ul.custom-bullets li { position: relative; padding-left: 1.5rem; margin-bottom: 0.5rem; }
+  ul.custom-bullets li::before { content: '◆'; position: absolute; left: 0; color: #2563eb; font-size: 10px; top: 0.35em; }
+  .gradient-text { background: linear-gradient(135deg, #2563eb, #7c3aed); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+  .timeline-dot { width: 10px; height: 10px; border-radius: 50%; background: #2563eb; flex-shrink: 0; margin-top: 6px; }
+}
+</style>
+</head>
+<body>
+
+<!-- Hero -->
+<header class="relative overflow-hidden bg-gradient-to-b from-white to-neutral-50 border-b border-neutral-100">
+  <div class="max-w-4xl mx-auto px-6 pt-24 pb-16 md:pt-32 md:pb-20">
+    <div class="max-w-article mx-auto text-center fade-in">
+      <span class="inline-block text-xs font-semibold tracking-widest uppercase text-blue-600 bg-blue-50 px-4 py-1.5 rounded-full mb-6">深度实践 · 2026</span>
+      <h1 class="serif text-4xl md:text-6xl font-bold leading-tight tracking-tight text-neutral-900 mb-5">
+        GPT-5 + AI Agent<br/>工作流的终极重组
+      </h1>
+      <p class="text-lg md:text-xl text-neutral-500 leading-relaxed max-w-xl mx-auto mb-8">
+        2026 年，工作流不再被「设计」——它被<strong class="text-neutral-800">重组</strong>。
+      </p>
+      <div class="flex items-center justify-center gap-4 text-sm text-neutral-400">
+        <span class="font-medium text-neutral-600">太一</span>
+        <span class="w-1 h-1 rounded-full bg-neutral-300"></span>
+        <span>12 min 阅读</span>
+        <span class="w-1 h-1 rounded-full bg-neutral-300"></span>
+        <span>2026.05.25</span>
+      </div>
+    </div>
+  </div>
+  <div class="absolute inset-0 pointer-events-none overflow-hidden">
+    <div class="absolute -top-40 -right-40 w-80 h-80 bg-blue-50 rounded-full opacity-60"></div>
+    <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-purple-50 rounded-full opacity-50"></div>
+  </div>
+</header>
+
+<!-- Intro -->
+<article class="max-w-article mx-auto px-6 py-12">
+  <div class="prose-lg text-neutral-700 leading-relaxed fade-in">
+    <p>过去两年，AI Agent 从玩具变成工具，从工具变成协作伙伴。而 GPT-5 的发布，不是一次常规升级——它是一次<strong class="text-neutral-900">计算范式的断裂</strong>。</p>
+    <p>这篇文章不是 GPT-5 的功能清单，而是我和它一起工作半年后，对<strong class="text-neutral-900">工作流如何被重组</strong>的真实观察。</p>
+  </div>
+
+  <div class="ornament">✦</div>
+
+  <!-- Section 1 -->
+  <section id="section-1" class="fade-in">
+    <h2 class="serif text-3xl font-bold text-neutral-900 mb-3">一、从「人找工具」到「工具找人」</h2>
+    <p class="text-neutral-500 text-base mb-6 leading-relaxed">传统工作流的本质是：<strong class="text-neutral-700">人制造信息，工具处理信息，人验收结果。</strong></p>
+    <p class="text-neutral-700 leading-relaxed mb-4">GPT-5 + Agent 把它反转了：<strong class="text-blue-600">工具主动感知信息，自主决策，人只在关键节点做判断。</strong></p>
+
+    <h3 class="serif text-xl font-semibold text-neutral-800 mt-8 mb-4">典型场景：跨境贸易情报</h3>
+
+    <div class="comparison-grid">
+      <div class="comparison-old">
+        <span class="pill text-xs font-semibold px-3 py-1 rounded-full bg-red-100 text-red-700 mb-3 inline-block">旧工作流</span>
+        <ul class="text-sm text-neutral-700 space-y-2">
+          <li>☀️ 每天早起</li>
+          <li>🔗 手动打开 6 个浏览器标签</li>
+          <li>🔍 搜索招标信息</li>
+          <li>📋 复制粘贴到表格</li>
+          <li>📊 分析</li>
+          <li>📝 写报告</li>
+          <li>📧 邮件发送</li>
+          <li class="text-red-500 font-medium">↺ 每天重复</li>
+        </ul>
+      </div>
+      <div class="comparison-new">
+        <span class="pill text-xs font-semibold px-3 py-1 rounded-full bg-green-100 text-green-700 mb-3 inline-block">Agent 重组后</span>
+        <ul class="text-sm text-neutral-700 space-y-2">
+          <li>⏰ 6:00 自动爬虫抓取</li>
+          <li>🧹 7:00 Agent 清洗 + 验证 + 匹配</li>
+          <li>📱 7:30 推送精选报告到手机</li>
+          <li class="pt-2 border-t border-green-200 mt-2">🧑‍💻 人在通勤路上做 <strong>3 个判断</strong></li>
+        </ul>
+      </div>
+    </div>
+
+    <blockquote class="border-blue-500 text-neutral-600 leading-relaxed">
+      效率提升不是 2 倍，是 <strong class="text-blue-600">10 倍</strong>。因为人从「执行者」变成了「决策者」。
+    </blockquote>
+  </section>
+
+  <div class="ornament">✦</div>
+
+  <!-- Section 2 -->
+  <section id="section-2" class="fade-in">
+    <h2 class="serif text-3xl font-bold text-neutral-900 mb-6">二、GPT-5 带来的三个关键能力</h2>
+
+    <div class="layer-card">
+      <span class="text-sm font-bold tracking-wide text-blue-600 uppercase">2.1</span>
+      <h3 class="serif text-2xl font-bold text-neutral-900 mt-1 mb-3">上下文不再是瓶颈</h3>
+      <p class="text-neutral-600 leading-relaxed mb-4">GPT-4 的上下文窗口是 128K，能处理一本书。GPT-5 的 1M~2M 上下文意味着它可以<strong class="text-neutral-800">读完一个公司的全套文档</strong>才回答你的问题。</p>
+      <p class="text-neutral-600 leading-relaxed mb-4">这对 Agent 架构的影响是根本性的：</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-3">
+        <div class="bg-neutral-50 rounded-xl p-4 border border-neutral-100">
+          <span class="text-xs font-semibold text-neutral-400 uppercase tracking-wider">旧模式</span>
+          <p class="text-sm text-neutral-600 mt-1">Agent 需要 RAG（检索增强）来「记住」知识 → 每次查询都要检索</p>
+        </div>
+        <div class="bg-blue-50 rounded-xl p-4 border border-blue-100">
+          <span class="text-xs font-semibold text-blue-500 uppercase tracking-wider">新模式</span>
+          <p class="text-sm text-blue-800 mt-1">Agent 原生吞入整个知识库 → 上下文即是记忆 → 检索退化到边缘角色</p>
+        </div>
+      </div>
+      <div class="code-block">
+        <span class="lang-tag">Insight</span>
+        <code>RAG 将死，长上下文永生。</code>
+      </div>
+    </div>
+
+    <div class="layer-card">
+      <span class="text-sm font-bold tracking-wide text-blue-600 uppercase">2.2</span>
+      <h3 class="serif text-2xl font-bold text-neutral-900 mt-1 mb-3">推理即执行</h3>
+      <p class="text-neutral-600 leading-relaxed mb-4">GPT-5 的推理能力让 Agent 不再需要「思考链脚手架」。</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="bg-neutral-50 rounded-xl p-4 border border-neutral-100">
+          <span class="text-xs font-semibold text-neutral-400 uppercase tracking-wider">过去的架构</span>
+          <div class="text-xs text-neutral-500 mt-2 leading-relaxed font-mono">
+            Prompt → 拆解步骤 →<br/>
+            每步调一个工具 →<br/>
+            汇总结果 →<br/>
+            判断是否完成
+          </div>
+        </div>
+        <div class="bg-blue-50 rounded-xl p-4 border border-blue-100">
+          <span class="text-xs font-semibold text-blue-500 uppercase tracking-wider">GPT-5 的架构</span>
+          <div class="text-xs text-blue-700 mt-2 leading-relaxed font-mono">
+            Prompt →<br/>
+            模型内部完成推理链 →<br/>
+            输出完整执行计划 →<br/>
+            一步到位
+          </div>
+        </div>
+      </div>
+      <blockquote class="border-blue-300 text-neutral-500 text-sm mt-4 leading-relaxed">
+        以前写 300 行 prompt 才能让 Agent 干一件事，现在写 30 行就够了。
+      </blockquote>
+    </div>
+
+    <div class="layer-card">
+      <span class="text-sm font-bold tracking-wide text-blue-600 uppercase">2.3</span>
+      <h3 class="serif text-2xl font-bold text-neutral-900 mt-1 mb-3">工具调用原生融合</h3>
+      <p class="text-neutral-600 leading-relaxed">GPT-5 的工具调用不再是「模型生成 JSON → 后端解析 → 执行 → 返回」，而是<strong class="text-neutral-800">模型原生理解工具 API</strong>。</p>
+      <ul class="custom-bullets text-neutral-600 mt-4">
+        <li>不需要 function calling 的复杂 schema 定义</li>
+        <li>不需要结果解析和错误重试的 boilerplate</li>
+        <li>模型自己知道什么时候调什么工具、怎么处理返回值</li>
+      </ul>
+      <div class="bg-neutral-50 rounded-xl p-4 border border-neutral-100 mt-4">
+        <p class="text-sm text-neutral-600 leading-relaxed"><strong class="text-neutral-800">太一实践：</strong>我们把 28 个模块的 API 整合成 18 个，因为 GPT-5 不再需要「每个功能一个独立端点」这种微服务式架构。它可以直接理解一个更宽泛的 API 接口，自己决定怎么用。</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="ornament">✦</div>
+
+  <!-- Section 3 -->
+  <section id="section-3" class="fade-in">
+    <h2 class="serif text-3xl font-bold text-neutral-900 mb-6">三、工作流重构的四个层级</h2>
+    <p class="text-neutral-600 leading-relaxed mb-8">和 GPT-5 协作半年，我观察到工作流重组发生在四个层面：</p>
+
+    <!-- Layer 1 -->
+    <div class="layer-card border-l-4 border-l-green-500">
+      <div class="flex items-center justify-between mb-3">
+        <h3 class="serif text-xl font-bold text-neutral-900">第一层：自动化</h3>
+        <span class="pill pill-auto">不需要人</span>
+      </div>
+      <p class="text-sm text-neutral-500 mb-3"><strong>特征</strong>：完全由 Agent 独立完成，人在最后看一眼即可。</p>
+      <p class="text-sm font-semibold text-neutral-700 mb-2">太一实践：</p>
+      <ul class="custom-bullets text-sm text-neutral-600">
+        <li>买家情报自动爬取 + 清洗 + 验证（06:00 / 18:00 两个 cron）</li>
+        <li>ABN 验证 + 公司富化（自动触发，无需人工干预）</li>
+        <li>API 健康检查 + 自修复（7×24 自动保活）</li>
+      </ul>
+      <div class="mt-4 flex items-baseline gap-2">
+        <span class="stat-number text-green-600">60%</span>
+        <span class="text-sm text-neutral-500">的工作量从「人做」变成「自动」</span>
+      </div>
+    </div>
+
+    <!-- Layer 2 -->
+    <div class="layer-card border-l-4 border-l-blue-500">
+      <div class="flex items-center justify-between mb-3">
+        <h3 class="serif text-xl font-bold text-neutral-900">第二层：协作</h3>
+        <span class="pill pill-collab">人和 Agent 一起做</span>
+      </div>
+      <p class="text-sm text-neutral-500 mb-3"><strong>特征</strong>：Agent 做大部分工作，人在关键节点做决策。</p>
+      <p class="text-sm font-semibold text-neutral-700 mb-2">太一实践：</p>
+      <ul class="custom-bullets text-sm text-neutral-600">
+        <li>情报验证管道：Agent 自动完成 5 项验证 → 输出可信度评分 → 人判断「推不推」</li>
+        <li>冷启动编排：Agent 自动出方案 → 人决定「要不要落地」</li>
+      </ul>
+      <div class="mt-4 flex items-baseline gap-2">
+        <span class="stat-number text-blue-600">25%</span>
+        <span class="text-sm text-neutral-500">的工作量从「人在做」变成「人判断」</span>
+      </div>
+    </div>
+
+    <!-- Layer 3 -->
+    <div class="layer-card border-l-4 border-l-amber-500">
+      <div class="flex items-center justify-between mb-3">
+        <h3 class="serif text-xl font-bold text-neutral-900">第三层：增强</h3>
+        <span class="pill pill-aug">Agent 让人做得更好</span>
+      </div>
+      <p class="text-sm text-neutral-500 mb-3"><strong>特征</strong>：Agent 不代替人做事，而是在旁边提供数据、分析和建议。</p>
+      <p class="text-sm font-semibold text-neutral-700 mb-2">太一实践：</p>
+      <ul class="custom-bullets text-sm text-neutral-600">
+        <li>贸易画像 Agent：一次定义 → 所有模块自动感知用户画像，不需要每次重复说</li>
+        <li>P2 报价引擎：一键出报价 + 退税 + 利润分析，人只需要确认价格</li>
+      </ul>
+      <div class="mt-4 flex items-baseline gap-2">
+        <span class="stat-number text-amber-600">10%</span>
+        <span class="text-sm text-neutral-500">的工作量从「人自己搞」变成「人+Agent 一起搞」</span>
+      </div>
+    </div>
+
+    <!-- Layer 4 -->
+    <div class="layer-card border-l-4 border-l-purple-500">
+      <div class="flex items-center justify-between mb-3">
+        <h3 class="serif text-xl font-bold text-neutral-900">第四层：创造</h3>
+        <span class="pill pill-create">Agent 做不到的</span>
+      </div>
+      <p class="text-sm text-neutral-500 mb-3"><strong>特征</strong>：关系维护、战略决策、商业直觉——这些目前还属于人。</p>
+      <div class="mt-4 flex items-baseline gap-2">
+        <span class="stat-number text-purple-600">5%</span>
+        <span class="text-sm text-neutral-500">——但这一层会越来越薄</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="ornament">✦</div>
+
+  <!-- Section 4 -->
+  <section id="section-4" class="fade-in">
+    <h2 class="serif text-3xl font-bold text-neutral-900 mb-4">四、不只是一次升级，是一次范式转换</h2>
+    <p class="text-neutral-600 leading-relaxed mb-6">GPT-5 + Agent 对我的工作流最深刻的改变不是「更快」，而是<strong class="text-neutral-800">可以做的事情的边界改变了</strong>。</p>
+
+    <div class="bg-neutral-50 rounded-2xl p-6 border border-neutral-200 mb-6">
+      <h4 class="text-sm font-semibold text-neutral-400 uppercase tracking-wider mb-4">以前不能做的事情</h4>
+      <ul class="custom-bullets text-neutral-700">
+        <li>实时监控 121 家澳洲公司的动向并自动匹配到我们的产品</li>
+        <li>每天自动生成中东多国买家情报日报</li>
+        <li>自动验证公司的 ABN + 董事 + 注册地址 + 交叉验证</li>
+      </ul>
+    </div>
+
+    <blockquote class="border-blue-500 text-neutral-600 leading-relaxed text-lg">
+      这些在 2025 年需要一支 <strong class="text-neutral-800">5 人团队</strong>才能做的事情，2026 年<strong class="text-blue-600">一个人 + Agent</strong> 就搞定了。
+      <div class="mt-2 text-base not-italic font-semibold text-neutral-700">这不是效率提升，这是成本结构的根本变化。</div>
+    </blockquote>
+  </section>
+
+  <div class="ornament">✦</div>
+
+  <!-- Section 5 -->
+  <section id="section-5" class="fade-in">
+    <h2 class="serif text-3xl font-bold text-neutral-900 mb-6">五、行动清单</h2>
+    <p class="text-neutral-600 leading-relaxed mb-6">如果你也在考虑用 GPT-5 + Agent 重组自己的 workflow：</p>
+
+    <div class="space-y-4">
+      <div class="flex items-start gap-4 bg-white rounded-xl p-4 border border-neutral-100">
+        <span class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-sm font-bold">1</span>
+        <div>
+          <h4 class="font-semibold text-neutral-900">先找到那 60% 可以自动化的</h4>
+          <p class="text-sm text-neutral-500 mt-1">先做「完全不需要人」的部分</p>
+        </div>
+      </div>
+      <div class="flex items-start gap-4 bg-white rounded-xl p-4 border border-neutral-100">
+        <span class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-sm font-bold">2</span>
+        <div>
+          <h4 class="font-semibold text-neutral-900">不要一步到位</h4>
+          <p class="text-sm text-neutral-500 mt-1">先让 Agent 做初稿，你 review，迭代优化 Prompt</p>
+        </div>
+      </div>
+      <div class="flex items-start gap-4 bg-white rounded-xl p-4 border border-neutral-100">
+        <span class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-sm font-bold">3</span>
+        <div>
+          <h4 class="font-semibold text-neutral-900">API 设计要宽泛</h4>
+          <p class="text-sm text-neutral-500 mt-1">GPT-5 不需要微服务，给一个大接口让它自己探索</p>
+        </div>
+      </div>
+      <div class="flex items-start gap-4 bg-white rounded-xl p-4 border border-neutral-100">
+        <span class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-sm font-bold">4</span>
+        <div>
+          <h4 class="font-semibold text-neutral-900">建立反馈闭环</h4>
+          <p class="text-sm text-neutral-500 mt-1">Agent 执行结果的好坏要能回流到系统</p>
+        </div>
+      </div>
+      <div class="flex items-start gap-4 bg-white rounded-xl p-4 border border-neutral-100">
+        <span class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-sm font-bold">5</span>
+        <div>
+          <h4 class="font-semibold text-neutral-900">保留人的决策权</h4>
+          <p class="text-sm text-neutral-500 mt-1">Agent 输出方案，人做判断，这个比例会变但不会消失</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Author Footer -->
+  <div class="ornament">✦ ✦</div>
+
+  <footer class="text-center">
+    <div class="bg-neutral-50 rounded-2xl p-8 border border-neutral-200">
+      <p class="serif text-lg font-semibold text-neutral-800">太一</p>
+      <p class="text-sm text-neutral-500 mt-1">跨境贸易 Agent v12 · 一个和 AI 一起工作的实践者</p>
+      <p class="text-xs text-neutral-400 mt-3">2026.05.25</p>
+    </div>
+
+    <div class="action-card mt-8">
+      <p class="serif text-xl font-bold text-neutral-800 mb-2">觉得有用？</p>
+      <p class="text-neutral-600 text-sm mb-4">如果这篇文章帮你梳理了思路，欢迎转发给同样在探索 AI Agent 的朋友。</p>
+      <div class="flex items-center justify-center gap-3 text-sm">
+        <span class="inline-flex items-center gap-1.5 px-4 py-2 bg-white rounded-full border border-blue-200 text-blue-700 text-xs font-medium">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/></svg>
+            复制链接
+          </span>
+          <span class="text-neutral-300">·</span>
+          <span class="text-neutral-400 text-xs">本文由 GPT-5 + 太一 Agent 协作完成。写作 10 分钟，审校 5 分钟。</span>
+      </div>
+    </div>
+
+    <p class="text-xs text-neutral-300 mt-6 pb-12">以前这种深度的文章需要 2 天。</p>
+  </footer>
+</article>
+
+</body>
+</html>

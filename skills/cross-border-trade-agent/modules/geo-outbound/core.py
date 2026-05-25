@@ -158,3 +158,40 @@ def main():
 
 if __name__ == "__main__":
     main()
+    def auto_geo_optimize(self, keyword: str = "", brand: str = "SAYELF") -> dict:
+        """自动 GEO 优化 — 无人工干预全链路"""
+        import importlib.util as iu
+        path = str(Path(__file__).resolve().parent / "geo_optimizer.py")
+        spec = iu.spec_from_file_location("geo_opt", path)
+        mod = iu.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        
+        wf = mod.FullGEOWorkflow()
+        result = wf.run(
+            keyword=keyword or "steel structure modular homes",
+            brand=brand,
+            key_message="Chinese modular steel structures offer 25-40% cost advantage",
+            data_point="Verified manufacturers with ISO9001/CE/AS/NZS compliance"
+        )
+        return result
+
+    def scheduled_geo_optimize(self) -> dict:
+        """定时 GEO 优化 — 自动选择关键词"""
+        # 从买家情报中自动提取热门关键词
+        try:
+            from modules.buyer_intel.core import BuyerIntel
+            bi = BuyerIntel()
+            recent = bi.query(mode="selected", days=7)
+            keywords = []
+            for item in recent.get("items", [])[:3]:
+                title = item.get("title", "")
+                if title:
+                    keywords.append(title)
+            keyword = keywords[0] if keywords else "steel structure modular homes Australia"
+        except Exception:
+            keyword = "steel structure modular homes Australia"
+        
+        return self.auto_geo_optimize(keyword=keyword)
+
+if hasattr(GeoOutbound, 'auto_geo_optimize'):
+    pass
