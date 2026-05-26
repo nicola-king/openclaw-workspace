@@ -20,6 +20,12 @@ from typing import Optional
 
 # 脚本在 data/auto_scraper/ 下，根目录是 ../..
 SKILL_ROOT = Path(__file__).resolve().parent.parent.parent
+
+# 确保 skills 包路径可导入（SKILL_ROOT.parent = ~/workspace/skills/）
+SKILLS_DIR = str(SKILL_ROOT.parent)
+if SKILLS_DIR not in sys.path:
+    sys.path.insert(0, SKILLS_DIR)
+
 DATA_DIR = SKILL_ROOT / "data"
 CACHE_DIR = DATA_DIR / ".abn_cache"
 CACHE_DIR.mkdir(parents=True, exist_ok=True)
@@ -30,7 +36,7 @@ CACHE_DIR.mkdir(parents=True, exist_ok=True)
 
 def search_abn(abn: str) -> Optional[dict]:
     """ABN Lookup 查询 — 使用 Scrapling 自适应爬取"""
-    from skills.scrapling_adaptor.core import smart_fetch, extract_items
+    from scrapling_adaptor.core import smart_fetch, extract_items
     cache = CACHE_DIR / f"abn_{abn}.json"
     if cache.exists() and (time.time() - cache.stat().st_mtime) < 3600:
         return json.loads(cache.read_text())
@@ -57,7 +63,7 @@ def search_abn(abn: str) -> Optional[dict]:
 
 def exchange_rate() -> Optional[float]:
     """今日 CNY→AUD 汇率 — 使用 Scrapling"""
-    from skills.scrapling_adaptor.core import smart_fetch
+    from scrapling_adaptor.core import smart_fetch
     try:
         result = smart_fetch("https://api.frankfurter.app/latest?from=CNY&to=AUD", timeout=10)
         if result["status"] == 200:
