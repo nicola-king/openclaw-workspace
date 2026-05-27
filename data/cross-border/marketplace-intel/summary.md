@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-26T06:02:10.231331",
+  "fetched_at": "2026-05-27T06:01:55.692552",
   "platforms": 6,
   "list": {
     "promua": "🇺🇦 乌克兰 Prom.ua",

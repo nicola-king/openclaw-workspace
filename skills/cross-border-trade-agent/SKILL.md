@@ -36,6 +36,18 @@ status: active
 | "组建Squad/编队" | `modules/cross-border-core/` squad_orchestrator | 动态编队 |
 | "注册Skill/技能包装" | `modules/skill-registry/` registry | 技能管理 |
 | "查询Skill/有什么能力" | `modules/skill-registry/` registry.search | 技能查询 |
+| "背调/背景调查/查公司/验证客户/查域名" | `modules/background-checker/` core.check_company | 五步背调 |
+| "批量背调/查多个公司" | `modules/background-checker/` core.batch_check | 批量背调 |
+| "思维导图/关系图/可视化/画图" | `skills/drawnix/` scripts/drawnix.sh mindmap | Drawnix 可视化 |
+| "流程图/流程/供应链图" | `skills/drawnix/` scripts/drawnix.sh mermaid | Drawnix 流程图 |
+| "开发信/写邮件/英文写作/写英语" | `skills/english-level-up/` scripts/english-up.sh email | 英语写作 |
+| "润色/改英语/改英文/语法" | `skills/english-level-up/` scripts/english-up.sh polish | 英语润色 |
+| "学英语/英语学习/背单词/练口语" | `skills/english-level-up/` scripts/english-up.sh | 英语学习 |
+| "蒸馏/提炼/整理笔记/出成果/出内容" | `skills/distillation-brain/` scripts/distill.sh | 蒸馏大脑 |
+| "SEO/关键词/内容策略" | `skills/agents-marketplace/` @seo-content-* | 市场Agent |
+| "业务分析/商业分析" | `skills/agents-marketplace/` @business-analyst | 市场Agent |
+| "量化/交易策略/风控" | `skills/agents-marketplace/` @quant-analyst | 市场Agent |
+| "国家风险/市场情报/地缘政治" | `skills/world-monitor/` worldmonitor | 全球情报 |
 
 **负向规则**：
 - 冷启动（orchestrator.launch）只在用户明确说"推"或"冷启动"时触发，不猜测

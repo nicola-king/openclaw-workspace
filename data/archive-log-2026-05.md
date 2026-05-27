@@ -175,3 +175,7 @@
 - 超30天旧文件: 无
 - 措施: 无需要归档的项目
 ---
+
+## 2026-05-27 22:00 归档
+- 归档 workspace 日志文件: weixin-listener.log, heartbeat.log, cron-health.log → data/archive/tmp-logs-202605/
+- 归档 tmp/ 中未修改文件 → data/archive/tmp-files-202605/

@@ -1,38 +1,36 @@
-# 潜客搜寻日报 — 2026-05-26 Tuesday
+# 潜客搜寻报告 | 2026-05-27
 
-## 数据概览
-- **数据库总潜客数**: 139
-- **含电话**: 15 | **含邮箱**: 16 | **含网站**: 103
-- **A级质量**: 109 | **B级质量**: 17
+## 概览
+- **日期**: 2026-05-27 10:10
+- **模块**: 跨境-潜客自动搜寻（Cron 定时任务）
+- **数据库总潜客数**: 140
 
-## 今日验证潜客（139 条）
+## 搜索详情
+| 产品 | 市场 | 结果 |
+|------|------|------|
+| Smart Water Bottle | USA | fallback (搜索引擎被反爬拦截) |
+| Smart Water Bottle | UK | fallback |
+| Yoga Mat | Australia | fallback |
+| LED Desk Lamp | USA | fallback |
+| steel structure house | Australia | fallback |
 
-| # | 公司名称 | 电话 | 邮箱 | 质量 | 更新时间 |
-|---|---------|-----|------|------|---------|
-| 1 | Jewel of the Bride (吉达) | — | — | B | 2026-05-26 |
-| 2 | NEOM (THE LINE) | — | — | B | 2026-05-26 |
-| 3 | Red Sea Project | — | — | B | 2026-05-26 |
-| 4 | H&H City Tower | — | — | B | 2026-05-26 |
-| 5 | 阿布扎比-Saadiyat道路项目 | — | — | B | 2026-05-26 |
-| 6 | 迪拜2040城市计划 | — | — | B | 2026-05-26 |
-| 7 | 伊拉克21座新城计划 | — | — | B | 2026-05-26 |
-| 8 | 钢结构/模块化建筑 Australia Supplier | — | — | A+ (手动录入) | 2026-05-26 |
-| 9 | NZ Horizon Hospitality Group | — | — | A+ (手动录入) | 2026-05-25 |
-| 10 | NZ Hotel Holdings (新西兰酒店控股) | — | — | A+ (手动录入) | 2026-05-25 |
-| 11 | Meriton Group (澳洲最大酒店业主) | — | — | A+ (手动录入) | 2026-05-25 |
-| 12 | Hilton Australia (希尔顿澳洲) | — | — | A+ (手动录入) | 2026-05-25 |
-| 13 | Accor Pacific (澳洲最大酒店集团) | — | — | A+ (手动录入) | 2026-05-25 |
-| 14 | AusTender (联邦政府采购) | — | — | A+ (手动录入) | 2026-05-25 |
-| 15 | Kainga Ora (NZ政府住房署) | — | — | A+ (手动录入) | 2026-05-25 |
-| 16 | Fortescue Metals Group | — | — | A+ (手动录入) | 2026-05-25 |
-| 17 | Rio Tinto | — | — | A+ (手动录入) | 2026-05-25 |
-| 18 | BHP Billiton | — | — | A+ (手动录入) | 2026-05-25 |
-| 19 | 伊拉克21座新城计划 | — | — | A+ (手动录入) | 2026-05-25 |
-| 20 | 迪拜2040城市计划 | — | — | A+ (手动录入) | 2026-05-25 |
-| 21 | 阿布扎比-Saadiyat道路项目 | — | — | A+ (手动录入) | 2026-05-25 |
-| 22 | H&H City Tower | — | — | A+ (手动录入) | 2026-05-25 |
-| 23 | Red Sea Project | — | — | A+ (手动录入) | 2026-05-25 |
-| 24 | NEOM (THE LINE) | — | — | A+ (手动录入) | 2026-05-25 |
-| 25 | Jewel of the Bride (吉达) | — | — | A+ (手动录入) | 2026-05-25 |
+## Buyer-Intel 验证
+- **总记录**: 17
+- **已验证**: 17
+- **待审核**: 0
 
-_生成时间: 2026-05-26 10:02 | 来源: companies.db_
+## 数据库状态
+- **现存潜客**: 140 家
+
+## ⚠️ 已知问题
+1. **共享搜索 Agent 路径不匹配**: `guike-zhilu/core.py` 引用 `shared_search_service.py`，实际文件为 `core.py`
+2. **搜索引擎被反爬拦截**: Google/DuckDuckGo/Bing 均返回 CAPTCHA 或空结果
+3. **SSRF 保护**: cloudscraper 内部请求被 SSRF 保护拦截（127.0.0.1 redirect）
+
+## 建议修复
+1. `ln -s core.py shared_search_service.py` 在 shared-search-agent 目录
+2. 配置代理白名单绕过 SSRF 保护
+3. 使用 web_fetch 工具或 API 密钥方式进行搜索
+
+---
+*生成时间: 2026-05-27 10:10:06*

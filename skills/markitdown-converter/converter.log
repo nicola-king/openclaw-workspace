@@ -924,3 +924,1367 @@
 [2026-05-27 00:15:56] [INFO]   ✅ [JSON] name_MODULARIS_PTY_LTD.json → ok (5.2KB)
 [2026-05-27 00:15:57] [INFO]   ✅ [JSON] name_MODSCAPE.json → ok (2.3KB)
 [2026-05-27 00:15:57] [INFO] 转换完成: ✅ 31 成功, ⏭ 2 跳过, ❌ 1 失败
+[2026-05-27 08:15:30] [INFO] 发现 63 个待转换文件（增量）
+[2026-05-27 08:15:31] [INFO]   ✅ [JSON] sweep-f597e1ef2e5f.json → ok (13.8KB)
+[2026-05-27 08:15:32] [INFO]   ✅ [JSON] sweep-90548acc9d30.json → ok (21.7KB)
+[2026-05-27 08:15:33] [INFO]   ✅ [JSON] sweep-dd4684c7f42c.json → ok (45.5KB)
+[2026-05-27 08:15:33] [INFO]   ✅ [JSON] sweep-d6228f6c6aff.json → ok (61.0KB)
+[2026-05-27 08:15:34] [INFO]   ✅ [JSON] sweep-f1e150c291af.json → ok (55.1KB)
+[2026-05-27 08:15:35] [INFO]   ✅ [JSON] sweep-f6c887a8d0bc.json → ok (28.7KB)
+[2026-05-27 08:15:36] [INFO]   ✅ [JSON] sweep-455d6a2df1b8.json → ok (13.7KB)
+[2026-05-27 08:15:37] [INFO]   ✅ [JSON] sweep-2eac1e81fba9.json → ok (30.1KB)
+[2026-05-27 08:15:38] [INFO]   ✅ [JSON] sweep-d3efb466dba1.json → ok (47.9KB)
+[2026-05-27 08:15:38] [INFO]   ✅ [JSON] allegro_20260527.json → ok (450.0B)
+[2026-05-27 08:15:39] [INFO]   ✅ [JSON] europages_20260527.json → ok (997.0B)
+[2026-05-27 08:15:40] [INFO]   ✅ [JSON] alibaba_20260527.json → ok (1.6KB)
+[2026-05-27 08:15:41] [INFO]   ✅ [JSON] made_in_china_20260527.json → ok (1.2KB)
+[2026-05-27 08:15:42] [INFO]   ✅ [JSON] emag_20260527.json → ok (447.0B)
+[2026-05-27 08:15:43] [INFO]   ✅ [JSON] promua_20260527.json → ok (1.5KB)
+[2026-05-27 08:15:43] [INFO]   ✅ [JSON] summary.json → ok (361.0B)
+[2026-05-27 08:15:44] [INFO]   ❌ [YAML] none.yaml: failed: Traceback (most recent call last):
+  File "/home/sayelf/.local/venvs/markitdown/bin/markitdown", line 8, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/home/sayelf/.local/venvs/markitdo
+[2026-05-27 08:15:45] [INFO]   ✅ [JSON] converter_state.json → ok (184.2KB)
+[2026-05-27 08:15:46] [INFO]   ✅ [JSON] .abn_verify_results.json → ok (104.0KB)
+[2026-05-27 08:15:47] [INFO]   ✅ [JSON] auto_scraper_report.json → ok (535.0B)
+[2026-05-27 08:15:48] [INFO]   ✅ [JSON] name_AUSTRALIAN_MODULAR_COMPANY_PTY.json → ok (5.3KB)
+[2026-05-27 08:15:48] [INFO]   ✅ [JSON] name_CIMC_MODULAR_BUILDING_SYSTEMS_.json → ok (313.0B)
+[2026-05-27 08:15:50] [INFO]   ✅ [JSON] name_MODULAR_BUILDERS_PTY_LTD.json → ok (5.4KB)
+[2026-05-27 08:15:51] [INFO]   ✅ [JSON] name_BUILD_MODULAR_PTY_LTD.json → ok (3.9KB)
+[2026-05-27 08:15:52] [INFO]   ✅ [JSON] name_PREFABULOUS_HOLDINGS_PTY_LTD.json → ok (2.0KB)
+[2026-05-27 08:15:53] [INFO]   ✅ [JSON] name_BUILDKIND_MODULAR.json → ok (1022.0B)
+[2026-05-27 08:15:53] [INFO]   ✅ [JSON] name_Aus_Modular_Homes_Pty_Ltd.json → ok (5.1KB)
+[2026-05-27 08:15:54] [INFO]   ✅ [JSON] name_BUILDKIND.json → ok (2.0B)
+[2026-05-27 08:15:55] [INFO]   ✅ [JSON] name_MODULAR_BUILDINGS_AUSTRALIA_PT.json → ok (4.0KB)
+[2026-05-27 08:15:56] [INFO]   ✅ [JSON] name_AUSTRALIAN_MODULAR_BUILDINGS_P.json → ok (5.3KB)
+[2026-05-27 08:15:57] [INFO]   ✅ [JSON] name_JMB_MODULAR_BUILDING_AUSTRALIA.json → ok (2.7KB)
+[2026-05-27 08:15:58] [INFO]   ✅ [JSON] name_MODSCAPE_RESIDENTIAL_PTY_LTD.json → ok (1.3KB)
+[2026-05-27 08:15:59] [INFO]   ✅ [JSON] name_MODSCAPE_COMMERCIAL_PTY_LTD.json → ok (1.8KB)
+[2026-05-27 08:16:00] [INFO]   ✅ [JSON] name_MODULAR_GROUP_OF_COMPANIES_PTY.json → ok (5.4KB)
+[2026-05-27 08:16:01] [INFO]   ✅ [JSON] name_LUXE_MODULAR_BUILD_AUSTRALIA_P.json → ok (4.1KB)
+[2026-05-27 08:16:02] [INFO]   ✅ [JSON] name_Melbourne_Prefab_Solutions.json → ok (2.2KB)
+[2026-05-27 08:16:03] [INFO]   ✅ [JSON] name_MODULAR_BUILDING_GROUP_PTY_LTD.json → ok (3.2KB)
+[2026-05-27 08:16:04] [INFO]   ✅ [JSON] name_MODULAR_GROUP_PTY_LTD.json → ok (5.4KB)
+[2026-05-27 08:16:05] [INFO]   ✅ [JSON] name_MODSCAPE_HOLDINGS_PTY_LTD.json → ok (1.1KB)
+[2026-05-27 08:16:06] [INFO]   ✅ [JSON] name_MODSCAPE_PTY_LTD.json → ok (2.3KB)
+[2026-05-27 08:16:07] [INFO]   ✅ [JSON] name_MODSCAPE_INSTALL_PTY_LTD.json → ok (1.6KB)
+[2026-05-27 08:16:08] [INFO]   ✅ [JSON] name_CIMC.json → ok (5.3KB)
+[2026-05-27 08:16:09] [INFO]   ✅ [JSON] name_MODULAR_BUILDING_BROKERS_AUSTR.json → ok (4.2KB)
+[2026-05-27 08:16:10] [INFO]   ✅ [JSON] name_PREFAB_AUSTRALIA_PTY_LTD.json → ok (3.1KB)
+[2026-05-27 08:16:11] [INFO]   ✅ [JSON] name_BUILDKIND_MODULAR_PTY_LTD.json → ok (1022.0B)
+[2026-05-27 08:16:12] [INFO]   ✅ [JSON] name_MODULARIS_PTY_LTD.json → ok (5.2KB)
+[2026-05-27 08:16:13] [INFO]   ✅ [JSON] name_MODSCAPE.json → ok (2.3KB)
+[2026-05-27 08:16:13] [INFO] 转换完成: ✅ 46 成功, ⏭ 16 跳过, ❌ 1 失败
+[2026-05-27 16:15:35] [INFO] 发现 40 个待转换文件（增量）
+[2026-05-27 16:15:36] [INFO]   ✅ [JSON] sweep-f597e1ef2e5f.json → ok (13.8KB)
+[2026-05-27 16:15:37] [INFO]   ✅ [JSON] sweep-8c760964d3b0.json → ok (58.3KB)
+[2026-05-27 16:15:38] [INFO]   ✅ [JSON] competitor_monitor.json → ok (1.2KB)
+[2026-05-27 16:15:38] [INFO]   ✅ [JSON] alert_history.json → ok (839.0B)
+[2026-05-27 16:15:39] [INFO]   ❌ [YAML] none.yaml: failed: Traceback (most recent call last):
+  File "/home/sayelf/.local/venvs/markitdown/bin/markitdown", line 8, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/home/sayelf/.local/venvs/markitdo
+[2026-05-27 16:15:40] [INFO]   ✅ [JSON] outreach-queue-2026-05-27.json → ok (8.5KB)
+[2026-05-27 16:15:41] [INFO]   ✅ [JSON] converter_state.json → ok (184.5KB)
+[2026-05-27 16:15:42] [INFO]   ✅ [JSON] .abn_verify_results.json → ok (104.0KB)
+[2026-05-27 16:15:43] [INFO]   ✅ [JSON] auto_scraper_report.json → ok (83.0B)
+[2026-05-27 16:15:43] [INFO]   ✅ [JSON] name_AUSTRALIAN_MODULAR_COMPANY_PTY.json → ok (5.3KB)
+[2026-05-27 16:15:44] [INFO]   ✅ [JSON] name_CIMC_MODULAR_BUILDING_SYSTEMS_.json → ok (313.0B)
+[2026-05-27 16:15:45] [INFO]   ✅ [JSON] name_MODULAR_BUILDERS_PTY_LTD.json → ok (5.4KB)
+[2026-05-27 16:15:46] [INFO]   ✅ [JSON] name_BUILD_MODULAR_PTY_LTD.json → ok (3.9KB)
+[2026-05-27 16:15:47] [INFO]   ✅ [JSON] name_PREFABULOUS_HOLDINGS_PTY_LTD.json → ok (2.0KB)
+[2026-05-27 16:15:48] [INFO]   ✅ [JSON] name_Aus_Modular_Homes_Pty_Ltd.json → ok (5.1KB)
+[2026-05-27 16:15:49] [INFO]   ✅ [JSON] name_BUILDKIND.json → ok (5.1KB)
+[2026-05-27 16:15:49] [INFO]   ✅ [JSON] name_MODULAR_BUILDINGS_AUSTRALIA_PT.json → ok (4.0KB)
+[2026-05-27 16:15:50] [INFO]   ✅ [JSON] name_AUSTRALIAN_MODULAR_BUILDINGS_P.json → ok (5.3KB)
+[2026-05-27 16:15:51] [INFO]   ✅ [JSON] name_JMB_MODULAR_BUILDING_AUSTRALIA.json → ok (2.7KB)
+[2026-05-27 16:15:52] [INFO]   ✅ [JSON] name_MODSCAPE_RESIDENTIAL_PTY_LTD.json → ok (1.3KB)
+[2026-05-27 16:15:53] [INFO]   ✅ [JSON] name_MODSCAPE_COMMERCIAL_PTY_LTD.json → ok (1.8KB)
+[2026-05-27 16:15:53] [INFO]   ✅ [JSON] name_MODULAR_GROUP_OF_COMPANIES_PTY.json → ok (5.4KB)
+[2026-05-27 16:15:54] [INFO]   ✅ [JSON] name_LUXE_MODULAR_BUILD_AUSTRALIA_P.json → ok (4.1KB)
+[2026-05-27 16:15:55] [INFO]   ✅ [JSON] name_Melbourne_Prefab_Solutions.json → ok (2.2KB)
+[2026-05-27 16:15:56] [INFO]   ✅ [JSON] name_MODULAR_BUILDING_GROUP_PTY_LTD.json → ok (3.2KB)
+[2026-05-27 16:15:57] [INFO]   ✅ [JSON] name_MODULAR_GROUP_PTY_LTD.json → ok (5.4KB)
+[2026-05-27 16:15:57] [INFO]   ✅ [JSON] name_MODSCAPE_HOLDINGS_PTY_LTD.json → ok (1.1KB)
+[2026-05-27 16:15:58] [INFO]   ✅ [JSON] name_MODSCAPE_PTY_LTD.json → ok (2.3KB)
+[2026-05-27 16:15:59] [INFO]   ✅ [JSON] name_MODSCAPE_INSTALL_PTY_LTD.json → ok (1.6KB)
+[2026-05-27 16:16:00] [INFO]   ✅ [JSON] name_MODULAR_BUILDING_BROKERS_AUSTR.json → ok (4.2KB)
+[2026-05-27 16:16:01] [INFO]   ✅ [JSON] name_PREFAB_AUSTRALIA_PTY_LTD.json → ok (3.1KB)
+[2026-05-27 16:16:02] [INFO]   ✅ [JSON] name_BUILDKIND_MODULAR_PTY_LTD.json → ok (1022.0B)
+[2026-05-27 16:16:02] [INFO]   ✅ [JSON] name_MODULARIS_PTY_LTD.json → ok (5.2KB)
+[2026-05-27 16:16:03] [INFO]   ✅ [JSON] name_CIMC_MODULAR.json → ok (906.0B)
+[2026-05-27 16:16:04] [INFO]   ✅ [JSON] name_MODSCAPE.json → ok (2.3KB)
+[2026-05-27 16:16:04] [INFO] 转换完成: ✅ 34 成功, ⏭ 5 跳过, ❌ 1 失败
+[2026-05-28 00:15:36] [INFO] 发现 922 个待转换文件（增量）
+[2026-05-28 00:15:38] [INFO]   ❌ [HTML] live-channels.html: failed: unknown error
+[2026-05-28 00:15:39] [INFO]   ✅ [HTML] brief-palette-playground.html → ok (4.2KB)
+[2026-05-28 00:15:40] [INFO]   ✅ [YAML] docker-compose.yml → ok (4.3KB)
+[2026-05-28 00:15:41] [INFO]   ✅ [JSON] vercel.json → ok (12.5KB)
+[2026-05-28 00:15:42] [INFO]   ✅ [JSON] biome.json → ok (2.4KB)
+[2026-05-28 00:15:43] [INFO]   ✅ [HTML] mcp-grant.html → ok (683.0B)
+[2026-05-28 00:15:44] [INFO]   ✅ [JSON] tsconfig.api.json → ok (179.0B)
+[2026-05-28 00:15:45] [INFO]   ✅ [JSON] package.json → ok (9.1KB)
+[2026-05-28 00:15:46] [INFO]   ✅ [HTML] index.html → ok (4.2KB)
+[2026-05-28 00:15:47] [INFO]   ✅ [JSON] tsconfig.json → ok (721.0B)
+[2026-05-28 00:15:48] [INFO]   ✅ [JSON] package-lock.json → ok (872.6KB)
+[2026-05-28 00:15:49] [INFO]   ✅ [HTML] settings.html → ok (43.0B)
+[2026-05-28 00:15:50] [INFO]   ✅ [JSON] telegram-channels.json → ok (13.6KB)
+[2026-05-28 00:15:51] [INFO]   ✅ [JSON] gamma-irradiators.json → ok (14.0KB)
+[2026-05-28 00:15:52] [INFO]   ✅ [JSON] israeli-localities-he-en.json → ok (41.0KB)
+[2026-05-28 00:15:53] [INFO]   ✅ [JSON] gamma-irradiators-raw.json → ok (8.7KB)
+[2026-05-28 00:15:54] [INFO]   ✅ [JSON] oref-threat-translations-he-en.json → ok (1.1KB)
+[2026-05-28 00:15:55] [INFO]   ✅ [JSON] world-happiness.json → ok (2.6KB)
+[2026-05-28 00:15:56] [INFO]   ✅ [JSON] conservation-wins.json → ok (10.5KB)
+[2026-05-28 00:15:57] [INFO]   ✅ [JSON] renewable-installations.json → ok (20.1KB)
+[2026-05-28 00:15:58] [INFO]   ✅ [JSON] nl.json → ok (139.2KB)
+[2026-05-28 00:15:59] [INFO]   ✅ [JSON] el.json → ok (196.2KB)
+[2026-05-28 00:16:00] [INFO]   ✅ [JSON] ro.json → ok (144.8KB)
+[2026-05-28 00:16:01] [INFO]   ✅ [JSON] pl.json → ok (144.6KB)
+[2026-05-28 00:16:02] [INFO]   ✅ [JSON] it.json → ok (142.4KB)
+[2026-05-28 00:16:03] [INFO]   ✅ [JSON] sv.json → ok (136.6KB)
+[2026-05-28 00:16:04] [INFO]   ✅ [JSON] tr.json → ok (139.4KB)
+[2026-05-28 00:16:05] [INFO]   ✅ [JSON] ar.json → ok (173.5KB)
+[2026-05-28 00:16:06] [INFO]   ✅ [JSON] en.json → ok (132.0KB)
+[2026-05-28 00:16:07] [INFO]   ✅ [JSON] cs.json → ok (144.5KB)
+[2026-05-28 00:16:08] [INFO]   ✅ [JSON] pt.json → ok (144.4KB)
+[2026-05-28 00:16:09] [INFO]   ✅ [JSON] hr.json → ok (151.8KB)
+[2026-05-28 00:16:11] [INFO]   ✅ [JSON] ja.json → ok (147.6KB)
+[2026-05-28 00:16:12] [INFO]   ✅ [JSON] ko.json → ok (140.2KB)
+[2026-05-28 00:16:13] [INFO]   ✅ [JSON] th.json → ok (230.9KB)
+[2026-05-28 00:16:14] [INFO]   ✅ [JSON] vi.json → ok (155.7KB)
+[2026-05-28 00:16:15] [INFO]   ✅ [JSON] fr.json → ok (148.4KB)
+[2026-05-28 00:16:16] [INFO]   ✅ [JSON] hu.json → ok (149.3KB)
+[2026-05-28 00:16:17] [INFO]   ✅ [JSON] ru.json → ok (195.1KB)
+[2026-05-28 00:16:18] [INFO]   ✅ [JSON] de.json → ok (141.2KB)
+[2026-05-28 00:16:19] [INFO]   ✅ [JSON] bg.json → ok (194.0KB)
+[2026-05-28 00:16:20] [INFO]   ✅ [JSON] es.json → ok (145.6KB)
+[2026-05-28 00:16:21] [INFO]   ✅ [JSON] zh.json → ok (127.8KB)
+[2026-05-28 00:16:22] [INFO]   ✅ [JSON] tauri.finance.conf.json → ok (870.0B)
+[2026-05-28 00:16:23] [INFO]   ✅ [JSON] tauri.conf.json → ok (2.6KB)
+[2026-05-28 00:16:24] [INFO]   ✅ [JSON] tauri.tech.conf.json → ok (850.0B)
+[2026-05-28 00:16:25] [INFO]   ✅ [JSON] default.json → ok (239.0B)
+[2026-05-28 00:16:26] [INFO]   ✅ [JSON] youtube-login.json → ok (250.0B)
+[2026-05-28 00:16:27] [INFO]   ✅ [JSON] package.json → ok (21.0B)
+[2026-05-28 00:16:28] [INFO]   ✅ [YAML] feature_request.yml → ok (1.4KB)
+[2026-05-28 00:16:29] [INFO]   ✅ [YAML] bug_report.yml → ok (2.2KB)
+[2026-05-28 00:16:30] [INFO]   ✅ [YAML] config.yml → ok (350.0B)
+[2026-05-28 00:16:31] [INFO]   ✅ [YAML] new_data_source.yml → ok (1.8KB)
+[2026-05-28 00:16:32] [INFO]   ✅ [YAML] convex-deploy.yml → ok (5.9KB)
+[2026-05-28 00:16:33] [INFO]   ✅ [YAML] lint.yml → ok (516.0B)
+[2026-05-28 00:16:34] [INFO]   ✅ [YAML] contributor-trust.yml → ok (4.8KB)
+[2026-05-28 00:16:36] [INFO]   ✅ [YAML] build-desktop.yml → ok (20.4KB)
+[2026-05-28 00:16:37] [INFO]   ✅ [YAML] proto-check.yml → ok (2.1KB)
+[2026-05-28 00:16:38] [INFO]   ✅ [YAML] pro-bundle-freshness.yml → ok (1.8KB)
+[2026-05-28 00:16:39] [INFO]   ✅ [YAML] feed-validation.yml → ok (2.1KB)
+[2026-05-28 00:16:40] [INFO]   ✅ [YAML] test.yml → ok (4.0KB)
+[2026-05-28 00:16:41] [INFO]   ✅ [YAML] typecheck.yml → ok (1.6KB)
+[2026-05-28 00:16:42] [INFO]   ✅ [YAML] deploy-gate.yml → ok (2.6KB)
+[2026-05-28 00:16:43] [INFO]   ✅ [YAML] lint-code.yml → ok (1.7KB)
+[2026-05-28 00:16:44] [INFO]   ✅ [YAML] docker-publish.yml → ok (1.4KB)
+[2026-05-28 00:16:45] [INFO]   ✅ [YAML] test-linux-app.yml → ok (5.7KB)
+[2026-05-28 00:16:46] [INFO]   ✅ [JSON] api-route-exceptions.json → ok (29.4KB)
+[2026-05-28 00:16:47] [INFO]   ✅ [Text] llms-full.txt → ok (20.3KB)
+[2026-05-28 00:16:48] [INFO]   ✅ [Text] llms.txt → ok (8.3KB)
+[2026-05-28 00:16:49] [INFO]   ✅ [HTML] offline.html → ok (103.0B)
+[2026-05-28 00:16:50] [INFO]   ✅ [Text] robots.txt → ok (445.0B)
+[2026-05-28 00:16:51] [INFO]   ❌ [XML] sitemap.xml: failed: Traceback (most recent call last):
+  File "/home/sayelf/.local/venvs/markitdown/bin/markitdown", line 8, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/home/sayelf/.local/venvs/markitdo
+[2026-05-28 00:16:52] [INFO]   ❌ [HTML] wm-widget-sandbox.html: failed: unknown error
+[2026-05-28 00:16:53] [INFO]   ✅ [Text] a7f3e9d1b2c44e8f9a0b1c2d3e4f5a6b.txt → ok (32.0B)
+[2026-05-28 00:16:55] [INFO]   ✅ [JSON] happy-dark.json → ok (98.2KB)
+[2026-05-28 00:16:56] [INFO]   ✅ [JSON] happy-light.json → ok (98.1KB)
+[2026-05-28 00:16:57] [INFO]   ✅ [Text] security.txt → ok (298.0B)
+[2026-05-28 00:16:58] [INFO] 发现 774 个待转换文件（增量）
+[2026-05-28 00:16:58] [INFO]   [待转换] HTML: data/worldmonitor/live-channels.html
+[2026-05-28 00:16:58] [INFO]   [待转换] XML: data/worldmonitor/public/sitemap.xml
+[2026-05-28 00:16:58] [INFO]   [待转换] HTML: data/worldmonitor/public/wm-widget-sandbox.html
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/public/.well-known/agent-skills/index.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/public/.well-known/mcp/server-card.json
+[2026-05-28 00:16:58] [INFO]   [待转换] HTML: data/worldmonitor/public/pro/index.html
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/proto/buf.gen.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/proto/buf.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/convex/tsconfig.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/e2e/tsconfig.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/server/worldmonitor/resilience/v1/cohorts/g7.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/server/worldmonitor/resilience/v1/cohorts/nordics.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/server/worldmonitor/resilience/v1/cohorts/gcc.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/server/worldmonitor/resilience/v1/cohorts/microstate-territories.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/server/worldmonitor/resilience/v1/cohorts/sub-saharan-lic.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/shared/crypto.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/shared/iso2-to-region.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/shared/sectors.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/shared/crypto-sectors.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/shared/diplomacy-keywords.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/shared/commodities.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/shared/gulf.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/shared/other-tokens.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/shared/source-tiers.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/shared/stocks.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/shared/country-names.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/shared/stablecoins.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/shared/grocery-basket.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/shared/iso2-to-iso3.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/shared/un-to-iso2.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/shared/defi-tokens.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/shared/iso3-to-iso2.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/shared/etfs.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/shared/country-bboxes.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/shared/rss-allowed-domains.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/shared/ai-tokens.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/metadata.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/package.json
+[2026-05-28 00:16:58] [INFO]   [待转换] HTML: data/worldmonitor/pro-test/index.html
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/tsconfig.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/package-lock.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/src/locales/nl.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/src/locales/el.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/src/locales/ro.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/src/locales/pl.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/src/locales/it.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/src/locales/sv.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/src/locales/tr.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/src/locales/ar.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/src/locales/en.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/src/locales/cs.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/src/locales/pt.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/src/locales/ja.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/src/locales/ko.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/src/locales/th.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/src/locales/vi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/src/locales/fr.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/src/locales/ru.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/src/locales/de.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/src/locales/bg.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/src/locales/es.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/src/locales/zh.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/src/generated/tiers.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/consumer-prices-core/package.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/consumer-prices-core/tsconfig.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/consumer-prices-core/package-lock.json
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/naivas_ke.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/sainsburys_gb.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/migros_ch.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/noon_sa.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/tamimi_sa.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/ananinja_sa.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/tesco_gb.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/woolworths_au.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/carrefour_ae.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/pao_de_acucar_br.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/spinneys_ae.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/coles_au.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/lulu_ae.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/coldstorage_sg.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/adcoop_ae.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/jiomart_in.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/walmart_us.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/coop_ch.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/wholefoods_us.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/carrefour_br.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/kroger_us.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/noon_grocery_ae.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/ocado_gb.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/bigbasket_in.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/fairprice_sg.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/carrefour_sa.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/panda_sa.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/baskets/essentials_ae.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/baskets/essentials_br.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/baskets/essentials_ch.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/baskets/essentials_gb.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/baskets/essentials_sg.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/baskets/essentials_sa.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/baskets/essentials_us.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/baskets/essentials_ke.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/baskets/essentials_in.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/baskets/essentials_au.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/consumer-prices-core/configs/brands/aliases.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docker/runtime-package.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docker/runtime-package-lock.json
+[2026-05-28 00:16:58] [INFO]   [待转换] CSV: data/worldmonitor/scripts/rss-feeds-report.csv
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/jsconfig.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/package.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/railway-services.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/safe-html-baseline.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/package-lock.json
+[2026-05-28 00:16:58] [INFO]   [待转换] CSV: data/worldmonitor/scripts/need-work.csv
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/data/forecast-historical-benchmark.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/data/country-codes.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/data/cascade-rules.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/data/fuel-shortages.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/data/brief-adjacency-pairs.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/data/prediction-tags.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/data/pipelines-gas.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/data/storage-facilities.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/data/spr-policies.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/data/pipelines-oil.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/data/entity-graph.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/data/curated-bases.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/data/forecast-evaluation-benchmark.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/data/energy-crisis-policies.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/data/mirta-processed.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/data/energy-disruptions.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/shared/crypto.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/shared/iso2-to-region.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/shared/sectors.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/shared/crypto-sectors.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/shared/diplomacy-keywords.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/shared/commodities.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/shared/gulf.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/shared/other-tokens.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/shared/source-tiers.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/shared/stocks.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/shared/country-names.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/shared/package.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/shared/stablecoins.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/shared/grocery-basket.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/shared/iso2-to-iso3.json
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/scripts/shared/swf-classification-manifest.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/shared/un-to-iso2.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/shared/defi-tokens.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/shared/sovereign-status.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/shared/iso3-to-iso2.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/shared/etfs.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/shared/country-bboxes.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/shared/country-port-clusters.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/shared/rss-allowed-domains.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/shared/ai-tokens.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/blog-site/package.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/blog-site/tsconfig.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/blog-site/package-lock.json
+[2026-05-28 00:16:58] [INFO]   [待转换] Text: data/worldmonitor/blog-site/public/robots.txt
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/blog-site/.vscode/launch.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/blog-site/.vscode/extensions.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/docs.json
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/UnrestService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/WildfireService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/ThermalService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/LeadsService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/SeismologyService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/PredictionService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/ClimateService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/GivingService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/IntelligenceService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/ShippingV2Service.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/SupplyChainService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/DisplacementService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/InfrastructureService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/ShippingV2Service.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/PredictionService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/TradeService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/HealthService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/PositiveEventsService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/ThermalService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/MarketService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/EconomicService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/UnrestService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/MarketService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/ForecastService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/ScenarioService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/ResilienceService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/RadiationService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/ResilienceService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/SanctionsService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/ImageryService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/NaturalService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/IntelligenceService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/ResearchService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/CyberService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/worldmonitor.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/ScenarioService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/MaritimeService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/CyberService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/PositiveEventsService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/AviationService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/MilitaryService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/NewsService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/DisplacementService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/WildfireService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/ImageryService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/ConsumerPricesService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/NewsService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/LeadsService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/AviationService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/SupplyChainService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/MaritimeService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/WebcamService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/ClimateService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/RadiationService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/WebcamService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/ResearchService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/ConflictService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/HealthService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/MilitaryService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/ConsumerPricesService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/EconomicService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/InfrastructureService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/TradeService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/ConflictService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/GivingService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/ForecastService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/NaturalService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/SanctionsService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/SeismologyService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/methodology/indicator-sources.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/methodology/country-resilience-index/validation/benchmark-results.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/snapshots/resilience-pillar-sensitivity-2026-04-21.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/snapshots/resilience-ranking-pillar-combined-projected-2026-04-21.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/snapshots/resilience-ranking-2026-04-21.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/snapshots/resilience-ranking-live-pre-repair-2026-04-22.json
+[2026-05-28 00:16:58] [INFO]   [待转换] HTML: data/worldmonitor/tests/mobile-map-integration-harness.html
+[2026-05-28 00:16:58] [INFO]   [待转换] HTML: data/worldmonitor/tests/mobile-map-harness.html
+[2026-05-28 00:16:58] [INFO]   [待转换] HTML: data/worldmonitor/tests/runtime-harness.html
+[2026-05-28 00:16:58] [INFO]   [待转换] HTML: data/worldmonitor/tests/map-harness.html
+[2026-05-28 00:16:58] [INFO]   [待转换] HTML: data/worldmonitor/tests/fixtures/fatf-entry-page-2026-02.html
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/tests/fixtures/gem-pipelines-sample.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/tests/fixtures/resilience-audit-fixture.json
+[2026-05-28 00:16:58] [INFO]   [待转换] HTML: data/worldmonitor/tests/fixtures/fatf-greylist-2026-02.html
+[2026-05-28 00:16:58] [INFO]   [待转换] CSV: data/worldmonitor/tests/fixtures/jodi-oil-sample.csv
+[2026-05-28 00:16:58] [INFO]   [待转换] CSV: data/worldmonitor/tests/fixtures/ember-monthly-sample.csv
+[2026-05-28 00:16:58] [INFO]   [待转换] CSV: data/worldmonitor/tests/fixtures/jodi-gas-sample.csv
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/tests/fixtures/iea-stocks-sample.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/tests/fixtures/chokepoint-baselines-sample.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/tests/fixtures/portwatch-arcgis-sample.json
+[2026-05-28 00:16:58] [INFO]   [待转换] HTML: data/worldmonitor/tests/fixtures/fatf-blacklist-2026-02.html
+[2026-05-28 00:16:58] [INFO]   [待转换] CSV: data/worldmonitor/tests/fixtures/owid-energy-sample.csv
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/tests/fixtures/jmespath-samples/medium-get-conflict-events.response.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/tests/fixtures/jmespath-samples/fat-get-market-data.response.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/tests/fixtures/jmespath-samples/thin-get-chokepoint-status.response.json
+[2026-05-28 00:16:58] [INFO]   [待转换] Word: data/archive/tmp-files-202605/烘箱-技术方案_修订版.docx
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/gemini-extension.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/.markdownlint.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/tdd-workflows/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/multi-platform-apps/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/data-engineering/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/c4-architecture/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/frontend-mobile-security/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/payment-processing/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/content-marketing/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/git-pr-workflows/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/python-development/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/shell-scripting/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/debugging-toolkit/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/documentation-standards/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/accessibility-compliance/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/signed-audit-trails/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/review-agent-governance/hooks/hooks.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/review-agent-governance/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/meigen-ai-design/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/frontend-mobile-development/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/systems-programming/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/seo-technical-optimization/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/cloud-infrastructure/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/incident-response/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/dotnet-contribution/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/code-documentation/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/ship-mate/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/full-stack-orchestration/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/protect-mcp/hooks/hooks.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/protect-mcp/test/expected/receipt-schema.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/protect-mcp/test/fixtures/pretool-deny-bash-destructive.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/protect-mcp/test/fixtures/pretool-allow-bash-safe.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/protect-mcp/test/fixtures/pretool-deny-write.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/protect-mcp/test/fixtures/pretool-allow-read.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/protect-mcp/test/fixtures/posttool-signing-input.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/protect-mcp/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/hr-legal-compliance/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/unit-testing/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/error-diagnostics/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/ui-design/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/llm-application-dev/skills/prompt-engineering-patterns/assets/few-shot-examples.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/llm-application-dev/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/arm-cortex-microcontrollers/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/agent-orchestration/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/startup-business-analyst/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/quantitative-trading/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/api-scaffolding/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/error-debugging/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/seo-content-creation/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/customer-sales-automation/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/conductor/templates/track-metadata.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/conductor/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/application-performance/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/framework-migration/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/performance-testing-review/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/security-scanning/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/documentation-generation/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/seo-analysis-monitoring/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/cicd-automation/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/blockchain-web3/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/game-development/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/code-refactoring/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/developer-essentials/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/data-validation-suite/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/javascript-typescript/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/block-no-verify/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/team-collaboration/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/machine-learning-ops/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/security-compliance/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/comprehensive-review/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/distributed-debugging/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/functional-programming/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/plugin-eval/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/business-analytics/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/api-testing-observability/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/dependency-management/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/backend-development/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/deployment-validation/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/reverse-engineering/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/deployment-strategies/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/observability-monitoring/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/backend-api-security/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/jvm-languages/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/context-management/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/database-migrations/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/brand-landingpage/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/database-design/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/database-cloud-optimization/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/agent-teams/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/web-scripting/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/agents-marketplace/plugins/kubernetes-operations/skills/k8s-security-policies/assets/network-policy-template.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/agents-marketplace/plugins/kubernetes-operations/skills/k8s-manifest-generator/assets/service-template.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/agents-marketplace/plugins/kubernetes-operations/skills/k8s-manifest-generator/assets/deployment-template.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/agents-marketplace/plugins/kubernetes-operations/skills/k8s-manifest-generator/assets/configmap-template.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/kubernetes-operations/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/julia-development/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/codebase-cleanup/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/agents-marketplace/.github/FUNDING.yml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/agents-marketplace/.github/dependabot.yml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/agents-marketplace/.github/ISSUE_TEMPLATE/feature_request.yml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/agents-marketplace/.github/ISSUE_TEMPLATE/bug_report.yml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/agents-marketplace/.github/ISSUE_TEMPLATE/config.yml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/agents-marketplace/.github/ISSUE_TEMPLATE/new_subagent.yml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/agents-marketplace/.github/ISSUE_TEMPLATE/moderation_report.yml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/agents-marketplace/.github/workflows/validate.yml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/agents-marketplace/.github/workflows/code-quality.yml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/agents-marketplace/.github/workflows/claude.yml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/agents-marketplace/.github/workflows/claude-code-review.yml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/agents-marketplace/.github/workflows/eval-report.yml
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/.gemini/settings.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/.claude-plugin/marketplace.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/token-monitor/2026-05-28_0004.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/cross-border/competitors/competitor_report_20260527.json
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: voice-pro/third_party/Matcha-TTS/configs/callbacks/none.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: skills/drawnix/config/settings.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: skills/distillation-brain/config/settings.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: skills/markitdown-converter/converter_state.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: skills/cross-border-trade-agent/data/.abn_verify_results.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: skills/cross-border-trade-agent/data/auto_scraper_report.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: skills/cross-border-trade-agent/data/.abn_cache/name_AUSTRALIAN_MODULAR_COMPANY_PTY.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: skills/cross-border-trade-agent/data/.abn_cache/name_CIMC_MODULAR_BUILDING_SYSTEMS_.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: skills/cross-border-trade-agent/data/.abn_cache/name_MODULAR_BUILDERS_PTY_LTD.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: skills/cross-border-trade-agent/data/.abn_cache/name_BUILD_MODULAR_PTY_LTD.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: skills/cross-border-trade-agent/data/.abn_cache/name_PREFABULOUS_HOLDINGS_PTY_LTD.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: skills/cross-border-trade-agent/data/.abn_cache/name_Aus_Modular_Homes_Pty_Ltd.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: skills/cross-border-trade-agent/data/.abn_cache/name_BUILDKIND.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: skills/cross-border-trade-agent/data/.abn_cache/name_MODULAR_BUILDINGS_AUSTRALIA_PT.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: skills/cross-border-trade-agent/data/.abn_cache/name_AUSTRALIAN_MODULAR_BUILDINGS_P.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: skills/cross-border-trade-agent/data/.abn_cache/name_JMB_MODULAR_BUILDING_AUSTRALIA.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: skills/cross-border-trade-agent/data/.abn_cache/name_MODSCAPE_RESIDENTIAL_PTY_LTD.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: skills/cross-border-trade-agent/data/.abn_cache/name_MODSCAPE_COMMERCIAL_PTY_LTD.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: skills/cross-border-trade-agent/data/.abn_cache/name_MODULAR_GROUP_OF_COMPANIES_PTY.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: skills/cross-border-trade-agent/data/.abn_cache/name_LUXE_MODULAR_BUILD_AUSTRALIA_P.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: skills/cross-border-trade-agent/data/.abn_cache/name_Melbourne_Prefab_Solutions.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: skills/cross-border-trade-agent/data/.abn_cache/name_MODULAR_BUILDING_GROUP_PTY_LTD.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: skills/cross-border-trade-agent/data/.abn_cache/name_MODULAR_GROUP_PTY_LTD.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: skills/cross-border-trade-agent/data/.abn_cache/name_MODSCAPE_HOLDINGS_PTY_LTD.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: skills/cross-border-trade-agent/data/.abn_cache/name_MODSCAPE_PTY_LTD.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: skills/cross-border-trade-agent/data/.abn_cache/name_MODSCAPE_INSTALL_PTY_LTD.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: skills/cross-border-trade-agent/data/.abn_cache/name_CIMC.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: skills/cross-border-trade-agent/data/.abn_cache/name_MODULAR_BUILDING_BROKERS_AUSTR.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: skills/cross-border-trade-agent/data/.abn_cache/name_PREFAB_AUSTRALIA_PTY_LTD.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: skills/cross-border-trade-agent/data/.abn_cache/name_BUILDKIND_MODULAR_PTY_LTD.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: skills/cross-border-trade-agent/data/.abn_cache/name_MODULARIS_PTY_LTD.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: skills/cross-border-trade-agent/data/.abn_cache/name_MODSCAPE.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: skills/gemini-cli/config/settings.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: skills/english-level-up/config/settings.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: exports/background-check-result.json
+[2026-05-28 00:16:58] [INFO]   [待转换] PDF: exports/chongqing-export-companies-20260527.pdf
+[2026-05-28 00:16:58] [INFO]   [待转换] HTML: data/worldmonitor/live-channels.html
+[2026-05-28 00:16:58] [INFO]   [待转换] XML: data/worldmonitor/public/sitemap.xml
+[2026-05-28 00:16:58] [INFO]   [待转换] HTML: data/worldmonitor/public/wm-widget-sandbox.html
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/public/.well-known/agent-skills/index.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/public/.well-known/mcp/server-card.json
+[2026-05-28 00:16:58] [INFO]   [待转换] HTML: data/worldmonitor/public/pro/index.html
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/proto/buf.gen.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/proto/buf.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/convex/tsconfig.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/e2e/tsconfig.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/server/worldmonitor/resilience/v1/cohorts/g7.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/server/worldmonitor/resilience/v1/cohorts/nordics.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/server/worldmonitor/resilience/v1/cohorts/gcc.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/server/worldmonitor/resilience/v1/cohorts/microstate-territories.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/server/worldmonitor/resilience/v1/cohorts/sub-saharan-lic.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/shared/crypto.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/shared/iso2-to-region.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/shared/sectors.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/shared/crypto-sectors.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/shared/diplomacy-keywords.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/shared/commodities.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/shared/gulf.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/shared/other-tokens.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/shared/source-tiers.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/shared/stocks.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/shared/country-names.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/shared/stablecoins.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/shared/grocery-basket.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/shared/iso2-to-iso3.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/shared/un-to-iso2.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/shared/defi-tokens.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/shared/iso3-to-iso2.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/shared/etfs.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/shared/country-bboxes.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/shared/rss-allowed-domains.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/shared/ai-tokens.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/metadata.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/package.json
+[2026-05-28 00:16:58] [INFO]   [待转换] HTML: data/worldmonitor/pro-test/index.html
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/tsconfig.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/package-lock.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/src/locales/nl.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/src/locales/el.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/src/locales/ro.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/src/locales/pl.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/src/locales/it.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/src/locales/sv.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/src/locales/tr.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/src/locales/ar.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/src/locales/en.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/src/locales/cs.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/src/locales/pt.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/src/locales/ja.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/src/locales/ko.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/src/locales/th.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/src/locales/vi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/src/locales/fr.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/src/locales/ru.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/src/locales/de.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/src/locales/bg.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/src/locales/es.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/src/locales/zh.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/pro-test/src/generated/tiers.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/consumer-prices-core/package.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/consumer-prices-core/tsconfig.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/consumer-prices-core/package-lock.json
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/naivas_ke.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/sainsburys_gb.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/migros_ch.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/noon_sa.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/tamimi_sa.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/ananinja_sa.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/tesco_gb.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/woolworths_au.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/carrefour_ae.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/pao_de_acucar_br.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/spinneys_ae.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/coles_au.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/lulu_ae.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/coldstorage_sg.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/adcoop_ae.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/jiomart_in.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/walmart_us.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/coop_ch.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/wholefoods_us.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/carrefour_br.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/kroger_us.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/noon_grocery_ae.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/ocado_gb.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/bigbasket_in.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/fairprice_sg.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/carrefour_sa.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/retailers/panda_sa.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/baskets/essentials_ae.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/baskets/essentials_br.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/baskets/essentials_ch.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/baskets/essentials_gb.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/baskets/essentials_sg.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/baskets/essentials_sa.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/baskets/essentials_us.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/baskets/essentials_ke.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/baskets/essentials_in.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/consumer-prices-core/configs/baskets/essentials_au.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/consumer-prices-core/configs/brands/aliases.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docker/runtime-package.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docker/runtime-package-lock.json
+[2026-05-28 00:16:58] [INFO]   [待转换] CSV: data/worldmonitor/scripts/rss-feeds-report.csv
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/jsconfig.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/package.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/railway-services.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/safe-html-baseline.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/package-lock.json
+[2026-05-28 00:16:58] [INFO]   [待转换] CSV: data/worldmonitor/scripts/need-work.csv
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/data/forecast-historical-benchmark.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/data/country-codes.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/data/cascade-rules.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/data/fuel-shortages.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/data/brief-adjacency-pairs.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/data/prediction-tags.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/data/pipelines-gas.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/data/storage-facilities.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/data/spr-policies.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/data/pipelines-oil.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/data/entity-graph.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/data/curated-bases.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/data/forecast-evaluation-benchmark.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/data/energy-crisis-policies.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/data/mirta-processed.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/data/energy-disruptions.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/shared/crypto.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/shared/iso2-to-region.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/shared/sectors.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/shared/crypto-sectors.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/shared/diplomacy-keywords.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/shared/commodities.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/shared/gulf.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/shared/other-tokens.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/shared/source-tiers.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/shared/stocks.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/shared/country-names.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/shared/package.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/shared/stablecoins.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/shared/grocery-basket.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/shared/iso2-to-iso3.json
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/scripts/shared/swf-classification-manifest.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/shared/un-to-iso2.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/shared/defi-tokens.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/shared/sovereign-status.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/shared/iso3-to-iso2.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/shared/etfs.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/shared/country-bboxes.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/shared/country-port-clusters.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/shared/rss-allowed-domains.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/scripts/shared/ai-tokens.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/blog-site/package.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/blog-site/tsconfig.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/blog-site/package-lock.json
+[2026-05-28 00:16:58] [INFO]   [待转换] Text: data/worldmonitor/blog-site/public/robots.txt
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/blog-site/.vscode/launch.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/blog-site/.vscode/extensions.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/docs.json
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/UnrestService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/WildfireService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/ThermalService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/LeadsService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/SeismologyService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/PredictionService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/ClimateService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/GivingService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/IntelligenceService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/ShippingV2Service.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/SupplyChainService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/DisplacementService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/InfrastructureService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/ShippingV2Service.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/PredictionService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/TradeService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/HealthService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/PositiveEventsService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/ThermalService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/MarketService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/EconomicService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/UnrestService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/MarketService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/ForecastService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/ScenarioService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/ResilienceService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/RadiationService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/ResilienceService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/SanctionsService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/ImageryService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/NaturalService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/IntelligenceService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/ResearchService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/CyberService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/worldmonitor.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/ScenarioService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/MaritimeService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/CyberService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/PositiveEventsService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/AviationService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/MilitaryService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/NewsService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/DisplacementService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/WildfireService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/ImageryService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/ConsumerPricesService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/NewsService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/LeadsService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/AviationService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/SupplyChainService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/MaritimeService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/WebcamService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/ClimateService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/RadiationService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/WebcamService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/ResearchService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/ConflictService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/HealthService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/MilitaryService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/ConsumerPricesService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/EconomicService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/InfrastructureService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/TradeService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/ConflictService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/GivingService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/ForecastService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/NaturalService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/api/SanctionsService.openapi.json
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/api/SeismologyService.openapi.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/worldmonitor/docs/methodology/indicator-sources.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/methodology/country-resilience-index/validation/benchmark-results.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/snapshots/resilience-pillar-sensitivity-2026-04-21.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/snapshots/resilience-ranking-pillar-combined-projected-2026-04-21.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/snapshots/resilience-ranking-2026-04-21.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/docs/snapshots/resilience-ranking-live-pre-repair-2026-04-22.json
+[2026-05-28 00:16:58] [INFO]   [待转换] HTML: data/worldmonitor/tests/mobile-map-integration-harness.html
+[2026-05-28 00:16:58] [INFO]   [待转换] HTML: data/worldmonitor/tests/mobile-map-harness.html
+[2026-05-28 00:16:58] [INFO]   [待转换] HTML: data/worldmonitor/tests/runtime-harness.html
+[2026-05-28 00:16:58] [INFO]   [待转换] HTML: data/worldmonitor/tests/map-harness.html
+[2026-05-28 00:16:58] [INFO]   [待转换] HTML: data/worldmonitor/tests/fixtures/fatf-entry-page-2026-02.html
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/tests/fixtures/gem-pipelines-sample.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/tests/fixtures/resilience-audit-fixture.json
+[2026-05-28 00:16:58] [INFO]   [待转换] HTML: data/worldmonitor/tests/fixtures/fatf-greylist-2026-02.html
+[2026-05-28 00:16:58] [INFO]   [待转换] CSV: data/worldmonitor/tests/fixtures/jodi-oil-sample.csv
+[2026-05-28 00:16:58] [INFO]   [待转换] CSV: data/worldmonitor/tests/fixtures/ember-monthly-sample.csv
+[2026-05-28 00:16:58] [INFO]   [待转换] CSV: data/worldmonitor/tests/fixtures/jodi-gas-sample.csv
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/tests/fixtures/iea-stocks-sample.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/tests/fixtures/chokepoint-baselines-sample.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/tests/fixtures/portwatch-arcgis-sample.json
+[2026-05-28 00:16:58] [INFO]   [待转换] HTML: data/worldmonitor/tests/fixtures/fatf-blacklist-2026-02.html
+[2026-05-28 00:16:58] [INFO]   [待转换] CSV: data/worldmonitor/tests/fixtures/owid-energy-sample.csv
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/tests/fixtures/jmespath-samples/medium-get-conflict-events.response.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/tests/fixtures/jmespath-samples/fat-get-market-data.response.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/worldmonitor/tests/fixtures/jmespath-samples/thin-get-chokepoint-status.response.json
+[2026-05-28 00:16:58] [INFO]   [待转换] Word: data/archive/tmp-files-202605/烘箱-技术方案_修订版.docx
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/gemini-extension.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/.markdownlint.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/tdd-workflows/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/multi-platform-apps/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/data-engineering/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/c4-architecture/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/frontend-mobile-security/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/payment-processing/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/content-marketing/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/git-pr-workflows/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/python-development/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/shell-scripting/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/debugging-toolkit/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/documentation-standards/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/accessibility-compliance/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/signed-audit-trails/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/review-agent-governance/hooks/hooks.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/review-agent-governance/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/meigen-ai-design/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/frontend-mobile-development/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/systems-programming/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/seo-technical-optimization/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/cloud-infrastructure/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/incident-response/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/dotnet-contribution/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/code-documentation/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/ship-mate/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/full-stack-orchestration/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/protect-mcp/hooks/hooks.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/protect-mcp/test/expected/receipt-schema.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/protect-mcp/test/fixtures/pretool-deny-bash-destructive.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/protect-mcp/test/fixtures/pretool-allow-bash-safe.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/protect-mcp/test/fixtures/pretool-deny-write.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/protect-mcp/test/fixtures/pretool-allow-read.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/protect-mcp/test/fixtures/posttool-signing-input.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/protect-mcp/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/hr-legal-compliance/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/unit-testing/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/error-diagnostics/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/ui-design/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/llm-application-dev/skills/prompt-engineering-patterns/assets/few-shot-examples.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/llm-application-dev/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/arm-cortex-microcontrollers/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/agent-orchestration/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/startup-business-analyst/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/quantitative-trading/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/api-scaffolding/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/error-debugging/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/seo-content-creation/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/customer-sales-automation/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/conductor/templates/track-metadata.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/conductor/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/application-performance/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/framework-migration/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/performance-testing-review/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/security-scanning/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/documentation-generation/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/seo-analysis-monitoring/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/cicd-automation/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/blockchain-web3/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/game-development/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/code-refactoring/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/developer-essentials/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/data-validation-suite/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/javascript-typescript/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/block-no-verify/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/team-collaboration/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/machine-learning-ops/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/security-compliance/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/comprehensive-review/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/distributed-debugging/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/functional-programming/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/plugin-eval/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/business-analytics/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/api-testing-observability/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/dependency-management/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/backend-development/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/deployment-validation/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/reverse-engineering/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/deployment-strategies/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/observability-monitoring/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/backend-api-security/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/jvm-languages/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/context-management/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/database-migrations/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/brand-landingpage/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/database-design/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/database-cloud-optimization/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/agent-teams/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/web-scripting/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/agents-marketplace/plugins/kubernetes-operations/skills/k8s-security-policies/assets/network-policy-template.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/agents-marketplace/plugins/kubernetes-operations/skills/k8s-manifest-generator/assets/service-template.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/agents-marketplace/plugins/kubernetes-operations/skills/k8s-manifest-generator/assets/deployment-template.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/agents-marketplace/plugins/kubernetes-operations/skills/k8s-manifest-generator/assets/configmap-template.yaml
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/kubernetes-operations/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/julia-development/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/plugins/codebase-cleanup/.claude-plugin/plugin.json
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/agents-marketplace/.github/FUNDING.yml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/agents-marketplace/.github/dependabot.yml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/agents-marketplace/.github/ISSUE_TEMPLATE/feature_request.yml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/agents-marketplace/.github/ISSUE_TEMPLATE/bug_report.yml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/agents-marketplace/.github/ISSUE_TEMPLATE/config.yml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/agents-marketplace/.github/ISSUE_TEMPLATE/new_subagent.yml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/agents-marketplace/.github/ISSUE_TEMPLATE/moderation_report.yml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/agents-marketplace/.github/workflows/validate.yml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/agents-marketplace/.github/workflows/code-quality.yml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/agents-marketplace/.github/workflows/claude.yml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/agents-marketplace/.github/workflows/claude-code-review.yml
+[2026-05-28 00:16:58] [INFO]   [待转换] YAML: data/agents-marketplace/.github/workflows/eval-report.yml
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/.gemini/settings.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/agents-marketplace/.claude-plugin/marketplace.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/token-monitor/2026-05-28_0004.json
+[2026-05-28 00:16:58] [INFO]   [待转换] JSON: data/cross-border/competitors/competitor_report_20260527.json
+[2026-05-28 00:16:58] [INFO] 转换完成: ✅ 0 成功, ⏭ 0 跳过, ❌ 0 失败
+[2026-05-28 00:16:58] [INFO]   ✅ [JSON] index.json → ok (862.0B)
+[2026-05-28 00:16:59] [INFO]   ✅ [JSON] server-card.json → ok (3.0KB)
+[2026-05-28 00:17:00] [INFO]   ✅ [HTML] index.html → ok (11.4KB)
+[2026-05-28 00:17:01] [INFO]   ✅ [YAML] buf.gen.yaml → ok (1.3KB)
+[2026-05-28 00:17:02] [INFO]   ✅ [YAML] buf.yaml → ok (556.0B)
+[2026-05-28 00:17:04] [INFO]   ✅ [JSON] tsconfig.json → ok (307.0B)
+[2026-05-28 00:17:05] [INFO]   ✅ [JSON] tsconfig.json → ok (148.0B)
+[2026-05-28 00:17:06] [INFO]   ✅ [JSON] g7.json → ok (400.0B)
+[2026-05-28 00:17:07] [INFO]   ✅ [JSON] nordics.json → ok (449.0B)
+[2026-05-28 00:17:08] [INFO]   ✅ [JSON] gcc.json → ok (314.0B)
+[2026-05-28 00:17:09] [INFO]   ✅ [JSON] microstate-territories.json → ok (697.0B)
+[2026-05-28 00:17:10] [INFO]   ✅ [JSON] sub-saharan-lic.json → ok (495.0B)
+[2026-05-28 00:17:11] [INFO] 发现 1275 个待转换文件（全量）
+[2026-05-28 00:17:11] [INFO]   ✅ [JSON] crypto.json → ok (1.0KB)
+[2026-05-28 00:17:12] [INFO]   ❌ [XML] sitemap.xml: failed: Traceback (most recent call last):
+  File "/home/sayelf/.local/venvs/markitdown/bin/markitdown", line 8, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/home/sayelf/.local/venvs/markitdo
+[2026-05-28 00:17:13] [INFO]   ✅ [JSON] iso2-to-region.json → ok (4.5KB)
+[2026-05-28 00:17:14] [INFO]   ✅ [JSON] iso2-to-region.json → ok (4.5KB)
+[2026-05-28 00:17:14] [INFO]   ✅ [JSON] sectors.json → ok (594.0B)
+[2026-05-28 00:17:15] [INFO]   ✅ [JSON] crypto-sectors.json → ok (910.0B)
+[2026-05-28 00:17:16] [INFO]   ✅ [JSON] crypto-sectors.json → ok (910.0B)
+[2026-05-28 00:17:16] [INFO]   ✅ [JSON] diplomacy-keywords.json → ok (1.3KB)
+[2026-05-28 00:17:17] [INFO]   ✅ [JSON] diplomacy-keywords.json → ok (1.3KB)
+[2026-05-28 00:17:18] [INFO]   ✅ [JSON] commodities.json → ok (2.3KB)
+[2026-05-28 00:17:18] [INFO]   ✅ [JSON] commodities.json → ok (2.3KB)
+[2026-05-28 00:17:19] [INFO]   ✅ [JSON] gulf.json → ok (1.8KB)
+[2026-05-28 00:17:20] [INFO]   ✅ [JSON] gulf.json → ok (1.8KB)
+[2026-05-28 00:17:20] [INFO]   ✅ [JSON] other-tokens.json → ok (911.0B)
+[2026-05-28 00:17:21] [INFO]   ✅ [JSON] other-tokens.json → ok (911.0B)
+[2026-05-28 00:17:22] [INFO]   ✅ [JSON] source-tiers.json → ok (5.5KB)
+[2026-05-28 00:17:23] [INFO]   ✅ [JSON] stocks.json → ok (3.5KB)
+[2026-05-28 00:17:23] [INFO]   ✅ [JSON] stocks.json → ok (3.5KB)
+[2026-05-28 00:17:24] [INFO]   ✅ [JSON] country-names.json → ok (6.8KB)
+[2026-05-28 00:17:24] [INFO]   ✅ [JSON] country-names.json → ok (6.8KB)
+[2026-05-28 00:17:26] [INFO]   ✅ [JSON] stablecoins.json → ok (277.0B)
+[2026-05-28 00:17:26] [INFO]   ✅ [JSON] stablecoins.json → ok (277.0B)
+[2026-05-28 00:17:27] [INFO]   ✅ [JSON] grocery-basket.json → ok (7.0KB)
+[2026-05-28 00:17:27] [INFO]   ✅ [JSON] grocery-basket.json → ok (7.0KB)
+[2026-05-28 00:17:28] [INFO]   ✅ [JSON] iso2-to-iso3.json → ok (3.5KB)
+[2026-05-28 00:17:28] [INFO]   ✅ [JSON] iso2-to-iso3.json → ok (3.5KB)
+[2026-05-28 00:17:30] [INFO]   ✅ [JSON] un-to-iso2.json → ok (3.5KB)
+[2026-05-28 00:17:30] [INFO]   ✅ [JSON] un-to-iso2.json → ok (3.5KB)
+[2026-05-28 00:17:31] [INFO]   ✅ [JSON] defi-tokens.json → ok (999.0B)
+[2026-05-28 00:17:32] [INFO]   ✅ [JSON] defi-tokens.json → ok (999.0B)
+[2026-05-28 00:17:33] [INFO] 发现 1275 个待转换文件（全量）
+[2026-05-28 00:17:33] [INFO]   ✅ [JSON] iso3-to-iso2.json → ok (3.5KB)
+[2026-05-28 00:17:33] [INFO]   ✅ [JSON] iso3-to-iso2.json → ok (3.5KB)
+[2026-05-28 00:17:34] [INFO]   ❌ [XML] sitemap.xml: failed: Traceback (most recent call last):
+  File "/home/sayelf/.local/venvs/markitdown/bin/markitdown", line 8, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/home/sayelf/.local/venvs/markitdo
+[2026-05-28 00:17:35] [INFO]   ✅ [JSON] etfs.json → ok (506.0B)
+[2026-05-28 00:17:35] [INFO]   ✅ [JSON] etfs.json → ok (506.0B)
+[2026-05-28 00:17:36] [INFO]   ✅ [JSON] etfs.json → ok (506.0B)
+[2026-05-28 00:17:36] [INFO]   ✅ [JSON] country-bboxes.json → ok (9.4KB)
+[2026-05-28 00:17:37] [INFO]   ✅ [JSON] rss-allowed-domains.json → ok (7.0KB)
+[2026-05-28 00:17:37] [INFO]   ✅ [JSON] country-bboxes.json → ok (9.4KB)
+[2026-05-28 00:17:38] [INFO]   ✅ [JSON] rss-allowed-domains.json → ok (7.0KB)
+[2026-05-28 00:17:39] [INFO]   ✅ [JSON] ai-tokens.json → ok (1019.0B)
+[2026-05-28 00:17:39] [INFO]   ✅ [JSON] ai-tokens.json → ok (1019.0B)
+[2026-05-28 00:17:40] [INFO]   ✅ [JSON] metadata.json → ok (170.0B)
+[2026-05-28 00:17:41] [INFO]   ✅ [JSON] metadata.json → ok (170.0B)
+[2026-05-28 00:17:41] [INFO]   ✅ [JSON] metadata.json → ok (170.0B)
+[2026-05-28 00:17:42] [INFO]   ✅ [JSON] package.json → ok (835.0B)
+[2026-05-28 00:17:42] [INFO]   ✅ [JSON] package.json → ok (835.0B)
+[2026-05-28 00:17:43] [INFO]   ✅ [JSON] package.json → ok (835.0B)
+[2026-05-28 00:17:44] [INFO]   ✅ [HTML] index.html → ok (2.6KB)
+[2026-05-28 00:17:44] [INFO]   ✅ [HTML] index.html → ok (2.6KB)
+[2026-05-28 00:17:44] [INFO]   ✅ [HTML] index.html → ok (2.6KB)
+[2026-05-28 00:17:45] [INFO]   ✅ [JSON] tsconfig.json → ok (539.0B)
+[2026-05-28 00:17:46] [INFO]   ✅ [JSON] tsconfig.json → ok (539.0B)
+[2026-05-28 00:17:47] [INFO]   ✅ [JSON] package-lock.json → ok (266.7KB)
+[2026-05-28 00:17:48] [INFO]   ✅ [JSON] package-lock.json → ok (266.7KB)
+[2026-05-28 00:17:48] [INFO]   ✅ [JSON] nl.json → ok (22.7KB)
+[2026-05-28 00:17:49] [INFO]   ✅ [JSON] nl.json → ok (22.7KB)
+[2026-05-28 00:17:50] [INFO]   ✅ [JSON] el.json → ok (34.6KB)
+[2026-05-28 00:17:51] [INFO]   ✅ [JSON] ro.json → ok (24.1KB)
+[2026-05-28 00:17:52] [INFO]   ✅ [JSON] pl.json → ok (23.8KB)
+[2026-05-28 00:17:53] [INFO]   ✅ [JSON] it.json → ok (23.4KB)
+[2026-05-28 00:17:54] [INFO]   ✅ [JSON] sv.json → ok (22.7KB)
+[2026-05-28 00:17:56] [INFO]   ✅ [JSON] tr.json → ok (23.9KB)
+[2026-05-28 00:17:57] [INFO]   ✅ [JSON] ar.json → ok (30.3KB)
+[2026-05-28 00:17:58] [INFO]   ✅ [JSON] en.json → ok (22.0KB)
+[2026-05-28 00:17:59] [INFO]   ✅ [JSON] cs.json → ok (23.5KB)
+[2026-05-28 00:18:00] [INFO]   ✅ [JSON] pt.json → ok (24.1KB)
+[2026-05-28 00:18:01] [INFO]   ✅ [JSON] ja.json → ok (27.0KB)
+[2026-05-28 00:18:02] [INFO]   ✅ [JSON] ko.json → ok (23.9KB)
+[2026-05-28 00:18:03] [INFO]   ✅ [JSON] th.json → ok (41.8KB)
+[2026-05-28 00:18:04] [INFO]   ✅ [JSON] vi.json → ok (27.7KB)
+[2026-05-28 00:18:05] [INFO]   ✅ [JSON] fr.json → ok (24.9KB)
+[2026-05-28 00:18:06] [INFO]   ✅ [JSON] ru.json → ok (34.5KB)
+[2026-05-28 00:18:07] [INFO]   ✅ [JSON] de.json → ok (23.3KB)
+[2026-05-28 00:18:08] [INFO]   ✅ [JSON] bg.json → ok (34.6KB)
+[2026-05-28 00:18:09] [INFO]   ✅ [JSON] es.json → ok (24.1KB)
+[2026-05-28 00:18:10] [INFO]   ✅ [JSON] zh.json → ok (21.2KB)
+[2026-05-28 00:18:11] [INFO]   ✅ [JSON] tiers.json → ok (1.7KB)
+[2026-05-28 00:18:12] [INFO]   ✅ [JSON] package.json → ok (1018.0B)
+[2026-05-28 00:18:13] [INFO]   ✅ [JSON] tsconfig.json → ok (409.0B)
+[2026-05-28 00:18:14] [INFO]   ✅ [JSON] package-lock.json → ok (124.9KB)
+[2026-05-28 00:18:15] [INFO]   ✅ [YAML] naivas_ke.yaml → ok (461.0B)
+[2026-05-28 00:18:16] [INFO]   ✅ [YAML] sainsburys_gb.yaml → ok (531.0B)
+[2026-05-28 00:18:18] [INFO]   ✅ [YAML] migros_ch.yaml → ok (729.0B)
+[2026-05-28 00:18:18] [INFO]   ✅ [YAML] noon_sa.yaml → ok (524.0B)
+[2026-05-28 00:18:19] [INFO]   ✅ [YAML] tamimi_sa.yaml → ok (545.0B)
+[2026-05-28 00:18:20] [INFO]   ✅ [YAML] ananinja_sa.yaml → ok (631.0B)
+[2026-05-28 00:18:22] [INFO]   ✅ [YAML] tesco_gb.yaml → ok (459.0B)
+[2026-05-28 00:18:23] [INFO]   ✅ [YAML] woolworths_au.yaml → ok (479.0B)
+[2026-05-28 00:18:24] [INFO]   ✅ [YAML] carrefour_ae.yaml → ok (356.0B)
+[2026-05-28 00:18:25] [INFO]   ✅ [YAML] pao_de_acucar_br.yaml → ok (475.0B)
+[2026-05-28 00:18:26] [INFO]   ✅ [YAML] spinneys_ae.yaml → ok (350.0B)
+[2026-05-28 00:18:27] [INFO]   ✅ [YAML] coles_au.yaml → ok (452.0B)
+[2026-05-28 00:18:28] [INFO]   ✅ [YAML] lulu_ae.yaml → ok (453.0B)
+[2026-05-28 00:18:29] [INFO]   ✅ [YAML] coldstorage_sg.yaml → ok (728.0B)
+[2026-05-28 00:18:30] [INFO]   ✅ [YAML] adcoop_ae.yaml → ok (444.0B)
+[2026-05-28 00:18:31] [INFO]   ✅ [YAML] jiomart_in.yaml → ok (445.0B)
+[2026-05-28 00:18:32] [INFO]   ✅ [YAML] walmart_us.yaml → ok (433.0B)
+[2026-05-28 00:18:33] [INFO]   ✅ [YAML] coop_ch.yaml → ok (565.0B)
+[2026-05-28 00:18:34] [INFO]   ✅ [YAML] wholefoods_us.yaml → ok (801.0B)
+[2026-05-28 00:18:35] [INFO]   ✅ [YAML] carrefour_br.yaml → ok (1.5KB)
+[2026-05-28 00:18:36] [INFO]   ✅ [YAML] kroger_us.yaml → ok (429.0B)
+[2026-05-28 00:18:37] [INFO]   ✅ [YAML] noon_grocery_ae.yaml → ok (455.0B)
+[2026-05-28 00:18:38] [INFO]   ✅ [YAML] ocado_gb.yaml → ok (443.0B)
+[2026-05-28 00:18:39] [INFO]   ✅ [YAML] bigbasket_in.yaml → ok (544.0B)
+[2026-05-28 00:18:40] [INFO]   ✅ [YAML] fairprice_sg.yaml → ok (464.0B)
+[2026-05-28 00:18:41] [INFO]   ✅ [YAML] carrefour_sa.yaml → ok (601.0B)
+[2026-05-28 00:18:42] [INFO]   ✅ [YAML] panda_sa.yaml → ok (500.0B)
+[2026-05-28 00:18:43] [INFO]   ✅ [YAML] essentials_ae.yaml → ok (3.2KB)
+[2026-05-28 00:18:44] [INFO]   ✅ [YAML] essentials_br.yaml → ok (3.0KB)
+[2026-05-28 00:18:45] [INFO]   ✅ [YAML] essentials_ch.yaml → ok (3.1KB)
+[2026-05-28 00:18:46] [INFO]   ✅ [YAML] essentials_gb.yaml → ok (3.2KB)
+[2026-05-28 00:18:47] [INFO]   ✅ [YAML] essentials_sg.yaml → ok (3.3KB)
+[2026-05-28 00:18:48] [INFO]   ✅ [YAML] essentials_sa.yaml → ok (3.3KB)
+[2026-05-28 00:18:49] [INFO]   ✅ [YAML] essentials_us.yaml → ok (3.2KB)
+[2026-05-28 00:18:50] [INFO]   ✅ [YAML] essentials_ke.yaml → ok (3.2KB)
+[2026-05-28 00:18:51] [INFO]   ✅ [YAML] essentials_in.yaml → ok (3.2KB)
+[2026-05-28 00:18:52] [INFO]   ✅ [YAML] essentials_au.yaml → ok (3.2KB)
+[2026-05-28 00:18:53] [INFO]   ✅ [JSON] aliases.json → ok (953.0B)
+[2026-05-28 00:18:54] [INFO]   ✅ [JSON] runtime-package.json → ok (198.0B)
+[2026-05-28 00:18:55] [INFO]   ✅ [JSON] runtime-package-lock.json → ok (17.2KB)
+[2026-05-28 00:18:56] [INFO]   ✅ [CSV] rss-feeds-report.csv → ok (54.5KB)
+[2026-05-28 00:18:57] [INFO]   ✅ [JSON] jsconfig.json → ok (493.0B)
+[2026-05-28 00:18:58] [INFO]   ✅ [JSON] package.json → ok (794.0B)
+[2026-05-28 00:18:59] [INFO]   ✅ [JSON] railway-services.json → ok (4.9KB)
+[2026-05-28 00:19:01] [INFO]   ✅ [JSON] safe-html-baseline.json → ok (121.1KB)
+[2026-05-28 00:19:02] [INFO]   ✅ [JSON] package-lock.json → ok (154.7KB)
+[2026-05-28 00:19:03] [INFO]   ✅ [CSV] need-work.csv → ok (9.5KB)
+[2026-05-28 00:19:04] [INFO]   ✅ [JSON] forecast-historical-benchmark.json → ok (5.5KB)
+[2026-05-28 00:19:05] [INFO]   ✅ [JSON] country-codes.json → ok (16.5KB)
+[2026-05-28 00:19:06] [INFO]   ✅ [JSON] cascade-rules.json → ok (1.1KB)
+[2026-05-28 00:19:07] [INFO]   ✅ [JSON] fuel-shortages.json → ok (26.3KB)
+[2026-05-28 00:19:08] [INFO]   ✅ [JSON] brief-adjacency-pairs.json → ok (6.4KB)
+[2026-05-28 00:19:09] [INFO]   ✅ [JSON] prediction-tags.json → ok (881.0B)
+[2026-05-28 00:19:10] [INFO]   ✅ [JSON] pipelines-gas.json → ok (264.6KB)
+[2026-05-28 00:19:11] [INFO]   ✅ [JSON] storage-facilities.json → ok (129.7KB)
+[2026-05-28 00:19:12] [INFO]   ✅ [JSON] spr-policies.json → ok (19.4KB)
+[2026-05-28 00:19:13] [INFO]   ✅ [JSON] pipelines-oil.json → ok (301.7KB)
+[2026-05-28 00:19:14] [INFO]   ✅ [JSON] entity-graph.json → ok (5.8KB)
+[2026-05-28 00:19:15] [INFO]   ✅ [JSON] curated-bases.json → ok (45.8KB)
+[2026-05-28 00:19:16] [INFO]   ✅ [JSON] forecast-evaluation-benchmark.json → ok (2.5KB)
+[2026-05-28 00:19:17] [INFO]   ✅ [JSON] energy-crisis-policies.json → ok (36.9KB)
+[2026-05-28 00:19:18] [INFO]   ✅ [JSON] mirta-processed.json → ok (228.1KB)
+[2026-05-28 00:19:19] [INFO]   ✅ [JSON] energy-disruptions.json → ok (42.0KB)
+[2026-05-28 00:19:20] [INFO]   ✅ [JSON] crypto.json → ok (1.0KB)
+[2026-05-28 00:19:21] [INFO]   ✅ [JSON] iso2-to-region.json → ok (4.5KB)
+[2026-05-28 00:19:22] [INFO]   ✅ [JSON] sectors.json → ok (594.0B)
+[2026-05-28 00:19:23] [INFO]   ✅ [JSON] crypto-sectors.json → ok (910.0B)
+[2026-05-28 00:19:24] [INFO]   ✅ [JSON] diplomacy-keywords.json → ok (1.3KB)
+[2026-05-28 00:19:25] [INFO]   ✅ [JSON] commodities.json → ok (2.3KB)
+[2026-05-28 00:19:26] [INFO]   ✅ [JSON] gulf.json → ok (1.8KB)
+[2026-05-28 00:19:27] [INFO]   ✅ [JSON] other-tokens.json → ok (911.0B)
+[2026-05-28 00:19:28] [INFO]   ✅ [JSON] source-tiers.json → ok (5.5KB)
+[2026-05-28 00:19:29] [INFO]   ✅ [JSON] stocks.json → ok (3.5KB)
+[2026-05-28 00:19:31] [INFO]   ✅ [JSON] country-names.json → ok (6.8KB)
+[2026-05-28 00:19:32] [INFO]   ✅ [JSON] package.json → ok (23.0B)
+[2026-05-28 00:19:33] [INFO]   ✅ [JSON] stablecoins.json → ok (277.0B)
+[2026-05-28 00:19:34] [INFO]   ✅ [JSON] grocery-basket.json → ok (7.0KB)
+[2026-05-28 00:19:35] [INFO]   ✅ [JSON] iso2-to-iso3.json → ok (3.5KB)
+[2026-05-28 00:19:36] [INFO]   ✅ [YAML] swf-classification-manifest.yaml → ok (36.4KB)
+[2026-05-28 00:19:37] [INFO]   ✅ [JSON] un-to-iso2.json → ok (3.5KB)
+[2026-05-28 00:19:38] [INFO]   ✅ [JSON] defi-tokens.json → ok (999.0B)
+[2026-05-28 00:19:39] [INFO]   ✅ [JSON] sovereign-status.json → ok (9.2KB)
+[2026-05-28 00:19:40] [INFO]   ✅ [JSON] iso3-to-iso2.json → ok (3.5KB)
+[2026-05-28 00:19:41] [INFO]   ✅ [JSON] etfs.json → ok (506.0B)
+[2026-05-28 00:19:42] [INFO]   ✅ [JSON] country-bboxes.json → ok (9.4KB)
+[2026-05-28 00:19:43] [INFO]   ✅ [JSON] country-port-clusters.json → ok (17.1KB)
+[2026-05-28 00:19:44] [INFO]   ✅ [JSON] rss-allowed-domains.json → ok (7.0KB)
+[2026-05-28 00:19:45] [INFO]   ✅ [JSON] ai-tokens.json → ok (1019.0B)
+[2026-05-28 00:19:46] [INFO]   ✅ [JSON] package.json → ok (542.0B)
+[2026-05-28 00:19:47] [INFO]   ✅ [JSON] tsconfig.json → ok (109.0B)
+[2026-05-28 00:19:48] [INFO]   ✅ [JSON] package-lock.json → ok (181.0KB)
+[2026-05-28 00:19:49] [INFO]   ✅ [Text] robots.txt → ok (85.0B)
+[2026-05-28 00:19:50] [INFO]   ✅ [JSON] launch.json → ok (207.0B)
+[2026-05-28 00:19:51] [INFO]   ✅ [JSON] extensions.json → ok (87.0B)
+[2026-05-28 00:19:52] [INFO]   ✅ [JSON] docs.json → ok (12.2KB)
+[2026-05-28 00:19:53] [INFO]   ✅ [YAML] UnrestService.openapi.yaml → ok (15.3KB)
+[2026-05-28 00:19:54] [INFO]   ✅ [YAML] WildfireService.openapi.yaml → ok (10.0KB)
+[2026-05-28 00:19:55] [INFO]   ✅ [JSON] ThermalService.openapi.json → ok (5.0KB)
+[2026-05-28 00:19:56] [INFO]   ✅ [JSON] LeadsService.openapi.json → ok (4.8KB)
+[2026-05-28 00:19:57] [INFO]   ✅ [JSON] SeismologyService.openapi.json → ok (5.9KB)
+[2026-05-28 00:19:59] [INFO]   ✅ [JSON] PredictionService.openapi.json → ok (4.7KB)
+[2026-05-28 00:20:00] [INFO]   ✅ [YAML] ClimateService.openapi.yaml → ok (22.8KB)
+[2026-05-28 00:20:01] [INFO]   ✅ [YAML] GivingService.openapi.yaml → ok (9.9KB)
+[2026-05-28 00:20:02] [INFO]   ✅ [YAML] IntelligenceService.openapi.yaml → ok (124.5KB)
+[2026-05-28 00:20:03] [INFO]   ✅ [YAML] ShippingV2Service.openapi.yaml → ok (14.6KB)
+[2026-05-28 00:20:05] [INFO]   ✅ [JSON] SupplyChainService.openapi.json → ok (56.2KB)
+[2026-05-28 00:20:06] [INFO]   ✅ [YAML] DisplacementService.openapi.yaml → ok (16.4KB)
+[2026-05-28 00:20:07] [INFO]   ✅ [YAML] InfrastructureService.openapi.yaml → ok (41.4KB)
+[2026-05-28 00:20:08] [INFO]   ✅ [JSON] TradeService.openapi.json → ok (17.5KB)
+[2026-05-28 00:20:09] [INFO]   ✅ [JSON] HealthService.openapi.json → ok (5.3KB)
+[2026-05-28 00:20:10] [INFO]   ✅ [YAML] PositiveEventsService.openapi.yaml → ok (4.6KB)
+[2026-05-28 00:20:12] [INFO]   ✅ [JSON] MarketService.openapi.json → ok (48.7KB)
+[2026-05-28 00:20:13] [INFO]   ✅ [YAML] EconomicService.openapi.yaml → ok (94.7KB)
+[2026-05-28 00:20:14] [INFO]   ✅ [JSON] ForecastService.openapi.json → ok (15.8KB)
+[2026-05-28 00:20:15] [INFO]   ✅ [YAML] ScenarioService.openapi.yaml → ok (14.0KB)
+[2026-05-28 00:20:16] [INFO]   ✅ [JSON] ResilienceService.openapi.json → ok (8.6KB)
+[2026-05-28 00:20:17] [INFO]   ✅ [YAML] RadiationService.openapi.yaml → ok (10.6KB)
+[2026-05-28 00:20:18] [INFO]   ✅ [YAML] SanctionsService.openapi.yaml → ok (10.0KB)
+[2026-05-28 00:20:20] [INFO]   ✅ [YAML] ImageryService.openapi.yaml → ok (4.5KB)
+[2026-05-28 00:20:21] [INFO]   ✅ [JSON] NaturalService.openapi.json → ok (4.2KB)
+[2026-05-28 00:20:22] [INFO]   ✅ [YAML] ResearchService.openapi.yaml → ok (21.2KB)
+[2026-05-28 00:20:23] [INFO]   ✅ [JSON] CyberService.openapi.json → ok (8.0KB)
+[2026-05-28 00:20:25] [INFO]   ✅ [YAML] worldmonitor.openapi.yaml → ok (899.0KB)
+[2026-05-28 00:20:26] [INFO]   ✅ [JSON] MaritimeService.openapi.json → ok (12.5KB)
+[2026-05-28 00:20:27] [INFO]   ✅ [JSON] AviationService.openapi.json → ok (45.7KB)
+[2026-05-28 00:20:29] [INFO]   ✅ [YAML] MilitaryService.openapi.yaml → ok (53.5KB)
+[2026-05-28 00:20:30] [INFO]   ✅ [YAML] NewsService.openapi.yaml → ok (16.9KB)
+[2026-05-28 00:20:31] [INFO]   ✅ [YAML] ConsumerPricesService.openapi.yaml → ok (29.6KB)
+[2026-05-28 00:20:32] [INFO]   ✅ [YAML] WebcamService.openapi.yaml → ok (7.1KB)
+[2026-05-28 00:20:33] [INFO]   ✅ [JSON] ConflictService.openapi.json → ok (14.9KB)
+[2026-05-28 00:20:34] [INFO]   ✅ [YAML] indicator-sources.yaml → ok (29.2KB)
+[2026-05-28 00:20:35] [INFO]   ✅ [JSON] benchmark-results.json → ok (318.0B)
+[2026-05-28 00:20:36] [INFO]   ✅ [JSON] resilience-pillar-sensitivity-2026-04-21.json → ok (41.2KB)
+[2026-05-28 00:20:37] [INFO]   ✅ [JSON] resilience-ranking-pillar-combined-projected-2026-04-21.json → ok (14.8KB)
+[2026-05-28 00:20:38] [INFO]   ✅ [JSON] resilience-ranking-2026-04-21.json → ok (6.0KB)
+[2026-05-28 00:20:40] [INFO]   ✅ [JSON] resilience-ranking-live-pre-repair-2026-04-22.json → ok (57.4KB)
+[2026-05-28 00:20:41] [INFO]   ❌ [HTML] mobile-map-integration-harness.html: failed: unknown error
+[2026-05-28 00:20:42] [INFO]   ❌ [HTML] mobile-map-harness.html: failed: unknown error
+[2026-05-28 00:20:43] [INFO]   ✅ [HTML] runtime-harness.html → ok (15.0B)
+[2026-05-28 00:20:44] [INFO]   ❌ [HTML] map-harness.html: failed: unknown error
+[2026-05-28 00:20:47] [INFO]   ✅ [HTML] fatf-entry-page-2026-02.html → ok (13.5KB)
+[2026-05-28 00:20:48] [INFO]   ✅ [JSON] gem-pipelines-sample.json → ok (3.3KB)
+[2026-05-28 00:20:49] [INFO]   ✅ [JSON] resilience-audit-fixture.json → ok (8.8KB)
+[2026-05-28 00:20:54] [INFO]   ✅ [HTML] fatf-greylist-2026-02.html → ok (43.0KB)
+[2026-05-28 00:20:55] [INFO]   ✅ [CSV] jodi-oil-sample.csv → ok (485.0B)
+[2026-05-28 00:20:56] [INFO]   ✅ [CSV] ember-monthly-sample.csv → ok (435.0B)
+[2026-05-28 00:20:57] [INFO]   ✅ [CSV] jodi-gas-sample.csv → ok (470.0B)
+[2026-05-28 00:20:58] [INFO]   ✅ [JSON] iea-stocks-sample.json → ok (669.0B)
+[2026-05-28 00:20:59] [INFO]   ✅ [JSON] chokepoint-baselines-sample.json → ok (1011.0B)
+[2026-05-28 00:21:00] [INFO]   ✅ [JSON] portwatch-arcgis-sample.json → ok (870.0B)
+[2026-05-28 00:21:03] [INFO]   ✅ [HTML] fatf-blacklist-2026-02.html → ok (21.9KB)
+[2026-05-28 00:21:04] [INFO]   ✅ [CSV] owid-energy-sample.csv → ok (472.0B)
+[2026-05-28 00:21:05] [INFO]   ✅ [JSON] medium-get-conflict-events.response.json → ok (82.3KB)
+[2026-05-28 00:21:06] [INFO]   ✅ [JSON] fat-get-market-data.response.json → ok (370.3KB)
+[2026-05-28 00:21:07] [INFO]   ✅ [JSON] thin-get-chokepoint-status.response.json → ok (26.3KB)
+[2026-05-28 00:21:08] [INFO]   ✅ [JSON] gemini-extension.json → ok (394.0B)
+[2026-05-28 00:21:09] [INFO]   ✅ [JSON] .markdownlint.json → ok (296.0B)
+[2026-05-28 00:21:10] [INFO]   ✅ [JSON] plugin.json → ok (256.0B)
+[2026-05-28 00:21:11] [INFO]   ✅ [JSON] plugin.json → ok (278.0B)
+[2026-05-28 00:21:12] [INFO]   ✅ [JSON] plugin.json → ok (290.0B)
+[2026-05-28 00:21:13] [INFO]   ✅ [JSON] plugin.json → ok (329.0B)
+[2026-05-28 00:21:14] [INFO]   ✅ [JSON] plugin.json → ok (293.0B)
+[2026-05-28 00:21:15] [INFO]   ✅ [JSON] plugin.json → ok (298.0B)
+[2026-05-28 00:21:16] [INFO]   ✅ [JSON] plugin.json → ok (270.0B)
+[2026-05-28 00:21:17] [INFO]   ✅ [JSON] plugin.json → ok (257.0B)
+[2026-05-28 00:21:18] [INFO]   ✅ [JSON] plugin.json → ok (286.0B)
+[2026-05-28 00:21:19] [INFO]   ✅ [JSON] plugin.json → ok (290.0B)
+[2026-05-28 00:21:20] [INFO]   ✅ [JSON] plugin.json → ok (265.0B)
+[2026-05-28 00:21:22] [INFO]   ✅ [JSON] plugin.json → ok (445.0B)
+[2026-05-28 00:21:22] [INFO]   ✅ [JSON] plugin.json → ok (309.0B)
+[2026-05-28 00:21:24] [INFO]   ✅ [JSON] plugin.json → ok (399.0B)
+[2026-05-28 00:21:25] [INFO]   ✅ [JSON] hooks.json → ok (851.0B)
+[2026-05-28 00:21:26] [INFO]   ✅ [JSON] plugin.json → ok (413.0B)
+[2026-05-28 00:21:27] [INFO]   ✅ [JSON] plugin.json → ok (419.0B)
+[2026-05-28 00:21:28] [INFO]   ✅ [JSON] plugin.json → ok (266.0B)
+[2026-05-28 00:21:29] [INFO]   ✅ [JSON] plugin.json → ok (276.0B)
+[2026-05-28 00:21:30] [INFO]   ✅ [JSON] plugin.json → ok (277.0B)
+[2026-05-28 00:21:31] [INFO]   ✅ [JSON] plugin.json → ok (356.0B)
+[2026-05-28 00:21:32] [INFO]   ✅ [JSON] plugin.json → ok (261.0B)
+[2026-05-28 00:21:33] [INFO]   ✅ [JSON] plugin.json → ok (309.0B)
+[2026-05-28 00:21:34] [INFO]   ✅ [JSON] plugin.json → ok (296.0B)
+[2026-05-28 00:21:35] [INFO]   ✅ [JSON] plugin.json → ok (589.0B)
+[2026-05-28 00:21:36] [INFO]   ✅ [JSON] plugin.json → ok (269.0B)
+[2026-05-28 00:21:37] [INFO]   ✅ [JSON] hooks.json → ok (734.0B)
+[2026-05-28 00:21:38] [INFO]   ✅ [JSON] receipt-schema.json → ok (1.2KB)
+[2026-05-28 00:21:39] [INFO]   ✅ [JSON] pretool-deny-bash-destructive.json → ok (176.0B)
+[2026-05-28 00:21:40] [INFO]   ✅ [JSON] pretool-allow-bash-safe.json → ok (169.0B)
+[2026-05-28 00:21:42] [INFO]   ✅ [JSON] pretool-deny-write.json → ok (199.0B)
+[2026-05-28 00:21:43] [INFO]   ✅ [JSON] pretool-allow-read.json → ok (172.0B)
+[2026-05-28 00:21:44] [INFO]   ✅ [JSON] posttool-signing-input.json → ok (265.0B)
+[2026-05-28 00:21:45] [INFO]   ✅ [JSON] plugin.json → ok (343.0B)
+[2026-05-28 00:21:46] [INFO]   ✅ [JSON] plugin.json → ok (301.0B)
+[2026-05-28 00:21:47] [INFO]   ✅ [JSON] plugin.json → ok (258.0B)
+[2026-05-28 00:21:48] [INFO]   ✅ [JSON] plugin.json → ok (256.0B)
+[2026-05-28 00:21:49] [INFO]   ✅ [JSON] plugin.json → ok (320.0B)
+[2026-05-28 00:21:50] [INFO]   ✅ [JSON] few-shot-examples.json → ok (4.1KB)
+[2026-05-28 00:21:51] [INFO]   ✅ [JSON] plugin.json → ok (305.0B)
+[2026-05-28 00:21:52] [INFO]   ✅ [JSON] plugin.json → ok (318.0B)
+[2026-05-28 00:21:53] [INFO]   ✅ [JSON] plugin.json → ok (264.0B)
+[2026-05-28 00:21:54] [INFO]   ✅ [JSON] plugin.json → ok (316.0B)
+[2026-05-28 00:21:55] [INFO]   ✅ [JSON] plugin.json → ok (298.0B)
+[2026-05-28 00:21:56] [INFO]   ✅ [JSON] plugin.json → ok (271.0B)
+[2026-05-28 00:21:57] [INFO]   ✅ [JSON] plugin.json → ok (242.0B)
+[2026-05-28 00:21:58] [INFO]   ✅ [JSON] plugin.json → ok (258.0B)
+[2026-05-28 00:21:59] [INFO]   ✅ [JSON] plugin.json → ok (287.0B)
+[2026-05-28 00:22:00] [INFO]   ✅ [JSON] track-metadata.json → ok (199.0B)
+[2026-05-28 00:22:02] [INFO]   ✅ [JSON] plugin.json → ok (339.0B)
+[2026-05-28 00:22:03] [INFO]   ✅ [JSON] plugin.json → ok (283.0B)
+[2026-05-28 00:22:04] [INFO]   ✅ [JSON] plugin.json → ok (261.0B)
+[2026-05-28 00:22:05] [INFO]   ✅ [JSON] plugin.json → ok (269.0B)
+[2026-05-28 00:22:06] [INFO]   ✅ [JSON] plugin.json → ok (314.0B)
+[2026-05-28 00:22:07] [INFO]   ✅ [JSON] plugin.json → ok (290.0B)
+[2026-05-28 00:22:08] [INFO]   ✅ [JSON] plugin.json → ok (269.0B)
+[2026-05-28 00:22:09] [INFO]   ✅ [JSON] plugin.json → ok (294.0B)
+[2026-05-28 00:22:11] [INFO]   ✅ [JSON] plugin.json → ok (296.0B)
+[2026-05-28 00:22:12] [INFO]   ✅ [JSON] plugin.json → ok (278.0B)
+[2026-05-28 00:22:13] [INFO]   ✅ [JSON] plugin.json → ok (269.0B)
+[2026-05-28 00:22:14] [INFO]   ✅ [JSON] plugin.json → ok (343.0B)
+[2026-05-28 00:22:15] [INFO]   ✅ [JSON] plugin.json → ok (295.0B)
+[2026-05-28 00:22:16] [INFO]   ✅ [JSON] plugin.json → ok (272.0B)
+[2026-05-28 00:22:17] [INFO]   ✅ [JSON] plugin.json → ok (257.0B)
+[2026-05-28 00:22:18] [INFO]   ✅ [JSON] plugin.json → ok (270.0B)
+[2026-05-28 00:22:19] [INFO]   ✅ [JSON] plugin.json → ok (302.0B)
+[2026-05-28 00:22:20] [INFO]   ✅ [JSON] plugin.json → ok (294.0B)
+[2026-05-28 00:22:21] [INFO]   ✅ [JSON] plugin.json → ok (264.0B)
+[2026-05-28 00:22:22] [INFO]   ✅ [JSON] plugin.json → ok (243.0B)
+[2026-05-28 00:22:23] [INFO]   ✅ [JSON] plugin.json → ok (275.0B)
+[2026-05-28 00:22:24] [INFO]   ✅ [JSON] plugin.json → ok (50.0B)
+[2026-05-28 00:22:25] [INFO]   ✅ [JSON] plugin.json → ok (272.0B)
+[2026-05-28 00:22:26] [INFO]   ✅ [JSON] plugin.json → ok (296.0B)
+[2026-05-28 00:22:27] [INFO]   ✅ [JSON] plugin.json → ok (258.0B)
+[2026-05-28 00:22:28] [INFO]   ✅ [JSON] plugin.json → ok (295.0B)
+[2026-05-28 00:22:29] [INFO]   ✅ [JSON] plugin.json → ok (266.0B)
+[2026-05-28 00:22:30] [INFO]   ✅ [JSON] plugin.json → ok (366.0B)
+[2026-05-28 00:22:31] [INFO]   ✅ [JSON] plugin.json → ok (252.0B)
+[2026-05-28 00:22:32] [INFO]   ✅ [JSON] plugin.json → ok (295.0B)
+[2026-05-28 00:22:33] [INFO]   ✅ [JSON] plugin.json → ok (295.0B)
+[2026-05-28 00:22:34] [INFO]   ✅ [JSON] plugin.json → ok (268.0B)
+[2026-05-28 00:22:35] [INFO]   ✅ [JSON] plugin.json → ok (253.0B)
+[2026-05-28 00:22:37] [INFO]   ✅ [JSON] plugin.json → ok (265.0B)
+[2026-05-28 00:22:38] [INFO]   ✅ [JSON] plugin.json → ok (298.0B)
+[2026-05-28 00:22:39] [INFO]   ✅ [JSON] plugin.json → ok (257.0B)
+[2026-05-28 00:22:40] [INFO]   ✅ [JSON] plugin.json → ok (270.0B)
+[2026-05-28 00:22:41] [INFO]   ✅ [JSON] plugin.json → ok (324.0B)
+[2026-05-28 00:22:42] [INFO]   ✅ [JSON] plugin.json → ok (265.0B)
+[2026-05-28 00:22:43] [INFO]   ✅ [YAML] network-policy-template.yaml → ok (3.1KB)
+[2026-05-28 00:22:44] [INFO]   ✅ [YAML] service-template.yaml → ok (3.6KB)
+[2026-05-28 00:22:45] [INFO]   ✅ [YAML] deployment-template.yaml → ok (5.1KB)
+[2026-05-28 00:22:46] [INFO]   ✅ [YAML] configmap-template.yaml → ok (6.1KB)
+[2026-05-28 00:22:47] [INFO]   ✅ [JSON] plugin.json → ok (314.0B)
+[2026-05-28 00:22:48] [INFO]   ✅ [JSON] plugin.json → ok (342.0B)
+[2026-05-28 00:22:49] [INFO]   ✅ [JSON] plugin.json → ok (254.0B)
+[2026-05-28 00:22:50] [INFO]   ✅ [YAML] FUNDING.yml → ok (17.0B)
+[2026-05-28 00:22:51] [INFO]   ✅ [YAML] dependabot.yml → ok (1.1KB)
+[2026-05-28 00:22:52] [INFO]   ✅ [YAML] feature_request.yml → ok (3.2KB)
+[2026-05-28 00:22:53] [INFO]   ✅ [YAML] bug_report.yml → ok (3.5KB)
+[2026-05-28 00:22:54] [INFO]   ✅ [YAML] config.yml → ok (1.3KB)
+[2026-05-28 00:22:55] [INFO]   ✅ [YAML] new_subagent.yml → ok (5.1KB)
+[2026-05-28 00:22:56] [INFO]   ✅ [YAML] moderation_report.yml → ok (3.7KB)
+[2026-05-28 00:22:58] [INFO]   ✅ [YAML] validate.yml → ok (8.4KB)
+[2026-05-28 00:22:59] [INFO]   ✅ [YAML] code-quality.yml → ok (5.2KB)
+[2026-05-28 00:23:00] [INFO]   ✅ [YAML] claude.yml → ok (3.7KB)
+[2026-05-28 00:23:01] [INFO]   ✅ [YAML] claude-code-review.yml → ok (7.1KB)
+[2026-05-28 00:23:02] [INFO]   ✅ [YAML] eval-report.yml → ok (2.0KB)
+[2026-05-28 00:23:03] [INFO]   ✅ [JSON] settings.json → ok (126.0B)
+[2026-05-28 00:23:04] [INFO]   ✅ [JSON] marketplace.json → ok (39.6KB)
+[2026-05-28 00:23:05] [INFO]   ✅ [JSON] 2026-05-28_0004.json → ok (481.0B)
+[2026-05-28 00:23:06] [INFO]   ✅ [JSON] competitor_report_20260527.json → ok (2.5KB)
+[2026-05-28 00:23:07] [INFO]   ❌ [YAML] none.yaml: failed: Traceback (most recent call last):
+  File "/home/sayelf/.local/venvs/markitdown/bin/markitdown", line 8, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/home/sayelf/.local/venvs/markitdo
+[2026-05-28 00:23:08] [INFO]   ✅ [JSON] settings.json → ok (862.0B)
+[2026-05-28 00:23:09] [INFO]   ✅ [JSON] settings.json → ok (1.0KB)
+[2026-05-28 00:23:10] [INFO]   ✅ [JSON] converter_state.json → ok (221.6KB)
+[2026-05-28 00:23:11] [INFO]   ✅ [JSON] .abn_verify_results.json → ok (108.9KB)
+[2026-05-28 00:23:12] [INFO]   ✅ [JSON] auto_scraper_report.json → ok (535.0B)
+[2026-05-28 00:23:13] [INFO]   ✅ [JSON] name_AUSTRALIAN_MODULAR_COMPANY_PTY.json → ok (5.3KB)
+[2026-05-28 00:23:14] [INFO]   ✅ [JSON] name_CIMC_MODULAR_BUILDING_SYSTEMS_.json → ok (313.0B)
+[2026-05-28 00:23:15] [INFO]   ✅ [JSON] name_MODULAR_BUILDERS_PTY_LTD.json → ok (5.4KB)
+[2026-05-28 00:23:16] [INFO]   ✅ [JSON] name_BUILD_MODULAR_PTY_LTD.json → ok (3.9KB)
+[2026-05-28 00:23:17] [INFO]   ✅ [JSON] name_PREFABULOUS_HOLDINGS_PTY_LTD.json → ok (2.0KB)
+[2026-05-28 00:23:18] [INFO]   ✅ [JSON] name_Aus_Modular_Homes_Pty_Ltd.json → ok (5.1KB)
+[2026-05-28 00:23:19] [INFO]   ✅ [JSON] name_BUILDKIND.json → ok (5.1KB)
+[2026-05-28 00:23:21] [INFO]   ✅ [JSON] name_MODULAR_BUILDINGS_AUSTRALIA_PT.json → ok (4.0KB)
+[2026-05-28 00:23:21] [INFO]   ✅ [JSON] name_AUSTRALIAN_MODULAR_BUILDINGS_P.json → ok (5.3KB)
+[2026-05-28 00:23:23] [INFO]   ✅ [JSON] name_JMB_MODULAR_BUILDING_AUSTRALIA.json → ok (2.7KB)
+[2026-05-28 00:23:24] [INFO]   ✅ [JSON] name_MODSCAPE_RESIDENTIAL_PTY_LTD.json → ok (1.3KB)
+[2026-05-28 00:23:25] [INFO]   ✅ [JSON] name_MODSCAPE_COMMERCIAL_PTY_LTD.json → ok (1.8KB)
+[2026-05-28 00:23:26] [INFO]   ✅ [JSON] name_MODULAR_GROUP_OF_COMPANIES_PTY.json → ok (5.4KB)
+[2026-05-28 00:23:27] [INFO]   ✅ [JSON] name_LUXE_MODULAR_BUILD_AUSTRALIA_P.json → ok (4.1KB)
+[2026-05-28 00:23:28] [INFO]   ✅ [JSON] name_Melbourne_Prefab_Solutions.json → ok (2.2KB)
+[2026-05-28 00:23:29] [INFO]   ✅ [JSON] name_MODULAR_BUILDING_GROUP_PTY_LTD.json → ok (3.2KB)
+[2026-05-28 00:23:30] [INFO]   ✅ [JSON] name_MODULAR_GROUP_PTY_LTD.json → ok (5.4KB)
+[2026-05-28 00:23:31] [INFO]   ✅ [JSON] name_MODSCAPE_HOLDINGS_PTY_LTD.json → ok (1.1KB)
+[2026-05-28 00:23:32] [INFO]   ✅ [JSON] name_MODSCAPE_PTY_LTD.json → ok (2.3KB)
+[2026-05-28 00:23:33] [INFO]   ✅ [JSON] name_MODSCAPE_INSTALL_PTY_LTD.json → ok (1.6KB)
+[2026-05-28 00:23:34] [INFO]   ✅ [JSON] name_CIMC.json → ok (5.3KB)
+[2026-05-28 00:23:35] [INFO]   ✅ [JSON] name_MODULAR_BUILDING_BROKERS_AUSTR.json → ok (4.2KB)
+[2026-05-28 00:23:36] [INFO]   ✅ [JSON] name_PREFAB_AUSTRALIA_PTY_LTD.json → ok (3.1KB)
+[2026-05-28 00:23:37] [INFO]   ✅ [JSON] name_BUILDKIND_MODULAR_PTY_LTD.json → ok (1022.0B)
+[2026-05-28 00:23:38] [INFO]   ✅ [JSON] name_MODULARIS_PTY_LTD.json → ok (5.2KB)
+[2026-05-28 00:23:39] [INFO]   ✅ [JSON] name_MODSCAPE.json → ok (2.3KB)
+[2026-05-28 00:23:41] [INFO]   ✅ [JSON] settings.json → ok (631.0B)
+[2026-05-28 00:23:42] [INFO]   ✅ [JSON] settings.json → ok (692.0B)
+[2026-05-28 00:23:43] [INFO]   ✅ [JSON] background-check-result.json → ok (1.9KB)
+[2026-05-28 00:23:44] [INFO]   ❌ [PDF] chongqing-export-companies-20260527.pdf: failed: unknown error
+[2026-05-28 00:23:44] [INFO] 转换完成: ✅ 332 成功, ⏭ 937 跳过, ❌ 6 失败
