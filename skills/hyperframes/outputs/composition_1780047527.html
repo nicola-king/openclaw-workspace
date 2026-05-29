@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;500;700&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Noto Sans SC', sans-serif; overflow: hidden; background: #0f0f1a; }
+  #stage { position: relative; width: 1920px; height: 1080px; overflow: hidden; background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%); }
+
+  .slide {
+    position: absolute; inset: 0;
+    display: flex; align-items: center; justify-content: center;
+    opacity: 0;
+    padding: 80px;
+  }
+  .slide h1 { font-size: 64px; font-weight: 700; color: #fff; text-align: center; line-height: 1.3; }
+  .slide p { font-size: 36px; font-weight: 300; color: #ccc; text-align: center; line-height: 1.5; }
+  .slide .sub { font-size: 28px; color: #888; margin-top: 20px; }
+
+  .brand { position: absolute; bottom: 40px; right: 40px; color: #555; font-size: 18px; }
+</style>
+</head>
+<body>
+<div id="stage" data-composition-id="main" data-start="0" data-width="1920" data-height="1080">
+
+
+  <div class="slide" id="slide-title" data-start="0.5" data-duration="2" data-track-index="0" style="opacity:0">
+    <h1>生态微景观｜陶罐中的自然世界</h1>
+  </div>
+
+
+  <div class="slide" id="slide-0" data-start="2" data-duration="10" data-track-index="1" style="opacity:0">
+    <p>陶罐中的微景观生态瓶，苔藓与多肉植物共生，迷你盆景树在陶土容器中静静生长</p>
+  </div>
+
+
+  <div class="brand" data-start="0" data-duration="10" data-track-index="99">太一 · Taiyi</div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+
+
+    tl.from("#slide-title", { opacity: 0, y: 30, duration: 0.6, ease: "power2.out" }, 0.5);
+    tl.to("#slide-title", { opacity: 0, y: -20, duration: 0.4, ease: "power2.in" }, ">9.2");
+
+
+    tl.from("#slide-0", { opacity: 0, y: 30, duration: 0.6, ease: "power2.out" }, 2);
+    tl.to("#slide-0", { opacity: 0, y: -20, duration: 0.4, ease: "power2.in" }, ">9.2");
+
+
+    window.__timelines = window.__timelines || {};
+    window.__timelines.main = tl;
+  </script>
+</div>
+</body>
+</html>

@@ -66,12 +66,6 @@
     "EntityType": "Entity Name"
   },
   {
-    "Abn": "14345602313",
-    "Name": "jmb holdings",
-    "AbnStatus": "Active",
-    "EntityType": "Trading Name"
-  },
-  {
     "Abn": "54100921051",
     "Name": "AUSTRALIAN MODULAR BUILDINGS PTY LTD",
     "AbnStatus": "Active",
@@ -87,7 +81,7 @@
     "Abn": "73162681055",
     "Name": "JMB",
     "AbnStatus": "Active",
-    "EntityType": "Other Name"
+    "EntityType": "Trading Name"
   },
   {
     "Abn": "39008883216",

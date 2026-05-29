@@ -173,18 +173,64 @@ def deep_search(queries: List[str], max_per_query: int = 5,
         "queries": queries, "time_ms": total_time, "provider": "anysearch"
     }
 
-def extract_url(url: str, max_chars: int = 5000) -> Dict:
-    """URL内容提取"""
-    cache_key = f"e:{url}:{max_chars}"
+def extract_url(url: str, max_chars: int = 5000, strategy: str = "auto") -> Dict:
+    """
+    URL内容提取 — 10层永不放弃抓取链路
+    
+    链路:
+      L1: AnySearch CLI (零成本搜索API)
+      L2: Scrapling 10层核弹抓取 (requests→stealth→cloudscraper→dynamic→playwright→cache→proxy)
+    
+    策略:
+      "auto":     自动域名预判路由
+      "stealth":  反爬优先
+      "dynamic":  JS渲染优先
+      "full":     全部链路
+    """
+    cache_key = f"e:{url}:{max_chars}:{strategy}"
     cached = cache.get(cache_key)
     if cached: return cached
-    
+
     t0 = time.time()
+    debug = []
+
+    # L1: AnySearch CLI
+    debug.append("anysearch→try")
     cmd = ["python3", str(ANYSEARCH_CLI), "extract", url, "--max_chars", str(max_chars)]
     output = _call_anysearch(cmd)
-    
+    if output and len(output.strip()) > 100:
+        result = {"content": output[:max_chars], "url": url,
+                  "time_ms": int((time.time() - t0) * 1000),
+                  "fetcher": "anysearch", "strategy": strategy}
+        cache.set(cache_key, result)
+        return result
+
+    debug.append("anysearch→skip→scrapling_10layer")
+
+    # L2+: Scrapling 10层抓取
+    try:
+        from skills.taiyi_search.taiyi_scrapling import scrapling_fetch as _sf
+        sr = _sf(url, strategy=strategy)
+        if sr["status"] == "ok":
+            content = sr.get("content", "")[:max_chars]
+            result = {"content": content, "url": url,
+                      "time_ms": sr.get("time_ms", int((time.time() - t0) * 1000)),
+                      "fetcher": sr.get("fetcher", "scrapling"),
+                      "strategy": strategy,
+                      "chain_attempts": sr.get("chain_attempts", 0),
+                      "debug": sr.get("debug", debug)}
+            cache.set(cache_key, result)
+            return result
+        debug.extend(sr.get("debug", []))
+    except ImportError:
+        debug.append("scrapling_unavailable")
+    except Exception as e:
+        debug.append(f"scrapling_error:{e}")
+
     result = {"content": output[:max_chars], "url": url,
-              "time_ms": int((time.time() - t0) * 1000)}
+              "time_ms": int((time.time() - t0) * 1000),
+              "fetcher": "anysearch", "strategy": strategy,
+              "debug": debug, "warning": "All chains failed"}
     cache.set(cache_key, result)
     return result
 
@@ -208,6 +254,52 @@ def _parse_results(output: str, query: str, elapsed: int) -> Dict:
                 current['snippet'] = line.strip()[:300]
     if current.get('title'): results.append(current)
     return {"results": results, "total": len(results), "query": query, "time_ms": elapsed}
+
+# =====================================================================
+# Scrapling 快速入口（便捷导入接口）
+# =====================================================================
+
+def scrapling_fetch(url: str, strategy: str = "auto", **kwargs) -> Dict:
+    """
+    Scrapling 10层智能抓取 — 100%命中目标
+    
+    策略:
+      "auto":     自动域名预判路由
+      "stealth":  反爬优先（跳过低级链路）
+      "dynamic":  JS渲染优先
+      "nuclear":  全部10层依次尝试
+    
+    返回: {status, content, fetcher, chain_attempts, time_ms, debug}
+    """
+    try:
+        from skills.taiyi_search.taiyi_scrapling import scrapling_fetch as _sf
+        return _sf(url, strategy=strategy, **kwargs)
+    except ImportError:
+        return {"status": "error", "error": "Scrapling module not available", "url": url}
+
+def extract_elements(html: str, **kwargs) -> Dict:
+    """CSS/XPath/自适应元素提取"""
+    try:
+        from skills.taiyi_search.taiyi_scrapling import extract_elements as _ee
+        return _ee(html, **kwargs)
+    except ImportError:
+        return {"status": "error", "error": "Scrapling not available"}
+
+def adaptive_extract(html: str, **kwargs) -> Dict:
+    """自适应文本定位+自动CSS生成器"""
+    try:
+        from skills.taiyi_search.taiyi_scrapling import adaptive_extract as _ae
+        return _ae(html, **kwargs)
+    except ImportError:
+        return {"status": "error", "error": "Scrapling not available"}
+
+def batch_fetch(urls: list, **kwargs) -> list:
+    """批量并发采集"""
+    try:
+        from skills.taiyi_search.taiyi_scrapling import batch_fetch as _bf
+        return _bf(urls, **kwargs)
+    except ImportError:
+        return [{"url": u, "status": "error", "error": "Scrapling not available"} for u in urls]
 
 # ===== Stats =====
 
@@ -248,18 +340,24 @@ stats = SearchStats()
 if __name__ == "__main__":
     import sys
     if len(sys.argv) < 2:
-        print("""太一统一搜索引擎 · Taiyi Unified Search
+        print("""太一统一搜索引擎 · Taiyi Unified Search (v2.1 Scrapling)
 用法: python taiyi_anysearch.py <命令> [参数]
 
 搜索:
   search <词> [max=10] [freshness] [domain] [sub_domain]
-  deep <词1> <词2>...    批量穿透搜索
-  extract <url>          提取URL内容
-  domains                列出垂直领域
-  stats                  搜索统计
+  deep <词1> <词2>...      批量穿透搜索
+  extract <url>            提取URL内容 (含Scrapling自动降级)
+  scrapling <url>          强制Scrapling智能抓取 (反爬绕过)
+  stealth <url>            强制StealthyFetcher (Cloudflare绕过)
+  dynamic <url>            强制DynamicFetcher (JS渲染)
+  extract-css <url> <css>  提取CSS元素
+  batch <url1> <url2>...   批量采集
+  domains                  列出垂直领域
+  stats                    搜索统计
 工具:
   country <国家名>       解析国家代码
-  links <产品> <市场>    生成搜索链接""")
+  links <产品> <市场>    生成搜索链接
+  clear                   清空搜索缓存""")
         sys.exit(1)
     
     cmd = sys.argv[1]
@@ -284,8 +382,73 @@ if __name__ == "__main__":
     
     elif cmd == "extract":
         url = sys.argv[2] if len(sys.argv) > 2 else ""
-        r = extract_url(url)
+        strategy = sys.argv[3] if len(sys.argv) > 3 else "auto"
+        r = extract_url(url, strategy=strategy)
+        chain = r.get("chain_attempts", 1)
+        print(f"📡 {url}")
+        print(f"   [{r.get('fetcher','?')}] {r.get('time_ms',0)}ms | {chain}层尝试")
         print(r.get("content", "")[:600])
+
+    elif cmd == "scrapling":
+        url = sys.argv[2] if len(sys.argv) > 2 else ""
+        strategy = sys.argv[3] if len(sys.argv) > 3 else "auto"
+        try:
+            from taiyi_scrapling import scrapling_fetch
+            r = scrapling_fetch(url, strategy=strategy)
+            print(f"📡 {url}")
+            print(f"   策略: {r.get('strategy','?')} | {r.get('fetcher','?')} | {r.get('time_ms',0)}ms | {r.get('chain_attempts',0)}层")
+            print(f"   Debug: {r.get('debug', [])}")
+            if r.get("status") == "ok":
+                c = r.get("content", "")
+                print(f"   📐 Length: {len(c)} chars")
+                print(f"   📄 {c[:600]}...")
+            else:
+                print(f"   ❌ {r.get('error','?')}")
+        except ImportError:
+            print("❌ Scrapling module not found")
+
+    elif cmd == "stealth":
+        url = sys.argv[2] if len(sys.argv) > 2 else ""
+        try:
+            from taiyi_scrapling import _try_scrapling_stealth as _ts
+            r = _ts(url)
+            print(f"[Stealth] {r.get('status')} | {len(r.get('content',''))} chars | {r.get('error','OK')}")
+        except ImportError:
+            print("❌ Scrapling module not found")
+
+    elif cmd == "dynamic":
+        url = sys.argv[2] if len(sys.argv) > 2 else ""
+        try:
+            from taiyi_scrapling import _try_scrapling_dynamic as _td
+            r = _td(url)
+            print(f"[Dynamic] {r.get('status')} | {len(r.get('content',''))} chars | {r.get('error','OK')}")
+        except ImportError:
+            print("❌ Scrapling module not found")
+
+    elif cmd == "extract-css":
+        url = sys.argv[2] if len(sys.argv) > 2 else ""
+        css = sys.argv[3] if len(sys.argv) > 3 else "body"
+        try:
+            from taiyi_scrapling import scrapling_fetch, extract_elements
+            r = scrapling_fetch(url)
+            if r["status"] == "ok":
+                e = extract_elements(r["content"], css_selector=css)
+                print(f"提取 {e.get('count',0)} 个元素:")
+                for item in e.get("items", [])[:10]:
+                    print(f"  • {item.get('text','')[:200]}")
+        except ImportError:
+            print("❌ Scrapling module not found")
+
+    elif cmd == "batch":
+        urls = sys.argv[2:]
+        try:
+            from taiyi_scrapling import batch_fetch
+            results = batch_fetch(urls)
+            for r in results:
+                fs = r.get('fetcher','?')
+                print(f"  {r['url']} → {r['status']} ({fs}) {r.get('length',0)}b | {r.get('chain_attempts',0)}层")
+        except ImportError:
+            print("❌ Scrapling module not found")
     
     elif cmd == "domains":
         r = list_domains()

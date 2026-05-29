@@ -36,16 +36,16 @@
     "EntityType": "Trading Name"
   },
   {
-    "Abn": "58211633483",
-    "Name": "Melbourne",
-    "AbnStatus": "Active",
-    "EntityType": "Entity Name"
-  },
-  {
     "Abn": "46115897213",
     "Name": "Melbourne",
     "AbnStatus": "Active",
     "EntityType": "Other Name"
+  },
+  {
+    "Abn": "58211633483",
+    "Name": "Melbourne",
+    "AbnStatus": "Active",
+    "EntityType": "Entity Name"
   },
   {
     "Abn": "79267121802",

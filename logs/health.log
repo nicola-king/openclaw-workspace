@@ -71,3 +71,60 @@ HEALTH: Wed May 27 23:05 CST 2026, DISK: 1.8T/135G used(8%), MEM: 30G/4.6G used(
 HEALTH: 2026-05-28 00:02:26 CST, DISK: 8% used (135G/1.8T), MEM: 30Gi total, 4.7Gi used, 19Gi free, 25Gi available
 HEALTH: 2026-05-28 01:01:37, DISK: 1.8T/135G used (8%), MEM: 30Gi/4.7Gi used (16%)
 HEALTH: 2026-05-28 02:01:36, DISK: 8% (135G/1.8T), MEM: 4.8G/30G (16%), AVAIL: 25G
+HEALTH: 2026-05-28 03:01:46, DISK: 1.8T total, 135G used, 1.6T avail (8%), MEM: 30Gi total, 4.8Gi used, 18Gi free, 25Gi avail
+HEALTH: 2026年 05月 28日 星期四 04:01:37 CST, DISK: /dev/nvme0n1p2 1.8T 135G 1.6T 8% /, MEM: 30Gi total 4.8Gi used 18Gi free
+HEALTH: 2026-05-28 05:01:45 CST, DISK: 1.8T total, 135G used (8%), MEM: 30Gi total, 4.9Gi used (16%), SWAP: 8Gi unused
+HEALTH: 2026年 05月 28日 星期四 06:05:26 CST, DISK: 1.8T total, 135G used, 1.6T free (8%), MEM: 30G total, 5G used, 25G available, SWAP: 8G total, 0 used
+HEALTH: 2026-05-28 07:02:49 CST, DISK: 1.8T total, 135G used, 1.6T free (8%), MEM: 30Gi total, 5.1Gi used, 18Gi free (17%)
+HEALTH: 2026-05-28 08:06:03, DISK: 1.8T 135G 1.6T 8% /, MEM: 30Gi total 6.0Gi used 16Gi free 24Gi available
+HEALTH: 2026-05-28 09:09:48, DISK: 1.8T total, 135G used (8%), MEM: 30Gi total, 6.0Gi used, 24Gi available
+HEALTH: 2026-05-28 10:07:58, DISK: /dev/nvme0n1p2 1.8T 135G 1.6T 8%, MEM: 30Gi total / 6.1Gi used / 24Gi available
+HEALTH: 2026-05-28 11:06 CST, DISK: 135G/1.8T (8%), MEM: 6.2G/30G (21%), AVAIL: 24G
+HEALTH: 2026-05-28 12:02 CST, DISK: / 1.8T 135G 1.6T 8%, MEM: 30Gi total 6.2Gi used 14Gi free 24Gi avail
+=== HEALTH: 2026-05-28 13:01:33 CST ===
+/dev/nvme0n1p2  1.8T  135G  1.6T    8% /
+=== HEALTH: 2026-05-28 13:01:35 CST ===
+/dev/nvme0n1p2  1.8T  135G  1.6T    8% /
+=== HEALTH: 2026-05-28 13:01:41 CST ===
+DISK: /dev/nvme0n1p2  1.8T  135G  1.6T    8% /
+MEM: 内存：          30Gi        11Gi       720Mi       533Mi        19Gi        18Gi
+
+HEALTH: 2026-05-28 14:02 CST, DISK: 9% used (140G/1.8T), MEM: 6.7Gi used / 30Gi total (22%), AVAIL: 23Gi
+HEALTH: 2026-05-28 15:02 CST, DISK: / 9% (140G/1.8T), MEM: 6.6Gi/30Gi (22%), UPTIME: up
+HEALTH: 2026-05-28 16:06:50, DISK: 1.8T total, 140G used, 1.6T free (9%), MEM: 30Gi total, 6.8Gi used, 5.9Gi free, 23Gi available
+HEALTH: 2026年 05月 28日 星期四 17:13:54 CST, DISK: 1.8T 140G 1.6T 9% /, MEM: 30Gi total 7.0Gi used 23Gi available
+HEALTH: 2026-05-28 18:05:10, DISK: /dev/nvme0n1p2 1.8T total, 140G used (9%), MEM: 30Gi total, 7.0Gi used, 23Gi available, LOAD: 1.79 1.30 1.19
+HEALTH: 2026-05-28 19:01:42 CST, DISK: 1.8T 9% used, MEM: 30G total 7.1G used 23G avail
+HEALTH: 2026-05-28 20:03:31, DISK: /dev/nvme0n1p2 1.8T used 140G avail 1.6T 9%, MEM: 30Gi total 7.1Gi used 23Gi avail, SWAP: 8.0Gi 652Ki used
+HEALTH: 2026-05-28 21:03:39 CST, DISK: /dev/nvme0n1p2 1.8T 140G 1.6T 9% /, MEM: 30Gi total / 7.1Gi used / 23Gi avail
+HEALTH: 2026-05-28 22:06 CST, DISK: 1.8T 9% used, MEM: 30Gi 6.9Gi used 23Gi avail
+HEALTH: 2026-05-28 23:03 CST, DISK: /dev/nvme0n1p2 1.8T 140G 1.6T 9%/, MEM: 30Gi total 7.3Gi used 4.4Gi free 23Gi available, SWAP: 8.0Gi total 652Ki used
+HEALTH: 2026-05-29 00:12 CST, DISK: 1.8T 9% used (140G/1.8T), MEM: 30Gi 7.3Gi used (24% used, 23Gi avail)
+HEALTH: 2026年 05月 29日 星期五 01:07:11 CST, DISK: /dev/nvme0n1p2  1.8T  140G  1.6T    9% /, MEM: 
+HEALTH: 2026年 05月 29日 星期五 01:07:24 CST, DISK: /dev/nvme0n1p2 1.8T 140G 1.6T 9% /, MEM: 交换：         8.0Gi       652Ki       8.0Gi
+HEALTH: 2026年 05月 29日 星期五 01:07:31 CST, DISK: /dev/nvme0n1p2 1.8T 140G 1.6T 9% /, MEM: 内存：          30Gi       7.4Gi       4.1Gi       603Mi        20Gi        23Gi
+HEALTH: 2026-05-29 02:02:26, DISK: 1.8T 140G/1.8T 9%, MEM: 7.5G/30G used 20G available
+HEALTH: 2026-05-29 03:06 CST, DISK: 1.8T 140G 1.6T 9% /, MEM: 30Gi total 7.5Gi used 23Gi available
+HEALTH: 2026年 05月 29日 星期五 04:02:08 CST, DISK: 1.8T total, 140G used, 1.6T avail, 9% used, MEM: 30Gi total, 7.5Gi used, 3.9Gi free, 23Gi avail
+HEALTH: 2026-05-29 05:02:08 CST, DISK: 9% used (140G/1.8T), MEM: 7.6Gi/30Gi used (25%), 23Gi available
+HEALTH: 2026-05-29 06:05:15 CST, DISK: / 1.8T 140G/1.6T free 9%, MEM: 内存：          30Gi       7.7Gi       3.3Gi       603Mi        20Gi        22Gi
+HEALTH: 2026-05-29 07:03 CST, DISK: 1.8T used 140G (9%), MEM: 30Gi total, 7.6Gi used, 23Gi available
+HEALTH: 2026-05-29 08:02:51, DISK: 1.8T/140G/1.6T(9%), MEM: 30G/7.7G/22G-avail, SWAP: 8G/652K
+HEALTH: 2026-05-29 09:18 CST, DISK: /dev/nvme0n1p2 1.8T 140G used (9%), MEM: 30Gi total, 7.6Gi used, 22Gi available
+HEALTH: 2026-05-29 10:04:33, DISK: / 9% (140G/1.8T), MEM: 7.8G/30G used, 22G avail
+HEALTH: 2026-05-29 11:01:38 CST, DISK: /dev/nvme0n1p2 1.8T 140G 1.6T 9%/, MEM: 30Gi total 8.0Gi used 22Gi available
+HEALTH: 2026-05-29T12:03:08+08:00, DISK: / 1.8T 140G 1.6T 9%, MEM: 30Gi total 8.0Gi used 2.6Gi free 22Gi available
+HEALTH: 2026-05-29 13:01 CST, DISK: 1.8T/1.6T free (9% used), MEM: 30Gi/8.1Gi used (22Gi avail), SWAP: 8.0Gi/652Ki used
+HEALTH: 2026-05-29 14:07:18 | DISK: / 1.8T 150G used 9% | MEM: 31354M total 21230M used 10123M avail
+HEALTH: 2026-05-29 15:03 CST, DISK: /dev/nvme0n1p2 1.8T 150G 1.6T 9% /, MEM: 30Gi total 20Gi used 6.1Gi free 9.9Gi available
+HEALTH: 2026-05-29 16:02 CST, DISK: / 1.8T 150G used 1.6T free (9%), MEM: 30G total 20G used 6.1G free 9G available
+HEALTH: 2026-05-29 17:01:40, DISK: /dev/nvme0n1p2  1.8T  150G  1.6T    9% /, MEM: 内存：          30Gi        20Gi       5.9Gi        12Gi        17Gi       9.9Gi
+HEALTH: 2026-05-29 18:04 CST, DISK: 1.8T 150G-used 9%, MEM: 30Gi-total 20Gi-used 9.8Gi-avail
+HEALTH: 2026-05-29 19:02:34 CST, DISK: / 9% used (150G/1.8T), MEM: 20G/30G used (67%), AVAIL: 9.7G
+HEALTH: 2026-05-29 20:01:43, DISK: /dev/nvme0n1p2 1.8T 150G 1.6T 9% /, MEM: 内存：          30Gi        20Gi       5.2Gi        12Gi        17Gi       9.8Gi
+HEALTH: 2026-05-29 21:04 CST, DISK: /dev/nvme0n1p2 1.8T 150G 1.6T 9% /, MEM: 30Gi total 20Gi used 5.2Gi free 9.8Gi available
+HEALTH: 2026-05-29 22:01:52, DISK: 9% (1.8T/150G used), MEM: 21G/30G used (9.3G avail), SWAP: 16M/8G used
+HEALTH: 2026-05-29 23:01, DISK: /dev/nvme0n1p2 1.8T 150G 1.6T 9% /, MEM: total=30Gi used=21Gi free=4.1Gi avail=9.2Gi
+HEALTH: 2026-05-30 00:07:06 CST, DISK: 150G used / 1.8T total (9%), MEM: 30Gi total, 21Gi used, 4.0Gi free
+HEALTH: 2026-05-30 01:04:30 CST, DISK: /dev/nvme0n1p2 1.8T 150G 1.6T 9% /, MEM: 30Gi total 21Gi used 4.2Gi free
+HEALTH: 2026-05-30 02:03:53, DISK: /dev/nvme0n1p2 1.8T 150G 1.6T 9% /, MEM: 30Gi total 21Gi used 4.2Gi free 9.4Gi avail SWAP: 8.0Gi 16Mi used

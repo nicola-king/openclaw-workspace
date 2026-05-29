@@ -179,3 +179,12 @@
 ## 2026-05-27 22:00 归档
 - 归档 workspace 日志文件: weixin-listener.log, heartbeat.log, cron-health.log → data/archive/tmp-logs-202605/
 - 归档 tmp/ 中未修改文件 → data/archive/tmp-files-202605/
+
+=== 2026-05-29 22:00 数据归档 ===
+- data/token-monitor/: 6 个旧文件 (May 24-25) 移至 .archive/ (含 20260525_* 非标文件名)
+- tmp/: 空 — 无需清理
+- logs/: 12 文件均 <1KB (cron-healthcheck.log 240B, health.log 14K) — 保留
+- reports/: 18 文件正常，含今日 global-intel-2026-05-29 报告
+- .cache/: 3.0M — 健康
+- 磁盘使用: 150G/1.8T (9%) — 健康
+- 措施: 无需要额外归档的项目

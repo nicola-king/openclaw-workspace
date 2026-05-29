@@ -1,0 +1,1 @@
+{"expires": "2026-05-29T14:39:25.284199", "result": {"content": "", "url": "https://httpbin.org/get", "time_ms": 154, "fetcher": "anysearch", "strategy": "auto", "debug": ["anysearch→try", "anysearch→skip→scrapling_10layer", "scrapling_unavailable"], "warning": "All chains failed"}}

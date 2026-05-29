@@ -28,7 +28,8 @@ logs/
 # 输出文件按需提交，不自动全量
 skills/oerv-narrative-engine/output/
 
-# === 笔记 & 第三方 ===
+# === 导出 & 第三方 ===
+exports/
 notes/awesome-design-md/
 
 # === 大文件 / 子模块排除 ===

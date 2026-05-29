@@ -35,6 +35,7 @@ class TaskDomain(Enum):
     WORKFLOW = "workflow"       # 工作流可视化
     EVOLVE = "evolve"           # 自进化
     RENDER = "render"           # 渲染引擎 (PDF/HTML)
+    PRESENTATION = "presentation"  # 演示文稿/PPT (guizang)
 
 ROUTING_TABLE = {
     "设计": TaskDomain.DESIGN, "design": TaskDomain.DESIGN, "ui": TaskDomain.DESIGN, "ux": TaskDomain.DESIGN,
@@ -47,7 +48,18 @@ ROUTING_TABLE = {
     "拓扑": TaskDomain.WORKFLOW, "topology": TaskDomain.WORKFLOW, "工作流": TaskDomain.WORKFLOW,
     "进化": TaskDomain.EVOLVE, "evolve": TaskDomain.EVOLVE, "学习": TaskDomain.EVOLVE,
     "渲染": TaskDomain.RENDER, "render": TaskDomain.RENDER, "pdf": TaskDomain.RENDER, "输出": TaskDomain.RENDER,
-    "生成文档": TaskDomain.RENDER, "导出": TaskDomain.RENDER,}
+    "生成文档": TaskDomain.RENDER, "导出": TaskDomain.RENDER,
+    "瑞士国际主义": TaskDomain.PRESENTATION, "瑞士风": TaskDomain.PRESENTATION,
+    "电子杂志风": TaskDomain.PRESENTATION, "杂志风ppt": TaskDomain.PRESENTATION,
+    "swiss style": TaskDomain.PRESENTATION, "swiss": TaskDomain.PRESENTATION,
+    "翻页ppt": TaskDomain.PRESENTATION, "web ppt": TaskDomain.PRESENTATION,
+    "horiz deck": TaskDomain.PRESENTATION, "归藏": TaskDomain.PRESENTATION,
+    "guizang": TaskDomain.PRESENTATION, "归藏ppt": TaskDomain.PRESENTATION,
+    "ppt": TaskDomain.PRESENTATION, "presentation": TaskDomain.PRESENTATION,
+    "slide": TaskDomain.PRESENTATION, "deck": TaskDomain.PRESENTATION,
+    "演讲": TaskDomain.PRESENTATION, "发布会": TaskDomain.PRESENTATION,
+    "演示": TaskDomain.PRESENTATION, "瑞士": TaskDomain.PRESENTATION,
+    "网页ppt": TaskDomain.PRESENTATION, "幻灯片": TaskDomain.PRESENTATION,}
 
 
 
@@ -143,6 +155,7 @@ MODULE_MAP = {
     TaskDomain.NARRATIVE: ("visual-narrative", "VisualNarrative", "视觉叙事"),
     TaskDomain.WORKFLOW:  ("dispatch-viz",     "DispatchViz",     "调度拓扑"),
     TaskDomain.EVOLVE:    ("self-evolution",   "SelfEvolution",   "自进化"),
+    TaskDomain.PRESENTATION: ("guizang-bridge", "GuizangBridge", "归藏PPT引擎"),
 }
 
 # ═══════════════════════════════════════════════════════════════
@@ -230,10 +243,11 @@ class ArtDispatcher:
         return None
     
     def resolve_domain(self, task: str) -> TaskDomain:
-        """智能识别任务类型"""
+        """智能识别任务类型（按关键词长度降序匹配，长词优先）"""
         task_lower = task.lower()
-        # 优先精确匹配
-        for keyword, domain in ROUTING_TABLE.items():
+        # 按关键词长度降序排列（越长越精确，优先匹配）
+        sorted_keywords = sorted(ROUTING_TABLE.items(), key=lambda x: -len(x[0]))
+        for keyword, domain in sorted_keywords:
             if keyword in task_lower:
                 return domain
         # 模糊匹配: 根据内容判断

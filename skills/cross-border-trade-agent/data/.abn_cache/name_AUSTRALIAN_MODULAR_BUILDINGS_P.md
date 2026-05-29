@@ -195,7 +195,7 @@
     "Abn": "46009309291",
     "Name": "AMB HOLDINGS PTY LTD",
     "AbnStatus": "Active",
-    "EntityType": "Other Name"
+    "EntityType": "Trading Name"
   },
   {
     "Abn": "75769183819",
