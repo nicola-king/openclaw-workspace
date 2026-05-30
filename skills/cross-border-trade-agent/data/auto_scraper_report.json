@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-05-29T10:03:25.662515+00:00",
+  "run_at": "2026-05-30T10:10:57.378776+00:00",
   "sync_companies": {
     "companies_file": "/home/sayelf/.openclaw/workspace/skills/cross-border-trade-agent/data/real_companies.md",
     "existing_names": 47,

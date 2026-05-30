@@ -66,6 +66,12 @@
     "EntityType": "Business Name"
   },
   {
+    "Abn": "74689432068",
+    "Name": "RBT MODULAR BUILD PTY LTD",
+    "AbnStatus": "Active",
+    "EntityType": "Entity Name"
+  },
+  {
     "Abn": "81641566305",
     "Name": "SMART MODULAR BUILD PTY LTD",
     "AbnStatus": "Active",

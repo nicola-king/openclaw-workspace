@@ -2614,3 +2614,158 @@
              ~~~~^^
   File "/home/sayelf/.local/venvs/markitdo
 [2026-05-30 00:16:16] [INFO] 转换完成: ✅ 31 成功, ⏭ 7 跳过, ❌ 3 失败
+[2026-05-30 08:15:58] [INFO] 发现 47 个待转换文件（增量）
+[2026-05-30 08:15:59] [INFO]   ❌ [XML] sitemap.xml: failed: Traceback (most recent call last):
+  File "/home/sayelf/.local/venvs/markitdown/bin/markitdown", line 8, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/home/sayelf/.local/venvs/markitdo
+[2026-05-30 08:16:00] [INFO]   ✅ [JSON] alibaba_20260530.json → ok (1.6KB)
+[2026-05-30 08:16:01] [INFO]   ✅ [JSON] promua_20260530.json → ok (1.5KB)
+[2026-05-30 08:16:02] [INFO]   ✅ [JSON] europages_20260530.json → ok (997.0B)
+[2026-05-30 08:16:03] [INFO]   ✅ [JSON] emag_20260530.json → ok (447.0B)
+[2026-05-30 08:16:04] [INFO]   ✅ [JSON] allegro_20260530.json → ok (450.0B)
+[2026-05-30 08:16:05] [INFO]   ✅ [JSON] made_in_china_20260530.json → ok (1.2KB)
+[2026-05-30 08:16:06] [INFO]   ✅ [JSON] summary.json → ok (361.0B)
+[2026-05-30 08:16:07] [INFO]   ❌ [YAML] none.yaml: failed: Traceback (most recent call last):
+  File "/home/sayelf/.local/venvs/markitdown/bin/markitdown", line 8, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/home/sayelf/.local/venvs/markitdo
+[2026-05-30 08:16:08] [INFO]   ✅ [JSON] converter_state.json → ok (227.5KB)
+[2026-05-30 08:16:09] [INFO]   ✅ [JSON] .abn_verify_results.json → ok (108.9KB)
+[2026-05-30 08:16:11] [INFO]   ✅ [JSON] auto_scraper_report.json → ok (535.0B)
+[2026-05-30 08:16:12] [INFO]   ✅ [JSON] name_AUSTRALIAN_MODULAR_COMPANY_PTY.json → ok (5.3KB)
+[2026-05-30 08:16:13] [INFO]   ✅ [JSON] name_CIMC_MODULAR_BUILDING_SYSTEMS_.json → ok (313.0B)
+[2026-05-30 08:16:14] [INFO]   ✅ [JSON] name_MODULAR_BUILDERS_PTY_LTD.json → ok (5.4KB)
+[2026-05-30 08:16:15] [INFO]   ✅ [JSON] name_BUILD_MODULAR_PTY_LTD.json → ok (4.0KB)
+[2026-05-30 08:16:16] [INFO]   ✅ [JSON] name_PREFABULOUS_HOLDINGS_PTY_LTD.json → ok (2.0KB)
+[2026-05-30 08:16:17] [INFO]   ✅ [JSON] name_Aus_Modular_Homes_Pty_Ltd.json → ok (5.1KB)
+[2026-05-30 08:16:18] [INFO]   ✅ [JSON] name_BUILDKIND.json → ok (5.1KB)
+[2026-05-30 08:16:19] [INFO]   ✅ [JSON] name_MODULAR_BUILDINGS_AUSTRALIA_PT.json → ok (4.0KB)
+[2026-05-30 08:16:20] [INFO]   ✅ [JSON] name_AUSTRALIAN_MODULAR_BUILDINGS_P.json → ok (5.3KB)
+[2026-05-30 08:16:21] [INFO]   ✅ [JSON] name_JMB_MODULAR_BUILDING_AUSTRALIA.json → ok (2.6KB)
+[2026-05-30 08:16:23] [INFO]   ✅ [JSON] name_MODSCAPE_RESIDENTIAL_PTY_LTD.json → ok (1.3KB)
+[2026-05-30 08:16:24] [INFO]   ✅ [JSON] name_MODSCAPE_COMMERCIAL_PTY_LTD.json → ok (1.8KB)
+[2026-05-30 08:16:25] [INFO]   ✅ [JSON] name_MODULAR_GROUP_OF_COMPANIES_PTY.json → ok (5.4KB)
+[2026-05-30 08:16:26] [INFO]   ✅ [JSON] name_LUXE_MODULAR_BUILD_AUSTRALIA_P.json → ok (4.1KB)
+[2026-05-30 08:16:27] [INFO]   ✅ [JSON] name_Melbourne_Prefab_Solutions.json → ok (2.2KB)
+[2026-05-30 08:16:28] [INFO]   ✅ [JSON] name_MODULAR_BUILDING_GROUP_PTY_LTD.json → ok (3.2KB)
+[2026-05-30 08:16:29] [INFO]   ✅ [JSON] name_MODULAR_GROUP_PTY_LTD.json → ok (5.4KB)
+[2026-05-30 08:16:30] [INFO]   ✅ [JSON] name_MODSCAPE_HOLDINGS_PTY_LTD.json → ok (1.1KB)
+[2026-05-30 08:16:31] [INFO]   ✅ [JSON] name_MODSCAPE_PTY_LTD.json → ok (2.3KB)
+[2026-05-30 08:16:32] [INFO]   ✅ [JSON] name_MODSCAPE_INSTALL_PTY_LTD.json → ok (1.6KB)
+[2026-05-30 08:16:34] [INFO]   ✅ [JSON] name_CIMC.json → ok (5.3KB)
+[2026-05-30 08:16:35] [INFO]   ✅ [JSON] name_MODULAR_BUILDING_BROKERS_AUSTR.json → ok (4.2KB)
+[2026-05-30 08:16:36] [INFO]   ✅ [JSON] name_PREFAB_AUSTRALIA_PTY_LTD.json → ok (3.1KB)
+[2026-05-30 08:16:37] [INFO]   ✅ [JSON] name_BUILDKIND_MODULAR_PTY_LTD.json → ok (1022.0B)
+[2026-05-30 08:16:38] [INFO]   ✅ [JSON] name_MODULARIS_PTY_LTD.json → ok (5.2KB)
+[2026-05-30 08:16:39] [INFO]   ✅ [JSON] name_MODSCAPE.json → ok (2.3KB)
+[2026-05-30 08:16:40] [INFO]   ✅ [JSON] 2026-05-30.json → ok (227.0B)
+[2026-05-30 08:16:41] [INFO]   ❌ [XML] sitemap.xml: failed: Traceback (most recent call last):
+  File "/home/sayelf/.local/venvs/markitdown/bin/markitdown", line 8, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/home/sayelf/.local/venvs/markitdo
+[2026-05-30 08:16:41] [INFO] 转换完成: ✅ 37 成功, ⏭ 7 跳过, ❌ 3 失败
+[2026-05-30 16:16:45] [INFO] 发现 44 个待转换文件（增量）
+[2026-05-30 16:16:46] [INFO]   ❌ [XML] sitemap.xml: failed: Traceback (most recent call last):
+  File "/home/sayelf/.local/venvs/markitdown/bin/markitdown", line 8, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/home/sayelf/.local/venvs/markitdo
+[2026-05-30 16:16:47] [INFO]   ✅ [JSON] enriched_20260530_090710.json → ok (2.0B)
+[2026-05-30 16:16:48] [INFO]   ❌ [YAML] none.yaml: failed: Traceback (most recent call last):
+  File "/home/sayelf/.local/venvs/markitdown/bin/markitdown", line 8, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/home/sayelf/.local/venvs/markitdo
+[2026-05-30 16:16:50] [INFO]   ✅ [JSON] outreach-queue-2026-05-30.json → ok (8.5KB)
+[2026-05-30 16:16:51] [INFO]   ✅ [JSON] converter_state.json → ok (227.8KB)
+[2026-05-30 16:16:52] [INFO]   ✅ [JSON] .abn_verify_results.json → ok (108.9KB)
+[2026-05-30 16:16:53] [INFO]   ✅ [JSON] auto_scraper_report.json → ok (83.0B)
+[2026-05-30 16:16:54] [INFO]   ✅ [JSON] name_AUSTRALIAN_MODULAR_COMPANY_PTY.json → ok (5.3KB)
+[2026-05-30 16:16:55] [INFO]   ✅ [JSON] name_CIMC_MODULAR_BUILDING_SYSTEMS_.json → ok (313.0B)
+[2026-05-30 16:16:57] [INFO]   ✅ [JSON] name_MODULAR_BUILDERS_PTY_LTD.json → ok (5.4KB)
+[2026-05-30 16:16:58] [INFO]   ✅ [JSON] name_BUILD_MODULAR_PTY_LTD.json → ok (4.0KB)
+[2026-05-30 16:16:59] [INFO]   ✅ [JSON] name_PREFABULOUS_HOLDINGS_PTY_LTD.json → ok (2.0KB)
+[2026-05-30 16:17:00] [INFO]   ✅ [JSON] name_Aus_Modular_Homes_Pty_Ltd.json → ok (5.1KB)
+[2026-05-30 16:17:01] [INFO]   ✅ [JSON] name_BUILDKIND.json → ok (5.1KB)
+[2026-05-30 16:17:02] [INFO]   ✅ [JSON] name_MODULAR_BUILDINGS_AUSTRALIA_PT.json → ok (4.0KB)
+[2026-05-30 16:17:03] [INFO]   ✅ [JSON] name_AUSTRALIAN_MODULAR_BUILDINGS_P.json → ok (5.3KB)
+[2026-05-30 16:17:04] [INFO]   ✅ [JSON] name_JMB_MODULAR_BUILDING_AUSTRALIA.json → ok (2.6KB)
+[2026-05-30 16:17:06] [INFO]   ✅ [JSON] name_MODSCAPE_RESIDENTIAL_PTY_LTD.json → ok (1.3KB)
+[2026-05-30 16:17:07] [INFO]   ✅ [JSON] name_MODSCAPE_COMMERCIAL_PTY_LTD.json → ok (1.8KB)
+[2026-05-30 16:17:09] [INFO]   ✅ [JSON] name_MODULAR_GROUP_OF_COMPANIES_PTY.json → ok (5.4KB)
+[2026-05-30 16:17:10] [INFO]   ✅ [JSON] name_LUXE_MODULAR_BUILD_AUSTRALIA_P.json → ok (4.1KB)
+[2026-05-30 16:17:11] [INFO]   ✅ [JSON] name_Melbourne_Prefab_Solutions.json → ok (2.2KB)
+[2026-05-30 16:17:12] [INFO]   ✅ [JSON] name_MODULAR_BUILDING_GROUP_PTY_LTD.json → ok (3.2KB)
+[2026-05-30 16:17:13] [INFO]   ✅ [JSON] name_MODULAR_GROUP_PTY_LTD.json → ok (5.4KB)
+[2026-05-30 16:17:14] [INFO]   ✅ [JSON] name_MODSCAPE_HOLDINGS_PTY_LTD.json → ok (1.1KB)
+[2026-05-30 16:17:15] [INFO]   ✅ [JSON] name_MODSCAPE_PTY_LTD.json → ok (2.3KB)
+[2026-05-30 16:17:17] [INFO]   ✅ [JSON] name_MODSCAPE_INSTALL_PTY_LTD.json → ok (1.6KB)
+[2026-05-30 16:17:18] [INFO]   ✅ [JSON] name_CIMC.json → ok (5.3KB)
+[2026-05-30 16:17:19] [INFO]   ✅ [JSON] name_MODULAR_BUILDING_BROKERS_AUSTR.json → ok (4.2KB)
+[2026-05-30 16:17:21] [INFO]   ✅ [JSON] name_PREFAB_AUSTRALIA_PTY_LTD.json → ok (3.1KB)
+[2026-05-30 16:17:22] [INFO]   ✅ [JSON] name_BUILDKIND_MODULAR_PTY_LTD.json → ok (1022.0B)
+[2026-05-30 16:17:23] [INFO]   ✅ [JSON] name_MODULARIS_PTY_LTD.json → ok (5.2KB)
+[2026-05-30 16:17:24] [INFO]   ✅ [JSON] name_MODSCAPE.json → ok (2.3KB)
+[2026-05-30 16:17:25] [INFO]   ✅ [JSON] world-monitor-daily-20260530.json → ok (301.0B)
+[2026-05-30 16:17:26] [INFO]   ✅ [Text] requires.txt → ok (73.0B)
+[2026-05-30 16:17:27] [INFO]   ✅ [Text] dependency_links.txt → ok (1.0B)
+[2026-05-30 16:17:28] [INFO]   ✅ [Text] entry_points.txt → ok (56.0B)
+[2026-05-30 16:17:29] [INFO]   ✅ [Text] top_level.txt → ok (11.0B)
+[2026-05-30 16:17:31] [INFO]   ✅ [Text] SOURCES.txt → ok (327.0B)
+[2026-05-30 16:17:32] [INFO]   ❌ [XML] sitemap.xml: failed: Traceback (most recent call last):
+  File "/home/sayelf/.local/venvs/markitdown/bin/markitdown", line 8, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/home/sayelf/.local/venvs/markitdo
+[2026-05-30 16:17:32] [INFO] 转换完成: ✅ 37 成功, ⏭ 4 跳过, ❌ 3 失败
+[2026-05-31 00:15:34] [INFO] 发现 34 个待转换文件（增量）
+[2026-05-31 00:15:35] [INFO]   ❌ [XML] sitemap.xml: failed: Traceback (most recent call last):
+  File "/home/sayelf/.local/venvs/markitdown/bin/markitdown", line 8, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/home/sayelf/.local/venvs/markitdo
+[2026-05-31 00:15:36] [INFO]   ✅ [JSON] competitor_report_20260530.json → ok (2.5KB)
+[2026-05-31 00:15:37] [INFO]   ❌ [YAML] none.yaml: failed: Traceback (most recent call last):
+  File "/home/sayelf/.local/venvs/markitdown/bin/markitdown", line 8, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/home/sayelf/.local/venvs/markitdo
+[2026-05-31 00:15:38] [INFO]   ✅ [JSON] converter_state.json → ok (228.5KB)
+[2026-05-31 00:15:39] [INFO]   ✅ [JSON] .abn_verify_results.json → ok (108.9KB)
+[2026-05-31 00:15:40] [INFO]   ✅ [JSON] auto_scraper_report.json → ok (535.0B)
+[2026-05-31 00:15:40] [INFO]   ✅ [JSON] name_AUSTRALIAN_MODULAR_COMPANY_PTY.json → ok (5.3KB)
+[2026-05-31 00:15:41] [INFO]   ✅ [JSON] name_CIMC_MODULAR_BUILDING_SYSTEMS_.json → ok (313.0B)
+[2026-05-31 00:15:42] [INFO]   ✅ [JSON] name_MODULAR_BUILDERS_PTY_LTD.json → ok (5.4KB)
+[2026-05-31 00:15:43] [INFO]   ✅ [JSON] name_BUILD_MODULAR_PTY_LTD.json → ok (4.0KB)
+[2026-05-31 00:15:44] [INFO]   ✅ [JSON] name_PREFABULOUS_HOLDINGS_PTY_LTD.json → ok (2.0KB)
+[2026-05-31 00:15:45] [INFO]   ✅ [JSON] name_Aus_Modular_Homes_Pty_Ltd.json → ok (5.1KB)
+[2026-05-31 00:15:46] [INFO]   ✅ [JSON] name_BUILDKIND.json → ok (5.1KB)
+[2026-05-31 00:15:47] [INFO]   ✅ [JSON] name_MODULAR_BUILDINGS_AUSTRALIA_PT.json → ok (4.0KB)
+[2026-05-31 00:15:47] [INFO]   ✅ [JSON] name_AUSTRALIAN_MODULAR_BUILDINGS_P.json → ok (5.3KB)
+[2026-05-31 00:15:48] [INFO]   ✅ [JSON] name_JMB_MODULAR_BUILDING_AUSTRALIA.json → ok (2.6KB)
+[2026-05-31 00:15:49] [INFO]   ✅ [JSON] name_MODSCAPE_RESIDENTIAL_PTY_LTD.json → ok (1.3KB)
+[2026-05-31 00:15:50] [INFO]   ✅ [JSON] name_MODSCAPE_COMMERCIAL_PTY_LTD.json → ok (1.8KB)
+[2026-05-31 00:15:51] [INFO]   ✅ [JSON] name_MODULAR_GROUP_OF_COMPANIES_PTY.json → ok (5.4KB)
+[2026-05-31 00:15:52] [INFO]   ✅ [JSON] name_LUXE_MODULAR_BUILD_AUSTRALIA_P.json → ok (4.1KB)
+[2026-05-31 00:15:53] [INFO]   ✅ [JSON] name_Melbourne_Prefab_Solutions.json → ok (2.2KB)
+[2026-05-31 00:15:54] [INFO]   ✅ [JSON] name_MODULAR_BUILDING_GROUP_PTY_LTD.json → ok (3.2KB)
+[2026-05-31 00:15:55] [INFO]   ✅ [JSON] name_MODULAR_GROUP_PTY_LTD.json → ok (5.4KB)
+[2026-05-31 00:15:55] [INFO]   ✅ [JSON] name_MODSCAPE_HOLDINGS_PTY_LTD.json → ok (1.1KB)
+[2026-05-31 00:15:56] [INFO]   ✅ [JSON] name_MODSCAPE_PTY_LTD.json → ok (2.3KB)
+[2026-05-31 00:15:57] [INFO]   ✅ [JSON] name_MODSCAPE_INSTALL_PTY_LTD.json → ok (1.6KB)
+[2026-05-31 00:15:58] [INFO]   ✅ [JSON] name_CIMC.json → ok (5.3KB)
+[2026-05-31 00:15:59] [INFO]   ✅ [JSON] name_MODULAR_BUILDING_BROKERS_AUSTR.json → ok (4.2KB)
+[2026-05-31 00:16:00] [INFO]   ✅ [JSON] name_PREFAB_AUSTRALIA_PTY_LTD.json → ok (3.1KB)
+[2026-05-31 00:16:01] [INFO]   ✅ [JSON] name_BUILDKIND_MODULAR_PTY_LTD.json → ok (1022.0B)
+[2026-05-31 00:16:02] [INFO]   ✅ [JSON] name_MODULARIS_PTY_LTD.json → ok (5.2KB)
+[2026-05-31 00:16:02] [INFO]   ✅ [JSON] name_MODSCAPE.json → ok (2.3KB)
+[2026-05-31 00:16:03] [INFO]   ❌ [XML] sitemap.xml: failed: Traceback (most recent call last):
+  File "/home/sayelf/.local/venvs/markitdown/bin/markitdown", line 8, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/home/sayelf/.local/venvs/markitdo
+[2026-05-31 00:16:03] [INFO] 转换完成: ✅ 30 成功, ⏭ 1 跳过, ❌ 3 失败
