@@ -81,7 +81,7 @@
     "Abn": "73162681055",
     "Name": "JMB",
     "AbnStatus": "Active",
-    "EntityType": "Trading Name"
+    "EntityType": "Other Name"
   },
   {
     "Abn": "39008883216",

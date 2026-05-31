@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-05-28T07:02:00+08:00",
+  "total_input": 1092835,
+  "total_output": 310409,
+  "total_cost_usd": 1.15670,
+  "total_cost_cny": 8.4439,
+  "by_provider": {
+    "deepseek": {"input": 1009705, "output": 293366, "cost_usd": 0.75064},
+    "moonshot": {"input": 83130, "output": 17043, "cost_usd": 0.40605}
+  },
+  "monthly_cumulative_usd": 1.15670,
+  "deepseek_balance_cny": 80.95,
+  "source": "cron_token_monitor"
+}

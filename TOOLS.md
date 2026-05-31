@@ -232,6 +232,37 @@ python3 -c "import ollama; r=ollama.chat(model='minicpm-v', messages=[{'role':'u
 
 ---
 
+## 🌐 FreeDomain Skill — 免费域名管理 (2026-05-31)
+
+> 集成自 DigitalPlatDev/FreeDomain ⭐172K
+> AGPL-3.0 | https://github.com/DigitalPlatDev/FreeDomain
+
+| 项目 | 配置 |
+|------|------|
+| **后缀** | .DPDNS.ORG / .UL.KG / .QZZ.IO / .XX.KG / .QD.JE |
+| **仪表盘** | https://dash.domain.digitalplat.org/ |
+| **社区** | Discord: https://discord.gg/ma4RZzMmVW |
+| **注册数** | 500,000+ |
+| **用途** | OERV分发 / 邮件域名 / GEO矩阵 |
+| **安全提示** | ⚠️ 该项目 Telegram 群已被入侵，勿信 |
+
+---
+
+## 🐟 MiroFish — 群体智能预测引擎 (2026-05-31)
+
+> 集成自 666ghj/MiroFish ⭐63K
+> AGPL-3.0 | https://github.com/666ghj/MiroFish
+
+| 项目 | 配置 |
+|------|------|
+| **类型** | 多 Agent 社会模拟预测引擎 |
+| **技术栈** | Python + Node.js (React + Flask) |
+| **状态** | 🔴 未部署（需 LLM API + Zep Cloud API） |
+| **用途** | 跨境贸易舆情预测 / 竞品推演 / 内容沙盒 |
+| **官网** | https://mirofish.ai |
+
+---
+
 ## 🧠 Understand-Anything — 太一智能自动化集成 (2026-05-23)
 
 > 状态: ✅ 已安装 | 18.4K ⭐ | 8个子技能

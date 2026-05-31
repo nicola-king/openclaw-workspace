@@ -1,12 +1,10 @@
 {
-  "run_at": "2026-05-30T10:10:57.378776+00:00",
+  "run_at": "2026-05-31T10:02:20.843408+00:00",
   "sync_companies": {
     "companies_file": "/home/sayelf/.openclaw/workspace/skills/cross-border-trade-agent/data/real_companies.md",
     "existing_names": 47,
-    "new_companies": 1,
-    "companies": [
-      "MODSCAPE AUSTRALIA"
-    ]
+    "new_companies": 0,
+    "companies": []
   },
   "sync_buyers": {
     "buyers_file": "/home/sayelf/.openclaw/workspace/skills/cross-border-trade-agent/modules/buyer-intel/data/buyers.md",

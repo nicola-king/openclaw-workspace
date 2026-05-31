@@ -13,12 +13,6 @@
   },
   {
     "Abn": "73122909040",
-    "Name": "MODSCAPE AUSTRALIA",
-    "AbnStatus": "Active",
-    "EntityType": "Business Name"
-  },
-  {
-    "Abn": "73122909040",
     "Name": "MODSCAPE PTY LTD",
     "AbnStatus": "Active",
     "EntityType": "Entity Name"

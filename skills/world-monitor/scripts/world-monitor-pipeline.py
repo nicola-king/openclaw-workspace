@@ -164,11 +164,12 @@ def generate_report(real_data: dict) -> str:
 **来源**：[来源名称](参考URL或来源描述)
 
 【铁律】
-1. 每条必须附带来源（真实新闻源如 Reuters / Bloomberg / Xinhua / FT / WSJ 等）
-2. 涉及到以下数据时，必须使用上面提供的实时数据锚点：汇率、加密货币、天气
-3. 不知道精确数字时标注 [待核实]，不要编造
-4. 每条之间空一行
-5. 使用 Markdown 格式"""
+1. **所有内容必须使用中文**（专有名词、人名、机构缩写如 WTO/IMF 除外），标题、摘要、影响分析、来源描述全部用中文撰写
+2. 每条必须附带来源（真实新闻源如 Reuters / Bloomberg / Xinhua / FT / WSJ 等）
+3. 涉及到以下数据时，必须使用上面提供的实时数据锚点：汇率、加密货币、天气
+4. 不知道精确数字时标注 [待核实]，不要编造
+5. 每条之间空一行
+6. 使用 Markdown 格式"""
 
     # 写入临时 prompt 文件（避免 shell 转义问题）
     prompt_file = OUTPUT_DIR / f"world-monitor-prompt-{DATE}.txt"
@@ -562,6 +563,8 @@ def _build_fallback_prompt(real_data: dict) -> str:
 
 请生成全球情报日报，包含以下5个分类，每个分类2条：
 1. 地缘政治 2. 国际贸易 3. 金融市场 4. 大宗商品 5. 科技
+
+重要：所有内容必须用中文撰写，不允许出现英文内容（专有名词、机构缩写如WTO/IMF除外）。
 
 每条格式：
 **标题** - 内容摘要。

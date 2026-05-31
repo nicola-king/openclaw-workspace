@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-05-26T21:02:00+08:00",
+  "daily_cost_usd": 0.16696,
+  "daily_cost_cny": 1.2188,
+  "monthly_cost_usd": 1.07042,
+  "monthly_cost_cny": 7.8141,
+  "balance_cny": 93.62,
+  "total_input_tokens": 1062970,
+  "total_output_tokens": 300043,
+  "sources": {
+    "subagent": {"sessions": 11, "cost": 0.68553},
+    "cron": {"sessions": 40, "cost": 0.24911},
+    "feishu": {"sessions": 5, "cost": 0.07378},
+    "telegram": {"sessions": 1, "cost": 0.04935},
+    "weixin": {"sessions": 1, "cost": 0.00751},
+    "direct": {"sessions": 1, "cost": 0.00514}
+  }
+}
