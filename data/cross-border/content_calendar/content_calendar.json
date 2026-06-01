@@ -1,75 +1,9 @@
 {
-  "start_date": "2026-05-25T15:01:28.004713",
+  "start_date": "2026-06-01T15:03:23.267143",
   "months": 6,
   "weeks": [
     {
       "week": 1,
-      "date_range": "2026-05-25 - 2026-05-31",
-      "posts": [
-        {
-          "date": "2026-05-25",
-          "day": "Monday",
-          "theme": "industry_insight",
-          "platforms": [
-            "LinkedIn"
-          ],
-          "status": "planned",
-          "content_brief": "industry_insight 内容规划"
-        },
-        {
-          "date": "2026-05-26",
-          "day": "Tuesday",
-          "theme": "company_news",
-          "platforms": [
-            "Facebook"
-          ],
-          "status": "planned",
-          "content_brief": "company_news 内容规划"
-        },
-        {
-          "date": "2026-05-27",
-          "day": "Wednesday",
-          "theme": "case_study",
-          "platforms": [
-            "LinkedIn"
-          ],
-          "status": "planned",
-          "content_brief": "case_study 内容规划"
-        },
-        {
-          "date": "2026-05-28",
-          "day": "Thursday",
-          "theme": "faq",
-          "platforms": [
-            "Facebook"
-          ],
-          "status": "planned",
-          "content_brief": "faq 内容规划"
-        },
-        {
-          "date": "2026-05-29",
-          "day": "Friday",
-          "theme": "weekly_summary",
-          "platforms": [
-            "LinkedIn"
-          ],
-          "status": "planned",
-          "content_brief": "weekly_summary 内容规划"
-        },
-        {
-          "date": "2026-05-30",
-          "day": "Saturday",
-          "theme": "team_culture",
-          "platforms": [
-            "Facebook"
-          ],
-          "status": "planned",
-          "content_brief": "team_culture 内容规划"
-        }
-      ]
-    },
-    {
-      "week": 2,
       "date_range": "2026-06-01 - 2026-06-07",
       "posts": [
         {
@@ -135,7 +69,7 @@
       ]
     },
     {
-      "week": 3,
+      "week": 2,
       "date_range": "2026-06-08 - 2026-06-14",
       "posts": [
         {
@@ -201,7 +135,7 @@
       ]
     },
     {
-      "week": 4,
+      "week": 3,
       "date_range": "2026-06-15 - 2026-06-21",
       "posts": [
         {
@@ -267,7 +201,7 @@
       ]
     },
     {
-      "week": 5,
+      "week": 4,
       "date_range": "2026-06-22 - 2026-06-28",
       "posts": [
         {
@@ -333,7 +267,7 @@
       ]
     },
     {
-      "week": 6,
+      "week": 5,
       "date_range": "2026-06-29 - 2026-07-05",
       "posts": [
         {
@@ -399,7 +333,7 @@
       ]
     },
     {
-      "week": 7,
+      "week": 6,
       "date_range": "2026-07-06 - 2026-07-12",
       "posts": [
         {
@@ -465,7 +399,7 @@
       ]
     },
     {
-      "week": 8,
+      "week": 7,
       "date_range": "2026-07-13 - 2026-07-19",
       "posts": [
         {
@@ -531,7 +465,7 @@
       ]
     },
     {
-      "week": 9,
+      "week": 8,
       "date_range": "2026-07-20 - 2026-07-26",
       "posts": [
         {
@@ -597,7 +531,7 @@
       ]
     },
     {
-      "week": 10,
+      "week": 9,
       "date_range": "2026-07-27 - 2026-08-02",
       "posts": [
         {
@@ -663,7 +597,7 @@
       ]
     },
     {
-      "week": 11,
+      "week": 10,
       "date_range": "2026-08-03 - 2026-08-09",
       "posts": [
         {
@@ -729,7 +663,7 @@
       ]
     },
     {
-      "week": 12,
+      "week": 11,
       "date_range": "2026-08-10 - 2026-08-16",
       "posts": [
         {
@@ -795,7 +729,7 @@
       ]
     },
     {
-      "week": 13,
+      "week": 12,
       "date_range": "2026-08-17 - 2026-08-23",
       "posts": [
         {
@@ -861,7 +795,7 @@
       ]
     },
     {
-      "week": 14,
+      "week": 13,
       "date_range": "2026-08-24 - 2026-08-30",
       "posts": [
         {
@@ -927,7 +861,7 @@
       ]
     },
     {
-      "week": 15,
+      "week": 14,
       "date_range": "2026-08-31 - 2026-09-06",
       "posts": [
         {
@@ -993,7 +927,7 @@
       ]
     },
     {
-      "week": 16,
+      "week": 15,
       "date_range": "2026-09-07 - 2026-09-13",
       "posts": [
         {
@@ -1059,7 +993,7 @@
       ]
     },
     {
-      "week": 17,
+      "week": 16,
       "date_range": "2026-09-14 - 2026-09-20",
       "posts": [
         {
@@ -1125,7 +1059,7 @@
       ]
     },
     {
-      "week": 18,
+      "week": 17,
       "date_range": "2026-09-21 - 2026-09-27",
       "posts": [
         {
@@ -1191,7 +1125,7 @@
       ]
     },
     {
-      "week": 19,
+      "week": 18,
       "date_range": "2026-09-28 - 2026-10-04",
       "posts": [
         {
@@ -1257,7 +1191,7 @@
       ]
     },
     {
-      "week": 20,
+      "week": 19,
       "date_range": "2026-10-05 - 2026-10-11",
       "posts": [
         {
@@ -1323,7 +1257,7 @@
       ]
     },
     {
-      "week": 21,
+      "week": 20,
       "date_range": "2026-10-12 - 2026-10-18",
       "posts": [
         {
@@ -1389,7 +1323,7 @@
       ]
     },
     {
-      "week": 22,
+      "week": 21,
       "date_range": "2026-10-19 - 2026-10-25",
       "posts": [
         {
@@ -1455,7 +1389,7 @@
       ]
     },
     {
-      "week": 23,
+      "week": 22,
       "date_range": "2026-10-26 - 2026-11-01",
       "posts": [
         {
@@ -1521,7 +1455,7 @@
       ]
     },
     {
-      "week": 24,
+      "week": 23,
       "date_range": "2026-11-02 - 2026-11-08",
       "posts": [
         {
@@ -1576,6 +1510,72 @@
         },
         {
           "date": "2026-11-07",
+          "day": "Saturday",
+          "theme": "team_culture",
+          "platforms": [
+            "Facebook"
+          ],
+          "status": "planned",
+          "content_brief": "team_culture 内容规划"
+        }
+      ]
+    },
+    {
+      "week": 24,
+      "date_range": "2026-11-09 - 2026-11-15",
+      "posts": [
+        {
+          "date": "2026-11-09",
+          "day": "Monday",
+          "theme": "industry_insight",
+          "platforms": [
+            "LinkedIn"
+          ],
+          "status": "planned",
+          "content_brief": "industry_insight 内容规划"
+        },
+        {
+          "date": "2026-11-10",
+          "day": "Tuesday",
+          "theme": "company_news",
+          "platforms": [
+            "Facebook"
+          ],
+          "status": "planned",
+          "content_brief": "company_news 内容规划"
+        },
+        {
+          "date": "2026-11-11",
+          "day": "Wednesday",
+          "theme": "case_study",
+          "platforms": [
+            "LinkedIn"
+          ],
+          "status": "planned",
+          "content_brief": "case_study 内容规划"
+        },
+        {
+          "date": "2026-11-12",
+          "day": "Thursday",
+          "theme": "faq",
+          "platforms": [
+            "Facebook"
+          ],
+          "status": "planned",
+          "content_brief": "faq 内容规划"
+        },
+        {
+          "date": "2026-11-13",
+          "day": "Friday",
+          "theme": "weekly_summary",
+          "platforms": [
+            "LinkedIn"
+          ],
+          "status": "planned",
+          "content_brief": "weekly_summary 内容规划"
+        },
+        {
+          "date": "2026-11-14",
           "day": "Saturday",
           "theme": "team_culture",
           "platforms": [
