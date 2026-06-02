@@ -34,42 +34,37 @@ CACHE_DIR.mkdir(parents=True, exist_ok=True)
 # 爬虫核心
 # ═══════════════════════════════════════════
 
-def search_abn(abn: str) -> Optional[dict]:
-    """ABN Lookup 查询 — 使用 Scrapling 自适应爬取"""
-    from scrapling_adaptor.core import smart_fetch, extract_items
-    cache = CACHE_DIR / f"abn_{abn}.json"
-    if cache.exists() and (time.time() - cache.stat().st_mtime) < 3600:
-        return json.loads(cache.read_text())
-    try:
-        url = f"https://abr.business.gov.au/Search/ResultsActive?SearchText={abn}"
-        result = smart_fetch(url, timeout=10)
-        if result["status"] == 200:
-            html = result["body"]
-            rows = __import__('re').findall(r'<tr[^>]*>([\s\S]*?)</tr>', html)
-            for row in rows:
-                cells = __import__('re').findall(r'<t[dh][^>]*>([\s\S]*?)</t[dh]>', row)
-                if len(cells) >= 2:
-                    raw_abn = __import__('re').sub(r'<[^>]+>', '', cells[0]).strip()
-                    name = __import__('re').sub(r'<[^>]+>', '', cells[1]).strip()
-                    clean = __import__('re').sub(r'\D', '', raw_abn)
-                    if clean and len(clean) >= 9:
-                        result_data = {"Abn": clean, "Name": name, "AbnStatus": "Active"}
-                        cache.write_text(json.dumps(result_data, indent=2))
-                        return result_data
-    except Exception as e:
-        pass
-    return None
-
-
 def exchange_rate() -> Optional[float]:
-    """今日 CNY→AUD 汇率 — 使用 Scrapling"""
-    from scrapling_adaptor.core import smart_fetch
-    try:
-        result = smart_fetch("https://api.frankfurter.app/latest?from=CNY&to=AUD", timeout=10)
-        if result["status"] == 200:
-            return __import__('json').loads(result["body"])["rates"].get("AUD")
-    except:
-        pass
+    """今日 CNY→AUD 汇率 — 多源备用"""
+    import json as _json, urllib.request as _req
+    
+    # 源1: exchangerate-api.com（免费，无需key）
+    sources = [
+        "https://api.exchangerate-api.com/v4/latest/CNY",
+        "https://open.er-api.com/v6/latest/CNY",
+        "https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/cny.json",
+    ]
+    
+    for url in sources:
+        try:
+            req = _req.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+            with _req.urlopen(req, timeout=8) as resp:
+                data = _json.loads(resp.read())
+            
+            # 不同API的字段名不同
+            aud = None
+            if "rates" in data:
+                aud = data["rates"].get("AUD")
+            elif "cny" in data:
+                aud = data["cny"].get("aud")
+            
+            if aud and aud > 0:
+                return float(aud)
+        except:
+            continue
+    
+    # 全部失败，返回保守估值
+    return 0.22
     return None
 
 

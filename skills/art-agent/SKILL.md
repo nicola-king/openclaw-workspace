@@ -13,7 +13,7 @@ status: active
 # 🎨 Art Agent v3.0 — 统一艺术智能体
 
 > **版本**: 3.0.0
-> **架构**: 统一调度引擎 + 19 专业模块 + 自进化闭环
+> **架构**: 统一调度引擎 + 20 专业模块 + 自进化闭环
 
 ---
 
@@ -44,6 +44,7 @@ status: active
 │  NARRATIVE → visual-narrative (视觉叙事)      │
 │  WORKFLOW  → dispatch-viz (拓扑可视化)        │
 │  EVOLVE    → self-evolution (自进化)          │
+│  SONG      → song-aesthetics   (宋式美学引擎)    │
 └──────────────────────────────────────────────┘
        │
        ▼
@@ -63,8 +64,9 @@ status: active
 | 模块 | 功能 | 状态 |
 |------|------|:----:|
 | **aesthetic-filter** | 美学过滤器（格式/风格/视觉/审校） | ✅ v1.1 |
-| **aesthetic-scorer** | 多维度美学评分 | ✅ v1.0 |
+| **aesthetic-scorer** | 多维度美学评分（含宋式美学维度） | ✅ v2.0 |
 | **aesthetics-engine** | 美学引擎 | ✅ v1.0 |
+| **song-aesthetics** | 宋式美学引擎（九特征评估/设计令牌/CSS生成） | ✅ v1.0 |
 
 ### 艺术创作
 | 模块 | 功能 | 状态 |

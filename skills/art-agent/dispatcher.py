@@ -36,6 +36,7 @@ class TaskDomain(Enum):
     EVOLVE = "evolve"           # 自进化
     RENDER = "render"           # 渲染引擎 (PDF/HTML)
     PRESENTATION = "presentation"  # 演示文稿/PPT (guizang)
+    SONG = "song"             # 宋式美学 (song-aesthetics)
 
 ROUTING_TABLE = {
     "设计": TaskDomain.DESIGN, "design": TaskDomain.DESIGN, "ui": TaskDomain.DESIGN, "ux": TaskDomain.DESIGN,
@@ -59,7 +60,17 @@ ROUTING_TABLE = {
     "slide": TaskDomain.PRESENTATION, "deck": TaskDomain.PRESENTATION,
     "演讲": TaskDomain.PRESENTATION, "发布会": TaskDomain.PRESENTATION,
     "演示": TaskDomain.PRESENTATION, "瑞士": TaskDomain.PRESENTATION,
-    "网页ppt": TaskDomain.PRESENTATION, "幻灯片": TaskDomain.PRESENTATION,}
+    "网页ppt": TaskDomain.PRESENTATION, "幻灯片": TaskDomain.PRESENTATION,
+    # 宋式美学路由
+    "宋式风格": TaskDomain.SONG, "宋式美学": TaskDomain.SONG,
+    "天青风格": TaskDomain.SONG, "天青色": TaskDomain.SONG,
+    "宋": TaskDomain.SONG, "song": TaskDomain.SONG, "宋式": TaskDomain.SONG,
+    "宋风": TaskDomain.SONG, "宋代": TaskDomain.SONG, "宋朝": TaskDomain.SONG,
+    "天青": TaskDomain.SONG, "汝窑": TaskDomain.SONG, "留白": TaskDomain.SONG,
+    "中式美学": TaskDomain.SONG, "东方美学": TaskDomain.SONG,
+    "枯山水": TaskDomain.SONG, "禅意": TaskDomain.SONG,
+    "古风": TaskDomain.SONG, "新中式": TaskDomain.SONG,
+}
 
 
 
@@ -156,6 +167,7 @@ MODULE_MAP = {
     TaskDomain.WORKFLOW:  ("dispatch-viz",     "DispatchViz",     "调度拓扑"),
     TaskDomain.EVOLVE:    ("self-evolution",   "SelfEvolution",   "自进化"),
     TaskDomain.PRESENTATION: ("guizang-bridge", "GuizangBridge", "归藏PPT引擎"),
+    TaskDomain.SONG:        ("song-aesthetics", "SongAestheticsEngine", "宋式美学引擎"),
 }
 
 # ═══════════════════════════════════════════════════════════════

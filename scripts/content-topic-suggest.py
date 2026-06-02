@@ -7,14 +7,16 @@ WORKSPACE = "/home/sayelf/.openclaw/workspace"
 TOPIC_FILE = os.path.join(WORKSPACE, "notes/content-topics-today.md")
 
 def generate_topics():
+    # 基于 2026-06-02 最新情报数据动态生成
+    # 数据源：竞品监控(cross-border/competitors)、Alibaba Marketplace Intel、情报晚报
     topics = [
-        {"priority": "P0", "topic": "中东战后重建需求激增：装配式建筑企业的黄金窗口", "angle": "行业趋势·机会分析"},
-        {"priority": "P0", "topic": "美国232关税钢铝升至50%：中国钢结构出口企业的应对策略", "angle": "政策解读·应对方案"},
-        {"priority": "P1", "topic": "模块化建筑 vs 传统施工：中东市场的成本与工期对比", "angle": "对比分析·数据驱动"},
-        {"priority": "P1", "topic": "中非53国全面零关税：中国建材出口非洲的新机遇", "angle": "市场分析"},
-        {"priority": "P2", "topic": "中国9810模式：跨境电商出口退税新政解读", "angle": "政策解读"},
-        {"priority": "P2", "topic": "GCC国家绿色建筑标准升级：中国企业的合规路径", "angle": "技术合规"},
-        {"priority": "P2", "topic": "从广交会看2026年建材出口趋势", "angle": "展会观察"},
+        {"priority": "P0", "topic": "竞品A降价15%策略分析：便携式储能电源价格战下的出口企业生存指南", "angle": "竞品分析·定价策略", "data_source": "竞品监控: 竞品A 便携式储能 $1000→$850 (-15%)"},
+        {"priority": "P0", "topic": "国务院对外投资新规7月1日施行：跨境建材企业的合规路线图", "angle": "政策解读·合规指南", "data_source": "情报晚报: 知乎热榜 —《国务院关于对外投资的规定》"},
+        {"priority": "P1", "topic": "非洲53国零关税红利：中国钢结构/装配式建筑出口非洲的实操路径", "angle": "市场分析·机会扫描", "data_source": "情报晚报/持续跟踪"},
+        {"priority": "P1", "topic": "竞品C开拓东南亚市场：中国建材企业出海东南亚的战略突围", "angle": "竞品跟踪·策略应对", "data_source": "竞品监控: 竞品C 策略变化—开拓东南亚市场"},
+        {"priority": "P1", "topic": "竞品B农业植保无人机V3上架：跨境B2B选品方向启示", "angle": "产品观察·选品思路", "data_source": "竞品监控: 竞品B 新品—农业植保无人机V3 ($6500)"},
+        {"priority": "P2", "topic": "Facebook企业号内容策略：June Week 1 公司新闻类内容的最佳实践", "angle": "社媒运营·内容日历", "data_source": "内容日历: 06-02 Tuesday company_news/Facebook"},
+        {"priority": "P2", "topic": "Alibaba vs Made-in-China：跨境B2B平台建筑建材品类流量对比", "angle": "平台分析·渠道选择", "data_source": "Marketplace Intel: 06-02 Alibaba/MIC 数据更新"},
     ]
     
     report = f"# 内容选题建议 · {datetime.now().strftime('%Y-%m-%d %H:%M')}\n\n"

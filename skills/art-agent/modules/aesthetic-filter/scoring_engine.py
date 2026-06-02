@@ -720,6 +720,125 @@ class StructureScorer:
         return current
 
 
+class SongAestheticsScorer:
+    """宋式美学评分 (权重: 0.10)
+    
+    基于九大特征：留白·朴素·自然·通透·淡雅·精致·含蓄·禅意·有序
+    """
+
+    NAME = "宋式美学"
+    WEIGHT = 0.05
+
+    def score(self, content: str, content_type: ContentType) -> DimensionScore:
+        issues = []
+        suggestions = []
+        details = {}
+        score = 100
+
+        # 1. 留白 (15分) — 空白比例 25-40% 为理想
+        lines = content.split('\n')
+        total_lines = len(lines)
+        blank_lines = sum(1 for l in lines if l.strip() == '')
+        blank_ratio = blank_lines / max(total_lines, 1)
+        details["blank_ratio"] = round(blank_ratio, 2)
+
+        if blank_ratio < 0.15:
+            score -= 12
+            issues.append("留白不足 (空白<15%)，缺少呼吸感")
+            suggestions.append("增加段落间距、页边距，保持 25-40% 留白")
+        elif blank_ratio < 0.25:
+            score -= 5
+            suggestions.append("可适当增加留白")
+
+        # 2. 朴素 (10分) — 去除装饰性冗余
+        emoji_count = len(re.findall(r'[\U0001F300-\U0001F9FF]', content))
+        if emoji_count > 20:
+            score -= 8
+            issues.append(f"Emoji 过多 ({emoji_count})，破坏朴素感")
+            suggestions.append("删减 emoji 至 5 个以下")
+
+        # 检查装饰性分隔线
+        separators = len(re.findall(r'^---+\s*$', content, re.MULTILINE))
+        if separators > 5:
+            score -= 5
+            issues.append("分隔线过多")
+
+        # 3. 自然 (10分) — 不做作、不夸张
+        artificial = ['令人惊叹', '惊为天人', '极致', '完美', '绝对', '革命性', '颠覆性']
+        found_artificial = [w for w in artificial if w in content]
+        if found_artificial:
+            score -= 8
+            issues.append(f"夸张词汇: {', '.join(found_artificial[:3])}")
+            suggestions.append("改用自然平实的表述")
+
+        # 4. 通透 (10分) — 层次清晰
+        paras = [p for p in content.split('\n\n') if p.strip()]
+        if paras:
+            avg_para_len = sum(len(p) for p in paras) // len(paras)
+            details["avg_paragraph_length"] = avg_para_len
+            if avg_para_len > 400:
+                score -= 8
+                issues.append(f"段落过长 (平均{avg_para_len}字)，影响通透")
+                suggestions.append("拆分段落，每段 100-200 字")
+
+        # 5. 淡雅 (10分) — 不过度强调
+        bold_count = len(re.findall(r'\*\*[^*]+\*\*', content))
+        if bold_count > 8:
+            score -= 7
+            issues.append(f"加粗过多 ({bold_count}处)，可删除不必要的强调")
+
+        # 6. 精致 (10分) — 格式规范
+        # 检查句号完整性
+        for line in content.split('\n'):
+            line = line.strip()
+            if (line and not line.startswith(('#', '-', '*', '+', '>', '`', '|'))
+                and not line.endswith(('。', '？', '！', '……'))
+                and len(line) > 15):
+                score -= 4
+                issues.append("部分句子缺少正确句号")
+                break
+
+        # 7. 含蓄 (10分) — 克制、不外露
+        absolute_words = ['一定', '必须', '绝对', '永远', '所有', '任何']
+        found_absolute = [w for w in absolute_words if w in content]
+        if found_absolute:
+            score -= 6
+            issues.append("使用过于绝对的词汇")
+
+        # 8. 禅意 (15分) — 寂静感、非对称节奏
+        profit_words = ['立即', '马上', '速抢', '限时', '优惠', '免费', '赚钱']
+        found_profit = [w for w in profit_words if w in content]
+        if found_profit:
+            score -= 12
+            issues.append(f"功利性词汇 {found_profit}，破坏禅意")
+            suggestions.append("宋式美学避免促销口吻")
+
+        # 段落长度对比（太均匀 = 死板）
+        if paras:
+            lengths = [len(p) for p in paras]
+            if lengths and len(paras) > 3:
+                max_l = max(lengths)
+                min_l = min(lengths)
+                if max_l > 0 and min_l > 0 and max_l / min_l < 1.5:
+                    score -= 5
+                    suggestions.append("段落节奏过于均匀，可尝试非对称节奏")
+
+        # 9. 有序 (10分) — 结构清晰
+        headings = re.findall(r'^#{1,6}\s', content, re.MULTILINE)
+        if len(headings) < 2 and len(content) > 500:
+            score -= 8
+            issues.append("缺少标题层级，结构不清晰")
+
+        return DimensionScore(
+            name=self.NAME,
+            score=max(0, min(100, score)),
+            weight=self.WEIGHT,
+            details=details,
+            issues=issues,
+            suggestions=suggestions
+        )
+
+
 class SemanticsScorer:
     """语义性评分 (权重: 0.10)"""
     
@@ -799,6 +918,7 @@ class ScoringEngine:
             "functionality": FunctionalityScorer(),
             "structure": StructureScorer(),
             "semantics": SemanticsScorer(),
+            "song_aesthetics": SongAestheticsScorer(),
         }
         
         self.logger = logging.getLogger("scoring-engine")
@@ -862,6 +982,7 @@ class ScoringEngine:
             "功能性": FunctionalityScorer.WEIGHT,
             "结构性": StructureScorer.WEIGHT,
             "语义性": SemanticsScorer.WEIGHT,
+            "宋式美学": SongAestheticsScorer.WEIGHT,
         }
 
 

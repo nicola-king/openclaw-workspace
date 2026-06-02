@@ -198,6 +198,12 @@
     "EntityType": "Trading Name"
   },
   {
+    "Abn": "75698663286",
+    "Name": "AUSTRALIAZ PTY LTD",
+    "AbnStatus": "Active",
+    "EntityType": "Entity Name"
+  },
+  {
     "Abn": "80103725079",
     "Name": "AUSTRAYLIA PTY LIMITED",
     "AbnStatus": "Active",
@@ -232,11 +238,5 @@
     "Name": "AUSTRALIZ PTY LTD",
     "AbnStatus": "Active",
     "EntityType": "Entity Name"
-  },
-  {
-    "Abn": "18537224948",
-    "Name": "AUSTRA & CO",
-    "AbnStatus": "Active",
-    "EntityType": "Business Name"
   }
 ]

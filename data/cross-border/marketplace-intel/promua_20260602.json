@@ -1,0 +1,53 @@
+{
+  "platform": "Prom.ua",
+  "market": "🇺🇦 乌克兰",
+  "type": "B2B/B2C",
+  "fetched_at": "2026-06-02T06:00:10.772495",
+  "status": "ok",
+  "categories": {
+    "building_materials": {
+      "category": "building_materials",
+      "search_url": "https://prom.ua/ua/search?search_term=metal+construction+house&search_filter=only_with_images",
+      "keyword": "metal+construction+house",
+      "related_products": [
+        "钢结构房屋",
+        "预制房屋",
+        "金属结构"
+      ],
+      "samples": []
+    },
+    "electrical": {
+      "category": "electrical",
+      "search_url": "https://prom.ua/ua/search?search_term=transformer+generator&search_filter=only_with_images",
+      "keyword": "transformer+generator",
+      "related_products": [
+        "变压器",
+        "发电机",
+        "配电设备"
+      ],
+      "samples": []
+    },
+    "electronics": {
+      "category": "electronics",
+      "search_url": "https://prom.ua/ua/search?search_term=power+bank+portable+charger&search_filter=only_with_images",
+      "keyword": "power+bank+portable+charger",
+      "related_products": [
+        "移动电源",
+        "便携电源",
+        "充电宝"
+      ],
+      "samples": []
+    },
+    "tools": {
+      "category": "tools",
+      "search_url": "https://prom.ua/ua/search?search_term=engine+generator+power+equipment&search_filter=only_with_images",
+      "keyword": "engine+generator+power+equipment",
+      "related_products": [
+        "发动机",
+        "发电机",
+        "五金工具"
+      ],
+      "samples": []
+    }
+  }
+}
